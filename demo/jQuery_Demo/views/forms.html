@@ -1,0 +1,193 @@
+<script>
+var requireJS = [
+    "assets/js/libs/jquery.maskedinput.min.js",
+    "assets/js/libs/moment.min.js",
+    "assets/js/libs/select2.min.js",
+    "assets/js/libs/daterangepicker.min.js"
+];
+loadJS(requireJS, "assets/js/views/forms.js");
+</script>
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-edit"></i> Masked Input Plugin for jQuery
+                    <div class="card-actions">
+                        <a href="https://github.com/digitalBush/jquery.maskedinput">
+                            <small class="text-muted">docs</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-block collapse in">
+                    <form>
+                        <fieldset class="form-group">
+                            <label>Date input</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <input type="text" class="form-control" id="date">
+                            </div>
+                            <small class="text-muted">ex. 99/99/9999</small>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>Phone input</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                <input type="text" class="form-control" id="phone">
+                            </div>
+                            <small class="text-muted">ex. (999) 999-9999</small>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>Taxpayer Identification Numbers</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-usd"></i></span>
+                                <input type="text" class="form-control" id="tin">
+                            </div>
+                            <small class="text-muted">ex. 99-9999999</small>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>Social Security Number</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-male"></i></span>
+                                <input type="text" class="form-control" id="ssn">
+                            </div>
+                            <small class="text-muted">ex. 999-99-9999</small>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>Eye Script</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
+                                <input type="text" class="form-control" id="eyescript">
+                            </div>
+                            <small class="text-muted">ex. ~9.99 ~9.99 999</small>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>Credit Card Number</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                <input type="text" class="form-control" id="ccn" placeholder="0000 0000 0000 0000">
+                            </div>
+                            <small class="text-muted">ex. 9999 9999 9999 9999</small>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /.col -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-edit"></i> Select2
+                    <div class="card-actions">
+                        <a href="https://select2.github.io">
+                            <small class="text-muted">docs</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-block">
+                    <fieldset class="form-group">
+                        <label>Modern Select</label>
+                        <div class="controls">
+                            <select id="select2-1" class="form-control">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                                <option>Option 5</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label>Multiple Select / Tags</label>
+                        <div class="controls">
+                            <select id="select2-2" class="form-control" multiple>
+                                <option>Option 1</option>
+                                <option selected>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                                <option>Option 5</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label>Group Select</label>
+                        <div class="controls">
+                            <select class="form-control" data-placeholder="Your Favorite Football Team" id="select2-3">
+                                <option value=""></option>
+                                <optgroup label="NFC EAST">
+                                    <option>Dallas Cowboys</option>
+                                    <option>New York Giants</option>
+                                    <option>Philadelphia Eagles</option>
+                                    <option>Washington Redskins</option>
+                                </optgroup>
+                                <optgroup label="NFC NORTH">
+                                    <option>Chicago Bears</option>
+                                    <option>Detroit Lions</option>
+                                    <option>Green Bay Packers</option>
+                                    <option>Minnesota Vikings</option>
+                                </optgroup>
+                                <optgroup label="NFC SOUTH">
+                                    <option>Atlanta Falcons</option>
+                                    <option>Carolina Panthers</option>
+                                    <option>New Orleans Saints</option>
+                                    <option>Tampa Bay Buccaneers</option>
+                                </optgroup>
+                                <optgroup label="NFC WEST">
+                                    <option>Arizona Cardinals</option>
+                                    <option>St. Louis Rams</option>
+                                    <option>San Francisco 49ers</option>
+                                    <option>Seattle Seahawks</option>
+                                </optgroup>
+                                <optgroup label="AFC EAST">
+                                    <option>Buffalo Bills</option>
+                                    <option>Miami Dolphins</option>
+                                    <option>New England Patriots</option>
+                                    <option>New York Jets</option>
+                                </optgroup>
+                                <optgroup label="AFC NORTH">
+                                    <option>Baltimore Ravens</option>
+                                    <option>Cincinnati Bengals</option>
+                                    <option>Cleveland Browns</option>
+                                    <option>Pittsburgh Steelers</option>
+                                </optgroup>
+                                <optgroup label="AFC SOUTH">
+                                    <option>Houston Texans</option>
+                                    <option>Indianapolis Colts</option>
+                                    <option>Jacksonville Jaguars</option>
+                                    <option>Tennessee Titans</option>
+                                </optgroup>
+                                <optgroup label="AFC WEST">
+                                    <option>Denver Broncos</option>
+                                    <option>Kansas City Chiefs</option>
+                                    <option>Oakland Raiders</option>
+                                    <option>San Diego Chargers</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-edit"></i> DateRangePicker
+                    <div class="card-actions">
+                        <a href="http://www.daterangepicker.com">
+                            <small class="text-muted">docs</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-block">
+                    <fieldset class="form-group">
+                        <label>DateRangePicker</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <input name="daterange" class="form-control" type="text" />
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</div>

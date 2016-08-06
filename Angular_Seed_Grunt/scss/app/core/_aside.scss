@@ -1,0 +1,25 @@
+.aside-menu {
+    position: fixed;
+    top: 0;
+    right: -$aside-menu-width;
+    z-index: $zindex-navbar-fixed - 1;
+    width: $aside-menu-width;
+    height: 100%;
+    padding-top: $navbar-height;
+    color: $aside-menu-color;
+    background: $aside-menu-bg;
+    @include borders($aside-menu-borders);
+
+    .nav-tabs {
+        .nav-link {
+            padding: $aside-menu-nav-padding-y $aside-menu-nav-padding-x;
+            color: $body-color;
+            border-top: 0;
+        }
+        .nav-item:first-child {
+            .nav-link {
+                border-left: 0;
+            }
+        }
+    }
+}
