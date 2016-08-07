@@ -74,6 +74,25 @@ $body-color:                rgb(33, 33, 33);
     }
 }
 
+.site-header {
+    position: relative;
+    z-index: 1;
+    padding: 75px 0 15px 0;
+    color: #fff;
+    @include gradient-directional(lighten($brand-primary,15%), $brand-primary, 45deg);
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url("../assets/img/hexagon4.png") repeat;
+        z-index: 2;
+    }
+}
+
 section {
     padding: 100px 0;
 }
@@ -96,10 +115,10 @@ section + section {
         height: 50px;
         margin-bottom: $spacer-y;
     }
+}
 
-    .soon {
-        opacity: .5;
-    }
+.soon {
+    opacity: .5;
 }
 
 .site-footer {
