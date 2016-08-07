@@ -1,7 +1,8 @@
 <nav class="navbar navbar-fixed-top navbar-light bg-faded">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
         <img src="{{ site.github.url }}/assets/img/coreui-logo.png" alt="CoreUI Logo">
     </a>
+    {% if page.layout == 'home' %}
     <ul class="nav navbar-nav">
         <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -22,6 +23,28 @@
             <a class="nav-link" href="#">Github</a>
         </li>
     </ul>
+    {% else %}
+    <ul class="nav navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html#features">Features</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/examples">Examples</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Docs</a>
+        </li> -->
+        <li class="nav-item">
+            <a class="nav-link" href="#">Github</a>
+        </li>
+    </ul>
+    {% endif %}
     <ul class="nav navbar-nav pull-xs-right">
         <li class="nav-item">
             <a class="nav-link" href="http://holeczek.pl" target="_blank">About me</a>
