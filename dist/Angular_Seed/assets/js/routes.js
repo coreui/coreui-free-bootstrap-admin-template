@@ -30,11 +30,11 @@ angular
                         return $ocLazyLoad.load([{
                             serie: true,
                             name: 'Font Awesome',
-                            files: ['css/font-awesome.min.css']
+                            files: ['assets/css/font-awesome.min.css']
                         },{
                             serie: true,
                             name: 'Simple Line Icons',
-                            files: ['css/simple-line-icons.css']
+                            files: ['assets/css/simple-line-icons.css']
                         }]);
                     }],
                     loadPlugin: ['$ocLazyLoad', function ($ocLazyLoad) {
