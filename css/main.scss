@@ -1,0 +1,145 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$gray-dark:                 #2a2c36;
+$gray:                      #55595c;
+$gray-light:                #818a91;
+$gray-lighter:              #d1d4d7;
+$gray-lightest:             #f8f9fa;
+
+$brand-primary:             #20a8d8;
+$brand-success:             #85DB18;
+$brand-info:                #63c2de;
+$brand-warning:             #f8cb00;
+$brand-danger:              #f86c6b;
+
+$body-color:                rgb(33, 33, 33);
+
+@import "bootstrap/bootstrap";
+
+.navbar {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.site-banner {
+    position: relative;
+    z-index: 1;
+    padding: 200px 0 100px 0;
+    @include gradient-directional(lighten($brand-primary,15%), $brand-primary, 45deg);
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url("../assets/img/hexagon4.png") repeat;
+        z-index: 2;
+    }
+
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+
+    .sygnet {
+        height: 200px;
+        margin: 0 0 50px 0;
+    }
+
+    h1 {
+        @extend .h3;
+        color: #fff;
+
+        span {
+            display: inline-block;
+            margin-top: $spacer-y / 2;
+        }
+    }
+
+    p {
+        color: #fff;
+    }
+
+    .btn {
+        margin-top: 50px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+}
+
+.site-header {
+    position: relative;
+    z-index: 1;
+    padding: 75px 0 15px 0;
+    color: #fff;
+    @include gradient-directional(lighten($brand-primary,15%), $brand-primary, 45deg);
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url("../assets/img/hexagon4.png") repeat;
+        z-index: 2;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+section + section {
+    padding-top: 0;
+}
+
+.title-divider {
+    border-color: $brand-primary;
+    border-width: 2px;
+    width: 50px;
+    margin: 20px auto 50px auto;
+}
+
+.icons {
+    //padding: 50px 0;
+
+    img {
+        height: 50px;
+        margin-bottom: $spacer-y;
+    }
+}
+
+.soon {
+    opacity: .5;
+}
+
+.site-footer {
+    background: $gray-dark;
+    color: #fff;
+    padding: 40px 0 0 0;
+
+    img {
+        height: 200px;
+    }
+
+    ul li a {
+        color: $text-muted;
+    }
+}
+
+.copyright {
+    background: darken($gray-dark,2%);
+    @extend .small;
+    color: darken($text-muted,15%);
+    text-align: center;
+    padding: $spacer-y 0;
+    margin-top: 40px;
+}

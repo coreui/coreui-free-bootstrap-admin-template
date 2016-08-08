@@ -1,0 +1,168 @@
+<!--
+* CoreUI Bootstrap 4 Admin Template built as framework!
+* Version 1.0.0-alpha1
+* https://CoreUI.com
+* Copyright 2016 creativeLabs Łukasz Holeczek
+* License : https://CoreUI.io/license.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="CoreUI - UI Admin Kit Powered by Bootstrap 4">
+        <meta name="author" content="Lukasz Holeczek">
+        <meta name="keyword" content="CoreUI - UI Admin Kit Powered by Bootstrap 4">
+        <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
+        <title>CoreUI - UI Admin Kit</title>
+        <!-- Icons -->
+        <link href="{{ site.github.url }}/docs/css/font-awesome.min.css" rel="stylesheet">
+        <link href="{{ site.github.url }}/docs/css/simple-line-icons.css" rel="stylesheet">
+        <!-- Main styles for this application -->
+        <link href="{{ site.github.url }}/docs/css/style.css" rel="stylesheet">
+        <link href="{{ site.github.url }}/docs/css/docs.min.css" rel="stylesheet">
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-9510961-27', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </head>
+
+    <body class="navbar-fixed sidebar-nav fixed-nav">
+        <header class="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">&#9776;</button>
+                <a class="navbar-brand" href="#"></a>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-toggler layout-toggler" href="#">&#9776;</a>
+                    </li>
+                    <li class="nav-item p-x-1">
+                        <a class="nav-link" href="{{ site.github.url }}/index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-x-1">
+                        <a class="nav-link" href="{{ site.github.url }}/examples">Examples</a>
+                    </li>
+                    <li class="nav-item p-x-1">
+                        <a class="nav-link" href="https://github.com/mrholek/CoreUI" target="_blank" rel="nofollow">Github</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav pull-xs-right">
+                    <li class="nav-item p-x-1">
+                        <a class="nav-link" href="http://holeczek.pl" target="_blank">About me</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="sidebar">
+
+            <nav class="sidebar-nav" id="docsNavbarContent">
+                <ul class="nav">
+                {% for group in site.data.nav %}
+                {% assign link = group.pages | first %}
+                {% assign slug = group.title | downcase | replace: ' ', '-' || page.title | downcase | replace: ' ', '-' %}
+                {% assign active = nil %}
+
+                {% if page.url contains slug %}
+                {% assign active = 'active' %}
+                {% endif %}
+
+                <li class="nav-item nav-dropdown {{ active }}">
+                <!-- <div class="bd-toc-item "> -->
+                    {% if slug == "examples" %}
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
+                    {% else %}
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
+                    {% endif %}
+                    {{ group.title }}
+                        </a>
+
+                        <ul class="nav-dropdown-items">
+                            {% for doc in group.pages %}
+                            {% assign slug = doc.title | downcase | replace: ' ', '-' | replace:'-&-','-' %}
+                            {% capture slug %}/{{ slug }}{% endcapture %}
+                            {% assign active = nil %}
+
+                            {% if page.url contains slug %}
+                            {% assign active = 'active bd-sidenav-active' %}
+                            {% endif %}
+
+                            <li class="nav-item {{ active }}">
+                                <a class="nav-link" href="{{ site.baseurl }}/docs/{{ group.title | downcase | replace: ' ', '-' }}/{{ doc.title | downcase | replace: ' ', '-' | replace:'-&-','-' }}">
+                                    {{ doc.title }}
+                                </a>
+
+                                {% comment %}
+                                {% unless doc.sections == nil %}
+                                <ul class="nav">
+                                    {% for section in doc.sections %}
+                                    <li>
+                                        <a href="#{{ section.title | downcase | replace: ' ', '-' }}">
+                                            {{ section.title }}
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endunless %}
+                                {% endcomment %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endfor %}
+
+                </ul>
+
+                </nav>
+
+            </div>
+        <!-- Main content -->
+        <main class="main">
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+            <div class="container-fluid">
+                <div class="animated fadeIn">
+                    <div class="card">
+                        <div class="card-header">
+                            {{ page.title }}
+                        </div>
+                        <div class="card-block">
+                            {{ content }}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.conainer-fluid -->
+        </main>
+
+        <footer class="footer">
+            <span class="text-left">
+                <a href="http:/coreui.io">CoreUI</a> &copy; 2016 creativeLabs.
+            </span>
+            <span class="pull-right">
+                Powered by <a href="http://coreui.io">CoreUI</a>
+            </span>
+        </footer>
+        <!-- Bootstrap and necessary plugins -->
+        <script src="{{ site.github.url }}/docs/js/libs/jquery.min.js"></script>
+        <script src="{{ site.github.url }}/docs/js/libs/tether.min.js"></script>
+        <script src="{{ site.github.url }}/docs/js/libs/bootstrap.min.js"></script>
+        <script src="{{ site.github.url }}/docs/js/libs/pace.min.js"></script>
+        <script src="{{ site.github.url }}/docs/js/docs.min.js"></script>
+        <!-- CoreUI main scripts -->
+        <script src="{{ site.github.url }}/docs/js/app.js"></script>
+
+    </body>
+</html>
