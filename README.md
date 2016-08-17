@@ -39,7 +39,7 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/mr
 
 ##Documentation
 
-CoreUI's documentation, is hosted on our website <a href="http://CoreUI.com">CoreUI.com</a>
+CoreUI's documentation, is hosted on our website <a href="http://coreui.io?ref=github">coreui.io</a>
 
 
 ## Copyright and license
