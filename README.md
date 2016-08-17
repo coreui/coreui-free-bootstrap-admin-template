@@ -8,7 +8,7 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 
 <img src="http://coreui.io/assets/img/coreui.png" alt="Free Bootstrap Admin Template">
 
-Demo: <a href="http://CoreUI.com?ref=github">CoreUI</a>
+Demo: <a href="http://coreui.io?ref=github">CoreUI</a>
 
 **NOTE:** Please remember to **STAR** this project and **FOLLOW** [my Github](https://github.com/mrholek) to keep you update with this template.
 
