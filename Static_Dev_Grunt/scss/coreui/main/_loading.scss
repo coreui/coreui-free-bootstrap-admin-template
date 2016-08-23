@@ -1,0 +1,127 @@
+// Angular Version
+// Make clicks pass-through
+#loading-bar,
+#loading-bar-spinner {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -moz-transition: 350ms linear all;
+    -o-transition: 350ms linear all;
+    -webkit-transition: 350ms linear all;
+    transition: 350ms linear all;
+}
+
+#loading-bar.ng-enter,
+#loading-bar.ng-leave.ng-leave-active,
+#loading-bar-spinner.ng-enter,
+#loading-bar-spinner.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+#loading-bar.ng-enter.ng-enter-active,
+#loading-bar.ng-leave,
+#loading-bar-spinner.ng-enter.ng-enter-active,
+#loading-bar-spinner.ng-leave {
+    opacity: 1;
+}
+
+#loading-bar .bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20002;
+    width: 100%;
+    height: 2px;
+    background: $brand-primary;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    -moz-transition: width 350ms;
+    -o-transition: width 350ms;
+    -webkit-transition: width 350ms;
+    transition: width 350ms;
+}
+
+// Fancy blur effect
+#loading-bar .peg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 2px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    -moz-box-shadow: #29d 1px 0 6px 1px;
+    -ms-box-shadow: #29d 1px 0 6px 1px;
+    -webkit-box-shadow: #29d 1px 0 6px 1px;
+    box-shadow: #29d 1px 0 6px 1px;
+    opacity: .45;
+}
+
+#loading-bar-spinner {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10002;
+    display: block;
+}
+
+#loading-bar-spinner .spinner-icon {
+    width: 14px;
+    height: 14px;
+
+    border:  solid 2px transparent;
+    border-top-color:  #29d;
+    border-left-color: #29d;
+    border-radius: 50%;
+
+    -moz-animation:    loading-bar-spinner 400ms linear infinite;
+    -ms-animation:     loading-bar-spinner 400ms linear infinite;
+    -o-animation:      loading-bar-spinner 400ms linear infinite;
+    -webkit-animation: loading-bar-spinner 400ms linear infinite;
+    animation:         loading-bar-spinner 400ms linear infinite;
+}
+
+@-webkit-keyframes loading-bar-spinner {
+    0%   { -webkit-transform: rotate(0deg);   transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-moz-keyframes loading-bar-spinner {
+    0%   { -moz-transform: rotate(0deg);   transform: rotate(0deg); }
+    100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-o-keyframes loading-bar-spinner {
+    0%   { -o-transform: rotate(0deg);   transform: rotate(0deg); }
+    100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-ms-keyframes loading-bar-spinner {
+    0%   { -ms-transform: rotate(0deg);   transform: rotate(0deg); }
+    100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes loading-bar-spinner {
+    0%   { transform: rotate(0deg);   transform: rotate(0deg); }
+    100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+//Ajax & Static Version
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.pace-inactive {
+    display: none;
+}
+
+.pace .pace-progress {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    z-index: 2000;
+    width: 100%;
+    height: 2px;
+    background: $brand-primary;
+}

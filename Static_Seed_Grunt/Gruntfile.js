@@ -1,8 +1,8 @@
 /*!
  * CoreUI's Gruntfile
- * http://CoreUI.io
+ * http://coreui.io
  * Copyright 2016 creativeLabs Łukasz Holeczek
- * License : http://coreui.io/license.html
+ * License : http://coreui.io/license
  */
 
 module.exports = function (grunt) {

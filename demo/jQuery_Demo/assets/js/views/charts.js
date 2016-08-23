@@ -1,4 +1,5 @@
 $(function (){
+    'use strict';
 
     var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
     var lineChartData = {

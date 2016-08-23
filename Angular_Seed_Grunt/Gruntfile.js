@@ -1,8 +1,8 @@
 /*!
- * GenesisUI's Gruntfile
- * http://GenesisUI.com
+ * CoreUI's Gruntfile
+ * http://coreui.io
  * Copyright 2016 creativeLabs Łukasz Holeczek
- * License : http://genesisui.com/license.html
+ * License : http://coreui.io/license
  */
 
 module.exports = function (grunt) {

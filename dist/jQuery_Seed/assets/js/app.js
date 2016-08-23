@@ -13,12 +13,6 @@
     //Main navigation
     $.navigation = $('nav > ul.nav');
 
-	//Dynamic Title only if $.ajaxLoad = true
-	$.dynamicTitle = true;
-
-	//Dynamic Breadcrumb only if $.ajaxLoad = true
-	$.dynamicBreadcrumb = true;
-
 	$.panelIconOpened = 'icon-arrow-up';
 	$.panelIconClosed = 'icon-arrow-down';
 
@@ -35,13 +29,16 @@
 	$.grayLighter =   '#d1d4d7';
 	$.grayLightest =  '#f8f9fa';
 
+'use strict';
+
 /*****
 * ASYNC LOAD
 * Load JS files and CSS files asynchronously in ajax mode
 */
 	function loadJS(jsFiles, pageScript) {
 
-		for(i=0;i<jsFiles.length;i++){
+		var i;
+		for(i = 0; i<jsFiles.length;i++){
 
 			var body = document.getElementsByTagName('body')[0];
 			var script = document.createElement('script');
@@ -63,9 +60,9 @@
 		init();
 	}
 
-	var cssArray = {};
-
 	function loadCSS(cssFile, end, callback) {
+
+		var cssArray = {};
 
 		if (!cssArray[cssFile]) {
 			cssArray[cssFile] = true;
@@ -109,12 +106,12 @@
 
 if ($.ajaxLoad) {
 
-	paceOptions = {
+	var paceOptions = {
 		elements: false,
 		restartOnRequestAfter: false
 	};
 
-	url = location.hash.replace(/^#/, '');
+	var url = location.hash.replace(/^#/, '');
 
 	if (url != '') {
 		setUpUrl(url);
@@ -220,6 +217,7 @@ $(document).ready(function($){
 	});
 
 	function resizeBroadcast() {
+
 		var timesRun = 0;
 		var interval = setInterval(function(){
 			timesRun += 1;
