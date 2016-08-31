@@ -1,0 +1,563 @@
+<div class="animated fadeIn">
+
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+            <div class="card card-inverse card-primary" ng-controller="cardChartCtrl1">
+                <div class="card-block p-b-0">
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-transparent dropdown-toggle p-a-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon-settings"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <h4 class="m-b-0">9.823</h4>
+                    <p>Members online</p>
+                </div>
+                <div class="chart-wrapper p-x-1" style="height:70px;">
+                    <canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" height="70"></canvas>
+                </div>
+            </div>
+        </div>
+        <!--/col-->
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="card card-inverse card-info" ng-controller="cardChartCtrl2">
+                <div class="card-block p-b-0">
+                    <button type="button" class="btn btn-transparent p-a-0 pull-right">
+                        <i class="icon-location-pin"></i>
+                    </button>
+                    <h4 class="m-b-0">9.823</h4>
+                    <p>Members online</p>
+                </div>
+                <div class="chart-wrapper p-x-1" style="height:70px;">
+                    <canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" height="70"></canvas>
+                </div>
+            </div>
+        </div>
+        <!--/col-->
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="card card-inverse card-warning" ng-controller="cardChartCtrl3">
+                <div class="card-block p-b-0">
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-transparent dropdown-toggle p-a-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon-settings"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <h4 class="m-b-0">9.823</h4>
+                    <p>Members online</p>
+                </div>
+                <div class="chart-wrapper" style="height:70px;">
+                    <canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" height="70"></canvas>
+                </div>
+            </div>
+        </div>
+        <!--/col-->
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="card card-inverse card-danger" ng-controller="cardChartCtrl4">
+                <div class="card-block p-b-0">
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-transparent dropdown-toggle p-a-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon-settings"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <h4 class="m-b-0">9.823</h4>
+                    <p>Members online</p>
+                </div>
+                <div class="chart-wrapper p-x-1" style="height:70px;">
+                    <canvas class="chart chart-bar" chart-data="data" chart-labels="labels" chart-options="options" chart-colors="colors" height="70"></canvas>
+                </div>
+            </div>
+        </div>
+        <!--/col-->
+    </div>
+    <!--/row-->
+
+    <div class="card" ng-controller="trafficDemoCtrl">
+        <div class="card-block">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4 class="card-title m-b-0">Traffic</h4>
+                    <div class="small text-muted">November 2015</div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="btn-toolbar pull-right" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group" data-toggle="buttons" aria-label="First group">
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option1">Day
+                            </label>
+                            <label class="btn btn-outline-secondary active">
+                                <input type="radio" name="options" id="option2" checked>Month
+                            </label>
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option3">Year
+                            </label>
+                        </div>
+                        <div class="btn-group" role="group" aria-label="Second group">
+                            <button type="button" class="btn btn-primary"><i class="icon-cloud-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-wrapper" style="height:300px;margin-top:40px;">
+                <canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="false" chart-series="series" chart-click="onClick" chart-options="options" chart-colors="colors" height="300"></canvas>
+            </div>
+        </div>
+        <div class="card-footer">
+            <ul>
+                <li>
+                    <div class="text-muted">Visits</div>
+                    <strong>29.703 Users (40%)</strong>
+                    <progress class="progress progress-xs progress-success" value="40" max="100">40%</progress>
+                </li>
+                <li class="hidden-xs-down">
+                    <div class="text-muted">Unique</div>
+                    <strong>24.093 Unique Users (20%)</strong>
+                    <progress class="progress progress-xs progress-info" value="20" max="100">20%</progress>
+                </li>
+                <li>
+                    <div class="text-muted">Pageviews</div>
+                    <strong>78.706 Views (60%)</strong>
+                    <progress class="progress progress-xs progress-warning" value="60" max="100">60%</progress>
+                </li>
+                <li class="hidden-xs-down">
+                    <div class="text-muted">New Users</div>
+                    <strong>22.123 Users (80%)</strong>
+                    <progress class="progress progress-xs progress-danger" value="80" max="100">80%</progress>
+                </li>
+                <li class="hidden-xs-down">
+                    <div class="text-muted">Bounce Rate</div>
+                    <strong>40.15%</strong>
+                    <progress class="progress progress-xs progress-primary" value="40" max="100">40%</progress>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/.card-->
+
+    <div class="row" ng-controller="socialBoxCtrl">
+        <div class="col-sm-6 col-lg-3">
+            <div class="social-box facebook">
+                <i class="fa fa-facebook"></i>
+                <div class="chart-wrapper">
+                    <canvas class="chart chart-line" chart-data="data1" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" height="90"></canvas>
+                </div>
+                <ul>
+                    <li>
+                        <strong>89k</strong>
+                        <span>friends</span>
+                    </li>
+                    <li>
+                        <strong>459</strong>
+                        <span>feeds</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/.social-box-->
+        </div>
+        <!--/.col-->
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="social-box twitter">
+                <i class="fa fa-twitter"></i>
+                <div class="chart-wrapper">
+                    <canvas class="chart chart-line" chart-data="data2" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" height="90"></canvas>
+                </div>
+                <ul>
+                    <li>
+                        <strong>973k</strong>
+                        <span>followers</span>
+                    </li>
+                    <li>
+                        <strong>1.792</strong>
+                        <span>tweets</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/.social-box-->
+        </div>
+        <!--/.col-->
+
+        <div class="col-sm-6 col-lg-3">
+
+            <div class="social-box linkedin">
+                <i class="fa fa-linkedin"></i>
+                <div class="chart-wrapper">
+                    <canvas class="chart chart-line" chart-data="data3" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" height="90"></canvas>
+                </div>
+                <ul>
+                    <li>
+                        <strong>500+</strong>
+                        <span>contacts</span>
+                    </li>
+                    <li>
+                        <strong>292</strong>
+                        <span>feeds</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/.social-box-->
+        </div>
+        <!--/.col-->
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="social-box google-plus">
+                <i class="fa fa-google-plus"></i>
+                <div class="chart-wrapper">
+                    <canvas class="chart chart-line" chart-data="data4" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" height="90"></canvas>
+                </div>
+                <ul>
+                    <li>
+                        <strong>894</strong>
+                        <span>followers</span>
+                    </li>
+                    <li>
+                        <strong>92</strong>
+                        <span>circles</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/.social-box-->
+        </div>
+        <!--/.col-->
+    </div>
+    <!--/.row-->
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    Traffic &amp; Sales
+                </div>
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="callout callout-info">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data4" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="primary" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                                <div class="col-sm-6">
+                                    <div class="callout callout-danger">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data3" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="danger" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                            </div>
+                            <!--/.row-->
+                            <hr class="m-t-0">
+                            <ul class="horizontal-bars" ng-controller="horizontalBarsCtrl">
+                                <li ng-repeat="row in data">
+                                    <div class="title">
+                                        {{ row.day }}
+                                    </div>
+                                    <div class="bars">
+                                        <progress class="progress progress-xs progress-info" value="{{ row.new }}" max="100" style="margin-bottom: 2px;">{{ row.new }}%</progress>
+                                        <progress class="progress progress-xs progress-danger m-a-0" value="{{ row.recurring }}" max="100">{{ row.recurring }}%</progress>
+                                    </div>
+                                </li>
+                                <li class="legend">
+                                    <span class="tag tag-pill tag-info"></span>
+                                    <small>New clients</small>&nbsp;
+                                    <span class="tag tag-pill tag-danger"></span>
+                                    <small>Recurring clients</small>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.col-->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="callout callout-warning">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data4" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="warning" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                                <div class="col-sm-6">
+                                    <div class="callout callout-success">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data3" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="success" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                            </div>
+                            <!--/.row-->
+                            <hr class="m-t-0">
+                            <ul class="horizontal-bars type-2" ng-controller="horizontalBarsType2Ctrl">
+                                <li ng-repeat="row in gender">
+                                    <i ng-class="row.icon"></i>
+                                    <span class="title">{{ row.title }}</span>
+                                    <span class="value">{{ row.value }}%</span>
+                                    <div class="bars">
+                                        <progress class="progress progress-xs progress-warning m-a-0" value="{{ row.value }}" max="100">{{ row.value }}%</progress>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li ng-repeat="row in source">
+                                    <i ng-class="row.icon"></i>
+                                    <span class="title">{{ row.title }}</span>
+                                    <span class="value">{{ row.value | number }}
+                                        <span class="text-muted small">({{ row.percent }}%)</span>
+                                    </span>
+                                    <div class="bars">
+                                        <progress class="progress progress-xs progress-success m-a-0" value="{{ row.percent }}" max="100">{{ row.percent }}%</progress>
+                                    </div>
+                                </li>
+                                <li class="divider text-xs-center">
+                                    <button type="button" class="btn btn-sm btn-link text-muted" data-toggle="tooltip" data-placement="top" title="show more"><i class="icon-options"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.col-->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="callout">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data4" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="default" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                                <div class="col-sm-6">
+                                    <div class="callout callout-primary">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data3" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="primary" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                            </div>
+                            <!--/.row-->
+                            <hr class="m-t-0">
+                            <ul class="icons-list">
+                                <li>
+                                    <i class="icon-screen-desktop bg-primary"></i>
+                                    <div class="desc">
+                                        <div class="title">iMac 4k</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">Sold this week</div>
+                                        <strong>1.924</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-screen-smartphone bg-info"></i>
+                                    <div class="desc">
+                                        <div class="title">Samsung Galaxy Edge</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">Sold this week</div>
+                                        <strong>1.224</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-screen-smartphone bg-warning"></i>
+                                    <div class="desc">
+                                        <div class="title">iPhone 6S</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">Sold this week</div>
+                                        <strong>1.163</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-user bg-danger"></i>
+                                    <div class="desc">
+                                        <div class="title">Premium accounts</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">Sold this week</div>
+                                        <strong>928</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-social-spotify bg-success"></i>
+                                    <div class="desc">
+                                        <div class="title">Spotify Subscriptions</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">Sold this week</div>
+                                        <strong>893</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-cloud-download bg-danger"></i>
+                                    <div class="desc">
+                                        <div class="title">Ebook</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">Downloads</div>
+                                        <strong>121.924</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-camera bg-warning"></i>
+                                    <div class="desc">
+                                        <div class="title">Photos</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">Uploaded</div>
+                                        <strong>12.125</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="divider text-xs-center">
+                                    <button type="button" class="btn btn-sm btn-link text-muted" data-toggle="tooltip" data-placement="top" title="show more"><i class="icon-options"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.col-->
+                    </div>
+                    <!--/.row-->
+                    <br/>
+                    <table class="table table-hover table-outline m-b-0 hidden-sm-down">
+                        <thead class="thead-default">
+                            <tr>
+                                <th class="text-xs-center"><i class="icon-people"></i>
+                                </th>
+                                <th>User</th>
+                                <th class="text-xs-center">Country</th>
+                                <th>Usage</th>
+                                <th class="text-xs-center">Payment Method</th>
+                                <th>Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody ng-controller="usersTableCtrl">
+                            <tr ng-repeat="user in users">
+                                <td class="text-xs-center">
+                                    <div class="avatar">
+                                        <img ng-src="img/avatars/{{ user.avatar }}" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                        <span class="avatar-status" ng-class="{ 'tag-success' : user.status == 'active',
+                                                                                'tag-warning' : user.status == 'away',
+                                                                                'tag-danger'  : user.status == 'busy',
+                                                                                'tag-default' : user.status == 'offline' }"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>{{ user.name }}</div>
+                                    <div class="small text-muted">
+                                        <span ng-if="user.new == true">New</span>
+                                        <span ng-if="user.new == false">Recurring</span>
+                                        | Registered: {{ user.registered }}</div>
+                                </td>
+                                <td class="text-xs-center">
+                                    <img ng-src="img/flags/{{ user.flag }}" alt="{{ user.country }}" style="height:24px;">
+                                </td>
+                                <td>
+                                    <div class="clearfix">
+                                        <div class="pull-left">
+                                            <strong>{{ user.usage }}%</strong>
+                                        </div>
+                                        <div class="pull-right">
+                                            <small class="text-muted">{{ user.period }}</small>
+                                        </div>
+                                    </div>
+                                    <progress class="progress progress-xs" ng-class="{ 'progress-info'    : user.usage <= 25,
+                                                          'progress-success' : user.usage > 25 && user.usage <= 50,
+                                                          'progress-warning' : user.usage > 50 && user.usage <= 75,
+                                                          'progress-danger'  : user.usage > 75 && user.usage <= 100 }" value="{{ user.usage }}" max="100" style="margin:5px 0 0 0;">{{ user.usage }}%</progress>
+                                </td>
+                                <td class="text-xs-center">
+                                    <i class="fa" ng-class="{ 'fa-cc-mastercard' : user.payment == 'mastercard',
+                                                   'fa-cc-visa' : user.payment == 'visa',
+                                                   'fa-cc-amex' : user.payment == 'amex',
+                                                   'fa-cc-diners-club' : user.payment == 'diners',
+                                                   'fa-cc-stripe' : user.payment == 'stripe',
+                                                   'fa-paypal' : user.payment == 'paypal',
+                                                   'fa-google-wallet' : user.payment == 'google' }" style="font-size:24px"></i>
+                                </td>
+                                <td>
+                                    <div class="small text-muted">Last login</div>
+                                    <strong>{{ user.activity }}</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--/.col-->
+    </div>
+    <!--/.row-->
+
+</div>
