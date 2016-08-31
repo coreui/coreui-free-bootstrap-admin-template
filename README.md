@@ -20,19 +20,14 @@ Within the download you'll find the following directories and files, You'll see 
 
 ```
 CoreUI/
-├── Angular_Dev_Grunt/
-├── Angular_Seed_Grunt/
-├── jQuery_Dev_Grunt/
-├── jQuery_Seed_Grunt/
-├── Static_Dev_Grunt/
-├── Static_Seed_Grunt/
-└── dist/
-    ├── Angular_Dev/
-    ├── Angular_Seed/
-    ├── jQuery_Dev/
-    ├── jQuery_Seed/
-    ├── Static_Dev/
-    └── Static_Seed/
+├── Angular_Dev/
+├── Angular_Seed/
+├── Angular2_Dev/
+├── jQuery_Dev/
+├── jQuery_Seed/
+├── Static_Dev/
+├── Static_Seed/
+
 ```
 
 ##Bugs and feature requests
