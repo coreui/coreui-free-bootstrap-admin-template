@@ -1,10 +1,7 @@
 import { Component }        from '@angular/core';
-import { CHART_DIRECTIVES } from 'ng2-charts/ng2-charts';
-
 
 @Component({
-    templateUrl: 'app/charts/charts.component.html',
-    directives: [ CHART_DIRECTIVES ]
+    templateUrl: 'app/charts/charts.component.html'
 })
 export class ChartsComponent {
 

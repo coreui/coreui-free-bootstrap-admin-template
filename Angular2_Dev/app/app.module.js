@@ -12,6 +12,11 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var ng2_bootstrap_1 = require('ng2-bootstrap/ng2-bootstrap');
+var nav_dropdown_directive_1 = require('./shared/nav-dropdown.directive');
+var ng2_charts_1 = require('ng2-charts/ng2-charts');
+var sidebar_directive_1 = require('./shared/sidebar.directive');
+var aside_directive_1 = require('./shared/aside.directive');
+var breadcrumb_component_1 = require('./shared/breadcrumb.component');
 var app_routing_1 = require('./app.routing');
 //Layouts
 var full_layout_component_1 = require('./layouts/full-layout.component');
@@ -44,11 +49,11 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                app_routing_1.routing
+                app_routing_1.routing,
+                ng2_bootstrap_1.Ng2BootstrapModule,
             ],
             declarations: [
                 app_component_1.AppComponent,
-                ng2_bootstrap_1.DROPDOWN_DIRECTIVES,
                 full_layout_component_1.FullLayoutComponent,
                 simple_layout_component_1.SimpleLayoutComponent,
                 dashboard_component_1.DashboardComponent,
@@ -65,9 +70,13 @@ var AppModule = (function () {
                 _404_component_1.p404Component,
                 _500_component_1.p500Component,
                 login_component_1.LoginComponent,
-                register_component_1.RegisterComponent
+                register_component_1.RegisterComponent,
+                nav_dropdown_directive_1.NAV_DROPDOWN_DIRECTIVES,
+                breadcrumb_component_1.BreadcrumbsComponent,
+                ng2_charts_1.CHART_DIRECTIVES,
+                sidebar_directive_1.SIDEBAR_TOGGLE_DIRECTIVES,
+                aside_directive_1.AsideToggleDirective
             ],
-            providers: [],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

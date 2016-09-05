@@ -2,7 +2,13 @@ import { NgModule }                     from '@angular/core';
 import { BrowserModule }                from '@angular/platform-browser';
 
 import { AppComponent }                 from './app.component';
-import { DROPDOWN_DIRECTIVES }          from 'ng2-bootstrap/ng2-bootstrap';
+import { Ng2BootstrapModule }           from 'ng2-bootstrap/ng2-bootstrap';
+import { NAV_DROPDOWN_DIRECTIVES }      from './shared/nav-dropdown.directive';
+
+import { CHART_DIRECTIVES }             from 'ng2-charts/ng2-charts';
+import { SIDEBAR_TOGGLE_DIRECTIVES }    from './shared/sidebar.directive';
+import { AsideToggleDirective }         from './shared/aside.directive';
+import { BreadcrumbsComponent }         from './shared/breadcrumb.component';
 import { routing }                      from './app.routing';
 
 //Layouts
@@ -39,11 +45,11 @@ import { RegisterComponent }            from './pages/register.component';
 @NgModule({
   imports: [
     BrowserModule,
-    routing
+    routing,
+    Ng2BootstrapModule,
   ],
   declarations: [
     AppComponent,
-    DROPDOWN_DIRECTIVES,
     FullLayoutComponent,
     SimpleLayoutComponent,
     DashboardComponent,
@@ -60,9 +66,13 @@ import { RegisterComponent }            from './pages/register.component';
     p404Component,
     p500Component,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NAV_DROPDOWN_DIRECTIVES,
+    BreadcrumbsComponent,
+    CHART_DIRECTIVES,
+    SIDEBAR_TOGGLE_DIRECTIVES,
+    AsideToggleDirective
   ],
-  providers: [],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

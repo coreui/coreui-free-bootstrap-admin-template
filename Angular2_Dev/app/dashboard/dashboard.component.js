@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var ng2_charts_1 = require('ng2-charts/ng2-charts');
 var DashboardComponent = (function () {
     function DashboardComponent(router) {
         this.router = router;
@@ -450,8 +449,7 @@ var DashboardComponent = (function () {
     };
     DashboardComponent = __decorate([
         core_1.Component({
-            templateUrl: './app/dashboard/dashboard.component.html',
-            directives: [ng2_charts_1.CHART_DIRECTIVES]
+            templateUrl: './app/dashboard/dashboard.component.html'
         }), 
         __metadata('design:paramtypes', [router_1.Router])
     ], DashboardComponent);

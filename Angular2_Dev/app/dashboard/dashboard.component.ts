@@ -1,10 +1,8 @@
 import { Component, OnInit }    from '@angular/core';
 import { Router }               from '@angular/router';
-import { CHART_DIRECTIVES }     from 'ng2-charts/ng2-charts';
 
 @Component({
-    templateUrl: './app/dashboard/dashboard.component.html',
-    directives: [ CHART_DIRECTIVES ]
+    templateUrl: './app/dashboard/dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
 

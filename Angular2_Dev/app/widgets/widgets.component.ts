@@ -1,9 +1,7 @@
 import { Component }        from '@angular/core';
-import { CHART_DIRECTIVES } from 'ng2-charts/ng2-charts';
 
 @Component({
-    templateUrl: 'app/widgets/widgets.component.html',
-    directives: [ CHART_DIRECTIVES ]
+    templateUrl: 'app/widgets/widgets.component.html'
 })
 export class WidgetsComponent {
 
@@ -356,7 +354,7 @@ export class WidgetsComponent {
                 display:false,
             }]
         },
-        elements: { point: { radius: 0 } }
+        elements: { point: { radius: 0 } },
         legend: {
             display: false
         }

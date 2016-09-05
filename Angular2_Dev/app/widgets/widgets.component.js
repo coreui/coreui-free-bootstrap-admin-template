@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var ng2_charts_1 = require('ng2-charts/ng2-charts');
 var WidgetsComponent = (function () {
     function WidgetsComponent() {
         this.brandPrimary = '#20a8d8';
@@ -371,8 +370,7 @@ var WidgetsComponent = (function () {
     };
     WidgetsComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/widgets/widgets.component.html',
-            directives: [ng2_charts_1.CHART_DIRECTIVES]
+            templateUrl: 'app/widgets/widgets.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], WidgetsComponent);
