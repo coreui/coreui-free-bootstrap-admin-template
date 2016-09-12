@@ -451,9 +451,10 @@ var DashboardComponent = (function () {
         core_1.Component({
             templateUrl: './app/dashboard/dashboard.component.html'
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object])
     ], DashboardComponent);
     return DashboardComponent;
+    var _a;
 }());
 exports.DashboardComponent = DashboardComponent;
 //# sourceMappingURL=dashboard.component.js.map

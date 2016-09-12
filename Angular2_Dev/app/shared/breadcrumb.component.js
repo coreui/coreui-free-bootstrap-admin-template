@@ -42,9 +42,10 @@ var BreadcrumbsComponent = (function () {
             selector: 'breadcrumbs',
             template: "\n    <li class=\"breadcrumb-item\" *ngFor=\"let breadcrumb of breadcrumbs; let last = last\" [ngClass]=\"{active: last}\">\n    <a *ngIf=\"!last\" [routerLink]=\"breadcrumb.url\">{{breadcrumb.label.title}}</a>\n    <span *ngIf=\"last\" [routerLink]=\"breadcrumb.url\">{{breadcrumb.label.title}}</span>\n    </li>"
         }), 
-        __metadata('design:paramtypes', [router_1.Router, router_1.ActivatedRoute])
+        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object])
     ], BreadcrumbsComponent);
     return BreadcrumbsComponent;
+    var _a, _b;
 }());
 exports.BreadcrumbsComponent = BreadcrumbsComponent;
 //# sourceMappingURL=breadcrumb.component.js.map
