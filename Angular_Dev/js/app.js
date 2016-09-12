@@ -1,10 +1,3 @@
-// Core Admin App configuration
-var appName = 'Core Admin';
-var breadcrumbPrefix = true;
-
-// General
-var headTitle = 'Core Admin';
-
 //Default colors
 var brandPrimary =  '#20a8d8';
 var brandSuccess =  '#4dbd74';

@@ -31,36 +31,6 @@ body:not(.top-nav) {
             }
         }
 
-        .sidebar-header {
-            padding-bottom: 10px;
-            text-align: center;
-            background: $sidebar-header-bg;
-
-            .img-avatar {
-                width: 80px;
-                margin: 20px auto 10px;
-                border-radius: 50em;
-            }
-
-            .text-muted {
-                margin-top: -5px;
-            }
-
-            > .btn-group {
-                margin-top: 10px;
-            }
-
-            .btn-link {
-                color: $text-muted;
-
-                &:hover {
-                    color: $sidebar-color;
-                    text-decoration: none;
-                }
-            }
-
-        }
-
         .sidebar-nav {
             position: relative;
             overflow-x: hidden;
@@ -225,108 +195,6 @@ body:not(.top-nav) {
                 }
             }
         }
-
-        .sidebar-footer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: $sidebar-width;
-            height: 86px;
-            padding: 10px 0 0;
-            overflow: visible;
-            background: $sidebar-footer-bg;
-
-            ul.sidebar-footer-menu {
-                position: relative;
-                display: table;
-                width: 100%;
-                padding: 0;
-                margin: 0;
-                table-layout: fixed;
-
-                li {
-                    display: table-cell;
-                    text-align: center;
-
-                    button {
-                        color: #fff;
-                        background: none;
-                        border: 0;
-
-                        i {
-                            display: block;
-                            font-size: 20px;
-                        }
-
-                        span {
-                            font-size: 10px;
-                        }
-                    }
-                }
-
-                .dropdown-menu {
-                    position: fixed;
-                    bottom: 85px;
-                    left: 5px;
-                    width: $sidebar-width - 10;
-                    overflow: hidden;
-                    background: #fff;
-                    border: 0;
-
-                    div {
-
-                        .title {
-                            font-size: 12px;
-
-                            span {
-                                float: right;
-                                font-weight: 600;
-                            }
-                        }
-                    }
-                }
-
-                .btn-group .dropdown-toggle:active,
-                .btn-group.open .dropdown-toggle {
-
-                    &:before {
-                        position: absolute;
-                        top: -8px;
-                        margin-left: -8px;
-                        content: '';
-                        border-top: 8px solid #fff;
-                        border-right: 8px solid transparent;
-                        border-left: 8px solid transparent;
-                    }
-                }
-            }
-
-            ul.terms {
-                position: relative;
-                display: table;
-                width: 100%;
-                padding: 0;
-                line-height: 30px;
-                table-layout: fixed;
-                background: $sidebar-footer-bg;
-
-                li {
-                    display: table-cell;
-                    padding: 0;
-                    font-size: 12px;
-                    text-align: center;
-
-                    a {
-                        color: $text-muted;
-                        text-decoration: none;
-
-                        &:hover {
-                            color: #fff;
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -337,24 +205,8 @@ body:not(.top-nav) {
             z-index: $zindex-navbar-fixed - 1;
             width: $sidebar-compact-width;
 
-            .sidebar-header {
-                padding: 0;
-
-                .img-avatar {
-                    width: $sidebar-compact-width - 10px;
-                    margin: 5px auto;
-                }
-                div {
-                    display: none;
-                }
-            }
-
             .sidebar-items {
                 overflow: visible;
-            }
-
-            .sidebar-footer {
-                display: none;
             }
 
             ul.nav {
@@ -407,11 +259,6 @@ body:not(.top-nav) {
 
                         &:hover {
                             width: $sidebar-width;
-                            @include hover-state();
-
-                            &.nav-dropdown-toggle, &.nav-dropdown-toggle.active {
-                                @include hover-state();
-                            }
 
                             .tag {
                                 display: inline;
@@ -442,7 +289,6 @@ body:not(.top-nav) {
 
                     &.nav-dropdown {
                         &.open {
-                            @include hover-state();
                             > ul, > ol {
                                 display: none;
                             }
@@ -456,7 +302,6 @@ body:not(.top-nav) {
                             } @else {
                                 width: $sidebar-width;
                             }
-                            @include hover-state();
                         }
 
                         > ul, > ol {
