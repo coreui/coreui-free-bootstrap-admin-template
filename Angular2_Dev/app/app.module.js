@@ -51,6 +51,7 @@ var AppModule = (function () {
                 platform_browser_1.BrowserModule,
                 app_routing_1.routing,
                 ng2_bootstrap_1.Ng2BootstrapModule,
+                ng2_charts_1.ChartsModule
             ],
             declarations: [
                 app_component_1.AppComponent,
@@ -73,7 +74,6 @@ var AppModule = (function () {
                 register_component_1.RegisterComponent,
                 nav_dropdown_directive_1.NAV_DROPDOWN_DIRECTIVES,
                 breadcrumb_component_1.BreadcrumbsComponent,
-                ng2_charts_1.CHART_DIRECTIVES,
                 sidebar_directive_1.SIDEBAR_TOGGLE_DIRECTIVES,
                 aside_directive_1.AsideToggleDirective
             ],
