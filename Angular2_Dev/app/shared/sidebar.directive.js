@@ -62,6 +62,46 @@ var SidebarToggleDirective = (function () {
     return SidebarToggleDirective;
 }());
 exports.SidebarToggleDirective = SidebarToggleDirective;
+var MobileSidebarToggleDirective = (function () {
+    function MobileSidebarToggleDirective() {
+    }
+    //Check if element has class
+    MobileSidebarToggleDirective.prototype.hasClass = function (target, elementClassName) {
+        return new RegExp('(\\s|^)' + elementClassName + '(\\s|$)').test(target.className);
+    };
+    //Toggle element class
+    MobileSidebarToggleDirective.prototype.toggleClass = function (elem, elementClassName) {
+        var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+        if (this.hasClass(elem, elementClassName)) {
+            while (newClass.indexOf(' ' + elementClassName + ' ') >= 0) {
+                newClass = newClass.replace(' ' + elementClassName + ' ', ' ');
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        }
+        else {
+            elem.className += ' ' + elementClassName;
+        }
+    };
+    MobileSidebarToggleDirective.prototype.toggleOpen = function ($event) {
+        $event.preventDefault();
+        this.toggleClass(document.querySelector('body'), 'mobile-open');
+        console.log('asdasdasd');
+    };
+    __decorate([
+        core_1.HostListener('click', ['$event']), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Object]), 
+        __metadata('design:returntype', void 0)
+    ], MobileSidebarToggleDirective.prototype, "toggleOpen", null);
+    MobileSidebarToggleDirective = __decorate([
+        core_1.Directive({
+            selector: '[mobile-nav-toggle]',
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MobileSidebarToggleDirective);
+    return MobileSidebarToggleDirective;
+}());
+exports.MobileSidebarToggleDirective = MobileSidebarToggleDirective;
 /**
 * Allows the off-canvas sidebar to be closed via click.
 */
@@ -106,5 +146,5 @@ var SidebarOffCanvasCloseDirective = (function () {
     return SidebarOffCanvasCloseDirective;
 }());
 exports.SidebarOffCanvasCloseDirective = SidebarOffCanvasCloseDirective;
-exports.SIDEBAR_TOGGLE_DIRECTIVES = [SidebarToggleDirective, SidebarOffCanvasCloseDirective];
+exports.SIDEBAR_TOGGLE_DIRECTIVES = [SidebarToggleDirective, SidebarOffCanvasCloseDirective, MobileSidebarToggleDirective];
 //# sourceMappingURL=sidebar.directive.js.map
