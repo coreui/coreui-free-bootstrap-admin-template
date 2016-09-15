@@ -1,10 +1,10 @@
-import { Angular2DevelopmentCLIPage } from './app.po';
+import { CoreUIPage } from './app.po';
 
-describe('-angular2-development-cli App', function() {
-  let page: Angular2DevelopmentCLIPage;
+describe('core-ui App', function() {
+  let page: CoreUIPage;
 
   beforeEach(() => {
-    page = new Angular2DevelopmentCLIPage();
+    page = new CoreUIPage();
   });
 
   it('should display message saying app works', () => {

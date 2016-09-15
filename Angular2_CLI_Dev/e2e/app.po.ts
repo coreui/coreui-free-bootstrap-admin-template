@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor/globals';
 
-export class Angular2DevelopmentCLIPage {
+export class CoreUIPage {
   navigateTo() {
     return browser.get('/');
   }
