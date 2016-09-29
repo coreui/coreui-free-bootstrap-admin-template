@@ -124,12 +124,12 @@ if ($.ajaxLoad) {
 			e.preventDefault();
 		} else if ( $(this).attr('target') == '_top' ) {
 			e.preventDefault();
-		    $this = $(e.currentTarget);
-		    window.location = ($this.attr('href'));
+		    var target = $(e.currentTarget);
+		    window.location = (target.attr('href'));
 		} else if ( $(this).attr('target') == '_blank' ) {
 			e.preventDefault();
-			$this = $(e.currentTarget);
-			window.open($this.attr('href'));
+			var target = $(e.currentTarget);
+			window.open(target.attr('href'));
 		} else {
 			e.preventDefault();
 			var target = $(e.currentTarget);
