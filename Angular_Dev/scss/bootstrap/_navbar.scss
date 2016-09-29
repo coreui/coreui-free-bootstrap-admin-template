@@ -1,256 +1,109 @@
-// Wrapper and base class
-//
-// Provide a static navbar from which we expand to create full-width, fixed, and
-// other navbar variations.
+header.navbar {
+    position: relative;
+    height: $navbar-height;
+    padding: 0;
+    line-height: $navbar-height;
+    background-color: $navbar-bg;
+    @include borders($navbar-border);
 
-.navbar {
-  position: relative;
-  padding: $navbar-padding-y $navbar-padding-x;
-  @include clearfix;
+    .container-fluid {
+        padding: 0;
+    }
 
-  @include media-breakpoint-up(sm) {
-    @include border-radius($navbar-border-radius);
-  }
+    .nav-item {
+        position: relative;
+        min-width: 50px;
+        margin: 0 !important;
+        text-align: center;
+
+        .nav-link {
+            i {
+                vertical-align: middle;
+            }
+
+            .tag {
+                position: absolute;
+                top: 9px;
+                right: 7px;
+            }
+        }
+    }
+
+    .img-avatar {
+        height: $navbar-height - 20px;
+        margin: 0 10px;
+    }
+
+    .dropdown-menu {
+        padding-bottom: 0;
+        line-height: $line-height-base;
+    }
+
+    .dropdown-item {
+        min-width: 180px;
+    }
+
+    a.navbar-brand {
+        display: inline-block;
+        width: $navbar-brand-width;
+        height: $navbar-height;
+        padding: $navbar-padding-y $navbar-padding-x;
+        background-color: $navbar-brand-bg;
+        background-image: $navbar-brand-logo;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: $navbar-brand-logo-size;
+        @include borders($navbar-brand-border);
+    }
 }
 
-
-// Navbar alignment options
-//
-// Display the navbar across the entirety of the page or fixed it to the top or
-// bottom of the page.
-
-// A static, full width modifier with no rounded corners.
-.navbar-full {
-  z-index: $zindex-navbar;
-
-  @include media-breakpoint-up(sm) {
-    @include border-radius(0);
-  }
+header.navbar {
+    .navbar-brand {
+        margin-right: 0;
+    }
 }
-
-// Fix the top/bottom navbars when screen real estate supports it
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: $zindex-navbar-fixed;
-
-  // Undo the rounded corners
-  @include media-breakpoint-up(sm) {
-    @include border-radius(0);
-  }
-}
-
-.navbar-fixed-top {
-  top: 0;
-}
-
-.navbar-fixed-bottom {
-  bottom: 0;
-}
-
-.navbar-sticky-top {
-  position: sticky;
-  top: 0;
-  z-index: $zindex-navbar-sticky;
-  width: 100%;
-
-  // Undo the rounded corners
-  @include media-breakpoint-up(sm) {
-    @include border-radius(0);
-  }
-}
-
-
-//
-// Brand/project name
-//
-
-.navbar-brand {
-  float: left;
-  padding-top:    $navbar-brand-padding-y;
-  padding-bottom: $navbar-brand-padding-y;
-  margin-right: 1rem;
-  font-size: $font-size-lg;
-
-  @include hover-focus {
-    text-decoration: none;
-  }
-
-  > img {
-    display: block;
-  }
-}
-
-
-.navbar-divider {
-  float: left;
-  width: $border-width;
-  padding-top: .425rem;
-  padding-bottom: .425rem;
-  margin-right: $navbar-padding-x;
-  margin-left:  $navbar-padding-x;
-  overflow: hidden;
-
-  &::before {
-    content: "\00a0";
-  }
-}
-
-
-// Navbar toggle
-//
-// Custom button for toggling the `.navbar-collapse`, powered by the collapse
-// Bootstrap JavaScript plugin.
 
 .navbar-toggler {
-  padding: .5rem .75rem;
-  font-size: $font-size-lg;
-  line-height: 1;
-  background: none;
-  border: $border-width solid transparent;
-  @include border-radius($btn-border-radius);
-
-  @include hover-focus {
-    text-decoration: none;
-  }
+    padding: 0 .75em;
+    line-height: $navbar-height - 4px;
 }
 
-// Navigation
-//
-// Custom navbar navigation built on the base `.nav` styles.
+header.navbar {
+    .navbar-nav {
+        .nav-link {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.navbar-brand {
+    color: $navbar-active-color;
+
+    @include hover-focus {
+        color: $navbar-active-color;
+    }
+}
 
 .navbar-nav {
-  .nav-item {
-    float: left;
-  }
-
-  .nav-link {
-    display: block;
-    padding-top:    .425rem;
-    padding-bottom: .425rem;
-
-    + .nav-link {
-      margin-left: 1rem;
-    }
-  }
-
-  .nav-item + .nav-item {
-    margin-left: 1rem;
-  }
-}
-
-// Dark links against a light background
-.navbar-light {
-  .navbar-brand {
-    color: $navbar-light-active-color;
-
-    @include hover-focus {
-      color: $navbar-light-active-color;
-    }
-  }
-
-  .navbar-nav {
     .nav-link {
-      color: $navbar-light-color;
+        color: $navbar-color;
 
-      @include hover-focus {
-        color: $navbar-light-hover-color;
-      }
+        @include hover-focus {
+            color: $navbar-hover-color;
+        }
     }
 
     .open > .nav-link,
     .active > .nav-link,
     .nav-link.open,
     .nav-link.active {
-      @include plain-hover-focus {
-        color: $navbar-light-active-color;
-      }
+        @include plain-hover-focus {
+            color: $navbar-active-color;
+        }
     }
-  }
+}
 
-  .navbar-divider {
+.navbar-divider {
     background-color: rgba(0,0,0,.075);
-  }
-}
-
-// White links against a dark background
-.navbar-dark {
-  .navbar-brand {
-    color: $navbar-dark-active-color;
-
-    @include hover-focus {
-      color: $navbar-dark-active-color;
-    }
-  }
-
-  .navbar-nav {
-    .nav-link {
-      color: $navbar-dark-color;
-
-      @include hover-focus {
-        color: $navbar-dark-hover-color;
-      }
-    }
-
-    .open > .nav-link,
-    .active > .nav-link,
-    .nav-link.open,
-    .nav-link.active {
-      @include plain-hover-focus {
-        color: $navbar-dark-active-color;
-      }
-    }
-  }
-
-  .navbar-divider {
-    background-color: rgba(255,255,255,.075);
-  }
-}
-
-
-// Navbar toggleable
-//
-// Custom override for collapse plugin in navbar.
-
-.navbar-toggleable {
-  &-xs {
-    @include clearfix;
-    @include media-breakpoint-down(xs) {
-      .navbar-nav .nav-item {
-        float: none;
-        margin-left: 0;
-      }
-    }
-    @include media-breakpoint-up(sm) {
-      display: block !important;
-    }
-  }
-
-  &-sm {
-    @include clearfix;
-    @include media-breakpoint-down(sm) {
-      .navbar-nav .nav-item {
-        float: none;
-        margin-left: 0;
-      }
-    }
-    @include media-breakpoint-up(md) {
-      display: block !important;
-    }
-  }
-
-  &-md {
-    @include clearfix;
-    @include media-breakpoint-down(md) {
-      .navbar-nav .nav-item {
-        float: none;
-        margin-left: 0;
-      }
-    }
-    @include media-breakpoint-up(lg) {
-      display: block !important;
-    }
-  }
 }
