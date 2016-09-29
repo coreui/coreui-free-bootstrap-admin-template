@@ -1,0 +1,116 @@
+nav.top-nav {
+    position: absolute;
+    top: $navbar-height;
+    left: 0;
+    z-index: $zindex-navbar-fixed - 1;
+    display: inline !important;
+    width: 100%;
+    height: $top-nav-height;
+    background: $top-nav-bg;
+    @include borders($top-nav-borders);
+
+    ul.nav {
+        white-space: nowrap;
+
+        li.nav-item {
+            position: relative;
+            display: inline-block;
+            margin: 0;
+
+            ul {
+                display: none;
+                padding: 0;
+                margin: 0;
+                white-space: normal;
+                background: $top-nav-bg;
+                @include borders($top-nav-ul-borders);
+
+
+                li {
+                    padding: 0;
+                    list-style: none;
+                }
+            }
+
+            a.nav-link {
+                display: block;
+                padding: 0 15px;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: $top-nav-height;
+                color: $top-nav-color;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                i {
+                    display: block;
+                    float: left;
+                    width: 20px;
+                    margin: 0 10px 0 0;
+                    font-size: 14px;
+                    line-height: $top-nav-height - 1px;
+                    text-align: center;
+                }
+
+                .tag {
+                    float: right;
+                    margin-top: 13px;
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    color: $top-nav-hover-color;
+                    background: $top-nav-hover-bg;
+
+                }
+
+                &.active {
+                    color: $top-nav-active-color;
+                    background: $top-nav-active-bg;
+                }
+            }
+
+            ul {
+                position: absolute;
+                top: $top-nav-height - 1px;
+                left: 0;
+
+                li {
+                    position: relative;
+                    padding: 0;
+
+                    a.nav-link {
+                        min-width: 200px;
+                    }
+
+                    ul {
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+                    }
+                }
+            }
+
+            &.nav-more {
+                ul {
+                    right: 0;
+                    left: auto;
+
+                    li {
+
+                        ul {
+                            right: 100%;
+                            left: auto;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                > ul {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
