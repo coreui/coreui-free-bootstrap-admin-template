@@ -1,4 +1,4 @@
-//Default colors
+// Default colors
 var brandPrimary =  '#20a8d8';
 var brandSuccess =  '#4dbd74';
 var brandInfo =     '#63c2de';

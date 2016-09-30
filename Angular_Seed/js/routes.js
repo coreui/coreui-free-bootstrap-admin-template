@@ -42,7 +42,10 @@ angular
                         return $ocLazyLoad.load([{
                             serie: true,
                             name: 'chart.js',
-                            files: ['js/libs/Chart.min.js', 'js/libs/angular-chart.min.js']
+                            files: [
+                                'bower_components/chart.js/dist/Chart.min.js',
+                                'bower_components/angular-chart.js/dist/angular-chart.min.js'
+                            ]
                         }]);
                     }],
                 }
@@ -63,7 +66,10 @@ angular
                             {
                                 serie: true,
                                 name: 'chart.js',
-                                files: ['js/libs/Chart.min.js', 'js/libs/angular-chart.min.js']
+                                files: [
+                                    'bower_components/chart.js/dist/Chart.min.js',
+                                    'bower_components/angular-chart.js/dist/angular-chart.min.js'
+                                ]
                             },
                         ]);
                     }],
