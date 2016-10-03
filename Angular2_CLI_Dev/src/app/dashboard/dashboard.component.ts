@@ -6,7 +6,7 @@ import { Router }               from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-    constructor( private router: Router ) { }
+    constructor( ) { }
 
     public brandPrimary:string =  '#20a8d8';
     public brandSuccess:string =  '#4dbd74';
