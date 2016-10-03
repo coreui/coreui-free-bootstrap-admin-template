@@ -21,6 +21,14 @@
             height: inherit;
         }
 
+        .navbar-toggler {
+            @if (lightness( $navbar-brand-bg ) > 40) {
+                color: $navbar-color;
+            } @else {
+                color: #fff;
+            }
+        }
+
         .navbar-brand {
             width: 100% !important;
             margin: 0 auto !important;
