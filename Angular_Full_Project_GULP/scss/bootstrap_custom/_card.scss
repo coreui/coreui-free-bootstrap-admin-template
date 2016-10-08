@@ -132,6 +132,39 @@
     }
 }
 
+[class*="card-outline-"] {
+    .card-block {
+        background: #fff !important;
+    }
+
+    &.card-outline-top {
+        border-top-width: 2px;
+        border-left-color: $border-color;
+        border-right-color: $border-color;
+        border-bottom-color: $border-color;
+    }
+}
+
+// Cards with color accent
+.card-accent-primary {
+    @include card-accent-variant($btn-primary-bg);
+}
+.card-accent-secondary {
+    @include card-accent-variant($btn-secondary-border);
+}
+.card-accent-info {
+    @include card-accent-variant($btn-info-bg);
+}
+.card-accent-success {
+    @include card-accent-variant($btn-success-bg);
+}
+.card-accent-warning {
+    @include card-accent-variant($btn-warning-bg);
+}
+.card-accent-danger {
+    @include card-accent-variant($btn-danger-bg);
+}
+
 // Card Actions
 .card-header {
     > i {
