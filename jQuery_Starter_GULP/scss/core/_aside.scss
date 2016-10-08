@@ -11,10 +11,15 @@
     @include borders($aside-menu-borders);
 
     .nav-tabs {
+        border-color: $border-color;
         .nav-link {
             padding: $aside-menu-nav-padding-y $aside-menu-nav-padding-x;
             color: $body-color;
             border-top: 0;
+            &.active {
+                border-left-color: $border-color;
+                border-right-color: $border-color;
+            }
         }
         .nav-item:first-child {
             .nav-link {

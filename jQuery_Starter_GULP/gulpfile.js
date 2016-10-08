@@ -60,14 +60,10 @@ gulp.task('clean:dist', function () {
 });
 
 gulp.task('copy:bower', function () {
-    // var f = filter('**/*.js', '!**/*.min.js');
-    var f = filter(['**/*.js', '!**/*.min.js'], {restore: true});
-
-    return gulp.src(mainBowerFiles())
-        .pipe(f)
+    return gulp.src(mainBowerFiles(['**/*.js', '!**/*.min.js']))
+        .pipe(gulp.dest(paths.dist+'/js/libs'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
-        // .pipe(f.restore)
         .pipe(gulp.dest(paths.dist+'/js/libs'));
 });
 
