@@ -1,5 +1,7 @@
 import { NgModule }                     from '@angular/core';
 import { BrowserModule }                from '@angular/platform-browser';
+import { LocationStrategy,
+    HashLocationStrategy }         from '@angular/common';
 
 import { AppComponent }                 from './app.component';
 import { Ng2BootstrapModule }           from 'ng2-bootstrap/ng2-bootstrap';
@@ -43,36 +45,40 @@ import { LoginComponent }               from './pages/login.component';
 import { RegisterComponent }            from './pages/register.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    routing,
-    Ng2BootstrapModule,
-    ChartsModule
-  ],
-  declarations: [
-    AppComponent,
-    FullLayoutComponent,
-    SimpleLayoutComponent,
-    DashboardComponent,
-    ButtonsComponent,
-    CardsComponent,
-    FormsComponent,
-    SocialButtonsComponent,
-    SwitchesComponent,
-    TablesComponent,
-    FontAwesomeComponent,
-    SimpleLineIconsComponent,
-    WidgetsComponent,
-    ChartsComponent,
-    p404Component,
-    p500Component,
-    LoginComponent,
-    RegisterComponent,
-    NAV_DROPDOWN_DIRECTIVES,
-    BreadcrumbsComponent,
-    SIDEBAR_TOGGLE_DIRECTIVES,
-    AsideToggleDirective
-  ],
-  bootstrap: [ AppComponent ]
+    imports: [
+        BrowserModule,
+        routing,
+        Ng2BootstrapModule,
+        ChartsModule
+    ],
+    declarations: [
+        AppComponent,
+        FullLayoutComponent,
+        SimpleLayoutComponent,
+        DashboardComponent,
+        ButtonsComponent,
+        CardsComponent,
+        FormsComponent,
+        SocialButtonsComponent,
+        SwitchesComponent,
+        TablesComponent,
+        FontAwesomeComponent,
+        SimpleLineIconsComponent,
+        WidgetsComponent,
+        ChartsComponent,
+        p404Component,
+        p500Component,
+        LoginComponent,
+        RegisterComponent,
+        NAV_DROPDOWN_DIRECTIVES,
+        BreadcrumbsComponent,
+        SIDEBAR_TOGGLE_DIRECTIVES,
+        AsideToggleDirective
+    ],
+    providers: [{
+        provide: LocationStrategy,
+        useClass: HashLocationStrategy
+    }],
+    bootstrap: [ AppComponent ]
 })
 export class AppModule { }
