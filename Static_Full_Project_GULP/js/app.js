@@ -41,7 +41,7 @@ $(document).ready(function($){
 			$(this).addClass('active');
 
 			$(this).parents('ul').add(this).each(function(){
-			    $(this).parent().addClass('open');
+			    $(this).parent().addClass('nt').addClass('open');
 			});
 		}
 	});
@@ -54,7 +54,7 @@ $(document).ready(function($){
 		}
 
         if ($(this).hasClass('nav-dropdown-toggle')) {
-			$(this).parent().toggleClass('open');
+			$(this).parent().removeClass('nt').toggleClass('open');
 		}
 
 	});

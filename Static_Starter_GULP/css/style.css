@@ -3190,9 +3190,9 @@ header.navbar .navbar-nav .nav-link {
 
 [class*="card-outline-"].card-outline-top {
   border-top-width: 2px;
-  border-left-color: #cfd8dc;
   border-right-color: #cfd8dc;
-  border-bottom-color: #cfd8dc; }
+  border-bottom-color: #cfd8dc;
+  border-left-color: #cfd8dc; }
 
 .card-accent-primary {
   border-top-width: 2px;
@@ -4925,7 +4925,7 @@ body:not(.top-nav).sidebar-opened.sidebar-off-canvas-with-shadow {
   position: relative;
   max-width: 100% !important;
   overflow-x: hidden !important; }
-  body:not(.top-nav).sidebar-opened.sidebar-off-canvas-with-shadow:after {
+  body:not(.top-nav).sidebar-opened.sidebar-off-canvas-with-shadow::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -5023,11 +5023,14 @@ body:not(.top-nav) .sidebar {
       height: 10px; }
     body:not(.top-nav) .sidebar ul.nav li.nav-item {
       position: relative;
-      margin: 0; }
+      margin: 0;
+      transition: background .3s ease-in-out; }
       body:not(.top-nav) .sidebar ul.nav li.nav-item ul {
-        display: none;
+        max-height: 0;
         padding: 0;
-        margin: 0; }
+        margin: 0;
+        overflow-y: hidden;
+        transition: max-height .3s ease-in-out; }
         body:not(.top-nav) .sidebar ul.nav li.nav-item ul li {
           padding: 0;
           list-style: none; }
@@ -5060,7 +5063,7 @@ body:not(.top-nav) .sidebar {
         body:not(.top-nav) .sidebar ul.nav li.nav-item a.nav-link .tag {
           float: right;
           margin-top: 2px; }
-        body:not(.top-nav) .sidebar ul.nav li.nav-item a.nav-link.nav-dropdown-toggle:before {
+        body:not(.top-nav) .sidebar ul.nav li.nav-item a.nav-link.nav-dropdown-toggle::before {
           position: absolute;
           top: 0.96875rem;
           right: 1rem;
@@ -5076,15 +5079,21 @@ body:not(.top-nav) .sidebar {
       body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.open {
         background: rgba(0, 0, 0, 0.2); }
         body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.open > ul, body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.open > ol {
-          display: inline; }
+          max-height: 1000px; }
         body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.open a.nav-link {
           color: #fff;
           border-left: 0 !important; }
-        body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.open > a.nav-link.nav-dropdown-toggle:before {
+        body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.open > a.nav-link.nav-dropdown-toggle::before {
           -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg); }
         body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.open .nav-dropdown.open {
           border-left: 0; }
+      body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.nt {
+        transition: 0s !important; }
+        body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.nt > ul, body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.nt > ol {
+          transition: 0s !important; }
+        body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.nt a.nav-link.nav-dropdown-toggle::before {
+          transition: 0s !important; }
 
 @media (min-width: 544px) {
   body.sidebar-nav.compact-nav .sidebar {
@@ -5107,7 +5116,7 @@ body:not(.top-nav) .sidebar {
         line-height: 50px;
         white-space: nowrap;
         border-left: 0 !important; }
-        body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item a.nav-link.nav-dropdown-toggle:before {
+        body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item a.nav-link.nav-dropdown-toggle::before {
           display: none; }
         body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item a.nav-link i {
           display: block;
@@ -5244,8 +5253,8 @@ nav.top-nav {
       color: #263238;
       border-top: 0; }
       .aside-menu .nav-tabs .nav-link.active {
-        border-left-color: #cfd8dc;
-        border-right-color: #cfd8dc; }
+        border-right-color: #cfd8dc;
+        border-left-color: #cfd8dc; }
     .aside-menu .nav-tabs .nav-item:first-child .nav-link {
       border-left: 0; }
   .aside-menu .tab-content {
@@ -5644,31 +5653,31 @@ footer.footer {
   font-size: 0.875rem;
   line-height: 1.5;
   border: 0; }
-  .btn-facebook:before,
-  .btn-twitter:before,
-  .btn-linkedin:before,
-  .btn-flickr:before,
-  .btn-tumblr:before,
-  .btn-xing:before,
-  .btn-github:before,
-  .btn-html5:before,
-  .btn-openid:before,
-  .btn-stack-overflow:before,
-  .btn-youtube:before,
-  .btn-css3:before,
-  .btn-dribbble:before,
-  .btn-google-plus:before,
-  .btn-instagram:before,
-  .btn-pinterest:before,
-  .btn-vk:before,
-  .btn-yahoo:before,
-  .btn-behance:before,
-  .btn-dropbox:before,
-  .btn-reddit:before,
-  .btn-spotify:before,
-  .btn-vine:before,
-  .btn-foursquare:before,
-  .btn-vimeo:before {
+  .btn-facebook::before,
+  .btn-twitter::before,
+  .btn-linkedin::before,
+  .btn-flickr::before,
+  .btn-tumblr::before,
+  .btn-xing::before,
+  .btn-github::before,
+  .btn-html5::before,
+  .btn-openid::before,
+  .btn-stack-overflow::before,
+  .btn-youtube::before,
+  .btn-css3::before,
+  .btn-dribbble::before,
+  .btn-google-plus::before,
+  .btn-instagram::before,
+  .btn-pinterest::before,
+  .btn-vk::before,
+  .btn-yahoo::before,
+  .btn-behance::before,
+  .btn-dropbox::before,
+  .btn-reddit::before,
+  .btn-spotify::before,
+  .btn-vine::before,
+  .btn-foursquare::before,
+  .btn-vimeo::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -5730,31 +5739,31 @@ footer.footer {
   .btn-foursquare.icon span,
   .btn-vimeo.icon span {
     display: none; }
-  .btn-facebook.text:before,
-  .btn-twitter.text:before,
-  .btn-linkedin.text:before,
-  .btn-flickr.text:before,
-  .btn-tumblr.text:before,
-  .btn-xing.text:before,
-  .btn-github.text:before,
-  .btn-html5.text:before,
-  .btn-openid.text:before,
-  .btn-stack-overflow.text:before,
-  .btn-youtube.text:before,
-  .btn-css3.text:before,
-  .btn-dribbble.text:before,
-  .btn-google-plus.text:before,
-  .btn-instagram.text:before,
-  .btn-pinterest.text:before,
-  .btn-vk.text:before,
-  .btn-yahoo.text:before,
-  .btn-behance.text:before,
-  .btn-dropbox.text:before,
-  .btn-reddit.text:before,
-  .btn-spotify.text:before,
-  .btn-vine.text:before,
-  .btn-foursquare.text:before,
-  .btn-vimeo.text:before {
+  .btn-facebook.text::before,
+  .btn-twitter.text::before,
+  .btn-linkedin.text::before,
+  .btn-flickr.text::before,
+  .btn-tumblr.text::before,
+  .btn-xing.text::before,
+  .btn-github.text::before,
+  .btn-html5.text::before,
+  .btn-openid.text::before,
+  .btn-stack-overflow.text::before,
+  .btn-youtube.text::before,
+  .btn-css3.text::before,
+  .btn-dribbble.text::before,
+  .btn-google-plus.text::before,
+  .btn-instagram.text::before,
+  .btn-pinterest.text::before,
+  .btn-vk.text::before,
+  .btn-yahoo.text::before,
+  .btn-behance.text::before,
+  .btn-dropbox.text::before,
+  .btn-reddit.text::before,
+  .btn-spotify.text::before,
+  .btn-vine.text::before,
+  .btn-foursquare.text::before,
+  .btn-vimeo.text::before {
     display: none; }
   .btn-facebook.text span,
   .btn-twitter.text span,
@@ -5782,31 +5791,31 @@ footer.footer {
   .btn-foursquare.text span,
   .btn-vimeo.text span {
     margin-left: 0 !important; }
-  .btn-facebook:before,
-  .btn-twitter:before,
-  .btn-linkedin:before,
-  .btn-flickr:before,
-  .btn-tumblr:before,
-  .btn-xing:before,
-  .btn-github:before,
-  .btn-html5:before,
-  .btn-openid:before,
-  .btn-stack-overflow:before,
-  .btn-youtube:before,
-  .btn-css3:before,
-  .btn-dribbble:before,
-  .btn-google-plus:before,
-  .btn-instagram:before,
-  .btn-pinterest:before,
-  .btn-vk:before,
-  .btn-yahoo:before,
-  .btn-behance:before,
-  .btn-dropbox:before,
-  .btn-reddit:before,
-  .btn-spotify:before,
-  .btn-vine:before,
-  .btn-foursquare:before,
-  .btn-vimeo:before {
+  .btn-facebook::before,
+  .btn-twitter::before,
+  .btn-linkedin::before,
+  .btn-flickr::before,
+  .btn-tumblr::before,
+  .btn-xing::before,
+  .btn-github::before,
+  .btn-html5::before,
+  .btn-openid::before,
+  .btn-stack-overflow::before,
+  .btn-youtube::before,
+  .btn-css3::before,
+  .btn-dribbble::before,
+  .btn-google-plus::before,
+  .btn-instagram::before,
+  .btn-pinterest::before,
+  .btn-vk::before,
+  .btn-yahoo::before,
+  .btn-behance::before,
+  .btn-dropbox::before,
+  .btn-reddit::before,
+  .btn-spotify::before,
+  .btn-vine::before,
+  .btn-foursquare::before,
+  .btn-vimeo::before {
     width: 2.3125rem;
     height: 2.3125rem;
     padding: 0.5rem 0;
@@ -5918,55 +5927,55 @@ footer.footer {
     font-size: 1.25rem;
     line-height: 1.33333;
     border: 0; }
-    .btn-facebook.btn-lg:before, .btn-group-lg > .btn-facebook.btn:before,
-    .btn-twitter.btn-lg:before,
-    .btn-group-lg > .btn-twitter.btn:before,
-    .btn-linkedin.btn-lg:before,
-    .btn-group-lg > .btn-linkedin.btn:before,
-    .btn-flickr.btn-lg:before,
-    .btn-group-lg > .btn-flickr.btn:before,
-    .btn-tumblr.btn-lg:before,
-    .btn-group-lg > .btn-tumblr.btn:before,
-    .btn-xing.btn-lg:before,
-    .btn-group-lg > .btn-xing.btn:before,
-    .btn-github.btn-lg:before,
-    .btn-group-lg > .btn-github.btn:before,
-    .btn-html5.btn-lg:before,
-    .btn-group-lg > .btn-html5.btn:before,
-    .btn-openid.btn-lg:before,
-    .btn-group-lg > .btn-openid.btn:before,
-    .btn-stack-overflow.btn-lg:before,
-    .btn-group-lg > .btn-stack-overflow.btn:before,
-    .btn-youtube.btn-lg:before,
-    .btn-group-lg > .btn-youtube.btn:before,
-    .btn-css3.btn-lg:before,
-    .btn-group-lg > .btn-css3.btn:before,
-    .btn-dribbble.btn-lg:before,
-    .btn-group-lg > .btn-dribbble.btn:before,
-    .btn-google-plus.btn-lg:before,
-    .btn-group-lg > .btn-google-plus.btn:before,
-    .btn-instagram.btn-lg:before,
-    .btn-group-lg > .btn-instagram.btn:before,
-    .btn-pinterest.btn-lg:before,
-    .btn-group-lg > .btn-pinterest.btn:before,
-    .btn-vk.btn-lg:before,
-    .btn-group-lg > .btn-vk.btn:before,
-    .btn-yahoo.btn-lg:before,
-    .btn-group-lg > .btn-yahoo.btn:before,
-    .btn-behance.btn-lg:before,
-    .btn-group-lg > .btn-behance.btn:before,
-    .btn-dropbox.btn-lg:before,
-    .btn-group-lg > .btn-dropbox.btn:before,
-    .btn-reddit.btn-lg:before,
-    .btn-group-lg > .btn-reddit.btn:before,
-    .btn-spotify.btn-lg:before,
-    .btn-group-lg > .btn-spotify.btn:before,
-    .btn-vine.btn-lg:before,
-    .btn-group-lg > .btn-vine.btn:before,
-    .btn-foursquare.btn-lg:before,
-    .btn-group-lg > .btn-foursquare.btn:before,
-    .btn-vimeo.btn-lg:before,
-    .btn-group-lg > .btn-vimeo.btn:before {
+    .btn-facebook.btn-lg::before, .btn-group-lg > .btn-facebook.btn::before,
+    .btn-twitter.btn-lg::before,
+    .btn-group-lg > .btn-twitter.btn::before,
+    .btn-linkedin.btn-lg::before,
+    .btn-group-lg > .btn-linkedin.btn::before,
+    .btn-flickr.btn-lg::before,
+    .btn-group-lg > .btn-flickr.btn::before,
+    .btn-tumblr.btn-lg::before,
+    .btn-group-lg > .btn-tumblr.btn::before,
+    .btn-xing.btn-lg::before,
+    .btn-group-lg > .btn-xing.btn::before,
+    .btn-github.btn-lg::before,
+    .btn-group-lg > .btn-github.btn::before,
+    .btn-html5.btn-lg::before,
+    .btn-group-lg > .btn-html5.btn::before,
+    .btn-openid.btn-lg::before,
+    .btn-group-lg > .btn-openid.btn::before,
+    .btn-stack-overflow.btn-lg::before,
+    .btn-group-lg > .btn-stack-overflow.btn::before,
+    .btn-youtube.btn-lg::before,
+    .btn-group-lg > .btn-youtube.btn::before,
+    .btn-css3.btn-lg::before,
+    .btn-group-lg > .btn-css3.btn::before,
+    .btn-dribbble.btn-lg::before,
+    .btn-group-lg > .btn-dribbble.btn::before,
+    .btn-google-plus.btn-lg::before,
+    .btn-group-lg > .btn-google-plus.btn::before,
+    .btn-instagram.btn-lg::before,
+    .btn-group-lg > .btn-instagram.btn::before,
+    .btn-pinterest.btn-lg::before,
+    .btn-group-lg > .btn-pinterest.btn::before,
+    .btn-vk.btn-lg::before,
+    .btn-group-lg > .btn-vk.btn::before,
+    .btn-yahoo.btn-lg::before,
+    .btn-group-lg > .btn-yahoo.btn::before,
+    .btn-behance.btn-lg::before,
+    .btn-group-lg > .btn-behance.btn::before,
+    .btn-dropbox.btn-lg::before,
+    .btn-group-lg > .btn-dropbox.btn::before,
+    .btn-reddit.btn-lg::before,
+    .btn-group-lg > .btn-reddit.btn::before,
+    .btn-spotify.btn-lg::before,
+    .btn-group-lg > .btn-spotify.btn::before,
+    .btn-vine.btn-lg::before,
+    .btn-group-lg > .btn-vine.btn::before,
+    .btn-foursquare.btn-lg::before,
+    .btn-group-lg > .btn-foursquare.btn::before,
+    .btn-vimeo.btn-lg::before,
+    .btn-group-lg > .btn-vimeo.btn::before {
       width: 3.16667rem;
       height: 3.16667rem;
       padding: 0.75rem 0;
@@ -6102,55 +6111,55 @@ footer.footer {
     font-size: 0.875rem;
     line-height: 1.5;
     border: 0; }
-    .btn-facebook.btn-sm:before, .btn-group-sm > .btn-facebook.btn:before,
-    .btn-twitter.btn-sm:before,
-    .btn-group-sm > .btn-twitter.btn:before,
-    .btn-linkedin.btn-sm:before,
-    .btn-group-sm > .btn-linkedin.btn:before,
-    .btn-flickr.btn-sm:before,
-    .btn-group-sm > .btn-flickr.btn:before,
-    .btn-tumblr.btn-sm:before,
-    .btn-group-sm > .btn-tumblr.btn:before,
-    .btn-xing.btn-sm:before,
-    .btn-group-sm > .btn-xing.btn:before,
-    .btn-github.btn-sm:before,
-    .btn-group-sm > .btn-github.btn:before,
-    .btn-html5.btn-sm:before,
-    .btn-group-sm > .btn-html5.btn:before,
-    .btn-openid.btn-sm:before,
-    .btn-group-sm > .btn-openid.btn:before,
-    .btn-stack-overflow.btn-sm:before,
-    .btn-group-sm > .btn-stack-overflow.btn:before,
-    .btn-youtube.btn-sm:before,
-    .btn-group-sm > .btn-youtube.btn:before,
-    .btn-css3.btn-sm:before,
-    .btn-group-sm > .btn-css3.btn:before,
-    .btn-dribbble.btn-sm:before,
-    .btn-group-sm > .btn-dribbble.btn:before,
-    .btn-google-plus.btn-sm:before,
-    .btn-group-sm > .btn-google-plus.btn:before,
-    .btn-instagram.btn-sm:before,
-    .btn-group-sm > .btn-instagram.btn:before,
-    .btn-pinterest.btn-sm:before,
-    .btn-group-sm > .btn-pinterest.btn:before,
-    .btn-vk.btn-sm:before,
-    .btn-group-sm > .btn-vk.btn:before,
-    .btn-yahoo.btn-sm:before,
-    .btn-group-sm > .btn-yahoo.btn:before,
-    .btn-behance.btn-sm:before,
-    .btn-group-sm > .btn-behance.btn:before,
-    .btn-dropbox.btn-sm:before,
-    .btn-group-sm > .btn-dropbox.btn:before,
-    .btn-reddit.btn-sm:before,
-    .btn-group-sm > .btn-reddit.btn:before,
-    .btn-spotify.btn-sm:before,
-    .btn-group-sm > .btn-spotify.btn:before,
-    .btn-vine.btn-sm:before,
-    .btn-group-sm > .btn-vine.btn:before,
-    .btn-foursquare.btn-sm:before,
-    .btn-group-sm > .btn-foursquare.btn:before,
-    .btn-vimeo.btn-sm:before,
-    .btn-group-sm > .btn-vimeo.btn:before {
+    .btn-facebook.btn-sm::before, .btn-group-sm > .btn-facebook.btn::before,
+    .btn-twitter.btn-sm::before,
+    .btn-group-sm > .btn-twitter.btn::before,
+    .btn-linkedin.btn-sm::before,
+    .btn-group-sm > .btn-linkedin.btn::before,
+    .btn-flickr.btn-sm::before,
+    .btn-group-sm > .btn-flickr.btn::before,
+    .btn-tumblr.btn-sm::before,
+    .btn-group-sm > .btn-tumblr.btn::before,
+    .btn-xing.btn-sm::before,
+    .btn-group-sm > .btn-xing.btn::before,
+    .btn-github.btn-sm::before,
+    .btn-group-sm > .btn-github.btn::before,
+    .btn-html5.btn-sm::before,
+    .btn-group-sm > .btn-html5.btn::before,
+    .btn-openid.btn-sm::before,
+    .btn-group-sm > .btn-openid.btn::before,
+    .btn-stack-overflow.btn-sm::before,
+    .btn-group-sm > .btn-stack-overflow.btn::before,
+    .btn-youtube.btn-sm::before,
+    .btn-group-sm > .btn-youtube.btn::before,
+    .btn-css3.btn-sm::before,
+    .btn-group-sm > .btn-css3.btn::before,
+    .btn-dribbble.btn-sm::before,
+    .btn-group-sm > .btn-dribbble.btn::before,
+    .btn-google-plus.btn-sm::before,
+    .btn-group-sm > .btn-google-plus.btn::before,
+    .btn-instagram.btn-sm::before,
+    .btn-group-sm > .btn-instagram.btn::before,
+    .btn-pinterest.btn-sm::before,
+    .btn-group-sm > .btn-pinterest.btn::before,
+    .btn-vk.btn-sm::before,
+    .btn-group-sm > .btn-vk.btn::before,
+    .btn-yahoo.btn-sm::before,
+    .btn-group-sm > .btn-yahoo.btn::before,
+    .btn-behance.btn-sm::before,
+    .btn-group-sm > .btn-behance.btn::before,
+    .btn-dropbox.btn-sm::before,
+    .btn-group-sm > .btn-dropbox.btn::before,
+    .btn-reddit.btn-sm::before,
+    .btn-group-sm > .btn-reddit.btn::before,
+    .btn-spotify.btn-sm::before,
+    .btn-group-sm > .btn-spotify.btn::before,
+    .btn-vine.btn-sm::before,
+    .btn-group-sm > .btn-vine.btn::before,
+    .btn-foursquare.btn-sm::before,
+    .btn-group-sm > .btn-foursquare.btn::before,
+    .btn-vimeo.btn-sm::before,
+    .btn-group-sm > .btn-vimeo.btn::before {
       width: 1.8125rem;
       height: 1.8125rem;
       padding: 0.25rem 0;
@@ -6236,252 +6245,252 @@ footer.footer {
 
 .btn-facebook {
   background: #3b5998; }
-  .btn-facebook:before {
+  .btn-facebook::before {
     content: "\f09a";
     background: #344e86; }
   .btn-facebook:hover {
     background: #344e86; }
-    .btn-facebook:hover:before {
+    .btn-facebook:hover::before {
       background: #2d4373; }
 
 .btn-twitter {
   background: #00aced; }
-  .btn-twitter:before {
+  .btn-twitter::before {
     content: "\f099";
     background: #0099d4; }
   .btn-twitter:hover {
     background: #0099d4; }
-    .btn-twitter:hover:before {
+    .btn-twitter:hover::before {
       background: #0087ba; }
 
 .btn-linkedin {
   background: #4875b4; }
-  .btn-linkedin:before {
+  .btn-linkedin::before {
     content: "\f0e1";
     background: #4169a2; }
   .btn-linkedin:hover {
     background: #4169a2; }
-    .btn-linkedin:hover:before {
+    .btn-linkedin:hover::before {
       background: #395d90; }
 
 .btn-flickr {
   background: #ff0084; }
-  .btn-flickr:before {
+  .btn-flickr::before {
     content: "\f16e";
     background: #e60077; }
   .btn-flickr:hover {
     background: #e60077; }
-    .btn-flickr:hover:before {
+    .btn-flickr:hover::before {
       background: #cc006a; }
 
 .btn-tumblr {
   background: #32506d; }
-  .btn-tumblr:before {
+  .btn-tumblr::before {
     content: "\f173";
     background: #2a435c; }
   .btn-tumblr:hover {
     background: #2a435c; }
-    .btn-tumblr:hover:before {
+    .btn-tumblr:hover::before {
       background: #22364a; }
 
 .btn-xing {
   background: #026466; }
-  .btn-xing:before {
+  .btn-xing::before {
     content: "\f168";
     background: #024b4d; }
   .btn-xing:hover {
     background: #024b4d; }
-    .btn-xing:hover:before {
+    .btn-xing:hover::before {
       background: #013334; }
 
 .btn-github {
   background: #4183c4; }
-  .btn-github:before {
+  .btn-github::before {
     content: "\f09b";
     background: #3876b4; }
   .btn-github:hover {
     background: #3876b4; }
-    .btn-github:hover:before {
+    .btn-github:hover::before {
       background: #3269a0; }
 
 .btn-html5 {
   background: #e34f26; }
-  .btn-html5:before {
+  .btn-html5::before {
     content: "\f13b";
     background: #d4431b; }
   .btn-html5:hover {
     background: #d4431b; }
-    .btn-html5:hover:before {
+    .btn-html5:hover::before {
       background: #be3c18; }
 
 .btn-openid {
   background: #f78c40; }
-  .btn-openid:before {
+  .btn-openid::before {
     content: "\f19b";
     background: #f67d28; }
   .btn-openid:hover {
     background: #f67d28; }
-    .btn-openid:hover:before {
+    .btn-openid:hover::before {
       background: #f56f0f; }
 
 .btn-stack-overflow {
   background: #fe7a15; }
-  .btn-stack-overflow:before {
+  .btn-stack-overflow::before {
     content: "\f16c";
     background: #f86c01; }
   .btn-stack-overflow:hover {
     background: #f86c01; }
-    .btn-stack-overflow:hover:before {
+    .btn-stack-overflow:hover::before {
       background: #df6101; }
 
 .btn-css3 {
   background: #0170ba; }
-  .btn-css3:before {
+  .btn-css3::before {
     content: "\f13c";
     background: #0161a1; }
   .btn-css3:hover {
     background: #0161a1; }
-    .btn-css3:hover:before {
+    .btn-css3:hover::before {
       background: #015187; }
 
 .btn-youtube {
   background: #b00; }
-  .btn-youtube:before {
+  .btn-youtube::before {
     content: "\f167";
     background: #a20000; }
   .btn-youtube:hover {
     background: #a20000; }
-    .btn-youtube:hover:before {
+    .btn-youtube:hover::before {
       background: #880000; }
 
 .btn-dribbble {
   background: #ea4c89; }
-  .btn-dribbble:before {
+  .btn-dribbble::before {
     content: "\f17d";
     background: #e7357a; }
   .btn-dribbble:hover {
     background: #e7357a; }
-    .btn-dribbble:hover:before {
+    .btn-dribbble:hover::before {
       background: #e51e6b; }
 
 .btn-google-plus {
   background: #bb4b39; }
-  .btn-google-plus:before {
+  .btn-google-plus::before {
     content: "\f0d5";
     background: #a74333; }
   .btn-google-plus:hover {
     background: #a74333; }
-    .btn-google-plus:hover:before {
+    .btn-google-plus:hover::before {
       background: #943b2d; }
 
 .btn-instagram {
   background: #517fa4; }
-  .btn-instagram:before {
+  .btn-instagram::before {
     content: "\f16d";
     background: #497293; }
   .btn-instagram:hover {
     background: #497293; }
-    .btn-instagram:hover:before {
+    .btn-instagram:hover::before {
       background: #406582; }
 
 .btn-pinterest {
   background: #cb2027; }
-  .btn-pinterest:before {
+  .btn-pinterest::before {
     content: "\f0d2";
     background: #b51d23; }
   .btn-pinterest:hover {
     background: #b51d23; }
-    .btn-pinterest:hover:before {
+    .btn-pinterest:hover::before {
       background: #9f191f; }
 
 .btn-vk {
   background: #45668e; }
-  .btn-vk:before {
+  .btn-vk::before {
     content: "\f189";
     background: #3d5a7d; }
   .btn-vk:hover {
     background: #3d5a7d; }
-    .btn-vk:hover:before {
+    .btn-vk:hover::before {
       background: #344d6c; }
 
 .btn-yahoo {
   background: #400191; }
-  .btn-yahoo:before {
+  .btn-yahoo::before {
     content: "\f19e";
     background: #350178; }
   .btn-yahoo:hover {
     background: #350178; }
-    .btn-yahoo:hover:before {
+    .btn-yahoo:hover::before {
       background: #2a015e; }
 
 .btn-behance {
   background: #1769ff; }
-  .btn-behance:before {
+  .btn-behance::before {
     content: "\f1b4";
     background: #0059fd; }
   .btn-behance:hover {
     background: #0059fd; }
-    .btn-behance:hover:before {
+    .btn-behance:hover::before {
       background: #0050e3; }
 
 .btn-dropbox {
   background: #007ee5; }
-  .btn-dropbox:before {
+  .btn-dropbox::before {
     content: "\f16b";
     background: #0070cc; }
   .btn-dropbox:hover {
     background: #0070cc; }
-    .btn-dropbox:hover:before {
+    .btn-dropbox:hover::before {
       background: #0062b2; }
 
 .btn-reddit {
   background: #ff4500; }
-  .btn-reddit:before {
+  .btn-reddit::before {
     content: "\f1a1";
     background: #e63e00; }
   .btn-reddit:hover {
     background: #e63e00; }
-    .btn-reddit:hover:before {
+    .btn-reddit:hover::before {
       background: #cc3700; }
 
 .btn-spotify {
   background: #7ab800; }
-  .btn-spotify:before {
+  .btn-spotify::before {
     content: "\f1bc";
     background: #699f00; }
   .btn-spotify:hover {
     background: #699f00; }
-    .btn-spotify:hover:before {
+    .btn-spotify:hover::before {
       background: #588500; }
 
 .btn-vine {
   background: #00bf8f; }
-  .btn-vine:before {
+  .btn-vine::before {
     content: "\f1ca";
     background: #00a67c; }
   .btn-vine:hover {
     background: #00a67c; }
-    .btn-vine:hover:before {
+    .btn-vine:hover::before {
       background: #008c69; }
 
 .btn-foursquare {
   background: #1073af; }
-  .btn-foursquare:before {
+  .btn-foursquare::before {
     content: "\f180";
     background: #0e6498; }
   .btn-foursquare:hover {
     background: #0e6498; }
-    .btn-foursquare:hover:before {
+    .btn-foursquare:hover::before {
       background: #0c5480; }
 
 .btn-vimeo {
   background: #aad450; }
-  .btn-vimeo:before {
+  .btn-vimeo::before {
     content: "\f194";
     background: #a0cf3c; }
   .btn-vimeo:hover {
     background: #a0cf3c; }
-    .btn-vimeo:hover:before {
+    .btn-vimeo:hover::before {
       background: #93c130; }
 
 hr.transparent {
@@ -6491,7 +6500,7 @@ hr.transparent {
   position: absolute;
   top: 0;
   right: 1rem; }
-  .breadcrumb-menu:before {
+  .breadcrumb-menu::before {
     display: none; }
   .breadcrumb-menu .btn {
     padding-top: 0.75rem;
@@ -6681,9 +6690,9 @@ hr.transparent {
     -o-transition-property: opacity background;
     -webkit-transition-property: opacity background;
     transition-property: opacity background; }
-  .switch.switch-default .switch-input:checked ~ .switch-label:before {
+  .switch.switch-default .switch-input:checked ~ .switch-label::before {
     opacity: 0; }
-  .switch.switch-default .switch-input:checked ~ .switch-label:after {
+  .switch.switch-default .switch-input:checked ~ .switch-label::after {
     opacity: 1; }
   .switch.switch-default .switch-handle {
     position: absolute;
@@ -6762,8 +6771,8 @@ hr.transparent {
     -o-transition-property: opacity background;
     -webkit-transition-property: opacity background;
     transition-property: opacity background; }
-  .switch.switch-text .switch-label:before,
-  .switch.switch-text .switch-label:after {
+  .switch.switch-text .switch-label::before,
+  .switch.switch-text .switch-label::after {
     position: absolute;
     top: 50%;
     width: 50%;
@@ -6774,18 +6783,18 @@ hr.transparent {
     -o-transition: inherit;
     -webkit-transition: inherit;
     transition: inherit; }
-  .switch.switch-text .switch-label:before {
+  .switch.switch-text .switch-label::before {
     right: 1px;
     color: #cfd8dc;
     content: attr(data-off); }
-  .switch.switch-text .switch-label:after {
+  .switch.switch-text .switch-label::after {
     left: 1px;
     color: #fff;
     content: attr(data-on);
     opacity: 0; }
-  .switch.switch-text .switch-input:checked ~ .switch-label:before {
+  .switch.switch-text .switch-input:checked ~ .switch-label::before {
     opacity: 0; }
-  .switch.switch-text .switch-input:checked ~ .switch-label:after {
+  .switch.switch-text .switch-input:checked ~ .switch-label::after {
     opacity: 1; }
   .switch.switch-text .switch-handle {
     position: absolute;
@@ -6865,8 +6874,8 @@ hr.transparent {
     -o-transition-property: opacity background;
     -webkit-transition-property: opacity background;
     transition-property: opacity background; }
-  .switch.switch-icon .switch-label:before,
-  .switch.switch-icon .switch-label:after {
+  .switch.switch-icon .switch-label::before,
+  .switch.switch-icon .switch-label::after {
     position: absolute;
     top: 50%;
     width: 50%;
@@ -6877,18 +6886,18 @@ hr.transparent {
     -o-transition: inherit;
     -webkit-transition: inherit;
     transition: inherit; }
-  .switch.switch-icon .switch-label:before {
+  .switch.switch-icon .switch-label::before {
     right: 1px;
     color: #cfd8dc;
     content: attr(data-off); }
-  .switch.switch-icon .switch-label:after {
+  .switch.switch-icon .switch-label::after {
     left: 1px;
     color: #fff;
     content: attr(data-on);
     opacity: 0; }
-  .switch.switch-icon .switch-input:checked ~ .switch-label:before {
+  .switch.switch-icon .switch-input:checked ~ .switch-label::before {
     opacity: 0; }
-  .switch.switch-icon .switch-input:checked ~ .switch-label:after {
+  .switch.switch-icon .switch-input:checked ~ .switch-label::after {
     opacity: 1; }
   .switch.switch-icon .switch-handle {
     position: absolute;
@@ -6967,9 +6976,9 @@ hr.transparent {
     -o-transition-property: opacity background;
     -webkit-transition-property: opacity background;
     transition-property: opacity background; }
-  .switch.switch-3d .switch-input:checked ~ .switch-label:before {
+  .switch.switch-3d .switch-input:checked ~ .switch-label::before {
     opacity: 0; }
-  .switch.switch-3d .switch-input:checked ~ .switch-label:after {
+  .switch.switch-3d .switch-input:checked ~ .switch-label::after {
     opacity: 1; }
   .switch.switch-3d .switch-handle {
     position: absolute;
@@ -7023,10 +7032,10 @@ hr.transparent {
 .switch-pill .switch-handle, .switch.switch-3d .switch-handle {
   border-radius: 50em !important; }
 
-.switch-pill .switch-label:before, .switch.switch-3d .switch-label:before {
+.switch-pill .switch-label::before, .switch.switch-3d .switch-label::before {
   right: 2px !important; }
 
-.switch-pill .switch-label:after, .switch.switch-3d .switch-label:after {
+.switch-pill .switch-label::after, .switch.switch-3d .switch-label::after {
   left: 2px !important; }
 
 .switch-primary > .switch-input:checked ~ .switch-label {
@@ -7039,7 +7048,7 @@ hr.transparent {
 .switch-primary-outline > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #20a8d8; }
-  .switch-primary-outline > .switch-input:checked ~ .switch-label:after {
+  .switch-primary-outline > .switch-input:checked ~ .switch-label::after {
     color: #20a8d8; }
 
 .switch-primary-outline > .switch-input:checked ~ .switch-handle {
@@ -7048,7 +7057,7 @@ hr.transparent {
 .switch-primary-outline-alt > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #20a8d8; }
-  .switch-primary-outline-alt > .switch-input:checked ~ .switch-label:after {
+  .switch-primary-outline-alt > .switch-input:checked ~ .switch-label::after {
     color: #20a8d8; }
 
 .switch-primary-outline-alt > .switch-input:checked ~ .switch-handle {
@@ -7065,7 +7074,7 @@ hr.transparent {
 .switch-secondary-outline > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #cfd8dc; }
-  .switch-secondary-outline > .switch-input:checked ~ .switch-label:after {
+  .switch-secondary-outline > .switch-input:checked ~ .switch-label::after {
     color: #cfd8dc; }
 
 .switch-secondary-outline > .switch-input:checked ~ .switch-handle {
@@ -7074,7 +7083,7 @@ hr.transparent {
 .switch-secondary-outline-alt > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #cfd8dc; }
-  .switch-secondary-outline-alt > .switch-input:checked ~ .switch-label:after {
+  .switch-secondary-outline-alt > .switch-input:checked ~ .switch-label::after {
     color: #cfd8dc; }
 
 .switch-secondary-outline-alt > .switch-input:checked ~ .switch-handle {
@@ -7091,7 +7100,7 @@ hr.transparent {
 .switch-success-outline > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #4dbd74; }
-  .switch-success-outline > .switch-input:checked ~ .switch-label:after {
+  .switch-success-outline > .switch-input:checked ~ .switch-label::after {
     color: #4dbd74; }
 
 .switch-success-outline > .switch-input:checked ~ .switch-handle {
@@ -7100,7 +7109,7 @@ hr.transparent {
 .switch-success-outline-alt > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #4dbd74; }
-  .switch-success-outline-alt > .switch-input:checked ~ .switch-label:after {
+  .switch-success-outline-alt > .switch-input:checked ~ .switch-label::after {
     color: #4dbd74; }
 
 .switch-success-outline-alt > .switch-input:checked ~ .switch-handle {
@@ -7117,7 +7126,7 @@ hr.transparent {
 .switch-info-outline > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #63c2de; }
-  .switch-info-outline > .switch-input:checked ~ .switch-label:after {
+  .switch-info-outline > .switch-input:checked ~ .switch-label::after {
     color: #63c2de; }
 
 .switch-info-outline > .switch-input:checked ~ .switch-handle {
@@ -7126,7 +7135,7 @@ hr.transparent {
 .switch-info-outline-alt > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #63c2de; }
-  .switch-info-outline-alt > .switch-input:checked ~ .switch-label:after {
+  .switch-info-outline-alt > .switch-input:checked ~ .switch-label::after {
     color: #63c2de; }
 
 .switch-info-outline-alt > .switch-input:checked ~ .switch-handle {
@@ -7143,7 +7152,7 @@ hr.transparent {
 .switch-warning-outline > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #f8cb00; }
-  .switch-warning-outline > .switch-input:checked ~ .switch-label:after {
+  .switch-warning-outline > .switch-input:checked ~ .switch-label::after {
     color: #f8cb00; }
 
 .switch-warning-outline > .switch-input:checked ~ .switch-handle {
@@ -7152,7 +7161,7 @@ hr.transparent {
 .switch-warning-outline-alt > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #f8cb00; }
-  .switch-warning-outline-alt > .switch-input:checked ~ .switch-label:after {
+  .switch-warning-outline-alt > .switch-input:checked ~ .switch-label::after {
     color: #f8cb00; }
 
 .switch-warning-outline-alt > .switch-input:checked ~ .switch-handle {
@@ -7169,7 +7178,7 @@ hr.transparent {
 .switch-danger-outline > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #f86c6b; }
-  .switch-danger-outline > .switch-input:checked ~ .switch-label:after {
+  .switch-danger-outline > .switch-input:checked ~ .switch-label::after {
     color: #f86c6b; }
 
 .switch-danger-outline > .switch-input:checked ~ .switch-handle {
@@ -7178,7 +7187,7 @@ hr.transparent {
 .switch-danger-outline-alt > .switch-input:checked ~ .switch-label {
   background: #fff !important;
   border-color: #f86c6b; }
-  .switch-danger-outline-alt > .switch-input:checked ~ .switch-label:after {
+  .switch-danger-outline-alt > .switch-input:checked ~ .switch-label::after {
     color: #f86c6b; }
 
 .switch-danger-outline-alt > .switch-input:checked ~ .switch-handle {

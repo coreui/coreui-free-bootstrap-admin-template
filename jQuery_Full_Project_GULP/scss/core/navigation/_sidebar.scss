@@ -64,7 +64,7 @@ body:not(.top-nav) {
 
             // &::-webkit-scrollbar-corner {    }
 
-            //&::-webkit-resizer {    }
+            // &::-webkit-resizer {    }
         }
 
         ul.nav {
@@ -85,11 +85,15 @@ body:not(.top-nav) {
             li.nav-item {
                 position: relative;
                 margin: 0;
+                transition: background .3s ease-in-out;
 
                 ul {
-                    display: none;
+                    // display: none;
+                    max-height: 0;
                     padding: 0;
                     margin: 0;
+                    overflow-y: hidden;
+                    transition: max-height .3s ease-in-out;
 
                     li {
                         padding: 0;
@@ -150,7 +154,7 @@ body:not(.top-nav) {
 
                     &.nav-dropdown-toggle {
 
-                        &:before {
+                        &::before {
                             position: absolute;
                             top: ($sidebar-nav-link-padding-y + ($font-size-base / 4));
                             right: $sidebar-nav-link-padding-x;
@@ -159,7 +163,7 @@ body:not(.top-nav) {
                             height: ($font-size-base);
                             padding: 0;
                             font-size: $font-size-base;
-                            line-height: ($font-size-base * 3/4);
+                            line-height: ($font-size-base * 3 / 4);
                             text-align: center;
                             content: "\2039";
                             transition: .3s;
@@ -175,7 +179,8 @@ body:not(.top-nav) {
                             border-radius: $border-radius;
                         }
                         > ul, > ol {
-                            display: inline;
+                            // display: inline;
+                            max-height: 1000px;
                         }
 
                         a.nav-link {
@@ -183,13 +188,27 @@ body:not(.top-nav) {
                             border-left: 0 !important;
                         }
 
-                        > a.nav-link.nav-dropdown-toggle:before {
+                        > a.nav-link.nav-dropdown-toggle::before {
                             -webkit-transform: rotate(-90deg);
                             transform: rotate(-90deg);
                         }
 
                         .nav-dropdown.open {
                             border-left: 0;
+                        }
+                    }
+                    &.nt {
+                        transition: 0s !important;
+                        > ul, > ol {
+                            transition: 0s !important;
+                        }
+                        a.nav-link {
+                            &.nav-dropdown-toggle {
+
+                                &::before {
+                                    transition: 0s !important;
+                                }
+                            }
                         }
                     }
                 }
@@ -234,7 +253,7 @@ body:not(.top-nav) {
 
                         &.nav-dropdown-toggle {
 
-                            &:before {
+                            &::before {
                                 display: none;
                             }
                         }

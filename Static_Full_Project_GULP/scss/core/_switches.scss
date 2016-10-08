@@ -59,8 +59,8 @@
         transition-property: opacity background;
     }
     @if $type == text or $type == icon {
-        .switch-label:before,
-        .switch-label:after {
+        .switch-label::before,
+        .switch-label::after {
             position: absolute;
             top: 50%;
             width: 50%;
@@ -72,12 +72,12 @@
             -webkit-transition: inherit;
             transition: inherit;
         }
-        .switch-label:before {
+        .switch-label::before {
             right: 1px;
             color: $gray-lighter;
             content: attr(data-off);
         }
-        .switch-label:after {
+        .switch-label::after {
             left: 1px;
             color: #fff;
             content: attr(data-on);
@@ -87,10 +87,10 @@
     .switch-input:checked ~ .switch-label {
         //background: $gray-lightest;
     }
-    .switch-input:checked ~ .switch-label:before {
+    .switch-input:checked ~ .switch-label::before {
         opacity: 0;
     }
-    .switch-input:checked ~ .switch-label:after {
+    .switch-input:checked ~ .switch-label::after {
         opacity: 1;
     }
 
@@ -189,7 +189,7 @@
         background: #fff !important;
         border-color: $color;
 
-        &:after {
+        &::after {
             color: $color;
         }
     }
@@ -204,7 +204,7 @@
         background: #fff !important;
         border-color: $color;
 
-        &:after {
+        &::after {
             color: $color;
         }
     }
@@ -290,10 +290,10 @@ $switch-icon-xs-font-size: 7px;
         border-radius: 50em !important;
     }
 
-    .switch-label:before {
+    .switch-label::before {
         right: 2px !important;
     }
-    .switch-label:after {
+    .switch-label::after {
         left: 2px !important;
     }
 }
