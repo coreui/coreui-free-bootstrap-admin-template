@@ -12,7 +12,7 @@ import { SIDEBAR_TOGGLE_DIRECTIVES }    from './shared/sidebar.directive';
 import { AsideToggleDirective }         from './shared/aside.directive';
 import { BreadcrumbsComponent }         from './shared/breadcrumb.component';
 
-/* Routing Module */
+// Routing Module
 import { AppRoutingModule }             from './app.routing';
 
 //Layouts

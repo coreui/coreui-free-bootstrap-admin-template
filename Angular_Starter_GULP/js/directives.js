@@ -11,7 +11,6 @@ angular
     .directive('toggle', bootstrapTooltipsPopoversDirective)
     .directive('tab', bootstrapTabsDirective)
     .directive('button', cardCollapseDirective)
-    .directive('vamiddle', verticalAlignMiddleDirective)
 
 //Prevent click if href="#"
 function preventClickDirective() {
@@ -245,36 +244,5 @@ function cardCollapseDirective() {
                 element.find('i').toggleClass('r180');
             })
         }
-    }
-}
-
-verticalAlignMiddleDirective.$inject = ['$window'];
-function verticalAlignMiddleDirective($window) {
-    var directive = {
-        restrict: 'A',
-        link: link
-    }
-    return directive;
-
-    function link(scope, element, attrs) {
-        var bodyHeight = angular.element(window).height();
-        var formHeight = element.height();
-        var marginTop = (bodyHeight / 2) - (formHeight / 2);
-
-        if (marginTop > 0) {
-            element.css('margin-top', marginTop);
-        }
-
-        angular.element($window).bind('resize', function(){
-            var bodyHeight = angular.element(window).height();
-            var formHeight = element.height();
-            var marginTop = (bodyHeight / 2) - (formHeight / 2);
-
-            if (marginTop > 0) {
-                element.css('margin-top', marginTop);
-            }
-
-            scope.$digest();
-        });
     }
 }

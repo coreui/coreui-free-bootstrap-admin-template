@@ -3,9 +3,9 @@
     <div class="row">
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-primary" ng-controller="cardChartCtrl1">
-                <div class="card-block p-b-0">
+                <div class="card-block pb-0">
                     <div class="btn-group pull-right">
-                        <button type="button" class="btn btn-transparent dropdown-toggle p-a-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="icon-settings"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -14,10 +14,10 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
-                    <h4 class="m-b-0">9.823</h4>
+                    <h4 class="mb-0">9.823</h4>
                     <p>Members online</p>
                 </div>
-                <div class="chart-wrapper p-x-1" style="height:70px;">
+                <div class="chart-wrapper px-1" style="height:70px;">
                     <canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" height="70"></canvas>
                 </div>
             </div>
@@ -26,14 +26,14 @@
 
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-info" ng-controller="cardChartCtrl2">
-                <div class="card-block p-b-0">
-                    <button type="button" class="btn btn-transparent p-a-0 pull-right">
+                <div class="card-block pb-0">
+                    <button type="button" class="btn btn-transparent p-0 pull-right">
                         <i class="icon-location-pin"></i>
                     </button>
-                    <h4 class="m-b-0">9.823</h4>
+                    <h4 class="mb-0">9.823</h4>
                     <p>Members online</p>
                 </div>
-                <div class="chart-wrapper p-x-1" style="height:70px;">
+                <div class="chart-wrapper px-1" style="height:70px;">
                     <canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" height="70"></canvas>
                 </div>
             </div>
@@ -42,9 +42,9 @@
 
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-warning" ng-controller="cardChartCtrl3">
-                <div class="card-block p-b-0">
+                <div class="card-block pb-0">
                     <div class="btn-group pull-right">
-                        <button type="button" class="btn btn-transparent dropdown-toggle p-a-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="icon-settings"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -53,7 +53,7 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
-                    <h4 class="m-b-0">9.823</h4>
+                    <h4 class="mb-0">9.823</h4>
                     <p>Members online</p>
                 </div>
                 <div class="chart-wrapper" style="height:70px;">
@@ -65,9 +65,9 @@
 
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-danger" ng-controller="cardChartCtrl4">
-                <div class="card-block p-b-0">
+                <div class="card-block pb-0">
                     <div class="btn-group pull-right">
-                        <button type="button" class="btn btn-transparent dropdown-toggle p-a-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="icon-settings"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -76,10 +76,10 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
-                    <h4 class="m-b-0">9.823</h4>
+                    <h4 class="mb-0">9.823</h4>
                     <p>Members online</p>
                 </div>
-                <div class="chart-wrapper p-x-1" style="height:70px;">
+                <div class="chart-wrapper px-1" style="height:70px;">
                     <canvas class="chart chart-bar" chart-data="data" chart-labels="labels" chart-options="options" chart-colors="colors" height="70"></canvas>
                 </div>
             </div>
@@ -92,7 +92,7 @@
         <div class="card-block">
             <div class="row">
                 <div class="col-sm-6">
-                    <h4 class="card-title m-b-0">Traffic</h4>
+                    <h4 class="card-title mb-0">Traffic</h4>
                     <div class="small text-muted">November 2015</div>
                 </div>
                 <div class="col-sm-6">
@@ -273,7 +273,7 @@
                                 <!--/.col-->
                             </div>
                             <!--/.row-->
-                            <hr class="m-t-0">
+                            <hr class="mt-0">
                             <ul class="horizontal-bars" ng-controller="horizontalBarsCtrl">
                                 <li ng-repeat="row in data">
                                     <div class="title">
@@ -281,7 +281,7 @@
                                     </div>
                                     <div class="bars">
                                         <progress class="progress progress-xs progress-info" value="{{ row.new }}" max="100" style="margin-bottom: 2px;">{{ row.new }}%</progress>
-                                        <progress class="progress progress-xs progress-danger m-a-0" value="{{ row.recurring }}" max="100">{{ row.recurring }}%</progress>
+                                        <progress class="progress progress-xs progress-danger m-0" value="{{ row.recurring }}" max="100">{{ row.recurring }}%</progress>
                                     </div>
                                 </li>
                                 <li class="legend">
@@ -319,14 +319,14 @@
                                 <!--/.col-->
                             </div>
                             <!--/.row-->
-                            <hr class="m-t-0">
+                            <hr class="mt-0">
                             <ul class="horizontal-bars type-2" ng-controller="horizontalBarsType2Ctrl">
                                 <li ng-repeat="row in gender">
                                     <i ng-class="row.icon"></i>
                                     <span class="title">{{ row.title }}</span>
                                     <span class="value">{{ row.value }}%</span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-warning m-a-0" value="{{ row.value }}" max="100">{{ row.value }}%</progress>
+                                        <progress class="progress progress-xs progress-warning m-0" value="{{ row.value }}" max="100">{{ row.value }}%</progress>
                                     </div>
                                 </li>
                                 <li class="divider"></li>
@@ -337,7 +337,7 @@
                                         <span class="text-muted small">({{ row.percent }}%)</span>
                                     </span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-success m-a-0" value="{{ row.percent }}" max="100">{{ row.percent }}%</progress>
+                                        <progress class="progress progress-xs progress-success m-0" value="{{ row.percent }}" max="100">{{ row.percent }}%</progress>
                                     </div>
                                 </li>
                                 <li class="divider text-xs-center">
@@ -373,7 +373,7 @@
                                 <!--/.col-->
                             </div>
                             <!--/.row-->
-                            <hr class="m-t-0">
+                            <hr class="mt-0">
                             <ul class="icons-list">
                                 <li>
                                     <i class="icon-screen-desktop bg-primary"></i>
@@ -490,7 +490,7 @@
                     </div>
                     <!--/.row-->
                     <br/>
-                    <table class="table table-hover table-outline m-b-0 hidden-sm-down">
+                    <table class="table table-hover table-outline mb-0 hidden-sm-down">
                         <thead class="thead-default">
                             <tr>
                                 <th class="text-xs-center"><i class="icon-people"></i>

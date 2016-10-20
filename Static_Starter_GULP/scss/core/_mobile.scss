@@ -1,7 +1,5 @@
 @include media-breakpoint-down(md) {
 
-    $mobile-sidebar-width: 200px;
-
     body {
         padding: 0 !important;
         margin: 0 !important;
@@ -36,8 +34,12 @@
     }
 
     .sidebar {
-        width: $mobile-sidebar-width;
+        width: $mobile-sidebar-width !important;
         margin-left: -$mobile-sidebar-width;
+
+        ul.nav {
+            width: $mobile-sidebar-width !important;
+        }
 
         .sidebar-footer {
             margin-left: -$mobile-sidebar-width;
@@ -54,6 +56,10 @@
         padding-top: $navbar-height !important;
         margin: 0 !important;
         overflow: hidden;
+    }
+
+    .aside-menu {
+        right: -$aside-menu-width !important;
     }
 
     .footer {
