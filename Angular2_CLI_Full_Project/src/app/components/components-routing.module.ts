@@ -8,6 +8,7 @@ import { FormsComponent }           from './forms.component';
 import { SocialButtonsComponent }   from './social-buttons.component';
 import { SwitchesComponent }        from './switches.component';
 import { TablesComponent }          from './tables.component';
+import { TabsComponent }            from './tabs.component';
 
 const routes: Routes = [
     {
@@ -56,6 +57,13 @@ const routes: Routes = [
                 component: TablesComponent,
                 data: {
                     title: 'Tables'
+                }
+            },
+            {
+                path: 'tabs',
+                component: TabsComponent,
+                data: {
+                    title: 'Tabs'
                 }
             }
         ]

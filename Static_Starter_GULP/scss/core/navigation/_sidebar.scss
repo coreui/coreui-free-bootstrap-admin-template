@@ -212,6 +212,41 @@ body:not(.top-nav) {
                         }
                     }
                 }
+
+                a.nav-label {
+                    display: block;
+                    padding: ($sidebar-nav-link-padding-y / 8) $sidebar-nav-link-padding-x;
+                    color: $sidebar-nav-title-color;
+
+                    &:hover {
+                        color: $sidebar-color;
+                        text-decoration: none;
+                    }
+
+                    i {
+                        width: 20px;
+                        margin: -3px ($sidebar-nav-link-padding-x / 2) 0 0;
+                        font-size: 10px;
+                        color: $sidebar-nav-link-icon-color;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+                }
+
+                @if (lightness( $sidebar-bg ) < 40) {
+                    .progress[value] {
+                        background-color: lighten($sidebar-bg, 15%) !important;
+                    }
+
+                    // Unfilled portion of the bar
+                    .progress[value]::-webkit-progress-bar {
+                        background-color: lighten($sidebar-bg, 15%) !important;
+                    }
+                    base::-moz-progress-bar, // Absurd-but-syntactically-valid selector to make these styles Firefox-only
+                    .progress[value] {
+                        background-color: lighten($sidebar-bg, 15%) !important;
+                    }
+                }
             }
         }
     }

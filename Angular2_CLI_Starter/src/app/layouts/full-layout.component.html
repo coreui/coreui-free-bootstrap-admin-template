@@ -1,0 +1,44 @@
+<header class="navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler hidden-lg-up" type="button" mobile-nav-toggle>&#9776;</button>
+        <a class="navbar-brand" href="#"></a>
+        <ul class="nav navbar-nav hidden-md-down">
+            <li class="nav-item">
+                <a class="nav-link navbar-toggler sidebar-toggle" href="#">&#9776;</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-speedometer"></i> Dashboard <span class="tag tag-info">NEW</span></a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Main content -->
+<main class="main">
+
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+        <breadcrumbs></breadcrumbs>
+    </ol>
+
+    <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div>
+    <!-- /.conainer-fluid -->
+</main>
+
+<footer class="footer">
+    <span class="text-left">
+        <a href="http://coreui.io">CoreUI</a> &copy; 2016 creativeLabs.
+    </span>
+    <span class="float-xs-right">
+        Powered by <a href="http://coreui.io">CoreUI</a>
+    </span>
+</footer>

@@ -17,6 +17,7 @@
             color: $body-color;
             border-top: 0;
             &.active {
+                color: $brand-primary;
                 border-right-color: $border-color;
                 border-left-color: $border-color;
             }
@@ -33,6 +34,8 @@
         height: calc(100vh - #{$aside-menu-nav-padding-y * 2 + $font-size-base} - #{$navbar-height});
         overflow-x: hidden;
         overflow-y: auto;
+        border: 0;
+        border-top: 1px solid $border-color;
         -ms-overflow-style: -ms-autohiding-scrollbar;
 
         &::-webkit-scrollbar {
@@ -58,6 +61,10 @@
             border-color: transparent;
             border-style: solid;
             border-width: 1px 2px;
+        }
+
+        .tab-pane {
+            padding: 0;
         }
     }
 }
