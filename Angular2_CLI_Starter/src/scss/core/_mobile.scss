@@ -34,8 +34,8 @@
     }
 
     .sidebar {
+        left: -$mobile-sidebar-width !important;
         width: $mobile-sidebar-width !important;
-        margin-left: -$mobile-sidebar-width;
 
         ul.nav {
             width: $mobile-sidebar-width !important;
@@ -75,11 +75,7 @@
         max-width: 100%;
         overflow-x: hidden;
         .sidebar {
-            margin-left: 0;
-
-            .sidebar-footer {
-                margin-left: 0;
-            }
+            left: 0 !important;
         }
 
         .main {
