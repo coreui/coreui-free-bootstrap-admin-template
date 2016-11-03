@@ -5460,20 +5460,20 @@ body:not(.top-nav) .sidebar {
   body.sidebar-nav.compact-nav .sidebar {
     z-index: 1029;
     width: 50px; }
-    body.sidebar-nav.compact-nav .sidebar .sidebar-items {
+    body.sidebar-nav.compact-nav .sidebar .sidebar-nav {
       overflow: visible; }
     body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-title, body.sidebar-nav.compact-nav .sidebar ul.nav li.divider {
       display: none; }
     body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item {
-      border-left: 0 !important; }
+      border-left: 0 !important;
+      overflow: hidden;
+      width: 50px; }
       body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item ul {
         background: #263238; }
       body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item a.nav-link {
         position: relative;
-        width: 50px;
         padding: 0 15px 0 0;
         margin: 0;
-        overflow: hidden;
         line-height: 50px;
         white-space: nowrap;
         border-left: 0 !important; }
@@ -5490,7 +5490,7 @@ body:not(.top-nav) .sidebar {
           line-height: 50px; }
         body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item a.nav-link .tag {
           position: absolute;
-          top: 6px;
+          top: 14px;
           right: 15px;
           display: none; }
         body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item a.nav-link:hover {
@@ -5510,16 +5510,29 @@ body:not(.top-nav) .sidebar {
             position: absolute;
             top: 0;
             left: 100%; }
-      body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ul, body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ol {
-        display: none; }
-      body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > a.nav-link {
-        width: 250px; }
-      body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > ul, body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > ol {
-        display: inline; }
-        body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > ul a.nav-link, body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > ol a.nav-link {
-          width: 200px; }
-      body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover.nav-dropdown.open > ul, body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover.nav-dropdown.open > ol {
-        display: inline; } }
+      body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open {
+        background: #304047; }
+        body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > a.nav-link i {
+          color: #20a8d8; }
+        body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ul, body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ol {
+          display: none; }
+      body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover {
+        width: 250px;
+        overflow: visible;
+        background: #20a8d8;
+        transition: 0s; }
+        body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > a.nav-link {
+          width: 250px; }
+        body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > ul, body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > ol {
+          max-height: 10000px;
+          display: inline;
+          transition: 0s; }
+          body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > ul li, body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > ol li {
+            width: 200px; }
+            body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > ul li a.nav-link, body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover > ol li a.nav-link {
+              width: 200px; }
+        body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover.nav-dropdown.open > ul, body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item:hover.nav-dropdown.open > ol {
+          display: inline; } }
 
 nav.top-nav {
   position: absolute;

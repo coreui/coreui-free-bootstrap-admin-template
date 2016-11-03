@@ -258,8 +258,7 @@ body:not(.top-nav) {
         .sidebar {
             z-index: $zindex-navbar-fixed - 1;
             width: $sidebar-compact-width;
-
-            .sidebar-items {
+            .sidebar-nav {
                 overflow: visible;
             }
 
@@ -271,6 +270,8 @@ body:not(.top-nav) {
 
                 li.nav-item {
                     border-left: 0 !important;
+                    overflow: hidden;
+                    width: $sidebar-compact-width;
 
                     ul {
                         background: $sidebar-bg;
@@ -278,10 +279,9 @@ body:not(.top-nav) {
 
                     a.nav-link {
                         position: relative;
-                        width: $sidebar-compact-width;
                         padding: 0 15px 0 0;
                         margin: 0;
-                        overflow: hidden;
+
                         line-height: $sidebar-compact-height;
                         white-space: nowrap;
                         border-left: 0 !important;
@@ -306,7 +306,7 @@ body:not(.top-nav) {
 
                         .tag {
                             position: absolute;
-                            top: 6px;
+                            top: 14px;
                             right: 15px;
                             display: none;
                         }
@@ -343,6 +343,10 @@ body:not(.top-nav) {
 
                     &.nav-dropdown {
                         &.open {
+                            background: $sidebar-nav-link-active-bg;
+                            > a.nav-link i {
+                                color: $sidebar-nav-link-active-icon-color;
+                            }
                             > ul, > ol {
                                 display: none;
                             }
@@ -350,22 +354,25 @@ body:not(.top-nav) {
                     }
 
                     &:hover {
+                        width: $sidebar-width + $sidebar-compact-width;
+                        overflow: visible;
+                        background: $sidebar-nav-link-hover-bg;
+                        transition: 0s;
+
                         > a.nav-link {
-                            @if $sidebar-width < 249 {
-                                width: $sidebar-width + $sidebar-compact-width;
-                            } @else {
-                                width: $sidebar-width;
-                            }
+                            width: $sidebar-width + $sidebar-compact-width;
                         }
 
                         > ul, > ol {
+                            max-height: 10000px;
                             display: inline;
+                            transition: 0s;
 
-                            a.nav-link {
-                                @if $sidebar-width < 249 {
+                            li {
+                                width: $sidebar-width;
+
+                                a.nav-link {
                                     width: $sidebar-width;
-                                } @else {
-                                    width: $sidebar-width - $sidebar-compact-width;
                                 }
                             }
                         }
