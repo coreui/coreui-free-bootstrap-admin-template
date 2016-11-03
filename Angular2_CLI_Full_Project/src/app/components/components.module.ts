@@ -14,10 +14,14 @@ import { TabsComponent }            from './tabs.component';
 // Components Routing
 import { ComponentsRoutingModule }  from './components-routing.module';
 
+// Select module
+import { SelectModule }             from 'ng2-select';
+
 @NgModule({
     imports: [
         ComponentsRoutingModule,
-        TabsModule
+        TabsModule,
+        SelectModule
     ],
     declarations: [
         ButtonsComponent,
