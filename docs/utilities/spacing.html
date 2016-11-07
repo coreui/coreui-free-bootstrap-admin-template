@@ -219,7 +219,7 @@
 
                 
 
-                <li class="nav-item nav-dropdown active">
+                <li class="nav-item nav-dropdown ">
                 <!-- <div class="bd-toc-item "> -->
                     
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -291,7 +291,7 @@
 
                             
 
-                            <li class="nav-item active bd-sidenav-active">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="/docs/layout/responsive-utilities">
                                     Responsive utilities
                                 </a>
@@ -866,7 +866,7 @@
 
                             
 
-                            <li class="nav-item ">
+                            <li class="nav-item active bd-sidenav-active">
                                 <a class="nav-link" href="/docs/utilities/spacing">
                                     Spacing
                                 </a>
@@ -983,7 +983,7 @@
 
                             
 
-                            <li class="nav-item ">
+                            <li class="nav-item active bd-sidenav-active">
                                 <a class="nav-link" href="/docs/new-components/utilities">
                                     Utilities
                                 </a>
@@ -1007,251 +1007,90 @@
                 <li class="breadcrumb-item"><a href="/docs/">Home</a></li>
                 
                 
-                <li class="breadcrumb-item">Layout </li>
-                <li class="breadcrumb-item active">Responsive utilities</li>
+                <li class="breadcrumb-item">Utilities </li>
+                <li class="breadcrumb-item active">Spacing</li>
             </ol>
             <div class="container-fluid">
                 <div class="animated fadeIn">
                     <div class="card">
                         <div class="card-header">
-                            Responsive utilities
+                            Spacing
                         </div>
                         <div class="card-block">
-                            <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.</p>
+                            <p>Assign responsive-friendly <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties. Classes are built from a default Sass map ranging from <code class="highlighter-rouge">.25rem</code> to <code class="highlighter-rouge">3rem</code>.</p>
 
-<p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device’s presentation.</p>
+<h2 id="notation">Notation</h2>
 
-<h2 id="available-classes">Available classes</h2>
+<p>Spacing utilities that apply to all breakpoints, from <code class="highlighter-rouge">xs</code> to <code class="highlighter-rouge">xl</code>, have no breakpoint abbreviation in them. This is because those classes are applied from <code class="highlighter-rouge">min-width: 0</code> and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.</p>
+
+<p>The classes are named using the format <code class="highlighter-rouge"><span class="p">{</span><span class="err">property</span><span class="p">}{</span><span class="err">sides</span><span class="p">}</span><span class="err">-</span><span class="p">{</span><span class="err">size</span><span class="p">}</span></code> for <code class="highlighter-rouge">xs</code> and <code class="highlighter-rouge"><span class="p">{</span><span class="err">property</span><span class="p">}{</span><span class="err">sides</span><span class="p">}</span><span class="err">-</span><span class="p">{</span><span class="err">breakpoint</span><span class="p">}</span><span class="err">-</span><span class="p">{</span><span class="err">size</span><span class="p">}</span></code> for <code class="highlighter-rouge">sm</code>, <code class="highlighter-rouge">md</code>, <code class="highlighter-rouge">lg</code>, and <code class="highlighter-rouge">xl</code>.</p>
+
+<p>Where <em>property</em> is one of:</p>
 
 <ul>
-  <li>The <code class="highlighter-rouge">.hidden-*-up</code> classes hide the element when the viewport is at the given breakpoint or wider. For example, <code class="highlighter-rouge">.hidden-md-up</code> hides an element on medium, large, and extra-large viewports.</li>
-  <li>The <code class="highlighter-rouge">.hidden-*-down</code> classes hide the element when the viewport is at the given breakpoint or smaller. For example, <code class="highlighter-rouge">.hidden-md-down</code> hides an element on extra-small, small, and medium viewports.</li>
-  <li>There are no explicit “visible”/”show” responsive utility classes; you make an element visible by simply not hiding it at that breakpoint size.</li>
-  <li>You can combine one <code class="highlighter-rouge">.hidden-*-up</code> class with one <code class="highlighter-rouge">.hidden-*-down</code> class to show an element only on a given interval of screen sizes. For example, <code class="highlighter-rouge">.hidden-sm-down.hidden-xl-up</code> shows the element only on medium and large viewports. Using multiple <code class="highlighter-rouge">.hidden-*-up</code> classes or multiple <code class="highlighter-rouge">.hidden-*-down</code> classes is redundant and pointless.</li>
-  <li>These classes don’t attempt to accommodate less common cases where an element’s visibility can’t be expressed as a single contiguous range of viewport breakpoint sizes; you will instead need to use custom CSS in such cases.</li>
+  <li><code class="highlighter-rouge">m</code> - for classes that set <code class="highlighter-rouge">margin</code></li>
+  <li><code class="highlighter-rouge">p</code> - for classes that set <code class="highlighter-rouge">padding</code></li>
 </ul>
 
-<div class="table-responsive">
-  <table class="table table-bordered table-striped responsive-utilities">
-    <thead>
-      <tr>
-        <th></th>
-        <th>
-          Extra small devices
-          <small>Portrait phones (&lt;544px)</small>
-        </th>
-        <th>
-          Small devices
-          <small>Landscape phones (&ge;544px - &lt;768px)</small>
-        </th>
-        <th>
-          Medium devices
-          <small>Tablets (&ge;768px - &lt;992px)</small>
-        </th>
-        <th>
-          Large devices
-          <small>Desktops (&ge;992px - &lt;1200px)</small>
-        </th>
-        <th>
-          Extra large devices
-          <small>Desktops (&ge;1200px)</small>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row"><code>.hidden-xs-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-sm-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-md-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-lg-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-xl-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-xs-up</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-sm-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-md-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-lg-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-xl-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<p>Where <em>sides</em> is one of:</p>
 
-<h2 id="responsive-utilities-print">Print classes</h2>
-<p>Similar to the regular responsive classes, use these for toggling content for print.</p>
-<div class="table-responsive">
-  <table class="table table-bordered table-striped responsive-utilities">
-    <thead>
-      <tr>
-        <th>Class</th>
-        <th>Browser</th>
-        <th>Print</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th><code>.visible-print-block</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible<br />(as <code>display: block</code>)</td>
-      </tr>
-      <tr>
-        <th><code>.visible-print-inline</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible<br />(as <code>display: inline</code>)</td>
-      </tr>
-      <tr>
-        <th><code>.visible-print-inline-block</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible<br />(as <code>display: inline-block</code>)</td>
-      </tr>
-      <tr>
-        <th><code>.hidden-print</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<ul>
+  <li><code class="highlighter-rouge">t</code> - for classes that set <code class="highlighter-rouge">margin-top</code> or <code class="highlighter-rouge">padding-top</code></li>
+  <li><code class="highlighter-rouge">b</code> - for classes that set <code class="highlighter-rouge">margin-bottom</code> or <code class="highlighter-rouge">padding-bottom</code></li>
+  <li><code class="highlighter-rouge">l</code> - for classes that set <code class="highlighter-rouge">margin-left</code> or <code class="highlighter-rouge">padding-left</code></li>
+  <li><code class="highlighter-rouge">r</code> - for classes that set <code class="highlighter-rouge">margin-right</code> or <code class="highlighter-rouge">padding-right</code></li>
+  <li><code class="highlighter-rouge">x</code> - for classes that set both <code class="highlighter-rouge">*-left</code> and <code class="highlighter-rouge">*-right</code></li>
+  <li><code class="highlighter-rouge">y</code> - for classes that set both <code class="highlighter-rouge">*-top</code> and <code class="highlighter-rouge">*-bottom</code></li>
+  <li>blank - for classes that set a <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> on all 4 sides of the element</li>
+</ul>
 
-<h2 id="test-cases">Test cases</h2>
+<p>Where <em>size</em> is one of:</p>
 
-<p>Resize your browser or load on different devices to test the responsive utility classes.</p>
+<ul>
+  <li><code class="highlighter-rouge">0</code> - for classes that eliminate the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> by setting it to <code class="highlighter-rouge">0</code></li>
+  <li><code class="highlighter-rouge">1</code> - (by default) for classes that set the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer-x * .25</code> or <code class="highlighter-rouge">$spacer-y * .25</code></li>
+  <li><code class="highlighter-rouge">2</code> - (by default) for classes that set the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer-x * .5</code> or <code class="highlighter-rouge">$spacer-y * .5</code></li>
+  <li><code class="highlighter-rouge">3</code> - (by default) for classes that set the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer-x</code> or <code class="highlighter-rouge">$spacer-y</code></li>
+  <li><code class="highlighter-rouge">4</code> - (by default) for classes that set the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer-x * 1.5</code> or <code class="highlighter-rouge">$spacer-y * 1.5</code></li>
+  <li><code class="highlighter-rouge">5</code> - (by default) for classes that set the <code class="highlighter-rouge">margin</code> or <code class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer-x * 3</code> or <code class="highlighter-rouge">$spacer-y * 3</code></li>
+</ul>
 
-<p>Green checkmarks indicate the element <strong>is visible</strong> in your current viewport.</p>
+<p>(You can add more sizes by adding entries to the <code class="highlighter-rouge">$spacers</code> Sass map variable.)</p>
 
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-sm-up visible">&#10004; Visible on extra small</span>
-    <span class="hidden-xs-down not-visible">Extra small</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-md-up visible">&#10004; Visible on small or narrower</span>
-    <span class="hidden-sm-down not-visible">Small or narrower</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-lg-up visible">&#10004; Visible on medium or narrower</span>
-    <span class="hidden-md-down not-visible">Medium or narrower</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-xl-up visible">&#10004; Visible on large or narrower</span>
-    <span class="hidden-lg-down not-visible">Large or narrower</span>
+<h2 id="examples">Examples</h2>
+
+<p>Here are some representative examples of these classes:</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.mt-0</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.ml-1</span> <span class="p">{</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="p">(</span><span class="nv">$spacer-x</span> <span class="o">*</span> <span class="mi">.25</span><span class="p">)</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.px-2</span> <span class="p">{</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="p">(</span><span class="nv">$spacer-x</span> <span class="o">*</span> <span class="mi">.5</span><span class="p">)</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="p">(</span><span class="nv">$spacer-x</span> <span class="o">*</span> <span class="mi">.5</span><span class="p">)</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.p-3</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="nv">$spacer-y</span> <span class="nv">$spacer-x</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="horizontal-centering">Horizontal centering</h3>
+<p>Additionally, Bootstrap also includes an <code class="highlighter-rouge">.mx-auto</code> class for horizontally centering fixed-width block level content by setting the horizontal margins to <code class="highlighter-rouge">auto</code>.</p>
+
+<div class="bd-example">
+  <div class="mx-auto" style="width: 200px; background-color: rgba(86,61,124,.15);">
+    Centered element
   </div>
 </div>
 
-<hr />
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mx-auto"</span> <span class="na">style=</span><span class="s">"width: 200px;"</span><span class="nt">&gt;</span>
+  Centered element
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-xs-down visible">&#10004; Visible on small or wider</span>
-    <span class="hidden-sm-up not-visible">Small or wider</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-sm-down visible">&#10004; Visible on medium or wider</span>
-    <span class="hidden-md-up not-visible">Medium or wider</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-md-down visible">&#10004; Visible on large or wider</span>
-    <span class="hidden-lg-up not-visible">Large or wider</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-lg-down visible">&#10004; Visible on extra large</span>
-    <span class="hidden-xl-up not-visible">Extra large</span>
-  </div>
-</div>
-
-<hr />
-
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-sm-up visible">&#10004; Your viewport is exactly extra small</span>
-    <span class="hidden-xs-down not-visible">Your viewport is NOT exactly extra small</span>
-  </div>
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-xs-down hidden-md-up visible">&#10004; Your viewport is exactly small</span>
-    <span class="hidden-sm-only not-visible">Your viewport is NOT exactly small</span>
-  </div>
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-sm-down hidden-lg-up visible">&#10004; Your viewport is exactly medium</span>
-    <span class="hidden-md-only not-visible">Your viewport is NOT exactly medium</span>
-  </div>
-  </div>
-
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-md-down hidden-xl-up visible">&#10004; Your viewport is exactly large</span>
-    <span class="hidden-lg-only not-visible">Your viewport is NOT exactly large</span>
-  </div>
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-lg-down visible">&#10004; Your viewport is exactly extra large</span>
-    <span class="hidden-xl-only not-visible">Your viewport is NOT exactly extra large</span>
-  </div>
-</div>
 
                         </div>
                     </div>

@@ -219,7 +219,7 @@
 
                 
 
-                <li class="nav-item nav-dropdown active">
+                <li class="nav-item nav-dropdown ">
                 <!-- <div class="bd-toc-item "> -->
                     
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -291,7 +291,7 @@
 
                             
 
-                            <li class="nav-item active bd-sidenav-active">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="/docs/layout/responsive-utilities">
                                     Responsive utilities
                                 </a>
@@ -338,7 +338,7 @@
 
                             
 
-                            <li class="nav-item ">
+                            <li class="nav-item active bd-sidenav-active">
                                 <a class="nav-link" href="/docs/content/typography">
                                     Typography
                                 </a>
@@ -880,7 +880,7 @@
 
                             
 
-                            <li class="nav-item ">
+                            <li class="nav-item active bd-sidenav-active">
                                 <a class="nav-link" href="/docs/utilities/typography">
                                     Typography
                                 </a>
@@ -983,7 +983,7 @@
 
                             
 
-                            <li class="nav-item ">
+                            <li class="nav-item active bd-sidenav-active">
                                 <a class="nav-link" href="/docs/new-components/utilities">
                                     Utilities
                                 </a>
@@ -1007,251 +1007,89 @@
                 <li class="breadcrumb-item"><a href="/docs/">Home</a></li>
                 
                 
-                <li class="breadcrumb-item">Layout </li>
-                <li class="breadcrumb-item active">Responsive utilities</li>
+                <li class="breadcrumb-item">Utilities </li>
+                <li class="breadcrumb-item active">Typography</li>
             </ol>
             <div class="container-fluid">
                 <div class="animated fadeIn">
                     <div class="card">
                         <div class="card-header">
-                            Responsive utilities
+                            Typography
                         </div>
                         <div class="card-block">
-                            <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.</p>
+                            <p>The following utilities can be used to add additional styles to texts.</p>
 
-<p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device’s presentation.</p>
+<h2 id="text-alignment">Text alignment</h2>
 
-<h2 id="available-classes">Available classes</h2>
+<p>Easily realign text to components with text alignment classes.</p>
 
-<ul>
-  <li>The <code class="highlighter-rouge">.hidden-*-up</code> classes hide the element when the viewport is at the given breakpoint or wider. For example, <code class="highlighter-rouge">.hidden-md-up</code> hides an element on medium, large, and extra-large viewports.</li>
-  <li>The <code class="highlighter-rouge">.hidden-*-down</code> classes hide the element when the viewport is at the given breakpoint or smaller. For example, <code class="highlighter-rouge">.hidden-md-down</code> hides an element on extra-small, small, and medium viewports.</li>
-  <li>There are no explicit “visible”/”show” responsive utility classes; you make an element visible by simply not hiding it at that breakpoint size.</li>
-  <li>You can combine one <code class="highlighter-rouge">.hidden-*-up</code> class with one <code class="highlighter-rouge">.hidden-*-down</code> class to show an element only on a given interval of screen sizes. For example, <code class="highlighter-rouge">.hidden-sm-down.hidden-xl-up</code> shows the element only on medium and large viewports. Using multiple <code class="highlighter-rouge">.hidden-*-up</code> classes or multiple <code class="highlighter-rouge">.hidden-*-down</code> classes is redundant and pointless.</li>
-  <li>These classes don’t attempt to accommodate less common cases where an element’s visibility can’t be expressed as a single contiguous range of viewport breakpoint sizes; you will instead need to use custom CSS in such cases.</li>
-</ul>
-
-<div class="table-responsive">
-  <table class="table table-bordered table-striped responsive-utilities">
-    <thead>
-      <tr>
-        <th></th>
-        <th>
-          Extra small devices
-          <small>Portrait phones (&lt;544px)</small>
-        </th>
-        <th>
-          Small devices
-          <small>Landscape phones (&ge;544px - &lt;768px)</small>
-        </th>
-        <th>
-          Medium devices
-          <small>Tablets (&ge;768px - &lt;992px)</small>
-        </th>
-        <th>
-          Large devices
-          <small>Desktops (&ge;992px - &lt;1200px)</small>
-        </th>
-        <th>
-          Extra large devices
-          <small>Desktops (&ge;1200px)</small>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row"><code>.hidden-xs-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-sm-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-md-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-lg-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-xl-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-xs-up</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-sm-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-md-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-lg-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-xl-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="bd-example" data-example-id="">
+<p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
 </div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-justify"</span><span class="nt">&gt;</span>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.<span class="nt">&lt;/p&gt;</span></code></pre></div>
 
-<h2 id="responsive-utilities-print">Print classes</h2>
-<p>Similar to the regular responsive classes, use these for toggling content for print.</p>
-<div class="table-responsive">
-  <table class="table table-bordered table-striped responsive-utilities">
-    <thead>
-      <tr>
-        <th>Class</th>
-        <th>Browser</th>
-        <th>Print</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th><code>.visible-print-block</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible<br />(as <code>display: block</code>)</td>
-      </tr>
-      <tr>
-        <th><code>.visible-print-inline</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible<br />(as <code>display: inline</code>)</td>
-      </tr>
-      <tr>
-        <th><code>.visible-print-inline-block</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible<br />(as <code>display: inline-block</code>)</td>
-      </tr>
-      <tr>
-        <th><code>.hidden-print</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<h2 id="test-cases">Test cases</h2>
-
-<p>Resize your browser or load on different devices to test the responsive utility classes.</p>
-
-<p>Green checkmarks indicate the element <strong>is visible</strong> in your current viewport.</p>
-
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-sm-up visible">&#10004; Visible on extra small</span>
-    <span class="hidden-xs-down not-visible">Extra small</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-md-up visible">&#10004; Visible on small or narrower</span>
-    <span class="hidden-sm-down not-visible">Small or narrower</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-lg-up visible">&#10004; Visible on medium or narrower</span>
-    <span class="hidden-md-down not-visible">Medium or narrower</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-xl-up visible">&#10004; Visible on large or narrower</span>
-    <span class="hidden-lg-down not-visible">Large or narrower</span>
+<div class="bd-example" data-example-id="">
+<div class="card">
+  <div class="card-block text-nowrap">
+    Curabitur blandit tempus ardua ridiculus sed magna.
   </div>
 </div>
-
-<hr />
-
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-xs-down visible">&#10004; Visible on small or wider</span>
-    <span class="hidden-sm-up not-visible">Small or wider</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-sm-down visible">&#10004; Visible on medium or wider</span>
-    <span class="hidden-md-up not-visible">Medium or wider</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-md-down visible">&#10004; Visible on large or wider</span>
-    <span class="hidden-lg-up not-visible">Large or wider</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-lg-down visible">&#10004; Visible on extra large</span>
-    <span class="hidden-xl-up not-visible">Extra large</span>
-  </div>
 </div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block text-nowrap"</span><span class="nt">&gt;</span>
+    Curabitur blandit tempus ardua ridiculus sed magna.
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<hr />
+<p>For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.</p>
 
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-sm-up visible">&#10004; Your viewport is exactly extra small</span>
-    <span class="hidden-xs-down not-visible">Your viewport is NOT exactly extra small</span>
-  </div>
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-xs-down hidden-md-up visible">&#10004; Your viewport is exactly small</span>
-    <span class="hidden-sm-only not-visible">Your viewport is NOT exactly small</span>
-  </div>
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-sm-down hidden-lg-up visible">&#10004; Your viewport is exactly medium</span>
-    <span class="hidden-md-only not-visible">Your viewport is NOT exactly medium</span>
-  </div>
-  </div>
+<div class="bd-example" data-example-id="">
+<p class="text-xs-left">Left aligned text on all viewport sizes.</p>
+<p class="text-xs-center">Center aligned text on all viewport sizes.</p>
+<p class="text-xs-right">Right aligned text on all viewport sizes.</p>
 
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-md-down hidden-xl-up visible">&#10004; Your viewport is exactly large</span>
-    <span class="hidden-lg-only not-visible">Your viewport is NOT exactly large</span>
-  </div>
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-lg-down visible">&#10004; Your viewport is exactly extra large</span>
-    <span class="hidden-xl-only not-visible">Your viewport is NOT exactly extra large</span>
-  </div>
+<p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
 </div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-xs-left"</span><span class="nt">&gt;</span>Left aligned text on all viewport sizes.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-xs-center"</span><span class="nt">&gt;</span>Center aligned text on all viewport sizes.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-xs-right"</span><span class="nt">&gt;</span>Right aligned text on all viewport sizes.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-sm-left"</span><span class="nt">&gt;</span>Left aligned text on viewports sized SM (small) or wider.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-md-left"</span><span class="nt">&gt;</span>Left aligned text on viewports sized MD (medium) or wider.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lg-left"</span><span class="nt">&gt;</span>Left aligned text on viewports sized LG (large) or wider.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-xl-left"</span><span class="nt">&gt;</span>Left aligned text on viewports sized XL (extra-large) or wider.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+<h2 id="text-transform">Text transform</h2>
+
+<p>Transform text in components with text capitalization classes.</p>
+
+<div class="bd-example" data-example-id="">
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">CapiTaliZed text.</p>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lowercase"</span><span class="nt">&gt;</span>Lowercased text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-uppercase"</span><span class="nt">&gt;</span>Uppercased text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-capitalize"</span><span class="nt">&gt;</span>CapiTaliZed text.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+<p>Note how <code class="highlighter-rouge">text-capitalize</code> only changes the first letter of each word, leaving the case of any other letters unaffected.</p>
+
+<h2 id="font-weight-and-italics">Font weight and italics</h2>
+
+<p>Quickly change the weight (boldness) of text or italicize text.</p>
+
+<div class="bd-example" data-example-id="">
+<p class="font-weight-bold">Bold text.</p>
+<p class="font-weight-normal">Normal weight text.</p>
+<p class="font-italic">Italic text.</p>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-bold"</span><span class="nt">&gt;</span>Bold text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-normal"</span><span class="nt">&gt;</span>Normal weight text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-italic"</span><span class="nt">&gt;</span>Italic text.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
 
                         </div>
                     </div>

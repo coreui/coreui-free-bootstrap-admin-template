@@ -219,7 +219,7 @@
 
                 
 
-                <li class="nav-item nav-dropdown active">
+                <li class="nav-item nav-dropdown ">
                 <!-- <div class="bd-toc-item "> -->
                     
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -291,7 +291,7 @@
 
                             
 
-                            <li class="nav-item active bd-sidenav-active">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="/docs/layout/responsive-utilities">
                                     Responsive utilities
                                 </a>
@@ -824,7 +824,7 @@
 
                             
 
-                            <li class="nav-item ">
+                            <li class="nav-item active bd-sidenav-active">
                                 <a class="nav-link" href="/docs/utilities/responsive-helpers">
                                     Responsive helpers
                                 </a>
@@ -983,7 +983,7 @@
 
                             
 
-                            <li class="nav-item ">
+                            <li class="nav-item active bd-sidenav-active">
                                 <a class="nav-link" href="/docs/new-components/utilities">
                                     Utilities
                                 </a>
@@ -1007,251 +1007,88 @@
                 <li class="breadcrumb-item"><a href="/docs/">Home</a></li>
                 
                 
-                <li class="breadcrumb-item">Layout </li>
-                <li class="breadcrumb-item active">Responsive utilities</li>
+                <li class="breadcrumb-item">Utilities </li>
+                <li class="breadcrumb-item active">Responsive helpers</li>
             </ol>
             <div class="container-fluid">
                 <div class="animated fadeIn">
                     <div class="card">
                         <div class="card-header">
-                            Responsive utilities
+                            Responsive helpers
                         </div>
                         <div class="card-block">
-                            <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.</p>
+                            <h2 id="responsive-embeds">Responsive embeds</h2>
 
-<p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device’s presentation.</p>
+<p>Allow browsers to determine video or slideshow dimensions based on the width of their containing block by creating an intrinsic ratio that will properly scale on any device.</p>
 
-<h2 id="available-classes">Available classes</h2>
+<p>Rules are directly applied to <code class="highlighter-rouge">&lt;iframe&gt;</code>, <code class="highlighter-rouge">&lt;embed&gt;</code>, <code class="highlighter-rouge">&lt;video&gt;</code>, and <code class="highlighter-rouge">&lt;object&gt;</code> elements; optionally use an explicit descendant class <code class="highlighter-rouge">.embed-responsive-item</code> when you want to match the styling for other attributes.</p>
 
-<ul>
-  <li>The <code class="highlighter-rouge">.hidden-*-up</code> classes hide the element when the viewport is at the given breakpoint or wider. For example, <code class="highlighter-rouge">.hidden-md-up</code> hides an element on medium, large, and extra-large viewports.</li>
-  <li>The <code class="highlighter-rouge">.hidden-*-down</code> classes hide the element when the viewport is at the given breakpoint or smaller. For example, <code class="highlighter-rouge">.hidden-md-down</code> hides an element on extra-small, small, and medium viewports.</li>
-  <li>There are no explicit “visible”/”show” responsive utility classes; you make an element visible by simply not hiding it at that breakpoint size.</li>
-  <li>You can combine one <code class="highlighter-rouge">.hidden-*-up</code> class with one <code class="highlighter-rouge">.hidden-*-down</code> class to show an element only on a given interval of screen sizes. For example, <code class="highlighter-rouge">.hidden-sm-down.hidden-xl-up</code> shows the element only on medium and large viewports. Using multiple <code class="highlighter-rouge">.hidden-*-up</code> classes or multiple <code class="highlighter-rouge">.hidden-*-down</code> classes is redundant and pointless.</li>
-  <li>These classes don’t attempt to accommodate less common cases where an element’s visibility can’t be expressed as a single contiguous range of viewport breakpoint sizes; you will instead need to use custom CSS in such cases.</li>
-</ul>
+<p><strong>Pro-Tip!</strong> You don’t need to include <code class="highlighter-rouge">frameborder="0"</code> in your <code class="highlighter-rouge">&lt;iframe&gt;</code>s as we override that for you.</p>
 
-<div class="table-responsive">
-  <table class="table table-bordered table-striped responsive-utilities">
-    <thead>
-      <tr>
-        <th></th>
-        <th>
-          Extra small devices
-          <small>Portrait phones (&lt;544px)</small>
-        </th>
-        <th>
-          Small devices
-          <small>Landscape phones (&ge;544px - &lt;768px)</small>
-        </th>
-        <th>
-          Medium devices
-          <small>Tablets (&ge;768px - &lt;992px)</small>
-        </th>
-        <th>
-          Large devices
-          <small>Desktops (&ge;992px - &lt;1200px)</small>
-        </th>
-        <th>
-          Extra large devices
-          <small>Desktops (&ge;1200px)</small>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row"><code>.hidden-xs-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-sm-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-md-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-lg-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-xl-down</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-xs-up</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-sm-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-md-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-lg-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-      <tr>
-        <th scope="row"><code>.hidden-xl-up</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="bd-example" data-example-id="">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
 </div>
-
-<h2 id="responsive-utilities-print">Print classes</h2>
-<p>Similar to the regular responsive classes, use these for toggling content for print.</p>
-<div class="table-responsive">
-  <table class="table table-bordered table-striped responsive-utilities">
-    <thead>
-      <tr>
-        <th>Class</th>
-        <th>Browser</th>
-        <th>Print</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th><code>.visible-print-block</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible<br />(as <code>display: block</code>)</td>
-      </tr>
-      <tr>
-        <th><code>.visible-print-inline</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible<br />(as <code>display: inline</code>)</td>
-      </tr>
-      <tr>
-        <th><code>.visible-print-inline-block</code></th>
-        <td class="is-hidden">Hidden</td>
-        <td class="is-visible">Visible<br />(as <code>display: inline-block</code>)</td>
-      </tr>
-      <tr>
-        <th><code>.hidden-print</code></th>
-        <td class="is-visible">Visible</td>
-        <td class="is-hidden">Hidden</td>
-      </tr>
-    </tbody>
-  </table>
 </div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"embed-responsive embed-responsive-16by9"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"embed-responsive-item"</span> <span class="na">src=</span><span class="s">"//www.youtube.com/embed/zpOULjyy-n8?rel=0"</span> <span class="na">allowfullscreen</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h2 id="test-cases">Test cases</h2>
+<p>Aspect ratios can be customized with modifier classes.</p>
 
-<p>Resize your browser or load on different devices to test the responsive utility classes.</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- 21:9 aspect ratio --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"embed-responsive embed-responsive-21by9"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"embed-responsive-item"</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 
-<p>Green checkmarks indicate the element <strong>is visible</strong> in your current viewport.</p>
+<span class="c">&lt;!-- 16:9 aspect ratio --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"embed-responsive embed-responsive-16by9"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"embed-responsive-item"</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-sm-up visible">&#10004; Visible on extra small</span>
-    <span class="hidden-xs-down not-visible">Extra small</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-md-up visible">&#10004; Visible on small or narrower</span>
-    <span class="hidden-sm-down not-visible">Small or narrower</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-lg-up visible">&#10004; Visible on medium or narrower</span>
-    <span class="hidden-md-down not-visible">Medium or narrower</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-xl-up visible">&#10004; Visible on large or narrower</span>
-    <span class="hidden-lg-down not-visible">Large or narrower</span>
-  </div>
+<span class="c">&lt;!-- 4:3 aspect ratio --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"embed-responsive embed-responsive-4by3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"embed-responsive-item"</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- 1:1 aspect ratio --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"embed-responsive embed-responsive-1by1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"embed-responsive-item"</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="responsive-floats">Responsive floats</h2>
+
+<p>These utility classes float an element to the left or right, or disable floating, based on the current viewport size using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">CSS <code class="highlighter-rouge">float</code> property</a>. <code class="highlighter-rouge">!important</code> is included to avoid specificity issues. These use the same viewport width breakpoints as the grid system.</p>
+
+<p>Two similar non-responsive Sass mixins (<code class="highlighter-rouge">float-left</code> and <code class="highlighter-rouge">float-right</code>) are also available.</p>
+
+<div class="bd-example" data-example-id="">
+<div class="float-left">Float left on all viewport sizes</div><br />
+<div class="float-right">Float right on all viewport sizes</div><br />
+<div class="float-none">Don't float on all viewport sizes</div><br />
+
+<div class="float-sm-left">Float left on viewports sized SM (small) or wider</div><br />
+<div class="float-md-left">Float left on viewports sized MD (medium) or wider</div><br />
+<div class="float-lg-left">Float left on viewports sized LG (large) or wider</div><br />
+<div class="float-xl-left">Float left on viewports sized XL (extra-large) or wider</div><br />
 </div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-left"</span><span class="nt">&gt;</span>Float left on all viewport sizes<span class="nt">&lt;/div&gt;&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-right"</span><span class="nt">&gt;</span>Float right on all viewport sizes<span class="nt">&lt;/div&gt;&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-none"</span><span class="nt">&gt;</span>Don't float on all viewport sizes<span class="nt">&lt;/div&gt;&lt;br&gt;</span>
 
-<hr />
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-sm-left"</span><span class="nt">&gt;</span>Float left on viewports sized SM (small) or wider<span class="nt">&lt;/div&gt;&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-md-left"</span><span class="nt">&gt;</span>Float left on viewports sized MD (medium) or wider<span class="nt">&lt;/div&gt;&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-lg-left"</span><span class="nt">&gt;</span>Float left on viewports sized LG (large) or wider<span class="nt">&lt;/div&gt;&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-xl-left"</span><span class="nt">&gt;</span>Float left on viewports sized XL (extra-large) or wider<span class="nt">&lt;/div&gt;&lt;br&gt;</span></code></pre></div>
 
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-xs-down visible">&#10004; Visible on small or wider</span>
-    <span class="hidden-sm-up not-visible">Small or wider</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-sm-down visible">&#10004; Visible on medium or wider</span>
-    <span class="hidden-md-up not-visible">Medium or wider</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-md-down visible">&#10004; Visible on large or wider</span>
-    <span class="hidden-lg-up not-visible">Large or wider</span>
-  </div>
-  <div class="col-xs-6 col-sm-3">
-    <span class="hidden-lg-down visible">&#10004; Visible on extra large</span>
-    <span class="hidden-xl-up not-visible">Extra large</span>
-  </div>
-</div>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Related simple non-responsive mixins
+</span><span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">float-left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.another-element</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">float-right</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
 
-<hr />
-
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-sm-up visible">&#10004; Your viewport is exactly extra small</span>
-    <span class="hidden-xs-down not-visible">Your viewport is NOT exactly extra small</span>
-  </div>
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-xs-down hidden-md-up visible">&#10004; Your viewport is exactly small</span>
-    <span class="hidden-sm-only not-visible">Your viewport is NOT exactly small</span>
-  </div>
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-sm-down hidden-lg-up visible">&#10004; Your viewport is exactly medium</span>
-    <span class="hidden-md-only not-visible">Your viewport is NOT exactly medium</span>
-  </div>
-  </div>
-
-<div class="row responsive-utilities-test visible-on">
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-md-down hidden-xl-up visible">&#10004; Your viewport is exactly large</span>
-    <span class="hidden-lg-only not-visible">Your viewport is NOT exactly large</span>
-  </div>
-  <div class="col-xs-6 col-sm-4">
-    <span class="hidden-lg-down visible">&#10004; Your viewport is exactly extra large</span>
-    <span class="hidden-xl-only not-visible">Your viewport is NOT exactly extra large</span>
-  </div>
-</div>
 
                         </div>
                     </div>
