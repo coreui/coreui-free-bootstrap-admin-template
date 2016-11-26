@@ -1,0 +1,60 @@
+{
+  "env": {
+    "webpack": {
+      "plugins": [
+        "transform-decorators-legacy",
+        "transform-class-properties"
+      ],
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": [
+                "last 2 versions",
+                "not ie <= 11"
+              ]
+            },
+            "loose": true,
+            "modules": false
+          }
+        ]
+      ]
+    },
+    "e2e": {
+      "plugins": [
+        "transform-decorators-legacy",
+        "transform-class-properties"
+      ],
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": [
+                "last 2 versions",
+                "not ie <= 11"
+              ]
+            },
+            "loose": true,
+            "modules": "commonjs"
+          }
+        ]
+      ]
+    },
+    "node": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "node": 4
+            },
+            "loose": true,
+            "modules": "commonjs"
+          }
+        ]
+      ]
+    }
+  }
+}
