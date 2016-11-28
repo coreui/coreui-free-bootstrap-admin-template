@@ -1,0 +1,7 @@
+<template>
+  <require from="./simple-select.css"></require>
+  <select id="select" name="select" class="form-control" size="1" value.bind="value">
+    <option></option>
+    <option repeat.for="item of simpleid" model.bind="item">${item.name}</option>
+  </select>
+</template>

@@ -64,37 +64,49 @@
   "homepage": "https://github.com/aurelia/skeleton-navigation#readme",
   "aurelia": {
     "build": {
-      "resources": []
+      "resources": [
+        "aurelia-chart/elements/chart-element",
+        "aurelia-chart/attributes/chart-attribute"
+      ]
     }
   },
   "dependencies": {
+    "aurelia-api": "^3.0.0",
+    "aurelia-authentication": "^3.1.0",
     "aurelia-bootstrapper-webpack": "^1.0.0",
+    "aurelia-chart": "^0.2.6",
     "aurelia-event-aggregator": "^1.0.0",
-    "aurelia-fetch-client": "^1.0.1",
     "aurelia-framework": "^1.0.7",
     "aurelia-history-browser": "^1.0.0",
+    "aurelia-http-client": "^1.0.3",
     "aurelia-loader-webpack": "^1.0.3",
     "aurelia-logging-console": "^1.0.0",
     "aurelia-pal-browser": "^1.0.0",
     "aurelia-polyfills": "^1.1.1",
     "aurelia-route-recognizer": "^1.1.0",
     "aurelia-router": "^1.0.7",
+    "aurelia-table": "github:tochoromero/aurelia-table",
     "aurelia-templating-binding": "^1.0.0",
     "aurelia-templating-resources": "^1.1.1",
-    "aurelia-templating-router": "^1.0.0",
+    "aurelia-templating-router": "aurelia/templating-router",
     "bluebird": "^3.4.6",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "4.0.0-alpha.2",
+    "bootstrap-datepicker": "^1.6.1",
+    "chart.js": "^2.4.0",
+    "devbridge-autocomplete": "^1.2.27",
     "font-awesome": "^4.7.0",
-    "isomorphic-fetch": "^2.2.1",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "moment": "^2.17.0",
+    "simple-line-icons": "^2.4.1",
+    "tether": "latest"
   },
   "devDependencies": {
-    "@easy-webpack/config-aurelia": "^2.2.2",
+    "@easy-webpack/config-aurelia": "^2.2.3",
     "@easy-webpack/config-babel": "^4.0.0",
     "@easy-webpack/config-common-chunks-simple": "^2.0.3",
     "@easy-webpack/config-copy-files": "^1.1.2",
     "@easy-webpack/config-css": "^3.1.0",
-    "@easy-webpack/config-env-development": "^2.1.5",
+    "@easy-webpack/config-env-development": "^2.1.6",
     "@easy-webpack/config-env-production": "^2.2.3",
     "@easy-webpack/config-external-source-maps": "^3.1.0",
     "@easy-webpack/config-fonts-and-images": "^2.1.0",
@@ -106,7 +118,7 @@
     "@easy-webpack/config-json": "^3.1.0",
     "@easy-webpack/config-test-coverage-istanbul": "^3.2.0",
     "@easy-webpack/config-uglify": "^2.2.3",
-    "@easy-webpack/core": "^2.0.0",
+    "@easy-webpack/core": "^2.0.1",
     "aurelia-protractor-plugin": "^1.0.1",
     "aurelia-tools": "^1.0.0",
     "babel-plugin-transform-class-properties": "^6.18.0",
