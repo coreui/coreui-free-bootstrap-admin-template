@@ -1,0 +1,23 @@
+<template>
+  <li repeat.for="row of data">
+    <div class="title">
+      ${row.day}
+    </div>
+    <div class="bars">
+      <progress class="progress progress-xs progress-info" value="${row.new}" max="100"
+                style="margin-bottom: 2px;">${row.new}%
+      </progress>
+      <progress class="progress progress-xs progress-danger m-0" value="${ row.recurring }" max="100">
+        ${ row.recurring }%
+      </progress>
+    </div>
+  </li>
+  <li class="legend">
+    <span class="tag tag-pill tag-info"></span>
+    <small>New clients</small>
+    &nbsp;
+    <span class="tag tag-pill tag-danger"></span>
+    <small>Recurring clients</small>
+  </li>
+
+</template>

@@ -63,10 +63,8 @@
                       <small class="text-muted">New Clients</small>
                       <br>
                       <strong class="h4">9,123</strong>
-                      <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
-                        <canvas class="chart chart-line" chart-data="data4" chart-labels="labels" chart-legend="false"
-                                chart-series="series" chart-options="options" chart-colors="primary" width="100"
-                                height="30"></canvas>
+                      <require from="./sparkline-chart"></require>
+                      <div class="chart-wrapper" as-element="sparkline-chart" data-index="0">
                       </div>
                     </div>
                   </div>
@@ -76,38 +74,16 @@
                       <small class="text-muted">New Clients</small>
                       <br>
                       <strong class="h4">9,123</strong>
-                      <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
-                        <canvas class="chart chart-line" chart-data="data3" chart-labels="labels" chart-legend="false"
-                                chart-series="series" chart-options="options" chart-colors="danger" width="100"
-                                height="30"></canvas>
-                      </div>
+                      <div class="chart-wrapper" as-element="sparkline-chart" data-index="1"></div>
                     </div>
                   </div>
                   <!--/.col-->
                 </div>
                 <!--/.row-->
                 <hr class="mt-0">
-                <ul class="horizontal-bars" ng-controller="horizontalBarsCtrl">
-                  <li ng-repeat="row in data">
-                    <div class="title">
-                      {{ row.day }}
-                    </div>
-                    <div class="bars">
-                      <progress class="progress progress-xs progress-info" value="{{ row.new }}" max="100"
-                                style="margin-bottom: 2px;">{{ row.new }}%
-                      </progress>
-                      <progress class="progress progress-xs progress-danger m-0" value="{{ row.recurring }}" max="100">
-                        {{ row.recurring }}%
-                      </progress>
-                    </div>
-                  </li>
-                  <li class="legend">
-                    <span class="tag tag-pill tag-info"></span>
-                    <small>New clients</small>
-                    &nbsp;
-                    <span class="tag tag-pill tag-danger"></span>
-                    <small>Recurring clients</small>
-                  </li>
+                <require from="./horizontal-bars"></require>
+                <ul class="horizontal-bars" as-element="horizontal-bars">
+
                 </ul>
               </div>
               <!--/.col-->
@@ -118,10 +94,8 @@
                       <small class="text-muted">New Clients</small>
                       <br>
                       <strong class="h4">9,123</strong>
-                      <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
-                        <canvas class="chart chart-line" chart-data="data4" chart-labels="labels" chart-legend="false"
-                                chart-series="series" chart-options="options" chart-colors="warning" width="100"
-                                height="30"></canvas>
+                      <div class="chart-wrapper" as-element="sparkline-chart" data-index="2">
+
                       </div>
                     </div>
                   </div>
@@ -131,10 +105,7 @@
                       <small class="text-muted">New Clients</small>
                       <br>
                       <strong class="h4">9,123</strong>
-                      <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
-                        <canvas class="chart chart-line" chart-data="data3" chart-labels="labels" chart-legend="false"
-                                chart-series="series" chart-options="options" chart-colors="success" width="100"
-                                height="30"></canvas>
+                      <div class="chart-wrapper" as-element="sparkline-chart" data-index="3">
                       </div>
                     </div>
                   </div>
@@ -181,11 +152,7 @@
                       <small class="text-muted">New Clients</small>
                       <br>
                       <strong class="h4">9,123</strong>
-                      <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
-                        <canvas class="chart chart-line" chart-data="data4" chart-labels="labels" chart-legend="false"
-                                chart-series="series" chart-options="options" chart-colors="default" width="100"
-                                height="30"></canvas>
-                      </div>
+                      <div class="chart-wrapper" as-element="sparkline-chart" data-index="4"></div>
                     </div>
                   </div>
                   <!--/.col-->
@@ -194,11 +161,7 @@
                       <small class="text-muted">New Clients</small>
                       <br>
                       <strong class="h4">9,123</strong>
-                      <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
-                        <canvas class="chart chart-line" chart-data="data3" chart-labels="labels" chart-legend="false"
-                                chart-series="series" chart-options="options" chart-colors="primary" width="100"
-                                height="30"></canvas>
-                      </div>
+                      <div class="chart-wrapper" as-element="sparkline-chart" data-index="5"></div>
                     </div>
                   </div>
                   <!--/.col-->
