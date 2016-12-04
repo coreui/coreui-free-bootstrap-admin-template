@@ -1,8 +1,5 @@
 import Config from "../../config-color";
-
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
+import Utils from "../../utils";
 
 export class CardChart7 {
   chartData = {
@@ -21,7 +18,7 @@ export class CardChart7 {
     var elements = 15;
     for (var i = 0; i <= elements; i++) {
       this.chartData.labels.push(i);
-      this.chartData.datasets[0].data.push(random(40, 100));
+      this.chartData.datasets[0].data.push(Utils.random(40, 100));
     }
   }
 

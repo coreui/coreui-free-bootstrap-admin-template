@@ -1,6 +1,4 @@
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
+import Utils from "../../utils";
 
 export class CardChart4 {
   barChartData = {
@@ -18,7 +16,7 @@ export class CardChart4 {
     var elements = 16;
     for (var i = 2000; i <= 2000 + elements; i++) {
       this.barChartData.labels.push(i);
-      this.barChartData.datasets[0].data.push(random(40, 100));
+      this.barChartData.datasets[0].data.push(Utils.random(40, 100));
     }
   }
 

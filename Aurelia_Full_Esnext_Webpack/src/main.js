@@ -16,7 +16,7 @@ export async function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
     .developmentLogging()
-    .feature('components')
+    .feature('shared-components')
 
     .plugin('aurelia-api', config => {
 

@@ -168,6 +168,7 @@ export class App {
         nav: true,
         title: 'Widgets',
         settings: {
+          isNew: true,
           icon: 'icon-calculator'
         }
       },

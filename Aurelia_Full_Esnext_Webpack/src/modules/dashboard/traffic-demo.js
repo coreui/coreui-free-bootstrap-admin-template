@@ -1,19 +1,5 @@
 import Config from "../../config-color";
-
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-//convert Hex to RGBA
-function convertHex(hex, opacity) {
-  hex = hex.replace('#', '');
-  let r = parseInt(hex.substring(0, 2), 16);
-  let g = parseInt(hex.substring(2, 4), 16);
-  let b = parseInt(hex.substring(4, 6), 16);
-
-  let result = 'rgba(' + r + ',' + g + ',' + b + ',' + opacity / 100 + ')';
-  return result;
-}
+import Utils from "../../utils";
 
 export class TrafficDemo {
   chartData = {
@@ -26,7 +12,7 @@ export class TrafficDemo {
       label: 'Current',
       fill: true,
       data: [],
-      backgroundColor: convertHex(Config.brandInfo, 10),
+      backgroundColor: Utils.convertHex(Config.brandInfo, 10),
       borderColor: Config.brandInfo,
       pointHoverBackgroundColor: '#fff'
     }, {
@@ -52,8 +38,8 @@ export class TrafficDemo {
   constructor() {
     var elements = 27;
     for (var i = 0; i <= elements; i++) {
-      this.chartData.datasets[0].data.push(random(50, 200));
-      this.chartData.datasets[1].data.push(random(80, 100));
+      this.chartData.datasets[0].data.push(Utils.random(50, 200));
+      this.chartData.datasets[1].data.push(Utils.random(80, 100));
       this.chartData.datasets[2].data.push(65);
     }
   }
