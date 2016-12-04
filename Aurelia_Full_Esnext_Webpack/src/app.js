@@ -136,7 +136,10 @@ export class App {
         name: 'icons',
         moduleId: './modules/icons/icons',
         nav: true,
-        title: 'Icons'
+        title: 'Icons',
+        settings: {
+          icon: 'icon-star'
+        }
       },
       {
         route: 'icons/font-awesome',
@@ -157,6 +160,30 @@ export class App {
         }
       },
 
+      // Widgets menu
+      {
+        route: 'widgets',
+        name: 'widgets',
+        moduleId: './modules/widgets/widgets',
+        nav: true,
+        title: 'Widgets',
+        settings: {
+          icon: 'icon-calculator'
+        }
+      },
+
+      // Charts menu
+      {
+        route: 'charts',
+        name: 'charts',
+        moduleId: './modules/charts/charts',
+        nav: true,
+        title: 'Charts',
+        settings: {
+          icon: 'icon-pie-chart'
+        }
+      },
+
 
       // Pages menu
       {
@@ -166,7 +193,8 @@ export class App {
         nav: true,
         title: 'Pages',
         settings: {
-          navTitle: 'Extras'
+          navTitle: 'Extras',
+          icon: 'icon-star'
         }
       },
 
