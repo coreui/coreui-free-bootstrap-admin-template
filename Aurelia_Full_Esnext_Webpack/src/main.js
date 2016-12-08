@@ -1,7 +1,9 @@
-import "../styles/coreui.css";
-import "../styles/style.css";
 import "font-awesome/css/font-awesome.css";
 import "bootstrap/dist/css/bootstrap.css";
+
+import "../styles/coreui.css";
+import "../styles/style.css";
+
 import "tether";
 import "bootstrap";
 import "simple-line-icons/css/simple-line-icons.css";
