@@ -1,18 +1,18 @@
-import "font-awesome/css/font-awesome.css";
-import "bootstrap/dist/css/bootstrap.css";
+import "font-awesome/scss/font-awesome.scss";
+import "simple-line-icons/scss/simple-line-icons.scss";
+import "bootstrap/scss/bootstrap.scss";
 
-import "../styles/coreui.css";
-import "../styles/style.css";
+import "../scss/style.scss";
+import "../styles/app.scss";
 
 import "tether";
 import "bootstrap";
-import "simple-line-icons/css/simple-line-icons.css";
+
 import * as Bluebird from "bluebird";
 import authConfig from "./authConfig";
 
 // comment out if you don't want a Promise polyfill (remove also from webpack.common.js)
 Bluebird.config({warnings: false});
-
 
 export async function configure(aurelia) {
   aurelia.use
