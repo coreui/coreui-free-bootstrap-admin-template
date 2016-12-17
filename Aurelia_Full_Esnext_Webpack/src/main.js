@@ -1,5 +1,5 @@
-import "font-awesome/scss/font-awesome.scss";
-import "simple-line-icons/scss/simple-line-icons.scss";
+import "font-awesome/css/font-awesome.min.css";
+import "simple-line-icons/css/simple-line-icons.css";
 import "bootstrap/scss/bootstrap.scss";
 
 import "../scss/style.scss";

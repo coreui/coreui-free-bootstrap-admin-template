@@ -9,6 +9,7 @@ import envDev from "@easy-webpack/config-env-development";
 import aurelia from "@easy-webpack/config-aurelia";
 import babel from "@easy-webpack/config-babel";
 import html from "@easy-webpack/config-html";
+import css from "@easy-webpack/config-css";
 import sass from "@easy-webpack/config-sass";
 import fontAndImages from "@easy-webpack/config-fonts-and-images";
 import globalBluebird from "@easy-webpack/config-global-bluebird";
@@ -109,7 +110,8 @@ let config = generateConfig(
 
   babel(),
   html(),
-  sass({filename: 'styles.css', allChunks: true, sourceMap: false}),
+  sass({allChunks: true, sourceMap: false}),
+  css({filename: 'styles.css', allChunks: true, sourceMap: false}),
   fontAndImages(),
   globalBluebird(),
   globalJquery(),
