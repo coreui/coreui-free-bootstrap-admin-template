@@ -1,0 +1,30 @@
+<template>
+  <li repeat.for="row of gender">
+    <i class="${row.icon}"></i>
+    <span class="title">${ row.title }</span>
+    <span class="value">${ row.value }%</span>
+    <div class="bars">
+      <progress class="progress progress-xs progress-warning m-0" value="${ row.value }" max="100">${ row.value }%
+      </progress>
+    </div>
+  </li>
+  <li class="divider"></li>
+  <li repeat.for="row of source">
+    <i class="${row.icon}"></i>
+    <span class="title">${ row.title }</span>
+                                    <span class="value">${ row.value | numberFormat }
+                                        <span class="text-muted small">(${ row.percent }%)</span>
+                                    </span>
+    <div class="bars">
+      <progress class="progress progress-xs progress-success m-0" value="${ row.percent }" max="100">${
+        row.percent }%
+      </progress>
+    </div>
+  </li>
+  <li class="divider text-xs-center">
+    <button type="button" class="btn btn-sm btn-link text-muted" data-toggle="tooltip"
+            data-placement="top" title="show more"><i class="icon-options"></i>
+    </button>
+  </li>
+
+</template>
