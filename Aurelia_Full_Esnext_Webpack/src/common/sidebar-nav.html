@@ -1,0 +1,39 @@
+<template>
+  <div class="sidebar">
+    <nav class="sidebar-nav">
+
+
+      <ul class="nav">
+        <template repeat.for="route of router.navigation">
+          <li if.bind="route.settings.navTitle" class="divider"></li>
+          <li if.bind="route.settings.navTitle" class="nav-title">
+            ${route.settings.navTitle}
+          </li>
+          <li
+            class="nav-item ${route.isActive ? 'active' : ''}
+            ${(route.isActive && route.children.length > 0 || router.currentInstruction.config.settings.parentRoute == route.relativeHref) ? 'open' : ''}
+            ${route.children.length > 0 ? 'nav-dropdown' : ''}">
+            <a
+              if.bind="!route.settings.parentRoute"
+              class="nav-link ${route.children.length > 0 ? 'nav-dropdown-toggle' : ''}"
+              href.bind="route.href">
+              <i class="${route.settings.icon ? route.settings.icon :'icon-puzzle'}"></i> ${route.title}
+              <span class="tag tag-info" if.bind="route.settings.isNew">NEW</span>
+            </a>
+
+            <ul if.bind="route.children.length > 0" class="nav-dropdown-items">
+              <li repeat.for="subroute of route.children"
+                  class="nav-item ${subroute.isActive ? 'active' : ''}">
+                <a class="nav-link"
+                   href.bind="subroute.href">
+                  <i class="${subroute.settings.icon ? subroute.settings.icon :'icon-puzzle'}"></i> ${subroute.title}
+                  <span class="tag tag-info" if.bind="subroute.settings.isNew">NEW</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </template>
+      </ul>
+    </nav>
+  </div>
+</template>
