@@ -1,10 +1,10 @@
-import { Component }        from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: 'register.component.html'
+  templateUrl: 'register.component.html'
 })
 export class RegisterComponent {
 
-    constructor() { }
+  constructor() { }
 
 }

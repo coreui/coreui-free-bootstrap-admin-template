@@ -1,0 +1,13 @@
+@each $variant, $color in (primary: $brand-primary, secondary: $gray-lighter, success: $brand-success, info: $brand-info, warning: $brand-warning, danger: $brand-danger) {
+  .modal-#{$variant} {
+
+    .modal-content {
+      border-color: $color;
+    }
+
+    .modal-header {
+      color: #fff;
+      background-color: $color;
+    }
+  }
+}

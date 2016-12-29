@@ -17,14 +17,14 @@
                 <a class="nav-link" href="#">Settings</a>
             </li>
         </ul>
-        <ul class="nav navbar-nav float-xs-right hidden-md-down">
-            <li class="nav-item">
+        <ul class="nav navbar-nav float-xs-right">
+            <li class="nav-item hidden-md-down">
                 <a class="nav-link" href="#"><i class="icon-bell"></i><span class="tag tag-pill tag-danger">5</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item hidden-md-down">
                 <a class="nav-link" href="#"><i class="icon-list"></i></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item hidden-md-down">
                 <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
             </li>
             <li class="nav-item dropdown" dropdown (onToggle)="toggled($event)">
@@ -56,7 +56,7 @@
                     <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
                 </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item hidden-md-down">
                 <a class="nav-link navbar-toggler aside-toggle" href="#">&#9776;</a>
             </li>
         </ul>
@@ -89,6 +89,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/forms']"><i class="icon-puzzle"></i> Forms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/modals']"><i class="icon-puzzle"></i> Modals</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/switches']"><i class="icon-puzzle"></i> Switches</a>

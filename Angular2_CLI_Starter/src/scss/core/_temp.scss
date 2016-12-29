@@ -1,13 +1,51 @@
 .pagination-datatables, .pagination {
-    li {
-        @extend .page-item;
+  li {
+    @extend .page-item;
 
-        a {
-            @extend .page-link;
-        }
+    a {
+      @extend .page-link;
     }
+  }
 }
 
 .label-pill {
-    border-radius: 1rem !important;
+  border-radius: 1rem !important;
+}
+
+//time & datepicker
+.glyphicon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-chevron-up::before {
+  content: "\f077";
+}
+.glyphicon-chevron-down::before {
+  content: "\f078";
+}
+.glyphicon-chevron-left::before {
+  content: "\f053";
+}
+.glyphicon-chevron-right::before {
+  content: "\f054";
+}
+
+.well.well-sm.bg-faded {
+  .btn-sm {
+    @extend .btn;
+    background: #fff;
+    &:hover {
+      @extend .btn-primary;
+    }
+    &.active {
+      @extend .btn-primary;
+    }
+  }
+  .text-center {
+    @extend .text-xs-center;
+  }
 }

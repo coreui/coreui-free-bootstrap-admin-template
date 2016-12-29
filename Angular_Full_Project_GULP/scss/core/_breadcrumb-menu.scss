@@ -1,36 +1,36 @@
 .breadcrumb-menu {
-    position: absolute;
-    top: 0;
-    right: $breadcrumb-padding-x;
+  position: absolute;
+  top: 0;
+  right: $breadcrumb-padding-x;
 
-    &::before {
-        display: none;
+  &::before {
+    display: none;
+  }
+
+  .btn {
+    padding-top: $breadcrumb-padding-y;
+    padding-bottom: $breadcrumb-padding-y;
+  }
+
+  .btn.btn-secondary {
+    color: $text-muted;
+    border: 0;
+
+    &:hover, &.active {
+      color: $body-color;
+      background: transparent;
     }
+  }
 
-    .btn {
-        padding-top: $breadcrumb-padding-y;
-        padding-bottom: $breadcrumb-padding-y;
-    }
-
+  .open {
     .btn.btn-secondary {
-        color: $text-muted;
-        border: 0;
-
-        &:hover, &.active {
-            color: $body-color;
-            background: transparent;
-        }
+      color: $body-color;
+      background: transparent;
     }
+  }
 
-    .open {
-        .btn.btn-secondary {
-            color: $body-color;
-            background: transparent;
-        }
-    }
-
-    .dropdown-menu {
-        min-width: 180px;
-        line-height: $line-height-base;
-    }
+  .dropdown-menu {
+    min-width: 180px;
+    line-height: $line-height-base;
+  }
 }
