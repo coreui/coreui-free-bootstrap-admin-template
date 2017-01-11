@@ -183,9 +183,6 @@ function loadPage(url) {
 
 $(document).ready(function($){
 
-  navigationSmartResize();
-  smartResize();
-
   // Add class .active to current link - AJAX Mode off
   $.navigation.find('a').each(function(){
 
@@ -232,31 +229,21 @@ $(document).ready(function($){
   /* ---------- Main Menu Open/Close, Min/Full ---------- */
   $('.navbar-toggler').click(function(){
 
-    var bodyClass = localStorage.getItem('body-class');
-
-    if ($(this).hasClass('layout-toggler') && $('body').hasClass('sidebar-off-canvas')) {
-      $('body').toggleClass('sidebar-opened').parent().toggleClass('sidebar-opened');
-      //resize charts
+    if ($(this).hasClass('sidebar-toggler')) {
+      $('body').toggleClass('sidebar-hidden');
       resizeBroadcast();
-
-    } else if ($(this).hasClass('layout-toggler') && ($('body').hasClass('sidebar-nav') || bodyClass == 'sidebar-nav')) {
-      $('body').toggleClass('sidebar-nav');
-      localStorage.setItem('body-class', 'sidebar-nav');
-      if (bodyClass == 'sidebar-nav') {
-        localStorage.clear();
-      }
-      //resize charts
-      resizeBroadcast();
-    } else {
-      $('body').toggleClass('mobile-open');
     }
-  });
 
-  $('.aside-toggle').click(function(){
-    $('body').toggleClass('aside-menu-open');
+    if ($(this).hasClass('aside-menu-toggler')) {
+      $('body').toggleClass('aside-menu-hidden');
+      resizeBroadcast();
+    }
 
-    //resize charts
-    resizeBroadcast();
+    if ($(this).hasClass('mobile-sidebar-toggler')) {
+      $('body').toggleClass('sidebar-mobile-show');
+      resizeBroadcast();
+    }
+
   });
 
   $('.sidebar-close').click(function(){
@@ -305,35 +292,4 @@ function init(url) {
   /* ---------- Popover ---------- */
   $('[rel="popover"],[data-rel="popover"],[data-toggle="popover"]').popover();
 
-}
-
-/****
-* SMART RESIZE
-*/
-$(window).bind('resize', navigationSmartResize);
-
-function navigationSmartResize(e) {
-
-  if ($('body').hasClass('sidebar-nav') && $('body').hasClass('fixed-nav')) {
-    var bodyHeight = $(window).height();
-    var headerHeight = $('header').outerHeight();
-
-    if ($('body').hasClass('sidebar-off-canvas')) {
-      $('nav.sidebar-nav').css('height', bodyHeight);
-    } else {
-      $('nav.sidebar-nav').css('height', bodyHeight - headerHeight);
-    }
-  }
-}
-
-$(window).bind('resize', smartResize);
-
-function smartResize(e) {
-  var documentHeight = $(document).height()
-  var bodyHeight = $('body').height();
-  var sidebarHeight = $('.sidebar').height();
-
-  if (documentHeight > bodyHeight) {
-    $('body').css('min-height', documentHeight);
-  }
 }

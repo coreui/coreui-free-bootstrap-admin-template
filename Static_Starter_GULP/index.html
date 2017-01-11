@@ -2,7 +2,7 @@
  * CoreUI - Open Source Bootstrap Admin Template
  * @version v1.0.0-alpha.2
  * @link http://coreui.io
- * Copyright (c) 2016 creativeLabs Łukasz Holeczek
+ * Copyright (c) 2017 creativeLabs Łukasz Holeczek
  * @license MIT
  -->
 <!DOCTYPE html>
@@ -30,62 +30,69 @@
 </head>
 
 <!-- BODY options, add following classes to body to change options
-		1. 'compact-nav'     	  - Switch sidebar to minified version (width 50px)
-		2. 'sidebar-nav'		  - Navigation on the left
-			2.1. 'sidebar-off-canvas'	- Off-Canvas
-				2.1.1 'sidebar-off-canvas-push'	- Off-Canvas which move content
-				2.1.2 'sidebar-off-canvas-with-shadow'	- Add shadow to body elements
-		3. 'fixed-nav'			  - Fixed navigation
-		4. 'navbar-fixed'		  - Fixed navbar
-		5. 'footer-fixed'		  - Fixed navbar
-	-->
 
-<body class="navbar-fixed sidebar-nav fixed-nav">
-    <header class="navbar">
-        <div class="container-fluid">
-            <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">☰</button>
-            <a class="navbar-brand" href="#"></a>
-            <ul class="nav navbar-nav hidden-md-down">
-                <li class="nav-item">
-                    <a class="nav-link navbar-toggler layout-toggler" href="#">☰</a>
-                </li>
+// Header options
+1. '.header-fixed'					- Fixed Header
 
-            </ul>
-        </div>
+// Sidebar options
+1. '.sidebar-fixed'					- Fixed Sidebar
+2. '.sidebar-hidden'				- Hidden Sidebar
+3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+4. '.sidebar-compact'				- Compact Sidebar Navigation (Only icons)
+
+// Aside options
+1. '.aside-menu-fixed'			- Fixed Aside Menu
+2. '.aside-menu-hidden'			- Hidden Aside Menu
+3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+// Footer options
+1. 'footer-fixed'						- Fixed footer
+
+-->
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    <header class="app-header navbar">
+        <button class="navbar-toggler mobile-sidebar-toggler hidden-lg-up" type="button">☰</button>
+        <a class="navbar-brand" href="#"></a>
+        <ul class="nav navbar-nav hidden-md-down">
+            <li class="nav-item">
+                <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
+            </li>
+
+        </ul>
     </header>
 
-    <div class="sidebar">
+    <div class="app-body">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+                    </li>
 
-        <nav class="sidebar-nav">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="tag tag-info">NEW</span></a>
-                </li>
+                </ul>
+            </nav>
+        </div>
 
-            </ul>
-        </nav>
+        <!-- Main content -->
+        <main class="main">
+
+
+            <div class="container-fluid">
+
+
+
+
+            </div>
+            <!-- /.conainer-fluid -->
+        </main>
+
+
     </div>
 
-    <!-- Main content -->
-    <main class="main">
-
-
-        <div class="container-fluid">
-
-
-
-
-        </div>
-        <!-- /.conainer-fluid -->
-    </main>
-
-
-    <footer class="footer">
-        <span class="text-left">
-            <a href="http://coreui.io">CoreUI</a> © 2016 creativeLabs.
-        </span>
-        <span class="float-xs-right">
-            Powered by <a href="http://coreui.io">CoreUI</a>
+    <footer class="app-footer">
+        <a href="http://coreui.io">CoreUI</a> © 2017 creativeLabs.
+        <span class="float-right">Powered by <a href="http://coreui.io">CoreUI</a>
         </span>
     </footer>
 

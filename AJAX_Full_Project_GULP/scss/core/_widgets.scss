@@ -1,7 +1,7 @@
 // .social-box
 .social-box {
   min-height: 160px;
-  margin-bottom: 20px;
+  margin-bottom: 2 * $card-spacer-y;
   text-align: center;
   background: #fff;
   border: $card-border-width solid $card-border-color;
@@ -108,12 +108,16 @@
       top: 15px;
       width: 100%;
       padding-left: 100px;
+
+      .progress:first-child {
+        margin-bottom: 2px;
+      }
     }
 
     &.legend {
       text-align: center;
 
-      .tag {
+      .badge {
         display: inline-block;
         width: 8px;
         height: 8px;

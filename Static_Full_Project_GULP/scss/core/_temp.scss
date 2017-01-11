@@ -46,6 +46,18 @@
     }
   }
   .text-center {
-    @extend .text-xs-center;
+    @extend .text-center;
+  }
+}
+
+.dropdown.open {
+  // Show the menu
+  > .dropdown-menu {
+    display: block;
+  }
+
+  // Remove the outline when :focus is triggered
+  > a {
+    outline: 0;
   }
 }

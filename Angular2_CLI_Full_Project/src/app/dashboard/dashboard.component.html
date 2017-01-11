@@ -3,7 +3,7 @@
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-primary">
                 <div class="card-block pb-0">
-                    <div class="btn-group float-xs-right" dropdown>
+                    <div class="btn-group float-right" dropdown>
                         <button type="button" class="btn btn-transparent dropdown-toggle p-0" dropdownToggle>
                             <i class="icon-settings"></i>
                         </button>
@@ -21,11 +21,11 @@
                 </div>
             </div>
         </div>
-        <!--/col-->
+        <!--/.col-->
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-info">
                 <div class="card-block pb-0">
-                    <button type="button" class="btn btn-transparent p-0 float-xs-right">
+                    <button type="button" class="btn btn-transparent p-0 float-right">
                         <i class="icon-location-pin"></i>
                     </button>
                     <h4 class="mb-0">9.823</h4>
@@ -36,11 +36,11 @@
                 </div>
             </div>
         </div>
-        <!--/col-->
+        <!--/.col-->
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-warning">
                 <div class="card-block pb-0">
-                    <div class="btn-group float-xs-right">
+                    <div class="btn-group float-right">
                         <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="icon-settings"></i>
                         </button>
@@ -58,11 +58,11 @@
                 </div>
             </div>
         </div>
-        <!--/col-->
+        <!--/.col-->
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-danger">
                 <div class="card-block pb-0">
-                    <div class="btn-group float-xs-right" dropdown>
+                    <div class="btn-group float-right" dropdown>
                         <button type="button" class="btn btn-transparent dropdown-toggle p-0" dropdownToggle>
                             <i class="icon-settings"></i>
                         </button>
@@ -80,19 +80,22 @@
                 </div>
             </div>
         </div>
-        <!--/col-->
+        <!--/.col-->
     </div>
-    <!--/row-->
+    <!--/.row-->
     <div class="card">
         <div class="card-block">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-5">
                     <h4 class="card-title mb-0">Traffic</h4>
                     <div class="small text-muted">November 2015</div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="btn-toolbar float-xs-right" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group" data-toggle="buttons" aria-label="First group">
+                <!--/.col-->
+                <div class="col-sm-7 hidden-sm-down">
+                    <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i>
+                    </button>
+                    <div class="btn-toolbar float-right" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-1" data-toggle="buttons" aria-label="First group">
                             <label class="btn btn-outline-secondary">
                                 <input type="radio" name="options" id="option1">Day
                             </label>
@@ -103,13 +106,11 @@
                                 <input type="radio" name="options" id="option3">Year
                             </label>
                         </div>
-                        <div class="btn-group" role="group" aria-label="Second group">
-                            <button type="button" class="btn btn-primary"><i class="icon-cloud-download"></i>
-                            </button>
-                        </div>
                     </div>
                 </div>
+                <!--/.col-->
             </div>
+            <!--/.row-->
             <div class="chart-wrapper" style="height:300px;margin-top:40px;">
                 <canvas baseChart class="chart" [datasets]="mainChartData" [labels]="mainChartLabels" [options]="mainChartOptions" [colors]="mainChartColours" [legend]="mainChartLegend" [chartType]="mainChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
             </div>
@@ -119,27 +120,37 @@
                 <li>
                     <div class="text-muted">Visits</div>
                     <strong>29.703 Users (40%)</strong>
-                    <progress class="progress progress-xs progress-success" value="40" max="100">40%</progress>
+                    <div class="progress progress-xs mt-h">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </li>
-                <li class="hidden-xs-down">
+                <li class="hidden-sm-down">
                     <div class="text-muted">Unique</div>
-                    <strong>24.093 Unique Users (20%)</strong>
-                    <progress class="progress progress-xs progress-info" value="20" max="100">20%</progress>
+                    <strong>24.093 Users (20%)</strong>
+                    <div class="progress progress-xs mt-h">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </li>
                 <li>
                     <div class="text-muted">Pageviews</div>
                     <strong>78.706 Views (60%)</strong>
-                    <progress class="progress progress-xs progress-warning" value="60" max="100">60%</progress>
+                    <div class="progress progress-xs mt-h">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </li>
-                <li class="hidden-xs-down">
+                <li class="hidden-sm-down">
                     <div class="text-muted">New Users</div>
                     <strong>22.123 Users (80%)</strong>
-                    <progress class="progress progress-xs progress-danger" value="80" max="100">80%</progress>
+                    <div class="progress progress-xs mt-h">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </li>
-                <li class="hidden-xs-down">
+                <li class="hidden-sm-down">
                     <div class="text-muted">Bounce Rate</div>
                     <strong>40.15%</strong>
-                    <progress class="progress progress-xs progress-primary" value="40" max="100">40%</progress>
+                    <div class="progress progress-xs mt-h">
+                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -271,8 +282,12 @@
                                         Monday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="34" max="100" style="margin-bottom: 2px;">34%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="78" max="100">78%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 34%" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -280,8 +295,12 @@
                                         Tuesday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="56" max="100" style="margin-bottom: 2px;">56%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="94" max="100">94%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -289,8 +308,12 @@
                                         Wednesday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="12" max="100" style="margin-bottom: 2px;">12%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="67" max="100">67%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -298,8 +321,12 @@
                                         Thursday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="43" max="100" style="margin-bottom: 2px;">43%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="91" max="100">91%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 91%" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -307,8 +334,12 @@
                                         Friday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="22" max="100" style="margin-bottom: 2px;">22%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="73" max="100">73%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -316,8 +347,12 @@
                                         Saturday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="53" max="100" style="margin-bottom: 2px;">53%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="82" max="100">82%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 53%" aria-valuenow="53" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -325,14 +360,18 @@
                                         Sunday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="9" max="100" style="margin-bottom: 2px;">9%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="69" max="100">69%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 9%" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 69%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="legend">
-                                    <span class="tag tag-pill tag-info"></span>
+                                    <span class="badge badge-pill badge-info"></span>
                                     <small>New clients</small>&nbsp;
-                                    <span class="tag tag-pill tag-danger"></span>
+                                    <span class="badge badge-pill badge-danger"></span>
                                     <small>Recurring clients</small>
                                 </li>
                             </ul>
@@ -373,7 +412,9 @@
                                     <span class="title">Male</span>
                                     <span class="value">43%</span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-warning m-0" value="43" max="100">43%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -381,7 +422,9 @@
                                     <span class="title">Female</span>
                                     <span class="value">37%</span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-warning m-0" value="37" max="100">37%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="divider"></li>
@@ -392,7 +435,9 @@
                                         <span class="text-muted small">(56%)</span>
                                     </span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-success m-0" value="56" max="100">56%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -402,7 +447,9 @@
                                         <span class="text-muted small">(15%)</span>
                                     </span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-success m-0" value="15" max="100">15%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -412,7 +459,9 @@
                                         <span class="text-muted small">(11%)</span>
                                     </span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-success m-0" value="11" max="100">11%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -422,10 +471,12 @@
                                         <span class="text-muted small">(8%)</span>
                                     </span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-success m-0" value="8" max="100">8%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
-                                <li class="divider text-xs-center">
+                                <li class="divider text-center">
                                     <button type="button" class="btn btn-sm btn-link text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="show more"><i class="icon-options"></i>
                                     </button>
                                 </li>
@@ -567,7 +618,7 @@
                                         </button>
                                     </div>
                                 </li>
-                                <li class="divider text-xs-center">
+                                <li class="divider text-center">
                                     <button type="button" class="btn btn-sm btn-link text-muted" data-toggle="tooltip" data-placement="top" title="show more"><i class="icon-options"></i>
                                     </button>
                                 </li>
@@ -580,21 +631,21 @@
                     <table class="table table-hover table-outline mb-0 hidden-sm-down">
                         <thead class="thead-default">
                             <tr>
-                                <th class="text-xs-center"><i class="icon-people"></i>
+                                <th class="text-center"><i class="icon-people"></i>
                                 </th>
                                 <th>User</th>
-                                <th class="text-xs-center">Country</th>
+                                <th class="text-center">Country</th>
                                 <th>Usage</th>
-                                <th class="text-xs-center">Payment Method</th>
+                                <th class="text-center">Payment Method</th>
                                 <th>Activity</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
-                                        <img src="assets/img/avatars/1.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                                        <span class="avatar-status tag-success"></span>
+                                        <img src="assets/img/avatars/1.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/1.jpg">
+                                        <span class="avatar-status badge-success"></span>
                                     </div>
                                 </td>
                                 <td>
@@ -603,21 +654,23 @@
                                         <span>New</span>| Registered: Jan 1, 2015
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
-                                    <img src="assets/img/flags/USA.png" alt="USA" style="height:24px;">
+                                <td class="text-center">
+                                    <img src="assets/img/flags/USA.png" alt="USA" style="height:24px;" src="assets/img/flags/USA.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>50%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-success" value="50" max="100" style="margin:5px 0 0 0;">50%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-cc-mastercard" style="font-size:24px"></i>
                                 </td>
                                 <td>
@@ -626,33 +679,36 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
-                                        <img src="assets/img/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                                        <span class="avatar-status tag-danger"></span>
+                                        <img src="assets/img/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/2.jpg">
+                                        <span class="avatar-status badge-danger"></span>
                                     </div>
                                 </td>
                                 <td>
                                     <div>Avram Tarasios</div>
                                     <div class="small text-muted">
+
                                         <span>Recurring</span>| Registered: Jan 1, 2015
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
-                                    <img src="assets/img/flags/Brazil.png" alt="Brazil" style="height:24px;">
+                                <td class="text-center">
+                                    <img src="assets/img/flags/Brazil.png" alt="Brazil" style="height:24px;" src="assets/img/flags/Brazil.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>10%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-info" value="10" max="100" style="margin:5px 0 0 0;">10%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-cc-visa" style="font-size:24px"></i>
                                 </td>
                                 <td>
@@ -661,10 +717,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
-                                        <img src="assets/img/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                                        <span class="avatar-status tag-warning"></span>
+                                        <img src="assets/img/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/3.jpg">
+                                        <span class="avatar-status badge-warning"></span>
                                     </div>
                                 </td>
                                 <td>
@@ -673,21 +729,23 @@
                                         <span>New</span>| Registered: Jan 1, 2015
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
-                                    <img src="assets/img/flags/India.png" alt="India" style="height:24px;">
+                                <td class="text-center">
+                                    <img src="assets/img/flags/India.png" alt="India" style="height:24px;" src="assets/img/flags/India.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>74%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-warning" value="74" max="100" style="margin:5px 0 0 0;">74%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 74%" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-cc-stripe" style="font-size:24px"></i>
                                 </td>
                                 <td>
@@ -696,10 +754,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
-                                        <img src="assets/img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                                        <span class="avatar-status tag-default"></span>
+                                        <img src="assets/img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/4.jpg">
+                                        <span class="avatar-status badge-default"></span>
                                     </div>
                                 </td>
                                 <td>
@@ -708,21 +766,23 @@
                                         <span>New</span>| Registered: Jan 1, 2015
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
-                                    <img src="assets/img/flags/France.png" alt="France" style="height:24px;">
+                                <td class="text-center">
+                                    <img src="assets/img/flags/France.png" alt="France" style="height:24px;" src="assets/img/flags/France.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>98%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-danger" value="98" max="100" style="margin:5px 0 0 0;">98%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-paypal" style="font-size:24px"></i>
                                 </td>
                                 <td>
@@ -731,10 +791,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
-                                        <img src="assets/img/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                                        <span class="avatar-status tag-success"></span>
+                                        <img src="assets/img/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/5.jpg">
+                                        <span class="avatar-status badge-success"></span>
                                     </div>
                                 </td>
                                 <td>
@@ -743,21 +803,23 @@
                                         <span>New</span>| Registered: Jan 1, 2015
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
-                                    <img src="assets/img/flags/Spain.png" alt="Spain" style="height:24px;">
+                                <td class="text-center">
+                                    <img src="assets/img/flags/Spain.png" alt="Spain" style="height:24px;" src="assets/img/flags/Spain.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>22%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-info" value="22" max="100" style="margin:5px 0 0 0;">22%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-google-wallet" style="font-size:24px"></i>
                                 </td>
                                 <td>
@@ -766,10 +828,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
-                                        <img src="assets/img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                                        <span class="avatar-status tag-danger"></span>
+                                        <img src="assets/img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/6.jpg">
+                                        <span class="avatar-status badge-danger"></span>
                                     </div>
                                 </td>
                                 <td>
@@ -778,21 +840,23 @@
                                         <span>New</span>| Registered: Jan 1, 2015
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
-                                    <img src="assets/img/flags/Poland.png" alt="Poland" style="height:24px;">
+                                <td class="text-center">
+                                    <img src="assets/img/flags/Poland.png" alt="Poland" style="height:24px;" src="assets/img/flags/Poland.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>43%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-success" value="43" max="100" style="margin:5px 0 0 0;">43%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-cc-amex" style="font-size:24px"></i>
                                 </td>
                                 <td>

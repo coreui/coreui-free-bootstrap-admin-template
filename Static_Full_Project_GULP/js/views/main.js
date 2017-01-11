@@ -258,7 +258,6 @@ $(function(){
   };
 
   var options = {
-    responsive: true,
     maintainAspectRatio: false,
     legend: {
       display: false

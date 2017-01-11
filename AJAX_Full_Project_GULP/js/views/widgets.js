@@ -450,7 +450,9 @@ $(function(){
     options: options
   });
 
+
   var options = {
+    maintainAspectRatio: false,
     legend: {
       display: false
     },
@@ -506,6 +508,7 @@ $(function(){
 
 
   var options = {
+    maintainAspectRatio: false,
     legend: {
       display: false
     },
@@ -558,32 +561,4 @@ $(function(){
     data: data,
     options: options
   });
-
-
-  var options = {
-    responsive: false,
-    maintainAspectRatio: false,
-    legend: {
-      display: false
-    },
-    scales: {
-      xAxes: [{
-        gridLines: {
-          color: 'transparent',
-          zeroLineColor: 'transparent',
-        },
-        ticks: {
-          fontSize: 10,
-          maxRotation: 0,
-        },
-        barPercentage: 0.6,
-      }],
-      yAxes: [{
-        display:false,
-        ticks: {
-          beginAtZero: true,
-        }
-      }]
-    }
-  };
 })

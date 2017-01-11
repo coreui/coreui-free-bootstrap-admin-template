@@ -4,7 +4,7 @@
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-primary" ng-controller="cardChartCtrl1">
                 <div class="card-block pb-0">
-                    <div class="btn-group float-xs-right">
+                    <div class="btn-group float-right">
                         <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="icon-settings"></i>
                         </button>
@@ -22,12 +22,12 @@
                 </div>
             </div>
         </div>
-        <!--/col-->
+        <!--/.col-->
 
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-info" ng-controller="cardChartCtrl2">
                 <div class="card-block pb-0">
-                    <button type="button" class="btn btn-transparent p-0 float-xs-right">
+                    <button type="button" class="btn btn-transparent p-0 float-right">
                         <i class="icon-location-pin"></i>
                     </button>
                     <h4 class="mb-0">9.823</h4>
@@ -38,12 +38,12 @@
                 </div>
             </div>
         </div>
-        <!--/col-->
+        <!--/.col-->
 
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-warning" ng-controller="cardChartCtrl3">
                 <div class="card-block pb-0">
-                    <div class="btn-group float-xs-right">
+                    <div class="btn-group float-right">
                         <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="icon-settings"></i>
                         </button>
@@ -61,12 +61,12 @@
                 </div>
             </div>
         </div>
-        <!--/col-->
+        <!--/.col-->
 
         <div class="col-sm-6 col-lg-3">
             <div class="card card-inverse card-danger" ng-controller="cardChartCtrl4">
                 <div class="card-block pb-0">
-                    <div class="btn-group float-xs-right">
+                    <div class="btn-group float-right">
                         <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="icon-settings"></i>
                         </button>
@@ -84,20 +84,23 @@
                 </div>
             </div>
         </div>
-        <!--/col-->
+        <!--/.col-->
     </div>
-    <!--/row-->
+    <!--/.row-->
 
     <div class="card" ng-controller="trafficDemoCtrl">
         <div class="card-block">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-5">
                     <h4 class="card-title mb-0">Traffic</h4>
                     <div class="small text-muted">November 2015</div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="btn-toolbar float-xs-right" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group" data-toggle="buttons" aria-label="First group">
+                <!--/.col-->
+                <div class="col-sm-7 hidden-sm-down">
+                    <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i>
+                    </button>
+                    <div class="btn-toolbar float-right" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-1" data-toggle="buttons" aria-label="First group">
                             <label class="btn btn-outline-secondary">
                                 <input type="radio" name="options" id="option1">Day
                             </label>
@@ -108,13 +111,11 @@
                                 <input type="radio" name="options" id="option3">Year
                             </label>
                         </div>
-                        <div class="btn-group" role="group" aria-label="Second group">
-                            <button type="button" class="btn btn-primary"><i class="icon-cloud-download"></i>
-                            </button>
-                        </div>
                     </div>
                 </div>
+                <!--/.col-->
             </div>
+            <!--/.row-->
             <div class="chart-wrapper" style="height:300px;margin-top:40px;">
                 <canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="false" chart-series="series" chart-click="onClick" chart-options="options" chart-colors="colors" height="300"></canvas>
             </div>
@@ -124,27 +125,37 @@
                 <li>
                     <div class="text-muted">Visits</div>
                     <strong>29.703 Users (40%)</strong>
-                    <progress class="progress progress-xs progress-success" value="40" max="100">40%</progress>
+                    <div class="progress progress-xs mt-h">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </li>
-                <li class="hidden-xs-down">
+                <li class="hidden-sm-down">
                     <div class="text-muted">Unique</div>
-                    <strong>24.093 Unique Users (20%)</strong>
-                    <progress class="progress progress-xs progress-info" value="20" max="100">20%</progress>
+                    <strong>24.093 Users (20%)</strong>
+                    <div class="progress progress-xs mt-h">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </li>
                 <li>
                     <div class="text-muted">Pageviews</div>
                     <strong>78.706 Views (60%)</strong>
-                    <progress class="progress progress-xs progress-warning" value="60" max="100">60%</progress>
+                    <div class="progress progress-xs mt-h">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </li>
-                <li class="hidden-xs-down">
+                <li class="hidden-sm-down">
                     <div class="text-muted">New Users</div>
                     <strong>22.123 Users (80%)</strong>
-                    <progress class="progress progress-xs progress-danger" value="80" max="100">80%</progress>
+                    <div class="progress progress-xs mt-h">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </li>
-                <li class="hidden-xs-down">
+                <li class="hidden-sm-down">
                     <div class="text-muted">Bounce Rate</div>
                     <strong>40.15%</strong>
-                    <progress class="progress progress-xs progress-primary" value="40" max="100">40%</progress>
+                    <div class="progress progress-xs mt-h">
+                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -280,14 +291,18 @@
                                         {{ row.day }}
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="{{ row.new }}" max="100" style="margin-bottom: 2px;">{{ row.new }}%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="{{ row.recurring }}" max="100">{{ row.recurring }}%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: {{ row.new }}%" aria-valuenow="{{ row.new }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: {{ row.recurring }}%" aria-valuenow="{{ row.recurring }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="legend">
-                                    <span class="tag tag-pill tag-info"></span>
+                                    <span class="badge badge-pill badge-info"></span>
                                     <small>New clients</small>&nbsp;
-                                    <span class="tag tag-pill tag-danger"></span>
+                                    <span class="badge badge-pill badge-danger"></span>
                                     <small>Recurring clients</small>
                                 </li>
                             </ul>
@@ -326,7 +341,9 @@
                                     <span class="title">{{ row.title }}</span>
                                     <span class="value">{{ row.value }}%</span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-warning m-0" value="{{ row.value }}" max="100">{{ row.value }}%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: {{ row.value }}%" aria-valuenow="{{ row.value }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="divider"></li>
@@ -337,10 +354,12 @@
                                         <span class="text-muted small">({{ row.percent }}%)</span>
                                     </span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-success m-0" value="{{ row.percent }}" max="100">{{ row.percent }}%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: {{ row.percent }}%" aria-valuenow="{{ row.percent }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
-                                <li class="divider text-xs-center">
+                                <li class="divider text-center">
                                     <button type="button" class="btn btn-sm btn-link text-muted" data-toggle="tooltip" data-placement="top" title="show more"><i class="icon-options"></i>
                                     </button>
                                 </li>
@@ -480,7 +499,7 @@
                                         </button>
                                     </div>
                                 </li>
-                                <li class="divider text-xs-center">
+                                <li class="divider text-center">
                                     <button type="button" class="btn btn-sm btn-link text-muted" data-toggle="tooltip" data-placement="top" title="show more"><i class="icon-options"></i>
                                     </button>
                                 </li>
@@ -493,24 +512,24 @@
                     <table class="table table-hover table-outline mb-0 hidden-sm-down">
                         <thead class="thead-default">
                             <tr>
-                                <th class="text-xs-center"><i class="icon-people"></i>
+                                <th class="text-center"><i class="icon-people"></i>
                                 </th>
                                 <th>User</th>
-                                <th class="text-xs-center">Country</th>
+                                <th class="text-center">Country</th>
                                 <th>Usage</th>
-                                <th class="text-xs-center">Payment Method</th>
+                                <th class="text-center">Payment Method</th>
                                 <th>Activity</th>
                             </tr>
                         </thead>
                         <tbody ng-controller="usersTableCtrl">
                             <tr ng-repeat="user in users">
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
                                         <img ng-src="img/avatars/{{ user.avatar }}" class="img-avatar" alt="admin@bootstrapmaster.com">
-                                        <span class="avatar-status" ng-class="{ 'tag-success' : user.status == 'active',
-                                                                                'tag-warning' : user.status == 'away',
-                                                                                'tag-danger'  : user.status == 'busy',
-                                                                                'tag-default' : user.status == 'offline' }"></span>
+                                        <span class="avatar-status" ng-class="{ 'badge-success' : user.status == 'active',
+                    'badge-warning' : user.status == 'away',
+                    'badge-danger'  : user.status == 'busy',
+                    'badge-default' : user.status == 'offline' }"></span>
                                     </div>
                                 </td>
                                 <td>
@@ -520,31 +539,33 @@
                                         <span ng-if="user.new == false">Recurring</span>
                                         | Registered: {{ user.registered }}</div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <img ng-src="img/flags/{{ user.flag }}" alt="{{ user.country }}" style="height:24px;">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>{{ user.usage }}%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">{{ user.period }}</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs" ng-class="{ 'progress-info'    : user.usage <= 25,
-                                                          'progress-success' : user.usage > 25 && user.usage <= 50,
-                                                          'progress-warning' : user.usage > 50 && user.usage <= 75,
-                                                          'progress-danger'  : user.usage > 75 && user.usage <= 100 }" value="{{ user.usage }}" max="100" style="margin:5px 0 0 0;">{{ user.usage }}%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar" ng-class="{ 'bg-info'    : user.usage <= 25,
+                      'bg-success' : user.usage > 25 && user.usage <= 50,
+                      'bg-warning' : user.usage > 50 && user.usage <= 75,
+                      'bg-danger'  : user.usage > 75 && user.usage <= 100 }" value="{{ user.usage }}" role="progressbar" style="width: {{ user.usage }}%" aria-valuenow="{{ user.usage }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa" ng-class="{ 'fa-cc-mastercard' : user.payment == 'mastercard',
-                                                   'fa-cc-visa' : user.payment == 'visa',
-                                                   'fa-cc-amex' : user.payment == 'amex',
-                                                   'fa-cc-diners-club' : user.payment == 'diners',
-                                                   'fa-cc-stripe' : user.payment == 'stripe',
-                                                   'fa-paypal' : user.payment == 'paypal',
-                                                   'fa-google-wallet' : user.payment == 'google' }" style="font-size:24px"></i>
+                    'fa-cc-visa' : user.payment == 'visa',
+                    'fa-cc-amex' : user.payment == 'amex',
+                    'fa-cc-diners-club' : user.payment == 'diners',
+                    'fa-cc-stripe' : user.payment == 'stripe',
+                    'fa-paypal' : user.payment == 'paypal',
+                    'fa-google-wallet' : user.payment == 'google' }" style="font-size:24px"></i>
                                 </td>
                                 <td>
                                     <div class="small text-muted">Last login</div>

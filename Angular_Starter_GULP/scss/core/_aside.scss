@@ -1,11 +1,11 @@
 .aside-menu {
-  position: fixed;
-  top: 0;
-  right: -$aside-menu-width;
-  z-index: $zindex-navbar-fixed - 1;
+  // position: fixed;
+  // top: 0;
+  // right: -$aside-menu-width;
+  z-index: $zindex-navbar - 1;
   width: $aside-menu-width;
-  height: 100%;
-  padding-top: $navbar-height;
+  // height: 100%;
+  // padding-top: $navbar-height;
   color: $aside-menu-color;
   background: $aside-menu-bg;
   @include borders($aside-menu-borders);
@@ -31,7 +31,6 @@
 
   .tab-content {
     position: relative;
-    height: calc(100vh - #{$aside-menu-nav-padding-y * 2 + $font-size-base} - #{$navbar-height});
     overflow-x: hidden;
     overflow-y: auto;
     border: 0;

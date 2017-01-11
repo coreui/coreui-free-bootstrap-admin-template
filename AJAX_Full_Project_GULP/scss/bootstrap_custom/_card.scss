@@ -114,22 +114,6 @@
     color: rgba(255,255,255,.6) !important;
   }
 
-  .progress[value] {
-    background-color: rgba(255,255,255,.2) !important;
-  }
-
-  // Unfilled portion of the bar
-  .progress[value]::-webkit-progress-bar {
-    background-color: rgba(255,255,255,.2) !important;
-  }
-  base::-moz-progress-bar, // Absurd-but-syntactically-valid selector to make these styles Firefox-only
-  .progress[value] {
-    background-color: rgba(255,255,255,.2) !important;
-  }
-
-  .progress {
-    @include progress-variant(#fff !important);
-  }
 }
 
 [class*="card-outline-"] {
@@ -234,28 +218,13 @@
 
 @include media-breakpoint-up(sm) {
   .card-columns {
-    -moz-column-count: 3;
-    //-moz-column-count: 1.25rem;
-    -webkit-column-count: 3;
-    column-gap: 1.25rem;
-    //-webkit-column-count: 1.25rem;
-    column-count: 3;
 
-    .card {
-      display: inline-block;
-      width: 100%; // Don't let them exceed the column width
-    }
-
-    &.col-2 {
+    &.cols-2 {
       -moz-column-count: 2;
       -webkit-column-count: 2;
       column-count: 2;
     }
   }
-}
-
-.card-group {
-  margin-bottom: 1.5 * $spacer-y;
 }
 
 .card {
