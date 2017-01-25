@@ -1,0 +1,284 @@
+// app-dashboard and app-root are Angular2 selectors. You can add here your own selectors if you need.
+.app,
+app-dashboard,
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  flex: 0 0 $navbar-height;
+}
+
+.app-footer {
+  flex: 0 0 $footer-height;
+}
+
+.app-body {
+  display: flex;
+  flex-grow:1;
+  flex-direction: row;
+  overflow-x: hidden;
+
+  .main {
+    flex: 1;
+  }
+
+  .sidebar {
+    // $sidebar-width is the width of the columns
+    flex: 0 0 $sidebar-width;
+    // put the nav on the left
+    order: -1;
+  }
+
+  .aside-menu {
+    // $aside-menu-width is the width of the columns
+    flex: 0 0 $aside-menu-width;
+  }
+}
+
+//
+// header
+//
+.header-fixed {
+  .app-header {
+    position: fixed;
+    z-index: $zindex-navbar;
+    width: 100%;
+  }
+  .app-body {
+    margin-top: $navbar-height;
+  }
+}
+
+//
+// Sidebar
+//
+.sidebar-hidden {
+
+  .sidebar {
+    margin-left: - $sidebar-width;
+  }
+}
+
+.sidebar-fixed {
+
+  .sidebar {
+    position: fixed;
+    height: 100%;
+
+    .sidebar-nav {
+      height: calc(100vh - #{$navbar-height});
+    }
+  }
+
+  .main, .app-footer {
+    margin-left: $sidebar-width;
+  }
+
+  &.sidebar-hidden {
+
+    .main, .app-footer {
+      margin-left: 0;
+    }
+  }
+}
+
+.sidebar-off-canvas {
+  .sidebar {
+    position: fixed;
+    z-index: $zindex-navbar - 1;
+    height: 100%;
+
+
+    .sidebar-nav {
+      height: calc(100vh - #{$navbar-height});
+    }
+  }
+}
+
+.sidebar-compact {
+  .sidebar {
+    flex: 0 0 $sidebar-compact-width;
+  }
+
+  &.sidebar-hidden {
+
+    .sidebar {
+      margin-left: - $sidebar-compact-width;
+    }
+  }
+
+  &.sidebar-fixed {
+
+    .main, .app-footer {
+      margin-left: $sidebar-compact-width;
+    }
+
+    &.sidebar-hidden {
+
+      .main, .app-footer {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+//
+// Aside Menu
+//
+.aside-menu-hidden {
+
+  .aside-menu {
+    margin-right: - $aside-menu-width;
+  }
+}
+
+.aside-menu-fixed {
+
+  .aside-menu {
+    position: fixed;
+    right: 0;
+    height: 100%;
+
+    .tab-content {
+      height: calc(100vh - #{$aside-menu-nav-padding-y * 2 + $font-size-base} - #{$navbar-height});
+    }
+  }
+
+  .main, .app-footer {
+    margin-right: $aside-menu-width;
+  }
+
+  &.aside-menu-hidden {
+
+    .main, .app-footer {
+      margin-right: 0;
+    }
+  }
+}
+
+.aside-menu-off-canvas {
+  .aside-menu {
+    position: fixed;
+    right: 0;
+    z-index: $zindex-navbar - 1;
+    height: 100%;
+
+    .tab-content {
+      height: calc(100vh - #{$aside-menu-nav-padding-y * 2 + $font-size-base} - #{$navbar-height});
+    }
+  }
+}
+
+//
+// Footer
+//
+.footer-fixed {
+
+  .app-footer {
+    position: fixed;
+    bottom: 0;
+    z-index: $zindex-navbar;
+    width: 100%;
+  }
+
+  .app-body {
+    margin-bottom: $footer-height;
+  }
+}
+
+//
+// Animations
+//
+.app-header,
+.app-footer,
+.sidebar,
+.main,
+.aside-menu {
+  transition-duration: $layout-transition-speed, $layout-transition-speed;
+  transition-property: margin-left, margin-right;
+}
+
+//
+// Mobile layout
+//
+
+@include media-breakpoint-down(md) {
+
+  .app-header {
+    position: fixed !important;
+    z-index: $zindex-navbar;
+    width: 100%;
+
+    .navbar-toggler {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70px;
+      height: inherit;
+    }
+
+    .navbar-toggler {
+      @if (lightness( $navbar-brand-bg ) > 40) {
+        color: $navbar-color;
+      } @else {
+        color: #fff;
+      }
+    }
+
+    .navbar-brand {
+      width: 100% !important;
+      margin: 0 auto !important;
+    }
+
+    .navbar-nav {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      height: inherit;
+    }
+  }
+
+  .app-body {
+    margin-top: $navbar-height;
+  }
+
+  .sidebar {
+    position: fixed;
+    width: $mobile-sidebar-width;
+    height: 100%;
+    margin-left: - $mobile-sidebar-width;
+
+    .sidebar-nav,
+    .nav {
+      width: $mobile-sidebar-width !important;
+    }
+  }
+
+  .main, .app-footer {
+    margin-left: 0 !important;
+  }
+
+  .aside-menu {
+    margin-right: - $aside-menu-width;
+  }
+
+  .sidebar-mobile-show {
+
+    .sidebar {
+      width: $mobile-sidebar-width;
+      margin-left: 0;
+
+      .sidebar-nav {
+        height: calc(100vh - #{$navbar-height});
+      }
+    }
+
+    .main {
+      margin-right: - $mobile-sidebar-width !important;
+      margin-left: $mobile-sidebar-width !important;
+    }
+  }
+}
