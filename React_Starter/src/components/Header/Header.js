@@ -2,15 +2,18 @@ import React, { Component } from 'react';
 
 class Header extends Component {
 
-  sidebarToggle() {
+  sidebarToggle(e) {
+    e.preventDefault();
     document.body.classList.toggle('sidebar-hidden');
   }
 
-  mobileSidebarToggle() {
+  mobileSidebarToggle(e) {
+    e.preventDefault();
     document.body.classList.toggle('sidebar-mobile-show');
   }
 
-  asideToggle() {
+  asideToggle(e) {
+    e.preventDefault();
     document.body.classList.toggle('aside-menu-hidden');
   }
 
