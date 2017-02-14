@@ -1,0 +1,69 @@
+.aside-menu {
+  // position: fixed;
+  // top: 0;
+  // right: -$aside-menu-width;
+  z-index: $zindex-navbar - 1;
+  width: $aside-menu-width;
+  // height: 100%;
+  // padding-top: $navbar-height;
+  color: $aside-menu-color;
+  background: $aside-menu-bg;
+  @include borders($aside-menu-borders);
+
+  .nav-tabs {
+    border-color: $border-color;
+    .nav-link {
+      padding: $aside-menu-nav-padding-y $aside-menu-nav-padding-x;
+      color: $body-color;
+      border-top: 0;
+      &.active {
+        color: $brand-primary;
+        border-right-color: $border-color;
+        border-left-color: $border-color;
+      }
+    }
+    .nav-item:first-child {
+      .nav-link {
+        border-left: 0;
+      }
+    }
+  }
+
+  .tab-content {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 0;
+    border-top: 1px solid $border-color;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      margin-left: -10px;
+      -webkit-appearance: none;
+    }
+
+    // &::-webkit-scrollbar-button {    }
+
+    &::-webkit-scrollbar-track {
+      background-color: lighten($aside-menu-bg, 5%);
+      border-right: 1px solid darken($aside-menu-bg, 5%);
+      border-left: 1px solid darken($aside-menu-bg, 5%);
+    }
+
+    // &::-webkit-scrollbar-track-piece {    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 50px;
+      background-color: darken($aside-menu-bg, 10%);
+      background-clip: content-box;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 1px 2px;
+    }
+
+    .tab-pane {
+      padding: 0;
+    }
+  }
+}

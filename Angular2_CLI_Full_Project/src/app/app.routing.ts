@@ -20,23 +20,23 @@ export const routes: Routes = [
     children: [
       {
         path: 'dashboard',
-        loadChildren: 'app/dashboard/dashboard.module#DashboardModule'
+        loadChildren: './dashboard/dashboard.module#DashboardModule'
       },
       {
         path: 'components',
-        loadChildren: 'app/components/components.module#ComponentsModule'
+        loadChildren: './components/components.module#ComponentsModule'
       },
       {
         path: 'icons',
-        loadChildren: 'app/icons/icons.module#IconsModule'
+        loadChildren: './icons/icons.module#IconsModule'
       },
       {
         path: 'widgets',
-        loadChildren: 'app/widgets/widgets.module#WidgetsModule'
+        loadChildren: './widgets/widgets.module#WidgetsModule'
       },
       {
         path: 'charts',
-        loadChildren: 'app/chartjs/chartjs.module#ChartJSModule'
+        loadChildren: './chartjs/chartjs.module#ChartJSModule'
       }
     ]
   },
@@ -49,7 +49,7 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: 'app/pages/pages.module#PagesModule',
+        loadChildren: './pages/pages.module#PagesModule',
       }
     ]
   }

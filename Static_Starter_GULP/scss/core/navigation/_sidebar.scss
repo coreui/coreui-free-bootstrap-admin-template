@@ -27,7 +27,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    width: $sidebar-width;
+    @include sidebar-width($sidebar-borders, $sidebar-width);
 
     &::-webkit-scrollbar {
       width: 10px;
@@ -60,7 +60,7 @@
   }
 
   ul.nav {
-    width: $sidebar-width;
+    @include sidebar-width($sidebar-borders, $sidebar-width);
     flex-direction: column !important;
 
     li.nav-title {
@@ -227,16 +227,7 @@
       }
 
       @if (lightness( $sidebar-bg ) < 40) {
-        .progress[value] {
-          background-color: lighten($sidebar-bg, 15%) !important;
-        }
-
-        // Unfilled portion of the bar
-        .progress[value]::-webkit-progress-bar {
-          background-color: lighten($sidebar-bg, 15%) !important;
-        }
-        base::-moz-progress-bar, // Absurd-but-syntactically-valid selector to make these styles Firefox-only
-        .progress[value] {
+        .progress {
           background-color: lighten($sidebar-bg, 15%) !important;
         }
       }

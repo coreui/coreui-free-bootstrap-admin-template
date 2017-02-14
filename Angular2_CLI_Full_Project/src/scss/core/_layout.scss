@@ -1,18 +1,29 @@
-.app {
+html, body {
+  height: 100%;
+}
+
+// app-dashboard and app-root are Angular2 selectors. You can add here your own selectors if you need.
+.app,
+app-dashboard,
+app-root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+.app-header {
+  flex: 0 0 $navbar-height;
+}
+
+.app-footer {
+  flex: 0 0 $footer-height;
+}
+
 .app-body {
   display: flex;
-  flex: 1;
+  flex-grow:1;
   flex-direction: row;
   overflow-x: hidden;
-
-  .app-header {
-    //
-  }
 
   .main {
     flex: 1;
