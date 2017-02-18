@@ -1,5 +1,9 @@
-html, body {
-  height: 100%;
+// IE10&11 Flexbox fix
+@media all and (-ms-high-contrast:none) {
+  html {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 // app-dashboard and app-root are Angular2 selectors. You can add here your own selectors if you need.

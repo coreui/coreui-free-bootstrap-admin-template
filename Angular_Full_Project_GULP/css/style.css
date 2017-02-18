@@ -6199,8 +6199,10 @@ body {
 .main .container-fluid {
   padding: 0 30px; }
 
-html, body {
-  height: 100%; }
+@media all and (-ms-high-contrast: none) {
+  html {
+    display: flex;
+    flex-direction: column; } }
 
 .app,
 app-dashboard,
