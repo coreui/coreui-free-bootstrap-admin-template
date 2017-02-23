@@ -1,17 +1,18 @@
 header.navbar {
   position: relative;
+  flex-direction: row;
   height: $navbar-height;
   padding: 0;
   background-color: $navbar-bg;
   @include borders($navbar-border);
-  flex-direction: row;
+
 
   .navbar-brand {
     display: inline-block;
     width: $navbar-brand-width;
     height: $navbar-height;
-    margin-right: 0;
     padding: $navbar-padding-y $navbar-padding-x;
+    margin-right: 0;
     background-color: $navbar-brand-bg;
     background-image: $navbar-brand-logo;
     background-repeat: no-repeat;
@@ -40,7 +41,7 @@ header.navbar {
         top: 50%;
         left: 50%;
         margin-top: -16px;
-        margin-left: 0px;
+        margin-left: 0;
       }
 
       > .img-avatar {

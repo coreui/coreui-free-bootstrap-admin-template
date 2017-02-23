@@ -30,6 +30,8 @@
     @include sidebar-width($sidebar-borders, $sidebar-width);
 
     &::-webkit-scrollbar {
+
+      position: absolute;
       width: 10px;
       margin-left: -10px;
       -webkit-appearance: none;
@@ -81,7 +83,6 @@
       transition: background .3s ease-in-out;
 
       ul {
-        // display: none;
         max-height: 0;
         padding: 0;
         margin: 0;
