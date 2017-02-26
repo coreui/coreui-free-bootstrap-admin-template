@@ -10,7 +10,7 @@ export class AsideToggleDirective {
   constructor() { }
 
   @HostListener('click', ['$event'])
-  toggleOpen($event:any) {
+  toggleOpen($event: any) {
     $event.preventDefault();
     document.querySelector('body').classList.toggle('aside-menu-hidden');
   }

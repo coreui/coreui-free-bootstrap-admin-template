@@ -47,11 +47,11 @@ export class NavDropdownDirective {
 @Directive({
   selector: '.nav-dropdown-toggle',
 })
-export class NavDropdownToggleDirective{
+export class NavDropdownToggleDirective {
   constructor(private dropdown: NavDropdownDirective) {}
 
   @HostListener('click', ['$event'])
-  toggleOpen($event:any) {
+  toggleOpen($event: any) {
     $event.preventDefault();
     this.dropdown.toggle();
   }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ChartJSComponent }  from './chartjs.component';
+import { ChartJSComponent } from './chartjs.component';
 
 const routes: Routes = [
   {
