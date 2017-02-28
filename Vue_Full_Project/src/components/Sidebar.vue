@@ -84,7 +84,6 @@ export default {
   name: 'sidebar',
   methods: {
     handleClick (e) {
-      console.log('click')
       e.preventDefault()
       e.target.parentElement.classList.toggle('open')
     }

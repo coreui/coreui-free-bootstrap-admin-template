@@ -4,16 +4,14 @@
       <div class="col-sm-6 col-lg-3">
         <div class="card card-inverse card-primary">
           <div class="card-block pb-0">
-            <div class="btn-group float-right">
-              <button type="button" class="btn btn-transparent active dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="icon-settings"></i>
-              </button>
-              <div class="dropdown-menu dropdown-menu-right">
+            <dropdown class="float-right" type="transparent p-0">
+              <i slot="button" class="icon-settings"></i>
+              <div slot="dropdown-menu" class="dropdown-menu dropdown-menu-right">
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
-            </div>
+            </dropdown>
             <h4 class="mb-0">9.823</h4>
             <p>Members online</p>
           </div>
@@ -26,9 +24,14 @@
       <div class="col-sm-6 col-lg-3">
         <div class="card card-inverse card-info">
           <div class="card-block pb-0">
-            <button type="button" class="btn btn-transparent active p-0 float-right">
-              <i class="icon-location-pin"></i>
-            </button>
+            <dropdown class="float-right" type="transparent p-0">
+              <i slot="button" class="icon-settings"></i>
+              <div slot="dropdown-menu" class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </dropdown>
             <h4 class="mb-0">9.823</h4>
             <p>Members online</p>
           </div>
@@ -42,14 +45,14 @@
         <div class="card card-inverse card-warning">
           <div class="card-block pb-0">
             <div class="btn-group float-right">
-              <button type="button" class="btn btn-transparent active dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="icon-settings"></i>
-              </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <dropdown class="float-right" type="transparent p-0">
+                <i slot="button" class="icon-settings"></i>
+                <div slot="dropdown-menu" class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </dropdown>
             </div>
             <h4 class="mb-0">9.823</h4>
             <p>Members online</p>
@@ -64,14 +67,14 @@
         <div class="card card-inverse card-danger">
           <div class="card-block pb-0">
             <div class="btn-group float-right">
-              <button type="button" class="btn btn-transparent active dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="icon-settings"></i>
-              </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <dropdown class="float-right" type="transparent p-0">
+                <i slot="button" class="icon-settings"></i>
+                <div slot="dropdown-menu" class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </dropdown>
             </div>
             <h4 class="mb-0">9.823</h4>
             <p>Members online</p>
@@ -88,7 +91,7 @@
         <div class="row">
           <div class="col-sm-5">
             <h4 class="card-title mb-0">Traffic</h4>
-            <div class="small text-muted">November 2015</div>
+            <div class="small text-muted">November 2016</div>
           </div><!--/.col-->
           <div class="col-sm-7 hidden-sm-down">
             <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i></button>
@@ -809,6 +812,8 @@ import CardBarChartExample from './dashboard/CardBarChartExample'
 import MainChartExample from './dashboard/MainChartExample'
 import SocialBoxChartExample from './dashboard/SocialBoxChartExample'
 
+import { dropdown } from 'vue-strap'
+
 export default {
   name: 'dashboard',
   components: {
@@ -817,7 +822,8 @@ export default {
     CardLine3ChartExample,
     CardBarChartExample,
     MainChartExample,
-    SocialBoxChartExample
+    SocialBoxChartExample,
+    dropdown
   }
 }
 </script>
