@@ -70,12 +70,6 @@
       <li class="nav-item px-1">
         <a class="nav-link" href="/index.html">Home</a>
       </li>
-      <li class="nav-item px-1">
-        <a class="nav-link" href="/examples">Examples</a>
-      </li>
-      <li class="nav-item px-1">
-        <a class="nav-link" href="https://github.com/mrholek/CoreUI" target="_blank" rel="nofollow">Github</a>
-      </li>
     </ul>
     <ul class="nav navbar-nav ml-auto">
       <li class="nav-item px-1">
@@ -183,6 +177,48 @@
                 <li class="nav-item ">
                   <a class="nav-link" href="/docs/getting-started/angular2-version">
                     Angular2 Version
+                  </a>
+
+                  
+                </li>
+                
+                
+                
+                
+
+                
+
+                <li class="nav-item ">
+                  <a class="nav-link" href="/docs/getting-started/react.js-version">
+                    React.js Version
+                  </a>
+
+                  
+                </li>
+                
+                
+                
+                
+
+                
+
+                <li class="nav-item ">
+                  <a class="nav-link" href="/docs/getting-started/vue.js-version">
+                    Vue.js Version
+                  </a>
+
+                  
+                </li>
+                
+                
+                
+                
+
+                
+
+                <li class="nav-item ">
+                  <a class="nav-link" href="/docs/getting-started/rtl-support">
+                    RTL Support
                   </a>
 
                   
@@ -1061,7 +1097,8 @@
   <li><a href="#bootstrap" id="markdown-toc-bootstrap">Bootstrap</a></li>
   <li><a href="#angularjs" id="markdown-toc-angularjs">AngularJS</a></li>
   <li><a href="#angular-2" id="markdown-toc-angular-2">Angular 2</a></li>
-  <li><a href="#react" id="markdown-toc-react">React</a></li>
+  <li><a href="#reactjs" id="markdown-toc-reactjs">React.js</a></li>
+  <li><a href="#vuejs" id="markdown-toc-vuejs">Vue.js</a></li>
   <li><a href="#starter-template" id="markdown-toc-starter-template">Starter template</a>    <ul>
       <li><a href="#html5-static-version" id="markdown-toc-html5-static-version">HTML5 Static Version</a></li>
       <li><a href="#ajax-version" id="markdown-toc-ajax-version">AJAX Version</a></li>
@@ -1069,6 +1106,16 @@
       <li><a href="#angular-2-version" id="markdown-toc-angular-2-version">Angular 2 Version</a>        <ul>
           <li><a href="#indexhtml" id="markdown-toc-indexhtml">index.html</a></li>
           <li><a href="#full-layoutcomponenthtml" id="markdown-toc-full-layoutcomponenthtml">full-layout.component.html</a></li>
+        </ul>
+      </li>
+      <li><a href="#reactjs-version" id="markdown-toc-reactjs-version">React.js Version</a>        <ul>
+          <li><a href="#indexhtml-1" id="markdown-toc-indexhtml-1">index.html</a></li>
+          <li><a href="#fulljs" id="markdown-toc-fulljs">full.js</a></li>
+        </ul>
+      </li>
+      <li><a href="#vuejs-version" id="markdown-toc-vuejs-version">Vue.js Version</a>        <ul>
+          <li><a href="#indexhtml-2" id="markdown-toc-indexhtml-2">index.html</a></li>
+          <li><a href="#fullvue" id="markdown-toc-fullvue">Full.vue</a></li>
         </ul>
       </li>
       <li><a href="#html5-doctype" id="markdown-toc-html5-doctype">HTML5 doctype</a></li>
@@ -1103,7 +1150,7 @@
 
 <p>Angular is a development platform for building mobile and desktop web applications.</p>
 
-<h2 id="react">React</h2>
+<h2 id="reactjs">React.js</h2>
 
 <p>React is a JavaScript library for building user interfaces.</p>
 
@@ -1114,6 +1161,11 @@
 </ul>
 
 <p><a href="https://facebook.github.io/react/docs/getting-started.html">Learn how to use React in your own project</a>.</p>
+
+<h2 id="vuejs">Vue.js</h2>
+
+<p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is very easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with <a href="https://vuejs.org/v2/guide/single-file-components.html">modern tooling</a> and <a href="https://github.com/vuejs/awesome-vue#libraries--plugins">supporting libraries</a>.
+If you are an experienced frontend developer and want to know how Vue compares to other libraries/frameworks, check out the <a href="https://vuejs.org/v2/guide/comparison.html">Comparison with Other Frameworks</a>.</p>
 
 <h2 id="starter-template">Starter template</h2>
 
@@ -1522,6 +1574,208 @@
   ...
 <span class="nt">&lt;/footer&gt;</span></code></pre></figure>
 
+<h3 id="reactjs-version">React.js Version</h3>
+
+<h6 id="indexhtml-1">index.html</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"%THEMENAME% - %THEMEDESC%"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"author"</span> <span class="na">content=</span><span class="s">"Łukasz Holeczek"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"keyword"</span> <span class="na">content=</span><span class="s">"%THEMEKEYWORDS%"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">href=</span><span class="s">"%PUBLIC_URL%/favicon.ico"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!--
+      Notice the use of %PUBLIC_URL% in the tag above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    --&gt;</span>
+    <span class="nt">&lt;title&gt;</span>%THEMENAME% - %THEMEDESC%<span class="nt">&lt;/title&gt;</span>
+
+    <span class="c">&lt;!-- Icons --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"%PUBLIC_URL%/css/font-awesome.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"%PUBLIC_URL%/css/simple-line-icons.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- Main styles for this application --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"%PUBLIC_URL%/css/style.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="c">&lt;!-- BODY options, add following classes to body to change options
+
+    // Header options
+    1. '.header-fixed'					- Fixed Header
+
+    // Sidebar options
+    1. '.sidebar-fixed'					- Fixed Sidebar
+    2. '.sidebar-hidden'				- Hidden Sidebar
+    3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+    4. '.sidebar-compact'				- Compact Sidebar Navigation (Only icons)
+
+    // Aside options
+    1. '.aside-menu-fixed'			- Fixed Aside Menu
+    2. '.aside-menu-hidden'			- Hidden Aside Menu
+    3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+    // Footer options
+    1. 'footer-fixed'						- Fixed footer
+
+  --&gt;</span>
+
+  <span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"root"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="c">&lt;!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the &lt;body&gt; tag.
+
+      To begin the development, run `npm start`.
+      To create a production bundle, use `npm run build`.
+    --&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<h6 id="fulljs">full.js</h6>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">'react'</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Header</span> <span class="nx">from</span> <span class="s1">'../../components/Header/'</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Sidebar</span> <span class="nx">from</span> <span class="s1">'../../components/Sidebar/'</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Aside</span> <span class="nx">from</span> <span class="s1">'../../components/Aside/'</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Footer</span> <span class="nx">from</span> <span class="s1">'../../components/Footer/'</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">Breadcrumbs</span> <span class="nx">from</span> <span class="s1">'react-breadcrumbs'</span><span class="p">;</span>
+
+<span class="kr">class</span> <span class="nx">Full</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"app"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Header</span> <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"app-body"</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">Sidebar</span> <span class="p">{...</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">}</span><span class="sr">/</span><span class="err">&gt;
+</span>          <span class="o">&lt;</span><span class="nx">main</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"main"</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">Breadcrumbs</span>
+              <span class="nx">wrapperElement</span><span class="o">=</span><span class="s2">"ol"</span>
+              <span class="nx">wrapperClass</span><span class="o">=</span><span class="s2">"breadcrumb"</span>
+              <span class="nx">itemClass</span><span class="o">=</span><span class="s2">"breadcrumb-item"</span>
+              <span class="nx">separator</span><span class="o">=</span><span class="s2">""</span>
+              <span class="nx">routes</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">routes</span><span class="p">}</span>
+              <span class="nx">params</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">params</span><span class="p">}</span>
+            <span class="sr">/</span><span class="err">&gt;
+</span>            <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"container-fluid"</span><span class="o">&gt;</span>
+              <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">children</span><span class="p">}</span>
+            <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>          <span class="o">&lt;</span><span class="sr">/main</span><span class="err">&gt;
+</span>          <span class="o">&lt;</span><span class="nx">Aside</span> <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">Footer</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">Full</span><span class="p">;</span></code></pre></figure>
+
+<h3 id="vuejs-version">Vue.js Version</h3>
+
+<h6 id="indexhtml-2">index.html</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>%THEMENAME% - %THEMEDESC%<span class="nt">&lt;/title&gt;</span>
+
+    <span class="c">&lt;!-- Icons --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"static/css/font-awesome.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"static/css/simple-line-icons.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- Main styles for this application --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"static/css/style.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="c">&lt;!-- BODY options, add following classes to body to change options
+
+  // Header options
+  1. '.header-fixed'					- Fixed Header
+
+  // Sidebar options
+  1. '.sidebar-fixed'					- Fixed Sidebar
+  2. '.sidebar-hidden'				- Hidden Sidebar
+  3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+  4. '.sidebar-compact'				- Compact Sidebar Navigation (Only icons)
+
+  // Aside options
+  1. '.aside-menu-fixed'			- Fixed Aside Menu
+  2. '.aside-menu-hidden'			- Hidden Aside Menu
+  3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+  // Footer options
+  1. '.footer-fixed'						- Fixed footer
+
+  --&gt;</span>
+
+  <span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"app"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="c">&lt;!-- built files will be auto injected --&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<h6 id="fullvue">Full.vue</h6>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">template</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"app"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">AppHeader</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"app-body"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Sidebar</span><span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="nx">main</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"main"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">breadcrumb</span> <span class="err">:</span><span class="nx">list</span><span class="o">=</span><span class="s2">"list"</span><span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"container-fluid"</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">router</span><span class="o">-</span><span class="nx">view</span><span class="o">&gt;&lt;</span><span class="sr">/router-view</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="sr">/main</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">AppAside</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="nx">AppFooter</span><span class="o">/&gt;</span>
+  <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/template</span><span class="err">&gt;
+</span>
+<span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="kr">import</span> <span class="nx">AppHeader</span> <span class="nx">from</span> <span class="s1">'../components/Header'</span>
+<span class="kr">import</span> <span class="nx">Sidebar</span> <span class="nx">from</span> <span class="s1">'../components/Sidebar'</span>
+<span class="kr">import</span> <span class="nx">AppAside</span> <span class="nx">from</span> <span class="s1">'../components/Aside'</span>
+<span class="kr">import</span> <span class="nx">AppFooter</span> <span class="nx">from</span> <span class="s1">'../components/Footer'</span>
+<span class="kr">import</span> <span class="nx">Breadcrumb</span> <span class="nx">from</span> <span class="s1">'../components/Breadcrumb'</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="s1">'full'</span><span class="p">,</span>
+  <span class="na">components</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nx">AppHeader</span><span class="p">,</span>
+    <span class="nx">Sidebar</span><span class="p">,</span>
+    <span class="nx">AppAside</span><span class="p">,</span>
+    <span class="nx">AppFooter</span><span class="p">,</span>
+    <span class="nx">Breadcrumb</span>
+  <span class="p">},</span>
+  <span class="na">computed</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nx">name</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">$route</span><span class="p">.</span><span class="nx">name</span>
+    <span class="p">},</span>
+
+    <span class="nx">list</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">$route</span><span class="p">.</span><span class="nx">matched</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="o">&lt;</span><span class="sr">/script&gt;</span></code></pre></figure>
+
 <p>That’s all you need for overall page requirements.</p>
 
 <h3 id="html5-doctype">HTML5 doctype</h3>
@@ -1572,7 +1826,7 @@
 
     <footer class="app-footer">
       <span class="text-left">
-        <a href="http:/coreui.io">CoreUI</a> &copy; 2016 creativeLabs.
+        <a href="http:/coreui.io">CoreUI</a> &copy; 2017 creativeLabs.
       </span>
       <span class="pull-right">
         Powered by <a href="http://coreui.io">CoreUI</a>
