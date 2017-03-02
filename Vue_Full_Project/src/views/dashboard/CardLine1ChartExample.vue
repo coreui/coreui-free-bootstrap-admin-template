@@ -12,7 +12,6 @@ const datasets = [
 ]
 
 export default Line.extend({
-  props: ['height'],
   mounted () {
     this.renderChart({
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],

@@ -79,6 +79,9 @@ export default Line.extend({
             maxTicksLimit: 5,
             stepSize: Math.ceil(250 / 5),
             max: 250
+          },
+          gridLines: {
+            display: true
           }
         }]
       },

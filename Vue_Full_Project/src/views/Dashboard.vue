@@ -15,9 +15,7 @@
             <h4 class="mb-0">9.823</h4>
             <p>Members online</p>
           </div>
-          <div class="chart-wrapper px-1" style="height:70px;">
-            <card-line1-chart-example height="70"/>
-          </div>
+          <card-line1-chart-example class="chart-wrapper px-1" style="height:70px;" height="70"/>
         </div>
       </div><!--/.col-->
 
@@ -35,9 +33,7 @@
             <h4 class="mb-0">9.823</h4>
             <p>Members online</p>
           </div>
-          <div class="chart-wrapper px-1" style="height:70px;">
-            <card-line2-chart-example height="70"/>
-          </div>
+          <card-line2-chart-example class="chart-wrapper px-1" style="height:70px;" height="70"/>
         </div>
       </div><!--/.col-->
 
@@ -57,9 +53,7 @@
             <h4 class="mb-0">9.823</h4>
             <p>Members online</p>
           </div>
-          <div class="chart-wrapper" style="height:70px;">
-            <card-line3-chart-example height="70"/>
-          </div>
+          <card-line3-chart-example class="chart-wrapper" style="height:70px;" height="70"/>
         </div>
       </div><!--/.col-->
 
@@ -79,9 +73,7 @@
             <h4 class="mb-0">9.823</h4>
             <p>Members online</p>
           </div>
-          <div class="chart-wrapper px-1" style="height:70px;">
-            <card-bar-chart-example height="70"/>
-          </div>
+          <card-bar-chart-example class="chart-wrapper px-1" style="height:70px;" height="70"/>
         </div>
       </div><!--/.col-->
     </div><!--/.row-->
@@ -110,9 +102,7 @@
             </div>
           </div><!--/.col-->
         </div><!--/.row-->
-        <div class="chart-wrapper" style="height:300px;margin-top:40px;">
-          <main-chart-example height="300"></main-chart-example>
-        </div>
+        <main-chart-example class="chart-wrapper" style="height:300px;margin-top:40px;" height="300"></main-chart-example>
       </div>
       <div class="card-footer">
         <ul>

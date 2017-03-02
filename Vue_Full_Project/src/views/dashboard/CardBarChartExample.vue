@@ -24,7 +24,8 @@ export default Bar.extend({
       scales: {
         xAxes: [{
           display: false,
-          barPercentage: 0.6
+          categoryPercentage: 1,
+          barPercentage: 0.5
         }],
         yAxes: [{
           display: false
