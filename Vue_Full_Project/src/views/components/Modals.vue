@@ -115,7 +115,7 @@
 </template>
 
 <script>
-import modal from 'vue-strap/src/modal'
+import modal from 'vue-strap/src/Modal'
 
 export default {
   name: 'modals',
