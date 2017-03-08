@@ -16,7 +16,7 @@ class Forms extends Component {
                   <div className="col-sm-12">
 
                     <div className="form-group">
-                      <label for="name">Name</label>
+                      <label htmlFor="name">Name</label>
                       <input type="text" className="form-control" id="name" placeholder="Enter your name"/>
                     </div>
 
@@ -29,7 +29,7 @@ class Forms extends Component {
                   <div className="col-sm-12">
 
                     <div className="form-group">
-                      <label for="ccnumber">Credit Card Number</label>
+                      <label htmlFor="ccnumber">Credit Card Number</label>
                       <input type="text" className="form-control" id="ccnumber" placeholder="0000 0000 0000 0000"/>
                     </div>
 
@@ -40,7 +40,7 @@ class Forms extends Component {
                 <div className="row">
 
                   <div className="form-group col-sm-4">
-                    <label for="ccmonth">Month</label>
+                    <label htmlFor="ccmonth">Month</label>
                     <select className="form-control" id="ccmonth">
                       <option>1</option>
                       <option>2</option>
@@ -58,7 +58,7 @@ class Forms extends Component {
                   </div>
 
                   <div className="form-group col-sm-4">
-                    <label for="ccyear">Year</label>
+                    <label htmlFor="ccyear">Year</label>
                     <select className="form-control" id="ccyear">
                       <option>2014</option>
                       <option>2015</option>
@@ -78,7 +78,7 @@ class Forms extends Component {
                   <div className="col-sm-4">
 
                     <div className="form-group">
-                      <label for="cvv">CVV/CVC</label>
+                      <label htmlFor="cvv">CVV/CVC</label>
                       <input type="text" className="form-control" id="cvv" placeholder="123"/>
                     </div>
 
@@ -98,36 +98,36 @@ class Forms extends Component {
               </div>
               <div className="card-block">
                 <div className="form-group">
-                  <label for="company">Company</label>
+                  <label htmlFor="company">Company</label>
                   <input type="text" className="form-control" id="company" placeholder="Enter your company name"/>
                 </div>
 
                 <div className="form-group">
-                  <label for="vat">VAT</label>
+                  <label htmlFor="vat">VAT</label>
                   <input type="text" className="form-control" id="vat" placeholder="PL1234567890"/>
                 </div>
 
                 <div className="form-group">
-                  <label for="street">Street</label>
+                  <label htmlFor="street">Street</label>
                   <input type="text" className="form-control" id="street" placeholder="Enter street name"/>
                 </div>
 
                 <div className="row">
 
                   <div className="form-group col-sm-8">
-                    <label for="city">City</label>
+                    <label htmlFor="city">City</label>
                     <input type="text" className="form-control" id="city" placeholder="Enter your city"/>
                   </div>
 
                   <div className="form-group col-sm-4">
-                    <label for="postal-code">Postal Code</label>
+                    <label htmlFor="postal-code">Postal Code</label>
                     <input type="text" className="form-control" id="postal-code" placeholder="Postal Code"/>
                   </div>
 
                 </div>
 
                 <div className="form-group">
-                  <label for="country">Country</label>
+                  <label htmlFor="country">Country</label>
                   <input type="text" className="form-control" id="country" placeholder="Country name"/>
                 </div>
               </div>
@@ -145,7 +145,7 @@ class Forms extends Component {
                 <strong>Basic Form</strong> Elements
               </div>
               <div className="card-block">
-                <form action="" method="post" enctype="multipart/form-data" className="form-horizontal ">
+                <form action="" method="post" encType="multipart/form-data" className="form-horizontal ">
                   <div className="form-group row">
                     <label className="col-md-3 form-control-label">Static</label>
                     <div className="col-md-9">
@@ -153,40 +153,40 @@ class Forms extends Component {
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="text-input">Text Input</label>
+                    <label className="col-md-3 form-control-label" htmlFor="text-input">Text Input</label>
                     <div className="col-md-9">
                       <input type="text" id="text-input" name="text-input" className="form-control" placeholder="Text"/>
                       <span className="help-block">This is a help text</span>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="email-input">Email Input</label>
+                    <label className="col-md-3 form-control-label" htmlFor="email-input">Email Input</label>
                     <div className="col-md-9">
                       <input type="email" id="email-input" name="email-input" className="form-control" placeholder="Enter Email"/>
                       <span className="help-block">Please enter your email</span>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="password-input">Password</label>
+                    <label className="col-md-3 form-control-label" htmlFor="password-input">Password</label>
                     <div className="col-md-9">
                       <input type="password" id="password-input" name="password-input" className="form-control" placeholder="Password"/>
                       <span className="help-block">Please enter a complex password</span>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="disabled-input">Disabled Input</label>
+                    <label className="col-md-3 form-control-label" htmlFor="disabled-input">Disabled Input</label>
                     <div className="col-md-9">
                       <input type="text" id="disabled-input" name="disabled-input" className="form-control" placeholder="Disabled" disabled/>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="textarea-input">Textarea</label>
+                    <label className="col-md-3 form-control-label" htmlFor="textarea-input">Textarea</label>
                     <div className="col-md-9">
                       <textarea id="textarea-input" name="textarea-input" rows="9" className="form-control" placeholder="Content.."></textarea>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="select">Select</label>
+                    <label className="col-md-3 form-control-label" htmlFor="select">Select</label>
                     <div className="col-md-9">
                       <select id="select" name="select" className="form-control" size="1">
                         <option value="0">Please select</option>
@@ -197,7 +197,7 @@ class Forms extends Component {
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="select">Select Large</label>
+                    <label className="col-md-3 form-control-label" htmlFor="select">Select Large</label>
                     <div className="col-md-9">
                       <select id="select" name="select" className="form-control input-lg" size="1">
                         <option value="0">Please select</option>
@@ -208,7 +208,7 @@ class Forms extends Component {
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="select">Select Small</label>
+                    <label className="col-md-3 form-control-label" htmlFor="select">Select Small</label>
                     <div className="col-md-9">
                       <select id="select" name="select" className="form-control input-sm" size="1">
                         <option value="0">Please select</option>
@@ -219,7 +219,7 @@ class Forms extends Component {
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="select">Disabled Select</label>
+                    <label className="col-md-3 form-control-label" htmlFor="select">Disabled Select</label>
                     <div className="col-md-9">
                       <select id="disabledSelect" className="form-control" disabled>
                         <option value="0">Please select</option>
@@ -230,7 +230,7 @@ class Forms extends Component {
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="multiple-select">Multiple select</label>
+                    <label className="col-md-3 form-control-label" htmlFor="multiple-select">Multiple select</label>
                     <div className="col-md-9">
                       <select id="multiple-select" name="multiple-select" className="form-control" size="5" multiple>
                         <option value="1">Option #1</option>
@@ -250,17 +250,17 @@ class Forms extends Component {
                     <label className="col-md-3 form-control-label">Radios</label>
                     <div className="col-md-9">
                       <div className="radio">
-                        <label for="radio1">
+                        <label htmlFor="radio1">
                           <input type="radio" id="radio1" name="radios" value="option1"/> Option 1
                         </label>
                       </div>
                       <div className="radio">
-                        <label for="radio2">
+                        <label htmlFor="radio2">
                           <input type="radio" id="radio2" name="radios" value="option2"/> Option 2
                         </label>
                       </div>
                       <div className="radio">
-                        <label for="radio3">
+                        <label htmlFor="radio3">
                           <input type="radio" id="radio3" name="radios" value="option3"/> Option 3
                         </label>
                       </div>
@@ -269,13 +269,13 @@ class Forms extends Component {
                   <div className="form-group row">
                     <label className="col-md-3 form-control-label">Inline Radios</label>
                     <div className="col-md-9">
-                      <label className="radio-inline" for="inline-radio1">
+                      <label className="radio-inline" htmlFor="inline-radio1">
                         <input type="radio" id="inline-radio1" name="inline-radios" value="option1"/> One
                       </label>
-                      <label className="radio-inline" for="inline-radio2">
+                      <label className="radio-inline" htmlFor="inline-radio2">
                         <input type="radio" id="inline-radio2" name="inline-radios" value="option2"/> Two
                       </label>
-                      <label className="radio-inline" for="inline-radio3">
+                      <label className="radio-inline" htmlFor="inline-radio3">
                         <input type="radio" id="inline-radio3" name="inline-radios" value="option3"/> Three
                       </label>
                     </div>
@@ -284,17 +284,17 @@ class Forms extends Component {
                     <label className="col-md-3 form-control-label">Checkboxes</label>
                     <div className="col-md-9">
                       <div className="checkbox">
-                        <label for="checkbox1">
+                        <label htmlFor="checkbox1">
                           <input type="checkbox" id="checkbox1" name="checkbox1" value="option1"/> Option 1
                         </label>
                       </div>
                       <div className="checkbox">
-                        <label for="checkbox2">
+                        <label htmlFor="checkbox2">
                           <input type="checkbox" id="checkbox2" name="checkbox2" value="option2"/> Option 2
                         </label>
                       </div>
                       <div className="checkbox">
-                        <label for="checkbox3">
+                        <label htmlFor="checkbox3">
                           <input type="checkbox" id="checkbox3" name="checkbox3" value="option3"/> Option 3
                         </label>
                       </div>
@@ -303,25 +303,25 @@ class Forms extends Component {
                   <div className="form-group row">
                     <label className="col-md-3 form-control-label">Inline Checkboxes</label>
                     <div className="col-md-9">
-                      <label className="checkbox-inline" for="inline-checkbox1">
+                      <label className="checkbox-inline" htmlFor="inline-checkbox1">
                         <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1"/>One
                       </label>
-                      <label className="checkbox-inline" for="inline-checkbox2">
+                      <label className="checkbox-inline" htmlFor="inline-checkbox2">
                         <input type="checkbox" id="inline-checkbox2" name="inline-checkbox2" value="option2"/>Two
                       </label>
-                      <label className="checkbox-inline" for="inline-checkbox3">
+                      <label className="checkbox-inline" htmlFor="inline-checkbox3">
                         <input type="checkbox" id="inline-checkbox3" name="inline-checkbox3" value="option3"/>Three
                       </label>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="file-input">File input</label>
+                    <label className="col-md-3 form-control-label" htmlFor="file-input">File input</label>
                     <div className="col-md-9">
                       <input type="file" id="file-input" name="file-input"/>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="file-multiple-input">Multiple File input</label>
+                    <label className="col-md-3 form-control-label" htmlFor="file-multiple-input">Multiple File input</label>
                     <div className="col-md-9">
                       <input type="file" id="file-multiple-input" name="file-multiple-input" multiple/>
                     </div>
@@ -341,11 +341,11 @@ class Forms extends Component {
               <div className="card-block">
                 <form action="" method="post" className="form-inline">
                   <div className="form-group">
-                    <label for="exampleInputName2">Name</label>
+                    <label htmlFor="exampleInputName2">Name</label>
                     <input type="text" className="form-control" id="exampleInputName2" placeholder="Jane Doe"/>
                   </div>
                   <div className="form-group">
-                    <label for="exampleInputEmail2">Email</label>
+                    <label htmlFor="exampleInputEmail2">Email</label>
                     <input type="email" className="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com"/>
                   </div>
                 </form>
@@ -364,14 +364,14 @@ class Forms extends Component {
               <div className="card-block">
                 <form action="" method="post" className="form-horizontal ">
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="hf-email">Email</label>
+                    <label className="col-md-3 form-control-label" htmlFor="hf-email">Email</label>
                     <div className="col-md-9">
                       <input type="email" id="hf-email" name="hf-email" className="form-control" placeholder="Enter Email.."/>
                       <span className="help-block">Please enter your email</span>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-md-3 form-control-label" for="hf-password">Password</label>
+                    <label className="col-md-3 form-control-label" htmlFor="hf-password">Password</label>
                     <div className="col-md-9">
                       <input type="password" id="hf-password" name="hf-password" className="form-control" placeholder="Enter Password.."/>
                       <span className="help-block">Please enter your password</span>
@@ -391,12 +391,12 @@ class Forms extends Component {
               <div className="card-block">
                 <form action="" method="post">
                   <div className="form-group">
-                    <label for="nf-email">Email</label>
+                    <label htmlFor="nf-email">Email</label>
                     <input type="email" id="nf-email" name="nf-email" className="form-control" placeholder="Enter Email.."/>
                     <span className="help-block">Please enter your email</span>
                   </div>
                   <div className="form-group">
-                    <label for="nf-password">Password</label>
+                    <label htmlFor="nf-password">Password</label>
                     <input type="password" id="nf-password" name="nf-password" className="form-control" placeholder="Enter Password.."/>
                     <span className="help-block">Please enter your password</span>
                   </div>
@@ -481,19 +481,19 @@ class Forms extends Component {
               <div className="card-block">
                 <form action="" method="post" className="form-horizontal ">
                   <div className="form-group row">
-                    <label className="col-sm-3 form-control-label" for="input-small">Small Input</label>
+                    <label className="col-sm-3 form-control-label" htmlFor="input-small">Small Input</label>
                     <div className="col-sm-6">
                       <input type="text" id="input-small" name="input-small" className="form-control input-sm" placeholder=".input-sm"/>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-sm-3 form-control-label" for="input-normal">Normal Input</label>
+                    <label className="col-sm-3 form-control-label" htmlFor="input-normal">Normal Input</label>
                     <div className="col-sm-6">
                       <input type="text" id="input-normal" name="input-normal" className="form-control" placeholder="Normal"/>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-sm-3 form-control-label" for="input-large">Large Input</label>
+                    <label className="col-sm-3 form-control-label" htmlFor="input-large">Large Input</label>
                     <div className="col-sm-6">
                       <input type="text" id="input-large" name="input-large" className="form-control input-lg" placeholder=".input-lg"/>
                     </div>
@@ -517,15 +517,15 @@ class Forms extends Component {
               </div>
               <div className="card-block">
                 <div className="form-group has-success">
-                  <label className="form-form-control-label" for="inputSuccess1">Input with success</label>
+                  <label className="form-form-control-label" htmlFor="inputSuccess1">Input with success</label>
                   <input type="text" className="form-control" id="inputSuccess1"/>
                 </div>
                 <div className="form-group has-warning">
-                  <label className="form-form-control-label" for="inputWarning1">Input with warning</label>
+                  <label className="form-form-control-label" htmlFor="inputWarning1">Input with warning</label>
                   <input type="text" className="form-control" id="inputWarning1"/>
                 </div>
                 <div className="form-group has-danger">
-                  <label className="form-form-control-label" for="inputError1">Input with error</label>
+                  <label className="form-form-control-label" htmlFor="inputError1">Input with error</label>
                   <input type="text" className="form-control" id="inputError1"/>
                 </div>
               </div>
@@ -538,15 +538,15 @@ class Forms extends Component {
               </div>
               <div className="card-block">
                 <div className="form-group has-success">
-                  <label className="form-form-control-label" for="inputSuccess2">Input with success</label>
+                  <label className="form-form-control-label" htmlFor="inputSuccess2">Input with success</label>
                   <input type="text" className="form-control form-control-success" id="inputSuccess2"/>
                 </div>
                 <div className="form-group has-warning">
-                  <label className="form-form-control-label" for="inputWarning2">Input with warning</label>
+                  <label className="form-form-control-label" htmlFor="inputWarning2">Input with warning</label>
                   <input type="text" className="form-control form-control-warning" id="inputWarning2"/>
                 </div>
                 <div className="form-group has-danger has-feedback">
-                  <label className="form-form-control-label" for="inputError2">Input with error</label>
+                  <label className="form-form-control-label" htmlFor="inputError2">Input with error</label>
                   <input type="text" className="form-control form-control-danger" id="inputError2"/>
                 </div>
               </div>
@@ -958,7 +958,7 @@ class Forms extends Component {
               <div className="card-block">
                 <form className="form-horizontal">
                   <div className="form-group">
-                    <label className="form-control-label" for="prependedInput">Prepended text</label>
+                    <label className="form-control-label" htmlFor="prependedInput">Prepended text</label>
                     <div className="controls">
                       <div className="input-prepend input-group">
                         <span className="input-group-addon">@</span>
@@ -968,7 +968,7 @@ class Forms extends Component {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label className="form-control-label" for="appendedInput">Appended text</label>
+                    <label className="form-control-label" htmlFor="appendedInput">Appended text</label>
                     <div className="controls">
                       <div className="input-group">
                         <input id="appendedInput" className="form-control" size="16" type="text"/><span className="input-group-addon">.00</span>
@@ -977,7 +977,7 @@ class Forms extends Component {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label className="form-control-label" for="appendedPrependedInput">Append and prepend</label>
+                    <label className="form-control-label" htmlFor="appendedPrependedInput">Append and prepend</label>
                     <div className="controls">
                       <div className="input-prepend input-group">
                         <span className="input-group-addon">$</span>
@@ -986,7 +986,7 @@ class Forms extends Component {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label className="form-control-label" for="appendedInputButton">Append with button</label>
+                    <label className="form-control-label" htmlFor="appendedInputButton">Append with button</label>
                     <div className="controls">
                       <div className="input-group">
                         <input id="appendedInputButton" className="form-control" size="16" type="text"/>
@@ -995,7 +995,7 @@ class Forms extends Component {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label className="form-control-label" for="appendedInputButtons">Two-button append</label>
+                    <label className="form-control-label" htmlFor="appendedInputButtons">Two-button append</label>
                     <div className="controls">
                       <div className="input-group">
                         <input id="appendedInputButtons" size="16" className="form-control" type="text"/>
