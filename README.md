@@ -1,5 +1,7 @@
 # CoreUI - Free Bootstrap Admin Template
 
+Please help us on Product Hunt: https://www.producthunt.com/posts/coreui-open-source-bootstrap-4-admin-template-with-angular-2-react-js-vue-js-support & Designer News: https://www.designernews.co/stories/81127. Thanks in advance!
+
 Why I decided to create CoreUI? Please read this article: [Jack of all trades, master of none. Why Boostrap Admin Templates sucks.] (https://medium.com/@lukaszholeczek/jack-of-all-trades-master-of-none-5ea53ef8a1f#.7eqx1bcd8)
 
 CoreUI is Open Source Bootstrap Admin Template. CoreUI is not just another Admin Template. It goes way beyond hitherto admin templates thanks to transparent code and file structure. And if it’s not enough, let’s just add the CoreUI consists bunch of unique features and over 1000 high quality icons.,
