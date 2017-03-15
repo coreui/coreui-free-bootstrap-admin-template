@@ -14,7 +14,7 @@ import 'rxjs/add/operator/filter';
 })
 export class BreadcrumbsComponent {
   breadcrumbs: Array<Object>;
-  constructor(private router:Router, private route:ActivatedRoute) {}
+  constructor(private router: Router, private route: ActivatedRoute) {}
   ngOnInit(): void {
     this.router.events.filter(event => event instanceof NavigationEnd).subscribe(event => {
       this.breadcrumbs = [];
@@ -24,7 +24,7 @@ export class BreadcrumbsComponent {
         let childrenRoutes = currentRoute.children;
         currentRoute = null;
         childrenRoutes.forEach(route => {
-          if(route.outlet === 'primary') {
+          if (route.outlet === 'primary') {
             let routeSnapshot = route.snapshot;
             url += '/' + routeSnapshot.url.map(segment => segment.path).join('/');
             this.breadcrumbs.push({
@@ -33,8 +33,8 @@ export class BreadcrumbsComponent {
             });
             currentRoute = route;
           }
-        })
-      } while(currentRoute);
-    })
+        });
+      } while (currentRoute);
+    });
   }
 }

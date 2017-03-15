@@ -1,43 +1,14 @@
-import { Directive, HostListener } from '@angular/core';
+import { Directive, HostListener, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '.nav-dropdown',
-  host: {
-    '[class.open]': '_open',
-  }
+  selector: '.nav-dropdown'
 })
 export class NavDropdownDirective {
 
-  private _open = false;
+  constructor(private el: ElementRef) { }
 
-  /**
-  * Checks if the dropdown menu is open or not.
-  */
-  isOpen() { return this._open; }
-
-  /**
-  * Opens the dropdown menu.
-  */
-  open() {
-    this._open = true;
-  }
-
-  /**
-  * Closes the dropdown menu .
-  */
-  close() {
-    this._open = false;
-  }
-
-  /**
-  * Toggles the dropdown menu.
-  */
   toggle() {
-    if (this.isOpen()) {
-      this.close();
-    } else {
-      this.open();
-    }
+    this.el.nativeElement.classList.toggle('open');
   }
 }
 
@@ -47,11 +18,11 @@ export class NavDropdownDirective {
 @Directive({
   selector: '.nav-dropdown-toggle',
 })
-export class NavDropdownToggleDirective{
+export class NavDropdownToggleDirective {
   constructor(private dropdown: NavDropdownDirective) {}
 
   @HostListener('click', ['$event'])
-  toggleOpen($event:any) {
+  toggleOpen($event: any) {
     $event.preventDefault();
     this.dropdown.toggle();
   }
