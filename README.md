@@ -1,8 +1,8 @@
 # CoreUI - Free Bootstrap Admin Template
 
-Please help us on Product Hunt: https://www.producthunt.com/posts/coreui-open-source-bootstrap-4-admin-template-with-angular-2-react-js-vue-js-support & Designer News: https://www.designernews.co/stories/81127. Thanks in advance!
+Please help us on [Product Hunt](https://www.producthunt.com/posts/coreui-open-source-bootstrap-4-admin-template-with-angular-2-react-js-vue-js-support) & [Designer News](https://www.designernews.co/stories/81127). Thanks in advance!
 
-Why I decided to create CoreUI? Please read this article: [Jack of all trades, master of none. Why Boostrap Admin Templates sucks.] (https://medium.com/@lukaszholeczek/jack-of-all-trades-master-of-none-5ea53ef8a1f#.7eqx1bcd8)
+Why I decided to create CoreUI? Please read this article: [Jack of all trades, master of none. Why Boostrap Admin Templates sucks.](https://medium.com/@lukaszholeczek/jack-of-all-trades-master-of-none-5ea53ef8a1f#.7eqx1bcd8)
 
 CoreUI is Open Source Bootstrap Admin Template. CoreUI is not just another Admin Template. It goes way beyond hitherto admin templates thanks to transparent code and file structure. And if it’s not enough, let’s just add the CoreUI consists bunch of unique features and over 1000 high quality icons.,
 
@@ -12,11 +12,13 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 
 <img src="http://coreui.io/assets/img/coreui.png" alt="Free Bootstrap Admin Template">
 
-Demo: <a href="http://coreui.io?ref=github">CoreUI</a>
-
 **NOTE:** Please remember to **STAR** this project and **FOLLOW** [my Github](https://github.com/mrholek) to keep you update with this template.
 
-### What's included
+## Demo
+
+A fully functional demo is available at <a href="http://coreui.io?ref=github">CoreUI</a>
+
+## What's included
 
 Within the download you'll find the following directories and files, You'll see something like this:
 
@@ -37,11 +39,11 @@ CoreUI/
 
 ```
 
-##Bugs and feature requests
+## Bugs and feature requests
 
 Have a bug or a feature request? [Please open a new issue](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template/issues/new).
 
-##Documentation
+## Documentation
 
 CoreUI's documentation, is hosted on our website <a href="http://coreui.io?ref=github">coreui.io</a>
 
