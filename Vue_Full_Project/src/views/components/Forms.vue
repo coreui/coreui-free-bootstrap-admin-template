@@ -155,7 +155,7 @@
               <div class="form-group row">
                 <label class="col-md-3 form-control-label" for="select">Select</label>
                 <div class="col-md-9">
-                  <select id="select" name="select" class="form-control" size="1">
+                  <select id="select" name="select" class="form-control">
                     <option value="0">Please select</option>
                     <option value="1">Option #1</option>
                     <option value="2">Option #2</option>
@@ -166,7 +166,7 @@
               <div class="form-group row">
                 <label class="col-md-3 form-control-label" for="select">Select Large</label>
                 <div class="col-md-9">
-                  <select id="select" name="select" class="form-control input-lg" size="1">
+                  <select id="select" name="select" class="form-control form-control-lg">
                     <option value="0">Please select</option>
                     <option value="1">Option #1</option>
                     <option value="2">Option #2</option>
@@ -177,7 +177,7 @@
               <div class="form-group row">
                 <label class="col-md-3 form-control-label" for="select">Select Small</label>
                 <div class="col-md-9">
-                  <select id="select" name="select" class="form-control input-sm" size="1">
+                  <select id="select" name="select" class="form-control form-control-sm">
                     <option value="0">Please select</option>
                     <option value="1">Option #1</option>
                     <option value="2">Option #2</option>
@@ -446,7 +446,7 @@
               <div class="form-group row">
                 <label class="col-sm-3 form-control-label" for="input-small">Small Input</label>
                 <div class="col-sm-6">
-                  <input type="text" id="input-small" name="input-small" class="form-control input-sm" placeholder=".input-sm">
+                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder=".form-control-sm">
                 </div>
               </div>
               <div class="form-group row">
@@ -458,7 +458,7 @@
               <div class="form-group row">
                 <label class="col-sm-3 form-control-label" for="input-large">Large Input</label>
                 <div class="col-sm-6">
-                  <input type="text" id="input-large" name="input-large" class="form-control input-lg" placeholder=".input-lg">
+                  <input type="text" id="input-large" name="input-large" class="form-control form-control-lg" placeholder=".form-control-lg">
                 </div>
               </div>
             </form>

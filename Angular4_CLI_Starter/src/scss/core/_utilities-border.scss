@@ -1,0 +1,18 @@
+//border
+@each $prop, $abbrev in (border: b) {
+  @each $size in (0,1,2) {
+    @if $size == 0 {
+      .#{$abbrev}-a-#{$size} { #{$prop}:        0 !important; } // a = All sides
+      .#{$abbrev}-t-#{$size} { #{$prop}-top:    0 !important; }
+      .#{$abbrev}-r-#{$size} { #{$prop}-right:  0 !important; }
+      .#{$abbrev}-b-#{$size} { #{$prop}-bottom: 0 !important; }
+      .#{$abbrev}-l-#{$size} { #{$prop}-left:   0 !important; }
+    } @else {
+      .#{$abbrev}-a-#{$size} { #{$prop}:        $size * $border-width solid $border-color !important; } // a = All sides
+      .#{$abbrev}-t-#{$size} { #{$prop}-top:    $size * $border-width solid $border-color !important; }
+      .#{$abbrev}-r-#{$size} { #{$prop}-right:  $size * $border-width solid $border-color !important; }
+      .#{$abbrev}-b-#{$size} { #{$prop}-bottom: $size * $border-width solid $border-color !important; }
+      .#{$abbrev}-l-#{$size} { #{$prop}-left:   $size * $border-width solid $border-color !important; }
+    }
+  }
+}
