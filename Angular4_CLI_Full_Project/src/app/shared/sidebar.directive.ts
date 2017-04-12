@@ -17,6 +17,19 @@ export class SidebarToggleDirective {
 }
 
 @Directive({
+  selector: '.sidebar-minimizer',
+})
+export class SidebarMinimizeDirective {
+  constructor() { }
+
+  @HostListener('click', ['$event'])
+  toggleOpen($event: any) {
+    $event.preventDefault();
+    document.querySelector('body').classList.toggle('sidebar-compact');
+  }
+}
+
+@Directive({
   selector: '.mobile-sidebar-toggler',
 })
 export class MobileSidebarToggleDirective {
@@ -71,4 +84,4 @@ export class SidebarOffCanvasCloseDirective {
   }
 }
 
-export const SIDEBAR_TOGGLE_DIRECTIVES = [SidebarToggleDirective, SidebarOffCanvasCloseDirective, MobileSidebarToggleDirective];
+export const SIDEBAR_TOGGLE_DIRECTIVES = [SidebarToggleDirective, SidebarMinimizeDirective, SidebarOffCanvasCloseDirective, MobileSidebarToggleDirective];

@@ -1,3 +1,13 @@
+.btn {
+  .badge {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    font-size: 9px;
+  }
+}
+
+
 .btn-transparent {
   $color: #fff;
   $background: transparent;
@@ -77,14 +87,14 @@
       margin-left: 0 !important;
     }
   }
-  @include button-social-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height-base, $btn-border-radius);
+  @include button-social-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $line-height-base, $btn-border-radius);
 
   &.btn-lg {
-    @include button-social-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
+    @include button-social-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
   }
 
   &.btn-sm {
-    @include button-social-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius-sm);
+    @include button-social-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius-sm);
   }
 
 }

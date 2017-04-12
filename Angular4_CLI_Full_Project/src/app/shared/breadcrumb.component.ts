@@ -5,12 +5,12 @@ import 'rxjs/add/operator/filter';
 @Component({
   selector: 'breadcrumbs',
   template: `
-  <template ngFor let-breadcrumb [ngForOf]="breadcrumbs" let-last = last>
+  <ng-template ngFor let-breadcrumb [ngForOf]="breadcrumbs" let-last = last>
     <li class="breadcrumb-item" *ngIf="breadcrumb.label.title&&breadcrumb.url.substring(breadcrumb.url.length-1) == '/' || breadcrumb.label.title&&last" [ngClass]="{active: last}">
       <a *ngIf="!last" [routerLink]="breadcrumb.url">{{breadcrumb.label.title}}</a>
       <span *ngIf="last" [routerLink]="breadcrumb.url">{{breadcrumb.label.title}}</span>
     </li>
-  </template>`
+  </ng-template>`
 })
 export class BreadcrumbsComponent {
   breadcrumbs: Array<Object>;

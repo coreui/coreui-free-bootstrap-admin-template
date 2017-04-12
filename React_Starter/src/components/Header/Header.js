@@ -7,6 +7,11 @@ class Header extends Component {
     document.body.classList.toggle('sidebar-hidden');
   }
 
+  sidebarMinimize(e) {
+    e.preventDefault();
+    document.body.classList.toggle('sidebar-compact');
+  }
+
   mobileSidebarToggle(e) {
     e.preventDefault();
     document.body.classList.toggle('sidebar-mobile-show');
@@ -20,9 +25,9 @@ class Header extends Component {
   render() {
     return (
       <header className="app-header navbar">
-        <button className="navbar-toggler mobile-sidebar-toggler hidden-lg-up" onClick={this.mobileSidebarToggle} type="button">&#9776;</button>
+        <button className="navbar-toggler mobile-sidebar-toggler d-lg-none" onClick={this.mobileSidebarToggle} type="button">&#9776;</button>
         <a className="navbar-brand" href="#"></a>
-        <ul className="nav navbar-nav hidden-md-down">
+        <ul className="nav navbar-nav d-md-down-none">
           <li className="nav-item">
             <a className="nav-link navbar-toggler sidebar-toggler" onClick={this.sidebarToggle} href="#">&#9776;</a>
           </li>

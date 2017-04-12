@@ -158,7 +158,7 @@ class Tables extends Component {
                 <i className="fa fa-align-justify"></i> Condensed Table
               </div>
               <div className="card-block">
-                <table className="table table-condensed">
+                <table className="table table-sm">
                   <thead>
                     <tr>
                       <th>Username</th>
@@ -305,7 +305,7 @@ class Tables extends Component {
                 <i className="fa fa-align-justify"></i> Combined All Table
               </div>
               <div className="card-block">
-                <table className="table table-bordered table-striped table-condensed">
+                <table className="table table-bordered table-striped table-sm">
                   <thead>
                     <tr>
                       <th>Username</th>

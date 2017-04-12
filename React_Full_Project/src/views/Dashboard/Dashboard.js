@@ -309,7 +309,7 @@ class Dashboard extends Component {
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
               </div>
-              <div className="chart-wrapper px-1">
+              <div className="chart-wrapper px-3">
                 <Line data={cardChartData1} options={cardChartOpts1} height={70}/>
               </div>
             </div>
@@ -324,7 +324,7 @@ class Dashboard extends Component {
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
               </div>
-              <div className="chart-wrapper px-1">
+              <div className="chart-wrapper px-3">
                 <Line data={cardChartData2} options={cardChartOpts2} height={70}/>
               </div>
             </div>
@@ -368,7 +368,7 @@ class Dashboard extends Component {
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
               </div>
-              <div className="chart-wrapper px-1">
+              <div className="chart-wrapper px-3">
                 <Bar data={cardChartData4} options={cardChartOpts4} height={70}/>
               </div>
             </div>
@@ -385,7 +385,7 @@ class Dashboard extends Component {
               <div className="col-sm-7 hidden-sm-down">
                 <button type="button" className="btn btn-primary float-right"><i className="icon-cloud-download"></i></button>
                 <div className="btn-toolbar float-right" role="toolbar" aria-label="Toolbar with button groups">
-                  <div className="btn-group mr-1" data-toggle="buttons" aria-label="First group">
+                  <div className="btn-group mr-3" data-toggle="buttons" aria-label="First group">
                     <label className="btn btn-outline-secondary">
                       <input type="radio" name="options" id="option1"/> Day
                     </label>
@@ -408,27 +408,27 @@ class Dashboard extends Component {
               <li>
                 <div className="text-muted">Visits</div>
                 <strong>29.703 Users (40%)</strong>
-                <Progress className="progress-xs mt-h" color="success" value="40" />
+                <Progress className="progress-xs mt-2" color="success" value="40" />
               </li>
               <li className="hidden-sm-down">
                 <div className="text-muted">Unique</div>
                 <strong>24.093 Users (20%)</strong>
-                <Progress className="progress-xs mt-h" color="info" value="20" />
+                <Progress className="progress-xs mt-2" color="info" value="20" />
               </li>
               <li>
                 <div className="text-muted">Pageviews</div>
                 <strong>78.706 Views (60%)</strong>
-                <Progress className="progress-xs mt-h" color="warning" value="60" />
+                <Progress className="progress-xs mt-2" color="warning" value="60" />
               </li>
               <li className="hidden-sm-down">
                 <div className="text-muted">New Users</div>
                 <strong>22.123 Users (80%)</strong>
-                <Progress className="progress-xs mt-h" color="danger" value="80" />
+                <Progress className="progress-xs mt-2" color="danger" value="80" />
               </li>
               <li className="hidden-sm-down">
                 <div className="text-muted">Bounce Rate</div>
                 <strong>40.15%</strong>
-                <Progress className="progress-xs mt-h" color="primary" value="40" />
+                <Progress className="progress-xs mt-2" color="primary" value="40" />
               </li>
             </ul>
           </div>

@@ -25,7 +25,7 @@ class Tabs extends Component {
     return (
       <div className="animated fadeIn">
         <div className="row">
-          <div className="col-md-6 mb-2">
+          <div className="col-md-6 mb-4">
             <Nav tabs>
               <NavItem>
                 <NavLink
@@ -64,7 +64,7 @@ class Tabs extends Component {
               </TabPane>
             </TabContent>
           </div>
-          <div className="col-md-6 mb-2">
+          <div className="col-md-6 mb-4">
             <Nav tabs>
               <NavItem>
                 <NavLink
@@ -103,7 +103,7 @@ class Tabs extends Component {
               </TabPane>
             </TabContent>
           </div>
-          <div className="col-md-6 mb-2">
+          <div className="col-md-6 mb-4">
             <Nav tabs>
               <NavItem>
                 <NavLink
@@ -142,7 +142,7 @@ class Tabs extends Component {
               </TabPane>
             </TabContent>
           </div>
-          <div className="col-md-6 mb-2">
+          <div className="col-md-6 mb-4">
             <Nav tabs>
               <NavItem>
                 <NavLink

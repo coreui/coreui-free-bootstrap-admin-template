@@ -145,7 +145,7 @@ class Forms extends Component {
                 <strong>Basic Form</strong> Elements
               </div>
               <div className="card-block">
-                <form action="" method="post" encType="multipart/form-data" className="form-horizontal ">
+                <form action="" method="post" encType="multipart/form-data" className="form-2orizontal ">
                   <div className="form-group row">
                     <label className="col-md-3 form-control-label">Static</label>
                     <div className="col-md-9">
@@ -362,7 +362,7 @@ class Forms extends Component {
                 <strong>Horizontal</strong> Form
               </div>
               <div className="card-block">
-                <form action="" method="post" className="form-horizontal ">
+                <form action="" method="post" className="form-2orizontal ">
                   <div className="form-group row">
                     <label className="col-md-3 form-control-label" htmlFor="hf-email">Email</label>
                     <div className="col-md-9">
@@ -414,11 +414,11 @@ class Forms extends Component {
                 Input <strong>Grid</strong>
               </div>
               <div className="card-block">
-                <form action="" method="post" className="form-horizontal ">
+                <form action="" method="post" className="form-2orizontal ">
 
                   <div className="form-group row">
-                    <div className="col-sm-3">
-                      <input type="text" className="form-control" placeholder=".col-sm-3"/>
+                    <div className="col-sm-5">
+                      <input type="text" className="form-control" placeholder=".col-sm-5"/>
                     </div>
                   </div>
                   <div className="form-group row">
@@ -452,13 +452,13 @@ class Forms extends Component {
                     </div>
                   </div>
                   <div className="form-group row">
-                    <div className="col-sm-10">
-                      <input type="text" className="form-control" placeholder=".col-sm-10"/>
+                    <div className="col-sm-30">
+                      <input type="text" className="form-control" placeholder=".col-sm-30"/>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <div className="col-sm-11">
-                      <input type="text" className="form-control" placeholder=".col-sm-11"/>
+                    <div className="col-sm-31">
+                      <input type="text" className="form-control" placeholder=".col-sm-31"/>
                     </div>
                   </div>
                   <div className="form-group row">
@@ -479,21 +479,21 @@ class Forms extends Component {
                 Input <strong>Sizes</strong>
               </div>
               <div className="card-block">
-                <form action="" method="post" className="form-horizontal ">
+                <form action="" method="post" className="form-2orizontal ">
                   <div className="form-group row">
-                    <label className="col-sm-3 form-control-label" htmlFor="input-small">Small Input</label>
+                    <label className="col-sm-5 form-control-label" htmlFor="input-small">Small Input</label>
                     <div className="col-sm-6">
                       <input type="text" id="input-small" name="input-small" className="form-control input-sm" placeholder=".input-sm"/>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-sm-3 form-control-label" htmlFor="input-normal">Normal Input</label>
+                    <label className="col-sm-5 form-control-label" htmlFor="input-normal">Normal Input</label>
                     <div className="col-sm-6">
                       <input type="text" id="input-normal" name="input-normal" className="form-control" placeholder="Normal"/>
                     </div>
                   </div>
                   <div className="form-group row">
-                    <label className="col-sm-3 form-control-label" htmlFor="input-large">Large Input</label>
+                    <label className="col-sm-5 form-control-label" htmlFor="input-large">Large Input</label>
                     <div className="col-sm-6">
                       <input type="text" id="input-large" name="input-large" className="form-control input-lg" placeholder=".input-lg"/>
                     </div>
@@ -560,7 +560,7 @@ class Forms extends Component {
                 <strong>Icon/Text</strong> Groups
               </div>
               <div className="card-block">
-                <form action="" method="post" className="form-horizontal ">
+                <form action="" method="post" className="form-2orizontal ">
                   <div className="form-group row">
                     <div className="col-md-12">
                       <div className="input-group">
@@ -600,7 +600,7 @@ class Forms extends Component {
                 <strong>Buttons</strong> Groups
               </div>
               <div className="card-block">
-                <form action="" method="post" className="form-horizontal ">
+                <form action="" method="post" className="form-2orizontal ">
                   <div className="form-group row">
                     <div className="col-md-12">
                       <div className="input-group">
@@ -648,7 +648,7 @@ class Forms extends Component {
                 <strong>Dropdowns</strong> Groups
               </div>
               <div className="card-block">
-                <form action="" method="post" className="form-horizontal ">
+                <form action="" method="post" className="form-2orizontal ">
                   <div className="form-group row">
                     <div className="col-md-12">
                       <div className="input-group">
@@ -731,7 +731,7 @@ class Forms extends Component {
                 Use the grid for big devices! <small><code>.col-lg-*</code> <code>.col-md-*</code> <code>.col-sm-*</code></small>
               </div>
               <div className="card-block">
-                <form action="" method="post" className="form-horizontal ">
+                <form action="" method="post" className="form-2orizontal ">
                   <div className="form-group row">
                     <div className="col-md-8">
                       <input type="text" className="form-control" placeholder=".col-md-8"/>
@@ -789,7 +789,7 @@ class Forms extends Component {
                 Input Grid for small devices! <small> <code>.col-*</code></small>
               </div>
               <div className="card-block">
-                <form action="" method="post" className="form-horizontal ">
+                <form action="" method="post" className="form-2orizontal ">
                   <div className="form-group row">
                     <div className="col-4">
                       <input type="text" className="form-control" placeholder=".col-4"/>
@@ -956,7 +956,7 @@ class Forms extends Component {
                 </div>
               </div>
               <div className="card-block">
-                <form className="form-horizontal">
+                <form className="form-2orizontal">
                   <div className="form-group">
                     <label className="form-control-label" htmlFor="prependedInput">Prepended text</label>
                     <div className="controls">

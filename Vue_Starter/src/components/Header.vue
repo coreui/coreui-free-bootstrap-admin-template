@@ -28,6 +28,10 @@ export default {
       e.preventDefault()
       document.body.classList.toggle('sidebar-hidden')
     },
+    sidebarMinimize (e) {
+      e.preventDefault()
+      document.body.classList.toggle('sidebar-compact')
+    },
     mobileSidebarToggle (e) {
       e.preventDefault()
       document.body.classList.toggle('sidebar-mobile-show')

@@ -112,7 +112,7 @@
             <strong>Basic Form</strong> Elements
           </div>
           <div class="card-block">
-            <form action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+            <form action="" method="post" enctype="multipart/form-data" class="form-2orizontal ">
               <div class="form-group row">
                 <label class="col-md-3 form-control-label">Static</label>
                 <div class="col-md-9">
@@ -328,7 +328,7 @@
             <strong>Horizontal</strong> Form
           </div>
           <div class="card-block">
-            <form action="" method="post" class="form-horizontal ">
+            <form action="" method="post" class="form-2orizontal ">
               <div class="form-group row">
                 <label class="col-md-3 form-control-label" for="hf-email">Email</label>
                 <div class="col-md-9">
@@ -378,11 +378,11 @@
             Input <strong>Grid</strong>
           </div>
           <div class="card-block">
-            <form action="" method="post" class="form-horizontal ">
+            <form action="" method="post" class="form-2orizontal ">
 
               <div class="form-group row">
-                <div class="col-sm-3">
-                  <input type="text" class="form-control" placeholder=".col-sm-3">
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" placeholder=".col-sm-5">
                 </div>
               </div>
               <div class="form-group row">
@@ -416,13 +416,13 @@
                 </div>
               </div>
               <div class="form-group row">
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder=".col-sm-10">
+                <div class="col-sm-30">
+                  <input type="text" class="form-control" placeholder=".col-sm-30">
                 </div>
               </div>
               <div class="form-group row">
-                <div class="col-sm-11">
-                  <input type="text" class="form-control" placeholder=".col-sm-11">
+                <div class="col-sm-31">
+                  <input type="text" class="form-control" placeholder=".col-sm-31">
                 </div>
               </div>
               <div class="form-group row">
@@ -442,21 +442,21 @@
             Input <strong>Sizes</strong>
           </div>
           <div class="card-block">
-            <form action="" method="post" class="form-horizontal ">
+            <form action="" method="post" class="form-2orizontal ">
               <div class="form-group row">
-                <label class="col-sm-3 form-control-label" for="input-small">Small Input</label>
+                <label class="col-sm-5 form-control-label" for="input-small">Small Input</label>
                 <div class="col-sm-6">
                   <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder=".form-control-sm">
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-sm-3 form-control-label" for="input-normal">Normal Input</label>
+                <label class="col-sm-5 form-control-label" for="input-normal">Normal Input</label>
                 <div class="col-sm-6">
                   <input type="text" id="input-normal" name="input-normal" class="form-control" placeholder="Normal">
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-sm-3 form-control-label" for="input-large">Large Input</label>
+                <label class="col-sm-5 form-control-label" for="input-large">Large Input</label>
                 <div class="col-sm-6">
                   <input type="text" id="input-large" name="input-large" class="form-control form-control-lg" placeholder=".form-control-lg">
                 </div>
@@ -521,7 +521,7 @@
             <strong>Icon/Text</strong> Groups
           </div>
           <div class="card-block">
-            <form action="" method="post" class="form-horizontal ">
+            <form action="" method="post" class="form-2orizontal ">
               <div class="form-group row">
                 <div class="col-md-12">
                   <div class="input-group">
@@ -561,7 +561,7 @@
             <strong>Buttons</strong> Groups
           </div>
           <div class="card-block">
-            <form action="" method="post" class="form-horizontal ">
+            <form action="" method="post" class="form-2orizontal ">
               <div class="form-group row">
                 <div class="col-md-12">
                   <div class="input-group">
@@ -609,7 +609,7 @@
             <strong>Dropdowns</strong> Groups
           </div>
           <div class="card-block">
-            <form action="" method="post" class="form-horizontal ">
+            <form action="" method="post" class="form-2orizontal ">
               <div class="form-group row">
                 <div class="col-md-12">
                   <div class="input-group">
@@ -692,7 +692,7 @@
             Use the grid for big devices! <small><code>.col-lg-*</code> <code>.col-md-*</code> <code>.col-sm-*</code></small>
           </div>
           <div class="card-block">
-            <form action="" method="post" class="form-horizontal ">
+            <form action="" method="post" class="form-2orizontal ">
               <div class="form-group row">
                 <div class="col-md-8">
                   <input type="text" class="form-control" placeholder=".col-md-8">
@@ -750,7 +750,7 @@
             Input Grid for small devices! <small> <code>.col-*</code></small>
           </div>
           <div class="card-block">
-            <form action="" method="post" class="form-horizontal ">
+            <form action="" method="post" class="form-2orizontal ">
               <div class="form-group row">
                 <div class="col-4">
                   <input type="text" class="form-control" placeholder=".col-4">
@@ -916,7 +916,7 @@
             </div>
           </div>
           <div class="card-block">
-            <form class="form-horizontal">
+            <form class="form-2orizontal">
               <div class="form-group">
                 <label class="form-control-label" for="prependedInput">Prepended text</label>
                 <div class="controls">

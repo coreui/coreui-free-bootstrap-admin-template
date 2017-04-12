@@ -80,6 +80,11 @@ $(document).ready(function($){
       resizeBroadcast();
     }
 
+    if ($(this).hasClass('sidebar-minimizer')) {
+      $('body').toggleClass('sidebar-compact');
+      resizeBroadcast();
+    }
+
     if ($(this).hasClass('aside-menu-toggler')) {
       $('body').toggleClass('aside-menu-hidden');
       resizeBroadcast();

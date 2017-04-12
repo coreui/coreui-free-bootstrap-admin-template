@@ -5,88 +5,31 @@
  * Copyright (c) 2017 creativeLabs Łukasz Holeczek
  * @license MIT
  */
-// Core variables and mixins
+// Import normalize
+@import "bootstrap/normalize";
+
+// Override Boostrap variables
 @import "bootstrap-variables";
-@import "bootstrap_src/variables";
-@import "custom-variables";
-@import "bootstrap_src/mixins";
-@import "core/mixins";
 
-// Reset and dependencies
-@import "bootstrap_src/normalize";
-@import "bootstrap_src/print";
+// Import Bootstrap source files
+@import "bootstrap/bootstrap";
 
-// Core CSS
-@import "bootstrap_src/reboot";
-@import "bootstrap_src/type";
-@import "bootstrap_src/images";
-@import "bootstrap_src/code";
-@import "bootstrap_src/grid";
+// If you want you can import bootstrap scss files directly from node_modules or bower_components.
+// To do this please remove @import "bootstrap/bootstrap"; and uncomment proper line.
 
-@import "bootstrap_src/tables";
-@import "bootstrap_custom/tables";
+// Import Bootstrap source files from node_modules
+// @import "node_modules/bootstrap/scss/bootstrap";
 
-@import "bootstrap_src/forms";
+// Import Bootstrap source files from bower_components
+// @import "bower_components/bootstrap/scss/bootstrap";
 
-@import "bootstrap_src/buttons";
-@import "bootstrap_custom/buttons";
-
-// Components
-@import "bootstrap_src/transitions";
-
-@import "bootstrap_src/dropdown";
-@import "bootstrap_custom/dropdown";
-
-@import "bootstrap_src/button-group";
-
-@import "bootstrap_src/input-group";
-@import "bootstrap_custom/input-group";
-
-//@import "custom-forms";
-
-@import "bootstrap_src/nav";
-@import "bootstrap_custom/nav";
-
-@import "bootstrap_src/navbar";
-@import "bootstrap_custom/navbar";
-
-@import "bootstrap_src/card";
-@import "bootstrap_custom/card";
-
-@import "bootstrap_src/breadcrumb";
-@import "bootstrap_custom/breadcrumb";
-
-@import "bootstrap_src/pagination";
-
-@import "bootstrap_src/badge";
-@import "bootstrap_custom/badge";
-
-//@import "jumbotron";
-@import "bootstrap_src/alert";
-
-@import "bootstrap_src/progress";
-@import "bootstrap_custom/progress";
-
-@import "bootstrap_src/media";
-@import "bootstrap_src/list-group";
-@import "bootstrap_src/responsive-embed";
-@import "bootstrap_src/close";
-
-// Components w/ JavaScript
-@import "bootstrap_src/modal";
-@import "bootstrap_custom/modal";
-
-@import "bootstrap_src/tooltip";
-@import "bootstrap_src/popover";
-@import "bootstrap_src/carousel";
-
-// Utility classes
-@import "bootstrap_src/utilities";
-
-// Vendors Styles
+// Import vendors styles
 @import "vendors/vendors";
 
-// CoreUI Styles
+// Import core styles
+@import "custom-variables";
+@import "core/mixins";
+
 // Additional typography
 @import "core/typography";
 
@@ -94,27 +37,40 @@
 @import "core/animate";
 
 // Core files
-@import "core/grid";
-@import "core/layout";
-@import "core/navigation";
 @import "core/aside";
-@import "core/loading";
-@import "core/widgets";
-@import "core/footer";
-@import "core/buttons";
-@import "core/others";
-@import "core/breadcrumb-menu";
 @import "core/avatars";
+@import "core/badge";
+@import "core/breadcrumb-menu";
+@import "core/breadcrumb";
+@import "core/buttons";
 @import "core/callout";
-@import "core/switches";
+@import "core/card";
 @import "core/charts";
-@import "core/utilities-border";
+@import "core/dropdown";
+@import "core/footer";
+@import "core/grid";
+@import "core/input-group";
+@import "core/layout";
+@import "core/loading";
+@import "core/modal";
+@import "core/nav";
+@import "core/navbar";
+@import "core/progress";
+@import "core/sidebar";
+@import "core/switches";
+@import "core/tables";
+@import "core/widgets";
+
+@import "core/others";
+
+// Utility classes
+@import "core/utilities";
 
 // Temporary fixes
 @import "core/temp";
 
 // Mobile View
-@import "core/mobile";
+// @import "core/mobile";
 
 // Right-to-left
 @import "core/rtl";

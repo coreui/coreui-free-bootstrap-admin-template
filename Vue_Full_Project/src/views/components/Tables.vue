@@ -154,7 +154,7 @@
             <i class="fa fa-align-justify"></i> Condensed Table
           </div>
           <div class="card-block">
-            <table class="table table-condensed">
+            <table class="table table-sm">
               <thead>
                 <tr>
                   <th>Username</th>
@@ -295,13 +295,13 @@
     </div><!--/.row-->
 
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-12">
         <div class="card">
           <div class="card-header">
             <i class="fa fa-align-justify"></i> Combined All Table
           </div>
           <div class="card-block">
-            <table class="table table-bordered table-striped table-condensed">
+            <table class="table table-bordered table-striped table-sm">
               <thead>
                 <tr>
                   <th>Username</th>
