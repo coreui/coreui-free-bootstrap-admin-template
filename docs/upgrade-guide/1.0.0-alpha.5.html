@@ -18,7 +18,7 @@
   <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
   <title>
     
-      Breadcrumb &middot; CoreUI Bootstrap Admin Template
+      Upgrade to 1.0.0-alpha.5 &middot; CoreUI Bootstrap Admin Template
     
   </title>
   <!-- Icons -->
@@ -126,7 +126,7 @@
 
                 
 
-                <li class="nav-item active bd-sidenav-active">
+                <li class="nav-item ">
                   <a class="nav-link" href="/docs/getting-started/components">
                     <i class="fa fa-empty" aria-hidden="true"></i> Components
                   </a>
@@ -489,7 +489,7 @@
 
           
 
-          <li class="nav-item nav-dropdown active">
+          <li class="nav-item nav-dropdown ">
             <!-- <div class="bd-toc-item "> -->
             
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -533,7 +533,7 @@
 
                 
 
-                <li class="nav-item active bd-sidenav-active">
+                <li class="nav-item ">
                   <a class="nav-link" href="/docs/components/breadcrumb">
                     <i class="fa fa-empty" aria-hidden="true"></i> Breadcrumb
                   </a>
@@ -1120,7 +1120,7 @@
 
           
 
-          <li class="nav-item nav-dropdown ">
+          <li class="nav-item nav-dropdown active">
             <!-- <div class="bd-toc-item "> -->
             
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -1136,7 +1136,7 @@
 
                 
 
-                <li class="nav-item ">
+                <li class="nav-item active bd-sidenav-active">
                   <a class="nav-link" href="/docs/upgrade-guide/1.0.0-alpha.5">
                     <i class="fa fa-empty" aria-hidden="true"></i> 1.0.0-alpha.5
                   </a>
@@ -1157,61 +1157,500 @@
           <li class="breadcrumb-item"><a href="/docs/">Home</a></li>
           
           
-          <li class="breadcrumb-item">Components </li>
-          <li class="breadcrumb-item active">Breadcrumb</li>
+          <li class="breadcrumb-item">Upgrade guide </li>
+          <li class="breadcrumb-item active">Upgrade to 1.0.0-alpha.5</li>
         </ol>
         <div class="container-fluid">
           <div class="animated fadeIn">
             <div class="card">
               <div class="card-header">
-                Breadcrumb
+                Upgrade to 1.0.0-alpha.5
               </div>
               <div class="card-block">
-                <p>Indicate the current page’s location within a navigational hierarchy. Separators are automatically added in CSS through <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code class="highlighter-rouge">::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code class="highlighter-rouge">content</code></a>.</p>
+                <p>Bootstrap includes a powerful mobile-first flexbox grid system for building layouts of all shapes and sizes. It’s based on a 12 column layout and has multiple tiers, one for each <a href="/layout/overview/#responsive-breakpoints">media query range</a>. You can use it with Sass mixins or our predefined classes.</p>
 
-<div class="bd-example" data-example-id="">
-<ol class="breadcrumb">
-  <li class="breadcrumb-item active">Home</li>
-</ol>
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item active">Library</li>
-</ol>
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item"><a href="#">Library</a></li>
-  <li class="breadcrumb-item active">Data</li>
-</ol>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span>
-<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span>
-<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span></code></pre></div>
+<h2 id="contents">Contents</h2>
 
-<p>Similar to our navigation components, breadcrumbs work fine with or without the usage of list markup.</p>
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#upgrade-css-classes" id="markdown-toc-upgrade-css-classes">Upgrade CSS Classes</a></li>
+  <li><a href="#upgrade-angular-2-to-angular-4" id="markdown-toc-upgrade-angular-2-to-angular-4">Upgrade Angular 2 to Angular 4</a>    <ul>
+      <li><a href="#copy-following-folders-and-files" id="markdown-toc-copy-following-folders-and-files">Copy following folders and files:</a></li>
+      <li><a href="#remove-folders-and-files" id="markdown-toc-remove-folders-and-files">Remove folders and files:</a></li>
+      <li><a href="#install-project-dependencies" id="markdown-toc-install-project-dependencies">Install project dependencies</a></li>
+      <li><a href="#upgrade-ng2-bootstrap-to-ngx-bootstrap" id="markdown-toc-upgrade-ng2-bootstrap-to-ngx-bootstrap">Upgrade ng2-bootstrap to ngx-bootstrap</a>        <ul>
+          <li><a href="#srcappcomponentscomponentsmodulets" id="markdown-toc-srcappcomponentscomponentsmodulets">src/app/components/components.module.ts</a></li>
+          <li><a href="#srcappcomponentsmodalscomponentts" id="markdown-toc-srcappcomponentsmodalscomponentts">src/app/components/modals.component.ts</a></li>
+          <li><a href="#srcappdashboarddashboardmodulets" id="markdown-toc-srcappdashboarddashboardmodulets">src/app/dashboard/dashboard.module.ts</a></li>
+          <li><a href="#srcapplayoutsfull-layoutcomponenthtml" id="markdown-toc-srcapplayoutsfull-layoutcomponenthtml">src/app/layouts/full-layout.component.html</a></li>
+          <li><a href="#srcappappmodulets" id="markdown-toc-srcappappmodulets">src/app/app.module.ts</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-<div class="bd-example" data-example-id="">
-<nav class="breadcrumb">
-  <a class="breadcrumb-item" href="#">Home</a>
-  <a class="breadcrumb-item" href="#">Library</a>
-  <a class="breadcrumb-item" href="#">Data</a>
-  <span class="breadcrumb-item active">Bootstrap</span>
-</nav>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+<h2 id="upgrade-css-classes">Upgrade CSS Classes</h2>
+
+<p>You have to change following classes in html, vue &amp; js files.</p>
+
+<table class="table table-bordered table-striped responsive-utilities table-responsive">
+  <thead>
+    <tr>
+      <th>
+        Old CSS classes - 1.0.0-alpha.4
+      </th>
+      <th>
+        New CSS classes - 1.0.0-alpha.5
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mt-3</td>
+      <td>mt-5</td>
+    </tr>
+    <tr>
+      <td>mb-3</td>
+      <td>mb-5</td>
+    </tr>
+    <tr>
+      <td>ml-3</td>
+      <td>ml-5</td>
+    </tr>
+    <tr>
+      <td>mr-3</td>
+      <td>mr-5</td>
+    </tr>
+    <tr>
+      <td>mx-3</td>
+      <td>mx-5</td>
+    </tr>
+    <tr>
+      <td>my-3</td>
+      <td>my-5</td>
+    </tr>
+    <tr>
+      <td>m-3</td>
+      <td>m-5</td>
+    </tr>
+    <tr>
+      <td>mt-2</td>
+      <td>mt-4</td>
+    </tr>
+    <tr>
+      <td>mb-2</td>
+      <td>mb-4</td>
+    </tr>
+    <tr>
+      <td>ml-2</td>
+      <td>ml-4</td>
+    </tr>
+    <tr>
+      <td>mr-2</td>
+      <td>mr-4</td>
+    </tr>
+    <tr>
+      <td>mx-2</td>
+      <td>mx-4</td>
+    </tr>
+    <tr>
+      <td>my-2</td>
+      <td>my-4</td>
+    </tr>
+    <tr>
+      <td>m-2</td>
+      <td>m-4</td>
+    </tr>
+    <tr>
+      <td>mt-1</td>
+      <td>mt-3</td>
+    </tr>
+    <tr>
+      <td>mb-1</td>
+      <td>mb-3</td>
+    </tr>
+    <tr>
+      <td>ml-1</td>
+      <td>ml-3</td>
+    </tr>
+    <tr>
+      <td>mr-1</td>
+      <td>mr-3</td>
+    </tr>
+    <tr>
+      <td>mx-1</td>
+      <td>mx-3</td>
+    </tr>
+    <tr>
+      <td>my-1</td>
+      <td>my-3</td>
+    </tr>
+    <tr>
+      <td>m-1</td>
+      <td>m-3</td>
+    </tr>
+    <tr>
+      <td>mt-h</td>
+      <td>mt-2</td>
+    </tr>
+    <tr>
+      <td>mb-h</td>
+      <td>mb-2</td>
+    </tr>
+    <tr>
+      <td>ml-h</td>
+      <td>ml-2</td>
+    </tr>
+    <tr>
+      <td>mr-h</td>
+      <td>mr-2</td>
+    </tr>
+    <tr>
+      <td>mx-h</td>
+      <td>mx-2</td>
+    </tr>
+    <tr>
+      <td>my-h</td>
+      <td>my-2</td>
+    </tr>
+    <tr>
+      <td>m-h</td>
+      <td>m-2</td>
+    </tr>
+    <tr>
+      <td>mt-q</td>
+      <td>mt-1</td>
+    </tr>
+    <tr>
+      <td>mb-q</td>
+      <td>mb-1</td>
+    </tr>
+    <tr>
+      <td>ml-q</td>
+      <td>ml-1</td>
+    </tr>
+    <tr>
+      <td>mr-q</td>
+      <td>mr-1</td>
+    </tr>
+    <tr>
+      <td>mx-q</td>
+      <td>mx-1</td>
+    </tr>
+    <tr>
+      <td>my-q</td>
+      <td>my-1</td>
+    </tr>
+    <tr>
+      <td>m-q</td>
+      <td>m-1</td>
+    </tr>
+    <tr>
+      <td>pt-3</td>
+      <td>pt-5</td>
+    </tr>
+    <tr>
+      <td>pb-3</td>
+      <td>pb-5</td>
+    </tr>
+    <tr>
+      <td>pl-3</td>
+      <td>pl-5</td>
+    </tr>
+    <tr>
+      <td>pr-3</td>
+      <td>pr-5</td>
+    </tr>
+    <tr>
+      <td>px-3</td>
+      <td>px-5</td>
+    </tr>
+    <tr>
+      <td>py-3</td>
+      <td>py-5</td>
+    </tr>
+    <tr>
+      <td>p-3</td>
+      <td>p-5</td>
+    </tr>
+    <tr>
+      <td>pt-2</td>
+      <td>pt-4</td>
+    </tr>
+    <tr>
+      <td>pb-2</td>
+      <td>pb-4</td>
+    </tr>
+    <tr>
+      <td>pl-2</td>
+      <td>pl-4</td>
+    </tr>
+    <tr>
+      <td>pr-2</td>
+      <td>pr-4</td>
+    </tr>
+    <tr>
+      <td>px-2</td>
+      <td>px-4</td>
+    </tr>
+    <tr>
+      <td>py-2</td>
+      <td>py-4</td>
+    </tr>
+    <tr>
+      <td>p-2</td>
+      <td>p-4</td>
+    </tr>
+    <tr>
+      <td>pt-1</td>
+      <td>pt-3</td>
+    </tr>
+    <tr>
+      <td>pb-1</td>
+      <td>pb-3</td>
+    </tr>
+    <tr>
+      <td>pl-1</td>
+      <td>pl-3</td>
+    </tr>
+    <tr>
+      <td>pr-1</td>
+      <td>pr-3</td>
+    </tr>
+    <tr>
+      <td>px-1</td>
+      <td>px-3</td>
+    </tr>
+    <tr>
+      <td>py-1</td>
+      <td>py-3</td>
+    </tr>
+    <tr>
+      <td>p-1</td>
+      <td>p-3</td>
+    </tr>
+    <tr>
+      <td>pt-h</td>
+      <td>pt-2</td>
+    </tr>
+    <tr>
+      <td>pb-h</td>
+      <td>pb-2</td>
+    </tr>
+    <tr>
+      <td>pl-h</td>
+      <td>pl-2</td>
+    </tr>
+    <tr>
+      <td>pr-h</td>
+      <td>pr-2</td>
+    </tr>
+    <tr>
+      <td>px-h</td>
+      <td>px-2</td>
+    </tr>
+    <tr>
+      <td>py-h</td>
+      <td>py-2</td>
+    </tr>
+    <tr>
+      <td>p-h</td>
+      <td>p-2</td>
+    </tr>
+    <tr>
+      <td>pt-q</td>
+      <td>pt-1</td>
+    </tr>
+    <tr>
+      <td>pb-q</td>
+      <td>pb-1</td>
+    </tr>
+    <tr>
+      <td>pl-q</td>
+      <td>pl-1</td>
+    </tr>
+    <tr>
+      <td>pr-q</td>
+      <td>pr-1</td>
+    </tr>
+    <tr>
+      <td>px-q</td>
+      <td>px-1</td>
+    </tr>
+    <tr>
+      <td>py-q</td>
+      <td>py-1</td>
+    </tr>
+    <tr>
+      <td>p-q</td>
+      <td>p-1</td>
+    </tr>
+    <tr>
+      <td>hidden-md-down</td>
+      <td>d-md-down-none</td>
+    </tr>
+    <tr>
+      <td>hidden-lg-up</td>
+      <td>d-lg-none</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="upgrade-angular-2-to-angular-4">Upgrade Angular 2 to Angular 4</h2>
+
+<h5 id="copy-following-folders-and-files">Copy following folders and files:</h5>
+
+<ol>
+  <li>src/app/scss</li>
+  <li>.angular-cli.json</li>
+  <li>package.json</li>
+</ol>
+
+<h5 id="remove-folders-and-files">Remove folders and files:</h5>
+
+<ol>
+  <li>node_modules</li>
+  <li>angular-cli.json</li>
+</ol>
+
+<h5 id="install-project-dependencies">Install project dependencies</h5>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">$ npm install</code></pre></figure>
+
+<h5 id="upgrade-ng2-bootstrap-to-ngx-bootstrap">Upgrade ng2-bootstrap to ngx-bootstrap</h5>
+
+<p>ng2-bootstrap is now ngx-bootstrap, that’s why you have to make following changes in ts and html files:</p>
+
+<h6 id="srcappcomponentscomponentsmodulets">src/app/components/components.module.ts</h6>
+
+<p>Change</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">...
+import { DropdownModule } from 'ng2-bootstrap/dropdown';
+...
+import { ModalModule } from 'ng2-bootstrap/modal';
+...
+import { TabsModule } from 'ng2-bootstrap/tabs';
+...
+@NgModule({
+  imports: [
+    ...
+    DropdownModule.forRoot(),
+    ...
+  ],
+  ...
+})</code></pre></figure>
+
+<p>To</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">...
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+...
+import { ModalModule } from 'ngx-bootstrap/modal';
+...
+import { TabsModule } from 'ngx-bootstrap/tabs';
+...
+@NgModule({
+  imports: [
+    ...
+    BsDropdownModule.forRoot(),
+    ...
+  ],
+  .....
+})</code></pre></figure>
+
+<h6 id="srcappcomponentsmodalscomponentts">src/app/components/modals.component.ts</h6>
+
+<p>Change</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">...
+import { ModalDirective } from 'ng2-bootstrap/modal/modal.component';
+...</code></pre></figure>
+
+<p>To</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">...
+import { ModalDirective } from 'ngx-bootstrap/modal/modal.component';
+...</code></pre></figure>
+
+<h6 id="srcappdashboarddashboardmodulets">src/app/dashboard/dashboard.module.ts</h6>
+
+<p>Change</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">...
+import { DropdownModule } from 'ng2-bootstrap/dropdown';
+...
+@NgModule({
+  imports: [
+    ...
+    DropdownModule
+  ],
+  declarations: [ DashboardComponent ]
+})</code></pre></figure>
+
+<p>To</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">...
+import { DropdownModule } from 'ngx-bootstrap/dropdown';
+...
+@NgModule({
+  imports: [
+    ...
+    BsDropdownModule
+  ],
+  declarations: [ DashboardComponent ]
+})</code></pre></figure>
+
+<h6 id="srcapplayoutsfull-layoutcomponenthtml">src/app/layouts/full-layout.component.html</h6>
+
+<p>You have to change <code class="highlighter-rouge">dropdownMenu</code> to <code class="highlighter-rouge">*dropdownMenu</code></p>
+
+<h6 id="srcappappmodulets">src/app/app.module.ts</h6>
+
+<p>Change</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">...
+import { DropdownModule } from 'ng2-bootstrap/dropdown';
+import { TabsModule } from 'ng2-bootstrap/tabs';
+...
+@NgModule({
+  imports: [
+    ...
+    DropdownModule.forRoot(),
+    ...
+  ],
+  declarations: [
+    ...
+  ],
+  providers: [{
+    ...
+  }],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule { }</code></pre></figure>
+
+<p>To</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">...
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+...
+@NgModule({
+  imports: [
+    ...
+    BsDropdownModule.forRoot(),
+    ...
+  ],
+  declarations: [
+    ...
+  ],
+  providers: [{
+    ...
+  }],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule { }</code></pre></figure>
 
 
               </div>

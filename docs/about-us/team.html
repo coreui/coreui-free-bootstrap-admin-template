@@ -18,7 +18,7 @@
   <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
   <title>
     
-      Breadcrumb &middot; CoreUI Bootstrap Admin Template
+      About our team &middot; CoreUI Bootstrap Admin Template
     
   </title>
   <!-- Icons -->
@@ -126,7 +126,7 @@
 
                 
 
-                <li class="nav-item active bd-sidenav-active">
+                <li class="nav-item ">
                   <a class="nav-link" href="/docs/getting-started/components">
                     <i class="fa fa-empty" aria-hidden="true"></i> Components
                   </a>
@@ -489,7 +489,7 @@
 
           
 
-          <li class="nav-item nav-dropdown active">
+          <li class="nav-item nav-dropdown ">
             <!-- <div class="bd-toc-item "> -->
             
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -533,7 +533,7 @@
 
                 
 
-                <li class="nav-item active bd-sidenav-active">
+                <li class="nav-item ">
                   <a class="nav-link" href="/docs/components/breadcrumb">
                     <i class="fa fa-empty" aria-hidden="true"></i> Breadcrumb
                   </a>
@@ -1157,61 +1157,195 @@
           <li class="breadcrumb-item"><a href="/docs/">Home</a></li>
           
           
-          <li class="breadcrumb-item">Components </li>
-          <li class="breadcrumb-item active">Breadcrumb</li>
+          <li class="breadcrumb-item">About us </li>
+          <li class="breadcrumb-item active">About our team</li>
         </ol>
         <div class="container-fluid">
           <div class="animated fadeIn">
             <div class="card">
               <div class="card-header">
-                Breadcrumb
+                About our team
               </div>
               <div class="card-block">
-                <p>Indicate the current page’s location within a navigational hierarchy. Separators are automatically added in CSS through <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code class="highlighter-rouge">::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code class="highlighter-rouge">content</code></a>.</p>
+                <p>Our template includes several layout options.</p>
 
-<div class="bd-example" data-example-id="">
-<ol class="breadcrumb">
-  <li class="breadcrumb-item active">Home</li>
-</ol>
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item active">Library</li>
-</ol>
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item"><a href="#">Library</a></li>
-  <li class="breadcrumb-item active">Data</li>
-</ol>
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#standard-layout" id="markdown-toc-standard-layout">Standard layout</a></li>
+  <li><a href="#header-options" id="markdown-toc-header-options">Header options</a>    <ul>
+      <li><a href="#fixed-position" id="markdown-toc-fixed-position">Fixed position</a></li>
+    </ul>
+  </li>
+  <li><a href="#sidebar-options" id="markdown-toc-sidebar-options">Sidebar options</a>    <ul>
+      <li><a href="#compact-sidebar" id="markdown-toc-compact-sidebar">Compact sidebar</a></li>
+      <li><a href="#hidden-sidebar" id="markdown-toc-hidden-sidebar">Hidden sidebar</a></li>
+      <li><a href="#fixed-position-1" id="markdown-toc-fixed-position-1">Fixed position</a></li>
+      <li><a href="#aside-menu-options" id="markdown-toc-aside-menu-options">Aside menu options</a></li>
+      <li><a href="#hidden-aside-menu" id="markdown-toc-hidden-aside-menu">Hidden aside menu</a></li>
+      <li><a href="#fixed-position-2" id="markdown-toc-fixed-position-2">Fixed position</a></li>
+    </ul>
+  </li>
+  <li><a href="#footer-options" id="markdown-toc-footer-options">Footer options</a>    <ul>
+      <li><a href="#fixed-position-3" id="markdown-toc-fixed-position-3">Fixed position</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="standard-layout">Standard layout</h2>
+
+<p>Standard layout comes with following components: Header, Footer, Sidebar, Main &amp; Aside Menu.</p>
+
+<div class="bd-example">
+  <div class="layout-example">
+    <div class="text-center p-3 m-1" style="background-color: #daeeff; border-radius: 4px;"><b>APP HEADER</b></div>
+    <div class="text-center d-flex flex-row" style="height:200px;">
+      <div class="p-3 m-1" style="flex: 0 0 20%; background-color: #fae3c4; border-radius: 4px;">
+        <b>SIDEBAR</b><br /><br />
+        <i class="fa fa-asterisk"></i> nav-item<br />
+        <i class="fa fa-asterisk"></i> nav-item<br />
+        <i class="fa fa-asterisk"></i> nav-item<br />
+        <i class="fa fa-asterisk"></i> nav-item<br />
+      </div>
+      <div class="p-3 m-1" style="flex:1; background-color: #957bbe; border-radius: 4px;"><b>MAIN</b></div>
+      <div class="p-3 m-1" style="flex: 0 0 20%; background-color: #fae3c4; border-radius: 4px;"><b>ASIDE MENU</b></div>
+    </div>
+    <div class="text-center p-3 m-1" style="background-color: #daeeff; border-radius: 4px;"><b>APP FOOTER</b></div>
+  </div>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span>
-<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span>
-<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span></code></pre></div>
 
-<p>Similar to our navigation components, breadcrumbs work fine with or without the usage of list markup.</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"app"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"app-header navbar"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Header content here --&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"app-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Sidebar content here --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"main"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Main content here --&gt;</span>
+    <span class="nt">&lt;/main&gt;</span>
+    <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"aside-menu"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Aside menu content here --&gt;</span>
+    <span class="nt">&lt;/aside&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"app-footer"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Footer content here --&gt;</span>
+  <span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
 
-<div class="bd-example" data-example-id="">
-<nav class="breadcrumb">
-  <a class="breadcrumb-item" href="#">Home</a>
-  <a class="breadcrumb-item" href="#">Library</a>
-  <a class="breadcrumb-item" href="#">Data</a>
-  <span class="breadcrumb-item active">Bootstrap</span>
-</nav>
+<h2 id="header-options">Header options</h2>
+
+<h3 id="fixed-position">Fixed position</h3>
+
+<p>Position the header element at the top of the viewport, from edge to edge. You have to add <code class="highlighter-rouge">.header-fixed</code> to body tag.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"app header-fixed"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Body content here --&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h2 id="sidebar-options">Sidebar options</h2>
+
+<p>Our template comes with some sidebar options which you can activate in your application</p>
+
+<h3 id="compact-sidebar">Compact sidebar</h3>
+
+<p>Compact sidebar has <strong>50px width and only icons are visible</strong>. You can change compact sidebar width in SCSS Files.</p>
+
+<div class="bd-example">
+  <div class="layout-example">
+    <div class="text-center p-3 m-1" style="background-color: #daeeff; border-radius: 4px;"><b>APP HEADER</b></div>
+    <div class="text-center d-flex flex-row" style="height:200px;">
+      <div class="p-3 m-1" style="flex: 0 0 50px; background-color: #fae3c4; border-radius: 4px;">
+        <b>SIDEBAR</b><br /><br />
+        <i class="fa fa-asterisk"></i><br />
+        <i class="fa fa-asterisk"></i><br />
+        <i class="fa fa-asterisk"></i><br />
+        <i class="fa fa-asterisk"></i><br />
+      </div>
+      <div class="p-3 m-1" style="flex:1; background-color: #957bbe; border-radius: 4px;"><b>MAIN</b></div>
+    </div>
+    <div class="text-center p-3 m-1" style="background-color: #daeeff; border-radius: 4px;"><b>APP FOOTER</b></div>
+  </div>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"app sidebar-compact"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Body content here --&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h3 id="hidden-sidebar">Hidden sidebar</h3>
+
+<p>If you want to hide sidebar you have to add <code class="highlighter-rouge">.sidebar-hidden</code> class to body element</p>
+
+<div class="bd-example">
+  <div class="layout-example">
+    <div class="text-center p-3 m-1" style="background-color: #daeeff; border-radius: 4px;"><b>APP HEADER</b></div>
+    <div class="text-center d-flex flex-row" style="height:200px;">
+      <div class="p-3 m-1" style="flex:1; background-color: #957bbe; border-radius: 4px;"><b>MAIN</b></div>
+    </div>
+    <div class="text-center p-3 m-1" style="background-color: #daeeff; border-radius: 4px;"><b>APP FOOTER</b></div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"app sidebar-hidden"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Body content here --&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h3 id="fixed-position-1">Fixed position</h3>
+
+<p>Position the sidebar element at the left of the viewport, from edge to edge. You have to add <code class="highlighter-rouge">.sidebar-fixed</code> to body tag.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"app sidebar-fixed"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Body content here --&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h3 id="aside-menu-options">Aside menu options</h3>
+
+<p>Our template comes with some aside menu options which you can activate in your application</p>
+
+<h3 id="hidden-aside-menu">Hidden aside menu</h3>
+
+<p>If you want to hide aside menu you have to add <code class="highlighter-rouge">.aside-menu-hidden</code> class to body element</p>
+
+<div class="bd-example">
+  <div class="layout-example">
+    <div class="text-center p-3 m-1" style="background-color: #daeeff; border-radius: 4px;"><b>APP HEADER</b></div>
+    <div class="text-center d-flex flex-row" style="height:200px;">
+      <div class="p-3 m-1" style="flex: 0 0 20%; background-color: #fae3c4; border-radius: 4px;">
+        <b>SIDEBAR</b><br /><br />
+        <i class="fa fa-asterisk"></i> nav-item<br />
+        <i class="fa fa-asterisk"></i> nav-item<br />
+        <i class="fa fa-asterisk"></i> nav-item<br />
+        <i class="fa fa-asterisk"></i> nav-item<br />
+      </div>
+      <div class="p-3 m-1" style="flex:1; background-color: #957bbe; border-radius: 4px;"><b>MAIN</b></div>
+    </div>
+    <div class="text-center p-3 m-1" style="background-color: #daeeff; border-radius: 4px;"><b>APP FOOTER</b></div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"app aside-menu-hidden"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Body content here --&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h3 id="fixed-position-2">Fixed position</h3>
+
+<p>Position the aside meni element at the right of the viewport, from edge to edge. You have to add <code class="highlighter-rouge">.aside-menu-fixed</code> to body tag.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"app aside-menu-fixed"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Body content here --&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h2 id="footer-options">Footer options</h2>
+
+<h3 id="fixed-position-3">Fixed position</h3>
+
+<p>Position the footer element at the top of the viewport, from edge to edge. You have to add <code class="highlighter-rouge">.footer-fixed</code> to body tag.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"app footer-fixed"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Body content here --&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
 
 
               </div>

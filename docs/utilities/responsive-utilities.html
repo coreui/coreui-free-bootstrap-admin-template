@@ -18,7 +18,7 @@
   <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
   <title>
     
-      Breadcrumb &middot; CoreUI Bootstrap Admin Template
+      Responsive utilities &middot; CoreUI Bootstrap Admin Template
     
   </title>
   <!-- Icons -->
@@ -126,7 +126,7 @@
 
                 
 
-                <li class="nav-item active bd-sidenav-active">
+                <li class="nav-item ">
                   <a class="nav-link" href="/docs/getting-started/components">
                     <i class="fa fa-empty" aria-hidden="true"></i> Components
                   </a>
@@ -489,7 +489,7 @@
 
           
 
-          <li class="nav-item nav-dropdown active">
+          <li class="nav-item nav-dropdown ">
             <!-- <div class="bd-toc-item "> -->
             
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -533,7 +533,7 @@
 
                 
 
-                <li class="nav-item active bd-sidenav-active">
+                <li class="nav-item ">
                   <a class="nav-link" href="/docs/components/breadcrumb">
                     <i class="fa fa-empty" aria-hidden="true"></i> Breadcrumb
                   </a>
@@ -802,7 +802,7 @@
 
           
 
-          <li class="nav-item nav-dropdown ">
+          <li class="nav-item nav-dropdown active">
             <!-- <div class="bd-toc-item "> -->
             
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -944,7 +944,7 @@
 
                 
 
-                <li class="nav-item ">
+                <li class="nav-item active bd-sidenav-active">
                   <a class="nav-link" href="/docs/utilities/responsive-utilities">
                     <i class="fa fa-empty" aria-hidden="true"></i> Responsive utilities
                   </a>
@@ -1157,62 +1157,94 @@
           <li class="breadcrumb-item"><a href="/docs/">Home</a></li>
           
           
-          <li class="breadcrumb-item">Components </li>
-          <li class="breadcrumb-item active">Breadcrumb</li>
+          <li class="breadcrumb-item">Layout </li>
+          <li class="breadcrumb-item active">Responsive utilities</li>
         </ol>
         <div class="container-fluid">
           <div class="animated fadeIn">
             <div class="card">
               <div class="card-header">
-                Breadcrumb
+                Responsive utilities
               </div>
               <div class="card-block">
-                <p>Indicate the current page’s location within a navigational hierarchy. Separators are automatically added in CSS through <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code class="highlighter-rouge">::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code class="highlighter-rouge">content</code></a>.</p>
+                <p>For faster mobile-friendly development, use these utility classes for hiding content by device via media query.</p>
 
-<div class="bd-example" data-example-id="">
-<ol class="breadcrumb">
-  <li class="breadcrumb-item active">Home</li>
-</ol>
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item active">Library</li>
-</ol>
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item"><a href="#">Library</a></li>
-  <li class="breadcrumb-item active">Data</li>
-</ol>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span>
-<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span>
-<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span></code></pre></div>
+<p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device’s presentation.</p>
 
-<p>Similar to our navigation components, breadcrumbs work fine with or without the usage of list markup.</p>
+<h2 id="contents">Contents</h2>
 
-<div class="bd-example" data-example-id="">
-<nav class="breadcrumb">
-  <a class="breadcrumb-item" href="#">Home</a>
-  <a class="breadcrumb-item" href="#">Library</a>
-  <a class="breadcrumb-item" href="#">Data</a>
-  <span class="breadcrumb-item active">Bootstrap</span>
-</nav>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#available-classes" id="markdown-toc-available-classes">Available classes</a></li>
+</ul>
 
+<h2 id="available-classes">Available classes</h2>
+
+<ul>
+  <li>The <code class="highlighter-rouge">.d-*-down-none</code> classes hide the element when the viewport is at the given breakpoint or smaller. For example, <code class="highlighter-rouge">.d-lg-down-none</code> hides an element on small, and medium viewports.</li>
+</ul>
+
+<table class="table table-bordered table-striped responsive-utilities table-responsive">
+  <thead>
+    <tr>
+      <th></th>
+      <th>
+        Extra small devices
+        <small>Portrait phones (&lt;544px)</small>
+      </th>
+      <th>
+        Small devices
+        <small>Landscape phones (&ge;544px - &lt;768px)</small>
+      </th>
+      <th>
+        Medium devices
+        <small>Tablets (&ge;768px - &lt;992px)</small>
+      </th>
+      <th>
+        Large devices
+        <small>Desktops (&ge;992px - &lt;1200px)</small>
+      </th>
+      <th>
+        Extra large devices
+        <small>Desktops (&ge;1200px)</small>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><code>.d-xs-down-none</code></th>
+      <td class="is-hidden">Hidden</td>
+      <td class="is-visible">Visible</td>
+      <td class="is-visible">Visible</td>
+      <td class="is-visible">Visible</td>
+      <td class="is-visible">Visible</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>.d-sm-down-none</code></th>
+      <td class="is-hidden">Hidden</td>
+      <td class="is-hidden">Hidden</td>
+      <td class="is-visible">Visible</td>
+      <td class="is-visible">Visible</td>
+      <td class="is-visible">Visible</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>.d-md-down-none</code></th>
+      <td class="is-hidden">Hidden</td>
+      <td class="is-hidden">Hidden</td>
+      <td class="is-hidden">Hidden</td>
+      <td class="is-visible">Visible</td>
+      <td class="is-visible">Visible</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>.d-lg-down-none</code></th>
+      <td class="is-hidden">Hidden</td>
+      <td class="is-hidden">Hidden</td>
+      <td class="is-hidden">Hidden</td>
+      <td class="is-hidden">Hidden</td>
+      <td class="is-visible">Visible</td>
+    </tr>
+  </tbody>
+</table>
 
               </div>
             </div>

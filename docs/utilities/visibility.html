@@ -18,7 +18,7 @@
   <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
   <title>
     
-      Breadcrumb &middot; CoreUI Bootstrap Admin Template
+      Visibility &middot; CoreUI Bootstrap Admin Template
     
   </title>
   <!-- Icons -->
@@ -126,7 +126,7 @@
 
                 
 
-                <li class="nav-item active bd-sidenav-active">
+                <li class="nav-item ">
                   <a class="nav-link" href="/docs/getting-started/components">
                     <i class="fa fa-empty" aria-hidden="true"></i> Components
                   </a>
@@ -489,7 +489,7 @@
 
           
 
-          <li class="nav-item nav-dropdown active">
+          <li class="nav-item nav-dropdown ">
             <!-- <div class="bd-toc-item "> -->
             
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -533,7 +533,7 @@
 
                 
 
-                <li class="nav-item active bd-sidenav-active">
+                <li class="nav-item ">
                   <a class="nav-link" href="/docs/components/breadcrumb">
                     <i class="fa fa-empty" aria-hidden="true"></i> Breadcrumb
                   </a>
@@ -802,7 +802,7 @@
 
           
 
-          <li class="nav-item nav-dropdown ">
+          <li class="nav-item nav-dropdown active">
             <!-- <div class="bd-toc-item "> -->
             
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -1028,7 +1028,7 @@
 
                 
 
-                <li class="nav-item ">
+                <li class="nav-item active bd-sidenav-active">
                   <a class="nav-link" href="/docs/utilities/visibility">
                     <i class="fa fa-empty" aria-hidden="true"></i> Visibility
                   </a>
@@ -1157,61 +1157,38 @@
           <li class="breadcrumb-item"><a href="/docs/">Home</a></li>
           
           
-          <li class="breadcrumb-item">Components </li>
-          <li class="breadcrumb-item active">Breadcrumb</li>
+          <li class="breadcrumb-item">Utilities </li>
+          <li class="breadcrumb-item active">Visibility</li>
         </ol>
         <div class="container-fluid">
           <div class="animated fadeIn">
             <div class="card">
               <div class="card-header">
-                Breadcrumb
+                Visibility
               </div>
               <div class="card-block">
-                <p>Indicate the current page’s location within a navigational hierarchy. Separators are automatically added in CSS through <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code class="highlighter-rouge">::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code class="highlighter-rouge">content</code></a>.</p>
+                <p>Set the <code class="highlighter-rouge">visibility</code> of elements with our visibility utilities. These do not modify the <code class="highlighter-rouge">display</code> value at all and are helpful for hiding content from most users, but still keeping them for screen readers.</p>
 
-<div class="bd-example" data-example-id="">
-<ol class="breadcrumb">
-  <li class="breadcrumb-item active">Home</li>
-</ol>
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item active">Library</li>
-</ol>
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item"><a href="#">Library</a></li>
-  <li class="breadcrumb-item active">Data</li>
-</ol>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span>
-<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span>
-<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span></code></pre></div>
+<p>Apply <code class="highlighter-rouge">.visible</code> or <code class="highlighter-rouge">.invisible</code> as needed.</p>
 
-<p>Similar to our navigation components, breadcrumbs work fine with or without the usage of list markup.</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"visible"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"invisible"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<div class="bd-example" data-example-id="">
-<nav class="breadcrumb">
-  <a class="breadcrumb-item" href="#">Home</a>
-  <a class="breadcrumb-item" href="#">Library</a>
-  <a class="breadcrumb-item" href="#">Data</a>
-  <span class="breadcrumb-item active">Bootstrap</span>
-</nav>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Class
+</span><span class="nc">.visible</span> <span class="p">{</span>
+  <span class="nl">visibility</span><span class="p">:</span> <span class="nb">visible</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.invisible</span> <span class="p">{</span>
+  <span class="nl">visibility</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Usage as a mixin
+</span><span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">invisible</span><span class="p">(</span><span class="nb">visible</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">invisible</span><span class="p">(</span><span class="nb">hidden</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
 
 
               </div>

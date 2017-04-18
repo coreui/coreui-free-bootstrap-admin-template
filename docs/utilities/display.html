@@ -18,7 +18,7 @@
   <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
   <title>
     
-      Breadcrumb &middot; CoreUI Bootstrap Admin Template
+      Display property &middot; CoreUI Bootstrap Admin Template
     
   </title>
   <!-- Icons -->
@@ -126,7 +126,7 @@
 
                 
 
-                <li class="nav-item active bd-sidenav-active">
+                <li class="nav-item ">
                   <a class="nav-link" href="/docs/getting-started/components">
                     <i class="fa fa-empty" aria-hidden="true"></i> Components
                   </a>
@@ -489,7 +489,7 @@
 
           
 
-          <li class="nav-item nav-dropdown active">
+          <li class="nav-item nav-dropdown ">
             <!-- <div class="bd-toc-item "> -->
             
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -533,7 +533,7 @@
 
                 
 
-                <li class="nav-item active bd-sidenav-active">
+                <li class="nav-item ">
                   <a class="nav-link" href="/docs/components/breadcrumb">
                     <i class="fa fa-empty" aria-hidden="true"></i> Breadcrumb
                   </a>
@@ -802,7 +802,7 @@
 
           
 
-          <li class="nav-item nav-dropdown ">
+          <li class="nav-item nav-dropdown active">
             <!-- <div class="bd-toc-item "> -->
             
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
@@ -874,7 +874,7 @@
 
                 
 
-                <li class="nav-item ">
+                <li class="nav-item active bd-sidenav-active">
                   <a class="nav-link" href="/docs/utilities/display">
                     <i class="fa fa-empty" aria-hidden="true"></i> Display
                   </a>
@@ -1157,62 +1157,94 @@
           <li class="breadcrumb-item"><a href="/docs/">Home</a></li>
           
           
-          <li class="breadcrumb-item">Components </li>
-          <li class="breadcrumb-item active">Breadcrumb</li>
+          <li class="breadcrumb-item">Utilities </li>
+          <li class="breadcrumb-item active">Display property</li>
         </ol>
         <div class="container-fluid">
           <div class="animated fadeIn">
             <div class="card">
               <div class="card-header">
-                Breadcrumb
+                Display property
               </div>
               <div class="card-block">
-                <p>Indicate the current page’s location within a navigational hierarchy. Separators are automatically added in CSS through <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code class="highlighter-rouge">::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code class="highlighter-rouge">content</code></a>.</p>
+                <p>Quickly and responsively toggle the <code class="highlighter-rouge">display</code> value of components and more with our display utilities. Includes support for some of the more common values, as well as some extras for controlling <code class="highlighter-rouge">display</code> when printing.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#common-display-values" id="markdown-toc-common-display-values">Common <code class="highlighter-rouge">display</code> values</a></li>
+  <li><a href="#display-in-print" id="markdown-toc-display-in-print">Display in print</a></li>
+</ul>
+
+<h2 id="common-display-values">Common <code class="highlighter-rouge">display</code> values</h2>
+
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"><code class="highlighter-rouge">display</code> property</a> accepts a handful of values and we support many of them with utility classes. We purposefully don’t provide every value as a utility, so here’s what we support:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">.d-none</code></li>
+  <li><code class="highlighter-rouge">.d-inline</code></li>
+  <li><code class="highlighter-rouge">.d-inline-block</code></li>
+  <li><code class="highlighter-rouge">.d-block</code></li>
+  <li><code class="highlighter-rouge">.d-table</code></li>
+  <li><code class="highlighter-rouge">.d-table-cell</code></li>
+  <li><code class="highlighter-rouge">.d-flex</code></li>
+  <li><code class="highlighter-rouge">.d-inline-flex</code></li>
+</ul>
+
+<p>Put them to use by applying any of the classes to an element of your choice. For example, here’s how you could use the inline, block, or inline-block utilities (the same applies to the other classes).</p>
 
 <div class="bd-example" data-example-id="">
-<ol class="breadcrumb">
-  <li class="breadcrumb-item active">Home</li>
-</ol>
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item active">Library</li>
-</ol>
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item"><a href="#">Library</a></li>
-  <li class="breadcrumb-item active">Data</li>
-</ol>
+<div class="d-inline bg-success">d-inline</div>
+<div class="d-inline bg-success">d-inline</div>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span>
-<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span>
-<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span></code></pre></div>
-
-<p>Similar to our navigation components, breadcrumbs work fine with or without the usage of list markup.</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline bg-success"</span><span class="nt">&gt;</span>d-inline<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline bg-success"</span><span class="nt">&gt;</span>d-inline<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <div class="bd-example" data-example-id="">
-<nav class="breadcrumb">
-  <a class="breadcrumb-item" href="#">Home</a>
-  <a class="breadcrumb-item" href="#">Library</a>
-  <a class="breadcrumb-item" href="#">Data</a>
-  <span class="breadcrumb-item active">Bootstrap</span>
-</nav>
+<span class="d-block bg-primary">d-block</span>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-block bg-primary"</span><span class="nt">&gt;</span>d-block<span class="nt">&lt;/span&gt;</span></code></pre></div>
 
+<div class="bd-example" data-example-id="">
+<div class="d-inline-block bg-warning">d-inline-block</div>
+<div class="d-inline-block bg-warning">d-inline-block</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-warning"</span><span class="nt">&gt;</span>d-inline-block<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-warning"</span><span class="nt">&gt;</span>d-inline-block<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p>Responsive variations also exist for every single utility mentioned above.</p>
+
+<h2 id="display-in-print">Display in print</h2>
+
+<p>Change the <code class="highlighter-rouge">display</code> value of elements when printing with our print display utilities.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Print style</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">.d-print-block</code></td>
+      <td>Applies <code class="highlighter-rouge">display: block</code> to the element when printing</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.d-print-inline</code></td>
+      <td>Applies <code class="highlighter-rouge">display: inline</code> to the element when printing</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.d-print-inline-block</code></td>
+      <td>Applies <code class="highlighter-rouge">display: inline-block</code> to the element when printing</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.d-print-none</code></td>
+      <td>Applies <code class="highlighter-rouge">display: none</code> to the element when printing</td>
+    </tr>
+  </tbody>
+</table>
 
               </div>
             </div>
