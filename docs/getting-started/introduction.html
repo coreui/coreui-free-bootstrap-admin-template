@@ -1294,12 +1294,13 @@ If you are an experienced frontend developer and want to know how Vue compares t
 1. '.sidebar-fixed'		- Fixed Sidebar
 2. '.sidebar-hidden'		- Hidden Sidebar
 3. '.sidebar-off-canvas'	- Off Canvas Sidebar
-4. '.sidebar-compact'		- Compact Sidebar Navigation (Only icons)
+4. '.sidebar-minimized'		- Minimized Sidebar (Only icons)
+5. '.sidebar-compact'		- Compact Sidebar
 
 // Aside options
 1. '.aside-menu-fixed'		- Fixed Aside Menu
 2. '.aside-menu-hidden'		- Hidden Aside Menu
-3. '.aside-menu-off-canvas'- Off Canvas Aside Menu
+3. '.aside-menu-off-canvas'     - Off Canvas Aside Menu
 
 // Footer options
 1. 'footer-fixed'		- Fixed footer
@@ -1404,12 +1405,13 @@ If you are an experienced frontend developer and want to know how Vue compares t
 1. '.sidebar-fixed'		- Fixed Sidebar
 2. '.sidebar-hidden'		- Hidden Sidebar
 3. '.sidebar-off-canvas'	- Off Canvas Sidebar
-4. '.sidebar-compact'		- Compact Sidebar Navigation (Only icons)
+4. '.sidebar-minimized'		- Minimized Sidebar (Only icons)
+5. '.sidebar-compact'		- Compact Sidebar
 
 // Aside options
 1. '.aside-menu-fixed'		- Fixed Aside Menu
 2. '.aside-menu-hidden'		- Hidden Aside Menu
-3. '.aside-menu-off-canvas'- Off Canvas Aside Menu
+3. '.aside-menu-off-canvas'     - Off Canvas Aside Menu
 
 // Footer options
 1. 'footer-fixed'		- Fixed footer
@@ -1508,12 +1510,13 @@ If you are an experienced frontend developer and want to know how Vue compares t
 1. '.sidebar-fixed'		- Fixed Sidebar
 2. '.sidebar-hidden'		- Hidden Sidebar
 3. '.sidebar-off-canvas'	- Off Canvas Sidebar
-4. '.sidebar-compact'		- Compact Sidebar Navigation (Only icons)
+4. '.sidebar-minimized'		- Minimized Sidebar (Only icons)
+5. '.sidebar-compact'		- Compact Sidebar
 
 // Aside options
 1. '.aside-menu-fixed'		- Fixed Aside Menu
 2. '.aside-menu-hidden'		- Hidden Aside Menu
-3. '.aside-menu-off-canvas'- Off Canvas Aside Menu
+3. '.aside-menu-off-canvas'     - Off Canvas Aside Menu
 
 // Footer options
 1. 'footer-fixed'		- Fixed footer
@@ -1581,12 +1584,13 @@ If you are an experienced frontend developer and want to know how Vue compares t
 1. '.sidebar-fixed'		- Fixed Sidebar
 2. '.sidebar-hidden'		- Hidden Sidebar
 3. '.sidebar-off-canvas'	- Off Canvas Sidebar
-4. '.sidebar-compact'		- Compact Sidebar Navigation (Only icons)
+4. '.sidebar-minimized'		- Minimized Sidebar (Only icons)
+5. '.sidebar-compact'		- Compact Sidebar
 
 // Aside options
 1. '.aside-menu-fixed'		- Fixed Aside Menu
 2. '.aside-menu-hidden'		- Hidden Aside Menu
-3. '.aside-menu-off-canvas'- Off Canvas Aside Menu
+3. '.aside-menu-off-canvas'     - Off Canvas Aside Menu
 
 // Footer options
 1. 'footer-fixed'		- Fixed footer
@@ -1602,12 +1606,11 @@ If you are an experienced frontend developer and want to know how Vue compares t
 <h6 id="full-layoutcomponenthtml">full-layout.component.html</h6>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"app-header navbar"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler mobile-sidebar-toggler d-lg-none"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler d-lg-none"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">appMobileSidebarToggler</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;/a&gt;</span>
-  <span class="c">&lt;!-- remove:seed --&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav d-md-down-none"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link navbar-toggler sidebar-toggler"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link navbar-toggler"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">appSidebarToggler</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item px-3"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
@@ -1618,10 +1621,9 @@ If you are an experienced frontend developer and want to know how Vue compares t
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item d-md-down-none"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link navbar-toggler aside-menu-toggler"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link navbar-toggler"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">appAsideMenuToggler</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-  <span class="c">&lt;!-- /remove:seed --&gt;</span>
 <span class="nt">&lt;/header&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"app-body"</span><span class="nt">&gt;</span>
@@ -1693,22 +1695,23 @@ If you are an experienced frontend developer and want to know how Vue compares t
 
   <span class="c">&lt;!-- BODY options, add following classes to body to change options
 
-    // Header options
-    1. '.header-fixed'					- Fixed Header
+  // Header options
+  1. '.header-fixed'		- Fixed Header
 
-    // Sidebar options
-    1. '.sidebar-fixed'					- Fixed Sidebar
-    2. '.sidebar-hidden'				- Hidden Sidebar
-    3. '.sidebar-off-canvas'		- Off Canvas Sidebar
-    4. '.sidebar-compact'				- Compact Sidebar Navigation (Only icons)
+  // Sidebar options
+  1. '.sidebar-fixed'		- Fixed Sidebar
+  2. '.sidebar-hidden'		- Hidden Sidebar
+  3. '.sidebar-off-canvas'	- Off Canvas Sidebar
+  4. '.sidebar-minimized'		- Minimized Sidebar (Only icons)
+  5. '.sidebar-compact'		- Compact Sidebar
 
-    // Aside options
-    1. '.aside-menu-fixed'			- Fixed Aside Menu
-    2. '.aside-menu-hidden'			- Hidden Aside Menu
-    3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+  // Aside options
+  1. '.aside-menu-fixed'		- Fixed Aside Menu
+  2. '.aside-menu-hidden'		- Hidden Aside Menu
+  3. '.aside-menu-off-canvas'     - Off Canvas Aside Menu
 
-    // Footer options
-    1. 'footer-fixed'						- Fixed footer
+  // Footer options
+  1. 'footer-fixed'		- Fixed footer
 
   --&gt;</span>
 
@@ -1788,21 +1791,22 @@ If you are an experienced frontend developer and want to know how Vue compares t
   <span class="c">&lt;!-- BODY options, add following classes to body to change options
 
   // Header options
-  1. '.header-fixed'					- Fixed Header
+  1. '.header-fixed'		- Fixed Header
 
   // Sidebar options
-  1. '.sidebar-fixed'					- Fixed Sidebar
-  2. '.sidebar-hidden'				- Hidden Sidebar
-  3. '.sidebar-off-canvas'		- Off Canvas Sidebar
-  4. '.sidebar-compact'				- Compact Sidebar Navigation (Only icons)
+  1. '.sidebar-fixed'		- Fixed Sidebar
+  2. '.sidebar-hidden'		- Hidden Sidebar
+  3. '.sidebar-off-canvas'	- Off Canvas Sidebar
+  4. '.sidebar-minimized'		- Minimized Sidebar (Only icons)
+  5. '.sidebar-compact'		- Compact Sidebar
 
   // Aside options
-  1. '.aside-menu-fixed'			- Fixed Aside Menu
-  2. '.aside-menu-hidden'			- Hidden Aside Menu
-  3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+  1. '.aside-menu-fixed'		- Fixed Aside Menu
+  2. '.aside-menu-hidden'		- Hidden Aside Menu
+  3. '.aside-menu-off-canvas'     - Off Canvas Aside Menu
 
   // Footer options
-  1. '.footer-fixed'						- Fixed footer
+  1. 'footer-fixed'		- Fixed footer
 
   --&gt;</span>
 

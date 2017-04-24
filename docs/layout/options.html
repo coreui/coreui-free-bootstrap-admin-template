@@ -1179,6 +1179,7 @@
     </ul>
   </li>
   <li><a href="#sidebar-options" id="markdown-toc-sidebar-options">Sidebar options</a>    <ul>
+      <li><a href="#minimized-sidebar" id="markdown-toc-minimized-sidebar">Minimized sidebar</a></li>
       <li><a href="#compact-sidebar" id="markdown-toc-compact-sidebar">Compact sidebar</a></li>
       <li><a href="#hidden-sidebar" id="markdown-toc-hidden-sidebar">Hidden sidebar</a></li>
       <li><a href="#fixed-position-1" id="markdown-toc-fixed-position-1">Fixed position</a></li>
@@ -1249,9 +1250,9 @@
 
 <p>Our template comes with some sidebar options which you can activate in your application</p>
 
-<h3 id="compact-sidebar">Compact sidebar</h3>
+<h3 id="minimized-sidebar">Minimized sidebar</h3>
 
-<p>Compact sidebar has <strong>50px width and only icons are visible</strong>. You can change compact sidebar width in SCSS Files.</p>
+<p>Minimized sidebar has <strong>50px width and only icons are visible</strong>. You can change minimized sidebar width in SCSS Files.</p>
 
 <div class="bd-example">
   <div class="layout-example">
@@ -1263,6 +1264,31 @@
         <i class="fa fa-asterisk"></i><br />
         <i class="fa fa-asterisk"></i><br />
         <i class="fa fa-asterisk"></i><br />
+      </div>
+      <div class="p-3 m-1" style="flex:1; background-color: #957bbe; border-radius: 4px;"><b>MAIN</b></div>
+    </div>
+    <div class="text-center p-3 m-1" style="background-color: #daeeff; border-radius: 4px;"><b>APP FOOTER</b></div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"app sidebar-compact"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Body content here --&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h3 id="compact-sidebar">Compact sidebar</h3>
+
+<p>Compact sidebar has <strong>150px width</strong>. You can change compact sidebar width in SCSS Files.</p>
+
+<div class="bd-example">
+  <div class="layout-example">
+    <div class="text-center p-3 m-1" style="background-color: #daeeff; border-radius: 4px;"><b>APP HEADER</b></div>
+    <div class="text-center d-flex flex-row" style="height:340px;">
+      <div class="p-3 m-1" style="flex: 0 0 50px; background-color: #fae3c4; border-radius: 4px;">
+        <b>SIDEBAR</b><br /><br />
+        <i class="fa fa-asterisk"></i><br />nav-item<br /><br />
+        <i class="fa fa-asterisk"></i><br />nav-item<br /><br />
+        <i class="fa fa-asterisk"></i><br />nav-item<br /><br />
+        <i class="fa fa-asterisk"></i><br />nav-item<br /><br />
       </div>
       <div class="p-3 m-1" style="flex:1; background-color: #957bbe; border-radius: 4px;"><b>MAIN</b></div>
     </div>

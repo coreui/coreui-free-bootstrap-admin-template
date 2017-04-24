@@ -1167,9 +1167,7 @@
                 Upgrade to 1.0.0-alpha.5
               </div>
               <div class="card-block">
-                <p>Bootstrap includes a powerful mobile-first flexbox grid system for building layouts of all shapes and sizes. It’s based on a 12 column layout and has multiple tiers, one for each <a href="/layout/overview/#responsive-breakpoints">media query range</a>. You can use it with Sass mixins or our predefined classes.</p>
-
-<h2 id="contents">Contents</h2>
+                <h2 id="contents">Contents</h2>
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
@@ -1177,6 +1175,12 @@
   <li><a href="#upgrade-angular-2-to-angular-4" id="markdown-toc-upgrade-angular-2-to-angular-4">Upgrade Angular 2 to Angular 4</a>    <ul>
       <li><a href="#copy-following-folders-and-files" id="markdown-toc-copy-following-folders-and-files">Copy following folders and files:</a></li>
       <li><a href="#remove-folders-and-files" id="markdown-toc-remove-folders-and-files">Remove folders and files:</a></li>
+      <li><a href="#srcappcomponentslayoutsfull-layoutcomponenthtml" id="markdown-toc-srcappcomponentslayoutsfull-layoutcomponenthtml">src/app/components/layouts/full-layout.component.html</a>        <ul>
+          <li><a href="#appmobilesidebartoggler" id="markdown-toc-appmobilesidebartoggler">appMobileSidebarToggler</a></li>
+          <li><a href="#appsidebartoggler" id="markdown-toc-appsidebartoggler">appSidebarToggler</a></li>
+          <li><a href="#appasidemenutoggler" id="markdown-toc-appasidemenutoggler">appAsideMenuToggler</a></li>
+        </ul>
+      </li>
       <li><a href="#install-project-dependencies" id="markdown-toc-install-project-dependencies">Install project dependencies</a></li>
       <li><a href="#upgrade-ng2-bootstrap-to-ngx-bootstrap" id="markdown-toc-upgrade-ng2-bootstrap-to-ngx-bootstrap">Upgrade ng2-bootstrap to ngx-bootstrap</a>        <ul>
           <li><a href="#srcappcomponentscomponentsmodulets" id="markdown-toc-srcappcomponentscomponentsmodulets">src/app/components/components.module.ts</a></li>
@@ -1502,7 +1506,8 @@
 <h5 id="copy-following-folders-and-files">Copy following folders and files:</h5>
 
 <ol>
-  <li>src/app/scss</li>
+  <li>src/app/shared</li>
+  <li>src/scss</li>
   <li>.angular-cli.json</li>
   <li>package.json</li>
 </ol>
@@ -1513,6 +1518,44 @@
   <li>node_modules</li>
   <li>angular-cli.json</li>
 </ol>
+
+<h5 id="srcappcomponentslayoutsfull-layoutcomponenthtml">src/app/components/layouts/full-layout.component.html</h5>
+
+<h6 id="appmobilesidebartoggler">appMobileSidebarToggler</h6>
+
+<p>You have to change <code class="highlighter-rouge">mobile-sidebar-toggler</code> class to <code class="highlighter-rouge">appMobileSidebarToggler</code></p>
+
+<p><strong>Change</strong></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler mobile-sidebar-toggler d-lg-none"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<p><strong>To</strong></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler d-lg-none"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">appMobileSidebarToggler</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<h6 id="appsidebartoggler">appSidebarToggler</h6>
+
+<p>You have to change <code class="highlighter-rouge">sidebar-toggler</code> class to <code class="highlighter-rouge">appSidebarToggler</code></p>
+
+<p><strong>Change</strong></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link navbar-toggler sidebar-toggler"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/a&gt;</span></code></pre></figure>
+
+<p><strong>To</strong></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link navbar-toggler"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">appSidebarToggler</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/a&gt;</span></code></pre></figure>
+
+<h6 id="appasidemenutoggler">appAsideMenuToggler</h6>
+
+<p>You have to change <code class="highlighter-rouge">aside-menu-toggler</code> class to <code class="highlighter-rouge">appAsideMenuToggler</code></p>
+
+<p><strong>Change</strong></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link navbar-toggler aside-menu-toggler"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/a&gt;</span></code></pre></figure>
+
+<p><strong>To</strong></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link navbar-toggler"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">appAsideMenuToggler</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/a&gt;</span></code></pre></figure>
 
 <h5 id="install-project-dependencies">Install project dependencies</h5>
 
