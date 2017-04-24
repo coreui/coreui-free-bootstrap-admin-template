@@ -15,7 +15,7 @@ import { BreadcrumbsComponent } from './shared/breadcrumb.component';
 // Routing Module
 import { AppRoutingModule } from './app.routing';
 
-//Layouts
+// Layouts
 import { FullLayoutComponent } from './layouts/full-layout.component';
 
 @NgModule({

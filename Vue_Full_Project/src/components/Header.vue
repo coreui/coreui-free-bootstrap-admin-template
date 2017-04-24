@@ -78,7 +78,7 @@ export default {
     },
     sidebarMinimize (e) {
       e.preventDefault()
-      document.body.classList.toggle('sidebar-compact')
+      document.body.classList.toggle('sidebar-minimized')
     },
     mobileSidebarToggle (e) {
       e.preventDefault()
@@ -91,10 +91,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css">
-
-.dropdown-toggle::after {
-  /*display: none !important;*/
-}
-</style>

@@ -2,10 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // Containers
-import Full from 'containers/Full'
+import Full from '@/containers/Full'
 
 // Views
-import Dashboard from 'views/Dashboard'
+import Dashboard from '@/views/Dashboard'
 
 Vue.use(Router)
 

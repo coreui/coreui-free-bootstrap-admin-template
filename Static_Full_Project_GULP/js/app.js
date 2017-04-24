@@ -81,7 +81,7 @@ $(document).ready(function($){
     }
 
     if ($(this).hasClass('sidebar-minimizer')) {
-      $('body').toggleClass('sidebar-compact');
+      $('body').toggleClass('sidebar-minimized');
       resizeBroadcast();
     }
 

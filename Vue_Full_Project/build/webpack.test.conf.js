@@ -11,6 +11,13 @@ var webpackConfig = merge(baseConfig, {
     rules: utils.styleLoaders()
   },
   devtool: '#inline-source-map',
+  resolveLoader: {
+    alias: {
+      // necessary to to make lang="scss" work in test when using vue-loader's ?inject option 
+      // see discussion at https://github.com/vuejs/vue-loader/issues/724
+      'scss-loader': 'sass-loader'
+    }
+  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': require('../config/test.env')

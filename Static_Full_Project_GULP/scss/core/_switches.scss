@@ -49,14 +49,7 @@
     }
     border: 1px solid $border-color;
     border-radius: 2px;
-    -moz-transition: .15s ease-out;
-    -o-transition: .15s ease-out;
-    -webkit-transition: .15s ease-out;
-    transition: .15s ease-out;
-    -moz-transition-property: opacity background;
-    -o-transition-property: opacity background;
-    -webkit-transition-property: opacity background;
-    transition-property: opacity background;
+    transition: opacity background .15s ease-out;
   }
   @if $type == text or $type == icon {
     .switch-label::before,
@@ -67,9 +60,6 @@
       margin-top: -.5em;
       line-height: 1;
       text-align: center;
-      -moz-transition: inherit;
-      -o-transition: inherit;
-      -webkit-transition: inherit;
       transition: inherit;
     }
     .switch-label::before {
@@ -103,9 +93,6 @@
     background: #fff;
     border: 1px solid $border-color;
     border-radius: 1px;
-    -moz-transition: left .15s ease-out;
-    -o-transition: left .15s ease-out;
-    -webkit-transition: left .15s ease-out;
     transition: left .15s ease-out;
     @if $type == ddd {
       border: 0;

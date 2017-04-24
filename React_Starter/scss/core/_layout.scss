@@ -31,6 +31,7 @@ app-root {
 
   .main {
     flex: 1;
+    min-width: 0;
   }
 
   .sidebar {
@@ -138,6 +139,37 @@ app-root {
       }
     }
   }
+
+  .sidebar-minimized {
+    .sidebar {
+      flex: 0 0 $sidebar-minimized-width;
+    }
+
+    &.sidebar-hidden {
+
+      .sidebar {
+        margin-left: - $sidebar-minimized-width;
+      }
+    }
+
+    &.sidebar-fixed {
+
+      .main, .app-footer {
+        margin-left: $sidebar-minimized-width;
+      }
+
+      .sidebar {
+        width: $sidebar-minimized-width;
+      }
+
+      &.sidebar-hidden {
+
+        .main, .app-footer {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
 
 //
@@ -212,8 +244,7 @@ app-root {
 .sidebar,
 .main,
 .aside-menu {
-  transition-duration: $layout-transition-speed, $layout-transition-speed, $layout-transition-speed, $layout-transition-speed;
-  transition-property: margin-left, margin-right, width, flex;
+  transition: margin-left $layout-transition-speed, margin-right $layout-transition-speed, width $layout-transition-speed, flex $layout-transition-speed;
 }
 
 //

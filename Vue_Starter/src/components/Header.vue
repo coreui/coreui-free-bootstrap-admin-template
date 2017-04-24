@@ -1,8 +1,7 @@
 <template>
   <navbar>
-    <button class="navbar-toggler mobile-sidebar-toggler hidden-lg-up" type="button" @click="mobileSidebarToggle">&#9776;</button>
-    <a class="navbar-brand" href="#"></a>
-    <ul class="nav navbar-nav hidden-md-down">
+    <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button" @click="mobileSidebarToggle">&#9776;</button>    <a class="navbar-brand" href="#"></a>
+    <ul class="nav navbar-nav d-md-down-none mr-auto">
       <li class="nav-item">
         <a class="nav-link navbar-toggler sidebar-toggler" href="#" @click="sidebarToggle">&#9776;</a>
       </li>
@@ -30,7 +29,7 @@ export default {
     },
     sidebarMinimize (e) {
       e.preventDefault()
-      document.body.classList.toggle('sidebar-compact')
+      document.body.classList.toggle('sidebar-minimized')
     },
     mobileSidebarToggle (e) {
       e.preventDefault()
@@ -43,10 +42,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css">
-
-.dropdown-toggle::after {
-  /*display: none !important;*/
-}
-</style>

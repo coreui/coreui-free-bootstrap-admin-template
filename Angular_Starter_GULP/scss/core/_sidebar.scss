@@ -1,9 +1,10 @@
+// scss-lint:disable NestingDepth, SelectorDepth
 .sidebar {
   padding: $sidebar-padding;
+  overflow: hidden;
   color: $sidebar-color;
   background: $sidebar-bg;
   @include borders($sidebar-borders);
-  overflow: hidden;
 
   .sidebar-close {
     position: absolute;
@@ -178,13 +179,12 @@
             max-height: 1000px;
           }
 
-          a.nav-link {
+          .nav-link {
             color: $sidebar-nav-dropdown-color;
             border-left: 0 !important;
           }
 
           > .nav-link.nav-dropdown-toggle::before {
-            -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
           }
 
@@ -197,7 +197,7 @@
           > ul, > ol {
             transition: 0s !important;
           }
-          a.nav-link {
+          .nav-link {
             &.nav-dropdown-toggle {
 
               &::before {
@@ -208,7 +208,7 @@
         }
       }
 
-      a.nav-label {
+      .nav-label {
         display: block;
         padding: ($sidebar-nav-link-padding-y / 8) $sidebar-nav-link-padding-x;
         color: $sidebar-nav-title-color;
@@ -238,14 +238,57 @@
 }
 
 @include media-breakpoint-up(lg) {
-
   .sidebar-compact {
+    .sidebar {
+      .sidebar-nav {
+        @include sidebar-width($sidebar-borders, $sidebar-compact-width);
+      }
+
+      .nav {
+        @include sidebar-width($sidebar-borders, $sidebar-compact-width);
+
+        .nav-title {
+          text-align: center;
+        }
+
+        .nav-item {
+          width: $sidebar-compact-width;
+          border-left: 0 !important;
+
+          .nav-link {
+            text-align: center;
+
+            i {
+              display: block;
+              width: 100%;
+              margin: $spacer / 4 0;
+              font-size: 24px;
+            }
+
+            .badge {
+              position: absolute;
+              top: 18px;
+              right: 10px;
+            }
+
+            &.nav-dropdown-toggle {
+
+              &::before {
+                top: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-minimized {
     .hidden-cn {
       display: none;
     }
     .sidebar {
       z-index: $zindex-sticky - 1;
-      // width: $sidebar-compact-width;
 
       &:hover {
         overflow: visible;
@@ -253,18 +296,18 @@
 
       .sidebar-nav {
         overflow: visible;
-        @include sidebar-width($sidebar-borders, $sidebar-compact-width);
+        @include sidebar-width($sidebar-borders, $sidebar-minimized-width);
       }
 
       .nav {
-        @include sidebar-width($sidebar-borders, $sidebar-compact-width);
+        @include sidebar-width($sidebar-borders, $sidebar-minimized-width);
 
         .nav-title, .divider {
           display: none;
         }
 
         .nav-item {
-          width: $sidebar-compact-width;
+          width: $sidebar-minimized-width;
           overflow: hidden;
           border-left: 0 !important;
 
@@ -276,8 +319,6 @@
             position: relative;
             padding-left: 0;
             margin: 0;
-
-            // line-height: $sidebar-compact-height;
             white-space: nowrap;
             border-left: 0 !important;
 
@@ -291,12 +332,10 @@
             i {
               display: block;
               float: left;
-              width: $sidebar-compact-height;
-              // height: $sidebar-compact-height;
+              width: $sidebar-minimized-height;
               padding: 0;
               margin: 0 !important;
               font-size: 18px;
-              // line-height: $sidebar-compact-height;
             }
 
             .badge {
@@ -317,14 +356,14 @@
 
           ul {
             position: absolute;
-            left: $sidebar-compact-width;
+            left: $sidebar-minimized-width;
 
             li {
               position: relative;
               padding: 0;
 
               .nav-link {
-                width: $sidebar-width - $sidebar-compact-width;
+                width: $sidebar-width - $sidebar-minimized-width;
               }
 
               ul, ol {
@@ -338,7 +377,7 @@
           &.nav-dropdown {
             &.open {
               background: $sidebar-nav-link-active-bg;
-              > a.nav-link i {
+              > .nav-link i {
                 color: $sidebar-nav-link-active-icon-color;
               }
               > ul, > ol {
@@ -348,13 +387,13 @@
           }
 
           &:hover {
-            width: $sidebar-width + $sidebar-compact-width;
+            width: $sidebar-width + $sidebar-minimized-width;
             overflow: visible;
             background: $sidebar-nav-link-hover-bg;
             transition: 0s;
 
-            > a.nav-link {
-              width: $sidebar-width + $sidebar-compact-width;
+            > .nav-link {
+              width: $sidebar-width + $sidebar-minimized-width;
             }
 
             > ul, > ol {
@@ -365,7 +404,7 @@
               li {
                 width: $sidebar-width;
 
-                a.nav-link {
+                .nav-link {
                   width: $sidebar-width;
                 }
               }

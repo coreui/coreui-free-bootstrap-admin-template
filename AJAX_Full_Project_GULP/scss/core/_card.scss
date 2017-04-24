@@ -4,7 +4,7 @@
 
 .card-header {
 
-  i.icon-bg {
+  .icon-bg {
     display: inline-block;
     padding: $card-spacer-y $card-spacer-x !important;
     margin-top: -$card-spacer-y;
@@ -18,22 +18,23 @@
     border-right: $card-border-width solid $card-border-color;
   }
 
-  ul.nav.nav-tabs {
+  .nav.nav-tabs {
     margin-top: -$card-spacer-y;
     margin-bottom: -$card-spacer-y;
     border-bottom: 0;
 
-    li.nav-item {
+    .nav-item {
       border-top: 0;
-      a.nav-link {
-        padding: $card-spacer-y $card-spacer-x / 2;
-        color: $text-muted;
-        border-top: 0;
+    }
 
-        &.active {
-          color: $body-color;
-          background: #fff;
-        }
+    .nav-link {
+      padding: $card-spacer-y $card-spacer-x / 2;
+      color: $text-muted;
+      border-top: 0;
+
+      &.active {
+        color: $body-color;
+        background: #fff;
       }
     }
   }
@@ -182,8 +183,7 @@
         transition: .4s;
       }
 
-      i.r180 {
-        -webkit-transform: rotate(180deg);
+      .r180 {
         transform: rotate(180deg);
       }
     }
@@ -215,8 +215,6 @@
   .card-columns {
 
     &.cols-2 {
-      -moz-column-count: 2;
-      -webkit-column-count: 2;
       column-count: 2;
     }
   }

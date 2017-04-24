@@ -49,27 +49,27 @@
 @mixin borders($borders) {
   @each $border in $borders {
     $direction: nth($border, 1);
-    @if $direction == 'all' {
+    @if $direction == "all" {
       $size: map-get(map-get($borders, $direction), size);
       $style: map-get(map-get($borders, $direction), style);
       $color: map-get(map-get($borders, $direction), color);
       border: $size $style $color;
-    } @else if $direction == 'top' {
+    } @else if $direction == "top" {
       $size: map-get(map-get($borders, $direction), size);
       $style: map-get(map-get($borders, $direction), style);
       $color: map-get(map-get($borders, $direction), color);
       border-top: $size $style $color;
-    } @else if $direction == 'right' {
+    } @else if $direction == "right" {
       $size: map-get(map-get($borders, $direction), size);
       $style: map-get(map-get($borders, $direction), style);
       $color: map-get(map-get($borders, $direction), color);
       border-right: $size $style $color;
-    } @else if $direction == 'bottom' {
+    } @else if $direction == "bottom" {
       $size: map-get(map-get($borders, $direction), size);
       $style: map-get(map-get($borders, $direction), style);
       $color: map-get(map-get($borders, $direction), color);
       border-bottom: $size $style $color;
-    } @else if $direction == 'left' {
+    } @else if $direction == "left" {
       $size: map-get(map-get($borders, $direction), size);
       $style: map-get(map-get($borders, $direction), style);
       $color: map-get(map-get($borders, $direction), color);
@@ -83,13 +83,13 @@
 
   @each $border in $borders {
     $direction: nth($border, 1);
-    @if $direction == 'all' {
+    @if $direction == "all" {
       $size: map-get(map-get($borders, $direction), size);
-      $sidebar-width: ( $sidebar-width - ( 2 * $size ));
-    } @else if $direction == 'right' {
+      $sidebar-width: ($sidebar-width - (2 * $size));
+    } @else if $direction == "right" {
       $size: map-get(map-get($borders, $direction), size);
       $sidebar-width: $sidebar-width - $size;
-    } @else if $direction == 'left' {
+    } @else if $direction == "left" {
       $size: map-get(map-get($borders, $direction), size);
       $sidebar-width: $sidebar-width - $size;
     }

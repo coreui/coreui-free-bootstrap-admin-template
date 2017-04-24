@@ -1,7 +1,7 @@
 //
 // RTL Support
 //
-
+// scss-lint:disable NestingDepth, SelectorDepth
 *[dir="rtl"] {
   direction: rtl;
   unicode-bidi: embed;
@@ -12,10 +12,6 @@
 
   table tr th {
     text-align: right;
-  }
-
-  .app-body {
-
   }
 
   // Breadcrumb
@@ -68,22 +64,22 @@
     }
   }
 
-  .sidebar-compact {
+  .sidebar-minimized {
     .sidebar {
-      flex: 0 0 $sidebar-compact-width;
+      flex: 0 0 $sidebar-minimized-width;
     }
 
     &.sidebar-hidden {
 
       .sidebar {
-        margin-left: - $sidebar-compact-width;
+        margin-left: - $sidebar-minimized-width;
       }
     }
 
     &.sidebar-fixed {
 
       .main, .app-footer {
-        margin-left: $sidebar-compact-width;
+        margin-left: $sidebar-minimized-width;
       }
 
       &.sidebar-hidden {
@@ -168,7 +164,6 @@
           &.nav-dropdown {
             &.open {
               > .nav-link.nav-dropdown-toggle::before {
-                -webkit-transform: rotate(90deg);
                 transform: rotate(90deg);
               }
             }

@@ -2,31 +2,31 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // Containers
-import Full from 'containers/Full'
+import Full from '@/containers/Full'
 
 // Views
-import Dashboard from 'views/Dashboard'
-import Charts from 'views/Charts'
-import Widgets from 'views/Widgets'
+import Dashboard from '@/views/Dashboard'
+import Charts from '@/views/Charts'
+import Widgets from '@/views/Widgets'
 
 // Views - Components
-import Buttons from 'views/components/Buttons'
-import SocialButtons from 'views/components/SocialButtons'
-import Cards from 'views/components/Cards'
-import Forms from 'views/components/Forms'
-import Modals from 'views/components/Modals'
-import Switches from 'views/components/Switches'
-import Tables from 'views/components/Tables'
+import Buttons from '@/views/components/Buttons'
+import SocialButtons from '@/views/components/SocialButtons'
+import Cards from '@/views/components/Cards'
+import Forms from '@/views/components/Forms'
+import Modals from '@/views/components/Modals'
+import Switches from '@/views/components/Switches'
+import Tables from '@/views/components/Tables'
 
 // Views - Icons
-import FontAwesome from 'views/icons/FontAwesome'
-import SimpleLineIcons from 'views/icons/SimpleLineIcons'
+import FontAwesome from '@/views/icons/FontAwesome'
+import SimpleLineIcons from '@/views/icons/SimpleLineIcons'
 
 // Views - Pages
-import Page404 from 'views/pages/Page404'
-import Page500 from 'views/pages/Page500'
-import Login from 'views/pages/Login'
-import Register from 'views/pages/Register'
+import Page404 from '@/views/pages/Page404'
+import Page500 from '@/views/pages/Page500'
+import Login from '@/views/pages/Login'
+import Register from '@/views/pages/Register'
 
 Vue.use(Router)
 
