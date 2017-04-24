@@ -1,0 +1,27 @@
+<!-- Navbar -->
+<div ng-include="'views/common/navbar.html'"></div>
+
+<div class="app-body">
+    <!-- Navigation -->
+    <div ng-include="'views/common/sidebar-nav.html'"></div>
+
+    <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb" breadcrumb>
+            <ncy-breadcrumb></ncy-breadcrumb>
+
+        </ol>
+
+        <div class="container-fluid">
+            <ui-view></ui-view>
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+
+</div>
+
+<!-- Footer -->
+<div ng-include="'views/common/footer.html'"></div>
