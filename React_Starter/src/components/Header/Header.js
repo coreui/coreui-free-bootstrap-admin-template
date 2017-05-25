@@ -29,7 +29,7 @@ class Header extends Component {
         <a className="navbar-brand" href="#"></a>
         <ul className="nav navbar-nav d-md-down-none mr-auto">
           <li className="nav-item">
-            <a className="nav-link navbar-toggler sidebar-toggler" onClick={this.sidebarToggle} href="#">&#9776;</a>
+            <button className="nav-link navbar-toggler sidebar-toggler" type="button" onClick={this.sidebarToggle}>&#9776;</button>
           </li>
         </ul>
       </header>

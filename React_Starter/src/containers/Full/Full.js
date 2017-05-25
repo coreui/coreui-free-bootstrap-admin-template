@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Link, Switch, Route, Redirect } from 'react-router-dom'
 import Header from '../../components/Header/';
 import Sidebar from '../../components/Sidebar/';
+import Breadcrumb from '../../components/Breadcrumb/';
 import Aside from '../../components/Aside/';
 import Footer from '../../components/Footer/';
 
-import Breadcrumbs from 'react-breadcrumbs';
+import Dashboard from '../../views/Dashboard/'
 
 class Full extends Component {
   render() {
@@ -14,16 +16,12 @@ class Full extends Component {
         <div className="app-body">
           <Sidebar {...this.props}/>
           <main className="main">
-            <Breadcrumbs
-              wrapperElement="ol"
-              wrapperClass="breadcrumb"
-              itemClass="breadcrumb-item"
-              separator=""
-              routes={this.props.routes}
-              params={this.props.params}
-            />
+            <Breadcrumb />
             <div className="container-fluid">
-              {this.props.children}
+              <Switch>
+                <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
+                <Redirect from="/" to="/dashboard"/>
+              </Switch>
             </div>
           </main>
           <Aside />

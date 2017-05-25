@@ -12,8 +12,7 @@ class Header extends Component {
     };
   }
 
-  toggle(e) {
-    e.preventDefault();
+  toggle() {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
     });
@@ -42,11 +41,11 @@ class Header extends Component {
   render() {
     return (
       <header className="app-header navbar">
-        <button className="navbar-toggler mobile-sidebar-toggler d-lg-none" onClick={this.mobileSidebarToggle} type="button">&#9776;</button>
+        <button className="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button" onClick={this.mobileSidebarToggle}>&#9776;</button>
         <a className="navbar-brand" href="#"></a>
         <ul className="nav navbar-nav d-md-down-none">
           <li className="nav-item">
-            <a className="nav-link navbar-toggler sidebar-toggler" onClick={this.sidebarToggle} href="#">&#9776;</a>
+            <button className="nav-link navbar-toggler sidebar-toggler" type="button" onClick={this.sidebarToggle}>&#9776;</button>
           </li>
           <li className="nav-item px-3">
             <a className="nav-link" href="#">Dashboard</a>
@@ -70,10 +69,10 @@ class Header extends Component {
           </li>
           <li className="nav-item">
             <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-              <a onClick={this.toggle} className="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded={this.state.dropdownOpen}>
+              <button onClick={this.toggle} className="nav-link dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded={this.state.dropdownOpen}>
                 <img src={'img/avatars/6.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
                 <span className="d-md-down-none">admin</span>
-              </a>
+              </button>
 
               <DropdownMenu className="dropdown-menu-right">
                 <DropdownItem header className="text-center"><strong>Account</strong></DropdownItem>
@@ -97,7 +96,7 @@ class Header extends Component {
             </Dropdown>
           </li>
           <li className="nav-item d-md-down-none">
-            <a className="nav-link navbar-toggler aside-menu-toggler" onClick={this.asideToggle} href="#">&#9776;</a>
+            <button className="nav-link navbar-toggler aside-menu-toggler" type="button" onClick={this.asideToggle}>&#9776;</button>
           </li>
         </ul>
       </header>
