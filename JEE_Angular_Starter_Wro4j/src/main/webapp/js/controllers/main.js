@@ -54,7 +54,7 @@ function cardChartCtrl1($scope) {
         ticks: {
           display: false,
           min: Math.min.apply(Math, $scope.data[0]) - 5,
-          max: Math.max.apply(Math, $scope.data[0]) + 5,
+          max: Math.max.apply(Math, $scope.data[0]) + 5
         }
       }],
     },
@@ -65,9 +65,9 @@ function cardChartCtrl1($scope) {
       point: {
         radius: 4,
         hitRadius: 10,
-        hoverRadius: 4,
-      },
-    },
+        hoverRadius: 4
+      }
+    }
   }
 }
 
