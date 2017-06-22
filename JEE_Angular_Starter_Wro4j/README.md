@@ -31,6 +31,8 @@ Build this version locally, skip tests as currently one not related test is fail
 - wro.xml to enable the build of core-ui.css
 - wro.properties to add the new locator in the new version from wro4j
 - index.html to use the generated core-ui.css instead of the style.css
-- optional: bootstrap css could be removed now as it is build together with core-ui
 
-Checkout the branches as I may commit a branch version with this adjustments. A local build of the wro4j version will still be required.
+Or checkout the following branch:
+ https://github.com/sterlp/CoreUI-Free-Bootstrap-Admin-Template/tree/wro4j-build/JEE_Angular_Starter_Wro4j
+
+A local build of the wro4j version will still be required.
