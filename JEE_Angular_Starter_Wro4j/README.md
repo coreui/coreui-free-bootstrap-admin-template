@@ -13,26 +13,8 @@ This simple application is based on:
 - Lazy Loading of files CSS & JS with oclazyload
 - Include common resources using webjars
 - deploy everything in one WAR
+- Sass build of Core-UI and Bootstrap
 
 ## Open
 
 - Some of the included JS files aren't really valid as so jsLint is offline
-- Sass Build for Core-UI
-
-## Sass Build
-
-Due to some issues in Wro4j see pull request https://github.com/wro4j/wro4j/pull/1048 the follwing version of wro4j is needed right now:
-
-https://github.com/sterlp/wro4j
-
-Build this version locally, skip tests as currently one not related test is failing. Adjust then the follwing files:
-
-- pom.xml to use the 1.8.1-SNAPSHOT version you build locally
-- wro.xml to enable the build of core-ui.css
-- wro.properties to add the new locator in the new version from wro4j
-- index.html to use the generated core-ui.css instead of the style.css
-
-Or checkout the following branch:
- https://github.com/sterlp/CoreUI-Free-Bootstrap-Admin-Template/tree/wro4j-build/JEE_Angular_Starter_Wro4j
-
-A local build of the wro4j version will still be required.
