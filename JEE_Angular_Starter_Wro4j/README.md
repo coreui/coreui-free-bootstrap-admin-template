@@ -1,3 +1,7 @@
+# First
+
+Checkout https://github.com/sterlp/wro4j and build it once with mvn clean install -DskipTests=true
+
 # Core-UI AngularJS JEE
 
 This simple application is based on:
