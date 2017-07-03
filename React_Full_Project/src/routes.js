@@ -4,7 +4,7 @@ const routes = {
   '/components': 'Components',
   '/charts': 'Charts',
   '/components/buttons': 'Buttons',
-  '/components/social-buttons': 'Buttons',
+  '/components/social-buttons': 'Social Buttons',
   '/components/cards': 'Cards',
   '/components/forms': 'Forms',
   '/components/modals': 'Modals',
