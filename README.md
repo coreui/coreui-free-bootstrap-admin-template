@@ -58,7 +58,9 @@ CoreUI's documentation, is hosted on our website <a href="http://coreui.io?ref=g
 
 ## Copyright and license
 
-copyright 2016 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template/blob/master/LICENSE).
+copyright 2017 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template/blob/master/LICENSE).
+
+You can’t re-distribute the CoreUI as stock. You can’t do this if you modify the CoreUI. 
 
 ## Support CoreUI Development
 
