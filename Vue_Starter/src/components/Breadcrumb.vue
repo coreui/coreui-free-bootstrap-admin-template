@@ -13,8 +13,7 @@ export default {
       type: Array,
       required: true,
       default: () => []
-    },
-    separator: String
+    }
   },
   methods: {
     isLast (index) {
