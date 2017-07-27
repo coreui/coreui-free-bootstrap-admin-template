@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ButtonsComponent } from './buttons.component';
 import { CardsComponent } from './cards.component';
 import { FormsComponent } from './forms.component';
+import { DynamicFormsComponent } from './formio';
 import { ModalsComponent } from './modals.component';
 import { SocialButtonsComponent } from './social-buttons.component';
 import { SwitchesComponent } from './switches.component';
@@ -36,6 +37,13 @@ const routes: Routes = [
         component: FormsComponent,
         data: {
           title: 'Forms'
+        }
+      },
+      {
+        path: 'formio',
+        component: DynamicFormsComponent,
+        data: {
+          title: 'Core UI + Formio'
         }
       },
       {

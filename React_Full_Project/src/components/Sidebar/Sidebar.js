@@ -43,6 +43,9 @@ class Sidebar extends Component {
                   <NavLink to={'/components/forms'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i> Forms</NavLink>
                 </li>
                 <li className="nav-item">
+                  <NavLink to={'/components/formio'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i> Dynamic Forms</NavLink>
+                </li>
+                <li className="nav-item">
                   <NavLink to={'/components/modals'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i> Modals</NavLink>
                 </li>
                 <li className="nav-item">

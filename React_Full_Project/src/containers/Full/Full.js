@@ -12,6 +12,7 @@ import Widgets from '../../views/Widgets/'
 import Buttons from '../../views/Components/Buttons/'
 import Cards from '../../views/Components/Cards/'
 import Forms from '../../views/Components/Forms/'
+import DynamicForm from '../../views/Components/DynamicForms'
 import Modals from '../../views/Components/Modals/'
 import SocialButtons from '../../views/Components/SocialButtons/'
 import Switches from '../../views/Components/Switches/'
@@ -35,6 +36,7 @@ class Full extends Component {
                 <Route path="/components/buttons" name="Buttons" component={Buttons}/>
                 <Route path="/components/cards" name="Cards" component={Cards}/>
                 <Route path="/components/forms" name="Forms" component={Forms}/>
+                <Route path="/components/formio" name="Dynamic Form" component={DynamicForm}/>
                 <Route path="/components/modals" name="Modals" component={Modals}/>
                 <Route path="/components/social-buttons" name="Social Buttons" component={SocialButtons}/>
                 <Route path="/components/switches" name="Swithces" component={Switches}/>

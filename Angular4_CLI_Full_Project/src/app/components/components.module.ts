@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
+import { FormioModule } from 'ng2-formio';
 
 import { ButtonsComponent } from './buttons.component';
 import { CardsComponent } from './cards.component';
 
 // Forms Component
 import { FormsComponent } from './forms.component';
+import { DynamicFormsComponent } from './formio';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-
 import { SocialButtonsComponent } from './social-buttons.component';
 import { SwitchesComponent } from './switches.component';
 import { TablesComponent } from './tables.component';
@@ -24,6 +25,7 @@ import { ComponentsRoutingModule } from './components-routing.module';
 
 @NgModule({
   imports: [
+    FormioModule,
     ComponentsRoutingModule,
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
@@ -33,6 +35,7 @@ import { ComponentsRoutingModule } from './components-routing.module';
     ButtonsComponent,
     CardsComponent,
     FormsComponent,
+    DynamicFormsComponent,
     ModalsComponent,
     SocialButtonsComponent,
     SwitchesComponent,

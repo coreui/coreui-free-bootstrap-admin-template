@@ -7,6 +7,7 @@ const routes = {
   '/components/social-buttons': 'Social Buttons',
   '/components/cards': 'Cards',
   '/components/forms': 'Forms',
+		'/components/formio': 'Dynamic Form',
   '/components/modals': 'Modals',
   '/components/switches': 'Switches',
   '/components/tables': 'Tables',
