@@ -1,10 +1,8 @@
 <header class="app-header navbar">
   <button class="navbar-toggler d-lg-none" type="button" appMobileSidebarToggler>&#9776;</button>
   <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler d-md-down-none" type="button" appSidebarToggler>&#9776;</button>
   <ul class="nav navbar-nav d-md-down-none">
-    <li class="nav-item">
-      <a class="nav-link navbar-toggler" href="#" appSidebarToggler>&#9776;</a>
-    </li>
     <li class="nav-item px-3">
       <a class="nav-link" href="#">Dashboard</a>
     </li>
@@ -50,9 +48,7 @@
         <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
       </div>
     </li>
-    <li class="nav-item d-md-down-none">
-      <a class="nav-link navbar-toggler" href="#" appAsideMenuToggler>&#9776;</a>
-    </li>
+    <button class="navbar-toggler d-md-down-none" type="button" appAsideMenuToggler>&#9776;</button>
   </ul>
 </header>
 
@@ -147,9 +143,9 @@
       <!-- Breadcrumb Menu-->
       <li class="breadcrumb-menu d-md-down-none">
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
-          <a class="btn btn-secondary" [routerLink]="['/dashboard']"><i class="icon-graph"></i> &nbsp;Dashboard</a>
-          <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+          <a class="btn" href="#"><i class="icon-speech"></i></a>
+          <a class="btn" [routerLink]="['/dashboard']"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+          <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
         </div>
       </li>
     </ol>
@@ -163,7 +159,7 @@
     <tabset>
       <tab>
         <ng-template tabHeading><i class="icon-list"></i></ng-template>
-        <div class="callout m-0 py-2 text-muted text-center bg-faded text-uppercase">
+        <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
           <small><b>Today</b></small>
         </div>
         <hr class="transparent mx-3 my-0">
@@ -185,7 +181,7 @@
           <small class="text-muted"><i class="icon-social-skype"></i>&nbsp; On-line </small>
         </div>
         <hr class="transparent mx-3 my-0">
-        <div class="callout m-0 py-2 text-muted text-center bg-faded text-uppercase">
+        <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
           <small><b>Tomorrow</b></small>
         </div>
         <hr class="transparent mx-3 my-0">
