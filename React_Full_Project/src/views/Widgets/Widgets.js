@@ -1,516 +1,159 @@
-import React, { Component } from 'react';
-import { Progress } from 'reactstrap';
+import React, {Component} from "react";
+import {Row, Col, CardGroup} from "reactstrap";
+import Widget01 from './Widget01';
+import Widget02 from './Widget02';
+import Widget03 from './Widget03';
+import Widget04 from './Widget04';
 
 class Widgets extends Component {
   render() {
     return (
       <div className="animated fadeIn">
-        <div className="row">
-          <div className="col-sm-6 col-lg-3">
-            <div className="card">
-              <div className="card-block">
-                <div className="h4 m-0">89.9%</div>
-                <div>Lorem ipsum...</div>
-                <Progress className="progress-xs my-1" color="success" value="25" />
-                <small className="text-muted">Lorem ipsum dolor sit amet enim.</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-3">
-            <div className="card">
-              <div className="card-block">
-                <div className="h4 m-0">12.124</div>
-                <div>Lorem ipsum...</div>
-                <Progress className="progress-xs my-1" color="info" value="25" />
-                <small className="text-muted">Lorem ipsum dolor sit amet enim.</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-3">
-            <div className="card">
-              <div className="card-block">
-                <div className="h4 m-0">$98.111,00</div>
-                <div>Lorem ipsum...</div>
-                <Progress className="progress-xs my-1" color="warning" value="25" />
-                <small className="text-muted">Lorem ipsum dolor sit amet enim.</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-3">
-            <div className="card">
-              <div className="card-block">
-                <div className="h4 m-0">2 TB</div>
-                <div>Lorem ipsum...</div>
-                <Progress className="progress-xs my-1" color="danger" value="25" />
-                <small className="text-muted">Lorem ipsum dolor sit amet enim.</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-6 col-lg-3">
-            <div className="card card-inverse card-primary">
-              <div className="card-block">
-                <div className="h4 m-0">89.9%</div>
-                <div>Lorem ipsum...</div>
-                <Progress className="progress progress-white progress-xs my-1" value="25" />
-                <small className="text-muted">Lorem ipsum dolor sit amet enim.</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-3">
-            <div className="card card-inverse card-warning">
-              <div className="card-block">
-                <div className="h4 m-0">12.124</div>
-                <div>Lorem ipsum...</div>
-                <Progress className="progress progress-white progress-xs my-1" value="25" />
-                <small className="text-muted">Lorem ipsum dolor sit amet enim.</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-3">
-            <div className="card card-inverse card-danger">
-              <div className="card-block">
-                <div className="h4 m-0">$98.111,00</div>
-                <div>Lorem ipsum...</div>
-                <Progress className="progress progress-white progress-xs my-1" value="25" />
-                <small className="text-muted">Lorem ipsum dolor sit amet enim.</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-3">
-            <div className="card card-inverse card-info">
-              <div className="card-block">
-                <div className="h4 m-0">2 TB</div>
-                <div>Lorem ipsum...</div>
-                <Progress className="progress progress-white progress-xs my-1" value="25" />
-                <small className="text-muted">Lorem ipsum dolor sit amet enim.</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-3 clearfix">
-                <i className="fa fa-cogs bg-primary p-3 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-primary mb-0 mt-2">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-3 clearfix">
-                <i className="fa fa-laptop bg-info p-3 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-info mb-0 mt-2">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-3 clearfix">
-                <i className="fa fa-moon-o bg-warning p-3 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-warning mb-0 mt-2">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-3 clearfix">
-                <i className="fa fa-bell bg-danger p-3 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-danger mb-0 mt-2">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-3 clearfix">
-                <i className="fa fa-cogs bg-primary p-3 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-primary mb-0 mt-2">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-              <div className="card-footer px-3 py-2">
-                <a className="font-weight-bold font-xs btn-block text-muted" href="#">View More <i className="fa fa-angle-right float-right font-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-3 clearfix">
-                <i className="fa fa-laptop bg-info p-3 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-info mb-0 mt-2">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-              <div className="card-footer px-3 py-2">
-                <a className="font-weight-bold font-xs btn-block text-muted" href="#">View More <i className="fa fa-angle-right float-right font-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-3 clearfix">
-                <i className="fa fa-moon-o bg-warning p-3 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-warning mb-0 mt-2">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-              <div className="card-footer px-3 py-2">
-                <a className="font-weight-bold font-xs btn-block text-muted" href="#">View More <i className="fa fa-angle-right float-right font-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-3 clearfix">
-                <i className="fa fa-bell bg-danger p-3 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-danger mb-0 mt-2">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-              <div className="card-footer px-3 py-2">
-                <a className="font-weight-bold font-xs btn-block text-muted" href="#">View More <i className="fa fa-angle-right float-right font-lg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-0 clearfix">
-                <i className="fa fa-cogs bg-primary p-4 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-primary mb-0 pt-3">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-0 clearfix">
-                <i className="fa fa-laptop bg-info p-4 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-info mb-0 pt-3">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-0 clearfix">
-                <i className="fa fa-moon-o bg-warning p-4 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-warning mb-0 pt-3">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-0 clearfix">
-                <i className="fa fa-bell bg-danger p-4 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-danger mb-0 pt-3">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-0 clearfix">
-                <i className="fa fa-cogs bg-primary p-4 px-5 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-primary mb-0 pt-3">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-0 clearfix">
-                <i className="fa fa-laptop bg-info p-4 px-5 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-info mb-0 pt-3">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-0 clearfix">
-                <i className="fa fa-moon-o bg-warning p-4 px-5 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-warning mb-0 pt-3">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-lg-3">
-            <div className="card">
-              <div className="card-block p-0 clearfix">
-                <i className="fa fa-bell bg-danger p-4 px-5 font-2xl mr-3 float-left"></i>
-                <div className="h5 text-danger mb-0 pt-3">$1.999,50</div>
-                <div className="text-muted text-uppercase font-weight-bold font-xs">Income</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-3 col-sm-6">
-            <div className="social-box facebook">
-              <i className="fa fa-facebook"></i>
-              <ul>
-                <li>
-                  <strong>89k</strong>
-                  <span>friends</span>
-                </li>
-                <li>
-                  <strong>459</strong>
-                  <span>feeds</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="social-box twitter">
-              <i className="fa fa-twitter"></i>
-              <ul>
-                <li>
-                  <strong>973k</strong>
-                  <span>followers</span>
-                </li>
-                <li>
-                  <strong>1.792</strong>
-                  <span>tweets</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="social-box linkedin">
-              <i className="fa fa-linkedin"></i>
-              <ul>
-                <li>
-                  <strong>500+</strong>
-                  <span>contacts</span>
-                </li>
-                <li>
-                  <strong>292</strong>
-                  <span>feeds</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="social-box google-plus">
-              <i className="fa fa-google-plus"></i>
-              <ul>
-                <li>
-                  <strong>894</strong>
-                  <span>followers</span>
-                </li>
-                <li>
-                  <strong>92</strong>
-                  <span>circles</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="card-group">
-          <div className="card">
-            <div className="card-block">
-              <div className="h1 text-muted text-right mb-2">
-                <i className="icon-people"></i>
-              </div>
-              <div className="h4 mb-0">87.500</div>
-              <small className="text-muted text-uppercase font-weight-bold">Visitors</small>
-              <Progress className="progress progress-xs mt-3 mb-0" color="info" value="25" />
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-block">
-              <div className="h1 text-muted text-right mb-2">
-                <i className="icon-user-follow"></i>
-              </div>
-              <div className="h4 mb-0">385</div>
-              <small className="text-muted text-uppercase font-weight-bold">New Clients</small>
-              <Progress className="progress progress-xs mt-3 mb-0" color="success" value="25" />
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-block">
-              <div className="h1 text-muted text-right mb-2">
-                <i className="icon-basket-loaded"></i>
-              </div>
-              <div className="h4 mb-0">1238</div>
-              <small className="text-muted text-uppercase font-weight-bold">Products sold</small>
-              <Progress className="progress progress-xs mt-3 mb-0" color="warning" value="25" />
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-block">
-              <div className="h1 text-muted text-right mb-2">
-                <i className="icon-pie-chart"></i>
-              </div>
-              <div className="h4 mb-0">28%</div>
-              <small className="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
-              <Progress className="progress progress-xs mt-3 mb-0" color="primary" value="25" />
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-block">
-              <div className="h1 text-muted text-right mb-2">
-                <i className="icon-speedometer"></i>
-              </div>
-              <div className="h4 mb-0">5:34:11</div>
-              <small className="text-muted text-uppercase font-weight-bold">Avg. Time</small>
-              <Progress className="progress progress-xs mt-3 mb-0" color="danger" value="25" />
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-6 col-md-2">
-            <div className="card">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-people"></i>
-                </div>
-                <div className="h4 mb-0">87.500</div>
-                <small className="text-muted text-uppercase font-weight-bold">Visitors</small>
-                <Progress className="progress progress-xs mt-3 mb-0" color="info" value="25" />
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-2">
-            <div className="card">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-user-follow"></i>
-                </div>
-                <div className="h4 mb-0">385</div>
-                <small className="text-muted text-uppercase font-weight-bold">New Clients</small>
-                <Progress className="progress progress-xs mt-3 mb-0" color="success" value="25" />
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-2">
-            <div className="card">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-basket-loaded"></i>
-                </div>
-                <div className="h4 mb-0">1238</div>
-                <small className="text-muted text-uppercase font-weight-bold">Products sold</small>
-                <Progress className="progress progress-xs mt-3 mb-0" color="warning" value="25" />
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-2">
-            <div className="card">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-pie-chart"></i>
-                </div>
-                <div className="h4 mb-0">28%</div>
-                <small className="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
-                <Progress className="progress progress-xs mt-3 mb-0" color="primary" value="25" />
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-2">
-            <div className="card">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-speedometer"></i>
-                </div>
-                <div className="h4 mb-0">5:34:11</div>
-                <small className="text-muted text-uppercase font-weight-bold">Avg. Time</small>
-                <Progress className="progress progress-xs mt-3 mb-0" color="danger" value="25" />
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-2">
-            <div className="card">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-speech"></i>
-                </div>
-                <div className="h4 mb-0">972</div>
-                <small className="text-muted text-uppercase font-weight-bold">Comments</small>
-                <Progress className="progress progress-xs mt-3 mb-0" color="info" value="25" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-6 col-md-2">
-            <div className="card card-inverse card-info">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-people"></i>
-                </div>
-                <div className="h4 mb-0">87.500</div>
-                <small className="text-muted text-uppercase font-weight-bold">Visitors</small>
-                <Progress className="progress progress-white progress-xs mt-1" value="25" />
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-2">
-            <div className="card card-inverse card-success">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-user-follow"></i>
-                </div>
-                <div className="h4 mb-0">385</div>
-                <small className="text-muted text-uppercase font-weight-bold">New Clients</small>
-                <Progress className="progress progress-white progress-xs mt-1" value="25" />
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-2">
-            <div className="card card-inverse card-warning">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-basket-loaded"></i>
-                </div>
-                <div className="h4 mb-0">1238</div>
-                <small className="text-muted text-uppercase font-weight-bold">Products sold</small>
-                <Progress className="progress progress-white progress-xs mt-1" value="25" />
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-2">
-            <div className="card card-inverse card-primary">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-pie-chart"></i>
-                </div>
-                <div className="h4 mb-0">28%</div>
-                <small className="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
-                <Progress className="progress progress-white progress-xs mt-1" value="25" />
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-2">
-            <div className="card card-inverse card-danger">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-speedometer"></i>
-                </div>
-                <div className="h4 mb-0">5:34:11</div>
-                <small className="text-muted text-uppercase font-weight-bold">Avg. Time</small>
-                <Progress className="progress progress-white progress-xs mt-1" value="25" />
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-2">
-            <div className="card card-inverse card-info">
-              <div className="card-block">
-                <div className="h1 text-muted text-right mb-2">
-                  <i className="icon-speech"></i>
-                </div>
-                <div className="h4 mb-0">972</div>
-                <small className="text-muted text-uppercase font-weight-bold">Comments</small>
-                <Progress className="progress progress-white progress-xs mt-1" value="25" />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Row>
+          <Col xs="12" sm="6" lg="3">
+            <Widget01 color="success" header="89.9%"/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget01 color="info" header="12.124"/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget01 color="warning" header="$98.111,00" smallText="">
+              <small className="text-muted">Excepteur sint occaecat...</small>
+            </Widget01>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget01 color="danger" value="95" header="1.9 TB" mainText="Danger!"
+                      smallText="This is your final warning..."/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget01 color="primary" variant="inverse" header="89.9%"/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget01 color="warning" variant="inverse" header="12.124"/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget01 color="danger" variant="inverse" header="$98.111,00" smallText="">
+              <small className="text-muted">Excepteur sint occaecat...</small>
+            </Widget01>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget01 color="info" variant="inverse" value="95" header="1.9 TB" mainText="Danger!"
+                      smallText="This is your final warning..."/>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" sm="6" lg="3">
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-cogs" color="primary"/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-laptop" color="info"/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-moon-o" color="warning"/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-bell" color="danger"/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-cogs" color="primary" footer link="#/charts"/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-laptop" color="info" footer/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-moon-o" color="warning" footer/>
+          </Col>
+          <Col xs="12" sm="6" lg="3">
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-bell" color="danger" footer/>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" sm="6" >
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-cogs" color="primary" variant="1"/>
+          </Col>
+          <Col xs="12" sm="6" >
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-laptop" color="info" variant="1"/>
+          </Col>
+          <Col xs="12" sm="6" >
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-moon-o" color="warning" variant="1"/>
+          </Col>
+          <Col xs="12" sm="6" >
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-bell" color="danger" variant="1"/>
+          </Col>
+          <Col xs="12" sm="6" >
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-cogs" color="primary" variant="2"/>
+          </Col>
+          <Col xs="12" sm="6" >
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-laptop" color="info" variant="2"/>
+          </Col>
+          <Col xs="12" sm="6" >
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-moon-o" color="warning" variant="2"/>
+          </Col>
+          <Col xs="12" sm="6" >
+            <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-bell" color="danger" variant="2"/>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} sm={6} md={3}>
+            <Widget03 dataBox={() => ({variant: "facebook", friends : "89k", feeds: "459"})}/>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Widget03 dataBox={() => ({variant: "twitter", followers : "973k", tweets: "1.792"})}/>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Widget03 dataBox={() => ({variant: "linkedin", contacts : "500+", feeds: "292"})}/>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Widget03 dataBox={() => ({variant: "google-plus", followers : "894", circles: "92"})}/>
+          </Col>
+        </Row>
+        <CardGroup>
+          <Widget04 icon="icon-people" color="info" header="87.500" value="25">Visitors</Widget04>
+          <Widget04 icon="icon-user-follow" color="success" header="385" value="25">New Clients</Widget04>
+          <Widget04 icon="icon-basket-loaded" color="warning" header="1238" value="25">Products sold</Widget04>
+          <Widget04 icon="icon-pie-chart" color="primary" header="28%" value="25">Returning Visitors</Widget04>
+          <Widget04 icon="icon-speedometer" color="danger" header="5:34:11" value="25">Avg. Time</Widget04>
+        </CardGroup>
+        <Row>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-people" color="info" header="87.500" value="25">Visitors</Widget04>
+          </Col>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-user-follow" color="success" header="385" value="25">New Clients</Widget04>
+          </Col>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-basket-loaded" color="warning" header="1238" value="25">Products sold</Widget04>
+          </Col>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-pie-chart" color="primary" header="28%" value="25">Returning Visitors</Widget04>
+          </Col>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-speedometer" color="danger" header="5:34:11" value="25">Avg. Time</Widget04>
+          </Col>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-speech" color="info" header="972" value="25">Comments</Widget04>
+          </Col>
+        </Row>
+        <Row>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-people" color="info" header="87.500" value="25" invert>Visitors</Widget04>
+          </Col>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-user-follow" color="success" header="385" value="25" invert>New Clients</Widget04>
+          </Col>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-basket-loaded" color="warning" header="1238" value="25" invert>Products sold</Widget04>
+          </Col>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-pie-chart" color="primary" header="28%" value="25" invert>Returning Visitors</Widget04>
+          </Col>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-speedometer" color="danger" header="5:34:11" value="25" invert>Avg. Time</Widget04>
+          </Col>
+          <Col sm="6" md="2">
+            <Widget04 icon="icon-speech" color="info" header="972" value="25" invert>Comments</Widget04>
+          </Col>
+        </Row>
       </div>
     )
   }
