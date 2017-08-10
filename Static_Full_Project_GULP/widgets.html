@@ -9,7 +9,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +16,6 @@
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
     <link rel="shortcut icon" href="img/favicon.png">
-
     <title>CoreUI - Open Source Bootstrap Admin Template</title>
 
     <!-- Icons -->
@@ -26,7 +24,6 @@
 
     <!-- Main styles for this application -->
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <!-- BODY options, add following classes to body to change options
@@ -46,8 +43,11 @@
 2. '.aside-menu-hidden'			- Hidden Aside Menu
 3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
 
+// Breadcrumb options
+1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
 // Footer options
-1. '.footer-fixed'						- Fixed footer
+1. '.footer-fixed'					- Fixed footer
 
 -->
 
@@ -55,11 +55,9 @@
     <header class="app-header navbar">
         <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">☰</button>
         <a class="navbar-brand" href="#"></a>
-        <ul class="nav navbar-nav d-md-down-none">
-            <li class="nav-item">
-                <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
-            </li>
+        <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">☰</button>
 
+        <ul class="nav navbar-nav d-md-down-none">
             <li class="nav-item px-3">
                 <a class="nav-link" href="#">Dashboard</a>
             </li>
@@ -86,20 +84,16 @@
                     <span class="d-md-down-none">admin</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
-
                     <div class="dropdown-header text-center">
                         <strong>Account</strong>
                     </div>
-
                     <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
-
                     <div class="dropdown-header text-center">
                         <strong>Settings</strong>
                     </div>
-
                     <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
                     <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
                     <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-default">42</span></a>
@@ -109,11 +103,9 @@
                     <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
                 </div>
             </li>
-            <li class="nav-item d-md-down-none">
-                <a class="nav-link navbar-toggler aside-menu-toggler" href="#">☰</a>
-            </li>
-
+            <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button">☰</button>
         </ul>
+
     </header>
 
     <div class="app-body">
@@ -121,7 +113,7 @@
             <nav class="sidebar-nav">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-primary">NEW</span></a>
                     </li>
 
                     <li class="nav-title">
@@ -168,7 +160,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="widgets.html"><i class="icon-calculator"></i> Widgets <span class="badge badge-info">NEW</span></a>
+                        <a class="nav-link" href="widgets.html"><i class="icon-calculator"></i> Widgets <span class="badge badge-primary">NEW</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="charts.html"><i class="icon-pie-chart"></i> Charts</a>
@@ -211,10 +203,10 @@
 
                 <!-- Breadcrumb Menu-->
                 <li class="breadcrumb-menu d-md-down-none">
-                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                        <a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
-                        <a class="btn btn-secondary" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
-                        <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+                    <div class="btn-group" role="group" aria-label="Button group">
+                        <a class="btn" href="#"><i class="icon-speech"></i></a>
+                        <a class="btn" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+                        <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
                     </div>
                 </li>
             </ol>
@@ -227,10 +219,10 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-primary">
-                                <div class="card-block pb-0">
+                            <div class="card text-white bg-primary">
+                                <div class="card-body pb-0">
                                     <div class="btn-group float-right">
-                                        <button type="button" class="btn btn-transparent active dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="icon-settings"></i>
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
@@ -250,9 +242,9 @@
                         <!--/.col-->
 
                         <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-info">
-                                <div class="card-block pb-0">
-                                    <button type="button" class="btn btn-transparent active p-0 float-right">
+                            <div class="card text-white bg-info">
+                                <div class="card-body pb-0">
+                                    <button type="button" class="btn btn-transparent p-0 float-right">
                                         <i class="icon-location-pin"></i>
                                     </button>
                                     <h4 class="mb-0">9.823</h4>
@@ -266,10 +258,10 @@
                         <!--/.col-->
 
                         <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-warning">
-                                <div class="card-block pb-0">
+                            <div class="card text-white bg-warning">
+                                <div class="card-body pb-0">
                                     <div class="btn-group float-right">
-                                        <button type="button" class="btn btn-transparent active dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="icon-settings"></i>
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
@@ -291,10 +283,10 @@
                         <!--/.col-->
 
                         <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-danger">
-                                <div class="card-block pb-0">
+                            <div class="card text-white bg-danger">
+                                <div class="card-body pb-0">
                                     <div class="btn-group float-right">
-                                        <button type="button" class="btn btn-transparent active dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="icon-settings"></i>
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
@@ -318,7 +310,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-lg-3">
                             <div class="card">
-                                <div class="card-header card-header-inverse card-header-primary">
+                                <div class="card-header bg-primary">
                                     <div class="font-weight-bold">
                                         <span>SALE</span>
                                         <span class="float-right">$1.890,65</span>
@@ -342,7 +334,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-3">
                             <div class="card">
-                                <div class="card-header card-header-inverse card-header-danger">
+                                <div class="card-header bg-danger">
                                     <div class="font-weight-bold">
                                         <span>SALE</span>
                                         <span class="float-right">$1.890,65</span>
@@ -367,7 +359,7 @@
                         <!--/.col-->
                         <div class="col-sm-6 col-lg-3">
                             <div class="card">
-                                <div class="card-header card-header-inverse card-header-success">
+                                <div class="card-header bg-success">
                                     <div class="font-weight-bold">
                                         <span>SALE</span>
                                         <span class="float-right">$1.890,65</span>
@@ -392,7 +384,7 @@
                         <!--/.col-->
                         <div class="col-sm-6 col-lg-3">
                             <div class="card">
-                                <div class="card-header card-header-inverse card-header-warning">
+                                <div class="card-header bg-warning">
                                     <div class="font-weight-bold">
                                         <span>SALE</span>
                                         <span class="float-right">$1.890,65</span>
@@ -421,7 +413,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="h4 m-0">89.9%</div>
                                     <div>Lorem ipsum...</div>
                                     <div class="progress progress-xs my-3">
@@ -434,7 +426,7 @@
                         <!--/.col-->
                         <div class="col-sm-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="h4 m-0">12.124</div>
                                     <div>Lorem ipsum...</div>
                                     <div class="progress progress-xs my-3">
@@ -447,7 +439,7 @@
                         <!--/.col-->
                         <div class="col-sm-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="h4 m-0">$98.111,00</div>
                                     <div>Lorem ipsum...</div>
                                     <div class="progress progress-xs my-3">
@@ -460,7 +452,7 @@
                         <!--/.col-->
                         <div class="col-sm-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="h4 m-0">2 TB</div>
                                     <div>Lorem ipsum...</div>
                                     <div class="progress progress-xs my-3">
@@ -476,8 +468,8 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-primary">
-                                <div class="card-block">
+                            <div class="card text-white bg-primary">
+                                <div class="card-body">
                                     <div class="h4 m-0">89.9%</div>
                                     <div>Lorem ipsum...</div>
                                     <div class="progress progress-white progress-xs my-3">
@@ -489,8 +481,8 @@
                         </div>
                         <!--/.col-->
                         <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-warning">
-                                <div class="card-block">
+                            <div class="card text-white bg-warning">
+                                <div class="card-body">
                                     <div class="h4 m-0">12.124</div>
                                     <div>Lorem ipsum...</div>
                                     <div class="progress progress-white progress-xs my-3">
@@ -502,8 +494,8 @@
                         </div>
                         <!--/.col-->
                         <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-danger">
-                                <div class="card-block">
+                            <div class="card text-white bg-danger">
+                                <div class="card-body">
                                     <div class="h4 m-0">$98.111,00</div>
                                     <div>Lorem ipsum...</div>
                                     <div class="progress progress-white progress-xs my-3">
@@ -515,8 +507,8 @@
                         </div>
                         <!--/.col-->
                         <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-info">
-                                <div class="card-block">
+                            <div class="card text-white bg-info">
+                                <div class="card-body">
                                     <div class="h4 m-0">2 TB</div>
                                     <div>Lorem ipsum...</div>
                                     <div class="progress progress-white progress-xs my-3">
@@ -533,7 +525,7 @@
                     <div class="row">
                         <div class="col-md-2 col-sm-4">
                             <div class="card">
-                                <div class="card-block text-center">
+                                <div class="card-body text-center">
                                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                                     <div class="h2 py-3">1,123</div>
                                     <div class="chart-wrapper">
@@ -545,7 +537,7 @@
                         <!--/.col-->
                         <div class="col-md-2 col-sm-4">
                             <div class="card">
-                                <div class="card-block text-center">
+                                <div class="card-body text-center">
                                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                                     <div class="h2 py-3">1,123</div>
                                     <div class="chart-wrapper">
@@ -557,7 +549,7 @@
                         <!--/.col-->
                         <div class="col-md-2 col-sm-4">
                             <div class="card">
-                                <div class="card-block text-center">
+                                <div class="card-body text-center">
                                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                                     <div class="h2 py-3">1,123</div>
                                     <div class="chart-wrapper">
@@ -569,7 +561,7 @@
                         <!--/.col-->
                         <div class="col-md-2 col-sm-4">
                             <div class="card">
-                                <div class="card-block text-center">
+                                <div class="card-body text-center">
                                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                                     <div class="h2 py-3">1,123</div>
                                     <div class="chart-wrapper">
@@ -581,7 +573,7 @@
                         <!--/.col-->
                         <div class="col-md-2 col-sm-4">
                             <div class="card">
-                                <div class="card-block text-center">
+                                <div class="card-body text-center">
                                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                                     <div class="h2 py-3">1,123</div>
                                     <div class="chart-wrapper">
@@ -593,7 +585,7 @@
                         <!--/.col-->
                         <div class="col-md-2 col-sm-4">
                             <div class="card">
-                                <div class="card-block text-center">
+                                <div class="card-body text-center">
                                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                                     <div class="h2 py-3">1,123</div>
                                     <div class="chart-wrapper">
@@ -609,7 +601,7 @@
                     <div class="row">
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-3 clearfix">
+                                <div class="card-body p-3 clearfix">
                                     <i class="fa fa-cogs bg-primary p-3 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-primary mb-0 mt-2">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -620,7 +612,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-3 clearfix">
+                                <div class="card-body p-3 clearfix">
                                     <i class="fa fa-laptop bg-info p-3 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-info mb-0 mt-2">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -631,7 +623,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-3 clearfix">
+                                <div class="card-body p-3 clearfix">
                                     <i class="fa fa-moon-o bg-warning p-3 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-warning mb-0 mt-2">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -642,7 +634,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-3 clearfix">
+                                <div class="card-body p-3 clearfix">
                                     <i class="fa fa-bell bg-danger p-3 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-danger mb-0 mt-2">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -653,7 +645,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-3 clearfix">
+                                <div class="card-body p-3 clearfix">
                                     <i class="fa fa-cogs bg-primary p-3 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-primary mb-0 mt-2">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -667,7 +659,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-3 clearfix">
+                                <div class="card-body p-3 clearfix">
                                     <i class="fa fa-laptop bg-info p-3 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-info mb-0 mt-2">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -681,7 +673,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-3 clearfix">
+                                <div class="card-body p-3 clearfix">
                                     <i class="fa fa-moon-o bg-warning p-3 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-warning mb-0 mt-2">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -695,7 +687,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-3 clearfix">
+                                <div class="card-body p-3 clearfix">
                                     <i class="fa fa-bell bg-danger p-3 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-danger mb-0 mt-2">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -713,7 +705,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-0 clearfix">
+                                <div class="card-body p-0 clearfix">
                                     <i class="fa fa-cogs bg-primary p-4 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-primary mb-0 pt-3">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -724,7 +716,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-0 clearfix">
+                                <div class="card-body p-0 clearfix">
                                     <i class="fa fa-laptop bg-info p-4 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-info mb-0 pt-3">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -735,7 +727,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-0 clearfix">
+                                <div class="card-body p-0 clearfix">
                                     <i class="fa fa-moon-o bg-warning p-4 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-warning mb-0 pt-3">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -746,7 +738,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-0 clearfix">
+                                <div class="card-body p-0 clearfix">
                                     <i class="fa fa-bell bg-danger p-4 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-danger mb-0 pt-3">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -757,7 +749,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-0 clearfix">
+                                <div class="card-body p-0 clearfix">
                                     <i class="fa fa-cogs bg-primary p-4 px-5 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-primary mb-0 pt-3">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -768,7 +760,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-0 clearfix">
+                                <div class="card-body p-0 clearfix">
                                     <i class="fa fa-laptop bg-info p-4 px-5 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-info mb-0 pt-3">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -779,7 +771,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-0 clearfix">
+                                <div class="card-body p-0 clearfix">
                                     <i class="fa fa-moon-o bg-warning p-4 px-5 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-warning mb-0 pt-3">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -790,7 +782,7 @@
 
                         <div class="col-6 col-lg-3">
                             <div class="card">
-                                <div class="card-block p-0 clearfix">
+                                <div class="card-body p-0 clearfix">
                                     <i class="fa fa-bell bg-danger p-4 px-5 font-2xl mr-3 float-left"></i>
                                     <div class="h5 text-danger mb-0 pt-3">$1.999,50</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
@@ -878,7 +870,7 @@
 
                     <div class="card-group">
                         <div class="card">
-                            <div class="card-block">
+                            <div class="card-body">
                                 <div class="h1 text-muted text-right mb-4">
                                     <i class="icon-people"></i>
                                 </div>
@@ -890,7 +882,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-block">
+                            <div class="card-body">
                                 <div class="h1 text-muted text-right mb-4">
                                     <i class="icon-user-follow"></i>
                                 </div>
@@ -902,7 +894,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-block">
+                            <div class="card-body">
                                 <div class="h1 text-muted text-right mb-4">
                                     <i class="icon-basket-loaded"></i>
                                 </div>
@@ -914,7 +906,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-block">
+                            <div class="card-body">
                                 <div class="h1 text-muted text-right mb-4">
                                     <i class="icon-pie-chart"></i>
                                 </div>
@@ -926,7 +918,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-block">
+                            <div class="card-body">
                                 <div class="h1 text-muted text-right mb-4">
                                     <i class="icon-speedometer"></i>
                                 </div>
@@ -942,7 +934,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-2">
                             <div class="card">
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-people"></i>
                                     </div>
@@ -957,7 +949,7 @@
                         <!--/.col-->
                         <div class="col-sm-6 col-md-2">
                             <div class="card">
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-user-follow"></i>
                                     </div>
@@ -972,7 +964,7 @@
                         <!--/.col-->
                         <div class="col-sm-6 col-md-2">
                             <div class="card">
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-basket-loaded"></i>
                                     </div>
@@ -987,7 +979,7 @@
                         <!--/.col-->
                         <div class="col-sm-6 col-md-2">
                             <div class="card">
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-pie-chart"></i>
                                     </div>
@@ -1002,7 +994,7 @@
                         <!--/.col-->
                         <div class="col-sm-6 col-md-2">
                             <div class="card">
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-speedometer"></i>
                                     </div>
@@ -1017,7 +1009,7 @@
                         <!--/.col-->
                         <div class="col-sm-6 col-md-2">
                             <div class="card">
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-speech"></i>
                                     </div>
@@ -1035,8 +1027,8 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-md-2">
-                            <div class="card card-inverse card-info">
-                                <div class="card-block">
+                            <div class="card text-white bg-info">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-people"></i>
                                     </div>
@@ -1050,8 +1042,8 @@
                         </div>
                         <!--/.col-->
                         <div class="col-sm-6 col-md-2">
-                            <div class="card card-inverse card-success">
-                                <div class="card-block">
+                            <div class="card text-white bg-success">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-user-follow"></i>
                                     </div>
@@ -1065,8 +1057,8 @@
                         </div>
                         <!--/.col-->
                         <div class="col-sm-6 col-md-2">
-                            <div class="card card-inverse card-warning">
-                                <div class="card-block">
+                            <div class="card text-white bg-warning">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-basket-loaded"></i>
                                     </div>
@@ -1080,8 +1072,8 @@
                         </div>
                         <!--/.col-->
                         <div class="col-sm-6 col-md-2">
-                            <div class="card card-inverse card-primary">
-                                <div class="card-block">
+                            <div class="card text-white bg-primary">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-pie-chart"></i>
                                     </div>
@@ -1095,8 +1087,8 @@
                         </div>
                         <!--/.col-->
                         <div class="col-sm-6 col-md-2">
-                            <div class="card card-inverse card-danger">
-                                <div class="card-block">
+                            <div class="card text-white bg-danger">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-speedometer"></i>
                                     </div>
@@ -1110,8 +1102,8 @@
                         </div>
                         <!--/.col-->
                         <div class="col-sm-6 col-md-2">
-                            <div class="card card-inverse card-info">
-                                <div class="card-block">
+                            <div class="card text-white bg-info">
+                                <div class="card-body">
                                     <div class="h1 text-muted text-right mb-4">
                                         <i class="icon-speech"></i>
                                     </div>
@@ -1148,7 +1140,7 @@
             <!-- Tab panes -->
             <div class="tab-content">
                 <div class="tab-pane active" id="timeline" role="tabpanel">
-                    <div class="callout m-0 py-2 text-muted text-center bg-faded text-uppercase">
+                    <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
                         <small><b>Today</b>
                         </small>
                     </div>
@@ -1175,7 +1167,7 @@
                         <small class="text-muted"><i class="icon-social-skype"></i>&nbsp; On-line</small>
                     </div>
                     <hr class="transparent mx-3 my-0">
-                    <div class="callout m-0 py-2 text-muted text-center bg-faded text-uppercase">
+                    <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
                         <small><b>Tomorrow</b>
                         </small>
                     </div>

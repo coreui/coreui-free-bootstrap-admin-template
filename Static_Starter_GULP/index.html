@@ -9,7 +9,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +16,6 @@
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
     <link rel="shortcut icon" href="img/favicon.png">
-
     <title>CoreUI - Open Source Bootstrap Admin Template</title>
 
     <!-- Icons -->
@@ -26,7 +24,6 @@
 
     <!-- Main styles for this application -->
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <!-- BODY options, add following classes to body to change options
@@ -46,8 +43,11 @@
 2. '.aside-menu-hidden'			- Hidden Aside Menu
 3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
 
+// Breadcrumb options
+1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
 // Footer options
-1. '.footer-fixed'						- Fixed footer
+1. '.footer-fixed'					- Fixed footer
 
 -->
 
@@ -55,12 +55,8 @@
     <header class="app-header navbar">
         <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">☰</button>
         <a class="navbar-brand" href="#"></a>
-        <ul class="nav navbar-nav d-md-down-none">
-            <li class="nav-item">
-                <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
-            </li>
+        <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">☰</button>
 
-        </ul>
     </header>
 
     <div class="app-body">
@@ -68,7 +64,7 @@
             <nav class="sidebar-nav">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-primary">NEW</span></a>
                     </li>
 
                 </ul>

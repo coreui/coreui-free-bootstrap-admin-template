@@ -9,7 +9,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +16,6 @@
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
     <link rel="shortcut icon" href="img/favicon.png">
-
     <title>CoreUI - Open Source Bootstrap Admin Template</title>
 
     <!-- Icons -->
@@ -26,7 +24,6 @@
 
     <!-- Main styles for this application -->
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <!-- BODY options, add following classes to body to change options
@@ -46,8 +43,11 @@
 2. '.aside-menu-hidden'			- Hidden Aside Menu
 3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
 
+// Breadcrumb options
+1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
 // Footer options
-1. '.footer-fixed'						- Fixed footer
+1. '.footer-fixed'					- Fixed footer
 
 -->
 
@@ -55,11 +55,9 @@
     <header class="app-header navbar">
         <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">☰</button>
         <a class="navbar-brand" href="#"></a>
-        <ul class="nav navbar-nav d-md-down-none">
-            <li class="nav-item">
-                <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
-            </li>
+        <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">☰</button>
 
+        <ul class="nav navbar-nav d-md-down-none">
             <li class="nav-item px-3">
                 <a class="nav-link" href="#">Dashboard</a>
             </li>
@@ -86,20 +84,16 @@
                     <span class="d-md-down-none">admin</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
-
                     <div class="dropdown-header text-center">
                         <strong>Account</strong>
                     </div>
-
                     <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
-
                     <div class="dropdown-header text-center">
                         <strong>Settings</strong>
                     </div>
-
                     <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
                     <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
                     <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-default">42</span></a>
@@ -109,11 +103,9 @@
                     <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
                 </div>
             </li>
-            <li class="nav-item d-md-down-none">
-                <a class="nav-link navbar-toggler aside-menu-toggler" href="#">☰</a>
-            </li>
-
+            <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button">☰</button>
         </ul>
+
     </header>
 
     <div class="app-body">
@@ -121,7 +113,7 @@
             <nav class="sidebar-nav">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-primary">NEW</span></a>
                     </li>
 
                     <li class="nav-title">
@@ -168,7 +160,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="widgets.html"><i class="icon-calculator"></i> Widgets <span class="badge badge-info">NEW</span></a>
+                        <a class="nav-link" href="widgets.html"><i class="icon-calculator"></i> Widgets <span class="badge badge-primary">NEW</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="charts.html"><i class="icon-pie-chart"></i> Charts</a>
@@ -211,10 +203,10 @@
 
                 <!-- Breadcrumb Menu-->
                 <li class="breadcrumb-menu d-md-down-none">
-                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                        <a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
-                        <a class="btn btn-secondary" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
-                        <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+                    <div class="btn-group" role="group" aria-label="Button group">
+                        <a class="btn" href="#"><i class="icon-speech"></i></a>
+                        <a class="btn" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+                        <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
                     </div>
                 </li>
             </ol>
@@ -228,7 +220,7 @@
                                 <div class="card-header">
                                     <i class="fa fa-align-justify"></i> Simple Table
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <table class="table">
                                         <thead>
                                             <tr>
@@ -306,7 +298,7 @@
                                 <div class="card-header">
                                     <i class="fa fa-align-justify"></i> Striped Table
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
@@ -388,7 +380,7 @@
                                 <div class="card-header">
                                     <i class="fa fa-align-justify"></i> Condensed Table
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <table class="table table-sm">
                                         <thead>
                                             <tr>
@@ -466,7 +458,7 @@
                                 <div class="card-header">
                                     <i class="fa fa-align-justify"></i> Bordered Table
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
@@ -548,7 +540,7 @@
                                 <div class="card-header">
                                     <i class="fa fa-align-justify"></i> Combined All Table
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <table class="table table-bordered table-striped table-sm">
                                         <thead>
                                             <tr>
@@ -646,7 +638,7 @@
             <!-- Tab panes -->
             <div class="tab-content">
                 <div class="tab-pane active" id="timeline" role="tabpanel">
-                    <div class="callout m-0 py-2 text-muted text-center bg-faded text-uppercase">
+                    <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
                         <small><b>Today</b>
                         </small>
                     </div>
@@ -673,7 +665,7 @@
                         <small class="text-muted"><i class="icon-social-skype"></i>&nbsp; On-line</small>
                     </div>
                     <hr class="transparent mx-3 my-0">
-                    <div class="callout m-0 py-2 text-muted text-center bg-faded text-uppercase">
+                    <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
                         <small><b>Tomorrow</b>
                         </small>
                     </div>

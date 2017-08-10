@@ -9,7 +9,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +16,6 @@
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
     <link rel="shortcut icon" href="img/favicon.png">
-
     <title>CoreUI - Open Source Bootstrap Admin Template</title>
 
     <!-- Icons -->
@@ -26,7 +24,6 @@
 
     <!-- Main styles for this application -->
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <!-- BODY options, add following classes to body to change options
@@ -46,8 +43,11 @@
 2. '.aside-menu-hidden'			- Hidden Aside Menu
 3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
 
+// Breadcrumb options
+1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
 // Footer options
-1. '.footer-fixed'						- Fixed footer
+1. '.footer-fixed'					- Fixed footer
 
 -->
 
@@ -55,11 +55,9 @@
     <header class="app-header navbar">
         <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">☰</button>
         <a class="navbar-brand" href="#"></a>
-        <ul class="nav navbar-nav d-md-down-none">
-            <li class="nav-item">
-                <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
-            </li>
+        <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">☰</button>
 
+        <ul class="nav navbar-nav d-md-down-none">
             <li class="nav-item px-3">
                 <a class="nav-link" href="#">Dashboard</a>
             </li>
@@ -86,20 +84,16 @@
                     <span class="d-md-down-none">admin</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
-
                     <div class="dropdown-header text-center">
                         <strong>Account</strong>
                     </div>
-
                     <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
-
                     <div class="dropdown-header text-center">
                         <strong>Settings</strong>
                     </div>
-
                     <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
                     <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
                     <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-default">42</span></a>
@@ -109,11 +103,9 @@
                     <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
                 </div>
             </li>
-            <li class="nav-item d-md-down-none">
-                <a class="nav-link navbar-toggler aside-menu-toggler" href="#">☰</a>
-            </li>
-
+            <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button">☰</button>
         </ul>
+
     </header>
 
     <div class="app-body">
@@ -121,7 +113,7 @@
             <nav class="sidebar-nav">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-primary">NEW</span></a>
                     </li>
 
                     <li class="nav-title">
@@ -168,7 +160,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="widgets.html"><i class="icon-calculator"></i> Widgets <span class="badge badge-info">NEW</span></a>
+                        <a class="nav-link" href="widgets.html"><i class="icon-calculator"></i> Widgets <span class="badge badge-primary">NEW</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="charts.html"><i class="icon-pie-chart"></i> Charts</a>
@@ -211,10 +203,10 @@
 
                 <!-- Breadcrumb Menu-->
                 <li class="breadcrumb-menu d-md-down-none">
-                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                        <a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
-                        <a class="btn btn-secondary" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
-                        <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+                    <div class="btn-group" role="group" aria-label="Button group">
+                        <a class="btn" href="#"><i class="icon-speech"></i></a>
+                        <a class="btn" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+                        <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
                     </div>
                 </li>
             </ol>
@@ -229,7 +221,7 @@
                                     <strong>Credit Card</strong>
                                     <small>Form</small>
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="row">
 
                                         <div class="col-sm-12">
@@ -320,7 +312,7 @@
                                     <strong>Company</strong>
                                     <small>Form</small>
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <div class="form-group">
                                         <label for="company">Company</label>
                                         <input type="text" class="form-control" id="company" placeholder="Enter your company name">
@@ -370,7 +362,7 @@
                                 <div class="card-header">
                                     <strong>Basic Form</strong>Elements
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
                                         <div class="form-group row">
                                             <label class="col-md-3 form-control-label">Static</label>
@@ -564,7 +556,7 @@
                                 <div class="card-header">
                                     <strong>Inline</strong>Form
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post" class="form-inline">
                                         <div class="form-group">
                                             <label for="exampleInputName2">Name</label>
@@ -587,7 +579,7 @@
                                 <div class="card-header">
                                     <strong>Horizontal</strong>Form
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post" class="form-horizontal">
                                         <div class="form-group row">
                                             <label class="col-md-3 form-control-label" for="hf-email">Email</label>
@@ -614,7 +606,7 @@
                                 <div class="card-header">
                                     <strong>Normal</strong>Form
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post">
                                         <div class="form-group">
                                             <label for="nf-email">Email</label>
@@ -640,7 +632,7 @@
                                     Input
                                     <strong>Grid</strong>
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post" class="form-horizontal">
 
                                         <div class="form-group row">
@@ -706,7 +698,7 @@
                                     Input
                                     <strong>Sizes</strong>
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post" class="form-horizontal">
                                         <div class="form-group row">
                                             <label class="col-sm-5 form-control-label" for="input-small">Small Input</label>
@@ -744,18 +736,17 @@
                                 <div class="card-header">
                                     <strong>Validation states</strong>Form
                                 </div>
-                                <div class="card-block">
-                                    <div class="form-group has-success">
+                                <div class="card-body">
+                                    <div class="form-group">
                                         <label class="form-form-control-label" for="inputSuccess1">Input with success</label>
-                                        <input type="text" class="form-control" id="inputSuccess1">
+                                        <input type="text" class="form-control is-valid" id="inputSuccess1">
                                     </div>
-                                    <div class="form-group has-warning">
-                                        <label class="form-form-control-label" for="inputWarning1">Input with warning</label>
-                                        <input type="text" class="form-control" id="inputWarning1">
-                                    </div>
-                                    <div class="form-group has-danger">
+                                    <div class="form-group">
                                         <label class="form-form-control-label" for="inputError1">Input with error</label>
-                                        <input type="text" class="form-control" id="inputError1">
+                                        <input type="text" class="form-control is-invalid" id="inputError1">
+                                        <div class="invalid-feedback">
+                                            Please provide a valid informations.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -766,18 +757,17 @@
                                 <div class="card-header">
                                     <strong>Validation states</strong>with optional icons
                                 </div>
-                                <div class="card-block">
-                                    <div class="form-group has-success">
+                                <div class="card-body">
+                                    <div class="form-group">
                                         <label class="form-form-control-label" for="inputSuccess2">Input with success</label>
-                                        <input type="text" class="form-control form-control-success" id="inputSuccess2">
+                                        <input type="text" class="form-control is-valid" id="inputSuccess2">
                                     </div>
-                                    <div class="form-group has-warning">
-                                        <label class="form-form-control-label" for="inputWarning2">Input with warning</label>
-                                        <input type="text" class="form-control form-control-warning" id="inputWarning2">
-                                    </div>
-                                    <div class="form-group has-danger has-feedback">
+                                    <div class="form-group">
                                         <label class="form-form-control-label" for="inputError2">Input with error</label>
-                                        <input type="text" class="form-control form-control-danger" id="inputError2">
+                                        <input type="text" class="form-control is-invalid" id="inputError2">
+                                        <div class="invalid-feedback">
+                                            Please provide a valid informations.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -790,7 +780,7 @@
                                 <div class="card-header">
                                     <strong>Icon/Text</strong>Groups
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post" class="form-horizontal">
                                         <div class="form-group row">
                                             <div class="col-md-12">
@@ -833,7 +823,7 @@
                                 <div class="card-header">
                                     <strong>Buttons</strong>Groups
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post" class="form-horizontal">
                                         <div class="form-group row">
                                             <div class="col-md-12">
@@ -883,7 +873,7 @@
                                 <div class="card-header">
                                     <strong>Dropdowns</strong>Groups
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post" class="form-horizontal">
                                         <div class="form-group row">
                                             <div class="col-md-12">
@@ -975,7 +965,7 @@
                                         <code>.col-sm-*</code>
                                     </small>
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post" class="form-horizontal">
                                         <div class="form-group row">
                                             <div class="col-md-8">
@@ -1036,7 +1026,7 @@
                                         <code>.col-*</code>
                                     </small>
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post" class="form-horizontal">
                                         <div class="form-group row">
                                             <div class="col-4">
@@ -1096,7 +1086,7 @@
                                 <div class="card-header">
                                     Example Form
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post">
                                         <div class="form-group">
                                             <div class="input-group">
@@ -1134,7 +1124,7 @@
                                 <div class="card-header">
                                     Example Form
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post">
                                         <div class="form-group">
                                             <div class="input-group">
@@ -1158,7 +1148,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group form-actions">
-                                            <button type="submit" class="btn btn-sm btn-default">Submit</button>
+                                            <button type="submit" class="btn btn-sm btn-secondary">Submit</button>
                                         </div>
                                     </form>
                                 </div>
@@ -1169,7 +1159,7 @@
                                 <div class="card-header">
                                     Example Form
                                 </div>
-                                <div class="card-block">
+                                <div class="card-body">
                                     <form action="" method="post">
                                         <div class="form-group">
                                             <div class="input-group">
@@ -1213,8 +1203,8 @@
                                         <a href="#" class="btn-close"><i class="icon-close"></i></a>
                                     </div>
                                 </div>
-                                <div class="card-block">
-                                    <form class="form-2orizontal">
+                                <div class="card-body">
+                                    <form class="form-horizontal">
                                         <div class="form-group">
                                             <label class="form-control-label" for="prependedInput">Prepended text</label>
                                             <div class="controls">
@@ -1251,7 +1241,7 @@
                                                 <div class="input-group">
                                                     <input id="appendedInputButton" class="form-control" size="16" type="text">
                                                     <span class="input-group-btn">
-                                                        <button class="btn btn-default" type="button">Go!</button>
+                                                        <button class="btn btn-secondary" type="button">Go!</button>
                                                     </span>
                                                 </div>
                                             </div>
@@ -1262,15 +1252,15 @@
                                                 <div class="input-group">
                                                     <input id="appendedInputButtons" size="16" class="form-control" type="text">
                                                     <span class="input-group-btn">
-                                                        <button class="btn btn-default" type="button">Search</button>
-                                                        <button class="btn btn-default" type="button">Options</button>
+                                                        <button class="btn btn-secondary" type="button">Search</button>
+                                                        <button class="btn btn-secondary" type="button">Options</button>
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-actions">
                                             <button type="submit" class="btn btn-primary">Save changes</button>
-                                            <button type="button" class="btn btn-default">Cancel</button>
+                                            <button type="button" class="btn btn-secondary">Cancel</button>
                                         </div>
                                     </form>
                                 </div>
@@ -1301,7 +1291,7 @@
             <!-- Tab panes -->
             <div class="tab-content">
                 <div class="tab-pane active" id="timeline" role="tabpanel">
-                    <div class="callout m-0 py-2 text-muted text-center bg-faded text-uppercase">
+                    <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
                         <small><b>Today</b>
                         </small>
                     </div>
@@ -1328,7 +1318,7 @@
                         <small class="text-muted"><i class="icon-social-skype"></i>&nbsp; On-line</small>
                     </div>
                     <hr class="transparent mx-3 my-0">
-                    <div class="callout m-0 py-2 text-muted text-center bg-faded text-uppercase">
+                    <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
                         <small><b>Tomorrow</b>
                         </small>
                     </div>
