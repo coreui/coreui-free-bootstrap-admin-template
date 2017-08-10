@@ -1,48 +1,49 @@
-import React, { Component } from 'react';
+import React, {Component} from "react";
+import {Container, Row, Col, Card, CardBlock, CardFooter, Button, Input, InputGroup, InputGroupAddon} from "reactstrap";
 
 class Register extends Component {
   render() {
     return (
       <div className="app flex-row align-items-center">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-6">
-              <div className="card mx-4">
-                <div className="card-block p-4">
+        <Container>
+          <Row className="justify-content-center">
+            <Col md="6">
+              <Card className="mx-4">
+                <CardBlock className="card-body p-4">
                   <h1>Register</h1>
                   <p className="text-muted">Create your account</p>
-                  <div className="input-group mb-3">
-                    <span className="input-group-addon"><i className="icon-user"></i></span>
-                    <input type="text" className="form-control" placeholder="Username"/>
-                  </div>
-                  <div className="input-group mb-3">
-                    <span className="input-group-addon">@</span>
-                    <input type="text" className="form-control" placeholder="Email"/>
-                  </div>
-                  <div className="input-group mb-3">
-                    <span className="input-group-addon"><i className="icon-lock"></i></span>
-                    <input type="password" className="form-control" placeholder="Password"/>
-                  </div>
-                  <div className="input-group mb-4">
-                    <span className="input-group-addon"><i className="icon-lock"></i></span>
-                    <input type="password" className="form-control" placeholder="Repeat password"/>
-                  </div>
-                  <button type="button" className="btn btn-block btn-success">Create Account</button>
-                </div>
-                <div className="card-footer p-4">
-                  <div className="row">
-                    <div className="col-6">
-                      <button className="btn btn-block btn-facebook" type="button"><span>facebook</span></button>
-                    </div>
-                    <div className="col-6">
-                      <button className="btn btn-block btn-twitter" type="button"><span>twitter</span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                  <InputGroup className="mb-3">
+                    <InputGroupAddon><i className="icon-user"></i></InputGroupAddon>
+                    <Input type="text" placeholder="Username"/>
+                  </InputGroup>
+                  <InputGroup className="mb-3">
+                    <InputGroupAddon>@</InputGroupAddon>
+                    <Input type="text" placeholder="Email"/>
+                  </InputGroup>
+                  <InputGroup className="mb-3">
+                    <InputGroupAddon><i className="icon-lock"></i></InputGroupAddon>
+                    <Input type="password" placeholder="Password"/>
+                  </InputGroup>
+                  <InputGroup className="mb-4">
+                    <InputGroupAddon><i className="icon-lock"></i></InputGroupAddon>
+                    <Input type="password" placeholder="Repeat password"/>
+                  </InputGroup>
+                  <Button color="success" block>Create Account</Button>
+                </CardBlock>
+                <CardFooter className="p-4">
+                  <Row>
+                    <Col xs="12" sm="6">
+                      <Button className="btn-facebook" block><span>facebook</span></Button>
+                    </Col>
+                    <Col xs="12" sm="6">
+                      <Button className="btn-twitter" block><span>twitter</span></Button>
+                    </Col>
+                  </Row>
+                </CardFooter>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }

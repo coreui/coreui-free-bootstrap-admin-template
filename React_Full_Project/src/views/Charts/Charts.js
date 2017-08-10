@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import { Bar, Doughnut, Line, Pie, Polar, Radar } from 'react-chartjs-2';
+import React, {Component} from "react";
+import {Bar, Doughnut, Line, Pie, Polar, Radar} from "react-chartjs-2";
+import {CardColumns, Card, CardHeader, CardBlock} from "reactstrap";
 
 const line = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -52,14 +53,14 @@ const doughnut = {
   datasets: [{
     data: [300, 50, 100],
     backgroundColor: [
-    '#FF6384',
-    '#36A2EB',
-    '#FFCE56'
+      '#FF6384',
+      '#36A2EB',
+      '#FFCE56'
     ],
     hoverBackgroundColor: [
-    '#FF6384',
-    '#36A2EB',
-    '#FFCE56'
+      '#FF6384',
+      '#36A2EB',
+      '#FFCE56'
     ]
   }]
 };
@@ -99,14 +100,14 @@ const pie = {
   datasets: [{
     data: [300, 50, 100],
     backgroundColor: [
-    '#FF6384',
-    '#36A2EB',
-    '#FFCE56'
+      '#FF6384',
+      '#36A2EB',
+      '#FFCE56'
     ],
     hoverBackgroundColor: [
-    '#FF6384',
-    '#36A2EB',
-    '#FFCE56'
+      '#FF6384',
+      '#36A2EB',
+      '#FFCE56'
     ]
   }]
 };
@@ -142,94 +143,106 @@ class Charts extends Component {
   render() {
     return (
       <div className="animated fadeIn">
-        <div className="card-columns cols-2">
-          <div className="card">
-            <div className="card-header">
+        <CardColumns className="cols-2">
+          <Card>
+            <CardHeader>
               Line Chart
               <div className="card-actions">
-                <a href="http://www.chartjs.org"><small className="text-muted">docs</small></a>
+                <a href="http://www.chartjs.org">
+                  <small className="text-muted">docs</small>
+                </a>
               </div>
-            </div>
-            <div className="card-block">
+            </CardHeader>
+            <CardBlock className="card-body">
               <div className="chart-wrapper">
                 <Line data={line}
-                  options={{
+                      options={{
                     maintainAspectRatio: false
                   }}
                 />
               </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-header">
+            </CardBlock>
+          </Card>
+          <Card>
+            <CardHeader>
               Bar Chart
               <div className="card-actions">
-                <a href="http://www.chartjs.org"><small className="text-muted">docs</small></a>
+                <a href="http://www.chartjs.org">
+                  <small className="text-muted">docs</small>
+                </a>
               </div>
-            </div>
-            <div className="card-block">
+            </CardHeader>
+            <CardBlock className="card-body">
               <div className="chart-wrapper">
-              <Bar data={bar}
-                options={{
+                <Bar data={bar}
+                     options={{
                   maintainAspectRatio: false
                 }}
-              />
+                />
               </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-header">
+            </CardBlock>
+          </Card>
+          <Card>
+            <CardHeader>
               Doughnut Chart
               <div className="card-actions">
-                <a href="http://www.chartjs.org"><small className="text-muted">docs</small></a>
+                <a href="http://www.chartjs.org">
+                  <small className="text-muted">docs</small>
+                </a>
               </div>
-            </div>
-            <div className="card-block">
+            </CardHeader>
+            <CardBlock className="card-body">
               <div className="chart-wrapper">
-                <Doughnut data={doughnut} />
+                <Doughnut data={doughnut}/>
               </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-header">
+            </CardBlock>
+          </Card>
+          <Card>
+            <CardHeader>
               Radar Chart
               <div className="card-actions">
-                <a href="http://www.chartjs.org"><small className="text-muted">docs</small></a>
+                <a href="http://www.chartjs.org">
+                  <small className="text-muted">docs</small>
+                </a>
               </div>
-            </div>
-            <div className="card-block">
+            </CardHeader>
+            <CardBlock className="card-body">
               <div className="chart-wrapper">
-                <Radar data={radar} />
+                <Radar data={radar}/>
               </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-header">
+            </CardBlock>
+          </Card>
+          <Card>
+            <CardHeader>
               Pie Chart
               <div className="card-actions">
-                <a href="http://www.chartjs.org"><small className="text-muted">docs</small></a>
+                <a href="http://www.chartjs.org">
+                  <small className="text-muted">docs</small>
+                </a>
               </div>
-            </div>
-            <div className="card-block">
+            </CardHeader>
+            <CardBlock className="card-body">
               <div className="chart-wrapper">
-                <Pie data={pie} />
+                <Pie data={pie}/>
               </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-header">
+            </CardBlock>
+          </Card>
+          <Card>
+            <CardHeader>
               Polar Area Chart
               <div className="card-actions">
-                <a href="http://www.chartjs.org"><small className="text-muted">docs</small></a>
+                <a href="http://www.chartjs.org">
+                  <small className="text-muted">docs</small>
+                </a>
               </div>
-            </div>
-            <div className="card-block">
+            </CardHeader>
+            <CardBlock className="card-body">
               <div className="chart-wrapper">
-                <Polar data={polar} />
+                <Polar data={polar}/>
               </div>
-            </div>
-          </div>
-        </div>
+            </CardBlock>
+          </Card>
+        </CardColumns>
       </div>
     )
   }

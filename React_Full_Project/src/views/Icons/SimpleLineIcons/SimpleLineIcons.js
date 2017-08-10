@@ -1,751 +1,752 @@
-import React, { Component } from 'react';
+import React, {Component} from "react";
+import {Row, Col, Card, CardHeader, CardBlock} from "reactstrap";
 
 class SimpleLineIcons extends Component {
   render() {
     return (
       <div className="animated fadeIn">
-        <div className="card card-default">
-          <div className="card-header">
+        <Card color="secondary" className="card-default">
+          <CardHeader>
             <i className="fa fa-picture-o"></i> Simple Line Icons
-          </div>
-          <div className="card-block">
-            <div className="row text-center">
+          </CardHeader>
+          <CardBlock className="card-body">
+            <Row className="text-center">
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-user icons font-2xl d-block mt-4"></i>icon-user
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-people icons font-2xl d-block mt-4"></i>icon-people
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-user-female icons font-2xl d-block mt-4"></i>icon-user-female
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-user-follow icons font-2xl d-block mt-4"></i>icon-user-follow
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-user-following icons font-2xl d-block mt-4"></i>icon-user-following
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-user-unfollow icons font-2xl d-block mt-4"></i>icon-user-unfollow
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-login icons font-2xl d-block mt-4"></i>icon-login
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-logout icons font-2xl d-block mt-4"></i>icon-logout
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-emotsmile icons font-2xl d-block mt-4"></i>icon-emotsmile
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-phone icons font-2xl d-block mt-4"></i>icon-phone
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-call-end icons font-2xl d-block mt-4"></i>icon-call-end
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-call-in icons font-2xl d-block mt-4"></i>icon-call-in
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-call-out icons font-2xl d-block mt-4"></i>icon-call-out
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-map icons font-2xl d-block mt-4"></i>icon-map
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-location-pin icons font-2xl d-block mt-4"></i>icon-location-pin
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-direction icons font-2xl d-block mt-4"></i>icon-direction
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-directions icons font-2xl d-block mt-4"></i>icon-directions
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-compass icons font-2xl d-block mt-4"></i>icon-compass
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-layers icons font-2xl d-block mt-4"></i>icon-layers
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-menu icons font-2xl d-block mt-4"></i>icon-menu
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-list icons font-2xl d-block mt-4"></i>icon-list
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-options-vertical icons font-2xl d-block mt-4"></i>icon-options-vertical
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-options icons font-2xl d-block mt-4"></i>icon-options
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-arrow-down icons font-2xl d-block mt-4"></i>icon-arrow-down
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-arrow-left icons font-2xl d-block mt-4"></i>icon-arrow-left
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-arrow-right icons font-2xl d-block mt-4"></i>icon-arrow-right
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-arrow-up icons font-2xl d-block mt-4"></i>icon-arrow-up
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-arrow-up-circle icons font-2xl d-block mt-4"></i>icon-arrow-up-circle
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-arrow-left-circle icons font-2xl d-block mt-4"></i>icon-arrow-left-circle
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-arrow-right-circle icons font-2xl d-block mt-4"></i>icon-arrow-right-circle
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-arrow-down-circle icons font-2xl d-block mt-4"></i>icon-arrow-down-circle
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-check icons font-2xl d-block mt-4"></i>icon-check
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-clock icons font-2xl d-block mt-4"></i>icon-clock
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-plus icons font-2xl d-block mt-4"></i>icon-plus
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-close icons font-2xl d-block mt-4"></i>icon-close
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-trophy icons font-2xl d-block mt-4"></i>icon-trophy
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-screen-smartphone icons font-2xl d-block mt-4"></i>icon-screen-smartphone
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-screen-desktop icons font-2xl d-block mt-4"></i>icon-screen-desktop
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-plane icons font-2xl d-block mt-4"></i>icon-plane
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-notebook icons font-2xl d-block mt-4"></i>icon-notebook
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-mustache icons font-2xl d-block mt-4"></i>icon-mustache
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-mouse icons font-2xl d-block mt-4"></i>icon-mouse
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-magnet icons font-2xl d-block mt-4"></i>icon-magnet
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-energy icons font-2xl d-block mt-4"></i>icon-energy
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-disc icons font-2xl d-block mt-4"></i>icon-disc
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-cursor icons font-2xl d-block mt-4"></i>icon-cursor
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-cursor-move icons font-2xl d-block mt-4"></i>icon-cursor-move
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-crop icons font-2xl d-block mt-4"></i>icon-crop
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-chemistry icons font-2xl d-block mt-4"></i>icon-chemistry
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-speedometer icons font-2xl d-block mt-4"></i>icon-speedometer
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-shield icons font-2xl d-block mt-4"></i>icon-shield
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-screen-tablet icons font-2xl d-block mt-4"></i>icon-screen-tablet
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-magic-wand icons font-2xl d-block mt-4"></i>icon-magic-wand
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-hourglass icons font-2xl d-block mt-4"></i>icon-hourglass
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-graduation icons font-2xl d-block mt-4"></i>icon-graduation
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-ghost icons font-2xl d-block mt-4"></i>icon-ghost
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-game-controller icons font-2xl d-block mt-4"></i>icon-game-controller
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-fire icons font-2xl d-block mt-4"></i>icon-fire
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-eyeglass icons font-2xl d-block mt-4"></i>icon-eyeglass
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-envelope-open icons font-2xl d-block mt-4"></i>icon-envelope-open
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-envelope-letter icons font-2xl d-block mt-4"></i>icon-envelope-letter
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-bell icons font-2xl d-block mt-4"></i>icon-bell
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-badge icons font-2xl d-block mt-4"></i>icon-badge
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-anchor icons font-2xl d-block mt-4"></i>icon-anchor
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-wallet icons font-2xl d-block mt-4"></i>icon-wallet
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-vector icons font-2xl d-block mt-4"></i>icon-vector
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-speech icons font-2xl d-block mt-4"></i>icon-speech
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-puzzle icons font-2xl d-block mt-4"></i>icon-puzzle
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-printer icons font-2xl d-block mt-4"></i>icon-printer
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-present icons font-2xl d-block mt-4"></i>icon-present
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-playlist icons font-2xl d-block mt-4"></i>icon-playlist
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-pin icons font-2xl d-block mt-4"></i>icon-pin
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-picture icons font-2xl d-block mt-4"></i>icon-picture
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-handbag icons font-2xl d-block mt-4"></i>icon-handbag
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-globe-alt icons font-2xl d-block mt-4"></i>icon-globe-alt
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-globe icons font-2xl d-block mt-4"></i>icon-globe
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-folder-alt icons font-2xl d-block mt-4"></i>icon-folder-alt
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-folder icons font-2xl d-block mt-4"></i>icon-folder
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-film icons font-2xl d-block mt-4"></i>icon-film
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-feed icons font-2xl d-block mt-4"></i>icon-feed
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-drop icons font-2xl d-block mt-4"></i>icon-drop
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-drawer icons font-2xl d-block mt-4"></i>icon-drawer
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-docs icons font-2xl d-block mt-4"></i>icon-docs
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-doc icons font-2xl d-block mt-4"></i>icon-doc
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-diamond icons font-2xl d-block mt-4"></i>icon-diamond
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-cup icons font-2xl d-block mt-4"></i>icon-cup
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-calculator icons font-2xl d-block mt-4"></i>icon-calculator
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-bubbles icons font-2xl d-block mt-4"></i>icon-bubbles
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-briefcase icons font-2xl d-block mt-4"></i>icon-briefcase
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-book-open icons font-2xl d-block mt-4"></i>icon-book-open
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-basket-loaded icons font-2xl d-block mt-4"></i>icon-basket-loaded
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-basket icons font-2xl d-block mt-4"></i>icon-basket
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-bag icons font-2xl d-block mt-4"></i>icon-bag
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-action-undo icons font-2xl d-block mt-4"></i>icon-action-undo
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-action-redo icons font-2xl d-block mt-4"></i>icon-action-redo
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-wrench icons font-2xl d-block mt-4"></i>icon-wrench
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-umbrella icons font-2xl d-block mt-4"></i>icon-umbrella
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-trash icons font-2xl d-block mt-4"></i>icon-trash
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-tag icons font-2xl d-block mt-4"></i>icon-tag
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-support icons font-2xl d-block mt-4"></i>icon-support
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-frame icons font-2xl d-block mt-4"></i>icon-frame
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-size-fullscreen icons font-2xl d-block mt-4"></i>icon-size-fullscreen
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-size-actual icons font-2xl d-block mt-4"></i>icon-size-actual
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-shuffle icons font-2xl d-block mt-4"></i>icon-shuffle
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-share-alt icons font-2xl d-block mt-4"></i>icon-share-alt
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-share icons font-2xl d-block mt-4"></i>icon-share
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-rocket icons font-2xl d-block mt-4"></i>icon-rocket
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-question icons font-2xl d-block mt-4"></i>icon-question
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-pie-chart icons font-2xl d-block mt-4"></i>icon-pie-chart
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-pencil icons font-2xl d-block mt-4"></i>icon-pencil
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-note icons font-2xl d-block mt-4"></i>icon-note
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-loop icons font-2xl d-block mt-4"></i>icon-loop
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-home icons font-2xl d-block mt-4"></i>icon-home
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-grid icons font-2xl d-block mt-4"></i>icon-grid
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-graph icons font-2xl d-block mt-4"></i>icon-graph
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-microphone icons font-2xl d-block mt-4"></i>icon-microphone
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-music-tone-alt icons font-2xl d-block mt-4"></i>icon-music-tone-alt
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-music-tone icons font-2xl d-block mt-4"></i>icon-music-tone
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-earphones-alt icons font-2xl d-block mt-4"></i>icon-earphones-alt
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-earphones icons font-2xl d-block mt-4"></i>icon-earphones
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-equalizer icons font-2xl d-block mt-4"></i>icon-equalizer
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-like icons font-2xl d-block mt-4"></i>icon-like
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-dislike icons font-2xl d-block mt-4"></i>icon-dislike
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-control-start icons font-2xl d-block mt-4"></i>icon-control-start
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-control-rewind icons font-2xl d-block mt-4"></i>icon-control-rewind
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-control-play icons font-2xl d-block mt-4"></i>icon-control-play
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-control-pause icons font-2xl d-block mt-4"></i>icon-control-pause
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-control-forward icons font-2xl d-block mt-4"></i>icon-control-forward
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-control-end icons font-2xl d-block mt-4"></i>icon-control-end
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-volume-1 icons font-2xl d-block mt-4"></i>icon-volume-1
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-volume-2 icons font-2xl d-block mt-4"></i>icon-volume-2
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-volume-off icons font-2xl d-block mt-4"></i>icon-volume-off
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-calendar icons font-2xl d-block mt-4"></i>icon-calendar
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-bulb icons font-2xl d-block mt-4"></i>icon-bulb
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-chart icons font-2xl d-block mt-4"></i>icon-chart
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-ban icons font-2xl d-block mt-4"></i>icon-ban
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-bubble icons font-2xl d-block mt-4"></i>icon-bubble
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-camrecorder icons font-2xl d-block mt-4"></i>icon-camrecorder
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-camera icons font-2xl d-block mt-4"></i>icon-camera
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-cloud-download icons font-2xl d-block mt-4"></i>icon-cloud-download
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-cloud-upload icons font-2xl d-block mt-4"></i>icon-cloud-upload
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-envelope icons font-2xl d-block mt-4"></i>icon-envelope
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-eye icons font-2xl d-block mt-4"></i>icon-eye
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-flag icons font-2xl d-block mt-4"></i>icon-flag
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-heart icons font-2xl d-block mt-4"></i>icon-heart
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-info icons font-2xl d-block mt-4"></i>icon-info
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-key icons font-2xl d-block mt-4"></i>icon-key
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-link icons font-2xl d-block mt-4"></i>icon-link
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-lock icons font-2xl d-block mt-4"></i>icon-lock
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-lock-open icons font-2xl d-block mt-4"></i>icon-lock-open
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-magnifier icons font-2xl d-block mt-4"></i>icon-magnifier
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-magnifier-add icons font-2xl d-block mt-4"></i>icon-magnifier-add
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-magnifier-remove icons font-2xl d-block mt-4"></i>icon-magnifier-remove
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-paper-clip icons font-2xl d-block mt-4"></i>icon-paper-clip
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-paper-plane icons font-2xl d-block mt-4"></i>icon-paper-plane
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-power icons font-2xl d-block mt-4"></i>icon-power
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-refresh icons font-2xl d-block mt-4"></i>icon-refresh
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-reload icons font-2xl d-block mt-4"></i>icon-reload
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-settings icons font-2xl d-block mt-4"></i>icon-settings
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-star icons font-2xl d-block mt-4"></i>icon-star
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-symbol-female icons font-2xl d-block mt-4"></i>icon-symbol-female
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-symbol-male icons font-2xl d-block mt-4"></i>icon-symbol-male
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-target icons font-2xl d-block mt-4"></i>icon-target
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-credit-card icons font-2xl d-block mt-4"></i>icon-credit-card
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-paypal icons font-2xl d-block mt-4"></i>icon-paypal
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-tumblr icons font-2xl d-block mt-4"></i>icon-social-tumblr
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-twitter icons font-2xl d-block mt-4"></i>icon-social-twitter
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-facebook icons font-2xl d-block mt-4"></i>icon-social-facebook
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-instagram icons font-2xl d-block mt-4"></i>icon-social-instagram
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-linkedin icons font-2xl d-block mt-4"></i>icon-social-linkedin
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-pinterest icons font-2xl d-block mt-4"></i>icon-social-pinterest
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-github icons font-2xl d-block mt-4"></i>icon-social-github
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-gplus icons font-2xl d-block mt-4"></i>icon-social-gplus
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-reddit icons font-2xl d-block mt-4"></i>icon-social-reddit
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-skype icons font-2xl d-block mt-4"></i>icon-social-skype
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-dribbble icons font-2xl d-block mt-4"></i>icon-social-dribbble
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-behance icons font-2xl d-block mt-4"></i>icon-social-behance
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-foursqare icons font-2xl d-block mt-4"></i>icon-social-foursqare
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-soundcloud icons font-2xl d-block mt-4"></i>icon-social-soundcloud
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-spotify icons font-2xl d-block mt-4"></i>icon-social-spotify
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-stumbleupon icons font-2xl d-block mt-4"></i>icon-social-stumbleupon
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-youtube icons font-2xl d-block mt-4"></i>icon-social-youtube
-              </div>
+              </Col>
 
-              <div className="col-6 col-sm-4 col-md-3">
+              <Col xs="6" sm="4" md="3">
                 <i className="icon-social-dropbox icons font-2xl d-block mt-4"></i>icon-social-dropbox
-              </div>
+              </Col>
 
-            </div>
-          </div>
-        </div>
+            </Row>
+          </CardBlock>
+        </Card>
       </div>
     )
   }

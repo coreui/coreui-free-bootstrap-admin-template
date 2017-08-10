@@ -1,48 +1,51 @@
-import React, { Component } from 'react';
+import React, {Component} from "react";
+import {Container, Row, Col, CardGroup, Card, CardBlock, Button, Input, InputGroup, InputGroupAddon} from "reactstrap";
+
 
 class Login extends Component {
   render() {
     return (
       <div className="app flex-row align-items-center">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-8">
-              <div className="card-group mb-0">
-                <div className="card p-4">
-                  <div className="card-block">
+        <Container>
+          <Row className="justify-content-center">
+            <Col md="8">
+              <CardGroup className="mb-0">
+                <Card className="p-4">
+                  <CardBlock className="card-body">
                     <h1>Login</h1>
                     <p className="text-muted">Sign In to your account</p>
-                    <div className="input-group mb-3">
-                      <span className="input-group-addon"><i className="icon-user"></i></span>
-                      <input type="text" className="form-control" placeholder="Username"/>
-                    </div>
-                    <div className="input-group mb-4">
-                      <span className="input-group-addon"><i className="icon-lock"></i></span>
-                      <input type="password" className="form-control" placeholder="Password"/>
-                    </div>
-                    <div className="row">
-                      <div className="col-6">
-                        <button type="button" className="btn btn-primary px-4">Login</button>
-                      </div>
-                      <div className="col-6 text-right">
-                        <button type="button" className="btn btn-link px-0">Forgot password?</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="card card-inverse card-primary py-5 d-md-down-none" style={{ width: 44 + '%' }}>
-                  <div className="card-block text-center">
+                    <InputGroup className="mb-3">
+                      <InputGroupAddon><i className="icon-user"></i></InputGroupAddon>
+                      <Input type="text" placeholder="Username"/>
+                    </InputGroup>
+                    <InputGroup className="mb-4">
+                      <InputGroupAddon><i className="icon-lock"></i></InputGroupAddon>
+                      <Input type="password" placeholder="Password"/>
+                    </InputGroup>
+                    <Row>
+                      <Col xs="6">
+                        <Button color="primary" className="px-4">Login</Button>
+                      </Col>
+                      <Col xs="6" className="text-right">
+                        <Button color="link" className="px-0">Forgot password?</Button>
+                      </Col>
+                    </Row>
+                  </CardBlock>
+                </Card>
+                <Card className="text-white bg-primary py-5 d-md-down-none" style={{ width: 44 + '%' }}>
+                  <CardBlock className="card-body text-center">
                     <div>
                       <h2>Sign up</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <button type="button" className="btn btn-primary active mt-3">Register Now!</button>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                      <Button color="primary" className="mt-3" active>Register Now!</Button>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                  </CardBlock>
+                </Card>
+              </CardGroup>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }

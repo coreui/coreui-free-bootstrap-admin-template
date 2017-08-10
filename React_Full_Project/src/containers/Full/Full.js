@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
-import { Link, Switch, Route, Redirect } from 'react-router-dom'
+import React, {Component} from 'react';
+import {Switch, Route, Redirect} from 'react-router-dom';
+import {Container} from 'reactstrap';
 import Header from '../../components/Header/';
 import Sidebar from '../../components/Sidebar/';
 import Breadcrumb from '../../components/Breadcrumb/';
 import Aside from '../../components/Aside/';
 import Footer from '../../components/Footer/';
-
-import Dashboard from '../../views/Dashboard/'
-import Charts from '../../views/Charts/'
-import Widgets from '../../views/Widgets/'
-import Buttons from '../../views/Components/Buttons/'
-import Cards from '../../views/Components/Cards/'
-import Forms from '../../views/Components/Forms/'
-import Modals from '../../views/Components/Modals/'
-import SocialButtons from '../../views/Components/SocialButtons/'
-import Switches from '../../views/Components/Switches/'
-import Tables from '../../views/Components/Tables/'
-import Tabs from '../../views/Components/Tabs/'
-import FontAwesome from '../../views/Icons/FontAwesome/'
-import SimpleLineIcons from '../../views/Icons/SimpleLineIcons/'
+import Dashboard from '../../views/Dashboard/';
+import Charts from '../../views/Charts/';
+import Widgets from '../../views/Widgets/';
+import Buttons from '../../views/Components/Buttons/';
+import Cards from '../../views/Components/Cards/';
+import Forms from '../../views/Components/Forms/';
+import Modals from '../../views/Components/Modals/';
+import SocialButtons from '../../views/Components/SocialButtons/';
+import Switches from '../../views/Components/Switches/';
+import Tables from '../../views/Components/Tables/';
+import Tabs from '../../views/Components/Tabs/';
+import FontAwesome from '../../views/Icons/FontAwesome/';
+import SimpleLineIcons from '../../views/Icons/SimpleLineIcons/';
 
 class Full extends Component {
   render() {
@@ -29,7 +29,7 @@ class Full extends Component {
           <Sidebar {...this.props}/>
           <main className="main">
             <Breadcrumb />
-            <div className="container-fluid">
+            <Container fluid>
               <Switch>
                 <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
                 <Route path="/components/buttons" name="Buttons" component={Buttons}/>
@@ -46,7 +46,7 @@ class Full extends Component {
                 <Route path="/charts" name="Charts" component={Charts}/>
                 <Redirect from="/" to="/dashboard"/>
               </Switch>
-            </div>
+            </Container>
           </main>
           <Aside />
         </div>

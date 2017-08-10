@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import { Link, Switch, Route, Redirect } from 'react-router-dom'
+import React, {Component} from 'react';
+import {Link, Switch, Route, Redirect} from 'react-router-dom'
+import {Container} from 'reactstrap';
 import Header from '../../components/Header/';
 import Sidebar from '../../components/Sidebar/';
 import Breadcrumb from '../../components/Breadcrumb/';
@@ -17,12 +18,12 @@ class Full extends Component {
           <Sidebar {...this.props}/>
           <main className="main">
             <Breadcrumb />
-            <div className="container-fluid">
+            <Container fluid>
               <Switch>
                 <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
                 <Redirect from="/" to="/dashboard"/>
               </Switch>
-            </div>
+            </Container>
           </main>
           <Aside />
         </div>
