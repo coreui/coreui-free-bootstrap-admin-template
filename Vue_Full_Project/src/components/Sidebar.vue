@@ -1,85 +1,63 @@
 <template>
   <div class="sidebar">
     <nav class="sidebar-nav">
+      <div slot="header"></div>
       <ul class="nav">
-        <li class="nav-item">
-          <router-link :to="'/dashboard'" class="nav-link"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></router-link>
-        </li>
-        <li class="nav-title">
-          UI Elements
-        </li>
-        <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/components'}" disabled>
-          <div class="nav-link nav-dropdown-toggle" @click="handleClick"><i class="icon-puzzle"></i> Components</div>
-          <ul class="nav-dropdown-items">
-            <li class="nav-item">
-              <router-link :to="'/components/buttons'" class="nav-link" exact><i class="icon-puzzle"></i> Buttons</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link :to="'/components/social-buttons'" class="nav-link" exact><i class="icon-puzzle"></i> Social Buttons</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link :to="'/components/cards'" class="nav-link" exact><i class="icon-puzzle"></i> Cards</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link :to="'/components/forms'" class="nav-link" exact><i class="icon-puzzle"></i> Forms</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link :to="'/components/modals'" class="nav-link" exact><i class="icon-puzzle"></i> Modals</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link :to="'/components/switches'" class="nav-link" exact><i class="icon-puzzle"></i> Switches</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link :to="'/components/tables'" class="nav-link" exact><i class="icon-puzzle"></i> Tables</router-link>
-            </li>
-          </ul>
-        </router-link>
-        <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/icons'}" disabled>
-          <div class="nav-link nav-dropdown-toggle" @click="handleClick"><i class="icon-star"></i> Icons</div>
-          <ul class="nav-dropdown-items">
-            <li class="nav-item">
-              <router-link :to="'/icons/font-awesome'" class="nav-link" exact><i class="icon-star"></i> Font Awesome</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link :to="'/icons/simple-line-icons'" class="nav-link" exact><i class="icon-star"></i> Simple Line Icons</router-link>
-            </li>
-          </ul>
-        </router-link>
-        <li class="nav-item">
-          <router-link :to="'/widgets'" class="nav-link" exact><i class="icon-calculator"></i> Widgets <span class="badge badge-info">NEW</span></router-link>
-        </li>
-        <li class="nav-item">
-          <router-link :to="'/charts'" class="nav-link" exact><i class="icon-pie-chart"></i> Charts</router-link>
-        </li>
-        <li class="divider"></li>
-        <li class="nav-title">
-          Extras
-        </li>
-        <li class="nav-item nav-dropdown">
-          <a class="nav-link nav-dropdown-toggle" href="#" @click="handleClick"><i class="icon-star"></i> Pages</a>
-          <ul class="nav-dropdown-items">
-            <li class="nav-item">
-              <router-link :to="'/pages/login'" class="nav-link" exact><i class="icon-star"></i> Login</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link :to="'/pages/register'" class="nav-link" exact><i class="icon-star"></i> Register</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link :to="'/pages/404'" class="nav-link" exact><i class="icon-star"></i> Error 404</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link :to="'/pages/500'" class="nav-link" exact><i class="icon-star"></i> Error 500</router-link>
-            </li>
-          </ul>
+        <li class="nav-item" v-for="(item, index) in navItems">
+          <template v-if="item.title">
+            <SidebarNavTitle :name="item.name"/>
+          </template>
+          <template v-else-if="item.divider">
+            <li class="divider"></li>
+          </template>
+          <template v-else>
+            <template v-if="item.children">
+              <SidebarNavDropdown :name="item.name" :url="item.url" :icon="item.icon">
+                <template v-for="(child, index) in item.children">
+                  <template v-if="child.children">
+                    <SidebarNavDropdown :name="child.name" :url="child.url" :icon="child.icon">
+                      <li class="nav-item" v-for="(child, index) in item.children">
+                        <SidebarNavLink :name="child.name" :url="child.url" :icon="child.icon" :badge="child.badge"/>
+                      </li>
+                    </SidebarNavDropdown>
+                  </template>
+                  <template v-else>
+                    <li class="nav-item">
+                      <SidebarNavLink :name="child.name" :url="child.url" :icon="child.icon" :badge="child.badge"/>
+                    </li>
+                  </template>
+                </template>
+              </SidebarNavDropdown>
+            </template>
+            <template v-else>
+              <SidebarNavLink :name="item.name" :url="item.url" :icon="item.icon" :badge="item.badge"/>
+            </template>
+          </template>
         </li>
       </ul>
+      <slot></slot>
+      <div slot="footer"></div>
     </nav>
   </div>
 </template>
 <script>
-
+import SidebarNavDropdown from './SidebarNavDropdown'
+import SidebarNavLink from './SidebarNavLink'
+import SidebarNavTitle from './SidebarNavTitle'
 export default {
   name: 'sidebar',
+  props: {
+    navItems: {
+      type: Array,
+      required: true,
+      default: () => []
+    }
+  },
+  components: {
+    SidebarNavDropdown,
+    SidebarNavLink,
+    SidebarNavTitle
+  },
   methods: {
     handleClick (e) {
       e.preventDefault()
