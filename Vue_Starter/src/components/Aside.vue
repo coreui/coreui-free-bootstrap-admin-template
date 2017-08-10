@@ -1,6 +1,6 @@
 <template>
-  <aside class="aside-menu px-2">
-    
+  <aside class="aside-menu">
+
   </aside>
 </template>
 

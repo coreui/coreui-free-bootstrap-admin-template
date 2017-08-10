@@ -1,28 +1,15 @@
 <template>
-  <navbar>
-    <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button" @click="mobileSidebarToggle">&#9776;</button>    <a class="navbar-brand" href="#"></a>
-    <ul class="nav navbar-nav d-md-down-none mr-auto">
-      <li class="nav-item">
-        <a class="nav-link navbar-toggler sidebar-toggler" href="#" @click="sidebarToggle">&#9776;</a>
-      </li>
-    </ul>
-  </navbar>
+  <header class="app-header navbar">
+    <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button" @click="mobileSidebarToggle">&#9776;</button>
+    <b-link class="navbar-brand" to="#"></b-link>
+    <button class="navbar-toggler sidebar-toggler d-md-down-none mr-auto" type="button" @click="sidebarMinimize">&#9776;</button>
+    <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" @click="asideToggle">&#9776;</button>
+  </header>
 </template>
 <script>
-
-import navbar from './Navbar'
-import { dropdown } from 'vue-strap'
-
 export default {
   name: 'header',
-  components: {
-    navbar,
-    dropdown
-  },
   methods: {
-    click () {
-      // do nothing
-    },
     sidebarToggle (e) {
       e.preventDefault()
       document.body.classList.toggle('sidebar-hidden')

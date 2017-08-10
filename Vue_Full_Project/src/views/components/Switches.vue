@@ -2,847 +2,299 @@
   <div class="animated fadeIn">
     <div class="row">
       <div class="col-md-12">
-        <div class="card">
-          <div class="card-header">
-            3d Switch
-          </div>
-          <div class="card-block">
-            <label class="switch switch-3d switch-primary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-3d switch-secondary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-3d switch-success">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-3d switch-warning">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-3d switch-info">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-3d switch-danger">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="3d Switch">
+          <c-switch type="3d" variant="primary" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="3d" variant="secondary" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="3d" variant="success" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="3d" variant="warning" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="3d" variant="info" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="3d" variant="danger" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch default
-          </div>
-          <div class="card-block">
-            <label class="switch switch-default switch-primary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-secondary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-success">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-warning">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-info">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-danger">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch default">
+          <c-switch type="default" variant="primary" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="secondary" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="success" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="warning" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="info" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="danger" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch default - pills
-          </div>
-          <div class="card-block">
-            <label class="switch switch-default switch-pill switch-primary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-secondary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-success">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-warning">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-info">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-danger">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch default - pills">
+          <c-switch type="default" variant="primary" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="secondary" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="success" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="warning" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="info" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="danger" :pill="true" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch outline
-          </div>
-          <div class="card-block">
-            <label class="switch switch-default switch-primary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-secondary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-success-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-warning-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-info-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-danger-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch outline">
+          <c-switch type="default" variant="primary-outline" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="secondary-outline" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="success-outline" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="warning-outline" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="info-outline" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="danger-outline" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch outline - pills
-          </div>
-          <div class="card-block">
-            <label class="switch switch-default switch-pill switch-primary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-secondary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-success-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-warning-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-info-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-danger-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch outline - pills">
+          <c-switch type="default" variant="primary-outline" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="secondary-outline" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="success-outline" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="warning-outline" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="info-outline" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="danger-outline" :pill="true" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch outline alternative
-          </div>
-          <div class="card-block">
-            <label class="switch switch-default switch-primary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-secondary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-success-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-warning-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-info-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-danger-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch outline alternative">
+          <c-switch type="default" variant="primary-outline-alt" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="secondary-outline-alt" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="success-outline-alt" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="warning-outline-alt" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="info-outline-alt" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="danger-outline-alt" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch outline alternative - pills
-          </div>
-          <div class="card-block">
-            <label class="switch switch-default switch-pill switch-primary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-secondary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-success-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-warning-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-info-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-default switch-pill switch-danger-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch outline alternative - pills">
+          <c-switch type="default" variant="primary-outline-alt" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="secondary-outline-alt" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="success-outline-alt" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="warning-outline-alt" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="info-outline-alt" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="default" variant="danger-outline-alt" :pill="true" :checked="true"/>
+        </b-card>
+      </div><!--/.col-->
+
+      <div class="col-md-6">
+        <b-card header="Switch with text">
+          <c-switch type="text" variant="primary" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="secondary" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="success" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="warning" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="info" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="danger" on="On" off="Off" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with text
-          </div>
-          <div class="card-block">
-            <label class="switch switch-text switch-primary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-secondary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-success">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-warning">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-info">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-danger">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch with text - pills">
+          <c-switch type="text" variant="primary" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="secondary" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="success" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="warning" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="info" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="danger" on="On" off="Off" :pill="true" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with text - pills
-          </div>
-          <div class="card-block">
-            <label class="switch switch-text switch-pill switch-primary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-secondary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-success">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-warning">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-info">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-danger">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch with text outline">
+          <c-switch type="text" variant="primary-outline" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="secondary-outline" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="success-outline" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="warning-outline" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="info-outline" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="danger-outline" on="On" off="Off" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with text outline
-          </div>
-          <div class="card-block">
-            <label class="switch switch-text switch-primary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-secondary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-success-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-warning-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-info-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-danger-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch with text outline - pills">
+          <c-switch type="text" variant="primary-outline" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="secondary-outline" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="success-outline" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="warning-outline" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="info-outline" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="danger-outline" on="On" off="Off" :pill="true" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with text outline - pills
-          </div>
-          <div class="card-block">
-            <label class="switch switch-text switch-pill switch-primary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-secondary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-success-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-warning-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-info-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-danger-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch with text outline alternative">
+          <c-switch type="text" variant="primary-outline-alt" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="secondary-outline-alt" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="success-outline-alt" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="warning-outline-alt" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="info-outline-alt" on="On" off="Off" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="danger-outline-alt" on="On" off="Off" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with text outline alternative
-          </div>
-          <div class="card-block">
-            <label class="switch switch-text switch-primary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-secondary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-success-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-warning-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-info-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-danger-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch with text outline alternative - pills">
+          <c-switch type="text" variant="primary-outline-alt" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="secondary-outline-alt" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="success-outline-alt" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="warning-outline-alt" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="info-outline-alt" on="On" off="Off" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="text" variant="danger-outline-alt" on="On" off="Off" :pill="true" :checked="true"/>
+        </b-card>
+      </div><!--/.col-->
+
+      <div class="col-md-6">
+        <b-card header="Switch with icon">
+          <c-switch type="icon" variant="primary" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="secondary" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="success" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="warning" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="info" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="danger" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with text outline alternative - pills
-          </div>
-          <div class="card-block">
-            <label class="switch switch-text switch-pill switch-primary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-secondary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-success-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-warning-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-info-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-text switch-pill switch-danger-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="On" data-off="Off"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch with icon - pills">
+          <c-switch type="icon" variant="primary" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="secondary" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="success" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="warning" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="info" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="danger" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with icon
-          </div>
-          <div class="card-block">
-            <label class="switch switch-icon switch-primary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-secondary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-success">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-warning">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-info">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-danger">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch with icon outline">
+          <c-switch type="icon" variant="primary-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="secondary-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="success-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="warning-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="info-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="danger-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with icon - pills
-          </div>
-          <div class="card-block">
-            <label class="switch switch-icon switch-pill switch-primary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-secondary">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-success">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-warning">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-info">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-danger">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch with icon outline - pills">
+          <c-switch type="icon" variant="primary-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="secondary-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="success-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="warning-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="info-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="danger-outline" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with icon outline
-          </div>
-          <div class="card-block">
-            <label class="switch switch-icon switch-primary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-secondary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-success-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-warning-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-info-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-danger-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch with icon outline alternative">
+          <c-switch type="icon" variant="primary-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="secondary-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="success-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="warning-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="info-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="danger-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with icon outline - pills
-          </div>
-          <div class="card-block">
-            <label class="switch switch-icon switch-pill switch-primary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-secondary-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-success-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-warning-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-info-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-danger-outline">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
+        <b-card header="Switch with icon outline alternative - pills">
+          <c-switch type="icon" variant="primary-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="secondary-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="success-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="warning-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="info-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+          &nbsp;&nbsp;&nbsp;
+          <c-switch type="icon" variant="danger-outline-alt" v-bind="{on: '\uf00c', off: '\uf00d'}" :pill="true" :checked="true"/>
+        </b-card>
       </div><!--/.col-->
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with icon outline alternative
-          </div>
-          <div class="card-block">
-            <label class="switch switch-icon switch-primary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-secondary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-success-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-warning-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-info-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-danger-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
-      </div><!--/.col-->
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Switch with icon outline alternative - pills
-          </div>
-          <div class="card-block">
-            <label class="switch switch-icon switch-pill switch-primary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-secondary-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-success-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-warning-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-info-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-            &nbsp;&nbsp;&nbsp;
-            <label class="switch switch-icon switch-pill switch-danger-outline-alt">
-              <input type="checkbox" class="switch-input" checked>
-              <span class="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
-              <span class="switch-handle"></span>
-            </label>
-          </div>
-        </div>
-      </div><!--/.col-->
+
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
             Sizes
           </div>
-          <div class="card-block p-0">
+          <div class="card-body p-0">
             <table class="table table-hover table-striped table-align-middle mb-0">
               <thead>
                 <th>Size</th>
@@ -855,14 +307,10 @@
                     Large
                   </td>
                   <td>
-                    <label class="switch switch-lg switch-3d switch-primary">
-                      <input type="checkbox" class="switch-input" checked>
-                      <span class="switch-label"></span>
-                      <span class="switch-handle"></span>
-                    </label>
+                    <c-switch type="3d" variant="primary" size="lg" :checked="true"/>
                   </td>
                   <td>
-                    Add following class <code>.switch-lg</code>
+                    Add following code <code>size="lg"</code>
                   </td>
                 </tr>
                 <tr>
@@ -870,11 +318,7 @@
                     Normal
                   </td>
                   <td>
-                    <label class="switch switch-3d switch-primary">
-                      <input type="checkbox" class="switch-input" checked>
-                      <span class="switch-label"></span>
-                      <span class="switch-handle"></span>
-                    </label>
+                    <c-switch type="3d" variant="primary" :checked="true"/>
                   </td>
                   <td>
                     -
@@ -885,14 +329,10 @@
                     Small
                   </td>
                   <td>
-                    <label class="switch switch-sm switch-3d switch-primary">
-                      <input type="checkbox" class="switch-input" checked>
-                      <span class="switch-label"></span>
-                      <span class="switch-handle"></span>
-                    </label>
+                    <c-switch type="3d" variant="primary" size="sm" :checked="true"/>
                   </td>
                   <td>
-                    Add following class <code>.switch-sm</code>
+                    Add following code <code>size="sm"</code>
                   </td>
                 </tr>
                 <tr>
@@ -900,14 +340,10 @@
                     Extra small
                   </td>
                   <td>
-                    <label class="switch switch-xs switch-3d switch-primary">
-                      <input type="checkbox" class="switch-input" checked>
-                      <span class="switch-label"></span>
-                      <span class="switch-handle"></span>
-                    </label>
+                    <c-switch type="3d" variant="primary" size="xs" :checked="true"/>
                   </td>
                   <td>
-                    Add following class <code>.switch-sm</code>
+                    Add following code <code>size="xs"</code>
                   </td>
                 </tr>
               </tbody>
@@ -920,7 +356,16 @@
 </template>
 
 <script>
+import cSwitch from '../../components/Switch'
 export default {
-  name: 'switches'
+  name: 'switches',
+  components: {
+    cSwitch
+  },
+  computed: {
+    icon (icon) {
+      return icon
+    }
+  }
 }
 </script>
