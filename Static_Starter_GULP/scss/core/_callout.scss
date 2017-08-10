@@ -44,42 +44,12 @@
   }
 }
 
-.callout-primary {
-  border-left-color: $brand-primary;
+@each $color, $value in $theme-colors {
+  &.callout-#{$color} {
+    border-left-color: $value;
 
-  h4 {
-    color: $brand-primary;
-  }
-}
-
-.callout-info {
-  border-left-color: $brand-info;
-
-  h4 {
-    color: $brand-info;
-  }
-}
-
-.callout-warning {
-  border-left-color: $brand-warning;
-
-  h4 {
-    color: $brand-warning;
-  }
-}
-
-.callout-danger {
-  border-left-color: $brand-danger;
-
-  h4 {
-    color: $brand-danger;
-  }
-}
-
-.callout-success {
-  border-left-color: $brand-success;
-
-  h4 {
-    color: $brand-success;
+    h4 {
+      color: $value;
+    }
   }
 }

@@ -220,6 +220,66 @@ app-root {
 }
 
 //
+// Breadcrumb
+//
+.breadcrumb-fixed {
+
+  .main {
+    $breadcrumb-height: 2 * $breadcrumb-padding-y + $font-size-base + 1.5 * $spacer;
+    padding-top: $breadcrumb-height;
+  }
+
+  .breadcrumb {
+    position: fixed;
+    z-index: $zindex-sticky - 2;
+    top: $navbar-height;
+    left: 0;
+    right: 0;
+  }
+
+  // if sidebar + main + aside
+  .main:nth-child(2) {
+    .breadcrumb {
+      left: $sidebar-width;
+      right: $aside-menu-width;
+    }
+  }
+
+  // if sidebar + main
+  .main:first-child {
+    .breadcrumb {
+      left: 0;
+      right: $aside-menu-width;
+    }
+  }
+
+  // if  main + aside
+  .main:last-child {
+    .breadcrumb {
+      right: 0;
+    }
+  }
+
+  &.sidebar-minimized {
+    .main .breadcrumb {
+      left: $sidebar-minimized-width;
+    }
+  }
+
+  &.sidebar-hidden, &.sidebar-off-canvas {
+    .main .breadcrumb {
+      left: 0;
+    }
+  }
+
+  &.aside-menu-hidden, &.aside-menu-off-canvas {
+    .main .breadcrumb {
+      right: 0;
+    }
+  }
+}
+
+//
 // Footer
 //
 .footer-fixed {
@@ -245,6 +305,9 @@ app-root {
 .main,
 .aside-menu {
   transition: margin-left $layout-transition-speed, margin-right $layout-transition-speed, width $layout-transition-speed, flex $layout-transition-speed;
+}
+.breadcrumb {
+  transition: left $layout-transition-speed, right $layout-transition-speed, width $layout-transition-speed;
 }
 
 //
@@ -311,6 +374,12 @@ app-root {
     margin-right: - $aside-menu-width;
   }
 
+  .sidebar-hidden {
+    .sidebar {
+      margin-left: - $mobile-sidebar-width;
+    }
+  }
+
   .sidebar-mobile-show {
 
     .sidebar {
@@ -325,6 +394,13 @@ app-root {
     .main {
       margin-right: - $mobile-sidebar-width !important;
       margin-left: $mobile-sidebar-width !important;
+    }
+  }
+
+  .breadcrumb-fixed {
+    .main .breadcrumb {
+      left: 0 !important;
+      right: 0 !important;
     }
   }
 }

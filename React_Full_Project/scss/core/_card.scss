@@ -1,11 +1,26 @@
 .card {
   margin-bottom: 1.5 * $spacer;
+
+  // Cards with color accent
+  @each $color, $value in $theme-colors {
+    &.bg-#{$color} {
+      border-color: darken($value, 12.5%);
+      .card-header {
+        background-color: darken($value, 3%);
+        border-color: darken($value, 12.5%);
+      }
+    }
+  }
+}
+
+.text-white .text-muted {
+  color: rgba(255,255,255,.6)!important
 }
 
 .card-header {
 
   .icon-bg {
-    display: inline-block;
+    display: inline-body;
     padding: $card-spacer-y $card-spacer-x !important;
     margin-top: -$card-spacer-y;
     margin-right: $card-spacer-x;
@@ -43,14 +58,6 @@
     color: #fff;
   }
 
-  @each $variant, $color in (primary: $brand-primary, secondary: $gray-lighter, success: $brand-success, info: $brand-info, warning: $brand-warning, danger: $brand-danger) {
-    &.card-header-#{$variant} {
-      margin: -1px -1px 0;
-      background: $color;
-      border-bottom: 1px solid $color;
-    }
-  }
-
   .btn {
     margin-top: - $input-btn-padding-y;
   }
@@ -79,41 +86,8 @@
   }
 }
 
-
-//
-// Background variations
-//
-
-@mixin card-variant($color) {
-  background-color: $color;
-
-  .card-header {
-    border-color: darken($color,5%);
-  }
-
-  .card-header, .card-footer {
-    background-color: darken($color,5%);
-    //border: 0;
-  }
-}
-
-@each $variant, $color in (primary: $brand-primary, secondary: $gray-lighter, success: $brand-success, info: $brand-info, warning: $brand-warning, danger: $brand-danger) {
-  .card-#{$variant} {
-    @include card-variant($color)
-  }
-}
-
-.card-inverse {
-  color: #fff;
-
-  .text-muted {
-    color: rgba(255,255,255,.6) !important;
-  }
-
-}
-
 [class*="card-outline-"] {
-  .card-block {
+  .card-body {
     background: #fff !important;
   }
 
@@ -126,23 +100,10 @@
 }
 
 // Cards with color accent
-.card-accent-primary {
-  @include card-accent-variant($btn-primary-bg);
-}
-.card-accent-secondary {
-  @include card-accent-variant($btn-secondary-border);
-}
-.card-accent-info {
-  @include card-accent-variant($btn-info-bg);
-}
-.card-accent-success {
-  @include card-accent-variant($btn-success-bg);
-}
-.card-accent-warning {
-  @include card-accent-variant($btn-warning-bg);
-}
-.card-accent-danger {
-  @include card-accent-variant($btn-danger-bg);
+@each $color, $value in $theme-colors {
+  .card-accent-#{$color} {
+    @include card-accent-variant($value);
+  }
 }
 
 // Card Actions
@@ -174,12 +135,12 @@
       }
 
       [class^="icon-"], [class*=" icon-"] {
-        display: inline-block;
+        display: inline-body;
         vertical-align: middle;
       }
 
       i {
-        display: inline-block;
+        display: inline-body;
         transition: .4s;
       }
 
@@ -205,8 +166,8 @@
 
 .card-full {
   margin-top: - $spacer;
-  margin-right: - $grid-gutter-width-base / 2;
-  margin-left: - $grid-gutter-width-base / 2;
+  margin-right: - $grid-gutter-width / 2;
+  margin-left: - $grid-gutter-width / 2;
   border: 0;
   border-bottom: $card-border-width solid $border-color;
 }
@@ -228,5 +189,5 @@
 
 .card-placeholder {
   background: rgba(0,0,0,.025);
-  border: 1px dashed $gray-light;
+  border: 1px dashed $gray-300;
 }

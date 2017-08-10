@@ -15,7 +15,7 @@
 // temp fix for Vue-Strap
 
 // Open state for the dropdown
-.open {
+.open, .show {
   // Show the menu
   > .dropdown-menu {
     display: block;
@@ -27,6 +27,11 @@
   }
 }
 
+//
+.modal-open .modal {
+  display: block;
+}
+
 // navbar dropdown fix
 .navbar .dropdown-toggle {
   @extend .nav-link;
@@ -35,4 +40,8 @@
     height: $navbar-height - 20px;
     margin: 0 10px;
   }
+}
+
+.card-block {
+  @extend .card-body;
 }

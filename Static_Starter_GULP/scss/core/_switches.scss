@@ -43,7 +43,7 @@
     font-weight: 600;
     text-transform: uppercase;
     @if $type == ddd {
-      background-color: $gray-lightest;
+      background-color: $gray-100;
     } @else {
       background-color: #fff;
     }
@@ -64,7 +64,7 @@
     }
     .switch-label::before {
       right: 1px;
-      color: $gray-lighter;
+      color: $gray-200;
       content: attr(data-off);
     }
     .switch-label::after {
@@ -285,17 +285,17 @@ $switch-icon-xs-font-size: 7px;
   }
 }
 
-@each $variant, $color in (primary: $brand-primary, secondary: $gray-lighter, success: $brand-success, info: $brand-info, warning: $brand-warning, danger: $brand-danger) {
+@each $color, $value in $theme-colors {
   //normal style
-  .switch-#{$variant} {
-    @include switch-variant($color);
+  .switch-#{$color} {
+    @include switch-variant($value);
   }
   //outline style
-  .switch-#{$variant}-outline {
-    @include switch-outline-variant($color);
+  .switch-#{$color}-outline {
+    @include switch-outline-variant($value);
   }
   //outline alternative style
-  .switch-#{$variant}-outline-alt {
-    @include switch-outline-alt-variant($color);
+  .switch-#{$color}-outline-alt {
+    @include switch-outline-alt-variant($value);
   }
 }
