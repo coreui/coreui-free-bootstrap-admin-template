@@ -2,991 +2,851 @@
   <div class="animated fadeIn">
     <div class="row">
       <div class="col-sm-6">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             <strong>Credit Card</strong> <small>Form</small>
           </div>
-          <div class="card-block">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                </div>
-              </div>
-            </div><!--/.row-->
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="form-group">
-                  <label for="ccnumber">Credit Card Number</label>
-                  <input type="text" class="form-control" id="ccnumber" placeholder="0000 0000 0000 0000">
-                </div>
-              </div>
-            </div><!--/.row-->
-            <div class="row">
-              <div class="form-group col-sm-4">
-                <label for="ccmonth">Month</label>
-                <select class="form-control" id="ccmonth">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                  <option>11</option>
-                  <option>12</option>
-                </select>
-              </div>
-              <div class="form-group col-sm-4">
-                <label for="ccyear">Year</label>
-                <select class="form-control" id="ccyear">
-                  <option>2014</option>
-                  <option>2015</option>
-                  <option>2016</option>
-                  <option>2017</option>
-                  <option>2018</option>
-                  <option>2019</option>
-                  <option>2020</option>
-                  <option>2021</option>
-                  <option>2022</option>
-                  <option>2023</option>
-                  <option>2024</option>
-                  <option>2025</option>
-                </select>
-              </div>
-              <div class="col-sm-4">
-                <div class="form-group">
-                  <label for="cvv">CVV/CVC</label>
-                  <input type="text" class="form-control" id="cvv" placeholder="123">
-                </div>
-              </div>
-            </div><!--/.row-->
-          </div>
-        </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <b-form-fieldset label="Name">
+                <b-form-input type="text" id="name" placeholder="Enter your name"></b-form-input>
+              </b-form-fieldset>
+            </div>
+          </div><!--/.row-->
+          <div class="row">
+            <div class="col-sm-12">
+              <b-form-fieldset label="Credit Card Number">
+                <b-form-input type="text" id="ccnumber" placeholder="0000 0000 0000 0000"></b-form-input>
+              </b-form-fieldset>
+            </div>
+          </div><!--/.row-->
+          <div class="row">
+            <div class="col-sm-4">
+              <b-form-fieldset label="Month">
+                <b-form-select
+                  :plain="true"
+                  :options="[1,2,3,4,5,6,7,8,9,10,11,12]">
+                </b-form-select>
+              </b-form-fieldset>
+            </div><!--/.col-->
+            <div class="col-sm-4">
+              <b-form-fieldset label="Year">
+                <b-form-select
+                  :plain="true"
+                  :options="[2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025]">
+                </b-form-select>
+              </b-form-fieldset>
+            </div><!--/.col-->
+            <div class="col-sm-4">
+              <b-form-fieldset label="CVV/CVC">
+                <b-form-input type="text" id="cvv" placeholder="123"></b-form-input>
+              </b-form-fieldset>
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </b-card>
       </div><!--/.col-->
       <div class="col-sm-6">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             <strong>Company</strong> <small>Form</small>
           </div>
-          <div class="card-block">
-            <div class="form-group">
-              <label for="company">Company</label>
-              <input type="text" class="form-control" id="company" placeholder="Enter your company name">
-            </div>
-
-            <div class="form-group">
-              <label for="vat">VAT</label>
-              <input type="text" class="form-control" id="vat" placeholder="PL1234567890">
-            </div>
-            <div class="form-group">
-              <label for="street">Street</label>
-              <input type="text" class="form-control" id="street" placeholder="Enter street name">
-            </div>
-            <div class="row">
-              <div class="form-group col-sm-8">
-                <label for="city">City</label>
-                <input type="text" class="form-control" id="city" placeholder="Enter your city">
-              </div>
-              <div class="form-group col-sm-4">
-                <label for="postal-code">Postal Code</label>
-                <input type="text" class="form-control" id="postal-code" placeholder="Postal Code">
-              </div>
-            </div><!--/.row-->
-            <div class="form-group">
-              <label for="country">Country</label>
-              <input type="text" class="form-control" id="country" placeholder="Country name">
-            </div>
-          </div>
-        </div>
+          <b-form-fieldset label="Company">
+            <b-form-input type="text" id="company" placeholder="Enter your company name"></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset label="VAT">
+            <b-form-input type="text" id="vat" placeholder="PL1234567890"></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset label="Street">
+            <b-form-input type="text" id="street" placeholder="Enter street name"></b-form-input>
+          </b-form-fieldset>
+          <div class="row">
+            <div class="col-sm-8">
+              <b-form-fieldset label="City">
+                <b-form-input type="text" id="city" placeholder="Enter your city"></b-form-input>
+              </b-form-fieldset>
+            </div><!--/.col-->
+            <div class="col-sm-4">
+              <b-form-fieldset label="Postal Code">
+                <b-form-input type="text" id="postal-code" placeholder="Postal Code"></b-form-input>
+              </b-form-fieldset>
+            </div><!--/.col-->
+          </div><!--/.row-->
+          <b-form-fieldset label="Country">
+            <b-form-input type="text" id="country" placeholder="Country name"></b-form-input>
+          </b-form-fieldset>
+        </b-card>
       </div><!--/.col-->
     </div><!--/.row-->
     <div class="row">
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             <strong>Basic Form</strong> Elements
           </div>
-          <div class="card-block">
-            <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label">Static</label>
-                <div class="col-md-9">
-                  <p class="form-control-static">Username</p>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="text-input">Text Input</label>
-                <div class="col-md-9">
-                  <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Text">
-                  <span class="help-block">This is a help text</span>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="email-input">Email Input</label>
-                <div class="col-md-9">
-                  <input type="email" id="email-input" name="email-input" class="form-control" placeholder="Enter Email">
-                  <span class="help-block">Please enter your email</span>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="password-input">Password</label>
-                <div class="col-md-9">
-                  <input type="password" id="password-input" name="password-input" class="form-control" placeholder="Password">
-                  <span class="help-block">Please enter a complex password</span>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="disabled-input">Disabled Input</label>
-                <div class="col-md-9">
-                  <input type="text" id="disabled-input" name="disabled-input" class="form-control" placeholder="Disabled" disabled>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="textarea-input">Textarea</label>
-                <div class="col-md-9">
-                  <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="Content.."></textarea>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="select">Select</label>
-                <div class="col-md-9">
-                  <select id="select" name="select" class="form-control">
-                    <option value="0">Please select</option>
-                    <option value="1">Option #1</option>
-                    <option value="2">Option #2</option>
-                    <option value="3">Option #3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="select">Select Large</label>
-                <div class="col-md-9">
-                  <select id="select" name="select" class="form-control form-control-lg">
-                    <option value="0">Please select</option>
-                    <option value="1">Option #1</option>
-                    <option value="2">Option #2</option>
-                    <option value="3">Option #3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="select">Select Small</label>
-                <div class="col-md-9">
-                  <select id="select" name="select" class="form-control form-control-sm">
-                    <option value="0">Please select</option>
-                    <option value="1">Option #1</option>
-                    <option value="2">Option #2</option>
-                    <option value="3">Option #3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="select">Disabled Select</label>
-                <div class="col-md-9">
-                  <select id="disabledSelect" class="form-control" disabled>
-                    <option value="0">Please select</option>
-                    <option value="1">Option #1</option>
-                    <option value="2">Option #2</option>
-                    <option value="3">Option #3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="multiple-select">Multiple select</label>
-                <div class="col-md-9">
-                  <select id="multiple-select" name="multiple-select" class="form-control" size="5" multiple>
-                    <option value="1">Option #1</option>
-                    <option value="2">Option #2</option>
-                    <option value="3">Option #3</option>
-                    <option value="4">Option #4</option>
-                    <option value="5">Option #5</option>
-                    <option value="6">Option #6</option>
-                    <option value="7">Option #7</option>
-                    <option value="8">Option #8</option>
-                    <option value="9">Option #9</option>
-                    <option value="10">Option #10</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label">Radios</label>
-                <div class="col-md-9">
-                  <div class="radio">
-                    <label for="radio1">
-                      <input type="radio" id="radio1" name="radios" value="option1"> Option 1
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label for="radio2">
-                      <input type="radio" id="radio2" name="radios" value="option2"> Option 2
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label for="radio3">
-                      <input type="radio" id="radio3" name="radios" value="option3"> Option 3
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label">Inline Radios</label>
-                <div class="col-md-9">
-                  <label class="radio-inline" for="inline-radio1">
-                    <input type="radio" id="inline-radio1" name="inline-radios" value="option1"> One
-                  </label>
-                  <label class="radio-inline" for="inline-radio2">
-                    <input type="radio" id="inline-radio2" name="inline-radios" value="option2"> Two
-                  </label>
-                  <label class="radio-inline" for="inline-radio3">
-                    <input type="radio" id="inline-radio3" name="inline-radios" value="option3"> Three
-                  </label>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label">Checkboxes</label>
-                <div class="col-md-9">
-                  <div class="checkbox">
-                    <label for="checkbox1">
-                      <input type="checkbox" id="checkbox1" name="checkbox1" value="option1"> Option 1
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label for="checkbox2">
-                      <input type="checkbox" id="checkbox2" name="checkbox2" value="option2"> Option 2
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label for="checkbox3">
-                      <input type="checkbox" id="checkbox3" name="checkbox3" value="option3"> Option 3
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label">Inline Checkboxes</label>
-                <div class="col-md-9">
-                  <label class="checkbox-inline" for="inline-checkbox1">
-                    <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1">One
-                  </label>
-                  <label class="checkbox-inline" for="inline-checkbox2">
-                    <input type="checkbox" id="inline-checkbox2" name="inline-checkbox2" value="option2">Two
-                  </label>
-                  <label class="checkbox-inline" for="inline-checkbox3">
-                    <input type="checkbox" id="inline-checkbox3" name="inline-checkbox3" value="option3">Three
-                  </label>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="file-input">File input</label>
-                <div class="col-md-9">
-                  <input type="file" id="file-input" name="file-input">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="file-multiple-input">Multiple File input</label>
-                <div class="col-md-9">
-                  <input type="file" id="file-multiple-input" name="file-multiple-input" multiple>
-                </div>
-              </div>
-            </form>
+          <b-form-fieldset
+            description="Let us know your full name."
+            label="Enter your name"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-input type="text"></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Static"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-input-static type="text" value="Username"></b-form-input-static>
+          </b-form-fieldset>
+          <b-form-fieldset
+            description="This is a help text"
+            label="Text Input"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-input type="text" placeholder="Text"></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset
+            description="Please enter your email"
+            label="Email Input"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-input type="email" placeholder="Enter your email"></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset
+            description="Please enter a complex password"
+            label="Password Input"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-input type="password" placeholder="Enter your password"></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Disabled Input"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-input type="text" :disabled="true" placeholder="Disabled"></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Textarea"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-input :textarea="true" :rows="9" placeholder="Content.."></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Select"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-select
+              :plain="true"
+              :options="['Please select','Option 1', 'Option 2', 'Option 3']"
+              value="Please select">
+            </b-form-select>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Select large"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-select
+              size="lg"
+              :plain="true"
+              :options="['Please select','Option 1', 'Option 2', 'Option 3']"
+              value="Please select">
+            </b-form-select>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Select small"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-select
+              size="sm"
+              :plain="true"
+              :options="['Please select','Option 1', 'Option 2', 'Option 3']"
+              value="Please select">
+            </b-form-select>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Disabled select"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-select
+              :plain="true"
+              :options="['Please select','Option 1', 'Option 2', 'Option 3']"
+              :disabled="true"
+              value="Please select">
+            </b-form-select>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Select"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-select
+              :plain="true"
+              :multiple="true"
+              :options="[
+                {
+                  text: 'Please select some item',
+                  value: null
+                },
+                {
+                  text: 'This is First option',
+                  value: 'a'
+                }, {
+                  text: 'Default Selected Option',
+                  value: 'b'
+                }, {
+                  text: 'This is another option',
+                  value: 'c'
+                }, {
+                  text: 'This one is disabled',
+                  value: 'd',
+                  disabled: true
+                }]"
+              :value="[null,'c']">
+            </b-form-select>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Radios"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-radio
+              :plain="true"
+              :options="[
+                {text: 'Option 1 ',value: '1'},
+                {text: 'Option 2 ',value: '2'},
+                {text: 'Option 3 ',value: '3'}
+              ]"
+              value="1"
+              stacked></b-form-radio>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Radios - custom"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-radio
+              :options="[
+                {text: 'Option 1',value: '1'},
+                {text: 'Option 2',value: '2'},
+                {text: 'Option 3',value: '3'}
+              ]"
+              value="1"
+              stacked></b-form-radio>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Inline radios"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-radio
+              :plain="true"
+              :options="[
+                {text: 'Option 1 ',value: '1'},
+                {text: 'Option 2 ',value: '2'},
+                {text: 'Option 3 ',value: '3'}
+              ]"
+              value="1"></b-form-radio>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Inline radios - custom"
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-radio
+              :options="[
+                {text: 'Option 1',value: '1'},
+                {text: 'Option 2',value: '2'},
+                {text: 'Option 3',value: '3'}
+              ]"
+              value="1"></b-form-radio>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Checkboxes"
+            :label-cols="3"
+            :horizontal="true">
+              <b-form-checkbox :plain="true" value="1">Option 1</b-form-checkbox><br>
+              <b-form-checkbox :plain="true" value="2">Option 2</b-form-checkbox><br>
+              <b-form-checkbox :plain="true" value="3">Option 3</b-form-checkbox><br>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Inline checkboxes"
+            :label-cols="3"
+            :horizontal="true">
+              <b-form-checkbox :plain="true" value="1">Option 1</b-form-checkbox>
+              <b-form-checkbox :plain="true" value="2">Option 2</b-form-checkbox>
+              <b-form-checkbox :plain="true" value="3">Option 3</b-form-checkbox>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Checkboxes - custom"
+            :label-cols="3"
+            :horizontal="true">
+              <b-form-checkbox value="1">Option 1</b-form-checkbox><br>
+              <b-form-checkbox value="2">Option 2</b-form-checkbox><br>
+              <b-form-checkbox value="3">Option 3</b-form-checkbox><br>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Inline checkboxes - custom"
+            :label-cols="3"
+            :horizontal="true">
+              <b-form-checkbox value="1">Option 1</b-form-checkbox>
+              <b-form-checkbox value="2">Option 2</b-form-checkbox>
+              <b-form-checkbox value="3">Option 3</b-form-checkbox>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="File input"
+            :label-cols="3"
+            :horizontal="true">
+              <b-form-file :plain="true"></b-form-file>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Multiple file input"
+            :label-cols="3"
+            :horizontal="true">
+              <b-form-file :plain="true" :multiple="true"></b-form-file>
+          </b-form-fieldset>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="primary"><i class="fa fa-dot-circle-o"></i> Submit</b-button>
+            <b-button type="reset" size="sm" variant="danger"><i class="fa fa-ban"></i> Reset</b-button>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
+        </b-card>
+        <b-card>
+          <div slot="header">
             <strong>Inline</strong> Form
           </div>
-          <div class="card-block">
-            <form action="" method="post" class="form-inline">
-              <div class="form-group">
-                <label for="exampleInputName2">Name</label>
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail2">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-              </div>
-            </form>
+          <!-- Bootstrap Vue has some problems with Inline forms that's why we use some standard bootstrap classes -->
+          <b-form :inline="true">
+            <div class="form-group">
+              <label>Name</label>
+              <b-form-input type="text" placeholder="Jane Doe"></b-form-input>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <b-form-input type="email" placeholder="ane.doe@example.com"></b-form-input>
+            </div>
+          </b-form>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="primary"><i class="fa fa-dot-circle-o"></i> Submit</b-button>
+            <b-button type="reset" size="sm" variant="danger"><i class="fa fa-ban"></i> Reset</b-button>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
-          </div>
-        </div>
+        </b-card>
       </div>
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             <strong>Horizontal</strong> Form
           </div>
-          <div class="card-block">
-            <form action="" method="post" class="form-horizontal">
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="hf-email">Email</label>
-                <div class="col-md-9">
-                  <input type="email" id="hf-email" name="hf-email" class="form-control" placeholder="Enter Email..">
-                  <span class="help-block">Please enter your email</span>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 form-control-label" for="hf-password">Password</label>
-                <div class="col-md-9">
-                  <input type="password" id="hf-password" name="hf-password" class="form-control" placeholder="Enter Password..">
-                  <span class="help-block">Please enter your password</span>
-                </div>
-              </div>
-            </form>
+          <b-form-fieldset
+            label="Email"
+            description="Please enter your email."
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-input type="email" placeholder="Enter Email.."></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Password"
+            description="Please enter your password."
+            :label-cols="3"
+            :horizontal="true">
+            <b-form-input type="email" placeholder="Enter Password.."></b-form-input>
+          </b-form-fieldset>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="primary"><i class="fa fa-dot-circle-o"></i> Submit</b-button>
+            <b-button type="reset" size="sm" variant="danger"><i class="fa fa-ban"></i> Reset</b-button>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
+        </b-card>
+        <b-card>
+          <div slot="header">
             <strong>Normal</strong> Form
           </div>
-          <div class="card-block">
-            <form action="" method="post">
-              <div class="form-group">
-                <label for="nf-email">Email</label>
-                <input type="email" id="nf-email" name="nf-email" class="form-control" placeholder="Enter Email..">
-                <span class="help-block">Please enter your email</span>
-              </div>
-              <div class="form-group">
-                <label for="nf-password">Password</label>
-                <input type="password" id="nf-password" name="nf-password" class="form-control" placeholder="Enter Password..">
-                <span class="help-block">Please enter your password</span>
-              </div>
-            </form>
+          <b-form-fieldset
+            label="Email"
+            description="Please enter your email.">
+            <b-form-input type="email" placeholder="Enter Email.."></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Password"
+            description="Please enter your password.">
+            <b-form-input type="email" placeholder="Enter Password.."></b-form-input>
+          </b-form-fieldset>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="primary"><i class="fa fa-dot-circle-o"></i> Submit</b-button>
+            <b-button type="reset" size="sm" variant="danger"><i class="fa fa-ban"></i> Reset</b-button>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
+        </b-card>
+        <b-card :no-block="true">
+          <div slot="header">
             Input <strong>Grid</strong>
           </div>
-          <div class="card-block">
-            <form action="" method="post" class="form-horizontal">
-
-              <div class="form-group row">
-                <div class="col-sm-3">
-                  <input type="text" class="form-control" placeholder=".col-sm-3">
-                </div>
+          <div class="card-body">
+            <div class="form-group row">
+              <div class="col-sm-3">
+                <b-form-input type="text" placeholder=".col-sm-3"></b-form-input>
               </div>
-              <div class="form-group row">
-                <div class="col-sm-4">
-                  <input type="text" class="form-control" placeholder=".col-sm-4">
-                </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-4">
+                <b-form-input type="text" placeholder=".col-sm-4"></b-form-input>
               </div>
-              <div class="form-group row">
-                <div class="col-sm-5">
-                  <input type="text" class="form-control" placeholder=".col-sm-5">
-                </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-5">
+                <b-form-input type="text" placeholder=".col-sm-5"></b-form-input>
               </div>
-              <div class="form-group row">
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" placeholder=".col-sm-6">
-                </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <b-form-input type="text" placeholder=".col-sm-6"></b-form-input>
               </div>
-              <div class="form-group row">
-                <div class="col-sm-7">
-                  <input type="text" class="form-control" placeholder=".col-sm-7">
-                </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-7">
+                <b-form-input type="text" placeholder=".col-sm-7"></b-form-input>
               </div>
-              <div class="form-group row">
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" placeholder=".col-sm-8">
-                </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-8">
+                <b-form-input type="text" placeholder=".col-sm-8"></b-form-input>
               </div>
-              <div class="form-group row">
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" placeholder=".col-sm-9">
-                </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-9">
+                <b-form-input type="text" placeholder=".col-sm-9"></b-form-input>
               </div>
-              <div class="form-group row">
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder=".col-sm-10">
-                </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <b-form-input type="text" placeholder=".col-sm-10"></b-form-input>
               </div>
-              <div class="form-group row">
-                <div class="col-sm-11">
-                  <input type="text" class="form-control" placeholder=".col-sm-11">
-                </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-11">
+                <b-form-input type="text" placeholder=".col-sm-11"></b-form-input>
               </div>
-              <div class="form-group row">
-                <div class="col-sm-12">
-                  <input type="text" class="form-control" placeholder=".col-sm-12">
-                </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <b-form-input type="text" placeholder=".col-sm-12"></b-form-input>
               </div>
-            </form>
+            </div>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-user"></i> Login</button>
-            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="primary"><i class="fa fa-user"></i> Login</b-button>
+            <b-button type="reset" size="sm" variant="danger"><i class="fa fa-ban"></i> Reset</b-button>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
+        </b-card>
+        <b-card>
+          <div slot="header">
             Input <strong>Sizes</strong>
           </div>
-          <div class="card-block">
-            <form action="" method="post" class="form-horizontal">
-              <div class="form-group row">
-                <label class="col-sm-5 form-control-label" for="input-small">Small Input</label>
-                <div class="col-sm-6">
-                  <input type="text" id="input-small" name="input-small" class="form-control form-control-sm" placeholder=".form-control-sm">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-sm-5 form-control-label" for="input-normal">Normal Input</label>
-                <div class="col-sm-6">
-                  <input type="text" id="input-normal" name="input-normal" class="form-control" placeholder="Normal">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-sm-5 form-control-label" for="input-large">Large Input</label>
-                <div class="col-sm-6">
-                  <input type="text" id="input-large" name="input-large" class="form-control form-control-lg" placeholder=".form-control-lg">
-                </div>
-              </div>
-            </form>
+          <b-form-fieldset
+            label="Small input"
+            :label-cols="5"
+            :horizontal="true">
+            <b-form-input type="text" size="sm" placeholder="size='sm'"></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Normal  input"
+            :label-cols="5"
+            :horizontal="true">
+            <b-form-input type="text" placeholder="normal"></b-form-input>
+          </b-form-fieldset>
+          <b-form-fieldset
+            label="Large input"
+            :label-cols="5"
+            :horizontal="true">
+            <b-form-input type="text" size="lg" placeholder="size='lg'"></b-form-input>
+          </b-form-fieldset>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="primary"><i class="fa fa-dot-circle-o"></i> Submit</b-button>
+            <b-button type="reset" size="sm" variant="danger"><i class="fa fa-ban"></i> Reset</b-button>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+        </b-card>
+        <b-card :no-block="true">
+          <div slot="header">
+            <strong>Validation states</strong> Form
           </div>
-        </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class="form-form-control-label" for="inputSuccess1">Input with success</label>
+              <input type="text" class="form-control is-valid" id="inputSuccess1">
+            </div>
+            <div class="form-group">
+              <label class="form-form-control-label" for="inputError1">Input with error</label>
+              <input type="text" class="form-control is-invalid" id="inputError1">
+              <div class="invalid-feedback">
+                Please provide a valid informations.
+              </div>
+            </div>
+          </div>
+        </b-card>
       </div><!--/.col-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-header">
-            <strong>Validation states</strong> Form
-          </div>
-          <div class="card-block">
-            <div class="form-group has-success">
-              <label class="form-form-control-label" for="inputSuccess1">Input with success</label>
-              <input type="text" class="form-control" id="inputSuccess1">
-            </div>
-            <div class="form-group has-warning">
-              <label class="form-form-control-label" for="inputWarning1">Input with warning</label>
-              <input type="text" class="form-control" id="inputWarning1">
-            </div>
-            <div class="form-group has-danger">
-              <label class="form-form-control-label" for="inputError1">Input with error</label>
-              <input type="text" class="form-control" id="inputError1">
-            </div>
-          </div>
-        </div>
-      </div><!--/.col-->
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-header">
-            <strong>Validation states</strong> with optional icons
-          </div>
-          <div class="card-block">
-            <div class="form-group has-success">
-              <label class="form-form-control-label" for="inputSuccess2">Input with success</label>
-              <input type="text" class="form-control form-control-success" id="inputSuccess2">
-            </div>
-            <div class="form-group has-warning">
-              <label class="form-form-control-label" for="inputWarning2">Input with warning</label>
-              <input type="text" class="form-control form-control-warning" id="inputWarning2">
-            </div>
-            <div class="form-group has-danger has-feedback">
-              <label class="form-form-control-label" for="inputError2">Input with error</label>
-              <input type="text" class="form-control form-control-danger" id="inputError2">
-            </div>
-          </div>
-        </div>
-      </div><!--/.col-->
-    </div>
-    <div class="row">
       <div class="col-sm-4">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             <strong>Icon/Text</strong> Groups
           </div>
-          <div class="card-block">
-            <form action="" method="post" class="form-horizontal">
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                    <input type="text" id="input1-group1" name="input1-group1" class="form-control" placeholder="Username">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <div class="input-group">
-                    <input type="email" id="input2-group1" name="input2-group1" class="form-control" placeholder="Email">
-                    <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-euro"></i></span>
-                    <input type="text" id="input3-group1" name="input3-group1" class="form-control" placeholder="..">
-                    <span class="input-group-addon">.00</span>
-                  </div>
-                </div>
-              </div>
-            </form>
+          <b-form-fieldset>
+            <b-input-group left="<i class='fa fa-user'></i>">
+              <b-form-input type="text" placeholder="Username"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+            <b-input-group right="<i class='fa fa-envelope-o'></i>">
+              <b-form-input type="email" placeholder="Email"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+            <b-input-group left="<i class='fa fa-euro'></i>" right=".00">
+              <b-form-input type="text" placeholder="ex. $1.000.000"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="success"><i class="fa fa-dot-circle-o"></i> Submit</b-button>
+            <b-button type="reset" size="sm" variant="danger"><i class="fa fa-ban"></i> Reset</b-button>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> Submit</button>
-            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
-          </div>
-        </div>
+        </b-card>
       </div>
       <div class="col-sm-4">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             <strong>Buttons</strong> Groups
           </div>
-          <div class="card-block">
-            <form action="" method="post" class="form-horizontal">
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <div class="input-group">
-                    <span class="input-group-btn">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
-                    </span>
-                    <input type="text" id="input1-group2" name="input1-group2" class="form-control" placeholder="Username">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <div class="input-group">
-                    <input type="email" id="input2-group2" name="input2-group2" class="form-control" placeholder="Email">
-                    <span class="input-group-btn">
-                      <button type="button" class="btn btn-primary">Submit</button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <div class="input-group">
-                    <span class="input-group-btn">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button>
-                    </span>
-                    <input type="text" id="input3-group2" name="input3-group2" class="form-control" placeholder="Search">
-                    <span class="input-group-btn">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </form>
+          <b-form-fieldset>
+            <b-input-group>
+              <b-form-input type="text" placeholder="Username"></b-form-input>
+              <!-- Attach Left button -->
+              <b-input-group-button slot="left">
+                <b-button variant="primary">
+                  <i class="fa fa-search"></i> Search
+                </b-button>
+              </b-input-group-button>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+            <b-input-group>
+              <b-form-input type="email" placeholder="Email"></b-form-input>
+              <!-- Attach Right button -->
+              <b-input-group-button slot="right">
+                <b-button variant="primary">Submit</b-button>
+              </b-input-group-button>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+            <b-input-group>
+              <b-form-input type="email" placeholder="Email"></b-form-input>
+              <!-- Attach Right button -->
+              <b-input-group-button slot="left">
+                <b-button variant="primary"><i class="fa fa-facebook"></i></b-button>
+              </b-input-group-button>
+              <b-input-group-button slot="right">
+                <b-button variant="primary"><i class="fa fa-twitter"></i></b-button>
+              </b-input-group-button>
+            </b-input-group>
+          </b-form-fieldset>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="success"><i class="fa fa-dot-circle-o"></i> Submit</b-button>
+            <b-button type="reset" size="sm" variant="danger"><i class="fa fa-ban"></i> Reset</b-button>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> Submit</button>
-            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
-          </div>
-        </div>
+        </b-card>
       </div>
       <div class="col-sm-4">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             <strong>Dropdowns</strong> Groups
           </div>
-          <div class="card-block">
-            <form action="" method="post" class="form-horizontal">
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <div class="input-group">
-                    <div class="input-group-btn">
-                      <dropdown text="Action" type="primary">
-                        <div slot="dropdown-menu" class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                          <div role="separator" class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                      </dropdown>
-                    </div>
-                    <input type="text" id="input1-group3" name="input1-group3" class="form-control" placeholder="Username">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <div class="input-group">
-                    <input type="email" id="input2-group3" name="input2-group3" class="form-control" placeholder="Email">
-                    <div class="input-group-btn">
-                      <dropdown text="Action" type="primary">
-                        <div slot="dropdown-menu" class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                          <div role="separator" class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                      </dropdown>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="input-group">
-                    <div class="input-group-btn">
-                      <dropdown type="primary">
-                        <button slot="before" type="button" class="btn btn-info">Segmented</button>
-                        <div slot="dropdown-menu" class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                          <div role="separator" class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                      </dropdown>
-                    </div>
-                    <input type="text" id="input3-group3" name="input3-group3" class="form-control" placeholder="..">
-                    <div class="input-group-btn">
-                      <dropdown text="Action" type="primary">
-                        <div slot="dropdown-menu" class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                          <div role="separator" class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                      </dropdown>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
+          <b-form-fieldset>
+              <b-input-group>
+                <!-- Attach Left button -->
+                <b-input-group-button slot="left">
+                  <b-dropdown text="Action" variant="primary">
+                    <b-dropdown-item>Action</b-dropdown-item>
+                    <b-dropdown-item>Another action</b-dropdown-item>
+                    <b-dropdown-item>Something else here...</b-dropdown-item>
+                    <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+                  </b-dropdown>
+                </b-input-group-button>
+                <b-form-input placeholder="Username"></b-form-input>
+              </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+              <b-input-group>
+                <b-form-input placeholder="Email"></b-form-input>
+                <!-- Attach Right button -->
+                <b-input-group-button slot="right">
+                  <b-dropdown text="Action" variant="primary">
+                    <b-dropdown-item>Action</b-dropdown-item>
+                    <b-dropdown-item>Another action</b-dropdown-item>
+                    <b-dropdown-item>Something else here...</b-dropdown-item>
+                    <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+                  </b-dropdown>
+                </b-input-group-button>
+              </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+              <b-input-group>
+                <!-- Attach Left button -->
+                <b-input-group-button slot="left">
+                  <b-dropdown text="Split" variant="primary" split>
+                    <b-dropdown-item href="#">Action</b-dropdown-item>
+                    <b-dropdown-item href="#">Another action</b-dropdown-item>
+                    <b-dropdown-item href="#">Something else here...</b-dropdown-item>
+                    <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+                  </b-dropdown>
+                </b-input-group-button>
+                <b-form-input placeholder="..."></b-form-input>
+                <!-- Attach Right button -->
+                <b-input-group-button slot="right">
+                  <b-dropdown text="Action" variant="primary">
+                    <b-dropdown-item>Action</b-dropdown-item>
+                    <b-dropdown-item>Another action</b-dropdown-item>
+                    <b-dropdown-item>Something else here...</b-dropdown-item>
+                    <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+                  </b-dropdown>
+                </b-input-group-button>
+              </b-input-group>
+          </b-form-fieldset>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="success"><i class="fa fa-dot-circle-o"></i> Submit</b-button>
+            <b-button type="reset" size="sm" variant="danger"><i class="fa fa-ban"></i> Reset</b-button>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> Submit</button>
-            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
-          </div>
-        </div>
+        </b-card>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             Use the grid for big devices! <small><code>.col-lg-*</code> <code>.col-md-*</code> <code>.col-sm-*</code></small>
           </div>
-          <div class="card-block">
-            <form action="" method="post" class="form-horizontal">
-              <div class="form-group row">
-                <div class="col-md-8">
-                  <input type="text" class="form-control" placeholder=".col-md-8">
-                </div>
-                <div class="col-md-4">
-                  <input type="text" class="form-control" placeholder=".col-md-4">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-7">
-                  <input type="text" class="form-control" placeholder=".col-md-7">
-                </div>
-                <div class="col-md-5">
-                  <input type="text" class="form-control" placeholder=".col-md-5">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder=".col-md-6">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder=".col-md-6">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-5">
-                  <input type="text" class="form-control" placeholder=".col-md-5">
-                </div>
-                <div class="col-md-7">
-                  <input type="text" class="form-control" placeholder=".col-md-7">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-4">
-                  <input type="text" class="form-control" placeholder=".col-md-4">
-                </div>
-                <div class="col-md-8">
-                  <input type="text" class="form-control" placeholder=".col-md-8">
-                </div>
-              </div>
-            </form>
+          <div class="form-group row">
+            <div class="col-md-8">
+              <b-form-input type="text" placeholder=".col-md-8"></b-form-input>
+            </div>
+            <div class="col-md-4">
+              <b-form-input type="text" placeholder=".col-md-4"></b-form-input>
+            </div>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-sm btn-primary">Action</button>
-            <button type="button" class="btn btn-sm btn-danger">Action</button>
-            <button type="button" class="btn btn-sm btn-warning">Action</button>
-            <button type="button" class="btn btn-sm btn-info">Action</button>
-            <button type="button" class="btn btn-sm btn-success">Action</button>
+          <div class="form-group row">
+            <div class="col-md-7">
+              <b-form-input type="text" placeholder=".col-md-7"></b-form-input>
+            </div>
+            <div class="col-md-5">
+              <b-form-input type="text" placeholder=".col-md-5"></b-form-input>
+            </div>
           </div>
-        </div>
+          <div class="form-group row">
+            <div class="col-md-6">
+              <b-form-input type="text" placeholder=".col-md-6"></b-form-input>
+            </div>
+            <div class="col-md-6">
+              <b-form-input type="text" placeholder=".col-md-6"></b-form-input>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-5">
+              <b-form-input type="text" placeholder=".col-md-5"></b-form-input>
+            </div>
+            <div class="col-md-7">
+              <b-form-input type="text" placeholder=".col-md-7"></b-form-input>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-4">
+              <b-form-input type="text" placeholder=".col-md-4"></b-form-input>
+            </div>
+            <div class="col-md-8">
+              <b-form-input type="text" placeholder=".col-md-8"></b-form-input>
+            </div>
+          </div>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="primary">Action</b-button>
+            <b-button type="button" size="sm" variant="danger">Action</b-button>
+            <b-button type="button" class="btn btn-sm btn-warning">Action</b-button>
+            <b-button type="button" class="btn btn-sm btn-info">Action</b-button>
+            <b-button type="button" size="sm" variant="success">Action</b-button>
+          </div>
+        </b-card>
       </div>
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             Input Grid for small devices! <small> <code>.col-*</code></small>
           </div>
-          <div class="card-block">
-            <form action="" method="post" class="form-horizontal">
-              <div class="form-group row">
-                <div class="col-4">
-                  <input type="text" class="form-control" placeholder=".col-4">
-                </div>
-                <div class="col-8">
-                  <input type="text" class="form-control" placeholder=".col-8">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-5">
-                  <input type="text" class="form-control" placeholder=".col-5">
-                </div>
-                <div class="col-7">
-                  <input type="text" class="form-control" placeholder=".col-7">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-6">
-                  <input type="text" class="form-control" placeholder=".col-6">
-                </div>
-                <div class="col-6">
-                  <input type="text" class="form-control" placeholder=".col-6">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-7">
-                  <input type="text" class="form-control" placeholder=".col-5">
-                </div>
-                <div class="col-5">
-                  <input type="text" class="form-control" placeholder=".col-5">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-8">
-                  <input type="text" class="form-control" placeholder=".col-8">
-                </div>
-                <div class="col-4">
-                  <input type="text" class="form-control" placeholder=".col-4">
-                </div>
-              </div>
-            </form>
+          <div class="form-group row">
+            <div class="col-4">
+              <b-form-input type="text" placeholder=".col-4"></b-form-input>
+            </div>
+            <div class="col-8">
+              <b-form-input type="text" placeholder=".col-8"></b-form-input>
+            </div>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-sm btn-primary">Action</button>
-            <button type="button" class="btn btn-sm btn-danger">Action</button>
-            <button type="button" class="btn btn-sm btn-warning">Action</button>
-            <button type="button" class="btn btn-sm btn-info">Action</button>
-            <button type="button" class="btn btn-sm btn-success">Action</button>
+          <div class="form-group row">
+            <div class="col-5">
+              <b-form-input type="text" placeholder=".col-5"></b-form-input>
+            </div>
+            <div class="col-7">
+              <b-form-input type="text" placeholder=".col-7"></b-form-input>
+            </div>
           </div>
-        </div>
+          <div class="form-group row">
+            <div class="col-6">
+              <b-form-input type="text" placeholder=".col-6"></b-form-input>
+            </div>
+            <div class="col-6">
+              <b-form-input type="text" placeholder=".col-6"></b-form-input>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-7">
+              <b-form-input type="text" placeholder=".col-5"></b-form-input>
+            </div>
+            <div class="col-5">
+              <b-form-input type="text" placeholder=".col-5"></b-form-input>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-8">
+              <b-form-input type="text" placeholder=".col-8"></b-form-input>
+            </div>
+            <div class="col-4">
+              <b-form-input type="text" placeholder=".col-4"></b-form-input>
+            </div>
+          </div>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="primary">Action</b-button>
+            <b-button type="button" size="sm" variant="danger">Action</b-button>
+            <b-button type="button" class="btn btn-sm btn-warning">Action</b-button>
+            <b-button type="button" class="btn btn-sm btn-info">Action</b-button>
+            <b-button type="button" size="sm" variant="success">Action</b-button>
+          </div>
+        </b-card>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-4">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             Example Form
           </div>
-          <div class="card-block">
-            <form action="" method="post">
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon">Username</span>
-                  <input type="text" id="username3" name="username3" class="form-control">
-                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon">Email</span>
-                  <input type="email" id="email3" name="email3" class="form-control">
-                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon">Password</span>
-                  <input type="password" id="password3" name="password3" class="form-control">
-                  <span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
-                </div>
-              </div>
-              <div class="form-group form-actions">
-                <button type="submit" class="btn btn-sm btn-primary">Submit</button>
-              </div>
-            </form>
+          <b-form-fieldset>
+            <b-input-group left="Username" right="<i class='fa fa-user'></i>">
+              <b-form-input type="text"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+            <b-input-group left="Email" right="<i class='fa fa-envelope'></i>">
+              <b-form-input type="email"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+            <b-input-group left="Password" right="<i class='fa fa-asterisk'></i>">
+              <b-form-input type="password"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <div class="form-group form-actions">
+            <b-button type="submit" size="sm" variant="primary">Submit</b-button>
           </div>
-        </div>
+        </b-card>
       </div>
       <div class="col-sm-4">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             Example Form
           </div>
-          <div class="card-block">
-            <form action="" method="post">
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="text" id="username2" name="username2" class="form-control" placeholder="Username">
-                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="email" id="email2" name="email2" class="form-control" placeholder="Email">
-                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="password" id="password2" name="password2" class="form-control" placeholder="Password">
-                  <span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
-                </div>
-              </div>
-              <div class="form-group form-actions">
-                <button type="submit" class="btn btn-sm btn-default">Submit</button>
-              </div>
-            </form>
+          <b-form-fieldset>
+            <b-input-group right="<i class='fa fa-user'></i>">
+              <b-form-input type="text" placeholder="Username"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+            <b-input-group right="<i class='fa fa-envelope'></i>">
+              <b-form-input type="email" placeholder="Email"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+            <b-input-group right="<i class='fa fa-asterisk'></i>">
+              <b-form-input type="password" placeholder="Password"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <div class="form-group form-actions">
+            <b-button type="submit" class="btn btn-sm btn-secondary">Submit</b-button>
           </div>
-        </div>
+        </b-card>
       </div>
       <div class="col-sm-4">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             Example Form
           </div>
-          <div class="card-block">
-            <form action="" method="post">
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                  <input type="text" id="username" name="username" class="form-control" placeholder="Username">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                  <input type="email" id="email" name="email" class="form-control" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
-                  <input type="password" id="password" name="password" class="form-control" placeholder="Password">
-                </div>
-              </div>
-              <div class="form-group form-actions">
-                <button type="submit" class="btn btn-sm btn-success">Submit</button>
-              </div>
-            </form>
+          <b-form-fieldset>
+            <b-input-group left="<i class='fa fa-user'></i>">
+              <b-form-input type="text" placeholder="Username"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+            <b-input-group left="<i class='fa fa-envelope'></i>">
+              <b-form-input type="email" placeholder="Email"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset>
+            <b-input-group left="<i class='fa fa-asterisk'></i>">
+              <b-form-input type="password" placeholder="Password"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <div class="form-group form-actions">
+            <b-button type="submit" size="sm" variant="success">Submit</b-button>
           </div>
-        </div>
+        </b-card>
       </div>
     </div><!--/.row-->
     <div class="row">
       <div class="col-lg-12">
-        <div class="card">
-          <div class="card-header">
-            <i class="fa fa-edit"></i>Form Elements
-            <div class="card-actions">
-              <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
-              <a href="#" class="btn-minimize"><i class="icon-arrow-up"></i></a>
-              <a href="#" class="btn-close"><i class="icon-close"></i></a>
-            </div>
+        <b-card>
+          <div slot="header">
+            <i class="fa fa-edit"></i> Form Elements
           </div>
-          <div class="card-block">
-            <form class="form-2orizontal">
-              <div class="form-group">
-                <label class="form-control-label" for="prependedInput">Prepended text</label>
-                <div class="controls">
-                  <div class="input-prepend input-group">
-                    <span class="input-group-addon">@</span>
-                    <input id="prependedInput" class="form-control" size="16" type="text">
-                  </div>
-                  <p class="help-block">Here's some help text</p>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-control-label" for="appendedInput">Appended text</label>
-                <div class="controls">
-                  <div class="input-group">
-                    <input id="appendedInput" class="form-control" size="16" type="text"><span class="input-group-addon">.00</span>
-                  </div>
-                  <span class="help-block">Here's more help text</span>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-control-label" for="appendedPrependedInput">Append and prepend</label>
-                <div class="controls">
-                  <div class="input-prepend input-group">
-                    <span class="input-group-addon">$</span>
-                    <input id="appendedPrependedInput" class="form-control" size="16" type="text"><span class="input-group-addon">.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-control-label" for="appendedInputButton">Append with button</label>
-                <div class="controls">
-                  <div class="input-group">
-                    <input id="appendedInputButton" class="form-control" size="16" type="text">
-                    <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button></span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-control-label" for="appendedInputButtons">Two-button append</label>
-                <div class="controls">
-                  <div class="input-group">
-                    <input id="appendedInputButtons" size="16" class="form-control" type="text">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Search</button>
-                      <button class="btn btn-default" type="button">Options</button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Save changes</button>
-                <button type="button" class="btn btn-default">Cancel</button>
-              </div>
-            </form>
+          <b-form-fieldset label="Prepended text" description="Here's some help text">
+            <b-input-group left="@">
+              <b-form-input type="email"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset label="Appended text" description="Here's some help text">
+            <b-input-group right=".00">
+              <b-form-input type="text"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset label="Append and prepend" description="Here's some help text">
+            <b-input-group left="$" right=".00">
+              <b-form-input type="text"></b-form-input>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset label="Append with button" description="Here's some help text">
+            <b-input-group>
+              <b-form-input type="text"></b-form-input>
+              <b-input-group-button slot="right">
+                <b-button variant="primary">Go!</b-button>
+              </b-input-group-button>
+            </b-input-group>
+          </b-form-fieldset>
+          <b-form-fieldset label="Two-buttons append">
+            <b-input-group>
+              <b-form-input type="text"></b-form-input>
+              <b-input-group-button slot="right">
+                <b-button variant="primary">Search</b-button>
+              </b-input-group-button>
+              <b-input-group-button slot="right">
+                <b-button variant="danger">Options</b-button>
+              </b-input-group-button>
+            </b-input-group>
+          </b-form-fieldset>
+          <div class="form-actions">
+            <b-button type="submit" variant="primary">Save changes</b-button>
+            <b-button type="button" variant="secondary">Cancel</b-button>
           </div>
-        </div>
+        </b-card>
       </div><!--/.col-->
     </div><!--/.row-->
   </div>
 </template>
 
 <script>
-
-import { dropdown } from 'vue-strap'
-
 export default {
-  name: 'fomrs',
-  components: {
-    dropdown
-  },
+  name: 'forms',
   methods: {
     click () {
       // do nothing

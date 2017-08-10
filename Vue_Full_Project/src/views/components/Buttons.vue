@@ -2,204 +2,176 @@
   <div class="animated fadeIn">
     <div class="row">
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             <strong>Options</strong>
           </div>
-          <div class="card-block">
-            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-primary">Primary</button>
-            <!-- Secondary, outline button -->
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <!-- Indicates a successful or positive action -->
-            <button type="button" class="btn btn-success">Success</button>
-            <!-- Indicates caution should be taken with this action -->
-            <button type="button" class="btn btn-warning">Warning</button>
-            <!-- Indicates a dangerous or potentially negative action -->
-            <button type="button" class="btn btn-danger">Danger</button>
-            <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-            <button type="button" class="btn btn-link">Link</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <b-button variant="primary">Primary</b-button>
+          <!-- Secondary, outline button -->
+          <b-button variant="secondary">Secondary</b-button>
+          <!-- Indicates a successful or positive action -->
+          <b-button variant="success">Success</b-button>
+          <!-- Indicates caution should be taken with this action -->
+          <b-button variant="warning">Warning</b-button>
+          <!-- Indicates a dangerous or potentially negative action -->
+          <b-button variant="danger">Danger</b-button>
+          <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+          <b-button variant="link">Link</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
             <strong>With Icons</strong>
           </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-primary"><i class="fa fa-star"></i>&nbsp; Primary</button>
-            <button type="button" class="btn btn-secondary"><i class="fa fa-lightbulb-o"></i>&nbsp; Secondary</button>
-            <button type="button" class="btn btn-success"><i class="fa fa-magic"></i>&nbsp; Success</button>
-            <button type="button" class="btn btn-warning"><i class="fa fa-map-marker"></i>&nbsp; Warning</button>
-            <button type="button" class="btn btn-danger"><i class="fa fa-rss"></i>&nbsp; Danger</button>
-            <button type="button" class="btn btn-link"><i class="fa fa-link"></i>&nbsp; Link</button>
+          <b-button variant="primary"><i class="fa fa-star"></i>&nbsp; Primary</b-button>
+          <b-button variant="secondary"><i class="fa fa-lightbulb-o"></i>&nbsp; Secondary</b-button>
+          <b-button variant="success"><i class="fa fa-magic"></i>&nbsp; Success</b-button>
+          <b-button variant="warning"><i class="fa fa-map-marker"></i>&nbsp; Warning</b-button>
+          <b-button variant="danger"><i class="fa fa-rss"></i>&nbsp; Danger</b-button>
+          <b-button variant="link"><i class="fa fa-link"></i>&nbsp; Link</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
+            <strong>Size Large</strong> <small>Add this <code>size="lg"</code></small>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <strong>Size Large</strong> <small>Add this class <code>.btn-lg</code></small>
+          <b-button size="lg" variant="primary">Primary</b-button>
+          <b-button size="lg" variant="secondary">Secondary</b-button>
+          <b-button size="lg" variant="success">Success</b-button>
+          <b-button size="lg" variant="info">Info</b-button>
+          <b-button size="lg" variant="warning">Warning</b-button>
+          <b-button size="lg" variant="danger">Danger</b-button>
+          <b-button size="lg" variant="link">Link</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
+            <strong>Size Small</strong> <small>Add this <code>size="sm"</code></small>
           </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-primary btn-lg">Primary</button>
-            <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
-            <button type="button" class="btn btn-success btn-lg">Success</button>
-            <button type="button" class="btn btn-info btn-lg">Info</button>
-            <button type="button" class="btn btn-warning btn-lg">Warning</button>
-            <button type="button" class="btn btn-danger btn-lg">Danger</button>
-            <button type="button" class="btn btn-link btn-lg">Link</button>
+          <b-button size="sm" variant="primary">Primary</b-button>
+          <b-button size="sm" variant="secondary">Secondary</b-button>
+          <b-button size="sm" variant="success">Success</b-button>
+          <b-button size="sm" variant="info">Info</b-button>
+          <b-button size="sm" variant="warning">Warning</b-button>
+          <b-button size="sm" variant="danger">Danger</b-button>
+          <b-button size="sm" variant="link">Link</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
+            <strong>Disabled state</strong> <small>Add this <code>:disabled="true"</code></small>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <strong>Size Small</strong> <small>Add this class <code>.btn-sm</code></small>
+          <b-button size="lg" variant="primary" :disabled="true">Primary</b-button>
+          <b-button size="lg" variant="secondary" :disabled="true">Secondary</b-button>
+          <b-button size="lg" variant="success" :disabled="true">Success</b-button>
+          <b-button size="lg" variant="info" :disabled="true">Info</b-button>
+          <b-button size="lg" variant="warning" :disabled="true">Warning</b-button>
+          <b-button size="lg" variant="danger" :disabled="true">Danger</b-button>
+          <b-button size="lg" variant="link" :disabled="true">Link</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
+            <strong>Active state</strong> <small>Add this <code>:active="true"</code></small>
           </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-primary btn-sm">Primary</button>
-            <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
-            <button type="button" class="btn btn-success btn-sm">Success</button>
-            <button type="button" class="btn btn-info btn-sm">Info</button>
-            <button type="button" class="btn btn-warning btn-sm">Warning</button>
-            <button type="button" class="btn btn-danger btn-sm">Danger</button>
-            <button type="button" class="btn btn-link btn-sm">Link</button>
+          <b-button variant="primary" :active="true">Primary</b-button>
+          <b-button variant="secondary" :active="true">Secondary</b-button>
+          <b-button variant="success" :active="true">Success</b-button>
+          <b-button variant="info" :active="true">Info</b-button>
+          <b-button variant="warning" :active="true">Warning</b-button>
+          <b-button variant="danger" :active="true">Danger</b-button>
+          <b-button variant="link" :active="true">Link</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
+            <strong>Block Level Buttons</strong> <small>Add this <code>:block="true"</code></small>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <strong>Disabled state</strong> <small>Add this <code>disabled="disabled"</code></small>
-          </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-primary" disabled="disabled">Primary</button>
-            <button type="button" class="btn btn-secondary" disabled="disabled">Secondary</button>
-            <button type="button" class="btn btn-success" disabled="disabled">Success</button>
-            <button type="button" class="btn btn-info" disabled="disabled">Info</button>
-            <button type="button" class="btn btn-warning" disabled="disabled">Warning</button>
-            <button type="button" class="btn btn-danger" disabled="disabled">Danger</button>
-            <button type="button" class="btn btn-link" disabled="disabled">Link</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <strong>Active state</strong> <small>Add this class <code>.active</code></small>
-          </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-primary active">Primary</button>
-            <button type="button" class="btn btn-secondary active">Secondary</button>
-            <button type="button" class="btn btn-success active">Success</button>
-            <button type="button" class="btn btn-info active">Info</button>
-            <button type="button" class="btn btn-warning active">Warning</button>
-            <button type="button" class="btn btn-danger active">Danger</button>
-            <button type="button" class="btn btn-link active">Link</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <strong>Block Level Buttons</strong> <small>Add this class <code>.btn-block</code></small>
-          </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-success btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-info btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-warning btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-danger btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-link btn-lg btn-block">Block level button</button>
-          </div>
-        </div>
+          <b-button size="lg" variant="secondary" :block="true">Block level button</b-button>
+          <b-button size="lg" variant="primary" :block="true">Block level button</b-button>
+          <b-button size="lg" variant="success" :block="true">Block level button</b-button>
+          <b-button size="lg" variant="info" :block="true">Block level button</b-button>
+          <b-button size="lg" variant="warning" :block="true">Block level button</b-button>
+          <b-button size="lg" variant="danger" :block="true">Block level button</b-button>
+          <b-button size="lg" variant="link" :block="true">Block level button</b-button>
+        </b-card>
       </div><!--/.col-->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
+        <b-card>
+          <div slot="header">
             <strong>Options</strong>
           </div>
-          <div class="card-block">
-            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-            <!-- Secondary, outline button -->
-            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-            <!-- Indicates a successful or positive action -->
-            <button type="button" class="btn btn-outline-success">Success</button>
-            <!-- Indicates caution should be taken with this action -->
-            <button type="button" class="btn btn-outline-warning">Warning</button>
-            <!-- Indicates a dangerous or potentially negative action -->
-            <button type="button" class="btn btn-outline-danger">Danger</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <b-button variant="outline-primary">Primary</b-button>
+          <!-- Secondary, outline button -->
+          <b-button variant="outline-secondary">Secondary</b-button>
+          <!-- Indicates a successful or positive action -->
+          <b-button variant="outline-success">Success</b-button>
+          <!-- Indicates caution should be taken with this action -->
+          <b-button variant="outline-warning">Warning</b-button>
+          <!-- Indicates a dangerous or potentially negative action -->
+          <b-button variant="outline-danger">Danger</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
             <strong>With Icons</strong>
           </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-outline-primary"><i class="fa fa-star"></i>&nbsp; Primary</button>
-            <button type="button" class="btn btn-outline-secondary"><i class="fa fa-lightbulb-o"></i>&nbsp; Secondary</button>
-            <button type="button" class="btn btn-outline-success"><i class="fa fa-magic"></i>&nbsp; Success</button>
-            <button type="button" class="btn btn-outline-warning"><i class="fa fa-map-marker"></i>&nbsp; Warning</button>
-            <button type="button" class="btn btn-outline-danger"><i class="fa fa-rss"></i>&nbsp; Danger</button>
+          <b-button variant="outline-primary"><i class="fa fa-star"></i>&nbsp; Primary</b-button>
+          <b-button variant="outline-secondary"><i class="fa fa-lightbulb-o"></i>&nbsp; Secondary</b-button>
+          <b-button variant="outline-success"><i class="fa fa-magic"></i>&nbsp; Success</b-button>
+          <b-button variant="outline-warning"><i class="fa fa-map-marker"></i>&nbsp; Warning</b-button>
+          <b-button variant="outline-danger"><i class="fa fa-rss"></i>&nbsp; Danger</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
+            <strong>Size Large</strong> <small>Add this <code>size="lg"</code></small>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <strong>Size Large</strong> <small>Add this class <code>.btn-lg</code></small>
+          <b-button size="lg" variant="outline-primary">Primary</b-button>
+          <b-button size="lg" variant="outline-secondary">Secondary</b-button>
+          <b-button size="lg" variant="outline-success">Success</b-button>
+          <b-button size="lg" variant="outline-info">Info</b-button>
+          <b-button size="lg" variant="outline-warning">Warning</b-button>
+          <b-button size="lg" variant="outline-danger">Danger</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
+            <strong>Size Small</strong> <small>Add this <code>size="sm"</code></small></small>
           </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg">Secondary</button>
-            <button type="button" class="btn btn-outline-success btn-lg">Success</button>
-            <button type="button" class="btn btn-outline-info btn-lg">Info</button>
-            <button type="button" class="btn btn-outline-warning btn-lg">Warning</button>
-            <button type="button" class="btn btn-outline-danger btn-lg">Danger</button>
+          <b-button size="sm" variant="outline-primary">Primary</b-button>
+          <b-button size="sm" variant="outline-secondary">Secondary</b-button>
+          <b-button size="sm" variant="outline-success">Success</b-button>
+          <b-button size="sm" variant="outline-info">Info</b-button>
+          <b-button size="sm" variant="outline-warning">Warning</b-button>
+          <b-button size="sm" variant="outline-danger">Danger</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
+            <strong>Disabled state</strong> <small>Add this <code>:disabled="true"</code></small>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <strong>Size Small</strong> <small>Add this class <code>.btn-sm</code></small>
+          <b-button variant="outline-primary" :disabled="true">Primary</b-button>
+          <b-button variant="outline-secondary" :disabled="true">Secondary</b-button>
+          <b-button variant="success" :disabled="true">Success</b-button>
+          <b-button variant="outline-info" :disabled="true">Info</b-button>
+          <b-button variant="outline-warning" :disabled="true">Warning</b-button>
+          <b-button variant="outline-danger" :disabled="true">Danger</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
+            <strong>Active state</strong> <small>Add this <code>:active="true"</code></small>
           </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-outline-primary btn-sm">Primary</button>
-            <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
-            <button type="button" class="btn btn-outline-success btn-sm">Success</button>
-            <button type="button" class="btn btn-outline-info btn-sm">Info</button>
-            <button type="button" class="btn btn-outline-warning btn-sm">Warning</button>
-            <button type="button" class="btn btn-outline-danger btn-sm">Danger</button>
+          <b-button variant="outline-primary" :active="true">Primary</b-button>
+          <b-button variant="outline-secondary" :active="true">Secondary</b-button>
+          <b-button variant="outline-success" :active="true">Success</b-button>
+          <b-button variant="outline-info" :active="true">Info</b-button>
+          <b-button variant="outline-warning" :active="true">Warning</b-button>
+          <b-button variant="outline-danger" :active="true">Danger</b-button>
+        </b-card>
+        <b-card>
+          <div slot="header">
+            <strong>Block Level Buttons</strong> <small>Add this <code>:block="true"</code></small>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <strong>Disabled state</strong> <small>Add this <code>disabled="disabled"</code></small>
-          </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-outline-primary" disabled="disabled">Primary</button>
-            <button type="button" class="btn btn-outline-secondary" disabled="disabled">Secondary</button>
-            <button type="button" class="btn btn-success" disabled="disabled">Success</button>
-            <button type="button" class="btn btn-outline-info" disabled="disabled">Info</button>
-            <button type="button" class="btn btn-outline-warning" disabled="disabled">Warning</button>
-            <button type="button" class="btn btn-outline-danger" disabled="disabled">Danger</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <strong>Active state</strong> <small>Add this class <code>.active</code></small>
-          </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-outline-primary active">Primary</button>
-            <button type="button" class="btn btn-outline-secondary active">Secondary</button>
-            <button type="button" class="btn btn-outline-success active">Success</button>
-            <button type="button" class="btn btn-outline-info active">Info</button>
-            <button type="button" class="btn btn-outline-warning active">Warning</button>
-            <button type="button" class="btn btn-outline-danger active">Danger</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <strong>Block Level Buttons</strong> <small>Add this class <code>.btn-block</code></small>
-          </div>
-          <div class="card-block">
-            <button type="button" class="btn btn-outline-secondary btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-outline-primary btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-outline-success btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-outline-info btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-outline-warning btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-outline-danger btn-lg btn-block">Block level button</button>
-          </div>
-        </div>
+          <b-button size="lg" variant="outline-secondary" :block="true">Block level button</b-button>
+          <b-button size="lg" variant="outline-primary" :block="true">Block level button</b-button>
+          <b-button size="lg" variant="outline-success" :block="true">Block level button</b-button>
+          <b-button size="lg" variant="outline-info" :block="true">Block level button</b-button>
+          <b-button size="lg" variant="outline-warning" :block="true">Block level button</b-button>
+          <b-button size="lg" variant="outline-danger" :block="true">Block level button</b-button>
+        </b-card>
       </div><!--/.col-->
     </div><!--/.row-->
   </div>
