@@ -1,5 +1,11 @@
 ## Changelog CoreUI react 
 
+### 2017.08.11
+- Bootstrap 4 beta
+- Dashboard component (full):
+	- line chart for social box
+	- sparkline chart for callout
+
 ### 2017.08.01
 - Sidebar component: 
 	- title item with optional wrapper and class (_nav.js)
