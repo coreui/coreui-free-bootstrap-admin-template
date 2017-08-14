@@ -2,7 +2,7 @@
   <div class="animated fadeIn">
     <div class="row">
       <div class="col-lg-6">
-        <b-card haeder="<i class='fa fa-align-justify'></i> Simple Table">
+        <b-card header="<i class='fa fa-align-justify'></i> Simple Table">
           <table class="table">
             <thead>
               <tr>
@@ -69,7 +69,7 @@
       </div><!--/.col-->
 
       <div class="col-lg-6">
-        <b-card haeder="<i class='fa fa-align-justify'></i> Striped Table">
+        <b-card header="<i class='fa fa-align-justify'></i> Striped Table">
           <table class="table table-striped">
             <thead>
               <tr>
@@ -139,7 +139,7 @@
     <div class="row">
 
       <div class="col-lg-6">
-        <b-card haeder="<i class='fa fa-align-justify'></i> Condensed Table">
+        <b-card header="<i class='fa fa-align-justify'></i> Condensed Table">
           <table class="table table-sm">
             <thead>
               <tr>
@@ -206,7 +206,7 @@
       </div><!--/.col-->
 
       <div class="col-lg-6">
-        <b-card haeder="<i class='fa fa-align-justify'></i> Bordered Table">
+        <b-card header="<i class='fa fa-align-justify'></i> Bordered Table">
           <table class="table table-bordered">
             <thead>
               <tr>
@@ -276,7 +276,7 @@
 
     <div class="row">
       <div class="col-12">
-        <b-card haeder="<i class='fa fa-align-justify'></i> Combined All Table">
+        <b-card header="<i class='fa fa-align-justify'></i> Combined All Table">
           <table class="table table-bordered table-striped table-sm">
             <thead>
               <tr>
