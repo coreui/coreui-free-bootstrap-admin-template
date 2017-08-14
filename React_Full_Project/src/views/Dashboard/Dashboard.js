@@ -26,6 +26,7 @@ import {
 const brandPrimary = '#20a8d8';
 const brandSuccess = '#4dbd74';
 const brandInfo = '#63c2de';
+const brandWarning = '#f8cb00';
 const brandDanger = '#f86c6b';
 
 // Card Chart 1
@@ -198,6 +199,127 @@ const cardChartOpts4 = {
   }
 }
 
+// Social Box Chart
+const socialBoxData = [
+  {data: [65, 59, 84, 84, 51, 55, 40], label: 'facebook'},
+  {data: [1, 13, 9, 17, 34, 41, 38], label: 'twitter'},
+  {data: [78, 81, 80, 45, 34, 12, 40], label: 'linkedin'},
+  {data: [35, 23, 56, 22, 97, 23, 64], label: 'google'}
+];
+
+const makeSocialBoxData = (dataSetNo) => {
+  const dataset = socialBoxData[dataSetNo];
+  const data = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [
+      {
+        backgroundColor: 'rgba(255,255,255,.1)',
+        borderColor: 'rgba(255,255,255,.55)',
+        pointHoverBackgroundColor: '#fff',
+        borderWidth: 2,
+        data: dataset.data,
+        label: dataset.label,
+      }
+    ]
+  };
+  return () => data;
+};
+
+const socialChartOpts = {
+  responsive: true,
+  maintainAspectRatio: false,
+  legend: {
+    display: false
+  },
+  scales: {
+    xAxes: [{
+      display: false
+    }],
+    yAxes: [{
+      display: false
+    }]
+  },
+  elements: {
+    point: {
+      radius: 0,
+      hitRadius: 10,
+      hoverRadius: 4,
+      hoverBorderWidth: 3
+    }
+  }
+};
+
+// sparkline charts
+const sparkLineChartData = [
+  {
+    data: [35, 23, 56, 22, 97, 23, 64],
+    label: 'New Clients'
+  },
+  {
+    data: [65, 59, 84, 84, 51, 55, 40],
+    label: 'Recurring Clients'
+  },
+  {
+    data: [35, 23, 56, 22, 97, 23, 64],
+    label: 'Pageviews'
+  },
+  {
+    data: [65, 59, 84, 84, 51, 55, 40],
+    label: 'Organic'
+  },
+  {
+    data: [78, 81, 80, 45, 34, 12, 40],
+    label: 'CTR'
+  },
+  {
+    data: [1, 13, 9, 17, 34, 41, 38],
+    label: 'Bounce Rate'
+  }
+];
+
+const makeSparkLineData = (dataSetNo, variant) => {
+  const dataset = sparkLineChartData[dataSetNo];
+  const data = {
+    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    datasets: [
+      {
+        backgroundColor: 'transparent',
+        borderColor: variant ? variant : '#c2cfd6',
+        data: dataset.data,
+        label: dataset.label
+      }
+    ],
+  };
+  return () => data;
+};
+
+const sparklineChartOpts = {
+  responsive: true,
+  maintainAspectRatio: true,
+  scales: {
+    xAxes: [{
+      display: false,
+    }],
+    yAxes: [{
+      display: false,
+    }]
+  },
+  elements: {
+    line: {
+      borderWidth: 2
+    },
+    point: {
+      radius: 0,
+      hitRadius: 10,
+      hoverRadius: 4,
+      hoverBorderWidth: 3,
+    }
+  },
+  legend: {
+    display: false
+  }
+};
+
 // Main Chart
 
 // convert Hex to RGBA
@@ -305,7 +427,9 @@ class Dashboard extends Component {
     });
   }
 
+
   render() {
+
     return (
       <div className="animated fadeIn">
         <Row>
@@ -329,7 +453,7 @@ class Dashboard extends Component {
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
               </CardBlock>
-              <div className="chart-wrapper px-3" style={{height:'82px'}}>
+              <div className="chart-wrapper px-3" style={{height:'70px'}}>
                 <Line data={cardChartData1} options={cardChartOpts1} height={70}/>
               </div>
             </Card>
@@ -354,7 +478,7 @@ class Dashboard extends Component {
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
               </CardBlock>
-              <div className="chart-wrapper px-3" style={{height:'82px'}}>
+              <div className="chart-wrapper px-3" style={{height:'70px'}}>
                 <Line data={cardChartData2} options={cardChartOpts2} height={70}/>
               </div>
             </Card>
@@ -379,7 +503,7 @@ class Dashboard extends Component {
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
               </CardBlock>
-              <div className="chart-wrapper px-0" style={{height:'82px'}}>
+              <div className="chart-wrapper px-0" style={{height:'70px'}}>
                 <Line data={cardChartData3} options={cardChartOpts3} height={70}/>
               </div>
             </Card>
@@ -404,7 +528,7 @@ class Dashboard extends Component {
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
               </CardBlock>
-              <div className="chart-wrapper px-3" style={{height:'82px'}}>
+              <div className="chart-wrapper px-3" style={{height:'70px'}}>
                 <Bar data={cardChartData4} options={cardChartOpts4} height={70}/>
               </div>
             </Card>
@@ -478,7 +602,7 @@ class Dashboard extends Component {
             <div className="social-box facebook">
               <i className="fa fa-facebook"></i>
               <div className="chart-wrapper">
-                <canvas id="social-box-chart-1" height="90"></canvas>
+                <Line data={makeSocialBoxData(0)} options={socialChartOpts} height={90}/>
               </div>
               <ul>
                 <li>
@@ -497,7 +621,7 @@ class Dashboard extends Component {
             <div className="social-box twitter">
               <i className="fa fa-twitter"></i>
               <div className="chart-wrapper">
-                <canvas id="social-box-chart-2" height="90"></canvas>
+                <Line data={makeSocialBoxData(1)} options={socialChartOpts} height={90}/>
               </div>
               <ul>
                 <li>
@@ -517,7 +641,7 @@ class Dashboard extends Component {
             <div className="social-box linkedin">
               <i className="fa fa-linkedin"></i>
               <div className="chart-wrapper">
-                <canvas id="social-box-chart-3" height="90"></canvas>
+                <Line data={makeSocialBoxData(2)} options={socialChartOpts} height={90}/>
               </div>
               <ul>
                 <li>
@@ -536,7 +660,7 @@ class Dashboard extends Component {
             <div className="social-box google-plus">
               <i className="fa fa-google-plus"></i>
               <div className="chart-wrapper">
-                <canvas id="social-box-chart-4" height="90"></canvas>
+                <Line data={makeSocialBoxData(3)} options={socialChartOpts} height={90}/>
               </div>
               <ul>
                 <li>
@@ -556,7 +680,7 @@ class Dashboard extends Component {
           <Col>
             <Card>
               <CardHeader>
-                Traffic &amp; Sales
+                Traffic {'&'} Sales
               </CardHeader>
               <CardBlock className="card-body">
                 <Row>
@@ -568,17 +692,17 @@ class Dashboard extends Component {
                           <br/>
                           <strong className="h4">9,123</strong>
                           <div className="chart-wrapper">
-                            <canvas id="sparkline-chart-1" width="100" height="30"></canvas>
+                            <Line data={makeSparkLineData(0, brandPrimary)} options={sparklineChartOpts} width={100} height={30}/>
                           </div>
                         </div>
                       </Col>
                       <Col sm="6">
                         <div className="callout callout-danger">
-                          <small className="text-muted">Recuring Clients</small>
+                          <small className="text-muted">Recurring Clients</small>
                           <br/>
                           <strong className="h4">22,643</strong>
                           <div className="chart-wrapper">
-                            <canvas id="sparkline-chart-2" width="100" height="30"></canvas>
+                            <Line data={makeSparkLineData(1, brandDanger)} options={sparklineChartOpts} width={100} height={30}/>
                           </div>
                         </div>
                       </Col>
@@ -664,7 +788,7 @@ class Dashboard extends Component {
                           <br/>
                           <strong className="h4">78,623</strong>
                           <div className="chart-wrapper">
-                            <canvas id="sparkline-chart-3" width="100" height="30"></canvas>
+                            <Line data={makeSparkLineData(2, brandWarning)} options={sparklineChartOpts} width={100} height={30}/>
                           </div>
                         </div>
                       </Col>
@@ -674,7 +798,7 @@ class Dashboard extends Component {
                           <br/>
                           <strong className="h4">49,123</strong>
                           <div className="chart-wrapper">
-                            <canvas id="sparkline-chart-4" width="100" height="30"></canvas>
+                            <Line data={makeSparkLineData(3, brandSuccess)} options={sparklineChartOpts} width={100} height={30}/>
                           </div>
                         </div>
                       </Col>
@@ -744,7 +868,7 @@ class Dashboard extends Component {
                           <br/>
                           <strong className="h4">23%</strong>
                           <div className="chart-wrapper">
-                            <canvas id="sparkline-chart-5" width="100" height="30"></canvas>
+                            <Line data={makeSparkLineData(4)} options={sparklineChartOpts} width={100} height={30}/>
                           </div>
                         </div>
                       </Col>
@@ -754,7 +878,7 @@ class Dashboard extends Component {
                           <br/>
                           <strong className="h4">5%</strong>
                           <div className="chart-wrapper">
-                            <canvas id="sparkline-chart-6" width="100" height="30"></canvas>
+                            <Line data={makeSparkLineData(5, brandPrimary)} options={sparklineChartOpts} width={100} height={30}/>
                           </div>
                         </div>
                       </Col>
