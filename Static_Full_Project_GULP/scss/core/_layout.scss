@@ -6,7 +6,7 @@
   }
 }
 
-// app-dashboard and app-root are Angular2 selectors. You can add here your own selectors if you need.
+// app-dashboard and app-root are Angular2+ selectors. You can add here your own selectors if you need.
 .app,
 app-dashboard,
 app-root {
@@ -231,25 +231,25 @@ app-root {
 
   .breadcrumb {
     position: fixed;
-    z-index: $zindex-sticky - 2;
     top: $navbar-height;
-    left: 0;
     right: 0;
+    left: 0;
+    z-index: $zindex-sticky - 2;
   }
 
   // if sidebar + main + aside
   .main:nth-child(2) {
     .breadcrumb {
-      left: $sidebar-width;
       right: $aside-menu-width;
+      left: $sidebar-width;
     }
   }
 
   // if sidebar + main
   .main:first-child {
     .breadcrumb {
-      left: 0;
       right: $aside-menu-width;
+      left: 0;
     }
   }
 
@@ -320,14 +320,7 @@ app-root {
     position: fixed !important;
     z-index: $zindex-sticky;
     width: 100%;
-
-    .navbar-toggler {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 70px;
-      height: inherit;
-    }
+    text-align: center;
 
     .navbar-toggler {
       @if (lightness( $navbar-brand-bg ) > 40) {
@@ -338,15 +331,9 @@ app-root {
     }
 
     .navbar-brand {
-      width: 100% !important;
-      margin: 0 auto !important;
-    }
-
-    .navbar-nav {
       position: absolute;
-      top: 0;
-      right: 15px;
-      height: inherit;
+      left: 50%;
+      margin-left: - ($navbar-brand-width / 2);
     }
   }
 
@@ -370,9 +357,9 @@ app-root {
     margin-left: 0 !important;
   }
 
-  .aside-menu {
-    margin-right: - $aside-menu-width;
-  }
+  // .aside-menu {
+  //   margin-right: - $aside-menu-width;
+  // }
 
   .sidebar-hidden {
     .sidebar {
@@ -399,8 +386,8 @@ app-root {
 
   .breadcrumb-fixed {
     .main .breadcrumb {
-      left: 0 !important;
       right: 0 !important;
+      left: 0 !important;
     }
   }
 }
