@@ -31,13 +31,9 @@ class Header extends Component {
   render() {
     return (
       <header className="app-header navbar">
-        <NavbarToggler className="mobile-sidebar-toggler d-lg-none" onClick={this.mobileSidebarToggle}>&#9776;</NavbarToggler>
+        <NavbarToggler className="d-lg-none" onClick={this.mobileSidebarToggle}>&#9776;</NavbarToggler>
         <NavbarBrand href="#"></NavbarBrand>
-        <Nav className="navbar-nav d-md-down-none mr-auto">
-          <NavItem>
-            <NavbarToggler className="nav-link sidebar-toggler" type="button" onClick={this.sidebarToggle}>&#9776;</NavbarToggler>
-          </NavItem>
-        </Nav>
+        <NavbarToggler className="d-md-down-none mr-auto" onClick={this.sidebarToggle}>&#9776;</NavbarToggler>
       </header>
     )
   }
