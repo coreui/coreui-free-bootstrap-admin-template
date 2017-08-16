@@ -1,8 +1,8 @@
 ### Check out our Bootstrap Admin Templates and support CoreUI Development
 
-[<img src="https://genesisui.com/img/bundle2.png">](https://genesisui.com/bundle.html?support=1)
+[<img src="https://genesisui.com/img/bundle2.png">](https://genesisui.com/bundle.html?support=1&utm_source=github&utm_medium=referer&utm_campaign=base_version)
 
-[Check out Bootstrap Admin Templates Bundle](https://genesisui.com/bundle.html?support=1)
+[Check out Bootstrap Admin Templates Bundle](https://genesisui.com/bundle.html?support=1&utm_source=github&utm_medium=referer&utm_campaign=base_version)
 
 # CoreUI - Free Bootstrap Admin Template
 
@@ -12,7 +12,7 @@ Why I decided to create CoreUI? Please read this article: [Jack of all trades, m
 
 CoreUI is Open Source Bootstrap Admin Template. CoreUI is not just another Admin Template. It goes way beyond hitherto admin templates thanks to transparent code and file structure. And if it’s not enough, let’s just add the CoreUI consists bunch of unique features and over 1000 high quality icons.,
 
-CoreUI based on Bootstrap 4 and offers 6 versions: HTML5, AJAX, AngularJS, Angular 2, React.js & Vue.js.
+CoreUI based on Bootstrap 4 and offers 6 versions: [HTML5 AJAX](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template), [HTML5 Static](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template), [AngularJS](https://github.com/mrholek/CoreUI-AngularJS), [Angular 2+](https://github.com/mrholek/CoreUI-Angular), [React.js](https://github.com/mrholek/CoreUI-React) & [Vue.js](https://github.com/mrholek/CoreUI-Vue).
 
 CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means also mobile devices, where the navigation is the same easy and intuitive as in desktop or laptop. CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
 
@@ -32,20 +32,31 @@ Within the download you'll find the following directories and files, You'll see 
 CoreUI/
 ├── AJAX_Full_Project_GULP/
 ├── AJAX_Full_Starter/
-├── AngularJS_Full_Project_GULP/  **Moved to new repository: (https://github.com/mrholek/CoreUI-AngularJS)** 
-├── AngularJS_Starter_GULP/ **Moved to new repository: (https://github.com/mrholek/CoreUI-AngularJS)** 
-├── Angular2_CLI_Full_Project/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Angular)** 
-├── Angular2_CLI_Starter/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Angular)** 
-├── Angular4_CLI_Full_Project/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Angular)** 
-├── Angular4_CLI_Starter/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Angular)** 
-├── React_Full_Project/ **Moved to new repository: (https://github.com/mrholek/CoreUI-React)** 
-├── React_Starter/ **Moved to new repository: (https://github.com/mrholek/CoreUI-React)** 
+├── AngularJS_Full_Project_GULP/ - Moved to new repository: https://github.com/mrholek/CoreUI-AngularJS 
+├── AngularJS_Starter_GULP/ - Moved to new repository: https://github.com/mrholek/CoreUI-AngularJS 
+├── Angular2_CLI_Full_Project/ - Moved to new repository: https://github.com/mrholek/CoreUI-Angular 
+├── Angular2_CLI_Starter/ - Moved to new repository: https://github.com/mrholek/CoreUI-Angular 
+├── Angular4_CLI_Full_Project/ - Moved to new repository: https://github.com/mrholek/CoreUI-Angular 
+├── Angular4_CLI_Starter/ - Moved to new repository: https://github.com/mrholek/CoreUI-Angular 
+├── React_Full_Project/ - Moved to new repository: https://github.com/mrholek/CoreUI-React 
+├── React_Starter/ - Moved to new repository: https://github.com/mrholek/CoreUI-React 
 ├── Static_Full_Project_GULP/
 ├── Static_Starter_GULP/
-├── Vue_Full_Project/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Vue)** 
-├── Vue_Starter/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Vue)** 
+├── Vue_Full_Project/ - Moved to new repository: https://github.com/mrholek/CoreUI-Vue 
+├── Vue_Starter/ - Moved to new repository: https://github.com/mrholek/CoreUI-Vue 
 
 ```
+
+## Other Versions
+
+CoreUI includes 6 Version for Angular 4, AngularJS, React.js, Vue.js, Static HTML5 and AJAX HTML5.
+
+* [Angular Version (Angular 2+)](https://github.com/mrholek/CoreUI-Angular).
+* [AngularJS Version](https://github.com/mrholek/CoreUI-AngularJS).
+* [HTML5 AJAX Version](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template).
+* [HTML5 Static Version](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template).
+* [React.js Version](https://github.com/mrholek/CoreUI-React).
+* [Vue.js Version](https://github.com/mrholek/CoreUI-Vue).
 
 ## Bugs and feature requests
 
@@ -64,6 +75,6 @@ You can’t re-distribute the CoreUI as stock. You can’t do this if you modify
 
 ## Support CoreUI Development
 
-CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by donating on [PayPal](https://www.paypal.me/holeczek) or buying one of our [premium bootstrap 4 admin templates](https://www.genesisui.com?ref=github-coreui).
+CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by donating on [PayPal](https://www.paypal.me/holeczek) or buying one of our [premium bootstrap 4 admin templates](https://genesisui.com/?utm_source=github&utm_medium=referer&utm_campaign=base_version).
 
 As of now I am exploring the possibility of working on CoreUI fulltime - if you are a business that is building core products using CoreUI, I am also open to conversations regarding custom sponsorship / consulting arrangements. Get in touch on [Twitter](https://twitter.com/lukaszholeczek).
