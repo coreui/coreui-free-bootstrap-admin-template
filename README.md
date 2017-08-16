@@ -32,18 +32,18 @@ Within the download you'll find the following directories and files, You'll see 
 CoreUI/
 ├── AJAX_Full_Project_GULP/
 ├── AJAX_Full_Starter/
-├── Angular_Full_Project_GULP/
-├── Angular_Starter_GULP/
-├── Angular2_CLI_Full_Project/
-├── Angular2_CLI_Starter/
-├── Angular4_CLI_Full_Project/
-├── Angular4_CLI_Starter/
-├── React_Full_Project/
-├── React_Starter/
+├── AngularJS_Full_Project_GULP/  **Moved to new repository: (https://github.com/mrholek/CoreUI-AngularJS)** 
+├── AngularJS_Starter_GULP/ **Moved to new repository: (https://github.com/mrholek/CoreUI-AngularJS)** 
+├── Angular2_CLI_Full_Project/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Angular)** 
+├── Angular2_CLI_Starter/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Angular)** 
+├── Angular4_CLI_Full_Project/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Angular)** 
+├── Angular4_CLI_Starter/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Angular)** 
+├── React_Full_Project/ **Moved to new repository: (https://github.com/mrholek/CoreUI-React)** 
+├── React_Starter/ **Moved to new repository: (https://github.com/mrholek/CoreUI-React)** 
 ├── Static_Full_Project_GULP/
 ├── Static_Starter_GULP/
-├── Vue_Full_Project/
-├── Vue_Starter/
+├── Vue_Full_Project/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Vue)** 
+├── Vue_Starter/ **Moved to new repository: (https://github.com/mrholek/CoreUI-Vue)** 
 
 ```
 
