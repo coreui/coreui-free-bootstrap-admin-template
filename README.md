@@ -1,8 +1,8 @@
 ### Check out our Bootstrap Admin Templates and support CoreUI Development
 
-[<img src="https://genesisui.com/img/bundle2.png">](https://genesisui.com/bundle.html?support=1&utm_source=github&utm_medium=referer&utm_campaign=base_version)
+[<img src="https://genesisui.com/img/bundle2.png">](https://genesisui.com/bundle.html?support=1)
 
-[Check out Bootstrap Admin Templates Bundle](https://genesisui.com/bundle.html?support=1&utm_source=github&utm_medium=referer&utm_campaign=base_version)
+[Check out Bootstrap Admin Templates Bundle](https://genesisui.com/bundle.html?support=1)
 
 # CoreUI - Free Bootstrap Admin Template
 
@@ -22,7 +22,7 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 
 ## Demo
 
-A fully functional demo is available at <a href="http://coreui.io?ref=github">CoreUI</a>
+A fully functional demo is available at <a href="http://coreui.io">CoreUI</a>
 
 ## What's included
 
@@ -64,7 +64,7 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/mr
 
 ## Documentation
 
-CoreUI's documentation, is hosted on our website <a href="http://coreui.io?ref=github">coreui.io</a>
+CoreUI's documentation, is hosted on our website <a href="http://coreui.io">coreui.io</a>
 
 
 ## Copyright and license
@@ -75,6 +75,6 @@ You can’t re-distribute the CoreUI as stock. You can’t do this if you modify
 
 ## Support CoreUI Development
 
-CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by donating on [PayPal](https://www.paypal.me/holeczek) or buying one of our [premium bootstrap 4 admin templates](https://genesisui.com/?utm_source=github&utm_medium=referer&utm_campaign=base_version).
+CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by donating on [PayPal](https://www.paypal.me/holeczek) or buying one of our [premium bootstrap 4 admin templates](https://genesisui.com/?support=1).
 
 As of now I am exploring the possibility of working on CoreUI fulltime - if you are a business that is building core products using CoreUI, I am also open to conversations regarding custom sponsorship / consulting arrangements. Get in touch on [Twitter](https://twitter.com/lukaszholeczek).
