@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Jekyll v3.5.2">
+
+<title>Webpack &middot; CoreUI</title>
+
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+
+<!-- CSS Style -->
+<link href="/docs-assets/css/style.min.css" rel="stylesheet">
+<link href="/docs-assets/css/docs.min.css" rel="stylesheet">
+
+<!-- Meta -->
+<meta name="description" content="Open Source Boostrap Admin Template.">
+<meta name="author" content="Łukasz Holeczek">
+
+<!-- Twitter -->
+<meta name="twitter:site" content="@lukaszholeczek">
+<meta name="twitter:creator" content="@lukaszholeczek">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Webpack">
+  <meta name="twitter:description" content="Learn how to include Bootstrap in your project using Webpack 2.">
+  <meta name="twitter:image" content="http://localhost:9001/assets/brand/social-logo.png">
+
+
+<!-- Facebook -->
+
+  <meta property="og:url" content="http://localhost:9001/docs/getting-started/webpack/">
+  <meta property="og:title" content="Webpack">
+  <meta property="og:description" content="Learn how to include Bootstrap in your project using Webpack 2.">
+  <meta property="og:type" content="website">
+
+<meta property="og:image" content="http://localhost:9001/assets/brand/social.png">
+<meta property="og:image:secure_url" content="http://localhost:9001/assets/brand/social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-9510961-27', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </head>
+  <body class="app header-fixed sidebar-fixed">
+    <header class="app-header navbar">
+  <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">&#9776;</button>
+  <a class="navbar-brand" href="#"></a>
+  <ul class="nav navbar-nav d-md-down-none">
+    <li class="nav-item">
+      <a class="nav-link navbar-toggler sidebar-toggler" href="#">&#9776;</a>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" href="/index.html">Home</a>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link text-danger" href="https://genesisui.com/?utm_source=coreui.io&utm_campaign=coreui_docs">Premium Bootstrap Admin Templates</a>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item px-3">
+      <a class="nav-link" href="http://holeczek.pl" target="_blank">About me</a>
+    </li>
+  </ul>
+</header>
+
+    <div class="app-body">
+      <div class="sidebar">
+        <nav class="sidebar-nav" id="docsNavbarContent">
+  <ul class="nav">
+    
+    
+    
+    
+    
+    
+
+    
+
+    <li class="nav-item nav-dropdown active">
+      <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
+        Getting started
+      </a>
+      <ul class="nav-dropdown-items">
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/introduction/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Introduction
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/components/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Components
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/ajax-version/">
+              <i class="fa fa-empty" aria-hidden="true"></i> AJAX Version
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/static-version/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Static Version
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/angularjs-version/">
+              <i class="fa fa-empty" aria-hidden="true"></i> AngularJS Version
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/angular2-version/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Angular2 Version
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/angular4-version/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Angular4 Version
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/react-js-version/">
+              <i class="fa fa-empty" aria-hidden="true"></i> React.js Version
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/vue-js-version/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Vue.js Version
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/rtl-support/">
+              <i class="fa fa-empty" aria-hidden="true"></i> RTL Support
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/browsers-devices/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Browsers & devices
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/options/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Options
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/getting-started/accessibility/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Accessibility
+            </a>
+            
+          </li>
+        
+      </ul>
+    </li>
+  
+    
+    
+    
+    
+
+    
+
+    <li class="nav-item nav-dropdown ">
+      <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
+        Layout
+      </a>
+      <ul class="nav-dropdown-items">
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/layout/overview/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Overview
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/layout/options/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Options
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/layout/grid/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Grid
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/layout/media-object/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Media object
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/layout/utilities-for-layout/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Utilities for layout
+            </a>
+            
+          </li>
+        
+      </ul>
+    </li>
+  
+    
+    
+    
+    
+
+    
+
+    <li class="nav-item nav-dropdown ">
+      <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
+        Content
+      </a>
+      <ul class="nav-dropdown-items">
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/content/reboot/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Reboot
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/content/typography/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Typography
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/content/code/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Code
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/content/images/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Images
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/content/tables/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Tables
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/content/figures/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Figures
+            </a>
+            
+          </li>
+        
+      </ul>
+    </li>
+  
+    
+    
+    
+    
+
+    
+
+    <li class="nav-item nav-dropdown ">
+      <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
+        Components
+      </a>
+      <ul class="nav-dropdown-items">
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/alerts/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Alerts
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/badge/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Badge
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/breadcrumb/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Breadcrumb
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/buttons/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Buttons
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/button-group/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Button group
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/card/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Card
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/carousel/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Carousel
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/collapse/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Collapse
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/dropdowns/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Dropdowns
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/forms/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Forms
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/input-group/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Input group
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/jumbotron/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Jumbotron
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/list-group/">
+              <i class="fa fa-empty" aria-hidden="true"></i> List group
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/modal/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Modal
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/navs/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Navs
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/navbar/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Navbar
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/pagination/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Pagination
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/popovers/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Popovers
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/progress/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Progress
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/scrollspy/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Scrollspy
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/components/tooltips/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Tooltips
+            </a>
+            
+          </li>
+        
+      </ul>
+    </li>
+  
+    
+    
+    
+    
+
+    
+
+    <li class="nav-item nav-dropdown ">
+      <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
+        Utilities
+      </a>
+      <ul class="nav-dropdown-items">
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/borders/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Borders
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/clearfix/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Clearfix
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/close-icon/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Close icon
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/colors/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Colors
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/display/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Display
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/embed/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Embed
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/flex/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Flex
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/float/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Float
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/image-replacement/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Image replacement
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/position/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Position
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/screenreaders/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Screenreaders
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/sizing/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Sizing
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/spacing/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Spacing
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/text/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Text
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/vertical-align/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Vertical align
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/utilities/visibility/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Visibility
+            </a>
+            
+          </li>
+        
+      </ul>
+    </li>
+  
+    
+    
+    
+    
+
+    
+
+    <li class="nav-item nav-dropdown ">
+      <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
+        Extend
+      </a>
+      <ul class="nav-dropdown-items">
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/extend/icons/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Icons
+            </a>
+            
+          </li>
+        
+      </ul>
+    </li>
+  
+    
+    
+    
+    
+
+    
+
+    <li class="nav-item nav-dropdown ">
+      <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
+        New components
+      </a>
+      <ul class="nav-dropdown-items">
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/new-components/breadcrumb-menu/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Breadcrumb menu
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/new-components/callout/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Callout
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/new-components/switches/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Switches
+            </a>
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/new-components/widgets/">
+              <i class="fa fa-empty" aria-hidden="true"></i> Widgets
+            </a>
+            
+          </li>
+        
+      </ul>
+    </li>
+  
+    
+    
+    
+    
+
+    
+
+    <li class="nav-item nav-dropdown ">
+      <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i>
+        Upgrade Guide
+      </a>
+      <ul class="nav-dropdown-items">
+        
+          
+          
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/docs/upgrade-guide/1-0-0-alpha-5/">
+              <i class="fa fa-empty" aria-hidden="true"></i> 1.0.0-alpha.5
+            </a>
+            
+          </li>
+        
+      </ul>
+    </li>
+  
+  </ul>
+</nav>
+
+      </div>
+      <main class="main">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/docs/">Home</a></li>
+          
+          
+          <li class="breadcrumb-item">Getting started </li>
+          <li class="breadcrumb-item active">Webpack</li>
+        </ol>
+        <div class="container-fluid">
+          <div class="card">
+            <div class="card-header">
+              <h1 class="h5 m-0">Webpack</h1>
+            </div>
+            <div class="card-block">
+              
+                <h2>Contents</h2>
+                <div class="bd-toc">
+                  <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#installing-bootstrap">Installing Bootstrap</a></li>
+<li class="toc-entry toc-h2"><a href="#importing-javascript">Importing JavaScript</a></li>
+<li class="toc-entry toc-h2"><a href="#importing-styles">Importing Styles</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#importing-precompiled-sass">Importing Precompiled Sass</a></li>
+<li class="toc-entry toc-h3"><a href="#importing-compiled-css">Importing Compiled CSS</a></li>
+</ul>
+</li>
+</ul>
+                </div>
+              
+              <h2 id="installing-bootstrap">Installing Bootstrap</h2>
+
+<p><a href="/docs//getting-started/download/#npm">Install bootstrap</a> as a node module using npm.</p>
+
+<h2 id="importing-javascript">Importing JavaScript</h2>
+
+<p>Import <a href="/docs//getting-started/javascript/">Bootstrap’s JavaScript</a> by adding this line to your app’s entry point (usually <code class="highlighter-rouge">index.js</code> or <code class="highlighter-rouge">app.js</code>):</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="s1">'bootstrap'</span><span class="p">;</span></code></pre></figure>
+
+<p>Alternatively, you may <strong>import plugins individually</strong> as needed:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="s1">'bootstrap/js/dist/util'</span><span class="p">;</span>
+<span class="kr">import</span> <span class="s1">'bootstrap/js/dist/dropdown'</span><span class="p">;</span>
+<span class="p">...</span></code></pre></figure>
+
+<p>Bootstrap is dependent on <a href="https://jquery.com/">jQuery</a> and <a href="https://popper.js.org/">Popper</a>, so npm will install them for you if needed. But they must be explicitly provided by webpack. Add the following code to the <code class="highlighter-rouge">plugins</code> section in your webpack config file:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">  <span class="nx">plugins</span><span class="err">:</span> <span class="p">[</span>
+    <span class="p">...</span>
+      <span class="k">new</span> <span class="nx">webpack</span><span class="p">.</span><span class="nx">ProvidePlugin</span><span class="p">({</span>
+        <span class="na">$</span><span class="p">:</span> <span class="s1">'jquery'</span><span class="p">,</span>
+        <span class="na">jQuery</span><span class="p">:</span> <span class="s1">'jquery'</span><span class="p">,</span>
+        <span class="s1">'window.jQuery'</span><span class="p">:</span> <span class="s1">'jquery'</span><span class="p">,</span>
+        <span class="na">Popper</span><span class="p">:</span> <span class="p">[</span><span class="s1">'popper.js'</span><span class="p">,</span> <span class="s1">'default'</span><span class="p">],</span>
+        <span class="c1">// In case you imported plugins individually, you must also require them here:</span>
+        <span class="na">Util</span><span class="p">:</span> <span class="s2">"exports-loader?Util!bootstrap/js/dist/util"</span><span class="p">,</span>
+        <span class="na">Dropdown</span><span class="p">:</span> <span class="s2">"exports-loader?Dropdown!bootstrap/js/dist/dropdown"</span><span class="p">,</span>
+        <span class="p">...</span>
+      <span class="p">})</span>
+    <span class="p">...</span>
+  <span class="p">]</span></code></pre></figure>
+
+<div class="bd-callout bd-callout-warning">
+<p>Notice that if you chose to <strong>import plugins individually</strong>, you must also install <a href="https://github.com/webpack-contrib/exports-loader">exports-loader</a></p>
+</div>
+
+<h2 id="importing-styles">Importing Styles</h2>
+
+<h3 id="importing-precompiled-sass">Importing Precompiled Sass</h3>
+
+<p>To enjoy the full potential of Bootstrap and customize it to your needs, use the source files as a part of your project’s bundling process.</p>
+
+<p>First, create your own <code class="highlighter-rouge">_custom.scss</code> and use it to override the <a href="/docs//getting-started/options/">built-in custom variables</a>. Then, use your main sass file to import your custom variables, followed by Bootstrap:</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s2">"custom"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"~bootstrap/scss/bootstrap"</span><span class="p">;</span></code></pre></figure>
+
+<p>For Bootstrap to compile, make sure you install and use the required loaders: <a href="https://github.com/webpack-contrib/sass-loader">sass-loader</a>, <a href="https://github.com/postcss/postcss-loader">postcss-loader</a> with <a href="https://github.com/postcss/autoprefixer#webpack">Autoprefixer</a>. With minimal setup, your webpack config should include this rule or similar:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">  <span class="p">...</span>
+  <span class="p">{</span>
+    <span class="nl">test</span><span class="p">:</span> <span class="sr">/</span><span class="se">\.(</span><span class="sr">scss</span><span class="se">)</span><span class="sr">$/</span><span class="p">,</span>
+    <span class="nx">use</span><span class="err">:</span> <span class="p">[{</span>
+      <span class="na">loader</span><span class="p">:</span> <span class="s1">'style-loader'</span><span class="p">,</span> <span class="c1">// inject CSS to page</span>
+    <span class="p">},</span> <span class="p">{</span>
+      <span class="na">loader</span><span class="p">:</span> <span class="s1">'css-loader'</span><span class="p">,</span> <span class="c1">// translates CSS into CommonJS modules</span>
+    <span class="p">},</span> <span class="p">{</span>
+      <span class="na">loader</span><span class="p">:</span> <span class="s1">'postcss-loader'</span><span class="p">,</span> <span class="c1">// Run post css actions</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="c1">// post css plugins, can be exported to postcss.config.js</span>
+          <span class="k">return</span> <span class="p">[</span>
+            <span class="nx">require</span><span class="p">(</span><span class="s1">'precss'</span><span class="p">),</span>
+            <span class="nx">require</span><span class="p">(</span><span class="s1">'autoprefixer'</span><span class="p">)</span>
+          <span class="p">];</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">},</span> <span class="p">{</span>
+      <span class="na">loader</span><span class="p">:</span> <span class="s1">'sass-loader'</span> <span class="c1">// compiles SASS to CSS</span>
+    <span class="p">}]</span>
+  <span class="p">},</span>
+  <span class="p">...</span></code></pre></figure>
+
+<h3 id="importing-compiled-css">Importing Compiled CSS</h3>
+
+<p>Alternatively, you may use Bootstrap’s ready-to-use css by simply adding this line to your project’s entry point:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="s1">'bootstrap/dist/css/bootstrap.min.css'</span><span class="p">;</span></code></pre></figure>
+
+<p>In this case you may use your existing rule for <code class="highlighter-rouge">css</code> without any special modifications to webpack config.</p>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="app-footer">
+  <span class="text-left">
+    <a href="http://coreui.io">CoreUI</a> &copy; 2017 creativeLabs.
+  </span>
+  <span class="pull-right">
+    Powered by <a href="http://coreui.io">CoreUI</a>
+  </span>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs-assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+<script src="/docs-assets/js/vendor/popper.min.js"></script>
+
+
+  <script src="/dist/js/bootstrap.js"></script>
+
+
+<script src="/docs-assets/js/app.js"></script>
+
+
+  <script src="/docs-assets/js/vendor/anchor.min.js"></script>
+  <script src="/docs-assets/js/vendor/clipboard.min.js"></script>
+  <script src="/docs-assets/js/vendor/holder.min.js"></script>
+  <script src="/docs-assets/js/src/application.js"></script>
+  <script src="/docs-assets/js/src/pwa.js"></script>
+
+
+<script src="/docs-assets/js/ie-emulation-modes-warning.js"></script>
+
+<script>
+Holder.addTheme('gray', {
+  bg: '#777',
+  fg: 'rgba(255,255,255,.75)',
+  font: 'Helvetica',
+  fontweight: 'normal'
+});
+</script>
+
+  </body>
+</html>
