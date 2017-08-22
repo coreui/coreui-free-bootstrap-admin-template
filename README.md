@@ -16,8 +16,6 @@ CoreUI based on Bootstrap 4 and offers 6 versions: [HTML5 AJAX](https://github.c
 
 CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means also mobile devices, where the navigation is the same easy and intuitive as in desktop or laptop. CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
 
-<img src="http://coreui.io/assets/img/coreui.png" alt="Free Bootstrap Admin Template">
-
 **NOTE:** Please remember to **STAR** this project and **FOLLOW** [my Github](https://github.com/mrholek) to keep you update with this template.
 
 ## Demo
