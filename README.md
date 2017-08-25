@@ -10,11 +10,13 @@ Please help us on [Product Hunt](https://www.producthunt.com/posts/coreui-open-s
 
 Curious why I decided to create CoreUI? Please read this article: [Jack of all trades, master of none. Why Bootstrap Admin Templates suck.](https://medium.com/@lukaszholeczek/jack-of-all-trades-master-of-none-5ea53ef8a1f#.7eqx1bcd8)
 
-CoreUI is an Open Source Bootstrap Admin Template. But CoreUI is not just another Admin Template. It goes way beyond hitherto admin templates thanks to transparent code and file structure. And if thats not enough, let’s just add that CoreUI consists bunch of unique features and over 1000 high quality icons.
+CoreUI is an Open Source Bootstrap Admin Template. But CoreUI is not just another Admin Template. It goes way beyond hitherto admin templates thanks to transparent code and file structure. And if that's not enough, let’s just add that CoreUI consists bunch of unique features and over 1000 high quality icons.
 
 CoreUI is based on Bootstrap 4 and offers 6 versions: [HTML5 AJAX](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template), [HTML5 Static](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template), [AngularJS](https://github.com/mrholek/CoreUI-AngularJS), [Angular 2+](https://github.com/mrholek/CoreUI-Angular), [React.js](https://github.com/mrholek/CoreUI-React) & [Vue.js](https://github.com/mrholek/CoreUI-Vue).
 
 CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means mobile devices also, where the navigation is just as easy and intuitive as on a desktop or laptop. The CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
+
+[![CoreUI Free Bootstrap Admin Template](http://coreui.io/docs-assets/img/logo.png "CoreUI Free Bootstrap Admin Template")](http://coreui.io)
 
 **NOTE:** Please remember to **STAR** this project and **FOLLOW** [my Github](https://github.com/mrholek) to stay up to date with this template.
 
@@ -31,17 +33,17 @@ CoreUI/
 ├── AJAX_Full_Project_GULP/
 ├── AJAX_Full_Starter/
 ├── AngularJS_Full_Project_GULP/ - Moved to new repository: https://github.com/mrholek/CoreUI-AngularJS
-├── AngularJS_Starter_GULP/ - Moved to new repository: https://github.com/mrholek/CoreUI-AngularJS
-├── Angular2_CLI_Full_Project/ - Moved to new repository: https://github.com/mrholek/CoreUI-Angular
-├── Angular2_CLI_Starter/ - Moved to new repository: https://github.com/mrholek/CoreUI-Angular
-├── Angular4_CLI_Full_Project/ - Moved to new repository: https://github.com/mrholek/CoreUI-Angular
-├── Angular4_CLI_Starter/ - Moved to new repository: https://github.com/mrholek/CoreUI-Angular
-├── React_Full_Project/ - Moved to new repository: https://github.com/mrholek/CoreUI-React
-├── React_Starter/ - Moved to new repository: https://github.com/mrholek/CoreUI-React
+├── AngularJS_Starter_GULP/      - Moved to new repository: https://github.com/mrholek/CoreUI-AngularJS
+├── Angular2_CLI_Full_Project/   - Moved to new repository: https://github.com/mrholek/CoreUI-Angular
+├── Angular2_CLI_Starter/        - Moved to new repository: https://github.com/mrholek/CoreUI-Angular
+├── Angular4_CLI_Full_Project/   - Moved to new repository: https://github.com/mrholek/CoreUI-Angular
+├── Angular4_CLI_Starter/        - Moved to new repository: https://github.com/mrholek/CoreUI-Angular
+├── React_Full_Project/          - Moved to new repository: https://github.com/mrholek/CoreUI-React
+├── React_Starter/               - Moved to new repository: https://github.com/mrholek/CoreUI-React
 ├── Static_Full_Project_GULP/
 ├── Static_Starter_GULP/
-├── Vue_Full_Project/ - Moved to new repository: https://github.com/mrholek/CoreUI-Vue
-├── Vue_Starter/ - Moved to new repository: https://github.com/mrholek/CoreUI-Vue
+├── Vue_Full_Project/            - Moved to new repository: https://github.com/mrholek/CoreUI-Vue
+├── Vue_Starter/                 - Moved to new repository: https://github.com/mrholek/CoreUI-Vue
 
 ```
 
