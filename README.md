@@ -77,3 +77,6 @@ You can’t re-distribute the CoreUI as stock. You can’t do this if you modify
 CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by donating on [PayPal](https://www.paypal.me/holeczek) or buying one of our [premium bootstrap 4 admin templates](https://genesisui.com/?support=1).
 
 As of now I am exploring the possibility of working on CoreUI fulltime - if you are a business that is building core products using CoreUI, I am also open to conversations regarding custom sponsorship / consulting arrangements. Get in touch on [Twitter](https://twitter.com/lukaszholeczek).
+
+### CoreUI CodeIgniter 3 Admin Panel
+A [CodeIgniter 3 control panel](https://github.com/rehmatworks/coreui-codeigniter/) is devleoped on top of CoreUI HTML template which offers a complete user model with user CRUD features, 2-step auth (via Twilio API), complete user register, login and password reset features. The control panel uses latest CodeIgniter release and has been uploaded there to help CodeIgniter developers save a great amount of time.
