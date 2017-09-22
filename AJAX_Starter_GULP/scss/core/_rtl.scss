@@ -44,20 +44,17 @@
   // Sidebar
   //
   .sidebar-hidden {
-
     .sidebar {
       margin-right: - $sidebar-width;
     }
   }
 
   .sidebar-fixed {
-
     .main, .app-footer {
       margin-right: $sidebar-width;
     }
 
     &.sidebar-hidden {
-
       .main, .app-footer {
         margin-right: 0;
       }
@@ -70,20 +67,18 @@
     }
 
     &.sidebar-hidden {
-
       .sidebar {
-        margin-left: - $sidebar-minimized-width;
+        margin-right: - $sidebar-minimized-width;
+        margin-left: 0;
       }
     }
 
     &.sidebar-fixed {
-
       .main, .app-footer {
-        margin-left: $sidebar-minimized-width;
+        margin-right: $sidebar-minimized-width;
       }
 
       &.sidebar-hidden {
-
         .main, .app-footer {
           margin-left: 0;
         }
@@ -95,15 +90,13 @@
   // Aside Menu
   //
   .aside-menu-hidden {
-
     .aside-menu {
-      // margin-right: 0;
+      margin-right: 0;
       margin-left: - $aside-menu-width;
     }
   }
 
   .aside-menu-fixed {
-
     .aside-menu {
       right: auto;
       left: 0;
@@ -115,7 +108,6 @@
     }
 
     &.aside-menu-hidden {
-
       .main, .app-footer {
         margin-left: 0;
       }
@@ -138,15 +130,12 @@
   // Sidebar Menu
   .sidebar {
     .sidebar-nav {
-      direction: ltr;
-      * {
-        direction: rtl;
-      }
       .nav {
         .nav-item {
           .nav-link {
-            [class^="icon-"], [class*=" icon-"] {
-              margin-right: -4px;
+            direction: rtl;
+            i {
+              margin: 0 0 0 ($sidebar-nav-link-padding-x / 2);
             }
             .badge {
               float: left;
@@ -158,16 +147,41 @@
                 position: absolute;
                 right: auto !important;
                 left: $sidebar-nav-link-padding-x;
+                transform: rotate(180deg);
               }
             }
           }
           &.nav-dropdown {
             &.open {
               > .nav-link.nav-dropdown-toggle::before {
-                transform: rotate(90deg);
+                transform: rotate(270deg);
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  .sidebar-minimized .sidebar {
+    .nav-link {
+      padding-right: 0;
+      i {
+        float: right;
+        padding: 0;
+        margin: 0;
+      }
+      .badge {
+        right: auto;
+        left: 15px;
+      }
+    }
+    .nav > .nav-dropdown {
+
+      &:hover {
+        > .nav-dropdown-items {
+          right: $sidebar-minimized-width;
+          left: 0;
         }
       }
     }
@@ -249,6 +263,12 @@
     border: 0 solid $border-color;
     border-right-width: .25rem;
 
+    @each $color, $value in $theme-colors {
+      &.callout-#{$color} {
+        border-right-color: $value;
+      }
+    }
+
     .chart-wrapper {
       left: 0;
       float: left;
@@ -257,11 +277,5 @@
 
   .callout-default {
     border-right-color: $text-muted;
-  }
-
-  @each $color, $value in $theme-colors {
-    &.callout-#{$color} {
-      border-right-color: $value;
-    }
   }
 }
