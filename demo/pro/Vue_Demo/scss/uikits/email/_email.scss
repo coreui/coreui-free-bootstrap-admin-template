@@ -1,0 +1,215 @@
+.email-app {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border: 1px solid $border-color;
+
+  nav {
+    flex: 0 0 200px;
+    padding: $spacer;
+    border-right: 1px solid $border-color;
+
+    .btn-block {
+      margin-bottom: 15px;
+    }
+
+    .nav {
+      flex-direction: column;
+
+      .nav-item {
+        position: relative;
+
+        .nav-link {
+          color: $body-color;
+          border-bottom: 1px solid $border-color;
+
+          i {
+            width: 20px;
+            margin: 0 10px 0 0;
+            font-size: 14px;
+            text-align: center;
+          }
+
+          .badge {
+            float: right;
+            margin-top: 4px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    min-width: 0;
+    flex: 1;
+    padding: $spacer;
+  }
+
+  .inbox {
+    .toolbar {
+      padding-bottom: $spacer;
+      border-bottom: 1px solid $border-color;
+    }
+
+    .messages {
+      padding: 0;
+      list-style: none;
+    }
+
+    .message {
+      position: relative;
+      padding: $spacer $spacer $spacer (2 * $spacer);
+      cursor: pointer;
+      border-bottom: 1px solid $border-color;
+
+      &:hover {
+        background: $gray-100;
+      }
+
+      .actions {
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+
+        .action {
+          width: 2 * $spacer;
+          margin-bottom: $spacer / 2;
+          color: $gray-300;
+          text-align: center;
+        }
+      }
+
+      a {
+        color: #000;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &.unread {
+        .header, .title {
+          font-weight: bold;
+        }
+      }
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: ($spacer / 2);
+        // .from { }
+
+        .date {
+          margin-left: auto;
+        }
+      }
+
+      .title {
+        margin-bottom: ($spacer / 2);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .description {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .message {
+    .toolbar {
+      padding-bottom: $spacer;
+      border-bottom: 1px solid $border-color;
+    }
+
+    .details {
+      .title {
+        padding: $spacer 0;
+        font-weight: bold;
+      }
+
+      .header {
+        display: flex;
+        padding: $spacer 0;
+        margin: $spacer 0;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+
+        .avatar {
+          width: 40px;
+          height: 40px;
+          margin-right: $spacer;
+        }
+
+        .from {
+          font-size: 12px;
+          color: $text-muted;
+          align-self: center;
+
+          span {
+            display: block;
+            font-weight: bold;
+          }
+        }
+
+        .date {
+          margin-left: auto;
+        }
+      }
+
+      .attachments {
+        padding: $spacer 0;
+        margin-bottom: $spacer;
+        border-top: 3px solid $gray-100;
+        border-bottom: 3px solid $gray-100;
+
+        .attachment {
+          display: flex;
+          margin: ($spacer / 2) 0;
+          font-size: 12px;
+          align-self: center;
+
+          .badge {
+            margin: 0 ($spacer / 2);
+            line-height: inherit;
+          }
+
+          .menu {
+            margin-left: auto;
+
+            a {
+              padding: 0 ($spacer / 2);
+              font-size: 14px;
+              color: $border-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  // .compones { }
+}
+
+@include media-breakpoint-down(sm) {
+  .email-app {
+    flex-direction: column;
+    nav {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .email-app {
+    .message {
+      .header {
+        flex-flow: row wrap;
+        .date {
+          flex: 0 0 100%;
+        }
+      }
+    }
+  }
+}

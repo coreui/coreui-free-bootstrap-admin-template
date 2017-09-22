@@ -1,0 +1,108 @@
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <i class="icon-cursor"></i> Loading buttons - Ladda
+      <div class="card-actions">
+        <a href="https://github.com/hakimel/Ladda"><small class="text-muted">docs</small></a>
+      </div>
+    </div>
+    <div class="card-body">
+      <p>
+        A UI concept which merges loading indicators into the action that invoked them. Primarily intended for use with forms where
+        it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing. For a
+        real-world example, check out any of the forms on <a href="http://slides.com">slides.com</a>.
+      </p>
+
+      <div class="text-center">
+        <button class="btn btn-primary" (click)='toggleLoading()'>Toggle Ladda in button below</button>
+      </div>
+
+      <hr class="my-4">
+
+      <div class="row text-center">
+
+        <div class="col-md-3 py-4">
+          <h6>expand-left</h6>
+          <button class="btn btn-success btn-ladda" data-style="expand-left" [ladda]='isLoading'>Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>expand-right</h6>
+          <button class="btn btn-success btn-ladda" data-style="expand-right" [ladda]='isLoading'>Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>expand-up</h6>
+          <button class="btn btn-success btn-ladda" data-style="expand-up" [ladda]='isLoading'>Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>expand-down</h6>
+          <button class="btn btn-success btn-ladda" data-style="expand-down" [ladda]='isLoading'>Submit</button>
+        </div>
+
+
+        <div class="col-md-3 py-4">
+          <h6>contract</h6>
+          <button class="btn btn-danger btn-ladda" data-style="contract" [ladda]='isLoading'>Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>contract-overlay</h6>
+          <button class="btn btn-danger btn-ladda" data-style="contract-overlay" style="z-index: 10;" [ladda]='isLoading'>Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>zoom-in</h6>
+          <button class="btn btn-danger btn-ladda" data-style="zoom-in" [ladda]='isLoading'>Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>zoom-out</h6>
+          <button class="btn btn-danger btn-ladda" data-style="zoom-out" [ladda]='isLoading'>Submit</button>
+        </div>
+
+
+        <div class="col-md-3 py-4">
+          <h6>slide-left</h6>
+          <button class="btn btn-info btn-ladda" data-style="slide-left" [ladda]='isLoading'>Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>slide-right</h6>
+          <button class="btn btn-info btn-ladda" data-style="slide-right" [ladda]='isLoading'>Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>slide-up</h6>
+          <button class="btn btn-info btn-ladda" data-style="slide-up" [ladda]='isLoading'>Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>slide-down</h6>
+          <button class="btn btn-info btn-ladda" data-style="slide-down" [ladda]='isLoading'>Submit</button>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <h4 class="text-center">Sizes</h4>
+      <div class="row text-center">
+        <div class="col-md-4 py-4">
+          <h6>Small</h6>
+          <button class="btn btn-sm btn-primary btn-ladda" data-style="expand-right" [ladda]='isLoading'>Submit</button>
+        </div>
+
+        <div class="col-md-4 py-4">
+          <h6>Normall</h6>
+          <button class="btn btn-primary btn-ladda" data-style="expand-right" [ladda]='isLoading'>Submit</button>
+        </div>
+
+        <div class="col-md-4 py-4">
+          <h6>Large</h6>
+          <button class="btn btn-lg btn-primary btn-ladda" data-style="expand-right" [ladda]='isLoading'>Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

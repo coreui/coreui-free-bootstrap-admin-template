@@ -1,0 +1,579 @@
+<template>
+  <div class="animated fadeIn">
+    <div class="card">
+      <div class="card-header">
+        <strong>GLYPHICONS</strong> Filetypes
+      </div>
+      <div class="card-body text-center">
+        <div class="row">
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-txt x2"></i><br>
+            .filetypes.filetypes-txt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-doc x2"></i><br>
+            .filetypes.filetypes-doc
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-rtf x2"></i><br>
+            .filetypes.filetypes-rtf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-log x2"></i><br>
+            .filetypes.filetypes-log
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-tex x2"></i><br>
+            .filetypes.filetypes-tex
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-msg x2"></i><br>
+            .filetypes.filetypes-msg
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-text x2"></i><br>
+            .filetypes.filetypes-text
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-wpd x2"></i><br>
+            .filetypes.filetypes-wpd
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-wps x2"></i><br>
+            .filetypes.filetypes-wps
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-docx x2"></i><br>
+            .filetypes.filetypes-docx
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-page x2"></i><br>
+            .filetypes.filetypes-page
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-csv x2"></i><br>
+            .filetypes.filetypes-csv
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-dat x2"></i><br>
+            .filetypes.filetypes-dat
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-tar x2"></i><br>
+            .filetypes.filetypes-tar
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-xml x2"></i><br>
+            .filetypes.filetypes-xml
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-vcf x2"></i><br>
+            .filetypes.filetypes-vcf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-pps x2"></i><br>
+            .filetypes.filetypes-pps
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-key x2"></i><br>
+            .filetypes.filetypes-key
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-ppt x2"></i><br>
+            .filetypes.filetypes-ppt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-pptx x2"></i><br>
+            .filetypes.filetypes-pptx
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-sdf x2"></i><br>
+            .filetypes.filetypes-sdf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-gbr x2"></i><br>
+            .filetypes.filetypes-gbr
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-ged x2"></i><br>
+            .filetypes.filetypes-ged
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-mp3 x2"></i><br>
+            .filetypes.filetypes-mp3
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-m4a x2"></i><br>
+            .filetypes.filetypes-m4a
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-waw x2"></i><br>
+            .filetypes.filetypes-waw
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-wma x2"></i><br>
+            .filetypes.filetypes-wma
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-mpa x2"></i><br>
+            .filetypes.filetypes-mpa
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-iff x2"></i><br>
+            .filetypes.filetypes-iff
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-aif x2"></i><br>
+            .filetypes.filetypes-aif
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-ra x2"></i><br>
+            .filetypes.filetypes-ra
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-mid x2"></i><br>
+            .filetypes.filetypes-mid
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-m3v x2"></i><br>
+            .filetypes.filetypes-m3v
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-e-3gp x2"></i><br>
+            .filetypes.filetypes-e-3gp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-swf x2"></i><br>
+            .filetypes.filetypes-swf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-avi x2"></i><br>
+            .filetypes.filetypes-avi
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-asx x2"></i><br>
+            .filetypes.filetypes-asx
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-mp4 x2"></i><br>
+            .filetypes.filetypes-mp4
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-e-3g2 x2"></i><br>
+            .filetypes.filetypes-e-3g2
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-mpg x2"></i><br>
+            .filetypes.filetypes-mpg
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-asf x2"></i><br>
+            .filetypes.filetypes-asf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-vob x2"></i><br>
+            .filetypes.filetypes-vob
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-wmv x2"></i><br>
+            .filetypes.filetypes-wmv
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-mov x2"></i><br>
+            .filetypes.filetypes-mov
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-srt x2"></i><br>
+            .filetypes.filetypes-srt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-m4v x2"></i><br>
+            .filetypes.filetypes-m4v
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-flv x2"></i><br>
+            .filetypes.filetypes-flv
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-rm x2"></i><br>
+            .filetypes.filetypes-rm
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-png x2"></i><br>
+            .filetypes.filetypes-png
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-psd x2"></i><br>
+            .filetypes.filetypes-psd
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-psp x2"></i><br>
+            .filetypes.filetypes-psp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-jpg x2"></i><br>
+            .filetypes.filetypes-jpg
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-tif x2"></i><br>
+            .filetypes.filetypes-tif
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-tiff x2"></i><br>
+            .filetypes.filetypes-tiff
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-gif x2"></i><br>
+            .filetypes.filetypes-gif
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-bmp x2"></i><br>
+            .filetypes.filetypes-bmp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-tga x2"></i><br>
+            .filetypes.filetypes-tga
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-thm x2"></i><br>
+            .filetypes.filetypes-thm
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-yuv x2"></i><br>
+            .filetypes.filetypes-yuv
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-dds x2"></i><br>
+            .filetypes.filetypes-dds
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-ai x2"></i><br>
+            .filetypes.filetypes-ai
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-eps x2"></i><br>
+            .filetypes.filetypes-eps
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-ps x2"></i><br>
+            .filetypes.filetypes-ps
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-svg x2"></i><br>
+            .filetypes.filetypes-svg
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-pdf x2"></i><br>
+            .filetypes.filetypes-pdf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-pct x2"></i><br>
+            .filetypes.filetypes-pct
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-indd x2"></i><br>
+            .filetypes.filetypes-indd
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-xlr x2"></i><br>
+            .filetypes.filetypes-xlr
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-xls x2"></i><br>
+            .filetypes.filetypes-xls
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-xlsx x2"></i><br>
+            .filetypes.filetypes-xlsx
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-db x2"></i><br>
+            .filetypes.filetypes-db
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-dbf x2"></i><br>
+            .filetypes.filetypes-dbf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-mdb x2"></i><br>
+            .filetypes.filetypes-mdb
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-pdb x2"></i><br>
+            .filetypes.filetypes-pdb
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-sql x2"></i><br>
+            .filetypes.filetypes-sql
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-aacd x2"></i><br>
+            .filetypes.filetypes-aacd
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-app x2"></i><br>
+            .filetypes.filetypes-app
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-exe x2"></i><br>
+            .filetypes.filetypes-exe
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-com x2"></i><br>
+            .filetypes.filetypes-com
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-bat x2"></i><br>
+            .filetypes.filetypes-bat
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-apk x2"></i><br>
+            .filetypes.filetypes-apk
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-jar x2"></i><br>
+            .filetypes.filetypes-jar
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-hsf x2"></i><br>
+            .filetypes.filetypes-hsf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-pif x2"></i><br>
+            .filetypes.filetypes-pif
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-vb x2"></i><br>
+            .filetypes.filetypes-vb
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-cgi x2"></i><br>
+            .filetypes.filetypes-cgi
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-css x2"></i><br>
+            .filetypes.filetypes-css
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-js x2"></i><br>
+            .filetypes.filetypes-js
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-php x2"></i><br>
+            .filetypes.filetypes-php
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-xhtml x2"></i><br>
+            .filetypes.filetypes-xhtml
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-htm x2"></i><br>
+            .filetypes.filetypes-htm
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-html x2"></i><br>
+            .filetypes.filetypes-html
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-asp x2"></i><br>
+            .filetypes.filetypes-asp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-cer x2"></i><br>
+            .filetypes.filetypes-cer
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-jsp x2"></i><br>
+            .filetypes.filetypes-jsp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-cfm x2"></i><br>
+            .filetypes.filetypes-cfm
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-aspx x2"></i><br>
+            .filetypes.filetypes-aspx
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-rss x2"></i><br>
+            .filetypes.filetypes-rss
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-csr x2"></i><br>
+            .filetypes.filetypes-csr
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-less x2"></i><br>
+            .filetypes.filetypes-less
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-otf x2"></i><br>
+            .filetypes.filetypes-otf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-ttf x2"></i><br>
+            .filetypes.filetypes-ttf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-font x2"></i><br>
+            .filetypes.filetypes-font
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-fnt x2"></i><br>
+            .filetypes.filetypes-fnt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-eot x2"></i><br>
+            .filetypes.filetypes-eot
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-woff x2"></i><br>
+            .filetypes.filetypes-woff
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-zip x2"></i><br>
+            .filetypes.filetypes-zip
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-zipx x2"></i><br>
+            .filetypes.filetypes-zipx
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-rar x2"></i><br>
+            .filetypes.filetypes-rar
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-targ x2"></i><br>
+            .filetypes.filetypes-targ
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-sitx x2"></i><br>
+            .filetypes.filetypes-sitx
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-deb x2"></i><br>
+            .filetypes.filetypes-deb
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-e-7z x2"></i><br>
+            .filetypes.filetypes-e-7z
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-pkg x2"></i><br>
+            .filetypes.filetypes-pkg
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-rpm x2"></i><br>
+            .filetypes.filetypes-rpm
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-cbr x2"></i><br>
+            .filetypes.filetypes-cbr
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-gz x2"></i><br>
+            .filetypes.filetypes-gz
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-dmg x2"></i><br>
+            .filetypes.filetypes-dmg
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-cue x2"></i><br>
+            .filetypes.filetypes-cue
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-bin x2"></i><br>
+            .filetypes.filetypes-bin
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-iso x2"></i><br>
+            .filetypes.filetypes-iso
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-hdf x2"></i><br>
+            .filetypes.filetypes-hdf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-vcd x2"></i><br>
+            .filetypes.filetypes-vcd
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-bak x2"></i><br>
+            .filetypes.filetypes-bak
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-tmp x2"></i><br>
+            .filetypes.filetypes-tmp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-ics x2"></i><br>
+            .filetypes.filetypes-ics
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-msi x2"></i><br>
+            .filetypes.filetypes-msi
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-cfg x2"></i><br>
+            .filetypes.filetypes-cfg
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-ini x2"></i><br>
+            .filetypes.filetypes-ini
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-prf x2"></i><br>
+            .filetypes.filetypes-prf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-json x2"></i><br>
+            .filetypes.filetypes-json
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-site x2"></i><br>
+            .filetypes.filetypes-site
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-xap x2"></i><br>
+            .filetypes.filetypes-xap
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-api x2"></i><br>
+            .filetypes.filetypes-api
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-ico x2"></i><br>
+            .filetypes.filetypes-ico
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-webp x2"></i><br>
+            .filetypes.filetypes-webp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-bpg x2"></i><br>
+            .filetypes.filetypes-bpg
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-flac x2"></i><br>
+            .filetypes.filetypes-flac
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-ogg x2"></i><br>
+            .filetypes.filetypes-ogg
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="filetypes filetypes-unknown x2"></i><br>
+            .filetypes.filetypes-unknown
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'glyphicons-filetypes'
+}
+</script>

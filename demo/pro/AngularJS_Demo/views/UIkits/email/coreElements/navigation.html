@@ -1,0 +1,97 @@
+<nav id="navigation" class="collapse navbar-toggleable-sm">
+    <div id="navigation-items">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.main"><i class="icon-speedometer"></i> {{ 'DASHBOARD' | translate }} <span class="badge badge-info">NEW</span></a>
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('bootstrap')}">
+                <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('bootstrap')}" ui-sref-active="active" href="#"><i class="icon-layers"></i> Bootstrap UI</a>
+
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('bootstrap.content')}">
+                        <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('bootstrap.content')}" href="#"><i class="icon-speech"></i> Content</a>
+                        <ul ng-controller="bootstrapElements" class="nav-dropdown-items">
+                            <li ng-repeat="item in content" class="nav-item">
+                                <a class="nav-link" ui-sref-active="active" ui-sref="bootstrap.content.{{ item.name }}"><i class="icon-speech"></i> {{ item.desc }}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('bootstrap.components')}">
+                        <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('bootstrap.components')}" href="#"><i class="icon-options"></i> Components</a>
+                        <ul ng-controller="bootstrapElements" class="nav-dropdown-items">
+                            <li ng-repeat="item in components" class="nav-item">
+                                <a class="nav-link" ui-sref-active="active" ui-sref="bootstrap.components.{{ item.name }}"><i class="icon-options"></i> {{ item.desc }}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.icons')}">
+                <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.icons')}" href="#"><i class="icon-star"></i> {{ 'ICONS' | translate }}</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.icons.fontawesome"><i class="icon-star"></i> Font Awesome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.icons.simplelineicons"><i class="icon-star"></i> Simple Line Icons</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.forms"><i class="icon-note"></i></i> {{ 'FORMS' | translate }} <span class="badge badge-danger">NEW</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.widgets"><i class="icon-calculator"></i> {{ 'WIDGETS' | translate }} <span class="badge badge-info">NEW</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.buttons"><i class="icon-puzzle"></i> {{ 'BUTTONS' | translate }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.notifications"><i class="icon-info"></i> {{ 'NOTIFICATIONS' | translate }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.tables"><i class="icon-list"></i> {{ 'TABLES' | translate }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.sliders"><i class="icon-equalizer"></i> {{ 'SLIDERS' | translate }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.charts"><i class="icon-pie-chart"></i> {{ 'CHARTS' | translate }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.calendar"><i class="icon-calendar"></i> {{ 'CALENDAR' | translate }}</a>
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.pages')}">
+                <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.pages')}" href="#"><i class="icon-star"></i> {{ 'PAGES' | translate }}</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.login"><i class="icon-star"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.register"><i class="icon-star"></i> Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.404"><i class="icon-star"></i> Error 404</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.500"><i class="icon-star"></i> Error 500</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.uikits')}">
+                <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.uikits')}" ui-sref-active="active" href="#"><i class="icon-layers"></i> {{ 'UI Kits' | translate }}</a>
+
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.uikits.invoicing')}">
+                        <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.uikits.invoicing')}" href="#"><i class="icon-speech"></i> {{ 'INVOICING' | translate }}</a>
+                        <ul ng-controller="bootstrapElements" class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" ui-sref-active="active" ui-sref="app.uikits.invoicing.invoice"><i class="icon-speech"></i> {{ 'INVOICE' | translate }}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>

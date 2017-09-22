@@ -1,0 +1,143 @@
+.cal-month-view {
+  .cal-header {
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .cal-cell-row:hover {
+    background-color: $gray-100;
+  }
+
+  .cal-header .cal-cell {
+    padding: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .cal-cell-row .cal-cell:hover,
+  .cal-cell.cal-has-events.cal-open {
+    background-color: $gray-100;
+  }
+
+  .cal-days {
+    border: 1px solid $border-color;
+    border-bottom: 0;
+  }
+
+  .cal-cell-top {
+    min-height: 62px;
+  }
+
+  .cal-cell-row {
+    display: flex;
+  }
+
+  .cal-cell {
+    float: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cal-day-cell {
+    min-height: 100px;
+  }
+
+  .cal-day-cell:not(:last-child) {
+    border-right: 1px solid $border-color;
+  }
+
+  .cal-days .cal-cell-row {
+    border-bottom: 1px solid $border-color;
+  }
+
+  .cal-day-badge {
+    margin-top: 18px;
+    margin-left: 10px;
+    background-color: theme-color("danger");
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 10px;
+  }
+
+  .cal-day-number {
+    font-size: 1.2em;
+    font-weight: 400;
+    opacity: 0.5;
+    margin-top: 15px;
+    margin-right: 15px;
+    float: right;
+    margin-bottom: 10px;
+  }
+
+  .cal-events {
+    flex: 1;
+    align-items: flex-end;
+    margin: 3px;
+    line-height: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cal-event {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+  }
+
+  .cal-day-cell.cal-in-month.cal-has-events {
+    cursor: pointer;
+  }
+
+  .cal-day-cell.cal-out-month .cal-day-number {
+    opacity: 0.1;
+    cursor: default;
+  }
+
+  .cal-day-cell.cal-weekend .cal-day-number {
+    color: darkred;
+  }
+
+  .cal-day-cell.cal-today {
+    background-color: e8fde7;
+  }
+
+  .cal-day-cell.cal-today .cal-day-number {
+    font-size: 1.9em;
+  }
+
+  .cal-open-day-events {
+    padding: 15px;
+    color: white;
+    background-color: $gray-600;
+  }
+
+  .cal-open-day-events .cal-event {
+    position: relative;
+    top: 2px;
+  }
+
+  .cal-event-title {
+    color: white;
+  }
+
+  .cal-out-month {
+    .cal-day-badge,
+    .cal-event {
+      opacity: 0.3;
+    }
+  }
+}

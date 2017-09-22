@@ -1,0 +1,57 @@
+.cal-day-view {
+  .cal-hour-rows {
+    width: 100%;
+    border: solid 1px $border-color;
+    overflow-x: scroll;
+    position: relative;
+  }
+
+  .cal-hour:nth-child(odd) {
+    background-color: $gray-100;
+  }
+
+  .cal-hour-segment {
+    height: 30px;
+  }
+
+  .cal-hour:not(:last-child) .cal-hour-segment,
+  .cal-hour:last-child :not(:last-child) .cal-hour-segment {
+    border-bottom: thin dashed $border-color;
+  }
+
+  .cal-time {
+    font-weight: bold;
+    padding-top: 5px;
+    width: 70px;
+    text-align: center;
+  }
+
+  .cal-hour-segment:hover {
+    background-color: $gray-200;
+  }
+
+  .cal-event {
+    position: absolute;
+    border: solid 1px;
+    padding: 5px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .cal-event.cal-starts-within-day {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .cal-event.cal-ends-within-day {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .cal-all-day-event {
+    padding: 8px;
+    border: solid 1px;
+  }
+}

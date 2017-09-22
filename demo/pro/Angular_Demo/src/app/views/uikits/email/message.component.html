@@ -1,0 +1,106 @@
+<div class="animated fadeIn">
+  <div class="email-app mb-4">
+    <nav>
+      <a href="#" class="btn btn-danger btn-block">New Email</a>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-inbox"></i> Inbox <span class="badge badge-danger">4</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-star"></i> Stared</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-rocket"></i> Sent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-trash-o"></i> Trash</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-bookmark"></i> Important<span class="badge badge-info">5</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-inbox"></i> Inbox <span class="badge badge-danger">4</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="message">
+      <div class="toolbar">
+        <div class="btn-group">
+          <button type="button" class="btn btn-light"><span class="fa fa-star"></span></button>
+          <button type="button" class="btn btn-light"><span class="fa fa-star-o"></span></button>
+          <button type="button" class="btn btn-light"><span class="fa fa-bookmark-o"></span></button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-light"><span class="fa fa-mail-reply"></span></button>
+          <button type="button" class="btn btn-light"><span class="fa fa-mail-reply-all"></span></button>
+          <button type="button" class="btn btn-light"><span class="fa fa-mail-forward"></span></button>
+        </div>
+        <button type="button" class="btn btn-light"><span class="fa fa-trash-o"></span></button>
+        <div class="btn-group" dropdown placement="bottom right">
+          <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" dropdownToggle (click)="false">
+            <span class="fa fa-tags"></span> <span class="caret"></span>
+          </button>
+          <div class="dropdown-menu" *dropdownMenu>
+            <a class="dropdown-item" href="#">add label <span class="badge badge-danger"> Home</span></a>
+            <a class="dropdown-item" href="#">add label <span class="badge badge-info"> Job</span></a>
+            <a class="dropdown-item" href="#">add label <span class="badge badge-success"> Clients</span></a>
+            <a class="dropdown-item" href="#">add label <span class="badge badge-warning"> News</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</div>
+        <div class="header">
+          <img class="avatar" src="assets/img/avatars/7.jpg">
+          <div class="from">
+            <span>Lukasz Holeczek</span>
+            lukasz@bootstrapmaster.com
+          </div>
+          <div class="date">Today, <b>3:47 PM</b></div>
+        </div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </blockquote>
+        </div>
+        <div class="attachments">
+          <div class="attachment">
+            <span class="badge badge-danger">zip</span> <b>bootstrap.zip</b> <i>(2,5MB)</i>
+            <span class="menu">
+              <a href="#" class="fa fa-search"></a>
+              <a href="#" class="fa fa-share"></a>
+              <a href="#" class="fa fa-cloud-download"></a>
+            </span>
+          </div>
+          <div class="attachment">
+            <span class="badge badge-info">txt</span> <b>readme.txt</b> <i>(7KB)</i>
+            <span class="menu">
+              <a href="#" class="fa fa-search"></a>
+              <a href="#" class="fa fa-share"></a>
+              <a href="#" class="fa fa-cloud-download"></a>
+            </span>
+          </div>
+          <div class="attachment">
+            <span class="badge badge-success">xls</span> <b>spreadsheet.xls</b> <i>(984KB)</i>
+            <span class="menu">
+              <a href="#" class="fa fa-search"></a>
+              <a href="#" class="fa fa-share"></a>
+              <a href="#" class="fa fa-cloud-download"></a>
+            </span>
+          </div>
+        </div>
+        <form method="post" action="">
+          <div class="form-group">
+            <textarea class="form-control" id="message" name="body" rows="12" placeholder="Click here to reply"></textarea>
+          </div>
+          <div class="form-group">
+            <button tabindex="3" type="submit" class="btn btn-success">Send message</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+</div>

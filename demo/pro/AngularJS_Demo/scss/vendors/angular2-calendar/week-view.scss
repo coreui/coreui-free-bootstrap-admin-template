@@ -1,0 +1,66 @@
+.cal-week-view {
+  .cal-day-headers {
+    display: flex;
+    margin-bottom: 3px;
+    border: 1px solid $border-color;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .cal-day-headers .cal-header {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .cal-day-headers .cal-header:not(:last-child) {
+    border-right: 1px solid $border-color;
+  }
+
+  .cal-day-headers .cal-header:hover {
+    background-color: $gray-100;
+  }
+
+  .cal-day-headers span {
+    font-weight: 400;
+    opacity: 0.5;
+  }
+
+  .cal-event-container {
+    display: inline-block;
+  }
+
+  .cal-event {
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .cal-event.cal-starts-within-week {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .cal-event.cal-ends-within-week {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .cal-header.cal-today {
+    background-color: lighten(theme-color("success"), 25%);
+  }
+
+  .cal-header.cal-weekend span {
+    color: theme-color("danger");
+  }
+
+  .cal-event,
+  .cal-header {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,191 @@
+<div class="sidebar">
+  <app-sidebar-header></app-sidebar-header>
+  <app-sidebar-form></app-sidebar-form>
+  <nav class="sidebar-nav">
+    <ul class="nav">
+      <li class="nav-title">
+        Dashboard
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+      </li>
+      <li class="divider"></li>
+      <li class="nav-title">
+        UI Elements
+      </li>
+      <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-puzzle"></i> Components</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/buttons']"><i class="icon-puzzle"></i> Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/social-buttons']"><i class="icon-puzzle"></i> Social Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/cards']"><i class="icon-puzzle"></i> Cards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/forms']"><i class="icon-puzzle"></i> Forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/modals']"><i class="icon-puzzle"></i> Modals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/switches']"><i class="icon-puzzle"></i> Switches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/tables']"><i class="icon-puzzle"></i> Tables</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/tabs']"><i class="icon-puzzle"></i> Tabs</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-star"></i> Icons</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/icons/font-awesome']"><i class="icon-star"></i> Font Awesome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/icons/simple-line-icons']"><i class="icon-star"></i> Simple Line Icons</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-note"></i> Forms</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/forms/basic-forms']"><i class="icon-note"></i> Basic Forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/forms/advanced-forms']"><i class="icon-note"></i> Advanced Forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/forms/text-editors']"><i class="icon-note"></i> Text Editors</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-energy"></i> Plugins</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/plugins/calendar']"><i class="icon-calendar"></i> Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/plugins/datatable']"><i class="icon-menu"></i> DataTable</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/plugins/draggable-cards']"><i class="icon-cursor-move"></i> Draggable Cards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/plugins/loading-buttons']"><i class="icon-cursor"></i> Loading Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/plugins/notifications']"><i class="icon-info"></i> Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/plugins/spinners']"><i class="fa fa-spinner"></i> Spinners</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/widgets']"><i class="icon-calculator"></i> Widgets <span class="badge badge-info">NEW</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/charts']"><i class="icon-pie-chart"></i> Charts</a>
+      </li>
+      <li class="divider"></li>
+      <li class="nav-title">
+        Extras
+      </li>
+      <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-star"></i> Pages</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/login']"><i class="icon-star"></i> Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/register']"><i class="icon-star"></i> Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/404']"><i class="icon-star"></i> Error 404</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/500']"><i class="icon-star"></i> Error 500</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-layers"></i> UI Kits</a>
+
+        <ul class="nav-dropdown-items">
+          <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+            <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-speech"></i> Invoicing</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/uikits/invoicing/invoice']"><i class="icon-speech"></i> Invoice</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+            <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-speech"></i> Email</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/uikits/email/inbox']"><i class="icon-speech"></i> Inbox</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/uikits/email/message']"><i class="icon-speech"></i> Message</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/uikits/email/compose']"><i class="icon-speech"></i> Compose</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="divider m-2"></li>
+      <li class="nav-title">
+        Labels
+      </li>
+      <li class="nav-item hidden-cn">
+        <a class="nav-label" href="#"><i class="fa fa-circle text-danger"></i> Label danger</a>
+      </li>
+      <li class="nav-item hidden-cn">
+        <a class="nav-label" href="#"><i class="fa fa-circle text-info"></i> Label info</a>
+      </li>
+      <li class="nav-item hidden-cn">
+        <a class="nav-label" href="#"><i class="fa fa-circle text-warning"></i> Label warning</a>
+      </li>
+      <li class="divider"></li>
+      <li class="nav-title">
+        System Utilization
+      </li>
+      <li class="nav-item px-3 hidden-cn">
+        <div class="text-uppercase mb-1"><small><b>CPU Usage</b></small></div>
+        <div class="progress progress-xs">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <small class="text-muted">348 Processes. 1/4 Cores.</small>
+      </li>
+      <li class="nav-item px-3 hidden-cn">
+        <div class="text-uppercase mb-1"><small><b>Memory Usage</b></small></div>
+        <div class="progress progress-xs">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <small class="text-muted">11444GB/16384MB</small>
+      </li>
+      <li class="nav-item px-3 hidden-cn">
+        <div class="text-uppercase mb-1"><small><b>SSD 1 Usage</b></small></div>
+        <div class="progress progress-xs">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <small class="text-muted">243GB/256GB</small>
+      </li>
+    </ul>
+  </nav>
+  <app-sidebar-footer></app-sidebar-footer>
+</div>

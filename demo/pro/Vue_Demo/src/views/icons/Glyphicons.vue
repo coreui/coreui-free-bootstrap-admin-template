@@ -1,0 +1,3219 @@
+<template>
+  <div class="animated fadeIn">
+    <div class="card">
+      <div class="card-header">
+        <strong>GLYPHICONS</strong> Basic Set
+      </div>
+      <div class="card-body text-center">
+        <div class="row">
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-glass x2"></i><br>
+            .glyphicons.glyphicons-glass
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-leaf x2"></i><br>
+            .glyphicons.glyphicons-leaf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dog x2"></i><br>
+            .glyphicons.glyphicons-dog
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user x2"></i><br>
+            .glyphicons.glyphicons-user
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-girl x2"></i><br>
+            .glyphicons.glyphicons-girl
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-car x2"></i><br>
+            .glyphicons.glyphicons-car
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-add x2"></i><br>
+            .glyphicons.glyphicons-user-add
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-remove x2"></i><br>
+            .glyphicons.glyphicons-user-remove
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-film x2"></i><br>
+            .glyphicons.glyphicons-film
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-magic x2"></i><br>
+            .glyphicons.glyphicons-magic
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-envelope x2"></i><br>
+            .glyphicons.glyphicons-envelope
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-camera x2"></i><br>
+            .glyphicons.glyphicons-camera
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-heart x2"></i><br>
+            .glyphicons.glyphicons-heart
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-beach-umbrella x2"></i><br>
+            .glyphicons.glyphicons-beach-umbrella
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-train x2"></i><br>
+            .glyphicons.glyphicons-train
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-print x2"></i><br>
+            .glyphicons.glyphicons-print
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bin x2"></i><br>
+            .glyphicons.glyphicons-bin
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-music x2"></i><br>
+            .glyphicons.glyphicons-music
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-music-alt x2"></i><br>
+            .glyphicons.glyphicons-music-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-heart-empty x2"></i><br>
+            .glyphicons.glyphicons-heart-empty
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-home x2"></i><br>
+            .glyphicons.glyphicons-home
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-snowflake x2"></i><br>
+            .glyphicons.glyphicons-snowflake
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fire x2"></i><br>
+            .glyphicons.glyphicons-fire
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-magnet x2"></i><br>
+            .glyphicons.glyphicons-magnet
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-parents x2"></i><br>
+            .glyphicons.glyphicons-parents
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-binoculars x2"></i><br>
+            .glyphicons.glyphicons-binoculars
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-road x2"></i><br>
+            .glyphicons.glyphicons-road
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-search x2"></i><br>
+            .glyphicons.glyphicons-search
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cars x2"></i><br>
+            .glyphicons.glyphicons-cars
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-notes-2 x2"></i><br>
+            .glyphicons.glyphicons-notes-2
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pencil x2"></i><br>
+            .glyphicons.glyphicons-pencil
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bus x2"></i><br>
+            .glyphicons.glyphicons-bus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-wifi-alt x2"></i><br>
+            .glyphicons.glyphicons-wifi-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-luggage x2"></i><br>
+            .glyphicons.glyphicons-luggage
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-old-man x2"></i><br>
+            .glyphicons.glyphicons-old-man
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-woman x2"></i><br>
+            .glyphicons.glyphicons-woman
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-file x2"></i><br>
+            .glyphicons.glyphicons-file
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-coins x2"></i><br>
+            .glyphicons.glyphicons-coins
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-plane x2"></i><br>
+            .glyphicons.glyphicons-plane
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-notes x2"></i><br>
+            .glyphicons.glyphicons-notes
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-stats x2"></i><br>
+            .glyphicons.glyphicons-stats
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-charts x2"></i><br>
+            .glyphicons.glyphicons-charts
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pie-chart x2"></i><br>
+            .glyphicons.glyphicons-pie-chart
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-group x2"></i><br>
+            .glyphicons.glyphicons-group
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-keys x2"></i><br>
+            .glyphicons.glyphicons-keys
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-calendar x2"></i><br>
+            .glyphicons.glyphicons-calendar
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-router x2"></i><br>
+            .glyphicons.glyphicons-router
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-camera-small x2"></i><br>
+            .glyphicons.glyphicons-camera-small
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-star-empty x2"></i><br>
+            .glyphicons.glyphicons-star-empty
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-star x2"></i><br>
+            .glyphicons.glyphicons-star
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-link x2"></i><br>
+            .glyphicons.glyphicons-link
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-eye-open x2"></i><br>
+            .glyphicons.glyphicons-eye-open
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-eye-close x2"></i><br>
+            .glyphicons.glyphicons-eye-close
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-alarm x2"></i><br>
+            .glyphicons.glyphicons-alarm
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-clock x2"></i><br>
+            .glyphicons.glyphicons-clock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-stopwatch x2"></i><br>
+            .glyphicons.glyphicons-stopwatch
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-projector x2"></i><br>
+            .glyphicons.glyphicons-projector
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-history x2"></i><br>
+            .glyphicons.glyphicons-history
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-truck x2"></i><br>
+            .glyphicons.glyphicons-truck
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cargo x2"></i><br>
+            .glyphicons.glyphicons-cargo
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-compass x2"></i><br>
+            .glyphicons.glyphicons-compass
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-keynote x2"></i><br>
+            .glyphicons.glyphicons-keynote
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-paperclip x2"></i><br>
+            .glyphicons.glyphicons-paperclip
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-power x2"></i><br>
+            .glyphicons.glyphicons-power
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-lightbulb x2"></i><br>
+            .glyphicons.glyphicons-lightbulb
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tag x2"></i><br>
+            .glyphicons.glyphicons-tag
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tags x2"></i><br>
+            .glyphicons.glyphicons-tags
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cleaning x2"></i><br>
+            .glyphicons.glyphicons-cleaning
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ruler x2"></i><br>
+            .glyphicons.glyphicons-ruler
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gift x2"></i><br>
+            .glyphicons.glyphicons-gift
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-umbrella x2"></i><br>
+            .glyphicons.glyphicons-umbrella
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-book x2"></i><br>
+            .glyphicons.glyphicons-book
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bookmark x2"></i><br>
+            .glyphicons.glyphicons-bookmark
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-wifi x2"></i><br>
+            .glyphicons.glyphicons-wifi
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cup x2"></i><br>
+            .glyphicons.glyphicons-cup
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-stroller x2"></i><br>
+            .glyphicons.glyphicons-stroller
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-headphones x2"></i><br>
+            .glyphicons.glyphicons-headphones
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-headset x2"></i><br>
+            .glyphicons.glyphicons-headset
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-warning-sign x2"></i><br>
+            .glyphicons.glyphicons-warning-sign
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-signal x2"></i><br>
+            .glyphicons.glyphicons-signal
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-retweet x2"></i><br>
+            .glyphicons.glyphicons-retweet
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-refresh x2"></i><br>
+            .glyphicons.glyphicons-refresh
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-roundabout x2"></i><br>
+            .glyphicons.glyphicons-roundabout
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-random x2"></i><br>
+            .glyphicons.glyphicons-random
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-heat x2"></i><br>
+            .glyphicons.glyphicons-heat
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-repeat x2"></i><br>
+            .glyphicons.glyphicons-repeat
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-display x2"></i><br>
+            .glyphicons.glyphicons-display
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-log-book x2"></i><br>
+            .glyphicons.glyphicons-log-book
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-address-book x2"></i><br>
+            .glyphicons.glyphicons-address-book
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-building x2"></i><br>
+            .glyphicons.glyphicons-building
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-eyedropper x2"></i><br>
+            .glyphicons.glyphicons-eyedropper
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-adjust x2"></i><br>
+            .glyphicons.glyphicons-adjust
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tint x2"></i><br>
+            .glyphicons.glyphicons-tint
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-crop x2"></i><br>
+            .glyphicons.glyphicons-crop
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vector-path-square x2"></i><br>
+            .glyphicons.glyphicons-vector-path-square
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vector-path-circle x2"></i><br>
+            .glyphicons.glyphicons-vector-path-circle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vector-path-polygon x2"></i><br>
+            .glyphicons.glyphicons-vector-path-polygon
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vector-path-line x2"></i><br>
+            .glyphicons.glyphicons-vector-path-line
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vector-path-curve x2"></i><br>
+            .glyphicons.glyphicons-vector-path-curve
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vector-path-all x2"></i><br>
+            .glyphicons.glyphicons-vector-path-all
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-font x2"></i><br>
+            .glyphicons.glyphicons-font
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-italic x2"></i><br>
+            .glyphicons.glyphicons-italic
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bold x2"></i><br>
+            .glyphicons.glyphicons-bold
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-text-underline x2"></i><br>
+            .glyphicons.glyphicons-text-underline
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-text-strike x2"></i><br>
+            .glyphicons.glyphicons-text-strike
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-text-height x2"></i><br>
+            .glyphicons.glyphicons-text-height
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-text-width x2"></i><br>
+            .glyphicons.glyphicons-text-width
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-text-resize x2"></i><br>
+            .glyphicons.glyphicons-text-resize
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-left-indent x2"></i><br>
+            .glyphicons.glyphicons-left-indent
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-right-indent x2"></i><br>
+            .glyphicons.glyphicons-right-indent
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-align-left x2"></i><br>
+            .glyphicons.glyphicons-align-left
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-align-center x2"></i><br>
+            .glyphicons.glyphicons-align-center
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-align-right x2"></i><br>
+            .glyphicons.glyphicons-align-right
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-justify x2"></i><br>
+            .glyphicons.glyphicons-justify
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-list x2"></i><br>
+            .glyphicons.glyphicons-list
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-text-smaller x2"></i><br>
+            .glyphicons.glyphicons-text-smaller
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-text-bigger x2"></i><br>
+            .glyphicons.glyphicons-text-bigger
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-embed x2"></i><br>
+            .glyphicons.glyphicons-embed
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-embed-close x2"></i><br>
+            .glyphicons.glyphicons-embed-close
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-table x2"></i><br>
+            .glyphicons.glyphicons-table
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-message-full x2"></i><br>
+            .glyphicons.glyphicons-message-full
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-message-empty x2"></i><br>
+            .glyphicons.glyphicons-message-empty
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-message-in x2"></i><br>
+            .glyphicons.glyphicons-message-in
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-message-out x2"></i><br>
+            .glyphicons.glyphicons-message-out
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-message-plus x2"></i><br>
+            .glyphicons.glyphicons-message-plus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-message-minus x2"></i><br>
+            .glyphicons.glyphicons-message-minus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-message-ban x2"></i><br>
+            .glyphicons.glyphicons-message-ban
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-message-flag x2"></i><br>
+            .glyphicons.glyphicons-message-flag
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-message-lock x2"></i><br>
+            .glyphicons.glyphicons-message-lock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-message-new x2"></i><br>
+            .glyphicons.glyphicons-message-new
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-inbox x2"></i><br>
+            .glyphicons.glyphicons-inbox
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-inbox-plus x2"></i><br>
+            .glyphicons.glyphicons-inbox-plus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-inbox-minus x2"></i><br>
+            .glyphicons.glyphicons-inbox-minus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-inbox-lock x2"></i><br>
+            .glyphicons.glyphicons-inbox-lock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-inbox-in x2"></i><br>
+            .glyphicons.glyphicons-inbox-in
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-inbox-out x2"></i><br>
+            .glyphicons.glyphicons-inbox-out
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cogwheel x2"></i><br>
+            .glyphicons.glyphicons-cogwheel
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cogwheels x2"></i><br>
+            .glyphicons.glyphicons-cogwheels
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-picture x2"></i><br>
+            .glyphicons.glyphicons-picture
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-adjust-alt x2"></i><br>
+            .glyphicons.glyphicons-adjust-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-database-lock x2"></i><br>
+            .glyphicons.glyphicons-database-lock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-database-plus x2"></i><br>
+            .glyphicons.glyphicons-database-plus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-database-minus x2"></i><br>
+            .glyphicons.glyphicons-database-minus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-database-ban x2"></i><br>
+            .glyphicons.glyphicons-database-ban
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-folder-open x2"></i><br>
+            .glyphicons.glyphicons-folder-open
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-folder-plus x2"></i><br>
+            .glyphicons.glyphicons-folder-plus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-folder-minus x2"></i><br>
+            .glyphicons.glyphicons-folder-minus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-folder-lock x2"></i><br>
+            .glyphicons.glyphicons-folder-lock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-folder-flag x2"></i><br>
+            .glyphicons.glyphicons-folder-flag
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-folder-new x2"></i><br>
+            .glyphicons.glyphicons-folder-new
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-edit x2"></i><br>
+            .glyphicons.glyphicons-edit
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-new-window x2"></i><br>
+            .glyphicons.glyphicons-new-window
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-check x2"></i><br>
+            .glyphicons.glyphicons-check
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-unchecked x2"></i><br>
+            .glyphicons.glyphicons-unchecked
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-more-windows x2"></i><br>
+            .glyphicons.glyphicons-more-windows
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-show-big-thumbnails x2"></i><br>
+            .glyphicons.glyphicons-show-big-thumbnails
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-show-thumbnails x2"></i><br>
+            .glyphicons.glyphicons-show-thumbnails
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-show-thumbnails-with-lines x2"></i><br>
+            .glyphicons.glyphicons-show-thumbnails-with-lines
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-show-lines x2"></i><br>
+            .glyphicons.glyphicons-show-lines
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-playlist x2"></i><br>
+            .glyphicons.glyphicons-playlist
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-imac x2"></i><br>
+            .glyphicons.glyphicons-imac
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-macbook x2"></i><br>
+            .glyphicons.glyphicons-macbook
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ipad x2"></i><br>
+            .glyphicons.glyphicons-ipad
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-iphone x2"></i><br>
+            .glyphicons.glyphicons-iphone
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-iphone-transfer x2"></i><br>
+            .glyphicons.glyphicons-iphone-transfer
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-iphone-exchange x2"></i><br>
+            .glyphicons.glyphicons-iphone-exchange
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ipod x2"></i><br>
+            .glyphicons.glyphicons-ipod
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ipod-shuffle x2"></i><br>
+            .glyphicons.glyphicons-ipod-shuffle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ear-plugs x2"></i><br>
+            .glyphicons.glyphicons-ear-plugs
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-record x2"></i><br>
+            .glyphicons.glyphicons-record
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-step-backward x2"></i><br>
+            .glyphicons.glyphicons-step-backward
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fast-backward x2"></i><br>
+            .glyphicons.glyphicons-fast-backward
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-rewind x2"></i><br>
+            .glyphicons.glyphicons-rewind
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-play x2"></i><br>
+            .glyphicons.glyphicons-play
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pause x2"></i><br>
+            .glyphicons.glyphicons-pause
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-stop x2"></i><br>
+            .glyphicons.glyphicons-stop
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-forward x2"></i><br>
+            .glyphicons.glyphicons-forward
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fast-forward x2"></i><br>
+            .glyphicons.glyphicons-fast-forward
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-step-forward x2"></i><br>
+            .glyphicons.glyphicons-step-forward
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-eject x2"></i><br>
+            .glyphicons.glyphicons-eject
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-facetime-video x2"></i><br>
+            .glyphicons.glyphicons-facetime-video
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-download-alt x2"></i><br>
+            .glyphicons.glyphicons-download-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mute x2"></i><br>
+            .glyphicons.glyphicons-mute
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-volume-down x2"></i><br>
+            .glyphicons.glyphicons-volume-down
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-volume-up x2"></i><br>
+            .glyphicons.glyphicons-volume-up
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-screenshot x2"></i><br>
+            .glyphicons.glyphicons-screenshot
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-move x2"></i><br>
+            .glyphicons.glyphicons-move
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-more x2"></i><br>
+            .glyphicons.glyphicons-more
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-brightness-reduce x2"></i><br>
+            .glyphicons.glyphicons-brightness-reduce
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-brightness-increase x2"></i><br>
+            .glyphicons.glyphicons-brightness-increase
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-plus-sign x2"></i><br>
+            .glyphicons.glyphicons-plus-sign
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-minus-sign x2"></i><br>
+            .glyphicons.glyphicons-minus-sign
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-remove-sign x2"></i><br>
+            .glyphicons.glyphicons-remove-sign
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ok-sign x2"></i><br>
+            .glyphicons.glyphicons-ok-sign
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-question-sign x2"></i><br>
+            .glyphicons.glyphicons-question-sign
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-info-sign x2"></i><br>
+            .glyphicons.glyphicons-info-sign
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-exclamation-sign x2"></i><br>
+            .glyphicons.glyphicons-exclamation-sign
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-remove-circle x2"></i><br>
+            .glyphicons.glyphicons-remove-circle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ok-circle x2"></i><br>
+            .glyphicons.glyphicons-ok-circle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ban-circle x2"></i><br>
+            .glyphicons.glyphicons-ban-circle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-download x2"></i><br>
+            .glyphicons.glyphicons-download
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-upload x2"></i><br>
+            .glyphicons.glyphicons-upload
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-shopping-cart x2"></i><br>
+            .glyphicons.glyphicons-shopping-cart
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-lock x2"></i><br>
+            .glyphicons.glyphicons-lock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-unlock x2"></i><br>
+            .glyphicons.glyphicons-unlock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-electricity x2"></i><br>
+            .glyphicons.glyphicons-electricity
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ok x2"></i><br>
+            .glyphicons.glyphicons-ok
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-remove x2"></i><br>
+            .glyphicons.glyphicons-remove
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cart-in x2"></i><br>
+            .glyphicons.glyphicons-cart-in
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cart-out x2"></i><br>
+            .glyphicons.glyphicons-cart-out
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-arrow-left x2"></i><br>
+            .glyphicons.glyphicons-arrow-left
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-arrow-right x2"></i><br>
+            .glyphicons.glyphicons-arrow-right
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-arrow-down x2"></i><br>
+            .glyphicons.glyphicons-arrow-down
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-arrow-up x2"></i><br>
+            .glyphicons.glyphicons-arrow-up
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-resize-small x2"></i><br>
+            .glyphicons.glyphicons-resize-small
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-resize-full x2"></i><br>
+            .glyphicons.glyphicons-resize-full
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-circle-arrow-left x2"></i><br>
+            .glyphicons.glyphicons-circle-arrow-left
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-circle-arrow-right x2"></i><br>
+            .glyphicons.glyphicons-circle-arrow-right
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-circle-arrow-top x2"></i><br>
+            .glyphicons.glyphicons-circle-arrow-top
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-circle-arrow-down x2"></i><br>
+            .glyphicons.glyphicons-circle-arrow-down
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-play-button x2"></i><br>
+            .glyphicons.glyphicons-play-button
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-unshare x2"></i><br>
+            .glyphicons.glyphicons-unshare
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-share x2"></i><br>
+            .glyphicons.glyphicons-share
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-chevron-right x2"></i><br>
+            .glyphicons.glyphicons-chevron-right
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-chevron-left x2"></i><br>
+            .glyphicons.glyphicons-chevron-left
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bluetooth x2"></i><br>
+            .glyphicons.glyphicons-bluetooth
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-euro x2"></i><br>
+            .glyphicons.glyphicons-euro
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-usd x2"></i><br>
+            .glyphicons.glyphicons-usd
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gbp x2"></i><br>
+            .glyphicons.glyphicons-gbp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-retweet-2 x2"></i><br>
+            .glyphicons.glyphicons-retweet-2
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-moon x2"></i><br>
+            .glyphicons.glyphicons-moon
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sun x2"></i><br>
+            .glyphicons.glyphicons-sun
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cloud x2"></i><br>
+            .glyphicons.glyphicons-cloud
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-direction x2"></i><br>
+            .glyphicons.glyphicons-direction
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-brush x2"></i><br>
+            .glyphicons.glyphicons-brush
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pen x2"></i><br>
+            .glyphicons.glyphicons-pen
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-zoom-in x2"></i><br>
+            .glyphicons.glyphicons-zoom-in
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-zoom-out x2"></i><br>
+            .glyphicons.glyphicons-zoom-out
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pin x2"></i><br>
+            .glyphicons.glyphicons-pin
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-albums x2"></i><br>
+            .glyphicons.glyphicons-albums
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-rotation-lock x2"></i><br>
+            .glyphicons.glyphicons-rotation-lock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-flash x2"></i><br>
+            .glyphicons.glyphicons-flash
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-map-marker x2"></i><br>
+            .glyphicons.glyphicons-map-marker
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-anchor x2"></i><br>
+            .glyphicons.glyphicons-anchor
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-conversation x2"></i><br>
+            .glyphicons.glyphicons-conversation
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-chat x2"></i><br>
+            .glyphicons.glyphicons-chat
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-note-empty x2"></i><br>
+            .glyphicons.glyphicons-note-empty
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-note x2"></i><br>
+            .glyphicons.glyphicons-note
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-asterisk x2"></i><br>
+            .glyphicons.glyphicons-asterisk
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-divide x2"></i><br>
+            .glyphicons.glyphicons-divide
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-snorkel-diving x2"></i><br>
+            .glyphicons.glyphicons-snorkel-diving
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-scuba-diving x2"></i><br>
+            .glyphicons.glyphicons-scuba-diving
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-oxygen-bottle x2"></i><br>
+            .glyphicons.glyphicons-oxygen-bottle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fins x2"></i><br>
+            .glyphicons.glyphicons-fins
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fishes x2"></i><br>
+            .glyphicons.glyphicons-fishes
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-boat x2"></i><br>
+            .glyphicons.glyphicons-boat
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-delete x2"></i><br>
+            .glyphicons.glyphicons-delete
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sheriffs-star x2"></i><br>
+            .glyphicons.glyphicons-sheriffs-star
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-qrcode x2"></i><br>
+            .glyphicons.glyphicons-qrcode
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-barcode x2"></i><br>
+            .glyphicons.glyphicons-barcode
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pool x2"></i><br>
+            .glyphicons.glyphicons-pool
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-buoy x2"></i><br>
+            .glyphicons.glyphicons-buoy
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-spade x2"></i><br>
+            .glyphicons.glyphicons-spade
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bank x2"></i><br>
+            .glyphicons.glyphicons-bank
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vcard x2"></i><br>
+            .glyphicons.glyphicons-vcard
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-electrical-plug x2"></i><br>
+            .glyphicons.glyphicons-electrical-plug
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-flag x2"></i><br>
+            .glyphicons.glyphicons-flag
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-credit-card x2"></i><br>
+            .glyphicons.glyphicons-credit-card
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-keyboard-wireless x2"></i><br>
+            .glyphicons.glyphicons-keyboard-wireless
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-keyboard-wired x2"></i><br>
+            .glyphicons.glyphicons-keyboard-wired
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-shield x2"></i><br>
+            .glyphicons.glyphicons-shield
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ring x2"></i><br>
+            .glyphicons.glyphicons-ring
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cake x2"></i><br>
+            .glyphicons.glyphicons-cake
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-drink x2"></i><br>
+            .glyphicons.glyphicons-drink
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-beer x2"></i><br>
+            .glyphicons.glyphicons-beer
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fast-food x2"></i><br>
+            .glyphicons.glyphicons-fast-food
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cutlery x2"></i><br>
+            .glyphicons.glyphicons-cutlery
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pizza x2"></i><br>
+            .glyphicons.glyphicons-pizza
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-birthday-cake x2"></i><br>
+            .glyphicons.glyphicons-birthday-cake
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tablet x2"></i><br>
+            .glyphicons.glyphicons-tablet
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-settings x2"></i><br>
+            .glyphicons.glyphicons-settings
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bullets x2"></i><br>
+            .glyphicons.glyphicons-bullets
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cardio x2"></i><br>
+            .glyphicons.glyphicons-cardio
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-t-shirt x2"></i><br>
+            .glyphicons.glyphicons-t-shirt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pants x2"></i><br>
+            .glyphicons.glyphicons-pants
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sweater x2"></i><br>
+            .glyphicons.glyphicons-sweater
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fabric x2"></i><br>
+            .glyphicons.glyphicons-fabric
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-leather x2"></i><br>
+            .glyphicons.glyphicons-leather
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-scissors x2"></i><br>
+            .glyphicons.glyphicons-scissors
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bomb x2"></i><br>
+            .glyphicons.glyphicons-bomb
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-skull x2"></i><br>
+            .glyphicons.glyphicons-skull
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-celebration x2"></i><br>
+            .glyphicons.glyphicons-celebration
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tea-kettle x2"></i><br>
+            .glyphicons.glyphicons-tea-kettle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-french-press x2"></i><br>
+            .glyphicons.glyphicons-french-press
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-coffee-cup x2"></i><br>
+            .glyphicons.glyphicons-coffee-cup
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pot x2"></i><br>
+            .glyphicons.glyphicons-pot
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-grater x2"></i><br>
+            .glyphicons.glyphicons-grater
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-kettle x2"></i><br>
+            .glyphicons.glyphicons-kettle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hospital x2"></i><br>
+            .glyphicons.glyphicons-hospital
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hospital-h x2"></i><br>
+            .glyphicons.glyphicons-hospital-h
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-microphone x2"></i><br>
+            .glyphicons.glyphicons-microphone
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-webcam x2"></i><br>
+            .glyphicons.glyphicons-webcam
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-temple-christianity-church x2"></i><br>
+            .glyphicons.glyphicons-temple-christianity-church
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-temple-islam x2"></i><br>
+            .glyphicons.glyphicons-temple-islam
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-temple-hindu x2"></i><br>
+            .glyphicons.glyphicons-temple-hindu
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-temple-buddhist x2"></i><br>
+            .glyphicons.glyphicons-temple-buddhist
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bicycle x2"></i><br>
+            .glyphicons.glyphicons-bicycle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-life-preserver x2"></i><br>
+            .glyphicons.glyphicons-life-preserver
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-share-alt x2"></i><br>
+            .glyphicons.glyphicons-share-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-comments x2"></i><br>
+            .glyphicons.glyphicons-comments
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-flower x2"></i><br>
+            .glyphicons.glyphicons-flower
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-baseball x2"></i><br>
+            .glyphicons.glyphicons-baseball
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-rugby x2"></i><br>
+            .glyphicons.glyphicons-rugby
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ax x2"></i><br>
+            .glyphicons.glyphicons-ax
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-table-tennis x2"></i><br>
+            .glyphicons.glyphicons-table-tennis
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bowling x2"></i><br>
+            .glyphicons.glyphicons-bowling
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tree-conifer x2"></i><br>
+            .glyphicons.glyphicons-tree-conifer
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tree-deciduous x2"></i><br>
+            .glyphicons.glyphicons-tree-deciduous
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-more-items x2"></i><br>
+            .glyphicons.glyphicons-more-items
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sort x2"></i><br>
+            .glyphicons.glyphicons-sort
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-filter x2"></i><br>
+            .glyphicons.glyphicons-filter
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gamepad x2"></i><br>
+            .glyphicons.glyphicons-gamepad
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-playing-dices x2"></i><br>
+            .glyphicons.glyphicons-playing-dices
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-calculator x2"></i><br>
+            .glyphicons.glyphicons-calculator
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tie x2"></i><br>
+            .glyphicons.glyphicons-tie
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-wallet x2"></i><br>
+            .glyphicons.glyphicons-wallet
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-piano x2"></i><br>
+            .glyphicons.glyphicons-piano
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sampler x2"></i><br>
+            .glyphicons.glyphicons-sampler
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-podium x2"></i><br>
+            .glyphicons.glyphicons-podium
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-soccer-ball x2"></i><br>
+            .glyphicons.glyphicons-soccer-ball
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-blog x2"></i><br>
+            .glyphicons.glyphicons-blog
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dashboard x2"></i><br>
+            .glyphicons.glyphicons-dashboard
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-certificate x2"></i><br>
+            .glyphicons.glyphicons-certificate
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bell x2"></i><br>
+            .glyphicons.glyphicons-bell
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-candle x2"></i><br>
+            .glyphicons.glyphicons-candle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pushpin x2"></i><br>
+            .glyphicons.glyphicons-pushpin
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-iphone-shake x2"></i><br>
+            .glyphicons.glyphicons-iphone-shake
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pin-flag x2"></i><br>
+            .glyphicons.glyphicons-pin-flag
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-turtle x2"></i><br>
+            .glyphicons.glyphicons-turtle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-rabbit x2"></i><br>
+            .glyphicons.glyphicons-rabbit
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-globe x2"></i><br>
+            .glyphicons.glyphicons-globe
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-briefcase x2"></i><br>
+            .glyphicons.glyphicons-briefcase
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hdd x2"></i><br>
+            .glyphicons.glyphicons-hdd
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-thumbs-up x2"></i><br>
+            .glyphicons.glyphicons-thumbs-up
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-thumbs-down x2"></i><br>
+            .glyphicons.glyphicons-thumbs-down
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hand-right x2"></i><br>
+            .glyphicons.glyphicons-hand-right
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hand-left x2"></i><br>
+            .glyphicons.glyphicons-hand-left
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hand-up x2"></i><br>
+            .glyphicons.glyphicons-hand-up
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hand-down x2"></i><br>
+            .glyphicons.glyphicons-hand-down
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fullscreen x2"></i><br>
+            .glyphicons.glyphicons-fullscreen
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-shopping-bag x2"></i><br>
+            .glyphicons.glyphicons-shopping-bag
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-book-open x2"></i><br>
+            .glyphicons.glyphicons-book-open
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-nameplate x2"></i><br>
+            .glyphicons.glyphicons-nameplate
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-nameplate-alt x2"></i><br>
+            .glyphicons.glyphicons-nameplate-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vases x2"></i><br>
+            .glyphicons.glyphicons-vases
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bullhorn x2"></i><br>
+            .glyphicons.glyphicons-bullhorn
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dumbbell x2"></i><br>
+            .glyphicons.glyphicons-dumbbell
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-suitcase x2"></i><br>
+            .glyphicons.glyphicons-suitcase
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-file-import x2"></i><br>
+            .glyphicons.glyphicons-file-import
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-file-export x2"></i><br>
+            .glyphicons.glyphicons-file-export
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bug x2"></i><br>
+            .glyphicons.glyphicons-bug
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-crown x2"></i><br>
+            .glyphicons.glyphicons-crown
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-smoking x2"></i><br>
+            .glyphicons.glyphicons-smoking
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cloud-upload x2"></i><br>
+            .glyphicons.glyphicons-cloud-upload
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cloud-download x2"></i><br>
+            .glyphicons.glyphicons-cloud-download
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-restart x2"></i><br>
+            .glyphicons.glyphicons-restart
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-security-camera x2"></i><br>
+            .glyphicons.glyphicons-security-camera
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-expand x2"></i><br>
+            .glyphicons.glyphicons-expand
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-collapse x2"></i><br>
+            .glyphicons.glyphicons-collapse
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-collapse-top x2"></i><br>
+            .glyphicons.glyphicons-collapse-top
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-globe-af x2"></i><br>
+            .glyphicons.glyphicons-globe-af
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-global x2"></i><br>
+            .glyphicons.glyphicons-global
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-spray x2"></i><br>
+            .glyphicons.glyphicons-spray
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-nails x2"></i><br>
+            .glyphicons.glyphicons-nails
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-claw-hammer x2"></i><br>
+            .glyphicons.glyphicons-claw-hammer
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-classic-hammer x2"></i><br>
+            .glyphicons.glyphicons-classic-hammer
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hand-saw x2"></i><br>
+            .glyphicons.glyphicons-hand-saw
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-riflescope x2"></i><br>
+            .glyphicons.glyphicons-riflescope
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-electrical-socket-eu x2"></i><br>
+            .glyphicons.glyphicons-electrical-socket-eu
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-electrical-socket-us x2"></i><br>
+            .glyphicons.glyphicons-electrical-socket-us
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-message-forward x2"></i><br>
+            .glyphicons.glyphicons-message-forward
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-coat-hanger x2"></i><br>
+            .glyphicons.glyphicons-coat-hanger
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dress x2"></i><br>
+            .glyphicons.glyphicons-dress
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bathrobe x2"></i><br>
+            .glyphicons.glyphicons-bathrobe
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-shirt x2"></i><br>
+            .glyphicons.glyphicons-shirt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-underwear x2"></i><br>
+            .glyphicons.glyphicons-underwear
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-log-in x2"></i><br>
+            .glyphicons.glyphicons-log-in
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-log-out x2"></i><br>
+            .glyphicons.glyphicons-log-out
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-exit x2"></i><br>
+            .glyphicons.glyphicons-exit
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-new-window-alt x2"></i><br>
+            .glyphicons.glyphicons-new-window-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-video-sd x2"></i><br>
+            .glyphicons.glyphicons-video-sd
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-video-hd x2"></i><br>
+            .glyphicons.glyphicons-video-hd
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-subtitles x2"></i><br>
+            .glyphicons.glyphicons-subtitles
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sound-stereo x2"></i><br>
+            .glyphicons.glyphicons-sound-stereo
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sound-dolby x2"></i><br>
+            .glyphicons.glyphicons-sound-dolby
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sound-5-1 x2"></i><br>
+            .glyphicons.glyphicons-sound-5-1
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sound-6-1 x2"></i><br>
+            .glyphicons.glyphicons-sound-6-1
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sound-7-1 x2"></i><br>
+            .glyphicons.glyphicons-sound-7-1
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-copyright-mark x2"></i><br>
+            .glyphicons.glyphicons-copyright-mark
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-registration-mark x2"></i><br>
+            .glyphicons.glyphicons-registration-mark
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-radar x2"></i><br>
+            .glyphicons.glyphicons-radar
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-skateboard x2"></i><br>
+            .glyphicons.glyphicons-skateboard
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-golf-course x2"></i><br>
+            .glyphicons.glyphicons-golf-course
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sorting x2"></i><br>
+            .glyphicons.glyphicons-sorting
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sort-by-alphabet x2"></i><br>
+            .glyphicons.glyphicons-sort-by-alphabet
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sort-by-alphabet-alt x2"></i><br>
+            .glyphicons.glyphicons-sort-by-alphabet-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sort-by-order x2"></i><br>
+            .glyphicons.glyphicons-sort-by-order
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sort-by-order-alt x2"></i><br>
+            .glyphicons.glyphicons-sort-by-order-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sort-by-attributes x2"></i><br>
+            .glyphicons.glyphicons-sort-by-attributes
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sort-by-attributes-alt x2"></i><br>
+            .glyphicons.glyphicons-sort-by-attributes-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-compressed x2"></i><br>
+            .glyphicons.glyphicons-compressed
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-package x2"></i><br>
+            .glyphicons.glyphicons-package
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cloud-plus x2"></i><br>
+            .glyphicons.glyphicons-cloud-plus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cloud-minus x2"></i><br>
+            .glyphicons.glyphicons-cloud-minus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-disk-save x2"></i><br>
+            .glyphicons.glyphicons-disk-save
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-disk-open x2"></i><br>
+            .glyphicons.glyphicons-disk-open
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-disk-saved x2"></i><br>
+            .glyphicons.glyphicons-disk-saved
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-disk-remove x2"></i><br>
+            .glyphicons.glyphicons-disk-remove
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-disk-import x2"></i><br>
+            .glyphicons.glyphicons-disk-import
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-disk-export x2"></i><br>
+            .glyphicons.glyphicons-disk-export
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tower x2"></i><br>
+            .glyphicons.glyphicons-tower
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-send x2"></i><br>
+            .glyphicons.glyphicons-send
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-git-branch x2"></i><br>
+            .glyphicons.glyphicons-git-branch
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-git-create x2"></i><br>
+            .glyphicons.glyphicons-git-create
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-git-private x2"></i><br>
+            .glyphicons.glyphicons-git-private
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-git-delete x2"></i><br>
+            .glyphicons.glyphicons-git-delete
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-git-merge x2"></i><br>
+            .glyphicons.glyphicons-git-merge
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-git-pull-request x2"></i><br>
+            .glyphicons.glyphicons-git-pull-request
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-git-compare x2"></i><br>
+            .glyphicons.glyphicons-git-compare
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-git-commit x2"></i><br>
+            .glyphicons.glyphicons-git-commit
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-construction-cone x2"></i><br>
+            .glyphicons.glyphicons-construction-cone
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-shoe-steps x2"></i><br>
+            .glyphicons.glyphicons-shoe-steps
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-plus x2"></i><br>
+            .glyphicons.glyphicons-plus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-minus x2"></i><br>
+            .glyphicons.glyphicons-minus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-redo x2"></i><br>
+            .glyphicons.glyphicons-redo
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-undo x2"></i><br>
+            .glyphicons.glyphicons-undo
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-golf x2"></i><br>
+            .glyphicons.glyphicons-golf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hockey x2"></i><br>
+            .glyphicons.glyphicons-hockey
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pipe x2"></i><br>
+            .glyphicons.glyphicons-pipe
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-wrench x2"></i><br>
+            .glyphicons.glyphicons-wrench
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-folder-closed x2"></i><br>
+            .glyphicons.glyphicons-folder-closed
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-phone-alt x2"></i><br>
+            .glyphicons.glyphicons-phone-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-earphone x2"></i><br>
+            .glyphicons.glyphicons-earphone
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-floppy-disk x2"></i><br>
+            .glyphicons.glyphicons-floppy-disk
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-floppy-saved x2"></i><br>
+            .glyphicons.glyphicons-floppy-saved
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-floppy-remove x2"></i><br>
+            .glyphicons.glyphicons-floppy-remove
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-floppy-save x2"></i><br>
+            .glyphicons.glyphicons-floppy-save
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-floppy-open x2"></i><br>
+            .glyphicons.glyphicons-floppy-open
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-translate x2"></i><br>
+            .glyphicons.glyphicons-translate
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fax x2"></i><br>
+            .glyphicons.glyphicons-fax
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-factory x2"></i><br>
+            .glyphicons.glyphicons-factory
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-shop-window x2"></i><br>
+            .glyphicons.glyphicons-shop-window
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-shop x2"></i><br>
+            .glyphicons.glyphicons-shop
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-kiosk x2"></i><br>
+            .glyphicons.glyphicons-kiosk
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-kiosk-wheels x2"></i><br>
+            .glyphicons.glyphicons-kiosk-wheels
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-kiosk-light x2"></i><br>
+            .glyphicons.glyphicons-kiosk-light
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-kiosk-food x2"></i><br>
+            .glyphicons.glyphicons-kiosk-food
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-transfer x2"></i><br>
+            .glyphicons.glyphicons-transfer
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-money x2"></i><br>
+            .glyphicons.glyphicons-money
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-header x2"></i><br>
+            .glyphicons.glyphicons-header
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-blacksmith x2"></i><br>
+            .glyphicons.glyphicons-blacksmith
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-saw-blade x2"></i><br>
+            .glyphicons.glyphicons-saw-blade
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-basketball x2"></i><br>
+            .glyphicons.glyphicons-basketball
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-server x2"></i><br>
+            .glyphicons.glyphicons-server
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-server-plus x2"></i><br>
+            .glyphicons.glyphicons-server-plus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-server-minus x2"></i><br>
+            .glyphicons.glyphicons-server-minus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-server-ban x2"></i><br>
+            .glyphicons.glyphicons-server-ban
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-server-flag x2"></i><br>
+            .glyphicons.glyphicons-server-flag
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-server-lock x2"></i><br>
+            .glyphicons.glyphicons-server-lock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-server-new x2"></i><br>
+            .glyphicons.glyphicons-server-new
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-charging-station x2"></i><br>
+            .glyphicons.glyphicons-charging-station
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gas-station x2"></i><br>
+            .glyphicons.glyphicons-gas-station
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-target x2"></i><br>
+            .glyphicons.glyphicons-target
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bed x2"></i><br>
+            .glyphicons.glyphicons-bed
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mosquito x2"></i><br>
+            .glyphicons.glyphicons-mosquito
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dining-set x2"></i><br>
+            .glyphicons.glyphicons-dining-set
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-plate-of-food x2"></i><br>
+            .glyphicons.glyphicons-plate-of-food
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hygiene-kit x2"></i><br>
+            .glyphicons.glyphicons-hygiene-kit
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-blackboard x2"></i><br>
+            .glyphicons.glyphicons-blackboard
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-marriage x2"></i><br>
+            .glyphicons.glyphicons-marriage
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bucket x2"></i><br>
+            .glyphicons.glyphicons-bucket
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-none-color-swatch x2"></i><br>
+            .glyphicons.glyphicons-none-color-swatch
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bring-forward x2"></i><br>
+            .glyphicons.glyphicons-bring-forward
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bring-to-front x2"></i><br>
+            .glyphicons.glyphicons-bring-to-front
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-send-backward x2"></i><br>
+            .glyphicons.glyphicons-send-backward
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-send-to-back x2"></i><br>
+            .glyphicons.glyphicons-send-to-back
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fit-frame-to-image x2"></i><br>
+            .glyphicons.glyphicons-fit-frame-to-image
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fit-image-to-frame x2"></i><br>
+            .glyphicons.glyphicons-fit-image-to-frame
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-multiple-displays x2"></i><br>
+            .glyphicons.glyphicons-multiple-displays
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-handshake x2"></i><br>
+            .glyphicons.glyphicons-handshake
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-child x2"></i><br>
+            .glyphicons.glyphicons-child
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-baby-formula x2"></i><br>
+            .glyphicons.glyphicons-baby-formula
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-medicine x2"></i><br>
+            .glyphicons.glyphicons-medicine
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-atv-vehicle x2"></i><br>
+            .glyphicons.glyphicons-atv-vehicle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-motorcycle x2"></i><br>
+            .glyphicons.glyphicons-motorcycle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bed-alt x2"></i><br>
+            .glyphicons.glyphicons-bed-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tent x2"></i><br>
+            .glyphicons.glyphicons-tent
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-glasses x2"></i><br>
+            .glyphicons.glyphicons-glasses
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sunglasses x2"></i><br>
+            .glyphicons.glyphicons-sunglasses
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-family x2"></i><br>
+            .glyphicons.glyphicons-family
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-education x2"></i><br>
+            .glyphicons.glyphicons-education
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-shoes x2"></i><br>
+            .glyphicons.glyphicons-shoes
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-map x2"></i><br>
+            .glyphicons.glyphicons-map
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cd x2"></i><br>
+            .glyphicons.glyphicons-cd
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-alert x2"></i><br>
+            .glyphicons.glyphicons-alert
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-piggy-bank x2"></i><br>
+            .glyphicons.glyphicons-piggy-bank
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-star-half x2"></i><br>
+            .glyphicons.glyphicons-star-half
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cluster x2"></i><br>
+            .glyphicons.glyphicons-cluster
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-flowchart x2"></i><br>
+            .glyphicons.glyphicons-flowchart
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-commodities x2"></i><br>
+            .glyphicons.glyphicons-commodities
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-duplicate x2"></i><br>
+            .glyphicons.glyphicons-duplicate
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-copy x2"></i><br>
+            .glyphicons.glyphicons-copy
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-paste x2"></i><br>
+            .glyphicons.glyphicons-paste
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bath-bathtub x2"></i><br>
+            .glyphicons.glyphicons-bath-bathtub
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bath-shower x2"></i><br>
+            .glyphicons.glyphicons-bath-shower
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-shower x2"></i><br>
+            .glyphicons.glyphicons-shower
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-menu-hamburger x2"></i><br>
+            .glyphicons.glyphicons-menu-hamburger
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-option-vertical x2"></i><br>
+            .glyphicons.glyphicons-option-vertical
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-option-horizontal x2"></i><br>
+            .glyphicons.glyphicons-option-horizontal
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-currency-conversion x2"></i><br>
+            .glyphicons.glyphicons-currency-conversion
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-ban x2"></i><br>
+            .glyphicons.glyphicons-user-ban
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-lock x2"></i><br>
+            .glyphicons.glyphicons-user-lock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-flag x2"></i><br>
+            .glyphicons.glyphicons-user-flag
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-asterisk x2"></i><br>
+            .glyphicons.glyphicons-user-asterisk
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-alert x2"></i><br>
+            .glyphicons.glyphicons-user-alert
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-key x2"></i><br>
+            .glyphicons.glyphicons-user-key
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-conversation x2"></i><br>
+            .glyphicons.glyphicons-user-conversation
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-database x2"></i><br>
+            .glyphicons.glyphicons-database
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-database-search x2"></i><br>
+            .glyphicons.glyphicons-database-search
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-list-alt x2"></i><br>
+            .glyphicons.glyphicons-list-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hazard-sign x2"></i><br>
+            .glyphicons.glyphicons-hazard-sign
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hazard x2"></i><br>
+            .glyphicons.glyphicons-hazard
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-stop-sign x2"></i><br>
+            .glyphicons.glyphicons-stop-sign
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-lab x2"></i><br>
+            .glyphicons.glyphicons-lab
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-lab-alt x2"></i><br>
+            .glyphicons.glyphicons-lab-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ice-cream x2"></i><br>
+            .glyphicons.glyphicons-ice-cream
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ice-lolly x2"></i><br>
+            .glyphicons.glyphicons-ice-lolly
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ice-lolly-tasted x2"></i><br>
+            .glyphicons.glyphicons-ice-lolly-tasted
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-invoice x2"></i><br>
+            .glyphicons.glyphicons-invoice
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cart-tick x2"></i><br>
+            .glyphicons.glyphicons-cart-tick
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hourglass x2"></i><br>
+            .glyphicons.glyphicons-hourglass
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cat x2"></i><br>
+            .glyphicons.glyphicons-cat
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-lamp x2"></i><br>
+            .glyphicons.glyphicons-lamp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-scale-classic x2"></i><br>
+            .glyphicons.glyphicons-scale-classic
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-eye-plus x2"></i><br>
+            .glyphicons.glyphicons-eye-plus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-eye-minus x2"></i><br>
+            .glyphicons.glyphicons-eye-minus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-quote x2"></i><br>
+            .glyphicons.glyphicons-quote
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bitcoin x2"></i><br>
+            .glyphicons.glyphicons-bitcoin
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-yen x2"></i><br>
+            .glyphicons.glyphicons-yen
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ruble x2"></i><br>
+            .glyphicons.glyphicons-ruble
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-erase x2"></i><br>
+            .glyphicons.glyphicons-erase
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-podcast x2"></i><br>
+            .glyphicons.glyphicons-podcast
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-firework x2"></i><br>
+            .glyphicons.glyphicons-firework
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-scale x2"></i><br>
+            .glyphicons.glyphicons-scale
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-king x2"></i><br>
+            .glyphicons.glyphicons-king
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-queen x2"></i><br>
+            .glyphicons.glyphicons-queen
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pawn x2"></i><br>
+            .glyphicons.glyphicons-pawn
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bishop x2"></i><br>
+            .glyphicons.glyphicons-bishop
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-knight x2"></i><br>
+            .glyphicons.glyphicons-knight
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mic-mute x2"></i><br>
+            .glyphicons.glyphicons-mic-mute
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-voicemail x2"></i><br>
+            .glyphicons.glyphicons-voicemail
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-paragraph-alt x2"></i><br>
+            .glyphicons.glyphicons-paragraph-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-person-walking x2"></i><br>
+            .glyphicons.glyphicons-person-walking
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-person-wheelchair x2"></i><br>
+            .glyphicons.glyphicons-person-wheelchair
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-underground x2"></i><br>
+            .glyphicons.glyphicons-underground
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-car-hov x2"></i><br>
+            .glyphicons.glyphicons-car-hov
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-car-rental x2"></i><br>
+            .glyphicons.glyphicons-car-rental
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-transport x2"></i><br>
+            .glyphicons.glyphicons-transport
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-taxi x2"></i><br>
+            .glyphicons.glyphicons-taxi
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ice-cream-no x2"></i><br>
+            .glyphicons.glyphicons-ice-cream-no
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-uk-rat-u x2"></i><br>
+            .glyphicons.glyphicons-uk-rat-u
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-uk-rat-pg x2"></i><br>
+            .glyphicons.glyphicons-uk-rat-pg
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-uk-rat-12a x2"></i><br>
+            .glyphicons.glyphicons-uk-rat-12a
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-uk-rat-12 x2"></i><br>
+            .glyphicons.glyphicons-uk-rat-12
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-uk-rat-15 x2"></i><br>
+            .glyphicons.glyphicons-uk-rat-15
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-uk-rat-18 x2"></i><br>
+            .glyphicons.glyphicons-uk-rat-18
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-uk-rat-r18 x2"></i><br>
+            .glyphicons.glyphicons-uk-rat-r18
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tv x2"></i><br>
+            .glyphicons.glyphicons-tv
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sms x2"></i><br>
+            .glyphicons.glyphicons-sms
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mms x2"></i><br>
+            .glyphicons.glyphicons-mms
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-us-rat-g x2"></i><br>
+            .glyphicons.glyphicons-us-rat-g
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-us-rat-pg x2"></i><br>
+            .glyphicons.glyphicons-us-rat-pg
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-us-rat-pg-13 x2"></i><br>
+            .glyphicons.glyphicons-us-rat-pg-13
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-us-rat-restricted x2"></i><br>
+            .glyphicons.glyphicons-us-rat-restricted
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-us-rat-no-one-17 x2"></i><br>
+            .glyphicons.glyphicons-us-rat-no-one-17
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-equalizer x2"></i><br>
+            .glyphicons.glyphicons-equalizer
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-speakers x2"></i><br>
+            .glyphicons.glyphicons-speakers
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-remote-control x2"></i><br>
+            .glyphicons.glyphicons-remote-control
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-remote-control-tv x2"></i><br>
+            .glyphicons.glyphicons-remote-control-tv
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-shredder x2"></i><br>
+            .glyphicons.glyphicons-shredder
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-folder-heart x2"></i><br>
+            .glyphicons.glyphicons-folder-heart
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-person-running x2"></i><br>
+            .glyphicons.glyphicons-person-running
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-person x2"></i><br>
+            .glyphicons.glyphicons-person
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-voice x2"></i><br>
+            .glyphicons.glyphicons-voice
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-stethoscope x2"></i><br>
+            .glyphicons.glyphicons-stethoscope
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-paired x2"></i><br>
+            .glyphicons.glyphicons-paired
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-activity x2"></i><br>
+            .glyphicons.glyphicons-activity
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-watch x2"></i><br>
+            .glyphicons.glyphicons-watch
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-scissors-alt x2"></i><br>
+            .glyphicons.glyphicons-scissors-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-car-wheel x2"></i><br>
+            .glyphicons.glyphicons-car-wheel
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-chevron-up x2"></i><br>
+            .glyphicons.glyphicons-chevron-up
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-chevron-down x2"></i><br>
+            .glyphicons.glyphicons-chevron-down
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-superscript x2"></i><br>
+            .glyphicons.glyphicons-superscript
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-subscript x2"></i><br>
+            .glyphicons.glyphicons-subscript
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-text-size x2"></i><br>
+            .glyphicons.glyphicons-text-size
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-text-color x2"></i><br>
+            .glyphicons.glyphicons-text-color
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-text-background x2"></i><br>
+            .glyphicons.glyphicons-text-background
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-modal-window x2"></i><br>
+            .glyphicons.glyphicons-modal-window
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-newspaper x2"></i><br>
+            .glyphicons.glyphicons-newspaper
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tractor x2"></i><br>
+            .glyphicons.glyphicons-tractor
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-camping x2"></i><br>
+            .glyphicons.glyphicons-camping
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-camping-benches x2"></i><br>
+            .glyphicons.glyphicons-camping-benches
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-forest x2"></i><br>
+            .glyphicons.glyphicons-forest
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-park x2"></i><br>
+            .glyphicons.glyphicons-park
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-field x2"></i><br>
+            .glyphicons.glyphicons-field
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mountains x2"></i><br>
+            .glyphicons.glyphicons-mountains
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fees-payments x2"></i><br>
+            .glyphicons.glyphicons-fees-payments
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-small-payments x2"></i><br>
+            .glyphicons.glyphicons-small-payments
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mixed-buildings x2"></i><br>
+            .glyphicons.glyphicons-mixed-buildings
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-industrial-zone x2"></i><br>
+            .glyphicons.glyphicons-industrial-zone
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-visitor-tag x2"></i><br>
+            .glyphicons.glyphicons-visitor-tag
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-businessman x2"></i><br>
+            .glyphicons.glyphicons-businessman
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-meditation x2"></i><br>
+            .glyphicons.glyphicons-meditation
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bath x2"></i><br>
+            .glyphicons.glyphicons-bath
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-donate x2"></i><br>
+            .glyphicons.glyphicons-donate
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sauna x2"></i><br>
+            .glyphicons.glyphicons-sauna
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bedroom-nightstand x2"></i><br>
+            .glyphicons.glyphicons-bedroom-nightstand
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bedroom-lamp x2"></i><br>
+            .glyphicons.glyphicons-bedroom-lamp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-doctor x2"></i><br>
+            .glyphicons.glyphicons-doctor
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-engineering-networks x2"></i><br>
+            .glyphicons.glyphicons-engineering-networks
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-washing-machine x2"></i><br>
+            .glyphicons.glyphicons-washing-machine
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dryer x2"></i><br>
+            .glyphicons.glyphicons-dryer
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dishwasher x2"></i><br>
+            .glyphicons.glyphicons-dishwasher
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-luggage-group x2"></i><br>
+            .glyphicons.glyphicons-luggage-group
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-teenager x2"></i><br>
+            .glyphicons.glyphicons-teenager
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-person-stick x2"></i><br>
+            .glyphicons.glyphicons-person-stick
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-person-stick-old x2"></i><br>
+            .glyphicons.glyphicons-person-stick-old
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-traveler x2"></i><br>
+            .glyphicons.glyphicons-traveler
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-veteran x2"></i><br>
+            .glyphicons.glyphicons-veteran
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-group-chat x2"></i><br>
+            .glyphicons.glyphicons-group-chat
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-elections x2"></i><br>
+            .glyphicons.glyphicons-elections
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-law-justice x2"></i><br>
+            .glyphicons.glyphicons-law-justice
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-judiciary x2"></i><br>
+            .glyphicons.glyphicons-judiciary
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-house-fire x2"></i><br>
+            .glyphicons.glyphicons-house-fire
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-firefighters x2"></i><br>
+            .glyphicons.glyphicons-firefighters
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-police x2"></i><br>
+            .glyphicons.glyphicons-police
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ambulance x2"></i><br>
+            .glyphicons.glyphicons-ambulance
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-light-beacon x2"></i><br>
+            .glyphicons.glyphicons-light-beacon
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-important-day x2"></i><br>
+            .glyphicons.glyphicons-important-day
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-bike-park x2"></i><br>
+            .glyphicons.glyphicons-bike-park
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-object-align-top x2"></i><br>
+            .glyphicons.glyphicons-object-align-top
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-object-align-bottom x2"></i><br>
+            .glyphicons.glyphicons-object-align-bottom
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-object-align-horizontal x2"></i><br>
+            .glyphicons.glyphicons-object-align-horizontal
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-object-align-left x2"></i><br>
+            .glyphicons.glyphicons-object-align-left
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-object-align-vertical x2"></i><br>
+            .glyphicons.glyphicons-object-align-vertical
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-object-align-right x2"></i><br>
+            .glyphicons.glyphicons-object-align-right
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-reflect-y x2"></i><br>
+            .glyphicons.glyphicons-reflect-y
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-reflect-x x2"></i><br>
+            .glyphicons.glyphicons-reflect-x
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tick x2"></i><br>
+            .glyphicons.glyphicons-tick
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-lawnmower x2"></i><br>
+            .glyphicons.glyphicons-lawnmower
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-call-redirect x2"></i><br>
+            .glyphicons.glyphicons-call-redirect
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-call-ip x2"></i><br>
+            .glyphicons.glyphicons-call-ip
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-call-record x2"></i><br>
+            .glyphicons.glyphicons-call-record
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-call-ringtone x2"></i><br>
+            .glyphicons.glyphicons-call-ringtone
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-call-traffic x2"></i><br>
+            .glyphicons.glyphicons-call-traffic
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-call-hold x2"></i><br>
+            .glyphicons.glyphicons-call-hold
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-call-incoming x2"></i><br>
+            .glyphicons.glyphicons-call-incoming
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-call-outgoing x2"></i><br>
+            .glyphicons.glyphicons-call-outgoing
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-call-video x2"></i><br>
+            .glyphicons.glyphicons-call-video
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-call-missed x2"></i><br>
+            .glyphicons.glyphicons-call-missed
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-theater x2"></i><br>
+            .glyphicons.glyphicons-theater
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-heartbeat x2"></i><br>
+            .glyphicons.glyphicons-heartbeat
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-kettlebell x2"></i><br>
+            .glyphicons.glyphicons-kettlebell
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fireplace x2"></i><br>
+            .glyphicons.glyphicons-fireplace
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-street-lights x2"></i><br>
+            .glyphicons.glyphicons-street-lights
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pedestrian x2"></i><br>
+            .glyphicons.glyphicons-pedestrian
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-flood x2"></i><br>
+            .glyphicons.glyphicons-flood
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-open-water x2"></i><br>
+            .glyphicons.glyphicons-open-water
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-for-sale x2"></i><br>
+            .glyphicons.glyphicons-for-sale
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dustbin x2"></i><br>
+            .glyphicons.glyphicons-dustbin
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-door x2"></i><br>
+            .glyphicons.glyphicons-door
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-camp-fire x2"></i><br>
+            .glyphicons.glyphicons-camp-fire
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fleur-de-lis x2"></i><br>
+            .glyphicons.glyphicons-fleur-de-lis
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-temperature-settings x2"></i><br>
+            .glyphicons.glyphicons-temperature-settings
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-article x2"></i><br>
+            .glyphicons.glyphicons-article
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sunbath x2"></i><br>
+            .glyphicons.glyphicons-sunbath
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-balanced-diet x2"></i><br>
+            .glyphicons.glyphicons-balanced-diet
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ticket x2"></i><br>
+            .glyphicons.glyphicons-ticket
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-parking-ticket x2"></i><br>
+            .glyphicons.glyphicons-parking-ticket
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-parking-meter x2"></i><br>
+            .glyphicons.glyphicons-parking-meter
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-laptop x2"></i><br>
+            .glyphicons.glyphicons-laptop
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-tree-structure x2"></i><br>
+            .glyphicons.glyphicons-tree-structure
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-weather-warning x2"></i><br>
+            .glyphicons.glyphicons-weather-warning
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-temperature-low x2"></i><br>
+            .glyphicons.glyphicons-temperature-low
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-temperature-high x2"></i><br>
+            .glyphicons.glyphicons-temperature-high
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-temperature-low-warning x2"></i><br>
+            .glyphicons.glyphicons-temperature-low-warning
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-temperature-high-warning x2"></i><br>
+            .glyphicons.glyphicons-temperature-high-warning
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hurricane x2"></i><br>
+            .glyphicons.glyphicons-hurricane
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-storm x2"></i><br>
+            .glyphicons.glyphicons-storm
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-sorted-waste x2"></i><br>
+            .glyphicons.glyphicons-sorted-waste
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ear x2"></i><br>
+            .glyphicons.glyphicons-ear
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ear-deaf x2"></i><br>
+            .glyphicons.glyphicons-ear-deaf
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-file-plus x2"></i><br>
+            .glyphicons.glyphicons-file-plus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-file-minus x2"></i><br>
+            .glyphicons.glyphicons-file-minus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-file-lock x2"></i><br>
+            .glyphicons.glyphicons-file-lock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-file-cloud x2"></i><br>
+            .glyphicons.glyphicons-file-cloud
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-file-cloud-download x2"></i><br>
+            .glyphicons.glyphicons-file-cloud-download
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-file-cloud-upload x2"></i><br>
+            .glyphicons.glyphicons-file-cloud-upload
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-paragraph x2"></i><br>
+            .glyphicons.glyphicons-paragraph
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-list-numbered x2"></i><br>
+            .glyphicons.glyphicons-list-numbered
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-donate-heart x2"></i><br>
+            .glyphicons.glyphicons-donate-heart
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-government x2"></i><br>
+            .glyphicons.glyphicons-government
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-maze x2"></i><br>
+            .glyphicons.glyphicons-maze
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-chronicle x2"></i><br>
+            .glyphicons.glyphicons-chronicle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-structure x2"></i><br>
+            .glyphicons.glyphicons-user-structure
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-recycle x2"></i><br>
+            .glyphicons.glyphicons-recycle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gas x2"></i><br>
+            .glyphicons.glyphicons-gas
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-waste-pipe x2"></i><br>
+            .glyphicons.glyphicons-waste-pipe
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-water-pipe x2"></i><br>
+            .glyphicons.glyphicons-water-pipe
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-parking x2"></i><br>
+            .glyphicons.glyphicons-parking
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-closed x2"></i><br>
+            .glyphicons.glyphicons-closed
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mouse x2"></i><br>
+            .glyphicons.glyphicons-mouse
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mouse-double-click x2"></i><br>
+            .glyphicons.glyphicons-mouse-double-click
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mouse-left-click x2"></i><br>
+            .glyphicons.glyphicons-mouse-left-click
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mouse-right-click x2"></i><br>
+            .glyphicons.glyphicons-mouse-right-click
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mouse-middle-click x2"></i><br>
+            .glyphicons.glyphicons-mouse-middle-click
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-mouse-scroll x2"></i><br>
+            .glyphicons.glyphicons-mouse-scroll
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-resize-vertical x2"></i><br>
+            .glyphicons.glyphicons-resize-vertical
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-resize-horizontal x2"></i><br>
+            .glyphicons.glyphicons-resize-horizontal
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-temperature x2"></i><br>
+            .glyphicons.glyphicons-temperature
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-puzzle x2"></i><br>
+            .glyphicons.glyphicons-puzzle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-puzzle-2 x2"></i><br>
+            .glyphicons.glyphicons-puzzle-2
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-puzzle-3 x2"></i><br>
+            .glyphicons.glyphicons-puzzle-3
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-nearby-square x2"></i><br>
+            .glyphicons.glyphicons-nearby-square
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-nearby-circle x2"></i><br>
+            .glyphicons.glyphicons-nearby-circle
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-rotate-right x2"></i><br>
+            .glyphicons.glyphicons-rotate-right
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-rotate-left x2"></i><br>
+            .glyphicons.glyphicons-rotate-left
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pictures x2"></i><br>
+            .glyphicons.glyphicons-pictures
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-photo-album x2"></i><br>
+            .glyphicons.glyphicons-photo-album
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cadastral-map x2"></i><br>
+            .glyphicons.glyphicons-cadastral-map
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fingerprint-scan x2"></i><br>
+            .glyphicons.glyphicons-fingerprint-scan
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fingerprint x2"></i><br>
+            .glyphicons.glyphicons-fingerprint
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fingerprint-lock x2"></i><br>
+            .glyphicons.glyphicons-fingerprint-lock
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fingerprint-ok x2"></i><br>
+            .glyphicons.glyphicons-fingerprint-ok
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fingerprint-remove x2"></i><br>
+            .glyphicons.glyphicons-fingerprint-remove
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-fingerprint-reload x2"></i><br>
+            .glyphicons.glyphicons-fingerprint-reload
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-pending-notifications x2"></i><br>
+            .glyphicons.glyphicons-pending-notifications
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-synchronization x2"></i><br>
+            .glyphicons.glyphicons-synchronization
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-synchronization-ban x2"></i><br>
+            .glyphicons.glyphicons-synchronization-ban
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-hash x2"></i><br>
+            .glyphicons.glyphicons-hash
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gender-male x2"></i><br>
+            .glyphicons.glyphicons-gender-male
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gender-female x2"></i><br>
+            .glyphicons.glyphicons-gender-female
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gender-virgin-female x2"></i><br>
+            .glyphicons.glyphicons-gender-virgin-female
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gender-intersex x2"></i><br>
+            .glyphicons.glyphicons-gender-intersex
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gender-transgender x2"></i><br>
+            .glyphicons.glyphicons-gender-transgender
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gender-ori-lesbian x2"></i><br>
+            .glyphicons.glyphicons-gender-ori-lesbian
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gender-ori-gay x2"></i><br>
+            .glyphicons.glyphicons-gender-ori-gay
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gender-ori-hetero x2"></i><br>
+            .glyphicons.glyphicons-gender-ori-hetero
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gender-other x2"></i><br>
+            .glyphicons.glyphicons-gender-other
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-gender-unknown x2"></i><br>
+            .glyphicons.glyphicons-gender-unknown
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-scanner x2"></i><br>
+            .glyphicons.glyphicons-scanner
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-multifunction-printer x2"></i><br>
+            .glyphicons.glyphicons-multifunction-printer
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-lasso x2"></i><br>
+            .glyphicons.glyphicons-lasso
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-view-360 x2"></i><br>
+            .glyphicons.glyphicons-view-360
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-battery-charging x2"></i><br>
+            .glyphicons.glyphicons-battery-charging
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-battery-full x2"></i><br>
+            .glyphicons.glyphicons-battery-full
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-battery-75 x2"></i><br>
+            .glyphicons.glyphicons-battery-75
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-battery-50 x2"></i><br>
+            .glyphicons.glyphicons-battery-50
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-battery-25 x2"></i><br>
+            .glyphicons.glyphicons-battery-25
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-battery-10 x2"></i><br>
+            .glyphicons.glyphicons-battery-10
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-satellite x2"></i><br>
+            .glyphicons.glyphicons-satellite
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-satellite-dish x2"></i><br>
+            .glyphicons.glyphicons-satellite-dish
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-satellite-dish-alt x2"></i><br>
+            .glyphicons.glyphicons-satellite-dish-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-auction x2"></i><br>
+            .glyphicons.glyphicons-auction
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-directions x2"></i><br>
+            .glyphicons.glyphicons-directions
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-race x2"></i><br>
+            .glyphicons.glyphicons-race
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-robot x2"></i><br>
+            .glyphicons.glyphicons-robot
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-ruler-alt x2"></i><br>
+            .glyphicons.glyphicons-ruler-alt
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cube-empty x2"></i><br>
+            .glyphicons.glyphicons-cube-empty
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-cube-black x2"></i><br>
+            .glyphicons.glyphicons-cube-black
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-move-square x2"></i><br>
+            .glyphicons.glyphicons-move-square
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-drop x2"></i><br>
+            .glyphicons.glyphicons-drop
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vr-headset x2"></i><br>
+            .glyphicons.glyphicons-vr-headset
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vr-charging x2"></i><br>
+            .glyphicons.glyphicons-vr-charging
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vr-low-battery x2"></i><br>
+            .glyphicons.glyphicons-vr-low-battery
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vr-paired x2"></i><br>
+            .glyphicons.glyphicons-vr-paired
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vr-settings x2"></i><br>
+            .glyphicons.glyphicons-vr-settings
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-vr-maintenance x2"></i><br>
+            .glyphicons.glyphicons-vr-maintenance
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-filter-remove x2"></i><br>
+            .glyphicons.glyphicons-filter-remove
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-filter-applied x2"></i><br>
+            .glyphicons.glyphicons-filter-applied
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-one-day x2"></i><br>
+            .glyphicons.glyphicons-one-day
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-vr x2"></i><br>
+            .glyphicons.glyphicons-user-vr
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-vr-add x2"></i><br>
+            .glyphicons.glyphicons-user-vr-add
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-user-vr-remove x2"></i><br>
+            .glyphicons.glyphicons-user-vr-remove
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dice-1 x2"></i><br>
+            .glyphicons.glyphicons-dice-1
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dice-2 x2"></i><br>
+            .glyphicons.glyphicons-dice-2
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dice-3 x2"></i><br>
+            .glyphicons.glyphicons-dice-3
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dice-4 x2"></i><br>
+            .glyphicons.glyphicons-dice-4
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dice-5 x2"></i><br>
+            .glyphicons.glyphicons-dice-5
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="glyphicons glyphicons-dice-6 x2"></i><br>
+            .glyphicons.glyphicons-dice-6
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'glyphicons'
+}
+</script>

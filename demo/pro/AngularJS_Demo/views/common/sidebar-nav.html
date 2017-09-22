@@ -1,0 +1,164 @@
+<div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.main"><i class="icon-speedometer"></i> {{ 'DASHBOARD' | translate }} <span class="badge badge-info">NEW</span></a>
+            </li>
+
+            <li class="divider"></li>
+            <li class="nav-title">
+                UI Elements
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.components')}">
+                <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.components')}" href="#"><i class="icon-puzzle"></i> Components</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.components.buttons"><i class="icon-puzzle"></i> {{ 'BUTTONS' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.components.social-buttons"><i class="icon-puzzle"></i> Social Buttons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.components.cards"><i class="icon-puzzle"></i> {{ 'CARDS' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.components.forms"><i class="icon-puzzle"></i> {{ 'FORMS' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.components.switches"><i class="icon-puzzle"></i> {{ 'SWITCHES' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.components.tables"><i class="icon-puzzle"></i> {{ 'TABLES' | translate }}</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.icons')}">
+                <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.icons')}" href="#"><i class="icon-star"></i> {{ 'ICONS' | translate }}</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.icons.fontawesome"><i class="icon-star"></i> Font Awesome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.icons.simplelineicons"><i class="icon-star"></i> Simple Line Icons</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.plugins')}">
+                <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.plugins')}" href="#"><i class="icon-energy"></i> Plugins</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.plugins.calendar"><i class="icon-calendar"></i> {{ 'CALENDAR' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="app.plugins.notifications"><i class="icon-info"></i> {{ 'NOTIFICATIONS' | translate }}</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.forms"><i class="icon-note"></i> {{ 'FORMS' | translate }} <span class="badge badge-danger">NEW</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.widgets"><i class="icon-calculator"></i> {{ 'WIDGETS' | translate }} <span class="badge badge-info">NEW</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.charts"><i class="icon-pie-chart"></i> {{ 'CHARTS' | translate }}</a>
+            </li>
+            <li class="divider"></li>
+            <li class="nav-title">
+                Extras
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.pages')}">
+                <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.pages')}" href="#"><i class="icon-star"></i> {{ 'PAGES' | translate }}</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.login"><i class="icon-star"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.register"><i class="icon-star"></i> Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.404"><i class="icon-star"></i> Error 404</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.500"><i class="icon-star"></i> Error 500</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.uikits')}">
+                <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.uikits')}" ui-sref-active="active" href="#"><i class="icon-layers"></i> {{ 'UI Kits' | translate }}</a>
+
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.uikits.invoicing')}">
+                        <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.uikits.invoicing')}" href="#"><i class="icon-speech"></i> {{ 'INVOICING' | translate }}</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" ui-sref-active="active" ui-sref="app.uikits.invoicing.invoice"><i class="icon-speech"></i> {{ 'INVOICE' | translate }}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.uikits.email')}">
+                        <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.uikits.email')}" href="#"><i class="icon-speech"></i> {{ 'EMAIL' | translate }}</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" ui-sref-active="active" ui-sref="app.uikits.email.inbox"><i class="icon-speech"></i> {{ 'INBOX' | translate }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ui-sref-active="active" ui-sref="app.uikits.email.message"><i class="icon-speech"></i> {{ 'MESSAGE' | translate }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ui-sref-active="active" ui-sref="app.uikits.email.compose"><i class="icon-speech"></i> {{ 'COMPOSE' | translate }}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="divider m-2"></li>
+            <li class="nav-title">
+                Labels
+            </li>
+            <li class="nav-item">
+                <a class="nav-label" href="#"><i class="fa fa-circle text-danger"></i> Label danger</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-label" href="#"><i class="fa fa-circle text-info"></i> Label info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-label" href="#"><i class="fa fa-circle text-warning"></i> Label warning</a>
+            </li>
+            <li class="divider"></li>
+            <li class="nav-title">
+                System Utilization
+            </li>
+            <li class="nav-item px-3">
+                <div class="text-uppercase mb-1">
+                    <small><b>CPU Usage</b>
+                    </small>
+                </div>
+                <div class="progress progress-xs">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+            <li class="nav-item px-3">
+                <div class="text-uppercase mb-1">
+                    <small><b>Memory Usage</b>
+                    </small>
+                </div>
+                <div class="progress progress-xs">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small class="text-muted">11444GB/16384MB</small>
+            </li>
+            <li class="nav-item px-3">
+                <div class="text-uppercase mb-1">
+                    <small><b>SSD 1 Usage</b>
+                    </small>
+                </div>
+                <div class="progress progress-xs">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small class="text-muted">243GB/256GB</small>
+            </li>
+
+        </ul>
+    </nav>
+</div>

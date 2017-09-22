@@ -1,0 +1,136 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <i class="icon-note"></i> <strong>Angular 2 Input Mask</strong> - Text Mask
+          <div class="card-actions">
+            <a href="https://github.com/digitalBush/jquery.maskedinput"><small class="text-muted">docs</small></a>
+          </div>
+        </div>
+        <div class="card-body">
+          <fieldset class="form-group">
+            <label>Date input</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+              <input type="text" class="form-control" [textMask]="{mask: dateMask}" [(ngModel)]="dateModel">
+            </div>
+            <small class="text-muted">ex. 99/99/9999</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Phone input</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+              <input type="text" class="form-control" [textMask]="{mask: phoneMask}" [(ngModel)]="phoneModel">
+            </div>
+            <small class="text-muted">ex. (999) 999-9999</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Taxpayer Identification Numbers</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-usd"></i></span>
+              <input type="text" class="form-control" [textMask]="{mask: taxMask}" [(ngModel)]="taxModel">
+            </div>
+            <small class="text-muted">ex. 99-9999999</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Social Security Number</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-male"></i></span>
+              <input type="text" class="form-control" [textMask]="{mask: ssnMask}" [(ngModel)]="ssnModel">
+            </div>
+            <small class="text-muted">ex. 999-99-9999</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Eye Script</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
+              <input type="text" class="form-control" [textMask]="{mask: eyeScriptMask}" [(ngModel)]="eyeScriptModel">
+            </div>
+            <small class="text-muted">ex. ~9.99 ~9.99 999</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Credit Card Number</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+              <input type="text" class="form-control" [textMask]="{mask: ccnMask}" [(ngModel)]="ccnModel">
+            </div>
+            <small class="text-muted">ex. 9999 9999 9999 9999</small>
+          </fieldset>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <strong>Ng2-select</strong>
+        </div>
+        <div class="card-body">
+          <ng-select
+            [multiple]="true"
+            [items]="items"
+            (data)="refreshValue($event)"
+            (selected)="selected($event)"
+            (removed)="removed($event)"
+            placeholder="No city selected">
+          </ng-select>
+          <br/>
+          <!-- <pre class="alert alert-info">{{itemsToString(value)}}</pre> -->
+        </div>
+      </div>
+    </div><!-- /.col -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <strong>Timepicker</strong>
+          <small>A lightweight &amp; configurable timepicker directive</small>
+        </div>
+        <div class="card-body">
+          <timepicker [(ngModel)]="mytime" (change)="changed()" [hourStep]="hstep"
+          [minuteStep]="mstep" [showMeridian]="ismeridian"
+          [readonlyInput]="!isEnabled"></timepicker>
+
+          <pre class="alert alert-info">Time is: {{mytime}}</pre>
+
+          <div class="row">
+            <div class="col-6">
+              Hours step is:
+              <select class="form-control" [(ngModel)]="hstep">
+                <option *ngFor="let opt of options.hstep" [value]="opt">{{opt}}</option>
+              </select>
+            </div>
+            <div class="col-6">
+              Minutes step is:
+              <select class="form-control" [(ngModel)]="mstep">
+                <option *ngFor="let opt of options.mstep" [value]="opt">{{opt}}</option>
+              </select>
+            </div>
+          </div>
+
+          <hr>
+
+          <button type="button" class="btn btn-info" (click)="toggleMode()">12H / 24H</button>
+          <button type="button" class="btn btn-info" (click)="isEnabled=!isEnabled">Enable / Disable input</button>
+          <button type="button" class="btn btn-primary" (click)="update()">Set to 14:00</button>
+          <button type="button" class="btn btn-danger" (click)="clear()">Clear</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <strong>Datepicker</strong>
+          <small>A lightweight &amp; configurable datepicker component</small>
+        </div>
+        <div class="card-body">
+          <pre class="card card-body card-header">Selected date is: <em *ngIf="dt">{{ getDate() | date:'fullDate'}}</em></pre>
+          <div style="display:inline-block; min-height:290px;">
+            <datepicker [(ngModel)]="dt" [minDate]="minDate" [showWeeks]="true"></datepicker>
+          </div>
+
+          <hr />
+          <button type="button" class="btn btn-info" (click)="today()">Today</button>
+          <button type="button" class="btn btn-danger" (click)="clearDate()">Clear</button>
+          <button type="button" class="btn btn-outline-secondary" (click)="toggleMin()" tooltip="After today restriction">Min date</button>
+        </div>
+      </div>
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</div>

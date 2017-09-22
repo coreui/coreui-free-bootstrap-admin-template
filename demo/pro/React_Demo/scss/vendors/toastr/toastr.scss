@@ -1,0 +1,240 @@
+.toast-title {
+  font-weight: bold;
+}
+.toast-message {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.toast-message a,
+.toast-message label {
+  color: #ffffff;
+}
+.toast-message a:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
+.toast-close-button {
+  position: relative;
+  right: -0.3em;
+  top: -0.3em;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-text-shadow: 0 1px 0 #ffffff;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: alpha(opacity=80);
+}
+.toast-close-button:hover,
+.toast-close-button:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: alpha(opacity=40);
+}
+/*Additional properties for button version
+iOS requires the button element instead of an anchor tag.
+If you want the anchor version, it requires `href="#"`.*/
+button.toast-close-button {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+.toast-top-center {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-bottom-center {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-top-full-width {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-bottom-full-width {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-top-left {
+  top: 12px;
+  left: 12px;
+}
+.toast-top-right {
+  top: 12px;
+  right: 12px;
+}
+.toast-bottom-right {
+  right: 12px;
+  bottom: 12px;
+}
+.toast-bottom-left {
+  bottom: 12px;
+  left: 12px;
+}
+#toast-container {
+  position: fixed;
+  z-index: 999999;
+  /*overrides*/
+
+}
+#toast-container * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#toast-container .toast {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 6px;
+  padding: 15px 15px 15px 50px;
+  width: 300px;
+  @include border-radius($border-radius);
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  @include box-shadow(0 0 12px #999999);
+  color: #ffffff;
+  opacity: 0.9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  filter: alpha(opacity=90);
+}
+#toast-container .toast:hover {
+  @include box-shadow(0 0 12px #999999);
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: alpha(opacity=100);
+  cursor: pointer;
+}
+
+#toast-container .toast {
+  background-image: none !important;
+}
+
+#toast-container .toast:before {
+  position: relative;
+  font-family: simple-line-icons;
+  font-size: 24px;
+  line-height: 18px;
+  float: left;
+  margin: 13px 0 0 -35px;
+}
+
+#toast-container .toast-warning:before {
+  content: "\e01c";
+}
+#toast-container .toast-error:before {
+  content: "\e082";
+}
+#toast-container .toast-info:before {
+  content: "\e08b";
+}
+#toast-container .toast-success:before {
+  content: "\e080";
+}
+#toast-container.toast-top-center > div,
+#toast-container.toast-bottom-center > div {
+  width: 300px;
+  margin: auto;
+}
+#toast-container.toast-top-full-width > div,
+#toast-container.toast-bottom-full-width > div {
+  width: 96%;
+  margin: auto;
+}
+.toast {
+  background-color: theme-color("primary");
+}
+.toast-success {
+  background-color: theme-color("success");
+}
+.toast-error {
+  background-color: theme-color("danger");
+}
+.toast-info {
+  background-color: theme-color("info");
+}
+.toast-warning {
+  background-color: theme-color("warning");
+}
+
+progress-bar,
+.toast-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: #000000;
+  opacity: .2;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  filter: alpha(opacity=20);
+}
+
+/*Animations*/
+div[toast],
+.toast {
+  opacity: 1 !important;
+}
+
+div[toast].ng-enter,
+.toast.ng-enter {
+  opacity: 0 !important;
+  transition: opacity .3s linear;
+}
+
+div[toast].ng-enter.ng-enter-active,
+.toast.ng-enter.ng-enter-active {
+  opacity: 1 !important;
+}
+
+div[toast].ng-leave,
+.toast.ng-leave {
+  opacity: 1;
+  transition: opacity .3s linear;
+}
+
+div[toast].ng-leave.ng-leave-active,
+.toast.ng-leave.ng-leave-active {
+  opacity: 0 !important;
+}
+
+/*Responsive Design*/
+@media all and (max-width: 240px) {
+  #toast-container > div {
+    padding: 8px 8px 8px 50px;
+    width: 11em;
+  }
+  #toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em;
+  }
+}
+@media all and (min-width: 241px) and (max-width: 480px) {
+  #toast-container > div {
+    padding: 8px 8px 8px 50px;
+    width: 18em;
+  }
+  #toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  #toast-container > div {
+    padding: 15px 15px 15px 50px;
+    width: 25em;
+  }
+}
+
+.toaster-icon.icon-info {
+  display: none;
+}

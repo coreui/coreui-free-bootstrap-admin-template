@@ -1,0 +1,299 @@
+<template>
+  <div class="animated fadeIn">
+    <div class="card">
+      <div class="card-header">
+        <strong>GLYPHICONS</strong> Social
+      </div>
+      <div class="card-body text-center">
+        <div class="row">
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-pinterest x2"></i><br>
+            .social.social-pinterest
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-dropbox x2"></i><br>
+            .social.social-dropbox
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-google-plus x2"></i><br>
+            .social.social-google-plus
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-jolicloud x2"></i><br>
+            .social.social-jolicloud
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-yahoo x2"></i><br>
+            .social.social-yahoo
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-blogger x2"></i><br>
+            .social.social-blogger
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-picasa x2"></i><br>
+            .social.social-picasa
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-amazon x2"></i><br>
+            .social.social-amazon
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-tumblr x2"></i><br>
+            .social.social-tumblr
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-wordpress x2"></i><br>
+            .social.social-wordpress
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-instapaper x2"></i><br>
+            .social.social-instapaper
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-evernote x2"></i><br>
+            .social.social-evernote
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-xing x2"></i><br>
+            .social.social-xing
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-e-mail-envelope x2"></i><br>
+            .social.social-e-mail-envelope
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-dribbble x2"></i><br>
+            .social.social-dribbble
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-deviantart x2"></i><br>
+            .social.social-deviantart
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-read-it-later x2"></i><br>
+            .social.social-read-it-later
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-linked-in x2"></i><br>
+            .social.social-linked-in
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-gmail x2"></i><br>
+            .social.social-gmail
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-pinboard x2"></i><br>
+            .social.social-pinboard
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-behance x2"></i><br>
+            .social.social-behance
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-github x2"></i><br>
+            .social.social-github
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-youtube x2"></i><br>
+            .social.social-youtube
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-open-id x2"></i><br>
+            .social.social-open-id
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-foursquare x2"></i><br>
+            .social.social-foursquare
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-quora x2"></i><br>
+            .social.social-quora
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-badoo x2"></i><br>
+            .social.social-badoo
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-spotify x2"></i><br>
+            .social.social-spotify
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-stumbleupon x2"></i><br>
+            .social.social-stumbleupon
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-readability x2"></i><br>
+            .social.social-readability
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-facebook x2"></i><br>
+            .social.social-facebook
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-twitter x2"></i><br>
+            .social.social-twitter
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-instagram x2"></i><br>
+            .social.social-instagram
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-posterous-spaces x2"></i><br>
+            .social.social-posterous-spaces
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-vimeo x2"></i><br>
+            .social.social-vimeo
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-flickr x2"></i><br>
+            .social.social-flickr
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-last-fm x2"></i><br>
+            .social.social-last-fm
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-rss x2"></i><br>
+            .social.social-rss
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-skype x2"></i><br>
+            .social.social-skype
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-e-mail x2"></i><br>
+            .social.social-e-mail
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-vine x2"></i><br>
+            .social.social-vine
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-myspace x2"></i><br>
+            .social.social-myspace
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-goodreads x2"></i><br>
+            .social.social-goodreads
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-apple x2"></i><br>
+            .social.social-apple
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-windows x2"></i><br>
+            .social.social-windows
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-yelp x2"></i><br>
+            .social.social-yelp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-playstation x2"></i><br>
+            .social.social-playstation
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-xbox x2"></i><br>
+            .social.social-xbox
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-android x2"></i><br>
+            .social.social-android
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-ios x2"></i><br>
+            .social.social-ios
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-wikipedia x2"></i><br>
+            .social.social-wikipedia
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-pocket x2"></i><br>
+            .social.social-pocket
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-steam x2"></i><br>
+            .social.social-steam
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-soundcloud x2"></i><br>
+            .social.social-soundcloud
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-slideshare x2"></i><br>
+            .social.social-slideshare
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-netflix x2"></i><br>
+            .social.social-netflix
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-paypal x2"></i><br>
+            .social.social-paypal
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-google-drive x2"></i><br>
+            .social.social-google-drive
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-linux-foundation x2"></i><br>
+            .social.social-linux-foundation
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-ebay x2"></i><br>
+            .social.social-ebay
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-bitbucket x2"></i><br>
+            .social.social-bitbucket
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-whatsapp x2"></i><br>
+            .social.social-whatsapp
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-buffer x2"></i><br>
+            .social.social-buffer
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-medium x2"></i><br>
+            .social.social-medium
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-stackoverflow x2"></i><br>
+            .social.social-stackoverflow
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-linux x2"></i><br>
+            .social.social-linux
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-vk x2"></i><br>
+            .social.social-vk
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-snapchat x2"></i><br>
+            .social.social-snapchat
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-etsy x2"></i><br>
+            .social.social-etsy
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 py-3">
+            <i class="social social-stackexchange x2"></i><br>
+            .social.social-stackexchange
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'glyphicons-social'
+}
+</script>
