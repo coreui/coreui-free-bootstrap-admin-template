@@ -1,40 +1,13 @@
 <nav class="top-nav">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" ui-sref-active="active" ui-sref="app.main"><i class="icon-speedometer"></i> DASHBOARD <span class="tag tag-info">NEW</span></a>
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.main"><i class="icon-speedometer"></i> DASHBOARD <span class="badge badge-info">NEW</span></a>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link" ui-sref-active="active" ui-sref="app.main2"><i class="icon-speedometer"></i> DASHBOARD 2 <span class="tag tag-warning">NEW</span></a>
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.main2"><i class="icon-speedometer"></i> DASHBOARD 2 <span class="badge badge-warning">NEW</span></a>
         </li>
-        <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('bootstrap')}">
-            <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('bootstrap')}" ui-sref-active="active" href="#"><i class="icon-layers"></i> Bootstrap UI</a>
-            <ul class="nav-dropdown-items">
-                <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('bootstrap.layout')}">
-                    <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('bootstrap.layout')}" href="#"><i class="icon-grid"></i> Layout</a>
-                    <ul ng-controller="bootstrapElements" class="nav-dropdown-items">
-                        <li ng-repeat="item in layout" class="nav-item">
-                            <a class="nav-link" ui-sref-active="active" ui-sref="bootstrap.layout.{{ item.name }}"><i class="icon-grid"></i> {{ item.desc }}</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('bootstrap.content')}">
-                    <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('bootstrap.content')}" href="#"><i class="icon-speech"></i> Content</a>
-                    <ul ng-controller="bootstrapElements" class="nav-dropdown-items">
-                        <li ng-repeat="item in content" class="nav-item">
-                            <a class="nav-link" ui-sref-active="active" ui-sref="bootstrap.content.{{ item.name }}"><i class="icon-speech"></i> {{ item.desc }}</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('bootstrap.components')}">
-                    <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('bootstrap.components')}" href="#"><i class="icon-options"></i> Components</a>
-                    <ul ng-controller="bootstrapElements" class="nav-dropdown-items">
-                        <li ng-repeat="item in components" class="nav-item">
-                            <a class="nav-link" ui-sref-active="active" ui-sref="bootstrap.components.{{ item.name }}"><i class="icon-options"></i> {{ item.desc }}</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
+
         <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.components')}">
             <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.components')}" href="#"><i class="icon-puzzle"></i> Components</a>
             <ul class="nav-dropdown-items">
@@ -87,10 +60,10 @@
             </ul>
         </li>
         <li class="nav-item">
-            <a class="nav-link" ui-sref-active="active" ui-sref="app.forms"><i class="icon-note"></i> FORMS <span class="tag tag-danger">NEW</span></a>
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.forms"><i class="icon-note"></i> FORMS <span class="badge badge-danger">NEW</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" ui-sref-active="active" ui-sref="app.widgets"><i class="icon-calculator"></i> WIDGETS <span class="tag tag-info">NEW</span></a>
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.widgets"><i class="icon-calculator"></i> WIDGETS <span class="badge badge-info">NEW</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" ui-sref-active="active" ui-sref="app.charts"><i class="icon-pie-chart"></i> CHARTS</a>
@@ -114,6 +87,7 @@
         </li>
         <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.uikits')}">
             <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.uikits')}" ui-sref-active="active" href="#"><i class="icon-layers"></i> UI Kits</a>
+
             <ul class="nav-dropdown-items">
                 <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.uikits.invoicing')}">
                     <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.uikits.invoicing')}" href="#"><i class="icon-speech"></i> INVOICING</a>
@@ -139,5 +113,6 @@
                 </li>
             </ul>
         </li>
+
     </ul>
 </nav>
