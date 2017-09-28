@@ -1,7 +1,7 @@
 .app-header.navbar {
   position: relative;
-  height: $navbar-height;
   flex-direction: row;
+  height: $navbar-height;
   padding: 0;
   margin: 0;
   background-color: $navbar-bg;
@@ -100,4 +100,15 @@
 
 .navbar-divider {
   background-color: rgba(0,0,0,.075);
+}
+
+.brand-minimized {
+  .app-header.navbar {
+    .navbar-brand {
+      width: $navbar-brand-minimized-width;
+      background-color: $navbar-brand-minimized-bg;
+      background-image: $navbar-brand-minimized-logo;
+      background-size: $navbar-brand-minimized-logo-size;
+    }
+  }
 }

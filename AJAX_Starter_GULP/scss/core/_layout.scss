@@ -11,8 +11,8 @@
 app-dashboard,
 app-root {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .app-header {
@@ -26,12 +26,12 @@ app-root {
 .app-body {
   display: flex;
   flex-direction: row;
-  overflow-x: hidden;
   flex-grow: 1;
+  overflow-x: hidden;
 
   .main {
-    min-width: 0;
     flex: 1;
+    min-width: 0;
   }
 
   .sidebar {
@@ -134,11 +134,6 @@ app-root {
   .sidebar-minimized {
     .sidebar {
       flex: 0 0 $sidebar-minimized-width;
-      .sidebar-header,
-      .sidebar-form,
-      .sidebar-footer {
-        display: none;
-      }
     }
 
     &.sidebar-hidden {
@@ -343,6 +338,10 @@ app-root {
     .sidebar-nav,
     .nav {
       width: $mobile-sidebar-width !important;
+    }
+
+    .sidebar-minimizer {
+      display: none;
     }
   }
 

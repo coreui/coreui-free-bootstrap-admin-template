@@ -78,7 +78,8 @@
 
   .nav {
     @include sidebar-width($sidebar-borders, $sidebar-width);
-    flex-direction: column !important;
+    flex-direction: column;
+    min-height: 100%;
   }
 
   .nav-title {
@@ -148,8 +149,8 @@
     }
 
     &:hover {
-      color: $sidebar-nav-link-hover-color !important;
-      background: $sidebar-nav-link-hover-bg !important;
+      color: $sidebar-nav-link-hover-color;
+      background: $sidebar-nav-link-hover-bg;
       @include borders($sidebar-nav-link-hover-borders);
 
       i {
@@ -158,6 +159,21 @@
 
       &.nav-dropdown-toggle::before {
         background-image: $sidebar-nav-dropdown-indicator-hover;
+      }
+    }
+
+    @each $color, $value in $theme-colors {
+      &.nav-link-#{$color} {
+        background: $value;
+        i {
+          color: rgba(255,255,255,.7);
+        }
+        &:hover {
+          background: darken($value,5%) !important;
+          i {
+            color: #fff;
+          }
+        }
       }
     }
   }
@@ -239,6 +255,39 @@
     padding: $sidebar-footer-padding-y $sidebar-footer-padding-x;
     background: $sidebar-footer-bg;
   }
+
+  .sidebar-minimizer {
+    position: relative;
+    flex: 0 0 $sidebar-minimizer-height;
+    background-color: $sidebar-minimizer-bg;
+    border: 0;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: $sidebar-minimizer-height;
+      height: $sidebar-minimizer-height;
+      content: "";
+      background-image: $sidebar-minimizer-indicator;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: $sidebar-minimizer-height / 4;
+      transition: .3s;
+    }
+
+    &:focus,
+    &.focus {
+      outline: 0;
+    }
+
+    &:hover {
+      background-color: $sidebar-minimizer-hover-bg;
+      &::before {
+        background-image: $sidebar-minimizer-hover-indicator;
+      }
+    }
+  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -310,6 +359,11 @@
       .sidebar-form,
       .sidebar-header {
         display: none;
+      }
+
+      .sidebar-minimizer::before {
+        width: 100%;
+        transform: rotate(-180deg);
       }
 
       .nav-item {

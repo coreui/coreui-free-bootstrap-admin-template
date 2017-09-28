@@ -31,6 +31,9 @@
 // Header options
 1. '.header-fixed'					- Fixed Header
 
+// Brand options
+1. '.brand-minimized'       - Minimized brand (Only symbol)
+
 // Sidebar options
 1. '.sidebar-fixed'					- Fixed Sidebar
 2. '.sidebar-hidden'				- Hidden Sidebar
@@ -55,7 +58,7 @@
     <header class="app-header navbar">
         <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">☰</button>
         <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler sidebar-minimizer d-md-down-none" type="button">☰</button>
+        <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">☰</button>
 
         <ul class="nav navbar-nav d-md-down-none">
             <li class="nav-item px-3">
@@ -186,9 +189,16 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item mt-auto">
+                        <a class="nav-link nav-link-success" href="http:--coreui.io/" target="_top"><i class="icon-cloud-download"></i> Download CoreUI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-danger" href="http:--coreui.io/pro/" target="_top"><i class="icon-layers"></i> Try CoreUI <strong>PRO</strong></a>
+                    </li>
 
                 </ul>
             </nav>
+            <button class="sidebar-minimizer brand-minimizer" type="button"></button>
         </div>
 
         <!-- Main content -->
