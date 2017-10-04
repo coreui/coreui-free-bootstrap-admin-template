@@ -1,0 +1,1158 @@
+<!--
+ * CoreUI PRO - Bootstrap 4 Admin Template
+ * @version v1.0.1
+ * @link http://coreui.io/pro/
+ * Copyright (c) 2017 creativeLabs Łukasz Holeczek
+ * @license Commercial
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CoreUI PRO - Bootstrap 4 Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard,Vue,Vue.js,React,React.js">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>CoreUI PRO - Bootstrap 4 Admin Template</title>
+
+  <!-- Icons -->
+  <link href="vendors/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendors/css/simple-line-icons.min.css" rel="stylesheet">
+
+  <!-- Main styles for this application -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Styles required by this views -->
+  <link href="vendors/css/codemirror.min.css" rel="stylesheet">
+
+</head>
+
+<!-- BODY options, add following classes to body to change options
+
+// Header options
+1. '.header-fixed'					- Fixed Header
+
+// Brand options
+1. '.brand-minimized'       - Minimized brand (Only symbol)
+
+// Sidebar options
+1. '.sidebar-fixed'					- Fixed Sidebar
+2. '.sidebar-hidden'				- Hidden Sidebar
+3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+5. '.sidebar-compact'			  - Compact Sidebar
+
+// Aside options
+1. '.aside-menu-fixed'			- Fixed Aside Menu
+2. '.aside-menu-hidden'			- Hidden Aside Menu
+3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+// Breadcrumb options
+1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
+// Footer options
+1. '.footer-fixed'					- Fixed footer
+
+-->
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+  <header class="app-header navbar">
+    <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">☰</button>
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">☰</button>
+    <ul class="nav navbar-nav d-md-down-none mr-auto">
+
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">Dashboard</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">Users</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">Settings</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item dropdown d-md-down-none">
+        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+          <div class="dropdown-header text-center">
+            <strong>You have 5 notifications</strong>
+          </div>
+          <a href="#" class="dropdown-item">
+            <i class="icon-user-follow text-success"></i> New user registered
+          </a>
+          <a href="#" class="dropdown-item">
+            <i class="icon-user-unfollow text-danger"></i> User deleted
+          </a>
+          <a href="#" class="dropdown-item">
+            <i class="icon-chart text-info"></i> Sales report is ready
+          </a>
+          <a href="#" class="dropdown-item">
+            <i class="icon-basket-loaded text-primary"></i> New client
+          </a>
+          <a href="#" class="dropdown-item">
+            <i class="icon-speedometer text-warning"></i> Server overloaded
+          </a>
+          <div class="dropdown-header text-center">
+            <strong>Server</strong>
+          </div>
+          <a href="#" class="dropdown-item">
+            <div class="text-uppercase mb-1">
+              <small><b>CPU Usage</b></small>
+            </div>
+            <span class="progress progress-xs">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </span>
+            <small class="text-muted">348 Processes. 1/4 Cores.</small>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="text-uppercase mb-1">
+              <small><b>Memory Usage</b></small>
+            </div>
+            <span class="progress progress-xs">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </span>
+            <small class="text-muted">11444GB/16384MB</small>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="text-uppercase mb-1">
+              <small><b>SSD 1 Usage</b></small>
+            </div>
+            <span class="progress progress-xs">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </span>
+            <small class="text-muted">243GB/256GB</small>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown d-md-down-none">
+        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="icon-list"></i><span class="badge badge-pill badge-warning">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+          <div class="dropdown-header text-center">
+            <strong>You have 5 pending tasks</strong>
+          </div>
+          <a href="#" class="dropdown-item">
+            <div class="small mb-1">Upgrade NPM &amp; Bower
+              <span class="float-right">
+                <strong>0%</strong>
+              </span>
+            </div>
+            <span class="progress progress-xs">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="small mb-1">ReactJS Version
+              <span class="float-right">
+                <strong>25%</strong>
+              </span>
+            </div>
+            <span class="progress progress-xs">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="small mb-1">VueJS Version
+              <span class="float-right">
+                <strong>50%</strong>
+              </span>
+            </div>
+            <span class="progress progress-xs">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="small mb-1">Add new layouts
+              <span class="float-right">
+                <strong>75%</strong>
+              </span>
+            </div>
+            <span class="progress progress-xs">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="small mb-1">Angular 2 Cli Version
+              <span class="float-right">
+                <strong>100%</strong>
+              </span>
+            </div>
+            <span class="progress progress-xs">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </span>
+          </a>
+          <a href="#" class="dropdown-item text-center">
+            <strong>View all tasks</strong>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown d-md-down-none">
+        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="icon-envelope-letter"></i><span class="badge badge-pill badge-info">7</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+          <div class="dropdown-header text-center">
+            <strong>You have 4 messages</strong>
+          </div>
+          <a href="#" class="dropdown-item">
+            <div class="message">
+              <div class="py-3 mr-3 float-left">
+                <div class="avatar">
+                  <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                  <span class="avatar-status badge-success"></span>
+                </div>
+              </div>
+              <div>
+                <small class="text-muted">John Doe</small>
+                <small class="text-muted float-right mt-1">Just now</small>
+              </div>
+              <div class="text-truncate font-weight-bold">
+                <span class="fa fa-exclamation text-danger"></span> Important message</div>
+              <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="message">
+              <div class="py-3 mr-3 float-left">
+                <div class="avatar">
+                  <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                  <span class="avatar-status badge-warning"></span>
+                </div>
+              </div>
+              <div>
+                <small class="text-muted">John Doe</small>
+                <small class="text-muted float-right mt-1">5 minutes ago</small>
+              </div>
+              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+              <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="message">
+              <div class="py-3 mr-3 float-left">
+                <div class="avatar">
+                  <img src="img/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                  <span class="avatar-status badge-danger"></span>
+                </div>
+              </div>
+              <div>
+                <small class="text-muted">John Doe</small>
+                <small class="text-muted float-right mt-1">1:52 PM</small>
+              </div>
+              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+              <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="message">
+              <div class="py-3 mr-3 float-left">
+                <div class="avatar">
+                  <img src="img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                  <span class="avatar-status badge-info"></span>
+                </div>
+              </div>
+              <div>
+                <small class="text-muted">John Doe</small>
+                <small class="text-muted float-right mt-1">4:03 PM</small>
+              </div>
+              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+              <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item text-center">
+            <strong>View all messages</strong>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          <span class="d-md-down-none">admin</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-header text-center">
+            <strong>Account</strong>
+          </div>
+          <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
+          <div class="dropdown-header text-center">
+            <strong>Settings</strong>
+          </div>
+          <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-dark">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+          <div class="divider"></div>
+          <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+        </div>
+      </li>
+      <button class="navbar-toggler aside-menu-toggler" type="button">☰</button>
+
+    </ul>
+  </header>
+  <div class="app-body">
+    <div class="sidebar">
+      <nav class="sidebar-nav">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+          </li>
+
+          <li class="divider"></li>
+          <li class="nav-title">
+            UI Elements
+          </li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Components</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" href="components-buttons.html"><i class="icon-puzzle"></i> Buttons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="components-social-buttons.html"><i class="icon-puzzle"></i> Social Buttons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="components-cards.html"><i class="icon-puzzle"></i> Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="components-modals.html"><i class="icon-puzzle"></i> Modals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="components-switches.html"><i class="icon-puzzle"></i> Switches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="components-tables.html"><i class="icon-puzzle"></i> Tables</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="components-tabs.html"><i class="icon-puzzle"></i> Tabs</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-note"></i> Forms</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" href="forms-basic-forms.html"><i class="icon-note"></i> Basic Forms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="forms-advanced-forms.html"><i class="icon-note"></i> Advanced Forms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="forms-validation.html"><i class="icon-note"></i> Validation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-code"></i> Editors</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" href="editors-code-editor.html"><i class="icon-note"></i> Code Editor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="editors-markdown-editor.html"><i class="fa fa-code"></i> Markdown Editor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="editors-text-editors.html"><i class="icon-note"></i> Rich Text Editor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Icons</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" href="icons-font-awesome.html"><i class="icon-star"></i> Font Awesome <span class="badge badge-secondary">4.7</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="icons-simple-line-icons.html"><i class="icon-star"></i> Simple Line Icons</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-energy"></i> Plugins</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" href="plugins-calendar.html"><i class="icon-calendar"></i> Calendar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="plugins-draggable-cards.html"><i class="icon-cursor-move"></i> Draggable Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="plugins-loading-buttons.html"><i class="icon-cursor"></i> Loading Buttons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="plugins-notifications.html"><i class="icon-info"></i> Notifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="plugins-sliders.html"><i class="icon-equalizer"></i> Sliders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="plugins-spinners.html"><i class="fa fa-spinner"></i> Spinners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="plugins-tables.html"><i class="icon-list"></i> Tables</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="widgets.html"><i class="icon-calculator"></i> Widgets <span class="badge badge-info">NEW</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="charts.html"><i class="icon-pie-chart"></i> Charts</a>
+          </li>
+          <li class="divider"></li>
+          <li class="nav-title">
+            Extras
+          </li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Pages</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" href="pages-login.html" target="_top"><i class="icon-star"></i> Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages-register.html" target="_top"><i class="icon-star"></i> Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages-404.html" target="_top"><i class="icon-star"></i> Error 404</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages-500.html" target="_top"><i class="icon-star"></i> Error 500</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-layers"></i> UI Kits</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-speech"></i> Invoicing</a>
+                <ul class="nav-dropdown-items">
+                  <li class="nav-item">
+                    <a class="nav-link" href="UIkits-invoicing-invoice.html"><i class="icon-speech"></i> Invoice</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-speech"></i> Email</a>
+                <ul class="nav-dropdown-items">
+                  <li class="nav-item">
+                    <a class="nav-link" href="UIkits-email-inbox.html"><i class="icon-speech"></i> Inbox</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="UIkits-email-message.html"><i class="icon-speech"></i> Message</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="UIkits-email-compose.html"><i class="icon-speech"></i> Compose</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="divider m-2"></li>
+          <li class="nav-title">
+            Labels
+          </li>
+          <li class="nav-item hidden-cn">
+            <a class="nav-label" href="#"><i class="fa fa-circle text-danger"></i> Label danger</a>
+          </li>
+          <li class="nav-item hidden-cn">
+            <a class="nav-label" href="#"><i class="fa fa-circle text-info"></i> Label info</a>
+          </li>
+          <li class="nav-item hidden-cn">
+            <a class="nav-label" href="#"><i class="fa fa-circle text-warning"></i> Label warning</a>
+          </li>
+          <li class="divider"></li>
+          <li class="nav-title">
+            System Utilization
+          </li>
+          <li class="nav-item px-3 hidden-cn">
+            <div class="text-uppercase mb-1">
+              <small><b>CPU Usage</b></small>
+            </div>
+            <div class="progress progress-xs">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <small class="text-muted">348 Processes. 1/4 Cores.</small>
+          </li>
+          <li class="nav-item px-3 hidden-cn">
+            <div class="text-uppercase mb-1">
+              <small><b>Memory Usage</b></small>
+            </div>
+            <div class="progress progress-xs">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <small class="text-muted">11444GB/16384MB</small>
+          </li>
+          <li class="nav-item px-3 hidden-cn">
+            <div class="text-uppercase mb-1">
+              <small><b>SSD 1 Usage</b></small>
+            </div>
+            <div class="progress progress-xs">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <small class="text-muted">243GB/256GB</small>
+          </li>
+
+        </ul>
+      </nav>
+      <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+    </div>
+    <!-- Main content -->
+    <main class="main">
+
+      <!-- Breadcrumb -->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item"><a href="#">Admin</a></li>
+        <li class="breadcrumb-item active">Dashboard</li>
+        <!-- Breadcrumb Menu-->
+        <li class="breadcrumb-menu d-md-down-none">
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <a class="btn" href="#"><i class="icon-speech"></i></a>
+            <a class="btn" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+            <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+          </div>
+        </li>
+      </ol>
+
+      <div class="container-fluid">
+
+        <div class="animated fadeIn">
+          <div class="card">
+            <div class="card-header">
+              Markdown editor - CodeMirror
+              <div class="card-actions">
+                <a href="http://codemirror.net" target="_blank">
+                  <small class="text-muted">docs</small>
+                </a>
+              </div>
+            </div>
+            <!-- Create code editor container -->
+            <textarea id="codemirror" style="display: none;">Markdown: Basics
+================
+
+&lt;ul id="ProjectSubmenu"&gt;
+    &lt;li&gt;&lt;a href="/projects/markdown/" title="Markdown Project Page"&gt;Main&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="selected" title="Markdown Basics"&gt;Basics&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/projects/markdown/syntax" title="Markdown Syntax Documentation"&gt;Syntax&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/projects/markdown/license" title="Pricing and License Information"&gt;License&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/projects/markdown/dingus" title="Online Markdown Web Form"&gt;Dingus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+Getting the Gist of Markdown's Formatting Syntax
+------------------------------------------------
+
+This page offers a brief overview of what it's like to use Markdown.
+The [syntax page] [s] provides complete, detailed documentation for
+every feature, but Markdown should be very easy to pick up simply by
+looking at a few examples of it in action. The examples on this page
+are written in a before/after style, showing example syntax and the
+HTML output produced by Markdown.
+
+It's also helpful to simply try Markdown out; the [Dingus] [d] is a
+web application that allows you type your own Markdown-formatted text
+and translate it to XHTML.
+
+**Note:** This document is itself written using Markdown; you
+can [see the source for it by adding '.text' to the URL] [src].
+
+  [s]: /projects/markdown/syntax  "Markdown Syntax"
+  [d]: /projects/markdown/dingus  "Markdown Dingus"
+  [src]: /projects/markdown/basics.text
+
+
+## Paragraphs, Headers, Blockquotes ##
+
+A paragraph is simply one or more consecutive lines of text, separated
+by one or more blank lines. (A blank line is any line that looks like
+a blank line -- a line containing nothing but spaces or tabs is
+considered blank.) Normal paragraphs should not be indented with
+spaces or tabs.
+
+Markdown offers two styles of headers: *Setext* and *atx*.
+Setext-style headers for `&lt;h1&gt;` and `&lt;h2&gt;` are created by
+"underlining" with equal signs (`=`) and hyphens (`-`), respectively.
+To create an atx-style header, you put 1-6 hash marks (`#`) at the
+beginning of the line -- the number of hashes equals the resulting
+HTML header level.
+
+Blockquotes are indicated using email-style '`&gt;`' angle brackets.
+
+Markdown:
+
+    A First Level Header
+    ====================
+
+    A Second Level Header
+    ---------------------
+
+    Now is the time for all good men to come to
+    the aid of their country. This is just a
+    regular paragraph.
+
+    The quick brown fox jumped over the lazy
+    dog's back.
+
+    ### Header 3
+
+    &gt; This is a blockquote.
+    &gt;
+    &gt; This is the second paragraph in the blockquote.
+    &gt;
+    &gt; ## This is an H2 in a blockquote
+
+
+Output:
+
+    &lt;h1&gt;A First Level Header&lt;/h1&gt;
+
+    &lt;h2&gt;A Second Level Header&lt;/h2&gt;
+
+    &lt;p&gt;Now is the time for all good men to come to
+    the aid of their country. This is just a
+    regular paragraph.&lt;/p&gt;
+
+    &lt;p&gt;The quick brown fox jumped over the lazy
+    dog's back.&lt;/p&gt;
+
+    &lt;h3&gt;Header 3&lt;/h3&gt;
+
+    &lt;blockquote&gt;
+        &lt;p&gt;This is a blockquote.&lt;/p&gt;
+
+        &lt;p&gt;This is the second paragraph in the blockquote.&lt;/p&gt;
+
+        &lt;h2&gt;This is an H2 in a blockquote&lt;/h2&gt;
+    &lt;/blockquote&gt;
+
+
+
+### Phrase Emphasis ###
+
+Markdown uses asterisks and underscores to indicate spans of emphasis.
+
+Markdown:
+
+    Some of these words *are emphasized*.
+    Some of these words _are emphasized also_.
+
+    Use two asterisks for **strong emphasis**.
+    Or, if you prefer, __use two underscores instead__.
+
+Output:
+
+    &lt;p&gt;Some of these words &lt;em&gt;are emphasized&lt;/em&gt;.
+    Some of these words &lt;em&gt;are emphasized also&lt;/em&gt;.&lt;/p&gt;
+
+    &lt;p&gt;Use two asterisks for &lt;strong&gt;strong emphasis&lt;/strong&gt;.
+    Or, if you prefer, &lt;strong&gt;use two underscores instead&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+## Lists ##
+
+Unordered (bulleted) lists use asterisks, pluses, and hyphens (`*`,
+`+`, and `-`) as list markers. These three markers are
+interchangable; this:
+
+    *   Candy.
+    *   Gum.
+    *   Booze.
+
+this:
+
+    +   Candy.
+    +   Gum.
+    +   Booze.
+
+and this:
+
+    -   Candy.
+    -   Gum.
+    -   Booze.
+
+all produce the same output:
+
+    &lt;ul&gt;
+    &lt;li&gt;Candy.&lt;/li&gt;
+    &lt;li&gt;Gum.&lt;/li&gt;
+    &lt;li&gt;Booze.&lt;/li&gt;
+    &lt;/ul&gt;
+
+Ordered (numbered) lists use regular numbers, followed by periods, as
+list markers:
+
+    1.  Red
+    2.  Green
+    3.  Blue
+
+Output:
+
+    &lt;ol&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Green&lt;/li&gt;
+    &lt;li&gt;Blue&lt;/li&gt;
+    &lt;/ol&gt;
+
+If you put blank lines between items, you'll get `&lt;p&gt;` tags for the
+list item text. You can create multi-paragraph list items by indenting
+the paragraphs by 4 spaces or 1 tab:
+
+    *   A list item.
+
+        With multiple paragraphs.
+
+    *   Another item in the list.
+
+Output:
+
+    &lt;ul&gt;
+    &lt;li&gt;&lt;p&gt;A list item.&lt;/p&gt;
+    &lt;p&gt;With multiple paragraphs.&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;Another item in the list.&lt;/p&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+
+
+### Links ###
+
+Markdown supports two styles for creating links: *inline* and
+*reference*. With both styles, you use square brackets to delimit the
+text you want to turn into a link.
+
+Inline-style links use parentheses immediately after the link text.
+For example:
+
+    This is an [example link](http://example.com/).
+
+Output:
+
+    &lt;p&gt;This is an &lt;a href="http://example.com/"&gt;
+    example link&lt;/a&gt;.&lt;/p&gt;
+
+Optionally, you may include a title attribute in the parentheses:
+
+    This is an [example link](http://example.com/ "With a Title").
+
+Output:
+
+    &lt;p&gt;This is an &lt;a href="http://example.com/" title="With a Title"&gt;
+    example link&lt;/a&gt;.&lt;/p&gt;
+
+Reference-style links allow you to refer to your links by names, which
+you define elsewhere in your document:
+
+    I get 10 times more traffic from [Google][1] than from
+    [Yahoo][2] or [MSN][3].
+
+    [1]: http://google.com/        "Google"
+    [2]: http://search.yahoo.com/  "Yahoo Search"
+    [3]: http://search.msn.com/    "MSN Search"
+
+Output:
+
+    &lt;p&gt;I get 10 times more traffic from &lt;a href="http://google.com/"
+    title="Google"&gt;Google&lt;/a&gt; than from &lt;a href="http://search.yahoo.com/"
+    title="Yahoo Search"&gt;Yahoo&lt;/a&gt; or &lt;a href="http://search.msn.com/"
+    title="MSN Search"&gt;MSN&lt;/a&gt;.&lt;/p&gt;
+
+The title attribute is optional. Link names may contain letters,
+numbers and spaces, but are *not* case sensitive:
+
+    I start my morning with a cup of coffee and
+    [The New York Times][NY Times].
+
+    [ny times]: http://www.nytimes.com/
+
+Output:
+
+    &lt;p&gt;I start my morning with a cup of coffee and
+    &lt;a href="http://www.nytimes.com/"&gt;The New York Times&lt;/a&gt;.&lt;/p&gt;
+
+
+### Images ###
+
+Image syntax is very much like link syntax.
+
+Inline (titles are optional):
+
+    ![alt text](/path/to/img.jpg "Title")
+
+Reference-style:
+
+    ![alt text][id]
+
+    [id]: /path/to/img.jpg "Title"
+
+Both of the above examples produce the same output:
+
+    &lt;img src="/path/to/img.jpg" alt="alt text" title="Title" /&gt;
+
+
+
+### Code ###
+
+In a regular paragraph, you can create code span by wrapping text in
+backtick quotes. Any ampersands (`&amp;`) and angle brackets (`&lt;` or
+`&gt;`) will automatically be translated into HTML entities. This makes
+it easy to use Markdown to write about HTML example code:
+
+    I strongly recommend against using any `&lt;blink&gt;` tags.
+
+    I wish SmartyPants used named entities like `&amp;mdash;`
+    instead of decimal-encoded entites like `&amp;#8212;`.
+
+Output:
+
+    &lt;p&gt;I strongly recommend against using any
+    &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+
+    &lt;p&gt;I wish SmartyPants used named entities like
+    &lt;code&gt;&amp;amp;mdash;&lt;/code&gt; instead of decimal-encoded
+    entites like &lt;code&gt;&amp;amp;#8212;&lt;/code&gt;.&lt;/p&gt;
+
+
+To specify an entire block of pre-formatted code, indent every line of
+the block by 4 spaces or 1 tab. Just like with code spans, `&amp;`, `&lt;`,
+and `&gt;` characters will be escaped automatically.
+
+Markdown:
+
+    If you want your page to validate under XHTML 1.0 Strict,
+    you've got to put paragraph tags in your blockquotes:
+
+        &lt;blockquote&gt;
+            &lt;p&gt;For example.&lt;/p&gt;
+        &lt;/blockquote&gt;
+
+Output:
+
+    &lt;p&gt;If you want your page to validate under XHTML 1.0 Strict,
+    you've got to put paragraph tags in your blockquotes:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;&amp;lt;blockquote&amp;gt;
+        &amp;lt;p&amp;gt;For example.&amp;lt;/p&amp;gt;
+    &amp;lt;/blockquote&amp;gt;
+    &lt;/code&gt;&lt;/pre&gt;
+
+## Fenced code blocks (and syntax highlighting)
+
+```javascript
+for (var i = 0; i &lt; items.length; i++) {
+    console.log(items[i], i); // log them
+}
+```
+
+    </textarea>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.conainer-fluid -->
+    </main>
+
+    <aside class="aside-menu">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab"><i class="icon-list"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#messages" role="tab"><i class="icon-speech"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#settings" role="tab"><i class="icon-settings"></i></a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="timeline" role="tabpanel">
+          <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
+            <small><b>Today</b></small>
+          </div>
+          <hr class="transparent mx-3 my-0">
+          <div class="callout callout-warning m-0 py-3">
+            <div class="avatar float-right">
+              <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+            </div>
+            <div>Meeting with
+              <strong>Lucas</strong>
+            </div>
+            <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
+            <small class="text-muted"><i class="icon-location-pin"></i>&nbsp; Palo Alto, CA </small>
+          </div>
+          <hr class="mx-3 my-0">
+          <div class="callout callout-info m-0 py-3">
+            <div class="avatar float-right">
+              <img src="img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+            </div>
+            <div>Skype with
+              <strong>Megan</strong>
+            </div>
+            <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 4 - 5pm</small>
+            <small class="text-muted"><i class="icon-social-skype"></i>&nbsp; On-line </small>
+          </div>
+          <hr class="transparent mx-3 my-0">
+          <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
+            <small><b>Tomorrow</b></small>
+          </div>
+          <hr class="transparent mx-3 my-0">
+          <div class="callout callout-danger m-0 py-3">
+            <div>New UI Project -
+              <strong>deadline</strong>
+            </div>
+            <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 10 - 11pm</small>
+            <small class="text-muted"><i class="icon-home"></i>&nbsp; creativeLabs HQ </small>
+            <div class="avatars-stack mt-2">
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+            </div>
+          </div>
+          <hr class="mx-3 my-0">
+          <div class="callout callout-success m-0 py-3">
+            <div>
+              <strong>#10 Startups.Garden</strong> Meetup</div>
+            <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
+            <small class="text-muted"><i class="icon-location-pin"></i>&nbsp; Palo Alto, CA </small>
+          </div>
+          <hr class="mx-3 my-0">
+          <div class="callout callout-primary m-0 py-3">
+            <div>
+              <strong>Team meeting</strong>
+            </div>
+            <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 4 - 6pm</small>
+            <small class="text-muted"><i class="icon-home"></i>&nbsp; creativeLabs HQ </small>
+            <div class="avatars-stack mt-2">
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="img/avatars/8.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+              </div>
+            </div>
+          </div>
+          <hr class="mx-3 my-0">
+        </div>
+        <div class="tab-pane p-3" id="messages" role="tabpanel">
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="avatar">
+                <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                <span class="avatar-status badge-success"></span>
+              </div>
+            </div>
+            <div>
+              <small class="text-muted">Lukasz Holeczek</small>
+              <small class="text-muted float-right mt-1">1:52 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="avatar">
+                <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                <span class="avatar-status badge-success"></span>
+              </div>
+            </div>
+            <div>
+              <small class="text-muted">Lukasz Holeczek</small>
+              <small class="text-muted float-right mt-1">1:52 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="avatar">
+                <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                <span class="avatar-status badge-success"></span>
+              </div>
+            </div>
+            <div>
+              <small class="text-muted">Lukasz Holeczek</small>
+              <small class="text-muted float-right mt-1">1:52 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="avatar">
+                <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                <span class="avatar-status badge-success"></span>
+              </div>
+            </div>
+            <div>
+              <small class="text-muted">Lukasz Holeczek</small>
+              <small class="text-muted float-right mt-1">1:52 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="avatar">
+                <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                <span class="avatar-status badge-success"></span>
+              </div>
+            </div>
+            <div>
+              <small class="text-muted">Lukasz Holeczek</small>
+              <small class="text-muted float-right mt-1">1:52 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+        </div>
+        <div class="tab-pane p-3" id="settings" role="tabpanel">
+          <h6>Settings</h6>
+          <div class="aside-options">
+            <div class="clearfix mt-4">
+              <small><b>Option 1</b></small>
+              <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                <input type="checkbox" class="switch-input" checked="">
+                <span class="switch-label" data-on="On" data-off="Off"></span>
+                <span class="switch-handle"></span>
+              </label>
+            </div>
+            <div>
+              <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+            </div>
+          </div>
+          <div class="aside-options">
+            <div class="clearfix mt-3">
+              <small><b>Option 2</b></small>
+              <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                <input type="checkbox" class="switch-input">
+                <span class="switch-label" data-on="On" data-off="Off"></span>
+                <span class="switch-handle"></span>
+              </label>
+            </div>
+            <div>
+              <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+            </div>
+          </div>
+          <div class="aside-options">
+            <div class="clearfix mt-3">
+              <small><b>Option 3</b></small>
+              <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                <input type="checkbox" class="switch-input">
+                <span class="switch-label" data-on="On" data-off="Off"></span>
+                <span class="switch-handle"></span>
+              </label>
+            </div>
+          </div>
+          <div class="aside-options">
+            <div class="clearfix mt-3">
+              <small><b>Option 4</b></small>
+              <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                <input type="checkbox" class="switch-input" checked="">
+                <span class="switch-label" data-on="On" data-off="Off"></span>
+                <span class="switch-handle"></span>
+              </label>
+            </div>
+          </div>
+          <hr>
+          <h6>System Utilization</h6>
+          <div class="text-uppercase mb-1 mt-4">
+            <small><b>CPU Usage</b></small>
+          </div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small class="text-muted">348 Processes. 1/4 Cores.</small>
+          <div class="text-uppercase mb-1 mt-2">
+            <small><b>Memory Usage</b></small>
+          </div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small class="text-muted">11444GB/16384MB</small>
+          <div class="text-uppercase mb-1 mt-2">
+            <small><b>SSD 1 Usage</b></small>
+          </div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small class="text-muted">243GB/256GB</small>
+          <div class="text-uppercase mb-1 mt-2">
+            <small><b>SSD 2 Usage</b></small>
+          </div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small class="text-muted">25GB/256GB</small>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+  <footer class="app-footer">
+    <span><a href="http://coreui.io/pro/">CoreUI PRO</a> © 2017 creativeLabs.</span>
+    <span class="ml-auto">Powered by <a href="http://coreui.io/pro/">CoreUI PRO</a></span>
+  </footer>
+
+  <!-- Bootstrap and necessary plugins -->
+  <script src="vendors/js/jquery.min.js"></script>
+  <script src="vendors/js/popper.min.js"></script>
+  <script src="vendors/js/bootstrap.min.js"></script>
+  <script src="vendors/js/pace.min.js"></script>
+
+  <!-- Plugins and scripts required by all views -->
+  <script src="vendors/js/Chart.min.js"></script>
+
+  <!-- CoreUI PRO main scripts -->
+
+  <script src="js/app.js"></script>
+
+  <!-- Plugins and scripts required by this views -->
+  <script src="vendors/js/codemirror.min.js"></script>
+  <script src="vendors/js/markdown.min.js"></script>
+
+  <!-- Custom scripts required by this view -->
+  <script src="js/views/markdown-editor.js"></script>
+
+</body>
+</html>

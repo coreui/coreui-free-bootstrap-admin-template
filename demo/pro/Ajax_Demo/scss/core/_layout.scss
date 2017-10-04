@@ -134,11 +134,6 @@ app-root {
   .sidebar-minimized {
     .sidebar {
       flex: 0 0 $sidebar-minimized-width;
-      .sidebar-header,
-      .sidebar-form,
-      .sidebar-footer {
-        display: none;
-      }
     }
 
     &.sidebar-hidden {
@@ -333,7 +328,8 @@ app-root {
     margin-top: $navbar-height;
   }
 
-  .sidebar {
+  .sidebar,
+  .sidebar-fixed .sidebar {
     position: fixed;
     z-index: $zindex-sticky - 1;
     width: $mobile-sidebar-width;
@@ -343,6 +339,10 @@ app-root {
     .sidebar-nav,
     .nav {
       width: $mobile-sidebar-width !important;
+    }
+
+    .sidebar-minimizer {
+      display: none;
     }
   }
 

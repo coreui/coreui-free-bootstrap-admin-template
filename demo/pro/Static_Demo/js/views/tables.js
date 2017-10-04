@@ -1,9 +1,5 @@
 $(function(){
-  $('.datatable').dataTable({
-    "sDom": "<'row mb-1'<'col-sm-6'l><'col-sm-6'f>r>t<'row'<'col-sm-6'i><'col-sm-6 center'p>>",
-    renderer: 'bootstrap',
-    // "oLanguage": {
-    //   "sLengthMenu": "_MENU_ records per page"
-    // }
-  });
+  $('.datatable').DataTable();
+  // $('.datatable').css({'border-collapse':'collapse !important'});
+  $('.datatable').attr('style', 'border-collapse: collapse !important');
 });

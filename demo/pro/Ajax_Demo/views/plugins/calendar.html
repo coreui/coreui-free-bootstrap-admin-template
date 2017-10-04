@@ -1,25 +1,25 @@
 <script>
-    var requireJS = [
-      "vendors/js/moment.min.js",
-      "vendors/js/fullcalendar.min.js",
-      "vendors/js/gcal.min.js",
-    ];
-    
-    loadJS(requireJS, "js/views/calendar.js");
+  loadCSS("vendors/css/fullcalendar.min.css");
+  var requireJS = [
+    "vendors/js/moment.min.js",
+    "vendors/js/fullcalendar.min.js",
+    "vendors/js/gcal.min.js",
+  ];
+  loadJS(requireJS, "js/views/calendar.js");
 </script>
 
 <div class="animated fadeIn">
-    <div class="card">
-        <div class="card-header">
-            <i class="icon-calendar"></i> FullCalendar
-            <div class="card-actions">
-                <a href="http://angular-ui.github.io/ui-calendar/">
-                    <small class="text-muted">docs</small>
-                </a>
-            </div>
-        </div>
-        <div class="card-body">
-            <div id="calendar"></div>
-        </div>
+  <div class="card">
+    <div class="card-header">
+      <i class="icon-calendar"></i> FullCalendar
+      <div class="card-actions">
+        <a href="http://angular-ui.github.io/ui-calendar/">
+          <small class="text-muted">docs</small>
+        </a>
+      </div>
     </div>
+    <div class="card-body">
+      <div id="calendar"></div>
+    </div>
+  </div>
 </div>

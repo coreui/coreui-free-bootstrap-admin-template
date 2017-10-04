@@ -1,3 +1,6 @@
+// Import variables
+@import '../variables';
+
 /*!
  * FullCalendar v2.4.0 Stylesheet
  * Docs & License: http://fullcalendar.io/
@@ -134,16 +137,47 @@ NOTE: use percentage font sizes or else old IE chokes
 /* Buttons (styled <button> tags, normalized to work cross-browser)
 --------------------------------------------------------------------------------------------------*/
 
-.fc button {
-    @extend .btn;
-    @extend .btn-secondary;
+.fc-button {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: $input-btn-border-width solid transparent;
+  @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
+  @include transition($btn-transition);
+
+  // Share hover and focus styles
+  @include hover-focus {
+    text-decoration: none;
+  }
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: .65;
+    @include box-shadow(none);
+  }
+
+  &:active,
+  &.active {
+    background-image: none;
+    @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+  }
 }
 
 /* Firefox has an annoying inner border */
 .fc button::-moz-focus-inner { margin: 0; padding: 0; }
 
 .fc-state-default { /* non-theme */
-	border: 1px solid;
+	@include button-outline-variant(theme-color("secondary"), #fff);
 }
 
 .fc-state-default.fc-corner-left { /* non-theme */
@@ -173,7 +207,8 @@ NOTE: use percentage font sizes or else old IE chokes
 }
 
 .fc-today-button {
-    @extend .btn-primary;
+  @include button-variant(theme-color("primary"), theme-color("primary"));
+  border: 1px solid theme-color("primary");
 }
 
 .fc-state-hover,
@@ -196,9 +231,9 @@ NOTE: use percentage font sizes or else old IE chokes
 
 .fc-state-down,
 .fc-state-active {
-	background-color: #cccccc;
-	background-image: none;
-	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  background-color: theme-color("secondary");
+  border-color: theme-color("secondary");
 }
 
 .fc-state-disabled {
@@ -214,7 +249,34 @@ NOTE: use percentage font sizes or else old IE chokes
 --------------------------------------------------------------------------------------------------*/
 
 .fc-button-group {
-	@extend .btn-group;
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle; // match .btn alignment given font-size hack above
+
+  > .btn {
+    position: relative;
+    flex: 0 1 auto;
+    margin-bottom: 0;
+
+    // Bring the hover, focused, and "active" buttons to the front to overlay
+    // the borders properly
+    @include hover {
+      z-index: 2;
+    }
+    &:focus,
+    &:active,
+    &.active {
+      z-index: 2;
+    }
+  }
+
+  // Prevent double borders when buttons are next to each other
+  .btn + .btn,
+  .btn + .btn-group,
+  .btn-group + .btn,
+  .btn-group + .btn-group {
+    margin-left: -$input-btn-border-width;
+  }
 }
 
 /*

@@ -89,6 +89,14 @@ angular
       label: '{{ "CALENDAR" | translate }}'
     },
     resolve: {
+      loadCSS: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load CSS files
+        return $ocLazyLoad.load([{
+          serie: true,
+          name: 'fullcalendar',
+          files: ['vendors/css/fullcalendar.min.css']
+        }]);
+      }],
       loadPlugin: ['$ocLazyLoad', function ($ocLazyLoad) {
         return $ocLazyLoad.load([
           {
@@ -117,6 +125,14 @@ angular
       label: '{{ "NOTIFICATIONS" | translate }}'
     },
     resolve: {
+      loadCSS: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load CSS files
+        return $ocLazyLoad.load([{
+          serie: true,
+          name: 'Toastr',
+          files: ['vendors/css/toastr.min.css']
+        }]);
+      }],
       loadPlugin: ['$ocLazyLoad', function ($ocLazyLoad) {
         return $ocLazyLoad.load([
           {
@@ -139,6 +155,14 @@ angular
       label: '{{ "FORMS" | translate }}'
     },
     resolve: {
+      loadCSS: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load CSS files
+        return $ocLazyLoad.load([{
+          serie: true,
+          name: 'DateRangePicker',
+          files: ['vendors/css/daterangepicker.min.css']
+        }]);
+      }],
       loadPlugin: ['$ocLazyLoad', function ($ocLazyLoad) {
         return $ocLazyLoad.load([
           {

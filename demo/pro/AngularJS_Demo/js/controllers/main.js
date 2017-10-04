@@ -17,7 +17,7 @@ angular
 
 toastrWelcome.$inject = ['$scope', 'toastr'];
 function toastrWelcome($scope, toastr) {
-  toastr.info('Bootstrap 4 Admin Template', 'Welcome to CoreUI-Pro Admin', {
+  toastr.info('Bootstrap 4 Admin Template', 'Welcome to CoreUI PRO Admin', {
     closeButton: true,
     progressBar: true,
   });

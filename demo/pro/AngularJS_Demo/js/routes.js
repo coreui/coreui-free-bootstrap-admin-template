@@ -58,8 +58,20 @@ angular
       label: 'Home',
     },
     //page subtitle goes here
-    params: { subtitle: 'Welcome to CoreUI-Pro Bootstrap 4 Admin Template' },
+    params: { subtitle: 'Welcome to CoreUI PRO Bootstrap 4 Admin Template' },
     resolve: {
+      loadCSS: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load CSS files
+        return $ocLazyLoad.load([{
+          serie: true,
+          name: 'Toastr',
+          files: ['vendors/css/toastr.min.css']
+        },{
+          serie: true,
+          name: 'DateRangePicker',
+          files: ['vendors/css/daterangepicker.min.css']
+        }]);
+      }],
       loadPlugin: ['$ocLazyLoad', function ($ocLazyLoad) {
         // you can lazy load files for an existing module
         return $ocLazyLoad.load([

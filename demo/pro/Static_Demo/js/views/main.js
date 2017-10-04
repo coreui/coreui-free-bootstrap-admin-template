@@ -1,7 +1,7 @@
 $(function(){
   'use strict';
 
-  toastr.info('Bootstrap 4 on steroids', 'Welcome to CoreUI-Pro Admin', {
+  toastr.info('Bootstrap 4 on steroids', 'Welcome to CoreUI PRO Admin', {
     closeButton: true,
     progressBar: true,
   });

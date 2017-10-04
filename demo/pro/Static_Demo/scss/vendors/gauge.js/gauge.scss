@@ -1,0 +1,56 @@
+// Import variables
+@import '../variables';
+
+// GaugeJS
+.gaugejs-wrap {
+  position: relative;
+  margin: 0 auto;
+
+  canvas.gaugejs {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    width: 100%;
+    margin-top: -15px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.gaugejs-wrap.type-2 {
+
+  .value {
+    display: block;
+    margin-top: -85px;
+  }
+
+  label {
+    display: block;
+    margin-top: -10px;
+    font-size: 10px;
+    font-weight: 600;
+    color: $text-muted;
+    text-transform: uppercase;
+  }
+}
+
+.gaugejs-wrap.sparkline {
+  position: relative;
+  .value {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    margin-top: -5px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+  }
+}
