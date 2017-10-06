@@ -107,9 +107,19 @@
     overflow-y: hidden;
     transition: max-height .3s ease-in-out;
 
+    .nav-dropdown-items {
+      .nav-link {
+        padding-left: $sidebar-nav-link-padding-x + 2 * $sidebar-submenu-padding;
+      }
+    } 
+
     .nav-item {
       padding: 0;
       list-style: none;
+    }
+    
+    .nav-link {
+      padding-left: $sidebar-nav-link-padding-x + $sidebar-submenu-padding;
     }
   }
 
