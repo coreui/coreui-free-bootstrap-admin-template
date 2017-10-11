@@ -4,14 +4,14 @@
   // Active ajax page loader
   $.ajaxLoad = true;
 
-      //required when $.ajaxLoad = true
-    $.defaultPage = 'main.html';
-    $.subPagesDirectory = 'views/';
-    $.page404 = 'views/pages/404.html';
-    $.mainContent = $('#ui-view');
+  //required when $.ajaxLoad = true
+  $.defaultPage = 'main.html';
+  $.subPagesDirectory = 'views/';
+  $.page404 = 'views/pages/404.html';
+  $.mainContent = $('#ui-view');
 
-    //Main navigation
-    $.navigation = $('nav > ul.nav');
+  //Main navigation
+  $.navigation = $('nav > ul.nav');
 
   $.panelIconOpened = 'icon-arrow-up';
   $.panelIconClosed = 'icon-arrow-down';

@@ -78,8 +78,8 @@
 
   .nav {
     @include sidebar-width($sidebar-borders, $sidebar-width);
-    flex-direction: column;
     min-height: 100%;
+    flex-direction: column;
   }
 
   .nav-title {
@@ -254,6 +254,7 @@
     flex: 0 0 $sidebar-footer-height;
     padding: $sidebar-footer-padding-y $sidebar-footer-padding-x;
     background: $sidebar-footer-bg;
+    @include borders($sidebar-footer-borders);
   }
 
   .sidebar-minimizer {
@@ -261,6 +262,7 @@
     flex: 0 0 $sidebar-minimizer-height;
     background-color: $sidebar-minimizer-bg;
     border: 0;
+    @include borders($sidebar-minimizer-borders);
 
     &::before {
       position: absolute;

@@ -19,8 +19,11 @@ var vendorsJS = [
   'node_modules/bootstrap/dist/js/bootstrap.min.js',
   'node_modules/bootstrap-daterangepicker/daterangepicker.js',
   'node_modules/chart.js/dist/Chart.min.js',
+  'node_modules/codemirror/lib/codemirror.js',
+  'node_modules/codemirror/mode/markdown/markdown.js',
+  'node_modules/codemirror/mode/xml/xml.js',
   'node_modules/datatables.net/js/jquery.dataTables.js',
-  'node_modules/datatables.net-bs/js/dataTables.bootstrap.js',
+  'node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js',
   'node_modules/fullcalendar/dist/fullcalendar.min.js',
   'node_modules/fullcalendar/dist/gcal.min.js',
   'node_modules/gaugeJS/dist/gauge.min.js',
@@ -43,9 +46,14 @@ var vendorsJS = [
 ]
 
 var vendorsCSS = [
+  'node_modules/codemirror/lib/codemirror.css',
+  'node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css',
   'node_modules/font-awesome/css/font-awesome.min.css',
   'node_modules/font-awesome/css/font-awesome.css.map',
-  'node_modules/simple-line-icons/css/simple-line-icons.css'
+  'node_modules/ladda/dist/ladda-themeless.min.css',
+  'node_modules/quill/dist/quill.snow.css',
+  'node_modules/simple-line-icons/css/simple-line-icons.css',
+  'node_modules/spinkit/css/spinkit.css'
 ]
 
 var vendorsFonts = [
@@ -101,7 +109,7 @@ gulp.task('copy:vendorsFonts', function() {
 
 gulp.task('replace:node_modules', function(){
   return gulp.src([
-      './dist/*.html',
+      './dist/**/*.html',
       './dist/**/*.js',
     ], {base: './'})
     .pipe(replace(/node_modules+.+(\/[a-z0-9][^/]*\.js+(\'|\"))/ig, 'vendors/js$1'))
@@ -148,6 +156,11 @@ gulp.task('copy:html', function() {
    .pipe(gulp.dest(paths.dist+'/'));
 });
 
+gulp.task('copy:vendors', function() {
+   return gulp.src('./vendors/**/*')
+   .pipe(gulp.dest(paths.dist+'/vendors/'));
+});
+
 gulp.task('build:dist', function(callback) {
-    runSequence('clean:dist', 'copy:css', 'copy:img', 'copy:js', 'copy:views', 'copy:html', 'vendors', callback);
+    runSequence('clean:dist', 'copy:css', 'copy:img', 'copy:js', 'copy:views', 'copy:html', 'copy:vendors', 'vendors', callback);
 });
