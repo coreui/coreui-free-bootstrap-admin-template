@@ -1,7 +1,7 @@
 .app-header.navbar {
   position: relative;
-  flex-direction: row;
   height: $navbar-height;
+  flex-direction: row;
   padding: 0;
   margin: 0;
   background-color: $navbar-bg;
@@ -102,13 +102,16 @@
   background-color: rgba(0,0,0,.075);
 }
 
-.brand-minimized {
-  .app-header.navbar {
-    .navbar-brand {
-      width: $navbar-brand-minimized-width;
-      background-color: $navbar-brand-minimized-bg;
-      background-image: $navbar-brand-minimized-logo;
-      background-size: $navbar-brand-minimized-logo-size;
+@include media-breakpoint-up(lg) {
+  .brand-minimized {
+    .app-header.navbar {
+      .navbar-brand {
+        width: $navbar-brand-minimized-width;
+        background-color: $navbar-brand-minimized-bg;
+        background-image: $navbar-brand-minimized-logo;
+        background-size: $navbar-brand-minimized-logo-size;
+        @include borders($navbar-brand-minimized-border);
+      }
     }
   }
 }

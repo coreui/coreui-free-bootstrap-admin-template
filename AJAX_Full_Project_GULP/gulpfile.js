@@ -42,14 +42,14 @@ gulp.task('serve:lite', function() {
 
 });
 
-gulp.task('sass', function () {
+gulp.task('sass', ['compile-vendors'], function() {
   return gulp.src('./scss/style.scss')
   .pipe(sass())
   .pipe(gulp.dest('./css'))
   .pipe(browserSync.stream());
 });
 
-gulp.task('sass:watch', function () {
+gulp.task('sass:watch', function() {
   gulp.watch('./scss/**/*.scss');
 });
 

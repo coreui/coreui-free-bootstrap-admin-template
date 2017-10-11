@@ -11,8 +11,8 @@
 app-dashboard,
 app-root {
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 .app-header {
@@ -26,12 +26,12 @@ app-root {
 .app-body {
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
   overflow-x: hidden;
+  flex-grow: 1;
 
   .main {
-    flex: 1;
     min-width: 0;
+    flex: 1;
   }
 
   .sidebar {
@@ -328,7 +328,8 @@ app-root {
     margin-top: $navbar-height;
   }
 
-  .sidebar {
+  .sidebar,
+  .sidebar-fixed .sidebar {
     position: fixed;
     z-index: $zindex-sticky - 1;
     width: $mobile-sidebar-width;

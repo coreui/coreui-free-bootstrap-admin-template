@@ -59,9 +59,10 @@ $navbar-brand-border: (
 ) !default;
 
 $navbar-brand-minimized-width:        50px !default;
-$navbar-brand-minimized-bg:           #fff !default;
+$navbar-brand-minimized-bg:           $navbar-brand-bg !default;
 $navbar-brand-minimized-logo:         url('../img/logo-symbol.png') !default;
 $navbar-brand-minimized-logo-size:    24px !default;
+$navbar-brand-minimized-border:       $navbar-brand-border !default;
 
 $navbar-color:                        $gray-600 !default;
 $navbar-hover-color:                  $gray-800 !default;
@@ -132,11 +133,13 @@ $sidebar-footer-height:               auto !default;
 $sidebar-footer-bg:                   rgba(0,0,0,.2) !default;
 $sidebar-footer-padding-y:            .75rem !default;
 $sidebar-footer-padding-x:            1rem !default;
+$sidebar-footer-borders:              0 !default;
 
 // Sidebar Minimizer
 
 $sidebar-minimizer-height:            50px !default;
 $sidebar-minimizer-bg:                rgba(0,0,0,.2) !default;
+$sidebar-minimizer-borders:           0 !default;
 $sidebar-minimizer-indicator-color:   $gray-600 !default;
 $sidebar-minimizer-indicator:         str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-minimizer-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23") !default;
 $sidebar-minimizer-hover-bg:          rgba(0,0,0,.3) !default;
