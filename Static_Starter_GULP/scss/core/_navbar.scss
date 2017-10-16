@@ -1,7 +1,7 @@
 .app-header.navbar {
   position: relative;
-  height: $navbar-height;
   flex-direction: row;
+  height: $navbar-height;
   padding: 0;
   margin: 0;
   background-color: $navbar-bg;
@@ -22,7 +22,17 @@
   }
 
   .navbar-toggler {
-    color: $navbar-color;
+    min-width: 50px;
+    padding: $navbar-toggler-padding-y 0;
+
+    &:hover .navbar-toggler-icon {
+      background-image: $navbar-toggler-icon-hover;
+    }
+  }
+
+  .navbar-toggler-icon {
+    height: 23px;
+    background-image: $navbar-toggler-icon;
   }
 
   .navbar-nav {

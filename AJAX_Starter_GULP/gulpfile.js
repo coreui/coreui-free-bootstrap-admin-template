@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var cssmin = require('gulp-cssmin')
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
@@ -45,12 +46,16 @@ gulp.task('serve:lite', function() {
 gulp.task('sass', ['compile-vendors'], function() {
   return gulp.src('./scss/style.scss')
   .pipe(sass())
+  .pipe(autoprefixer())
+  .pipe(gulp.dest('./css'))
+  .pipe(cssmin())
+  .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('./css'))
   .pipe(browserSync.stream());
 });
 
 gulp.task('sass:watch', function() {
-  gulp.watch('./scss/**/*.scss');
+  gulp.watch('./scss/**/*.scss', ['sass']);
 });
 
 gulp.task('default', ['serve']);
