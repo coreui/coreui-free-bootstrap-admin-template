@@ -22,7 +22,17 @@
   }
 
   .navbar-toggler {
-    color: $navbar-color;
+    min-width: 50px;
+    padding: $navbar-toggler-padding-y 0;
+
+    &:hover .navbar-toggler-icon {
+      background-image: $navbar-toggler-icon-hover;
+    }
+  }
+
+  .navbar-toggler-icon {
+    height: 23px;
+    background-image: $navbar-toggler-icon;
   }
 
   .navbar-nav {
@@ -102,13 +112,16 @@
   background-color: rgba(0,0,0,.075);
 }
 
-.brand-minimized {
-  .app-header.navbar {
-    .navbar-brand {
-      width: $navbar-brand-minimized-width;
-      background-color: $navbar-brand-minimized-bg;
-      background-image: $navbar-brand-minimized-logo;
-      background-size: $navbar-brand-minimized-logo-size;
+@include media-breakpoint-up(lg) {
+  .brand-minimized {
+    .app-header.navbar {
+      .navbar-brand {
+        width: $navbar-brand-minimized-width;
+        background-color: $navbar-brand-minimized-bg;
+        background-image: $navbar-brand-minimized-logo;
+        background-size: $navbar-brand-minimized-logo-size;
+        @include borders($navbar-brand-minimized-border);
+      }
     }
   }
 }
