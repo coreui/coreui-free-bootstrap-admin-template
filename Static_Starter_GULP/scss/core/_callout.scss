@@ -16,16 +16,6 @@
     float: right;
     width: 50%;
   }
-  
-  @each $color, $value in $theme-colors {
-    &.callout-#{$color} {
-      border-left-color: $value;
-
-      h4 {
-        color: $value;
-      }
-    }
-  }
 }
 
 .callout-bordered {
@@ -54,3 +44,12 @@
   }
 }
 
+@each $color, $value in $theme-colors {
+  .callout-#{$color} {
+    border-left-color: $value;
+
+    h4 {
+      color: $value;
+    }
+  }
+}
