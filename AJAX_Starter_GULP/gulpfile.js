@@ -8,25 +8,26 @@ var cssmin = require('gulp-cssmin')
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
 
-require('require-dir')('./gulp-tasks');
-
 gulp.paths = {
-  dist: 'dist',
-  vendors: 'dist/vendors'
+  dist: 'dist/',
+  src: 'src/',
+  vendors: 'dist/vendors/'
 };
 
 var paths = gulp.paths;
+
+require('require-dir')('./gulp-tasks');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
 
   browserSync.init({
-    server: "./"
+    server: ['./', './src']
   });
 
-  gulp.watch('scss/**/*.scss', ['sass']);
-  gulp.watch('**/*.html').on('change', browserSync.reload);
-  gulp.watch('js/**/*.js').on('change', browserSync.reload);
+  gulp.watch(paths.src + 'scss/**/*.scss', ['sass']);
+  gulp.watch(paths.src + '**/*.html').on('change', browserSync.reload);
+  gulp.watch(paths.src + 'js/**/*.js').on('change', browserSync.reload);
 
 });
 
@@ -34,28 +35,34 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('serve:lite', function() {
 
   browserSync.init({
-    server: "./"
+    server: ['./', './src']
   });
 
-  gulp.watch('**/*.css').on('change', browserSync.reload);
-  gulp.watch('**/*.html').on('change', browserSync.reload);
-  gulp.watch('js/**/*.js').on('change', browserSync.reload);
+  gulp.watch(paths.src + '**/*.css').on('change', browserSync.reload);
+  gulp.watch(paths.src + '**/*.html').on('change', browserSync.reload);
+  gulp.watch(paths.src + 'js/**/*.js').on('change', browserSync.reload);
 
 });
 
+gulp.task('serve:dist', function() {
+  browserSync.init({
+    server: ['./dist']
+  });
+});
+
 gulp.task('sass', ['compile-vendors'], function() {
-  return gulp.src('./scss/style.scss')
+  return gulp.src(paths.src + '/scss/style.scss')
   .pipe(sass())
   .pipe(autoprefixer())
-  .pipe(gulp.dest('./css'))
+  .pipe(gulp.dest(paths.src + 'css'))
   .pipe(cssmin())
   .pipe(rename({suffix: '.min'}))
-  .pipe(gulp.dest('./css'))
+  .pipe(gulp.dest(paths.src + 'css'))
   .pipe(browserSync.stream());
 });
 
 gulp.task('sass:watch', function() {
-  gulp.watch('./scss/**/*.scss', ['sass']);
+  gulp.watch(paths.src + 'scss/**/*.scss', ['sass']);
 });
 
 gulp.task('default', ['serve']);

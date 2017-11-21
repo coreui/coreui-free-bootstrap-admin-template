@@ -8,73 +8,31 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var replace = require('gulp-replace');
 
-gulp.paths = {
-    dist: 'dist',
-    vendors: 'dist/vendors'
-};
-
 var paths = gulp.paths;
 
-var vendorsJS = [
-  'node_modules/bootstrap/dist/js/bootstrap.min.js',
-  'node_modules/bootstrap-daterangepicker/daterangepicker.js',
-  'node_modules/chart.js/dist/Chart.min.js',
-  'node_modules/codemirror/lib/codemirror.js',
-  'node_modules/codemirror/mode/markdown/markdown.js',
-  'node_modules/codemirror/mode/xml/xml.js',
-  'node_modules/datatables.net/js/jquery.dataTables.js',
-  'node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js',
-  'node_modules/fullcalendar/dist/fullcalendar.min.js',
-  'node_modules/fullcalendar/dist/gcal.min.js',
-  'node_modules/gaugeJS/dist/gauge.min.js',
-  'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
-  'node_modules/jquery/dist/jquery.min.js',
-  'node_modules/jquery/dist/jquery.min.map',
-  'node_modules/jquery-ui-dist/jquery-ui.min.js',
-  'node_modules/jquery-validation/dist/jquery.validate.min.js',
-  'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
-  'node_modules/ladda/dist/ladda.min.js',
-  'node_modules/ladda/dist/spin.min.js',
-  'node_modules/moment/min/moment.min.js',
-  'node_modules/quill/dist/quill.min.js',
-  'node_modules/quill/dist/quill.min.js.map',
-  'node_modules/pace-progress/pace.min.js',
-  'node_modules/popper.js/dist/umd/popper.min.js',
-  'node_modules/popper.js/dist/umd/popper.min.js.map',
-  'node_modules/select2/dist/js/select2.min.js',
-  'node_modules/toastr/toastr.js'
-]
-
-var vendorsCSS = [
-  'node_modules/codemirror/lib/codemirror.css',
-  'node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css',
-  'node_modules/font-awesome/css/font-awesome.min.css',
-  'node_modules/font-awesome/css/font-awesome.css.map',
-  'node_modules/ladda/dist/ladda-themeless.min.css',
-  'node_modules/quill/dist/quill.snow.css',
-  'node_modules/simple-line-icons/css/simple-line-icons.css',
-  'node_modules/spinkit/css/spinkit.css'
-]
-
-var vendorsFonts = [
-  'node_modules/font-awesome/fonts/**',
-  'node_modules/simple-line-icons/fonts/**'
-]
+gulp.vendors = require('./../vendors.json');
+var vendors = gulp.vendors;
 
 gulp.task('copy:vendorsCSS', function() {
-  return gulp.src(vendorsCSS)
-  .pipe(gulp.dest(paths.vendors + '/css/'));
+  return gulp.src(vendors.css)
+  .pipe(gulp.dest(paths.vendors + 'css/'));
 });
 
 gulp.task('minify:vendorsCSS', function() {
-  return gulp.src([paths.vendors + '/css/*.css', '!' + paths.vendors + '/css/*.min.css'])
+  return gulp.src([
+    paths.vendors + 'css/*.css',
+    '!' + paths.vendors + 'css/*.min.css'
+  ])
   .pipe(cssmin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(paths.vendors + '/css/'));
+  .pipe(rename({suffix: '.min'}))
+  .pipe(gulp.dest(paths.vendors + 'css/'));
 });
 
 gulp.task('clean:vendorsCSS', function () {
-    return del([paths.vendors + '/css/*.css', '!' + paths.vendors + '/css/*.min.css']);
+    return del([
+      paths.vendors + 'css/*.css',
+      '!' + paths.vendors + 'css/*.min.css'
+    ]);
 });
 
 gulp.task('vendors:css', function(callback) {
@@ -82,20 +40,25 @@ gulp.task('vendors:css', function(callback) {
 });
 
 gulp.task('copy:vendorsJS', function() {
-  return gulp.src(vendorsJS)
-  .pipe(gulp.dest(paths.vendors + '/js/'));
+  return gulp.src(vendors.js)
+  .pipe(gulp.dest(paths.vendors + 'js/'));
 });
 
 gulp.task('minify:vendorsJS', function() {
-  return gulp.src([paths.vendors + '/js/*.js', '!' + paths.vendors + '/js/*.min.js'])
-  .pipe(gulp.dest(paths.vendors + '/js/'))
+  return gulp.src([
+    paths.vendors + 'js/*.js',
+    '!' + paths.vendors + 'js/*.min.js'
+  ])
+  .pipe(gulp.dest(paths.vendors + 'js/'))
   .pipe(uglify())
   .pipe(rename({ suffix: '.min' }))
-  .pipe(gulp.dest(paths.vendors+'/js/'));
+  .pipe(gulp.dest(paths.vendors+'js/'));
 });
 
 gulp.task('clean:vendorsJS', function () {
-    return del([paths.vendors + '/js/*.js', '!' + paths.vendors + '/js/*.min.js']);
+    return del([
+      paths.vendors + 'js/*.js',
+      '!' + paths.vendors + 'js/*.min.js']);
 });
 
 gulp.task('vendors:js', function(callback) {
@@ -103,14 +66,14 @@ gulp.task('vendors:js', function(callback) {
 });
 
 gulp.task('copy:vendorsFonts', function() {
-  return gulp.src(vendorsFonts)
-  .pipe(gulp.dest(paths.vendors + '/fonts/'));
+  return gulp.src(vendors.fonts)
+  .pipe(gulp.dest(paths.vendors + 'fonts/'));
 });
 
 gulp.task('replace:node_modules', function(){
   return gulp.src([
-      './dist/**/*.html',
-      './dist/**/*.js',
+      paths.dist + '**/*.html',
+      paths.dist + '**/*.js',
     ], {base: './'})
     .pipe(replace(/node_modules+.+(\/[a-z0-9][^/]*\.js+(\'|\"))/ig, 'vendors/js$1'))
     .pipe(replace(/"vendors\/js\/(.*).js(\'|\")/ig, '"vendors/js/$1.min.js"'))
@@ -132,33 +95,33 @@ gulp.task('clean:dist', function () {
 });
 
 gulp.task('copy:css', function() {
-   return gulp.src('./css/**/*')
-   .pipe(gulp.dest(paths.dist+'/css'));
+   return gulp.src(paths.src + 'css/**/*')
+   .pipe(gulp.dest(paths.dist + 'css'));
 });
 
 gulp.task('copy:img', function() {
-   return gulp.src('./img/**/*')
-   .pipe(gulp.dest(paths.dist+'/img'));
+   return gulp.src(paths.src + 'img/**/*')
+   .pipe(gulp.dest(paths.dist + 'img'));
 });
 
 gulp.task('copy:js', function() {
-   return gulp.src('./js/**/*')
-   .pipe(gulp.dest(paths.dist+'/js'));
+   return gulp.src(paths.src + 'js/**/*')
+   .pipe(gulp.dest(paths.dist + 'js'));
 });
 
 gulp.task('copy:views', function() {
-   return gulp.src('./views/**/*')
-   .pipe(gulp.dest(paths.dist+'/views'));
+   return gulp.src(paths.src + 'views/**/*')
+   .pipe(gulp.dest(paths.dist + 'views'));
 });
 
 gulp.task('copy:html', function() {
-   return gulp.src('index.html')
-   .pipe(gulp.dest(paths.dist+'/'));
+   return gulp.src(paths.src + 'index.html')
+   .pipe(gulp.dest(paths.dist));
 });
 
 gulp.task('copy:vendors', function() {
-   return gulp.src('./vendors/**/*')
-   .pipe(gulp.dest(paths.dist+'/vendors/'));
+   return gulp.src(paths.src + 'vendors/**/*')
+   .pipe(gulp.dest(paths.dist + 'vendors/'));
 });
 
 gulp.task('build:dist', function(callback) {
