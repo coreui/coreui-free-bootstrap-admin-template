@@ -1,33 +1,34 @@
 /*****
 * CONFIGURATION
 */
-	// Active ajax page loader
-	$.ajaxLoad = true;
 
-	    //required when $.ajaxLoad = true
-		$.defaultPage = 'main.html';
-		$.subPagesDirectory = 'views/';
-		$.page404 = 'views/pages/404.html';
-		$.mainContent = $('#ui-view');
+// Active ajax page loader
+$.ajaxLoad = true;
 
-    //Main navigation
-    $.navigation = $('nav > ul.nav');
+//required when $.ajaxLoad = true
+$.defaultPage = 'main.html';
+$.subPagesDirectory = 'views/';
+$.page404 = 'views/pages/404.html';
+$.mainContent = $('#ui-view');
 
-	$.panelIconOpened = 'icon-arrow-up';
-	$.panelIconClosed = 'icon-arrow-down';
+//Main navigation
+$.navigation = $('nav > ul.nav');
 
-	//Default colours
-	$.brandPrimary =  '#20a8d8';
-	$.brandSuccess =  '#4dbd74';
-	$.brandInfo =     '#63c2de';
-	$.brandWarning =  '#f8cb00';
-	$.brandDanger =   '#f86c6b';
+$.panelIconOpened = 'icon-arrow-up';
+$.panelIconClosed = 'icon-arrow-down';
 
-	$.grayDark =      '#2a2c36';
-	$.gray =          '#55595c';
-	$.grayLight =     '#818a91';
-	$.grayLighter =   '#d1d4d7';
-	$.grayLightest =  '#f8f9fa';
+//Default colours
+$.brandPrimary =  '#20a8d8';
+$.brandSuccess =  '#4dbd74';
+$.brandInfo =     '#63c2de';
+$.brandWarning =  '#f8cb00';
+$.brandDanger =   '#f86c6b';
+
+$.grayDark =      '#2a2c36';
+$.gray =          '#55595c';
+$.grayLight =     '#818a91';
+$.grayLighter =   '#d1d4d7';
+$.grayLightest =  '#f8f9fa';
 
 'use strict';
 
@@ -37,27 +38,34 @@
 */
 function loadJS(jsFiles, pageScript) {
 
-  var i;
-  for(i = 0; i<jsFiles.length;i++){
+  const body = document.getElementsByTagName('body')[0];
 
-    var body = document.getElementsByTagName('body')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.async = false;
-    script.src = jsFiles[i];
-    body.appendChild(script);
+  for(let i = 0; i<jsFiles.length; i++){
+    appendScript(body, jsFiles[i])
   }
 
   if (pageScript) {
-    var body = document.getElementsByTagName('body')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.async = false;
-    script.src = pageScript;
-    body.appendChild(script);
+    appendScript(body, pageScript)
   }
 
   init();
+}
+
+function appendScript(element, src) {
+  const async = (src.substring(0, 4) === 'http');
+  let script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.async = async;
+  script.defer = async;
+  script.src = src;
+  async ? appendOnce(element, script) : element.appendChild(script);
+}
+
+function appendOnce(element, script) {
+  let scripts = Array.from(document.querySelectorAll('script')).map(scr => scr.src);
+  if (!scripts.includes(script.src)) {
+    element.appendChild(script)
+  }
 }
 
 function loadCSS(cssFile, end, callback) {
@@ -272,7 +280,7 @@ $(document).on('click', '.card-actions a', function(e){
   if ($(this).hasClass('btn-close')) {
     $(this).parent().parent().parent().fadeOut();
   } else if ($(this).hasClass('btn-minimize')) {
-    var $target = $(this).parent().parent().next('.card-block');
+    var $target = $(this).parent().parent().next('.card-body');
     if (!$(this).hasClass('collapsed')) {
       $('i',$(this)).removeClass($.panelIconOpened).addClass($.panelIconClosed);
     } else {

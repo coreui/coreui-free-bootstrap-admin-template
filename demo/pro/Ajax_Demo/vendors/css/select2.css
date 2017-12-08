@@ -9,7 +9,9 @@
     cursor: pointer;
     display: block;
     height: 28px;
-    user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
     -webkit-user-select: none; }
     .select2-container .select2-selection--single .select2-selection__rendered {
       display: block;
@@ -28,7 +30,9 @@
     cursor: pointer;
     display: block;
     min-height: 32px;
-    user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
     -webkit-user-select: none; }
     .select2-container .select2-selection--multiple .select2-selection__rendered {
       display: inline-block;
@@ -68,7 +72,9 @@
 
 .select2-results__option {
   padding: 6px;
-  user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
   -webkit-user-select: none; }
   .select2-results__option[aria-selected] {
     cursor: pointer; }
@@ -207,7 +213,7 @@
     .select2-container--bootstrap .select2-search__field:-ms-input-placeholder {
       color: #536c79; }
   .select2-container--bootstrap .select2-results__option {
-    padding: 0.5rem 0.75rem;
+    padding: 0.375rem 0.75rem;
     /**
      * Disabled results.
      *
@@ -231,7 +237,7 @@
       background-color: #20a8d8;
       color: #fff; }
     .select2-container--bootstrap .select2-results__option .select2-results__option {
-      padding: 0.5rem 0.75rem; }
+      padding: 0.375rem 0.75rem; }
       .select2-container--bootstrap .select2-results__option .select2-results__option .select2-results__group {
         padding-left: 0; }
       .select2-container--bootstrap .select2-results__option .select2-results__option .select2-results__option {
@@ -252,9 +258,9 @@
   .select2-container--bootstrap .select2-results__group {
     color: #536c79;
     display: block;
-    padding: 0.5rem 0.75rem;
-    font-size: 0.875rem;
-    line-height: 1.25;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.76562rem;
+    line-height: 1.5;
     white-space: nowrap; }
   .select2-container--bootstrap.select2-container--focus .select2-selection, .select2-container--bootstrap.select2-container--open .select2-selection {
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -302,9 +308,9 @@
     max-height: 200px;
     overflow-y: auto; }
   .select2-container--bootstrap .select2-selection--single {
-    height: calc(2.09375rem + 2px);
-    line-height: 1.25;
-    padding: 0.5rem 1.65rem 0.5rem 0.75rem;
+    height: calc(2.0625rem + 2px);
+    line-height: 1.5;
+    padding: 0.375rem 1.65rem 0.375rem 0.75rem;
     /**
      * Adjust the single Select2's dropdown arrow button appearance.
      */ }
@@ -331,7 +337,7 @@
     .select2-container--bootstrap .select2-selection--single .select2-selection__placeholder {
       color: #536c79; }
   .select2-container--bootstrap .select2-selection--multiple {
-    min-height: calc(2.09375rem + 2px);
+    min-height: calc(2.0625rem + 2px);
     padding: 0;
     height: auto;
     /**
@@ -348,7 +354,7 @@
       list-style: none;
       margin: 0;
       overflow: hidden;
-      padding: 0.25rem;
+      padding: 0.1875rem;
       width: 100%;
       text-overflow: ellipsis;
       white-space: nowrap; }
@@ -363,15 +369,15 @@
       border-radius: 0;
       cursor: default;
       float: left;
-      margin-right: 0.25rem;
-      padding: 0 0.5rem 0 0;
+      margin-right: 0.1875rem;
+      padding: 0 0.375rem 0 0;
       line-height: 23px;
       font-size: 12px; }
     .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field {
       background: transparent;
       padding: 0 0.75rem;
-      height: calc(2.09375rem + 2px)-2;
-      line-height: 1.25;
+      height: calc(2.0625rem + 2px)-2;
+      line-height: 1.5;
       margin-top: 0;
       min-width: 5em; }
     .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove {
@@ -381,19 +387,19 @@
       display: inline-block;
       font-weight: bold;
       text-align: center;
-      margin-right: 0.5rem;
+      margin-right: 0.375rem;
       border-right: 1px solid #63c2de;
       background: white; }
       .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove:hover {
         background: #ccebf4; }
     .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear {
-      margin-top: 0.5rem; }
+      margin-top: 0.375rem; }
   .select2-container--bootstrap .select2-selection--single.input-sm,
   .input-group-sm .select2-container--bootstrap .select2-selection--single,
   .form-group-sm .select2-container--bootstrap .select2-selection--single {
     border-radius: 0;
-    font-size: 0.875rem;
-    height: calc(1.8125rem + 2px);
+    font-size: 0.76562rem;
+    height: calc(1.64844rem + 2px);
     line-height: 1.5;
     padding: 0.25rem 1.4rem 0.25rem 0.5rem;
     /* 2 */ }
@@ -404,12 +410,12 @@
   .select2-container--bootstrap .select2-selection--multiple.input-sm,
   .input-group-sm .select2-container--bootstrap .select2-selection--multiple,
   .form-group-sm .select2-container--bootstrap .select2-selection--multiple {
-    min-height: calc(1.8125rem + 2px);
+    min-height: calc(1.64844rem + 2px);
     border-radius: 0; }
     .select2-container--bootstrap .select2-selection--multiple.input-sm .select2-selection__choice,
     .input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice,
     .form-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
-      font-size: 0.875rem;
+      font-size: 0.76562rem;
       line-height: 1.5;
       margin: -0.75rem 0 0 0.25rem;
       padding: 0 0.25rem; }
@@ -417,8 +423,8 @@
     .input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field,
     .form-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field {
       padding: 0 0.5rem;
-      font-size: 0.875rem;
-      height: calc(1.8125rem + 2px)-2;
+      font-size: 0.76562rem;
+      height: calc(1.64844rem + 2px)-2;
       line-height: 1.5; }
     .select2-container--bootstrap .select2-selection--multiple.input-sm .select2-selection__clear,
     .input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear,
@@ -428,8 +434,8 @@
   .input-group-lg .select2-container--bootstrap .select2-selection--single,
   .form-group-lg .select2-container--bootstrap .select2-selection--single {
     border-radius: 0;
-    font-size: 1.25rem;
-    height: calc(2.3125rem + 2px);
+    font-size: 1.09375rem;
+    height: calc(2.64062rem + 2px);
     line-height: 1.5;
     padding: 0.5rem 1.9rem 0.5rem 1rem;
     /* 1 */ }
@@ -447,12 +453,12 @@
   .select2-container--bootstrap .select2-selection--multiple.input-lg,
   .input-group-lg .select2-container--bootstrap .select2-selection--multiple,
   .form-group-lg .select2-container--bootstrap .select2-selection--multiple {
-    min-height: calc(2.3125rem + 2px);
+    min-height: calc(2.64062rem + 2px);
     border-radius: 0; }
     .select2-container--bootstrap .select2-selection--multiple.input-lg .select2-selection__choice,
     .input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice,
     .form-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
-      font-size: 1.25rem;
+      font-size: 1.09375rem;
       line-height: 1.5;
       border-radius: 0;
       margin: -0.5rem 0 0 0.5rem;
@@ -461,8 +467,8 @@
     .input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field,
     .form-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field {
       padding: 0 1rem;
-      font-size: 1.25rem;
-      height: calc(2.3125rem + 2px)-2;
+      font-size: 1.09375rem;
+      height: calc(2.64062rem + 2px)-2;
       line-height: 1.5; }
     .select2-container--bootstrap .select2-selection--multiple.input-lg .select2-selection__clear,
     .input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear,
@@ -530,6 +536,26 @@
  *
  * @see http://getbootstrap.com/css/#forms-control-validation
  */
+.valid-feedback {
+  display: none;
+  margin-top: .25rem;
+  font-size: .875rem;
+  color: #4dbd74; }
+
+.valid-tooltip {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  display: none;
+  width: 250px;
+  padding: .5rem;
+  margin-top: .1rem;
+  font-size: .875rem;
+  line-height: 1;
+  color: #fff;
+  background-color: rgba(77, 189, 116, 0.8);
+  border-radius: .2rem; }
+
 .was-validated .form-control:valid, .form-control.is-valid, .was-validated
 .custom-select:valid,
 .custom-select.is-valid {
@@ -538,14 +564,14 @@
   .custom-select:valid:focus,
   .custom-select.is-valid:focus {
     box-shadow: 0 0 0 0.2rem rgba(77, 189, 116, 0.25); }
-  .was-validated .form-control:valid ~ .invalid-feedback,
-  .was-validated .form-control:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback,
-  .form-control.is-valid ~ .invalid-tooltip, .was-validated
-  .custom-select:valid ~ .invalid-feedback,
+  .was-validated .form-control:valid ~ .valid-feedback,
+  .was-validated .form-control:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback,
+  .form-control.is-valid ~ .valid-tooltip, .was-validated
+  .custom-select:valid ~ .valid-feedback,
   .was-validated
-  .custom-select:valid ~ .invalid-tooltip,
-  .custom-select.is-valid ~ .invalid-feedback,
-  .custom-select.is-valid ~ .invalid-tooltip {
+  .custom-select:valid ~ .valid-tooltip,
+  .custom-select.is-valid ~ .valid-feedback,
+  .custom-select.is-valid ~ .valid-tooltip {
     display: block; }
 
 .was-validated .form-check-input:valid + .form-check-label, .form-check-input.is-valid + .form-check-label {
@@ -564,6 +590,26 @@
 
 .was-validated .custom-file-input:valid:focus, .custom-file-input.is-valid:focus {
   box-shadow: 0 0 0 0.2rem rgba(77, 189, 116, 0.25); }
+
+.invalid-feedback {
+  display: none;
+  margin-top: .25rem;
+  font-size: .875rem;
+  color: #f86c6b; }
+
+.invalid-tooltip {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  display: none;
+  width: 250px;
+  padding: .5rem;
+  margin-top: .1rem;
+  font-size: .875rem;
+  line-height: 1;
+  color: #fff;
+  background-color: rgba(248, 108, 107, 0.8);
+  border-radius: .2rem; }
 
 .was-validated .form-control:invalid, .form-control.is-invalid, .was-validated
 .custom-select:invalid,

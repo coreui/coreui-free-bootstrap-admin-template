@@ -1,0 +1,21 @@
+<!--To use the Google Maps JavaScript API, you must register your app project on the Google API Console and get a Google API key which you can add to your app-->
+<script>
+  var requireJS = ["js/views/google-maps.js", "https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyASyYRBZmULmrmw_P9kgr7_266OhFNinPA"];
+  loadJS(requireJS);
+</script>
+
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <i class="icon-map"></i>Google Maps
+      <div class="card-actions">
+        <a href="https://google-developers.appspot.com/maps/documentation/javascript/reference" target="_blank">
+          <small class="text-muted">docs</small>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <div id="map" style="height:360px;"></div>
+    </div>
+  </div>
+</div>

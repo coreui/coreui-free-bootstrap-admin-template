@@ -1,7 +1,7 @@
 $(function(){
   'use strict';
 
-  toastr.info('Bootstrap 4 on steroids', 'Welcome to CoreUI PRO Admin', {
+  toastr.info('Bootstrap 4 on steroids', 'Welcome to CoreUI Pro Admin', {
     closeButton: true,
     progressBar: true,
   });
@@ -560,7 +560,7 @@ $(function(){
     },
     limitMax: 'false',   // If true, the pointer will not go past the end of the gauge
     colorStart: $.brandInfo,   // Colors
-    colorStart: $.brandInfo,    // just experiment with them
+    colorStop: $.brandInfo,    // just experiment with them
     strokeColor: '#d1d4d7',   // to see which ones work best for you
     generateGradient: true
   };

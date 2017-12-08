@@ -15,9 +15,9 @@ function dateRangeCtrl($scope) {
     opens: 'left',
     ranges: {
       'Today': [moment(), moment()],
-      'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
-      'Last 7 days': [moment().subtract('days', 7), moment()],
-      'Last 30 days': [moment().subtract('days', 30), moment()],
+      'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+      'Last 7 days': [moment().subtract(7, 'days'), moment()],
+      'Last 30 days': [moment().subtract(30, 'days'), moment()],
       'This month': [moment().startOf('month'), moment().endOf('month')]
     }
   };

@@ -58,7 +58,7 @@ angular
       label: 'Home',
     },
     //page subtitle goes here
-    params: { subtitle: 'Welcome to CoreUI PRO Bootstrap 4 Admin Template' },
+    params: { subtitle: 'Welcome to CoreUI Pro Bootstrap 4 Admin Template' },
     resolve: {
       loadCSS: ['$ocLazyLoad', function($ocLazyLoad) {
         // you can lazy load CSS files
@@ -116,11 +116,11 @@ angular
         return $ocLazyLoad.load([{
           serie: true,
           name: 'Font Awesome',
-          files: ['css/font-awesome.min.css']
+          files: ['vendors/css/font-awesome.min.css']
         },{
           serie: true,
           name: 'Simple Line Icons',
-          files: ['css/simple-line-icons.css']
+          files: ['vendors/css/simple-line-icons.min.css']
         }]);
       }],
     }
