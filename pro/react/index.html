@@ -248,49 +248,113 @@
   <div class="container text-center pt-5" id="buy">
     <h3>Licenses and prices</h3>
     <p>Choose an option which suits your needs. Which type of license is the best for me? <a href="license">View license details.</a></p>
-    <div class="row my-5">
-      <div class="col-md-5 ml-auto">
-        <div class="pricing">
-          <div class="pricing-title">Standard License</div>
-          <div class="pricing-price"><span class="currency">$</span>39</div>
-          <div class="text-muted">One-off payment</div>
-          <div class="pricing-desc">
-            Use, by you or your one client, in a single end product which end users are not charged for. <br><br>
+    <div class="col-md-11 mx-auto">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item w-50">
+          <a class="nav-link active" id="single-tab" data-toggle="tab" href="#single" role="tab" aria-controls="single" aria-selected="true"><h5 class="py-2 m-0">Single Template</h5></a>
+        </li>
+        <li class="nav-item w-50">
+          <a class="nav-link" id="bundle-tab" data-toggle="tab" href="#bundle" role="tab" aria-controls="bundle" aria-selected="false"><h5 class="py-2 m-0">Bundle<span class="badge badge-pill badge-danger d-inline ml-md-2"> Save Up To $3.396</span></h5></a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="single">
+          <div class="row my-5">
+            <div class="col-md-5 ml-auto">
+              <div class="pricing">
+                <div class="pricing-title">Standard License</div>
+                <div class="pricing-price"><span class="currency">$</span>39</div>
+                <div class="text-muted">One-off payment</div>
+                <div class="pricing-desc">
+                  Use, by you or your one client, in a single end product which end users are not charged for. <br><br>
+                </div>
+                <div class="pricing-row p-1"><strong>Include 6 Versions:</strong><br>Angular 5, React.js, Vue.js, AJAX, Static, AngularJS </div>
+                <div class="pricing-row p-1">Personal and <strong>commercial license</strong></div>
+                <div class="pricing-row p-1">Free access to future updates</div>
+                <div class="pricing-row p-1">Lifetime usage license</strong></div>
+                <div class="pricing-row p-1 text-muted"><del>Ready for resale</del></div>
+                <div class="pricing-row button-container">
+                  <span onclick="ga('send', 'event', 'CoreUI Pro Standard', 'Buy Init', 'react', '39');">
+                    <a href="https://gum.co/coreui-pro-s?wanted=true" class="btn btn-lg btn-primary px-5" data-gumroad-single-product="true" >Buy Now</span></a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 mr-auto">
+              <div class="pricing">
+                <div class="pricing-title">Extended License</div>
+                <div class="pricing-price"><span class="currency">$</span>999</div>
+                <div class="text-muted">One-off payment</div>
+                <div class="pricing-desc">
+                  Use, by you or your one client, in a single end product which end users can be charged for. ex. SaaS application, eCommerce, etc.
+                </div>
+                <div class="pricing-row p-1"><strong>Include 6 Versions:</strong><br>Angular 5, React.js, Vue.js, AJAX, Static, AngularJS </div>
+                <div class="pricing-row p-1">Personal and <strong>commercial license</strong></div>
+                <div class="pricing-row p-1">Free access to future updates</div>
+                <div class="pricing-row p-1">Lifetime usage license</strong></div>
+                <div class="pricing-row p-1"><strong>Ready for resale</strong></div>
+                <div class="pricing-row button-container">
+                  <span onclick="ga('send', 'event', 'CoreUI Pro Extended', 'Buy Init', 'react', '999');">
+                    <a href="https://gum.co/coreui-pro-e?wanted=true" class="btn btn-lg btn-primary px-5" data-gumroad-single-product="true">Buy Now</span></a>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="pricing-row p-1"><strong>Include 6 Versions:</strong><br>Angular 5, React.js, Vue.js, AJAX, Static, AngularJS </div>
-          <div class="pricing-row p-1">Personal and <strong>commercial license</strong></div>
-          <div class="pricing-row p-1">Free access to future updates</div>
-          <div class="pricing-row p-1">Lifetime usage license</strong></div>
-          <div class="pricing-row p-1 text-muted"><del>Ready for resale</del></div>
-          <div class="pricing-row button-container">
-            <span onclick="ga('send', 'event', 'CoreUI Pro Standard', 'Buy Init', 'react', '39');">
-              <a href="https://gum.co/coreui-pro-s?wanted=true" class="btn btn-lg btn-primary px-5" data-gumroad-single-product="true" >Buy Now</span></a>
-            </span>
+        </div>
+        <div class="tab-pane fade" id="bundle">
+          <div class="row my-5">
+            <div class="col-md-5 ml-auto">
+              <div class="pricing">
+                <div class="pricing-title">Standard License</div>
+                <div class="pricing-price">
+                  <div style="color:grey;font-size:18px;text-align:left">Regular price: $195</div>
+                  <span style="color:red"><span class="currency" style="color:red">$</span>99</span>
+                </div>
+                <div class="text-muted">One-off payment</div>
+                <div class="pricing-desc">
+                  Use, by you or your one client, in a single end product which end users are not charged for. <br><br>
+                </div>
+                <div class="pricing-row p-1"><strong>5 Admin Templates Included:</strong><br>CoreUI Pro + Alba, Leaf, Prime, Root</div>
+                <div class="pricing-row p-1"><strong>Include 6 Versions of each template:</strong><br>Angular 5, React.js, Vue.js, AJAX, Static, AngularJS</div>
+                <div class="pricing-row p-1">Personal and <strong>commercial license</strong></div>
+                <div class="pricing-row p-1">Free access to future updates</div>
+                <div class="pricing-row p-1">Lifetime usage license</strong></div>
+                <div class="pricing-row p-1 text-muted"><del>Ready for resale</del></div>
+                <div class="pricing-row button-container">
+                  <span onclick="ga('send', 'event', 'CoreUI Pro + Bundle Standard', 'Buy Init', 'react', '99');">
+                    <a href="https://gum.co/coreui-pro-genesisui-s?wanted=true" class="btn btn-lg btn-primary px-5" data-gumroad-single-product="true" >Buy Now</span></a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 mr-auto">
+              <div class="pricing">
+                <div class="pricing-title">Extended License</div>
+                <div class="pricing-price">
+                  <div style="color:grey;font-size:18px;text-align:left">Regular price: $4.995</div>
+                  <span style="color:red"><span class="currency" style="color:red">$</span>1.599</span>
+                </div>
+                <div class="text-muted">One-off payment</div>
+                <div class="pricing-desc">
+                  Use, by you or your one client, in a single end product which end users can be charged for. ex. SaaS application, eCommerce, etc.
+                </div>
+                <div class="pricing-row p-1"><strong>5 Admin Templates Included:</strong><br>CoreUI Pro + Alba, Leaf, Prime, Root</div>
+                <div class="pricing-row p-1"><strong>Include 6 Versions of each template:</strong><br>Angular 5, React.js, Vue.js, AJAX, Static, AngularJS</div>
+                <div class="pricing-row p-1">Personal and <strong>commercial license</strong></div>
+                <div class="pricing-row p-1">Free access to future updates</div>
+                <div class="pricing-row p-1">Lifetime usage license</strong></div>
+                <div class="pricing-row p-1"><strong>Ready for resale</strong></div>
+                <div class="pricing-row button-container">
+                  <span onclick="ga('send', 'event', 'CoreUI Pro + Bundle Extended', 'Buy Init', 'react', '1599');">
+                    <a href="https://gum.co/coreui-pro-genesisui-e?wanted=true" class="btn btn-lg btn-primary px-5" data-gumroad-single-product="true">Buy Now</span></a>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="col-md-5 mr-auto">
-        <div class="pricing">
-          <div class="pricing-title">Extended License</div>
-          <div class="pricing-price"><span class="currency">$</span>999</div>
-          <div class="text-muted">One-off payment</div>
-          <div class="pricing-desc">
-            Use, by you or your one client, in a single end product which end users can be charged for. ex. SaaS application, eCommerce, etc.
-          </div>
-          <div class="pricing-row p-1"><strong>Include 6 Versions:</strong><br>Angular 5, React.js, Vue.js, AJAX, Static, AngularJS </div>
-          <div class="pricing-row p-1">Personal and <strong>commercial license</strong></div>
-          <div class="pricing-row p-1">Free access to future updates</div>
-          <div class="pricing-row p-1">Lifetime usage license</strong></div>
-          <div class="pricing-row p-1"><strong>Ready for resale</strong></div>
-          <div class="pricing-row button-container">
-            <span onclick="ga('send', 'event', 'CoreUI Pro Extended', 'Buy Init', 'react', '999');">
-              <a href="https://gum.co/coreui-pro-e?wanted=true" class="btn btn-lg btn-primary px-5" data-gumroad-single-product="true">Buy Now</span></a>
-            </span>
-          </div>
-        </div>
-      </div>
-
       <div class="col-md-12 text-center">
         <br/>
         <p class="content">
@@ -358,6 +422,14 @@
       
         <tr>
           <td>
+            <strong>React Bootstrap Table</strong>
+          </td>
+          <td class="text-center"><span class="text-success">Yes</span></td>
+          <td class="text-center"><span class="text-success">Yes</span></td>
+        </tr>
+      
+        <tr>
+          <td>
             <strong>React Charts 2</strong>
           </td>
           <td class="text-center"><span class="text-success">Yes</span></td>
@@ -372,6 +444,46 @@
           <td class="text-center"><span class="text-success">Yes</span></td>
         </tr>
       
+      
+        <tr>
+          <td>
+            <strong>Code Editor</strong>
+          </td>
+          <td class="text-center"><span class="text-danger">No</span></td>
+          <td class="text-center"><span class="text-success">Yes</span></td>
+        </tr>
+      
+        <tr>
+          <td>
+            <strong>Markdown Editor</strong>
+          </td>
+          <td class="text-center"><span class="text-danger">No</span></td>
+          <td class="text-center"><span class="text-success">Yes</span></td>
+        </tr>
+      
+        <tr>
+          <td>
+            <strong>React Big Calendar</strong>
+          </td>
+          <td class="text-center"><span class="text-danger">No</span></td>
+          <td class="text-center"><span class="text-success">Yes</span></td>
+        </tr>
+      
+        <tr>
+          <td>
+            <strong>React Dates</strong>
+          </td>
+          <td class="text-center"><span class="text-danger">No</span></td>
+          <td class="text-center"><span class="text-success">Yes</span></td>
+        </tr>
+      
+        <tr>
+          <td>
+            <strong>React Google Maps</strong>
+          </td>
+          <td class="text-center"><span class="text-danger">No</span></td>
+          <td class="text-center"><span class="text-success">Yes</span></td>
+        </tr>
       
         <tr>
           <td>
@@ -400,6 +512,14 @@
         <tr>
           <td>
             <strong>React Text Mask</strong>
+          </td>
+          <td class="text-center"><span class="text-danger">No</span></td>
+          <td class="text-center"><span class="text-success">Yes</span></td>
+        </tr>
+      
+        <tr>
+          <td>
+            <strong>React Toastify</strong>
           </td>
           <td class="text-center"><span class="text-danger">No</span></td>
           <td class="text-center"><span class="text-success">Yes</span></td>
