@@ -1,3 +1,4 @@
+"use strict";
 $(function (){
   if(window.google && window.google.maps) {
     initMap()
@@ -44,7 +45,9 @@ function initMap() {
     zoom: 11
   });
   const markers = locations.map(function (location, i) {
-    const contentString = `<a href="${location.www}" target="_blank"><strong>${location.title}</strong></a>`;
+
+    const contentString = "<a href=\"" + location.www + "\" target=\"_blank\"><strong>" + location.title + "</strong></a>";
+    // const contentString = `<a href="${location.www}" target="_blank"><strong>${location.title}</strong></a>`;
     const infoWindow = new google.maps.InfoWindow({
       content: contentString,
       maxWidth: 200
