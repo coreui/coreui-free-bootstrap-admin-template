@@ -113,14 +113,14 @@ $(document).ready(function($){
 * CARDS ACTIONS
 */
 
-$(document).on('click', '.card-actions a', function(e){
+$(document).on('click', '.card-actions a, button', function(e){
   e.preventDefault();
 
   if ($(this).hasClass('btn-close')) {
     $(this).parent().parent().parent().fadeOut();
   } else if ($(this).hasClass('btn-minimize')) {
-    var $target = $(this).parent().parent().next('.card-body');
-    if (!$(this).hasClass('collapsed')) {
+    var $target = $(this).parent().parent().next('.card-body').collapse({toggle: true});
+    if ($(this).hasClass('collapsed')) {
       $('i',$(this)).removeClass($.panelIconOpened).addClass($.panelIconClosed);
     } else {
       $('i',$(this)).removeClass($.panelIconClosed).addClass($.panelIconOpened);
