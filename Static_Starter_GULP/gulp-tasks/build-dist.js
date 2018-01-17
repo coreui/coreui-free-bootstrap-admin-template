@@ -9,6 +9,7 @@ var runSequence = require('run-sequence');
 var replace = require('gulp-replace');
 
 var paths = gulp.paths;
+var pkg = gulp.pkg;
 
 gulp.vendors = require('./../vendors.json');
 var vendors = gulp.vendors;
@@ -70,6 +71,11 @@ gulp.task('copy:vendorsFonts', function() {
   .pipe(gulp.dest(paths.vendors + 'fonts/'));
 });
 
+gulp.task('copy:vendorsFlags', function() {
+  return gulp.src(vendors.flags)
+  .pipe(gulp.dest(paths.vendors + 'flags/'));
+});
+
 gulp.task('replace:node_modules', function(){
   return gulp.src([
       paths.dist + '**/*.html',
@@ -87,7 +93,7 @@ gulp.task('replace:node_modules', function(){
 });
 
 gulp.task('vendors', function(callback) {
-    runSequence('vendors:css', 'vendors:js', 'copy:vendorsFonts', 'replace:node_modules', callback);
+    runSequence('vendors:css', 'vendors:js', 'copy:vendorsFonts', 'copy:vendorsFlags', 'replace:node_modules', callback);
 });
 
 gulp.task('clean:dist', function () {
@@ -115,8 +121,14 @@ gulp.task('copy:views', function() {
 });
 
 gulp.task('copy:html', function() {
-   return gulp.src(paths.src + 'index.html')
+  var framework = pkg.name.split('/')[1];
+  if (framework == 'ajax') {
+    return gulp.src(paths.src + 'index.html')
+    .pipe(gulp.dest(paths.dist));
+  } else {
+    return gulp.src(paths.src + '**/*.html')
    .pipe(gulp.dest(paths.dist));
+  }
 });
 
 gulp.task('copy:vendors', function() {

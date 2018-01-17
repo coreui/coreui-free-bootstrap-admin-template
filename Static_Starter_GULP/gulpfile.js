@@ -16,6 +16,9 @@ gulp.paths = {
 
 var paths = gulp.paths;
 
+gulp.pkg = require('./package.json');
+var pkg = gulp.pkg;
+
 require('require-dir')('./gulp-tasks');
 
 // Static Server + watching scss/html files
