@@ -6,7 +6,7 @@ $(function (){
 });
 
 function initMap() {
-  const locations = [
+  var locations = [
     {
       lat: 37.431489,
       lng: -122.163719,
@@ -40,19 +40,19 @@ function initMap() {
       www: 'https://www.facebook.com/'
     }
   ];
-  const map = new google.maps.Map(document.getElementById('map'), {
+  var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 37.431489, lng: -122.163719},
     zoom: 11
   });
-  const markers = locations.map(function (location, i) {
+  var markers = locations.map(function (location, i) {
 
-    const contentString = "<a href=\"" + location.www + "\" target=\"_blank\"><strong>" + location.title + "</strong></a>";
+    var contentString = "<a href=\"" + location.www + "\" target=\"_blank\"><strong>" + location.title + "</strong></a>";
     // const contentString = `<a href="${location.www}" target="_blank"><strong>${location.title}</strong></a>`;
-    const infoWindow = new google.maps.InfoWindow({
+    var infoWindow = new google.maps.InfoWindow({
       content: contentString,
       maxWidth: 200
     });
-    const marker = new google.maps.Marker({
+    var marker = new google.maps.Marker({
       position: location,
       label: location.label,
       map: map,

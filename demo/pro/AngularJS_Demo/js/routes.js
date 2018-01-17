@@ -29,6 +29,10 @@ angular
         // you can lazy load CSS files
         return $ocLazyLoad.load([{
           serie: true,
+          name: 'Flags',
+          files: ['vendors/css/flag-icon.min.css']
+        },{
+          serie: true,
           name: 'Font Awesome',
           files: ['vendors/css/font-awesome.min.css']
         },{

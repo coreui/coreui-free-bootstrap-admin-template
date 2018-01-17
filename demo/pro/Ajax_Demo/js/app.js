@@ -38,9 +38,9 @@ $.grayLightest =  '#f8f9fa';
 */
 function loadJS(jsFiles, pageScript) {
 
-  const body = document.getElementsByTagName('body')[0];
+  var body = document.getElementsByTagName('body')[0];
 
-  for(let i = 0; i<jsFiles.length; i++){
+  for(var i = 0; i<jsFiles.length; i++){
     appendScript(body, jsFiles[i])
   }
 
@@ -52,8 +52,8 @@ function loadJS(jsFiles, pageScript) {
 }
 
 function appendScript(element, src) {
-  const async = (src.substring(0, 4) === 'http');
-  let script = document.createElement('script');
+  var async = (src.substring(0, 4) === 'http');
+  var script = document.createElement('script');
   script.type = 'text/javascript';
   script.async = async;
   script.defer = async;
@@ -62,7 +62,7 @@ function appendScript(element, src) {
 }
 
 function appendOnce(element, script) {
-  let scripts = Array.from(document.querySelectorAll('script')).map(function(scr){return scr.src;});
+  var scripts = Array.from(document.querySelectorAll('script')).map(function(scr){return scr.src;});
 
   if (!scripts.includes(script.src)) {
     element.appendChild(script)
@@ -129,7 +129,9 @@ if ($.ajaxLoad) {
   }
 
   $(document).on('click', '.nav a[href!="#"]', function(e) {
-    if ( $(this).parent().parent().hasClass('nav-tabs') || $(this).parent().parent().hasClass('nav-pills') ) {
+
+    var thisNav = $(this).parent().parent();
+    if ( thisNav.hasClass('nav-tabs') || thisNav.hasClass('nav-pills') ) {
       e.preventDefault();
     } else if ( $(this).attr('target') == '_top' ) {
       e.preventDefault();
@@ -149,6 +151,13 @@ if ($.ajaxLoad) {
   $(document).on('click', 'a[href="#"]', function(e) {
     e.preventDefault();
   });
+
+  $(document).on('click', '.sidebar .nav a[href!="#"]', function(e) {
+    if (document.body.classList.contains('sidebar-mobile-show')) {
+      document.body.classList.toggle('sidebar-mobile-show')
+    }
+  });
+
 }
 
 function setUpUrl(url) {
@@ -236,7 +245,7 @@ $(document).ready(function($){
         evt.initUIEvent('resize', true, false, window, 0);
         window.dispatchEvent(evt);
       } else {
-        window.dispatchEvent(new Event('resize'));
+      window.dispatchEvent(new Event('resize'));
       }
     }, 62.5);
   }
@@ -281,23 +290,21 @@ $(document).ready(function($){
 * CARDS ACTIONS
 */
 
-$(document).on('click', '.card-actions a', function(e){
+$('.card-actions').on('click', 'a, button', function(e){
   e.preventDefault();
 
   if ($(this).hasClass('btn-close')) {
     $(this).parent().parent().parent().fadeOut();
   } else if ($(this).hasClass('btn-minimize')) {
-    var $target = $(this).parent().parent().next('.card-body');
-    if (!$(this).hasClass('collapsed')) {
+    // var $target = $(this).parent().parent().next('.card-body').collapse({toggle: true});
+    if ($(this).hasClass('collapsed')) {
       $('i',$(this)).removeClass($.panelIconOpened).addClass($.panelIconClosed);
     } else {
       $('i',$(this)).removeClass($.panelIconClosed).addClass($.panelIconOpened);
     }
-
   } else if ($(this).hasClass('btn-setting')) {
     $('#myModal').modal('show');
   }
-
 });
 
 function capitalizeFirstLetter(string) {

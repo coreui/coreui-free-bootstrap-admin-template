@@ -22,17 +22,17 @@ function languageCtrl($translate, $scope) {
     {
       lang: 'Polish',
       langKey: 'pl',
-      flag: 'Poland.png'
+      flag: 'pl'
     },
     {
       lang: 'English',
       langKey: 'en',
-      flag: 'United-Kingdom.png'
+      flag: 'gb'
     },
     {
       lang: 'Español',
       langKey: 'es',
-      flag: 'Spain.png'
+      flag: 'es'
     }
   ]
   $scope.languages = languages;

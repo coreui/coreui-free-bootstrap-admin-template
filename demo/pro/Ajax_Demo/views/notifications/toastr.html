@@ -1,0 +1,188 @@
+<script>
+  loadCSS("vendors/css/toastr.min.css");
+  var requireJS = [
+    "vendors/js/toastr.min.js"
+  ];
+  loadJS(requireJS, "js/views/toastr.js");
+</script>
+
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <i class="fa fa-edit"></i> Toastr Notifications
+      <div class="card-actions">
+        <a href="http://codeseven.github.io/toastr/demo.html">
+          <small class="text-muted">docs</small>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="form-group">
+            <label class="control-label" for="title">Title</label>
+            <input id="title" type="text" class="form-control" placeholder="Enter a title ..." />
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter a message ..."></textarea>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox" for="closeButton">
+              <input id="closeButton" type="checkbox" value="checked" /> Close Button
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox" for="addBehaviorOnToastClick">
+              <input id="addBehaviorOnToastClick" type="checkbox" value="checked" /> Add behavior on toast click
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox" for="debugInfo">
+              <input id="debugInfo" type="checkbox" value="checked" /> Debug
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox" for="progressBar">
+              <input id="progressBar" type="checkbox" value="checked" /> Progress Bar
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox" for="preventDuplicates">
+              <input id="preventDuplicates" type="checkbox" value="checked" /> Prevent Duplicates
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox" for="addClear">
+              <input id="addClear" type="checkbox" value="checked" /> Add button to force clearing a toast, ignoring focus
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox" for="newestOnTop">
+              <input id="newestOnTop" type="checkbox" value="checked" /> Newest on top
+            </label>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-group" id="toastTypeGroup">
+            <label>Toast type</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toasts" value="success" checked> Success
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toasts" value="info"> Info
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toasts" value="warning"> Warning
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toasts" value="error"> Error
+              </label>
+            </div>
+          </div>
+          <div class="control-group" id="positionGroup">
+            <label>Toast position</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="position" value="toast-top-right"> Top Right
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="position" value="toast-bottom-right"> Bottom Right
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="position" value="toast-bottom-left"> Bottom Left
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="position" value="toast-top-left"> Top Left
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="position" value="toast-top-full-width"> Top Full Width
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="position" value="toast-bottom-full-width"> Bottom Full Width
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="position" value="toast-top-center"> Top Center
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="position" value="toast-bottom-center"> Bottom Center
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="control-group">
+            <div class="form-group">
+              <label class="control-label" for="showEasing">Show Easing</label>
+              <input id="showEasing" type="text" placeholder="swing, linear" class="form-control" value="swing" />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="hideEasing">Hide Easing</label>
+              <input id="hideEasing" type="text" placeholder="swing, linear" class="form-control" value="linear" />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="showMethod">Show Method</label>
+              <input id="showMethod" type="text" placeholder="show, fadeIn, slideDown" class="form-control" value="fadeIn" />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="hideMethod">Hide Method</label>
+              <input id="hideMethod" type="text" placeholder="hide, fadeOut, slideUp" class="form-control" value="fadeOut" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="control-group">
+            <div class="form-group">
+              <label class="control-label" for="showDuration">Show Duration</label>
+              <input id="showDuration" type="text" placeholder="ms" class="form-control" value="300" />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="hideDuration">Hide Duration</label>
+              <input id="hideDuration" type="text" placeholder="ms" class="form-control" value="1000" />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="timeOut">Time out</label>
+              <input id="timeOut" type="text" placeholder="ms" class="form-control" value="5000" />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="extendedTimeOut">Extended time out</label>
+              <input id="extendedTimeOut" type="text" placeholder="ms" class="form-control" value="1000" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary" id="showtoast">Show Toast</button>
+      <button type="button" class="btn btn-danger" id="cleartoasts">Clear Toasts</button>
+      <button type="button" class="btn btn-danger" id="clearlasttoast">Clear Last Toast</button>
+
+      <div style='margin-top: 25px;'>
+        <pre id='toastrOptions'></pre>
+      </div>
+    </div>
+  </div>
+</div>

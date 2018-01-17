@@ -91,27 +91,28 @@
   <div class="card" ng-controller="mainChartCtrl">
     <div class="card-body">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-5">
           <h4 class="card-title mb-0">Traffic</h4>
-          <div class="small text-muted">November 2015</div>
+          <div class="small text-muted">November 2017</div>
         </div>
-        <div class="col-sm-6 d-md-down-none">
+        <!--/.col-->
+        <div class="col-sm-7 d-none d-md-block">
           <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i></button>
-          <div class="btn-toolbar float-right" role="toolbar" aria-label="Toolbar with button groups">
-            <div class="btn-group mr-3" data-toggle="buttons" aria-label="First group">
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="options" id="option1"> Day
-              </label>
-              <label class="btn btn-outline-secondary active">
-                <input type="radio" name="options" id="option2" checked> Month
-              </label>
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="options" id="option3"> Year
-              </label>
-            </div>
+          <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
+            <label class="btn btn-outline-secondary">
+              <input type="radio" name="options" id="option1" autocomplete="off"> Day
+            </label>
+            <label class="btn btn-outline-secondary active">
+              <input type="radio" name="options" id="option2" autocomplete="off" checked> Month
+            </label>
+            <label class="btn btn-outline-secondary">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Year
+            </label>
           </div>
         </div>
+        <!--/.col-->
       </div>
+      <!--/.row-->
       <div class="chart-wrapper" style="height:300px;margin-top:40px;">
         <canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="false" chart-series="series" chart-click="onClick" chart-options="options" chart-colors="colors" height="300"></canvas>
       </div>
@@ -539,7 +540,7 @@
                     | Registered: {{ user.registered }}</div>
                 </td>
                 <td class="text-center">
-                  <img ng-src="img/flags/{{ user.flag }}" alt="{{ user.country }}" style="height:24px;">
+                  <i class="h4 mb-0 flag-icon flag-icon-{{ user.flag }}" title="{{ user.flag }}" id="{{ user.flag }}"></i>
                 </td>
                 <td>
                   <div class="clearfix">

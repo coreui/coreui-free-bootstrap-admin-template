@@ -3,8 +3,8 @@ $(function (){
     submitHandler: function () {
       alert( 'submitted!' );
     }
-  } );
-  $( '#signupForm' ).validate( {
+  });
+  $('#signupForm').validate({
     rules: {
       firstname: 'required',
       lastname: 'required',
@@ -48,7 +48,6 @@ $(function (){
     },
     errorElement: 'em',
     errorPlacement: function ( error, element ) {
-      // Add the `invalid-feedback` class to the error element
       error.addClass( 'invalid-feedback' );
       if ( element.prop( 'type' ) === 'checkbox' ) {
         error.insertAfter( element.parent( 'label' ) );

@@ -224,13 +224,13 @@ function cardCollapseDirective() {
   function link(scope, element, attrs) {
     if (attrs.toggle=='collapse' && element.parent().hasClass('card-actions')){
 
-      if (element.parent().parent().parent().find('.card-block').hasClass('in')) {
+      if (element.parent().parent().parent().find('.card-body').hasClass('in')) {
         element.find('i').addClass('r180');
       }
 
       var id = 'collapse-' + Math.floor((Math.random() * 1000000000) + 1);
       element.attr('data-target','#'+id)
-      element.parent().parent().parent().find('.card-block').attr('id',id);
+      element.parent().parent().parent().find('.card-body').attr('id',id);
 
       element.on('click', function(){
         element.find('i').toggleClass('r180');

@@ -10,6 +10,13 @@ angular
       label: '{{ "ICONS" | translate }}'
     }
   })
+  .state('app.icons.flags', {
+    url: '/flags',
+    templateUrl: 'views/icons/flags.html',
+    ncyBreadcrumb: {
+      label: 'Flags'
+    }
+  })
   .state('app.icons.fontawesome', {
     url: '/font-awesome',
     templateUrl: 'views/icons/font-awesome.html',

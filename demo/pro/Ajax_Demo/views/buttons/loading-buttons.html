@@ -1,0 +1,124 @@
+<script>
+  loadCSS("vendors/css/ladda-themeless.min.css");
+  var requireJS = [
+    "vendors/js/spin.min.js",
+    "vendors/js/ladda.min.js"
+  ];
+  loadJS(requireJS, "js/views/loading-buttons.js");
+</script>
+
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <i class="icon-cursor"></i> Loading buttons - Ladda
+      <div class="card-actions">
+        <a href="https://github.com/hakimel/Ladda">
+          <small class="text-muted">docs</small>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <p>
+        A UI concept which merges loading indicators into the action that invoked them. Primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing. For a real-world
+        example, check out any of the forms on <a href="http://slides.com">slides.com</a>.
+      </p>
+
+      <div class="row text-center">
+        <div class="col-md-3 py-4">
+          <h6>expand-left</h6>
+          <button class="btn btn-success btn-ladda" data-style="expand-left">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>expand-right</h6>
+          <button class="btn btn-success btn-ladda" data-style="expand-right">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>expand-up</h6>
+          <button class="btn btn-success btn-ladda" data-style="expand-up">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>expand-down</h6>
+          <button class="btn btn-success btn-ladda" data-style="expand-down">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>contract</h6>
+          <button class="btn btn-danger btn-ladda" data-style="contract">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>contract-overlay</h6>
+          <button class="btn btn-danger btn-ladda" data-style="contract-overlay" style="z-index: 10;">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>zoom-in</h6>
+          <button class="btn btn-danger btn-ladda" data-style="zoom-in">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>zoom-out</h6>
+          <button class="btn btn-danger btn-ladda" data-style="zoom-out">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>slide-left</h6>
+          <button class="btn btn-info btn-ladda" data-style="slide-left">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>slide-right</h6>
+          <button class="btn btn-info btn-ladda" data-style="slide-right">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>slide-up</h6>
+          <button class="btn btn-info btn-ladda" data-style="slide-up">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>slide-down</h6>
+          <button class="btn btn-info btn-ladda" data-style="slide-down">Submit</button>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <h4 class="text-center">Built-in progress bar</h4>
+      <div class="row text-center">
+        <div class="col-md-3 py-4 offset-md-3">
+          <h6>expand-right</h6>
+          <button class="btn btn-warning btn-ladda-progress" data-style="expand-right">Submit</button>
+        </div>
+
+        <div class="col-md-3 py-4">
+          <h6>contract</h6>
+          <button class="btn btn-warning btn-ladda-progress" data-style="contract">Submit</button>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <h4 class="text-center">Sizes</h4>
+      <div class="row text-center">
+        <div class="col-md-4 py-4">
+          <h6>Small</h6>
+          <button class="btn btn-sm btn-primary btn-ladda" data-style="expand-right">Submit</button>
+        </div>
+
+        <div class="col-md-4 py-4">
+          <h6>Normall</h6>
+          <button class="btn btn-primary btn-ladda" data-style="expand-right">Submit</button>
+        </div>
+
+        <div class="col-md-4 py-4">
+          <h6>Large</h6>
+          <button class="btn btn-lg btn-primary btn-ladda" data-style="expand-right">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
