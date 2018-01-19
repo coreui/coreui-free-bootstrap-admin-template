@@ -290,7 +290,7 @@ $(document).ready(function($){
 * CARDS ACTIONS
 */
 
-$(document).on('click', '.card-actions a, button', function(e){
+$('.card-actions').on('click', 'a, button', function(e){
   e.preventDefault();
 
   if ($(this).hasClass('btn-close')) {
