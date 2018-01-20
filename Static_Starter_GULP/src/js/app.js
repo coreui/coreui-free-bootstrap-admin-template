@@ -113,19 +113,18 @@ $(document).ready(function($){
 * CARDS ACTIONS
 */
 
-$(document).on('click', '.card-actions a, button', function(e){
+$('.card-actions').on('click', 'a, button', function(e){
   e.preventDefault();
 
   if ($(this).hasClass('btn-close')) {
     $(this).parent().parent().parent().fadeOut();
   } else if ($(this).hasClass('btn-minimize')) {
-    var $target = $(this).parent().parent().next('.card-body').collapse({toggle: true});
+    // var $target = $(this).parent().parent().next('.card-body').collapse({toggle: true});
     if ($(this).hasClass('collapsed')) {
       $('i',$(this)).removeClass($.panelIconOpened).addClass($.panelIconClosed);
     } else {
       $('i',$(this)).removeClass($.panelIconClosed).addClass($.panelIconOpened);
     }
-
   } else if ($(this).hasClass('btn-setting')) {
     $('#myModal').modal('show');
   }
