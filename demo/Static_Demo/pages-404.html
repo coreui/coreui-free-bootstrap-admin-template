@@ -1,10 +1,3 @@
-<!--
- * CoreUI - Open Source Bootstrap Admin Template
- * @version v1.0.2
- * @link http://coreui.io
- * Copyright (c) 2017 creativeLabs Łukasz Holeczek
- * @license MIT
- -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,13 +20,20 @@
   <link href="css/style.css" rel="stylesheet">
 
   <!-- Styles required by this views -->
+
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-9510961-27', 'auto');
-  ga('send', 'pageview');
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-9510961-27', 'auto');
+    ga('send', 'pageview');
   </script>
 </head>
 
@@ -47,9 +47,11 @@
           <p class="text-muted">The page you are looking for was not found.</p>
         </div>
         <div class="input-prepend input-group">
-          <span class="input-group-addon"><i class="fa fa-search"></i></span>
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+          </div>
           <input id="prependedInput" class="form-control" size="16" type="text" placeholder="What are you looking for?">
-          <span class="input-group-btn">
+          <span class="input-group-append">
             <button class="btn btn-info" type="button">Search</button>
           </span>
         </div>

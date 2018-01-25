@@ -1,24 +1,25 @@
 /*****
 * CONFIGURATION
 */
-    //Main navigation
-    $.navigation = $('nav > ul.nav');
 
-  $.panelIconOpened = 'icon-arrow-up';
-  $.panelIconClosed = 'icon-arrow-down';
+//Main navigation
+$.navigation = $('nav > ul.nav');
 
-  //Default colours
-  $.brandPrimary =  '#20a8d8';
-  $.brandSuccess =  '#4dbd74';
-  $.brandInfo =     '#63c2de';
-  $.brandWarning =  '#f8cb00';
-  $.brandDanger =   '#f86c6b';
+$.panelIconOpened = 'icon-arrow-up';
+$.panelIconClosed = 'icon-arrow-down';
 
-  $.grayDark =      '#2a2c36';
-  $.gray =          '#55595c';
-  $.grayLight =     '#818a91';
-  $.grayLighter =   '#d1d4d7';
-  $.grayLightest =  '#f8f9fa';
+//Default colours
+$.brandPrimary =  '#20a8d8';
+$.brandSuccess =  '#4dbd74';
+$.brandInfo =     '#63c2de';
+$.brandWarning =  '#f8cb00';
+$.brandDanger =   '#f86c6b';
+
+$.grayDark =      '#2a2c36';
+$.gray =          '#55595c';
+$.grayLight =     '#818a91';
+$.grayLighter =   '#d1d4d7';
+$.grayLightest =  '#f8f9fa';
 
 'use strict';
 
@@ -112,19 +113,18 @@ $(document).ready(function($){
 * CARDS ACTIONS
 */
 
-$(document).on('click', '.card-actions a', function(e){
+$('.card-actions').on('click', 'a, button', function(e){
   e.preventDefault();
 
   if ($(this).hasClass('btn-close')) {
     $(this).parent().parent().parent().fadeOut();
   } else if ($(this).hasClass('btn-minimize')) {
-    var $target = $(this).parent().parent().next('.card-block');
-    if (!$(this).hasClass('collapsed')) {
+    // var $target = $(this).parent().parent().next('.card-body').collapse({toggle: true});
+    if ($(this).hasClass('collapsed')) {
       $('i',$(this)).removeClass($.panelIconOpened).addClass($.panelIconClosed);
     } else {
       $('i',$(this)).removeClass($.panelIconClosed).addClass($.panelIconOpened);
     }
-
   } else if ($(this).hasClass('btn-setting')) {
     $('#myModal').modal('show');
   }
