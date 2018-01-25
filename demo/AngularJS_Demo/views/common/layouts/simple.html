@@ -1,0 +1,1 @@
+<ui-view></ui-view>

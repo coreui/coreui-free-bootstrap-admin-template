@@ -1,0 +1,35 @@
+.breadcrumb-menu {
+  margin-left: auto;
+
+  &::before {
+    display: none;
+  }
+
+  .btn-group {
+    vertical-align: top;
+  }
+
+  .btn {
+    padding: 0 $input-btn-padding-x;
+    color: $text-muted;
+    vertical-align: top;
+    border: 0;
+
+    &:hover, &.active {
+      color: $body-color;
+      background: transparent;
+    }
+  }
+
+  .open {
+    .btn {
+      color: $body-color;
+      background: transparent;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 180px;
+    line-height: $line-height-base;
+  }
+}
