@@ -1,0 +1,189 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-edit"></i> AngularUI Mask
+          <div class="card-actions">
+            <a href="https://github.com/angular-ui/ui-mask">
+              <small class="text-muted">docs</small>
+            </a>
+          </div>
+        </div>
+        <div class="card-body collapse in">
+          <form>
+
+            <fieldset class="form-group">
+              <label>Date input</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                </div>
+                <input type="text" class="form-control" ng-model="date" ui-mask="99/99/9999">
+              </div>
+              <small class="text-muted">ex. 99/99/9999</small>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <label>Phone input</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                </div>
+                <input type="text" class="form-control" ng-model="phone" ui-mask="(999) 999-9999">
+              </div>
+              <small class="text-muted">ex. (999) 999-9999</small>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <label>Taxpayer Identification Numbers</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-usd"></i></span>
+                </div>
+                <input type="text" class="form-control" ng-model="tax" ui-mask="99-9999999">
+              </div>
+              <small class="text-muted">ex. 99-9999999</small>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <label>Social Security Number</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-male"></i></span>
+                </div>
+                <input type="text" class="form-control" ng-model="ssn" ui-mask="999-99-9999">
+              </div>
+              <small class="text-muted">ex. 999-99-9999</small>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <label>Eye Script</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-asterisk"></i></span>
+                </div>
+                <input type="text" class="form-control" ng-model="eyescript" ui-mask="~9.99 ~9.99 999">
+              </div>
+              <small class="text-muted">ex. ~9.99 ~9.99 999</small>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <label>Credit Card Number</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                </div>
+                <input type="text" class="form-control" ng-model="ccn" placeholder="0000 0000 0000 0000" ui-mask="9999 9999 9999 9999">
+              </div>
+              <small class="text-muted">ex. 9999 9999 9999 9999</small>
+            </fieldset>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /.col -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-edit"></i> AngularUI Select
+          <div class="card-actions">
+            <a href="https://github.com/angular-ui/ui-select">
+              <small class="text-muted">docs</small>
+            </a>
+          </div>
+        </div>
+        <div class="card-body" ng-controller="selectDemoCtrl">
+          <fieldset class="form-group">
+            <label>Select</label>
+            <ui-select ng-model="country.selected" theme="bootstrap">
+              <ui-select-match placeholder="Select or search a country in the list...">{{$select.selected.name}}</ui-select-match>
+              <ui-select-choices repeat="country in countries | filter: $select.search">
+                <span ng-bind-html="country.name | highlight: $select.search"></span>
+                <small ng-bind-html="country.code | highlight: $select.search"></small>
+              </ui-select-choices>
+            </ui-select>
+            <small class="text-muted">Selected: {{country.selected}}</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Array of strings</label>
+            <ui-select multiple ng-model="multipleDemo.colors" theme="select2">
+              <ui-select-match placeholder="Select colors...">{{$item}}</ui-select-match>
+              <ui-select-choices repeat="color in availableColors | filter:$select.search">
+                {{color}}
+              </ui-select-choices>
+            </ui-select>
+            <small class="text-muted">Selected: {{multipleDemo.colors}}</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Array of objects</label>
+            <ui-select multiple ng-model="multipleDemo.selectedPeople" theme="select2" ng-disabled="disabled">
+              <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+              <ui-select-choices repeat="person in people | propsFilter: {name: $select.search, age: $select.search}">
+                <div ng-bind-html="person.name | highlight: $select.search"></div>
+                <small>
+                  email: {{person.email}} age:
+                  <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                </small>
+              </ui-select-choices>
+            </ui-select>
+            <small class="text-muted">Selected: {{multipleDemo.selectedPeople}}</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Array of objects with single property binding</label>
+            <ui-select multiple ng-model="multipleDemo.selectedPeopleSimple" theme="select2" ng-disabled="disabled">
+              <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+              <ui-select-choices repeat="person.email as person in people | propsFilter: {name: $select.search, age: $select.search}">
+                <div ng-bind-html="person.name | highlight: $select.search"></div>
+                <small>
+                  email: {{person.email}} age:
+                  <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                </small>
+              </ui-select-choices>
+            </ui-select>
+            <small class="text-muted">Selected: {{multipleDemo.selectedPeopleSimple}}</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Array of objects (with groupBy)</label>
+            <ui-select multiple ng-model="multipleDemo.selectedPeopleWithGroupBy" theme="select2" ng-disabled="disabled">
+              <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+              <ui-select-choices group-by="someGroupFn" repeat="person in people | propsFilter: {name: $select.search, age: $select.search}">
+                <div ng-bind-html="person.name | highlight: $select.search"></div>
+                <small>
+                  email: {{person.email}} age:
+                  <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                </small>
+              </ui-select-choices>
+            </ui-select>
+            <small class="text-muted">Selected: {{multipleDemo.selectedPeopleWithGroupBy}}</small>
+          </fieldset>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-edit"></i> DateRangePicker
+          <div class="card-actions">
+            <a href="https://github.com/fragaria/angular-daterangepicker">
+              <small class="text-muted">docs</small>
+            </a>
+          </div>
+        </div>
+        <div class="card-body" ng-controller="dateRangeCtrl">
+          <fieldset class="form-group" ng-controller="dateRangeCtrl">
+            <label>DateRangePicker</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+              </div>
+              <input date-range-picker class="form-control date-picker" type="text" ng-model="date" options="opts" />
+            </div>
+            <small class="text-muted">Selected: {{date|json}}</small>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <!-- /.col -->
+  </div>
+  <!-- /.row -->
+</div>
