@@ -1,6 +1,6 @@
 /*!
  * CoreUI - Open Source Bootstrap Admin Template
- * @version v1.0.9
+ * @version v1.0.10
  * @link http://coreui.io
  * Copyright (c) 2018 creativeLabs Łukasz Holeczek
  * @license MIT
@@ -9741,7 +9741,7 @@ button {
   color: rgba(255, 255, 255, 0.6) !important; }
 
 .card-header .icon-bg {
-  display: inline-body;
+  display: inline-block;
   padding: 0.75rem 1.25rem !important;
   margin-top: -0.75rem;
   margin-right: 1.25rem;
@@ -9929,10 +9929,10 @@ button {
     .card-header .card-actions a:hover, .card-header .card-actions button:hover {
       text-decoration: none; }
     .card-header .card-actions a [class^="icon-"], .card-header .card-actions a [class*=" icon-"], .card-header .card-actions button [class^="icon-"], .card-header .card-actions button [class*=" icon-"] {
-      display: inline-body;
+      display: inline-block;
       vertical-align: middle; }
     .card-header .card-actions a i, .card-header .card-actions button i {
-      display: inline-body;
+      display: inline-block;
       transition: .4s; }
     .card-header .card-actions a .r180, .card-header .card-actions button .r180 {
       -webkit-transform: rotate(180deg);
@@ -9940,7 +9940,7 @@ button {
   .card-header .card-actions .input-group {
     width: 230px;
     margin: 6px; }
-    .card-header .card-actions .input-group .input-group-addon {
+    .card-header .card-actions .input-group .input-group-prepend, .card-header .card-actions .input-group .input-group-append {
       background: #fff; }
     .card-header .card-actions .input-group input {
       border-left: 0; }
@@ -10038,9 +10038,8 @@ base-chart.chart {
 .main .container-fluid {
   padding: 0 30px; }
 
-.input-group-addon,
-.input-group-btn {
-  min-width: 40px;
+.input-group-prepend,
+.input-group-append {
   white-space: nowrap;
   vertical-align: middle; }
 
