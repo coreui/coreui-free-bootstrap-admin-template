@@ -4,30 +4,31 @@
 // Color system
 //
 
-$white:                           #fff;
-$gray-100:                        #f0f3f5;
-$gray-200:                        #c2cfd6;
-$gray-300:                        #a4b7c1;
-$gray-400:                        #869fac;
-$gray-500:                        #678898;
-$gray-600:                        #536c79;
-$gray-700:                        #3e515b;
-$gray-800:                        #29363d;
-$gray-900:                        #151b1e;
+$white:                           #fff !default;
+$gray-100:                        #f0f3f5 !default;
+$gray-200:                        #c2cfd6 !default;
+$gray-300:                        #a4b7c1 !default;
+$gray-400:                        #869fac !default;
+$gray-500:                        #678898 !default;
+$gray-600:                        #536c79 !default;
+$gray-700:                        #3e515b !default;
+$gray-800:                        #29363d !default;
+$gray-900:                        #151b1e !default;
 $black:                           #000 !default;
 
-$blue:                            #20a8d8;
+$blue:                            #20a8d8 !default;
 $indigo:                          #6610f2 !default;
 $purple:                          #6f42c1 !default;
 $pink:                            #e83e8c !default;
-$red:                             #f86c6b;
-$orange:                          #f8cb00;
+$red:                             #f86c6b !default;
+$orange:                          #f8cb00 !default;
 $yellow:                          #ffc107 !default;
-$green:                           #4dbd74;
+$green:                           #4dbd74 !default;
 $teal:                            #20c997 !default;
-$cyan:                            #63c2de;
+$cyan:                            #63c2de !default;
 
-$colors: (
+$colors: () !default;
+$colors: map-merge((
   blue:                           $blue,
   indigo:                         $indigo,
   purple:                         $purple,
@@ -41,9 +42,10 @@ $colors: (
   white:                          $white,
   gray:                           $gray-600,
   gray-dark:                      $gray-800
-);
+), $colors);
 
-$theme-colors: (
+$theme-colors: () !default;
+$theme-colors: map-merge((
   primary:                        $blue,
   secondary:                      $gray-300,
   success:                        $green,
@@ -73,7 +75,7 @@ $theme-colors: (
   gray-700:                       $gray-700,
   gray-800:                       $gray-800,
   gray-900:                       $gray-900
-);
+), $theme-colors);
 
 // Options
 //
