@@ -14,8 +14,10 @@
 # clone the repo
 $ git clone https://github.com/coreui/free-bootstrap-admin-template.git myproject
 
-# go into app's directory and install dependencies:
+# go into app's directory
 $ cd myproject
+
+# install app's dependencies
 $ npm install
 ```
 
