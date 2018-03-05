@@ -1,41 +1,56 @@
 {
-  "name": "@coreui/admin-template",
+  "name": "@coreui/admin-template-static",
   "version": "2.0.0",
   "description": "Open Source Bootstrap Admin Template",
-  "main": "",
-  "homepage": "https://coreui.io",
-  "github": "https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template#readme",
+  "main": "index.html",
+  "dependencies": {
+    "@coreui/static": "^2.0.0-alpha.1",
+    "@coreui/styles": "^2.0.0-alpha.1",
+    "bootstrap": "4.0.0",
+    "chart.js": "2.7.1",
+    "flag-icon-css": "2.9.0",
+    "font-awesome": "4.7.0",
+    "jquery": "3.2.1",
+    "pace-progress": "1.0.2",
+    "popper.js": "1.12.9",
+    "simple-line-icons": "2.4.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.23.6",
+    "del": "3.0.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "4.1.0",
+    "gulp-bower-src": "0.1.0",
+    "gulp-concat": "2.6.1",
+    "gulp-contains": "1.1.0",
+    "gulp-cssmin": "0.2.0",
+    "gulp-filter": "5.1.0",
+    "gulp-rename": "1.2.2",
+    "gulp-replace": "0.6.1",
+    "gulp-sass": "3.1.0",
+    "gulp-search": "1.0.0",
+    "gulp-uglify": "3.0.0",
+    "require-dir": "0.3.2",
+    "run-sequence": "2.2.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "gulp",
+    "build": "gulp build:dist",
+    "serve": "gulp serve",
+    "serve-dist": "gulp serve:dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template.git"
-  },
-  "keywords": [
-    "Bootstrap",
-    "Admin",
-    "Template",
-    "Open",
-    "Source",
-    "AngularJS",
-    "Angular",
-    "Angular2",
-    "jQuery",
-    "CSS",
-    "HTML",
-    "RWD",
-    "Dashboard",
-    "Vue",
-    "Vue.js",
-    "Vuejs",
-    "React",
-    "React.js",
-    "Reactjs"
+  "browserslist": [
+    "Chrome >= 45",
+    "Firefox ESR",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
   ],
   "author": "Łukasz Holeczek",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template/issues"
-  }
+  "homepage": "http://coreui.io",
+  "copyright": "Copyright 2018 creativeLabs Łukasz Holeczek",
+  "license": "MIT"
 }
