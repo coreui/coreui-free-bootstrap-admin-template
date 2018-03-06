@@ -3,6 +3,7 @@
 ## Table of Contents
 
 * [Versions](#versions)
+* [CoreUI Pro](#coreui-pro)
 * [Installation](#installation)
 * [Usage](#usage)
 * [What's included](#whats-included)
