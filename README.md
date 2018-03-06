@@ -98,6 +98,9 @@ See [the Releases section of our project](https://github.com/coreui/free-bootstr
 
 Some of projects created by community but not maintained by CoreUI team.
 
+* [NuxtJS + Vue CoreUI](https://github.com/muhibbudins/nuxt-coreui)
+* [Colmena](https://github.com/colmena/colmena)
+
 ## Copyright and license
 
 copyright 2018 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/coreui/free-bootstrap-admin-template/blob/master/LICENSE).
