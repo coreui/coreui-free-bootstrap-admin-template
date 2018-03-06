@@ -13,6 +13,7 @@
 * [Community](#community)
 * [Community Projects](#community-projects)
 * [License](#license)
+* [Support CoreUI Development](#support-coreui-development)
 
 ## Versions
 
