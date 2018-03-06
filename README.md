@@ -23,6 +23,14 @@
 * [CoreUI Free React.js Admin Template](https://github.com/coreui/free-react-admin-template)
 * [CoreUI Free Vue.js Admin Template](https://github.com/coreui/free-vue-admin-template)
 
+## CoreUI Pro
+
+* 💪  [CoreUI Pro Bootstrap Admin Template](https://coreui.io/pro/) 💎
+* 💪  [CoreUI Pro Bootstrap Admin Template (Ajax)](https://coreui.io/pro/) 💎
+* 💪  [CoreUI Pro Angular Admin Template (Ajax)](https://coreui.io/pro/angular) 💎
+* 💪  [CoreUI Pro React Admin Template](https://coreui.io/pro/react) 💎
+* 💪  [CoreUI Pro Vue Admin Template](https://coreui.io/pro/vue) 💎
+
 ## Installation
 
 ``` bash
