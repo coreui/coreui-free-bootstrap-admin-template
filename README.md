@@ -2,12 +2,21 @@
 
 ## Table of Contents
 
+* [Versions](#versions)
 * [Installation](#installation)
 * [Usage](#usage)
 * [What's included](#whats-included)
 * [Documentation](#documentation)
 * [Contributing](#contributing)
 * [License](#license)
+
+## Versions
+
+* [CoreUI Free Bootstrap Admin Template (Ajax)](https://github.com/coreui/free-bootstrap-admin-template-ajax)
+* [CoreUI Free Angular 2+ Admin Template](https://github.com/coreui/free-angular-admin-template)
+* [CoreUI Free .NET Core 2 Admin Template](https://github.com/coreui/free-dotnet-admin-template)
+* [CoreUI Free React.js Admin Template](https://github.com/coreui/free-react-admin-template)
+* [CoreUI Free Vue.js Admin Template](https://github.com/coreui/free-vue-admin-template)
 
 ## Installation
 
@@ -30,9 +39,6 @@ $ npm run serve
 
 # build for production with minification
 $ npm run build
-
-# build for production and view the bundle analyzer report.
-$ npm run build --report
 ```
 
 ## What's included
@@ -65,6 +71,27 @@ The documentation for the CoreUI Free Bootstrap Admin Template is hosted at our 
 Please read through our [contributing guidelines](https://github.com/coreui/free-bootstrap-admin-template/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
 Editor preferences are available in the [editor config](https://github.com/coreui/free-bootstrap-admin-template/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+
+## Versioning
+
+For transparency into our release cycle and in striving to maintain backward compatibility,CoreUI Free Admin Template is maintained under [the Semantic Versioning guidelines](http://semver.org/).
+
+See [the Releases section of our project](https://github.com/coreui/free-bootstrap-admin-template/releases) for changelogs for each release version.
+
+## Creators
+
+**Łukasz Holeczek**
+
+* <https://twitter.com/lukaszholeczek>
+* <https://github.com/mrholek>
+
+**Andrzej Kopański**
+
+* <https://github.com/xidedix>
+
+## Community Projects
+
+Some of projects created by community but not maintained by CoreUI team.
 
 ## Copyright and license
 
