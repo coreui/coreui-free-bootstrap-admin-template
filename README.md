@@ -8,6 +8,10 @@
 * [What's included](#whats-included)
 * [Documentation](#documentation)
 * [Contributing](#contributing)
+* [Versioning](#versioning)
+* [Creators](#creators)
+* [Community](#community)
+* [Community Projects](#community-projects)
 * [License](#license)
 
 ## Versions
