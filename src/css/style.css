@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * CoreUI - Open Source Dashboard UI Kit
- * @version v2.0.0-alpha.1
+ * @version v2.0.0-alpha.2
  * @link https://coreui.io
  * Copyright (c) 2018 creativeLabs Łukasz Holeczek
  * Licensed under MIT (https://coreui.io/license)
@@ -7531,9 +7531,8 @@ canvas {
   color: #fff;
   pointer-events: none;
   background: rgba(0, 0, 0, 0.7);
-  border-radius: 0.25rem;
   opacity: 0;
-  transition: all .1s ease;
+  transition: all 0.25s ease;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0); }
   .chartjs-tooltip .tooltip-header {
@@ -7548,6 +7547,10 @@ canvas {
         align-items: center;
     font-size: 0.76562rem;
     white-space: nowrap; }
+  .chartjs-tooltip .tooltip-body-item-value {
+    padding-left: 1rem;
+    margin-left: auto;
+    font-weight: 700; }
 
 .chartjs-tooltip-key {
   display: inline-block;
@@ -10009,7 +10012,15 @@ body {
 
 .text-value {
   font-size: 1.3125rem;
-  font-weight: 700; }
+  font-weight: 600; }
+
+.text-value-sm {
+  font-size: 1.09375rem;
+  font-weight: 600; }
+
+.text-value-lg {
+  font-size: 1.53125rem;
+  font-weight: 600; }
 
 .text-white .text-muted {
   color: rgba(255, 255, 255, 0.6) !important; }
