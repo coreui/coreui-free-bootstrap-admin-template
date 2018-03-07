@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/*!
+ * CoreUI - Open Source Dashboard UI Kit
+ * @version v2.0.0-alpha.1
+ * @link https://coreui.io
+ * Copyright (c) 2018 creativeLabs Łukasz Holeczek
+ * Licensed under MIT (https://coreui.io/license)
+ */
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -7505,6 +7513,47 @@ button {
 
 base-chart.chart {
   display: block; }
+
+canvas {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.chartjs-tooltip {
+  position: absolute;
+  z-index: 1021;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.25rem;
+  opacity: 0;
+  transition: all .1s ease;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0); }
+  .chartjs-tooltip .tooltip-header {
+    margin-bottom: 0.5rem; }
+  .chartjs-tooltip .tooltip-header-item {
+    font-size: 0.76562rem;
+    font-weight: 700; }
+  .chartjs-tooltip .tooltip-body-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    font-size: 0.76562rem;
+    white-space: nowrap; }
+
+.chartjs-tooltip-key {
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.875rem; }
 
 .dropdown-item {
   position: relative;
