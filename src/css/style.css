@@ -7278,6 +7278,9 @@ button {
   margin-top: -2px;
   vertical-align: middle; }
 
+.btn-pill {
+  border-radius: 50em; }
+
 .callout {
   position: relative;
   padding: 0 1rem;
@@ -8950,6 +8953,8 @@ html[dir="rtl"] .aside-menu {
     position: fixed;
     z-index: 1019;
     width: 200px;
+    height: 100vh; }
+  .sidebar-fixed .app-header + .app-body .sidebar {
     height: calc(100vh - 55px); }
   .sidebar-compact .sidebar {
     -ms-flex: 0 0 150px;
@@ -8966,6 +8971,8 @@ html[dir="rtl"] .aside-menu {
   .sidebar-off-canvas .sidebar {
     position: fixed;
     z-index: 1019;
+    height: 100%; }
+  .sidebar-off-canvas .app-header + .app-body .sidebar {
     height: calc(100vh - 55px); }
   html:not([dir="rtl"]) .sidebar-compact .sidebar {
     margin-left: -150px; }
@@ -8980,9 +8987,13 @@ html[dir="rtl"] .aside-menu {
     height: 100%; }
     .aside-menu-fixed .aside-menu .tab-content {
       height: calc(100vh - 2.375rem - 55px); }
+  .aside-menu-fixed .app-header + .app-body .aside-menu {
+    height: calc(100vh - 55px); }
   .aside-menu-off-canvas .aside-menu {
     position: fixed;
     z-index: 1019;
+    height: 100%; }
+  .aside-menu-off-canvas .app-header + .app-body .aside-menu {
     height: calc(100vh - 55px); }
   html:not([dir="rtl"]) .aside-menu-fixed .aside-menu,
   html:not([dir="rtl"]) .aside-menu-off-canvas .aside-menu {
