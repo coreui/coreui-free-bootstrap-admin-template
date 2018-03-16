@@ -2,9 +2,9 @@
 
 ## Check out our Bootstrap Admin Templates and support CoreUI Development
 
-[![Bootstrap Admin Templates Bundle](https://genesisui.com/img/bundle2.png)](https://genesisui.com/bundle.html?support=1)
+[![Bootstrap Admin Templates Bundle](https://genesisui.com/img/bundle2.png)](https://genesisui.com/admin-templates/bootstrap/prime/?support=1)
 
-[Check out Bootstrap Admin Templates Bundle](https://genesisui.com/bundle.html?support=1)
+[Check out Bootstrap Admin Templates Bundle](https://genesisui.com/admin-templates/bootstrap/prime/?support=1)
 
 ## CoreUI - Free Admin Panel Template
 
