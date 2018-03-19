@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * CoreUI - Open Source Dashboard UI Kit
- * @version v2.0.0-alpha.2
+ * @version v2.0.0-alpha.1
  * @link https://coreui.io
  * Copyright (c) 2018 creativeLabs Łukasz Holeczek
  * Licensed under MIT (https://coreui.io/license)
@@ -3298,7 +3298,7 @@ tbody.collapse.show {
   padding-left: 0;
   list-style: none; }
 
-.page-link, .pagination-datatables li a, .pagination li a {
+.page-link {
   position: relative;
   display: block;
   padding: 0.5rem 0.75rem;
@@ -3307,40 +3307,40 @@ tbody.collapse.show {
   color: #20a8d8;
   background-color: #fff;
   border: 1px solid #a4b7c1; }
-  .page-link:hover, .pagination-datatables li a:hover, .pagination li a:hover {
+  .page-link:hover {
     color: #167495;
     text-decoration: none;
     background-color: #c2cfd6;
     border-color: #a4b7c1; }
-  .page-link:focus, .pagination-datatables li a:focus, .pagination li a:focus {
+  .page-link:focus {
     z-index: 2;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(32, 168, 216, 0.25); }
-  .page-link:not(:disabled):not(.disabled), .pagination-datatables li a:not(:disabled):not(.disabled), .pagination li a:not(:disabled):not(.disabled) {
+  .page-link:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
-.page-item:first-child .page-link, .pagination-datatables li:first-child .page-link, .pagination li:first-child .page-link, .page-item:first-child .pagination-datatables li a, .pagination-datatables li .page-item:first-child a, .pagination-datatables li:first-child a, .page-item:first-child .pagination li a, .pagination li .page-item:first-child a, .pagination li:first-child a {
+.page-item:first-child .page-link {
   margin-left: 0; }
 
-.page-item.active .page-link, .pagination-datatables li.active .page-link, .pagination li.active .page-link, .page-item.active .pagination-datatables li a, .pagination-datatables li .page-item.active a, .pagination-datatables li.active a, .page-item.active .pagination li a, .pagination li .page-item.active a, .pagination li.active a {
+.page-item.active .page-link {
   z-index: 1;
   color: #fff;
   background-color: #20a8d8;
   border-color: #20a8d8; }
 
-.page-item.disabled .page-link, .pagination-datatables li.disabled .page-link, .pagination li.disabled .page-link, .page-item.disabled .pagination-datatables li a, .pagination-datatables li .page-item.disabled a, .pagination-datatables li.disabled a, .page-item.disabled .pagination li a, .pagination li .page-item.disabled a, .pagination li.disabled a {
+.page-item.disabled .page-link {
   color: #536c79;
   pointer-events: none;
   cursor: auto;
   background-color: #fff;
   border-color: #a4b7c1; }
 
-.pagination-lg .page-link, .pagination-lg .pagination-datatables li a, .pagination-datatables li .pagination-lg a, .pagination-lg .pagination li a, .pagination li .pagination-lg a {
+.pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
   font-size: 1.09375rem;
   line-height: 1.5; }
 
-.pagination-sm .page-link, .pagination-sm .pagination-datatables li a, .pagination-datatables li .pagination-sm a, .pagination-sm .pagination li a, .pagination li .pagination-sm a {
+.pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
   font-size: 0.76562rem;
   line-height: 1.5; }
@@ -7845,8 +7845,7 @@ canvas {
     height: 55px;
     padding: 0;
     margin-right: 0;
-    background-color: #fff;
-    border-bottom: 1px solid #c2cfd6; }
+    background-color: transparent; }
     .app-header .navbar-brand .navbar-brand-minimized {
       display: none; }
   .app-header .navbar-toggler {
@@ -7912,8 +7911,7 @@ canvas {
 @media (min-width: 992px) {
   .brand-minimized .app-header .navbar-brand {
     width: 50px;
-    background-color: #fff;
-    border-bottom: 1px solid #c2cfd6; }
+    background-color: transparent; }
     .brand-minimized .app-header .navbar-brand .navbar-brand-full {
       display: none; }
     .brand-minimized .app-header .navbar-brand .navbar-brand-minimized {
@@ -9504,10 +9502,9 @@ html[dir="rtl"] .aside-menu-show .aside-menu {
     z-index: 1020;
     width: 100%;
     text-align: center;
-    background-color: #fff;
-    border-bottom: 1px solid #c2cfd6; }
+    background-color: transparent; }
     .app-header .navbar-toggler {
-      color: #536c79; }
+      color: #fff; }
     .app-header .navbar-brand {
       position: absolute;
       left: 50%;
