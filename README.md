@@ -28,11 +28,16 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 
 ## Versions
 
-* [CoreUI Free Bootstrap Admin Template (Ajax)](https://github.com/coreui/free-bootstrap-admin-template-ajax)
-* [CoreUI Free Angular 2+ Admin Template](https://github.com/coreui/free-angular-admin-template)
-* [CoreUI Free .NET Core 2 Admin Template](https://github.com/coreui/free-dotnet-admin-template)
-* [CoreUI Free React.js Admin Template](https://github.com/coreui/free-react-admin-template)
-* [CoreUI Free Vue.js Admin Template](https://github.com/coreui/free-vue-admin-template)
+* 🚧 CoreUI Free Bootstrap Admin Template (Ajax) (Available Soon)
+* 🚧 CoreUI Free Angular 2+ Admin Template (Available Soon)
+* 🚧 CoreUI Free .NET Core 2 Admin Template (Available Soon)
+* 🚧 CoreUI Free React.js Admin Template (Available Soon)
+* 🚧 CoreUI Free Vue.js Admin Template (Available Soon)
+<!-- * [CoreUI Free Bootstrap Admin Template (Ajax)](https://github.com/coreui/coreui-free-bootstrap-admin-template-ajax)
+* [CoreUI Free Angular 2+ Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
+* [CoreUI Free .NET Core 2 Admin Template](https://github.com/coreui/coreui-free-dotnet-admin-template)
+* [CoreUI Free React.js Admin Template](https://github.com/coreui/coreui-free-react-admin-template)
+* [CoreUI Free Vue.js Admin Template](https://github.com/coreui/coreui-free-vue-admin-template) -->
 
 ## CoreUI Pro
 
@@ -46,7 +51,7 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 
 ``` bash
 # clone the repo
-$ git clone https://github.com/coreui/free-bootstrap-admin-template.git my-project
+$ git clone https://github.com/coreui/coreui-free-bootstrap-admin-template.git my-project
 
 # go into app's directory
 $ cd my-project
@@ -71,7 +76,7 @@ Within the download you'll find the following directories and files, logically g
 
 ```
 free-bootstrap-admin-template/
-├── gulp-tasks/
+├── build/
 ├── src/
 │   ├── css/
 │   ├── img/
@@ -81,9 +86,7 @@ free-bootstrap-admin-template/
 │   ├── ...
 │   ├── index.html
 │   └── ...
-├── gulpfile.js
-├── package.json
-└── vendors.json
+└── package.json
 ```
 
 ## Documentation
@@ -92,15 +95,15 @@ The documentation for the CoreUI Free Bootstrap Admin Template is hosted at our 
 
 ## Contributing
 
-Please read through our [contributing guidelines](https://github.com/coreui/free-bootstrap-admin-template/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+Please read through our [contributing guidelines](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
-Editor preferences are available in the [editor config](https://github.com/coreui/free-bootstrap-admin-template/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+Editor preferences are available in the [editor config](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
 ## Versioning
 
 For transparency into our release cycle and in striving to maintain backward compatibility,CoreUI Free Admin Template is maintained under [the Semantic Versioning guidelines](http://semver.org/).
 
-See [the Releases section of our project](https://github.com/coreui/free-bootstrap-admin-template/releases) for changelogs for each release version.
+See [the Releases section of our project](https://github.com/coreui/coreui-free-bootstrap-admin-template/releases) for changelogs for each release version.
 
 ## Creators
 
@@ -120,7 +123,7 @@ Get updates on CoreUI's development and chat with the project maintainers and co
 - Follow [@coreuikit on Twitter](https://twitter.com/coreuikit).
 - Read and subscribe to [CoreUI Blog](https://coreui.ui/blog/).
 
-## #Community Projects
+### Community Projects
 
 Some of projects created by community but not maintained by CoreUI team.
 
@@ -129,7 +132,7 @@ Some of projects created by community but not maintained by CoreUI team.
 
 ## Copyright and license
 
-copyright 2018 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/coreui/free-bootstrap-admin-template/blob/master/LICENSE).
+copyright 2018 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/master/LICENSE).
 There is only one limitation you can't can’t re-distribute the CoreUI as stock. You can’t do this if you modify the CoreUI. In past we faced some problems with persons who tried to sell CoreUI based templates.
 
 ## Support CoreUI Development
