@@ -9,7 +9,7 @@ patches and features.
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/coreui/free-bootstrap-admin-template/issues) is
+The [issue tracker](https://github.com/coreui/coreui-free-bootstrap-admin-template/issues) is
 the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests)
 and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
@@ -119,7 +119,7 @@ included in the project:
    # Navigate to the newly cloned directory
    cd free-bootstrap-admin-template
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/coreui/free-bootstrap-admin-template.git
+   git remote add upstream https://github.com/coreui/coreui-free-bootstrap-admin-template.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
