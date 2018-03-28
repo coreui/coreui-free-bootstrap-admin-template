@@ -1,11 +1,10 @@
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v2.0.0-alpha.1
+* @version v2.0.0-beta.0
 * @link https://coreui.io
 * Copyright (c) 2018 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
 -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -208,19 +207,19 @@
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
                   <a class="nav-link" href="buttons-buttons.html">
-                    <i class="nav-icon"></i> Buttons</a>
+                    <i class="nav-icon icon-cursor"></i> Buttons</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="buttons-button-group.html">
-                    <i class="nav-icon"></i> Buttons Group</a>
+                    <i class="nav-icon icon-cursor"></i> Buttons Group</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="buttons-dropdowns.html">
-                    <i class="nav-icon"></i> Dropdowns</a>
+                    <i class="nav-icon icon-cursor"></i> Dropdowns</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="buttons-brand-buttons.html">
-                    <i class="nav-icon"></i> Brand Buttons</a>
+                    <i class="nav-icon icon-cursor"></i> Brand Buttons</a>
                 </li>
               </ul>
             </li>
@@ -335,135 +334,636 @@
         </ol>
         <div class="container-fluid">
           <div class="animated fadeIn">
-            <div class="row">
-
-              <div class="col-md-6">
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>Options</strong>
+            <div class="card">
+              <div class="card-header">
+                <strong>Standard Buttons</strong>
+              </div>
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    Normal
                   </div>
-                  <div class="card-body">
-                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                    <button type="button" class="btn btn-primary">Primary</button>
-
-                    <!-- Secondary, outline button -->
-                    <button type="button" class="btn btn-secondary">Secondary</button>
-
-                    <!-- Indicates a successful or positive action -->
-                    <button type="button" class="btn btn-success">Success</button>
-
-                    <!-- Indicates caution should be taken with this action -->
-                    <button type="button" class="btn btn-warning">Warning</button>
-
-                    <!-- Indicates a dangerous or potentially negative action -->
-                    <button type="button" class="btn btn-danger">Danger</button>
-
-                    <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-                    <button type="button" class="btn btn-link">Link</button>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-primary">Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-secondary">Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-success">Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-warning">Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-danger">Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-info">Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-light">Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-dark">Dark</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-link">Link</button>
                   </div>
                 </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>With Icons</strong>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Active State
                   </div>
-                  <div class="card-body">
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-primary active" aria-pressed="true">Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-secondary active" aria-pressed="true">Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-success active" aria-pressed="true">Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-warning active" aria-pressed="true">Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-danger active" aria-pressed="true">Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-info active" aria-pressed="true">Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-light active" aria-pressed="true">Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-dark active" aria-pressed="true">Dark</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-link active" aria-pressed="true">Link</button>
+                  </div>
+                </div>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Disabled
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-primary" disabled>Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-secondary" disabled>Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-success" disabled>Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-warning" disabled>Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-danger" disabled>Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-info" disabled>Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-light" disabled>Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-dark" disabled>Dark</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-link" disabled>Link</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <strong>Outline Buttons</strong>
+              </div>
+              <div class="card-body">
+                <p>
+                  Use
+                  <code>.btn-outline-*</code> class for outline buttons.
+                </p>
+                <div class="row align-items-center">
+                  <div class="col">
+                    Normal
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-primary">Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-secondary">Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-success">Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-warning">Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-danger">Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-info">Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-light">Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-dark">Dark</button>
+                  </div>
+                  <div class="col"></div>
+                </div>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Active State
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-primary active" aria-pressed="true">Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-secondary active" aria-pressed="true">Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-success active" aria-pressed="true">Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-warning active" aria-pressed="true">Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-danger active" aria-pressed="true">Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-info active" aria-pressed="true">Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-light active" aria-pressed="true">Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-dark active" aria-pressed="true">Dark</button>
+                  </div>
+                  <div class="col"></div>
+                </div>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Disabled
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-primary" disabled>Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-secondary" disabled>Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-success" disabled>Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-warning" disabled>Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-danger" disabled>Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-info" disabled>Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-light" disabled>Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-outline-dark" disabled>Dark</button>
+                  </div>
+                  <div class="col"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <strong>Ghost Buttons</strong>
+              </div>
+              <div class="card-body">
+                <p>
+                  Use
+                  <code>.btn-ghost-*</code> class for ghost buttons.
+                </p>
+                <div class="row align-items-center">
+                  <div class="col">
+                    Normal
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-primary">Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-secondary">Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-success">Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-warning">Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-danger">Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-info">Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-light">Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-dark">Dark</button>
+                  </div>
+                  <div class="col"></div>
+                </div>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Active State
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-primary active" aria-pressed="true">Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-secondary active" aria-pressed="true">Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-success active" aria-pressed="true">Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-warning active" aria-pressed="true">Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-danger active" aria-pressed="true">Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-info active" aria-pressed="true">Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-light active" aria-pressed="true">Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-dark active" aria-pressed="true">Dark</button>
+                  </div>
+                  <div class="col"></div>
+                </div>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Disabled
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-primary" disabled>Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-secondary" disabled>Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-success" disabled>Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-warning" disabled>Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-danger" disabled>Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-info" disabled>Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-light" disabled>Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-block btn-ghost-dark" disabled>Dark</button>
+                  </div>
+                  <div class="col"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <strong>Square Buttons</strong>
+              </div>
+              <div class="card-body">
+                <p>
+                  Use
+                  <code>.btn-square</code> class for square buttons.
+                </p>
+                <div class="row align-items-center">
+                  <div class="col">
+                    Normal
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-primary">Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-secondary">Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-success">Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-warning">Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-danger">Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-info">Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-light">Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-dark">Dark</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-link">Link</button>
+                  </div>
+                </div>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Active State
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-primary active" aria-pressed="true">Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-secondary active" aria-pressed="true">Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-success active" aria-pressed="true">Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-warning active" aria-pressed="true">Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-danger active" aria-pressed="true">Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-info active" aria-pressed="true">Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-light active" aria-pressed="true">Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-dark active" aria-pressed="true">Dark</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-link active" aria-pressed="true">Link</button>
+                  </div>
+                </div>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Disabled
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-primary" disabled>Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-secondary" disabled>Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-success" disabled>Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-warning" disabled>Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-danger" disabled>Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-info" disabled>Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-light" disabled>Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-dark" disabled>Dark</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-square btn-block btn-link" disabled>Link</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <strong>Pill Buttons</strong>
+              </div>
+              <div class="card-body">
+                <p>
+                  Use
+                  <code>.btn-pill</code> class for pill buttons.
+                </p>
+                <div class="row align-items-center">
+                  <div class="col">
+                    Normal
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-primary">Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-secondary">Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-success">Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-warning">Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-danger">Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-info">Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-light">Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-dark">Dark</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-link">Link</button>
+                  </div>
+                </div>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Active State
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-primary active" aria-pressed="true">Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-secondary active" aria-pressed="true">Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-success active" aria-pressed="true">Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-warning active" aria-pressed="true">Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-danger active" aria-pressed="true">Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-info active" aria-pressed="true">Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-light active" aria-pressed="true">Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-dark active" aria-pressed="true">Dark</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-link active" aria-pressed="true">Link</button>
+                  </div>
+                </div>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Disabled
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-primary" disabled>Primary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-secondary" disabled>Secondary</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-success" disabled>Success</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-warning" disabled>Warning</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-danger" disabled>Danger</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-info" disabled>Info</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-light" disabled>Light</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-dark" disabled>Dark</button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-pill btn-block btn-link" disabled>Link</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <strong>Sizes</strong>
+              </div>
+              <div class="card-body">
+                <p>Fancy larger or smaller buttons? Add
+                  <code>.btn-lg</code> or
+                  <code>.btn-sm</code> for additional sizes.</p>
+                <div class="row align-items-center">
+                  <div class="col">
+                    Small add
+                    <code>.btn-sm</code>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-sm btn-primary">Standard Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Outline Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-sm btn-ghost-success">Ghost Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-sm btn-square btn-warning">Square Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-sm btn-pill btn-danger">Pill Button</button>
+                  </div>
+                </div>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Normal
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-primary">Standard Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-outline-secondary">Outline Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-ghost-success">Ghost Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-square btn-warning">Square Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-pill btn-danger">Pill Button</button>
+                  </div>
+                </div>
+                <div class="row align-items-center mt-3">
+                  <div class="col">
+                    Large add
+                    <code>.btn-lg</code>.
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-lg btn-primary">Standard Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-lg btn-outline-secondary">Outline Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-lg btn-ghost-success">Ghost Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-lg btn-square btn-warning">Square Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-lg btn-pill btn-danger">Pill Button</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <strong>With Icons</strong>
+              </div>
+              <div class="card-body">
+                <div class="row align-items-center mt-3">
+                  <div class="col text-center">
                     <button type="button" class="btn btn-primary">
-                      <i class="fa fa-star"></i>&nbsp; Primary</button>
-                    <button type="button" class="btn btn-secondary">
-                      <i class="fa fa-lightbulb-o"></i>&nbsp; Secondary</button>
-                    <button type="button" class="btn btn-success">
-                      <i class="fa fa-magic"></i>&nbsp; Success</button>
-                    <button type="button" class="btn btn-warning">
-                      <i class="fa fa-map-marker"></i>&nbsp; Warning</button>
-                    <button type="button" class="btn btn-danger">
-                      <i class="fa fa-rss"></i>&nbsp; Danger</button>
-                    <button type="button" class="btn btn-link">
-                      <i class="fa fa-link"></i>&nbsp; Link</button>
+                      <i class="fa fa-lightbulb-o"></i>&nbsp;Standard Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-outline-secondary">
+                      <i class="fa fa-lightbulb-o"></i>&nbsp;Outline Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-ghost-success">
+                      <i class="fa fa-lightbulb-o"></i>&nbsp;Ghost Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-square btn-warning">
+                      <i class="fa fa-lightbulb-o"></i>&nbsp;Square Button</button>
+                  </div>
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-pill btn-danger">
+                      <i class="fa fa-lightbulb-o"></i>&nbsp;Pill Button</button>
                   </div>
                 </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>Size Large</strong>
-                    <small>Add this class
-                      <code>.btn-lg</code>
-                    </small>
-                  </div>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-primary btn-lg">Primary</button>
-                    <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
-                    <button type="button" class="btn btn-success btn-lg">Success</button>
-                    <button type="button" class="btn btn-info btn-lg">Info</button>
-                    <button type="button" class="btn btn-warning btn-lg">Warning</button>
-                    <button type="button" class="btn btn-danger btn-lg">Danger</button>
-                    <button type="button" class="btn btn-link btn-lg">Link</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>Size Small</strong>
-                    <small>Add this class
-                      <code>.btn-sm</code>
-                    </small>
-                  </div>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-primary btn-sm">Primary</button>
-                    <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
-                    <button type="button" class="btn btn-success btn-sm">Success</button>
-                    <button type="button" class="btn btn-info btn-sm">Info</button>
-                    <button type="button" class="btn btn-warning btn-sm">Warning</button>
-                    <button type="button" class="btn btn-danger btn-sm">Danger</button>
-                    <button type="button" class="btn btn-link btn-sm">Link</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>Disabled state</strong>
-                    <small>Add this
-                      <code>disabled="disabled"</code>
-                    </small>
-                  </div>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-primary" disabled="disabled">Primary</button>
-                    <button type="button" class="btn btn-secondary" disabled="disabled">Secondary</button>
-                    <button type="button" class="btn btn-success" disabled="disabled">Success</button>
-                    <button type="button" class="btn btn-info" disabled="disabled">Info</button>
-                    <button type="button" class="btn btn-warning" disabled="disabled">Warning</button>
-                    <button type="button" class="btn btn-danger" disabled="disabled">Danger</button>
-                    <button type="button" class="btn btn-link" disabled="disabled">Link</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>Active state</strong>
-                    <small>Add this class
-                      <code>.active</code>
-                    </small>
-                  </div>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-primary active">Primary</button>
-                    <button type="button" class="btn btn-secondary active">Secondary</button>
-                    <button type="button" class="btn btn-success active">Success</button>
-                    <button type="button" class="btn btn-info active">Info</button>
-                    <button type="button" class="btn btn-warning active">Warning</button>
-                    <button type="button" class="btn btn-danger active">Danger</button>
-                    <button type="button" class="btn btn-link active">Link</button>
-                  </div>
-                </div>
-
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
                 <div class="card">
                   <div class="card-header">
                     <strong>Block Level Buttons</strong>
-                    <small>Add this class
-                      <code>.btn-block</code>
-                    </small>
                   </div>
                   <div class="card-body">
+                    <p>Add this class
+                      <code>.btn-block</code>
+                    </p>
                     <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
                     <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
                     <button type="button" class="btn btn-success btn-lg btn-block">Block level button</button>
@@ -473,129 +973,17 @@
                     <button type="button" class="btn btn-link btn-lg btn-block">Block level button</button>
                   </div>
                 </div>
-
               </div>
               <!--/.col-->
-
               <div class="col-md-6">
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>Options</strong>
-                  </div>
-                  <div class="card-body">
-                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                    <button type="button" class="btn btn-outline-primary">Primary</button>
-
-                    <!-- Secondary, outline button -->
-                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-
-                    <!-- Indicates a successful or positive action -->
-                    <button type="button" class="btn btn-outline-success">Success</button>
-
-                    <!-- Indicates caution should be taken with this action -->
-                    <button type="button" class="btn btn-outline-warning">Warning</button>
-
-                    <!-- Indicates a dangerous or potentially negative action -->
-                    <button type="button" class="btn btn-outline-danger">Danger</button>
-
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>With Icons</strong>
-                  </div>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-outline-primary">
-                      <i class="fa fa-star"></i>&nbsp; Primary</button>
-                    <button type="button" class="btn btn-outline-secondary">
-                      <i class="fa fa-lightbulb-o"></i>&nbsp; Secondary</button>
-                    <button type="button" class="btn btn-outline-success">
-                      <i class="fa fa-magic"></i>&nbsp; Success</button>
-                    <button type="button" class="btn btn-outline-warning">
-                      <i class="fa fa-map-marker"></i>&nbsp; Warning</button>
-                    <button type="button" class="btn btn-outline-danger">
-                      <i class="fa fa-rss"></i>&nbsp; Danger</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>Size Large</strong>
-                    <small>Add this class
-                      <code>.btn-lg</code>
-                    </small>
-                  </div>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg">Secondary</button>
-                    <button type="button" class="btn btn-outline-success btn-lg">Success</button>
-                    <button type="button" class="btn btn-outline-info btn-lg">Info</button>
-                    <button type="button" class="btn btn-outline-warning btn-lg">Warning</button>
-                    <button type="button" class="btn btn-outline-danger btn-lg">Danger</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>Size Small</strong>
-                    <small>Add this class
-                      <code>.btn-sm</code>
-                    </small>
-                  </div>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-outline-primary btn-sm">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
-                    <button type="button" class="btn btn-outline-success btn-sm">Success</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">Info</button>
-                    <button type="button" class="btn btn-outline-warning btn-sm">Warning</button>
-                    <button type="button" class="btn btn-outline-danger btn-sm">Danger</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>Disabled state</strong>
-                    <small>Add this
-                      <code>disabled="disabled"</code>
-                    </small>
-                  </div>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-outline-primary" disabled="disabled">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary" disabled="disabled">Secondary</button>
-                    <button type="button" class="btn btn-success" disabled="disabled">Success</button>
-                    <button type="button" class="btn btn-outline-info" disabled="disabled">Info</button>
-                    <button type="button" class="btn btn-outline-warning" disabled="disabled">Warning</button>
-                    <button type="button" class="btn btn-outline-danger" disabled="disabled">Danger</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong>Active state</strong>
-                    <small>Add this class
-                      <code>.active</code>
-                    </small>
-                  </div>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-outline-primary active">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary active">Secondary</button>
-                    <button type="button" class="btn btn-outline-success active">Success</button>
-                    <button type="button" class="btn btn-outline-info active">Info</button>
-                    <button type="button" class="btn btn-outline-warning active">Warning</button>
-                    <button type="button" class="btn btn-outline-danger active">Danger</button>
-                  </div>
-                </div>
-
                 <div class="card">
                   <div class="card-header">
                     <strong>Block Level Buttons</strong>
-                    <small>Add this class
-                      <code>.btn-block</code>
-                    </small>
                   </div>
                   <div class="card-body">
+                    <p>Add this class
+                      <code>.btn-block</code>
+                    </p>
                     <button type="button" class="btn btn-outline-secondary btn-lg btn-block">Block level button</button>
                     <button type="button" class="btn btn-outline-primary btn-lg btn-block">Block level button</button>
                     <button type="button" class="btn btn-outline-success btn-lg btn-block">Block level button</button>
@@ -604,12 +992,12 @@
                     <button type="button" class="btn btn-outline-danger btn-lg btn-block">Block level button</button>
                   </div>
                 </div>
-
               </div>
               <!--/.col-->
             </div>
             <!--/.row-->
           </div>
+
         </div>
       </main>
       <aside class="aside-menu">
