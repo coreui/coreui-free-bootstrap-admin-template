@@ -137,7 +137,7 @@ See [the Releases section of our project](https://github.com/coreui/coreui-free-
 
 Get updates on CoreUI's development and chat with the project maintainers and community members.
 
-- Follow [@coreuikit on Twitter](https://twitter.com/coreuikit).
+- Follow [@core_ui on Twitter](https://twitter.com/core_ui).
 - Read and subscribe to [CoreUI Blog](https://coreui.ui/blog/).
 
 ### Community Projects
