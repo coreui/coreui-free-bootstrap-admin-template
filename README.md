@@ -14,7 +14,7 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 
 * [Versions](#versions)
 * [CoreUI Pro](#coreui-pro)
-* [CoreUI Pro based admin templates](#coreui-pro-based-admin-templates)
+* [Admin Templates built on top of CoreUI Pro](#admin-templates-built-on-top-of-coreui-pro)
 * [Installation](#installation)
 * [Usage](#usage)
 * [What's included](#whats-included)
@@ -29,7 +29,9 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 
 ## Versions
 
-* 🚧 CoreUI Free Bootstrap Admin Template (Ajax) (Available Soon)
+CoreUI is built on top of Bootstrap 4 and supports popular frameworks.
+
+* [CoreUI Free Bootstrap Admin Template (Ajax)](https://github.com/coreui/coreui-free-bootstrap-admin-template-ajax)
 * 🚧 CoreUI Free Angular 2+ Admin Template (Available Soon)
 * 🚧 CoreUI Free .NET Core 2 Admin Template (Available Soon)
 * 🚧 CoreUI Free React.js Admin Template (Available Soon)
@@ -48,13 +50,15 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 * 💪  [CoreUI Pro React Admin Template](https://coreui.io/pro/react)
 * 💪  [CoreUI Pro Vue Admin Template](https://coreui.io/pro/vue)
 
-## CoreUI Pro based admin templates
+## Admin Templates built on top of CoreUI Pro
 
 | CoreUI Pro | Prime | Root | Alba | Leaf |
 | --- | --- | --- | --- | --- |
 | [![CoreUI Pro Admin Template](https://coreui.io/assets/img/example-coureui.jpg)](https://coreui.io/pro/) | [![Prime Admin Template](https://genesisui.com/assets/img/templates/prime1280.jpg)](https://genesisui.com/admin-templates/bootstrap/prime/?support=1) | [![Root Admin Template](https://genesisui.com/assets/img/templates/root1280.jpg)](https://genesisui.com/admin-templates/bootstrap/root/?support=1) | [![Alba Admin Template](https://genesisui.com/assets/img/templates/alba1280.jpg)](https://genesisui.com/admin-templates/bootstrap/alba/?support=1) | [![Leaf Admin Template](https://genesisui.com/assets/img/templates/leaf1280.jpg)](https://genesisui.com/admin-templates/bootstrap/leaf/?support=1)
 
 ## Installation
+
+### Clone repo
 
 ``` bash
 # clone the repo
@@ -65,6 +69,12 @@ $ cd my-project
 
 # install app's dependencies
 $ npm install
+```
+
+### NPM
+
+``` bash
+$ npm install @coreui/coreui-free-bootstrap-admin-template --save
 ```
 
 ## Usage
