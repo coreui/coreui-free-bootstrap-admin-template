@@ -1,6 +1,6 @@
 {
-  "name": "@coreui/free-bootstrap-admin-template",
-  "version": "2.0.0-beta.0",
+  "name": "@coreui/coreui-free-bootstrap-admin-template",
+  "version": "2.0.0-beta.1",
   "description": "Free Bootstrap Admin Template",
   "keywords": [
     "admin",
@@ -18,7 +18,7 @@
   ],
   "homepage": "https://coreui.io",
   "bugs": {
-    "url": "https://github.com/coreui/free-bootstrap-admin-template/issues",
+    "url": "https://github.com/coreui/coreui-free-bootstrap-admin-template/issues",
     "email": "support@coreui.io"
   },
   "license": "MIT",
@@ -37,7 +37,7 @@
   "main": "src/index.html",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coreui/free-bootstrap-admin-template.git"
+    "url": "git+https://github.com/coreui/coreui-free-bootstrap-admin-template.git"
   },
   "scripts": {
     "build": "npm-run-all build-clean build-copy build-vendors",
@@ -52,12 +52,17 @@
     "css-minify-vendors": "foreach -g \"src/vendors/css/**/*.css\" -i \"src/vendors/css/**/*.min.css\" -x \"cleancss --level 1 --source-map --source-map-inline-sources #{path} --output #{dir}/#{name}.min#{ext}\" --no-c",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"src/css/*.css\" \"!src/css/*.min.css\"",
     "css-prefix-vendors": "postcss --config build/postcss.config.js --replace \"src/vendors/css/**/*.css\" \"!src/vendors/css/**/*.css\"",
-    "localhost": "browser-sync start --server \"./src\" --serveStatic \"./\" --files \"./src/**/*, !./src/scss/**/*\"",
-    "serve": "npm-run-all --parallel localhost watch-css",
-    "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\""
+    "js": "npm-run-all --parallel js-compile* js-lint*",
+    "js-compile": "cross-env PLUGINS=true babel src/js/src/ --out-dir src/js/ --source-maps",
+    "js-lint": "eslint src/js/src",
+    "localhost": "browser-sync start --server \"./src\" --serveStatic \"./\" --files \"!./src/js/src/**/*, ./src/**/*, !./src/scss/**/*\"",
+    "release-version": "node build/change-version.js",
+    "serve": "npm-run-all --parallel localhost watch-css watch-js",
+    "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\"",
+    "watch-js": "nodemon --watch src/js/src/ -x \"npm run js\""
   },
   "dependencies": {
-    "@coreui/coreui": "^2.0.0-beta.0",
+    "@coreui/coreui": "^2.0.0-beta.1",
     "@coreui/plugin-chartjs-custom-tooltips": "0.0.1",
     "bootstrap": "4.0.0",
     "chart.js": "^2.7.2",
@@ -70,9 +75,18 @@
     "simple-line-icons": "2.4.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "autoprefixer": "^8.2.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
     "browser-sync": "2.23.6",
     "clean-css-cli": "^4.1.11",
     "copyfiles": "^2.0.0",
+    "cross-env": "^5.1.4",
+    "eslint": "^4.19.1",
+    "eslint-plugin-compat": "^2.2.0",
     "foreach-cli": "^1.8.0",
     "node-sass": "^4.8.3",
     "nodemon": "^1.17.2",
