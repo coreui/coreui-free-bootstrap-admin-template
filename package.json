@@ -56,6 +56,7 @@
     "js-compile": "cross-env PLUGINS=true babel src/js/src/ --out-dir src/js/ --source-maps",
     "js-lint": "eslint src/js/src",
     "localhost": "browser-sync start --server \"./src\" --serveStatic \"./\" --files \"!./src/js/src/**/*, ./src/**/*, !./src/scss/**/*\"",
+    "localhost-dist": "browser-sync start --server \"./dist\"",
     "release-version": "node build/change-version.js",
     "serve": "npm-run-all --parallel localhost watch-css watch-js",
     "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\"",
