@@ -5,7 +5,7 @@
 const fs         = require('fs');
 const path       = require('path');
 const mkdirp     = require('mkdirp');
-const sh = require('shelljs')
+const sh         = require('shelljs')
 
 const basename   = path.basename;
 const dirname    = path.dirname;
