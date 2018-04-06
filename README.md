@@ -71,12 +71,6 @@ $ cd my-project
 $ npm install
 ```
 
-### NPM
-
-``` bash
-$ npm install @coreui/coreui-free-bootstrap-admin-template --save
-```
-
 ## Usage
 
 ``` bash
