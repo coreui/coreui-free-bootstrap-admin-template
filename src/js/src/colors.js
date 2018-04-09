@@ -1,9 +1,9 @@
-/* global RgbToHex */
+/* global rgbToHex */
 import $ from 'jquery'
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0-beta.1): colors.js
+ * CoreUI Free Boostrap Admin Template (v2.0.0-beta.2): colors.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
@@ -15,7 +15,7 @@ const ColorsView = (($) => {
       <table class="w-100">
         <tr>
           <td class="text-muted">HEX:</td>
-          <td class="font-weight-bold">${RgbToHex(Color)}</td>
+          <td class="font-weight-bold">${rgbToHex(Color)}</td>
         </tr>
         <tr>
           <td class="text-muted">RGB:</td>

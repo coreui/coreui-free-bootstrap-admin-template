@@ -1,9 +1,9 @@
-/* global Chart, GetStyle, HexToRgba */
+/* global Chart, getStyle, hexToRgba */
 import $ from 'jquery'
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0-beta.1): main.js
+ * CoreUI Free Boostrap Admin Template (v2.0.0-beta.2): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
@@ -11,14 +11,14 @@ import $ from 'jquery'
 /* eslint-disable no-magic-numbers */
 const MainView = (($) => {
   // eslint-disable-next-line no-unused-vars
-  const CardChart1 = new Chart($('#card-chart1'), {
+  const cardChart1 = new Chart($('#card-chart1'), {
     type: 'line',
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [
         {
           label: 'My First dataset',
-          backgroundColor: GetStyle('--primary'),
+          backgroundColor: getStyle('--primary'),
           borderColor: 'rgba(255,255,255,.55)',
           data: [65, 59, 84, 84, 51, 55, 40]
         }
@@ -63,14 +63,14 @@ const MainView = (($) => {
   })
 
   // eslint-disable-next-line no-unused-vars
-  const CardChart2 = new Chart($('#card-chart2'), {
+  const cardChart2 = new Chart($('#card-chart2'), {
     type: 'line',
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [
         {
           label: 'My First dataset',
-          backgroundColor: GetStyle('--info'),
+          backgroundColor: getStyle('--info'),
           borderColor: 'rgba(255,255,255,.55)',
           data: [1, 18, 9, 17, 34, 22, 11]
         }
@@ -116,7 +116,7 @@ const MainView = (($) => {
   })
 
   // eslint-disable-next-line no-unused-vars
-  const CardChart3 = new Chart($('#card-chart3'), {
+  const cardChart3 = new Chart($('#card-chart3'), {
     type: 'line',
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -156,7 +156,7 @@ const MainView = (($) => {
   })
 
   // eslint-disable-next-line no-unused-vars
-  const CardChart4 = new Chart($('#card-chart4'), {
+  const cardChart4 = new Chart($('#card-chart4'), {
     type: 'bar',
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'January', 'February', 'March', 'April'],
@@ -187,15 +187,15 @@ const MainView = (($) => {
   })
 
   // eslint-disable-next-line no-unused-vars
-  const MainChart = new Chart($('#main-chart'), {
+  const mainChart = new Chart($('#main-chart'), {
     type: 'line',
     data: {
       labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S'],
       datasets: [
         {
           label: 'My First dataset',
-          backgroundColor: HexToRgba(GetStyle('--info'), 10),
-          borderColor: GetStyle('--info'),
+          backgroundColor: hexToRgba(getStyle('--info'), 10),
+          borderColor: getStyle('--info'),
           pointHoverBackgroundColor: '#fff',
           borderWidth: 2,
           data: [165, 180, 70, 69, 77, 57, 125, 165, 172, 91, 173, 138, 155, 89, 50, 161, 65, 163, 160, 103, 114, 185, 125, 196, 183, 64, 137, 95, 112, 175]
@@ -203,7 +203,7 @@ const MainView = (($) => {
         {
           label: 'My Second dataset',
           backgroundColor: 'transparent',
-          borderColor: GetStyle('--success'),
+          borderColor: getStyle('--success'),
           pointHoverBackgroundColor: '#fff',
           borderWidth: 2,
           data: [92, 97, 80, 100, 86, 97, 83, 98, 87, 98, 93, 83, 87, 98, 96, 84, 91, 97, 88, 86, 94, 86, 95, 91, 98, 91, 92, 80, 83, 82]
@@ -211,7 +211,7 @@ const MainView = (($) => {
         {
           label: 'My Third dataset',
           backgroundColor: 'transparent',
-          borderColor: GetStyle('--danger'),
+          borderColor: getStyle('--danger'),
           pointHoverBackgroundColor: '#fff',
           borderWidth: 1,
           borderDash: [8, 5],
@@ -250,9 +250,9 @@ const MainView = (($) => {
     }
   })
 
-  const BrandBoxChartLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July']
+  const brandBoxChartLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July']
 
-  const BrandBoxChartOptions = {
+  const brandBoxChartOptions = {
     responsive: true,
     maintainAspectRatio: false,
     legend: {
@@ -277,10 +277,10 @@ const MainView = (($) => {
   }
 
   // eslint-disable-next-line no-unused-vars
-  const BrandBoxChart1 = new Chart($('#social-box-chart-1'), {
+  const brandBoxChart1 = new Chart($('#social-box-chart-1'), {
     type: 'line',
     data: {
-      labels: BrandBoxChartLabels,
+      labels: brandBoxChartLabels,
       datasets: [{
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
@@ -289,14 +289,14 @@ const MainView = (($) => {
         data: [65, 59, 84, 84, 51, 55, 40]
       }]
     },
-    options: BrandBoxChartOptions
+    options: brandBoxChartOptions
   })
 
   // eslint-disable-next-line no-unused-vars
-  const BrandBoxChart2 = new Chart($('#social-box-chart-2'), {
+  const brandBoxChart2 = new Chart($('#social-box-chart-2'), {
     type: 'line',
     data: {
-      labels: BrandBoxChartLabels,
+      labels: brandBoxChartLabels,
       datasets: [{
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
@@ -305,14 +305,14 @@ const MainView = (($) => {
         data: [1, 13, 9, 17, 34, 41, 38]
       }]
     },
-    options: BrandBoxChartOptions
+    options: brandBoxChartOptions
   })
 
   // eslint-disable-next-line no-unused-vars
-  const BrandBoxChart3 = new Chart($('#social-box-chart-3'), {
+  const brandBoxChart3 = new Chart($('#social-box-chart-3'), {
     type: 'line',
     data: {
-      labels: BrandBoxChartLabels,
+      labels: brandBoxChartLabels,
       datasets: [{
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
@@ -321,14 +321,14 @@ const MainView = (($) => {
         data: [78, 81, 80, 45, 34, 12, 40]
       }]
     },
-    options: BrandBoxChartOptions
+    options: brandBoxChartOptions
   })
 
   // eslint-disable-next-line no-unused-vars
-  const BrandBoxChart4 = new Chart($('#social-box-chart-4'), {
+  const brandBoxChart4 = new Chart($('#social-box-chart-4'), {
     type: 'line',
     data: {
-      labels: BrandBoxChartLabels,
+      labels: brandBoxChartLabels,
       datasets: [{
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
@@ -337,7 +337,7 @@ const MainView = (($) => {
         data: [35, 23, 56, 22, 97, 23, 64]
       }]
     },
-    options: BrandBoxChartOptions
+    options: brandBoxChartOptions
   })
 
   return MainView

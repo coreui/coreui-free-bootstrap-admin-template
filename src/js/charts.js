@@ -2,20 +2,20 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0-beta.1): main.js
+ * CoreUI Free Boostrap Admin Template (v2.0.0-beta.2): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
 
 /* eslint-disable no-magic-numbers */
 var ChartsView = function ($) {
-  // Random Numbers
-  var Random = function Random() {
+  // random Numbers
+  var random = function random() {
     return Math.round(Math.random() * 100);
   }; // eslint-disable-next-line no-unused-vars
 
 
-  var LineChart = new Chart($('#canvas-1'), {
+  var lineChart = new Chart($('#canvas-1'), {
     type: 'line',
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -25,14 +25,14 @@ var ChartsView = function ($) {
         borderColor: 'rgba(220, 220, 220, 1)',
         pointBackgroundColor: 'rgba(220, 220, 220, 1)',
         pointBorderColor: '#fff',
-        data: [Random(), Random(), Random(), Random(), Random(), Random(), Random()]
+        data: [random(), random(), random(), random(), random(), random(), random()]
       }, {
         label: 'My Second dataset',
         backgroundColor: 'rgba(151, 187, 205, 0.2)',
         borderColor: 'rgba(151, 187, 205, 1)',
         pointBackgroundColor: 'rgba(151, 187, 205, 1)',
         pointBorderColor: '#fff',
-        data: [Random(), Random(), Random(), Random(), Random(), Random(), Random()]
+        data: [random(), random(), random(), random(), random(), random(), random()]
       }]
     },
     options: {
@@ -40,7 +40,7 @@ var ChartsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var BarChart = new Chart($('#canvas-2'), {
+  var barChart = new Chart($('#canvas-2'), {
     type: 'bar',
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -49,13 +49,13 @@ var ChartsView = function ($) {
         borderColor: 'rgba(220, 220, 220, 0.8)',
         highlightFill: 'rgba(220, 220, 220, 0.75)',
         highlightStroke: 'rgba(220, 220, 220, 1)',
-        data: [Random(), Random(), Random(), Random(), Random(), Random(), Random()]
+        data: [random(), random(), random(), random(), random(), random(), random()]
       }, {
         backgroundColor: 'rgba(151, 187, 205, 0.5)',
         borderColor: 'rgba(151, 187, 205, 0.8)',
         highlightFill: 'rgba(151, 187, 205, 0.75)',
         highlightStroke: 'rgba(151, 187, 205, 1)',
-        data: [Random(), Random(), Random(), Random(), Random(), Random(), Random()]
+        data: [random(), random(), random(), random(), random(), random(), random()]
       }]
     },
     options: {
@@ -63,7 +63,7 @@ var ChartsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var DoughnutChart = new Chart($('#canvas-3'), {
+  var doughnutChart = new Chart($('#canvas-3'), {
     type: 'doughnut',
     data: {
       labels: ['Red', 'Green', 'Yellow'],
@@ -78,7 +78,7 @@ var ChartsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var RadarChart = new Chart($('#canvas-4'), {
+  var radarChart = new Chart($('#canvas-4'), {
     type: 'radar',
     data: {
       labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
@@ -107,7 +107,7 @@ var ChartsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var PieChart = new Chart($('#canvas-5'), {
+  var pieChart = new Chart($('#canvas-5'), {
     type: 'pie',
     data: {
       labels: ['Red', 'Green', 'Yellow'],
@@ -122,7 +122,7 @@ var ChartsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var PolarAreaChart = new Chart($('#canvas-6'), {
+  var polarAreaChart = new Chart($('#canvas-6'), {
     type: 'polarArea',
     data: {
       labels: ['Red', 'Green', 'Yellow', 'Grey', 'Blue'],

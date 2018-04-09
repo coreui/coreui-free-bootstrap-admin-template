@@ -1,8 +1,8 @@
-/* global Chart, GetStyle */
+/* global Chart, getStyle */
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0-beta.1): main.js
+ * CoreUI Free Boostrap Admin Template (v2.0.0-beta.2): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
@@ -10,13 +10,13 @@
 /* eslint-disable no-magic-numbers */
 var WidgetsView = function ($) {
   // eslint-disable-next-line no-unused-vars
-  var CardChart1 = new Chart($('#card-chart1'), {
+  var cardChart1 = new Chart($('#card-chart1'), {
     type: 'line',
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [{
         label: 'My First dataset',
-        backgroundColor: GetStyle('--primary'),
+        backgroundColor: getStyle('--primary'),
         borderColor: 'rgba(255,255,255,.55)',
         data: [65, 59, 84, 84, 51, 55, 40]
       }]
@@ -59,13 +59,13 @@ var WidgetsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var CardChart2 = new Chart($('#card-chart2'), {
+  var cardChart2 = new Chart($('#card-chart2'), {
     type: 'line',
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [{
         label: 'My First dataset',
-        backgroundColor: GetStyle('--info'),
+        backgroundColor: getStyle('--info'),
         borderColor: 'rgba(255,255,255,.55)',
         data: [1, 18, 9, 17, 34, 22, 11]
       }]
@@ -109,7 +109,7 @@ var WidgetsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var CardChart3 = new Chart($('#card-chart3'), {
+  var cardChart3 = new Chart($('#card-chart3'), {
     type: 'line',
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -146,7 +146,7 @@ var WidgetsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var CardChart4 = new Chart($('#card-chart4'), {
+  var cardChart4 = new Chart($('#card-chart4'), {
     type: 'bar',
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'January', 'February', 'March', 'April'],
@@ -174,20 +174,20 @@ var WidgetsView = function ($) {
     }
   }); // Random Numbers
 
-  var Random = function Random(min, max) {
+  var random = function random(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }; // eslint-disable-next-line no-unused-vars
 
 
-  var SparklineChart1 = new Chart($('#sparkline-chart-1'), {
+  var sparklineChart1 = new Chart($('#sparkline-chart-1'), {
     type: 'bar',
     data: {
       labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
       datasets: [{
-        backgroundColor: GetStyle('--primary'),
+        backgroundColor: getStyle('--primary'),
         borderColor: 'transparent',
         borderWidth: 1,
-        data: [Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100)]
+        data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }]
     },
     options: {
@@ -206,15 +206,15 @@ var WidgetsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var SparklineChart2 = new Chart($('#sparkline-chart-2'), {
+  var sparklineChart2 = new Chart($('#sparkline-chart-2'), {
     type: 'bar',
     data: {
       labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
       datasets: [{
-        backgroundColor: GetStyle('--warning'),
+        backgroundColor: getStyle('--warning'),
         borderColor: 'transparent',
         borderWidth: 1,
-        data: [Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100)]
+        data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }]
     },
     options: {
@@ -233,15 +233,15 @@ var WidgetsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var SparklineChart3 = new Chart($('#sparkline-chart-3'), {
+  var sparklineChart3 = new Chart($('#sparkline-chart-3'), {
     type: 'bar',
     data: {
       labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
       datasets: [{
-        backgroundColor: GetStyle('--success'),
+        backgroundColor: getStyle('--success'),
         borderColor: 'transparent',
         borderWidth: 1,
-        data: [Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100)]
+        data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }]
     },
     options: {
@@ -260,15 +260,15 @@ var WidgetsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var SparklineChart4 = new Chart($('#sparkline-chart-4'), {
+  var sparklineChart4 = new Chart($('#sparkline-chart-4'), {
     type: 'line',
     data: {
       labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
       datasets: [{
         backgroundColor: 'transparent',
-        borderColor: GetStyle('--info'),
+        borderColor: getStyle('--info'),
         borderWidth: 2,
-        data: [Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100)]
+        data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }]
     },
     options: {
@@ -292,15 +292,15 @@ var WidgetsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var SparklineChart5 = new Chart($('#sparkline-chart-5'), {
+  var sparklineChart5 = new Chart($('#sparkline-chart-5'), {
     type: 'line',
     data: {
       labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
       datasets: [{
         backgroundColor: 'transparent',
-        borderColor: GetStyle('--success'),
+        borderColor: getStyle('--success'),
         borderWidth: 2,
-        data: [Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100)]
+        data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }]
     },
     options: {
@@ -324,15 +324,15 @@ var WidgetsView = function ($) {
     }
   }); // eslint-disable-next-line no-unused-vars
 
-  var SparklineChart6 = new Chart($('#sparkline-chart-6'), {
+  var sparklineChart6 = new Chart($('#sparkline-chart-6'), {
     type: 'line',
     data: {
       labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
       datasets: [{
         backgroundColor: 'transparent',
-        borderColor: GetStyle('--danger'),
+        borderColor: getStyle('--danger'),
         borderWidth: 2,
-        data: [Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100), Random(40, 100)]
+        data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }]
     },
     options: {
@@ -355,8 +355,8 @@ var WidgetsView = function ($) {
       }
     }
   });
-  var BrandBoxChartLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  var BrandBoxChartOptions = {
+  var brandBoxChartLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  var brandBoxChartOptions = {
     responsive: true,
     maintainAspectRatio: false,
     legend: {
@@ -380,10 +380,10 @@ var WidgetsView = function ($) {
     } // eslint-disable-next-line no-unused-vars
 
   };
-  var BrandBoxChart1 = new Chart($('#social-box-chart-1'), {
+  var brandBoxChart1 = new Chart($('#social-box-chart-1'), {
     type: 'line',
     data: {
-      labels: BrandBoxChartLabels,
+      labels: brandBoxChartLabels,
       datasets: [{
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
@@ -392,13 +392,13 @@ var WidgetsView = function ($) {
         data: [65, 59, 84, 84, 51, 55, 40]
       }]
     },
-    options: BrandBoxChartOptions
+    options: brandBoxChartOptions
   }); // eslint-disable-next-line no-unused-vars
 
-  var BrandBoxChart2 = new Chart($('#social-box-chart-2'), {
+  var brandBoxChart2 = new Chart($('#social-box-chart-2'), {
     type: 'line',
     data: {
-      labels: BrandBoxChartLabels,
+      labels: brandBoxChartLabels,
       datasets: [{
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
@@ -407,13 +407,13 @@ var WidgetsView = function ($) {
         data: [1, 13, 9, 17, 34, 41, 38]
       }]
     },
-    options: BrandBoxChartOptions
+    options: brandBoxChartOptions
   }); // eslint-disable-next-line no-unused-vars
 
-  var BrandBoxChart3 = new Chart($('#social-box-chart-3'), {
+  var brandBoxChart3 = new Chart($('#social-box-chart-3'), {
     type: 'line',
     data: {
-      labels: BrandBoxChartLabels,
+      labels: brandBoxChartLabels,
       datasets: [{
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
@@ -422,13 +422,13 @@ var WidgetsView = function ($) {
         data: [78, 81, 80, 45, 34, 12, 40]
       }]
     },
-    options: BrandBoxChartOptions
+    options: brandBoxChartOptions
   }); // eslint-disable-next-line no-unused-vars
 
-  var BrandBoxChart4 = new Chart($('#social-box-chart-4'), {
+  var brandBoxChart4 = new Chart($('#social-box-chart-4'), {
     type: 'line',
     data: {
-      labels: BrandBoxChartLabels,
+      labels: brandBoxChartLabels,
       datasets: [{
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
@@ -437,7 +437,7 @@ var WidgetsView = function ($) {
         data: [35, 23, 56, 22, 97, 23, 64]
       }]
     },
-    options: BrandBoxChartOptions
+    options: brandBoxChartOptions
   });
   return WidgetsView;
 }($);

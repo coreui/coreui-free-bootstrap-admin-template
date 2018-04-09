@@ -3,18 +3,18 @@ import $ from 'jquery'
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0-beta.1): main.js
+ * CoreUI Free Boostrap Admin Template (v2.0.0-beta.2): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
 
 /* eslint-disable no-magic-numbers */
 const ChartsView = (($) => {
-  // Random Numbers
-  const Random = () => Math.round(Math.random() * 100)
+  // random Numbers
+  const random = () => Math.round(Math.random() * 100)
 
   // eslint-disable-next-line no-unused-vars
-  const LineChart = new Chart($('#canvas-1'), {
+  const lineChart = new Chart($('#canvas-1'), {
     type: 'line',
     data: {
       labels : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -25,7 +25,7 @@ const ChartsView = (($) => {
           borderColor : 'rgba(220, 220, 220, 1)',
           pointBackgroundColor : 'rgba(220, 220, 220, 1)',
           pointBorderColor : '#fff',
-          data : [Random(), Random(), Random(), Random(), Random(), Random(), Random()]
+          data : [random(), random(), random(), random(), random(), random(), random()]
         },
         {
           label: 'My Second dataset',
@@ -33,7 +33,7 @@ const ChartsView = (($) => {
           borderColor : 'rgba(151, 187, 205, 1)',
           pointBackgroundColor : 'rgba(151, 187, 205, 1)',
           pointBorderColor : '#fff',
-          data : [Random(), Random(), Random(), Random(), Random(), Random(), Random()]
+          data : [random(), random(), random(), random(), random(), random(), random()]
         }
       ]
     },
@@ -43,7 +43,7 @@ const ChartsView = (($) => {
   })
 
   // eslint-disable-next-line no-unused-vars
-  const BarChart = new Chart($('#canvas-2'), {
+  const barChart = new Chart($('#canvas-2'), {
     type: 'bar',
     data: {
       labels : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -53,14 +53,14 @@ const ChartsView = (($) => {
           borderColor : 'rgba(220, 220, 220, 0.8)',
           highlightFill: 'rgba(220, 220, 220, 0.75)',
           highlightStroke: 'rgba(220, 220, 220, 1)',
-          data : [Random(), Random(), Random(), Random(), Random(), Random(), Random()]
+          data : [random(), random(), random(), random(), random(), random(), random()]
         },
         {
           backgroundColor : 'rgba(151, 187, 205, 0.5)',
           borderColor : 'rgba(151, 187, 205, 0.8)',
           highlightFill : 'rgba(151, 187, 205, 0.75)',
           highlightStroke : 'rgba(151, 187, 205, 1)',
-          data : [Random(), Random(), Random(), Random(), Random(), Random(), Random()]
+          data : [random(), random(), random(), random(), random(), random(), random()]
         }
       ]
     },
@@ -70,7 +70,7 @@ const ChartsView = (($) => {
   })
 
   // eslint-disable-next-line no-unused-vars
-  const DoughnutChart = new Chart($('#canvas-3'), {
+  const doughnutChart = new Chart($('#canvas-3'), {
     type: 'doughnut',
     data: {
       labels: ['Red', 'Green', 'Yellow'],
@@ -86,7 +86,7 @@ const ChartsView = (($) => {
   })
 
   // eslint-disable-next-line no-unused-vars
-  const RadarChart = new Chart($('#canvas-4'), {
+  const radarChart = new Chart($('#canvas-4'), {
     type: 'radar',
     data: {
       labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
@@ -119,7 +119,7 @@ const ChartsView = (($) => {
   })
 
   // eslint-disable-next-line no-unused-vars
-  const PieChart = new Chart($('#canvas-5'), {
+  const pieChart = new Chart($('#canvas-5'), {
     type: 'pie',
     data: {
       labels: ['Red', 'Green', 'Yellow'],
@@ -135,7 +135,7 @@ const ChartsView = (($) => {
   })
 
   // eslint-disable-next-line no-unused-vars
-  const PolarAreaChart = new Chart($('#canvas-6'), {
+  const polarAreaChart = new Chart($('#canvas-6'), {
     type: 'polarArea',
     data: {
       labels: ['Red', 'Green', 'Yellow', 'Grey', 'Blue'],
