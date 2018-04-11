@@ -1,15 +1,22 @@
-/* global Chart, getStyle */
+/* global Chart, CustomTooltips, getStyle */
 import $ from 'jquery'
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0-beta.2): main.js
+ * CoreUI Free Boostrap Admin Template (v2.0.0-beta.3): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
 
 /* eslint-disable no-magic-numbers */
 const WidgetsView = (($) => {
+  // Disable the on-canvas tooltip
+  Chart.defaults.global.pointHitDetectionRadius = 1
+  Chart.defaults.global.tooltips.enabled = false
+  Chart.defaults.global.tooltips.mode = 'index'
+  Chart.defaults.global.tooltips.position = 'nearest'
+  Chart.defaults.global.tooltips.custom = CustomTooltips
+
   // eslint-disable-next-line no-unused-vars
   const cardChart1 = new Chart($('#card-chart1'), {
     type: 'line',

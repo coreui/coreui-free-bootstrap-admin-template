@@ -1,15 +1,22 @@
-/* global Chart, getStyle, hexToRgba */
+/* global Chart, CustomTooltips, getStyle, hexToRgba */
 import $ from 'jquery'
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0-beta.2): main.js
+ * CoreUI Free Boostrap Admin Template (v2.0.0-beta.3): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
 
 /* eslint-disable no-magic-numbers */
 const MainView = (($) => {
+  // Disable the on-canvas tooltip
+  Chart.defaults.global.pointHitDetectionRadius = 1
+  Chart.defaults.global.tooltips.enabled = false
+  Chart.defaults.global.tooltips.mode = 'index'
+  Chart.defaults.global.tooltips.position = 'nearest'
+  Chart.defaults.global.tooltips.custom = CustomTooltips
+
   // eslint-disable-next-line no-unused-vars
   const cardChart1 = new Chart($('#card-chart1'), {
     type: 'line',
@@ -282,6 +289,7 @@ const MainView = (($) => {
     data: {
       labels: brandBoxChartLabels,
       datasets: [{
+        label: 'My First dataset',
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
         pointHoverBackgroundColor: '#fff',
@@ -298,6 +306,7 @@ const MainView = (($) => {
     data: {
       labels: brandBoxChartLabels,
       datasets: [{
+        label: 'My First dataset',
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
         pointHoverBackgroundColor: '#fff',
@@ -314,6 +323,7 @@ const MainView = (($) => {
     data: {
       labels: brandBoxChartLabels,
       datasets: [{
+        label: 'My First dataset',
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
         pointHoverBackgroundColor: '#fff',
@@ -330,6 +340,7 @@ const MainView = (($) => {
     data: {
       labels: brandBoxChartLabels,
       datasets: [{
+        label: 'My First dataset',
         backgroundColor: 'rgba(255,255,255,.1)',
         borderColor: 'rgba(255,255,255,.55)',
         pointHoverBackgroundColor: '#fff',

@@ -169,6 +169,4 @@ Inspired by Sparkbox's awesome article on [semantic commit messages](http://sees
 
 ## License
 
-By contributing your code, you agree to license your contribution under the [MIT License](LICENSE). By contributing to the documentation, you agree to license your contribution under the [Creative Commons Attribution 3.0 Unported License](docs/LICENSE).
-
-Prior to v3.1.0, Bootstrap's code was released under the Apache License v2.0.
+By contributing your code, you agree to license your contribution under the [MIT License](LICENSE).
