@@ -2,6 +2,7 @@
 
 'use strict'
 
+const distributionPrefix = '~/';
 const distributionRoot = 'lib';
 
 // from https://stackoverflow.com/questions/171480/regex-grabbing-values-between-quotation-marks
@@ -40,7 +41,7 @@ const getDistributionDocument = (document) => {
     let search = match.substr(1, match.length - 2);
     let index = vendorReferences.indexOf(search);
 
-    return index === -1 ? match : `"~/${distributionReferences[index]}"`;
+    return index === -1 ? match : `"${distributionPrefix}${distributionReferences[index]}"`;
   };
 
   let preparedDocument = document.replace(regEx, replaceReference)
