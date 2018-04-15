@@ -5,7 +5,7 @@
 const distributionRoot = 'lib';
 
 // from https://stackoverflow.com/questions/171480/regex-grabbing-values-between-quotation-marks
-const regEx = /(["'])node_modules(?:(?=(\\?))\2.)*?\1/ig;
+const regEx = /(["'])node_modules.*?\1/ig;
 
 const getVendorReferences = (stringData) => {
   if (stringData.search(regEx) === -1) {
@@ -32,7 +32,6 @@ const getDistributionReferences = (vendorReferences) => {
   return distReferences;
 };
 
-
 const getDistributionDocument = (document) => {
   let vendorReferences = getVendorReferences(document);
   let distributionReferences = getDistributionReferences(vendorReferences);
@@ -41,11 +40,7 @@ const getDistributionDocument = (document) => {
     let search = match.substr(1, match.length - 2);
     let index = vendorReferences.indexOf(search);
 
-    if (index === -1) {
-      return match;
-    }
-
-    return `"~/${distributionReferences[index]}"`;
+    return index === -1 ? match : `"~/${distributionReferences[index]}"`;
   };
 
   let preparedDocument = document.replace(regEx, replaceReference)
