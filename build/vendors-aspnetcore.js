@@ -23,38 +23,25 @@ const getVendorReferences = (stringData) => {
   return references;
 };
 
-const getDistributionReferences = (vendorReferences) => {
-  let distReferences = [];
-
-  vendorReferences.forEach(reference => {
-    distReferences.push(reference.replace(/node_modules/i, distributionRoot));
-  });
-
-  return distReferences;
-};
-
 const getDistributionDocument = (document) => {
   let vendorReferences = getVendorReferences(document);
-  let distributionReferences = getDistributionReferences(vendorReferences);
 
   const replaceReference = (match) => {
-    let search = match.substr(1, match.length - 2);
-    let index = vendorReferences.indexOf(search);
+    let sourceReference = match.substr(1, match.length - 2);
+    let destReference = sourceReference.replace(/node_modules/i, distributionRoot);
 
-    return index === -1 ? match : `"${distributionPrefix}${distributionReferences[index]}"`;
+    return `"${distributionPrefix}${destReference}"`;
   };
 
   let preparedDocument = document.replace(regEx, replaceReference)
 
   return {
     distributionDocument: preparedDocument,
-    sourceReferences: vendorReferences,
-    destinationReferences: distributionReferences
+    sourceReferences: vendorReferences
   };
 };
 
 module.exports = {
   getVendorReferences,
-  getDistributionReferences,
   getDistributionDocument
 }

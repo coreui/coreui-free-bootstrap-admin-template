@@ -40,17 +40,6 @@ const vendorReferenceList = [
   'node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js',
   'node_modules/@coreui/coreui/dist/js/coreui.min.js'];
 
-const distributionReferenceList = [
-  'lib/flag-icon-css/css/flag-icon.min.css',
-  'lib/font-awesome/css/font-awesome.min.css',
-  'lib/simple-line-icons/css/simple-line-icons.css',
-  'lib/jquery/dist/jquery.min.js',
-  'lib/popper.js/dist/umd/popper.min.js',
-  'lib/bootstrap/dist/js/bootstrap.min.js',
-  'lib/pace-progress/pace.min.js',
-  'lib/perfect-scrollbar/dist/perfect-scrollbar.min.js',
-  'lib/@coreui/coreui/dist/js/coreui.min.js'];
-
 const distributionDocument = `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -89,34 +78,11 @@ describe('getVendorReferences', () => {
   });
 });
 
-describe('getDistributionReference', () => {
-  const vendorReferenceList = [
-    'node_modules/flag-icon-css/css/flag-icon.min.css',
-    'node_modules/font-awesome/css/font-awesome.min.css',
-    'NODE_MODULES/jquery/dist/jquery.min.js',
-    'node_modules/popper.js/NODE_MODULES/dist/umd/popper.min.js',
-    'NODE_MODULES/bootstrap/node_modules/img/image1.jpg',
-    'node_modules/pace-progress/sound.mp3'];
-
-  const distributionReferenceList = [
-    'lib/flag-icon-css/css/flag-icon.min.css',
-    'lib/font-awesome/css/font-awesome.min.css',
-    'lib/jquery/dist/jquery.min.js',
-    'lib/popper.js/NODE_MODULES/dist/umd/popper.min.js',
-    'lib/bootstrap/node_modules/img/image1.jpg',
-    'lib/pace-progress/sound.mp3'];
-
-    it('Should replace initial node_modules with distribution root', () => {
-      vendors.getDistributionReferences(vendorReferenceList).should.be.eql(distributionReferenceList);
-  })
-});
-
 describe('getDistributionDocument', () => {
   it('Should change node_modules references to distribution root', () => {
     let result = vendors.getDistributionDocument(originalDocument);
 
     result.distributionDocument.should.be.equal(distributionDocument);
     result.sourceReferences.should.be.eql(vendorReferenceList);
-    result.destinationReferences.should.be.eql(distributionReferenceList);
   });
 });
