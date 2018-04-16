@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * CoreUI - Open Source Dashboard UI Kit
- * @version v2.0.0-beta.6
+ * @version v2.0.0-beta.8
  * @link https://coreui.io
  * Copyright (c) 2018 creativeLabs Łukasz Holeczek
  * Licensed under MIT (https://coreui.io/license)
@@ -9174,17 +9174,9 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
 }
 
-.img-avatar {
-  border-radius: 50em;
-}
-
 .avatar {
   position: relative;
   display: inline-block;
-  width: 36px;
-}
-
-.avatar .img-avatar {
   width: 36px;
   height: 36px;
 }
@@ -9200,62 +9192,18 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 50em;
 }
 
-.avatar.avatar-xs {
+.avatar > img {
+  vertical-align: initial;
+}
+
+.avatar-lg {
   position: relative;
   display: inline-block;
-  width: 20px;
-}
-
-.avatar.avatar-xs .img-avatar {
-  width: 20px;
-  height: 20px;
-}
-
-.avatar.avatar-xs .avatar-status {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: block;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #fff;
-  border-radius: 50em;
-}
-
-.avatar.avatar-sm {
-  position: relative;
-  display: inline-block;
-  width: 24px;
-}
-
-.avatar.avatar-sm .img-avatar {
-  width: 24px;
-  height: 24px;
-}
-
-.avatar.avatar-sm .avatar-status {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: block;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #fff;
-  border-radius: 50em;
-}
-
-.avatar.avatar-lg {
-  position: relative;
-  display: inline-block;
-  width: 72px;
-}
-
-.avatar.avatar-lg .img-avatar {
   width: 72px;
   height: 72px;
 }
 
-.avatar.avatar-lg .avatar-status {
+.avatar-lg .avatar-status {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -9266,17 +9214,61 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 50em;
 }
 
-.avatars-stack .avatar.avatar-xs {
-  margin-right: -10px;
+.avatar-sm {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.avatar-sm .avatar-status {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  border-radius: 50em;
+}
+
+.avatar-xs {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.avatar-xs .avatar-status {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  border-radius: 50em;
 }
 
 .avatars-stack .avatar {
-  margin-right: -15px;
-  transition: margin-left 0.25s, margin-right 0.25s;
+  margin-right: -18px;
+  transition: margin-right 0.25s;
 }
 
 .avatars-stack .avatar:hover {
   margin-right: 0;
+}
+
+.avatars-stack .avatar-lg {
+  margin-right: -36px;
+}
+
+.avatars-stack .avatar-sm {
+  margin-right: -12px;
+}
+
+.avatars-stack .avatar-xs {
+  margin-right: -10px;
 }
 
 .badge-pill {
@@ -11083,6 +11075,13 @@ canvas {
   vertical-align: middle;
 }
 
+.img-avatar, .avatar > img,
+.img-circle {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50em;
+}
+
 #loading-bar,
 #loading-bar-spinner {
   -webkit-pointer-events: none;
@@ -11451,7 +11450,7 @@ canvas {
   margin-left: 0;
 }
 
-.app-header .nav-item .nav-link > .img-avatar {
+.app-header .nav-item .nav-link > .img-avatar, .app-header .nav-item .avatar.nav-link > img {
   height: 35px;
   margin: 0 10px;
 }
@@ -12119,7 +12118,7 @@ canvas {
   left: 0;
 }
 
-.switch-default {
+.switch {
   position: relative;
   display: inline-block;
   width: 40px;
@@ -12129,14 +12128,14 @@ canvas {
   background-color: transparent;
 }
 
-.switch-default .switch-input {
+.switch-input {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
-.switch-default .switch-label {
+.switch-label {
   position: relative;
   display: block;
   height: inherit;
@@ -12149,116 +12148,7 @@ canvas {
   transition: opacity background .15s ease-out;
 }
 
-.switch-default .switch-input:checked ~ .switch-label::before {
-  opacity: 0;
-}
-
-.switch-default .switch-input:checked ~ .switch-label::after {
-  opacity: 1;
-}
-
-.switch-default .switch-handle {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border: 1px solid #c8ced3;
-  border-radius: 1px;
-  transition: left .15s ease-out;
-}
-
-.switch-default .switch-input:checked ~ .switch-handle {
-  left: 18px;
-}
-
-.switch-default.switch-lg {
-  width: 48px;
-  height: 28px;
-}
-
-.switch-default.switch-lg .switch-label {
-  font-size: 12px;
-}
-
-.switch-default.switch-lg .switch-handle {
-  width: 24px;
-  height: 24px;
-}
-
-.switch-default.switch-lg .switch-input:checked ~ .switch-handle {
-  left: 22px;
-}
-
-.switch-default.switch-sm {
-  width: 32px;
-  height: 20px;
-}
-
-.switch-default.switch-sm .switch-label {
-  font-size: 8px;
-}
-
-.switch-default.switch-sm .switch-handle {
-  width: 16px;
-  height: 16px;
-}
-
-.switch-default.switch-sm .switch-input:checked ~ .switch-handle {
-  left: 14px;
-}
-
-.switch-default.switch-xs {
-  width: 24px;
-  height: 16px;
-}
-
-.switch-default.switch-xs .switch-label {
-  font-size: 7px;
-}
-
-.switch-default.switch-xs .switch-handle {
-  width: 12px;
-  height: 12px;
-}
-
-.switch-default.switch-xs .switch-input:checked ~ .switch-handle {
-  left: 10px;
-}
-
-.switch-text {
-  position: relative;
-  display: inline-block;
-  width: 48px;
-  height: 24px;
-  vertical-align: top;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.switch-text .switch-input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.switch-text .switch-label {
-  position: relative;
-  display: block;
-  height: inherit;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: #fff;
-  border: 1px solid #c8ced3;
-  border-radius: 2px;
-  transition: opacity background .15s ease-out;
-}
-
-.switch-text .switch-label::before,
-.switch-text .switch-label::after {
+.switch-label::before, .switch-label::after {
   position: absolute;
   top: 50%;
   width: 50%;
@@ -12268,28 +12158,20 @@ canvas {
   transition: inherit;
 }
 
-.switch-text .switch-label::before {
+.switch-label::before {
   right: 1px;
   color: #e4e7ea;
   content: attr(data-off);
 }
 
-.switch-text .switch-label::after {
+.switch-label::after {
   left: 1px;
   color: #fff;
   content: attr(data-on);
   opacity: 0;
 }
 
-.switch-text .switch-input:checked ~ .switch-label::before {
-  opacity: 0;
-}
-
-.switch-text .switch-input:checked ~ .switch-label::after {
-  opacity: 1;
-}
-
-.switch-text .switch-handle {
+.switch-handle {
   position: absolute;
   top: 2px;
   left: 2px;
@@ -12301,305 +12183,16 @@ canvas {
   transition: left .15s ease-out;
 }
 
-.switch-text .switch-input:checked ~ .switch-handle {
-  left: 26px;
-}
-
-.switch-text.switch-lg {
-  width: 56px;
-  height: 28px;
-}
-
-.switch-text.switch-lg .switch-label {
-  font-size: 12px;
-}
-
-.switch-text.switch-lg .switch-handle {
-  width: 24px;
-  height: 24px;
-}
-
-.switch-text.switch-lg .switch-input:checked ~ .switch-handle {
-  left: 30px;
-}
-
-.switch-text.switch-sm {
-  width: 40px;
-  height: 20px;
-}
-
-.switch-text.switch-sm .switch-label {
-  font-size: 8px;
-}
-
-.switch-text.switch-sm .switch-handle {
-  width: 16px;
-  height: 16px;
-}
-
-.switch-text.switch-sm .switch-input:checked ~ .switch-handle {
-  left: 22px;
-}
-
-.switch-text.switch-xs {
-  width: 32px;
-  height: 16px;
-}
-
-.switch-text.switch-xs .switch-label {
-  font-size: 7px;
-}
-
-.switch-text.switch-xs .switch-handle {
-  width: 12px;
-  height: 12px;
-}
-
-.switch-text.switch-xs .switch-input:checked ~ .switch-handle {
-  left: 18px;
-}
-
-.switch-icon {
-  position: relative;
-  display: inline-block;
-  width: 48px;
-  height: 24px;
-  vertical-align: top;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.switch-icon .switch-input {
-  position: absolute;
-  top: 0;
-  left: 0;
+.switch-input:checked ~ .switch-label::before {
   opacity: 0;
 }
 
-.switch-icon .switch-label {
-  position: relative;
-  display: block;
-  height: inherit;
-  font-family: FontAwesome;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: #fff;
-  border: 1px solid #c8ced3;
-  border-radius: 2px;
-  transition: opacity background .15s ease-out;
-}
-
-.switch-icon .switch-label::before,
-.switch-icon .switch-label::after {
-  position: absolute;
-  top: 50%;
-  width: 50%;
-  margin-top: -.5em;
-  line-height: 1;
-  text-align: center;
-  transition: inherit;
-}
-
-.switch-icon .switch-label::before {
-  right: 1px;
-  color: #e4e7ea;
-  content: attr(data-off);
-}
-
-.switch-icon .switch-label::after {
-  left: 1px;
-  color: #fff;
-  content: attr(data-on);
-  opacity: 0;
-}
-
-.switch-icon .switch-input:checked ~ .switch-label::before {
-  opacity: 0;
-}
-
-.switch-icon .switch-input:checked ~ .switch-label::after {
+.switch-input:checked ~ .switch-label::after {
   opacity: 1;
 }
 
-.switch-icon .switch-handle {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border: 1px solid #c8ced3;
-  border-radius: 1px;
-  transition: left .15s ease-out;
-}
-
-.switch-icon .switch-input:checked ~ .switch-handle {
-  left: 26px;
-}
-
-.switch-icon.switch-lg {
-  width: 56px;
-  height: 28px;
-}
-
-.switch-icon.switch-lg .switch-label {
-  font-size: 12px;
-}
-
-.switch-icon.switch-lg .switch-handle {
-  width: 24px;
-  height: 24px;
-}
-
-.switch-icon.switch-lg .switch-input:checked ~ .switch-handle {
-  left: 30px;
-}
-
-.switch-icon.switch-sm {
-  width: 40px;
-  height: 20px;
-}
-
-.switch-icon.switch-sm .switch-label {
-  font-size: 8px;
-}
-
-.switch-icon.switch-sm .switch-handle {
-  width: 16px;
-  height: 16px;
-}
-
-.switch-icon.switch-sm .switch-input:checked ~ .switch-handle {
-  left: 22px;
-}
-
-.switch-icon.switch-xs {
-  width: 32px;
-  height: 16px;
-}
-
-.switch-icon.switch-xs .switch-label {
-  font-size: 7px;
-}
-
-.switch-icon.switch-xs .switch-handle {
-  width: 12px;
-  height: 12px;
-}
-
-.switch-icon.switch-xs .switch-input:checked ~ .switch-handle {
+.switch-input:checked ~ .switch-handle {
   left: 18px;
-}
-
-.switch-3d {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 24px;
-  vertical-align: top;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.switch-3d .switch-input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.switch-3d .switch-label {
-  position: relative;
-  display: block;
-  height: inherit;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: #f0f3f5;
-  border: 1px solid #c8ced3;
-  border-radius: 2px;
-  transition: opacity background .15s ease-out;
-}
-
-.switch-3d .switch-input:checked ~ .switch-label::before {
-  opacity: 0;
-}
-
-.switch-3d .switch-input:checked ~ .switch-label::after {
-  opacity: 1;
-}
-
-.switch-3d .switch-handle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  background: #fff;
-  border: 1px solid #c8ced3;
-  border-radius: 1px;
-  transition: left .15s ease-out;
-  border: 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.switch-3d .switch-input:checked ~ .switch-handle {
-  left: 16px;
-}
-
-.switch-3d.switch-lg {
-  width: 48px;
-  height: 28px;
-}
-
-.switch-3d.switch-lg .switch-label {
-  font-size: 12px;
-}
-
-.switch-3d.switch-lg .switch-handle {
-  width: 28px;
-  height: 28px;
-}
-
-.switch-3d.switch-lg .switch-input:checked ~ .switch-handle {
-  left: 20px;
-}
-
-.switch-3d.switch-sm {
-  width: 32px;
-  height: 20px;
-}
-
-.switch-3d.switch-sm .switch-label {
-  font-size: 8px;
-}
-
-.switch-3d.switch-sm .switch-handle {
-  width: 20px;
-  height: 20px;
-}
-
-.switch-3d.switch-sm .switch-input:checked ~ .switch-handle {
-  left: 12px;
-}
-
-.switch-3d.switch-xs {
-  width: 24px;
-  height: 16px;
-}
-
-.switch-3d.switch-xs .switch-label {
-  font-size: 7px;
-}
-
-.switch-3d.switch-xs .switch-handle {
-  width: 16px;
-  height: 16px;
-}
-
-.switch-3d.switch-xs .switch-input:checked ~ .switch-handle {
-  left: 8px;
 }
 
 .switch-primary > .switch-input:checked ~ .switch-label {
@@ -12890,17 +12483,157 @@ canvas {
   border-color: #2f353a;
 }
 
-.switch-pill .switch-label, .switch-3d .switch-label,
-.switch-pill .switch-handle,
-.switch-3d .switch-handle {
+.switch-lg {
+  width: 48px;
+  height: 28px;
+}
+
+.switch-lg .switch-label {
+  font-size: 12px;
+}
+
+.switch-lg .switch-handle {
+  width: 24px;
+  height: 24px;
+}
+
+.switch-lg .switch-input:checked ~ .switch-handle {
+  left: 22px;
+}
+
+.switch-sm {
+  width: 32px;
+  height: 20px;
+}
+
+.switch-sm .switch-label {
+  font-size: 8px;
+}
+
+.switch-sm .switch-handle {
+  width: 16px;
+  height: 16px;
+}
+
+.switch-sm .switch-input:checked ~ .switch-handle {
+  left: 14px;
+}
+
+.switch-text {
+  width: 48px;
+  height: 24px;
+}
+
+.switch-text .switch-label {
+  font-size: 10px;
+}
+
+.switch-text .switch-handle {
+  width: 20px;
+  height: 20px;
+}
+
+.switch-text .switch-input:checked ~ .switch-handle {
+  left: 26px;
+}
+
+.switch-text.switch-lg {
+  width: 56px;
+  height: 28px;
+}
+
+.switch-text.switch-lg .switch-label {
+  font-size: 12px;
+}
+
+.switch-text.switch-lg .switch-handle {
+  width: 24px;
+  height: 24px;
+}
+
+.switch-text.switch-lg .switch-input:checked ~ .switch-handle {
+  left: 30px;
+}
+
+.switch-text.switch-sm {
+  width: 40px;
+  height: 20px;
+}
+
+.switch-text.switch-sm .switch-label {
+  font-size: 8px;
+}
+
+.switch-text.switch-sm .switch-handle {
+  width: 16px;
+  height: 16px;
+}
+
+.switch-text.switch-sm .switch-input:checked ~ .switch-handle {
+  left: 22px;
+}
+
+.switch-3d .switch-label {
+  background-color: #f0f3f5;
   border-radius: 50em;
 }
 
-.switch-pill .switch-label::before, .switch-3d .switch-label::before {
+.switch-3d .switch-handle {
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: 50em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.switch-3d.switch-lg {
+  width: 56px;
+  height: 28px;
+}
+
+.switch-3d.switch-lg .switch-label {
+  font-size: 12px;
+}
+
+.switch-3d.switch-lg .switch-handle {
+  width: 28px;
+  height: 28px;
+}
+
+.switch-3d.switch-lg .switch-input:checked ~ .switch-handle {
+  left: 28px;
+}
+
+.switch-3d.switch-sm {
+  width: 40px;
+  height: 20px;
+}
+
+.switch-3d.switch-sm .switch-label {
+  font-size: 8px;
+}
+
+.switch-3d.switch-sm .switch-handle {
+  width: 20px;
+  height: 20px;
+}
+
+.switch-3d.switch-sm .switch-input:checked ~ .switch-handle {
+  left: 20px;
+}
+
+.switch-pill .switch-label,
+.switch-pill .switch-handle {
+  border-radius: 50em;
+}
+
+.switch-pill .switch-label::before {
   right: 2px;
 }
 
-.switch-pill .switch-label::after, .switch-3d .switch-label::after {
+.switch-pill .switch-label::after {
   left: 2px;
 }
 
