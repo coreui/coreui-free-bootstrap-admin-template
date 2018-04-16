@@ -19,6 +19,12 @@ const originalDocument = `<!DOCTYPE html>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <div class="avatar float-right">
+      <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+    </div>
+    <div class="avatar float-right">
+      <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+    </div>
     <!-- Bootstrap and necessary plugins-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -26,6 +32,10 @@ const originalDocument = `<!DOCTYPE html>
     <script src="node_modules/pace-progress/pace.min.js"></script>
     <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
     <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+    <script src="js/charts.js"></script>
   </body>
 </html>`;
 
@@ -38,7 +48,10 @@ const vendorReferenceList = [
   'node_modules/bootstrap/dist/js/bootstrap.min.js',
   'node_modules/pace-progress/pace.min.js',
   'node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js',
-  'node_modules/@coreui/coreui/dist/js/coreui.min.js'];
+  'node_modules/@coreui/coreui/dist/js/coreui.min.js',
+  'node_modules/chart.js/dist/Chart.min.js',
+  'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js'];
+
 
 const distributionDocument = `<!DOCTYPE html>
 <html lang="en">
@@ -58,6 +71,12 @@ const distributionDocument = `<!DOCTYPE html>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <div class="avatar float-right">
+      <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+    </div>
+    <div class="avatar float-right">
+      <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+    </div>
     <!-- Bootstrap and necessary plugins-->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/popper.js/dist/umd/popper.min.js"></script>
@@ -65,6 +84,10 @@ const distributionDocument = `<!DOCTYPE html>
     <script src="~/lib/pace-progress/pace.min.js"></script>
     <script src="~/lib/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
     <script src="~/lib/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="~/lib/chart.js/dist/Chart.min.js"></script>
+    <script src="~/lib/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+    <script src="js/charts.js"></script>
   </body>
 </html>`;
 
