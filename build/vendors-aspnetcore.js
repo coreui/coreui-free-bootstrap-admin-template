@@ -2,21 +2,24 @@
 
 'use strict'
 
-const distributionPrefix = '~/';
-const distributionRoot = 'lib';
+const distPrefix = '~/';
+const sourceFolders = 'node_modules|css|img|js';
+const distFolders = 'lib|css|images|js';
+const vendorRoot = 'lib';
 
 // from https://stackoverflow.com/questions/171480/regex-grabbing-values-between-quotation-marks
-const regEx = /(["'])node_modules.*?\1/ig;
+const vendorRegEx = /(["'])node_modules.*?\1/ig;
+const folderRegEx = new RegExp(`(["'])(${sourceFolders}).*?\\1`, 'i');
 
 const getVendorReferences = (stringData) => {
-  if (stringData.search(regEx) === -1) {
+  if (stringData.search(vendorRegEx) === -1) {
     return [];
   }
 
   let match;
   let references = [];
 
-  while ((match = regEx.exec(stringData)) !== null) {
+  while ((match = vendorRegEx.exec(stringData)) !== null) {
     references.push(match[0].substr(1, match[0].length - 2));
   }
 
@@ -28,12 +31,12 @@ const getDistributionDocument = (document) => {
 
   const replaceReference = (match) => {
     let sourceReference = match.substr(1, match.length - 2);
-    let destReference = sourceReference.replace(/node_modules/i, distributionRoot);
+    let destReference = sourceReference.replace(/node_modules/i, vendorRoot);
 
-    return `"${distributionPrefix}${destReference}"`;
+    return `"${distPrefix}${destReference}"`;
   };
 
-  let preparedDocument = document.replace(regEx, replaceReference)
+  let preparedDocument = document.replace(vendorRegEx, replaceReference)
 
   return {
     distributionDocument: preparedDocument,
