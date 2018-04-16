@@ -26,7 +26,7 @@ const getVendorReferences = (htmlText) => {
   return references;
 };
 
-const getDistributionDocument = (document) => {
+const getDistributionDocument = (htmlText) => {
 
   const replaceReference = (match) => {
     let sourceReference = match.substr(1, match.length - 2);
@@ -35,7 +35,7 @@ const getDistributionDocument = (document) => {
     return `"${distPrefix}${destReference}"`;
   };
 
-  return document.replace(vendorRegEx, replaceReference)
+  return htmlText.replace(vendorRegEx, replaceReference)
 };
 
 module.exports = {
