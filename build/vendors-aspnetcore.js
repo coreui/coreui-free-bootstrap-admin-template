@@ -11,15 +11,15 @@ const vendorRoot = 'lib';
 const vendorRegEx = /(["'])node_modules.*?\1/ig;
 const folderRegEx = new RegExp(`(["'])(${sourceFolders}).*?\\1`, 'i');
 
-const getVendorReferences = (stringData) => {
-  if (stringData.search(vendorRegEx) === -1) {
+const getVendorReferences = (htmlText) => {
+  if (htmlText.search(vendorRegEx) === -1) {
     return [];
   }
 
   let match;
   let references = [];
 
-  while ((match = vendorRegEx.exec(stringData)) !== null) {
+  while ((match = vendorRegEx.exec(htmlText)) !== null) {
     references.push(match[0].substr(1, match[0].length - 2));
   }
 
@@ -27,7 +27,6 @@ const getVendorReferences = (stringData) => {
 };
 
 const getDistributionDocument = (document) => {
-  let vendorReferences = getVendorReferences(document);
 
   const replaceReference = (match) => {
     let sourceReference = match.substr(1, match.length - 2);
@@ -36,12 +35,7 @@ const getDistributionDocument = (document) => {
     return `"${distPrefix}${destReference}"`;
   };
 
-  let preparedDocument = document.replace(vendorRegEx, replaceReference)
-
-  return {
-    distributionDocument: preparedDocument,
-    sourceReferences: vendorReferences
-  };
+  return document.replace(vendorRegEx, replaceReference)
 };
 
 module.exports = {
