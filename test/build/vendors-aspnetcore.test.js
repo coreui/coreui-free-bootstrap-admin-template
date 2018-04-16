@@ -105,7 +105,6 @@ describe('getDistributionDocument', () => {
   it('Should change node_modules references to distribution root', () => {
     let result = vendors.getDistributionDocument(originalDocument);
 
-    result.distributionDocument.should.be.equal(distributionDocument);
-    result.sourceReferences.should.be.eql(vendorReferenceList);
+    result.should.be.equal(distributionDocument);
   });
 });
