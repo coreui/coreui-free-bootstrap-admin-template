@@ -8,8 +8,8 @@ const distFolders = 'lib|css|images|js';
 const vendorRoot = 'lib';
 
 // from https://stackoverflow.com/questions/171480/regex-grabbing-values-between-quotation-marks
-const vendorRegEx = /(["'])node_modules.*?\1/ig;
-const folderRegEx = new RegExp(`(["'])(${sourceFolders}).*?\\1`, 'i');
+const vendorRegEx = /(["'])node_modules\/.*?\1/ig;
+const folderRegEx = new RegExp(`(["'])(${sourceFolders})/.*?\\1`, 'i');
 
 const getVendorReferences = (htmlText) => {
   if (htmlText.search(vendorRegEx) === -1) {
