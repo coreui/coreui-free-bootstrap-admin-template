@@ -30,10 +30,9 @@ describe('replaceReference', () => {
 
 });
 
-// describe('getDistributionDocument', () => {
-//   it('Should change node_modules references to distribution root', () => {
-//     let result = vendors.getDistributionDocument(testData.originalDocument);
-
-//     result.should.be.equal(testData.distributionDocument);
-//   });
-// });
+describe('getDistributionDocument', () => {
+  it('Should change node_modules references to distribution root', () => {
+    let result = vendors.getDistributionDocument(testData.originalDocument);
+    result.should.be.equal(testData.distributionDocument);
+  });
+});
