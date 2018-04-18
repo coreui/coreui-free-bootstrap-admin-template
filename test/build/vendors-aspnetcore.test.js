@@ -12,7 +12,7 @@ describe('getVendorReferences', () => {
   });
 });
 
-describe('replaceReference', () => {
+describe('getDistributionFolder', () => {
   let dataSet = [
     { input: '"node_modules/jquery/dist/jquery.min.js"', expected: '"~/lib/jquery/dist/jquery.min.js"' },
     { input: '\'NODE_MODULES/jquery/dist/jquery.min.js\'', expected: '"~/lib/jquery/dist/jquery.min.js"' },
@@ -23,7 +23,7 @@ describe('replaceReference', () => {
 
   dataSet.forEach(data => {
     it(`Should replace ${data.input} with ${data.expected}`, () => {
-      let result = vendors.replaceReference(data.input);
+      let result = vendors.getDistributionFolder(data.input);
       result.should.be.equal(data.expected);
     });
   });
