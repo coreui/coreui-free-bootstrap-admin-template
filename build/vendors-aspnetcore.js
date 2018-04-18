@@ -26,19 +26,19 @@ const getVendorReferences = (htmlText) => {
   return references;
 };
 
+const replaceReference = (match) => {
+  let sourceReference = match.substr(1, match.length - 2);
+  let destReference = sourceReference.replace(/node_modules/i, vendorRoot);
+
+  return `"${distPrefix}${destReference}"`;
+};
+
 const getDistributionDocument = (htmlText) => {
-
-  const replaceReference = (match) => {
-    let sourceReference = match.substr(1, match.length - 2);
-    let destReference = sourceReference.replace(/node_modules/i, vendorRoot);
-
-    return `"${distPrefix}${destReference}"`;
-  };
-
   return htmlText.replace(vendorRegEx, replaceReference)
 };
 
 module.exports = {
   getVendorReferences,
-  getDistributionDocument
+  getDistributionDocument,
+  replaceReference
 }

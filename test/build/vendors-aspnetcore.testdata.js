@@ -9,15 +9,28 @@ const originalDocument = `<!DOCTYPE html>
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
     <title>CoreUI Free Bootstrap Admin Template</title>
     <!-- Icons-->
+
+    <!-- TEST-CASE: paths to node_modules/... should change to ~/lib/... -->
     <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+
+    <!-- TEST-CASE: single quotes should change to double quotes -->
     <link href='node_modules/font-awesome/css/font-awesome.min.css' rel="stylesheet">
+
+    <!-- TEST-CASE: NODE_MODULES/ should be replaced too -->
     <link href='NODE_MODULES/simple-line-icons/css/simple-line-icons.css' rel="stylesheet">
+
     <!-- Main styles for this application-->
+
+    <!-- TEST-CASE: css/... should change to ~/css/... -->
     <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <div class="avatar float-right">
+
+      <!-- TEST-CASE: img-avatar should not change and img/... should change to ~/images/... -->
       <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+
     </div>
     <div class="avatar float-right">
       <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
@@ -32,7 +45,10 @@ const originalDocument = `<!DOCTYPE html>
     <!-- Plugins and scripts required by this view-->
     <script src="node_modules/chart.js/dist/Chart.min.js"></script>
     <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+
+    <!-- TEST-CASE: js/ should change to ~/js/... -->
     <script src="js/charts.js"></script>
+
   </body>
 </html>`;
 
@@ -60,18 +76,31 @@ const distributionDocument = `<!DOCTYPE html>
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
     <title>CoreUI Free Bootstrap Admin Template</title>
     <!-- Icons-->
+
+    <!-- TEST-CASE: paths to node_modules/... should change to ~/lib/... -->
     <link href="~/lib/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+
+    <!-- TEST-CASE: single quotes should change to double quotes -->
     <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- TEST-CASE: NODE_MODULES/ should be replaced too -->
     <link href="~/lib/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
     <!-- Main styles for this application-->
-    <link href="css/style.css" rel="stylesheet">
+
+    <!-- TEST-CASE: css/... should change to ~/css/... -->
+    <link href="~/css/style.css" rel="stylesheet">
+
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <div class="avatar float-right">
-      <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+
+      <!-- TEST-CASE: img-avatar should not change and img/... should change to ~/images/... -->
+      <img class="img-avatar" src="~/images/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+
     </div>
     <div class="avatar float-right">
-      <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+      <img class="img-avatar" src="~/images/avatars/4.jpg" alt="admin@bootstrapmaster.com">
     </div>
     <!-- Bootstrap and necessary plugins-->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -83,7 +112,10 @@ const distributionDocument = `<!DOCTYPE html>
     <!-- Plugins and scripts required by this view-->
     <script src="~/lib/chart.js/dist/Chart.min.js"></script>
     <script src="~/lib/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
-    <script src="js/charts.js"></script>
+
+    <!-- TEST-CASE: js/ should change to ~/js/... -->
+    <script src="~/js/charts.js"></script>
+
   </body>
 </html>`;
 
