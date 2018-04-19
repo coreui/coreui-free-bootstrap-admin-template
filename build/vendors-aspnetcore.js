@@ -53,7 +53,7 @@ const getDistributionDocument = (html) => {
   return html.replace(folderRegEx, getDistributionFolder)
 };
 
-const copyVendorFiles = (fileList) => {
+const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
 
 };
 

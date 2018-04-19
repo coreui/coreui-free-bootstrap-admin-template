@@ -39,7 +39,10 @@ describe('getDistributionDocument', () => {
 });
 
 describe('copyVendorFiles', () => {
-  vendors.copyVendorFiles(testData.copyVendorFiles, vendors.libFolder);
+  let sourceFolder = 'test-fs/source/';
+  let destFolder = `test-fs/dest/${vendors.libFolder}/`;
+
+  vendors.copyVendorFiles(sourceFolder, testData.copyVendorFiles, destFolder);
 
   it('Should copy all files and create the folder tree', () => {
     let destFiles = testData.vendorFiles.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
