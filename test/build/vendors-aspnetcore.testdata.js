@@ -63,7 +63,15 @@ const vendorReferenceList = [
   'node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js',
   'node_modules/@coreui/coreui/dist/js/coreui.min.js',
   'node_modules/chart.js/dist/Chart.min.js',
-  'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js'];
+  'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js'
+];
+
+const vendorFiles = [
+  'node_modules/flag-icon-css/css/flag-icon.min.css',
+  'node_modules/font-awesome/css/font-awesome.min.css',
+  'node_modules/simple-line-icons/css/simple-line-icons.css',
+  'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js'
+];
 
 const distributionDocument = `<!DOCTYPE html>
 <html lang="en">
@@ -122,5 +130,6 @@ const distributionDocument = `<!DOCTYPE html>
 module.exports = {
   originalDocument,
   vendorReferenceList,
-  distributionDocument
+  distributionDocument,
+  vendorFiles
 };

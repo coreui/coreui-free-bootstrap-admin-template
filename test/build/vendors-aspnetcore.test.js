@@ -1,6 +1,7 @@
 const should = require('should');
 const vendors = require('../../build/vendors-aspnetcore');
 const testData = require('./vendors-aspnetcore.testdata');
+const fs = require('fs');
 
 describe('getVendorReferences', () => {
   it('Should return an empty list when references don\'t exist', () => {
@@ -34,5 +35,17 @@ describe('getDistributionDocument', () => {
   it('Should change node_modules references to distribution root', () => {
     let result = vendors.getDistributionDocument(testData.originalDocument);
     result.should.be.equal(testData.distributionDocument);
+  });
+});
+
+describe('copyVendorFiles', () => {
+  vendors.copyVendorFiles(testData.copyVendorFiles, vendors.libFolder);
+
+  it('Should copy all files and create the folder tree', () => {
+    let destFiles = testData.vendorFiles.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
+
+    destFiles.forEach(file => {
+      fs.existsSync(file).should.be.true();
+    });
   });
 });

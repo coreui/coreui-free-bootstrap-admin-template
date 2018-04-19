@@ -6,8 +6,11 @@ const distPrefix = '~/';
 const sourceFolderString = 'node_modules|css|img|js';
 const distFolderString = 'lib|css|images|js';
 
-let sourceFolders = sourceFolderString.split('|');
-let distFolders = distFolderString.split('|');
+const sourceFolders = sourceFolderString.split('|');
+const distFolders = distFolderString.split('|');
+
+const vendorFolder = sourceFolders[0];
+const libFolder = distFolders[0];
 
 // from https://stackoverflow.com/questions/171480/regex-grabbing-values-between-quotation-marks
 // Matches node_modules only, to get list of files to copy from node_modules to distibution folder
@@ -50,8 +53,15 @@ const getDistributionDocument = (html) => {
   return html.replace(folderRegEx, getDistributionFolder)
 };
 
+const copyVendorFiles = (fileList) => {
+
+};
+
 module.exports = {
   getVendorReferences,
   getDistributionDocument,
-  getDistributionFolder
+  getDistributionFolder,
+  copyVendorFiles,
+  vendorFolder,
+  libFolder,
 }
