@@ -40,7 +40,7 @@ describe('getDistributionDocument', () => {
 
 describe('copyVendorFiles', () => {
   let sourceFolder = 'test-fs/source/';
-  let destFolder = `test-fs/dest/${vendors.libFolder}/`;
+  let destFolder = `test-fs/dest/`;
 
   vendors.copyVendorFiles(sourceFolder, testData.copyVendorFiles, destFolder);
 
@@ -48,7 +48,8 @@ describe('copyVendorFiles', () => {
     let destFiles = testData.vendorFiles.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
 
     destFiles.forEach(file => {
-      fs.existsSync(file).should.be.true();
+      let filename = (`${destFolder}${file}`);
+      fs.existsSync(filename).should.be.true(`No existe ${filename}!`);
     });
   });
 });
