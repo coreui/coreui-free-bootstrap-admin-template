@@ -38,13 +38,29 @@ describe('getDistributionDocument', () => {
   });
 });
 
-describe('copyVendorFiles', () => {
+describe('copyVendorFiles scenario', () => {
   let sourceFolder = 'test-fs/source/';
   let destFolder = `test-fs/dest/`;
 
-  vendors.copyVendorFiles(sourceFolder, testData.copyVendorFiles, destFolder);
+  let destFiles = testData.vendorFiles.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
 
-  it('Should copy all files and create the folder tree', () => {
+  it('Given that source files exist', () => {
+    testData.vendorFiles.forEach(file => {
+      let filename = (`${sourceFolder}${file}`);
+      fs.existsSync(filename).should.be.true(`Missing file: ${filename}!`);
+    });
+  });
+
+  it('And that destination files don\'t exist', () => {
+    destFiles.forEach(file => {
+      let filename = (`${destFolder}${file}`);
+      fs.existsSync(filename).should.not.be.true(`Existing file: ${filename}!`);
+    });
+  });
+
+  it('copyVendorFiles should copy all files and create the folder tree', () => {
+    vendors.copyVendorFiles(sourceFolder, testData.copyVendorFiles, destFolder);
+
     let destFiles = testData.vendorFiles.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
 
     destFiles.forEach(file => {
