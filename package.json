@@ -41,6 +41,7 @@
   },
   "scripts": {
     "build": "npm-run-all build-clean build-copy build-vendors",
+    "build-aspnetcore": "npm-run-all build-clean build-copy",
     "build-clean": "rimraf dist",
     "build-copy": "copyfiles -a -e \"src/scss/**/*\" -u 1 \"src/**/*\" dist/",
     "build-vendors": "node build/vendors.js",
@@ -59,7 +60,9 @@
     "localhost-dist": "browser-sync start --server \"./dist\"",
     "release-version": "node build/change-version.js",
     "serve": "npm-run-all --parallel localhost watch-css watch-js",
-    "test": "mocha \"test/**/*.test.js\"",
+    "test": "npm-run-all test-clean test-run",
+    "test-clean": "rimraf test-fs/dest",
+    "test-run": "mocha \"test/**/*.test.js\"",
     "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\"",
     "watch-js": "nodemon --watch src/js/src/ -x \"npm run js\""
   },
@@ -106,7 +109,7 @@
     "stylelint-scss": "^3.0.0"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=8.11.1"
   },
   "browserslist": [
     "last 1 major version",
