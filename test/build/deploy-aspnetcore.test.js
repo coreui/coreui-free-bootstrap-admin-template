@@ -1,7 +1,9 @@
+const fs = require('fs');
+const path = require('path');
 const should = require('should');
+const mkdirp = require('mkdirp');
 const vendors = require('../../build/deploy-aspnetcore');
 const testData = require('./deploy-aspnetcore.testdata');
-const fs = require('fs');
 
 describe('getVendorReferences', () => {
   it('Should return an empty list when references don\'t exist', () => {
@@ -58,7 +60,7 @@ describe('copyVendorFiles scenario', () => {
     });
   });
 
-  it('copyVendorFiles should copy all files and create the folder tree', () => {
+  it('copyVendorFiles should copy all files in list and create the destination folder tree', () => {
     vendors.copyVendorFiles(sourceFolder, testData.vendorFiles, destFolder);
 
     let destFiles = testData.vendorFiles.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
@@ -90,5 +92,25 @@ describe('walkSync', () => {
     let files = vendors.walkSync('test-fs/source/src', '.html');
       files.should.be.deepEqual(sourceFiles.filter(file => file.endsWith('.html')));
     files.s
+  });
+});
+
+describe('generateRazorFiles', () => {
+  let sourceFile = 'test-fs/source/src/test-document.html';
+  let destFile = 'test-fs/dest/test-document.html';
+  let destFolder = path.dirname(destFile);
+
+  mkdirp.sync(destFolder);
+  fs.copyFileSync(sourceFile, destFile);
+
+  it('Should generate .cshtml files for all .html files in destination', () => {
+    htmlFiles = vendors.walkSync(destFolder, '.html');
+
+    htmlFiles.forEach(htmlFile => {
+      vendors.generateRazorView(htmlFile);
+
+      let cshtmlFile = htmlFile.replace('.html', '.cshtml');
+      fs.existsSync(cshtmlFile).should.be.true(`Missing file: ${cshtmlFile}`);
+    });
   });
 });

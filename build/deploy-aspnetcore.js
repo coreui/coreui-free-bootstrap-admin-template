@@ -5,13 +5,13 @@ const path = require('path');
 const mkdirp = require('mkdirp');
 
 const distPrefix = '~/';
-const sourceFolderString = 'node_modules|css|img|js';
-const distFolderString = 'lib|css|images|js';
+const sourceFolderString = 'node_modules|vendors|css|img|js';
+const distFolderString = 'lib|vendors|css|images|js';
 
 const sourceFolders = sourceFolderString.split('|');
 const distFolders = distFolderString.split('|');
 
-const vendorFolder = sourceFolders[0];
+const vendorFolder = sourceFolders[0]; // expecting "node_modules" to be the first
 const libFolder = distFolders[0];
 
 // from https://stackoverflow.com/questions/171480/regex-grabbing-values-between-quotation-marks
@@ -77,6 +77,14 @@ const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
     });
 };
 
+const generateRazorView = (htmlFile) => {
+  let html = fs.readFileSync(htmlFile, 'utf8');
+  let cshtml = getDistributionDocument(html);
+  let cshtmlFile = htmlFile.replace('.html', '.cshtml');
+
+  fs.writeFileSync(cshtmlFile, cshtml);
+};
+
 module.exports = {
   walkSync,
   getVendorReferences,
@@ -85,4 +93,5 @@ module.exports = {
   copyVendorFiles,
   vendorFolder,
   libFolder,
+  generateRazorView
 }
