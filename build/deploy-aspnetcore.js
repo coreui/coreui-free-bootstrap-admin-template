@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 'use strict'
 
 const fs = require('fs');
@@ -22,6 +20,17 @@ const vendorRegEx = /(["'])node_modules\/.*?\1/ig;
 
 // Matches all source folders
 const folderRegEx = new RegExp(`(["'])(${sourceFolderString})/.*?\\1`, 'ig');
+
+// Adapted from vendors.js
+const walkSync = (dir, fileExt = '*', filelist = []) => {
+  dir = dir.replace(/\\/g, '/');
+  fs.readdirSync(dir).filter(f => fileExt === '*' ? true : path.extname(f) === fileExt).forEach(file => {
+    filelist = fs.statSync(path.join(dir, file)).isDirectory()
+      ? walkSync(path.join(dir, file), fileExt, filelist)
+      : filelist.concat(path.posix.join(dir, file));
+  });
+  return filelist;
+}
 
 const getVendorReferences = (html) => {
   if (html.search(vendorRegEx) === -1) {
@@ -69,6 +78,7 @@ const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
 };
 
 module.exports = {
+  walkSync,
   getVendorReferences,
   getDistributionDocument,
   getDistributionFolder,

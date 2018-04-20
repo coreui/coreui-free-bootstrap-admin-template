@@ -5,11 +5,11 @@ const fs = require('fs');
 
 describe('getVendorReferences', () => {
   it('Should return an empty list when references don\'t exist', () => {
-    vendors.getVendorReferences('').should.be.eql([]);
+    vendors.getVendorReferences('').should.be.deepEqual([]);
   });
 
   it('Should return vendor reference list when references exist', () => {
-    vendors.getVendorReferences(testData.originalDocument).should.be.eql(testData.vendorReferenceList);
+    vendors.getVendorReferences(testData.originalDocument).should.be.deepEqual(testData.vendorReferenceList);
   });
 });
 
@@ -67,5 +67,28 @@ describe('copyVendorFiles scenario', () => {
       let filename = (`${destFolder}${file}`);
       fs.existsSync(filename).should.be.true(`No existe ${filename}!`);
     });
+  });
+});
+
+describe('walkSync', () => {
+
+  let sourceFiles = [
+    'test-fs/source/src/css/style.css',
+    'test-fs/source/src/img/avatars/4.jpg',
+    'test-fs/source/src/img/avatars/7.jpg',
+    'test-fs/source/src/js/main.js',
+    'test-fs/source/src/test-document.html',
+  ];
+
+  it('Should find all files in test-fs/source/src folder', () => {
+    let files = vendors.walkSync('test-fs/source/src');
+      files.should.be.deepEqual(sourceFiles);
+    files.s
+  });
+
+  it('Should find all html in test-fs/source/src folder', () => {
+    let files = vendors.walkSync('test-fs/source/src', '.html');
+      files.should.be.deepEqual(sourceFiles.filter(file => file.endsWith('.html')));
+    files.s
   });
 });
