@@ -86,7 +86,7 @@ describe('walkSync', () => {
     files.s
   });
 
-  it('Should find all html in test-fs/source/src folder', () => {
+  it('Should find all html files in test-fs/source/src folder', () => {
     let files = vendors.walkSync('test-fs/source/src', '.html');
       files.should.be.deepEqual(sourceFiles.filter(file => file.endsWith('.html')));
     files.s

@@ -41,6 +41,7 @@
   },
   "scripts": {
     "build": "npm-run-all build-clean build-copy build-vendors",
+    "build-aspnetcore": "npm-run-all build-clean build-copy",
     "build-clean": "rimraf dist",
     "build-copy": "copyfiles -a -e \"src/scss/**/*\" -u 1 \"src/**/*\" dist/",
     "build-vendors": "node build/vendors.js",
