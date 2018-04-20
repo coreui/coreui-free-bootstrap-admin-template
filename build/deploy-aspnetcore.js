@@ -62,8 +62,8 @@ const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
       let sourceFile = path.join(sourceFolder, file);
       let libFile = file.replace(vendorFolder, libFolder);
       let destFile = path.join(destFolder, libFile);
-      mkdirp.sync(path.dirname(destFile));
 
+      mkdirp.sync(path.dirname(destFile));
       fs.copyFileSync(sourceFile, destFile)
     });
 };

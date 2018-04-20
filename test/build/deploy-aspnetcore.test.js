@@ -1,6 +1,6 @@
 const should = require('should');
-const vendors = require('../../build/vendors-aspnetcore');
-const testData = require('./vendors-aspnetcore.testdata');
+const vendors = require('../../build/deploy-aspnetcore');
+const testData = require('./deploy-aspnetcore.testdata');
 const fs = require('fs');
 
 describe('getVendorReferences', () => {
