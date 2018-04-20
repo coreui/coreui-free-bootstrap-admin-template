@@ -2,6 +2,10 @@
 
 'use strict'
 
+const fs = require('fs');
+const path = require('path');
+const mkdirp = require('mkdirp');
+
 const distPrefix = '~/';
 const sourceFolderString = 'node_modules|css|img|js';
 const distFolderString = 'lib|css|images|js';
@@ -54,7 +58,14 @@ const getDistributionDocument = (html) => {
 };
 
 const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
+  fileList.forEach(file => {
+      let sourceFile = path.join(sourceFolder, file);
+      let libFile = file.replace(vendorFolder, libFolder);
+      let destFile = path.join(destFolder, libFile);
+      mkdirp.sync(path.dirname(destFile));
 
+      fs.copyFileSync(sourceFile, destFile)
+    });
 };
 
 module.exports = {

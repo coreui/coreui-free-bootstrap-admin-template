@@ -59,7 +59,7 @@ describe('copyVendorFiles scenario', () => {
   });
 
   it('copyVendorFiles should copy all files and create the folder tree', () => {
-    vendors.copyVendorFiles(sourceFolder, testData.copyVendorFiles, destFolder);
+    vendors.copyVendorFiles(sourceFolder, testData.vendorFiles, destFolder);
 
     let destFiles = testData.vendorFiles.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
 
