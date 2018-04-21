@@ -66,7 +66,7 @@ const vendorReferenceList = [
   'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js'
 ];
 
-const vendorFiles = [
+const vendorReferences = [
   'node_modules/flag-icon-css/css/flag-icon.min.css',
   'node_modules/font-awesome/css/font-awesome.min.css',
   'node_modules/simple-line-icons/css/simple-line-icons.css',
@@ -131,5 +131,5 @@ module.exports = {
   originalDocument,
   vendorReferenceList,
   distributionDocument,
-  vendorFiles
+  vendorReferences
 };

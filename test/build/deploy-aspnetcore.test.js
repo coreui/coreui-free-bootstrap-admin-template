@@ -44,10 +44,10 @@ describe('copyVendorFiles scenario', () => {
   let sourceFolder = 'test-fs/source/';
   let destFolder = `test-fs/dest/`;
 
-  let destFiles = testData.vendorFiles.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
+  let destFiles = testData.vendorReferences.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
 
   it('Given that source files exist', () => {
-    testData.vendorFiles.forEach(file => {
+    testData.vendorReferences.forEach(file => {
       let filename = (`${sourceFolder}${file}`);
       fs.existsSync(filename).should.be.true(`Missing file: ${filename}!`);
     });
@@ -61,9 +61,9 @@ describe('copyVendorFiles scenario', () => {
   });
 
   it('copyVendorFiles should copy all files in list and create the destination folder tree', () => {
-    vendors.copyVendorFiles(sourceFolder, testData.vendorFiles, destFolder);
+    vendors.copyVendorFiles(sourceFolder, testData.vendorReferences, destFolder);
 
-    let destFiles = testData.vendorFiles.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
+    let destFiles = testData.vendorReferences.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
 
     destFiles.forEach(file => {
       let filename = (`${destFolder}${file}`);
