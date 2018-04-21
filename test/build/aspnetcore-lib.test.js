@@ -17,26 +17,30 @@ describe('getVendorReferences', () => {
 
 describe('getDistributionFolder', () => {
   let dataSet = [
-    { input: '"node_modules/jquery/dist/jquery.min.js"', expected: '"~/lib/jquery/dist/jquery.min.js"' },
-    { input: '\'NODE_MODULES/jquery/dist/jquery.min.js\'', expected: '"~/lib/jquery/dist/jquery.min.js"' },
-    { input: '"css/style.css"', expected: '"~/css/style.css"' },
-    { input: '"js/charts.js"', expected: '"~/js/charts.js"' },
-    { input: '"img/avatars/7.jpg"', expected: '"~/images/avatars/7.jpg"' },
+    { input: '"node_modules/jquery/dist/jquery.min.js"', expected: 'lib/jquery/dist/jquery.min.js' },
+    { input: '\'NODE_MODULES/jquery/dist/jquery.min.js\'', expected: 'lib/jquery/dist/jquery.min.js' },
+    { input: '"css/style.css"', expected: 'css/style.css' },
+    { input: '"js/charts.js"', expected: 'js/charts.js' },
+    { input: '"img/avatars/7.jpg"', expected: 'images/avatars/7.jpg' },
   ];
 
   dataSet.forEach(data => {
     it(`Should replace ${data.input} with ${data.expected}`, () => {
-      let result = lib.getDistributionFolder(data.input);
+      let result = lib.getDistributionFolder(data.input, 'cshtml');
       result.should.be.equal(data.expected);
     });
   });
 
 });
 
-describe('getDistributionDocument', () => {
-  it('Should change node_modules references to distribution root', () => {
-    let result = lib.getDistributionDocument(testData.originalDocument);
-    result.should.be.equal(testData.distributionDocument);
+describe('generateDistDocument', () => {
+  it('Should generate a functional html file changing folder references as configured, in distribution', () => {
+    let result = lib.generateDistDocument(testData.originalDocument, 'html');
+    result.should.be.equal(testData.htmlDocument);
+  });
+  it('Should generate a functional Razor view changing folder references as configured, in distribution', () => {
+    let result = lib.generateDistDocument(testData.originalDocument, 'cshtml');
+    result.should.be.equal(testData.cshtmlDocument);
   });
 });
 

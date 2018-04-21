@@ -13,6 +13,7 @@ const main = () => {
   let siteFiles = lib.getFolderTreeFiles(src);
   lib.copySiteFiles(src, siteFiles, dest);
   lib.generateRazorViews(dest);
+  lib.generateDistHtmlFiles(dest);
 
   let htmlFiles = lib.getFolderTreeFiles(src, '.html');
   let vendorFiles = lib.getAllVendorReferences(htmlFiles);

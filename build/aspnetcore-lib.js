@@ -59,18 +59,25 @@ const getDistributionFolder = (match) => {
 
   let destReference = sourceReference.replace(new RegExp(`${sourceFolder}`, 'i') , destFolder);
 
-  return `"${distPrefix}${destReference}"`;
+  return `${destReference}`;
 };
 
 // Gets the content with all vendor references replaced for distribution references
-const getDistributionDocument = (html) => {
+const generateDistDocument = (html, type) => {
+
+  // Adds the "~/" prefix when it's a cshtml file
+  const getFolder = (match) => {
+    let folder = getDistributionFolder(match);
+    return type === 'cshtml' ? `"${distPrefix}${folder}"` : `"${folder}"`
+  };
+
   // Replace each match, because folderRegEx is "global" (/g)
-  return html.replace(folderRegEx, getDistributionFolder);
+  return html.replace(folderRegEx, getFolder);
 };
 
 // Copies the referenced files to the distribution folder
 const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
-  console.log(`Current folder: ${process.cwd()}`);
+  console.log(`    Current folder: ${process.cwd()}`);
 
   fileList.forEach(file => {
     let sourceFile = path.join(sourceFolder, file);
@@ -83,19 +90,19 @@ const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
     } else {
       console.log(`Missing file: ${sourceFile}`);
     }
-
   });
 };
 
 // Generates the equivalent Razor view for the html file
 const generateRazorView = (htmlFile) => {
   let html = fs.readFileSync(htmlFile, 'utf8');
-  let cshtml = getDistributionDocument(html);
+  let cshtml = generateDistDocument(html, 'cshtml');
   let cshtmlFile = htmlFile.replace('.html', '.cshtml');
 
   fs.writeFileSync(cshtmlFile, cshtml);
 };
 
+// Generates Razor views for all html files in the folder tree
 const generateRazorViews = (folder) => {
   let htmlFiles = getFolderTreeFiles(folder, '.html');
 
@@ -104,6 +111,24 @@ const generateRazorViews = (folder) => {
   });
 };
 
+// Generates the distribution html file
+const generateDistHtmlFile = (htmlFile) => {
+  let html = fs.readFileSync(htmlFile, 'utf8');
+  let cshtml = generateDistDocument(html, 'html');
+
+  fs.writeFileSync(htmlFile, cshtml);
+};
+
+// Generates the distribution html for all html files in the folder tree
+const generateDistHtmlFiles = (folder) => {
+  let htmlFiles = getFolderTreeFiles(folder, '.html');
+
+  htmlFiles.forEach(htmlFile => {
+    generateDistHtmlFile(htmlFile);
+  });
+};
+
+// Gets all vendors references (node_modules) from the html content
 const getAllVendorReferences = (htmlFiles) => {
   let vendorFiles = [];
 
@@ -140,19 +165,21 @@ const copySiteFiles = (sourceFolder, fileList, destFolder) => {
     let destFile = path.join(destFolder, distFolder, baseFile);
 
     mkdirp.sync(path.dirname(destFile));
-    fs.copyFileSync(file, destFile)
+
+    fs.copyFileSync(file, destFile);
   });
 };
 
 module.exports = {
   getFolderTreeFiles,
   getVendorReferences,
-  getDistributionDocument,
+  generateDistDocument,
   getDistributionFolder,
   copyVendorFiles,
   vendorFolder,
   libFolder,
   generateRazorViews,
+  generateDistHtmlFiles,
   getAllVendorReferences,
   copySiteFiles
 }
