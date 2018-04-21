@@ -2,16 +2,16 @@ const fs = require('fs');
 const path = require('path');
 const should = require('should');
 const mkdirp = require('mkdirp');
-const vendors = require('../../build/aspnetcore-lib');
+const lib = require('../../build/aspnetcore-lib');
 const testData = require('./aspnetcore-lib.testdata');
 
 describe('getVendorReferences', () => {
   it('Should return an empty list when references don\'t exist', () => {
-    vendors.getVendorReferences('').should.be.deepEqual([]);
+    lib.getVendorReferences('').should.be.deepEqual([]);
   });
 
   it('Should return vendor reference list when references exist', () => {
-    vendors.getVendorReferences(testData.originalDocument).should.be.deepEqual(testData.vendorReferenceList);
+    lib.getVendorReferences(testData.originalDocument).should.be.deepEqual(testData.vendorReferenceList);
   });
 });
 
@@ -26,7 +26,7 @@ describe('getDistributionFolder', () => {
 
   dataSet.forEach(data => {
     it(`Should replace ${data.input} with ${data.expected}`, () => {
-      let result = vendors.getDistributionFolder(data.input);
+      let result = lib.getDistributionFolder(data.input);
       result.should.be.equal(data.expected);
     });
   });
@@ -35,7 +35,7 @@ describe('getDistributionFolder', () => {
 
 describe('getDistributionDocument', () => {
   it('Should change node_modules references to distribution root', () => {
-    let result = vendors.getDistributionDocument(testData.originalDocument);
+    let result = lib.getDistributionDocument(testData.originalDocument);
     result.should.be.equal(testData.distributionDocument);
   });
 });
@@ -44,7 +44,7 @@ describe('copyVendorFiles scenario', () => {
   let sourceFolder = 'test-fs/source/';
   let destFolder = `test-fs/dest/`;
 
-  let destFiles = testData.vendorReferences.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
+  let destFiles = testData.vendorReferences.map(file => file.replace(lib.vendorFolder, lib.libFolder));
 
   it('Given that source files exist', () => {
     testData.vendorReferences.forEach(file => {
@@ -61,9 +61,9 @@ describe('copyVendorFiles scenario', () => {
   });
 
   it('copyVendorFiles should copy all files in list and create the destination folder tree', () => {
-    vendors.copyVendorFiles(sourceFolder, testData.vendorReferences, destFolder);
+    lib.copyVendorFiles(sourceFolder, testData.vendorReferences, destFolder);
 
-    let destFiles = testData.vendorReferences.map(file => file.replace(vendors.vendorFolder, vendors.libFolder));
+    let destFiles = testData.vendorReferences.map(file => file.replace(lib.vendorFolder, lib.libFolder));
 
     destFiles.forEach(file => {
       let filename = (`${destFolder}${file}`);
@@ -84,20 +84,20 @@ describe('walkSync', () => {
   ];
 
   it('Should find all files in test-fs/source/src folder', () => {
-    let files = vendors.walkSync('test-fs/source/src');
+    let files = lib.walkSync('test-fs/source/src');
     files.should.be.deepEqual(sourceFiles);
   });
 
   it('Should find all html files in test-fs/source/src folder', () => {
-    let files = vendors.walkSync('test-fs/source/src', '.html');
+    let files = lib.walkSync('test-fs/source/src', '.html');
     files.should.be.deepEqual(sourceFiles.filter(file => file.endsWith('.html')));
   });
 });
 
 describe('generateRazorViews', () => {
-  let htmlFiles = vendors.walkSync('test-fs/source/src', '.html');
+  let htmlFiles = lib.walkSync('test-fs/source/src', '.html');
 
-  vendors.copySiteFiles('test-fs/source/src', htmlFiles, 'test-fs/dest');
+  lib.copySiteFiles('test-fs/source/src', htmlFiles, 'test-fs/dest');
 
   it('Should generate .cshtml files for all .html files in destination', () => {
     let folder = 'test-fs/dest/';
@@ -106,16 +106,16 @@ describe('generateRazorViews', () => {
       'test-fs/dest/test-document.cshtml',
     ];
 
-    vendors.generateRazorViews(folder);
-    cshtmlFiles = vendors.walkSync('test-fs/dest', '.cshtml');
+    lib.generateRazorViews(folder);
+    cshtmlFiles = lib.walkSync('test-fs/dest', '.cshtml');
     cshtmlFiles.should.be.deepEqual(expectedFiles);
   });
 });
 
 describe('getAllVendorFiles', () => {
   let folder = 'test-fs/source/src/'; //path.dirname(destFile);
-  let htmlFiles = vendors.walkSync(folder, '.html');
-  let vendorFiles = vendors.getAllVendorReferences(htmlFiles);
+  let htmlFiles = lib.walkSync(folder, '.html');
+  let vendorFiles = lib.getAllVendorReferences(htmlFiles);
 
   let expectedVendorFiles = [
     'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js',
@@ -144,11 +144,11 @@ describe('copySiteFiles', () => {
   ];
 
   it('Should copy source files from source folders to destination folders', () => {
-    let sourceFileList = vendors.walkSync('test-fs/source').filter(f => !f.startsWith('test-fs/source/node_modules/'))
+    let sourceFileList = lib.walkSync('test-fs/source').filter(f => !f.startsWith('test-fs/source/node_modules/'))
 
-    vendors.copySiteFiles('test-fs/source/src', sourceFileList, 'test-fs/dest');
+    lib.copySiteFiles('test-fs/source/src', sourceFileList, 'test-fs/dest');
 
-    let destFileList = vendors.walkSync('test-fs/dest').filter(f => !f.startsWith('test-fs/dest/lib/') && !f.endsWith('.cshtml'));
+    let destFileList = lib.walkSync('test-fs/dest').filter(f => !f.startsWith('test-fs/dest/lib/') && !f.endsWith('.cshtml'));
     destFileList.should.be.deepEqual(expectedFiles);
   });
 });

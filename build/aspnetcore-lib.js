@@ -67,13 +67,20 @@ const getDistributionDocument = (html) => {
 };
 
 const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
+  console.log(`Current folder: ${process.cwd()}`);
+
   fileList.forEach(file => {
     let sourceFile = path.join(sourceFolder, file);
     let libFile = file.replace(vendorFolder, libFolder);
     let destFile = path.join(destFolder, libFile);
 
-    mkdirp.sync(path.dirname(destFile));
-    fs.copyFileSync(sourceFile, destFile)
+    if (fs.existsSync(sourceFile)) {
+      mkdirp.sync(path.dirname(destFile));
+      fs.copyFileSync(sourceFile, destFile)
+    } else {
+      console.log(`Missing file: ${sourceFile}`)
+    }
+
   });
 };
 

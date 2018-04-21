@@ -42,7 +42,7 @@
   "scripts": {
     "build": "npm-run-all build-clean build-copy build-vendors",
     "build-aspnetcore": "npm-run-all build-clean build-aspnetcore-deploy",
-    "build-aspnetcore-deploy": "node build/deploy-aspnetcore.js",
+    "build-aspnetcore-deploy": "node build/aspnetcore-deploy.js",
     "build-clean": "rimraf dist",
     "build-copy": "copyfiles -a -e \"src/scss/**/*\" -u 1 \"src/**/*\" dist/",
     "build-vendors": "node build/vendors.js",
