@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const should = require('should');
 const mkdirp = require('mkdirp');
-const vendors = require('../../build/deploy-aspnetcore');
-const testData = require('./deploy-aspnetcore.testdata');
+const vendors = require('../../build/aspnetcore-lib');
+const testData = require('./aspnetcore-lib.testdata');
 
 describe('getVendorReferences', () => {
   it('Should return an empty list when references don\'t exist', () => {
