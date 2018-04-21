@@ -79,38 +79,59 @@ describe('walkSync', () => {
     'test-fs/source/src/img/avatars/4.jpg',
     'test-fs/source/src/img/avatars/7.jpg',
     'test-fs/source/src/js/main.js',
+    'test-fs/source/src/test-blank.html',
     'test-fs/source/src/test-document.html',
   ];
 
   it('Should find all files in test-fs/source/src folder', () => {
     let files = vendors.walkSync('test-fs/source/src');
-      files.should.be.deepEqual(sourceFiles);
-    files.s
+    files.should.be.deepEqual(sourceFiles);
   });
 
   it('Should find all html files in test-fs/source/src folder', () => {
     let files = vendors.walkSync('test-fs/source/src', '.html');
-      files.should.be.deepEqual(sourceFiles.filter(file => file.endsWith('.html')));
-    files.s
+    files.should.be.deepEqual(sourceFiles.filter(file => file.endsWith('.html')));
   });
 });
 
-describe('generateRazorFiles', () => {
-  let sourceFile = 'test-fs/source/src/test-document.html';
-  let destFile = 'test-fs/dest/test-document.html';
-  let destFolder = path.dirname(destFile);
+describe('generateRazorViews', () => {
+  // let sourceFile = 'test-fs/source/src/test-document.html';
+  // let destFile = 'test-fs/dest/test-document.html';
+  let folder = 'test-fs/dest/'; //path.dirname(destFile);
 
-  mkdirp.sync(destFolder);
-  fs.copyFileSync(sourceFile, destFile);
+  // mkdirp.sync(destFolder);
+  // fs.copyFileSync(sourceFile, destFile);
 
   it('Should generate .cshtml files for all .html files in destination', () => {
-    htmlFiles = vendors.walkSync(destFolder, '.html');
+    let folder = 'test-fs/dest/';
+    expectedFiles = [
+      'test-fs/dest/test-blank.cshtml',
+      'test-fs/dest/test-document.cshtml',
+    ];
 
-    htmlFiles.forEach(htmlFile => {
-      vendors.generateRazorView(htmlFile);
+    vendors.generateRazorViews(folder);
+    cshtmlFiles = vendors.walkSync('test-fs/dest', '.cshtml');
+    cshtmlFiles.should.be.deepEqual(expectedFiles);
+  });
+});
 
-      let cshtmlFile = htmlFile.replace('.html', '.cshtml');
-      fs.existsSync(cshtmlFile).should.be.true(`Missing file: ${cshtmlFile}`);
-    });
+describe('getAllVendorFiles', () => {
+  let folder = 'test-fs/source/src/'; //path.dirname(destFile);
+  let htmlFiles = vendors.walkSync(folder, '.html');
+  let vendorFiles = vendors.getAllVendorReferences(htmlFiles);
+
+  let expectedVendorFiles = [
+    'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js',
+    'node_modules/@coreui/coreui/dist/js/coreui.min.js',
+    'node_modules/chart.js/dist/Chart.min.js',
+    'node_modules/flag-icon-css/css/flag-icon.min.css',
+    'node_modules/font-awesome/css/font-awesome.min.css',
+    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/popper.js/dist/umd/popper.min.js',
+    'node_modules/simple-line-icons/css/simple-line-icons.css',
+  ];
+
+  it('Should get the list of all referenced vendor files in the folder tree', () => {
+    vendorFiles.should.be.deepEqual(expectedVendorFiles);
   });
 });

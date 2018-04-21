@@ -60,8 +60,9 @@
     "localhost-dist": "browser-sync start --server \"./dist\"",
     "release-version": "node build/change-version.js",
     "serve": "npm-run-all --parallel localhost watch-css watch-js",
-    "test": "npm-run-all test-clean test-run",
+    "test": "npm-run-all test-clean test-copy test-run",
     "test-clean": "rimraf test-fs/dest",
+    "test-copy": "copyfiles -u 3 test-fs/source/src/**/*.* test-fs/dest/",
     "test-run": "mocha \"test/**/*.test.js\"",
     "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\"",
     "watch-js": "nodemon --watch src/js/src/ -x \"npm run js\""

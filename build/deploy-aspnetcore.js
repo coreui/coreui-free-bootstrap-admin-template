@@ -15,7 +15,7 @@ const vendorFolder = sourceFolders[0]; // expecting "node_modules" to be the fir
 const libFolder = distFolders[0];
 
 // from https://stackoverflow.com/questions/171480/regex-grabbing-values-between-quotation-marks
-// Matches node_modules only, to get list of files to copy from node_modules to distibution folder
+// Matches node_modules only, to get list of files to copy from node_modules to lib on distibution folder
 const vendorRegEx = /(["'])node_modules\/.*?\1/ig;
 
 // Matches all source folders
@@ -85,6 +85,31 @@ const generateRazorView = (htmlFile) => {
   fs.writeFileSync(cshtmlFile, cshtml);
 };
 
+const generateRazorViews = (folder) => {
+  let htmlFiles = walkSync(folder, '.html');
+
+  htmlFiles.forEach(htmlFile => {
+    generateRazorView(htmlFile);
+  });
+};
+
+const getAllVendorReferences = (htmlFiles) => {
+  let vendorFiles = [];
+
+  htmlFiles.forEach(htmlFile => {
+    let html = fs.readFileSync(htmlFile, 'utf8');
+    let htmlVendorFiles = getVendorReferences(html);
+    vendorFiles = vendorFiles.concat(htmlVendorFiles);
+  });
+
+  // Unique values as per: https://stackoverflow.com/questions/4833651/javascript-array-sort-and-unique#answer-34191046
+  return vendorFiles.sort().filter((vf, i, arr) => !i || vf !== arr[i - 1]);
+};
+
+const copySiteFiles = (sourceFolder, destFolder) => {
+
+};
+
 module.exports = {
   walkSync,
   getVendorReferences,
@@ -93,5 +118,7 @@ module.exports = {
   copyVendorFiles,
   vendorFolder,
   libFolder,
-  generateRazorView
+  generateRazorViews,
+  getAllVendorReferences,
+  copySiteFiles
 }
