@@ -68,13 +68,13 @@ const getDistributionDocument = (html) => {
 
 const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
   fileList.forEach(file => {
-      let sourceFile = path.join(sourceFolder, file);
-      let libFile = file.replace(vendorFolder, libFolder);
-      let destFile = path.join(destFolder, libFile);
+    let sourceFile = path.join(sourceFolder, file);
+    let libFile = file.replace(vendorFolder, libFolder);
+    let destFile = path.join(destFolder, libFile);
 
-      mkdirp.sync(path.dirname(destFile));
-      fs.copyFileSync(sourceFile, destFile)
-    });
+    mkdirp.sync(path.dirname(destFile));
+    fs.copyFileSync(sourceFile, destFile)
+  });
 };
 
 const generateRazorView = (htmlFile) => {
@@ -106,8 +106,31 @@ const getAllVendorReferences = (htmlFiles) => {
   return vendorFiles.sort().filter((vf, i, arr) => !i || vf !== arr[i - 1]);
 };
 
-const copySiteFiles = (sourceFolder, destFolder) => {
+// The file list contains the relative path, equal to sourceFolder
+const copySiteFiles = (sourceFolder, fileList, destFolder) => {
+  fileList.forEach(file => {
+    // remove sourceFolder
+    let baseFile = file.replace(sourceFolder, '');
+    baseFile = baseFile[0] == '/' ? baseFile.substr(1) : baseFile;
 
+    // get base folder
+    let baseFolder = '';
+    let distFolder = '';
+    let baseIndex = baseFile.indexOf('/');
+
+    if (baseIndex >= 0) {
+      baseFolder = baseFile.substr(0, baseIndex);
+      baseFile = baseFile.substr(baseIndex + 1);
+
+      let index = sourceFolders.indexOf(baseFolder);
+      distFolder = index === -1 ? baseFolder : distFolders[index];
+    }
+
+    let destFile = path.join(destFolder, distFolder, baseFile);
+
+    mkdirp.sync(path.dirname(destFile));
+    fs.copyFileSync(file, destFile)
+  });
 };
 
 module.exports = {

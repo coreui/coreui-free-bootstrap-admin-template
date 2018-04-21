@@ -95,12 +95,9 @@ describe('walkSync', () => {
 });
 
 describe('generateRazorViews', () => {
-  // let sourceFile = 'test-fs/source/src/test-document.html';
-  // let destFile = 'test-fs/dest/test-document.html';
-  let folder = 'test-fs/dest/'; //path.dirname(destFile);
+  let htmlFiles = vendors.walkSync('test-fs/source/src', '.html');
 
-  // mkdirp.sync(destFolder);
-  // fs.copyFileSync(sourceFile, destFile);
+  vendors.copySiteFiles('test-fs/source/src', htmlFiles, 'test-fs/dest');
 
   it('Should generate .cshtml files for all .html files in destination', () => {
     let folder = 'test-fs/dest/';
@@ -133,5 +130,25 @@ describe('getAllVendorFiles', () => {
 
   it('Should get the list of all referenced vendor files in the folder tree', () => {
     vendorFiles.should.be.deepEqual(expectedVendorFiles);
+  });
+});
+
+describe('copySiteFiles', () => {
+  let expectedFiles = [
+    'test-fs/dest/css/style.css',
+    'test-fs/dest/images/avatars/4.jpg',
+    'test-fs/dest/images/avatars/7.jpg',
+    'test-fs/dest/js/main.js',
+    'test-fs/dest/test-blank.html',
+    'test-fs/dest/test-document.html',
+  ];
+
+  it('Should copy source files from source folders to destination folders', () => {
+    let sourceFileList = vendors.walkSync('test-fs/source').filter(f => !f.startsWith('test-fs/source/node_modules/'))
+
+    vendors.copySiteFiles('test-fs/source/src', sourceFileList, 'test-fs/dest');
+
+    let destFileList = vendors.walkSync('test-fs/dest').filter(f => !f.startsWith('test-fs/dest/lib/') && !f.endsWith('.cshtml'));
+    destFileList.should.be.deepEqual(expectedFiles);
   });
 });
