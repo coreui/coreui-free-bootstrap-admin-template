@@ -10,13 +10,13 @@ const src = 'src/';
 const dest = 'dist/';
 
 const main = () => {
-  let siteFiles = lib.walkSync(src);
+  let siteFiles = lib.getFolderTreeFiles(src);
   lib.copySiteFiles(src, siteFiles, dest);
   lib.generateRazorViews(dest);
 
-  let htmlFiles = lib.walkSync(src, '.html');
+  let htmlFiles = lib.getFolderTreeFiles(src, '.html');
   let vendorFiles = lib.getAllVendorReferences(htmlFiles);
-  lib.copyVendorFiles('node_modules', vendorFiles, dest);
+  lib.copyVendorFiles('', vendorFiles, dest);
 };
 
 main();

@@ -18,20 +18,21 @@ const libFolder = distFolders[0];
 // Matches node_modules only, to get list of files to copy from node_modules to lib on distibution folder
 const vendorRegEx = /(["'])node_modules\/.*?\1/ig;
 
-// Matches all source folders
+// Matches all source folders, because of the "g" option
 const folderRegEx = new RegExp(`(["'])(${sourceFolderString})/.*?\\1`, 'ig');
 
-// Adapted from vendors.js
-const walkSync = (dir, fileExt = '*', filelist = []) => {
+// Adapted from vendors.js walkSync
+const getFolderTreeFiles = (dir, fileExt = '*', filelist = []) => {
   dir = dir.replace(/\\/g, '/');
   fs.readdirSync(dir).filter(f => fileExt === '*' ? true : path.extname(f) === fileExt).forEach(file => {
     filelist = fs.statSync(path.join(dir, file)).isDirectory()
-      ? walkSync(path.join(dir, file), fileExt, filelist)
+      ? getFolderTreeFiles(path.join(dir, file), fileExt, filelist)
       : filelist.concat(path.posix.join(dir, file));
   });
   return filelist;
 }
 
+// Gets a unified unique list of vendor references (begining wih node_modules)
 const getVendorReferences = (html) => {
   if (html.search(vendorRegEx) === -1) {
     return [];
@@ -47,7 +48,8 @@ const getVendorReferences = (html) => {
   return references;
 };
 
-// This has to be called for every match in the content
+// Replaces the match changing source folder for distribution folder
+// This gets called for every match in the content
 const getDistributionFolder = (match) => {
   let sourceReference = match.substr(1, match.length - 2);
   let sourceFolder = sourceReference.split('/')[0].toLowerCase();
@@ -60,12 +62,13 @@ const getDistributionFolder = (match) => {
   return `"${distPrefix}${destReference}"`;
 };
 
+// Gets the content with all vendor references replaced for distribution references
 const getDistributionDocument = (html) => {
-  // The replaceRerefence function gets called for every match,
-  // because the regEx is global (/g)
-  return html.replace(folderRegEx, getDistributionFolder)
+  // Replace each match, because folderRegEx is "global" (/g)
+  return html.replace(folderRegEx, getDistributionFolder);
 };
 
+// Copies the referenced files to the distribution folder
 const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
   console.log(`Current folder: ${process.cwd()}`);
 
@@ -76,14 +79,15 @@ const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
 
     if (fs.existsSync(sourceFile)) {
       mkdirp.sync(path.dirname(destFile));
-      fs.copyFileSync(sourceFile, destFile)
+      fs.copyFileSync(sourceFile, destFile);
     } else {
-      console.log(`Missing file: ${sourceFile}`)
+      console.log(`Missing file: ${sourceFile}`);
     }
 
   });
 };
 
+// Generates the equivalent Razor view for the html file
 const generateRazorView = (htmlFile) => {
   let html = fs.readFileSync(htmlFile, 'utf8');
   let cshtml = getDistributionDocument(html);
@@ -93,7 +97,7 @@ const generateRazorView = (htmlFile) => {
 };
 
 const generateRazorViews = (folder) => {
-  let htmlFiles = walkSync(folder, '.html');
+  let htmlFiles = getFolderTreeFiles(folder, '.html');
 
   htmlFiles.forEach(htmlFile => {
     generateRazorView(htmlFile);
@@ -141,7 +145,7 @@ const copySiteFiles = (sourceFolder, fileList, destFolder) => {
 };
 
 module.exports = {
-  walkSync,
+  getFolderTreeFiles,
   getVendorReferences,
   getDistributionDocument,
   getDistributionFolder,

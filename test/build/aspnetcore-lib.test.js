@@ -72,7 +72,7 @@ describe('copyVendorFiles scenario', () => {
   });
 });
 
-describe('walkSync', () => {
+describe('getFolderTreeFiles', () => {
 
   let sourceFiles = [
     'test-fs/source/src/css/style.css',
@@ -84,18 +84,18 @@ describe('walkSync', () => {
   ];
 
   it('Should find all files in test-fs/source/src folder', () => {
-    let files = lib.walkSync('test-fs/source/src');
+    let files = lib.getFolderTreeFiles('test-fs/source/src');
     files.should.be.deepEqual(sourceFiles);
   });
 
   it('Should find all html files in test-fs/source/src folder', () => {
-    let files = lib.walkSync('test-fs/source/src', '.html');
+    let files = lib.getFolderTreeFiles('test-fs/source/src', '.html');
     files.should.be.deepEqual(sourceFiles.filter(file => file.endsWith('.html')));
   });
 });
 
 describe('generateRazorViews', () => {
-  let htmlFiles = lib.walkSync('test-fs/source/src', '.html');
+  let htmlFiles = lib.getFolderTreeFiles('test-fs/source/src', '.html');
 
   lib.copySiteFiles('test-fs/source/src', htmlFiles, 'test-fs/dest');
 
@@ -107,14 +107,14 @@ describe('generateRazorViews', () => {
     ];
 
     lib.generateRazorViews(folder);
-    cshtmlFiles = lib.walkSync('test-fs/dest', '.cshtml');
+    cshtmlFiles = lib.getFolderTreeFiles('test-fs/dest', '.cshtml');
     cshtmlFiles.should.be.deepEqual(expectedFiles);
   });
 });
 
 describe('getAllVendorFiles', () => {
   let folder = 'test-fs/source/src/'; //path.dirname(destFile);
-  let htmlFiles = lib.walkSync(folder, '.html');
+  let htmlFiles = lib.getFolderTreeFiles(folder, '.html');
   let vendorFiles = lib.getAllVendorReferences(htmlFiles);
 
   let expectedVendorFiles = [
@@ -144,11 +144,11 @@ describe('copySiteFiles', () => {
   ];
 
   it('Should copy source files from source folders to destination folders', () => {
-    let sourceFileList = lib.walkSync('test-fs/source').filter(f => !f.startsWith('test-fs/source/node_modules/'))
+    let sourceFileList = lib.getFolderTreeFiles('test-fs/source').filter(f => !f.startsWith('test-fs/source/node_modules/'))
 
     lib.copySiteFiles('test-fs/source/src', sourceFileList, 'test-fs/dest');
 
-    let destFileList = lib.walkSync('test-fs/dest').filter(f => !f.startsWith('test-fs/dest/lib/') && !f.endsWith('.cshtml'));
+    let destFileList = lib.getFolderTreeFiles('test-fs/dest').filter(f => !f.startsWith('test-fs/dest/lib/') && !f.endsWith('.cshtml'));
     destFileList.should.be.deepEqual(expectedFiles);
   });
 });
