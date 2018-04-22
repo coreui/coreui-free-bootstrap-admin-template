@@ -82,7 +82,6 @@ const cssContent = `@font-face {
 
 const cssAssets = [
   '../fonts/fontawesome-webfont.eot',
-  '../fonts/fontawesome-webfont.eot',
   '../fonts/fontawesome-webfont.svg',
   '../fonts/fontawesome-webfont.ttf',
   '../fonts/fontawesome-webfont.woff',
@@ -92,7 +91,6 @@ const cssAssets = [
 const vendorFiles = [
   'test-fs/dest/lib/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js',
   'test-fs/dest/lib/font-awesome/css/font-awesome.min.css',
-  'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.eot',
   'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.eot',
   'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.svg',
   'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.ttf',

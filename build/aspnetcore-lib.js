@@ -86,7 +86,7 @@ const copyAssetFiles = (cssFile, destFolder) => {
 
 // gets the assets referenced from a css file
 const getCssAssets = (css) => {
-  // Matches the url up to the querystring if exists
+  // Matches the url up to the querystring if present
   let assetRegex = /url\((['"])(.*?)(\1|\?.*?\1)\)/g;
 
   if (css.search(assetRegex) === -1) {
@@ -100,30 +100,43 @@ const getCssAssets = (css) => {
     assets.push(match[2]);
   }
 
-  return assets.sort();
+  return assets.sort().filter((a, i, arr) => !i || a !== arr[i - 1]);
 };
 
 // Copies the referenced files to the distribution folder
 const copyVendorFiles = (sourceFolder, referenceList, destFolder) => {
   console.log(`    Current folder: ${process.cwd()}`);
 
-  let assetFiles = [];
-
   referenceList.forEach(file => {
     let sourceFile = path.join(sourceFolder, file);
     let libFile = file.replace(vendorFolder, libFolder);
     let destFile = path.join(destFolder, libFile);
-    let assetFiles = [];
 
     if (fs.existsSync(sourceFile)) {
       mkdirp.sync(path.dirname(destFile));
       fs.copyFileSync(sourceFile, destFile);
+
+      if (path.extname(sourceFile) === '.css') {
+        let css = fs.readFileSync(sourceFile, 'utf8');
+        let assetReferences = getCssAssets(css);
+
+        assetReferences.forEach(reference => {
+          let assetFile = path.resolve(path.dirname(sourceFile), reference);
+          let destAssetFile = path.resolve(path.dirname(destFile), reference);
+
+          if (fs.existsSync(assetFile)) {
+            mkdirp.sync(path.dirname(destAssetFile));
+            fs.copyFileSync(assetFile, destAssetFile);
+          } else {
+            console.log(` ** Missing asset file: ${assetFile}`);
+          }
+
+        });
+      }
     } else {
       console.log(` ** Missing file: ${sourceFile}`);
     }
   });
-
-
 };
 
 // Generates the equivalent Razor view for the html file
