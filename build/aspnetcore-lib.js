@@ -87,7 +87,7 @@ const copyAssetFiles = (cssFile, destFolder) => {
 // gets the assets referenced from a css file
 const getCssAssets = (css) => {
   // Matches the url up to the querystring if present
-  let assetRegex = /url\((['"])(.*?)(\1|\?.*?\1)\)/g;
+  let assetRegex = /url\((['"])*(.*?)(\1|\?.*?\1)\)/g;
 
   if (css.search(assetRegex) === -1) {
     return [];

@@ -78,9 +78,14 @@ const cssContent = `@font-face {
   src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+.flag-icon-ad {
+  background-image: url(../flags/4x3/ad.svg);
 }`
 
 const cssAssets = [
+  '../flags/4x3/ad.svg',
   '../fonts/fontawesome-webfont.eot',
   '../fonts/fontawesome-webfont.svg',
   '../fonts/fontawesome-webfont.ttf',
