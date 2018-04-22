@@ -75,14 +75,45 @@ const generateDistDocument = (html, type) => {
   return html.replace(folderRegEx, getFolder);
 };
 
+// Copies the asset files referenced from the css with url(...)
+const copyAssetFiles = (cssFile, destFolder) => {
+
+
+  let assetFiles = getAssetFiles();
+
+  console.log(assetFiles);
+};
+
+// gets the assets referenced from a css file
+const getCssAssets = (css) => {
+  // Matches the url up to the querystring if exists
+  let assetRegex = /url\((['"])(.*?)(\1|\?.*?\1)\)/g;
+
+  if (css.search(assetRegex) === -1) {
+    return [];
+  }
+
+  let match;
+  let assets = [];
+
+  while ((match = assetRegex.exec(css)) !== null) {
+    assets.push(match[2]);
+  }
+
+  return assets.sort();
+};
+
 // Copies the referenced files to the distribution folder
-const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
+const copyVendorFiles = (sourceFolder, referenceList, destFolder) => {
   console.log(`    Current folder: ${process.cwd()}`);
 
-  fileList.forEach(file => {
+  let assetFiles = [];
+
+  referenceList.forEach(file => {
     let sourceFile = path.join(sourceFolder, file);
     let libFile = file.replace(vendorFolder, libFolder);
     let destFile = path.join(destFolder, libFile);
+    let assetFiles = [];
 
     if (fs.existsSync(sourceFile)) {
       mkdirp.sync(path.dirname(destFile));
@@ -91,6 +122,8 @@ const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
       console.log(` ** Missing file: ${sourceFile}`);
     }
   });
+
+
 };
 
 // Generates the equivalent Razor view for the html file
@@ -181,5 +214,6 @@ module.exports = {
   generateRazorViews,
   generateDistHtmlFiles,
   getAllVendorReferences,
-  copySiteFiles
+  copySiteFiles,
+  getCssAssets
 }

@@ -44,6 +44,14 @@ describe('generateDistDocument', () => {
   });
 });
 
+describe('getCssAssets', () => {
+  it('Should get the assets referenced in the css', () => {
+    let assets = lib.getCssAssets(testData.cssContent);
+
+    assets.should.be.deepEqual(testData.cssAssets);
+  });
+});
+
 describe('copyVendorFiles scenario', () => {
   let sourceFolder = 'test-fs/source/';
   let destFolder = `test-fs/dest/`;

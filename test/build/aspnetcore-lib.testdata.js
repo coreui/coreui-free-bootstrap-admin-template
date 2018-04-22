@@ -72,6 +72,23 @@ const vendorReferences = [
   'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js',
 ];
 
+const cssContent = `@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}`
+
+const cssAssets = [
+  '../fonts/fontawesome-webfont.eot',
+  '../fonts/fontawesome-webfont.eot',
+  '../fonts/fontawesome-webfont.svg',
+  '../fonts/fontawesome-webfont.ttf',
+  '../fonts/fontawesome-webfont.woff',
+  '../fonts/fontawesome-webfont.woff2',
+];
+
 const vendorFiles = [
   'test-fs/dest/lib/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js',
   'test-fs/dest/lib/font-awesome/css/font-awesome.min.css',
@@ -199,5 +216,7 @@ module.exports = {
   htmlDocument,
   cshtmlDocument,
   vendorReferences,
-  vendorFiles
+  vendorFiles,
+  cssAssets,
+  cssContent
 };
