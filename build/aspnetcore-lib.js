@@ -45,7 +45,7 @@ const getVendorReferences = (html) => {
     references.push(match[0].substr(1, match[0].length - 2));
   }
 
-  return references;
+  return references.sort();
 };
 
 // Replaces the match changing source folder for distribution folder
@@ -88,7 +88,7 @@ const copyVendorFiles = (sourceFolder, fileList, destFolder) => {
       mkdirp.sync(path.dirname(destFile));
       fs.copyFileSync(sourceFile, destFile);
     } else {
-      console.log(`Missing file: ${sourceFile}`);
+      console.log(` ** Missing file: ${sourceFile}`);
     }
   });
 };

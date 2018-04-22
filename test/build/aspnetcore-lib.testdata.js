@@ -18,8 +18,7 @@ const originalDocument = `<!DOCTYPE html>
     <!-- TEST-CASE: single quotes should change to double quotes -->
     <link href='node_modules/font-awesome/css/font-awesome.min.css' rel="stylesheet">
 
-    <!-- TEST-CASE: NODE_MODULES/ should be replaced too -->
-    <link href='NODE_MODULES/simple-line-icons/css/simple-line-icons.css' rel="stylesheet">
+    <link href='node_modules/simple-line-icons/css/simple-line-icons.css' rel="stylesheet">
 
     <!-- Main styles for this application-->
 
@@ -55,17 +54,17 @@ const originalDocument = `<!DOCTYPE html>
 </html>`;
 
 const vendorReferenceList = [
+  'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js',
+  'node_modules/@coreui/coreui/dist/js/coreui.min.js',
+  'node_modules/bootstrap/dist/js/bootstrap.min.js',
+  'node_modules/chart.js/dist/Chart.min.js',
   'node_modules/flag-icon-css/css/flag-icon.min.css',
   'node_modules/font-awesome/css/font-awesome.min.css',
-  'NODE_MODULES/simple-line-icons/css/simple-line-icons.css',
   'node_modules/jquery/dist/jquery.min.js',
-  'node_modules/popper.js/dist/umd/popper.min.js',
-  'node_modules/bootstrap/dist/js/bootstrap.min.js',
   'node_modules/pace-progress/pace.min.js',
   'node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js',
-  'node_modules/@coreui/coreui/dist/js/coreui.min.js',
-  'node_modules/chart.js/dist/Chart.min.js',
-  'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js'
+  'node_modules/popper.js/dist/umd/popper.min.js',
+  'node_modules/simple-line-icons/css/simple-line-icons.css',
 ];
 
 const vendorReferences = [
@@ -95,7 +94,6 @@ const htmlDocument = `<!DOCTYPE html>
     <!-- TEST-CASE: single quotes should change to double quotes -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- TEST-CASE: NODE_MODULES/ should be replaced too -->
     <link href="lib/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Main styles for this application-->
@@ -151,7 +149,6 @@ const cshtmlDocument = `<!DOCTYPE html>
     <!-- TEST-CASE: single quotes should change to double quotes -->
     <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- TEST-CASE: NODE_MODULES/ should be replaced too -->
     <link href="~/lib/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Main styles for this application-->
