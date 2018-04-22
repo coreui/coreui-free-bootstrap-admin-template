@@ -68,10 +68,19 @@ const vendorReferenceList = [
 ];
 
 const vendorReferences = [
-  'node_modules/flag-icon-css/css/flag-icon.min.css',
   'node_modules/font-awesome/css/font-awesome.min.css',
-  'node_modules/simple-line-icons/css/simple-line-icons.css',
-  'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js'
+  'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js',
+];
+
+const vendorFiles = [
+  'test-fs/dest/lib/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js',
+  'test-fs/dest/lib/font-awesome/css/font-awesome.min.css',
+  'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.eot',
+  'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.eot',
+  'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.svg',
+  'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.ttf',
+  'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.woff',
+  'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.woff2',
 ];
 
 const htmlDocument = `<!DOCTYPE html>
@@ -189,5 +198,6 @@ module.exports = {
   vendorReferenceList,
   htmlDocument,
   cshtmlDocument,
-  vendorReferences
+  vendorReferences,
+  vendorFiles
 };

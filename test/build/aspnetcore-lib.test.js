@@ -64,15 +64,12 @@ describe('copyVendorFiles scenario', () => {
     });
   });
 
-  it('copyVendorFiles should copy all files in list and create the destination folder tree', () => {
+  it('copyVendorFiles should copy all files in list and create the destination folder tree including the css assets', () => {
     lib.copyVendorFiles(sourceFolder, testData.vendorReferences, destFolder);
 
-    let destFiles = testData.vendorReferences.map(file => file.replace(lib.vendorFolder, lib.libFolder));
+    let vendorFiles = lib.getFolderTreeFiles(`${destFolder}/${lib.libFolder}`);
 
-    destFiles.forEach(file => {
-      let filename = (`${destFolder}${file}`);
-      fs.existsSync(filename).should.be.true(`No existe ${filename}!`);
-    });
+    vendorFiles.should.be.deepEqual(testData.vendorFiles);
   });
 });
 
