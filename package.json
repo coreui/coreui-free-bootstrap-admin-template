@@ -41,6 +41,8 @@
   },
   "scripts": {
     "build": "npm-run-all build-clean build-copy build-vendors",
+    "build-aspnetcore": "npm-run-all build-clean build-aspnetcore-deploy",
+    "build-aspnetcore-deploy": "node build/aspnetcore-deploy.js",
     "build-clean": "rimraf dist",
     "build-copy": "copyfiles -a -e \"src/scss/**/*\" -u 1 \"src/**/*\" dist/",
     "build-vendors": "node build/vendors.js",
@@ -59,6 +61,9 @@
     "localhost-dist": "browser-sync start --server \"./dist\"",
     "release-version": "node build/change-version.js",
     "serve": "npm-run-all --parallel localhost watch-css watch-js",
+    "test": "npm-run-all test-clean test-run",
+    "test-clean": "rimraf test-fs/dest",
+    "test-run": "mocha \"test/**/*.test.js\"",
     "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\"",
     "watch-js": "nodemon --watch src/js/src/ -x \"npm run js\""
   },
@@ -90,12 +95,14 @@
     "eslint": "^4.19.1",
     "eslint-plugin-compat": "^2.2.0",
     "foreach-cli": "^1.8.0",
+    "mocha": "^5.1.0",
     "node-sass": "^4.8.3",
     "nodemon": "^1.17.3",
     "npm-run-all": "^4.1.2",
     "postcss-cli": "^5.0.0",
     "rimraf": "^2.6.2",
     "shelljs": "^0.8.1",
+    "should": "^13.2.1",
     "stylelint": "^9.2.0",
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-config-standard": "^18.2.0",
@@ -103,7 +110,7 @@
     "stylelint-scss": "^3.0.0"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=8.11.1"
   },
   "browserslist": [
     "last 1 major version",
