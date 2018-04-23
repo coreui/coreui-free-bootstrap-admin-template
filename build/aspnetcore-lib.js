@@ -1,6 +1,11 @@
+/*
+* Support functions for build-aspnetcore script
+*/
+
 'use strict'
 
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 const mkdirp = require('mkdirp');
 
@@ -64,6 +69,8 @@ const getDistributionFolder = (match) => {
 
 // Gets the content with all vendor references replaced for distribution references
 const generateDistDocument = (html, type) => {
+
+  html = `@{ Layout = ""; }${os.EOL}` + html;
 
   // Adds the "~/" prefix when it's a cshtml file
   const getFolder = (match) => {
