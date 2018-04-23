@@ -1,8 +1,5 @@
 /*
 * Unit and integration tests for build-aspnetcore script
-*
-* Author: Miguel Veloso (http://coderepo.blog)
-* Contributed to https://github.com/coreui/coreui-free-bootstrap-admin-template with MIT License
 */
 
 const fs = require('fs');

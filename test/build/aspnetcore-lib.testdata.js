@@ -3,6 +3,12 @@
 */
 
 const originalDocument = `<!DOCTYPE html>
+<!-- TEST-CASE: @version and @link should change to @@ for Razor view (.cshtml)
+* CoreUI - Free Bootstrap Admin Template
+* @version v2.0.0-beta.0
+* @link https://coreui.io
+-->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -31,6 +37,27 @@ const originalDocument = `<!DOCTYPE html>
 
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <h4 id="fat">@fat</h4>
+    <h3 id="fat">@</h3>
+    <ul class="nav">
+      <li class="nav-item">
+
+        <!-- TEST-CASE: href="index.html" should change to asp-controller="CoreUI" asp-route-view="index" for Razor view (.cshtml) -->
+        <a class="nav-link" href="index.html">
+
+          <i class="nav-icon icon-speedometer"></i> Dashboard
+          <span class="badge badge-primary">NEW</span>
+        </a>
+      </li>
+      <li class="nav-title">Theme</li>
+      <li class="nav-item">
+
+        <!-- TEST-CASE: href="colors.html" should change to asp-controller="CoreUI" asp-route-view="colors" for Razor view (.cshtml) -->
+        <a class="nav-link" href="colors.html">
+
+          <i class="nav-icon icon-drop"></i> Colors</a>
+      </li>
+    </ul>
     <div class="avatar float-right">
 
       <!-- TEST-CASE: img-avatar should not change and img/... should change to images/... -->
@@ -46,9 +73,14 @@ const originalDocument = `<!DOCTYPE html>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/pace-progress/pace.min.js"></script>
     <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+
+    <!-- TEST-CASE: @coreui should change to @@coreui for Razor view (.cshtml) -->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+
     <!-- Plugins and scripts required by this view-->
     <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+
+    <!-- TEST-CASE: @coreui should change to @@coreui for Razor view (.cshtml) -->
     <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
 
     <!-- TEST-CASE: js/ should not change -->
@@ -108,6 +140,12 @@ const vendorFiles = [
 ];
 
 const htmlDocument = `<!DOCTYPE html>
+<!-- TEST-CASE: @version and @link should change to @@ for Razor view (.cshtml)
+* CoreUI - Free Bootstrap Admin Template
+* @version v2.0.0-beta.0
+* @link https://coreui.io
+-->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -136,6 +174,27 @@ const htmlDocument = `<!DOCTYPE html>
 
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <h4 id="fat">@fat</h4>
+    <h3 id="fat">@</h3>
+    <ul class="nav">
+      <li class="nav-item">
+
+        <!-- TEST-CASE: href="index.html" should change to asp-controller="CoreUI" asp-route-view="index" for Razor view (.cshtml) -->
+        <a class="nav-link" href="index.html">
+
+          <i class="nav-icon icon-speedometer"></i> Dashboard
+          <span class="badge badge-primary">NEW</span>
+        </a>
+      </li>
+      <li class="nav-title">Theme</li>
+      <li class="nav-item">
+
+        <!-- TEST-CASE: href="colors.html" should change to asp-controller="CoreUI" asp-route-view="colors" for Razor view (.cshtml) -->
+        <a class="nav-link" href="colors.html">
+
+          <i class="nav-icon icon-drop"></i> Colors</a>
+      </li>
+    </ul>
     <div class="avatar float-right">
 
       <!-- TEST-CASE: img-avatar should not change and img/... should change to images/... -->
@@ -151,9 +210,14 @@ const htmlDocument = `<!DOCTYPE html>
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="lib/pace-progress/pace.min.js"></script>
     <script src="lib/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+
+    <!-- TEST-CASE: @coreui should change to @@coreui for Razor view (.cshtml) -->
     <script src="lib/@coreui/coreui/dist/js/coreui.min.js"></script>
+
     <!-- Plugins and scripts required by this view-->
     <script src="lib/chart.js/dist/Chart.min.js"></script>
+
+    <!-- TEST-CASE: @coreui should change to @@coreui for Razor view (.cshtml) -->
     <script src="lib/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
 
     <!-- TEST-CASE: js/ should not change -->
@@ -162,7 +226,13 @@ const htmlDocument = `<!DOCTYPE html>
   </body>
 </html>`;
 
-const cshtmlDocument = `<!DOCTYPE html>
+const cshtmlDocument = `${'@{ Layout = ""; }\r\n'}<!DOCTYPE html>
+<!-- TEST-CASE: @version and @link should change to @@ for Razor view (.cshtml)
+* CoreUI - Free Bootstrap Admin Template
+* @@version v2.0.0-beta.0
+* @@link https://coreui.io
+-->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -191,6 +261,27 @@ const cshtmlDocument = `<!DOCTYPE html>
 
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <h4 id="fat">@@fat</h4>
+    <h3 id="fat">@@</h3>
+    <ul class="nav">
+      <li class="nav-item">
+
+        <!-- TEST-CASE: href="index.html" should change to asp-controller="CoreUI" asp-route-view="index" for Razor view (.cshtml) -->
+        <a class="nav-link" asp-controller="CoreUI" asp-route-view="index">
+
+          <i class="nav-icon icon-speedometer"></i> Dashboard
+          <span class="badge badge-primary">NEW</span>
+        </a>
+      </li>
+      <li class="nav-title">Theme</li>
+      <li class="nav-item">
+
+        <!-- TEST-CASE: href="colors.html" should change to asp-controller="CoreUI" asp-route-view="colors" for Razor view (.cshtml) -->
+        <a class="nav-link" asp-controller="CoreUI" asp-route-view="colors">
+
+          <i class="nav-icon icon-drop"></i> Colors</a>
+      </li>
+    </ul>
     <div class="avatar float-right">
 
       <!-- TEST-CASE: img-avatar should not change and img/... should change to images/... -->
@@ -206,10 +297,15 @@ const cshtmlDocument = `<!DOCTYPE html>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="~/lib/pace-progress/pace.min.js"></script>
     <script src="~/lib/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
-    <script src="~/lib/@coreui/coreui/dist/js/coreui.min.js"></script>
+
+    <!-- TEST-CASE: @coreui should change to @@coreui for Razor view (.cshtml) -->
+    <script src="~/lib/@@coreui/coreui/dist/js/coreui.min.js"></script>
+
     <!-- Plugins and scripts required by this view-->
     <script src="~/lib/chart.js/dist/Chart.min.js"></script>
-    <script src="~/lib/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+
+    <!-- TEST-CASE: @coreui should change to @@coreui for Razor view (.cshtml) -->
+    <script src="~/lib/@@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
 
     <!-- TEST-CASE: js/ should not change -->
     <script src="~/js/charts.js"></script>

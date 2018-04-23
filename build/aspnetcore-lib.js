@@ -70,8 +70,6 @@ const getDistributionFolder = (match) => {
 // Gets the content with all vendor references replaced for distribution references
 const generateDistDocument = (html, type) => {
 
-  html = `@{ Layout = ""; }${os.EOL}` + html;
-
   // Adds the "~/" prefix when it's a cshtml file
   const getFolder = (match) => {
     let folder = getDistributionFolder(match);
@@ -79,7 +77,18 @@ const generateDistDocument = (html, type) => {
   };
 
   // Replace each match, because folderRegEx is "global" (/g)
-  return html.replace(folderRegEx, getFolder);
+  html = html.replace(folderRegEx, getFolder);
+
+  // Specific changes for Razor views
+  if (type === 'cshtml') {
+    html = '@{ Layout = ""; }\r\n' + html;
+    html = html.replace(/(<a.*)href="(.*)\.(.*?)"/g, '$1asp-controller="CoreUI" asp-route-view="$2"');
+    html = html.replace(/\* @(version|link) /g, '* @@$1 ');
+    html = html.replace(/src="~\/lib\/@coreui/g, 'src="~/lib/@@coreui');
+    html = html.replace(/>@(.*?)</g, '>@@$1<');
+  }
+
+  return html;
 };
 
 // Copies the asset files referenced from the css with url(...)
@@ -173,7 +182,7 @@ const generateDistHtmlFile = (htmlFile) => {
 };
 
 // Generates the distribution html for all html files in the folder tree
-const generateDistHtmlFiles = (folder) => {
+const generateHtmlFiles = (folder) => {
   let htmlFiles = getFolderTreeFiles(folder, '.html');
 
   htmlFiles.forEach(htmlFile => {
@@ -232,7 +241,7 @@ module.exports = {
   vendorFolder,
   libFolder,
   generateRazorViews,
-  generateDistHtmlFiles,
+  generateHtmlFiles,
   getAllVendorReferences,
   copySiteFiles,
   getCssAssets

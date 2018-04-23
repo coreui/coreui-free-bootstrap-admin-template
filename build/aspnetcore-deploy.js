@@ -14,11 +14,29 @@
 *
 * - Changes "img" folder to "images" folder
 *
-* - Saves the files as Razor views (with a .cshtml extension) and adds "~/" to all references
-*
 * - The final result are two sets of files:
 *   * html files similar to the regular CoreUI files in dist, to verify everything is working
-*   * cshtml files, just like the html, but with ~/ in all references
+*   * cshtml files, just like the html, but with the tweaks mentioned above
+*
+* - Saves the html files as Razor views (with a .cshtml extension) and a few tweaks:
+*   * Adds the line @{ Layout = ""; } to bypass the standard layout
+*   * Adds "~/" to all references to static files
+*   * Replaces @ for @@ under certain conditions (check aspnetcore-lib.js)
+*   * Replaces all href to pages for asp-route="CoreUI" asp-route-view="{page-filename}"
+*   * Page links get ready to work with this controller:
+*
+*     [Route("{CoreUI}")]
+*     public class CoreUIController : Controller
+*     {
+*         [Route("{view=Index}")]
+*         public IActionResult Index(string view)
+*         {
+*             ViewData["Title"] = "CoreUI - Open Source Bootstrap Admin Template";
+*
+*             return View(view);
+*         }
+*     }
+*
 */
 
 'use strict'
@@ -34,7 +52,7 @@ const main = () => {
   let siteFiles = lib.getFolderTreeFiles(src);
   lib.copySiteFiles(src, siteFiles, dest);
   lib.generateRazorViews(dest);
-  lib.generateDistHtmlFiles(dest);
+  lib.generateHtmlFiles(dest);
 
   let htmlFiles = lib.getFolderTreeFiles(src, '.html');
   let vendorFiles = lib.getAllVendorReferences(htmlFiles);
