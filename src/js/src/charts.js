@@ -1,5 +1,7 @@
+/* eslint-disable object-curly-newline */
 /* global Chart */
 import $ from 'jquery'
+import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips'
 
 /**
  * --------------------------------------------------------------------------
@@ -12,6 +14,24 @@ import $ from 'jquery'
 const ChartsView = (($) => {
   // random Numbers
   const random = () => Math.round(Math.random() * 100)
+
+  const options = {
+    responsive: true,
+    tooltips: {
+      enabled: false,
+      custom: CustomTooltips,
+      intersect: true,
+      mode: 'index',
+      position: 'nearest',
+      callbacks: {
+        labelColor(tooltipItem, chart) {
+          return {
+            backgroundColor: chart.data.datasets[tooltipItem.datasetIndex].borderColor
+          }
+        }
+      }
+    }
+  }
 
   // eslint-disable-next-line no-unused-vars
   const lineChart = new Chart($('#canvas-1'), {
@@ -37,9 +57,7 @@ const ChartsView = (($) => {
         }
       ]
     },
-    options: {
-      responsive: true
-    }
+    options
   })
 
   // eslint-disable-next-line no-unused-vars
@@ -64,9 +82,7 @@ const ChartsView = (($) => {
         }
       ]
     },
-    options: {
-      responsive: true
-    }
+    options
   })
 
   // eslint-disable-next-line no-unused-vars
@@ -81,7 +97,11 @@ const ChartsView = (($) => {
       }]
     },
     options: {
-      responsive: true
+      responsive: true,
+      tooltips: {
+        enabled: false,
+        custom: CustomTooltips
+      }
     }
   })
 
@@ -113,9 +133,7 @@ const ChartsView = (($) => {
         }
       ]
     },
-    options: {
-      responsive: true
-    }
+    options
   })
 
   // eslint-disable-next-line no-unused-vars
@@ -130,7 +148,11 @@ const ChartsView = (($) => {
       }]
     },
     options: {
-      responsive: true
+      responsive: true,
+      tooltips: {
+        enabled: false,
+        custom: CustomTooltips
+      }
     }
   })
 
@@ -145,7 +167,11 @@ const ChartsView = (($) => {
       }]
     },
     options: {
-      responsive: true
+      responsive: true,
+      tooltips: {
+        enabled: false,
+        custom: CustomTooltips
+      }
     }
   })
 

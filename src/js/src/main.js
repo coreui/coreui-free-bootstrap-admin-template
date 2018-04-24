@@ -1,3 +1,4 @@
+/* eslint-disable object-shorthand */
 /* global Chart, CustomTooltips, getStyle, hexToRgba */
 import $ from 'jquery'
 
@@ -227,6 +228,15 @@ const MainView = (($) => {
       ]
     },
     options: {
+      tooltips: {
+        callbacks: {
+          labelColor: function (tooltipItem, chart) {
+            return {
+              backgroundColor: chart.data.datasets[tooltipItem.datasetIndex].borderColor
+            }
+          }
+        }
+      },
       maintainAspectRatio: false,
       legend: {
         display: false
