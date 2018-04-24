@@ -1,3 +1,5 @@
+/* eslint-disable object-curly-newline */
+
 /* global Chart */
 
 /**
@@ -12,9 +14,26 @@ var ChartsView = function ($) {
   // random Numbers
   var random = function random() {
     return Math.round(Math.random() * 100);
-  }; // eslint-disable-next-line no-unused-vars
+  };
 
+  var options = {
+    responsive: true,
+    tooltips: {
+      enabled: false,
+      custom: CustomTooltips,
+      intersect: true,
+      mode: 'index',
+      position: 'nearest',
+      callbacks: {
+        labelColor: function labelColor(tooltipItem, chart) {
+          return {
+            backgroundColor: chart.data.datasets[tooltipItem.datasetIndex].borderColor
+          };
+        }
+      }
+    } // eslint-disable-next-line no-unused-vars
 
+  };
   var lineChart = new Chart($('#canvas-1'), {
     type: 'line',
     data: {
@@ -35,9 +54,7 @@ var ChartsView = function ($) {
         data: [random(), random(), random(), random(), random(), random(), random()]
       }]
     },
-    options: {
-      responsive: true
-    }
+    options: options
   }); // eslint-disable-next-line no-unused-vars
 
   var barChart = new Chart($('#canvas-2'), {
@@ -58,9 +75,7 @@ var ChartsView = function ($) {
         data: [random(), random(), random(), random(), random(), random(), random()]
       }]
     },
-    options: {
-      responsive: true
-    }
+    options: options
   }); // eslint-disable-next-line no-unused-vars
 
   var doughnutChart = new Chart($('#canvas-3'), {
@@ -74,7 +89,11 @@ var ChartsView = function ($) {
       }]
     },
     options: {
-      responsive: true
+      responsive: true,
+      tooltips: {
+        enabled: false,
+        custom: CustomTooltips
+      }
     }
   }); // eslint-disable-next-line no-unused-vars
 
@@ -102,9 +121,7 @@ var ChartsView = function ($) {
         data: [28, 48, 40, 19, 96, 27, 100]
       }]
     },
-    options: {
-      responsive: true
-    }
+    options: options
   }); // eslint-disable-next-line no-unused-vars
 
   var pieChart = new Chart($('#canvas-5'), {
@@ -118,7 +135,11 @@ var ChartsView = function ($) {
       }]
     },
     options: {
-      responsive: true
+      responsive: true,
+      tooltips: {
+        enabled: false,
+        custom: CustomTooltips
+      }
     }
   }); // eslint-disable-next-line no-unused-vars
 
@@ -132,7 +153,11 @@ var ChartsView = function ($) {
       }]
     },
     options: {
-      responsive: true
+      responsive: true,
+      tooltips: {
+        enabled: false,
+        custom: CustomTooltips
+      }
     }
   });
   return ChartsView;

@@ -1,3 +1,5 @@
+/* eslint-disable object-shorthand */
+
 /* global Chart, CustomTooltips, getStyle, hexToRgba */
 
 /**
@@ -209,6 +211,15 @@ var MainView = function ($) {
       }]
     },
     options: {
+      tooltips: {
+        callbacks: {
+          labelColor: function labelColor(tooltipItem, chart) {
+            return {
+              backgroundColor: chart.data.datasets[tooltipItem.datasetIndex].borderColor
+            };
+          }
+        }
+      },
       maintainAspectRatio: false,
       legend: {
         display: false
