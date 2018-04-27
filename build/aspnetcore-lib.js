@@ -76,13 +76,21 @@ const generateDistDocument = (html, type) => {
     return type === 'cshtml' ? `"${distPrefix}${folder}"` : `"${folder}"`
   };
 
+  const getLink = (match, p1, p2) => {
+    const httpRegEx = /http[s]*:\/\//;
+    if (httpRegEx.test(p2)) {
+      return match;
+    }
+    return `${p1}asp-controller="CoreUI" asp-route-view="${p2}"`;
+  };
+
   // Replace each match, because folderRegEx is "global" (/g)
   html = html.replace(folderRegEx, getFolder);
 
   // Specific changes for Razor views
   if (type === 'cshtml') {
     html = '@{ Layout = ""; }\r\n' + html;
-    html = html.replace(/(<a.*)href="(.*)\.(.*?)"/g, '$1asp-controller="CoreUI" asp-route-view="$2"');
+    html = html.replace(/(<a.*)href="(.*)\.(.*?)"/g, getLink);
     html = html.replace(/\* @(version|link) /g, '* @@$1 ');
     html = html.replace(/src="~\/lib\/@coreui/g, 'src="~/lib/@@coreui');
     html = html.replace(/>@(.*?)</g, '>@@$1<');

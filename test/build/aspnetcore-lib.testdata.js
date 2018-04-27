@@ -67,6 +67,16 @@ const originalDocument = `<!DOCTYPE html>
     <div class="avatar float-right">
       <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
     </div>
+    <footer class="app-footer">
+      <div>
+        <a href="https://coreui.io">CoreUI</a>
+        <span>&copy; 2018 creativeLabs.</span>
+      </div>
+      <div class="ml-auto">
+        <span>Powered by</span>
+        <a href="https://coreui.io">CoreUI</a>
+      </div>
+    </footer>
     <!-- Bootstrap and necessary plugins-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -204,6 +214,16 @@ const htmlDocument = `<!DOCTYPE html>
     <div class="avatar float-right">
       <img class="img-avatar" src="images/avatars/4.jpg" alt="admin@bootstrapmaster.com">
     </div>
+    <footer class="app-footer">
+      <div>
+        <a href="https://coreui.io">CoreUI</a>
+        <span>&copy; 2018 creativeLabs.</span>
+      </div>
+      <div class="ml-auto">
+        <span>Powered by</span>
+        <a href="https://coreui.io">CoreUI</a>
+      </div>
+    </footer>
     <!-- Bootstrap and necessary plugins-->
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/popper.js/dist/umd/popper.min.js"></script>
@@ -291,6 +311,16 @@ const cshtmlDocument = `${'@{ Layout = ""; }\r\n'}<!DOCTYPE html>
     <div class="avatar float-right">
       <img class="img-avatar" src="~/images/avatars/4.jpg" alt="admin@bootstrapmaster.com">
     </div>
+    <footer class="app-footer">
+      <div>
+        <a href="https://coreui.io">CoreUI</a>
+        <span>&copy; 2018 creativeLabs.</span>
+      </div>
+      <div class="ml-auto">
+        <span>Powered by</span>
+        <a href="https://coreui.io">CoreUI</a>
+      </div>
+    </footer>
     <!-- Bootstrap and necessary plugins-->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/popper.js/dist/umd/popper.min.js"></script>
