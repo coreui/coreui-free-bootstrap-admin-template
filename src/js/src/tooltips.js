@@ -7,8 +7,4 @@ import $ from 'jquery'
  * --------------------------------------------------------------------------
  */
 
-const TooltipsView = (($) => {
-  $('[data-toggle="tooltip"]').tooltip()
-
-  return TooltipsView
-})($)
+$('[data-toggle="tooltip"]').tooltip()

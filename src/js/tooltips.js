@@ -4,8 +4,5 @@
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
-var TooltipsView = function ($) {
-  $('[data-toggle="tooltip"]').tooltip();
-  return TooltipsView;
-}($);
+$('[data-toggle="tooltip"]').tooltip();
 //# sourceMappingURL=tooltips.js.map

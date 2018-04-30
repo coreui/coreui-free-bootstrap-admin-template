@@ -4,11 +4,8 @@
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
-var PopoversView = function ($) {
-  $('[data-toggle="popover"]').popover();
-  $('.popover-dismiss').popover({
-    trigger: 'focus'
-  });
-  return PopoversView;
-}($);
+$('[data-toggle="popover"]').popover();
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+});
 //# sourceMappingURL=popovers.js.map

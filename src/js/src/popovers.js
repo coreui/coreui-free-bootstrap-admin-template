@@ -7,11 +7,7 @@ import $ from 'jquery'
  * --------------------------------------------------------------------------
  */
 
-const PopoversView = (($) => {
-  $('[data-toggle="popover"]').popover()
-  $('.popover-dismiss').popover({
-    trigger: 'focus'
-  })
-
-  return PopoversView
-})($)
+$('[data-toggle="popover"]').popover()
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
