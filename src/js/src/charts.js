@@ -1,9 +1,11 @@
+/* eslint-disable object-curly-newline */
 /* global Chart */
 import $ from 'jquery'
+import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips'
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0-beta.5): main.js
+ * CoreUI Free Boostrap Admin Template (v2.0.0-rc.0): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */

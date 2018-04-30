@@ -1,9 +1,10 @@
+/* eslint-disable object-shorthand */
 /* global Chart, CustomTooltips, getStyle, hexToRgba */
 import $ from 'jquery'
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0-beta.5): main.js
+ * CoreUI Free Boostrap Admin Template (v2.0.0-rc.0): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
