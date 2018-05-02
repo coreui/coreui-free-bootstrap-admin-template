@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*!
  * CoreUI - Open Source Dashboard UI Kit
- * @version v2.0.0-rc.0
+ * @version v2.0.0-rc.2
  * @link https://coreui.io
  * Copyright (c) 2018 creativeLabs Łukasz Holeczek
  * Licensed under MIT (https://coreui.io/license)
  */
 /*!
- * Bootstrap v4.1.0 (https://getbootstrap.com/)
+ * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -72,7 +72,7 @@ html {
   width: device-width;
 }
 
-article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
@@ -208,7 +208,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
 }
 
@@ -521,13 +521,6 @@ mark,
 .figure-caption {
   font-size: 90%;
   color: #73818f;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 code {
@@ -2104,6 +2097,12 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   display: block;
 }
 
+.was-validated .form-control-file:valid ~ .valid-feedback,
+.was-validated .form-control-file:valid ~ .valid-tooltip, .form-control-file.is-valid ~ .valid-feedback,
+.form-control-file.is-valid ~ .valid-tooltip {
+  display: block;
+}
+
 .was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
   color: #4dbd74;
 }
@@ -2198,6 +2197,12 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .custom-select:invalid ~ .invalid-tooltip,
 .custom-select.is-invalid ~ .invalid-feedback,
 .custom-select.is-invalid ~ .invalid-tooltip {
+  display: block;
+}
+
+.was-validated .form-control-file:invalid ~ .invalid-feedback,
+.was-validated .form-control-file:invalid ~ .invalid-tooltip, .form-control-file.is-invalid ~ .invalid-feedback,
+.form-control-file.is-invalid ~ .invalid-tooltip {
   display: block;
 }
 
@@ -3410,8 +3415,7 @@ input[type="button"].btn-block {
   border-bottom-right-radius: 0;
 }
 
-.input-group > .custom-file:not(:first-child) .custom-file-label,
-.input-group > .custom-file:not(:first-child) .custom-file-label::after {
+.input-group > .custom-file:not(:first-child) .custom-file-label {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3532,13 +3536,14 @@ input[type="button"].btn-block {
 }
 
 .custom-control-label {
+  position: relative;
   margin-bottom: 0;
 }
 
 .custom-control-label::before {
   position: absolute;
   top: 0.25rem;
-  left: 0;
+  left: -1.5rem;
   display: block;
   width: 1rem;
   height: 1rem;
@@ -3554,7 +3559,7 @@ input[type="button"].btn-block {
 .custom-control-label::after {
   position: absolute;
   top: 0.25rem;
-  left: 0;
+  left: -1.5rem;
   display: block;
   width: 1rem;
   height: 1rem;
@@ -3717,7 +3722,7 @@ input[type="button"].btn-block {
   bottom: 0;
   z-index: 3;
   display: block;
-  height: calc(calc(2.0625rem + 2px) - 1px * 2);
+  height: 2.0625rem;
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
   color: #5c6873;
@@ -5972,6 +5977,7 @@ button.close {
   margin-right: 3px;
   margin-left: 3px;
   text-indent: -999px;
+  cursor: pointer;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -8976,6 +8982,19 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #c8ced3 !important;
   }
+  .table-dark {
+    color: inherit;
+  }
+  .table-dark th,
+  .table-dark td,
+  .table-dark thead th,
+  .table-dark tbody + tbody {
+    border-color: #c8ced3;
+  }
+  .table .thead-dark th {
+    color: inherit;
+    border-color: #c8ced3;
+  }
 }
 
 .animated {
@@ -11863,6 +11882,9 @@ canvas {
   .sidebar-compact .sidebar .nav {
     width: 150px;
   }
+  .sidebar-compact .sidebar .d-compact-none {
+    display: none;
+  }
   .sidebar-compact .sidebar .nav-title {
     text-align: center;
   }
@@ -11897,6 +11919,7 @@ canvas {
   .sidebar-minimized .sidebar .nav {
     width: 50px;
   }
+  .sidebar-minimized .sidebar .d-minimized-none,
   .sidebar-minimized .sidebar .nav-divider,
   .sidebar-minimized .sidebar .nav-label,
   .sidebar-minimized .sidebar .nav-title,
