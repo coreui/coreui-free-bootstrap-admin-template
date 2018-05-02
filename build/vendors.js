@@ -2,60 +2,100 @@
 
 'use strict'
 
-const fs         = require('fs');
-const path       = require('path');
-const mkdirp     = require('mkdirp');
+const fs         = require('fs')
+const path       = require('path')
+const mkdirp     = require('mkdirp')
 const sh         = require('shelljs')
 
-const basename   = path.basename;
-const dirname    = path.dirname;
-const resolve    = path.resolve;
-const normalize  = path.normalize;
-const join       = path.join;
-const relative   = path.relative;
-const extension  = path.extname;
+const basename   = path.basename
+const dirname    = path.dirname
+const resolve    = path.resolve
+const normalize  = path.normalize
+const join       = path.join
+const relative   = path.relative
+const extension  = path.extname
 
-const src        = 'src/';
-const dest       = 'dist/';
+const src        = 'src/'
+const dest       = 'dist/'
+const base       = path.resolve(__dirname, '..')
 
 const walkSync = (dir, filelist = []) => {
   fs.readdirSync(dir).forEach(file => {
     filelist = fs.statSync(path.join(dir, file)).isDirectory()
-      ? walkSync(path.join(dir, file), filelist)
-      : filelist.concat(path.join(dir, file));
-  });
-  return filelist;
+    ? walkSync(path.join(dir, file), filelist)
+    : filelist.concat(path.join(dir, file))
+  })
+  return filelist
+}
+
+const vendorName = (path) => {
+  const nodeModules = Boolean(path.split('/')[0] === 'node_modules')
+  const subDir = Boolean(path.indexOf('@') >= 0)
+  let vendor
+  if (nodeModules) {
+    if (subDir) {
+      vendor = `${path.split('/')[1]}/${path.split('/')[2]}`
+    } else {
+      vendor = `${path.split('/')[1]}`
+    }
+  }
+  return vendor
+}
+
+function removeDuplicates( arr, prop ) {
+  let obj = {};
+  return Object.keys(arr.reduce((prev, next) => {
+    if(!obj[next[prop]]) obj[next[prop]] = next;
+    return obj;
+  }, obj)).map((i) => obj[i]);
 }
 
 const findVendors = () => {
-  const vendors = { css: [], js: [], other: [] };
+  const vendors = []
+  // const assets = []
+  // const vendors = { css: [], js: [], other: [] }
   const filenames = walkSync(src)
 
   filenames.forEach((filename) => {
     if (extension(filename) === '.html') {
-      const files = fs.readFileSync(filename, 'ascii').toString().split('\n');
+      const files = fs.readFileSync(filename, 'ascii').toString().split('\n')
 
-      // go through the list of logFileLines
+      // go through the list of code lines
       files.forEach((file) => {
 
-        // if the current line matches SAVE, it will be stored in the variable lines
-        if(file.match(/node_modules/)) {
+        // if the current line matches `/(?:href|src)="(node_modules.*.[css|js])"/`, it will be stored in the variable lines
+        const nodeModules = file.match(/(?:href|src)="(node_modules.*.[css|js])"/)
+        if (nodeModules) {
+          let vendor = []
+          const src = nodeModules[1]
+          const name = vendorName(src)
+          let type
+          let absolute
 
-          const js = file.match(/node_modules.*.js/)
-          if (js !== null) {
-            // vendors.js.indexOf(resolve(js[0])) === -1 ? vendors.js.push({'html':js[0],'absolute':resolve(js[0])  }) : '';
-            vendors.js.map((item) => { return item.html }).indexOf(js[0]) === -1 ? vendors.js.push({'html':js[0],'absolute':resolve(js[0])  }) : '';
-          }
-          const css = file.match(/node_modules.*.css/)
-          if (css !== null) {
-            if (vendors.css.map((item) => { return item.html }).indexOf(css[0]) === -1) {
-              // vendors.css.push(resolve(css[0]))
-              vendors.css.push({'html':css[0],'absolute':resolve(css[0])  })
+          vendor['name'] = name
+          vendor['filetype'] = extension(src).replace('.', '')
+          vendor['src'] = src
+          vendor['absolute'] = resolve(src)
 
-              const assets = fs.readFileSync(css[0], 'ascii').toString().match(/url\(.*?\)/ig);
-              assets.forEach(function(asset) {
-                const assetPath = asset.replace(/\?.*/g, '').replace('url(','').replace(/\'/g, '').replace(')','');
-                vendors.other.push({'absolute' : resolve(dirname(css[0]), assetPath), 'relative' : assetPath })
+          if (vendors.findIndex(vendor => vendor.absolute === resolve(src)) === -1) {
+            vendors.push(vendor)
+
+            // Check it CSS file has assets
+            if (extension(src) === '.css') {
+              const assets = fs.readFileSync(resolve(src), 'ascii').toString().match(/(?:url)\((.*?)\)/ig)
+              assets.forEach((asset) => {
+                const assetPath = asset.match(/(?:url)\((.*?)\)/)[1]
+                let subVendor = []
+                if (assetPath !== undefined) {
+                  // console.log(assetPath)
+                  const path = assetPath.replace(/\?.*/, '').replace(/\'|\"/, '')
+                  subVendor['name'] = name
+                  subVendor['filetype'] = 'other'
+                  subVendor['src'] = normalize(`css/${path}`)
+                  subVendor['absolute'] = resolve(dirname(src), path)
+
+                  vendors.push(subVendor)
+                }
               })
             }
           }
@@ -63,44 +103,40 @@ const findVendors = () => {
       })
     }
   })
-  return vendors;
+
+  return vendors
 }
 
 const copyFiles = (files, dest) => {
   files.forEach((file) => {
-    mkdirp.sync(resolve(dest));
-    fs.createReadStream(file).pipe(fs.createWriteStream(resolve(dest, basename(file))));
+    let dir
+    file.filetype !== 'other' ? dir = resolve(dest, file.name, file.filetype) : dir = resolve(dest, file.name, dirname(file.src))
+    mkdirp.sync(dir)
+    fs.createReadStream(file.absolute).pipe(fs.createWriteStream(resolve(dir, basename(file.src))))
+
+    if (fs.existsSync(`${file.absolute}.map`)) {
+      fs.createReadStream(`${file.absolute}.map`).pipe(fs.createWriteStream(resolve(dir, `${basename(file.src)}.map`)))
+    }
   })
 }
 
-const copyOtherFiles = (files, dest) => {
-  files.forEach((file) => {
-    mkdirp.sync(resolve(dest + dirname(file.relative)));
-    fs.createReadStream(file.absolute).pipe(fs.createWriteStream(resolve(dest, file.relative)));
-  })
-}
-
-const replaceRecursively = (filename, original) => {
-  const replacement = 'vendors/' + extension(original).replace('.','') + '/' + basename(original);
+const replaceRecursively = (filename, vendor) => {
+  const original = vendor.src
+  const replacement = `vendors/${vendor.name}/${vendor.filetype}/${basename(vendor.src)}`
   sh.sed('-i', original, replacement, filename)
 }
 
 const main = () => {
 
   const vendors = findVendors()
-
-  copyFiles(vendors.css.map((item) => { return item.absolute }), './dist/vendors/css/');
-  copyFiles(vendors.js.map((item) => { return item.absolute }), './dist/vendors/js/');
-  copyOtherFiles(vendors.other, './dist/vendors/css/');
-
+  copyFiles(vendors.map((file) => { return file }), './dist/vendors/')
   const filenames = walkSync(dest)
   filenames.forEach((filename) => {
     if (extension(filename) === '.html') {
-      vendors.css.map((item) => {
-        replaceRecursively(resolve(filename), item.html)
-      })
-      vendors.js.map((item) => {
-        replaceRecursively(resolve(filename), item.html)
+      vendors.map((vendor) => {
+        if (vendor.filetype !== 'other') {
+          replaceRecursively(resolve(filename), vendor)
+        }
       })
     }
   })
