@@ -83,27 +83,28 @@ const findVendors = () => {
             // Check it CSS file has assets
             if (extension(src) === '.css') {
               const assets = fs.readFileSync(resolve(src), 'ascii').toString().match(/(?:url)\((.*?)\)/ig)
-              assets.forEach((asset) => {
-                const assetPath = asset.match(/(?:url)\((.*?)\)/)[1]
-                let subVendor = []
-                if (assetPath !== undefined) {
-                  // console.log(assetPath)
-                  const path = assetPath.replace(/\?.*/, '').replace(/\'|\"/, '')
-                  subVendor['name'] = name
-                  subVendor['filetype'] = 'other'
-                  subVendor['src'] = normalize(`css/${path}`)
-                  subVendor['absolute'] = resolve(dirname(src), path)
+              if (assets) {
+                assets.forEach((asset) => {
+                  const assetPath = asset.match(/(?:url)\((.*?)\)/)[1]
+                  let subVendor = []
+                  if (assetPath !== undefined) {
+                    // console.log(assetPath)
+                    const path = assetPath.replace(/\?.*/, '').replace(/\'|\"/, '')
+                    subVendor['name'] = name
+                    subVendor['filetype'] = 'other'
+                    subVendor['src'] = normalize(`css/${path}`)
+                    subVendor['absolute'] = resolve(dirname(src), path)
 
-                  vendors.push(subVendor)
-                }
-              })
+                    vendors.push(subVendor)
+                  }
+                })
+              }
             }
           }
         }
       })
     }
   })
-
   return vendors
 }
 
@@ -127,7 +128,6 @@ const replaceRecursively = (filename, vendor) => {
 }
 
 const main = () => {
-
   const vendors = findVendors()
   copyFiles(vendors.map((file) => { return file }), './dist/vendors/')
   const filenames = walkSync(dest)
