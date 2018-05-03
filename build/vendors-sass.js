@@ -90,7 +90,7 @@ const compileSass = (options = {}) => {
           if (error) return cb(error)
         })
         // create .css.map file
-        fs.writeFile(options.dest,compiled.map, (error) => {
+        fs.writeFile(options.map,compiled.map, (error) => {
           if (error) return cb(error)
         })
         console.log(' ' + options.dest + ' built.');
