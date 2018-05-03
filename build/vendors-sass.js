@@ -25,7 +25,7 @@ const vendors = () => {
   const pattern = '**/*.scss'
   const ignore = '**/_*.scss'
   const options = {
-    cwd: 'src/scss/vendors/',
+    cwd: cwd,
     ignore: ignore
   }
   const filenames = new glob.sync(pattern, options)
@@ -55,7 +55,7 @@ const compileSass = (options = {}) => {
       sourceMapContents: true
     })
   } catch(e) {
-    //Catch error, the process crashed
+    // catch error, the process crashed
     const error = `
       file: ${e.file},
       line: ${e.line},
@@ -120,7 +120,6 @@ const compile = (vendors) => {
 }
 
 const main = () => {
-  // vendors()
   compile(vendors())
 }
 

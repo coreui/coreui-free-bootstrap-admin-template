@@ -1,6 +1,6 @@
 {
   "name": "@coreui/coreui-free-bootstrap-admin-template",
-  "version": "2.0.0-rc.0",
+  "version": "2.0.0-rc.1",
   "description": "Free Bootstrap Admin Template",
   "keywords": [
     "admin",
@@ -46,12 +46,10 @@
     "build-vendors": "node build/vendors.js",
     "css": "npm-run-all --parallel css-compile* --sequential css-prefix css-minify*",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/style.scss src/css/style.css",
-    "css-compile-vendors": "foreach -g \"src/scss/vendors/**/*.scss\" -i \"src/scss/vendors/**/_*.scss\" -x \"node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 --output src/vendors/css/#{reldir}/ #{path}\" --no-c",
+    "css-compile-vendors": "node build/vendors-sass.js",
     "css-lint": "stylelint --config build/.stylelintrc --syntax scss \"src/scss/**/*.scss\"",
     "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output src/css/style.min.css src/css/style.css",
-    "css-minify-vendors": "foreach -g \"src/vendors/css/*.css\" -i \"src/vendors/css/*.min.css\" -x \"cleancss --level 1 --source-map --source-map-inline-sources #{path} --output #{dir}/#{name}.min#{ext}\" --no-c",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"src/css/*.css\" \"!src/css/*.min.css\"",
-    "css-prefix-vendors": "postcss --config build/postcss.config.js --replace \"src/vendors/css/**/*.css\" \"!src/vendors/css/**/*.css\"",
     "js": "npm-run-all --parallel js-compile* js-lint*",
     "js-compile": "cross-env PLUGINS=true babel src/js/src/ --out-dir src/js/ --source-maps",
     "js-lint": "eslint src/js/src",
