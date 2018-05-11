@@ -49,7 +49,7 @@ const src = 'src/';
 const dest = 'dist/';
 
 const main = () => {
-  let siteFiles = lib.getFolderTreeFiles(src);
+  let siteFiles = lib.getFolderTreeFiles(src).filter(f => !f.startsWith('src/scss/'));
   lib.copySiteFiles(src, siteFiles, dest);
   lib.generateRazorViews(dest);
   lib.generateHtmlFiles(dest);
