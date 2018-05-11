@@ -92,7 +92,7 @@ const generateDistDocument = (html, type) => {
     html = '@{ Layout = ""; }\r\n' + html;
     html = html.replace(/(<a.*)href="(.*)\.(.*?)"/g, getLink);
     html = html.replace(/\* @(version|link) /g, '* @@$1 ');
-    html = html.replace(/src="~\/lib\/@coreui/g, 'src="~/lib/@@coreui');
+    html = html.replace(/(href|src)="~\/lib\/@coreui/g, '$1="~/lib/@@coreui');
     html = html.replace(/>@(.*?)</g, '>@@$1<');
   }
 
