@@ -141,6 +141,7 @@ const cssAssets = [
 
 const vendorFiles = [
   'test-fs/dest/lib/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js',
+  'test-fs/dest/lib/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js.map',
   'test-fs/dest/lib/font-awesome/css/font-awesome.min.css',
   'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.eot',
   'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.svg',

@@ -140,6 +140,11 @@ const copyVendorFiles = (sourceFolder, referenceList, destFolder) => {
       mkdirp.sync(path.dirname(destFile));
       fs.copyFileSync(sourceFile, destFile);
 
+      let mapFile = `${sourceFile}.map`;
+      if (fs.existsSync(mapFile)) {
+        fs.copyFileSync(mapFile, `${destFile}.map`);
+      }
+
       if (path.extname(sourceFile) === '.css') {
         let css = fs.readFileSync(sourceFile, 'utf8');
         let assetReferences = getCssAssets(css);
