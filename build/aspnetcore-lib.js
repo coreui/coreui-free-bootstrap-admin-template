@@ -92,7 +92,7 @@ const generateDistDocument = (html, type) => {
     html = '@{ Layout = ""; }\r\n' + html;
     html = html.replace(/(<a.*)href="(.*)\.(.*?)"/g, getLink);
     html = html.replace(/\* @(version|link) /g, '* @@$1 ');
-    html = html.replace(/src="~\/lib\/@coreui/g, 'src="~/lib/@@coreui');
+    html = html.replace(/(href|src)="~\/lib\/@coreui/g, '$1="~/lib/@@coreui');
     html = html.replace(/>@(.*?)</g, '>@@$1<');
   }
 
@@ -139,6 +139,11 @@ const copyVendorFiles = (sourceFolder, referenceList, destFolder) => {
     if (fs.existsSync(sourceFile)) {
       mkdirp.sync(path.dirname(destFile));
       fs.copyFileSync(sourceFile, destFile);
+
+      let mapFile = `${sourceFile}.map`;
+      if (fs.existsSync(mapFile)) {
+        fs.copyFileSync(mapFile, `${destFile}.map`);
+      }
 
       if (path.extname(sourceFile) === '.css') {
         let css = fs.readFileSync(sourceFile, 'utf8');

@@ -22,6 +22,9 @@ const originalDocument = `<!DOCTYPE html>
 
     <!-- TEST-CASES: for cshtml views all references should have the "~/" prefix -->
 
+    <!-- TEST-CASE: @coreui should change to @@coreui for Razor view (.cshtml) -->
+    <link href="node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+
     <!-- TEST-CASE: paths to node_modules/... should change to lib/... -->
     <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
 
@@ -102,6 +105,7 @@ const originalDocument = `<!DOCTYPE html>
 const vendorReferenceList = [
   'node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js',
   'node_modules/@coreui/coreui/dist/js/coreui.min.js',
+  'node_modules/@coreui/icons/css/coreui-icons.min.css',
   'node_modules/bootstrap/dist/js/bootstrap.min.js',
   'node_modules/chart.js/dist/Chart.min.js',
   'node_modules/flag-icon-css/css/flag-icon.min.css',
@@ -141,6 +145,7 @@ const cssAssets = [
 
 const vendorFiles = [
   'test-fs/dest/lib/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js',
+  'test-fs/dest/lib/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js.map',
   'test-fs/dest/lib/font-awesome/css/font-awesome.min.css',
   'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.eot',
   'test-fs/dest/lib/font-awesome/fonts/fontawesome-webfont.svg',
@@ -168,6 +173,9 @@ const htmlDocument = `<!DOCTYPE html>
     <!-- Icons-->
 
     <!-- TEST-CASES: for cshtml views all references should have the "~/" prefix -->
+
+    <!-- TEST-CASE: @coreui should change to @@coreui for Razor view (.cshtml) -->
+    <link href="lib/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
 
     <!-- TEST-CASE: paths to node_modules/... should change to lib/... -->
     <link href="lib/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
@@ -265,6 +273,9 @@ const cshtmlDocument = `${'@{ Layout = ""; }\r\n'}<!DOCTYPE html>
     <!-- Icons-->
 
     <!-- TEST-CASES: for cshtml views all references should have the "~/" prefix -->
+
+    <!-- TEST-CASE: @coreui should change to @@coreui for Razor view (.cshtml) -->
+    <link href="~/lib/@@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
 
     <!-- TEST-CASE: paths to node_modules/... should change to lib/... -->
     <link href="~/lib/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">

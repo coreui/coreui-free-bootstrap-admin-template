@@ -126,7 +126,7 @@ describe('generateRazorViews', () => {
 });
 
 describe('getAllVendorFiles', () => {
-  let folder = 'test-fs/source/src/'; //path.dirname(destFile);
+  let folder = 'test-fs/source/src/';
   let htmlFiles = lib.getFolderTreeFiles(folder, '.html');
   let vendorFiles = lib.getAllVendorReferences(htmlFiles);
 
