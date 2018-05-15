@@ -81,7 +81,7 @@ const generateDistDocument = (html, type) => {
     if (httpRegEx.test(p2)) {
       return match;
     }
-    return `${p1}asp-controller="CoreUI" asp-route-view="${p2}"`;
+    return `${p1}asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="${p2}"`;
   };
 
   // Replace each match, because folderRegEx is "global" (/g)
@@ -90,9 +90,17 @@ const generateDistDocument = (html, type) => {
   // Specific changes for Razor views
   if (type === 'cshtml') {
     html = '@{ Layout = ""; }\r\n' + html;
+
+    // Replace links with Razor link Tag Helper
     html = html.replace(/(<a.*)href="(.*)\.(.*?)"/g, getLink);
+
+    // Escape @ character in version comment
     html = html.replace(/\* @(version|link) /g, '* @@$1 ');
+
+    // Escape @ character in CoreUI reference
     html = html.replace(/(href|src)="~\/lib\/@coreui/g, '$1="~/lib/@@coreui');
+
+    // Escape @ character in text content
     html = html.replace(/>@(.*?)</g, '>@@$1<');
   }
 

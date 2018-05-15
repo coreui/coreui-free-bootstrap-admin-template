@@ -45,7 +45,7 @@ const originalDocument = `<!DOCTYPE html>
     <ul class="nav">
       <li class="nav-item">
 
-        <!-- TEST-CASE: href="index.html" should change to asp-controller="CoreUI" asp-route-view="index" for Razor view (.cshtml) -->
+        <!-- TEST-CASE: href="index.html" should change to asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="index" for Razor view (.cshtml) -->
         <a class="nav-link" href="index.html">
 
           <i class="nav-icon icon-speedometer"></i> Dashboard
@@ -55,7 +55,7 @@ const originalDocument = `<!DOCTYPE html>
       <li class="nav-title">Theme</li>
       <li class="nav-item">
 
-        <!-- TEST-CASE: href="colors.html" should change to asp-controller="CoreUI" asp-route-view="colors" for Razor view (.cshtml) -->
+        <!-- TEST-CASE: href="colors.html" should change to asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="colors" for Razor view (.cshtml) -->
         <a class="nav-link" href="colors.html">
 
           <i class="nav-icon icon-drop"></i> Colors</a>
@@ -197,7 +197,7 @@ const htmlDocument = `<!DOCTYPE html>
     <ul class="nav">
       <li class="nav-item">
 
-        <!-- TEST-CASE: href="index.html" should change to asp-controller="CoreUI" asp-route-view="index" for Razor view (.cshtml) -->
+        <!-- TEST-CASE: href="index.html" should change to asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="index" for Razor view (.cshtml) -->
         <a class="nav-link" href="index.html">
 
           <i class="nav-icon icon-speedometer"></i> Dashboard
@@ -207,7 +207,7 @@ const htmlDocument = `<!DOCTYPE html>
       <li class="nav-title">Theme</li>
       <li class="nav-item">
 
-        <!-- TEST-CASE: href="colors.html" should change to asp-controller="CoreUI" asp-route-view="colors" for Razor view (.cshtml) -->
+        <!-- TEST-CASE: href="colors.html" should change to asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="colors" for Razor view (.cshtml) -->
         <a class="nav-link" href="colors.html">
 
           <i class="nav-icon icon-drop"></i> Colors</a>
@@ -297,8 +297,8 @@ const cshtmlDocument = `${'@{ Layout = ""; }\r\n'}<!DOCTYPE html>
     <ul class="nav">
       <li class="nav-item">
 
-        <!-- TEST-CASE: href="index.html" should change to asp-controller="CoreUI" asp-route-view="index" for Razor view (.cshtml) -->
-        <a class="nav-link" asp-controller="CoreUI" asp-route-view="index">
+        <!-- TEST-CASE: href="index.html" should change to asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="index" for Razor view (.cshtml) -->
+        <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="index">
 
           <i class="nav-icon icon-speedometer"></i> Dashboard
           <span class="badge badge-primary">NEW</span>
@@ -307,8 +307,8 @@ const cshtmlDocument = `${'@{ Layout = ""; }\r\n'}<!DOCTYPE html>
       <li class="nav-title">Theme</li>
       <li class="nav-item">
 
-        <!-- TEST-CASE: href="colors.html" should change to asp-controller="CoreUI" asp-route-view="colors" for Razor view (.cshtml) -->
-        <a class="nav-link" asp-controller="CoreUI" asp-route-view="colors">
+        <!-- TEST-CASE: href="colors.html" should change to asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="colors" for Razor view (.cshtml) -->
+        <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="colors">
 
           <i class="nav-icon icon-drop"></i> Colors</a>
       </li>
