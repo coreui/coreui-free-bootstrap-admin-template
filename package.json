@@ -1,6 +1,6 @@
 {
   "name": "@coreui/coreui-free-bootstrap-admin-template",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Free Bootstrap Admin Template",
   "keywords": [
     "admin",
@@ -55,10 +55,12 @@
     "js-lint": "eslint src/js/src",
     "localhost": "browser-sync start --server \"./src\" --serveStatic \"./\" --files \"!./src/js/src/**/*, ./src/**/*, !./src/scss/**/*\"",
     "localhost-dist": "browser-sync start --server \"./dist\"",
+    "pug": "node build/pug.js",
     "release-version": "node build/change-version.js",
     "serve": "npm-run-all --parallel localhost watch-css watch-js",
     "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\"",
-    "watch-js": "nodemon --watch src/js/src/ -x \"npm run js\""
+    "watch-js": "nodemon --watch src/js/src/ -x \"npm run js\"",
+    "watch-pug": "nodemon --watch pug/ -x \"npm run pug\""
   },
   "dependencies": {
     "@coreui/coreui": "2.0.0",
@@ -94,6 +96,7 @@
     "nodemon": "^1.17.4",
     "npm-run-all": "^4.1.3",
     "postcss-cli": "^5.0.0",
+    "pug": "^2.0.3",
     "rimraf": "^2.6.2",
     "shelljs": "^0.8.1",
     "stylelint": "^9.2.0",

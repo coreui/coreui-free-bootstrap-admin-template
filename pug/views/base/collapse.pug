@@ -1,0 +1,92 @@
+extends /default.pug
+
+block view
+  .animated.fadeIn
+    .row
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  Collapse
+            .card-header-actions
+              a.card-header-action(href='http://coreui.io/docs/components/bootstrap-collapse/', target='_blank')
+                small.text-muted docs
+          .card-body
+            p
+              a.btn.btn-primary(data-toggle='collapse', href='#collapseExample', aria-expanded='false', aria-controls='collapseExample')
+                | Link with href
+              button.btn.btn-primary(type='button', data-toggle='collapse', data-target='#collapseExample', aria-expanded='false', aria-controls='collapseExample')
+                | Button with data-target
+            #collapseExample.collapse
+              .card.card-body
+                | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  Collapse 
+            small multiple targets
+          .card-body
+            p
+              a.btn.btn-primary(data-toggle='collapse', href='#multiCollapseExample1', aria-expanded='false', aria-controls='multiCollapseExample1') Toggle first element
+              button.btn.btn-primary(type='button', data-toggle='collapse', data-target='#multiCollapseExample2', aria-expanded='false', aria-controls='multiCollapseExample1') Toggle second element
+              button.btn.btn-primary(type='button', data-toggle='collapse', data-target='.multi-collapse', aria-expanded='false', aria-controls='multiCollapseExample1 multiCollapseExample2') Toggle both elements
+            .row
+              .col-sm-12.col-md-6
+                #multiCollapseExample1.collapse.multi-collapse
+                  .card.card-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              .col-sm-12.col-md-6
+                #multiCollapseExample2.collapse.multi-collapse
+                  .card.card-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  Collapse 
+            small accordion
+          .card-body
+            #accordion(role='tablist')
+              .card
+                #headingOne.card-header(role='tab')
+                  h5.mb-0
+                    a(data-toggle='collapse', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                      | Collapsible Group Item #1
+                #collapseOne.collapse.show(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
+                  .card-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              .card
+                #headingTwo.card-header(role='tab')
+                  h5.mb-0
+                    a.collapsed(data-toggle='collapse', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                      | Collapsible Group Item #2
+                #collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
+                  .card-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              .card
+                #headingThree.card-header(role='tab')
+                  h5.mb-0
+                    a.collapsed(data-toggle='collapse', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                      | Collapsible Group Item #3
+                #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
+                  .card-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  Collapse 
+            small custom accordion
+          .card-body
+            #exampleAccordion(data-children='.item')
+              .item
+                a(data-toggle='collapse', data-parent='#exampleAccordion', href='#exampleAccordion1', aria-expanded='true', aria-controls='exampleAccordion1')
+                  | Toggle item
+                #exampleAccordion1.collapse.show(role='tabpanel')
+                  p.mb-3
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+              .item
+                a(data-toggle='collapse', data-parent='#exampleAccordion', href='#exampleAccordion2', aria-expanded='false', aria-controls='exampleAccordion2')
+                  | Toggle item 2
+                #exampleAccordion2.collapse(role='tabpanel')
+                  p.mb-3
+                    | Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
