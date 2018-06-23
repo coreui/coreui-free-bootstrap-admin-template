@@ -1,0 +1,151 @@
+extends /default.pug
+
+block view
+  .animated.fadeIn
+    .row
+      .col-lg-12
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  Bootstrap Modals
+          .card-body
+            // Button trigger modal
+            button.btn.btn-secondary(type='button', data-toggle='modal', data-target='#myModal')
+              | Launch demo modal
+            button.btn.btn-secondary(type='button', data-toggle='modal', data-target='#largeModal')
+              | Launch large modal
+            button.btn.btn-secondary(type='button', data-toggle='modal', data-target='#smallModal')
+              | Launch small modal
+            hr
+            button.btn.btn-primary(type='button', data-toggle='modal', data-target='#primaryModal')
+              | Primary modal
+            button.btn.btn-success(type='button', data-toggle='modal', data-target='#successModal')
+              | Success modal
+            button.btn.btn-warning(type='button', data-toggle='modal', data-target='#warningModal')
+              | Warning modal
+            button.btn.btn-danger(type='button', data-toggle='modal', data-target='#dangerModal')
+              | Danger modal
+            button.btn.btn-info(type='button', data-toggle='modal', data-target='#infoModal')
+              | Info modal
+      // /.col
+    // /.row
+  #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          p One fine body…
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #largeModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-lg(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          p One fine body…
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #smallModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-sm(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          p One fine body…
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #primaryModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-primary(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          p One fine body…
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #successModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-success(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          p One fine body…
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-success(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #warningModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-warning(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          p One fine body…
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-warning(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #dangerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-danger(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          p One fine body…
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-danger(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #infoModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-info(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          p One fine body…
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-info(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal

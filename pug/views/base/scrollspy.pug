@@ -1,0 +1,84 @@
+extends /default.pug
+
+block view
+  .animated.fadeIn
+    .card
+      .card-header
+        | Scrollspy
+        .card-header-actions
+          a.card-header-action(href='http://coreui.io/docs/components/bootstrap-scrollspy/', target='_blank')
+            small.text-muted docs
+      .card-body
+        .scrollspy-example1
+          nav#navbar-example1.navbar.navbar-light.bg-light(style='padding: .5rem 1rem;')
+            a.navbar-brand(href='#') Navbar
+            ul.nav.nav-pills(role='tablist')
+              li.nav-item
+                a.nav-link.active(href='#fat') @fat
+              li.nav-item
+                a.nav-link(href='#mdo') @mdo
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
+                .dropdown-menu
+                  a.dropdown-item(href='#one', target='_top') one
+                  a.dropdown-item(href='#two', target='_top') two
+                  .dropdown-divider(role='separator')
+                  a.dropdown-item(href='#three', target='_top') three
+          #spy-example1(data-spy='scroll', data-target='#navbar-example1', data-offset='65', style='position: relative; height: 200px; overflow: auto; margin-top: .5rem; overflow-y: scroll;')
+            h4#fat @fat
+            p
+              | Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+            h4#mdo @mdo
+            p
+              | Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.
+            h4#one one
+            p
+              | Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+            h4#two two
+            p
+              | In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+            h4#three three
+            p
+              | Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+            p
+              | Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+    .card
+      .card-header
+        | Scrollspy
+        small with list-group
+      .card-body
+        .row.bd-example2
+          .col-4
+            #list-example.list-group
+              a.list-group-item.list-group-item-action.active(href='#list-item-1') Item 1
+              a.list-group-item.list-group-item-action(href='#list-item-2') Item2
+              a.list-group-item.list-group-item-action(href='#list-item-3') Item 3
+              a.list-group-item.list-group-item-action(href='#list-item-4') Item 4
+          .col-8
+            #spy-example2(data-spy='scroll', data-target='#list-example', data-offset='0', style='height: 200px; overflow: auto')
+              h4#list-item-1 Item 1
+              p
+                | Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna
+                | ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum
+                | incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod
+                | consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing
+                | dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit
+                | cupidatat commodo velit ut eiusmod cupidatat elit dolore.
+              h4#list-item-2 Item 2
+              p
+                | Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non
+                | elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis
+                | laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco
+                | deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia
+                | laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum
+                | commodo tempor sunt in proident.
+              h4#list-item-3 Item 3
+              p
+                | Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum
+                | fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit
+                | elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.
+              h4#list-item-4 Item 4
+              p
+                | Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum
+                | fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit
+                | elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.
