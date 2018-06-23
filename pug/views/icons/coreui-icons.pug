@@ -1,6 +1,8 @@
 extends /default.pug
 
 block view
+  - var icons = ['account-logout','action-redo','action-undo','align-center','align-left','align-right','arrow-bottom','arrow-left','arrow-right','arrow-top','ban','basket-loaded','bell','bold','bookmark','briefcase','british-pound','brush','calculator','calendar','cart','chart','check','chevron-bottom','chevron-left','chevron-right','chevron-top','circle-check','circle-x','cloud','cloud-download','cloud-upload','code','cog','comment-square','credit-card','cursor','dashboard','delete','dollar','drop','envelope-closed','envelope-letter','envelope-open','euro','file','globe','graph','home','inbox','info','italic','justify-center','justify-left','justify-right','laptop','layers','lightbulb','list','location-pin','lock-locked','lock-unlocked','magnifying-glass','map','monitor','moon','note','options','paperclip','pencil','people','phone','pie-chart','print','puzzle','rss','screen-desktop','screen-smartphone','settings','share','shield','sort-ascending','sort-descending','speech','speedometer','star','sun','tablet','tags','task','thumb-down','thumb-up','trash','underline','user','user-female','user-follow','user-unfollow','wrench','yen'];
+  
   .animated.fadeIn
     .card.card-default
       .card-header
@@ -10,121 +12,8 @@ block view
           a.card-header-action(href='https://github.com/coreui/coreui-icons', target='_blank') Github
       .card-body
         .row.text-center
-          .col-6.col-sm-4.col-md-3
-            i.cui-basket-loaded.icons.font-2xl.d-block.mt-4
-            div basket-loaded
-          .col-6.col-sm-4.col-md-3
-            i.cui-bell.icons.font-2xl.d-block.mt-4
-            div bell
-          .col-6.col-sm-4.col-md-3
-            i.cui-calculator.icons.font-2xl.d-block.mt-4
-            div calculator
-          .col-6.col-sm-4.col-md-3
-            i.cui-calendar.icons.font-2xl.d-block.mt-4
-            div calendar
-          .col-6.col-sm-4.col-md-3
-            i.cui-camera.icons.font-2xl.d-block.mt-4
-            div camera
-          .col-6.col-sm-4.col-md-3
-            i.cui-chart.icons.font-2xl.d-block.mt-4
-            div chart
-          .col-6.col-sm-4.col-md-3
-            i.cui-cloud-download.icons.font-2xl.d-block.mt-4
-            div cloud-download
-          .col-6.col-sm-4.col-md-3
-            i.cui-cursor.icons.font-2xl.d-block.mt-4
-            div cursor
-          .col-6.col-sm-4.col-md-3
-            i.cui-cursor-move.icons.font-2xl.d-block.mt-4
-            div cursor-move
-          .col-6.col-sm-4.col-md-3
-            i.cui-drop.icons.font-2xl.d-block.mt-4
-            div drop
-          .col-6.col-sm-4.col-md-3
-            i.cui-energy.icons.font-2xl.d-block.mt-4
-            div energy
-          .col-6.col-sm-4.col-md-3
-            i.cui-envelope-letter.icons.font-2xl.d-block.mt-4
-            div envelope-letter
-          .col-6.col-sm-4.col-md-3
-            i.cui-equalizer.icons.font-2xl.d-block.mt-4
-            div equalizer
-          .col-6.col-sm-4.col-md-3
-            i.cui-globe.icons.font-2xl.d-block.mt-4
-            div globe
-          .col-6.col-sm-4.col-md-3
-            i.cui-graph.icons.font-2xl.d-block.mt-4
-            div graph
-          .col-6.col-sm-4.col-md-3
-            i.cui-home.icons.font-2xl.d-block.mt-4
-            div home
-          .col-6.col-sm-4.col-md-3
-            i.cui-layers.icons.font-2xl.d-block.mt-4
-            div layers
-          .col-6.col-sm-4.col-md-3
-            i.cui-list.icons.font-2xl.d-block.mt-4
-            div list
-          .col-6.col-sm-4.col-md-3
-            i.cui-location-pin.icons.font-2xl.d-block.mt-4
-            div location-pin
-          .col-6.col-sm-4.col-md-3
-            i.cui-map.icons.font-2xl.d-block.mt-4
-            div map
-          .col-6.col-sm-4.col-md-3
-            i.cui-note.icons.font-2xl.d-block.mt-4
-            div note
-          .col-6.col-sm-4.col-md-3
-            i.cui-options.icons.font-2xl.d-block.mt-4
-            div options
-          .col-6.col-sm-4.col-md-3
-            i.cui-pencil.icons.font-2xl.d-block.mt-4
-            div pencil
-          .col-6.col-sm-4.col-md-3
-            i.cui-people.icons.font-2xl.d-block.mt-4
-            div people
-          .col-6.col-sm-4.col-md-3
-            i.cui-pie-chart.icons.font-2xl.d-block.mt-4
-            div pie-chart
-          .col-6.col-sm-4.col-md-3
-            i.cui-puzzle.icons.font-2xl.d-block.mt-4
-            div puzzle
-          .col-6.col-sm-4.col-md-3
-            i.cui-screen-desktop.icons.font-2xl.d-block.mt-4
-            div screen-desktop
-          .col-6.col-sm-4.col-md-3
-            i.cui-screen-smartphone.icons.font-2xl.d-block.mt-4
-            div screen-smartphone
-          .col-6.col-sm-4.col-md-3
-            i.cui-settings.icons.font-2xl.d-block.mt-4
-            div settings
-          .col-6.col-sm-4.col-md-3
-            i.cui-social-facebook.icons.font-2xl.d-block.mt-4
-            div social-facebook
-          .col-6.col-sm-4.col-md-3
-            i.cui-social-skype.icons.font-2xl.d-block.mt-4
-            div social-skype
-          .col-6.col-sm-4.col-md-3
-            i.cui-social-twitter.icons.font-2xl.d-block.mt-4
-            div social-twitter
-          .col-6.col-sm-4.col-md-3
-            i.cui-speech.icons.font-2xl.d-block.mt-4
-            div speech
-          .col-6.col-sm-4.col-md-3
-            i.cui-speedometer.icons.font-2xl.d-block.mt-4
-            div speedometer
-          .col-6.col-sm-4.col-md-3
-            i.cui-star.icons.font-2xl.d-block.mt-4
-            div star
-          .col-6.col-sm-4.col-md-3
-            i.cui-user.icons.font-2xl.d-block.mt-4
-            div user
-          .col-6.col-sm-4.col-md-3
-            i.cui-user-female.icons.font-2xl.d-block.mt-4
-            div user-female
-          .col-6.col-sm-4.col-md-3
-            i.cui-user-follow.icons.font-2xl.d-block.mt-4
-            div user-follow
-          .col-6.col-sm-4.col-md-3
-            i.cui-user-unfollow.icons.font-2xl.d-block.mt-4
-            div user-unfollow
+          each icon in icons
+            .col-6.col-sm-4.col-md-2
+              i(class='icons font-2xl d-block mt-5 cui-' + icon)
+              div=icon
         // /.row
