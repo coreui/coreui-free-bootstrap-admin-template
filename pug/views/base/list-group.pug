@@ -1,0 +1,191 @@
+extends /default.pug
+
+block view
+  .animated.fadeIn
+    .row
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  List group
+            .card-header-actions
+              a.card-header-action(href='http://coreui.io/docs/components/bootstrap-list-group/', target='_blank')
+                small.text-muted docs
+          .card-body
+            ul.list-group
+              li.list-group-item Cras justo odio
+              li.list-group-item Dapibus ac facilisis in
+              li.list-group-item Morbi leo risus
+              li.list-group-item Porta ac consectetur ac
+              li.list-group-item Vestibulum at eros
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  List group 
+            small active items
+          .card-body
+            ul.list-group
+              li.list-group-item.active Cras justo odio
+              li.list-group-item Dapibus ac facilisis in
+              li.list-group-item Morbi leo risus
+              li.list-group-item Porta ac consectetur ac
+              li.list-group-item Vestibulum at eros
+    .row
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  List group 
+            small links with disabled items
+          .card-body
+            .list-group
+              a.list-group-item.active(href='#')
+                | Cras justo odio
+              a.list-group-item.list-group-item-action(href='#') Dapibus ac facilisis in
+              a.list-group-item.list-group-item-action(href='#') Morbi leo risus
+              a.list-group-item.list-group-item-action(href='#') Porta ac consectetur ac
+              a.list-group-item.list-group-item-action.disabled(href='#') Vestibulum at eros
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  List group 
+            small buttons with disabled items
+          .card-body
+            .list-group
+              button.list-group-item.list-group-item-action.active(type='button')
+                | Cras justo odio
+              button.list-group-item.list-group-item-action(type='button') Dapibus ac facilisis in
+              button.list-group-item.list-group-item-action(type='button') Morbi leo risus
+              button.list-group-item.list-group-item-action(type='button') Porta ac consectetur ac
+              button.list-group-item.list-group-item-action(type='button', disabled='') Vestibulum at eros
+    .row
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  List group 
+            small contextual classes
+          .card-body
+            ul.list-group
+              li.list-group-item Dapibus ac facilisis in
+              li.list-group-item.list-group-item-primary This is a primary list group item
+              li.list-group-item.list-group-item-secondary This is a secondary list group item
+              li.list-group-item.list-group-item-success This is a success list group item
+              li.list-group-item.list-group-item-danger This is a danger list group item
+              li.list-group-item.list-group-item-warning This is a warning list group item
+              li.list-group-item.list-group-item-info This is a info list group item
+              li.list-group-item.list-group-item-light This is a light list group item
+              li.list-group-item.list-group-item-dark This is a dark list group item
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  List group 
+            small
+              | contextual with 
+              code .action
+          .card-body
+            .list-group
+              a.list-group-item.list-group-item-action(href='#') Dapibus ac facilisis in
+              a.list-group-item.list-group-item-action.list-group-item-primary(href='#')
+                | This is a primary list
+                | group item
+              a.list-group-item.list-group-item-action.list-group-item-secondary(href='#')
+                | This is a secondary
+                | list group item
+              a.list-group-item.list-group-item-action.list-group-item-success(href='#')
+                | This is a success list
+                | group item
+              a.list-group-item.list-group-item-action.list-group-item-danger(href='#')
+                | This is a danger list
+                | group item
+              a.list-group-item.list-group-item-action.list-group-item-warning(href='#')
+                | This is a warning list
+                | group item
+              a.list-group-item.list-group-item-action.list-group-item-info(href='#')
+                | This is a info list group
+                | item
+              a.list-group-item.list-group-item-action.list-group-item-light(href='#')
+                | This is a light list group
+                | item
+              a.list-group-item.list-group-item-action.list-group-item-dark(href='#')
+                | This is a dark list group
+                | item
+    .row
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  List group 
+            small with badges
+          .card-body
+            ul.list-group
+              li.list-group-item.d-flex.list-group-item-action.justify-content-between.align-items-center
+                | Cras justo odio
+                span.badge.badge-primary.badge-pill 14
+              li.list-group-item.d-flex.list-group-item-action.justify-content-between.align-items-center
+                | Dapibus ac facilisis in
+                span.badge.badge-primary.badge-pill 2
+              li.list-group-item.d-flex.list-group-item-action.justify-content-between.align-items-center
+                | Morbi leo risus
+                span.badge.badge-primary.badge-pill 1
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  List group 
+            small custom content
+          .card-body
+            .list-group
+              a.list-group-item.list-group-item-action.flex-column.align-items-start.active(href='#')
+                .d-flex.w-100.justify-content-between
+                  h5.mb-1 List group item heading
+                  small 3 days ago
+                p.mb-1
+                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                small Donec id elit non mi porta.
+              a.list-group-item.list-group-item-action.flex-column.align-items-start(href='#')
+                .d-flex.w-100.justify-content-between
+                  h5.mb-1 List group item heading
+                  small.text-muted 3 days ago
+                p.mb-1
+                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                small.text-muted Donec id elit non mi porta.
+              a.list-group-item.list-group-item-action.flex-column.align-items-start(href='#')
+                .d-flex.w-100.justify-content-between
+                  h5.mb-1 List group item heading
+                  small.text-muted 3 days ago
+                p.mb-1
+                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                small.text-muted Donec id elit non mi porta.
+    .row
+      .col
+        .card
+          .card-header
+            i.fa.fa-align-justify
+            |  List group 
+            small tab Javascript plugin
+          .card-body
+            .row
+              .col-4
+                #list-tab.list-group(role='tablist')
+                  a#list-home-list.list-group-item.list-group-item-action(data-toggle='tab', href='#list-home', role='tab', aria-controls='list-home', aria-selected='false') Home
+                  a#list-profile-list.list-group-item.list-group-item-action.active(data-toggle='tab', href='#list-profile', role='tab', aria-controls='list-profile', aria-selected='true') Profile
+                  a#list-messages-list.list-group-item.list-group-item-action(data-toggle='tab', href='#list-messages', role='tab', aria-controls='list-messages') Messages
+                  a#list-settings-list.list-group-item.list-group-item-action(data-toggle='tab', href='#list-settings', role='tab', aria-controls='list-settings') Settings
+              .col-8
+                #nav-tabContent.tab-content
+                  #list-home.tab-pane.fade(role='tabpanel', aria-labelledby='list-home-list')
+                    p
+                      | Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate reprehenderit occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in cupidatat nisi enim eu nostrud do aliquip veniam minim.
+                  #list-profile.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='list-profile-list')
+                    p
+                      | Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do cillum ad laborum. Mollit et eu officia dolore sunt Lorem culpa qui commodo velit ex amet id ex. Officia anim incididunt laboris deserunt anim aute dolor incididunt veniam aute dolore do exercitation. Dolor nisi culpa ex ad irure in elit eu dolore. Ad laboris ipsum reprehenderit irure non commodo enim culpa commodo veniam incididunt veniam ad.
+                  #list-messages.tab-pane.fade(role='tabpanel', aria-labelledby='list-messages-list')
+                    p
+                      | Ut ut do pariatur aliquip aliqua aliquip exercitation do nostrud commodo reprehenderit aute ipsum voluptate. Irure Lorem et laboris nostrud amet cupidatat cupidatat anim do ut velit mollit consequat enim tempor. Consectetur est minim nostrud nostrud consectetur irure labore voluptate irure. Ipsum id Lorem sit sint voluptate est pariatur eu ad cupidatat et deserunt culpa sit eiusmod deserunt. Consectetur et fugiat anim do eiusmod aliquip nulla laborum elit adipisicing pariatur cillum.
+                  #list-settings.tab-pane.fade(role='tabpanel', aria-labelledby='list-settings-list')
+                    p
+                      | Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.

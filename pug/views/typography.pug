@@ -1,0 +1,144 @@
+extends /default.pug
+
+block view
+  .animated.fadeIn
+    .card
+      .card-header
+        | Headings
+      .card-body
+        p
+          | Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
+        table.table
+          thead
+            tr
+              th Heading
+              th Example
+          tbody
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h1></h1>'
+              td
+                span.h1 h1. Bootstrap heading
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h2></h2>'
+              td
+                span.h2 h2. Bootstrap heading
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h3></h3>'
+              td
+                span.h3 h3. Bootstrap heading
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h4></h4>'
+              td
+                span.h4 h4. Bootstrap heading
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h5></h5>'
+              td
+                span.h5 h5. Bootstrap heading
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h6></h6>'
+              td
+                span.h6 h6. Bootstrap heading
+    .card
+      .card-header
+        | Headings
+      .card-body
+        p
+          code.highlighter-rouge .h1
+          |  through
+          code.highlighter-rouge .h6
+          |  classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
+        .bd-example
+          p.h1 h1. Bootstrap heading
+          p.h2 h2. Bootstrap heading
+          p.h3 h3. Bootstrap heading
+          p.h4 h4. Bootstrap heading
+          p.h5 h5. Bootstrap heading
+          p.h6 h6. Bootstrap heading
+    .card
+      .card-header
+        | Display headings
+      .card-body
+        p
+          | Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a
+          strong display heading
+          | —a larger, slightly more opinionated heading style.
+        .bd-example.bd-example-type
+          table.table
+            tbody
+              tr
+                td
+                  span.display-1 Display 1
+              tr
+                td
+                  span.display-2 Display 2
+              tr
+                td
+                  span.display-3 Display 3
+              tr
+                td
+                  span.display-4 Display 4
+    .card
+      .card-header
+        | Inline text elements
+      .card-body
+        p
+          | Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a
+          strong display heading
+          | —a larger, slightly more opinionated heading style.
+        .bd-example
+          p
+            | You can use the mark tag to
+            mark highlight
+            |  text.
+          p
+            del This line of text is meant to be treated as deleted text.
+          p
+            s This line of text is meant to be treated as no longer accurate.
+          p
+            ins This line of text is meant to be treated as an addition to the document.
+          p
+            u This line of text will render as underlined
+          p
+            small This line of text is meant to be treated as fine print.
+          p
+            strong This line rendered as bold text.
+          p
+            em This line rendered as italicized text.
+    .card
+      .card-header
+        | Description list alignment
+      .card-body
+        p
+          | Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a
+          code.highlighter-rouge .text-truncate
+          |  class to truncate the text with an ellipsis.
+        .bd-example
+          dl.row
+            dt.col-sm-3 Description lists
+            dd.col-sm-9 A description list is perfect for defining terms.
+            dt.col-sm-3 Euismod
+            dd.col-sm-9
+              p Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+              p Donec id elit non mi porta gravida at eget metus.
+            dt.col-sm-3 Malesuada porta
+            dd.col-sm-9 Etiam porta sem malesuada magna mollis euismod.
+            dt.col-sm-3.text-truncate Truncated term is truncated
+            dd.col-sm-9
+              | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            dt.col-sm-3 Nesting
+            dd.col-sm-9
+              dl.row
+                dt.col-sm-4 Nested definition list
+                dd.col-sm-8 Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.

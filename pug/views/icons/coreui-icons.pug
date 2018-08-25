@@ -1,0 +1,19 @@
+extends /default.pug
+
+block view
+  - var icons = ['account-logout','action-redo','action-undo','align-center','align-left','align-right','arrow-bottom','arrow-left','arrow-right','arrow-top','ban','basket-loaded','bell','bold','bookmark','briefcase','british-pound','brush','calculator','calendar','cart','chart','check','chevron-bottom','chevron-left','chevron-right','chevron-top','circle-check','circle-x','cloud','cloud-download','cloud-upload','code','cog','comment-square','credit-card','cursor','dashboard','delete','dollar','drop','envelope-closed','envelope-letter','envelope-open','euro','file','globe','graph','home','inbox','info','italic','justify-center','justify-left','justify-right','laptop','layers','lightbulb','list','location-pin','lock-locked','lock-unlocked','magnifying-glass','map','monitor','moon','note','options','paperclip','pencil','people','phone','pie-chart','print','puzzle','rss','screen-desktop','screen-smartphone','settings','share','shield','sort-ascending','sort-descending','speech','speedometer','star','sun','tablet','tags','task','thumb-down','thumb-up','trash','underline','user','user-female','user-follow','user-unfollow','wrench','yen'];
+  
+  .animated.fadeIn
+    .card.card-default
+      .card-header
+        i.fa.fa-picture-o
+        |  CoreUI Icons
+        .card-header-actions
+          a.card-header-action(href='https://github.com/coreui/coreui-icons', target='_blank') Github
+      .card-body
+        .row.text-center
+          each icon in icons
+            .col-6.col-sm-4.col-md-2
+              i(class='icons font-2xl d-block mt-5 cui-' + icon)
+              div=icon
+        // /.row
