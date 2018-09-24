@@ -1,3 +1,14 @@
+## v2.1.3
+- fix(sidebar.pug): split icons/flags `li.nav-item`
+- update: `@coreui/coreui` to `2.0.9`
+- update: `flag-icon-css` to `3.2.0`
+- update: `@babel/cli` to `7.1.0`
+- update: `@babel/core` to `7.1.0`
+- update: `@babel/preset-env` to `7.1.0`
+- update: `eslint` to `5.6.0`
+- update: `js-beautify` to `1.8.6`
+- update: `stylelint-scss` to `3.3.1`
+
 ## v2.1.2
 - Update: `@coreui/coreui` to `2.0.6`
 - Update: `bootstrap` to `4.1.3`
