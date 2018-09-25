@@ -1,3 +1,6 @@
+## vNext
+- feat(basic-forms): add missing `date-input` 
+
 ## v2.1.3
 - fix(sidebar.pug): split icons/flags `li.nav-item`
 - update: `@coreui/coreui` to `2.0.9`
