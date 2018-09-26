@@ -1,5 +1,7 @@
 ## vNext
 - feat(basic-forms): add missing `date-input` 
+- update: `@coreui/coreui` to `2.0.10`
+- chore: update `babel-eslint` to `10.0.0`
 
 ## v2.1.3
 - fix(sidebar.pug): split icons/flags `li.nav-item`
