@@ -1,3 +1,10 @@
+## v2.1.5
+- update: `@coreui/coreui` to [`2.0.12`](https://github.com/coreui/coreui/releases) fixes some IE11 and `rtl` issues
+- update: `@babel/cli` to `7.1.2`
+- update: `@babel/core` to `7.1.2`
+- update: `eslint to `5.6.1`
+- update: `foreach-cli` to `1.8.1`
+ 
 ## v2.1.4
 - feat(basic-forms): add missing `date-input` 
 - update: `@coreui/coreui` to `2.0.11` fixes some IE11 and `rtl` issues
