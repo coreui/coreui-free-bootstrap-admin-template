@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * CoreUI - Open Source Dashboard UI Kit
- * @version v2.0.12
+ * @version v2.0.19
  * @link https://coreui.io
  * Copyright (c) 2018 creativeLabs Łukasz Holeczek
  * Licensed under MIT (https://coreui.io/license)
@@ -26,6 +26,7 @@
   --white: #fff;
   --gray: #73818f;
   --gray-dark: #2f353a;
+  --light-blue: #63c2de;
   --primary: #20a8d8;
   --secondary: #c8ced3;
   --success: #4dbd74;
@@ -9378,6 +9379,16 @@ a.text-dark:hover, a.text-dark:focus {
   border-bottom: 1px solid #c8ced3;
 }
 
+*[dir="rtl"] .breadcrumb-item::before {
+  padding-right: 0;
+  padding-left: 0.5rem;
+}
+
+*[dir="rtl"] .breadcrumb-item {
+  padding-right: 0.5rem;
+  padding-left: 0;
+}
+
 .brand-card {
   position: relative;
   display: -ms-flexbox;
@@ -10896,6 +10907,11 @@ button {
   background: #fff;
 }
 
+*[dir="rtl"] .card-header > i {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
 .card-header-icon-bg {
   display: inline-block;
   width: 2.8125rem;
@@ -10912,6 +10928,12 @@ button {
   display: inline-block;
   float: right;
   margin-right: -0.25rem;
+}
+
+*[dir="rtl"] .card-header-actions {
+  float: left;
+  margin-right: auto;
+  margin-left: -0.25rem;
 }
 
 .card-header-action {
@@ -11827,6 +11849,10 @@ canvas {
   transition: transform .3s, -webkit-transform .3s;
 }
 
+.sidebar .nav-dropdown-toggle .badge {
+  margin-right: 16px;
+}
+
 .sidebar .nav-dropdown.open {
   background: rgba(0, 0, 0, 0.2);
 }
@@ -12067,6 +12093,18 @@ canvas {
   margin-top: 2px;
 }
 
+*[dir="rtl"] .sidebar .nav-link.nav-dropdown-toggle .badge {
+  margin-right: auto;
+  margin-left: 16px;
+}
+
+*[dir="rtl"] .sidebar .sidebar-minimizer::before {
+  right: unset;
+  left: 0;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 *[dir="rtl"] .sidebar-minimized .sidebar .nav {
   list-style-type: disc;
 }
@@ -12089,6 +12127,11 @@ canvas {
 *[dir="rtl"] .sidebar-minimized .sidebar .nav-dropdown:hover > .nav-dropdown-items {
   right: 50px;
   left: 0;
+}
+
+*[dir="rtl"] .sidebar-minimized .sidebar .sidebar-minimizer::before {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 *[dir="rtl"] .sidebar-toggler {
@@ -13807,6 +13850,16 @@ button.bg-gray-dark:focus {
   background-color: #181b1e !important;
 }
 
+.bg-light-blue {
+  background-color: #63c2de !important;
+}
+
+a.bg-light-blue:hover, a.bg-light-blue:focus,
+button.bg-light-blue:hover,
+button.bg-light-blue:focus {
+  background-color: #39b2d5 !important;
+}
+
 .bg-gray-100 {
   background-color: #f0f3f5 !important;
 }
@@ -14089,6 +14142,7 @@ body {
   white: #fff;
   gray: #73818f;
   gray-dark: #2f353a;
+  light-blue: #63c2de;
   primary: #20a8d8;
   secondary: #c8ced3;
   success: #4dbd74;

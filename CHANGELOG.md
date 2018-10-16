@@ -1,5 +1,31 @@
+## v2.1.6
+- fix(cards): smooth collapse card - thanks @MartijnBastiaansen #378
+- fix(header): migrate `.divider` to `.dropdown-divider` - thanks @vanam #406
+- chore: build/change-version cleanup
+- docs(readme): fix broken hyperlinks to 6 versions
+- update: `@coreui/coreui` to `2.0.19`
+  - fix: `transparent` is not a valid rgb color ie issue
+  - fix(card): rtl for card-header icon margins
+  - fix(sidebar): rtl for sidebar-minimizer icon
+  - fix(breadcrumb): rtl padding
+  - fix(card): rtl float for card-header-actions
+  - fix(sidebar): rtl ps scrollbar issue temp fix/refactor
+  - feat(sidebar) badge margins for nav-dropdown-toggle
+  - fix(scss): add missing light-blue color variable
+- update: `chart.js` to `2.7.3`
+- update: `core-js` to `2.5.7`
+- update: `autoprefixer` to `9.2.0`
+- update: `browser-sync` to `2.26.3`
+- update: `eslint` to `5.7.0`
+- update: `eslint-plugin-compat` to `2.6.2`
+- update: `js-beautify` to `1.8.7`
+- update: `node-sass` to `4.9.4`
+
 ## v2.1.5
-- update: `@coreui/coreui` to [`2.0.12`](https://github.com/coreui/coreui/releases) fixes some IE11 and `rtl` issues
+- update: `@coreui/coreui` to `2.0.12` 
+   - fix(layout) aside IE issue with .main margin on mobile
+   - fix(sidebar) rtl IE issue with sidebar-minimized captions
+   - fix(sidebar) rtl ps scrollbar issue temp fix
 - update: `@babel/cli` to `7.1.2`
 - update: `@babel/core` to `7.1.2`
 - update: `eslint to `5.6.1`
@@ -45,7 +71,6 @@
 - Update: `stylelint` to `^9.5.0`
 - Update: `stylelint-order` to `^1.0.0`
 - Update: `stylelint-scss` to `^3.3.0`
-
 
 ## v2.1.1
 - Update: @coreui/coreui to 2.0.3
