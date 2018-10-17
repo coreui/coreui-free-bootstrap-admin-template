@@ -83,9 +83,9 @@ const compileHtml = () => {
       const html = compile(view, './pug/layout/')
       let file
       if (version === 'ajax') {
-        file = view.replace('pug/', '').replace('.pug', '.html')
+        file = view.replace(`pug${path.sep}`, '').replace('.pug', '.html')
       } else {
-        file = view.replace('pug/views/', '').replace('.pug', '.html')
+        file = view.replace(`pug${path.sep}views${path.sep}`, '').replace('.pug', '.html')
       }
       // Create tree
       mkdirp.sync(resolve(dest, dirname(file)))
