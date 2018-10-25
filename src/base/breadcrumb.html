@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v2.0.0
+* @version v2.1.6
 * @link https://coreui.io
 * Copyright (c) 2018 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -25,6 +25,20 @@
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <header class="app-header navbar">
@@ -105,7 +119,7 @@
               <i class="fa fa-file"></i> Projects
               <span class="badge badge-primary">42</span>
             </a>
-            <div class="divider"></div>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <i class="fa fa-shield"></i> Lock Account</a>
             <a class="dropdown-item" href="#">
@@ -245,6 +259,8 @@
                     <i class="nav-icon icon-star"></i> CoreUI Icons
                     <span class="badge badge-success">NEW</span>
                   </a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="icons/flags.html">
                     <i class="nav-icon icon-star"></i> Flags</a>
                 </li>
@@ -326,9 +342,7 @@
         <!-- Breadcrumb-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">Home</li>
-          <li class="breadcrumb-item">
-            <a href="#">Admin</a>
-          </li>
+          <li class="breadcrumb-item"><a href="#">Admin</a></li>
           <li class="breadcrumb-item active">Dashboard</li>
           <!-- Breadcrumb Menu-->
           <li class="breadcrumb-menu d-md-down-none">
@@ -372,12 +386,8 @@
                     </nav>
                     <nav aria-label="breadcrumb" role="navigation">
                       <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                          <a href="#">Home</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                          <a href="#">Library</a>
-                        </li>
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                       </ol>
                     </nav>

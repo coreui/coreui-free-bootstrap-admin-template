@@ -41,11 +41,9 @@ function walkAsync(directory, excludedDirectories, fileCallback, errback) {
         }
         if (stats.isSymbolicLink()) {
           return
-        }
-        else if (stats.isDirectory()) {
+        } else if (stats.isDirectory()) {
           process.nextTick(walkAsync, filepath, excludedDirectories, fileCallback, errback)
-        }
-        else if (stats.isFile()) {
+        } else if (stats.isFile()) {
           process.nextTick(fileCallback, filepath)
         }
       })
@@ -85,7 +83,10 @@ function main(args) {
   const newVersion = args[1]
   const EXCLUDED_DIRS = new Set([
     '.git',
+    '.idea',
+    'dist',
     'node_modules',
+    'pug',
     'vendor'
   ])
   const INCLUDED_EXTENSIONS = new Set([

@@ -43,7 +43,7 @@ const isPug = (filename) => {
 }
 
 const compile = (filename, basedir) => {
-  const levels = filename.replace('pug/views/', '').replace('pug/pages/', '').split('/').length
+  const levels = filename.replace(`pug${path.sep}views${path.sep}`, '').replace(`pug${path.sep}pages${path.sep}`, '').split(`${path.sep}`).length
   const base = (levels) => {
     let path = './'
     while (levels > 1) {
@@ -83,9 +83,9 @@ const compileHtml = () => {
       const html = compile(view, './pug/layout/')
       let file
       if (version === 'ajax') {
-        file = view.replace('pug/', '').replace('.pug', '.html')
+        file = view.replace(`pug${path.sep}`, '').replace('.pug', '.html')
       } else {
-        file = view.replace('pug/views/', '').replace('.pug', '.html')
+        file = view.replace(`pug${path.sep}views${path.sep}`, '').replace('.pug', '.html')
       }
       // Create tree
       mkdirp.sync(resolve(dest, dirname(file)))
@@ -103,7 +103,7 @@ const compileHtml = () => {
   pages.forEach((page) => {
     if (isPug(page)) {
       const html = compile(page, './pug/layout/')
-      const file = page.replace('pug/pages/', '').replace('.pug', '.html')
+      const file = page.replace(`pug${path.sep}pages${path.sep}`, '').replace('.pug', '.html')
       // Create tree
       mkdirp.sync(resolve(dest, dirname(file)))
       // Create HTML file
