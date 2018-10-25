@@ -1,3 +1,16 @@
+## v2.1.7
+- fix(pug): crossplatform use `path.sep` instead of `/` - thanks @vasilevich
+- update: `@coreui/coreui` to `2.0.21`
+  - feat(sidebar): mobile clickout behaviour
+  - fix(layout): sidebar on mobile issue [#23](https://github.com/coreui/coreui-angular/issues/23)
+  - fix: sidebar, sidebar-minimizer `rtl` ie issues, tweaks
+  - refactor(sidebar.js): ps minor cleanup
+- update: `flag-icon-css` to `3.2.1`
+- update: `autoprefixer` to `9.3.1`
+- update: `js-beautify` to `1.8.8`
+- update: `postcss-cli` to `6.0.1`
+- update: `stylelint-scss` to `3.3.2`
+
 ## v2.1.6
 - fix(cards): smooth collapse card - thanks @MartijnBastiaansen #378
 - fix(header): migrate `.divider` to `.dropdown-divider` - thanks @vanam #406
