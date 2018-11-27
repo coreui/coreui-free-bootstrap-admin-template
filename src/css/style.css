@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * CoreUI - Open Source Dashboard UI Kit
- * @version v2.0.26
+ * @version v2.1.2
  * @link https://coreui.io
  * Copyright (c) 2018 creativeLabs Łukasz Holeczek
  * Licensed under MIT (https://coreui.io/license)
@@ -11695,6 +11695,28 @@ canvas {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='%23fff' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E");
 }
 
+.sidebar .nav-link.disabled {
+  color: #b3b3b3;
+  cursor: default;
+  background: transparent;
+}
+
+.sidebar .nav-link.disabled .nav-icon {
+  color: #73818f;
+}
+
+.sidebar .nav-link.disabled:hover {
+  color: #b3b3b3;
+}
+
+.sidebar .nav-link.disabled:hover .nav-icon {
+  color: #73818f;
+}
+
+.sidebar .nav-link.disabled:hover.nav-dropdown-toggle::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='%23fff' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E");
+}
+
 .sidebar .nav-link.nav-link-primary {
   background: #20a8d8;
 }
@@ -11862,6 +11884,19 @@ canvas {
   border-left: 0;
 }
 
+.sidebar .nav-dropdown.open .nav-link.disabled {
+  color: #b3b3b3;
+  background: transparent;
+}
+
+.sidebar .nav-dropdown.open .nav-link.disabled:hover {
+  color: #b3b3b3;
+}
+
+.sidebar .nav-dropdown.open .nav-link.disabled:hover .nav-icon {
+  color: #73818f;
+}
+
 .sidebar .nav-dropdown.open > .nav-dropdown-toggle::before {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
@@ -12019,6 +12054,12 @@ canvas {
   .sidebar-minimized .sidebar .nav-item:hover > .nav-link .nav-icon {
     color: #fff;
   }
+  .sidebar-minimized .sidebar .nav-item:hover > .nav-link.disabled {
+    background: #2f353a;
+  }
+  .sidebar-minimized .sidebar .nav-item:hover > .nav-link.disabled .nav-icon {
+    color: #73818f;
+  }
   .sidebar-minimized .sidebar .nav-link {
     position: relative;
     padding-left: 0;
@@ -12067,7 +12108,7 @@ canvas {
     display: inline;
   }
   *[dir="rtl"] .sidebar-minimized .sidebar .nav {
-    list-style-image: url("data:,");
+    list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
   }
   *[dir="rtl"] .sidebar-minimized .sidebar .nav .divider {
     height: 0;

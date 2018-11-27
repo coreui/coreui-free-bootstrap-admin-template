@@ -1,3 +1,23 @@
+## v2.1.9
+- fix: devDependencies security issues (event-stream, flatmap-stream)
+- chore: dependencies update
+  - update `npm-run-all` to `^4.1.5`
+  - reinstall `nodemon`
+  ```bash
+  npm uninstall nodemon
+  npm install --save-dev nodemon
+  ```
+- update: `@coreui/coreui` to `^2.1.2`
+- update: `popper.js` to `^1.14.5`
+- update: `@babel/cli` to `^7.1.5`
+- update: `@babel/core` to `^7.1.6`
+- update: `@babel/preset-env` to `^7.1.6`
+- update: `eslint` to `^5.9.0`
+- update: `npm-run-all` to `^4.1.5`
+- update: `shelljs` to `^0.8.3`
+- update: `stylelint` to `^9.8.0`  
+- update: `stylelint-scss` to `^3.4.0`
+
 ## v2.1.8
 - feat(switches): add disabled switch example
 - fix(switches): missing an ending semicolon
