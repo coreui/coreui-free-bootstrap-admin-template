@@ -1,3 +1,9 @@
+## v2.1.10
+- fix: update `nodemon` to `1.18.7` (remove vulnerability)
+- update: `@coreui/coreui` to `^2.1.3`
+- update: `stylelint-order` to `^2.0.0`
+- refactor(modals): buttons margin
+
 ## v2.1.9
 - fix: devDependencies security issues (event-stream, flatmap-stream)
 - chore: dependencies update
