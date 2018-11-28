@@ -1,3 +1,6 @@
+## v2.1.next
+- fix(collapse): add `mb-0` to accordion cards, thanks @ubugnu #449
+
 ## v2.1.10
 - fix: update `nodemon` to `1.18.7` (remove vulnerability)
 - update: `@coreui/coreui` to `^2.1.3`
