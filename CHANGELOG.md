@@ -1,5 +1,25 @@
-## v2.1.next
+## v2.1.11
 - fix(collapse): add `mb-0` to accordion cards, thanks @ubugnu #449
+- update: `@coreui/coreui` to `^2.1.5`
+- update: `bootstrap` to `^4.2.1`
+- update: `core-js` to `^2.6.1`
+- update: `perfect-scrollbar` to `^1.4.0`
+- update: `popper.js` to `^1.14.6`
+- update: `@babel/cli` to `^7.2.3`
+- update: `@babel/core` to `^7.2.2`
+- update: `@babel/plugin-proposal-object-rest-spread` to `^7.2.0`
+- update: `@babel/preset-env` to `^7.2.3`
+- update: `autoprefixer` to `^9.4.4`
+- update: `chalk` to `^2.4.2`
+- update: `eslint` to `^5.12.0`
+- update: `js-beautify` to `^1.8.9`
+- update: `node-sass` to `^4.11.0`
+- update: `nodemon` to `^1.18.9`
+- update: `postcss-cli` to `^6.1.1`
+- update: `rimraf` to `^2.6.3`
+- update: `stylelint` to `^9.9.0`
+- update: `stylelint-scss` to `^3.4.4`
+
 
 ## v2.1.10
 - fix: update `nodemon` to `1.18.7` (remove vulnerability)
