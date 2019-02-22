@@ -1,3 +1,20 @@
+## v2.1.12
+- chore(build/vendors): removes hash tag from urls in css files #460 - thanks @mgsmus 
+- update: `@coreui/coreui` to `^2.1.7`
+- update: `bootstrap` to `^4.3.1`
+- update: `core-js` to `^2.6.5`
+- update: `popper.js` to `^1.14.7`
+- update: `@babel/core` to `^7.3.3`
+- update: `@babel/plugin-proposal-object-rest-spread` to `^7.3.2`
+- update: `@babel/preset-env` to `^7.3.1`
+- update: `autoprefixer` to `^9.4.8`
+- update: `eslint` to `^5.14.1`
+- update: `eslint-plugin-compat` to `^2.7.0`
+- update: `nodemon` to `^1.18.10`
+- update: `postcss-cli` to `^6.1.2`
+- update: `stylelint` to `^9.10.1`
+- update: `stylelint-scss` to `^3.5.3`
+
 ## v2.1.11
 - fix(collapse): add `mb-0` to accordion cards, thanks @ubugnu #449
 - update: `@coreui/coreui` to `^2.1.5`
