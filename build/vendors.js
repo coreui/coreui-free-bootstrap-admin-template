@@ -111,12 +111,14 @@ const findVendors = () => {
 const copyFiles = (files, dest) => {
   files.forEach((file) => {
     let dir
-    file.filetype !== 'other' ? dir = resolve(dest, file.name, file.filetype) : dir = resolve(dest, file.name, dirname(file.src))
-    mkdirp.sync(dir)
-    fs.createReadStream(file.absolute).pipe(fs.createWriteStream(resolve(dir, basename(file.src))))
+    if(!file.src.indexOf(';base64,')) {
+      file.filetype !== 'other' ? dir = resolve(dest, file.name, file.filetype) : dir = resolve(dest, file.name, dirname(file.src))
+      mkdirp.sync(dir)
+      fs.createReadStream(file.absolute).pipe(fs.createWriteStream(resolve(dir, basename(file.src))))
 
-    if (fs.existsSync(`${file.absolute}.map`)) {
-      fs.createReadStream(`${file.absolute}.map`).pipe(fs.createWriteStream(resolve(dir, `${basename(file.src)}.map`)))
+      if (fs.existsSync(`${file.absolute}.map`)) {
+        fs.createReadStream(`${file.absolute}.map`).pipe(fs.createWriteStream(resolve(dir, `${basename(file.src)}.map`)))
+      }
     }
   })
 }
