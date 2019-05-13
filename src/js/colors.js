@@ -2,12 +2,15 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0): colors.js
+ * CoreUI Free Boostrap Admin Template (v3.0.0-alpha.0): colors.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
-$('.theme-color').each(function () {
-  var Color = $(this).css('backgroundColor');
-  $(this).parent().append("\n    <table class=\"w-100\">\n      <tr>\n        <td class=\"text-muted\">HEX:</td>\n        <td class=\"font-weight-bold\">" + rgbToHex(Color) + "</td>\n      </tr>\n      <tr>\n        <td class=\"text-muted\">RGB:</td>\n        <td class=\"font-weight-bold\">" + Color + "</td>\n      </tr>\n    </table>\n  ");
+document.querySelectorAll('.theme-color').forEach(function (element) {
+  var color = getComputedStyle(element, null).getPropertyValue('background-color');
+  var table = document.createElement('table');
+  table.classList.add('w-100');
+  table.innerHTML = "\n      <table class=\"c-w-100\">\n        <tr>\n          <td class=\"c-text-muted\">HEX:</td>\n          <td class=\"c-font-weight-bold\">" + rgbToHex(color) + "</td>\n        </tr>\n        <tr>\n          <td class=\"c-text-muted\">RGB:</td>\n          <td class=\"c-font-weight-bold\">" + color + "</td>\n        </tr>\n      </table>\n    ";
+  element.parentNode.appendChild(table);
 });
 //# sourceMappingURL=colors.js.map

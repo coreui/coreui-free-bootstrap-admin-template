@@ -4,7 +4,7 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0): main.js
+ * CoreUI Free Boostrap Admin Template (v3.0.0-alpha.0): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
@@ -16,7 +16,7 @@ var random = function random() {
 }; // eslint-disable-next-line no-unused-vars
 
 
-var lineChart = new Chart($('#canvas-1'), {
+var lineChart = new Chart(document.getElementById('canvas-1'), {
   type: 'line',
   data: {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -41,7 +41,7 @@ var lineChart = new Chart($('#canvas-1'), {
   }
 }); // eslint-disable-next-line no-unused-vars
 
-var barChart = new Chart($('#canvas-2'), {
+var barChart = new Chart(document.getElementById('canvas-2'), {
   type: 'bar',
   data: {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -64,7 +64,7 @@ var barChart = new Chart($('#canvas-2'), {
   }
 }); // eslint-disable-next-line no-unused-vars
 
-var doughnutChart = new Chart($('#canvas-3'), {
+var doughnutChart = new Chart(document.getElementById('canvas-3'), {
   type: 'doughnut',
   data: {
     labels: ['Red', 'Green', 'Yellow'],
@@ -79,7 +79,7 @@ var doughnutChart = new Chart($('#canvas-3'), {
   }
 }); // eslint-disable-next-line no-unused-vars
 
-var radarChart = new Chart($('#canvas-4'), {
+var radarChart = new Chart(document.getElementById('canvas-4'), {
   type: 'radar',
   data: {
     labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
@@ -108,7 +108,7 @@ var radarChart = new Chart($('#canvas-4'), {
   }
 }); // eslint-disable-next-line no-unused-vars
 
-var pieChart = new Chart($('#canvas-5'), {
+var pieChart = new Chart(document.getElementById('canvas-5'), {
   type: 'pie',
   data: {
     labels: ['Red', 'Green', 'Yellow'],
@@ -123,7 +123,7 @@ var pieChart = new Chart($('#canvas-5'), {
   }
 }); // eslint-disable-next-line no-unused-vars
 
-var polarAreaChart = new Chart($('#canvas-6'), {
+var polarAreaChart = new Chart(document.getElementById('canvas-6'), {
   type: 'polarArea',
   data: {
     labels: ['Red', 'Green', 'Yellow', 'Grey', 'Blue'],

@@ -1,29 +1,29 @@
 extends /default.pug
 
 block view
-  .animated.fadeIn
-    .card
-      .card-header
+  .animated.c-fade-in
+    .c-card
+      .c-card-header
         | Scrollspy
-        .card-header-actions
-          a.card-header-action(href='http://coreui.io/docs/components/bootstrap-scrollspy/', target='_blank')
-            small.text-muted docs
-      .card-body
+        .c-card-header-actions
+          a.c-card-header-action(href='http://coreui.io/docs/components/bootstrap-scrollspy/', target='_blank')
+            small.c-text-muted docs
+      .c-card-body
         .scrollspy-example1
-          nav#navbar-example1.navbar.navbar-light.bg-light(style='padding: .5rem 1rem;')
-            a.navbar-brand(href='#') Navbar
-            ul.nav.nav-pills(role='tablist')
-              li.nav-item
-                a.nav-link.active(href='#fat') @fat
-              li.nav-item
-                a.nav-link(href='#mdo') @mdo
-              li.nav-item.dropdown
-                a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
-                .dropdown-menu
-                  a.dropdown-item(href='#one', target='_top') one
-                  a.dropdown-item(href='#two', target='_top') two
-                  .dropdown-divider(role='separator')
-                  a.dropdown-item(href='#three', target='_top') three
+          nav#navbar-example1.c-navbar.c-navbar-light.c-bg-light(style='padding: .5rem 1rem;')
+            a.c-navbar-brand(href='#') Navbar
+            ul.c-nav.c-nav-pills(role='tablist')
+              li.c-nav-item
+                a.c-nav-link.active(href='#fat') @fat
+              li.c-nav-item
+                a.c-nav-link(href='#mdo') @mdo
+              li.c-nav-item.c-dropdown
+                a.c-nav-link.c-dropdown-toggle(data-toggle='c-dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
+                .c-dropdown-menu
+                  a.c-dropdown-item(href='#one', target='_top') one
+                  a.c-dropdown-item(href='#two', target='_top') two
+                  .c-dropdown-divider(role='separator')
+                  a.c-dropdown-item(href='#three', target='_top') three
           #spy-example1(data-spy='scroll', data-target='#navbar-example1', data-offset='65', style='position: relative; height: 200px; overflow: auto; margin-top: .5rem; overflow-y: scroll;')
             h4#fat @fat
             p
@@ -42,19 +42,19 @@ block view
               | Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
             p
               | Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
-    .card
-      .card-header
+    .c-card
+      .c-card-header
         | Scrollspy
         small with list-group
-      .card-body
-        .row.bd-example2
-          .col-4
-            #list-example.list-group
-              a.list-group-item.list-group-item-action.active(href='#list-item-1') Item 1
-              a.list-group-item.list-group-item-action(href='#list-item-2') Item2
-              a.list-group-item.list-group-item-action(href='#list-item-3') Item 3
-              a.list-group-item.list-group-item-action(href='#list-item-4') Item 4
-          .col-8
+      .c-card-body
+        .c-row.bd-example2
+          .c-col-4
+            #list-example.c-list-group
+              a.c-list-group-item.c-list-group-item-action.active(href='#list-item-1') Item 1
+              a.c-list-group-item.c-list-group-item-action(href='#list-item-2') Item2
+              a.c-list-group-item.c-list-group-item-action(href='#list-item-3') Item 3
+              a.c-list-group-item.c-list-group-item-action(href='#list-item-4') Item 4
+          .c-col-8
             #spy-example2(data-spy='scroll', data-target='#list-example', data-offset='0', style='height: 200px; overflow: auto')
               h4#list-item-1 Item 1
               p

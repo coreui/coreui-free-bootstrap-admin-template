@@ -5,32 +5,32 @@ block scripts
   script(src='js/popovers.js')
 
 block view
-  .animated.fadeIn
-    .card
-      .card-header
+  .animated.c-fade-in
+    .c-card
+      .c-card-header
         i.fa.fa-align-justify
         |  Popovers
-        .card-header-actions
-          a.card-header-action(href='http://coreui.io/docs/components/bootstrap-popover/popovers.html', target='_blank')
-            small.text-muted docs
-      .card-body
-        button.btn.btn-lg.btn-danger(type='button', data-toggle='popover', title='Popover title', data-content="And here's some amazing content. It's very engaging. Right?")
+        .c-card-header-actions
+          a.c-card-header-action(href='http://coreui.io/docs/components/bootstrap-popover/popovers.html', target='_blank')
+            small.c-text-muted docs
+      .c-card-body
+        button.c-btn.c-btn-lg.c-btn-danger(type='button', data-toggle='c-popover', title='Popover title', data-content="And here's some amazing content. It's very engaging. Right?")
           | Click to toggle popover
         hr
-        a.btn.btn-lg.btn-danger(tabindex='0', role='button', data-toggle='popover', data-trigger='focus', title='Dismissible popover', data-content="And here's some amazing content. It's very engaging. Right?")
+        a.c-btn.c-btn-lg.c-btn-danger(tabindex='0', role='button', data-toggle='c-popover', data-trigger='focus', title='Dismissible popover', data-content="And here's some amazing content. It's very engaging. Right?")
           | Dismissible
           | popover
-    .card
-      .card-header
+    .c-card
+      .c-card-header
         i.fa.fa-align-justify
         |  Popovers
         small directions
-      .card-body
-        button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='top', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+      .c-card-body
+        button.c-btn.c-btn-secondary(type='button', data-container='body', data-toggle='c-popover', data-placement='top', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
           | Popover on top
-        button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='right', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+        button.c-btn.c-btn-secondary(type='button', data-container='body', data-toggle='c-popover', data-placement='right', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
           | Popover on right
-        button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='bottom', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+        button.c-btn.c-btn-secondary(type='button', data-container='body', data-toggle='c-popover', data-placement='bottom', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
           | Popover on bottom
-        button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='left', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+        button.c-btn.c-btn-secondary(type='button', data-container='body', data-toggle='c-popover', data-placement='left', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
           | Popover on left

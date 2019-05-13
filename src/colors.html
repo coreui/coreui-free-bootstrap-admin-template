@@ -40,456 +40,383 @@
       gtag('config', 'UA-118965717-5');
     </script>
   </head>
-  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
-    <header class="app-header navbar">
-      <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <img class="navbar-brand-full" src="img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo">
-        <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
-      </a>
-      <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <ul class="nav navbar-nav d-md-down-none">
-        <li class="nav-item px-3">
-          <a class="nav-link" href="#">Dashboard</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" href="#">Users</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" href="#">Settings</a>
-        </li>
+  <body class="c-app c-default-layout">
+    <header class="c-header c-header-light c-header-fixed">
+      <button class="c-header-toggler c-class-toggler c-d-lg-none c-mr-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button><a class="c-header-brand" href="#"><img class="c-header-brand-full" src="img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo"><img class="c-header-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo"></a>
+      <button class="c-header-toggler c-class-toggler c-d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true"><span class="c-header-toggler-icon"></span></button>
+      <button class="c-header-toggler c-class-toggler c-d-lg-none" type="button" data-target="#sidebar" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button>
+      <ul class="c-nav c-header-nav c-d-md-down-none">
+        <li class="c-nav-item c-px-3"><a class="c-nav-link" href="#">Dashboard</a></li>
+        <li class="c-nav-item c-px-3"><a class="c-nav-link" href="#">Users</a></li>
+        <li class="c-nav-item c-px-3"><a class="c-nav-link" href="#">Settings</a></li>
       </ul>
-      <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item d-md-down-none">
-          <a class="nav-link" href="#">
-            <i class="icon-bell"></i>
-            <span class="badge badge-pill badge-danger">5</span>
-          </a>
-        </li>
-        <li class="nav-item d-md-down-none">
-          <a class="nav-link" href="#">
-            <i class="icon-list"></i>
-          </a>
-        </li>
-        <li class="nav-item d-md-down-none">
-          <a class="nav-link" href="#">
-            <i class="icon-location-pin"></i>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-            <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
-          </a>
-          <div class="dropdown-menu dropdown-menu-right">
-            <div class="dropdown-header text-center">
-              <strong>Account</strong>
-            </div>
-            <a class="dropdown-item" href="#">
-              <i class="fa fa-bell-o"></i> Updates
-              <span class="badge badge-info">42</span>
-            </a>
-            <a class="dropdown-item" href="#">
-              <i class="fa fa-envelope-o"></i> Messages
-              <span class="badge badge-success">42</span>
-            </a>
-            <a class="dropdown-item" href="#">
-              <i class="fa fa-tasks"></i> Tasks
-              <span class="badge badge-danger">42</span>
-            </a>
-            <a class="dropdown-item" href="#">
-              <i class="fa fa-comments"></i> Comments
-              <span class="badge badge-warning">42</span>
-            </a>
-            <div class="dropdown-header text-center">
-              <strong>Settings</strong>
-            </div>
-            <a class="dropdown-item" href="#">
-              <i class="fa fa-user"></i> Profile</a>
-            <a class="dropdown-item" href="#">
-              <i class="fa fa-wrench"></i> Settings</a>
-            <a class="dropdown-item" href="#">
-              <i class="fa fa-usd"></i> Payments
-              <span class="badge badge-secondary">42</span>
-            </a>
-            <a class="dropdown-item" href="#">
-              <i class="fa fa-file"></i> Projects
-              <span class="badge badge-primary">42</span>
-            </a>
-            <div class="divider"></div>
-            <a class="dropdown-item" href="#">
-              <i class="fa fa-shield"></i> Lock Account</a>
-            <a class="dropdown-item" href="#">
-              <i class="fa fa-lock"></i> Logout</a>
+      <ul class="c-nav c-header-nav c-ml-auto">
+        <li class="c-nav-item c-d-md-down-none"><a class="c-nav-link" href="#"><i class="icon-bell"></i><span class="c-badge c-badge-pill c-badge-danger">5</span></a></li>
+        <li class="c-nav-item c-d-md-down-none"><a class="c-nav-link" href="#"><i class="icon-list"></i></a></li>
+        <li class="c-nav-item c-d-md-down-none"><a class="c-nav-link" href="#"><i class="icon-location-pin"></i></a></li>
+        <li class="c-nav-item c-dropdown"><a class="c-nav-link" data-toggle="c-dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img class="c-img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></a>
+          <div class="c-dropdown-menu c-dropdown-menu-right">
+            <div class="c-dropdown-header c-text-center"><strong>Account</strong></div><a class="c-dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="c-badge c-badge-info">42</span></a><a class="c-dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="c-badge c-badge-success">42</span></a><a class="c-dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="c-badge c-badge-danger">42</span></a><a class="c-dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="c-badge c-badge-warning">42</span></a>
+            <div class="c-dropdown-header c-text-center"><strong>Settings</strong></div><a class="c-dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a><a class="c-dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a><a class="c-dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="c-badge c-badge-secondary">42</span></a><a class="c-dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="c-badge c-badge-primary">42</span></a>
+            <div class="c-dropdown-divider"></div><a class="c-dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a><a class="c-dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
           </div>
         </li>
       </ul>
-      <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <button class="c-header-toggler c-class-toggler c-d-md-down-none" type="button" data-target="#aside" data-class="c-sidebar-lg-show" responsive="true"><span class="c-header-toggler-icon"></span></button>
+      <button class="c-header-toggler c-class-toggler c-d-lg-none" type="button" data-target="#aside" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button>
     </header>
-    <div class="app-body">
-      <div class="sidebar">
-        <nav class="sidebar-nav">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <i class="nav-icon icon-speedometer"></i> Dashboard
-                <span class="badge badge-primary">NEW</span>
-              </a>
-            </li>
-            <li class="nav-title">Theme</li>
-            <li class="nav-item">
-              <a class="nav-link" href="colors.html">
-                <i class="nav-icon icon-drop"></i> Colors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="typography.html">
-                <i class="nav-icon icon-pencil"></i> Typography</a>
-            </li>
-            <li class="nav-title">Components</li>
-            <li class="nav-item nav-dropdown">
-              <a class="nav-link nav-dropdown-toggle" href="#">
-                <i class="nav-icon icon-puzzle"></i> Base</a>
-              <ul class="nav-dropdown-items">
-                <li class="nav-item">
-                  <a class="nav-link" href="base/breadcrumb.html">
-                    <i class="nav-icon icon-puzzle"></i> Breadcrumb</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/cards.html">
-                    <i class="nav-icon icon-puzzle"></i> Cards</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/carousel.html">
-                    <i class="nav-icon icon-puzzle"></i> Carousel</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/collapse.html">
-                    <i class="nav-icon icon-puzzle"></i> Collapse</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/forms.html">
-                    <i class="nav-icon icon-puzzle"></i> Forms</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/jumbotron.html">
-                    <i class="nav-icon icon-puzzle"></i> Jumbotron</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/list-group.html">
-                    <i class="nav-icon icon-puzzle"></i> List group</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/navs.html">
-                    <i class="nav-icon icon-puzzle"></i> Navs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/pagination.html">
-                    <i class="nav-icon icon-puzzle"></i> Pagination</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/popovers.html">
-                    <i class="nav-icon icon-puzzle"></i> Popovers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/progress.html">
-                    <i class="nav-icon icon-puzzle"></i> Progress</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/scrollspy.html">
-                    <i class="nav-icon icon-puzzle"></i> Scrollspy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/switches.html">
-                    <i class="nav-icon icon-puzzle"></i> Switches</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/tables.html">
-                    <i class="nav-icon icon-puzzle"></i> Tables</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/tabs.html">
-                    <i class="nav-icon icon-puzzle"></i> Tabs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="base/tooltips.html">
-                    <i class="nav-icon icon-puzzle"></i> Tooltips</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item nav-dropdown">
-              <a class="nav-link nav-dropdown-toggle" href="#">
-                <i class="nav-icon icon-cursor"></i> Buttons</a>
-              <ul class="nav-dropdown-items">
-                <li class="nav-item">
-                  <a class="nav-link" href="buttons/buttons.html">
-                    <i class="nav-icon icon-cursor"></i> Buttons</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="buttons/button-group.html">
-                    <i class="nav-icon icon-cursor"></i> Buttons Group</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="buttons/dropdowns.html">
-                    <i class="nav-icon icon-cursor"></i> Dropdowns</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="buttons/brand-buttons.html">
-                    <i class="nav-icon icon-cursor"></i> Brand Buttons</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="charts.html">
-                <i class="nav-icon icon-pie-chart"></i> Charts</a>
-            </li>
-            <li class="nav-item nav-dropdown">
-              <a class="nav-link nav-dropdown-toggle" href="#">
-                <i class="nav-icon icon-star"></i> Icons</a>
-              <ul class="nav-dropdown-items">
-                <li class="nav-item">
-                  <a class="nav-link" href="icons/coreui-icons.html">
-                    <i class="nav-icon icon-star"></i> CoreUI Icons
-                    <span class="badge badge-success">NEW</span>
-                  </a>
-                  <a class="nav-link" href="icons/flags.html">
-                    <i class="nav-icon icon-star"></i> Flags</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="icons/font-awesome.html">
-                    <i class="nav-icon icon-star"></i> Font Awesome
-                    <span class="badge badge-secondary">4.7</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="icons/simple-line-icons.html">
-                    <i class="nav-icon icon-star"></i> Simple Line Icons</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item nav-dropdown">
-              <a class="nav-link nav-dropdown-toggle" href="#">
-                <i class="nav-icon icon-bell"></i> Notifications</a>
-              <ul class="nav-dropdown-items">
-                <li class="nav-item">
-                  <a class="nav-link" href="notifications/alerts.html">
-                    <i class="nav-icon icon-bell"></i> Alerts</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="notifications/badge.html">
-                    <i class="nav-icon icon-bell"></i> Badge</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="notifications/modals.html">
-                    <i class="nav-icon icon-bell"></i> Modals</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="widgets.html">
-                <i class="nav-icon icon-calculator"></i> Widgets
-                <span class="badge badge-primary">NEW</span>
-              </a>
-            </li>
-            <li class="divider"></li>
-            <li class="nav-title">Extras</li>
-            <li class="nav-item nav-dropdown">
-              <a class="nav-link nav-dropdown-toggle" href="#">
-                <i class="nav-icon icon-star"></i> Pages</a>
-              <ul class="nav-dropdown-items">
-                <li class="nav-item">
-                  <a class="nav-link" href="login.html" target="_top">
-                    <i class="nav-icon icon-star"></i> Login</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="register.html" target="_top">
-                    <i class="nav-icon icon-star"></i> Register</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="404.html" target="_top">
-                    <i class="nav-icon icon-star"></i> Error 404</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="500.html" target="_top">
-                    <i class="nav-icon icon-star"></i> Error 500</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item mt-auto">
-              <a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
-                <i class="nav-icon icon-cloud-download"></i> Download CoreUI</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
-                <i class="nav-icon icon-layers"></i> Try CoreUI
-                <strong>PRO</strong>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button class="sidebar-minimizer brand-minimizer" type="button"></button>
-      </div>
-      <main class="main">
-        <!-- Breadcrumb-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">Home</li>
-          <li class="breadcrumb-item">
-            <a href="#">Admin</a>
+    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+      <nav class="c-sidebar-nav">
+        <ul class="c-nav">
+          <li class="c-nav-item"><a class="c-nav-link" href="index.html"><i class="c-nav-icon icon-speedometer"></i> Dashboard<span class="c-badge c-badge-primary">NEW</span></a></li>
+          <li class="c-nav-title">Theme</li>
+          <li class="c-nav-item"><a class="c-nav-link" href="colors.html"><i class="c-nav-icon icon-drop"></i> Colors</a></li>
+          <li class="c-nav-item"><a class="c-nav-link" href="typography.html"><i class="c-nav-icon icon-pencil"></i> Typography</a></li>
+          <li class="c-nav-title">Components</li>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><i class="c-nav-icon icon-puzzle"></i> Base</a>
+            <ul class="c-nav-dropdown-items">
+              <li class="c-nav-item"><a class="c-nav-link" href="base/breadcrumb.html"><i class="c-nav-icon icon-puzzle"></i> Breadcrumb</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/cards.html"><i class="c-nav-icon icon-puzzle"></i> Cards</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/carousel.html"><i class="c-nav-icon icon-puzzle"></i> Carousel</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/collapse.html"><i class="c-nav-icon icon-puzzle"></i> Collapse</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/forms.html"><i class="c-nav-icon icon-puzzle"></i> Forms</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/jumbotron.html"><i class="c-nav-icon icon-puzzle"></i> Jumbotron</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/list-group.html"><i class="c-nav-icon icon-puzzle"></i> List group</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/navs.html"><i class="c-nav-icon icon-puzzle"></i> Navs</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/pagination.html"><i class="c-nav-icon icon-puzzle"></i> Pagination</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/popovers.html"><i class="c-nav-icon icon-puzzle"></i> Popovers</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/progress.html"><i class="c-nav-icon icon-puzzle"></i> Progress</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/scrollspy.html"><i class="c-nav-icon icon-puzzle"></i> Scrollspy</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/switches.html"><i class="c-nav-icon icon-puzzle"></i> Switches</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/tables.html"><i class="c-nav-icon icon-puzzle"></i> Tables</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/tabs.html"><i class="c-nav-icon icon-puzzle"></i> Tabs</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="base/tooltips.html"><i class="c-nav-icon icon-puzzle"></i> Tooltips</a></li>
+            </ul>
           </li>
-          <li class="breadcrumb-item active">Dashboard</li>
-          <!-- Breadcrumb Menu-->
-          <li class="breadcrumb-menu d-md-down-none">
-            <div class="btn-group" role="group" aria-label="Button group">
-              <a class="btn" href="#">
-                <i class="icon-speech"></i>
-              </a>
-              <a class="btn" href="./">
-                <i class="icon-graph"></i>  Dashboard</a>
-              <a class="btn" href="#">
-                <i class="icon-settings"></i>  Settings</a>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><i class="c-nav-icon icon-cursor"></i> Buttons</a>
+            <ul class="c-nav-dropdown-items">
+              <li class="c-nav-item"><a class="c-nav-link" href="buttons/buttons.html"><i class="c-nav-icon icon-cursor"></i> Buttons</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="buttons/button-group.html"><i class="c-nav-icon icon-cursor"></i> Buttons Group</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="buttons/dropdowns.html"><i class="c-nav-icon icon-cursor"></i> Dropdowns</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="buttons/brand-buttons.html"><i class="c-nav-icon icon-cursor"></i> Brand Buttons</a></li>
+            </ul>
+          </li>
+          <li class="c-nav-item"><a class="c-nav-link" href="charts.html"><i class="c-nav-icon icon-pie-chart"></i> Charts</a></li>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><i class="c-nav-icon icon-star"></i> Icons</a>
+            <ul class="c-nav-dropdown-items">
+              <li class="c-nav-item"><a class="c-nav-link" href="icons/coreui-icons.html"><i class="c-nav-icon icon-star"></i> CoreUI Icons<span class="c-badge c-badge-success">NEW</span></a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="icons/flags.html"><i class="c-nav-icon icon-star"></i> Flags</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="icons/font-awesome.html"><i class="c-nav-icon icon-star"></i> Font Awesome<span class="c-badge c-badge-secondary">4.7</span></a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="icons/simple-line-icons.html"><i class="c-nav-icon icon-star"></i> Simple Line Icons</a></li>
+            </ul>
+          </li>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><i class="c-nav-icon icon-bell"></i> Notifications</a>
+            <ul class="c-nav-dropdown-items">
+              <li class="c-nav-item"><a class="c-nav-link" href="notifications/alerts.html"><i class="c-nav-icon icon-bell"></i> Alerts</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="notifications/badge.html"><i class="c-nav-icon icon-bell"></i> Badge</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="notifications/modals.html"><i class="c-nav-icon icon-bell"></i> Modals</a></li>
+            </ul>
+          </li>
+          <li class="c-nav-item"><a class="c-nav-link" href="widgets.html"><i class="c-nav-icon icon-calculator"></i> Widgets<span class="c-badge c-badge-primary">NEW</span></a></li>
+          <li class="divider"></li>
+          <li class="c-nav-title">Extras</li>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><i class="c-nav-icon icon-star"></i> Pages</a>
+            <ul class="c-nav-dropdown-items">
+              <li class="c-nav-item"><a class="c-nav-link" href="login.html" target="_top"><i class="c-nav-icon icon-star"></i> Login</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="register.html" target="_top"><i class="c-nav-icon icon-star"></i> Register</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="404.html" target="_top"><i class="c-nav-icon icon-star"></i> Error 404</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="500.html" target="_top"><i class="c-nav-icon icon-star"></i> Error 500</a></li>
+            </ul>
+          </li>
+          <li class="c-nav-item c-mt-auto"><a class="c-nav-link c-nav-link-success" href="https://coreui.io" target="_top"><i class="c-nav-icon icon-cloud-download"></i> Download CoreUI</a></li>
+          <li class="c-nav-item"><a class="c-nav-link c-nav-link-danger" href="https://coreui.io/pro/" target="_top"><i class="c-nav-icon icon-layers"></i> Try CoreUI<strong>PRO</strong></a></li>
+        </ul>
+      </nav>
+      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="['_parent','.c-header-brand']" data-class="['c-sidebar-minimized','c-header-brand-minimized']"></button>
+    </div>
+    <div class="c-sidebar c-sidebar-light c-sidebar-right c-sidebar-fixed" id="aside">
+      <ul class="c-nav c-nav-tabs" role="tablist">
+        <li class="c-nav-item"><a class="c-nav-link active" data-toggle="c-tab" href="#timeline" role="tab"><i class="icon-list"></i></a></li>
+        <li class="c-nav-item"><a class="c-nav-link" data-toggle="c-tab" href="#messages" role="tab"><i class="icon-speech"></i></a></li>
+        <li class="c-nav-item"><a class="c-nav-link" data-toggle="c-tab" href="#settings" role="tab"><i class="icon-settings"></i></a></li>
+      </ul>
+      <!-- Tab panes-->
+      <div class="c-tab-content">
+        <div class="c-tab-pane active" id="timeline" role="tabpanel">
+          <div class="c-list-group c-list-group-accent">
+            <div class="c-list-group-item c-list-group-item-accent-secondary c-bg-light c-text-center c-font-weight-bold c-text-muted c-text-uppercase c-small">Today</div>
+            <div class="c-list-group-item c-list-group-item-accent-warning c-list-group-item-divider">
+              <div class="c-avatar c-float-right"><img class="c-img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"></div>
+              <div>Meeting with<strong>Lucas</strong></div><small class="c-text-muted c-mr-3"><i class="icon-calendar"></i>  1 - 3pm</small><small class="c-text-muted"><i class="icon-location-pin"></i>  Palo Alto, CA</small>
             </div>
+            <div class="c-list-group-item c-list-group-item-accent-info">
+              <div class="c-avatar c-float-right"><img class="c-img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com"></div>
+              <div>Skype with<strong>Megan</strong></div><small class="c-text-muted c-mr-3"><i class="icon-calendar"></i>  4 - 5pm</small><small class="c-text-muted"><i class="icon-social-skype"></i>  On-line</small>
+            </div>
+            <div class="c-list-group-item c-list-group-item-accent-secondary c-bg-light c-text-center c-font-weight-bold c-text-muted c-text-uppercase c-small">Tomorrow</div>
+            <div class="c-list-group-item c-list-group-item-accent-danger c-list-group-item-divider">
+              <div>New UI Project -<strong>deadline</strong></div><small class="c-text-muted c-mr-3"><i class="icon-calendar"></i>  10 - 11pm</small><small class="c-text-muted"><i class="icon-home"></i>  creativeLabs HQ</small>
+              <div class="c-avatars-stack c-mt-2">
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></div>
+              </div>
+            </div>
+            <div class="c-list-group-item c-list-group-item-accent-success c-list-group-item-divider">
+              <div><strong>#10 Startups.Garden</strong> Meetup</div><small class="c-text-muted c-mr-3"><i class="icon-calendar"></i>  1 - 3pm</small><small class="c-text-muted"><i class="icon-location-pin"></i>  Palo Alto, CA</small>
+            </div>
+            <div class="c-list-group-item c-list-group-item-accent-primary c-list-group-item-divider">
+              <div><strong>Team meeting</strong></div><small class="c-text-muted c-mr-3"><i class="icon-calendar"></i>  4 - 6pm</small><small class="c-text-muted"><i class="icon-home"></i>  creativeLabs HQ</small>
+              <div class="c-avatars-stack c-mt-2">
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="img/avatars/8.jpg" alt="admin@bootstrapmaster.com"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-tab-pane c-p-3" id="messages" role="tabpanel">
+          <div class="message">
+            <div class="c-py-3 c-pb-5 c-mr-3 c-float-left">
+              <div class="c-avatar"><img class="c-img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="c-avatar-status c-badge-success"></span></div>
+            </div>
+            <div><small class="c-text-muted">Lukasz Holeczek</small><small class="c-text-muted c-float-right c-mt-1">1:52 PM</small></div>
+            <div class="c-text-truncate c-font-weight-bold">Lorem ipsum dolor sit amet</div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="c-py-3 c-pb-5 c-mr-3 c-float-left">
+              <div class="c-avatar"><img class="c-img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="c-avatar-status c-badge-success"></span></div>
+            </div>
+            <div><small class="c-text-muted">Lukasz Holeczek</small><small class="c-text-muted c-float-right c-mt-1">1:52 PM</small></div>
+            <div class="c-text-truncate c-font-weight-bold">Lorem ipsum dolor sit amet</div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="c-py-3 c-pb-5 c-mr-3 c-float-left">
+              <div class="c-avatar"><img class="c-img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="c-avatar-status c-badge-success"></span></div>
+            </div>
+            <div><small class="c-text-muted">Lukasz Holeczek</small><small class="c-text-muted c-float-right c-mt-1">1:52 PM</small></div>
+            <div class="c-text-truncate c-font-weight-bold">Lorem ipsum dolor sit amet</div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="c-py-3 c-pb-5 c-mr-3 c-float-left">
+              <div class="c-avatar"><img class="c-img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="c-avatar-status c-badge-success"></span></div>
+            </div>
+            <div><small class="c-text-muted">Lukasz Holeczek</small><small class="c-text-muted c-float-right c-mt-1">1:52 PM</small></div>
+            <div class="c-text-truncate c-font-weight-bold">Lorem ipsum dolor sit amet</div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="c-py-3 c-pb-5 c-mr-3 c-float-left">
+              <div class="c-avatar"><img class="c-img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="c-avatar-status c-badge-success"></span></div>
+            </div>
+            <div><small class="c-text-muted">Lukasz Holeczek</small><small class="c-text-muted c-float-right c-mt-1">1:52 PM</small></div>
+            <div class="c-text-truncate c-font-weight-bold">Lorem ipsum dolor sit amet</div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+          </div>
+        </div>
+        <div class="c-tab-pane c-p-3" id="settings" role="tabpanel">
+          <h6>Settings</h6>
+          <div class="c-aside-options">
+            <div class="clearfix c-mt-4"><small><b>Option 1</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm c-float-right">
+                <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+            <div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></div>
+          </div>
+          <div class="c-aside-options">
+            <div class="clearfix c-mt-3"><small><b>Option 2</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm c-float-right">
+                <input class="c-switch-input" type="checkbox"><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+            <div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></div>
+          </div>
+          <div class="c-aside-options">
+            <div class="clearfix c-mt-3"><small><b>Option 3</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm c-float-right">
+                <input class="c-switch-input" type="checkbox"><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+          </div>
+          <div class="c-aside-options">
+            <div class="clearfix c-mt-3"><small><b>Option 4</b></small>
+              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm c-float-right">
+                <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+          </div>
+          <hr>
+          <h6>System Utilization</h6>
+          <div class="c-text-uppercase c-mb-1 c-mt-4"><small><b>CPU Usage</b></small></div>
+          <div class="c-progress c-progress-xs">
+            <div class="c-progress-bar c-bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="c-text-muted">348 Processes. 1/4 Cores.</small>
+          <div class="c-text-uppercase c-mb-1 c-mt-2"><small><b>Memory Usage</b></small></div>
+          <div class="c-progress c-progress-xs">
+            <div class="c-progress-bar c-bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="c-text-muted">11444GB/16384MB</small>
+          <div class="c-text-uppercase c-mb-1 c-mt-2"><small><b>SSD 1 Usage</b></small></div>
+          <div class="c-progress c-progress-xs">
+            <div class="c-progress-bar c-bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="c-text-muted">243GB/256GB</small>
+          <div class="c-text-uppercase c-mb-1 c-mt-2"><small><b>SSD 2 Usage</b></small></div>
+          <div class="c-progress c-progress-xs">
+            <div class="c-progress-bar c-bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          </div><small class="c-text-muted">25GB/256GB</small>
+        </div>
+      </div>
+    </div>
+    <div class="c-body">
+      <main class="c-main">
+        <!-- Breadcrumb-->
+        <ol class="c-breadcrumb">
+          <li class="c-breadcrumb-item">Home</li>
+          <li class="c-breadcrumb-item"><a href="#">Admin</a></li>
+          <li class="c-breadcrumb-item active">Dashboard</li>
+          <!-- Breadcrumb Menu-->
+          <li class="c-breadcrumb-menu c-d-md-down-none">
+            <div class="c-btn-group" role="group" aria-label="Button group"><a class="c-btn" href="#"><i class="icon-speech"></i></a><a class="c-btn" href="./"><i class="icon-graph"></i>  Dashboard</a><a class="c-btn" href="#"><i class="icon-settings"></i>  Settings</a></div>
           </li>
         </ol>
-        <div class="container-fluid">
-          <div class="animated fadeIn">
-            <div class="card">
-              <div class="card-header">
-                <i class="icon-drop"></i> Theme colors</div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-primary theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+        <div class="c-container-fluid">
+          <div class="animated c-fade-in">
+            <div class="c-card">
+              <div class="c-card-header"><i class="icon-drop"></i> Theme colors</div>
+              <div class="c-card-body">
+                <div class="c-row">
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-primary theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Brand Primary Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-secondary theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-secondary theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Brand Secondary Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-success theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-success theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Brand Success Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-danger theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-danger theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Brand Danger Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-warning theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-warning theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Brand Warning Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-info theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-info theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Brand Info Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-light theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-light theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Brand Light Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-dark theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-dark theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Brand Dark Color</h6>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header">
-                <i class="icon-drop"></i> Grays</div>
-              <div class="card-body">
-                <div class="row mb-3">
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-gray-100 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+            <div class="c-card">
+              <div class="c-card-header"><i class="icon-drop"></i> Grays</div>
+              <div class="c-card-body">
+                <div class="c-row c-mb-3">
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-gray-100 theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Gray 100 Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-gray-200 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-gray-200 theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Gray 200 Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-gray-300 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-gray-300 theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Gray 300 Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-gray-400 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-gray-400 theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Gray 400 Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-gray-500 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-gray-500 theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Gray 500 Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-gray-600 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-gray-600 theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Gray 600 Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-gray-700 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-gray-700 theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Gray 700 Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-gray-800 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-gray-800 theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Gray 800 Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="bg-gray-900 theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-bg-gray-900 theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Gray 900 Color</h6>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header">
-                <i class="icon-drop"></i> Additional colors</div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="mb-3 bg-blue theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+            <div class="c-card">
+              <div class="c-card-header"><i class="icon-drop"></i> Additional colors</div>
+              <div class="c-card-body">
+                <div class="c-row">
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-mb-3 c-bg-blue theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Blue Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="mb-3 bg-light-blue theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-mb-3 c-bg-light-blue theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Light Blue Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="mb-3 bg-indigo theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-mb-3 c-bg-indigo theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Indigo Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="mb-3 bg-purple theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-mb-3 c-bg-purple theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Purple Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="mb-3 bg-pink theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-mb-3 c-bg-pink theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Pink Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="mb-3 bg-red theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-mb-3 c-bg-red theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Red Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="mb-3 bg-orange theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-mb-3 c-bg-orange theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Orange Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="mb-3 bg-yellow theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-mb-3 c-bg-yellow theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Yellow Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="mb-3 bg-green theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-mb-3 c-bg-green theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Green Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="mb-3 bg-teal theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-mb-3 c-bg-teal theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Teal Color</h6>
                   </div>
-                  <div class="col-xl-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="mb-3 bg-cyan theme-color w-75 rounded mb-2" style="padding-top:75%"></div>
+                  <div class="c-col-xl-2 c-col-md-3 c-col-sm-4 c-col-6 c-mb-4">
+                    <div class="c-mb-3 c-bg-cyan theme-color c-w-75 c-rounded c-mb-2" style="padding-top:75%"></div>
                     <h6>Cyan Color</h6>
                   </div>
                 </div>
@@ -498,309 +425,14 @@
           </div>
         </div>
       </main>
-      <aside class="aside-menu">
-        <ul class="nav nav-tabs" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab">
-              <i class="icon-list"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#messages" role="tab">
-              <i class="icon-speech"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#settings" role="tab">
-              <i class="icon-settings"></i>
-            </a>
-          </li>
-        </ul>
-        <!-- Tab panes-->
-        <div class="tab-content">
-          <div class="tab-pane active" id="timeline" role="tabpanel">
-            <div class="list-group list-group-accent">
-              <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Today</div>
-              <div class="list-group-item list-group-item-accent-warning list-group-item-divider">
-                <div class="avatar float-right">
-                  <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-                </div>
-                <div>Meeting with
-                  <strong>Lucas</strong>
-                </div>
-                <small class="text-muted mr-3">
-                  <i class="icon-calendar"></i>  1 - 3pm</small>
-                <small class="text-muted">
-                  <i class="icon-location-pin"></i>  Palo Alto, CA</small>
-              </div>
-              <div class="list-group-item list-group-item-accent-info">
-                <div class="avatar float-right">
-                  <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
-                </div>
-                <div>Skype with
-                  <strong>Megan</strong>
-                </div>
-                <small class="text-muted mr-3">
-                  <i class="icon-calendar"></i>  4 - 5pm</small>
-                <small class="text-muted">
-                  <i class="icon-social-skype"></i>  On-line</small>
-              </div>
-              <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Tomorrow</div>
-              <div class="list-group-item list-group-item-accent-danger list-group-item-divider">
-                <div>New UI Project -
-                  <strong>deadline</strong>
-                </div>
-                <small class="text-muted mr-3">
-                  <i class="icon-calendar"></i>  10 - 11pm</small>
-                <small class="text-muted">
-                  <i class="icon-home"></i>  creativeLabs HQ</small>
-                <div class="avatars-stack mt-2">
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                </div>
-              </div>
-              <div class="list-group-item list-group-item-accent-success list-group-item-divider">
-                <div>
-                  <strong>#10 Startups.Garden</strong> Meetup</div>
-                <small class="text-muted mr-3">
-                  <i class="icon-calendar"></i>  1 - 3pm</small>
-                <small class="text-muted">
-                  <i class="icon-location-pin"></i>  Palo Alto, CA</small>
-              </div>
-              <div class="list-group-item list-group-item-accent-primary list-group-item-divider">
-                <div>
-                  <strong>Team meeting</strong>
-                </div>
-                <small class="text-muted mr-3">
-                  <i class="icon-calendar"></i>  4 - 6pm</small>
-                <small class="text-muted">
-                  <i class="icon-home"></i>  creativeLabs HQ</small>
-                <div class="avatars-stack mt-2">
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                  <div class="avatar avatar-xs">
-                    <img class="img-avatar" src="img/avatars/8.jpg" alt="admin@bootstrapmaster.com">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane p-3" id="messages" role="tabpanel">
-            <div class="message">
-              <div class="py-3 pb-5 mr-3 float-left">
-                <div class="avatar">
-                  <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-                  <span class="avatar-status badge-success"></span>
-                </div>
-              </div>
-              <div>
-                <small class="text-muted">Lukasz Holeczek</small>
-                <small class="text-muted float-right mt-1">1:52 PM</small>
-              </div>
-              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-              <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-            </div>
-            <hr>
-            <div class="message">
-              <div class="py-3 pb-5 mr-3 float-left">
-                <div class="avatar">
-                  <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-                  <span class="avatar-status badge-success"></span>
-                </div>
-              </div>
-              <div>
-                <small class="text-muted">Lukasz Holeczek</small>
-                <small class="text-muted float-right mt-1">1:52 PM</small>
-              </div>
-              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-              <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-            </div>
-            <hr>
-            <div class="message">
-              <div class="py-3 pb-5 mr-3 float-left">
-                <div class="avatar">
-                  <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-                  <span class="avatar-status badge-success"></span>
-                </div>
-              </div>
-              <div>
-                <small class="text-muted">Lukasz Holeczek</small>
-                <small class="text-muted float-right mt-1">1:52 PM</small>
-              </div>
-              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-              <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-            </div>
-            <hr>
-            <div class="message">
-              <div class="py-3 pb-5 mr-3 float-left">
-                <div class="avatar">
-                  <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-                  <span class="avatar-status badge-success"></span>
-                </div>
-              </div>
-              <div>
-                <small class="text-muted">Lukasz Holeczek</small>
-                <small class="text-muted float-right mt-1">1:52 PM</small>
-              </div>
-              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-              <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-            </div>
-            <hr>
-            <div class="message">
-              <div class="py-3 pb-5 mr-3 float-left">
-                <div class="avatar">
-                  <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-                  <span class="avatar-status badge-success"></span>
-                </div>
-              </div>
-              <div>
-                <small class="text-muted">Lukasz Holeczek</small>
-                <small class="text-muted float-right mt-1">1:52 PM</small>
-              </div>
-              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-              <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-            </div>
-          </div>
-          <div class="tab-pane p-3" id="settings" role="tabpanel">
-            <h6>Settings</h6>
-            <div class="aside-options">
-              <div class="clearfix mt-4">
-                <small>
-                  <b>Option 1</b>
-                </small>
-                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
-                  <input class="switch-input" type="checkbox" checked="">
-                  <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
-                </label>
-              </div>
-              <div>
-                <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-              </div>
-            </div>
-            <div class="aside-options">
-              <div class="clearfix mt-3">
-                <small>
-                  <b>Option 2</b>
-                </small>
-                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
-                  <input class="switch-input" type="checkbox">
-                  <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
-                </label>
-              </div>
-              <div>
-                <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-              </div>
-            </div>
-            <div class="aside-options">
-              <div class="clearfix mt-3">
-                <small>
-                  <b>Option 3</b>
-                </small>
-                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
-                  <input class="switch-input" type="checkbox">
-                  <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
-                </label>
-              </div>
-            </div>
-            <div class="aside-options">
-              <div class="clearfix mt-3">
-                <small>
-                  <b>Option 4</b>
-                </small>
-                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
-                  <input class="switch-input" type="checkbox" checked="">
-                  <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
-                </label>
-              </div>
-            </div>
-            <hr>
-            <h6>System Utilization</h6>
-            <div class="text-uppercase mb-1 mt-4">
-              <small>
-                <b>CPU Usage</b>
-              </small>
-            </div>
-            <div class="progress progress-xs">
-              <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <small class="text-muted">348 Processes. 1/4 Cores.</small>
-            <div class="text-uppercase mb-1 mt-2">
-              <small>
-                <b>Memory Usage</b>
-              </small>
-            </div>
-            <div class="progress progress-xs">
-              <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <small class="text-muted">11444GB/16384MB</small>
-            <div class="text-uppercase mb-1 mt-2">
-              <small>
-                <b>SSD 1 Usage</b>
-              </small>
-            </div>
-            <div class="progress progress-xs">
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <small class="text-muted">243GB/256GB</small>
-            <div class="text-uppercase mb-1 mt-2">
-              <small>
-                <b>SSD 2 Usage</b>
-              </small>
-            </div>
-            <div class="progress progress-xs">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <small class="text-muted">25GB/256GB</small>
-          </div>
-        </div>
-      </aside>
     </div>
-    <footer class="app-footer">
-      <div>
-        <a href="https://coreui.io">CoreUI</a>
-        <span>&copy; 2018 creativeLabs.</span>
-      </div>
-      <div class="ml-auto">
-        <span>Powered by</span>
-        <a href="https://coreui.io">CoreUI</a>
-      </div>
+    <footer class="c-footer">
+      <div><a href="https://coreui.io">CoreUI</a><span>&copy; 2018 creativeLabs.</span></div>
+      <div class="c-ml-auto"><span>Powered by</span><a href="https://coreui.io">CoreUI</a></div>
     </footer>
     <!-- CoreUI and necessary plugins-->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/pace-progress/pace.min.js"></script>
-    <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
-    <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <!-- Plugins and scripts required by this view-->
     <script src="js/colors.js"></script>
   </body>

@@ -1,10 +1,9 @@
 /* eslint-disable object-curly-newline */
 /* global Chart */
-import $ from 'jquery'
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0): main.js
+ * CoreUI Free Boostrap Admin Template (v3.0.0-alpha.0): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
@@ -14,7 +13,7 @@ import $ from 'jquery'
 const random = () => Math.round(Math.random() * 100)
 
 // eslint-disable-next-line no-unused-vars
-const lineChart = new Chart($('#canvas-1'), {
+const lineChart = new Chart(document.getElementById('canvas-1'), {
   type: 'line',
   data: {
     labels : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -43,7 +42,7 @@ const lineChart = new Chart($('#canvas-1'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const barChart = new Chart($('#canvas-2'), {
+const barChart = new Chart(document.getElementById('canvas-2'), {
   type: 'bar',
   data: {
     labels : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -70,7 +69,7 @@ const barChart = new Chart($('#canvas-2'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const doughnutChart = new Chart($('#canvas-3'), {
+const doughnutChart = new Chart(document.getElementById('canvas-3'), {
   type: 'doughnut',
   data: {
     labels: ['Red', 'Green', 'Yellow'],
@@ -86,7 +85,7 @@ const doughnutChart = new Chart($('#canvas-3'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const radarChart = new Chart($('#canvas-4'), {
+const radarChart = new Chart(document.getElementById('canvas-4'), {
   type: 'radar',
   data: {
     labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
@@ -119,7 +118,7 @@ const radarChart = new Chart($('#canvas-4'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const pieChart = new Chart($('#canvas-5'), {
+const pieChart = new Chart(document.getElementById('canvas-5'), {
   type: 'pie',
   data: {
     labels: ['Red', 'Green', 'Yellow'],
@@ -135,7 +134,7 @@ const pieChart = new Chart($('#canvas-5'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const polarAreaChart = new Chart($('#canvas-6'), {
+const polarAreaChart = new Chart(document.getElementById('canvas-6'), {
   type: 'polarArea',
   data: {
     labels: ['Red', 'Green', 'Yellow', 'Grey', 'Blue'],

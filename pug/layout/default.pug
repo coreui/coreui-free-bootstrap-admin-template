@@ -7,15 +7,14 @@ html(lang='en')
     base(href=base)
     include ../partials/head.pug
     block styles
-  body.app.header-fixed.sidebar-fixed.aside-menu-fixed.sidebar-lg-show
+  body.c-app.c-default-layout
     include ../partials/header.pug
-    .app-body
-      include ../partials/sidebar.pug
-      main(class='main')
+    include ../partials/sidebar.pug
+    include ../partials/aside.pug
+    .c-body
+      main(class='c-main')
         include ../partials/breadcrumb.pug
-        .container-fluid
+        .c-container-fluid
           block view
-
-      include ../partials/aside.pug
     include ../partials/footer.pug
     include ../partials/scripts.pug

@@ -1,9 +1,8 @@
 /* global Chart, CustomTooltips, getStyle */
-import $ from 'jquery'
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.0.0): main.js
+ * CoreUI Free Boostrap Admin Template (v3.0.0-alpha.0): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
@@ -17,7 +16,7 @@ Chart.defaults.global.tooltips.position = 'nearest'
 Chart.defaults.global.tooltips.custom = CustomTooltips
 
 // eslint-disable-next-line no-unused-vars
-const cardChart1 = new Chart($('#card-chart1'), {
+const cardChart1 = new Chart(document.getElementById('card-chart1'), {
   type: 'line',
   data: {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -69,7 +68,7 @@ const cardChart1 = new Chart($('#card-chart1'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const cardChart2 = new Chart($('#card-chart2'), {
+const cardChart2 = new Chart(document.getElementById('card-chart2'), {
   type: 'line',
   data: {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -122,7 +121,7 @@ const cardChart2 = new Chart($('#card-chart2'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const cardChart3 = new Chart($('#card-chart3'), {
+const cardChart3 = new Chart(document.getElementById('card-chart3'), {
   type: 'line',
   data: {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -162,7 +161,7 @@ const cardChart3 = new Chart($('#card-chart3'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const cardChart4 = new Chart($('#card-chart4'), {
+const cardChart4 = new Chart(document.getElementById('card-chart4'), {
   type: 'bar',
   data: {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'January', 'February', 'March', 'April'],
@@ -196,7 +195,7 @@ const cardChart4 = new Chart($('#card-chart4'), {
 const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 
 // eslint-disable-next-line no-unused-vars
-const sparklineChart1 = new Chart($('#sparkline-chart-1'), {
+const sparklineChart1 = new Chart(document.getElementById('sparkline-chart-1'), {
   type: 'bar',
   data: {
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
@@ -226,7 +225,7 @@ const sparklineChart1 = new Chart($('#sparkline-chart-1'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const sparklineChart2 = new Chart($('#sparkline-chart-2'), {
+const sparklineChart2 = new Chart(document.getElementById('sparkline-chart-2'), {
   type: 'bar',
   data: {
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
@@ -256,7 +255,7 @@ const sparklineChart2 = new Chart($('#sparkline-chart-2'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const sparklineChart3 = new Chart($('#sparkline-chart-3'), {
+const sparklineChart3 = new Chart(document.getElementById('sparkline-chart-3'), {
   type: 'bar',
   data: {
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
@@ -286,7 +285,7 @@ const sparklineChart3 = new Chart($('#sparkline-chart-3'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const sparklineChart4 = new Chart($('#sparkline-chart-4'), {
+const sparklineChart4 = new Chart(document.getElementById('sparkline-chart-4'), {
   type: 'line',
   data: {
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
@@ -321,7 +320,7 @@ const sparklineChart4 = new Chart($('#sparkline-chart-4'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const sparklineChart5 = new Chart($('#sparkline-chart-5'), {
+const sparklineChart5 = new Chart(document.getElementById('sparkline-chart-5'), {
   type: 'line',
   data: {
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
@@ -356,7 +355,7 @@ const sparklineChart5 = new Chart($('#sparkline-chart-5'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const sparklineChart6 = new Chart($('#sparkline-chart-6'), {
+const sparklineChart6 = new Chart(document.getElementById('sparkline-chart-6'), {
   type: 'line',
   data: {
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
@@ -416,7 +415,7 @@ const brandBoxChartOptions = {
 }
 
 // eslint-disable-next-line no-unused-vars
-const brandBoxChart1 = new Chart($('#social-box-chart-1'), {
+const brandBoxChart1 = new Chart(document.getElementById('social-box-chart-1'), {
   type: 'line',
   data: {
     labels: brandBoxChartLabels,
@@ -432,7 +431,7 @@ const brandBoxChart1 = new Chart($('#social-box-chart-1'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const brandBoxChart2 = new Chart($('#social-box-chart-2'), {
+const brandBoxChart2 = new Chart(document.getElementById('social-box-chart-2'), {
   type: 'line',
   data: {
     labels: brandBoxChartLabels,
@@ -448,7 +447,7 @@ const brandBoxChart2 = new Chart($('#social-box-chart-2'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const brandBoxChart3 = new Chart($('#social-box-chart-3'), {
+const brandBoxChart3 = new Chart(document.getElementById('social-box-chart-3'), {
   type: 'line',
   data: {
     labels: brandBoxChartLabels,
@@ -464,7 +463,7 @@ const brandBoxChart3 = new Chart($('#social-box-chart-3'), {
 })
 
 // eslint-disable-next-line no-unused-vars
-const brandBoxChart4 = new Chart($('#social-box-chart-4'), {
+const brandBoxChart4 = new Chart(document.getElementById('social-box-chart-4'), {
   type: 'line',
   data: {
     labels: brandBoxChartLabels,
