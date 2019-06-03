@@ -59,7 +59,7 @@ If you want to change how it looks or works, install the theme on your machine, 
 
 ``` bash
 # clone the repo
-$ git clone https://github.com/coreui/coreui-free-bootstrap-admin-template.git my-project
+$ git clone https://github.com/Laravel-Backpack/HTML-Template.git backpack-html-template
 
 # go into app's directory
 $ cd my-project
