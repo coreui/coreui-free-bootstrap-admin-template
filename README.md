@@ -103,13 +103,13 @@ Until then, you can check out the documentation for the CoreUI Free Bootstrap Ad
 
 ## Contributing
 
-Please read through our [contributing guidelines](https://github.com/Laravel-Backpack/HTML-Template/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+This template is just a CSS file added on top of CoreUI. 
 
-Editor preferences are available in the [editor config](https://github.com/Laravel-Backpack/HTML-Template/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+If you encounter any bugs that are NOT design-related, please [submit a ticket to the CoreUI repository](https://github.com/coreui/coreui-free-bootstrap-admin-template). We regularly merge their new releases.
 
 
 ## Support Development
 
 This HTML Template is just a customization of how [CoreUI](https://coreui.io/) looks & feels. They've done the heavy lifting, so your and I don't have to. To show your gratitude for this free HTML template, please consider:
-- buyin [CoreUI Pro](https://coreui.io/pro/) or [donating through PayPal](https://www.paypal.me/holeczek) to holeczek, the creator of CoreUI;
+- buying [CoreUI Pro](https://coreui.io/pro/) or [donating through PayPal](https://www.paypal.me/holeczek) to holeczek, the creator of CoreUI;
 - buying a [Backpack for Laravel](https://backpackforlaravel.com/) license;
