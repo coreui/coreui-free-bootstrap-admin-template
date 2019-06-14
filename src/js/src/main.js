@@ -16,6 +16,12 @@ Chart.defaults.global.tooltips.enabled = false
 Chart.defaults.global.tooltips.mode = 'index'
 Chart.defaults.global.tooltips.position = 'nearest'
 Chart.defaults.global.tooltips.custom = CustomTooltips
+Chart.defaults.global.tooltips.intersect = true
+Chart.defaults.global.tooltips.callbacks.labelColor = function (tooltipItem, chart) {
+  return {
+    backgroundColor: chart.data.datasets[tooltipItem.datasetIndex].borderColor
+  }
+}
 
 // eslint-disable-next-line no-unused-vars
 const cardChart1 = new Chart($('#card-chart1'), {
