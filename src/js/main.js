@@ -4,7 +4,7 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.1.12): main.js
+ * CoreUI Free Boostrap Admin Template (v2.1.14): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
@@ -15,7 +15,15 @@ Chart.defaults.global.pointHitDetectionRadius = 1;
 Chart.defaults.global.tooltips.enabled = false;
 Chart.defaults.global.tooltips.mode = 'index';
 Chart.defaults.global.tooltips.position = 'nearest';
-Chart.defaults.global.tooltips.custom = CustomTooltips; // eslint-disable-next-line no-unused-vars
+Chart.defaults.global.tooltips.custom = CustomTooltips;
+Chart.defaults.global.tooltips.intersect = true;
+
+Chart.defaults.global.tooltips.callbacks.labelColor = function (tooltipItem, chart) {
+  return {
+    backgroundColor: chart.data.datasets[tooltipItem.datasetIndex].borderColor
+  };
+}; // eslint-disable-next-line no-unused-vars
+
 
 var cardChart1 = new Chart($('#card-chart1'), {
   type: 'line',
