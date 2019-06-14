@@ -1,3 +1,35 @@
+## v2.1.14
+- fix(main): labelColor callback for CustomTooltips  
+- chore: drop @babel/polyfill in favour of core-js@3 and regenerator-runtime
+
+##### dependencies update
+- update: `@coreui/coreui` to `^2.1.14`
+- update: `@coreui/coreui-plugin-chartjs-custom-tooltips` to `^1.3.1`
+- update: `chart.js` to `^2.8.0`
+- update: `core-js` to `^3.1.3`
+- update: `flag-icon-css` to `^3.3.0`
+- update: `jquery` to `^3.4.1`
+- update: `popper.js` to `^1.15.0`
+- add: `regenerator-runtime` to `^0.13.2`
+- update: `@babel/cli` to `^7.4.4`
+- update: `@babel/core` to `^7.4.5`
+- update: `@babel/plugin-proposal-object-rest-spread` to `^7.4.4`
+- add: `@babel/plugin-proposal-throw-expressions` to `^7.2.0`
+- update: `@babel/preset-env` to `^7.4.5`
+- update: `autoprefixer` to `^9.6.0`
+- update: `browser-sync` to `^2.26.7`
+- update: `clean-css-cli` to `^4.3.0`
+- update: `js-beautify` to `^1.10.0`
+- update: `nodemon` to `^1.19.1`
+- update: `node-sass` to `^4.12.0`
+- update: `eslint` to `^5.16.0`
+- update: `eslint-plugin-compat` to `^3.1.1`
+- update: `stylelint` to `^10.1.0`
+- update: `stylelint-config-recommended-scss` to `^3.3.0`
+- update: `stylelint-config-standard` to `^18.3.0`
+- update: `stylelint-order` to `^3.0.0`
+- update: `stylelint-scss` to `^3.8.0`
+
 ## v2.1.12
 - chore(build/vendors): removes hash tag from urls in css files #460 - thanks @mgsmus 
 - update: `@coreui/coreui` to `^2.1.7`
