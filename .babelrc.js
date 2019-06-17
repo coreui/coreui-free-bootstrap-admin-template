@@ -7,10 +7,10 @@ module.exports = {
           "esmodules": true,
           "ie": 10
         },
-        useBuiltIns: "usage",
+        useBuiltIns: "entry",
         corejs: {version: 3, proposals: true},
         loose: true,
-        modules: false,
+        modules: "auto",
         exclude: ["transform-typeof-symbol"]
       }
     ]

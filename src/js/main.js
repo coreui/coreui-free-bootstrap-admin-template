@@ -1,3 +1,5 @@
+"use strict";
+
 /* eslint-disable object-shorthand */
 
 /* global Chart, CustomTooltips, getStyle, hexToRgba */

@@ -1,3 +1,13 @@
+## v2.1.next
+- fix: babelrc config
+- fix: missing favicon link
+- fix: readme links
+
+##### dependencies update
+- update: `core-js` to `^3.1.3`
+- update: `babel-eslint` to `^10.0.2`
+- update: `eslint-plugin-compat` to `^3.1.2`
+
 ## v2.1.14
 - fix(main): labelColor callback for CustomTooltips  
 - chore: drop @babel/polyfill in favour of core-js@3 and regenerator-runtime
