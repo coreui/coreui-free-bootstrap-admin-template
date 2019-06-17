@@ -1,3 +1,5 @@
+"use strict";
+
 /* global Chart, CustomTooltips, getStyle */
 
 /**

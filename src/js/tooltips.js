@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * --------------------------------------------------------------------------
  * CoreUI Free Boostrap Admin Template (v2.1.14): tooltips.js

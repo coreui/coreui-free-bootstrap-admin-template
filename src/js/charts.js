@@ -1,3 +1,5 @@
+"use strict";
+
 /* eslint-disable object-curly-newline */
 
 /* global Chart */
