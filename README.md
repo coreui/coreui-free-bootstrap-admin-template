@@ -1,4 +1,4 @@
-# Backpack Free HTML Admin Template, using Bootstrap 4
+# BackpackUI Free HTML Admin Template, using Bootstrap 4
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -11,7 +11,11 @@ Uses:
 - jQuery
 
 
-![List / table view for Backpack/CRUD](https://backpackforlaravel.com/v4/backpack4ui.jpg)
+![Demo Dashboard view of BackpackUI Free HTML Template for Admin Panels](https://backpackforlaravel.com/uploads/v4/backpack4ui.jpg)
+
+## Preview
+
+// TODO: link soon
 
 ## How to Use
 
@@ -107,9 +111,9 @@ Until then, you can check out the documentation for the CoreUI Free Bootstrap Ad
 
 ## Contributing
 
-This template is just a CSS file added on top of CoreUI. 
+This template is just [one CSS file](https://github.com/Laravel-Backpack/HTML-Template/blob/master/src/css/backpackui.css) added on top of CoreUI.
 
-If you encounter any bugs that are NOT design-related, please [submit a ticket to the CoreUI repository](https://github.com/coreui/coreui-free-bootstrap-admin-template). We regularly merge their new releases.
+If you encounter any bugs that are NOT design-related, please [submit a ticket to the CoreUI repository](https://github.com/coreui/coreui-free-bootstrap-admin-template). We regularly merge their new releases. So all fix there will shortly be pulled into BackpackUI.
 
 
 ## Support Development
