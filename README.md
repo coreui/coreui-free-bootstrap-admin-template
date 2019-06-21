@@ -4,7 +4,7 @@
 
 At [Backpack for Laravel](https://backpackforlaravel.com/) we've been building admin panels for 9+ years. And we've learnt _a lot_ about what makes a good admin panel. This HTML template allows you to benefit from our thousands of hours of experience, for free. It is our way of contributing to the OS community with something we felt was missing. An HTML Template that is free, open-source, well-coded _and_ well-designed.
 
-We've taken the excellent [CoreUI](https://github.com/coreui/coreui-free-bootstrap-admin-template) template and added the one thing it was missing - good design. We've spent months sweating every little detail, so that you can build excellent admin panels just by copy-pasting HTML blocks.
+We've taken the excellent [CoreUI](https://github.com/coreui/coreui-free-bootstrap-admin-template) template and added our lernings from years of designing admin panel interfaces. We've spent months sweating every little detail, so that you can build excellent admin panels just by copy-pasting HTML blocks.
 
 Uses:
 - CoreUI
