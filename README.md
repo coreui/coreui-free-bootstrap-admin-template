@@ -7,6 +7,7 @@ At [Backpack for Laravel](https://backpackforlaravel.com/) we've been building a
 We've taken the excellent [CoreUI](https://github.com/coreui/coreui-free-bootstrap-admin-template) template and added the one thing it was missing - good design. We've spent months sweating every little detail, so that you can build excellent admin panels just by copy-pasting HTML blocks.
 
 Uses:
+- CoreUI
 - Bootstrap 4
 - jQuery
 
