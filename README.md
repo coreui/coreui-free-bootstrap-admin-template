@@ -10,6 +10,9 @@ Uses:
 - Bootstrap 4
 - jQuery
 
+
+![List / table view for Backpack/CRUD](https://backpackforlaravel.com/v4/backpack4ui.jpg)
+
 ## How to Use
 
 If you don't think you'll need to customize its look&feel, we recommend you use our minified files directly. **Click Download** and use our files in your HTML:
