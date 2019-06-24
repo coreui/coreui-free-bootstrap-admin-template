@@ -1,0 +1,459 @@
+extends /_layout/default.pug
+
+block view
+  .c-fade-in
+    .c-card
+      .c-card-header
+        strong Standard Buttons
+      .c-card-body
+        .c-row.c-align-items-center
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Normal
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-primary(type='button') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-secondary(type='button') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-success(type='button') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-warning(type='button') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-danger(type='button') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-info(type='button') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-light(type='button') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-dark(type='button') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-link(type='button') Link
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Active State
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-primary.c-active(type='button', aria-pressed='true') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-secondary.c-active(type='button', aria-pressed='true') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-success.c-active(type='button', aria-pressed='true') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-warning.c-active(type='button', aria-pressed='true') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-danger.c-active(type='button', aria-pressed='true') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-info.c-active(type='button', aria-pressed='true') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-light.c-active(type='button', aria-pressed='true') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-dark.c-active(type='button', aria-pressed='true') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-link.c-active(type='button', aria-pressed='true') Link
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Disabled
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-primary(type='button', disabled='') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-secondary(type='button', disabled='') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-success(type='button', disabled='') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-warning(type='button', disabled='') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-danger(type='button', disabled='') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-info(type='button', disabled='') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-light(type='button', disabled='') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-dark(type='button', disabled='') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-link(type='button', disabled='') Link
+    .c-card
+      .c-card-header
+        strong Outline Buttons
+      .c-card-body
+        p
+          | Use
+          code .c-btn-outline-*
+          |  class for outline buttons.
+        .c-row.c-align-items-center
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Normal
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-primary(type='button') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-secondary(type='button') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-success(type='button') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-warning(type='button') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-danger(type='button') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-info(type='button') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-light(type='button') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-dark(type='button') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Active State
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-primary.c-active(type='button', aria-pressed='true') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-secondary.c-active(type='button', aria-pressed='true') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-success.c-active(type='button', aria-pressed='true') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-warning.c-active(type='button', aria-pressed='true') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-danger.c-active(type='button', aria-pressed='true') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-info.c-active(type='button', aria-pressed='true') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-light.c-active(type='button', aria-pressed='true') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-dark.c-active(type='button', aria-pressed='true') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Disabled
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-primary(type='button', disabled='') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-secondary(type='button', disabled='') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-success(type='button', disabled='') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-warning(type='button', disabled='') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-danger(type='button', disabled='') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-info(type='button', disabled='') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-light(type='button', disabled='') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-outline-dark(type='button', disabled='') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+    .c-card
+      .c-card-header
+        strong Ghost Buttons
+      .c-card-body
+        p
+          | Use
+          code .c-btn-ghost-*
+          |  class for ghost buttons.
+        .c-row.c-align-items-center
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Normal
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-primary(type='button') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-secondary(type='button') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-success(type='button') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-warning(type='button') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-danger(type='button') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-info(type='button') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-light(type='button') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-dark(type='button') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Active State
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-primary.c-active(type='button', aria-pressed='true') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-secondary.c-active(type='button', aria-pressed='true') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-success.c-active(type='button', aria-pressed='true') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-warning.c-active(type='button', aria-pressed='true') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-danger.c-active(type='button', aria-pressed='true') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-info.c-active(type='button', aria-pressed='true') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-light.c-active(type='button', aria-pressed='true') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-dark.c-active(type='button', aria-pressed='true') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Disabled
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-primary(type='button', disabled='') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-secondary(type='button', disabled='') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-success(type='button', disabled='') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-warning(type='button', disabled='') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-danger(type='button', disabled='') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-info(type='button', disabled='') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-light(type='button', disabled='') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-block.c-btn-ghost-dark(type='button', disabled='') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+    .c-card
+      .c-card-header
+        strong Square Buttons
+      .c-card-body
+        p
+          | Use
+          code .c-btn-square
+          |  class for square buttons.
+        .c-row.c-align-items-center
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Normal
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-primary(type='button') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-secondary(type='button') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-success(type='button') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-warning(type='button') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-danger(type='button') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-info(type='button') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-light(type='button') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-dark(type='button') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-link(type='button') Link
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Active State
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-primary.c-active(type='button', aria-pressed='true') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-secondary.c-active(type='button', aria-pressed='true') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-success.c-active(type='button', aria-pressed='true') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-warning.c-active(type='button', aria-pressed='true') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-danger.c-active(type='button', aria-pressed='true') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-info.c-active(type='button', aria-pressed='true') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-light.c-active(type='button', aria-pressed='true') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-dark.c-active(type='button', aria-pressed='true') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-link.c-active(type='button', aria-pressed='true') Link
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Disabled
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-primary(type='button', disabled='') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-secondary(type='button', disabled='') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-success(type='button', disabled='') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-warning(type='button', disabled='') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-danger(type='button', disabled='') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-info(type='button', disabled='') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-light(type='button', disabled='') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-dark(type='button', disabled='') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-square.c-btn-block.c-btn-link(type='button', disabled='') Link
+    .c-card
+      .c-card-header
+        strong Pill Buttons
+      .c-card-body
+        p
+          | Use
+          code .c-btn-pill
+          |  class for pill buttons.
+        .c-row.c-align-items-center
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Normal
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-primary(type='button') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-secondary(type='button') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-success(type='button') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-warning(type='button') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-danger(type='button') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-info(type='button') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-light(type='button') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-dark(type='button') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-link(type='button') Link
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Active State
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-primary.c-active(type='button', aria-pressed='true') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-secondary.c-active(type='button', aria-pressed='true') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-success.c-active(type='button', aria-pressed='true') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-warning.c-active(type='button', aria-pressed='true') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-danger.c-active(type='button', aria-pressed='true') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-info.c-active(type='button', aria-pressed='true') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-light.c-active(type='button', aria-pressed='true') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-dark.c-active(type='button', aria-pressed='true') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-link.c-active(type='button', aria-pressed='true') Link
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Disabled
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-primary(type='button', disabled='') Primary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-secondary(type='button', disabled='') Secondary
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-success(type='button', disabled='') Success
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-warning(type='button', disabled='') Warning
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-danger(type='button', disabled='') Danger
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-info(type='button', disabled='') Info
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-light(type='button', disabled='') Light
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-dark(type='button', disabled='') Dark
+          .c-col-6.c-col-sm-4.c-col-md-2.c-col-xl.c-mb-3.c-mb-xl-0
+            button.c-btn.c-btn-pill.c-btn-block.c-btn-link(type='button', disabled='') Link
+    .c-card
+      .c-card-header
+        strong Sizes
+      .c-card-body
+        p
+          | Fancy larger or smaller buttons? Add
+          code .c-btn-lg
+          |  or
+          code .c-btn-sm
+          |  for additional sizes.
+        .c-row.c-align-items-center
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Small add
+            code .c-btn-sm
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-sm.c-btn-primary(type='button') Standard Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-sm.c-btn-outline-secondary(type='button') Outline Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-sm.c-btn-ghost-success(type='button') Ghost Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-sm.c-btn-square.c-btn-warning(type='button') Square Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-sm.c-btn-pill.c-btn-danger(type='button') Pill Button
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Normal
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-primary(type='button') Standard Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-outline-secondary(type='button') Outline Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-ghost-success(type='button') Ghost Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-square.c-btn-warning(type='button') Square Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-pill.c-btn-danger(type='button') Pill Button
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-12.c-col-xl.c-mb-3.c-mb-xl-0
+            | Large add
+            code .c-btn-lg
+            | .
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-lg.c-btn-primary(type='button') Standard Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-lg.c-btn-outline-secondary(type='button') Outline Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-lg.c-btn-ghost-success(type='button') Ghost Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-lg.c-btn-square.c-btn-warning(type='button') Square Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-lg.c-btn-pill.c-btn-danger(type='button') Pill Button
+    .c-card
+      .c-card-header
+        strong With Icons
+      .c-card-body
+        .c-row.c-align-items-center.c-mt-3
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-primary(type='button')
+              i.fa.fa-lightbulb-o
+              |  Standard Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-outline-secondary(type='button')
+              i.fa.fa-lightbulb-o
+              |  Outline Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-ghost-success(type='button')
+              i.fa.fa-lightbulb-o
+              |  Ghost Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-square.c-btn-warning(type='button')
+              i.fa.fa-lightbulb-o
+              |  Square Button
+          .c-col-6.c-col-sm-4.c-col-md.c-mb-3.c-mb-xl-0.c-text-center
+            button.c-btn.c-btn-pill.c-btn-danger(type='button')
+              i.fa.fa-lightbulb-o
+              |  Pill Button
+    .c-row
+      .c-col-md-6
+        .c-card
+          .c-card-header
+            strong Block Level Buttons
+          .c-card-body
+            p
+              | Add this class
+              code .c-btn-block
+            button.c-btn.c-btn-secondary.c-btn-lg.c-btn-block(type='button') Block level button
+            button.c-btn.c-btn-primary.c-btn-lg.c-btn-block(type='button') Block level button
+            button.c-btn.c-btn-success.c-btn-lg.c-btn-block(type='button') Block level button
+            button.c-btn.c-btn-info.c-btn-lg.c-btn-block(type='button') Block level button
+            button.c-btn.c-btn-warning.c-btn-lg.c-btn-block(type='button') Block level button
+            button.c-btn.c-btn-danger.c-btn-lg.c-btn-block(type='button') Block level button
+            button.c-btn.c-btn-link.c-btn-lg.c-btn-block(type='button') Block level button
+      // /.c-col
+      .c-col-md-6
+        .c-card
+          .c-card-header
+            strong Block Level Buttons
+          .c-card-body
+            p
+              | Add this class
+              code .c-btn-block
+            button.c-btn.c-btn-outline-secondary.c-btn-lg.c-btn-block(type='button') Block level button
+            button.c-btn.c-btn-outline-primary.c-btn-lg.c-btn-block(type='button') Block level button
+            button.c-btn.c-btn-outline-success.c-btn-lg.c-btn-block(type='button') Block level button
+            button.c-btn.c-btn-outline-info.c-btn-lg.c-btn-block(type='button') Block level button
+            button.c-btn.c-btn-outline-warning.c-btn-lg.c-btn-block(type='button') Block level button
+            button.c-btn.c-btn-outline-danger.c-btn-lg.c-btn-block(type='button') Block level button
+      // /.c-col
+    // /.c-row

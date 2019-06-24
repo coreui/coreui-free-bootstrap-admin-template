@@ -1,0 +1,17 @@
+extends /_layout/pages.pug
+
+block view
+  .c-container
+    .c-row.c-justify-content-center
+      .c-col-md-6
+        .c-clearfix
+          h1.c-float-left.c-display-3.c-mr-4 500
+          h4.c-pt-3 Houston, we have a problem!
+          p.c-text-muted The page you are looking for is temporarily unavailable.
+        .input-prepend.c-input-group
+          .c-input-group-prepend
+            span.c-input-group-text
+              img.c-icon(src="assets/icons/magnifying-glass.svg" width="16" height="16" alt="CoreUI Icons Magnifying Glass")
+          input#prependedInput.c-form-control(size='16', type='text', placeholder='What are you looking for?')
+          span.c-input-group-append
+            button.c-btn.c-btn-info(type='button') Search

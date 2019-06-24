@@ -1,0 +1,36 @@
+extends /_layout/default.pug
+
+block scripts
+  // Plugins and scripts required by this view
+  script(src='js/popovers.js')
+
+block view
+  .c-fade-in
+    .c-card
+      .c-card-header
+        i.fa.fa-align-justify
+        |  Popovers
+        .c-card-header-actions
+          a.c-card-header-action(href='http://coreui.io/docs/components/bootstrap-popover/popovers.html', target='_blank')
+            small.c-text-muted docs
+      .c-card-body
+        button.c-btn.c-btn-lg.c-btn-danger(type='button', data-toggle='c-popover', title='Popover title', data-content="And here's some amazing content. It's very engaging. Right?")
+          | Click to toggle popover
+        hr
+        a.c-btn.c-btn-lg.c-btn-danger(tabindex='0', role='button', data-toggle='c-popover', data-trigger='focus', title='Dismissible popover', data-content="And here's some amazing content. It's very engaging. Right?")
+          | Dismissible
+          | popover
+    .c-card
+      .c-card-header
+        i.fa.fa-align-justify
+        |  Popovers
+        small directions
+      .c-card-body
+        button.c-btn.c-btn-secondary(type='button', data-container='body', data-toggle='c-popover', data-placement='top', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+          | Popover on top
+        button.c-btn.c-btn-secondary(type='button', data-container='body', data-toggle='c-popover', data-placement='right', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+          | Popover on right
+        button.c-btn.c-btn-secondary(type='button', data-container='body', data-toggle='c-popover', data-placement='bottom', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+          | Popover on bottom
+        button.c-btn.c-btn-secondary(type='button', data-container='body', data-toggle='c-popover', data-placement='left', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+          | Popover on left

@@ -1,0 +1,144 @@
+extends /_layout/default.pug
+
+block view
+  .c-fade-in
+    .c-card
+      .c-card-header
+        | Headings
+      .c-card-body
+        p
+          | Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
+        table.c-table
+          thead
+            tr
+              th Heading
+              th Example
+          tbody
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h1></h1>'
+              td
+                span.c-h1 h1. Bootstrap heading
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h2></h2>'
+              td
+                span.c-h2 h2. Bootstrap heading
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h3></h3>'
+              td
+                span.c-h3 h3. Bootstrap heading
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h4></h4>'
+              td
+                span.c-h4 h4. Bootstrap heading
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h5></h5>'
+              td
+                span.c-h5 h5. Bootstrap heading
+            tr
+              td
+                p
+                  code.highlighter-rouge= '<h6></h6>'
+              td
+                span.c-h6 h6. Bootstrap heading
+    .c-card
+      .c-card-header
+        | Headings
+      .c-card-body
+        p
+          code.highlighter-rouge .c-h1
+          |  through
+          code.highlighter-rouge .c-h6
+          |  classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
+        .bd-example
+          p.c-h1 h1. Bootstrap heading
+          p.c-h2 h2. Bootstrap heading
+          p.c-h3 h3. Bootstrap heading
+          p.c-h4 h4. Bootstrap heading
+          p.c-h5 h5. Bootstrap heading
+          p.c-h6 h6. Bootstrap heading
+    .c-card
+      .c-card-header
+        | Display headings
+      .c-card-body
+        p
+          | Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a
+          strong display heading
+          | —a larger, slightly more opinionated heading style.
+        .bd-example.bd-example-type
+          table.c-table
+            tbody
+              tr
+                td
+                  span.c-display-1 Display 1
+              tr
+                td
+                  span.c-display-2 Display 2
+              tr
+                td
+                  span.c-display-3 Display 3
+              tr
+                td
+                  span.c-display-4 Display 4
+    .c-card
+      .c-card-header
+        | Inline text elements
+      .c-card-body
+        p
+          | Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a
+          strong display heading
+          | —a larger, slightly more opinionated heading style.
+        .bd-example
+          p
+            | You can use the mark tag to
+            mark highlight
+            |  text.
+          p
+            del This line of text is meant to be treated as deleted text.
+          p
+            s This line of text is meant to be treated as no longer accurate.
+          p
+            ins This line of text is meant to be treated as an addition to the document.
+          p
+            u This line of text will render as underlined
+          p
+            small This line of text is meant to be treated as fine print.
+          p
+            strong This line rendered as bold text.
+          p
+            em This line rendered as italicized text.
+    .c-card
+      .c-card-header
+        | Description list alignment
+      .c-card-body
+        p
+          | Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a
+          code.highlighter-rouge .c-text-truncate
+          |  class to truncate the text with an ellipsis.
+        .bd-example
+          dl.c-row
+            dt.c-col-sm-3 Description lists
+            dd.c-col-sm-9 A description list is perfect for defining terms.
+            dt.c-col-sm-3 Euismod
+            dd.c-col-sm-9
+              p Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+              p Donec id elit non mi porta gravida at eget metus.
+            dt.c-col-sm-3 Malesuada porta
+            dd.c-col-sm-9 Etiam porta sem malesuada magna mollis euismod.
+            dt.c-col-sm-3.c-text-truncate Truncated term is truncated
+            dd.c-col-sm-9
+              | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            dt.c-col-sm-3 Nesting
+            dd.c-col-sm-9
+              dl.c-row
+                dt.c-col-sm-4 Nested definition list
+                dd.c-col-sm-8 Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.

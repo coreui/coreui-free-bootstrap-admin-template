@@ -1,0 +1,571 @@
+extends /_layout/default.pug
+
+block styles
+  link(href='node_modules/@coreui/coreui-chartjs/dist/css/coreui-chartjs.css', rel='stylesheet')
+
+block scripts
+  script(src='node_modules/chart.js/dist/Chart.min.js')
+  script(src='node_modules/@coreui/coreui-chartjs/dist/js/coreui-chartjs.js')
+  script(src='js/widgets.js')
+
+block view
+  .c-fade-in
+    .c-row
+      .c-col-sm-6.c-col-lg-3
+        .c-card.c-text-white.c-bg-primary
+          .c-card-body.c-pb-0
+            .c-btn-group.c-float-right
+              button.c-btn.c-btn-transparent.c-dropdown-toggle.c-p-0(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+                i.icon-settings
+              .c-dropdown-menu.c-dropdown-menu-right
+                a.c-dropdown-item(href='#') Action
+                a.c-dropdown-item(href='#') Another action
+                a.c-dropdown-item(href='#') Something else here
+            .c-text-value-lg 9.823
+            div Widget title
+          .c-chart-wrapper.c-mt-3.c-mx-3(style='height:70px;')
+            canvas#card-chart1.chart(height='70')
+      // /.c-col
+      .c-col-sm-6.c-col-lg-3
+        .c-card.c-text-white.c-bg-info
+          .c-card-body.c-pb-0
+            button.c-btn.c-btn-transparent.c-p-0.c-float-right(type='button')
+              i.icon-location-pin
+            .c-text-value-lg 9.823
+            div Widget title
+          .c-chart-wrapper.c-mt-3.c-mx-3(style='height:70px;')
+            canvas#card-chart2.chart(height='70')
+      // /.c-col
+      .c-col-sm-6.c-col-lg-3
+        .c-card.c-text-white.c-bg-warning
+          .c-card-body.c-pb-0
+            .c-btn-group.c-float-right
+              button.c-btn.c-btn-transparent.c-dropdown-toggle.c-p-0(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+                i.icon-settings
+              .c-dropdown-menu.c-dropdown-menu-right
+                a.c-dropdown-item(href='#') Action
+                a.c-dropdown-item(href='#') Another action
+                a.c-dropdown-item(href='#') Something else here
+            .c-text-value-lg 9.823
+            div Widget title
+          .c-chart-wrapper.c-mt-3(style='height:70px;')
+            canvas#card-chart3.chart(height='70')
+      // /.c-col
+      .c-col-sm-6.c-col-lg-3
+        .c-card.c-text-white.c-bg-danger
+          .c-card-body.c-pb-0
+            .c-btn-group.c-float-right
+              button.c-btn.c-btn-transparent.c-dropdown-toggle.c-p-0(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+                i.icon-settings
+              .c-dropdown-menu.c-dropdown-menu-right
+                a.c-dropdown-item(href='#') Action
+                a.c-dropdown-item(href='#') Another action
+                a.c-dropdown-item(href='#') Something else here
+            .c-text-value-lg 9.823
+            div Widget title
+          .c-chart-wrapper.c-mt-3.c-mx-3(style='height:70px;')
+            canvas#card-chart4.chart(height='70')
+      // /.c-col
+    // /.c-row
+    .c-row
+      .c-col-sm-6.c-col-lg-3
+        .c-card
+          .c-card-body
+            .c-text-value-lg 89.9%
+            div Widget title
+            .c-progress.c-progress-xs.c-my-2
+              .c-progress-bar.c-bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.c-text-muted Widget helper text
+      // /.c-col
+      .c-col-sm-6.c-col-lg-3
+        .c-card
+          .c-card-body
+            .c-text-value-lg 12.124
+            div Widget title
+            .c-progress.c-progress-xs.c-my-2
+              .c-progress-bar.c-bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.c-text-muted Widget helper text
+      // /.c-col
+      .c-col-sm-6.c-col-lg-3
+        .c-card
+          .c-card-body
+            .c-text-value-lg $98.111,00
+            div Widget title
+            .c-progress.c-progress-xs.c-my-2
+              .c-progress-bar.c-bg-warning(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.c-text-muted Widget helper text
+      // /.c-col
+      .c-col-sm-6.c-col-lg-3
+        .c-card
+          .c-card-body
+            .c-text-value-lg 2 TB
+            div Widget title
+            .c-progress.c-progress-xs.c-my-2
+              .c-progress-bar.c-bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.c-text-muted Widget helper text
+      // /.c-col
+    // /.c-row
+    .c-row
+      .c-col-sm-6.c-col-lg-3
+        .c-card.c-text-white.c-bg-primary
+          .c-card-body
+            .c-text-value-lg 89.9%
+            div Widget title
+            .c-progress.c-progress-white.c-progress-xs.c-my-2
+              .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.c-text-muted Widget helper text
+      // /.c-col
+      .c-col-sm-6.c-col-lg-3
+        .c-card.c-text-white.c-bg-warning
+          .c-card-body
+            .c-text-value-lg 12.124
+            div Widget title
+            .c-progress.c-progress-white.c-progress-xs.c-my-2
+              .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.c-text-muted Widget helper text
+      // /.c-col
+      .c-col-sm-6.c-col-lg-3
+        .c-card.c-text-white.c-bg-danger
+          .c-card-body
+            .c-text-value-lg $98.111,00
+            div Widget title
+            .c-progress.c-progress-white.c-progress-xs.c-my-2
+              .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.c-text-muted Widget helper text
+      // /.c-col
+      .c-col-sm-6.c-col-lg-3
+        .c-card.c-text-white.c-bg-info
+          .c-card-body
+            .c-text-value-lg 2 TB
+            div Widget title
+            .c-progress.c-progress-white.c-progress-xs.c-my-2
+              .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.c-text-muted Widget helper text
+      // /.c-col
+    // /.c-row
+    .c-row
+      .c-col-md-2.c-col-sm-4
+        .c-card
+          .c-card-body.c-text-center
+            .c-text-muted.c-small.c-text-uppercase.c-font-weight-bold Title
+            .c-text-value-xl.c-py-3 1,123
+            .c-chart-wrapper.c-mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-1.chart.chart-bar(height='40', width='80')
+      // /.c-col
+      .c-col-md-2.c-col-sm-4
+        .c-card
+          .c-card-body.c-text-center
+            .c-text-muted.c-small.c-text-uppercase.c-font-weight-bold Title
+            .c-text-value-xl.c-py-3 1,123
+            .c-chart-wrapper.c-mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-2.chart.chart-bar(height='40', width='80')
+      // /.c-col
+      .c-col-md-2.c-col-sm-4
+        .c-card
+          .c-card-body.c-text-center
+            .c-text-muted.c-small.c-text-uppercase.c-font-weight-bold Title
+            .c-text-value-xl.c-py-3 1,123
+            .c-chart-wrapper.c-mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-3.chart.chart-bar(height='40', width='80')
+      // /.c-col
+      .c-col-md-2.c-col-sm-4
+        .c-card
+          .c-card-body.c-text-center
+            .c-text-muted.c-small.c-text-uppercase.c-font-weight-bold Title
+            .c-text-value-xl.c-py-3 1,123
+            .c-chart-wrapper.c-mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-4.chart.chart-line(height='40', width='100')
+      // /.c-col
+      .c-col-md-2.c-col-sm-4
+        .c-card
+          .c-card-body.c-text-center
+            .c-text-muted.c-small.c-text-uppercase.c-font-weight-bold Title
+            .c-text-value-xl.c-py-3 1,123
+            .c-chart-wrapper.c-mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-5.chart.chart-line(height='40', width='100')
+      // /.c-col
+      .c-col-md-2.c-col-sm-4
+        .c-card
+          .c-card-body.c-text-center
+            .c-text-muted.c-small.c-text-uppercase.c-font-weight-bold Title
+            .c-text-value-xl.c-py-3 1,123
+            .c-chart-wrapper.c-mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-6.chart.chart-line(height='40', width='100')
+      // /.c-col
+    // /.c-row
+    .c-row
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-3.c-d-flex.c-align-items-center
+            div.c-bg-primary.c-p-3.c-mr-3
+              img.c-icon(src="assets/icons/settings.svg" width="24" height="24" alt="CoreUI Icons Cogs")
+            div
+              .c-text-value.c-text-primary $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-3.c-d-flex.c-align-items-center
+            div.c-bg-info.c-p-3.c-mr-3
+              img.c-icon(src="assets/icons/laptop.svg" width="24" height="24" alt="CoreUI Icons Laptop")
+            div
+              .c-text-value.c-text-info $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-3.c-d-flex.c-align-items-center
+            div.c-bg-warning.c-p-3.c-mr-3
+              img.c-icon(src="assets/icons/moon.svg" width="24" height="24" alt="CoreUI Icons Moon")
+            div
+              .c-text-value.c-text-warning $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-3.c-d-flex.c-align-items-center
+            div.c-bg-danger.c-p-3.c-mr-3
+              img.c-icon(src="assets/icons/bell.svg" width="24" height="24" alt="CoreUI Icons Bell")
+            div
+              .c-text-value.c-text-danger $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-3.c-d-flex.c-align-items-center
+            div.c-bg-primary.c-p-3.c-mr-3
+              img.c-icon(src="assets/icons/settings.svg" width="24" height="24" alt="CoreUI Icons Cogs")
+            div
+              .c-text-value.c-text-primary $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+          .c-card-footer.c-px-3.c-py-2
+            a.c-btn-block.c-text-muted.c-d-flex.c-justify-content-between.c-align-items-center(href='#')
+              span.c-small.c-font-weight-bold View More
+              i.fa.fa-angle-right
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-3.c-d-flex.c-align-items-center
+            div.c-bg-info.c-p-3.c-mr-3
+              img.c-icon(src="assets/icons/laptop.svg" width="24" height="24" alt="CoreUI Icons Laptop")
+            div
+              .c-text-value.c-text-info $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+          .c-card-footer.c-px-3.c-py-2
+            a.c-btn-block.c-text-muted.c-d-flex.c-justify-content-between.c-align-items-center(href='#')
+              span.c-small.c-font-weight-bold View More
+              i.fa.fa-angle-right
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-3.c-d-flex.c-align-items-center
+            div.c-bg-warning.c-p-3.c-mr-3
+              img.c-icon(src="assets/icons/moon.svg" width="24" height="24" alt="CoreUI Icons Moon")
+            div
+              .c-text-value.c-text-warning $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+          .c-card-footer.c-px-3.c-py-2
+            a.c-btn-block.c-text-muted.c-d-flex.c-justify-content-between.c-align-items-center(href='#')
+              span.c-small.c-font-weight-bold View More
+              i.fa.fa-angle-right
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-3.c-d-flex.c-align-items-center
+            div.c-bg-danger.c-p-3.c-mr-3
+              img.c-icon(src="assets/icons/bell.svg" width="24" height="24" alt="CoreUI Icons Bell")
+            div
+              .c-text-value.c-text-danger $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+          .c-card-footer.c-px-3.c-py-2
+            a.c-btn-block.c-text-muted.c-d-flex.c-justify-content-between.c-align-items-center(href='#')
+              span.c-small.c-font-weight-bold View More
+              i.fa.fa-angle-right
+      // /.c-col
+    // /.c-row
+    .c-row
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-0.c-d-flex.c-align-items-center
+            div.c-bg-primary.c-p-4.c-mr-3
+              img.c-icon(src="assets/icons/settings.svg" width="24" height="24" alt="CoreUI Icons Cogs")
+            div
+              .c-text-value.c-text-primary $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-0.c-d-flex.c-align-items-center
+            div.c-bg-info.c-p-4.c-mr-3
+              img.c-icon(src="assets/icons/laptop.svg" width="24" height="24" alt="CoreUI Icons Laptop")
+            div
+              .c-text-value.c-text-info $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-0.c-d-flex.c-align-items-center
+            div.c-bg-warning.c-p-4.c-mr-3
+              img.c-icon(src="assets/icons/moon.svg" width="24" height="24" alt="CoreUI Icons Moon")
+            div
+              .c-text-value.c-text-warning $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-0.c-d-flex.c-align-items-center
+            div.c-bg-danger.c-p-4.c-mr-3
+              img.c-icon(src="assets/icons/bell.svg" width="24" height="24" alt="CoreUI Icons Bell")
+            div
+              .c-text-value.c-text-danger $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-0.c-d-flex.c-align-items-center
+            div.c-bg-primary.c-py-4.c-px-5.c-mr-3
+              img.c-icon(src="assets/icons/settings.svg" width="24" height="24" alt="CoreUI Icons Cogs")
+            div
+              .c-text-value.c-text-primary $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-0.c-d-flex.c-align-items-center
+            div.c-bg-info.c-py-4.c-px-5.c-mr-3
+              img.c-icon(src="assets/icons/laptop.svg" width="24" height="24" alt="CoreUI Icons Laptop")
+            div
+              .c-text-value.c-text-info $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-0.c-d-flex.c-align-items-center
+            div.c-bg-warning.c-py-4.c-px-5.c-mr-3
+              img.c-icon(src="assets/icons/moon.svg" width="24" height="24" alt="CoreUI Icons Moon")
+            div
+              .c-text-value.c-text-warning $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+      .c-col-6.c-col-lg-3
+        .c-card
+          .c-card-body.c-p-0.c-d-flex.c-align-items-center
+            div.c-bg-danger.c-py-4.c-px-5.c-mr-3
+              img.c-icon(src="assets/icons/bell.svg" width="24" height="24" alt="CoreUI Icons Bell")
+            div
+              .c-text-value.c-text-danger $1.999,50
+              .c-text-muted.c-text-uppercase.c-font-weight-bold.c-small Widget title
+      // /.c-col
+    // /.c-row
+    .c-row
+      .c-col-sm-6.c-col-lg-4
+        .c-card
+          .c-card-header.c-bg-facebook.c-content-center
+            img.c-icon.c-text-white.c-my-4(src="assets/icons/social-facebook.svg" width="56" height="56" alt="CoreUI Icons Social Facebook")
+            .c-chart-wrapper
+              canvas#social-box-chart-1(height='90')
+          .c-card-body.c-row.c-text-center
+            .c-col
+              .c-text-value-xl 89k
+              .c-text-uppercase.c-text-muted.c-small friends
+            .c-vr
+            .c-col
+              .c-text-value-xl 459
+              .c-text-uppercase.c-text-muted.c-small feeds
+      // /.c-col
+      .c-col-sm-6.c-col-lg-4
+        .c-card
+          .c-card-header.c-bg-twitter.c-content-center
+            img.c-icon.c-text-white.c-my-4(src="assets/icons/social-twitter.svg" width="56" height="56" alt="CoreUI Icons Social Twitter")
+            .c-chart-wrapper
+              canvas#social-box-chart-2(height='90')
+          .c-card-body.c-row.c-text-center
+            .c-col
+              .c-text-value-xl 973k
+              .c-text-uppercase.c-text-muted.c-small followers
+            .c-vr
+            .c-col
+              .c-text-value-xl 1.792
+              .c-text-uppercase.c-text-muted.c-small tweets
+      // /.c-col
+      .c-col-sm-6.c-col-lg-4
+        .c-card
+          .c-card-header.c-bg-linkedin.c-content-center
+            img.c-icon.c-text-white.c-my-4(src="assets/icons/social-linkedin.svg" width="56" height="56" alt="CoreUI Icons Social LinkedIn")
+            .c-chart-wrapper
+              canvas#social-box-chart-3(height='90')
+          .c-card-body.c-row.c-text-center
+            .c-col
+              .c-text-value-xl 500+
+              .c-text-uppercase.c-text-muted.c-small contacts
+            .c-vr
+            .c-col
+              .c-text-value-xl 292
+              .c-text-uppercase.c-text-muted.c-small feeds
+      // /.c-col
+    // /.c-row
+    .c-card-group.c-mb-4
+      .c-card
+        .c-card-body
+          .c-h1.c-text-muted.c-text-right.c-mb-4
+            img.c-icon(src="assets/icons/people.svg" width="36" height="36" alt="CoreUI Icons People")
+          .c-text-value-lg 87.500
+          small.c-text-muted.c-text-uppercase.c-font-weight-bold Visitors
+          .c-progress.c-progress-xs.c-mt-3.c-mb-0
+            .c-progress-bar.c-bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      .c-card
+        .c-card-body
+          .c-h1.c-text-muted.c-text-right.c-mb-4
+            img.c-icon(src="assets/icons/user-follow.svg" width="36" height="36" alt="CoreUI Icons User Follow")
+          .c-text-value-lg 385
+          small.c-text-muted.c-text-uppercase.c-font-weight-bold New Clients
+          .c-progress.c-progress-xs.c-mt-3.c-mb-0
+            .c-progress-bar.c-bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      .c-card
+        .c-card-body
+          .c-h1.c-text-muted.c-text-right.c-mb-4
+            img.c-icon(src="assets/icons/basket-loaded.svg" width="36" height="36" alt="CoreUI Icons Baset Loaded")
+          .c-text-value-lg 1238
+          small.c-text-muted.c-text-uppercase.c-font-weight-bold Products sold
+          .c-progress.c-progress-xs.c-mt-3.c-mb-0
+            .c-progress-bar.c-bg-warning(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      .c-card
+        .c-card-body
+          .c-h1.c-text-muted.c-text-right.c-mb-4
+            img.c-icon(src="assets/icons/chart-pie.svg" width="36" height="36" alt="CoreUI Icons Chart Pie")
+          .c-text-value-lg 28%
+          small.c-text-muted.c-text-uppercase.c-font-weight-bold Returning Visitors
+          .c-progress.c-progress-xs.c-mt-3.c-mb-0
+            .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      .c-card
+        .c-card-body
+          .c-h1.c-text-muted.c-text-right.c-mb-4
+            img.c-icon(src="assets/icons/speedometer.svg" width="36" height="36" alt="CoreUI Icons Speedometer")
+          .c-text-value-lg 5:34:11
+          small.c-text-muted.c-text-uppercase.c-font-weight-bold Avg. Time
+          .c-progress.c-progress-xs.c-mt-3.c-mb-0
+            .c-progress-bar.c-bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+    .c-row
+      .c-col-sm-6.c-col-md-2
+        .c-card
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+              img.c-icon(src="assets/icons/people.svg" width="36" height="36" alt="CoreUI Icons People")
+            .c-text-value-lg 87.500
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold Visitors
+            .c-progress.c-progress-xs.c-mt-3.c-mb-0
+              .c-progress-bar.c-bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+      .c-col-sm-6.c-col-md-2
+        .c-card
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+               img.c-icon(src="assets/icons/user-follow.svg" width="36" height="36" alt="CoreUI Icons User Follow")
+            .c-text-value-lg 385
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold New Clients
+            .c-progress.c-progress-xs.c-mt-3.c-mb-0
+              .c-progress-bar.c-bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+      .c-col-sm-6.c-col-md-2
+        .c-card
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+              img.c-icon(src="assets/icons/basket-loaded.svg" width="36" height="36" alt="CoreUI Icons Baset Loaded")
+            .c-text-value-lg 1238
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold Products sold
+            .c-progress.c-progress-xs.c-mt-3.c-mb-0
+              .c-progress-bar.c-bg-warning(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+      .c-col-sm-6.c-col-md-2
+        .c-card
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+              img.c-icon(src="assets/icons/chart-pie.svg" width="36" height="36" alt="CoreUI Icons Chart Pie")
+            .c-text-value-lg 28%
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold Returning Visitors
+            .c-progress.c-progress-xs.c-mt-3.c-mb-0
+              .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+      .c-col-sm-6.c-col-md-2
+        .c-card
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+              img.c-icon(src="assets/icons/speedometer.svg" width="36" height="36" alt="CoreUI Icons Speedometer")
+            .c-text-value-lg 5:34:11
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold Avg. Time
+            .c-progress.c-progress-xs.c-mt-3.c-mb-0
+              .c-progress-bar.c-bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+      .c-col-sm-6.c-col-md-2
+        .c-card
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+              img.c-icon(src="assets/icons/speech.svg" width="36" height="36" alt="CoreUI Icons Speech")
+            .c-text-value-lg 972
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold Comments
+            .c-progress.c-progress-xs.c-mt-3.c-mb-0
+              .c-progress-bar.c-bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+    // /.c-row
+    .c-row
+      .c-col-sm-6.c-col-md-2
+        .c-card.c-text-white.c-bg-info
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+              img.c-icon(src="assets/icons/people.svg" width="36" height="36" alt="CoreUI Icons People")
+            .c-text-value-lg 87.500
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold Visitors
+            .c-progress.c-progress-white.c-progress-xs.c-mt-3
+              .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+      .c-col-sm-6.c-col-md-2
+        .c-card.c-text-white.c-bg-success
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+              img.c-icon(src="assets/icons/user-follow.svg" width="36" height="36" alt="CoreUI Icons User Follow")
+            .c-text-value-lg 385
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold New Clients
+            .c-progress.c-progress-white.c-progress-xs.c-mt-3
+              .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+      .c-col-sm-6.c-col-md-2
+        .c-card.c-text-white.c-bg-warning
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+              img.c-icon(src="assets/icons/basket-loaded.svg" width="36" height="36" alt="CoreUI Icons Baset Loaded")
+            .c-text-value-lg 1238
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold Products sold
+            .c-progress.c-progress-white.c-progress-xs.c-mt-3
+              .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+      .c-col-sm-6.c-col-md-2
+        .c-card.c-text-white.c-bg-primary
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+              img.c-icon(src="assets/icons/chart-pie.svg" width="36" height="36" alt="CoreUI Icons Chart Pie")
+            .c-text-value-lg 28%
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold Returning Visitors
+            .c-progress.c-progress-white.c-progress-xs.c-mt-3
+              .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+      .c-col-sm-6.c-col-md-2
+        .c-card.c-text-white.c-bg-danger
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+              img.c-icon(src="assets/icons/speedometer.svg" width="36" height="36" alt="CoreUI Icons Speedometer")
+            .c-text-value-lg 5:34:11
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold Avg. Time
+            .c-progress.c-progress-white.c-progress-xs.c-mt-3
+              .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+      .c-col-sm-6.c-col-md-2
+        .c-card.c-text-white.c-bg-info
+          .c-card-body
+            .c-h1.c-text-muted.c-text-right.c-mb-4
+              img.c-icon(src="assets/icons/speech.svg" width="36" height="36" alt="CoreUI Icons Speech")
+            .c-text-value-lg 972
+            small.c-text-muted.c-text-uppercase.c-font-weight-bold Comments
+            .c-progress.c-progress-white.c-progress-xs.c-mt-3
+              .c-progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.c-col
+    // /.c-row

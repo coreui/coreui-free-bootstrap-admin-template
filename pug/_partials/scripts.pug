@@ -1,0 +1,14 @@
+// CoreUI and necessary plugins
+script(src='node_modules/pace-progress/pace.min.js')
+script(src='node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js')
+
+block scripts
+
+if ajax
+  unless page
+    script.
+      new coreui.AsyncLoad(document.getElementById('ui-view'));
+      document.addEventListener('xhr', function() {
+        Pace.restart()
+      }, true);
+
