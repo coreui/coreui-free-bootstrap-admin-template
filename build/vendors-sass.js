@@ -2,37 +2,30 @@
 
 'use strict'
 
-const autoprefixer = require('autoprefixer');
-const chalk        = require('chalk')
-const fs           = require('fs')
-const glob         = require('glob')
-const mkdirp       = require('mkdirp')
-const path         = require('path')
-const postcss      = require('postcss');
-const sass         = require('node-sass')
-const sh           = require('shelljs')
+const autoprefixer = require('autoprefixer')
+const chalk = require('chalk')
+const fs = require('fs')
+const glob = require('glob')
+const mkdirp = require('mkdirp')
+const path = require('path')
+const postcss = require('postcss')
+const sass = require('node-sass')
 
-const basename   = path.basename
-const dirname    = path.dirname
-const resolve    = path.resolve
-const normalize  = path.normalize
-const join       = path.join
-const relative   = path.relative
-const extension  = path.extname
+const { dirname, resolve } = path
 
 const vendors = () => {
   const cwd = 'src/scss/vendors/'
   const pattern = '**/*.scss'
   const ignore = '**/_*.scss'
   const options = {
-    cwd: cwd,
-    ignore: ignore
+    cwd,
+    ignore
   }
   const filenames = new glob.sync(pattern, options)
-  return filenames.map((filename) => {
+  return filenames.map(filename => {
     const obj = {}
-    obj['dir'] = filename.split('/')[0]
-    obj['path'] = resolve(cwd, filename)
+    obj.dir = filename.split('/')[0]
+    obj.path = resolve(cwd, filename)
     return obj
   })
 }
@@ -54,68 +47,75 @@ const compileSass = (options = {}) => {
       sourceMap: true,
       sourceMapContents: true
     })
-  } catch(e) {
+  } catch (error) {
     // catch error, the process crashed
-    const error = `
-      file: ${e.file},
-      line: ${e.line},
-      column: ${e.column},
-      message: ${e.message},
-      formatted: ${e.formatted}
+    const errorMessage = `
+      file: ${error.file},
+      line: ${error.line},
+      column: ${error.column},
+      message: ${error.message},
+      formatted: ${error.formatted}
     `
-    console.log(chalk.red(error))
+    console.log(chalk.red(errorMessage))
     return
   }
 
-  if (compiled && compiled.css){
+  if (compiled && compiled.css) {
     console.log(chalk.green('Rendering Complete, saving .css file...'))
     console.log(chalk.green(`Wrote CSS to ${options.dest}`))
     console.log(chalk.green(`Wrote Source Map to ${options.map}`))
-    console.log(`\n`)
+    console.log('\n')
 
     // add prefixes
     const prefixed = postcss([ autoprefixer ]).process(compiled.css, {
       from: options.src,
       to: options.dest
     })
-    prefixed.then((result) => {
-      result.warnings().forEach((warning) => {
+    prefixed.then(result => {
+      result.warnings().forEach(warning => {
         console.warn(warning.toString())
       })
       // write the result to file
-      mkdirp(dirname(options.dest), (error) => {
-        if (error) return cb(error)
+      mkdirp(dirname(options.dest), err => {
+        if (err) {
+          throw err
+        }
+
         // create .css file
-        fs.writeFile(options.dest,result.css, (error) => {
-          if (error) return cb(error)
+        fs.writeFile(options.dest, result.css, err => {
+          if (err) {
+            throw err
+          }
         })
         // create .css.map file
-        fs.writeFile(options.map,compiled.map, (error) => {
-          if (error) return cb(error)
+        fs.writeFile(options.map, compiled.map, err => {
+          if (err) {
+            throw err
+          }
         })
-        console.log(' ' + options.dest + ' built.');
+        console.log(' ' + options.dest + ' built.')
       })
     })
   }
 }
 
-const compile = (vendors) => {
-  vendors.forEach((vendor) => {
-    const dest = resolve(__dirname, '..', 'src/vendors', vendor.dir, 'css', path.parse(vendor.path).name)
+const compile = vendors => {
+  vendors.forEach(vendor => {
+    const dest = resolve(__dirname, '..', 'dist/vendors', vendor.dir, 'css', path.parse(vendor.path).name)
     // Expanded
     compileSass({
-      src : vendor.path,
+      src: vendor.path,
       dest: dest + '.css',
       map: dest + '.css.map'
-    });
+    })
 
     // Minified
     compileSass({
-      src : vendor.path,
+      src: vendor.path,
       dest: dest + '.min.css',
       map: dest + '.min.css.map',
       style: 'compressed'
-    });
+    })
   })
 }
 
