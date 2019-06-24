@@ -4,7 +4,7 @@
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
-document.querySelectorAll('[data-toggle="c-tooltip"]').forEach(function (element) {
-  new coreui.Tooltip(element);
-});
-//# sourceMappingURL=tooltips.js.map
+
+document.querySelectorAll('[data-toggle="c-tooltip"]').forEach((element) => {
+  new coreui.Tooltip(element)
+})
