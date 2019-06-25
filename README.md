@@ -1,20 +1,27 @@
-# Work In Progress; Current stage: pre-alpha;
-
-# Backpack Free HTML Admin Template, using Bootstrap 4
+# BackpackUI Free HTML Admin Template, using Bootstrap 4
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-At [Backpack for Laravel](https://backpackforlaravel.com/) we've been building admin panels for 9+ years. And we've learnt _a lot_ about what makes a good admin panel. This HTML template allows you to benefit from our thousands of hours of experience, for free. It is our way of contributing to the OS community with something we felt was missing. An HTML Template that is free, open-source, well-coded _and_ well-designed.
+At [Backpack for Laravel](https://backpackforlaravel.com/) we've been building admin panels for 9+ years. And we've learnt _a lot_ about what makes a good admin panel. This HTML template allows you to benefit from our thousands of hours of experience, for free. It is our way of contributing to the OS community with something we felt was missing. An HTML Template that is free, open-source, well-coded and modern.
 
-We've taken the excellent [CoreUI](https://github.com/coreui/coreui-free-bootstrap-admin-template) template and added everything we felt it was missing - good design. We've spent days & months sweating every little detail, so that you can build excellent admin panels just by copy-pasting HTML blocks.
+We've taken the excellent [CoreUI](https://github.com/coreui/coreui-free-bootstrap-admin-template) template and added our learnings from years of designing admin panel interfaces. We've spent months sweating every little detail, so that you can build excellent admin panels just by copy-pasting HTML blocks.
 
 Uses:
+- CoreUI
 - Bootstrap 4
 - jQuery
+
+
+![Demo Dashboard view of BackpackUI Free HTML Template for Admin Panels](https://backpackforlaravel.com/uploads/v4/backpack4ui.jpg)
+
+## Preview
+
+// TODO: link soon
 
 ## How to Use
 
 If you don't think you'll need to customize its look&feel, we recommend you use our minified files directly. **Click Download** and use our files in your HTML:
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -24,9 +31,9 @@ If you don't think you'll need to customize its look&feel, we recommend you use 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Your Page Title</title>
     <!-- Icons-->
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css" rel="stylesheet">
     <link href="../node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
     <link href="../node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
-    <link href="../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <!-- CoreUI styles-->
     <link href="css/style.css" rel="stylesheet">
@@ -54,6 +61,8 @@ If you don't think you'll need to customize its look&feel, we recommend you use 
 ```
 
 ## Installation
+
+> Only if you need to change the design. If you're happy with our look & feel, read _How to use_ above.
 
 If you want to change how it looks or works, install the theme on your machine, change whatever you want, then re-compile it.
 
@@ -103,13 +112,13 @@ Until then, you can check out the documentation for the CoreUI Free Bootstrap Ad
 
 ## Contributing
 
-This template is just a CSS file added on top of CoreUI. 
+This template is just [one CSS file](https://github.com/Laravel-Backpack/HTML-Template/blob/master/src/css/backpackui.css) added on top of CoreUI.
 
-If you encounter any bugs that are NOT design-related, please [submit a ticket to the CoreUI repository](https://github.com/coreui/coreui-free-bootstrap-admin-template). We regularly merge their new releases.
+If you encounter any bugs that are NOT design-related, please [submit a ticket to the CoreUI repository](https://github.com/coreui/coreui-free-bootstrap-admin-template). We regularly merge their new releases. So all fix there will shortly be pulled into BackpackUI.
 
 
 ## Support Development
 
-This HTML Template is just a customization of how [CoreUI](https://coreui.io/) looks & feels. They've done the heavy lifting, so your and I don't have to. To show your gratitude for this free HTML template, please consider:
+This HTML Template is just a layer on top of [CoreUI](https://coreui.io/), that customizes how it looks & feels. They've done the heavy lifting, so your and I don't have to. To show your gratitude for this free HTML template, please consider:
 - buying [CoreUI Pro](https://coreui.io/pro/) or [donating through PayPal](https://www.paypal.me/holeczek) to holeczek, the creator of CoreUI;
 - buying a [Backpack for Laravel](https://backpackforlaravel.com/) license;
