@@ -1,18 +1,18 @@
-# BackpackUI Free HTML Admin Template, using Bootstrap 4
+# BackStrap - Free HTML Admin Template, using Bootstrap 4
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-At [Backpack for Laravel](https://backpackforlaravel.com/) we've been building admin panels for 9+ years. And we've learnt _a lot_ about what makes a good admin panel. This HTML template allows you to benefit from our thousands of hours of experience, for free. It is our way of contributing to the OS community with something we felt was missing. An HTML Template that is free, open-source, well-coded and modern.
-
-We've taken the excellent [CoreUI](https://github.com/coreui/coreui-free-bootstrap-admin-template) template and added our learnings from years of designing admin panel interfaces. We've spent months sweating every little detail, so that you can build excellent admin panels just by copy-pasting HTML blocks.
+We've added our learnings from 10+ years of building admins to the [CoreUI HTML template](https://github.com/coreui/coreui-free-bootstrap-admin-template) (which we considered the best starting point for admin panel HTML in 2019). Now, we can build good-looking admin panels using Bootstrap 4, just by copy-pasting HTML blocks.
 
 Uses:
 - CoreUI
 - Bootstrap 4
 - jQuery
 
+Can be used inside [Backpack for Laravel 4](https://backpackforlaravel.com) (due July 2019), or outside of it.
 
-![Demo Dashboard view of BackpackUI Free HTML Template for Admin Panels](https://backpackforlaravel.com/uploads/v4/backpack4ui.jpg)
+
+![Demo Dashboard view of BackStrap Free HTML Template for Admin Panels](https://backpackforlaravel.com/uploads/v4/backpack4ui.jpg)
 
 ## Preview
 
@@ -39,7 +39,7 @@ If you don't think you'll need to customize its look&feel, we recommend you use 
     <link href="css/style.css" rel="stylesheet">
     <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
     <!-- Backpack style on top-->
-    <link href="css/backpackui.css" rel="stylesheet">
+    <link href="css/backstrap.css" rel="stylesheet">
   </head>
   <body class="app aside-menu-fixed sidebar-lg-show">
     
@@ -68,7 +68,7 @@ If you want to change how it looks or works, install the theme on your machine, 
 
 ``` bash
 # clone the repo
-$ git clone https://github.com/Laravel-Backpack/HTML-Template.git backpack-html-template
+$ git clone https://github.com/Laravel-Backpack/BackStrap.git custom-backstrap
 
 # go into app's directory
 $ cd my-project
@@ -86,7 +86,7 @@ $ npm run build
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
 ```
-free-bootstrap-admin-template/
+backstrap/
 ├── build/
 ├── src/
 │   ├── css/
@@ -112,9 +112,9 @@ Until then, you can check out the documentation for the CoreUI Free Bootstrap Ad
 
 ## Contributing
 
-This template is just [one CSS file](https://github.com/Laravel-Backpack/HTML-Template/blob/master/src/css/backpackui.css) added on top of CoreUI.
+This template is just [one CSS file](https://github.com/Laravel-Backpack/BackStrap/blob/master/src/css/backstrap.css) added on top of CoreUI.
 
-If you encounter any bugs that are NOT design-related, please [submit a ticket to the CoreUI repository](https://github.com/coreui/coreui-free-bootstrap-admin-template). We regularly merge their new releases. So all fix there will shortly be pulled into BackpackUI.
+If you encounter any bugs that are NOT design-related, please [submit a ticket to the CoreUI repository](https://github.com/coreui/coreui-free-bootstrap-admin-template). We regularly merge their new releases. So all fix there will shortly be pulled into BackStrap.
 
 
 ## Support Development
