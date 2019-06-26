@@ -1,1 +1,148 @@
-// Variable overrides
+// -------------------
+// Backstrap Variables
+// -------------------
+// They override CoreUI and Bootstrap variables
+
+$white:     #fff !default;
+$gray-base: #181b1e !default;
+$gray-100:  #f0f3f5 !default; // lighten($gray-base, 85%);
+$gray-200:  #e4e7ea !default; // lighten($gray-base, 80%);
+$gray-300:  #c8ced3 !default; // lighten($gray-base, 70%);
+$gray-400:  #acb4bc !default; // lighten($gray-base, 60%);
+$gray-500:  #8f9ba6 !default; // lighten($gray-base, 50%);
+$gray-600:  #73818f !default; // lighten($gray-base, 40%);
+$gray-700:  #5c6873 !default; // lighten($gray-base, 30%);
+$gray-800:  #2f353a !default; // lighten($gray-base, 10%);
+$gray-900:  #23282c !default; // lighten($gray-base, 5%);
+$black:     #000 !default;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:       #467FD0 !default;
+$indigo:     #6610f2 !default;
+$purple:     #605ca8 !default;
+$pink:       #e83e8c !default;
+$red:        #cd201f !default;
+$orange:     #fd9644 !default;
+$yellow:     #ffc107 !default;
+$green:      #4dbd74 !default;
+$teal:       #20c997 !default;
+$cyan:       #17a2b8 !default;
+$light-blue: #63c2de !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "light-blue": $light-blue,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-300 !default;
+$success:       $green !default;
+$info:          $light-blue !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+// Brand Colors
+
+$facebook:       #3b5998 !default;
+$twitter:        #00aced !default;
+$linkedin:       #4875b4 !default;
+$google-plus:    #d34836 !default;
+$flickr:         #ff0084 !default;
+$tumblr:         #32506d !default;
+$xing:           #026466 !default;
+$github:         #4183c4 !default;
+$html5:          #e34f26 !default;
+$openid:         #f78c40 !default;
+$stack-overflow: #fe7a15 !default;
+$youtube:        #b00 !default;
+$css3:           #0170ba !default;
+$dribbble:       #ea4c89 !default;
+$google-plus:    #bb4b39 !default;
+$instagram:      #517fa4 !default;
+$pinterest:      #cb2027 !default;
+$vk:             #45668e !default;
+$yahoo:          #400191 !default;
+$behance:        #1769ff !default;
+$dropbox:        #007ee5 !default;
+$reddit:         #ff4500 !default;
+$spotify:        #7ab800 !default;
+$vine:           #00bf8f !default;
+$foursquare:     #1073af !default;
+$vimeo:          #aad450 !default;
+
+$brands-colors: () !default;
+$brands-colors: map-merge((
+  "facebook":       $facebook,
+  "twitter":        $twitter,
+  "linkedin":       $linkedin,
+  "google-plus":    $google-plus,
+  "flickr":         $flickr,
+  "tumblr":         $tumblr,
+  "xing":           $xing,
+  "github":         $github,
+  "html5":          $html5,
+  "openid":         $openid,
+  "stack-overflow": $stack-overflow,
+  "youtube":        $youtube,
+  "css3":           $css3,
+  "dribbble":       $dribbble,
+  "instagram":      $instagram,
+  "pinterest":      $pinterest,
+  "vk":             $vk,
+  "yahoo":          $yahoo,
+  "behance":        $behance,
+  "dropbox":        $dropbox,
+  "reddit":         $reddit,
+  "spotify":        $spotify,
+  "vine":           $vine,
+  "foursquare":     $foursquare,
+  "vimeo":          $vimeo
+), $brands-colors);
