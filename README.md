@@ -9,14 +9,14 @@ Uses:
 - Bootstrap 4
 - jQuery
 
-Can be used inside [Backpack for Laravel 4](https://backpackforlaravel.com) (due July 2019), or outside of it.
+Can be used inside [Backpack for Laravel v4](https://backpackforlaravel.com) (due July 2019), or outside of it.
 
 
 ![Demo Dashboard view of BackStrap Free HTML Template for Admin Panels](https://backpackforlaravel.com/uploads/v4/backpack4ui.jpg)
 
 ## Preview
 
-// TODO: link soon
+You can see all page components on [backstrap.net](https://backstrap.net)
 
 ## How to Use
 
