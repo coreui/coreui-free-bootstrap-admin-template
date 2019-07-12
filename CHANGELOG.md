@@ -1,12 +1,23 @@
-## v2.1.next
+## v2.1.15
 - fix: babelrc config
 - fix: missing favicon link
 - fix: readme links
+- chore(deps): bump lodash to 4.17.14
 
 ##### dependencies update
-- update: `core-js` to `^3.1.3`
+- update: `core-js` to `^3.1.4`
 - update: `babel-eslint` to `^10.0.2`
-- update: `eslint-plugin-compat` to `^3.1.2`
+- update: `@babel/cli` to `^7.5.0`
+- update: `@babel/core` to `^7.5.4`
+- update: `@babel/plugin-proposal-object-rest-spread` to `^7.5.4`
+- update: `@babel/preset-env` to `^7.5.4`
+- update: `autoprefixer` to `^9.6.1`
+- update: `copyfiles` to `^2.1.1`
+- update: `eslint-plugin-compat` to `^3.2.0`
+- update: `postcss-cli` to `^6.1.3`
+- update: `pug` to `^2.0.4`
+- update: `stylelint-order` to `^3.0.1`
+- update: `stylelint-scss` to `^3.9.1`
 
 ## v2.1.14
 - fix(main): labelColor callback for CustomTooltips  
