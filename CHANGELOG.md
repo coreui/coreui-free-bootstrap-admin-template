@@ -2,6 +2,7 @@
 - fix: babelrc config
 - fix: missing favicon link
 - fix: readme links
+- fix(cards): outdated switch class, add card-header-actions
 - chore(deps): bump lodash to 4.17.14
 
 ##### dependencies update
