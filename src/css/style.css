@@ -15400,9 +15400,98 @@ h5 small {
 
 .table thead th, .table thead td {
   /*border-bottom-width: 1px;
-    border-bottom: 1px solid rgba(0, 40, 100, 0.12);*/
+  border-bottom: 1px solid rgba(0, 40, 100, 0.12);*/
   border-bottom: none;
   border-top: none;
+}
+
+/* COLORS */
+.bg-primary {
+  background-color: #467FD0 !important;
+}
+
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #2f66b3 !important;
+}
+
+.bg-secondary {
+  background-color: #868e96 !important;
+}
+
+a.bg-secondary:hover, a.bg-secondary:focus,
+button.bg-secondary:hover,
+button.bg-secondary:focus {
+  background-color: #6c757d !important;
+}
+
+.bg-success {
+  background-color: #5eba00 !important;
+}
+
+a.bg-success:hover, a.bg-success:focus,
+button.bg-success:hover,
+button.bg-success:focus {
+  background-color: #448700 !important;
+}
+
+.bg-info {
+  background-color: #45aaf2 !important;
+}
+
+a.bg-info:hover, a.bg-info:focus,
+button.bg-info:hover,
+button.bg-info:focus {
+  background-color: #1594ef !important;
+}
+
+.bg-warning {
+  background-color: #f1c40f !important;
+}
+
+a.bg-warning:hover, a.bg-warning:focus,
+button.bg-warning:hover,
+button.bg-warning:focus {
+  background-color: #c29d0b !important;
+}
+
+.bg-danger {
+  background-color: #cd201f !important;
+}
+
+a.bg-danger:hover, a.bg-danger:focus,
+button.bg-danger:hover,
+button.bg-danger:focus {
+  background-color: #a11918 !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+a.bg-light:hover, a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: #dae0e5 !important;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: #1d2124 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
 }
 
 /*  PAGINATION  */
@@ -16366,6 +16455,226 @@ select.form-control:focus::-ms-value, .dataTables_wrapper .dataTables_length sel
   font-weight: 600;
 }
 
+/* TABS */
+.tab-content {
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 40, 100, 0.12);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:focus {
+  border-color: rgba(0, 40, 100, 0.12);
+  border-bottom: 1px solid white;
+}
+
+/*  TAGS  */
+.tag {
+  font-size: 0.75rem;
+  color: #6e7687;
+  background-color: #e9ecef;
+  border-radius: 3px;
+  padding: 0 .5rem;
+  line-height: 2em;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: default;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a.tag {
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s color, .3s background;
+}
+
+a.tag:hover {
+  background-color: rgba(110, 118, 135, 0.2);
+  color: inherit;
+}
+
+.tag-addon {
+  display: inline-block;
+  padding: 0 .5rem;
+  color: inherit;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.06);
+  margin: 0 -.5rem 0 .5rem;
+  text-align: center;
+  min-width: 1.5rem;
+}
+
+.tag-addon:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.tag-addon i {
+  vertical-align: middle;
+  margin: 0 -.25rem;
+}
+
+a.tag-addon {
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s color, .3s background;
+}
+
+a.tag-addon:hover {
+  background: rgba(0, 0, 0, 0.16);
+  color: inherit;
+}
+
+.tag-avatar {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 3px 0 0 3px;
+  margin: 0 .5rem 0 -.5rem;
+}
+
+.tag-blue {
+  background-color: #467fcf;
+  color: #fff;
+}
+
+.tag-indigo {
+  background-color: #6574cd;
+  color: #fff;
+}
+
+.tag-purple {
+  background-color: #a55eea;
+  color: #fff;
+}
+
+.tag-pink {
+  background-color: #f66d9b;
+  color: #fff;
+}
+
+.tag-red {
+  background-color: #cd201f;
+  color: #fff;
+}
+
+.tag-orange {
+  background-color: #fd9644;
+  color: #fff;
+}
+
+.tag-yellow {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.tag-green {
+  background-color: #5eba00;
+  color: #fff;
+}
+
+.tag-teal {
+  background-color: #2bcbba;
+  color: #fff;
+}
+
+.tag-cyan {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.tag-white {
+  background-color: #fff;
+  color: #fff;
+}
+
+.tag-gray {
+  background-color: #868e96;
+  color: #fff;
+}
+
+.tag-gray-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.tag-azure {
+  background-color: #45aaf2;
+  color: #fff;
+}
+
+.tag-lime {
+  background-color: #7bd235;
+  color: #fff;
+}
+
+.tag-primary {
+  background-color: #467fcf;
+  color: #fff;
+}
+
+.tag-secondary {
+  background-color: #868e96;
+  color: #fff;
+}
+
+.tag-success {
+  background-color: #5eba00;
+  color: #fff;
+}
+
+.tag-info {
+  background-color: #45aaf2;
+  color: #fff;
+}
+
+.tag-warning {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.tag-danger {
+  background-color: #cd201f;
+  color: #fff;
+}
+
+.tag-light {
+  background-color: #f8f9fa;
+  color: #fff;
+}
+
+.tag-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.tag-rounded {
+  border-radius: 50px;
+}
+
+.tag-rounded .tag-avatar {
+  border-radius: 50px;
+}
+
+.tags {
+  margin-bottom: -.5rem;
+  font-size: 0;
+}
+
+.tags > .tag {
+  margin-bottom: .5rem;
+}
+
+.tags > .tag:not(:last-child) {
+  margin-right: .5rem;
+}
+
 /*  JUMBOTRON */
 .jumbotron {
   background-color: rgba(0, 0, 0, 0.02);
@@ -16386,5 +16695,29 @@ select.form-control:focus::-ms-value, .dataTables_wrapper .dataTables_length sel
 
 .select2-container--bootstrap .select2-dropdown {
   border-color: rgba(0, 40, 100, 0.12) !important;
+}
+
+/*  PACE JS  */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #29d;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
 }
 /*# sourceMappingURL=style.css.map */
