@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<!--
+* Backstrap - Free Bootstrap Admin Template
+* @version v0.1.0
+* @link https://backstrap.net
+* Copyright (c) 2018 Cristian Tabacitu
+* Licensed under MIT (https://coreui.io/license)
+-->
+
+<html lang="en">
+  <head>
+    <base href="./../">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Backstrap - Open Source Bootstrap 4 Admin Template on top of CoreUI">
+    <meta name="author" content="Cristian Tabacitu">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard,CoreUI">
+    <title>BackStrap - Free Bootstrap 4 Admin Template</title>
+    <!-- Icons-->
+    <link href="vendors/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="vendors/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+  </head>
+  <body class="app aside-menu-fixed sidebar-lg-show">
+    <header class="app-header bg-transparent border-0 navbar">
+      <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#"><b>Back</b><span>strap</span></a>
+      <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show"><span class="navbar-toggler-icon"></span></button>
+      <ul class="nav navbar-nav d-md-down-none">
+        <li class="nav-item px-3"><a class="nav-link" href="#">Dashboard</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="#">Users</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="#">Settings</a></li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item d-md-down-none"><a class="nav-link" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span></a></li>
+        <li class="nav-item d-md-down-none"><a class="nav-link" href="#"><i class="icon-list"></i></a></li>
+        <li class="nav-item d-md-down-none"><a class="nav-link" href="#"><i class="icon-location-pin"></i></a></li>
+        <li class="nav-item dropdown"><a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-header text-center"><strong>Account</strong></div><a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
+            <div class="dropdown-header text-center"><strong>Settings</strong></div><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a><a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a><a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-secondary">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+          </div>
+        </li>
+      </ul>
+      <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show"><span class="navbar-toggler-icon"></span></button>
+      <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show"><span class="navbar-toggler-icon"></span></button>
+    </header>
+    <div class="app-body">
+      <div class="sidebar sidebar-pills sidebar-bg-transparent">
+        <nav class="sidebar-nav">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="nav-icon la la-lg la-dashboard"></i> Dashboard</a></li>
+            <li class="nav-title">Theme</li>
+            <li class="nav-item"><a class="nav-link" href="colors.html"><i class="la la-lg la-bullseye"></i> Colors</a></li>
+            <li class="nav-item"><a class="nav-link" href="typography.html"><i class="la la-lg la-pencil"></i> Typography</a></li>
+            <li class="nav-title">Components</li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><i class="la la-lg la-bank"></i> Base</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="base/breadcrumb.html"><i class="la la-lg la-puzzle"></i> Breadcrumb</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/cards.html"><i class="la la-lg la-puzzle"></i> Cards</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/carousel.html"><i class="la la-lg la-puzzle"></i> Carousel</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/collapse.html"><i class="la la-lg la-puzzle"></i> Collapse</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/forms.html"><i class="la la-lg la-puzzle"></i> Forms</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/jumbotron.html"><i class="la la-lg la-puzzle"></i> Jumbotron</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/list-group.html"><i class="la la-lg la-puzzle"></i> List group</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/navs.html"><i class="la la-lg la-puzzle"></i> Navs</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/pagination.html"><i class="la la-lg la-puzzle"></i> Pagination</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/popovers.html"><i class="la la-lg la-puzzle"></i> Popovers</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/progress.html"><i class="la la-lg la-puzzle"></i> Progress</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/scrollspy.html"><i class="la la-lg la-puzzle"></i> Scrollspy</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/switches.html"><i class="la la-lg la-puzzle"></i> Switches</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/tables.html"><i class="la la-lg la-puzzle"></i> Tables</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/tabs.html"><i class="la la-lg la-puzzle"></i> Tabs</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/tooltips.html"><i class="la la-lg la-puzzle"></i> Tooltips</a></li>
+              </ul>
+            </li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><i class="la la-lg la-hand-pointer-o"></i> Buttons</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"><i class="la la-lg la-cursor"></i> Buttons</a></li>
+                <li class="nav-item"><a class="nav-link" href="buttons/button-group.html"><i class="la la-lg la-cursor"></i> Buttons Group</a></li>
+                <li class="nav-item"><a class="nav-link" href="buttons/dropdowns.html"><i class="la la-lg la-cursor"></i> Dropdowns</a></li>
+                <li class="nav-item"><a class="nav-link" href="buttons/brand-buttons.html"><i class="la la-lg la-cursor"></i> Brand Buttons</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="charts.html"><i class="la la-lg la-pie-chart"></i> Charts</a></li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><i class="la la-lg la-star"></i> Icons</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="icons/line-awesome.html"> Line Awesome<span class="badge badge-primary">NEW</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="icons/coreui-icons.html"> CoreUI Icons</a></li>
+                <li class="nav-item"><a class="nav-link" href="icons/flags.html"> Flags</a></li>
+                <li class="nav-item"><a class="nav-link" href="icons/font-awesome.html"> Font Awesome</a></li>
+                <li class="nav-item"><a class="nav-link" href="icons/simple-line-icons.html"> Simple Line Icons</a></li>
+              </ul>
+            </li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><i class="la la-lg la-bell"></i> Notifications</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><i class="la la-lg la-bell"></i> Alerts</a></li>
+                <li class="nav-item"><a class="nav-link" href="notifications/badge.html"><i class="la la-lg la-bell"></i> Badge</a></li>
+                <li class="nav-item"><a class="nav-link" href="notifications/modals.html"><i class="la la-lg la-bell"></i> Modals</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="widgets.html"><i class="la la-lg la-calculator"></i> Widgets</a></li>
+            <li class="divider"></li>
+            <li class="nav-title">Extras</li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><i class="la la-lg la-file"></i> Pages</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="login.html" target="_top"><i class="la la-lg la-star"></i> Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html" target="_top"><i class="la la-lg la-star"></i> Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="404.html" target="_top"><i class="la la-lg la-star"></i> Error 404</a></li>
+                <li class="nav-item"><a class="nav-link" href="500.html" target="_top"><i class="la la-lg la-star"></i> Error 500</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="main">
+        <!-- Breadcrumb-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">Home</li>
+          <li class="breadcrumb-item"><a href="#">Admin</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+          <!-- Breadcrumb Menu-->
+          <li class="breadcrumb-menu d-md-down-none">
+            <div class="btn-group" role="group" aria-label="Button group"><a class="btn" href="#"><i class="icon-speech"></i></a><a class="btn" href="./"><i class="icon-graph"></i>  Dashboard</a><a class="btn" href="#"><i class="icon-settings"></i>  Settings</a></div>
+          </li>
+        </ol>
+        <div class="container-fluid">
+          <div class="animated fadeIn">
+            <div class="card" id="web-application">
+              <div class="card-header">Web Application Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-adjust la-lg mt-4"></i><br>adjust</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-anchor la-lg mt-4"></i><br>anchor</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-archive la-lg mt-4"></i><br>archive</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-area-chart la-lg mt-4"></i><br>area-chart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrows la-lg mt-4"></i><br>arrows</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrows-h la-lg mt-4"></i><br>arrows-h</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrows-v la-lg mt-4"></i><br>arrows-v</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-asterisk la-lg mt-4"></i><br>asterisk</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-at la-lg mt-4"></i><br>at</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-automobile la-lg mt-4"></i><br>automobile<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-balance-scale la-lg mt-4"></i><br>balance-scale</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ban la-lg mt-4"></i><br>ban</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bank la-lg mt-4"></i><br>bank<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bar-chart la-lg mt-4"></i><br>bar-chart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bar-chart-o la-lg mt-4"></i><br>bar-chart-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-barcode la-lg mt-4"></i><br>barcode</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bars la-lg mt-4"></i><br>bars</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-battery-0 la-lg mt-4"></i><br>battery-0<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-battery-1 la-lg mt-4"></i><br>battery-1<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-battery-2 la-lg mt-4"></i><br>battery-2<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-battery-3 la-lg mt-4"></i><br>battery-3<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-battery-4 la-lg mt-4"></i><br>battery-4<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-battery-empty la-lg mt-4"></i><br>battery-empty</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-battery-full la-lg mt-4"></i><br>battery-full</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-battery-half la-lg mt-4"></i><br>battery-half</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-battery-quarter la-lg mt-4"></i><br>battery-quarter</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-battery-three-quarters la-lg mt-4"></i><br>battery-three-quarters</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bed la-lg mt-4"></i><br>bed</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-beer la-lg mt-4"></i><br>beer</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bell la-lg mt-4"></i><br>bell</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bell-o la-lg mt-4"></i><br>bell-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bell-slash la-lg mt-4"></i><br>bell-slash</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bell-slash-o la-lg mt-4"></i><br>bell-slash-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bicycle la-lg mt-4"></i><br>bicycle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-binoculars la-lg mt-4"></i><br>binoculars</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-birthday-cake la-lg mt-4"></i><br>birthday-cake</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bluetooth la-lg mt-4"></i><br>bluetooth</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bluetooth-b la-lg mt-4"></i><br>bluetooth-b</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bolt la-lg mt-4"></i><br>bolt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bomb la-lg mt-4"></i><br>bomb</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-book la-lg mt-4"></i><br>book</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bookmark la-lg mt-4"></i><br>bookmark</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bookmark-o la-lg mt-4"></i><br>bookmark-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-briefcase la-lg mt-4"></i><br>briefcase</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bug la-lg mt-4"></i><br>bug</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-building la-lg mt-4"></i><br>building</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-building-o la-lg mt-4"></i><br>building-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bullhorn la-lg mt-4"></i><br>bullhorn</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bullseye la-lg mt-4"></i><br>bullseye</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bus la-lg mt-4"></i><br>bus</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cab la-lg mt-4"></i><br>cab<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-calculator la-lg mt-4"></i><br>calculator</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-calendar la-lg mt-4"></i><br>calendar</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-calendar-check-o la-lg mt-4"></i><br>calendar-check-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-calendar-minus-o la-lg mt-4"></i><br>calendar-minus-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-calendar-o la-lg mt-4"></i><br>calendar-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-calendar-plus-o la-lg mt-4"></i><br>calendar-plus-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-calendar-times-o la-lg mt-4"></i><br>calendar-times-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-camera la-lg mt-4"></i><br>camera</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-camera-retro la-lg mt-4"></i><br>camera-retro</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-car la-lg mt-4"></i><br>car</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-square-o-down la-lg mt-4"></i><br>caret-square-o-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-square-o-left la-lg mt-4"></i><br>caret-square-o-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-square-o-right la-lg mt-4"></i><br>caret-square-o-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-square-o-up la-lg mt-4"></i><br>caret-square-o-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cart-arrow-down la-lg mt-4"></i><br>cart-arrow-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cart-plus la-lg mt-4"></i><br>cart-plus</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc la-lg mt-4"></i><br>cc</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-certificate la-lg mt-4"></i><br>certificate</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-check la-lg mt-4"></i><br>check</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-check-circle la-lg mt-4"></i><br>check-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-check-circle-o la-lg mt-4"></i><br>check-circle-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-check-square la-lg mt-4"></i><br>check-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-check-square-o la-lg mt-4"></i><br>check-square-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-child la-lg mt-4"></i><br>child</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-circle la-lg mt-4"></i><br>circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-circle-o la-lg mt-4"></i><br>circle-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-circle-o-notch la-lg mt-4"></i><br>circle-o-notch</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-circle-thin la-lg mt-4"></i><br>circle-thin</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-clock-o la-lg mt-4"></i><br>clock-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-clone la-lg mt-4"></i><br>clone</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-close la-lg mt-4"></i><br>close<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cloud la-lg mt-4"></i><br>cloud</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cloud-download la-lg mt-4"></i><br>cloud-download</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cloud-upload la-lg mt-4"></i><br>cloud-upload</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-code la-lg mt-4"></i><br>code</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-code-fork la-lg mt-4"></i><br>code-fork</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-coffee la-lg mt-4"></i><br>coffee</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cog la-lg mt-4"></i><br>cog</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cogs la-lg mt-4"></i><br>cogs</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-comment la-lg mt-4"></i><br>comment</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-comment-o la-lg mt-4"></i><br>comment-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-commenting la-lg mt-4"></i><br>commenting</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-commenting-o la-lg mt-4"></i><br>commenting-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-comments la-lg mt-4"></i><br>comments</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-comments-o la-lg mt-4"></i><br>comments-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-compass la-lg mt-4"></i><br>compass</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-copyright la-lg mt-4"></i><br>copyright</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-creative-commons la-lg mt-4"></i><br>creative-commons</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-credit-card la-lg mt-4"></i><br>credit-card</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-credit-card-alt la-lg mt-4"></i><br>credit-card-alt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-crop la-lg mt-4"></i><br>crop</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-crosshairs la-lg mt-4"></i><br>crosshairs</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cube la-lg mt-4"></i><br>cube</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cubes la-lg mt-4"></i><br>cubes</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cutlery la-lg mt-4"></i><br>cutlery</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-dashboard la-lg mt-4"></i><br>dashboard<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-database la-lg mt-4"></i><br>database</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-desktop la-lg mt-4"></i><br>desktop</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-diamond la-lg mt-4"></i><br>diamond</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-dot-circle-o la-lg mt-4"></i><br>dot-circle-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-download la-lg mt-4"></i><br>download</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-edit la-lg mt-4"></i><br>edit<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ellipsis-h la-lg mt-4"></i><br>ellipsis-h</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ellipsis-v la-lg mt-4"></i><br>ellipsis-v</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-envelope la-lg mt-4"></i><br>envelope</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-envelope-o la-lg mt-4"></i><br>envelope-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-envelope-square la-lg mt-4"></i><br>envelope-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-eraser la-lg mt-4"></i><br>eraser</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-exchange la-lg mt-4"></i><br>exchange</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-exclamation la-lg mt-4"></i><br>exclamation</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-exclamation-circle la-lg mt-4"></i><br>exclamation-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-exclamation-triangle la-lg mt-4"></i><br>exclamation-triangle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-external-link la-lg mt-4"></i><br>external-link</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-external-link-square la-lg mt-4"></i><br>external-link-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-eye la-lg mt-4"></i><br>eye</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-eye-slash la-lg mt-4"></i><br>eye-slash</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-eyedropper la-lg mt-4"></i><br>eyedropper</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-fax la-lg mt-4"></i><br>fax</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-feed la-lg mt-4"></i><br>feed<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-female la-lg mt-4"></i><br>female</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-fighter-jet la-lg mt-4"></i><br>fighter-jet</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-archive-o la-lg mt-4"></i><br>file-archive-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-audio-o la-lg mt-4"></i><br>file-audio-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-code-o la-lg mt-4"></i><br>file-code-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-excel-o la-lg mt-4"></i><br>file-excel-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-image-o la-lg mt-4"></i><br>file-image-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-movie-o la-lg mt-4"></i><br>file-movie-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-pdf-o la-lg mt-4"></i><br>file-pdf-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-photo-o la-lg mt-4"></i><br>file-photo-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-picture-o la-lg mt-4"></i><br>file-picture-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-powerpoint-o la-lg mt-4"></i><br>file-powerpoint-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-sound-o la-lg mt-4"></i><br>file-sound-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-video-o la-lg mt-4"></i><br>file-video-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-word-o la-lg mt-4"></i><br>file-word-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-zip-o la-lg mt-4"></i><br>file-zip-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-film la-lg mt-4"></i><br>film</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-filter la-lg mt-4"></i><br>filter</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-fire la-lg mt-4"></i><br>fire</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-fire-extinguisher la-lg mt-4"></i><br>fire-extinguisher</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-flag la-lg mt-4"></i><br>flag</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-flag-checkered la-lg mt-4"></i><br>flag-checkered</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-flag-o la-lg mt-4"></i><br>flag-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-flash la-lg mt-4"></i><br>flash<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-flask la-lg mt-4"></i><br>flask</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-folder la-lg mt-4"></i><br>folder</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-folder-o la-lg mt-4"></i><br>folder-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-folder-open la-lg mt-4"></i><br>folder-open</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-folder-open-o la-lg mt-4"></i><br>folder-open-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-frown-o la-lg mt-4"></i><br>frown-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-futbol-o la-lg mt-4"></i><br>futbol-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gamepad la-lg mt-4"></i><br>gamepad</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gavel la-lg mt-4"></i><br>gavel</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gear la-lg mt-4"></i><br>gear<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gears la-lg mt-4"></i><br>gears<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gift la-lg mt-4"></i><br>gift</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-glass la-lg mt-4"></i><br>glass</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-globe la-lg mt-4"></i><br>globe</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-graduation-cap la-lg mt-4"></i><br>graduation-cap</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-group la-lg mt-4"></i><br>group<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-grab-o la-lg mt-4"></i><br>hand-grab-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-lizard-o la-lg mt-4"></i><br>hand-lizard-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-paper-o la-lg mt-4"></i><br>hand-paper-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-peace-o la-lg mt-4"></i><br>hand-peace-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-pointer-o la-lg mt-4"></i><br>hand-pointer-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-rock-o la-lg mt-4"></i><br>hand-rock-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-scissors-o la-lg mt-4"></i><br>hand-scissors-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-spock-o la-lg mt-4"></i><br>hand-spock-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-stop-o la-lg mt-4"></i><br>hand-stop-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hashtag la-lg mt-4"></i><br>hashtag</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hdd-o la-lg mt-4"></i><br>hdd-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-headphones la-lg mt-4"></i><br>headphones</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-heart la-lg mt-4"></i><br>heart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-heart-o la-lg mt-4"></i><br>heart-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-heartbeat la-lg mt-4"></i><br>heartbeat</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-history la-lg mt-4"></i><br>history</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-home la-lg mt-4"></i><br>home</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hotel la-lg mt-4"></i><br>hotel<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hourglass la-lg mt-4"></i><br>hourglass</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hourglass-1 la-lg mt-4"></i><br>hourglass-1<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hourglass-2 la-lg mt-4"></i><br>hourglass-2<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hourglass-3 la-lg mt-4"></i><br>hourglass-3<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hourglass-end la-lg mt-4"></i><br>hourglass-end</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hourglass-half la-lg mt-4"></i><br>hourglass-half</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hourglass-o la-lg mt-4"></i><br>hourglass-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hourglass-start la-lg mt-4"></i><br>hourglass-start</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-i-cursor la-lg mt-4"></i><br>i-cursor</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-image la-lg mt-4"></i><br>image<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-inbox la-lg mt-4"></i><br>inbox</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-industry la-lg mt-4"></i><br>industry</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-info la-lg mt-4"></i><br>info</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-info-circle la-lg mt-4"></i><br>info-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-institution la-lg mt-4"></i><br>institution<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-key la-lg mt-4"></i><br>key</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-keyboard-o la-lg mt-4"></i><br>keyboard-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-language la-lg mt-4"></i><br>language</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-laptop la-lg mt-4"></i><br>laptop</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-leaf la-lg mt-4"></i><br>leaf</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-legal la-lg mt-4"></i><br>legal<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-lemon-o la-lg mt-4"></i><br>lemon-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-level-down la-lg mt-4"></i><br>level-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-level-up la-lg mt-4"></i><br>level-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-life-bouy la-lg mt-4"></i><br>life-bouy<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-life-buoy la-lg mt-4"></i><br>life-buoy<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-life-ring la-lg mt-4"></i><br>life-ring</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-life-saver la-lg mt-4"></i><br>life-saver<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-lightbulb-o la-lg mt-4"></i><br>lightbulb-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-line-chart la-lg mt-4"></i><br>line-chart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-location-arrow la-lg mt-4"></i><br>location-arrow</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-lock la-lg mt-4"></i><br>lock</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-magic la-lg mt-4"></i><br>magic</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-magnet la-lg mt-4"></i><br>magnet</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mail-forward la-lg mt-4"></i><br>mail-forward<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mail-reply la-lg mt-4"></i><br>mail-reply<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mail-reply-all la-lg mt-4"></i><br>mail-reply-all<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-male la-lg mt-4"></i><br>male</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-map la-lg mt-4"></i><br>map</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-map-marker la-lg mt-4"></i><br>map-marker</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-map-o la-lg mt-4"></i><br>map-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-map-pin la-lg mt-4"></i><br>map-pin</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-map-signs la-lg mt-4"></i><br>map-signs</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-meh-o la-lg mt-4"></i><br>meh-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-microphone la-lg mt-4"></i><br>microphone</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-microphone-slash la-lg mt-4"></i><br>microphone-slash</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-minus la-lg mt-4"></i><br>minus</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-minus-circle la-lg mt-4"></i><br>minus-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-minus-square la-lg mt-4"></i><br>minus-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-minus-square-o la-lg mt-4"></i><br>minus-square-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mobile la-lg mt-4"></i><br>mobile</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mobile-phone la-lg mt-4"></i><br>mobile-phone<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-money la-lg mt-4"></i><br>money</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-moon-o la-lg mt-4"></i><br>moon-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mortar-board la-lg mt-4"></i><br>mortar-board<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-motorcycle la-lg mt-4"></i><br>motorcycle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mouse-pointer la-lg mt-4"></i><br>mouse-pointer</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-music la-lg mt-4"></i><br>music</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-navicon la-lg mt-4"></i><br>navicon<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-newspaper-o la-lg mt-4"></i><br>newspaper-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-object-group la-lg mt-4"></i><br>object-group</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-object-ungroup la-lg mt-4"></i><br>object-ungroup</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-paint-brush la-lg mt-4"></i><br>paint-brush</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-paper-plane la-lg mt-4"></i><br>paper-plane</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-paper-plane-o la-lg mt-4"></i><br>paper-plane-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-paw la-lg mt-4"></i><br>paw</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pencil la-lg mt-4"></i><br>pencil</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pencil-square la-lg mt-4"></i><br>pencil-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pencil-square-o la-lg mt-4"></i><br>pencil-square-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-percent la-lg mt-4"></i><br>percent</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-phone la-lg mt-4"></i><br>phone</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-phone-square la-lg mt-4"></i><br>phone-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-photo la-lg mt-4"></i><br>photo<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-picture-o la-lg mt-4"></i><br>picture-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pie-chart la-lg mt-4"></i><br>pie-chart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-plane la-lg mt-4"></i><br>plane</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-plug la-lg mt-4"></i><br>plug</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-plus la-lg mt-4"></i><br>plus</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-plus-circle la-lg mt-4"></i><br>plus-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-plus-square la-lg mt-4"></i><br>plus-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-plus-square-o la-lg mt-4"></i><br>plus-square-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-power-off la-lg mt-4"></i><br>power-off</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-print la-lg mt-4"></i><br>print</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-puzzle-piece la-lg mt-4"></i><br>puzzle-piece</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-qrcode la-lg mt-4"></i><br>qrcode</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-question la-lg mt-4"></i><br>question</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-question-circle la-lg mt-4"></i><br>question-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-quote-left la-lg mt-4"></i><br>quote-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-quote-right la-lg mt-4"></i><br>quote-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-random la-lg mt-4"></i><br>random</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-recycle la-lg mt-4"></i><br>recycle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-refresh la-lg mt-4"></i><br>refresh</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-registered la-lg mt-4"></i><br>registered</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-remove la-lg mt-4"></i><br>remove<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-reorder la-lg mt-4"></i><br>reorder<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-reply la-lg mt-4"></i><br>reply</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-reply-all la-lg mt-4"></i><br>reply-all</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-retweet la-lg mt-4"></i><br>retweet</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-road la-lg mt-4"></i><br>road</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-rocket la-lg mt-4"></i><br>rocket</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-rss la-lg mt-4"></i><br>rss</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-rss-square la-lg mt-4"></i><br>rss-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-search la-lg mt-4"></i><br>search</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-search-minus la-lg mt-4"></i><br>search-minus</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-search-plus la-lg mt-4"></i><br>search-plus</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-send la-lg mt-4"></i><br>send<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-send-o la-lg mt-4"></i><br>send-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-server la-lg mt-4"></i><br>server</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-share la-lg mt-4"></i><br>share</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-share-alt la-lg mt-4"></i><br>share-alt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-share-alt-square la-lg mt-4"></i><br>share-alt-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-share-square la-lg mt-4"></i><br>share-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-share-square-o la-lg mt-4"></i><br>share-square-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-shield la-lg mt-4"></i><br>shield</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ship la-lg mt-4"></i><br>ship</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-shopping-bag la-lg mt-4"></i><br>shopping-bag</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-shopping-basket la-lg mt-4"></i><br>shopping-basket</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-shopping-cart la-lg mt-4"></i><br>shopping-cart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sign-in la-lg mt-4"></i><br>sign-in</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sign-out la-lg mt-4"></i><br>sign-out</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-signal la-lg mt-4"></i><br>signal</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sitemap la-lg mt-4"></i><br>sitemap</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sliders la-lg mt-4"></i><br>sliders</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-smile-o la-lg mt-4"></i><br>smile-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-soccer-ball-o la-lg mt-4"></i><br>soccer-ball-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sort la-lg mt-4"></i><br>sort</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sort-alpha-asc la-lg mt-4"></i><br>sort-alpha-asc</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sort-alpha-desc la-lg mt-4"></i><br>sort-alpha-desc</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sort-amount-asc la-lg mt-4"></i><br>sort-amount-asc</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sort-amount-desc la-lg mt-4"></i><br>sort-amount-desc</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sort-asc la-lg mt-4"></i><br>sort-asc</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sort-desc la-lg mt-4"></i><br>sort-desc</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sort-down la-lg mt-4"></i><br>sort-down<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sort-numeric-asc la-lg mt-4"></i><br>sort-numeric-asc</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sort-numeric-desc la-lg mt-4"></i><br>sort-numeric-desc</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sort-up la-lg mt-4"></i><br>sort-up<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-space-shuttle la-lg mt-4"></i><br>space-shuttle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-spinner la-lg mt-4"></i><br>spinner</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-spoon la-lg mt-4"></i><br>spoon</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-square la-lg mt-4"></i><br>square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-square-o la-lg mt-4"></i><br>square-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-star la-lg mt-4"></i><br>star</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-star-half la-lg mt-4"></i><br>star-half</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-star-half-empty la-lg mt-4"></i><br>star-half-empty<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-star-half-full la-lg mt-4"></i><br>star-half-full<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-star-half-o la-lg mt-4"></i><br>star-half-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-star-o la-lg mt-4"></i><br>star-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sticky-note la-lg mt-4"></i><br>sticky-note</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sticky-note-o la-lg mt-4"></i><br>sticky-note-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-street-view la-lg mt-4"></i><br>street-view</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-suitcase la-lg mt-4"></i><br>suitcase</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sun-o la-lg mt-4"></i><br>sun-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-support la-lg mt-4"></i><br>support<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tablet la-lg mt-4"></i><br>tablet</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tachometer la-lg mt-4"></i><br>tachometer</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tag la-lg mt-4"></i><br>tag</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tags la-lg mt-4"></i><br>tags</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tasks la-lg mt-4"></i><br>tasks</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-taxi la-lg mt-4"></i><br>taxi</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-television la-lg mt-4"></i><br>television</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-terminal la-lg mt-4"></i><br>terminal</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-thumb-tack la-lg mt-4"></i><br>thumb-tack</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-thumbs-down la-lg mt-4"></i><br>thumbs-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-thumbs-o-down la-lg mt-4"></i><br>thumbs-o-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-thumbs-o-up la-lg mt-4"></i><br>thumbs-o-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-thumbs-up la-lg mt-4"></i><br>thumbs-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ticket la-lg mt-4"></i><br>ticket</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-times la-lg mt-4"></i><br>times</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-times-circle la-lg mt-4"></i><br>times-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-times-circle-o la-lg mt-4"></i><br>times-circle-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tint la-lg mt-4"></i><br>tint</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-toggle-down la-lg mt-4"></i><br>toggle-down<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-toggle-left la-lg mt-4"></i><br>toggle-left<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-toggle-off la-lg mt-4"></i><br>toggle-off</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-toggle-on la-lg mt-4"></i><br>toggle-on</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-toggle-right la-lg mt-4"></i><br>toggle-right<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-toggle-up la-lg mt-4"></i><br>toggle-up<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-trademark la-lg mt-4"></i><br>trademark</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-trash la-lg mt-4"></i><br>trash</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-trash-o la-lg mt-4"></i><br>trash-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tree la-lg mt-4"></i><br>tree</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-trophy la-lg mt-4"></i><br>trophy</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-truck la-lg mt-4"></i><br>truck</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tty la-lg mt-4"></i><br>tty</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tv la-lg mt-4"></i><br>tv<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-umbrella la-lg mt-4"></i><br>umbrella</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-university la-lg mt-4"></i><br>university</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-unlock la-lg mt-4"></i><br>unlock</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-unlock-alt la-lg mt-4"></i><br>unlock-alt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-unsorted la-lg mt-4"></i><br>unsorted<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-upload la-lg mt-4"></i><br>upload</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-user la-lg mt-4"></i><br>user</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-user-plus la-lg mt-4"></i><br>user-plus</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-user-secret la-lg mt-4"></i><br>user-secret</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-user-times la-lg mt-4"></i><br>user-times</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-users la-lg mt-4"></i><br>users</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-video-camera la-lg mt-4"></i><br>video-camera</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-volume-down la-lg mt-4"></i><br>volume-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-volume-off la-lg mt-4"></i><br>volume-off</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-volume-up la-lg mt-4"></i><br>volume-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-warning la-lg mt-4"></i><br>warning<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-wheelchair la-lg mt-4"></i><br>wheelchair</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-wifi la-lg mt-4"></i><br>wifi</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-wrench la-lg mt-4"></i><br>wrench</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="hand">
+              <div class="card-header">Hand Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-grab-o la-lg mt-4"></i><br>hand-grab-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-lizard-o la-lg mt-4"></i><br>hand-lizard-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-o-down la-lg mt-4"></i><br>hand-o-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-o-left la-lg mt-4"></i><br>hand-o-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-o-right la-lg mt-4"></i><br>hand-o-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-o-up la-lg mt-4"></i><br>hand-o-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-paper-o la-lg mt-4"></i><br>hand-paper-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-peace-o la-lg mt-4"></i><br>hand-peace-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-pointer-o la-lg mt-4"></i><br>hand-pointer-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-rock-o la-lg mt-4"></i><br>hand-rock-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-scissors-o la-lg mt-4"></i><br>hand-scissors-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-spock-o la-lg mt-4"></i><br>hand-spock-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-stop-o la-lg mt-4"></i><br>hand-stop-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-thumbs-down la-lg mt-4"></i><br>thumbs-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-thumbs-o-down la-lg mt-4"></i><br>thumbs-o-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-thumbs-o-up la-lg mt-4"></i><br>thumbs-o-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-thumbs-up la-lg mt-4"></i><br>thumbs-up</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="transportation">
+              <div class="card-header">Transportation Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ambulance la-lg mt-4"></i><br>ambulance</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-automobile la-lg mt-4"></i><br>automobile<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bicycle la-lg mt-4"></i><br>bicycle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bus la-lg mt-4"></i><br>bus</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cab la-lg mt-4"></i><br>cab<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-car la-lg mt-4"></i><br>car</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-fighter-jet la-lg mt-4"></i><br>fighter-jet</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-motorcycle la-lg mt-4"></i><br>motorcycle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-plane la-lg mt-4"></i><br>plane</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-rocket la-lg mt-4"></i><br>rocket</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ship la-lg mt-4"></i><br>ship</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-space-shuttle la-lg mt-4"></i><br>space-shuttle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-subway la-lg mt-4"></i><br>subway</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-taxi la-lg mt-4"></i><br>taxi</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-train la-lg mt-4"></i><br>train</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-truck la-lg mt-4"></i><br>truck</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-wheelchair la-lg mt-4"></i><br>wheelchair</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="gender">
+              <div class="card-header">Gender Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-genderless la-lg mt-4"></i><br>genderless</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-intersex la-lg mt-4"></i><br>intersex<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mars la-lg mt-4"></i><br>mars</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mars-double la-lg mt-4"></i><br>mars-double</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mars-stroke la-lg mt-4"></i><br>mars-stroke</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mars-stroke-h la-lg mt-4"></i><br>mars-stroke-h</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mars-stroke-v la-lg mt-4"></i><br>mars-stroke-v</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mercury la-lg mt-4"></i><br>mercury</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-neuter la-lg mt-4"></i><br>neuter</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-transgender la-lg mt-4"></i><br>transgender</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-transgender-alt la-lg mt-4"></i><br>transgender-alt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-venus la-lg mt-4"></i><br>venus</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-venus-double la-lg mt-4"></i><br>venus-double</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-venus-mars la-lg mt-4"></i><br>venus-mars</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="file-type">
+              <div class="card-header">File Type Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file la-lg mt-4"></i><br>file</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-archive-o la-lg mt-4"></i><br>file-archive-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-audio-o la-lg mt-4"></i><br>file-audio-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-code-o la-lg mt-4"></i><br>file-code-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-excel-o la-lg mt-4"></i><br>file-excel-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-image-o la-lg mt-4"></i><br>file-image-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-movie-o la-lg mt-4"></i><br>file-movie-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-o la-lg mt-4"></i><br>file-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-pdf-o la-lg mt-4"></i><br>file-pdf-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-photo-o la-lg mt-4"></i><br>file-photo-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-picture-o la-lg mt-4"></i><br>file-picture-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-powerpoint-o la-lg mt-4"></i><br>file-powerpoint-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-sound-o la-lg mt-4"></i><br>file-sound-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-text la-lg mt-4"></i><br>file-text</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-text-o la-lg mt-4"></i><br>file-text-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-video-o la-lg mt-4"></i><br>file-video-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-word-o la-lg mt-4"></i><br>file-word-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-zip-o la-lg mt-4"></i><br>file-zip-o<span class="text-muted">(alias)</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="spinner">
+              <div class="card-header">Spinner Icons</div>
+              <div class="card-body">
+                <div class="alert alert-success">
+                  <ul class="fa-ul">
+                    <li><i class="la la-info-circle fa-li"></i> These icons work great with the<code>fa-spin</code> class.</li>
+                  </ul>
+                </div>
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-circle-o-notch la-lg mt-4 fa-spin"></i><br>circle-o-notch</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cog la-lg mt-4"></i><br>cog</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gear la-lg mt-4"></i><br>gear<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-refresh la-lg mt-4"></i><br>refresh</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-spinner la-lg mt-4"></i><br>spinner</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="form-control">
+              <div class="card-header">Form Control Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-check-square la-lg mt-4"></i><br>check-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-check-square-o la-lg mt-4"></i><br>check-square-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-circle la-lg mt-4"></i><br>circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-circle-o la-lg mt-4"></i><br>circle-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-dot-circle-o la-lg mt-4"></i><br>dot-circle-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-minus-square la-lg mt-4"></i><br>minus-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-minus-square-o la-lg mt-4"></i><br>minus-square-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-plus-square la-lg mt-4"></i><br>plus-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-plus-square-o la-lg mt-4"></i><br>plus-square-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-square la-lg mt-4"></i><br>square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-square-o la-lg mt-4"></i><br>square-o</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="payment">
+              <div class="card-header">Payment Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-amex la-lg mt-4"></i><br>cc-amex</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-diners-club la-lg mt-4"></i><br>cc-diners-club</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-discover la-lg mt-4"></i><br>cc-discover</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-jcb la-lg mt-4"></i><br>cc-jcb</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-mastercard la-lg mt-4"></i><br>cc-mastercard</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-paypal la-lg mt-4"></i><br>cc-paypal</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-stripe la-lg mt-4"></i><br>cc-stripe</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-visa la-lg mt-4"></i><br>cc-visa</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-credit-card la-lg mt-4"></i><br>credit-card</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-credit-card-alt la-lg mt-4"></i><br>credit-card-alt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-google-wallet la-lg mt-4"></i><br>google-wallet</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-paypal la-lg mt-4"></i><br>paypal</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="chart">
+              <div class="card-header">Chart Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-area-chart la-lg mt-4"></i><br>area-chart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bar-chart la-lg mt-4"></i><br>bar-chart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bar-chart-o la-lg mt-4"></i><br>bar-chart-o<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-line-chart la-lg mt-4"></i><br>line-chart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pie-chart la-lg mt-4"></i><br>pie-chart</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="currency">
+              <div class="card-header">Currency Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bitcoin la-lg mt-4"></i><br>bitcoin<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-btc la-lg mt-4"></i><br>btc</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cny la-lg mt-4"></i><br>cny<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-dollar la-lg mt-4"></i><br>dollar<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-eur la-lg mt-4"></i><br>eur</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-euro la-lg mt-4"></i><br>euro<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gbp la-lg mt-4"></i><br>gbp</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gg la-lg mt-4"></i><br>gg</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gg-circle la-lg mt-4"></i><br>gg-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ils la-lg mt-4"></i><br>ils</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-inr la-lg mt-4"></i><br>inr</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-jpy la-lg mt-4"></i><br>jpy</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-krw la-lg mt-4"></i><br>krw</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-money la-lg mt-4"></i><br>money</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-rmb la-lg mt-4"></i><br>rmb<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-rouble la-lg mt-4"></i><br>rouble<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-rub la-lg mt-4"></i><br>rub</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ruble la-lg mt-4"></i><br>ruble<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-rupee la-lg mt-4"></i><br>rupee<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-shekel la-lg mt-4"></i><br>shekel<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sheqel la-lg mt-4"></i><br>sheqel<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-try la-lg mt-4"></i><br>try</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-turkish-lira la-lg mt-4"></i><br>turkish-lira<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-usd la-lg mt-4"></i><br>usd</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-won la-lg mt-4"></i><br>won<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-yen la-lg mt-4"></i><br>yen<span class="text-muted">(alias)</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="text-editor">
+              <div class="card-header">Text Editor Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-align-center la-lg mt-4"></i><br>align-center</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-align-justify la-lg mt-4"></i><br>align-justify</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-align-left la-lg mt-4"></i><br>align-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-align-right la-lg mt-4"></i><br>align-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bold la-lg mt-4"></i><br>bold</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-chain la-lg mt-4"></i><br>chain<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-chain-broken la-lg mt-4"></i><br>chain-broken</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-clipboard la-lg mt-4"></i><br>clipboard</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-columns la-lg mt-4"></i><br>columns</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-copy la-lg mt-4"></i><br>copy<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cut la-lg mt-4"></i><br>cut<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-dedent la-lg mt-4"></i><br>dedent<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-eraser la-lg mt-4"></i><br>eraser</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file la-lg mt-4"></i><br>file</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-o la-lg mt-4"></i><br>file-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-text la-lg mt-4"></i><br>file-text</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-file-text-o la-lg mt-4"></i><br>file-text-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-files-o la-lg mt-4"></i><br>files-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-floppy-o la-lg mt-4"></i><br>floppy-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-font la-lg mt-4"></i><br>font</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-header la-lg mt-4"></i><br>header</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-indent la-lg mt-4"></i><br>indent</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-italic la-lg mt-4"></i><br>italic</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-link la-lg mt-4"></i><br>link</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-list la-lg mt-4"></i><br>list</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-list-alt la-lg mt-4"></i><br>list-alt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-list-ol la-lg mt-4"></i><br>list-ol</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-list-ul la-lg mt-4"></i><br>list-ul</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-outdent la-lg mt-4"></i><br>outdent</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-paperclip la-lg mt-4"></i><br>paperclip</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-paragraph la-lg mt-4"></i><br>paragraph</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-paste la-lg mt-4"></i><br>paste<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-repeat la-lg mt-4"></i><br>repeat</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-rotate-left la-lg mt-4"></i><br>rotate-left<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-rotate-right la-lg mt-4"></i><br>rotate-right<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-save la-lg mt-4"></i><br>save<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-scissors la-lg mt-4"></i><br>scissors</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-strikethrough la-lg mt-4"></i><br>strikethrough</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-subscript la-lg mt-4"></i><br>subscript</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-superscript la-lg mt-4"></i><br>superscript</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-table la-lg mt-4"></i><br>table</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-text-height la-lg mt-4"></i><br>text-height</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-text-width la-lg mt-4"></i><br>text-width</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-th la-lg mt-4"></i><br>th</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-th-large la-lg mt-4"></i><br>th-large</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-th-list la-lg mt-4"></i><br>th-list</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-underline la-lg mt-4"></i><br>underline</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-undo la-lg mt-4"></i><br>undo</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-unlink la-lg mt-4"></i><br>unlink<span class="text-muted">(alias)</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="directional">
+              <div class="card-header">Directional Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-angle-double-down la-lg mt-4"></i><br>angle-double-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-angle-double-left la-lg mt-4"></i><br>angle-double-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-angle-double-right la-lg mt-4"></i><br>angle-double-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-angle-double-up la-lg mt-4"></i><br>angle-double-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-angle-down la-lg mt-4"></i><br>angle-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-angle-left la-lg mt-4"></i><br>angle-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-angle-right la-lg mt-4"></i><br>angle-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-angle-up la-lg mt-4"></i><br>angle-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-circle-down la-lg mt-4"></i><br>arrow-circle-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-circle-left la-lg mt-4"></i><br>arrow-circle-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-circle-o-down la-lg mt-4"></i><br>arrow-circle-o-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-circle-o-left la-lg mt-4"></i><br>arrow-circle-o-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-circle-o-right la-lg mt-4"></i><br>arrow-circle-o-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-circle-o-up la-lg mt-4"></i><br>arrow-circle-o-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-circle-right la-lg mt-4"></i><br>arrow-circle-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-circle-up la-lg mt-4"></i><br>arrow-circle-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-down la-lg mt-4"></i><br>arrow-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-left la-lg mt-4"></i><br>arrow-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-right la-lg mt-4"></i><br>arrow-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrow-up la-lg mt-4"></i><br>arrow-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrows la-lg mt-4"></i><br>arrows</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrows-alt la-lg mt-4"></i><br>arrows-alt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrows-h la-lg mt-4"></i><br>arrows-h</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrows-v la-lg mt-4"></i><br>arrows-v</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-down la-lg mt-4"></i><br>caret-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-left la-lg mt-4"></i><br>caret-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-right la-lg mt-4"></i><br>caret-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-square-o-down la-lg mt-4"></i><br>caret-square-o-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-square-o-left la-lg mt-4"></i><br>caret-square-o-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-square-o-right la-lg mt-4"></i><br>caret-square-o-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-square-o-up la-lg mt-4"></i><br>caret-square-o-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-caret-up la-lg mt-4"></i><br>caret-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-chevron-circle-down la-lg mt-4"></i><br>chevron-circle-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-chevron-circle-left la-lg mt-4"></i><br>chevron-circle-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-chevron-circle-right la-lg mt-4"></i><br>chevron-circle-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-chevron-circle-up la-lg mt-4"></i><br>chevron-circle-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-chevron-down la-lg mt-4"></i><br>chevron-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-chevron-left la-lg mt-4"></i><br>chevron-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-chevron-right la-lg mt-4"></i><br>chevron-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-chevron-up la-lg mt-4"></i><br>chevron-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-exchange la-lg mt-4"></i><br>exchange</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-o-down la-lg mt-4"></i><br>hand-o-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-o-left la-lg mt-4"></i><br>hand-o-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-o-right la-lg mt-4"></i><br>hand-o-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hand-o-up la-lg mt-4"></i><br>hand-o-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-long-arrow-down la-lg mt-4"></i><br>long-arrow-down</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-long-arrow-left la-lg mt-4"></i><br>long-arrow-left</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-long-arrow-right la-lg mt-4"></i><br>long-arrow-right</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-long-arrow-up la-lg mt-4"></i><br>long-arrow-up</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-toggle-down la-lg mt-4"></i><br>toggle-down<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-toggle-left la-lg mt-4"></i><br>toggle-left<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-toggle-right la-lg mt-4"></i><br>toggle-right<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-toggle-up la-lg mt-4"></i><br>toggle-up<span class="text-muted">(alias)</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="video-player">
+              <div class="card-header">Video Player Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-arrows-alt la-lg mt-4"></i><br>arrows-alt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-backward la-lg mt-4"></i><br>backward</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-compress la-lg mt-4"></i><br>compress</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-eject la-lg mt-4"></i><br>eject</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-expand la-lg mt-4"></i><br>expand</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-fast-backward la-lg mt-4"></i><br>fast-backward</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-fast-forward la-lg mt-4"></i><br>fast-forward</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-forward la-lg mt-4"></i><br>forward</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pause la-lg mt-4"></i><br>pause</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pause-circle la-lg mt-4"></i><br>pause-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pause-circle-o la-lg mt-4"></i><br>pause-circle-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-play la-lg mt-4"></i><br>play</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-play-circle la-lg mt-4"></i><br>play-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-play-circle-o la-lg mt-4"></i><br>play-circle-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-random la-lg mt-4"></i><br>random</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-step-backward la-lg mt-4"></i><br>step-backward</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-step-forward la-lg mt-4"></i><br>step-forward</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-stop la-lg mt-4"></i><br>stop</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-stop-circle la-lg mt-4"></i><br>stop-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-stop-circle-o la-lg mt-4"></i><br>stop-circle-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-youtube-play la-lg mt-4"></i><br>youtube-play</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="brand">
+              <div class="card-header">Brand Icons</div>
+              <div class="card-body">
+                <div class="alert alert-warning">
+                  <h4><i class="la la-warning"></i> Warning!</h4> Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display. Please<a class="alert-link" href="https://adblockplus.org/en/bugs">report an issue with Adblock Plus</a> if you believe this to be an error. To work around this, you'll need to modify the social icon class names.
+                </div>
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-500px la-lg mt-4"></i><br>500px</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-adn la-lg mt-4"></i><br>adn</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-amazon la-lg mt-4"></i><br>amazon</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-android la-lg mt-4"></i><br>android</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-angellist la-lg mt-4"></i><br>angellist</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-apple la-lg mt-4"></i><br>apple</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-behance la-lg mt-4"></i><br>behance</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-behance-square la-lg mt-4"></i><br>behance-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bitbucket la-lg mt-4"></i><br>bitbucket</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bitbucket-square la-lg mt-4"></i><br>bitbucket-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bitcoin la-lg mt-4"></i><br>bitcoin<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-black-tie la-lg mt-4"></i><br>black-tie</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bluetooth la-lg mt-4"></i><br>bluetooth</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-bluetooth-b la-lg mt-4"></i><br>bluetooth-b</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-btc la-lg mt-4"></i><br>btc</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-buysellads la-lg mt-4"></i><br>buysellads</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-amex la-lg mt-4"></i><br>cc-amex</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-diners-club la-lg mt-4"></i><br>cc-diners-club</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-discover la-lg mt-4"></i><br>cc-discover</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-jcb la-lg mt-4"></i><br>cc-jcb</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-mastercard la-lg mt-4"></i><br>cc-mastercard</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-paypal la-lg mt-4"></i><br>cc-paypal</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-stripe la-lg mt-4"></i><br>cc-stripe</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-cc-visa la-lg mt-4"></i><br>cc-visa</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-chrome la-lg mt-4"></i><br>chrome</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-codepen la-lg mt-4"></i><br>codepen</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-codiepie la-lg mt-4"></i><br>codiepie</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-connectdevelop la-lg mt-4"></i><br>connectdevelop</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-contao la-lg mt-4"></i><br>contao</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-css3 la-lg mt-4"></i><br>css3</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-dashcube la-lg mt-4"></i><br>dashcube</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-delicious la-lg mt-4"></i><br>delicious</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-deviantart la-lg mt-4"></i><br>deviantart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-digg la-lg mt-4"></i><br>digg</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-dribbble la-lg mt-4"></i><br>dribbble</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-dropbox la-lg mt-4"></i><br>dropbox</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-drupal la-lg mt-4"></i><br>drupal</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-edge la-lg mt-4"></i><br>edge</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-empire la-lg mt-4"></i><br>empire</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-expeditedssl la-lg mt-4"></i><br>expeditedssl</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-facebook la-lg mt-4"></i><br>facebook</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-facebook-f la-lg mt-4"></i><br>facebook-f<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-facebook-official la-lg mt-4"></i><br>facebook-official</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-facebook-square la-lg mt-4"></i><br>facebook-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-firefox la-lg mt-4"></i><br>firefox</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-flickr la-lg mt-4"></i><br>flickr</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-fonticons la-lg mt-4"></i><br>fonticons</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-fort-awesome la-lg mt-4"></i><br>fort-awesome</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-forumbee la-lg mt-4"></i><br>forumbee</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-foursquare la-lg mt-4"></i><br>foursquare</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ge la-lg mt-4"></i><br>ge<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-get-pocket la-lg mt-4"></i><br>get-pocket</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gg la-lg mt-4"></i><br>gg</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gg-circle la-lg mt-4"></i><br>gg-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-git la-lg mt-4"></i><br>git</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-git-square la-lg mt-4"></i><br>git-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-github la-lg mt-4"></i><br>github</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-github-alt la-lg mt-4"></i><br>github-alt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-github-square la-lg mt-4"></i><br>github-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gittip la-lg mt-4"></i><br>gittip<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-google la-lg mt-4"></i><br>google</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-google-plus la-lg mt-4"></i><br>google-plus</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-google-plus-square la-lg mt-4"></i><br>google-plus-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-google-wallet la-lg mt-4"></i><br>google-wallet</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-gratipay la-lg mt-4"></i><br>gratipay</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hacker-news la-lg mt-4"></i><br>hacker-news</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-houzz la-lg mt-4"></i><br>houzz</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-html5 la-lg mt-4"></i><br>html5</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-instagram la-lg mt-4"></i><br>instagram</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-internet-explorer la-lg mt-4"></i><br>internet-explorer</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ioxhost la-lg mt-4"></i><br>ioxhost</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-joomla la-lg mt-4"></i><br>joomla</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-jsfiddle la-lg mt-4"></i><br>jsfiddle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-lastfm la-lg mt-4"></i><br>lastfm</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-lastfm-square la-lg mt-4"></i><br>lastfm-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-leanpub la-lg mt-4"></i><br>leanpub</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-linkedin la-lg mt-4"></i><br>linkedin</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-linkedin-square la-lg mt-4"></i><br>linkedin-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-linux la-lg mt-4"></i><br>linux</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-maxcdn la-lg mt-4"></i><br>maxcdn</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-meanpath la-lg mt-4"></i><br>meanpath</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-medium la-lg mt-4"></i><br>medium</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-mixcloud la-lg mt-4"></i><br>mixcloud</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-modx la-lg mt-4"></i><br>modx</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-odnoklassniki la-lg mt-4"></i><br>odnoklassniki</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-odnoklassniki-square la-lg mt-4"></i><br>odnoklassniki-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-opencart la-lg mt-4"></i><br>opencart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-openid la-lg mt-4"></i><br>openid</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-opera la-lg mt-4"></i><br>opera</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-optin-monster la-lg mt-4"></i><br>optin-monster</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pagelines la-lg mt-4"></i><br>pagelines</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-paypal la-lg mt-4"></i><br>paypal</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pied-piper la-lg mt-4"></i><br>pied-piper</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pied-piper-alt la-lg mt-4"></i><br>pied-piper-alt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pinterest la-lg mt-4"></i><br>pinterest</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pinterest-p la-lg mt-4"></i><br>pinterest-p</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-pinterest-square la-lg mt-4"></i><br>pinterest-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-product-hunt la-lg mt-4"></i><br>product-hunt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-qq la-lg mt-4"></i><br>qq</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ra la-lg mt-4"></i><br>ra<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-rebel la-lg mt-4"></i><br>rebel</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-reddit la-lg mt-4"></i><br>reddit</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-reddit-alien la-lg mt-4"></i><br>reddit-alien</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-reddit-square la-lg mt-4"></i><br>reddit-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-renren la-lg mt-4"></i><br>renren</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-safari la-lg mt-4"></i><br>safari</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-scribd la-lg mt-4"></i><br>scribd</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-sellsy la-lg mt-4"></i><br>sellsy</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-share-alt la-lg mt-4"></i><br>share-alt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-share-alt-square la-lg mt-4"></i><br>share-alt-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-shirtsinbulk la-lg mt-4"></i><br>shirtsinbulk</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-simplybuilt la-lg mt-4"></i><br>simplybuilt</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-skyatlas la-lg mt-4"></i><br>skyatlas</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-skype la-lg mt-4"></i><br>skype</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-slack la-lg mt-4"></i><br>slack</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-slideshare la-lg mt-4"></i><br>slideshare</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-soundcloud la-lg mt-4"></i><br>soundcloud</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-spotify la-lg mt-4"></i><br>spotify</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-stack-exchange la-lg mt-4"></i><br>stack-exchange</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-stack-overflow la-lg mt-4"></i><br>stack-overflow</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-steam la-lg mt-4"></i><br>steam</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-steam-square la-lg mt-4"></i><br>steam-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-stumbleupon la-lg mt-4"></i><br>stumbleupon</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-stumbleupon-circle la-lg mt-4"></i><br>stumbleupon-circle</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tencent-weibo la-lg mt-4"></i><br>tencent-weibo</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-trello la-lg mt-4"></i><br>trello</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tripadvisor la-lg mt-4"></i><br>tripadvisor</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tumblr la-lg mt-4"></i><br>tumblr</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-tumblr-square la-lg mt-4"></i><br>tumblr-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-twitch la-lg mt-4"></i><br>twitch</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-twitter la-lg mt-4"></i><br>twitter</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-twitter-square la-lg mt-4"></i><br>twitter-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-usb la-lg mt-4"></i><br>usb</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-viacoin la-lg mt-4"></i><br>viacoin</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-vimeo la-lg mt-4"></i><br>vimeo</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-vimeo-square la-lg mt-4"></i><br>vimeo-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-vine la-lg mt-4"></i><br>vine</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-vk la-lg mt-4"></i><br>vk</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-wechat la-lg mt-4"></i><br>wechat<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-weibo la-lg mt-4"></i><br>weibo</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-weixin la-lg mt-4"></i><br>weixin</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-whatsapp la-lg mt-4"></i><br>whatsapp</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-wikipedia-w la-lg mt-4"></i><br>wikipedia-w</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-windows la-lg mt-4"></i><br>windows</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-wordpress la-lg mt-4"></i><br>wordpress</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-xing la-lg mt-4"></i><br>xing</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-xing-square la-lg mt-4"></i><br>xing-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-y-combinator la-lg mt-4"></i><br>y-combinator</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-y-combinator-square la-lg mt-4"></i><br>y-combinator-square<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-yahoo la-lg mt-4"></i><br>yahoo</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-yc la-lg mt-4"></i><br>yc<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-yc-square la-lg mt-4"></i><br>yc-square<span class="text-muted">(alias)</span></div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-yelp la-lg mt-4"></i><br>yelp</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-youtube la-lg mt-4"></i><br>youtube</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-youtube-play la-lg mt-4"></i><br>youtube-play</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-youtube-square la-lg mt-4"></i><br>youtube-square</div>
+                </div>
+                <div class="alert alert-success mt-4">
+                  <ul class="margin-bottom-none padding-left-lg">
+                    <li>All brand icons are trademarks of their respective owners.</li>
+                    <li>The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa.</li>
+                    <li>Brand icons should only be used to represent the company or product to which they refer.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="medical">
+              <div class="card-header">Medical Icons</div>
+              <div class="card-body">
+                <div class="row text-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-ambulance la-lg mt-4"></i><br>ambulance</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-h-square la-lg mt-4"></i><br>h-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-heart la-lg mt-4"></i><br>heart</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-heart-o la-lg mt-4"></i><br>heart-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-heartbeat la-lg mt-4"></i><br>heartbeat</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-hospital-o la-lg mt-4"></i><br>hospital-o</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-medkit la-lg mt-4"></i><br>medkit</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-plus-square la-lg mt-4"></i><br>plus-square</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-stethoscope la-lg mt-4"></i><br>stethoscope</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-user-md la-lg mt-4"></i><br>user-md</div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2"><i class="la la-wheelchair la-lg mt-4"></i><br>wheelchair</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside class="aside-menu">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#timeline" role="tab"><i class="icon-list"></i></a></li>
+          <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages" role="tab"><i class="icon-speech"></i></a></li>
+          <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings" role="tab"><i class="icon-settings"></i></a></li>
+        </ul>
+        <!-- Tab panes-->
+        <div class="tab-content">
+          <div class="tab-pane active" id="timeline" role="tabpanel">
+            <div class="list-group list-group-accent">
+              <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Today</div>
+              <div class="list-group-item list-group-item-accent-warning list-group-item-divider">
+                <div class="avatar float-right"><img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div>Meeting with<strong>Lucas</strong></div><small class="text-muted mr-3"><i class="icon-calendar"></i>  1 - 3pm</small><small class="text-muted"><i class="icon-location-pin"></i>  Palo Alto, CA</small>
+              </div>
+              <div class="list-group-item list-group-item-accent-info">
+                <div class="avatar float-right"><img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com"></div>
+                <div>Skype with<strong>Megan</strong></div><small class="text-muted mr-3"><i class="icon-calendar"></i>  4 - 5pm</small><small class="text-muted"><i class="icon-social-skype"></i>  On-line</small>
+              </div>
+              <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Tomorrow</div>
+              <div class="list-group-item list-group-item-accent-danger list-group-item-divider">
+                <div>New UI Project -<strong>deadline</strong></div><small class="text-muted mr-3"><i class="icon-calendar"></i>  10 - 11pm</small><small class="text-muted"><i class="icon-home"></i>  creativeLabs HQ</small>
+                <div class="avatars-stack mt-2">
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com"></div>
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com"></div>
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com"></div>
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com"></div>
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></div>
+                </div>
+              </div>
+              <div class="list-group-item list-group-item-accent-success list-group-item-divider">
+                <div><strong>#10 Startups.Garden</strong> Meetup</div><small class="text-muted mr-3"><i class="icon-calendar"></i>  1 - 3pm</small><small class="text-muted"><i class="icon-location-pin"></i>  Palo Alto, CA</small>
+              </div>
+              <div class="list-group-item list-group-item-accent-primary list-group-item-divider">
+                <div><strong>Team meeting</strong></div><small class="text-muted mr-3"><i class="icon-calendar"></i>  4 - 6pm</small><small class="text-muted"><i class="icon-home"></i>  creativeLabs HQ</small>
+                <div class="avatars-stack mt-2">
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com"></div>
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com"></div>
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com"></div>
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com"></div>
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></div>
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"></div>
+                  <div class="avatar avatar-xs"><img class="img-avatar" src="img/avatars/8.jpg" alt="admin@bootstrapmaster.com"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane p-3" id="messages" role="tabpanel">
+            <div class="message">
+              <div class="py-3 pb-5 mr-3 float-left">
+                <div class="avatar"><img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="avatar-status badge-success"></span></div>
+              </div>
+              <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+            </div>
+            <hr>
+            <div class="message">
+              <div class="py-3 pb-5 mr-3 float-left">
+                <div class="avatar"><img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="avatar-status badge-success"></span></div>
+              </div>
+              <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+            </div>
+            <hr>
+            <div class="message">
+              <div class="py-3 pb-5 mr-3 float-left">
+                <div class="avatar"><img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="avatar-status badge-success"></span></div>
+              </div>
+              <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+            </div>
+            <hr>
+            <div class="message">
+              <div class="py-3 pb-5 mr-3 float-left">
+                <div class="avatar"><img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="avatar-status badge-success"></span></div>
+              </div>
+              <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+            </div>
+            <hr>
+            <div class="message">
+              <div class="py-3 pb-5 mr-3 float-left">
+                <div class="avatar"><img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="avatar-status badge-success"></span></div>
+              </div>
+              <div><small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">1:52 PM</small></div>
+              <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+            </div>
+          </div>
+          <div class="tab-pane p-3" id="settings" role="tabpanel">
+            <h6>Settings</h6>
+            <div class="aside-options">
+              <div class="clearfix mt-4"><small><b>Option 1</b></small>
+                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                  <input class="switch-input" type="checkbox" checked=""><span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+                </label>
+              </div>
+              <div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></div>
+            </div>
+            <div class="aside-options">
+              <div class="clearfix mt-3"><small><b>Option 2</b></small>
+                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                  <input class="switch-input" type="checkbox"><span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+                </label>
+              </div>
+              <div><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></div>
+            </div>
+            <div class="aside-options">
+              <div class="clearfix mt-3"><small><b>Option 3</b></small>
+                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                  <input class="switch-input" type="checkbox"><span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+                </label>
+              </div>
+            </div>
+            <div class="aside-options">
+              <div class="clearfix mt-3"><small><b>Option 4</b></small>
+                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                  <input class="switch-input" type="checkbox" checked=""><span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+                </label>
+              </div>
+            </div>
+            <hr>
+            <h6>System Utilization</h6>
+            <div class="text-uppercase mb-1 mt-4"><small><b>CPU Usage</b></small></div>
+            <div class="progress progress-xs">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><small class="text-muted">348 Processes. 1/4 Cores.</small>
+            <div class="text-uppercase mb-1 mt-2"><small><b>Memory Usage</b></small></div>
+            <div class="progress progress-xs">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><small class="text-muted">11444GB/16384MB</small>
+            <div class="text-uppercase mb-1 mt-2"><small><b>SSD 1 Usage</b></small></div>
+            <div class="progress progress-xs">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><small class="text-muted">243GB/256GB</small>
+            <div class="text-uppercase mb-1 mt-2"><small><b>SSD 2 Usage</b></small></div>
+            <div class="progress progress-xs">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><small class="text-muted">25GB/256GB</small>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer class="app-footer">
+      <div><a href="http://backstrap.net">BackStrap </a><span>&nbsp;&copy; 2019 Cristian Tabacitu.</span></div>
+      <div class="ml-auto"><span>Powered by </span><a href="https://coreui.io">CoreUI</a><span>&nbsp;&&nbsp;</span><a href="https://backpackforlaravel.com">Backpack for Laravel</a></div>
+    </footer>
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/jquery/js/jquery.min.js"></script>
+    <script src="vendors/popper.js/js/popper.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/pace-progress/js/pace.min.js"></script>
+    <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+    <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
+  </body>
+</html>
