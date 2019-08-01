@@ -29,7 +29,7 @@
     <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
   </head>
   <body class="app aside-menu-fixed sidebar-lg-show">
-    <header class="app-header bg-transparent border-0 navbar">
+    <header class="app-header bg-transparent border-0 navbar position-relative">
       <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#"><b>Back</b><span>strap</span></a>
       <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show"><span class="navbar-toggler-icon"></span></button>
       <ul class="nav navbar-nav d-md-down-none">
@@ -135,32 +135,101 @@
           <div class="animated fadeIn">
             <div class="row">
               <div class="col-lg-12">
-                <div class="card">
-                  <div class="card-header"><i class="fa fa-align-justify"></i> Bootstrap Breadcrumb
-                    <div class="card-header-actions"><a class="card-header-action" href="http://coreui.io/docs/components/bootstrap-breadcrumb/" target="_blank"><small class="text-muted">docs</small></a></div>
-                  </div>
-                  <div class="card-body">
-                    <nav aria-label="breadcrumb" role="navigation">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item active" aria-current="page">Home</li>
-                      </ol>
-                    </nav>
-                    <nav aria-label="breadcrumb" role="navigation">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Library</li>
-                      </ol>
-                    </nav>
-                    <nav aria-label="breadcrumb" role="navigation">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Library</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Data</li>
-                      </ol>
-                    </nav>
-                    <nav class="breadcrumb"><a class="breadcrumb-item" href="#">Home</a><a class="breadcrumb-item" href="#">Library</a><a class="breadcrumb-item" href="#">Data</a><span class="breadcrumb-item active">Bootstrap</span></nav>
-                  </div>
-                </div>
+                <h4 class="mt-3"><span>Bootstrap Breadcrumbs</span></h4>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                  </ol>
+                </nav>
+                <nav class="breadcrumb"><a class="breadcrumb-item" href="#">Home</a><a class="breadcrumb-item" href="#">Library</a><a class="breadcrumb-item" href="#">Data</a><span class="breadcrumb-item active">Bootstrap</span></nav>
+              </div>
+            </div>
+            <!-- /.row-->
+            <div class="row">
+              <div class="col-lg-12">
+                <h4 class="mt-3"><span>Transparent Breadcrumbs</span></h4>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                  </ol>
+                </nav>
+                <nav class="breadcrumb"><a class="breadcrumb-item" href="#">Home</a><a class="breadcrumb-item" href="#">Library</a><a class="breadcrumb-item" href="#">Data</a><span class="breadcrumb-item active">Bootstrap</span></nav>
+              </div>
+            </div>
+            <!-- /.row-->
+            <div class="row">
+              <div class="col-lg-12">
+                <h4 class="mt-3"><span>Right-side Breadcrumbs</span></h4>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb justify-content-end">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb justify-content-end">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb justify-content-end">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                  </ol>
+                </nav>
+                <nav class="breadcrumb justify-content-end"><a class="breadcrumb-item" href="#">Home</a><a class="breadcrumb-item" href="#">Library</a><a class="breadcrumb-item" href="#">Data</a><span class="breadcrumb-item active">Bootstrap</span></nav>
+              </div>
+            </div>
+            <!-- /.row-->
+            <div class="row">
+              <div class="col-lg-12">
+                <h4 class="mt-3"><span>Transparent right-side Breadcrumbs</span></h4>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb justify-content-end bg-transparent">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb justify-content-end bg-transparent">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb justify-content-end bg-transparent">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                  </ol>
+                </nav>
+                <nav class="breadcrumb justify-content-end bg-transparent"><a class="breadcrumb-item" href="#">Home</a><a class="breadcrumb-item" href="#">Library</a><a class="breadcrumb-item" href="#">Data</a><span class="breadcrumb-item active">Bootstrap</span></nav>
               </div>
             </div>
             <!-- /.row-->
