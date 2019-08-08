@@ -6111,7 +6111,7 @@ a.close.disabled {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.3rem;
   outline: 0;
 }
@@ -6142,7 +6142,7 @@ a.close.disabled {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #c8ced3;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
 }
@@ -6172,7 +6172,7 @@ a.close.disabled {
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 1rem;
-  border-top: 1px solid #c8ced3;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom-right-radius: 0.3rem;
   border-bottom-left-radius: 0.3rem;
 }
@@ -15773,6 +15773,18 @@ body {
   breakpoint-md: 768px;
   breakpoint-lg: 992px;
   breakpoint-xl: 1200px;
+}
+
+.badge {
+  margin: 0 0.2em;
+}
+
+.modal-primary .modal-content,
+.modal-success .modal-content,
+.modal-warning .modal-content,
+.modal-danger .modal-content {
+  border-color: rgba(0, 40, 100, 0.12);
+  border-radius: 7px;
 }
 
 .breadcrumb {
