@@ -5,7 +5,7 @@
 
 $white:     #fff !default;
 $gray-base: #181b1e !default;
-$gray-100:  #f0f3f5 !default; // lighten($gray-base, 85%);
+$gray-100:  #f0f3f9 !default; // lighten($gray-base, 85%);
 $gray-200:  #e4e7ea !default; // lighten($gray-base, 80%);
 $gray-300:  #c8ced3 !default; // lighten($gray-base, 70%);
 $gray-400:  #acb4bc !default; // lighten($gray-base, 60%);
@@ -81,76 +81,47 @@ $theme-colors: map-merge(
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,
+    "notice":     $info,
     "warning":    $warning,
     "danger":     $danger,
+    "error":      $danger,
     "light":      $light,
     "dark":       $dark
   ),
   $theme-colors
 );
 
-// Brand Colors
-
-$facebook:       #3b5998 !default;
-$twitter:        #00aced !default;
-$linkedin:       #4875b4 !default;
-$google-plus:    #d34836 !default;
-$flickr:         #ff0084 !default;
-$tumblr:         #32506d !default;
-$xing:           #026466 !default;
-$github:         #4183c4 !default;
-$html5:          #e34f26 !default;
-$openid:         #f78c40 !default;
-$stack-overflow: #fe7a15 !default;
-$youtube:        #b00 !default;
-$css3:           #0170ba !default;
-$dribbble:       #ea4c89 !default;
-$google-plus:    #bb4b39 !default;
-$instagram:      #517fa4 !default;
-$pinterest:      #cb2027 !default;
-$vk:             #45668e !default;
-$yahoo:          #400191 !default;
-$behance:        #1769ff !default;
-$dropbox:        #007ee5 !default;
-$reddit:         #ff4500 !default;
-$spotify:        #7ab800 !default;
-$vine:           #00bf8f !default;
-$foursquare:     #1073af !default;
-$vimeo:          #aad450 !default;
-
-$brands-colors: () !default;
-$brands-colors: map-merge((
-  "facebook":       $facebook,
-  "twitter":        $twitter,
-  "linkedin":       $linkedin,
-  "google-plus":    $google-plus,
-  "flickr":         $flickr,
-  "tumblr":         $tumblr,
-  "xing":           $xing,
-  "github":         $github,
-  "html5":          $html5,
-  "openid":         $openid,
-  "stack-overflow": $stack-overflow,
-  "youtube":        $youtube,
-  "css3":           $css3,
-  "dribbble":       $dribbble,
-  "instagram":      $instagram,
-  "pinterest":      $pinterest,
-  "vk":             $vk,
-  "yahoo":          $yahoo,
-  "behance":        $behance,
-  "dropbox":        $dropbox,
-  "reddit":         $reddit,
-  "spotify":        $spotify,
-  "vine":           $vine,
-  "foursquare":     $foursquare,
-  "vimeo":          $vimeo
-), $brands-colors);
-
 // Alerts
-//
-// Define alert colors, border radius, and padding.
 
 $alert-bg-level:                    0 !default;
 $alert-border-level:                +1 !default;
 $alert-color-level:                 -12 !default;
+
+// Inputs and buttons
+
+$input-btn-focus-width:       0rem !default;
+
+// General
+
+$body-bg:                     $gray-100 !default;
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+// stylelint-enable value-keyword-case
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+
