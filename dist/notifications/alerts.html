@@ -196,6 +196,93 @@
               </div>
             </div>
             <!-- /.row-->
+            <div class="row">
+              <div class="col-lg-12">
+                <h2>Test Notices</h2>
+    <button onclick="PNotify.notice({title: 'Test Notice', text: 'This is a test notice.'})">Test Notice</button>
+    <button onclick="PNotify.info({title: 'Test Notice', text: 'This is a test notice.'})">Test Info</button>
+    <button onclick="PNotify.success({title: 'Test Notice', text: 'This is a test notice.'})">Test Success</button>
+    <button onclick="PNotify.error({title: 'Test Notice', text: 'This is a test notice.'})">Test Danger</button>
+    <button onclick="PNotify.info({title: 'This is a test notice.'})">Just Title</button>
+    <button onclick="PNotify.info({text: 'This is a test notice.'})">Just Text</button>
+    <h3>Confirm Module</h3>
+    <button onclick="PNotify.notice({
+      title: 'Confirmation Needed',
+      text: 'Are you sure?',
+      hide: false,
+      modules: {Confirm: {confirm: true}, Buttons: {closer: false, sticker: false}}
+    });">Confirm Notice</button>
+    <button onclick="PNotify.info({
+      title: 'Confirmation Needed',
+      text: 'Are you sure?',
+      hide: false,
+      modules: {Confirm: {confirm: true}, Buttons: {closer: false, sticker: false}}
+    });">Confirm Info</button>
+    <button onclick="PNotify.success({
+      title: 'Confirmation Needed',
+      text: 'Are you sure?',
+      hide: false,
+      modules: {Confirm: {confirm: true}, Buttons: {closer: false, sticker: false}}
+    });">Confirm Success</button>
+    <button onclick="PNotify.error({
+      title: 'Confirmation Needed',
+      text: 'Are you sure?',
+      hide: false,
+      modules: {Confirm: {confirm: true}, Buttons: {closer: false, sticker: false}}
+    });">Confirm Error</button>
+    <br />
+    <button onclick="PNotify.notice({
+      title: 'Input Needed',
+      text: 'What side would you like?',
+      hide: false,
+      modules: {Confirm: {prompt: true}, Buttons: {closer: false, sticker: false}}
+    });">Prompt Notice</button>
+    <button onclick="PNotify.info({
+      title: 'Input Needed',
+      text: 'What side would you like?',
+      hide: false,
+      modules: {Confirm: {prompt: true}, Buttons: {closer: false, sticker: false}}
+    });">Prompt Info</button>
+    <button onclick="PNotify.success({
+      title: 'Input Needed',
+      text: 'What side would you like?',
+      hide: false,
+      modules: {Confirm: {prompt: true}, Buttons: {closer: false, sticker: false}}
+    });">Prompt Success</button>
+    <button onclick="PNotify.error({
+      title: 'Input Needed',
+      text: 'What side would you like?',
+      hide: false,
+      modules: {Confirm: {prompt: true}, Buttons: {closer: false, sticker: false}}
+    });">Prompt Error</button>
+    <br />
+    <button onclick="PNotify.notice({
+      title: 'Input Needed',
+      text: 'Describe the color blue.',
+      hide: false,
+      modules: {Confirm: {prompt: true, promptMultiLine: true}, Buttons: {closer: false, sticker: false}}
+    });">Multi Line Prompt Notice</button>
+    <button onclick="PNotify.info({
+      title: 'Input Needed',
+      text: 'Describe the color blue.',
+      type: 'success',
+      hide: false,
+      modules: {Confirm: {prompt: true, promptMultiLine: true}, Buttons: {closer: false, sticker: false}}
+    });">Multi Line Prompt Info</button>
+    <button onclick="PNotify.success({
+      title: 'Input Needed',
+      text: 'Describe the color blue.',
+      hide: false,
+      modules: {Confirm: {prompt: true, promptMultiLine: true}, Buttons: {closer: false, sticker: false}}
+    });">Multi Line Prompt Success</button>
+    <button onclick="PNotify.error({
+      title: 'Input Needed',
+      text: 'Describe the color blue.',
+      hide: false,
+      modules: {Confirm: {prompt: true, promptMultiLine: true}, Buttons: {closer: false, sticker: false}}
+    });">Multi Line Prompt Error</button>
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -352,5 +439,10 @@
     <script src="vendors/pace-progress/js/pace.min.js"></script>
     <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
     <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
+    <script src="vendors/pnotify/js/Pnotify.js"></script>
+    <script src="vendors/pnotify/js/PnotifyButtons.js"></script>
+    <script src="vendors/pnotify/js/PnotifyConfirm.js"></script>
+    <script src="vendors/pnotify/js/PnotifyMobile.js"></script>
+    <script src="vendors/pnotify/js/PnotifyNonBlock.js"></script>
   </body>
 </html>
