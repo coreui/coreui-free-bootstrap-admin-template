@@ -1,151 +1,151 @@
 extends /_layout/default.pug
 
 block view
-  .animated.c-fadeIn
-    .c-row
-      .c-col-lg-12
-        .c-card
-          .c-card-header
+  .animated.fadeIn
+    .row
+      .col-lg-12
+        .card
+          .card-header
             i.fa.fa-align-justify
             |  Bootstrap Modals
-          .c-card-body
+          .card-body
             // Button trigger modal
-            button.c-btn.c-btn-secondary.c-mb-1(type='button', data-toggle='c-modal', data-target='#myModal')
+            button.btn.btn-secondary.mb-1(type='button', data-toggle='modal', data-target='#myModal')
               | Launch demo modal
-            button.c-btn.c-btn-secondary.c-mb-1(type='button', data-toggle='c-modal', data-target='#largeModal')
+            button.btn.btn-secondary.mb-1(type='button', data-toggle='modal', data-target='#largeModal')
               | Launch large modal
-            button.c-btn.c-btn-secondary.c-mb-1(type='button', data-toggle='c-modal', data-target='#smallModal')
+            button.btn.btn-secondary.mb-1(type='button', data-toggle='modal', data-target='#smallModal')
               | Launch small modal
             hr
-            button.c-btn.c-btn-primary.c-mb-1(type='button', data-toggle='c-modal', data-target='#primaryModal')
+            button.btn.btn-primary.mb-1(type='button', data-toggle='modal', data-target='#primaryModal')
               | Primary modal
-            button.c-btn.c-btn-success.c-mb-1(type='button', data-toggle='c-modal', data-target='#successModal')
+            button.btn.btn-success.mb-1(type='button', data-toggle='modal', data-target='#successModal')
               | Success modal
-            button.c-btn.c-btn-warning.c-mb-1(type='button', data-toggle='c-modal', data-target='#warningModal')
+            button.btn.btn-warning.mb-1(type='button', data-toggle='modal', data-target='#warningModal')
               | Warning modal
-            button.c-btn.c-btn-danger.c-mb-1(type='button', data-toggle='c-modal', data-target='#dangerModal')
+            button.btn.btn-danger.mb-1(type='button', data-toggle='modal', data-target='#dangerModal')
               | Danger modal
-            button.c-btn.c-btn-info.c-mb-1(type='button', data-toggle='c-modal', data-target='#infoModal')
+            button.btn.btn-info.mb-1(type='button', data-toggle='modal', data-target='#infoModal')
               | Info modal
-      // /.c-col
-    // /.c-row
-  #myModal.c-modal.c-fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-    .c-modal-dialog(role='document')
-      .c-modal-content
-        .c-modal-header
-          h4.c-modal-title Modal title
-          button.c-close(type='button', data-dismiss='c-modal', aria-label='Close')
+      // /.col
+    // /.row
+  #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
             span(aria-hidden='true') ×
-        .c-modal-body
+        .modal-body
           p One fine body…
-        .c-modal-footer
-          button.c-btn.c-btn-secondary(type='button', data-dismiss='c-modal') Close
-          button.c-btn.c-btn-primary(type='button') Save changes
-      // /.c-modal-content
-    // /.c-modal-dialog
-  // /.c-modal
-  #largeModal.c-modal.c-fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-    .c-modal-dialog.c-modal-lg(role='document')
-      .c-modal-content
-        .c-modal-header
-          h4.c-modal-title Modal title
-          button.c-close(type='button', data-dismiss='c-modal', aria-label='Close')
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #largeModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-lg(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
             span(aria-hidden='true') ×
-        .c-modal-body
+        .modal-body
           p One fine body…
-        .c-modal-footer
-          button.c-btn.c-btn-secondary(type='button', data-dismiss='c-modal') Close
-          button.c-btn.c-btn-primary(type='button') Save changes
-      // /.c-modal-content
-    // /.c-modal-dialog
-  // /.c-modal
-  #smallModal.c-modal.c-fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-    .c-modal-dialog.c-modal-sm(role='document')
-      .c-modal-content
-        .c-modal-header
-          h4.c-modal-title Modal title
-          button.c-close(type='button', data-dismiss='c-modal', aria-label='Close')
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #smallModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-sm(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
             span(aria-hidden='true') ×
-        .c-modal-body
+        .modal-body
           p One fine body…
-        .c-modal-footer
-          button.c-btn.c-btn-secondary(type='button', data-dismiss='c-modal') Close
-          button.c-btn.c-btn-primary(type='button') Save changes
-      // /.c-modal-content
-    // /.c-modal-dialog
-  // /.c-modal
-  #primaryModal.c-modal.c-fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-    .c-modal-dialog.c-modal-primary(role='document')
-      .c-modal-content
-        .c-modal-header
-          h4.c-modal-title Modal title
-          button.c-close(type='button', data-dismiss='c-modal', aria-label='Close')
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #primaryModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-primary(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
             span(aria-hidden='true') ×
-        .c-modal-body
+        .modal-body
           p One fine body…
-        .c-modal-footer
-          button.c-btn.c-btn-secondary(type='button', data-dismiss='c-modal') Close
-          button.c-btn.c-btn-primary(type='button') Save changes
-      // /.c-modal-content
-    // /.c-modal-dialog
-  // /.c-modal
-  #successModal.c-modal.c-fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-    .c-modal-dialog.c-modal-success(role='document')
-      .c-modal-content
-        .c-modal-header
-          h4.c-modal-title Modal title
-          button.c-close(type='button', data-dismiss='c-modal', aria-label='Close')
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #successModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-success(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
             span(aria-hidden='true') ×
-        .c-modal-body
+        .modal-body
           p One fine body…
-        .c-modal-footer
-          button.c-btn.c-btn-secondary(type='button', data-dismiss='c-modal') Close
-          button.c-btn.c-btn-success(type='button') Save changes
-      // /.c-modal-content
-    // /.c-modal-dialog
-  // /.c-modal
-  #warningModal.c-modal.c-fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-    .c-modal-dialog.c-modal-warning(role='document')
-      .c-modal-content
-        .c-modal-header
-          h4.c-modal-title Modal title
-          button.c-close(type='button', data-dismiss='c-modal', aria-label='Close')
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-success(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #warningModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-warning(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
             span(aria-hidden='true') ×
-        .c-modal-body
+        .modal-body
           p One fine body…
-        .c-modal-footer
-          button.c-btn.c-btn-secondary(type='button', data-dismiss='c-modal') Close
-          button.c-btn.c-btn-warning(type='button') Save changes
-      // /.c-modal-content
-    // /.c-modal-dialog
-  // /.c-modal
-  #dangerModal.c-modal.c-fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-    .c-modal-dialog.c-modal-danger(role='document')
-      .c-modal-content
-        .c-modal-header
-          h4.c-modal-title Modal title
-          button.c-close(type='button', data-dismiss='c-modal', aria-label='Close')
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-warning(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #dangerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-danger(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
             span(aria-hidden='true') ×
-        .c-modal-body
+        .modal-body
           p One fine body…
-        .c-modal-footer
-          button.c-btn.c-btn-secondary(type='button', data-dismiss='c-modal') Close
-          button.c-btn.c-btn-danger(type='button') Save changes
-      // /.c-modal-content
-    // /.c-modal-dialog
-  // /.c-modal
-  #infoModal.c-modal.c-fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-    .c-modal-dialog.c-modal-info(role='document')
-      .c-modal-content
-        .c-modal-header
-          h4.c-modal-title Modal title
-          button.c-close(type='button', data-dismiss='c-modal', aria-label='Close')
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-danger(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal
+  #infoModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-info(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
             span(aria-hidden='true') ×
-        .c-modal-body
+        .modal-body
           p One fine body…
-        .c-modal-footer
-          button.c-btn.c-btn-secondary(type='button', data-dismiss='c-modal') Close
-          button.c-btn.c-btn-info(type='button') Save changes
-      // /.c-modal-content
-    // /.c-modal-dialog
-  // /.c-modal
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-info(type='button') Save changes
+      // /.modal-content
+    // /.modal-dialog
+  // /.modal

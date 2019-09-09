@@ -1,298 +1,298 @@
 extends /_layout/default.pug
 
 block view
-  .c-fade-in
-    .c-row
-      .c-col
-        .c-card
-          .c-card-header
+  .fade-in
+    .row
+      .col
+        .card
+          .card-header
             i.fa.fa-align-justify
             |  Dropdowns
-            .c-card-header-actions
-              a.c-card-header-action(href='http://coreui.io/docs/components/bootstrap-dropdowns/', target='_blank')
-                small.c-text-muted docs
-          .c-card-body
-            .c-row
-              .c-col
-                .c-btn-group
-                  .c-dropdown
-                    button#dropdownMenuButton.c-btn.c-btn-secondary.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .card-header-actions
+              a.card-header-action(href='http://coreui.io/docs/components/bootstrap-dropdowns/', target='_blank')
+                small.text-muted docs
+          .card-body
+            .row
+              .col
+                .btn-group
+                  .dropdown
+                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                       | Dropdown button
-                    .c-dropdown-menu(aria-labelledby='dropdownMenuButton')
-                      a.c-dropdown-item(href='#') Action
-                      a.c-dropdown-item(href='#') Another action
-                      a.c-dropdown-item(href='#') Something else here
-                .c-btn-group
-                  .c-dropdown.c-show
-                    a#dropdownMenuLink.c-btn.c-btn-secondary.c-dropdown-toggle(href='#', role='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+                    .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                      a.dropdown-item(href='#') Action
+                      a.dropdown-item(href='#') Another action
+                      a.dropdown-item(href='#') Something else here
+                .btn-group
+                  .dropdown.show
+                    a#dropdownMenuLink.btn.btn-secondary.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                       | Dropdown link
-                    .c-dropdown-menu(aria-labelledby='dropdownMenuLink')
-                      a.c-dropdown-item(href='#') Action
-                      a.c-dropdown-item(href='#') Another action
-                      a.c-dropdown-item(href='#') Something else here
+                    .dropdown-menu(aria-labelledby='dropdownMenuLink')
+                      a.dropdown-item(href='#') Action
+                      a.dropdown-item(href='#') Another action
+                      a.dropdown-item(href='#') Something else here
             hr
-            .c-btn-group
-              button.c-btn.c-btn-primary.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Primary
-              .c-dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
-            .c-btn-group
-              button.c-btn.c-btn-secondary.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Secondary
-              .c-dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
-            .c-btn-group
-              button.c-btn.c-btn-success.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Success
-              .c-dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
-            .c-btn-group
-              button.c-btn.c-btn-info.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-info.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Info
-              .c-dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
-            .c-btn-group
-              button.c-btn.c-btn-warning.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-warning.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Warning
-              .c-dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
-            .c-btn-group
-              button.c-btn.c-btn-danger.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-danger.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Danger
-              .c-dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
             hr
-            .c-btn-group
-              button.c-btn.c-btn-primary(type='button') Primary
-              button.c-btn.c-btn-primary.c-dropdown-toggle.c-dropdown-toggle-split(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-primary(type='button') Primary
+              button.btn.btn-primary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 span.sr-only Toggle Dropdown
-              .c-dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(71px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(71px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
-            .c-btn-group
-              button.c-btn.c-btn-secondary(type='button') Secondary
-              button.c-btn.c-btn-secondary.c-dropdown-toggle.c-dropdown-toggle-split(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-secondary(type='button') Secondary
+              button.btn.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 span.sr-only Toggle Dropdown
-              .c-dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(89px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu(x-placement='bottom-start', style='position: absolute; transform: translate3d(89px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
-            .c-btn-group
-              button.c-btn.c-btn-success(type='button') Success
-              button.c-btn.c-btn-success.c-dropdown-toggle.c-dropdown-toggle-split(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-success(type='button') Success
+              button.btn.btn-success.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 span.sr-only Toggle Dropdown
-              .c-dropdown-menu
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
-            .c-btn-group
-              button.c-btn.c-btn-info(type='button') Info
-              button.c-btn.c-btn-info.c-dropdown-toggle.c-dropdown-toggle-split(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-info(type='button') Info
+              button.btn.btn-info.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 span.sr-only Toggle Dropdown
-              .c-dropdown-menu
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
-            .c-btn-group
-              button.c-btn.c-btn-warning(type='button') Warning
-              button.c-btn.c-btn-warning.c-dropdown-toggle.c-dropdown-toggle-split(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-warning(type='button') Warning
+              button.btn.btn-warning.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 span.sr-only Toggle Dropdown
-              .c-dropdown-menu
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
-            .c-btn-group
-              button.c-btn.c-btn-danger(type='button') Danger
-              button.c-btn.c-btn-danger.c-dropdown-toggle.c-dropdown-toggle-split(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-danger(type='button') Danger
+              button.btn.btn-danger.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 span.sr-only Toggle Dropdown
-              .c-dropdown-menu
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             // /btn-group
             hr
-            .c-btn-toolbar(role='toolbar')
-              .c-btn-group
-                button.c-btn.c-btn-secondary.c-btn-lg.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-toolbar(role='toolbar')
+              .btn-group
+                button.btn.btn-secondary.btn-lg.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   | Large button
-                .c-dropdown-menu
-                  a.c-dropdown-item(href='#') Action
-                  a.c-dropdown-item(href='#') Another action
-                  a.c-dropdown-item(href='#') Something else here
-                  .c-dropdown-divider
-                  a.c-dropdown-item(href='#') Separated link
+                .dropdown-menu
+                  a.dropdown-item(href='#') Action
+                  a.dropdown-item(href='#') Another action
+                  a.dropdown-item(href='#') Something else here
+                  .dropdown-divider
+                  a.dropdown-item(href='#') Separated link
               // /btn-group
-              .c-btn-group.c-ml-2
-                button.c-btn.c-btn-lg.c-btn-secondary(type='button') Large split button
-                button.c-btn.c-btn-lg.c-btn-secondary.c-dropdown-toggle.c-dropdown-toggle-split(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+              .btn-group.ml-2
+                button.btn.btn-lg.btn-secondary(type='button') Large split button
+                button.btn.btn-lg.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   span.sr-only Toggle Dropdown
-                .c-dropdown-menu
-                  a.c-dropdown-item(href='#') Action
-                  a.c-dropdown-item(href='#') Another action
-                  a.c-dropdown-item(href='#') Something else here
-                  .c-dropdown-divider
-                  a.c-dropdown-item(href='#') Separated link
+                .dropdown-menu
+                  a.dropdown-item(href='#') Action
+                  a.dropdown-item(href='#') Another action
+                  a.dropdown-item(href='#') Something else here
+                  .dropdown-divider
+                  a.dropdown-item(href='#') Separated link
               // /btn-group
             // /btn-toolbar
             hr
-            .c-btn-toolbar(role='toolbar')
-              .c-btn-group
-                button.c-btn.c-btn-secondary.c-btn-sm.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-toolbar(role='toolbar')
+              .btn-group
+                button.btn.btn-secondary.btn-sm.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   | Small button
-                .c-dropdown-menu
-                  a.c-dropdown-item(href='#') Action
-                  a.c-dropdown-item(href='#') Another action
-                  a.c-dropdown-item(href='#') Something else here
-                  .c-dropdown-divider
-                  a.c-dropdown-item(href='#') Separated link
+                .dropdown-menu
+                  a.dropdown-item(href='#') Action
+                  a.dropdown-item(href='#') Another action
+                  a.dropdown-item(href='#') Something else here
+                  .dropdown-divider
+                  a.dropdown-item(href='#') Separated link
               // /btn-group
-              .c-btn-group.c-ml-2
-                button.c-btn.c-btn-sm.c-btn-secondary(type='button') Small split button
-                button.c-btn.c-btn-sm.c-btn-secondary.c-dropdown-toggle.c-dropdown-toggle-split(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+              .btn-group.ml-2
+                button.btn.btn-sm.btn-secondary(type='button') Small split button
+                button.btn.btn-sm.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   span.sr-only Toggle Dropdown
-                .c-dropdown-menu
-                  a.c-dropdown-item(href='#') Action
-                  a.c-dropdown-item(href='#') Another action
-                  a.c-dropdown-item(href='#') Something else here
-                  .c-dropdown-divider
-                  a.c-dropdown-item(href='#') Separated link
+                .dropdown-menu
+                  a.dropdown-item(href='#') Action
+                  a.dropdown-item(href='#') Another action
+                  a.dropdown-item(href='#') Something else here
+                  .dropdown-divider
+                  a.dropdown-item(href='#') Separated link
               // /btn-group
             // /btn-toolbar
             hr
             .bd-example
-              .c-btn-group.c-dropup
-                button.c-btn.c-btn-secondary.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+              .btn-group.dropup
+                button.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   | Dropup
-                .c-dropdown-menu(x-placement='top-start', style='position: absolute; transform: translate3d(0px, -2px, 0px); top: 0px; left: 0px; will-change: transform;')
-                  a.c-dropdown-item(href='#') Action
-                  a.c-dropdown-item(href='#') Another action
-                  a.c-dropdown-item(href='#') Something else here
-                  .c-dropdown-divider
-                  a.c-dropdown-item(href='#') Separated link
-              .c-btn-group.c-dropup
-                button.c-btn.c-btn-secondary(type='button')
+                .dropdown-menu(x-placement='top-start', style='position: absolute; transform: translate3d(0px, -2px, 0px); top: 0px; left: 0px; will-change: transform;')
+                  a.dropdown-item(href='#') Action
+                  a.dropdown-item(href='#') Another action
+                  a.dropdown-item(href='#') Something else here
+                  .dropdown-divider
+                  a.dropdown-item(href='#') Separated link
+              .btn-group.dropup
+                button.btn.btn-secondary(type='button')
                   | Split dropup
-                button.c-btn.c-btn-secondary.c-dropdown-toggle.c-dropdown-toggle-split(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+                button.btn.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   span.sr-only Toggle Dropdown
-                .c-dropdown-menu(x-placement='top-start', style='position: absolute; transform: translate3d(101px, -188px, 0px); top: 0px; left: 0px; will-change: transform;')
-                  a.c-dropdown-item(href='#') Action
-                  a.c-dropdown-item(href='#') Another action
-                  a.c-dropdown-item(href='#') Something else here
-                  .c-dropdown-divider
-                  a.c-dropdown-item(href='#') Separated link
-    .c-row
-      .c-col
-        .c-card
-          .c-card-header
+                .dropdown-menu(x-placement='top-start', style='position: absolute; transform: translate3d(101px, -188px, 0px); top: 0px; left: 0px; will-change: transform;')
+                  a.dropdown-item(href='#') Action
+                  a.dropdown-item(href='#') Another action
+                  a.dropdown-item(href='#') Something else here
+                  .dropdown-divider
+                  a.dropdown-item(href='#') Separated link
+    .row
+      .col
+        .card
+          .card-header
             i.fa.fa-align-justify
             |  Menus
-          .c-card-body
-            .c-dropdown
-              button#dropdownMenu2.c-btn.c-btn-secondary.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+          .card-body
+            .dropdown
+              button#dropdownMenu2.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Dropdown
-              .c-dropdown-menu(aria-labelledby='dropdownMenu2', x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
-                button.c-dropdown-item(type='button') Action
-                button.c-dropdown-item(type='button') Another action
-                button.c-dropdown-item(type='button') Something else here
+              .dropdown-menu(aria-labelledby='dropdownMenu2', x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;')
+                button.dropdown-item(type='button') Action
+                button.dropdown-item(type='button') Another action
+                button.dropdown-item(type='button') Something else here
             hr
-            .c-btn-group
-              button.c-btn.c-btn-secondary.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .btn-group
+              button.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | This dropdown's menu is right-aligned
-              .c-dropdown-menu.c-dropdown-menu-right
-                button.c-dropdown-item(type='button') Action
-                button.c-dropdown-item(type='button') Another action
-                button.c-dropdown-item(type='button') Something else here
+              .dropdown-menu.dropdown-menu-right
+                button.dropdown-item(type='button') Action
+                button.dropdown-item(type='button') Another action
+                button.dropdown-item(type='button') Something else here
             hr
-            .c-dropdown
-              button#dropdownMenu3.c-btn.c-btn-secondary.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .dropdown
+              button#dropdownMenu3.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Menu header
-              .c-dropdown-menu
-                h6.c-dropdown-header Dropdown header
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
+              .dropdown-menu
+                h6.dropdown-header Dropdown header
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
             hr
-            .c-dropdown
-              button#dropdownMenu4.c-btn.c-btn-secondary.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .dropdown
+              button#dropdownMenu4.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Menu divider
-              .c-dropdown-menu
-                a.c-dropdown-item(href='#') Action
-                a.c-dropdown-item(href='#') Another action
-                a.c-dropdown-item(href='#') Something else here
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') Separated link
+              .dropdown-menu
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+                .dropdown-divider
+                a.dropdown-item(href='#') Separated link
             hr
-            .c-dropdown
-              button#dropdownMenu5.c-btn.c-btn-secondary.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .dropdown
+              button#dropdownMenu5.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Menu forms
-              .c-dropdown-menu
-                form.c-px-4.c-py-3
-                  .c-form-group
+              .dropdown-menu
+                form.px-4.py-3
+                  .form-group
                     label(for='exampleDropdownFormEmail1') Email address
-                    input#exampleDropdownFormEmail1.c-form-control(type='email', placeholder='email@example.com')
-                  .c-form-group
+                    input#exampleDropdownFormEmail1.form-control(type='email', placeholder='email@example.com')
+                  .form-group
                     label(for='exampleDropdownFormPassword1') Password
-                    input#exampleDropdownFormPassword1.c-form-control(type='password', placeholder='Password')
-                  .c-form-check
-                    label.c-form-check-label
-                      input.c-form-check-input(type='checkbox')
+                    input#exampleDropdownFormPassword1.form-control(type='password', placeholder='Password')
+                  .form-check
+                    label.form-check-label
+                      input.form-check-input(type='checkbox')
                       |  Remember me
-                  button.c-btn.c-btn-primary(type='submit') Sign in
-                .c-dropdown-divider
-                a.c-dropdown-item(href='#') New around here? Sign up
-                a.c-dropdown-item(href='#') Forgot password?
+                  button.btn.btn-primary(type='submit') Sign in
+                .dropdown-divider
+                a.dropdown-item(href='#') New around here? Sign up
+                a.dropdown-item(href='#') Forgot password?
             hr
-            .c-dropdown
-              button#dropdownMenu5.c-btn.c-btn-secondary.c-dropdown-toggle(type='button', data-toggle='c-dropdown', aria-haspopup='true', aria-expanded='false')
+            .dropdown
+              button#dropdownMenu5.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Disabled item
-              .c-dropdown-menu
-                a.c-dropdown-item(href='#') Regular link
-                a.c-dropdown-item.c-disabled(href='#') Disabled link
-                a.c-dropdown-item(href='#') Another link
+              .dropdown-menu
+                a.dropdown-item(href='#') Regular link
+                a.dropdown-item.disabled(href='#') Disabled link
+                a.dropdown-item(href='#') Another link

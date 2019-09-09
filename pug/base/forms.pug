@@ -1,30 +1,30 @@
 extends /_layout/default.pug
 
 block view
-  .c-fade-in
-    .c-row
-      .c-col-sm-6
-        .c-card
-          .c-card-header
+  .fade-in
+    .row
+      .col-sm-6
+        .card
+          .card-header
             strong Credit Card
             small Form
-          .c-card-body
-            .c-row
-              .c-col-sm-12
-                .c-form-group
+          .card-body
+            .row
+              .col-sm-12
+                .form-group
                   label(for='name') Name
-                  input#name.c-form-control(type='text', placeholder='Enter your name')
-            // /.c-row
-            .c-row
-              .c-col-sm-12
-                .c-form-group
+                  input#name.form-control(type='text', placeholder='Enter your name')
+            // /.row
+            .row
+              .col-sm-12
+                .form-group
                   label(for='ccnumber') Credit Card Number
-                  input#ccnumber.c-form-control(type='text', placeholder='0000 0000 0000 0000')
-            // /.c-row
-            .c-row
-              .c-form-group.c-col-sm-4
+                  input#ccnumber.form-control(type='text', placeholder='0000 0000 0000 0000')
+            // /.row
+            .row
+              .form-group.col-sm-4
                 label(for='ccmonth') Month
-                select#ccmonth.c-form-control
+                select#ccmonth.form-control
                   option 1
                   option 2
                   option 3
@@ -37,9 +37,9 @@ block view
                   option 10
                   option 11
                   option 12
-              .c-form-group.c-col-sm-4
+              .form-group.col-sm-4
                 label(for='ccyear') Year
-                select#ccyear.c-form-control
+                select#ccyear.form-control
                   option 2014
                   option 2015
                   option 2016
@@ -52,116 +52,116 @@ block view
                   option 2023
                   option 2024
                   option 2025
-              .c-col-sm-4
-                .c-form-group
+              .col-sm-4
+                .form-group
                   label(for='cvv') CVV/CVC
-                  input#cvv.c-form-control(type='text', placeholder='123')
-            // /.c-row
-      // /.c-col
-      .c-col-sm-6
-        .c-card
-          .c-card-header
+                  input#cvv.form-control(type='text', placeholder='123')
+            // /.row
+      // /.col
+      .col-sm-6
+        .card
+          .card-header
             strong Company
             small Form
-          .c-card-body
-            .c-form-group
+          .card-body
+            .form-group
               label(for='company') Company
-              input#company.c-form-control(type='text', placeholder='Enter your company name')
-            .c-form-group
+              input#company.form-control(type='text', placeholder='Enter your company name')
+            .form-group
               label(for='vat') VAT
-              input#vat.c-form-control(type='text', placeholder='PL1234567890')
-            .c-form-group
+              input#vat.form-control(type='text', placeholder='PL1234567890')
+            .form-group
               label(for='street') Street
-              input#street.c-form-control(type='text', placeholder='Enter street name')
-            .c-row
-              .c-form-group.c-col-sm-8
+              input#street.form-control(type='text', placeholder='Enter street name')
+            .row
+              .form-group.col-sm-8
                 label(for='city') City
-                input#city.c-form-control(type='text', placeholder='Enter your city')
-              .c-form-group.c-col-sm-4
+                input#city.form-control(type='text', placeholder='Enter your city')
+              .form-group.col-sm-4
                 label(for='postal-code') Postal Code
-                input#postal-code.c-form-control(type='text', placeholder='Postal Code')
-            // /.c-row
-            .c-form-group
+                input#postal-code.form-control(type='text', placeholder='Postal Code')
+            // /.row
+            .form-group
               label(for='country') Country
-              input#country.c-form-control(type='text', placeholder='Country name')
-      // /.c-col
-    // /.c-row
-    .c-row
-      .c-col-md-6
-        .c-card
-          .c-card-header
+              input#country.form-control(type='text', placeholder='Country name')
+      // /.col
+    // /.row
+    .row
+      .col-md-6
+        .card
+          .card-header
             strong Basic Form
             |           Elements
-          .c-card-body
+          .card-body
             form.form-horizontal(action='', method='post', enctype='multipart/form-data')
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label Static
-                .c-col-md-9
-                  p.c-form-control-static Username
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='text-input') Text Input
-                .c-col-md-9
-                  input#text-input.c-form-control(type='text', name='text-input', placeholder='Text')
+              .form-group.row
+                label.col-md-3.col-form-label Static
+                .col-md-9
+                  p.form-control-static Username
+              .form-group.row
+                label.col-md-3.col-form-label(for='text-input') Text Input
+                .col-md-9
+                  input#text-input.form-control(type='text', name='text-input', placeholder='Text')
                   span.help-block This is a help text
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='email-input') Email Input
-                .c-col-md-9
-                  input#email-input.c-form-control(type='email', name='email-input', placeholder='Enter Email', autocomplete='email')
+              .form-group.row
+                label.col-md-3.col-form-label(for='email-input') Email Input
+                .col-md-9
+                  input#email-input.form-control(type='email', name='email-input', placeholder='Enter Email', autocomplete='email')
                   span.help-block Please enter your email
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='password-input') Password
-                .c-col-md-9
-                  input#password-input.c-form-control(type='password', name='password-input', placeholder='Password', autocomplete='new-password')
+              .form-group.row
+                label.col-md-3.col-form-label(for='password-input') Password
+                .col-md-9
+                  input#password-input.form-control(type='password', name='password-input', placeholder='Password', autocomplete='new-password')
                   span.help-block Please enter a complex password
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='date-input') Date Input
-                .c-col-md-9
-                  input#date-input.c-form-control(type='date', name='date-input', placeholder='date')
+              .form-group.row
+                label.col-md-3.col-form-label(for='date-input') Date Input
+                .col-md-9
+                  input#date-input.form-control(type='date', name='date-input', placeholder='date')
                   span.help-block Please enter a valid date
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='disabled-input') Disabled Input
-                .c-col-md-9
-                  input#disabled-input.c-form-control(type='text', name='disabled-input', placeholder='Disabled', disabled='')
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='textarea-input') Textarea
-                .c-col-md-9
-                  textarea#textarea-input.c-form-control(name='textarea-input', rows='9', placeholder='Content..')
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='select1') Select
-                .c-col-md-9
-                  select#select1.c-form-control(name='select1')
+              .form-group.row
+                label.col-md-3.col-form-label(for='disabled-input') Disabled Input
+                .col-md-9
+                  input#disabled-input.form-control(type='text', name='disabled-input', placeholder='Disabled', disabled='')
+              .form-group.row
+                label.col-md-3.col-form-label(for='textarea-input') Textarea
+                .col-md-9
+                  textarea#textarea-input.form-control(name='textarea-input', rows='9', placeholder='Content..')
+              .form-group.row
+                label.col-md-3.col-form-label(for='select1') Select
+                .col-md-9
+                  select#select1.form-control(name='select1')
                     option(value='0') Please select
                     option(value='1') Option #1
                     option(value='2') Option #2
                     option(value='3') Option #3
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='select2') Select Large
-                .c-col-md-9
-                  select#select2.c-form-control.c-form-control-lg(name='select2')
+              .form-group.row
+                label.col-md-3.col-form-label(for='select2') Select Large
+                .col-md-9
+                  select#select2.form-control.form-control-lg(name='select2')
                     option(value='0') Please select
                     option(value='1') Option #1
                     option(value='2') Option #2
                     option(value='3') Option #3
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='select3') Select Small
-                .c-col-md-9
-                  select#select3.c-form-control.c-form-control-sm(name='select3')
+              .form-group.row
+                label.col-md-3.col-form-label(for='select3') Select Small
+                .col-md-9
+                  select#select3.form-control.form-control-sm(name='select3')
                     option(value='0') Please select
                     option(value='1') Option #1
                     option(value='2') Option #2
                     option(value='3') Option #3
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='disabledSelect') Disabled Select
-                .c-col-md-9
-                  select#disabledSelect.c-form-control(disabled='')
+              .form-group.row
+                label.col-md-3.col-form-label(for='disabledSelect') Disabled Select
+                .col-md-9
+                  select#disabledSelect.form-control(disabled='')
                     option(value='0') Please select
                     option(value='1') Option #1
                     option(value='2') Option #2
                     option(value='3') Option #3
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='multiple-select') Multiple select
-                .c-col-md-9
-                  select#multiple-select.c-form-control(name='multiple-select', size='5', multiple='')
+              .form-group.row
+                label.col-md-3.col-form-label(for='multiple-select') Multiple select
+                .col-md-9
+                  select#multiple-select.form-control(name='multiple-select', size='5', multiple='')
                     option(value='1') Option #1
                     option(value='2') Option #2
                     option(value='3') Option #3
@@ -172,599 +172,599 @@ block view
                     option(value='8') Option #8
                     option(value='9') Option #9
                     option(value='10') Option #10
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label Radios
-                .c-col-md-9.c-col-form-label
-                  .c-form-check
-                    input#radio1.c-form-check-input(type='radio', value='radio1', name='radios')
-                    label.c-form-check-label(for='radio1')
+              .form-group.row
+                label.col-md-3.col-form-label Radios
+                .col-md-9.col-form-label
+                  .form-check
+                    input#radio1.form-check-input(type='radio', value='radio1', name='radios')
+                    label.form-check-label(for='radio1')
                       | Option 1
-                  .c-form-check
-                    input#radio2.c-form-check-input(type='radio', value='radio2', name='radios')
-                    label.c-form-check-label(for='radio2')
+                  .form-check
+                    input#radio2.form-check-input(type='radio', value='radio2', name='radios')
+                    label.form-check-label(for='radio2')
                       | Option 2
-                  .c-form-check
-                    input#radio3.c-form-check-input(type='radio', value='radio2', name='radios')
-                    label.c-form-check-label(for='radio3')
+                  .form-check
+                    input#radio3.form-check-input(type='radio', value='radio2', name='radios')
+                    label.form-check-label(for='radio3')
                       | Option 3
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label Inline Radios
-                .c-col-md-9.c-col-form-label
-                  .c-form-check.c-form-check-inline.c-mr-1
-                    input#inline-radio1.c-form-check-input(type='radio', value='option1', name='inline-radios')
-                    label.c-form-check-label(for='inline-radio1') One
-                  .c-form-check.c-form-check-inline.c-mr-1
-                    input#inline-radio2.c-form-check-input(type='radio', value='option2', name='inline-radios')
-                    label.c-form-check-label(for='inline-radio2') Two
-                  .c-form-check.c-form-check-inline.c-mr-1
-                    input#inline-radio3.c-form-check-input(type='radio', value='option3', name='inline-radios')
-                    label.c-form-check-label(for='inline-radio3') Three
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label Checkboxes
-                .c-col-md-9.c-col-form-label
-                  .c-form-check.checkbox
-                    input#check1.c-form-check-input(type='checkbox', value='')
-                    label.c-form-check-label(for='check1')
+              .form-group.row
+                label.col-md-3.col-form-label Inline Radios
+                .col-md-9.col-form-label
+                  .form-check.form-check-inline.mr-1
+                    input#inline-radio1.form-check-input(type='radio', value='option1', name='inline-radios')
+                    label.form-check-label(for='inline-radio1') One
+                  .form-check.form-check-inline.mr-1
+                    input#inline-radio2.form-check-input(type='radio', value='option2', name='inline-radios')
+                    label.form-check-label(for='inline-radio2') Two
+                  .form-check.form-check-inline.mr-1
+                    input#inline-radio3.form-check-input(type='radio', value='option3', name='inline-radios')
+                    label.form-check-label(for='inline-radio3') Three
+              .form-group.row
+                label.col-md-3.col-form-label Checkboxes
+                .col-md-9.col-form-label
+                  .form-check.checkbox
+                    input#check1.form-check-input(type='checkbox', value='')
+                    label.form-check-label(for='check1')
                       | Option 1
-                  .c-form-check.checkbox
-                    input#check2.c-form-check-input(type='checkbox', value='')
-                    label.c-form-check-label(for='check2')
+                  .form-check.checkbox
+                    input#check2.form-check-input(type='checkbox', value='')
+                    label.form-check-label(for='check2')
                       | Option 2
-                  .c-form-check.checkbox
-                    input#check3.c-form-check-input(type='checkbox', value='')
-                    label.c-form-check-label(for='check3')
+                  .form-check.checkbox
+                    input#check3.form-check-input(type='checkbox', value='')
+                    label.form-check-label(for='check3')
                       | Option 3
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label Inline Checkboxes
-                .c-col-md-9.c-col-form-label
-                  .c-form-check.c-form-check-inline.c-mr-1
-                    input#inline-checkbox1.c-form-check-input(type='checkbox', value='check1')
-                    label.c-form-check-label(for='inline-checkbox1') One
-                  .c-form-check.c-form-check-inline.c-mr-1
-                    input#inline-checkbox2.c-form-check-input(type='checkbox', value='check2')
-                    label.c-form-check-label(for='inline-checkbox2') Two
-                  .c-form-check.c-form-check-inline.c-mr-1
-                    input#inline-checkbox3.c-form-check-input(type='checkbox', value='check3')
-                    label.c-form-check-label(for='inline-checkbox3') Three
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='file-input') File input
-                .c-col-md-9
+              .form-group.row
+                label.col-md-3.col-form-label Inline Checkboxes
+                .col-md-9.col-form-label
+                  .form-check.form-check-inline.mr-1
+                    input#inline-checkbox1.form-check-input(type='checkbox', value='check1')
+                    label.form-check-label(for='inline-checkbox1') One
+                  .form-check.form-check-inline.mr-1
+                    input#inline-checkbox2.form-check-input(type='checkbox', value='check2')
+                    label.form-check-label(for='inline-checkbox2') Two
+                  .form-check.form-check-inline.mr-1
+                    input#inline-checkbox3.form-check-input(type='checkbox', value='check3')
+                    label.form-check-label(for='inline-checkbox3') Three
+              .form-group.row
+                label.col-md-3.col-form-label(for='file-input') File input
+                .col-md-9
                   input#file-input(type='file', name='file-input')
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='file-multiple-input') Multiple File input
-                .c-col-md-9
+              .form-group.row
+                label.col-md-3.col-form-label(for='file-multiple-input') Multiple File input
+                .col-md-9
                   input#file-multiple-input(type='file', name='file-multiple-input', multiple='')
-          .c-card-footer
-            button.c-btn.c-btn-sm.c-btn-primary(type='submit')
+          .card-footer
+            button.btn.btn-sm.btn-primary(type='submit')
               i.fa.fa-dot-circle-o
               |  Submit
-            button.c-btn.c-btn-sm.c-btn-danger(type='reset')
+            button.btn.btn-sm.btn-danger(type='reset')
               i.fa.fa-ban
               |  Reset
-        .c-card
-          .c-card-header
+        .card
+          .card-header
             strong Inline
             |           Form
-          .c-card-body
-            form.c-form-inline(action='', method='post')
-              .c-form-group
-                label.c-mr-1(for='exampleInputName2') Name
-                input#exampleInputName2.c-form-control(type='text', placeholder='Jane Doe', autocomplete='name')
-              .c-form-group
-                label.c-mx-1(for='exampleInputEmail2') Email
-                input#exampleInputEmail2.c-form-control(type='email', placeholder='jane.doe@example.com', autocomplete='email')
-          .c-card-footer
-            button.c-btn.c-btn-sm.c-btn-primary(type='submit')
+          .card-body
+            form.form-inline(action='', method='post')
+              .form-group
+                label.mr-1(for='exampleInputName2') Name
+                input#exampleInputName2.form-control(type='text', placeholder='Jane Doe', autocomplete='name')
+              .form-group
+                label.mx-1(for='exampleInputEmail2') Email
+                input#exampleInputEmail2.form-control(type='email', placeholder='jane.doe@example.com', autocomplete='email')
+          .card-footer
+            button.btn.btn-sm.btn-primary(type='submit')
               i.fa.fa-dot-circle-o
               |  Submit
-            button.c-btn.c-btn-sm.c-btn-danger(type='reset')
+            button.btn.btn-sm.btn-danger(type='reset')
               i.fa.fa-ban
               |  Reset
-      .c-col-md-6
-        .c-card
-          .c-card-header
+      .col-md-6
+        .card
+          .card-header
             strong Horizontal
             |           Form
-          .c-card-body
+          .card-body
             form.form-horizontal(action='', method='post')
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='hf-email') Email
-                .c-col-md-9
-                  input#hf-email.c-form-control(type='email', name='hf-email', placeholder='Enter Email..', autocomplete='email')
+              .form-group.row
+                label.col-md-3.col-form-label(for='hf-email') Email
+                .col-md-9
+                  input#hf-email.form-control(type='email', name='hf-email', placeholder='Enter Email..', autocomplete='email')
                   span.help-block Please enter your email
-              .c-form-group.c-row
-                label.c-col-md-3.c-col-form-label(for='hf-password') Password
-                .c-col-md-9
-                  input#hf-password.c-form-control(type='password', name='hf-password', placeholder='Enter Password..', autocomplete='current-password')
+              .form-group.row
+                label.col-md-3.col-form-label(for='hf-password') Password
+                .col-md-9
+                  input#hf-password.form-control(type='password', name='hf-password', placeholder='Enter Password..', autocomplete='current-password')
                   span.help-block Please enter your password
-          .c-card-footer
-            button.c-btn.c-btn-sm.c-btn-primary(type='submit')
+          .card-footer
+            button.btn.btn-sm.btn-primary(type='submit')
               i.fa.fa-dot-circle-o
               |  Submit
-            button.c-btn.c-btn-sm.c-btn-danger(type='reset')
+            button.btn.btn-sm.btn-danger(type='reset')
               i.fa.fa-ban
               |  Reset
-        .c-card
-          .c-card-header
+        .card
+          .card-header
             strong Normal
             |           Form
-          .c-card-body
+          .card-body
             form(action='', method='post')
-              .c-form-group
+              .form-group
                 label(for='nf-email') Email
-                input#nf-email.c-form-control(type='email', name='nf-email', placeholder='Enter Email..', autocomplete='email')
+                input#nf-email.form-control(type='email', name='nf-email', placeholder='Enter Email..', autocomplete='email')
                 span.help-block Please enter your email
-              .c-form-group
+              .form-group
                 label(for='nf-password') Password
-                input#nf-password.c-form-control(type='password', name='nf-password', placeholder='Enter Password..', autocomplete='current-password')
+                input#nf-password.form-control(type='password', name='nf-password', placeholder='Enter Password..', autocomplete='current-password')
                 span.help-block Please enter your password
-          .c-card-footer
-            button.c-btn.c-btn-sm.c-btn-primary(type='submit')
+          .card-footer
+            button.btn.btn-sm.btn-primary(type='submit')
               i.fa.fa-dot-circle-o
               |  Submit
-            button.c-btn.c-btn-sm.c-btn-danger(type='reset')
+            button.btn.btn-sm.btn-danger(type='reset')
               i.fa.fa-ban
               |  Reset
-        .c-card
-          .c-card-header
+        .card
+          .card-header
             | Input
             strong Grid
-          .c-card-body
+          .card-body
             form.form-horizontal(action='', method='post')
-              .c-form-group.c-row
-                .c-col-sm-3
-                  input.c-form-control(type='text', placeholder='.c-col-sm-3')
-              .c-form-group.c-row
-                .c-col-sm-4
-                  input.c-form-control(type='text', placeholder='.c-col-sm-4')
-              .c-form-group.c-row
-                .c-col-sm-5
-                  input.c-form-control(type='text', placeholder='.c-col-sm-5')
-              .c-form-group.c-row
-                .c-col-sm-6
-                  input.c-form-control(type='text', placeholder='.c-col-sm-6')
-              .c-form-group.c-row
-                .c-col-sm-7
-                  input.c-form-control(type='text', placeholder='.c-col-sm-7')
-              .c-form-group.c-row
-                .c-col-sm-8
-                  input.c-form-control(type='text', placeholder='.c-col-sm-8')
-              .c-form-group.c-row
-                .c-col-sm-9
-                  input.c-form-control(type='text', placeholder='.c-col-sm-9')
-              .c-form-group.c-row
-                .c-col-sm-10
-                  input.c-form-control(type='text', placeholder='.c-col-sm-10')
-              .c-form-group.c-row
-                .c-col-sm-11
-                  input.c-form-control(type='text', placeholder='.c-col-sm-11')
-              .c-form-group.c-row
-                .c-col-sm-12
-                  input.c-form-control(type='text', placeholder='.c-col-sm-12')
-          .c-card-footer
-            button.c-btn.c-btn-sm.c-btn-primary(type='submit')
+              .form-group.row
+                .col-sm-3
+                  input.form-control(type='text', placeholder='.col-sm-3')
+              .form-group.row
+                .col-sm-4
+                  input.form-control(type='text', placeholder='.col-sm-4')
+              .form-group.row
+                .col-sm-5
+                  input.form-control(type='text', placeholder='.col-sm-5')
+              .form-group.row
+                .col-sm-6
+                  input.form-control(type='text', placeholder='.col-sm-6')
+              .form-group.row
+                .col-sm-7
+                  input.form-control(type='text', placeholder='.col-sm-7')
+              .form-group.row
+                .col-sm-8
+                  input.form-control(type='text', placeholder='.col-sm-8')
+              .form-group.row
+                .col-sm-9
+                  input.form-control(type='text', placeholder='.col-sm-9')
+              .form-group.row
+                .col-sm-10
+                  input.form-control(type='text', placeholder='.col-sm-10')
+              .form-group.row
+                .col-sm-11
+                  input.form-control(type='text', placeholder='.col-sm-11')
+              .form-group.row
+                .col-sm-12
+                  input.form-control(type='text', placeholder='.col-sm-12')
+          .card-footer
+            button.btn.btn-sm.btn-primary(type='submit')
               i.fa.fa-user
               |  Login
-            button.c-btn.c-btn-sm.c-btn-danger(type='reset')
+            button.btn.btn-sm.btn-danger(type='reset')
               i.fa.fa-ban
               |  Reset
-        .c-card
-          .c-card-header
+        .card
+          .card-header
             | Input
             strong Sizes
-          .c-card-body
+          .card-body
             form.form-horizontal(action='', method='post')
-              .c-form-group.c-row
-                label.c-col-sm-5.c-col-form-label(for='input-small') Small Input
-                .c-col-sm-6
-                  input#input-small.c-form-control.c-form-control-sm(type='text', name='input-small', placeholder='.c-form-control-sm')
-              .c-form-group.c-row
-                label.c-col-sm-5.c-col-form-label(for='input-normal') Normal Input
-                .c-col-sm-6
-                  input#input-normal.c-form-control(type='text', name='input-normal', placeholder='Normal')
-              .c-form-group.c-row
-                label.c-col-sm-5.c-col-form-label(for='input-large') Large Input
-                .c-col-sm-6
-                  input#input-large.c-form-control.c-form-control-lg(type='text', name='input-large', placeholder='.c-form-control-lg')
-          .c-card-footer
-            button.c-btn.c-btn-sm.c-btn-primary(type='submit')
+              .form-group.row
+                label.col-sm-5.col-form-label(for='input-small') Small Input
+                .col-sm-6
+                  input#input-small.form-control.form-control-sm(type='text', name='input-small', placeholder='.form-control-sm')
+              .form-group.row
+                label.col-sm-5.col-form-label(for='input-normal') Normal Input
+                .col-sm-6
+                  input#input-normal.form-control(type='text', name='input-normal', placeholder='Normal')
+              .form-group.row
+                label.col-sm-5.col-form-label(for='input-large') Large Input
+                .col-sm-6
+                  input#input-large.form-control.form-control-lg(type='text', name='input-large', placeholder='.form-control-lg')
+          .card-footer
+            button.btn.btn-sm.btn-primary(type='submit')
               i.fa.fa-dot-circle-o
               |  Submit
-            button.c-btn.c-btn-sm.c-btn-danger(type='reset')
+            button.btn.btn-sm.btn-danger(type='reset')
               i.fa.fa-ban
               |  Reset
-      // /.c-col
-    // /.c-row
-    .c-row
-      .c-col-sm-6
-        .c-card
-          .c-card-header
+      // /.col
+    // /.row
+    .row
+      .col-sm-6
+        .card
+          .card-header
             strong Validation states
             |           Form
-          .c-card-body
-            .c-form-group
+          .card-body
+            .form-group
               label.form-col-form-label(for='inputSuccess1') Input with success
-              input#inputSuccess1.c-form-control.c-is-valid(type='text')
-            .c-form-group
+              input#inputSuccess1.form-control.is-valid(type='text')
+            .form-group
               label.form-col-form-label(for='inputError1') Input with error
-              input#inputError1.c-form-control.c-is-invalid(type='text')
-              .c-invalid-feedback
+              input#inputError1.form-control.is-invalid(type='text')
+              .invalid-feedback
                 | Please provide a valid informations.
-      // /.c-col
-      .c-col-sm-6
-        .c-card
-          .c-card-header
+      // /.col
+      .col-sm-6
+        .card
+          .card-header
             strong Validation
             code was-validated
-          .c-card-body.c-was-validated
-            .c-form-group
+          .card-body.was-validated
+            .form-group
               label.form-col-form-label(for='inputSuccess2') Input with success
-              input#inputSuccess2.c-form-control.c-is-valid(type='text')
-            .c-form-group
+              input#inputSuccess2.form-control.is-valid(type='text')
+            .form-group
               label.form-col-form-label(for='inputError2') Input required
-              input#inputError2.c-form-control.c-is-invalid(type='text', required='')
-              .c-invalid-feedback
+              input#inputError2.form-control.is-invalid(type='text', required='')
+              .invalid-feedback
                 | Please provide a valid informations.
-      // /.c-col
-    // /.c-row
-    .c-row
-      .c-col-sm-4
-        .c-card
-          .c-card-header
+      // /.col
+    // /.row
+    .row
+      .col-sm-4
+        .card
+          .card-header
             strong Icon/Text
             |           Groups
-          .c-card-body
+          .card-body
             form.form-horizontal(action='', method='post')
-              .c-form-group.c-row
-                .c-col-md-12
-                  .c-input-group
-                    .c-input-group-prepend
-                      span.c-input-group-text
+              .form-group.row
+                .col-md-12
+                  .input-group
+                    .input-group-prepend
+                      span.input-group-text
                         i.fa.fa-user
-                    input#input1-group1.c-form-control(type='text', name='input1-group1', placeholder='Username', autocomplete='username')
-              .c-form-group.c-row
-                .c-col-md-12
-                  .c-input-group
-                    input#input2-group1.c-form-control(type='email', name='input2-group1', placeholder='Email', autocomplete='email')
-                    .c-input-group-append
-                      span.c-input-group-text
+                    input#input1-group1.form-control(type='text', name='input1-group1', placeholder='Username', autocomplete='username')
+              .form-group.row
+                .col-md-12
+                  .input-group
+                    input#input2-group1.form-control(type='email', name='input2-group1', placeholder='Email', autocomplete='email')
+                    .input-group-append
+                      span.input-group-text
                         i.fa.fa-envelope-o
-              .c-form-group.c-row
-                .c-col-md-12
-                  .c-input-group
-                    .c-input-group-prepend
-                      span.c-input-group-text
+              .form-group.row
+                .col-md-12
+                  .input-group
+                    .input-group-prepend
+                      span.input-group-text
                         i.fa.fa-euro
-                    input#input3-group1.c-form-control(type='text', name='input3-group1', placeholder='..')
-                    .c-input-group-append
-                      span.c-input-group-text .00
-          .c-card-footer
-            button.c-btn.c-btn-sm.c-btn-success(type='submit')
+                    input#input3-group1.form-control(type='text', name='input3-group1', placeholder='..')
+                    .input-group-append
+                      span.input-group-text .00
+          .card-footer
+            button.btn.btn-sm.btn-success(type='submit')
               i.fa.fa-dot-circle-o
               |  Submit
-            button.c-btn.c-btn-sm.c-btn-danger(type='reset')
+            button.btn.btn-sm.btn-danger(type='reset')
               i.fa.fa-ban
               |  Reset
-      .c-col-sm-4
-        .c-card
-          .c-card-header
+      .col-sm-4
+        .card
+          .card-header
             strong Buttons
             |           Groups
-          .c-card-body
+          .card-body
             form.form-horizontal(action='', method='post')
-              .c-form-group.c-row
-                .c-col-md-12
-                  .c-input-group
-                    span.c-input-group-prepend
-                      button.c-btn.c-btn-primary(type='button')
+              .form-group.row
+                .col-md-12
+                  .input-group
+                    span.input-group-prepend
+                      button.btn.btn-primary(type='button')
                         i.fa.fa-search
                         |  Search
-                    input#input1-group2.c-form-control(type='text', name='input1-group2', placeholder='Username', autocomplete='username')
-              .c-form-group.c-row
-                .c-col-md-12
-                  .c-input-group
-                    input#input2-group2.c-form-control(type='email', name='input2-group2', placeholder='Email', autocomplete='email')
-                    span.c-input-group-append
-                      button.c-btn.c-btn-primary(type='button') Submit
-              .c-form-group.c-row
-                .c-col-md-12
-                  .c-input-group
-                    span.c-input-group-prepend
-                      button.c-btn.c-btn-primary(type='button')
+                    input#input1-group2.form-control(type='text', name='input1-group2', placeholder='Username', autocomplete='username')
+              .form-group.row
+                .col-md-12
+                  .input-group
+                    input#input2-group2.form-control(type='email', name='input2-group2', placeholder='Email', autocomplete='email')
+                    span.input-group-append
+                      button.btn.btn-primary(type='button') Submit
+              .form-group.row
+                .col-md-12
+                  .input-group
+                    span.input-group-prepend
+                      button.btn.btn-primary(type='button')
                         i.fa.fa-facebook
-                    input#input3-group2.c-form-control(type='text', name='input3-group2', placeholder='Search')
-                    span.c-input-group-append
-                      button.c-btn.c-btn-primary(type='button')
+                    input#input3-group2.form-control(type='text', name='input3-group2', placeholder='Search')
+                    span.input-group-append
+                      button.btn.btn-primary(type='button')
                         i.fa.fa-twitter
-          .c-card-footer
-            button.c-btn.c-btn-sm.c-btn-success(type='submit')
+          .card-footer
+            button.btn.btn-sm.btn-success(type='submit')
               i.fa.fa-dot-circle-o
               |  Submit
-            button.c-btn.c-btn-sm.c-btn-danger(type='reset')
+            button.btn.btn-sm.btn-danger(type='reset')
               i.fa.fa-ban
               |  Reset
-      .c-col-sm-4
-        .c-card
-          .c-card-header
+      .col-sm-4
+        .card
+          .card-header
             strong Dropdowns
             |           Groups
-          .c-card-body
+          .card-body
             form.form-horizontal(action='', method='post')
-              .c-form-group.c-row
-                .c-col-md-12
-                  .c-input-group
-                    .c-input-group-prepend
-                      button.c-btn.c-btn-primary.c-dropdown-toggle(type='button', data-toggle='c-dropdown')
+              .form-group.row
+                .col-md-12
+                  .input-group
+                    .input-group-prepend
+                      button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
                         | Action
                         span.caret
-                      .c-dropdown-menu
-                        a.c-dropdown-item(href='#') Action
-                        a.c-dropdown-item(href='#') Another action
-                        a.c-dropdown-item(href='#') Something else here
-                        .c-dropdown-divider(role='separator')
-                        a.c-dropdown-item(href='#') Separated link
-                    input#input1-group3.c-form-control(type='text', name='input1-group3', placeholder='Username', autocomplete='username')
-              .c-form-group.c-row
-                .c-col-md-12
-                  .c-input-group
-                    input#input2-group3.c-form-control(type='email', name='input2-group3', placeholder='Email', autocomplete='email')
-                    .c-input-group-append
-                      button.c-btn.c-btn-primary.c-dropdown-toggle(type='button', data-toggle='c-dropdown')
+                      .dropdown-menu
+                        a.dropdown-item(href='#') Action
+                        a.dropdown-item(href='#') Another action
+                        a.dropdown-item(href='#') Something else here
+                        .dropdown-divider(role='separator')
+                        a.dropdown-item(href='#') Separated link
+                    input#input1-group3.form-control(type='text', name='input1-group3', placeholder='Username', autocomplete='username')
+              .form-group.row
+                .col-md-12
+                  .input-group
+                    input#input2-group3.form-control(type='email', name='input2-group3', placeholder='Email', autocomplete='email')
+                    .input-group-append
+                      button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
                         | Action
                         span.caret
-                      .c-dropdown-menu.c-dropdown-menu-right
-                        a.c-dropdown-item(href='#') Action
-                        a.c-dropdown-item(href='#') Another action
-                        a.c-dropdown-item(href='#') Something else here
-                        .c-dropdown-divider(role='separator')
-                        a.c-dropdown-item(href='#') Separated link
-              .c-row
-                .c-col-md-12
-                  .c-input-group
-                    .c-input-group-prepend
-                      button.c-btn.c-btn-primary(type='button') Action
-                      button.c-btn.c-btn-primary.c-dropdown-toggle.c-dropdown-toggle-split(type='button', data-toggle='c-dropdown')
+                      .dropdown-menu.dropdown-menu-right
+                        a.dropdown-item(href='#') Action
+                        a.dropdown-item(href='#') Another action
+                        a.dropdown-item(href='#') Something else here
+                        .dropdown-divider(role='separator')
+                        a.dropdown-item(href='#') Separated link
+              .row
+                .col-md-12
+                  .input-group
+                    .input-group-prepend
+                      button.btn.btn-primary(type='button') Action
+                      button.btn.btn-primary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown')
                         span.caret
-                      .c-dropdown-menu
-                        a.c-dropdown-item(href='#') Action
-                        a.c-dropdown-item(href='#') Another action
-                        a.c-dropdown-item(href='#') Something else here
-                        .c-dropdown-divider(role='separator')
-                        a.c-dropdown-item(href='#') Separated link
-                    input#input3-group3.c-form-control(type='text', name='input3-group3', placeholder='..')
-                    .c-input-group-append
-                      button.c-btn.c-btn-primary.c-dropdown-toggle(type='button', data-toggle='c-dropdown')
+                      .dropdown-menu
+                        a.dropdown-item(href='#') Action
+                        a.dropdown-item(href='#') Another action
+                        a.dropdown-item(href='#') Something else here
+                        .dropdown-divider(role='separator')
+                        a.dropdown-item(href='#') Separated link
+                    input#input3-group3.form-control(type='text', name='input3-group3', placeholder='..')
+                    .input-group-append
+                      button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
                         span.caret
-                      .c-dropdown-menu.c-dropdown-menu-right
-                        a.c-dropdown-item(href='#') Action
-                        a.c-dropdown-item(href='#') Another action
-                        a.c-dropdown-item(href='#') Something else here
-                        .c-dropdown-divider(role='separator')
-                        a.c-dropdown-item(href='#') Separated link
-          .c-card-footer
-            button.c-btn.c-btn-sm.c-btn-success(type='submit')
+                      .dropdown-menu.dropdown-menu-right
+                        a.dropdown-item(href='#') Action
+                        a.dropdown-item(href='#') Another action
+                        a.dropdown-item(href='#') Something else here
+                        .dropdown-divider(role='separator')
+                        a.dropdown-item(href='#') Separated link
+          .card-footer
+            button.btn.btn-sm.btn-success(type='submit')
               i.fa.fa-dot-circle-o
               |  Submit
-            button.c-btn.c-btn-sm.c-btn-danger(type='reset')
+            button.btn.btn-sm.btn-danger(type='reset')
               i.fa.fa-ban
               |  Reset
-    .c-row
-      .c-col-md-6
-        .c-card
-          .c-card-header
+    .row
+      .col-md-6
+        .card
+          .card-header
             | Use the grid for big devices!
             small
-              code .c-col-lg-*
-              code .c-col-md-*
-              code .c-col-sm-*
-          .c-card-body
+              code .col-lg-*
+              code .col-md-*
+              code .col-sm-*
+          .card-body
             form.form-horizontal(action='', method='post')
-              .c-form-group.c-row
-                .c-col-md-8
-                  input.c-form-control(type='text', placeholder='.c-col-md-8')
-                .c-col-md-4
-                  input.c-form-control(type='text', placeholder='.c-col-md-4')
-              .c-form-group.c-row
-                .c-col-md-7
-                  input.c-form-control(type='text', placeholder='.c-col-md-7')
-                .c-col-md-5
-                  input.c-form-control(type='text', placeholder='.c-col-md-5')
-              .c-form-group.c-row
-                .c-col-md-6
-                  input.c-form-control(type='text', placeholder='.c-col-md-6')
-                .c-col-md-6
-                  input.c-form-control(type='text', placeholder='.c-col-md-6')
-              .c-form-group.c-row
-                .c-col-md-5
-                  input.c-form-control(type='text', placeholder='.c-col-md-5')
-                .c-col-md-7
-                  input.c-form-control(type='text', placeholder='.c-col-md-7')
-              .c-form-group.c-row
-                .c-col-md-4
-                  input.c-form-control(type='text', placeholder='.c-col-md-4')
-                .c-col-md-8
-                  input.c-form-control(type='text', placeholder='.c-col-md-8')
-          .c-card-footer
-            button.c-btn.c-btn-sm.c-btn-primary(type='submit') Action
-            button.c-btn.c-btn-sm.c-btn-danger(type='button') Action
-            button.c-btn.c-btn-sm.c-btn-warning(type='button') Action
-            button.c-btn.c-btn-sm.c-btn-info(type='button') Action
-            button.c-btn.c-btn-sm.c-btn-success(type='button') Action
-      .c-col-md-6
-        .c-card
-          .c-card-header
+              .form-group.row
+                .col-md-8
+                  input.form-control(type='text', placeholder='.col-md-8')
+                .col-md-4
+                  input.form-control(type='text', placeholder='.col-md-4')
+              .form-group.row
+                .col-md-7
+                  input.form-control(type='text', placeholder='.col-md-7')
+                .col-md-5
+                  input.form-control(type='text', placeholder='.col-md-5')
+              .form-group.row
+                .col-md-6
+                  input.form-control(type='text', placeholder='.col-md-6')
+                .col-md-6
+                  input.form-control(type='text', placeholder='.col-md-6')
+              .form-group.row
+                .col-md-5
+                  input.form-control(type='text', placeholder='.col-md-5')
+                .col-md-7
+                  input.form-control(type='text', placeholder='.col-md-7')
+              .form-group.row
+                .col-md-4
+                  input.form-control(type='text', placeholder='.col-md-4')
+                .col-md-8
+                  input.form-control(type='text', placeholder='.col-md-8')
+          .card-footer
+            button.btn.btn-sm.btn-primary(type='submit') Action
+            button.btn.btn-sm.btn-danger(type='button') Action
+            button.btn.btn-sm.btn-warning(type='button') Action
+            button.btn.btn-sm.btn-info(type='button') Action
+            button.btn.btn-sm.btn-success(type='button') Action
+      .col-md-6
+        .card
+          .card-header
             | Input Grid for small devices!
             small
-              code .c-col-*
-          .c-card-body
+              code .col-*
+          .card-body
             form.form-horizontal(action='', method='post')
-              .c-form-group.c-row
-                .c-col-4
-                  input.c-form-control(type='text', placeholder='.c-col-4')
-                .c-col-8
-                  input.c-form-control(type='text', placeholder='.c-col-8')
-              .c-form-group.c-row
-                .c-col-5
-                  input.c-form-control(type='text', placeholder='.c-col-5')
-                .c-col-7
-                  input.c-form-control(type='text', placeholder='.c-col-7')
-              .c-form-group.c-row
-                .c-col-6
-                  input.c-form-control(type='text', placeholder='.c-col-6')
-                .c-col-6
-                  input.c-form-control(type='text', placeholder='.c-col-6')
-              .c-form-group.c-row
-                .c-col-7
-                  input.c-form-control(type='text', placeholder='.c-col-5')
-                .c-col-5
-                  input.c-form-control(type='text', placeholder='.c-col-5')
-              .c-form-group.c-row
-                .c-col-8
-                  input.c-form-control(type='text', placeholder='.c-col-8')
-                .c-col-4
-                  input.c-form-control(type='text', placeholder='.c-col-4')
-          .c-card-footer
-            button.c-btn.c-btn-sm.c-btn-primary(type='submit') Action
-            button.c-btn.c-btn-sm.c-btn-danger(type='button') Action
-            button.c-btn.c-btn-sm.c-btn-warning(type='button') Action
-            button.c-btn.c-btn-sm.c-btn-info(type='button') Action
-            button.c-btn.c-btn-sm.c-btn-success(type='button') Action
-    .c-row
-      .c-col-sm-4
-        .c-card
-          .c-card-header
+              .form-group.row
+                .col-4
+                  input.form-control(type='text', placeholder='.col-4')
+                .col-8
+                  input.form-control(type='text', placeholder='.col-8')
+              .form-group.row
+                .col-5
+                  input.form-control(type='text', placeholder='.col-5')
+                .col-7
+                  input.form-control(type='text', placeholder='.col-7')
+              .form-group.row
+                .col-6
+                  input.form-control(type='text', placeholder='.col-6')
+                .col-6
+                  input.form-control(type='text', placeholder='.col-6')
+              .form-group.row
+                .col-7
+                  input.form-control(type='text', placeholder='.col-5')
+                .col-5
+                  input.form-control(type='text', placeholder='.col-5')
+              .form-group.row
+                .col-8
+                  input.form-control(type='text', placeholder='.col-8')
+                .col-4
+                  input.form-control(type='text', placeholder='.col-4')
+          .card-footer
+            button.btn.btn-sm.btn-primary(type='submit') Action
+            button.btn.btn-sm.btn-danger(type='button') Action
+            button.btn.btn-sm.btn-warning(type='button') Action
+            button.btn.btn-sm.btn-info(type='button') Action
+            button.btn.btn-sm.btn-success(type='button') Action
+    .row
+      .col-sm-4
+        .card
+          .card-header
             | Example Form
-          .c-card-body
+          .card-body
             form(action='', method='post')
-              .c-form-group
-                .c-input-group
-                  .c-input-group-prepend
-                    span.c-input-group-text Username
-                  input#username3.c-form-control(type='text', name='username3', autocomplete='username')
-                  .c-input-group-append
-                    span.c-input-group-text
+              .form-group
+                .input-group
+                  .input-group-prepend
+                    span.input-group-text Username
+                  input#username3.form-control(type='text', name='username3', autocomplete='username')
+                  .input-group-append
+                    span.input-group-text
                       i.fa.fa-user
-              .c-form-group
-                .c-input-group
-                  .c-input-group-prepend
-                    span.c-input-group-text Email
-                  input#email3.c-form-control(type='email', name='email3', autocomplete='email')
-                  .c-input-group-append
-                    span.c-input-group-text
+              .form-group
+                .input-group
+                  .input-group-prepend
+                    span.input-group-text Email
+                  input#email3.form-control(type='email', name='email3', autocomplete='email')
+                  .input-group-append
+                    span.input-group-text
                       i.fa.fa-envelope
-              .c-form-group
-                .c-input-group
-                  .c-input-group-prepend
-                    span.c-input-group-text Password
-                  input#password3.c-form-control(type='password', name='password3', autocomplete='new-password')
-                  .c-input-group-append
-                    span.c-input-group-text
+              .form-group
+                .input-group
+                  .input-group-prepend
+                    span.input-group-text Password
+                  input#password3.form-control(type='password', name='password3', autocomplete='new-password')
+                  .input-group-append
+                    span.input-group-text
                       i.fa.fa-asterisk
-              .c-form-group.form-actions
-                button.c-btn.c-btn-sm.c-btn-primary(type='submit') Submit
-      .c-col-sm-4
-        .c-card
-          .c-card-header
+              .form-group.form-actions
+                button.btn.btn-sm.btn-primary(type='submit') Submit
+      .col-sm-4
+        .card
+          .card-header
             | Example Form
-          .c-card-body
+          .card-body
             form(action='', method='post')
-              .c-form-group
-                .c-input-group
-                  input#username2.c-form-control(type='text', name='username2', placeholder='Username', autocomplete='username')
-                  .c-input-group-append
-                    span.c-input-group-text
+              .form-group
+                .input-group
+                  input#username2.form-control(type='text', name='username2', placeholder='Username', autocomplete='username')
+                  .input-group-append
+                    span.input-group-text
                       i.fa.fa-user
-              .c-form-group
-                .c-input-group
-                  input#email2.c-form-control(type='email', name='email2', placeholder='Email', autocomplete='email')
-                  .c-input-group-append
-                    span.c-input-group-text
+              .form-group
+                .input-group
+                  input#email2.form-control(type='email', name='email2', placeholder='Email', autocomplete='email')
+                  .input-group-append
+                    span.input-group-text
                       i.fa.fa-envelope
-              .c-form-group
-                .c-input-group
-                  input#password2.c-form-control(type='password', name='password2', placeholder='Password', autocomplete='new-password')
-                  .c-input-group-append
-                    span.c-input-group-text
+              .form-group
+                .input-group
+                  input#password2.form-control(type='password', name='password2', placeholder='Password', autocomplete='new-password')
+                  .input-group-append
+                    span.input-group-text
                       i.fa.fa-asterisk
-              .c-form-group.form-actions
-                button.c-btn.c-btn-sm.c-btn-secondary(type='submit') Submit
-      .c-col-sm-4
-        .c-card
-          .c-card-header
+              .form-group.form-actions
+                button.btn.btn-sm.btn-secondary(type='submit') Submit
+      .col-sm-4
+        .card
+          .card-header
             | Example Form
-          .c-card-body
+          .card-body
             form(action='', method='post')
-              .c-form-group
-                .c-input-group
-                  .c-input-group-prepend
-                    span.c-input-group-text
+              .form-group
+                .input-group
+                  .input-group-prepend
+                    span.input-group-text
                       i.fa.fa-user
-                  input#username.c-form-control(type='text', name='username', placeholder='Username', autocomplete='username')
-              .c-form-group
-                .c-input-group
-                  .c-input-group-prepend
-                    span.c-input-group-text
+                  input#username.form-control(type='text', name='username', placeholder='Username', autocomplete='username')
+              .form-group
+                .input-group
+                  .input-group-prepend
+                    span.input-group-text
                       i.fa.fa-envelope
-                  input#email.c-form-control(type='email', name='email', placeholder='Email', autocomplete='email')
-              .c-form-group
-                .c-input-group
-                  .c-input-group-prepend
-                    span.c-input-group-text
+                  input#email.form-control(type='email', name='email', placeholder='Email', autocomplete='email')
+              .form-group
+                .input-group
+                  .input-group-prepend
+                    span.input-group-text
                       i.fa.fa-asterisk
-                  input#password.c-form-control(type='password', name='password', placeholder='Password', autocomplete='new-password')
-              .c-form-group.form-actions
-                button.c-btn.c-btn-sm.c-btn-success(type='submit') Submit
-    // /.c-row
-    .c-row
-      .c-col-lg-12
-        .c-card
-          .c-card-header
+                  input#password.form-control(type='password', name='password', placeholder='Password', autocomplete='new-password')
+              .form-group.form-actions
+                button.btn.btn-sm.btn-success(type='submit') Submit
+    // /.row
+    .row
+      .col-lg-12
+        .card
+          .card-header
             i.fa.fa-edit
             | Form Elements
-          .c-card-body
+          .card-body
             form.form-horizontal
-              .c-form-group
-                label.c-col-form-label(for='prependedInput') Prepended text
+              .form-group
+                label.col-form-label(for='prependedInput') Prepended text
                 .controls
-                  .input-prepend.c-input-group
-                    .c-input-group-prepend
-                      span.c-input-group-text @
-                    input#prependedInput.c-form-control(size='16', type='text')
+                  .input-prepend.input-group
+                    .input-group-prepend
+                      span.input-group-text @
+                    input#prependedInput.form-control(size='16', type='text')
                   p.help-block Here's some help text
-              .c-form-group
-                label.c-col-form-label(for='appendedInput') Appended text
+              .form-group
+                label.col-form-label(for='appendedInput') Appended text
                 .controls
-                  .c-input-group
-                    input#appendedInput.c-form-control(size='16', type='text')
-                    .c-input-group-append
-                      span.c-input-group-text .00
+                  .input-group
+                    input#appendedInput.form-control(size='16', type='text')
+                    .input-group-append
+                      span.input-group-text .00
                   span.help-block Here's more help text
-              .c-form-group
-                label.c-col-form-label(for='appendedPrependedInput') Append and prepend
+              .form-group
+                label.col-form-label(for='appendedPrependedInput') Append and prepend
                 .controls
-                  .input-prepend.c-input-group
-                    .c-input-group-prepend
-                      span.c-input-group-text $
-                    input#appendedPrependedInput.c-form-control(size='16', type='text')
-                    .c-input-group-append
-                      span.c-input-group-text .00
-              .c-form-group
-                label.c-col-form-label(for='appendedInputButton') Append with button
+                  .input-prepend.input-group
+                    .input-group-prepend
+                      span.input-group-text $
+                    input#appendedPrependedInput.form-control(size='16', type='text')
+                    .input-group-append
+                      span.input-group-text .00
+              .form-group
+                label.col-form-label(for='appendedInputButton') Append with button
                 .controls
-                  .c-input-group
-                    input#appendedInputButton.c-form-control(size='16', type='text')
-                    span.c-input-group-append
-                      button.c-btn.c-btn-secondary(type='button') Go!
-              .c-form-group
-                label.c-col-form-label(for='appendedInputButtons') Two-button append
+                  .input-group
+                    input#appendedInputButton.form-control(size='16', type='text')
+                    span.input-group-append
+                      button.btn.btn-secondary(type='button') Go!
+              .form-group
+                label.col-form-label(for='appendedInputButtons') Two-button append
                 .controls
-                  .c-input-group
-                    input#appendedInputButtons.c-form-control(size='16', type='text')
-                    span.c-input-group-append
-                      button.c-btn.c-btn-secondary(type='button') Search
-                      button.c-btn.c-btn-secondary(type='button') Options
+                  .input-group
+                    input#appendedInputButtons.form-control(size='16', type='text')
+                    span.input-group-append
+                      button.btn.btn-secondary(type='button') Search
+                      button.btn.btn-secondary(type='button') Options
               .form-actions
-                button.c-btn.c-btn-primary(type='submit') Save changes
-                button.c-btn.c-btn-secondary(type='button') Cancel
-      // /.c-col
-    // /.c-row
+                button.btn.btn-primary(type='submit') Save changes
+                button.btn.btn-secondary(type='button') Cancel
+      // /.col
+    // /.row

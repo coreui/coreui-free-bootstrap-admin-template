@@ -5,6 +5,6 @@
  * --------------------------------------------------------------------------
  */
 
-document.querySelectorAll('[data-toggle="c-tooltip"]').forEach((element) => {
+document.querySelectorAll('[data-toggle="tooltip"]').forEach((element) => {
   new coreui.Tooltip(element)
 })
