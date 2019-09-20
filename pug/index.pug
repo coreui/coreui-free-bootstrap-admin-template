@@ -18,7 +18,8 @@ block view
           .card-body.pb-0
             .btn-group.float-right
               button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                img.c-icon(src="assets/icons/settings.svg" alt="CoreUI Icons Settings")
+                svg.c-icon
+                  use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
               .dropdown-menu.dropdown-menu-right
                 a.dropdown-item(href='#') Action
                 a.dropdown-item(href='#') Another action
@@ -32,7 +33,8 @@ block view
         .card.text-white.bg-info
           .card-body.pb-0
             button.btn.btn-transparent.p-0.float-right(type='button')
-              img.c-icon(src="assets/icons/location-pin.svg" alt="CoreUI Icons Location Pin")
+              svg.c-icon
+                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-location-pin")
             .text-value-lg 9.823
             div Members online
           .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
@@ -43,7 +45,8 @@ block view
           .card-body.pb-0
             .btn-group.float-right
               button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                img.c-icon(src="assets/icons/settings.svg" alt="CoreUI Icons Settings")
+                svg.c-icon
+                  use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
               .dropdown-menu.dropdown-menu-right
                 a.dropdown-item(href='#') Action
                 a.dropdown-item(href='#') Another action
@@ -58,7 +61,8 @@ block view
           .card-body.pb-0
             .btn-group.float-right
               button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                img.c-icon(src="assets/icons/settings.svg" alt="CoreUI Icons Settings")
+                svg.c-icon
+                  use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
               .dropdown-menu.dropdown-menu-right
                 a.dropdown-item(href='#') Action
                 a.dropdown-item(href='#') Another action
@@ -78,7 +82,8 @@ block view
           // /.col
           .col-sm-7.d-none.d-md-block
             button.btn.btn-primary.float-right(type='button')
-              img.c-icon(src="assets/icons/cloud-download.svg" alt="CoreUI Icons Cloud Download")
+              svg.c-icon
+                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-cloud-download")
             .btn-group.btn-group-toggle.float-right.mr-3(data-toggle='buttons')
               label.btn.btn-outline-secondary
                 input#option1(type='radio', name='options', autocomplete='off')
@@ -125,7 +130,8 @@ block view
       .col-sm-6.col-lg-4
         .card
           .card-header.bg-facebook.content-center
-            img.c-icon.c-icon-3xl.text-white.my-4(src="assets/icons/brands/facebook-f.svg" alt="CoreUI Icons Social Facebook")
+            svg.c-icon.c-icon-3xl.text-white.my-4
+              use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#facebook-f")
             .c-chart-wrapper
               canvas#social-box-chart-1(height='90')
           .card-body.row.text-center
@@ -140,7 +146,8 @@ block view
       .col-sm-6.col-lg-4
         .card
           .card-header.bg-twitter.content-center
-            img.c-icon.c-icon-3xl.text-white.my-4(src="assets/icons/brands/twitter.svg" alt="CoreUI Icons Social Twitter")
+            svg.c-icon.c-icon-3xl.text-white.my-4
+              use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#twitter")
             .c-chart-wrapper
               canvas#social-box-chart-2(height='90')
           .card-body.row.text-center
@@ -155,7 +162,8 @@ block view
       .col-sm-6.col-lg-4
         .card
           .card-header.bg-linkedin.content-center
-            img.c-icon.c-icon-3xl.text-white.my-4(src="assets/icons/brands/linkedin.svg" alt="CoreUI Icons Social LinkedIn")
+            svg.c-icon.c-icon-3xl.text-white.my-4
+              use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#linkedin")
             .c-chart-wrapper
               canvas#social-box-chart-3(height='90')
           .card-body.row.text-center
@@ -177,12 +185,12 @@ block view
             .row
               .col-sm-6
                 .row
-                  .col-sm-6
+                  .col-6
                     .c-callout.c-callout-info
                       small.text-muted New Clients
                       div.text-value-lg 9,123
                   // /.col
-                  .col-sm-6
+                  .col-6
                     .c-callout.c-callout-danger
                       small.text-muted Recuring Clients
                       div.text-value-lg 22,643
@@ -255,12 +263,12 @@ block view
               // /.col
               .col-sm-6
                 .row
-                  .col-sm-6
+                  .col-6
                     .c-callout.c-callout-warning
                       small.text-muted Pageviews
                       div.text-value-lg 78,623
                   // /.col
-                  .col-sm-6
+                  .col-6
                     .c-callout.c-callout-success
                       small.text-muted Organic
                       div.text-value-lg 49,123
@@ -269,7 +277,8 @@ block view
                 hr.mt-0
                 .progress-group
                   .progress-group-header
-                    img.c-icon.progress-group-icon(src="assets/icons/user.svg" alt="CoreUI Icons User")
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user")
                     div Male
                     .ml-auto.font-weight-bold 43%
                   .progress-group-bars
@@ -277,7 +286,8 @@ block view
                       .progress-bar.bg-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
                 .progress-group.mb-5
                   .progress-group-header
-                    img.c-icon.progress-group-icon(src="assets/icons/user-female.svg" alt="CoreUI Icons Female")
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user-female")
                     div Female
                     .ml-auto.font-weight-bold 37%
                   .progress-group-bars
@@ -285,7 +295,8 @@ block view
                       .progress-bar.bg-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
                 .progress-group
                   .progress-group-header.align-items-end
-                    img.c-icon.progress-group-icon(src="assets/icons/globe-alt.svg" alt="CoreUI Icons Globe")
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-globe-alt")
                     div Organic Search
                     .ml-auto.font-weight-bold.mr-2 191.235
                     .text-muted.small (56%)
@@ -294,7 +305,8 @@ block view
                       .progress-bar.bg-success(role='progressbar', style='width: 56%', aria-valuenow='56', aria-valuemin='0', aria-valuemax='100')
                 .progress-group
                   .progress-group-header.align-items-end
-                    img.c-icon.progress-group-icon(src="assets/icons/facebook.svg" alt="CoreUI Icons Facebook")
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-facebook")
                     div Facebook
                     .ml-auto.font-weight-bold.mr-2 51.223
                     .text-muted.small (15%)
@@ -303,7 +315,8 @@ block view
                       .progress-bar.bg-success(role='progressbar', style='width: 15%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
                 .progress-group
                   .progress-group-header.align-items-end
-                    img.c-icon.progress-group-icon(src="assets/icons/twitter.svg" alt="CoreUI Icons Twitter")
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-twitter")
                     div Twitter
                     .ml-auto.font-weight-bold.mr-2 37.564
                     .text-muted.small (11%)
@@ -312,7 +325,8 @@ block view
                       .progress-bar.bg-success(role='progressbar', style='width: 11%', aria-valuenow='11', aria-valuemin='0', aria-valuemax='100')
                 .progress-group
                   .progress-group-header.align-items-end
-                    img.c-icon.progress-group-icon(src="assets/icons/linkedin.svg" alt="CoreUI Icons Linkedin")
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-linkedin")
                     div LinkedIn
                     .ml-auto.font-weight-bold.mr-2 27.319
                     .text-muted.small (8%)
@@ -326,7 +340,8 @@ block view
               thead.thead-light
                 tr
                   th.text-center
-                    img.c-icon(src="assets/icons/people.svg" alt="CoreUI Icons People")
+                    svg.c-icon
+                      use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-people")
                   th User
                   th.text-center Country
                   th Usage
@@ -336,8 +351,8 @@ block view
                 tr
                   td.text-center
                     .c-avatar
-                      img.c-avatar-img(src='assets/img/avatars/1.jpg', alt='admin@bootstrapmaster.com')
-                      span.c-avatar-status.badge-success
+                      img.c-avatar-img(src='assets/img/avatars/1.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-success
                   td
                     div Yiorgos Avraamu
                     .small.text-muted
@@ -354,15 +369,16 @@ block view
                     .progress.progress-xs
                       .progress-bar.bg-success(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    img.c-icon.c-icon-xl(src="assets/icons/brands/cc-mastercard.svg" )
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#cc-mastercard")
                   td
                     .small.text-muted Last login
                     strong 10 sec ago
                 tr
                   td.text-center
                     .c-avatar
-                      img.c-avatar-img(src='assets/img/avatars/2.jpg', alt='admin@bootstrapmaster.com')
-                      span.c-avatar-status.badge-danger
+                      img.c-avatar-img(src='assets/img/avatars/2.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-danger
                   td
                     div Avram Tarasios
                     .small.text-muted
@@ -379,15 +395,16 @@ block view
                     .progress.progress-xs
                       .progress-bar.bg-info(role='progressbar', style='width: 10%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    img.c-icon.c-icon-xl(src="assets/icons/brands/cc-visa.svg" )
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#cc-visa")
                   td
                     .small.text-muted Last login
                     strong 5 minutes ago
                 tr
                   td.text-center
                     .c-avatar
-                      img.c-avatar-img(src='assets/img/avatars/3.jpg', alt='admin@bootstrapmaster.com')
-                      span.c-avatar-status.badge-warning
+                      img.c-avatar-img(src='assets/img/avatars/3.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-warning
                   td
                     div Quintin Ed
                     .small.text-muted
@@ -404,15 +421,16 @@ block view
                     .progress.progress-xs
                       .progress-bar.bg-warning(role='progressbar', style='width: 74%', aria-valuenow='74', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    img.c-icon.c-icon-xl(src="assets/icons/brands/cc-stripe.svg" )
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#cc-stripe")
                   td
                     .small.text-muted Last login
                     strong 1 hour ago
                 tr
                   td.text-center
                     .c-avatar
-                      img.c-avatar-img(src='assets/img/avatars/4.jpg', alt='admin@bootstrapmaster.com')
-                      span.c-avatar-status.badge-secondary
+                      img.c-avatar-img(src='assets/img/avatars/4.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-secondary
                   td
                     div Enéas Kwadwo
                     .small.text-muted
@@ -429,15 +447,16 @@ block view
                     .progress.progress-xs
                       .progress-bar.bg-danger(role='progressbar', style='width: 98%', aria-valuenow='98', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    img.c-icon.c-icon-xl(src="assets/icons/brands/cc-paypal.svg" )
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#cc-paypal")
                   td
                     .small.text-muted Last login
                     strong Last month
                 tr
                   td.text-center
                     .c-avatar
-                      img.c-avatar-img(src='assets/img/avatars/5.jpg', alt='admin@bootstrapmaster.com')
-                      span.c-avatar-status.badge-success
+                      img.c-avatar-img(src='assets/img/avatars/5.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-success
                   td
                     div Agapetus Tadeáš
                     .small.text-muted
@@ -454,15 +473,16 @@ block view
                     .progress.progress-xs
                       .progress-bar.bg-info(role='progressbar', style='width: 22%', aria-valuenow='22', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    img.c-icon.c-icon-xl(src="assets/icons/brands/cc-apple-pay.svg" )
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#cc-apple-pay")
                   td
                     .small.text-muted Last login
                     strong Last week
                 tr
                   td.text-center
                     .c-avatar
-                      img.c-avatar-img(src='assets/img/avatars/6.jpg', alt='admin@bootstrapmaster.com')
-                      span.c-avatar-status.badge-danger
+                      img.c-avatar-img(src='assets/img/avatars/6.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-danger
                   td
                     div Friderik Dávid
                     .small.text-muted
@@ -479,7 +499,8 @@ block view
                     .progress.progress-xs
                       .progress-bar.bg-success(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    img.c-icon.c-icon-xl(src="assets/icons/brands/cc-amex.svg" )
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#cc-amex")
                   td
                     .small.text-muted Last login
                     strong Yesterday

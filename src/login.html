@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v3.0.0-alpha.0
+* @version v3.0.0-alpha.1
 * @link https://coreui.io
-* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Copyright (c) 2019 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
 -->
 
@@ -55,7 +55,7 @@
       gtag('config', 'UA-118965717-5');
     </script>
   </head>
-  <body class="c-app c-default-layout flex-row align-items-center">
+  <body class="c-app flex-row align-items-center">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8">
@@ -65,11 +65,17 @@
                 <h1>Login</h1>
                 <p class="text-muted">Sign In to your account</p>
                 <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text"><img class="c-icon" src="assets/icons/user.svg" width="16" height="16" alt="CoreUI Icons User"></span></div>
+                  <div class="input-group-prepend"><span class="input-group-text">
+                      <svg class="c-icon">
+                        <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user"></use>
+                      </svg></span></div>
                   <input class="form-control" type="text" placeholder="Username">
                 </div>
                 <div class="input-group mb-4">
-                  <div class="input-group-prepend"><span class="input-group-text"><img class="c-icon" src="assets/icons/lock-locked.svg" width="16" height="16" alt="CoreUI Icons Lock Locked"></span></div>
+                  <div class="input-group-prepend"><span class="input-group-text">
+                      <svg class="c-icon">
+                        <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-lock-locked"></use>
+                      </svg></span></div>
                   <input class="form-control" type="password" placeholder="Password">
                 </div>
                 <div class="row">
@@ -87,7 +93,7 @@
                 <div>
                   <h2>Sign up</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <button class="btn btn-primary active mt-3" type="button">Register Now!</button>
+                  <button class="btn btn-lg btn-outline-light mt-3" type="button">Register Now!</button>
                 </div>
               </div>
             </div>

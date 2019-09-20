@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v3.0.0-alpha.0
+* @version v3.0.0-alpha.1
 * @link https://coreui.io
-* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Copyright (c) 2019 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
 -->
 
@@ -55,37 +55,29 @@
       gtag('config', 'UA-118965717-5');
     </script>
   </head>
-  <body class="c-app c-default-layout">
-    <header class="c-header c-header-light c-header-fixed">
-      <button class="c-header-toggler c-class-toggler d-lg-none mr-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button><a class="c-header-brand c-header-brand-md-down-centered" href="#"><img class="c-header-brand-full" src="assets/brand/coreui-base.svg" width="97" height="46" alt="CoreUI Logo"><img class="c-header-brand-minimized" src="assets/brand/coreui-signet.svg" width="46" height="46" alt="CoreUI Logo"></a>
-      <button class="c-header-toggler c-class-toggler d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true"><span class="c-header-toggler-icon"></span></button>
-      <ul class="c-header-nav d-md-down-none">
-        <li class="c-nav-item px-3"><a class="c-nav-link" href="#">Dashboard</a></li>
-        <li class="c-nav-item px-3"><a class="c-nav-link" href="#">Users</a></li>
-        <li class="c-nav-item px-3"><a class="c-nav-link" href="#">Settings</a></li>
-      </ul>
-      <ul class="c-nav c-header-nav ml-auto">
-        <li class="c-nav-item d-md-down-none mx-2"><a class="c-nav-link" href="#"><img class="c-icon" src="assets/icons/bell.svg" alt="CoreUI Icons Bell"><span class="badge badge-pill badge-danger">5</span></a></li>
-        <li class="c-nav-item d-md-down-none mx-2"><a class="c-nav-link" href="#"><img class="c-icon" src="assets/icons/list-rich.svg" alt="CoreUI Icons List Rich"></a></li>
-        <li class="c-nav-item d-md-down-none mx-2"><a class="c-nav-link" href="#"><img class="c-icon" src="assets/icons/location-pin.svg" alt="CoreUI Icons Location Pin"></a></li>
-        <li class="c-nav-item dropdown"><a class="c-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></a>
-          <div class="dropdown-menu dropdown-menu-right pt-0">
-            <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/bell.svg" alt="CoreUI Icons Bell"> Updates<span class="badge badge-info ml-auto">42</span></a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/envelope-open.svg" alt="CorseUI Icons Envelope Open"> Messages<span class="badge badge-success ml-auto">42</span></a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/task.svg" alt="CoreUI Icons Task"> Tasks<span class="badge badge-danger ml-auto">42</span></a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/comment-square.svg" alt="CoreUI Icons Comment Square"> Comments<span class="badge badge-warning ml-auto">42</span></a>
-            <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/user.svg" alt="CoreUI Icons User"> Profile</a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/settings.svg" alt="CoreUI Icons Settings"> Settings</a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/credit-card.svg" alt="CoreUI Icons Credit Card"> Payments<span class="badge badge-secondary ml-auto">42</span></a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/file.svg" alt="CoreUI Icons File"> Projects<span class="badge badge-primary ml-auto">42</span></a>
-            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/lock-locked.svg" alt="CoreUI Icons Lock Locked"> Lock Account</a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/account-logout.svg" alt="CoreUI Icons Account Logout"> Logout</a>
-          </div>
-        </li>
-      </ul>
-    </header>
+  <body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+      <div class="c-sidebar-brand"><img class="c-sidebar-brand-full" src="assets/brand/coreui-base-white.svg" width="118" height="46" alt="CoreUI Logo"><img class="c-sidebar-brand-minimized" src="assets/brand/coreui-signet-white.svg" width="118" height="46" alt="CoreUI Logo"></div>
       <nav class="c-sidebar-nav">
         <ul class="c-nav">
-          <li class="c-nav-item"><a class="c-nav-link" href="index.html"><img class="c-nav-icon" src="assets/icons/speedometer.svg" alt="CoreUI Icons Speedometer"> Dashboard<span class="badge badge-primary">NEW</span></a></li>
+          <li class="c-nav-item"><a class="c-nav-link" href="index.html">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speedometer"></use>
+              </svg> Dashboard<span class="badge badge-info">NEW</span></a></li>
           <li class="c-nav-title">Theme</li>
-          <li class="c-nav-item"><a class="c-nav-link" href="colors.html"><img class="c-nav-icon" src="assets/icons/drop1.svg" alt="CoreUI Icons Drop"> Colors</a></li>
-          <li class="c-nav-item"><a class="c-nav-link" href="typography.html"><img class="c-nav-icon" src="assets/icons/pencil.svg" alt="CoreUI Icons Pencil"> Typography</a></li>
+          <li class="c-nav-item"><a class="c-nav-link" href="colors.html">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-drop1"></use>
+              </svg> Colors</a></li>
+          <li class="c-nav-item"><a class="c-nav-link" href="typography.html">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-pencil"></use>
+              </svg> Typography</a></li>
           <li class="c-nav-title">Components</li>
-          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><img class="c-nav-icon" src="assets/icons/puzzle.svg" alt="CoreUI Icons Puzzle"> Base</a>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-puzzle"></use>
+              </svg> Base</a>
             <ul class="c-nav-dropdown-items">
               <li class="c-nav-item"><a class="c-nav-link" href="base/breadcrumb.html"><span class="c-nav-icon"></span> Breadcrumb</a></li>
               <li class="c-nav-item"><a class="c-nav-link" href="base/cards.html"><span class="c-nav-icon"></span> Cards</a></li>
@@ -105,7 +97,10 @@
               <li class="c-nav-item"><a class="c-nav-link" href="base/tooltips.html"><span class="c-nav-icon"></span> Tooltips</a></li>
             </ul>
           </li>
-          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><img class="c-nav-icon" src="assets/icons/cursor.svg" alt="CoreUI Icons Cursor"> Buttons</a>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-cursor"></use>
+              </svg> Buttons</a>
             <ul class="c-nav-dropdown-items">
               <li class="c-nav-item"><a class="c-nav-link" href="buttons/buttons.html"><span class="c-nav-icon"></span> Buttons</a></li>
               <li class="c-nav-item"><a class="c-nav-link" href="buttons/button-group.html"><span class="c-nav-icon"></span> Buttons Group</a></li>
@@ -113,210 +108,307 @@
               <li class="c-nav-item"><a class="c-nav-link" href="buttons/brand-buttons.html"><span class="c-nav-icon"></span> Brand Buttons</a></li>
             </ul>
           </li>
-          <li class="c-nav-item"><a class="c-nav-link" href="charts.html"><img class="c-nav-icon" src="assets/icons/chart-pie.svg" alt="CoreUI Icons Pie Chart"> Charts</a></li>
-          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><img class="c-nav-icon" src="assets/icons/star.svg" alt="CoreUI Icons Star"> Icons</a>
+          <li class="c-nav-item"><a class="c-nav-link" href="charts.html">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chart-pie"></use>
+              </svg> Charts</a></li>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-star"></use>
+              </svg> Icons</a>
             <ul class="c-nav-dropdown-items">
-              <li class="c-nav-item"><a class="c-nav-link" href="icons/coreui-icons.html"><span class="c-nav-icon"></span> CoreUI Icons<span class="badge badge-success">NEW</span></a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="icons/coreui-icons.html"><span class="c-nav-icon"></span> CoreUI Icons<span class="badge badge-success">Free</span></a></li>
               <li class="c-nav-item"><a class="c-nav-link" href="icons/flags.html"><span class="c-nav-icon"></span> Flags</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="icons/brands.html"><span class="c-nav-icon"></span> Brands</a></li>
             </ul>
           </li>
-          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><img class="c-nav-icon" src="assets/icons/bell.svg" alt="CoreUI Icons Bell"> Notifications</a>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell"></use>
+              </svg> Notifications</a>
             <ul class="c-nav-dropdown-items">
               <li class="c-nav-item"><a class="c-nav-link" href="notifications/alerts.html"><span class="c-nav-icon"></span> Alerts</a></li>
               <li class="c-nav-item"><a class="c-nav-link" href="notifications/badge.html"><span class="c-nav-icon"></span> Badge</a></li>
               <li class="c-nav-item"><a class="c-nav-link" href="notifications/modals.html"><span class="c-nav-icon"></span> Modals</a></li>
             </ul>
           </li>
-          <li class="c-nav-item"><a class="c-nav-link" href="widgets.html"><img class="c-nav-icon" src="assets/icons/calculator.svg" alt="CoreUI Icons Calculator"> Widgets<span class="badge badge-primary">NEW</span></a></li>
-          <li class="divider"></li>
+          <li class="c-nav-item"><a class="c-nav-link" href="widgets.html">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-calculator"></use>
+              </svg> Widgets<span class="badge badge-info">NEW</span></a></li>
+          <li class="c-nav-divider"></li>
           <li class="c-nav-title">Extras</li>
-          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><img class="c-nav-icon" src="assets/icons/star.svg" alt="CoreUI Icons Star"> Pages</a>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-star"></use>
+              </svg> Pages</a>
             <ul class="c-nav-dropdown-items">
-              <li class="c-nav-item"><a class="c-nav-link" href="login.html" target="_top"><img class="c-nav-icon" src="assets/icons/account-logout.svg" alt="CoreUI Icons Account Logout"> Login</a></li>
-              <li class="c-nav-item"><a class="c-nav-link" href="register.html" target="_top"><img class="c-nav-icon" src="assets/icons/account-logout.svg" alt="CoreUI Icons Account Logout"> Register</a></li>
-              <li class="c-nav-item"><a class="c-nav-link" href="404.html" target="_top"><img class="c-nav-icon" src="assets/icons/bug.svg" alt="CoreUI Icons Bug"> Error 404</a></li>
-              <li class="c-nav-item"><a class="c-nav-link" href="500.html" target="_top"><img class="c-nav-icon" src="assets/icons/bug.svg" alt="CoreUI Icons Bug"> Error 500</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="login.html" target="_top">
+                  <svg class="c-nav-icon">
+                    <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-account-logout"></use>
+                  </svg> Login</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="register.html" target="_top">
+                  <svg class="c-nav-icon">
+                    <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-account-logout"></use>
+                  </svg> Register</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="404.html" target="_top">
+                  <svg class="c-nav-icon">
+                    <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bug"></use>
+                  </svg> Error 404</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="500.html" target="_top">
+                  <svg class="c-nav-icon">
+                    <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bug"></use>
+                  </svg> Error 500</a></li>
             </ul>
           </li>
-          <li class="c-nav-item mt-auto"><a class="c-nav-link c-nav-link-success" href="https://coreui.io" target="_top"><img class="c-nav-icon" src="assets/icons/cloud-download.svg" alt="CoreUI Icons Cloud Download"> Download CoreUI</a></li>
-          <li class="c-nav-item"><a class="c-nav-link c-nav-link-danger" href="https://coreui.io/pro/" target="_top"><img class="c-nav-icon" src="assets/icons/layers.svg" alt="CoreUI Icons Layers"> Try CoreUI<strong>PRO</strong></a></li>
+          <li class="c-nav-item mt-auto"><a class="c-nav-link c-nav-link-success" href="https://coreui.io" target="_top">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-cloud-download"></use>
+              </svg> Download CoreUI</a></li>
+          <li class="c-nav-item"><a class="c-nav-link c-nav-link-danger" href="https://coreui.io/pro/" target="_top">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-layers"></use>
+              </svg> Try CoreUI<strong>PRO</strong></a></li>
         </ul>
       </nav>
-      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="['_parent','.c-header-brand']" data-class="['c-sidebar-minimized','c-header-brand-minimized']"></button>
+      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>
-    <div class="c-body">
-      <main class="c-main">
-        <!-- Breadcrumb-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">Home</li>
-          <li class="breadcrumb-item"><a href="#">Admin</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
-          <!-- Breadcrumb Menu-->
-          <li class="breadcrumb-menu d-md-down-none">
-            <div class="btn-group" role="group" aria-label="Button group"><a class="btn" href="#"><img class="c-icon" src="assets/icons/speech.svg" alt="CoreUI Icons Speech"></a><a class="btn" href="./"><img class="c-icon" src="assets/icons/graph.svg" alt="CoreUI Icons Graph">  Dashboard</a><a class="btn" href="#"><img class="c-icon" src="assets/icons/settings.svg" alt="CoreUI Icons Settings">  Settings</a></div>
-          </li>
-        </ol>
-        <div class="container-fluid">
-          <div class="fade-in">
-            <div class="row">
-              <div class="col-sm-12 col-xl-6">
-                <div class="card">
-                  <div class="card-header"><i class="fa fa-align-justify"></i> List group
-                    <div class="card-header-actions"><a class="card-header-action" href="http://coreui.io/docs/components/bootstrap-list-group/" target="_blank"><small class="text-muted">docs</small></a></div>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Morbi leo risus</li>
-                      <li class="list-group-item">Porta ac consectetur ac</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-xl-6">
-                <div class="card">
-                  <div class="card-header"><i class="fa fa-align-justify"></i> List group<small>active items</small></div>
-                  <div class="card-body">
-                    <ul class="list-group">
-                      <li class="list-group-item active">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Morbi leo risus</li>
-                      <li class="list-group-item">Porta ac consectetur ac</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+    <div class="c-wrapper">
+      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+        <button class="c-header-toggler c-class-toggler d-lg-none mr-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button><a class="c-header-brand d-sm-none" href="#"><img class="c-header-brand" src="assets/brand/coreui-base.svg" width="97" height="46" alt="CoreUI Logo"></a>
+        <button class="c-header-toggler c-class-toggler ml-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true"><span class="c-header-toggler-icon"></span></button>
+        <ul class="c-header-nav d-md-down-none">
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Dashboard</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Users</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Settings</a></li>
+        </ul>
+        <ul class="c-header-nav ml-auto mr-4">
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link">
+              <svg class="c-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link">
+              <svg class="c-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-list-rich"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link">
+              <svg class="c-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-envelope-open"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right pt-0">
+              <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell"></use>
+                </svg> Updates<span class="badge badge-info ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-envelope-open"></use>
+                </svg> Messages<span class="badge badge-success ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-task"></use>
+                </svg> Tasks<span class="badge badge-danger ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-comment-square"></use>
+                </svg> Comments<span class="badge badge-warning ml-auto">42</span></a>
+              <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user"></use>
+                </svg> Profile</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings"></use>
+                </svg> Settings</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-credit-card"></use>
+                </svg> Payments<span class="badge badge-secondary ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-file"></use>
+                </svg> Projects<span class="badge badge-primary ml-auto">42</span></a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-lock-locked"></use>
+                </svg> Lock Account</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-account-logout"></use>
+                </svg> Logout</a>
             </div>
-            <div class="row">
-              <div class="col-sm-12 col-xl-6">
-                <div class="card">
-                  <div class="card-header"><i class="fa fa-align-justify"></i> List group<small>links with disabled items</small></div>
-                  <div class="card-body">
-                    <div class="list-group"><a class="list-group-item active" href="#">Cras justo odio</a><a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a><a class="list-group-item list-group-item-action" href="#">Morbi leo risus</a><a class="list-group-item list-group-item-action" href="#">Porta ac consectetur ac</a><a class="list-group-item list-group-item-action disabled" href="#">Vestibulum at eros</a></div>
+          </li>
+        </ul>
+        <div class="c-subheader px-3">
+          <!-- Breadcrumb-->
+          <ol class="breadcrumb border-0 m-0">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a></li>
+            <li class="breadcrumb-item active">Dashboard</li>
+            <!-- Breadcrumb Menu-->
+          </ol>
+        </div>
+      </header>
+      <div class="c-body">
+        <main class="c-main">
+          <div class="container-fluid">
+            <div class="fade-in">
+              <div class="row">
+                <div class="col-sm-12 col-xl-6">
+                  <div class="card">
+                    <div class="card-header"> List group
+                      <div class="card-header-actions"><a class="card-header-action" href="http://coreui.io/docs/components/bootstrap-list-group/" target="_blank"><small class="text-muted">docs</small></a></div>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-12 col-xl-6">
-                <div class="card">
-                  <div class="card-header"><i class="fa fa-align-justify"></i> List group<small>buttons with disabled items</small></div>
-                  <div class="card-body">
-                    <div class="list-group">
-                      <button class="list-group-item list-group-item-action active" type="button">Cras justo odio</button>
-                      <button class="list-group-item list-group-item-action" type="button">Dapibus ac facilisis in</button>
-                      <button class="list-group-item list-group-item-action" type="button">Morbi leo risus</button>
-                      <button class="list-group-item list-group-item-action" type="button">Porta ac consectetur ac</button>
-                      <button class="list-group-item list-group-item-action" type="button" disabled="">Vestibulum at eros</button>
+                <div class="col-sm-12 col-xl-6">
+                  <div class="card">
+                    <div class="card-header"> List group<small>active items</small></div>
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <li class="list-group-item active">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 col-xl-6">
-                <div class="card">
-                  <div class="card-header"><i class="fa fa-align-justify"></i> List group<small>contextual classes</small></div>
-                  <div class="card-body">
-                    <ul class="list-group">
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
-                      <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
-                      <li class="list-group-item list-group-item-success">This is a success list group item</li>
-                      <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
-                      <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
-                      <li class="list-group-item list-group-item-info">This is a info list group item</li>
-                      <li class="list-group-item list-group-item-light">This is a light list group item</li>
-                      <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
-                    </ul>
+              <div class="row">
+                <div class="col-sm-12 col-xl-6">
+                  <div class="card">
+                    <div class="card-header"> List group<small>links with disabled items</small></div>
+                    <div class="card-body">
+                      <div class="list-group"><a class="list-group-item active" href="#">Cras justo odio</a><a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a><a class="list-group-item list-group-item-action" href="#">Morbi leo risus</a><a class="list-group-item list-group-item-action" href="#">Porta ac consectetur ac</a><a class="list-group-item list-group-item-action disabled" href="#">Vestibulum at eros</a></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-12 col-xl-6">
-                <div class="card">
-                  <div class="card-header"><i class="fa fa-align-justify"></i> List group<small>contextual with<code>.action</code></small></div>
-                  <div class="card-body">
-                    <div class="list-group"><a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a><a class="list-group-item list-group-item-action list-group-item-primary" href="#">
-                        This is a primary list
-                        group item</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="#">
-                        This is a secondary
-                        list group item</a><a class="list-group-item list-group-item-action list-group-item-success" href="#">
-                        This is a success list
-                        group item</a><a class="list-group-item list-group-item-action list-group-item-danger" href="#">
-                        This is a danger list
-                        group item</a><a class="list-group-item list-group-item-action list-group-item-warning" href="#">
-                        This is a warning list
-                        group item</a><a class="list-group-item list-group-item-action list-group-item-info" href="#">
-                        This is a info list group
-                        item</a><a class="list-group-item list-group-item-action list-group-item-light" href="#">
-                        This is a light list group
-                        item</a><a class="list-group-item list-group-item-action list-group-item-dark" href="#">
-                        This is a dark list group
-                        item</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 col-xl-6">
-                <div class="card">
-                  <div class="card-header"><i class="fa fa-align-justify"></i> List group<small>with badges</small></div>
-                  <div class="card-body">
-                    <ul class="list-group">
-                      <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">Cras justo odio<span class="badge badge-primary badge-pill">14</span></li>
-                      <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">Dapibus ac facilisis in<span class="badge badge-primary badge-pill">2</span></li>
-                      <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">Morbi leo risus<span class="badge badge-primary badge-pill">1</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-xl-6">
-                <div class="card">
-                  <div class="card-header"><i class="fa fa-align-justify"></i> List group<small>custom content</small></div>
-                  <div class="card-body">
-                    <div class="list-group"><a class="list-group-item list-group-item-action flex-column align-items-start active" href="#">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">List group item heading</h5><small>3 days ago</small>
-                        </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Donec id elit non mi porta.</small>
-                      </a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
-                        </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small>
-                      </a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
-                        </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small>
-                      </a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="card">
-                  <div class="card-header"><i class="fa fa-align-justify"></i> List group<small>tab Javascript plugin</small></div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-4">
-                        <div class="list-group" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="tab" href="#list-home" role="tab" aria-controls="list-home" aria-selected="false">Home</a><a class="list-group-item list-group-item-action active" id="list-profile-list" data-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile" aria-selected="true">Profile</a><a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a><a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a></div>
+                <div class="col-sm-12 col-xl-6">
+                  <div class="card">
+                    <div class="card-header"> List group<small>buttons with disabled items</small></div>
+                    <div class="card-body">
+                      <div class="list-group">
+                        <button class="list-group-item list-group-item-action active" type="button">Cras justo odio</button>
+                        <button class="list-group-item list-group-item-action" type="button">Dapibus ac facilisis in</button>
+                        <button class="list-group-item list-group-item-action" type="button">Morbi leo risus</button>
+                        <button class="list-group-item list-group-item-action" type="button">Porta ac consectetur ac</button>
+                        <button class="list-group-item list-group-item-action" type="button" disabled="">Vestibulum at eros</button>
                       </div>
-                      <div class="col-8">
-                        <div class="tab-content" id="nav-tabContent">
-                          <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                            <p>Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate reprehenderit occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in cupidatat nisi enim eu nostrud do aliquip veniam minim.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-xl-6">
+                  <div class="card">
+                    <div class="card-header"> List group<small>contextual classes</small></div>
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
+                        <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+                        <li class="list-group-item list-group-item-success">This is a success list group item</li>
+                        <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
+                        <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+                        <li class="list-group-item list-group-item-info">This is a info list group item</li>
+                        <li class="list-group-item list-group-item-light">This is a light list group item</li>
+                        <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                  <div class="card">
+                    <div class="card-header"> List group<small>contextual with<code>.action</code></small></div>
+                    <div class="card-body">
+                      <div class="list-group"><a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a><a class="list-group-item list-group-item-action list-group-item-primary" href="#">
+                          This is a primary list
+                          group item</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="#">
+                          This is a secondary
+                          list group item</a><a class="list-group-item list-group-item-action list-group-item-success" href="#">
+                          This is a success list
+                          group item</a><a class="list-group-item list-group-item-action list-group-item-danger" href="#">
+                          This is a danger list
+                          group item</a><a class="list-group-item list-group-item-action list-group-item-warning" href="#">
+                          This is a warning list
+                          group item</a><a class="list-group-item list-group-item-action list-group-item-info" href="#">
+                          This is a info list group
+                          item</a><a class="list-group-item list-group-item-action list-group-item-light" href="#">
+                          This is a light list group
+                          item</a><a class="list-group-item list-group-item-action list-group-item-dark" href="#">
+                          This is a dark list group
+                          item</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-xl-6">
+                  <div class="card">
+                    <div class="card-header"> List group<small>with badges</small></div>
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">Cras justo odio<span class="badge badge-primary badge-pill">14</span></li>
+                        <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">Dapibus ac facilisis in<span class="badge badge-primary badge-pill">2</span></li>
+                        <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">Morbi leo risus<span class="badge badge-primary badge-pill">1</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                  <div class="card">
+                    <div class="card-header"> List group<small>custom content</small></div>
+                    <div class="card-body">
+                      <div class="list-group"><a class="list-group-item list-group-item-action flex-column align-items-start active" href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5><small>3 days ago</small>
                           </div>
-                          <div class="tab-pane fade active show" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                            <p>Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do cillum ad laborum. Mollit et eu officia dolore sunt Lorem culpa qui commodo velit ex amet id ex. Officia anim incididunt laboris deserunt anim aute dolor incididunt veniam aute dolore do exercitation. Dolor nisi culpa ex ad irure in elit eu dolore. Ad laboris ipsum reprehenderit irure non commodo enim culpa commodo veniam incididunt veniam ad.</p>
+                          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Donec id elit non mi porta.</small>
+                        </a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
                           </div>
-                          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                            <p>Ut ut do pariatur aliquip aliqua aliquip exercitation do nostrud commodo reprehenderit aute ipsum voluptate. Irure Lorem et laboris nostrud amet cupidatat cupidatat anim do ut velit mollit consequat enim tempor. Consectetur est minim nostrud nostrud consectetur irure labore voluptate irure. Ipsum id Lorem sit sint voluptate est pariatur eu ad cupidatat et deserunt culpa sit eiusmod deserunt. Consectetur et fugiat anim do eiusmod aliquip nulla laborum elit adipisicing pariatur cillum.</p>
+                          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small>
+                        </a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
                           </div>
-                          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                            <p>Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.</p>
+                          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small>
+                        </a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header"> List group<small>tab Javascript plugin</small></div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="list-group" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="tab" href="#list-home" role="tab" aria-controls="list-home" aria-selected="false">Home</a><a class="list-group-item list-group-item-action active" id="list-profile-list" data-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile" aria-selected="true">Profile</a><a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a><a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a></div>
+                        </div>
+                        <div class="col-8">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                              <p>Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate reprehenderit occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in cupidatat nisi enim eu nostrud do aliquip veniam minim.</p>
+                            </div>
+                            <div class="tab-pane fade active show" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                              <p>Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do cillum ad laborum. Mollit et eu officia dolore sunt Lorem culpa qui commodo velit ex amet id ex. Officia anim incididunt laboris deserunt anim aute dolor incididunt veniam aute dolore do exercitation. Dolor nisi culpa ex ad irure in elit eu dolore. Ad laboris ipsum reprehenderit irure non commodo enim culpa commodo veniam incididunt veniam ad.</p>
+                            </div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                              <p>Ut ut do pariatur aliquip aliqua aliquip exercitation do nostrud commodo reprehenderit aute ipsum voluptate. Irure Lorem et laboris nostrud amet cupidatat cupidatat anim do ut velit mollit consequat enim tempor. Consectetur est minim nostrud nostrud consectetur irure labore voluptate irure. Ipsum id Lorem sit sint voluptate est pariatur eu ad cupidatat et deserunt culpa sit eiusmod deserunt. Consectetur et fugiat anim do eiusmod aliquip nulla laborum elit adipisicing pariatur cillum.</p>
+                            </div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                              <p>Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.</p>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -326,13 +418,13 @@
               </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
+      <footer class="c-footer">
+        <div><a href="https://coreui.io">CoreUI</a> &copy; 2019 creativeLabs.</div>
+        <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+      </footer>
     </div>
-    <footer class="c-footer">
-      <div><a href="https://coreui.io">CoreUI</a> &copy; 2019 creativeLabs.</div>
-      <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io">CoreUI</a></div>
-    </footer>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/pace-progress/pace.min.js"></script>
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>

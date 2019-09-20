@@ -11,22 +11,26 @@ block view
             .input-group.mb-3
               .input-group-prepend
                 span.input-group-text
-                  img.c-icon(src="assets/icons/user.svg" width="16" height="16" alt="CoreUI Icons User")
+                  svg.c-icon
+                    use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user")
               input.form-control(type='text', placeholder='Username')
             .input-group.mb-3
               .input-group-prepend
                 span.input-group-text
-                  span.c-icon @
+                  svg.c-icon
+                    use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-envelope-open")
               input.form-control(type='text', placeholder='Email')
             .input-group.mb-3
               .input-group-prepend
                 span.input-group-text
-                  img.c-icon(src="assets/icons/lock-locked.svg" width="16" height="16" alt="CoreUI Icons Lock Locked")
+                  svg.c-icon
+                    use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-lock-locked")
               input.form-control(type='password', placeholder='Password')
             .input-group.mb-4
               .input-group-prepend
                 span.input-group-text
-                  img.c-icon(src="assets/icons/lock-locked.svg" width="16" height="16" alt="CoreUI Icons Lock Locked")
+                  svg.c-icon
+                    use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-lock-locked")
               input.form-control(type='password', placeholder='Repeat password')
             button.btn.btn-block.btn-success(type='button') Create Account
           .card-footer.p-4

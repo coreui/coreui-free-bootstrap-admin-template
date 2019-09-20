@@ -19,7 +19,6 @@ block view
       .col-sm-6.col-md-4
         .card
           .card-header
-            i.fa.fa-check
             | Card with icon
           .card-body
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
@@ -244,11 +243,14 @@ block view
             | Card actions
             .card-header-actions
               a.card-header-action.btn-setting(href='#')
-                img.c-icon(src="assets/icons/settings.svg" alt="CoreUI Icons Settings")
+                svg.c-icon
+                  use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
               a.card-header-action.btn-minimize(href='#', data-toggle='collapse', data-target='#collapseExample', aria-expanded='true')
-                img.c-icon(src="assets/icons/arrow-circle-top.svg" alt="CoreUI Icons Arrow Circle Top")
+                svg.c-icon
+                  use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-arrow-circle-top")
               a.card-header-action.btn-close(href='#')
-                img.c-icon(src="assets/icons/x-circle.svg" alt="CoreUI Icons X Circle")
+                svg.c-icon
+                  use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-x-circle")
           #collapseExample.collapse.show
             .card-body
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.

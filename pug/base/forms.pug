@@ -6,8 +6,7 @@ block view
       .col-sm-6
         .card
           .card-header
-            strong Credit Card
-            small Form
+            | #[strong Credit Card] #[small Form]
           .card-body
             .row
               .col-sm-12
@@ -61,8 +60,7 @@ block view
       .col-sm-6
         .card
           .card-header
-            strong Company
-            small Form
+            | #[strong Company] #[small Form]
           .card-body
             .form-group
               label(for='company') Company
@@ -90,8 +88,7 @@ block view
       .col-md-6
         .card
           .card-header
-            strong Basic Form
-            |           Elements
+            | #[strong Basic Form] Elements
           .card-body
             form.form-horizontal(action='', method='post', enctype='multipart/form-data')
               .form-group.row
@@ -236,15 +233,12 @@ block view
                   input#file-multiple-input(type='file', name='file-multiple-input', multiple='')
           .card-footer
             button.btn.btn-sm.btn-primary(type='submit')
-              i.fa.fa-dot-circle-o
               |  Submit
             button.btn.btn-sm.btn-danger(type='reset')
-              i.fa.fa-ban
               |  Reset
         .card
           .card-header
-            strong Inline
-            |           Form
+            | #[strong Inline] Form
           .card-body
             form.form-inline(action='', method='post')
               .form-group
@@ -255,16 +249,13 @@ block view
                 input#exampleInputEmail2.form-control(type='email', placeholder='jane.doe@example.com', autocomplete='email')
           .card-footer
             button.btn.btn-sm.btn-primary(type='submit')
-              i.fa.fa-dot-circle-o
               |  Submit
             button.btn.btn-sm.btn-danger(type='reset')
-              i.fa.fa-ban
               |  Reset
       .col-md-6
         .card
           .card-header
-            strong Horizontal
-            |           Form
+            | #[strong Horizontal] Form
           .card-body
             form.form-horizontal(action='', method='post')
               .form-group.row
@@ -279,15 +270,12 @@ block view
                   span.help-block Please enter your password
           .card-footer
             button.btn.btn-sm.btn-primary(type='submit')
-              i.fa.fa-dot-circle-o
               |  Submit
             button.btn.btn-sm.btn-danger(type='reset')
-              i.fa.fa-ban
               |  Reset
         .card
           .card-header
-            strong Normal
-            |           Form
+             | #[strong Normal] Form
           .card-body
             form(action='', method='post')
               .form-group
@@ -300,15 +288,12 @@ block view
                 span.help-block Please enter your password
           .card-footer
             button.btn.btn-sm.btn-primary(type='submit')
-              i.fa.fa-dot-circle-o
               |  Submit
             button.btn.btn-sm.btn-danger(type='reset')
-              i.fa.fa-ban
               |  Reset
         .card
           .card-header
-            | Input
-            strong Grid
+            | Input #[strong Grid]
           .card-body
             form.form-horizontal(action='', method='post')
               .form-group.row
@@ -343,15 +328,12 @@ block view
                   input.form-control(type='text', placeholder='.col-sm-12')
           .card-footer
             button.btn.btn-sm.btn-primary(type='submit')
-              i.fa.fa-user
               |  Login
             button.btn.btn-sm.btn-danger(type='reset')
-              i.fa.fa-ban
               |  Reset
         .card
           .card-header
-            | Input
-            strong Sizes
+            | Input #[strong Sizes]
           .card-body
             form.form-horizontal(action='', method='post')
               .form-group.row
@@ -368,10 +350,8 @@ block view
                   input#input-large.form-control.form-control-lg(type='text', name='input-large', placeholder='.form-control-lg')
           .card-footer
             button.btn.btn-sm.btn-primary(type='submit')
-              i.fa.fa-dot-circle-o
               |  Submit
             button.btn.btn-sm.btn-danger(type='reset')
-              i.fa.fa-ban
               |  Reset
       // /.col
     // /.row
@@ -379,8 +359,7 @@ block view
       .col-sm-6
         .card
           .card-header
-            strong Validation states
-            |           Form
+           | #[strong Validation states] Form
           .card-body
             .form-group
               label.form-col-form-label(for='inputSuccess1') Input with success
@@ -394,8 +373,7 @@ block view
       .col-sm-6
         .card
           .card-header
-            strong Validation
-            code was-validated
+           | #[strong Validation] #[code was-validated]
           .card-body.was-validated
             .form-group
               label.form-col-form-label(for='inputSuccess2') Input with success
@@ -411,8 +389,7 @@ block view
       .col-sm-4
         .card
           .card-header
-            strong Icon/Text
-            |           Groups
+            | #[strong Icon/Text] Groups
           .card-body
             form.form-horizontal(action='', method='post')
               .form-group.row
@@ -420,7 +397,8 @@ block view
                   .input-group
                     .input-group-prepend
                       span.input-group-text
-                        i.fa.fa-user
+                        svg.c-icon
+                          use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user")
                     input#input1-group1.form-control(type='text', name='input1-group1', placeholder='Username', autocomplete='username')
               .form-group.row
                 .col-md-12
@@ -428,28 +406,27 @@ block view
                     input#input2-group1.form-control(type='email', name='input2-group1', placeholder='Email', autocomplete='email')
                     .input-group-append
                       span.input-group-text
-                        i.fa.fa-envelope-o
+                        svg.c-icon
+                          use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-envelope-open")
               .form-group.row
                 .col-md-12
                   .input-group
                     .input-group-prepend
                       span.input-group-text
-                        i.fa.fa-euro
+                        svg.c-icon
+                          use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-euro")
                     input#input3-group1.form-control(type='text', name='input3-group1', placeholder='..')
                     .input-group-append
                       span.input-group-text .00
           .card-footer
             button.btn.btn-sm.btn-success(type='submit')
-              i.fa.fa-dot-circle-o
               |  Submit
             button.btn.btn-sm.btn-danger(type='reset')
-              i.fa.fa-ban
               |  Reset
       .col-sm-4
         .card
           .card-header
-            strong Buttons
-            |           Groups
+            | #[strong Buttons] Groups
           .card-body
             form.form-horizontal(action='', method='post')
               .form-group.row
@@ -457,7 +434,8 @@ block view
                   .input-group
                     span.input-group-prepend
                       button.btn.btn-primary(type='button')
-                        i.fa.fa-search
+                        svg.c-icon
+                          use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-magnifying-glass")
                         |  Search
                     input#input1-group2.form-control(type='text', name='input1-group2', placeholder='Username', autocomplete='username')
               .form-group.row
@@ -471,23 +449,22 @@ block view
                   .input-group
                     span.input-group-prepend
                       button.btn.btn-primary(type='button')
-                        i.fa.fa-facebook
+                        svg.c-icon
+                          use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-facebook")
                     input#input3-group2.form-control(type='text', name='input3-group2', placeholder='Search')
                     span.input-group-append
                       button.btn.btn-primary(type='button')
-                        i.fa.fa-twitter
+                        svg.c-icon
+                          use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-twitter")
           .card-footer
             button.btn.btn-sm.btn-success(type='submit')
-              i.fa.fa-dot-circle-o
               |  Submit
             button.btn.btn-sm.btn-danger(type='reset')
-              i.fa.fa-ban
               |  Reset
       .col-sm-4
         .card
           .card-header
-            strong Dropdowns
-            |           Groups
+            | #[strong Dropdowns] Groups
           .card-body
             form.form-horizontal(action='', method='post')
               .form-group.row
@@ -543,20 +520,14 @@ block view
                         a.dropdown-item(href='#') Separated link
           .card-footer
             button.btn.btn-sm.btn-success(type='submit')
-              i.fa.fa-dot-circle-o
               |  Submit
             button.btn.btn-sm.btn-danger(type='reset')
-              i.fa.fa-ban
               |  Reset
     .row
       .col-md-6
         .card
           .card-header
-            | Use the grid for big devices!
-            small
-              code .col-lg-*
-              code .col-md-*
-              code .col-sm-*
+            | Use the grid for big devices! #[small #[code .col-lg-*] #[code  .col-md-*] #[code  .col-sm-*]]
           .card-body
             form.form-horizontal(action='', method='post')
               .form-group.row
@@ -593,9 +564,7 @@ block view
       .col-md-6
         .card
           .card-header
-            | Input Grid for small devices!
-            small
-              code .col-*
+            | Input Grid for small devices! #[small #[code .col-*]]
           .card-body
             form.form-horizontal(action='', method='post')
               .form-group.row
@@ -643,7 +612,8 @@ block view
                   input#username3.form-control(type='text', name='username3', autocomplete='username')
                   .input-group-append
                     span.input-group-text
-                      i.fa.fa-user
+                      svg.c-icon
+                        use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user")
               .form-group
                 .input-group
                   .input-group-prepend
@@ -651,7 +621,8 @@ block view
                   input#email3.form-control(type='email', name='email3', autocomplete='email')
                   .input-group-append
                     span.input-group-text
-                      i.fa.fa-envelope
+                      svg.c-icon
+                        use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-envelope-open")
               .form-group
                 .input-group
                   .input-group-prepend
@@ -659,7 +630,8 @@ block view
                   input#password3.form-control(type='password', name='password3', autocomplete='new-password')
                   .input-group-append
                     span.input-group-text
-                      i.fa.fa-asterisk
+                      svg.c-icon
+                        use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-lock-locked")
               .form-group.form-actions
                 button.btn.btn-sm.btn-primary(type='submit') Submit
       .col-sm-4
@@ -673,19 +645,22 @@ block view
                   input#username2.form-control(type='text', name='username2', placeholder='Username', autocomplete='username')
                   .input-group-append
                     span.input-group-text
-                      i.fa.fa-user
+                      svg.c-icon
+                        use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user")
               .form-group
                 .input-group
                   input#email2.form-control(type='email', name='email2', placeholder='Email', autocomplete='email')
                   .input-group-append
                     span.input-group-text
-                      i.fa.fa-envelope
+                      svg.c-icon
+                        use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-envelope-open")
               .form-group
                 .input-group
                   input#password2.form-control(type='password', name='password2', placeholder='Password', autocomplete='new-password')
                   .input-group-append
                     span.input-group-text
-                      i.fa.fa-asterisk
+                      svg.c-icon
+                        use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-lock-locked")
               .form-group.form-actions
                 button.btn.btn-sm.btn-secondary(type='submit') Submit
       .col-sm-4
@@ -698,19 +673,22 @@ block view
                 .input-group
                   .input-group-prepend
                     span.input-group-text
-                      i.fa.fa-user
+                      svg.c-icon
+                        use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user")
                   input#username.form-control(type='text', name='username', placeholder='Username', autocomplete='username')
               .form-group
                 .input-group
                   .input-group-prepend
                     span.input-group-text
-                      i.fa.fa-envelope
+                      svg.c-icon
+                        use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-envelope-open")
                   input#email.form-control(type='email', name='email', placeholder='Email', autocomplete='email')
               .form-group
                 .input-group
                   .input-group-prepend
                     span.input-group-text
-                      i.fa.fa-asterisk
+                      svg.c-icon
+                        use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-lock-locked")
                   input#password.form-control(type='password', name='password', placeholder='Password', autocomplete='new-password')
               .form-group.form-actions
                 button.btn.btn-sm.btn-success(type='submit') Submit
@@ -719,7 +697,6 @@ block view
       .col-lg-12
         .card
           .card-header
-            i.fa.fa-edit
             | Form Elements
           .card-body
             form.form-horizontal

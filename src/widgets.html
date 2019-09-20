@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v3.0.0-alpha.0
+* @version v3.0.0-alpha.1
 * @link https://coreui.io
-* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Copyright (c) 2019 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
 -->
 
@@ -56,37 +56,29 @@
     </script>
     <link href="node_modules/@coreui/coreui-chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
   </head>
-  <body class="c-app c-default-layout">
-    <header class="c-header c-header-light c-header-fixed">
-      <button class="c-header-toggler c-class-toggler d-lg-none mr-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button><a class="c-header-brand c-header-brand-md-down-centered" href="#"><img class="c-header-brand-full" src="assets/brand/coreui-base.svg" width="97" height="46" alt="CoreUI Logo"><img class="c-header-brand-minimized" src="assets/brand/coreui-signet.svg" width="46" height="46" alt="CoreUI Logo"></a>
-      <button class="c-header-toggler c-class-toggler d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true"><span class="c-header-toggler-icon"></span></button>
-      <ul class="c-header-nav d-md-down-none">
-        <li class="c-nav-item px-3"><a class="c-nav-link" href="#">Dashboard</a></li>
-        <li class="c-nav-item px-3"><a class="c-nav-link" href="#">Users</a></li>
-        <li class="c-nav-item px-3"><a class="c-nav-link" href="#">Settings</a></li>
-      </ul>
-      <ul class="c-nav c-header-nav ml-auto">
-        <li class="c-nav-item d-md-down-none mx-2"><a class="c-nav-link" href="#"><img class="c-icon" src="assets/icons/bell.svg" alt="CoreUI Icons Bell"><span class="badge badge-pill badge-danger">5</span></a></li>
-        <li class="c-nav-item d-md-down-none mx-2"><a class="c-nav-link" href="#"><img class="c-icon" src="assets/icons/list-rich.svg" alt="CoreUI Icons List Rich"></a></li>
-        <li class="c-nav-item d-md-down-none mx-2"><a class="c-nav-link" href="#"><img class="c-icon" src="assets/icons/location-pin.svg" alt="CoreUI Icons Location Pin"></a></li>
-        <li class="c-nav-item dropdown"><a class="c-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></a>
-          <div class="dropdown-menu dropdown-menu-right pt-0">
-            <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/bell.svg" alt="CoreUI Icons Bell"> Updates<span class="badge badge-info ml-auto">42</span></a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/envelope-open.svg" alt="CorseUI Icons Envelope Open"> Messages<span class="badge badge-success ml-auto">42</span></a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/task.svg" alt="CoreUI Icons Task"> Tasks<span class="badge badge-danger ml-auto">42</span></a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/comment-square.svg" alt="CoreUI Icons Comment Square"> Comments<span class="badge badge-warning ml-auto">42</span></a>
-            <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/user.svg" alt="CoreUI Icons User"> Profile</a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/settings.svg" alt="CoreUI Icons Settings"> Settings</a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/credit-card.svg" alt="CoreUI Icons Credit Card"> Payments<span class="badge badge-secondary ml-auto">42</span></a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/file.svg" alt="CoreUI Icons File"> Projects<span class="badge badge-primary ml-auto">42</span></a>
-            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/lock-locked.svg" alt="CoreUI Icons Lock Locked"> Lock Account</a><a class="dropdown-item" href="#"><img class="c-icon mr-2" src="assets/icons/account-logout.svg" alt="CoreUI Icons Account Logout"> Logout</a>
-          </div>
-        </li>
-      </ul>
-    </header>
+  <body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+      <div class="c-sidebar-brand"><img class="c-sidebar-brand-full" src="assets/brand/coreui-base-white.svg" width="118" height="46" alt="CoreUI Logo"><img class="c-sidebar-brand-minimized" src="assets/brand/coreui-signet-white.svg" width="118" height="46" alt="CoreUI Logo"></div>
       <nav class="c-sidebar-nav">
         <ul class="c-nav">
-          <li class="c-nav-item"><a class="c-nav-link" href="index.html"><img class="c-nav-icon" src="assets/icons/speedometer.svg" alt="CoreUI Icons Speedometer"> Dashboard<span class="badge badge-primary">NEW</span></a></li>
+          <li class="c-nav-item"><a class="c-nav-link" href="index.html">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speedometer"></use>
+              </svg> Dashboard<span class="badge badge-info">NEW</span></a></li>
           <li class="c-nav-title">Theme</li>
-          <li class="c-nav-item"><a class="c-nav-link" href="colors.html"><img class="c-nav-icon" src="assets/icons/drop1.svg" alt="CoreUI Icons Drop"> Colors</a></li>
-          <li class="c-nav-item"><a class="c-nav-link" href="typography.html"><img class="c-nav-icon" src="assets/icons/pencil.svg" alt="CoreUI Icons Pencil"> Typography</a></li>
+          <li class="c-nav-item"><a class="c-nav-link" href="colors.html">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-drop1"></use>
+              </svg> Colors</a></li>
+          <li class="c-nav-item"><a class="c-nav-link" href="typography.html">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-pencil"></use>
+              </svg> Typography</a></li>
           <li class="c-nav-title">Components</li>
-          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><img class="c-nav-icon" src="assets/icons/puzzle.svg" alt="CoreUI Icons Puzzle"> Base</a>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-puzzle"></use>
+              </svg> Base</a>
             <ul class="c-nav-dropdown-items">
               <li class="c-nav-item"><a class="c-nav-link" href="base/breadcrumb.html"><span class="c-nav-icon"></span> Breadcrumb</a></li>
               <li class="c-nav-item"><a class="c-nav-link" href="base/cards.html"><span class="c-nav-icon"></span> Cards</a></li>
@@ -106,7 +98,10 @@
               <li class="c-nav-item"><a class="c-nav-link" href="base/tooltips.html"><span class="c-nav-icon"></span> Tooltips</a></li>
             </ul>
           </li>
-          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><img class="c-nav-icon" src="assets/icons/cursor.svg" alt="CoreUI Icons Cursor"> Buttons</a>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-cursor"></use>
+              </svg> Buttons</a>
             <ul class="c-nav-dropdown-items">
               <li class="c-nav-item"><a class="c-nav-link" href="buttons/buttons.html"><span class="c-nav-icon"></span> Buttons</a></li>
               <li class="c-nav-item"><a class="c-nav-link" href="buttons/button-group.html"><span class="c-nav-icon"></span> Buttons Group</a></li>
@@ -114,765 +109,1031 @@
               <li class="c-nav-item"><a class="c-nav-link" href="buttons/brand-buttons.html"><span class="c-nav-icon"></span> Brand Buttons</a></li>
             </ul>
           </li>
-          <li class="c-nav-item"><a class="c-nav-link" href="charts.html"><img class="c-nav-icon" src="assets/icons/chart-pie.svg" alt="CoreUI Icons Pie Chart"> Charts</a></li>
-          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><img class="c-nav-icon" src="assets/icons/star.svg" alt="CoreUI Icons Star"> Icons</a>
+          <li class="c-nav-item"><a class="c-nav-link" href="charts.html">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chart-pie"></use>
+              </svg> Charts</a></li>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-star"></use>
+              </svg> Icons</a>
             <ul class="c-nav-dropdown-items">
-              <li class="c-nav-item"><a class="c-nav-link" href="icons/coreui-icons.html"><span class="c-nav-icon"></span> CoreUI Icons<span class="badge badge-success">NEW</span></a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="icons/coreui-icons.html"><span class="c-nav-icon"></span> CoreUI Icons<span class="badge badge-success">Free</span></a></li>
               <li class="c-nav-item"><a class="c-nav-link" href="icons/flags.html"><span class="c-nav-icon"></span> Flags</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="icons/brands.html"><span class="c-nav-icon"></span> Brands</a></li>
             </ul>
           </li>
-          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><img class="c-nav-icon" src="assets/icons/bell.svg" alt="CoreUI Icons Bell"> Notifications</a>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell"></use>
+              </svg> Notifications</a>
             <ul class="c-nav-dropdown-items">
               <li class="c-nav-item"><a class="c-nav-link" href="notifications/alerts.html"><span class="c-nav-icon"></span> Alerts</a></li>
               <li class="c-nav-item"><a class="c-nav-link" href="notifications/badge.html"><span class="c-nav-icon"></span> Badge</a></li>
               <li class="c-nav-item"><a class="c-nav-link" href="notifications/modals.html"><span class="c-nav-icon"></span> Modals</a></li>
             </ul>
           </li>
-          <li class="c-nav-item"><a class="c-nav-link" href="widgets.html"><img class="c-nav-icon" src="assets/icons/calculator.svg" alt="CoreUI Icons Calculator"> Widgets<span class="badge badge-primary">NEW</span></a></li>
-          <li class="divider"></li>
+          <li class="c-nav-item"><a class="c-nav-link" href="widgets.html">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-calculator"></use>
+              </svg> Widgets<span class="badge badge-info">NEW</span></a></li>
+          <li class="c-nav-divider"></li>
           <li class="c-nav-title">Extras</li>
-          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#"><img class="c-nav-icon" src="assets/icons/star.svg" alt="CoreUI Icons Star"> Pages</a>
+          <li class="c-nav-item c-nav-dropdown"><a class="c-nav-link c-nav-dropdown-toggle" href="#">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-star"></use>
+              </svg> Pages</a>
             <ul class="c-nav-dropdown-items">
-              <li class="c-nav-item"><a class="c-nav-link" href="login.html" target="_top"><img class="c-nav-icon" src="assets/icons/account-logout.svg" alt="CoreUI Icons Account Logout"> Login</a></li>
-              <li class="c-nav-item"><a class="c-nav-link" href="register.html" target="_top"><img class="c-nav-icon" src="assets/icons/account-logout.svg" alt="CoreUI Icons Account Logout"> Register</a></li>
-              <li class="c-nav-item"><a class="c-nav-link" href="404.html" target="_top"><img class="c-nav-icon" src="assets/icons/bug.svg" alt="CoreUI Icons Bug"> Error 404</a></li>
-              <li class="c-nav-item"><a class="c-nav-link" href="500.html" target="_top"><img class="c-nav-icon" src="assets/icons/bug.svg" alt="CoreUI Icons Bug"> Error 500</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="login.html" target="_top">
+                  <svg class="c-nav-icon">
+                    <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-account-logout"></use>
+                  </svg> Login</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="register.html" target="_top">
+                  <svg class="c-nav-icon">
+                    <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-account-logout"></use>
+                  </svg> Register</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="404.html" target="_top">
+                  <svg class="c-nav-icon">
+                    <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bug"></use>
+                  </svg> Error 404</a></li>
+              <li class="c-nav-item"><a class="c-nav-link" href="500.html" target="_top">
+                  <svg class="c-nav-icon">
+                    <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bug"></use>
+                  </svg> Error 500</a></li>
             </ul>
           </li>
-          <li class="c-nav-item mt-auto"><a class="c-nav-link c-nav-link-success" href="https://coreui.io" target="_top"><img class="c-nav-icon" src="assets/icons/cloud-download.svg" alt="CoreUI Icons Cloud Download"> Download CoreUI</a></li>
-          <li class="c-nav-item"><a class="c-nav-link c-nav-link-danger" href="https://coreui.io/pro/" target="_top"><img class="c-nav-icon" src="assets/icons/layers.svg" alt="CoreUI Icons Layers"> Try CoreUI<strong>PRO</strong></a></li>
+          <li class="c-nav-item mt-auto"><a class="c-nav-link c-nav-link-success" href="https://coreui.io" target="_top">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-cloud-download"></use>
+              </svg> Download CoreUI</a></li>
+          <li class="c-nav-item"><a class="c-nav-link c-nav-link-danger" href="https://coreui.io/pro/" target="_top">
+              <svg class="c-nav-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-layers"></use>
+              </svg> Try CoreUI<strong>PRO</strong></a></li>
         </ul>
       </nav>
-      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="['_parent','.c-header-brand']" data-class="['c-sidebar-minimized','c-header-brand-minimized']"></button>
+      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>
-    <div class="c-body">
-      <main class="c-main">
-        <!-- Breadcrumb-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">Home</li>
-          <li class="breadcrumb-item"><a href="#">Admin</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
-          <!-- Breadcrumb Menu-->
-          <li class="breadcrumb-menu d-md-down-none">
-            <div class="btn-group" role="group" aria-label="Button group"><a class="btn" href="#"><img class="c-icon" src="assets/icons/speech.svg" alt="CoreUI Icons Speech"></a><a class="btn" href="./"><img class="c-icon" src="assets/icons/graph.svg" alt="CoreUI Icons Graph">  Dashboard</a><a class="btn" href="#"><img class="c-icon" src="assets/icons/settings.svg" alt="CoreUI Icons Settings">  Settings</a></div>
+    <div class="c-wrapper">
+      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+        <button class="c-header-toggler c-class-toggler d-lg-none mr-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button><a class="c-header-brand d-sm-none" href="#"><img class="c-header-brand" src="assets/brand/coreui-base.svg" width="97" height="46" alt="CoreUI Logo"></a>
+        <button class="c-header-toggler c-class-toggler ml-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true"><span class="c-header-toggler-icon"></span></button>
+        <ul class="c-header-nav d-md-down-none">
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Dashboard</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Users</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Settings</a></li>
+        </ul>
+        <ul class="c-header-nav ml-auto mr-4">
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link">
+              <svg class="c-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link">
+              <svg class="c-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-list-rich"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link">
+              <svg class="c-icon">
+                <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-envelope-open"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right pt-0">
+              <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell"></use>
+                </svg> Updates<span class="badge badge-info ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-envelope-open"></use>
+                </svg> Messages<span class="badge badge-success ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-task"></use>
+                </svg> Tasks<span class="badge badge-danger ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-comment-square"></use>
+                </svg> Comments<span class="badge badge-warning ml-auto">42</span></a>
+              <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user"></use>
+                </svg> Profile</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings"></use>
+                </svg> Settings</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-credit-card"></use>
+                </svg> Payments<span class="badge badge-secondary ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-file"></use>
+                </svg> Projects<span class="badge badge-primary ml-auto">42</span></a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-lock-locked"></use>
+                </svg> Lock Account</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-account-logout"></use>
+                </svg> Logout</a>
+            </div>
           </li>
-        </ol>
-        <div class="container-fluid">
-          <div class="fade-in">
-            <div class="row">
-              <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-primary">
-                  <div class="card-body pb-0">
-                    <div class="btn-group float-right">
-                      <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="c-icon" src="assets/icons/settings.svg" alt="CoreUI Icons Settings"></button>
-                      <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                    </div>
-                    <div class="text-value-lg">9.823</div>
-                    <div>Members online</div>
-                  </div>
-                  <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
-                    <canvas class="chart" id="card-chart1" height="70"></canvas>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-info">
-                  <div class="card-body pb-0">
-                    <button class="btn btn-transparent p-0 float-right" type="button"><img class="c-icon" src="assets/icons/location-pin.svg" alt="CoreUI Icons Location Pin"></button>
-                    <div class="text-value-lg">9.823</div>
-                    <div>Members online</div>
-                  </div>
-                  <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
-                    <canvas class="chart" id="card-chart2" height="70"></canvas>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-warning">
-                  <div class="card-body pb-0">
-                    <div class="btn-group float-right">
-                      <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="c-icon" src="assets/icons/settings.svg" alt="CoreUI Icons Settings"></button>
-                      <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                    </div>
-                    <div class="text-value-lg">9.823</div>
-                    <div>Members online</div>
-                  </div>
-                  <div class="c-chart-wrapper mt-3" style="height:70px;">
-                    <canvas class="chart" id="card-chart3" height="70"></canvas>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-danger">
-                  <div class="card-body pb-0">
-                    <div class="btn-group float-right">
-                      <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="c-icon" src="assets/icons/settings.svg" alt="CoreUI Icons Settings"></button>
-                      <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                    </div>
-                    <div class="text-value-lg">9.823</div>
-                    <div>Members online</div>
-                  </div>
-                  <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
-                    <canvas class="chart" id="card-chart4" height="70"></canvas>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
-            <div class="row">
-              <div class="col-sm-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-value-lg">89.9%</div>
-                    <div>Widget title</div>
-                    <div class="progress progress-xs my-2">
-                      <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div><small class="text-muted">Widget helper text</small>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-value-lg">12.124</div>
-                    <div>Widget title</div>
-                    <div class="progress progress-xs my-2">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div><small class="text-muted">Widget helper text</small>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-value-lg">$98.111,00</div>
-                    <div>Widget title</div>
-                    <div class="progress progress-xs my-2">
-                      <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div><small class="text-muted">Widget helper text</small>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-value-lg">2 TB</div>
-                    <div>Widget title</div>
-                    <div class="progress progress-xs my-2">
-                      <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div><small class="text-muted">Widget helper text</small>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
-            <div class="row">
-              <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-primary">
-                  <div class="card-body">
-                    <div class="text-value-lg">89.9%</div>
-                    <div>Widget title</div>
-                    <div class="progress progress-white progress-xs my-2">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div><small class="text-muted">Widget helper text</small>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-warning">
-                  <div class="card-body">
-                    <div class="text-value-lg">12.124</div>
-                    <div>Widget title</div>
-                    <div class="progress progress-white progress-xs my-2">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div><small class="text-muted">Widget helper text</small>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-danger">
-                  <div class="card-body">
-                    <div class="text-value-lg">$98.111,00</div>
-                    <div>Widget title</div>
-                    <div class="progress progress-white progress-xs my-2">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div><small class="text-muted">Widget helper text</small>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-info">
-                  <div class="card-body">
-                    <div class="text-value-lg">2 TB</div>
-                    <div>Widget title</div>
-                    <div class="progress progress-white progress-xs my-2">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div><small class="text-muted">Widget helper text</small>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
-            <div class="row">
-              <div class="col-md-2 col-sm-4">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <div class="text-muted small text-uppercase font-weight-bold">Title</div>
-                    <div class="text-value-xl py-3">1,123</div>
-                    <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas class="chart chart-bar" id="sparkline-chart-1" height="40" width="80"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-md-2 col-sm-4">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <div class="text-muted small text-uppercase font-weight-bold">Title</div>
-                    <div class="text-value-xl py-3">1,123</div>
-                    <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas class="chart chart-bar" id="sparkline-chart-2" height="40" width="80"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-md-2 col-sm-4">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <div class="text-muted small text-uppercase font-weight-bold">Title</div>
-                    <div class="text-value-xl py-3">1,123</div>
-                    <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas class="chart chart-bar" id="sparkline-chart-3" height="40" width="80"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-md-2 col-sm-4">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <div class="text-muted small text-uppercase font-weight-bold">Title</div>
-                    <div class="text-value-xl py-3">1,123</div>
-                    <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas class="chart chart-line" id="sparkline-chart-4" height="40" width="100"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-md-2 col-sm-4">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <div class="text-muted small text-uppercase font-weight-bold">Title</div>
-                    <div class="text-value-xl py-3">1,123</div>
-                    <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas class="chart chart-line" id="sparkline-chart-5" height="40" width="100"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-md-2 col-sm-4">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <div class="text-muted small text-uppercase font-weight-bold">Title</div>
-                    <div class="text-value-xl py-3">1,123</div>
-                    <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas class="chart chart-line" id="sparkline-chart-6" height="40" width="100"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
-            <div class="row">
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-3 d-flex align-items-center">
-                    <div class="bg-primary p-3 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/settings.svg" alt="CoreUI Icons Cogs"></div>
-                    <div>
-                      <div class="text-value text-primary">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-3 d-flex align-items-center">
-                    <div class="bg-info p-3 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/laptop.svg" alt="CoreUI Icons Laptop"></div>
-                    <div>
-                      <div class="text-value text-info">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-3 d-flex align-items-center">
-                    <div class="bg-warning p-3 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/moon.svg" alt="CoreUI Icons Moon"></div>
-                    <div>
-                      <div class="text-value text-warning">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-3 d-flex align-items-center">
-                    <div class="bg-danger p-3 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/bell.svg" alt="CoreUI Icons Bell"></div>
-                    <div>
-                      <div class="text-value text-danger">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-3 d-flex align-items-center">
-                    <div class="bg-primary p-3 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/settings.svg" alt="CoreUI Icons Cogs"></div>
-                    <div>
-                      <div class="text-value text-primary">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                  <div class="card-footer px-3 py-2"><a class="btn-block text-muted d-flex justify-content-between align-items-center" href="#"><span class="small font-weight-bold">View More</span><i class="fa fa-angle-right"></i></a></div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-3 d-flex align-items-center">
-                    <div class="bg-info p-3 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/laptop.svg" alt="CoreUI Icons Laptop"></div>
-                    <div>
-                      <div class="text-value text-info">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                  <div class="card-footer px-3 py-2"><a class="btn-block text-muted d-flex justify-content-between align-items-center" href="#"><span class="small font-weight-bold">View More</span><i class="fa fa-angle-right"></i></a></div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-3 d-flex align-items-center">
-                    <div class="bg-warning p-3 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/moon.svg" alt="CoreUI Icons Moon"></div>
-                    <div>
-                      <div class="text-value text-warning">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                  <div class="card-footer px-3 py-2"><a class="btn-block text-muted d-flex justify-content-between align-items-center" href="#"><span class="small font-weight-bold">View More</span><i class="fa fa-angle-right"></i></a></div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-3 d-flex align-items-center">
-                    <div class="bg-danger p-3 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/bell.svg" alt="CoreUI Icons Bell"></div>
-                    <div>
-                      <div class="text-value text-danger">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                  <div class="card-footer px-3 py-2"><a class="btn-block text-muted d-flex justify-content-between align-items-center" href="#"><span class="small font-weight-bold">View More</span><i class="fa fa-angle-right"></i></a></div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
-            <div class="row">
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-0 d-flex align-items-center">
-                    <div class="bg-primary p-4 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/settings.svg" alt="CoreUI Icons Cogs"></div>
-                    <div>
-                      <div class="text-value text-primary">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-0 d-flex align-items-center">
-                    <div class="bg-info p-4 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/laptop.svg" alt="CoreUI Icons Laptop"></div>
-                    <div>
-                      <div class="text-value text-info">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-0 d-flex align-items-center">
-                    <div class="bg-warning p-4 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/moon.svg" alt="CoreUI Icons Moon"></div>
-                    <div>
-                      <div class="text-value text-warning">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-0 d-flex align-items-center">
-                    <div class="bg-danger p-4 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/bell.svg" alt="CoreUI Icons Bell"></div>
-                    <div>
-                      <div class="text-value text-danger">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-0 d-flex align-items-center">
-                    <div class="bg-primary py-4 px-5 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/settings.svg" alt="CoreUI Icons Cogs"></div>
-                    <div>
-                      <div class="text-value text-primary">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-0 d-flex align-items-center">
-                    <div class="bg-info py-4 px-5 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/laptop.svg" alt="CoreUI Icons Laptop"></div>
-                    <div>
-                      <div class="text-value text-info">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-0 d-flex align-items-center">
-                    <div class="bg-warning py-4 px-5 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/moon.svg" alt="CoreUI Icons Moon"></div>
-                    <div>
-                      <div class="text-value text-warning">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-6 col-lg-3">
-                <div class="card">
-                  <div class="card-body p-0 d-flex align-items-center">
-                    <div class="bg-danger py-4 px-5 mr-3"><img class="c-icon c-icon-xl" src="assets/icons/bell.svg" alt="CoreUI Icons Bell"></div>
-                    <div>
-                      <div class="text-value text-danger">$1.999,50</div>
-                      <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
-            <div class="row">
-              <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                  <div class="card-header bg-facebook content-center"><img class="c-icon c-icon-3xl text-white my-4" src="assets/icons/brands/facebook-f.svg" alt="CoreUI Icons Social Facebook">
-                    <div class="c-chart-wrapper">
-                      <canvas id="social-box-chart-1" height="90"></canvas>
-                    </div>
-                  </div>
-                  <div class="card-body row text-center">
-                    <div class="col">
-                      <div class="text-value-xl">89k</div>
-                      <div class="text-uppercase text-muted small">friends</div>
-                    </div>
-                    <div class="c-vr"></div>
-                    <div class="col">
-                      <div class="text-value-xl">459</div>
-                      <div class="text-uppercase text-muted small">feeds</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                  <div class="card-header bg-twitter content-center"><img class="c-icon c-icon-3xl text-white my-4" src="assets/icons/brands/twitter.svg" alt="CoreUI Icons Social Twitter">
-                    <div class="c-chart-wrapper">
-                      <canvas id="social-box-chart-2" height="90"></canvas>
-                    </div>
-                  </div>
-                  <div class="card-body row text-center">
-                    <div class="col">
-                      <div class="text-value-xl">973k</div>
-                      <div class="text-uppercase text-muted small">followers</div>
-                    </div>
-                    <div class="c-vr"></div>
-                    <div class="col">
-                      <div class="text-value-xl">1.792</div>
-                      <div class="text-uppercase text-muted small">tweets</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                  <div class="card-header bg-linkedin content-center"><img class="c-icon c-icon-3xl text-white my-4" src="assets/icons/brands/linkedin.svg" alt="CoreUI Icons Social LinkedIn">
-                    <div class="c-chart-wrapper">
-                      <canvas id="social-box-chart-3" height="90"></canvas>
-                    </div>
-                  </div>
-                  <div class="card-body row text-center">
-                    <div class="col">
-                      <div class="text-value-xl">500+</div>
-                      <div class="text-uppercase text-muted small">contacts</div>
-                    </div>
-                    <div class="c-vr"></div>
-                    <div class="col">
-                      <div class="text-value-xl">292</div>
-                      <div class="text-uppercase text-muted small">feeds</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
-            <div class="card-group mb-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/people.svg" alt="CoreUI Icons People"></div>
-                  <div class="text-value-lg">87.500</div><small class="text-muted text-uppercase font-weight-bold">Visitors</small>
-                  <div class="progress progress-xs mt-3 mb-0">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/user-follow.svg" alt="CoreUI Icons User Follow"></div>
-                  <div class="text-value-lg">385</div><small class="text-muted text-uppercase font-weight-bold">New Clients</small>
-                  <div class="progress progress-xs mt-3 mb-0">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/basket.svg" alt="CoreUI Icons Basket"></div>
-                  <div class="text-value-lg">1238</div><small class="text-muted text-uppercase font-weight-bold">Products sold</small>
-                  <div class="progress progress-xs mt-3 mb-0">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/chart-pie.svg" alt="CoreUI Icons Chart Pie"></div>
-                  <div class="text-value-lg">28%</div><small class="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
-                  <div class="progress progress-xs mt-3 mb-0">
-                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/speedometer.svg" alt="CoreUI Icons Speedometer"></div>
-                  <div class="text-value-lg">5:34:11</div><small class="text-muted text-uppercase font-weight-bold">Avg. Time</small>
-                  <div class="progress progress-xs mt-3 mb-0">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-md-2">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/people.svg" alt="CoreUI Icons People"></div>
-                    <div class="text-value-lg">87.500</div><small class="text-muted text-uppercase font-weight-bold">Visitors</small>
-                    <div class="progress progress-xs mt-3 mb-0">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-md-2">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/user-follow.svg" alt="CoreUI Icons User Follow"></div>
-                    <div class="text-value-lg">385</div><small class="text-muted text-uppercase font-weight-bold">New Clients</small>
-                    <div class="progress progress-xs mt-3 mb-0">
-                      <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-md-2">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/basket.svg" alt="CoreUI Icons Basket"></div>
-                    <div class="text-value-lg">1238</div><small class="text-muted text-uppercase font-weight-bold">Products sold</small>
-                    <div class="progress progress-xs mt-3 mb-0">
-                      <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-md-2">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/chart-pie.svg" alt="CoreUI Icons Chart Pie"></div>
-                    <div class="text-value-lg">28%</div><small class="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
-                    <div class="progress progress-xs mt-3 mb-0">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-md-2">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/speedometer.svg" alt="CoreUI Icons Speedometer"></div>
-                    <div class="text-value-lg">5:34:11</div><small class="text-muted text-uppercase font-weight-bold">Avg. Time</small>
-                    <div class="progress progress-xs mt-3 mb-0">
-                      <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-md-2">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/speech.svg" alt="CoreUI Icons Speech"></div>
-                    <div class="text-value-lg">972</div><small class="text-muted text-uppercase font-weight-bold">Comments</small>
-                    <div class="progress progress-xs mt-3 mb-0">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
-            <div class="row">
-              <div class="col-sm-6 col-md-2">
-                <div class="card text-white bg-info">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/people.svg" alt="CoreUI Icons People"></div>
-                    <div class="text-value-lg">87.500</div><small class="text-muted text-uppercase font-weight-bold">Visitors</small>
-                    <div class="progress progress-white progress-xs mt-3">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-md-2">
-                <div class="card text-white bg-success">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/user-follow.svg" alt="CoreUI Icons User Follow"></div>
-                    <div class="text-value-lg">385</div><small class="text-muted text-uppercase font-weight-bold">New Clients</small>
-                    <div class="progress progress-white progress-xs mt-3">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-md-2">
-                <div class="card text-white bg-warning">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/basket.svg" alt="CoreUI Icons Basket"></div>
-                    <div class="text-value-lg">1238</div><small class="text-muted text-uppercase font-weight-bold">Products sold</small>
-                    <div class="progress progress-white progress-xs mt-3">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-md-2">
-                <div class="card text-white bg-primary">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/chart-pie.svg" alt="CoreUI Icons Chart Pie"></div>
-                    <div class="text-value-lg">28%</div><small class="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
-                    <div class="progress progress-white progress-xs mt-3">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-md-2">
-                <div class="card text-white bg-danger">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/speedometer.svg" alt="CoreUI Icons Speedometer"></div>
-                    <div class="text-value-lg">5:34:11</div><small class="text-muted text-uppercase font-weight-bold">Avg. Time</small>
-                    <div class="progress progress-white progress-xs mt-3">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6 col-md-2">
-                <div class="card text-white bg-info">
-                  <div class="card-body">
-                    <div class="text-muted text-right mb-4"><img class="c-icon c-icon-2xl" src="assets/icons/speech.svg" alt="CoreUI Icons Speech"></div>
-                    <div class="text-value-lg">972</div><small class="text-muted text-uppercase font-weight-bold">Comments</small>
-                    <div class="progress progress-white progress-xs mt-3">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
-          </div>
+        </ul>
+        <div class="c-subheader px-3">
+          <!-- Breadcrumb-->
+          <ol class="breadcrumb border-0 m-0">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a></li>
+            <li class="breadcrumb-item active">Dashboard</li>
+            <!-- Breadcrumb Menu-->
+          </ol>
         </div>
-      </main>
+      </header>
+      <div class="c-body">
+        <main class="c-main">
+          <div class="container-fluid">
+            <div class="fade-in">
+              <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-primary">
+                    <div class="card-body pb-0">
+                      <div class="btn-group float-right">
+                        <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg class="c-icon">
+                            <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings"></use>
+                          </svg>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                      </div>
+                      <div class="text-value-lg">9.823</div>
+                      <div>Members online</div>
+                    </div>
+                    <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                      <canvas class="chart" id="card-chart1" height="70"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-info">
+                    <div class="card-body pb-0">
+                      <button class="btn btn-transparent p-0 float-right" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-location-pin"></use>
+                        </svg>
+                      </button>
+                      <div class="text-value-lg">9.823</div>
+                      <div>Members online</div>
+                    </div>
+                    <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                      <canvas class="chart" id="card-chart2" height="70"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-warning">
+                    <div class="card-body pb-0">
+                      <div class="btn-group float-right">
+                        <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg class="c-icon">
+                            <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings"></use>
+                          </svg>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                      </div>
+                      <div class="text-value-lg">9.823</div>
+                      <div>Members online</div>
+                    </div>
+                    <div class="c-chart-wrapper mt-3" style="height:70px;">
+                      <canvas class="chart" id="card-chart3" height="70"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-danger">
+                    <div class="card-body pb-0">
+                      <div class="btn-group float-right">
+                        <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg class="c-icon">
+                            <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings"></use>
+                          </svg>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                      </div>
+                      <div class="text-value-lg">9.823</div>
+                      <div>Members online</div>
+                    </div>
+                    <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                      <canvas class="chart" id="card-chart4" height="70"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+              </div>
+              <!-- /.row-->
+              <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="text-value-lg">89.9%</div>
+                      <div>Widget title</div>
+                      <div class="progress progress-xs my-2">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><small class="text-muted">Widget helper text</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="text-value-lg">12.124</div>
+                      <div>Widget title</div>
+                      <div class="progress progress-xs my-2">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><small class="text-muted">Widget helper text</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="text-value-lg">$98.111,00</div>
+                      <div>Widget title</div>
+                      <div class="progress progress-xs my-2">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><small class="text-muted">Widget helper text</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="text-value-lg">2 TB</div>
+                      <div>Widget title</div>
+                      <div class="progress progress-xs my-2">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><small class="text-muted">Widget helper text</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+              </div>
+              <!-- /.row-->
+              <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-primary">
+                    <div class="card-body">
+                      <div class="text-value-lg">89.9%</div>
+                      <div>Widget title</div>
+                      <div class="progress progress-white progress-xs my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><small class="text-muted">Widget helper text</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-warning">
+                    <div class="card-body">
+                      <div class="text-value-lg">12.124</div>
+                      <div>Widget title</div>
+                      <div class="progress progress-white progress-xs my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><small class="text-muted">Widget helper text</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-danger">
+                    <div class="card-body">
+                      <div class="text-value-lg">$98.111,00</div>
+                      <div>Widget title</div>
+                      <div class="progress progress-white progress-xs my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><small class="text-muted">Widget helper text</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-info">
+                    <div class="card-body">
+                      <div class="text-value-lg">2 TB</div>
+                      <div>Widget title</div>
+                      <div class="progress progress-white progress-xs my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><small class="text-muted">Widget helper text</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+              </div>
+              <!-- /.row-->
+              <div class="row">
+                <div class="col-md-2 col-sm-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="text-muted small text-uppercase font-weight-bold">Title</div>
+                      <div class="text-value-xl py-3">1,123</div>
+                      <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                        <canvas class="chart chart-bar" id="sparkline-chart-1" height="40" width="80"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-md-2 col-sm-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="text-muted small text-uppercase font-weight-bold">Title</div>
+                      <div class="text-value-xl py-3">1,123</div>
+                      <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                        <canvas class="chart chart-bar" id="sparkline-chart-2" height="40" width="80"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-md-2 col-sm-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="text-muted small text-uppercase font-weight-bold">Title</div>
+                      <div class="text-value-xl py-3">1,123</div>
+                      <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                        <canvas class="chart chart-bar" id="sparkline-chart-3" height="40" width="80"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-md-2 col-sm-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="text-muted small text-uppercase font-weight-bold">Title</div>
+                      <div class="text-value-xl py-3">1,123</div>
+                      <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                        <canvas class="chart chart-line" id="sparkline-chart-4" height="40" width="100"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-md-2 col-sm-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="text-muted small text-uppercase font-weight-bold">Title</div>
+                      <div class="text-value-xl py-3">1,123</div>
+                      <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                        <canvas class="chart chart-line" id="sparkline-chart-5" height="40" width="100"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-md-2 col-sm-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="text-muted small text-uppercase font-weight-bold">Title</div>
+                      <div class="text-value-xl py-3">1,123</div>
+                      <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                        <canvas class="chart chart-line" id="sparkline-chart-6" height="40" width="100"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+              </div>
+              <!-- /.row-->
+              <div class="row">
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body p-3 d-flex align-items-center">
+                      <div class="bg-primary p-3 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-primary">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body p-3 d-flex align-items-center">
+                      <div class="bg-info p-3 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-laptop"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-info">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body p-3 d-flex align-items-center">
+                      <div class="bg-warning p-3 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-moon"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-warning">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body p-3 d-flex align-items-center">
+                      <div class="bg-danger p-3 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-danger">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body p-3 d-flex align-items-center">
+                      <div class="bg-primary p-3 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-primary">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                    <div class="card-footer px-3 py-2"><a class="btn-block text-muted d-flex justify-content-between align-items-center" href="#"><span class="small font-weight-bold">View More</span>
+                        <svg class="c-icon">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chevron-right"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body p-3 d-flex align-items-center">
+                      <div class="bg-info p-3 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-laptop"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-info">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                    <div class="card-footer px-3 py-2"><a class="btn-block text-muted d-flex justify-content-between align-items-center" href="#"><span class="small font-weight-bold">View More</span>
+                        <svg class="c-icon">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chevron-right"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body p-3 d-flex align-items-center">
+                      <div class="bg-warning p-3 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-moon"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-warning">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                    <div class="card-footer px-3 py-2"><a class="btn-block text-muted d-flex justify-content-between align-items-center" href="#"><span class="small font-weight-bold">View More</span>
+                        <svg class="c-icon">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chevron-right"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <div class="card-body p-3 d-flex align-items-center">
+                      <div class="bg-danger p-3 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-danger">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                    <div class="card-footer px-3 py-2"><a class="btn-block text-muted d-flex justify-content-between align-items-center" href="#"><span class="small font-weight-bold">View More</span>
+                        <svg class="c-icon">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chevron-right"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+                <!-- /.col-->
+              </div>
+              <!-- /.row-->
+              <div class="row">
+                <div class="col-6 col-lg-3">
+                  <div class="card overflow-hidden">
+                    <div class="card-body p-0 d-flex align-items-center">
+                      <div class="bg-primary p-4 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-primary">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card overflow-hidden">
+                    <div class="card-body p-0 d-flex align-items-center">
+                      <div class="bg-info p-4 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-laptop"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-info">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card overflow-hidden">
+                    <div class="card-body p-0 d-flex align-items-center">
+                      <div class="bg-warning p-4 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-moon"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-warning">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card overflow-hidden">
+                    <div class="card-body p-0 d-flex align-items-center">
+                      <div class="bg-danger p-4 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-danger">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card overflow-hidden">
+                    <div class="card-body p-0 d-flex align-items-center">
+                      <div class="bg-primary py-4 px-5 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-primary">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card overflow-hidden">
+                    <div class="card-body p-0 d-flex align-items-center">
+                      <div class="bg-info py-4 px-5 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-laptop"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-info">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card overflow-hidden">
+                    <div class="card-body p-0 d-flex align-items-center">
+                      <div class="bg-warning py-4 px-5 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-moon"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-warning">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-6 col-lg-3">
+                  <div class="card overflow-hidden">
+                    <div class="card-body p-0 d-flex align-items-center">
+                      <div class="bg-danger py-4 px-5 mr-3">
+                        <svg class="c-icon c-icon-xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-value text-danger">$1.999,50</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">Widget title</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+              </div>
+              <!-- /.row-->
+              <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <div class="card-header bg-facebook content-center">
+                      <svg class="c-icon c-icon-3xl text-white my-4">
+                        <use xlink:href="assets/icons/brands/brands-symbol-defs.svg#facebook-f"></use>
+                      </svg>
+                      <div class="c-chart-wrapper">
+                        <canvas id="social-box-chart-1" height="90"></canvas>
+                      </div>
+                    </div>
+                    <div class="card-body row text-center">
+                      <div class="col">
+                        <div class="text-value-xl">89k</div>
+                        <div class="text-uppercase text-muted small">friends</div>
+                      </div>
+                      <div class="c-vr"></div>
+                      <div class="col">
+                        <div class="text-value-xl">459</div>
+                        <div class="text-uppercase text-muted small">feeds</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <div class="card-header bg-twitter content-center">
+                      <svg class="c-icon c-icon-3xl text-white my-4">
+                        <use xlink:href="assets/icons/brands/brands-symbol-defs.svg#twitter"></use>
+                      </svg>
+                      <div class="c-chart-wrapper">
+                        <canvas id="social-box-chart-2" height="90"></canvas>
+                      </div>
+                    </div>
+                    <div class="card-body row text-center">
+                      <div class="col">
+                        <div class="text-value-xl">973k</div>
+                        <div class="text-uppercase text-muted small">followers</div>
+                      </div>
+                      <div class="c-vr"></div>
+                      <div class="col">
+                        <div class="text-value-xl">1.792</div>
+                        <div class="text-uppercase text-muted small">tweets</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <div class="card-header bg-linkedin content-center">
+                      <svg class="c-icon c-icon-3xl text-white my-4">
+                        <use xlink:href="assets/icons/brands/brands-symbol-defs.svg#linkedin"></use>
+                      </svg>
+                      <div class="c-chart-wrapper">
+                        <canvas id="social-box-chart-3" height="90"></canvas>
+                      </div>
+                    </div>
+                    <div class="card-body row text-center">
+                      <div class="col">
+                        <div class="text-value-xl">500+</div>
+                        <div class="text-uppercase text-muted small">contacts</div>
+                      </div>
+                      <div class="c-vr"></div>
+                      <div class="col">
+                        <div class="text-value-xl">292</div>
+                        <div class="text-uppercase text-muted small">feeds</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+              </div>
+              <!-- /.row-->
+              <div class="card-group mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="text-muted text-right mb-4">
+                      <svg class="c-icon c-icon-2xl">
+                        <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-people"></use>
+                      </svg>
+                    </div>
+                    <div class="text-value-lg">87.500</div><small class="text-muted text-uppercase font-weight-bold">Visitors</small>
+                    <div class="progress progress-xs mt-3 mb-0">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="text-muted text-right mb-4">
+                      <svg class="c-icon c-icon-2xl">
+                        <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user-follow"></use>
+                      </svg>
+                    </div>
+                    <div class="text-value-lg">385</div><small class="text-muted text-uppercase font-weight-bold">New Clients</small>
+                    <div class="progress progress-xs mt-3 mb-0">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="text-muted text-right mb-4">
+                      <svg class="c-icon c-icon-2xl">
+                        <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-basket"></use>
+                      </svg>
+                    </div>
+                    <div class="text-value-lg">1238</div><small class="text-muted text-uppercase font-weight-bold">Products sold</small>
+                    <div class="progress progress-xs mt-3 mb-0">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="text-muted text-right mb-4">
+                      <svg class="c-icon c-icon-2xl">
+                        <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chart-pie"></use>
+                      </svg>
+                    </div>
+                    <div class="text-value-lg">28%</div><small class="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
+                    <div class="progress progress-xs mt-3 mb-0">
+                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="text-muted text-right mb-4">
+                      <svg class="c-icon c-icon-2xl">
+                        <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speedometer"></use>
+                      </svg>
+                    </div>
+                    <div class="text-value-lg">5:34:11</div><small class="text-muted text-uppercase font-weight-bold">Avg. Time</small>
+                    <div class="progress progress-xs mt-3 mb-0">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-people"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">87.500</div><small class="text-muted text-uppercase font-weight-bold">Visitors</small>
+                      <div class="progress progress-xs mt-3 mb-0">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-md-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user-follow"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">385</div><small class="text-muted text-uppercase font-weight-bold">New Clients</small>
+                      <div class="progress progress-xs mt-3 mb-0">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-md-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-basket"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">1238</div><small class="text-muted text-uppercase font-weight-bold">Products sold</small>
+                      <div class="progress progress-xs mt-3 mb-0">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-md-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chart-pie"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">28%</div><small class="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
+                      <div class="progress progress-xs mt-3 mb-0">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-md-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speedometer"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">5:34:11</div><small class="text-muted text-uppercase font-weight-bold">Avg. Time</small>
+                      <div class="progress progress-xs mt-3 mb-0">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-md-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speech"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">972</div><small class="text-muted text-uppercase font-weight-bold">Comments</small>
+                      <div class="progress progress-xs mt-3 mb-0">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+              </div>
+              <!-- /.row-->
+              <div class="row">
+                <div class="col-sm-6 col-md-2">
+                  <div class="card text-white bg-info">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-people"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">87.500</div><small class="text-muted text-uppercase font-weight-bold">Visitors</small>
+                      <div class="progress progress-white progress-xs mt-3">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-md-2">
+                  <div class="card text-white bg-success">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user-follow"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">385</div><small class="text-muted text-uppercase font-weight-bold">New Clients</small>
+                      <div class="progress progress-white progress-xs mt-3">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-md-2">
+                  <div class="card text-white bg-warning">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-basket"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">1238</div><small class="text-muted text-uppercase font-weight-bold">Products sold</small>
+                      <div class="progress progress-white progress-xs mt-3">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-md-2">
+                  <div class="card text-white bg-primary">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chart-pie"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">28%</div><small class="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
+                      <div class="progress progress-white progress-xs mt-3">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-md-2">
+                  <div class="card text-white bg-danger">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speedometer"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">5:34:11</div><small class="text-muted text-uppercase font-weight-bold">Avg. Time</small>
+                      <div class="progress progress-white progress-xs mt-3">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+                <div class="col-sm-6 col-md-2">
+                  <div class="card text-white bg-info">
+                    <div class="card-body">
+                      <div class="text-muted text-right mb-4">
+                        <svg class="c-icon c-icon-2xl">
+                          <use xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speech"></use>
+                        </svg>
+                      </div>
+                      <div class="text-value-lg">972</div><small class="text-muted text-uppercase font-weight-bold">Comments</small>
+                      <div class="progress progress-white progress-xs mt-3">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-->
+              </div>
+              <!-- /.row-->
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="c-footer">
+        <div><a href="https://coreui.io">CoreUI</a> &copy; 2019 creativeLabs.</div>
+        <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+      </footer>
     </div>
-    <footer class="c-footer">
-      <div><a href="https://coreui.io">CoreUI</a> &copy; 2019 creativeLabs.</div>
-      <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io">CoreUI</a></div>
-    </footer>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/pace-progress/pace.min.js"></script>
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>

@@ -1,72 +1,86 @@
-header.c-header.c-header-light.c-header-fixed
+header.c-header.c-header-light.c-header-fixed.c-header-with-subheader
   button.c-header-toggler.c-class-toggler.d-lg-none.mr-auto(type="button" data-target="#sidebar" data-class="c-sidebar-show")
     span.c-header-toggler-icon
-  a.c-header-brand.c-header-brand-md-down-centered(href="#")
-    img.c-header-brand-full(src="assets/brand/coreui-base.svg" width="97" height="46" alt="CoreUI Logo")
-    img.c-header-brand-minimized(src="assets/brand/coreui-signet.svg" width="46" height="46" alt="CoreUI Logo")
-  button.c-header-toggler.c-class-toggler.d-md-down-none(type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true")
+  a.c-header-brand.d-sm-none(href="#")
+    img.c-header-brand(src="assets/brand/coreui-base.svg" width="97" height="46" alt="CoreUI Logo")
+  button.c-header-toggler.c-class-toggler.ml-3.d-md-down-none(type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true")
     span.c-header-toggler-icon
   if !starter
     ul.c-header-nav.d-md-down-none
-      li.c-nav-item.px-3
-        a.c-nav-link(href="#") Dashboard
-      li.c-nav-item.px-3
-        a.c-nav-link(href="#") Users
-      li.c-nav-item.px-3
-        a.c-nav-link(href="#") Settings
-    ul.c-nav.c-header-nav.ml-auto
-      li.c-nav-item.d-md-down-none.mx-2
-        a.c-nav-link(href="#")
-          img.c-icon(src="assets/icons/bell.svg" alt="CoreUI Icons Bell")
-          span.badge.badge-pill.badge-danger 5
-      li.c-nav-item.d-md-down-none.mx-2
-        a.c-nav-link(href="#")
-          img.c-icon(src="assets/icons/list-rich.svg" alt="CoreUI Icons List Rich")
-      li.c-nav-item.d-md-down-none.mx-2
-        a.c-nav-link(href="#")
-          img.c-icon(src="assets/icons/location-pin.svg" alt="CoreUI Icons Location Pin")
-      li.c-nav-item.dropdown
-        a.c-nav-link(data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false")
-          img.c-avatar-img(src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com")
+      li.c-header-nav-item.px-3
+        a.c-header-nav-link(href="#") Dashboard
+      li.c-header-nav-item.px-3
+        a.c-header-nav-link(href="#") Users
+      li.c-header-nav-item.px-3
+        a.c-header-nav-link(href="#") Settings
+    ul.c-header-nav.ml-auto.mr-4
+      li.c-header-nav-item.d-md-down-none.mx-2
+        a.c-header-nav-link
+          svg.c-icon
+            use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell")
+      li.c-header-nav-item.d-md-down-none.mx-2
+        a.c-header-nav-link
+          svg.c-icon
+            use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-list-rich")
+      li.c-header-nav-item.d-md-down-none.mx-2
+        a.c-header-nav-link
+          svg.c-icon
+            use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-envelope-open")
+      li.c-header-nav-item.dropdown
+        a.c-header-nav-link(data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false")
+          .c-avatar
+            img.c-avatar-img(src="assets/img/avatars/6.jpg" alt="user@email.com")
         .dropdown-menu.dropdown-menu-right.pt-0
           .dropdown-header.bg-light.py-2
             strong Account
           a.dropdown-item(href="#")
-            img.c-icon.mr-2(src="assets/icons/bell.svg" alt="CoreUI Icons Bell")
+            svg.c-icon.mr-2
+              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell")
             |  Updates
             span.badge.badge-info.ml-auto 42
           a.dropdown-item(href="#")
-            img.c-icon.mr-2(src="assets/icons/envelope-open.svg" alt="CorseUI Icons Envelope Open")
+            svg.c-icon.mr-2
+              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-envelope-open")
             |  Messages
             span.badge.badge-success.ml-auto 42
           a.dropdown-item(href="#")
-            img.c-icon.mr-2(src="assets/icons/task.svg" alt="CoreUI Icons Task")
+            svg.c-icon.mr-2
+              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-task")
             |  Tasks
             span.badge.badge-danger.ml-auto 42
           a.dropdown-item(href="#")
-            img.c-icon.mr-2(src="assets/icons/comment-square.svg" alt="CoreUI Icons Comment Square")
+            svg.c-icon.mr-2
+              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-comment-square")
             |  Comments
             span.badge.badge-warning.ml-auto 42
           .dropdown-header.bg-light.py-2
             strong Settings
           a.dropdown-item(href="#")
-            img.c-icon.mr-2(src="assets/icons/user.svg" alt="CoreUI Icons User")
+            svg.c-icon.mr-2
+              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user")
             |  Profile
           a.dropdown-item(href="#")
-            img.c-icon.mr-2(src="assets/icons/settings.svg" alt="CoreUI Icons Settings")
+            svg.c-icon.mr-2
+              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
             |  Settings
           a.dropdown-item(href="#")
-            img.c-icon.mr-2(src="assets/icons/credit-card.svg" alt="CoreUI Icons Credit Card")
+            svg.c-icon.mr-2
+              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-credit-card")
             |  Payments
             span.badge.badge-secondary.ml-auto 42
           a.dropdown-item(href="#")
-            img.c-icon.mr-2(src="assets/icons/file.svg" alt="CoreUI Icons File")
+            svg.c-icon.mr-2
+              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-file")
             |  Projects
             span.badge.badge-primary.ml-auto 42
           .dropdown-divider
           a.dropdown-item(href="#")
-            img.c-icon.mr-2(src="assets/icons/lock-locked.svg" alt="CoreUI Icons Lock Locked")
+            svg.c-icon.mr-2
+              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-lock-locked")
             |  Lock Account
           a.dropdown-item(href="#")
-            img.c-icon.mr-2(src="assets/icons/account-logout.svg" alt="CoreUI Icons Account Logout")
+            svg.c-icon.mr-2
+              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-account-logout")
             |  Logout
+  .c-subheader.px-3
+    include ./../_partials/breadcrumb.pug
