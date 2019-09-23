@@ -140,7 +140,7 @@ See [the Releases section of our project](https://github.com/coreui/coreui-free-
 Get updates on CoreUI's development and chat with the project maintainers and community members.
 
 - Follow [@core_ui on Twitter](https://twitter.com/core_ui).
-- Read and subscribe to [CoreUI Blog](https://coreui.ui/blog/).
+- Read and subscribe to [CoreUI Blog](https://coreui.io/blog/).
 
 ### Community Projects
 
@@ -148,6 +148,17 @@ Some of projects created by community but not maintained by CoreUI team.
 
 * [NuxtJS + Vue CoreUI](https://github.com/muhibbudins/nuxt-coreui)
 * [Colmena](https://github.com/colmena/colmena)
+
+## CoreUI Icons (522 Free icons) - Premium designed free icon set with marks in SVG, Webfont and raster formats.
+
+CoreUI Icons are beautifully crafted symbols for common actions and items. You can use them in your digital products for web or mobile app. Ready-to-use fonts and stylesheets that work with your favorite frameworks.
+
+![CoreUI Free Icons](https://coreui.io/images/icons_free_bg_set.png)
+
+
+### CoreUI Icons Preview & Docs
+
+[https://coreui.io/icons/](https://coreui.io/icons/)
 
 ## Copyright and license
 
