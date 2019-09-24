@@ -68,10 +68,10 @@ If you want to change how it looks or works, install the theme on your machine, 
 
 ``` bash
 # clone the repo
-$ git clone https://github.com/Laravel-Backpack/BackStrap.git custom-backstrap
+$ git clone https://github.com/digitallyhappy/BackStrap.git custom-backstrap
 
 # go into app's directory
-$ cd my-project
+$ cd custom-backstrap
 
 # install app's dependencies
 $ npm install
