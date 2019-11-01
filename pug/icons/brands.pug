@@ -9,14 +9,15 @@ block view
   .fade-in
     .card.card-default
       .card-header
-        |  CoreUI Icons
+        | Brand Icons
         .card-header-actions
           a.card-header-action(href='https://github.com/coreui/coreui-icons', target='_blank') Github
       .card-body
         .row.text-center
           each icon in icons
             .col-6.col-sm-4.col-md-2
-              i(class='c-icon c-icon-2xl mt-5 fab fa-' + icon)
+              svg.c-icon.c-icon-2xl.mt-5
+                use(xlink:href='assets/icons/brands/brands-symbol-defs.svg#'+ icon)
               div=icon
         // /.row
 

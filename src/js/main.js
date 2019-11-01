@@ -14,7 +14,7 @@ Chart.defaults.global.pointHitDetectionRadius = 1
 Chart.defaults.global.tooltips.enabled = false
 Chart.defaults.global.tooltips.mode = 'index'
 Chart.defaults.global.tooltips.position = 'nearest'
-Chart.defaults.global.tooltips.custom = coreui.ChartJS.CustomTooltips
+Chart.defaults.global.tooltips.custom = coreui.ChartJS.customTooltips
 Chart.defaults.global.defaultFontColor = '#646470'
 
 document.body.addEventListener('classtoggle', event => {

@@ -74,17 +74,7 @@ const checkPath = (src, dest, injectVendors, injectSvg) => {
       // TODO: handle errors
     })
   } else if (isPug(src)) {
-    if (src.includes('_partial') || src.includes('_partial')) {
-      const files = getAllFiles('pug/')
-      files.forEach(file => {
-        if (isPug(file)) {
-          compilePugToHtml(resolve(file), dest, injectVendors, injectSvg)
-        }
-        // TODO: handle errors
-      })
-    } else {
-      compilePugToHtml(resolve(src), dest, injectVendors, injectSvg)
-    }
+    compilePugToHtml(resolve(src), dest, injectVendors, injectSvg)
   }
   // TODO: handle errors
 }
