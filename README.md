@@ -56,6 +56,14 @@ CoreUI is built on top of Bootstrap 4 and supports popular frameworks.
 | --- | --- |
 | [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_light.png)](https://coreui.io/pro/) | [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_dark.png)](https://coreui.io/pro/)
 
+## CoreUI Icons (522 Free icons) - Premium designed free icon set with marks in SVG, Webfont and raster formats.
+
+CoreUI Icons are beautifully crafted symbols for common actions and items. You can use them in your digital products for web or mobile app. Ready-to-use fonts and stylesheets that work with your favorite frameworks.
+
+[![CoreUI Free Icons](https://coreui.io/images/icons_free_bg_set.png)](https://github.com/coreui/coreui-icons/)
+
+[Download CoreUI Free Icons](https://github.com/coreui/coreui-icons/)
+
 
 ## Installation
 
