@@ -4,7 +4,7 @@
 
 Please help us on [Product Hunt](https://www.producthunt.com/posts/coreui-open-source-bootstrap-4-admin-template-with-angular-2-react-js-vue-js-support). Thanks in advance!
 
-[![Bootstrap Admin Template](https://coreui.io/assets/img/example-coureui.jpg)](https://coreui.io/)
+[![Bootstrap Admin Template](https://coreui.io/images/templates/coreui_3_free.jpg)](https://coreui.io/)
 
 Curious why I decided to create CoreUI? Please read this article: [Jack of all trades, master of none. Why Bootstrap Admin Templates suck.](https://medium.com/@lukaszholeczek/jack-of-all-trades-master-of-none-5ea53ef8a1f#.7eqx1bcd8)
 
@@ -55,6 +55,14 @@ CoreUI is built on top of Bootstrap 4 and supports popular frameworks.
 | Default Layout | Dark Layout |
 | --- | --- |
 | [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_light.png)](https://coreui.io/pro/) | [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_dark.png)](https://coreui.io/pro/)
+
+## CoreUI Icons (522 Free icons) - Premium designed free icon set with marks in SVG, Webfont and raster formats.
+
+CoreUI Icons are beautifully crafted symbols for common actions and items. You can use them in your digital products for web or mobile app. Ready-to-use fonts and stylesheets that work with your favorite frameworks.
+
+[![CoreUI Free Icons](https://coreui.io/images/icons_free_bg_set.png)](https://github.com/coreui/coreui-icons/)
+
+[Download CoreUI Free Icons](https://github.com/coreui/coreui-icons/)
 
 
 ## Installation
@@ -158,7 +166,6 @@ Get updates on CoreUI's development and chat with the project maintainers and co
 Some of projects created by community but not maintained by CoreUI team.
 
 * [NuxtJS + Vue CoreUI](https://github.com/muhibbudins/nuxt-coreui)
-* [Colmena](https://github.com/colmena/colmena)
 
 ## Copyright and license
 
