@@ -1,11 +1,10 @@
 extends /_layout/default.pug
 
 block styles
-  link(href='node_modules/@coreui/coreui-chartjs/custom-tooltips/dist/css/coreui-chartjs.css', rel='stylesheet')
+  link(href='node_modules/@coreui/coreui-chartjs/dist/css/coreui-chartjs.css', rel='stylesheet')
 
 block scripts
-  script(src='node_modules/chart.js/dist/Chart.min.js')
-  script(src='node_modules/@coreui/coreui-chartjs/custom-tooltips/dist/js/coreui-chartjs.js')
+  script(src='node_modules/@coreui/coreui-chartjs/dist/js/coreui-chartjs.bundle.js')
   script(src='js/widgets.js')
 
 block view
@@ -13,60 +12,69 @@ block view
     .row
       .col-sm-6.col-lg-3
         .card.text-white.bg-primary
-          .card-body.pb-0
-            .btn-group.float-right
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
               button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 svg.c-icon
-                  use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
               .dropdown-menu.dropdown-menu-right
                 a.dropdown-item(href='#') Action
                 a.dropdown-item(href='#') Another action
                 a.dropdown-item(href='#') Something else here
-            .text-value-lg 9.823
-            div Members online
           .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
             canvas#card-chart1.chart(height='70')
       // /.col
       .col-sm-6.col-lg-3
         .card.text-white.bg-info
-          .card-body.pb-0
-            button.btn.btn-transparent.p-0.float-right(type='button')
-              svg.c-icon
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-location-pin")
-            .text-value-lg 9.823
-            div Members online
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
+              button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                svg.c-icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+              .dropdown-menu.dropdown-menu-right
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
           .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
             canvas#card-chart2.chart(height='70')
       // /.col
       .col-sm-6.col-lg-3
         .card.text-white.bg-warning
-          .card-body.pb-0
-            .btn-group.float-right
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
               button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 svg.c-icon
-                  use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
               .dropdown-menu.dropdown-menu-right
                 a.dropdown-item(href='#') Action
                 a.dropdown-item(href='#') Another action
                 a.dropdown-item(href='#') Something else here
-            .text-value-lg 9.823
-            div Members online
           .c-chart-wrapper.mt-3(style='height:70px;')
             canvas#card-chart3.chart(height='70')
       // /.col
       .col-sm-6.col-lg-3
         .card.text-white.bg-danger
-          .card-body.pb-0
-            .btn-group.float-right
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
               button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 svg.c-icon
-                  use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
               .dropdown-menu.dropdown-menu-right
                 a.dropdown-item(href='#') Action
                 a.dropdown-item(href='#') Another action
                 a.dropdown-item(href='#') Something else here
-            .text-value-lg 9.823
-            div Members online
           .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
             canvas#card-chart4.chart(height='70')
       // /.col
@@ -201,9 +209,9 @@ block view
       .col-6.col-lg-3
         .card
           .card-body.p-3.d-flex.align-items-center
-            div.bg-primary.p-3.mr-3
+            div.bg-primary.p-3.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
             div
               .text-value.text-primary $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -211,9 +219,9 @@ block view
       .col-6.col-lg-3
         .card
           .card-body.p-3.d-flex.align-items-center
-            div.bg-info.p-3.mr-3
+            div.bg-info.p-3.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-laptop")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
             div
               .text-value.text-info $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -221,9 +229,9 @@ block view
       .col-6.col-lg-3
         .card
           .card-body.p-3.d-flex.align-items-center
-            div.bg-warning.p-3.mr-3
+            div.bg-warning.p-3.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-moon")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
             div
               .text-value.text-warning $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -231,9 +239,9 @@ block view
       .col-6.col-lg-3
         .card
           .card-body.p-3.d-flex.align-items-center
-            div.bg-danger.p-3.mr-3
+            div.bg-danger.p-3.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
             div
               .text-value.text-danger $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -241,9 +249,9 @@ block view
       .col-6.col-lg-3
         .card
           .card-body.p-3.d-flex.align-items-center
-            div.bg-primary.p-3.mr-3
+            div.bg-primary.p-3.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
             div
               .text-value.text-primary $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -251,14 +259,14 @@ block view
             a.btn-block.text-muted.d-flex.justify-content-between.align-items-center(href='#')
               span.small.font-weight-bold View More
               svg.c-icon
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chevron-right")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
       // /.col
       .col-6.col-lg-3
         .card
           .card-body.p-3.d-flex.align-items-center
-            div.bg-info.p-3.mr-3
+            div.bg-info.p-3.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-laptop")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
             div
               .text-value.text-info $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -266,14 +274,14 @@ block view
             a.btn-block.text-muted.d-flex.justify-content-between.align-items-center(href='#')
               span.small.font-weight-bold View More
               svg.c-icon
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chevron-right")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
       // /.col
       .col-6.col-lg-3
         .card
           .card-body.p-3.d-flex.align-items-center
-            div.bg-warning.p-3.mr-3
+            div.bg-warning.p-3.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-moon")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
             div
               .text-value.text-warning $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -281,14 +289,14 @@ block view
             a.btn-block.text-muted.d-flex.justify-content-between.align-items-center(href='#')
               span.small.font-weight-bold View More
               svg.c-icon
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chevron-right")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
       // /.col
       .col-6.col-lg-3
         .card
           .card-body.p-3.d-flex.align-items-center
-            div.bg-danger.p-3.mr-3
+            div.bg-danger.p-3.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
             div
               .text-value.text-danger $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -296,16 +304,16 @@ block view
             a.btn-block.text-muted.d-flex.justify-content-between.align-items-center(href='#')
               span.small.font-weight-bold View More
               svg.c-icon
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chevron-right")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
       // /.col
     // /.row
     .row
       .col-6.col-lg-3
         .card.overflow-hidden
           .card-body.p-0.d-flex.align-items-center
-            div.bg-primary.p-4.mr-3
+            div.bg-primary.p-4.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
             div
               .text-value.text-primary $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -313,9 +321,9 @@ block view
       .col-6.col-lg-3
         .card.overflow-hidden
           .card-body.p-0.d-flex.align-items-center
-            div.bg-info.p-4.mr-3
+            div.bg-info.p-4.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-laptop")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
             div
               .text-value.text-info $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -323,9 +331,9 @@ block view
       .col-6.col-lg-3
         .card.overflow-hidden
           .card-body.p-0.d-flex.align-items-center
-            div.bg-warning.p-4.mr-3
+            div.bg-warning.p-4.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-moon")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
             div
               .text-value.text-warning $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -333,9 +341,9 @@ block view
       .col-6.col-lg-3
         .card.overflow-hidden
           .card-body.p-0.d-flex.align-items-center
-            div.bg-danger.p-4.mr-3
+            div.bg-danger.p-4.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
             div
               .text-value.text-danger $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -343,9 +351,9 @@ block view
       .col-6.col-lg-3
         .card.overflow-hidden
           .card-body.p-0.d-flex.align-items-center
-            div.bg-primary.py-4.px-5.mr-3
+            div.bg-primary.py-4.px-5.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-settings")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
             div
               .text-value.text-primary $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -353,9 +361,9 @@ block view
       .col-6.col-lg-3
         .card.overflow-hidden
           .card-body.p-0.d-flex.align-items-center
-            div.bg-info.py-4.px-5.mr-3
+            div.bg-info.py-4.px-5.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-laptop")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
             div
               .text-value.text-info $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -363,9 +371,9 @@ block view
       .col-6.col-lg-3
         .card.overflow-hidden
           .card-body.p-0.d-flex.align-items-center
-            div.bg-warning.py-4.px-5.mr-3
+            div.bg-warning.py-4.px-5.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-moon")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
             div
               .text-value.text-warning $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -373,9 +381,9 @@ block view
       .col-6.col-lg-3
         .card.overflow-hidden
           .card-body.p-0.d-flex.align-items-center
-            div.bg-danger.py-4.px-5.mr-3
+            div.bg-danger.py-4.px-5.mfe-3
               svg.c-icon.c-icon-xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-bell")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
             div
               .text-value.text-danger $1.999,50
               .text-muted.text-uppercase.font-weight-bold.small Widget title
@@ -386,7 +394,7 @@ block view
         .card
           .card-header.bg-facebook.content-center
             svg.c-icon.c-icon-3xl.text-white.my-4
-              use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#facebook-f")
+              use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
             .c-chart-wrapper
               canvas#social-box-chart-1(height='90')
           .card-body.row.text-center
@@ -402,7 +410,7 @@ block view
         .card
           .card-header.bg-twitter.content-center
             svg.c-icon.c-icon-3xl.text-white.my-4
-              use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#twitter")
+              use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
             .c-chart-wrapper
               canvas#social-box-chart-2(height='90')
           .card-body.row.text-center
@@ -418,7 +426,7 @@ block view
         .card
           .card-header.bg-linkedin.content-center
             svg.c-icon.c-icon-3xl.text-white.my-4
-              use(xlink:href="assets/icons/brands/brands-symbol-defs.svg#linkedin")
+              use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
             .c-chart-wrapper
               canvas#social-box-chart-3(height='90')
           .card-body.row.text-center
@@ -436,7 +444,7 @@ block view
         .card-body
           .text-muted.text-right.mb-4
             svg.c-icon.c-icon-2xl
-              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-people")
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
           .text-value-lg 87.500
           small.text-muted.text-uppercase.font-weight-bold Visitors
           .progress.progress-xs.mt-3.mb-0
@@ -445,7 +453,7 @@ block view
         .card-body
           .text-muted.text-right.mb-4
             svg.c-icon.c-icon-2xl
-              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user-follow")
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
           .text-value-lg 385
           small.text-muted.text-uppercase.font-weight-bold New Clients
           .progress.progress-xs.mt-3.mb-0
@@ -454,7 +462,7 @@ block view
         .card-body
           .text-muted.text-right.mb-4
             svg.c-icon.c-icon-2xl
-              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-basket")
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
           .text-value-lg 1238
           small.text-muted.text-uppercase.font-weight-bold Products sold
           .progress.progress-xs.mt-3.mb-0
@@ -463,7 +471,7 @@ block view
         .card-body
           .text-muted.text-right.mb-4
             svg.c-icon.c-icon-2xl
-              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chart-pie")
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
           .text-value-lg 28%
           small.text-muted.text-uppercase.font-weight-bold Returning Visitors
           .progress.progress-xs.mt-3.mb-0
@@ -472,7 +480,7 @@ block view
         .card-body
           .text-muted.text-right.mb-4
             svg.c-icon.c-icon-2xl
-              use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speedometer")
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
           .text-value-lg 5:34:11
           small.text-muted.text-uppercase.font-weight-bold Avg. Time
           .progress.progress-xs.mt-3.mb-0
@@ -483,7 +491,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
               svg.c-icon.c-icon-2xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-people")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
             .text-value-lg 87.500
             small.text-muted.text-uppercase.font-weight-bold Visitors
             .progress.progress-xs.mt-3.mb-0
@@ -494,7 +502,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
                svg.c-icon.c-icon-2xl
-                 use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user-follow")
+                 use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
             .text-value-lg 385
             small.text-muted.text-uppercase.font-weight-bold New Clients
             .progress.progress-xs.mt-3.mb-0
@@ -505,7 +513,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
               svg.c-icon.c-icon-2xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-basket")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
             .text-value-lg 1238
             small.text-muted.text-uppercase.font-weight-bold Products sold
             .progress.progress-xs.mt-3.mb-0
@@ -516,7 +524,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
               svg.c-icon.c-icon-2xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chart-pie")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
             .text-value-lg 28%
             small.text-muted.text-uppercase.font-weight-bold Returning Visitors
             .progress.progress-xs.mt-3.mb-0
@@ -527,7 +535,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
               svg.c-icon.c-icon-2xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speedometer")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
             .text-value-lg 5:34:11
             small.text-muted.text-uppercase.font-weight-bold Avg. Time
             .progress.progress-xs.mt-3.mb-0
@@ -538,7 +546,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
               svg.c-icon.c-icon-2xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speech")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech")
             .text-value-lg 972
             small.text-muted.text-uppercase.font-weight-bold Comments
             .progress.progress-xs.mt-3.mb-0
@@ -551,7 +559,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
               svg.c-icon.c-icon-2xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-people")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
             .text-value-lg 87.500
             small.text-muted.text-uppercase.font-weight-bold Visitors
             .progress.progress-white.progress-xs.mt-3
@@ -562,7 +570,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
               svg.c-icon.c-icon-2xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-user-follow")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
             .text-value-lg 385
             small.text-muted.text-uppercase.font-weight-bold New Clients
             .progress.progress-white.progress-xs.mt-3
@@ -573,7 +581,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
               svg.c-icon.c-icon-2xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-basket")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
             .text-value-lg 1238
             small.text-muted.text-uppercase.font-weight-bold Products sold
             .progress.progress-white.progress-xs.mt-3
@@ -584,7 +592,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
               svg.c-icon.c-icon-2xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-chart-pie")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
             .text-value-lg 28%
             small.text-muted.text-uppercase.font-weight-bold Returning Visitors
             .progress.progress-white.progress-xs.mt-3
@@ -595,7 +603,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
               svg.c-icon.c-icon-2xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speedometer")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
             .text-value-lg 5:34:11
             small.text-muted.text-uppercase.font-weight-bold Avg. Time
             .progress.progress-white.progress-xs.mt-3
@@ -606,7 +614,7 @@ block view
           .card-body
             .text-muted.text-right.mb-4
               svg.c-icon.c-icon-2xl
-                use(xlink:href="assets/icons/coreui/free-symbol-defs.svg#cui-speech")
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech")
             .text-value-lg 972
             small.text-muted.text-uppercase.font-weight-bold Comments
             .progress.progress-white.progress-xs.mt-3
