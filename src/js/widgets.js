@@ -1,8 +1,8 @@
-/* global Chart, coreui, getStyle */
+/* global Chart, coreui, coreui.Utils.getStyle */
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v3.0.0-alpha.1): main.js
+ * CoreUI Boostrap Admin Template (v3.0.0-rc.0): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
@@ -18,11 +18,11 @@ Chart.defaults.global.tooltips.custom = coreui.ChartJS.customTooltips
 document.body.addEventListener('classtoggle', event => {
   if (event.detail.className === 'c-dark-theme') {
     if (document.body.classList.contains('c-dark-theme')) {
-      cardChart1.data.datasets[0].pointBackgroundColor = getStyle('--primary-dark-theme')
-      cardChart2.data.datasets[0].pointBackgroundColor = getStyle('--info-dark-theme')
+      cardChart1.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--primary-dark-theme')
+      cardChart2.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--info-dark-theme')
     } else {
-      cardChart1.data.datasets[0].pointBackgroundColor = getStyle('--primary')
-      cardChart2.data.datasets[0].pointBackgroundColor = getStyle('--info')
+      cardChart1.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--primary')
+      cardChart2.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--info')
     }
 
     cardChart1.update()
@@ -40,7 +40,7 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
         label: 'My First dataset',
         backgroundColor: 'transparent',
         borderColor: 'rgba(255,255,255,.55)',
-        pointBackgroundColor: getStyle('--primary'),
+        pointBackgroundColor: coreui.Utils.getStyle('--primary'),
         data: [65, 59, 84, 84, 51, 55, 40]
       }
     ]
@@ -93,7 +93,7 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
         label: 'My First dataset',
         backgroundColor: 'transparent',
         borderColor: 'rgba(255,255,255,.55)',
-        pointBackgroundColor: getStyle('--info'),
+        pointBackgroundColor: coreui.Utils.getStyle('--info'),
         data: [1, 18, 9, 17, 34, 22, 11]
       }
     ]
@@ -187,7 +187,8 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
         label: 'My First dataset',
         backgroundColor: 'rgba(255,255,255,.2)',
         borderColor: 'rgba(255,255,255,.55)',
-        data: [78, 81, 80, 45, 34, 12, 40, 85, 65, 23, 12, 98, 34, 84, 67, 82]
+        data: [78, 81, 80, 45, 34, 12, 40, 85, 65, 23, 12, 98, 34, 84, 67, 82],
+        barPercentage: 0.6
       }
     ]
   },
@@ -198,8 +199,7 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
     },
     scales: {
       xAxes: [{
-        display: false,
-        barPercentage: 0.6
+        display: false
       }],
       yAxes: [{
         display: false
@@ -218,7 +218,7 @@ const sparklineChart1 = new Chart(document.getElementById('sparkline-chart-1'), 
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
     datasets: [
       {
-        backgroundColor: getStyle('--primary'),
+        backgroundColor: coreui.Utils.getStyle('--primary'),
         borderColor: 'transparent',
         borderWidth: 1,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
@@ -248,7 +248,7 @@ const sparklineChart2 = new Chart(document.getElementById('sparkline-chart-2'), 
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
     datasets: [
       {
-        backgroundColor: getStyle('--warning'),
+        backgroundColor: coreui.Utils.getStyle('--warning'),
         borderColor: 'transparent',
         borderWidth: 1,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
@@ -278,7 +278,7 @@ const sparklineChart3 = new Chart(document.getElementById('sparkline-chart-3'), 
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
     datasets: [
       {
-        backgroundColor: getStyle('--success'),
+        backgroundColor: coreui.Utils.getStyle('--success'),
         borderColor: 'transparent',
         borderWidth: 1,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
@@ -309,7 +309,7 @@ const sparklineChart4 = new Chart(document.getElementById('sparkline-chart-4'), 
     datasets: [
       {
         backgroundColor: 'transparent',
-        borderColor: getStyle('--info'),
+        borderColor: coreui.Utils.getStyle('--info'),
         borderWidth: 2,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }
@@ -344,7 +344,7 @@ const sparklineChart5 = new Chart(document.getElementById('sparkline-chart-5'), 
     datasets: [
       {
         backgroundColor: 'transparent',
-        borderColor: getStyle('--success'),
+        borderColor: coreui.Utils.getStyle('--success'),
         borderWidth: 2,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }
@@ -379,7 +379,7 @@ const sparklineChart6 = new Chart(document.getElementById('sparkline-chart-6'), 
     datasets: [
       {
         backgroundColor: 'transparent',
-        borderColor: getStyle('--danger'),
+        borderColor: coreui.Utils.getStyle('--danger'),
         borderWidth: 2,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }

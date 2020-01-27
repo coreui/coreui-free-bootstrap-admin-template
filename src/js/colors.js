@@ -1,8 +1,8 @@
-/* global rgbToHex */
+/* global coreui.Utils.rgbToHex */
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v3.0.0-alpha.1): colors.js
+ * CoreUI Boostrap Admin Template (v3.0.0-rc.0): colors.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
@@ -15,7 +15,7 @@ document.querySelectorAll('.theme-color').forEach((element) => {
       <table class="w-100">
         <tr>
           <td class="text-muted">HEX:</td>
-          <td class="font-weight-bold">${rgbToHex(color)}</td>
+          <td class="font-weight-bold">${coreui.Utils.rgbToHex(color)}</td>
         </tr>
         <tr>
           <td class="text-muted">RGB:</td>

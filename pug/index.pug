@@ -1,12 +1,13 @@
 extends /_layout/default.pug
 
 block styles
-  link(href='node_modules/@coreui/coreui-chartjs/dist/css/coreui-chartjs.css', rel='stylesheet')
+  link(href='node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css', rel='stylesheet')
 
 block scripts
   if !starter
     // Plugins and scripts required by this view
-    script(src='node_modules/@coreui/coreui-chartjs/dist/js/coreui-chartjs.bundle.js')
+    script(src='node_modules/@coreui/chartjs/dist/js/coreui-chartjs.bundle.js')
+    script(src='node_modules/@coreui/utils/dist/coreui-utils.js')
     script(src='js/main.js')
 
 block view

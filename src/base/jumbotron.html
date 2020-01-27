@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v3.0.0-alpha.1
+* @version v3.0.0-rc.0
 * @link https://coreui.io
-* Copyright (c) 2019 creativeLabs Łukasz Holeczek
+* Copyright (c) 2020 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
 -->
 
@@ -34,9 +34,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-- Icons-->
-    <link href="node_modules/@coreui/icons/css/free.min.css" rel="stylesheet">
-    <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
@@ -57,7 +54,14 @@
   </head>
   <body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
-      <div class="c-sidebar-brand"><img class="c-sidebar-brand-full" src="assets/brand/coreui-base-white.svg" width="118" height="46" alt="CoreUI Logo"><img class="c-sidebar-brand-minimized" src="assets/brand/coreui-signet-white.svg" width="118" height="46" alt="CoreUI Logo"></div>
+      <div class="c-sidebar-brand d-lg-down-none">
+        <svg class="c-sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
+          <use xlink:href="assets/brand/coreui.svg#full"></use>
+        </svg>
+        <svg class="c-sidebar-brand-minimized" width="46" height="46" alt="CoreUI Logo">
+          <use xlink:href="assets/brand/coreui.svg#signet"></use>
+        </svg>
+      </div>
       <ul class="c-sidebar-nav">
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="index.html">
             <svg class="c-sidebar-nav-icon">
@@ -173,8 +177,19 @@
     </div>
     <div class="c-wrapper">
       <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
-        <button class="c-header-toggler c-class-toggler d-lg-none mr-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button><a class="c-header-brand d-sm-none" href="#"><img class="c-header-brand" src="assets/brand/coreui-base.svg" width="97" height="46" alt="CoreUI Logo"></a>
-        <button class="c-header-toggler c-class-toggler ml-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true"><span class="c-header-toggler-icon"></span></button>
+        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+          <svg class="c-icon c-icon-lg">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+          </svg>
+        </button><a class="c-header-brand d-lg-none" href="#">
+          <svg class="c-sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#full"></use>
+          </svg></a>
+        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+          <svg class="c-icon c-icon-lg">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+          </svg>
+        </button>
         <ul class="c-header-nav d-md-down-none">
           <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Dashboard</a></li>
           <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Users</a></li>
@@ -283,12 +298,11 @@
         </main>
       </div>
       <footer class="c-footer">
-        <div><a href="https://coreui.io">CoreUI</a> &copy; 2019 creativeLabs.</div>
+        <div><a href="https://coreui.io">CoreUI</a> &copy; 2020 creativeLabs.</div>
         <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
       </footer>
     </div>
     <!-- CoreUI and necessary plugins-->
-    <script src="node_modules/pace-progress/pace.min.js"></script>
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
   </body>
 </html>

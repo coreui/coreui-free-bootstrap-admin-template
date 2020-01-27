@@ -1,7 +1,9 @@
 .c-sidebar.c-sidebar-dark.c-sidebar-fixed.c-sidebar-lg-show#sidebar
-  .c-sidebar-brand
-    img.c-sidebar-brand-full(src="assets/brand/coreui-base-white.svg" width="118" height="46" alt="CoreUI Logo")
-    img.c-sidebar-brand-minimized(src="assets/brand/coreui-signet-white.svg" width="118" height="46" alt="CoreUI Logo")
+  .c-sidebar-brand.d-lg-down-none
+    svg.c-sidebar-brand-full(width="118" height="46" alt="CoreUI Logo")
+      use(xlink:href="assets/brand/coreui.svg#full")
+    svg.c-sidebar-brand-minimized(width="46" height="46" alt="CoreUI Logo")
+      use(xlink:href="assets/brand/coreui.svg#signet")
   ul.c-sidebar-nav
     li.c-sidebar-nav-item
       a.c-sidebar-nav-link(href=ajax ? 'main.html' : 'index.html')
