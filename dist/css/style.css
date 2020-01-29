@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * CoreUI - Open Source Dashboard UI Kit
- * @version v2.1.12
+ * @version v2.1.16
  * @link https://coreui.io
  * Copyright (c) 2018 creativeLabs Łukasz Holeczek
  * Licensed under MIT (https://coreui.io/license)
@@ -4202,6 +4202,7 @@ input[type="button"].btn-block {
   background-color: #467FD0;
   border: 0;
   border-radius: 1rem;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
   appearance: none;
@@ -4209,6 +4210,7 @@ input[type="button"].btn-block {
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-webkit-slider-thumb {
+    -webkit-transition: none;
     transition: none;
   }
 }
@@ -4233,6 +4235,7 @@ input[type="button"].btn-block {
   background-color: #467FD0;
   border: 0;
   border-radius: 1rem;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -moz-appearance: none;
   appearance: none;
@@ -4240,6 +4243,7 @@ input[type="button"].btn-block {
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
+    -moz-transition: none;
     transition: none;
   }
 }
@@ -4267,12 +4271,14 @@ input[type="button"].btn-block {
   background-color: #467FD0;
   border: 0;
   border-radius: 1rem;
+  -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-ms-thumb {
+    -ms-transition: none;
     transition: none;
   }
 }
@@ -17383,10 +17389,13 @@ body {
 }
 
 .sidebar-pills .nav-link.active,
-.sidebar-pills .nav-link:hover,
-.sidebar-pills .nav-link:hover .nav-icon {
+.sidebar-pills .nav-link:hover {
   color: #467fd0 !important;
   background: rgba(0, 0, 0, 0.04) !important;
+}
+
+.sidebar-pills .nav-link:hover .nav-icon {
+  color: #467fd0 !important;
 }
 
 .sidebar-pills a:not(:hover),
@@ -17408,7 +17417,7 @@ body {
 }
 
 html:not([dir="rtl"]) .sidebar {
-  margin-left: -225px;
+  margin-left: -200px;
 }
 
 .sidebar.sidebar-pills .nav-link {
