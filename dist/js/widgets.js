@@ -1,8 +1,10 @@
+"use strict";
+
 /* global Chart, CustomTooltips, getStyle */
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.1.12): main.js
+ * CoreUI Free Boostrap Admin Template (v2.1.15): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */

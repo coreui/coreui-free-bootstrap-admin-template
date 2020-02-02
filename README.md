@@ -12,7 +12,7 @@ Uses:
 Can be used inside [Backpack for Laravel v4](https://backpackforlaravel.com) (due July 2019), or outside of it.
 
 
-![Demo Dashboard view of BackStrap Free HTML Template for Admin Panels](https://backpackforlaravel.com/uploads/v4/backpack4ui.jpg)
+![Demo Dashboard view of BackStrap Free HTML Template for Admin Panels](https://user-images.githubusercontent.com/35516476/73329444-51018780-4290-11ea-9379-94ae49f0d7d7.png)
 
 ## Preview
 

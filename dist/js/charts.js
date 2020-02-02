@@ -1,10 +1,12 @@
+"use strict";
+
 /* eslint-disable object-curly-newline */
 
 /* global Chart */
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.1.12): main.js
+ * CoreUI Free Boostrap Admin Template (v2.1.15): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
