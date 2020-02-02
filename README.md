@@ -87,15 +87,17 @@ Within the download you'll find the following directories and files, logically g
 
 ```
 backstrap/
-├── build/
-├── src/
-│   ├── css/
+├── build/         
+├── dist/          --> DON'T CHANGE; this is just a copy of the "src/" folder, to be used in production; don't make changes here - they will be overwritten by the build process; this folder will only show up after npm run build;
+├── pug/           --> YES CHANGE; this is where the preview file code lives; these files get turned into the HTML files inside the "src/" folder one runs npm run pug;  
+├── src/           --> YES CHANGE; this is where the actual source code lies, and where changes should be made;
+│   ├── css/       --> DON'T CHANGE; these files are generated; modify the SCSS files instead;
 │   ├── img/
 │   ├── js/
-│   ├── scss/
+│   ├── scss/      --> YES CHANGE; this is where you'll want to make CSS changes; these files get bundled and compiled, and inserted automatically inside the "src/css" folder; then the build process will copy all "src" contents inside the "dist/css" folder, so in the end your changes inside the "src/scss" folder will end up in "dist/css"; 
 │   ├── vendors/
 │   ├── ...
-│   ├── index.html
+│   ├── index.html --> DON'T CHANGE; the HTML files are only used for previewing the template; they get generated from the "pug" folder, so don't modify them directly, your changes will get overwritten by the build process; modify the pug files instead;
 │   └── ...
 └── package.json
 ```
@@ -112,9 +114,12 @@ Until then, you can check out the documentation for the CoreUI Free Bootstrap Ad
 
 ## Contributing
 
-This template is just [one CSS file](https://github.com/Laravel-Backpack/BackStrap/blob/master/src/css/backstrap.css) added on top of CoreUI.
+If you encounter any bugs that are NOT design-related, please [submit a ticket to the CoreUI repository](https://github.com/coreui/coreui-free-bootstrap-admin-template). We regularly merge their new releases. So all fixes there will shortly be pulled into BackStrap.
 
-If you encounter any bugs that are NOT design-related, please [submit a ticket to the CoreUI repository](https://github.com/coreui/coreui-free-bootstrap-admin-template). We regularly merge their new releases. So all fix there will shortly be pulled into BackStrap.
+The way this works is that:
+- preview (HTML) changes should be done inside the ```pug``` directory; then run ```npm run pug``` to turn those PUG files into HTML files inside the ```src``` folder;
+- design (CSS) changes should be done inside the ```src/scss``` directory; 
+- after you're happy with the changes you've made, you should run ```npm run build``` to compile the changes you've made inside the ```src``` folder to the ```dist``` folder, which includes the files people actually use in production;
 
 
 ## Support Development

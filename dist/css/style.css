@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * CoreUI - Open Source Dashboard UI Kit
- * @version v2.1.16
+ * @version v2.1.12
  * @link https://coreui.io
  * Copyright (c) 2018 creativeLabs Łukasz Holeczek
  * Licensed under MIT (https://coreui.io/license)
@@ -4202,7 +4202,6 @@ input[type="button"].btn-block {
   background-color: #467FD0;
   border: 0;
   border-radius: 1rem;
-  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
   appearance: none;
@@ -4210,7 +4209,6 @@ input[type="button"].btn-block {
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-webkit-slider-thumb {
-    -webkit-transition: none;
     transition: none;
   }
 }
@@ -4235,7 +4233,6 @@ input[type="button"].btn-block {
   background-color: #467FD0;
   border: 0;
   border-radius: 1rem;
-  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -moz-appearance: none;
   appearance: none;
@@ -4243,7 +4240,6 @@ input[type="button"].btn-block {
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
-    -moz-transition: none;
     transition: none;
   }
 }
@@ -4271,14 +4267,12 @@ input[type="button"].btn-block {
   background-color: #467FD0;
   border: 0;
   border-radius: 1rem;
-  -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-ms-thumb {
-    -ms-transition: none;
     transition: none;
   }
 }
@@ -4851,7 +4845,7 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 40, 100, 0.12);
+  border: 1px solid #c8ced3;
   border-radius: 0.25rem;
 }
 
@@ -17417,7 +17411,14 @@ body {
 }
 
 html:not([dir="rtl"]) .sidebar {
-  margin-left: -200px;
+  margin-left: -225px;
+}
+
+.app-body .sidebar.sidebar-pills {
+  -ms-flex: 0 0 225px;
+  flex: 0 0 225px;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
 .sidebar.sidebar-pills .nav-link {
@@ -17493,6 +17494,7 @@ h5 small {
 .card {
   background-color: #fff;
   background-clip: border-box;
+  border: 1px solid rgba(0, 40, 100, 0.12);
   border-radius: 3px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
