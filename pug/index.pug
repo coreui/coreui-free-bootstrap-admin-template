@@ -14,7 +14,7 @@ block view
   .fade-in
     .row
       .col-sm-6.col-lg-3
-        .card.text-white.bg-primary
+        .card.text-white.bg-gradient-primary
           .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
             div
               .text-value-lg 9.823
@@ -31,7 +31,7 @@ block view
             canvas#card-chart1.chart(height='70')
       // /.col
       .col-sm-6.col-lg-3
-        .card.text-white.bg-info
+        .card.text-white.bg-gradient-info
           .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
             div
               .text-value-lg 9.823
@@ -48,7 +48,7 @@ block view
             canvas#card-chart2.chart(height='70')
       // /.col
       .col-sm-6.col-lg-3
-        .card.text-white.bg-warning
+        .card.text-white.bg-gradient-warning
           .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
             div
               .text-value-lg 9.823
@@ -65,7 +65,7 @@ block view
             canvas#card-chart3.chart(height='70')
       // /.col
       .col-sm-6.col-lg-3
-        .card.text-white.bg-danger
+        .card.text-white.bg-gradient-danger
           .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
             div
               .text-value-lg 9.823
@@ -110,22 +110,22 @@ block view
             .text-muted Visits
             strong 29.703 Users (40%)
             .progress.progress-xs.mt-2
-              .progress-bar.bg-success(role='progressbar', style='width: 40%', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100')
+              .progress-bar.bg-gradient-success(role='progressbar', style='width: 40%', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100')
           .col-sm-12.col-md.mb-sm-2.mb-0
             .text-muted Unique
             strong 24.093 Users (20%)
             .progress.progress-xs.mt-2
-              .progress-bar.bg-info(role='progressbar', style='width: 20%', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+              .progress-bar.bg-gradient-info(role='progressbar', style='width: 20%', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
           .col-sm-12.col-md.mb-sm-2.mb-0
             .text-muted Pageviews
             strong 78.706 Views (60%)
             .progress.progress-xs.mt-2
-              .progress-bar.bg-warning(role='progressbar', style='width: 60%', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100')
+              .progress-bar.bg-gradient-warning(role='progressbar', style='width: 60%', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100')
           .col-sm-12.col-md.mb-sm-2.mb-0
             .text-muted New Users
             strong 22.123 Users (80%)
             .progress.progress-xs.mt-2
-              .progress-bar.bg-danger(role='progressbar', style='width: 80%', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+              .progress-bar.bg-gradient-danger(role='progressbar', style='width: 80%', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
           .col-sm-12.col-md.mb-sm-2.mb-0
             .text-muted Bounce Rate
             strong 40.15%
@@ -138,8 +138,6 @@ block view
           .card-header.bg-facebook.content-center
             svg.c-icon.c-icon-3xl.text-white.my-4
               use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
-            .c-chart-wrapper
-              canvas#social-box-chart-1(height='90')
           .card-body.row.text-center
             .col
               .text-value-xl 89k
@@ -154,8 +152,6 @@ block view
           .card-header.bg-twitter.content-center
             svg.c-icon.c-icon-3xl.text-white.my-4
               use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
-            .c-chart-wrapper
-              canvas#social-box-chart-2(height='90')
           .card-body.row.text-center
             .col
               .text-value-xl 973k
@@ -170,8 +166,6 @@ block view
           .card-header.bg-linkedin.content-center
             svg.c-icon.c-icon-3xl.text-white.my-4
               use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
-            .c-chart-wrapper
-              canvas#social-box-chart-3(height='90')
           .card-body.row.text-center
             .col
               .text-value-xl 500+
@@ -209,63 +203,63 @@ block view
                       | Monday
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-info(role='progressbar', style='width: 34%', aria-valuenow='34', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 34%', aria-valuenow='34', aria-valuemin='0', aria-valuemax='100')
                     .progress.progress-xs
-                      .progress-bar.bg-danger(role='progressbar', style='width: 78%', aria-valuenow='78', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 78%', aria-valuenow='78', aria-valuemin='0', aria-valuemax='100')
                 .progress-group.mb-4
                   .progress-group-prepend
                     span.progress-group-text
                       | Tuesday
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-info(role='progressbar', style='width: 56%', aria-valuenow='56', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 56%', aria-valuenow='56', aria-valuemin='0', aria-valuemax='100')
                     .progress.progress-xs
-                      .progress-bar.bg-danger(role='progressbar', style='width: 94%', aria-valuenow='94', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 94%', aria-valuenow='94', aria-valuemin='0', aria-valuemax='100')
                 .progress-group.mb-4
                   .progress-group-prepend
                     span.progress-group-text
                       | Wednesday
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-info(role='progressbar', style='width: 12%', aria-valuenow='12', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 12%', aria-valuenow='12', aria-valuemin='0', aria-valuemax='100')
                     .progress.progress-xs
-                      .progress-bar.bg-danger(role='progressbar', style='width: 67%', aria-valuenow='67', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 67%', aria-valuenow='67', aria-valuemin='0', aria-valuemax='100')
                 .progress-group.mb-4
                   .progress-group-prepend
                     span.progress-group-text
                       | Thursday
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-info(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
                     .progress.progress-xs
-                      .progress-bar.bg-danger(role='progressbar', style='width: 91%', aria-valuenow='91', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 91%', aria-valuenow='91', aria-valuemin='0', aria-valuemax='100')
                 .progress-group.mb-4
                   .progress-group-prepend
                     span.progress-group-text
                       | Friday
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-info(role='progressbar', style='width: 22%', aria-valuenow='22', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 22%', aria-valuenow='22', aria-valuemin='0', aria-valuemax='100')
                     .progress.progress-xs
-                      .progress-bar.bg-danger(role='progressbar', style='width: 73%', aria-valuenow='73', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 73%', aria-valuenow='73', aria-valuemin='0', aria-valuemax='100')
                 .progress-group.mb-4
                   .progress-group-prepend
                     span.progress-group-text
                       | Saturday
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-info(role='progressbar', style='width: 53%', aria-valuenow='53', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 53%', aria-valuenow='53', aria-valuemin='0', aria-valuemax='100')
                     .progress.progress-xs
-                      .progress-bar.bg-danger(role='progressbar', style='width: 82%', aria-valuenow='82', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 82%', aria-valuenow='82', aria-valuemin='0', aria-valuemax='100')
                 .progress-group.mb-4
                   .progress-group-prepend
                     span.progress-group-text
                       | Sunday
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-info(role='progressbar', style='width: 9%', aria-valuenow='9', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 9%', aria-valuenow='9', aria-valuemin='0', aria-valuemax='100')
                     .progress.progress-xs
-                      .progress-bar.bg-danger(role='progressbar', style='width: 69%', aria-valuenow='69', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 69%', aria-valuenow='69', aria-valuemin='0', aria-valuemax='100')
               // /.col
               .col-sm-6
                 .row
@@ -289,7 +283,7 @@ block view
                     .mfs-auto.font-weight-bold 43%
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
                 .progress-group.mb-5
                   .progress-group-header
                     svg.c-icon.progress-group-icon
@@ -298,47 +292,47 @@ block view
                     .mfs-auto.font-weight-bold 37%
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
                 .progress-group
                   .progress-group-header.align-items-end
                     svg.c-icon.progress-group-icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-globe-alt")
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-google")
                     div Organic Search
                     .mfs-auto.font-weight-bold.mfe-2 191.235
                     .text-muted.small (56%)
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-success(role='progressbar', style='width: 56%', aria-valuenow='56', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 56%', aria-valuenow='56', aria-valuemin='0', aria-valuemax='100')
                 .progress-group
                   .progress-group-header.align-items-end
                     svg.c-icon.progress-group-icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-facebook")
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
                     div Facebook
                     .mfs-auto.font-weight-bold.mfe-2 51.223
                     .text-muted.small (15%)
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-success(role='progressbar', style='width: 15%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 15%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
                 .progress-group
                   .progress-group-header.align-items-end
                     svg.c-icon.progress-group-icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-twitter")
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
                     div Twitter
                     .mfs-auto.font-weight-bold.mfe-2 37.564
                     .text-muted.small (11%)
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-success(role='progressbar', style='width: 11%', aria-valuenow='11', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 11%', aria-valuenow='11', aria-valuemin='0', aria-valuemax='100')
                 .progress-group
                   .progress-group-header.align-items-end
                     svg.c-icon.progress-group-icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-linkedin")
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
                     div LinkedIn
                     .mfs-auto.font-weight-bold.mfe-2 27.319
                     .text-muted.small (8%)
                   .progress-group-bars
                     .progress.progress-xs
-                      .progress-bar.bg-success(role='progressbar', style='width: 8%', aria-valuenow='8', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 8%', aria-valuenow='8', aria-valuemin='0', aria-valuemax='100')
               // /.col
             // /.row
             br
@@ -374,7 +368,7 @@ block view
                       .float-right
                         small.text-muted Jun 11, 2015 - Jul 10, 2015
                     .progress.progress-xs
-                      .progress-bar.bg-success(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
                     svg.c-icon.c-icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-mastercard")
@@ -401,7 +395,7 @@ block view
                       .float-right
                         small.text-muted Jun 11, 2015 - Jul 10, 2015
                     .progress.progress-xs
-                      .progress-bar.bg-info(role='progressbar', style='width: 10%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 10%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
                     svg.c-icon.c-icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-visa")
@@ -428,7 +422,7 @@ block view
                       .float-right
                         small.text-muted Jun 11, 2015 - Jul 10, 2015
                     .progress.progress-xs
-                      .progress-bar.bg-warning(role='progressbar', style='width: 74%', aria-valuenow='74', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-warning(role='progressbar', style='width: 74%', aria-valuenow='74', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
                     svg.c-icon.c-icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-stripe")
@@ -455,7 +449,7 @@ block view
                       .float-right
                         small.text-muted Jun 11, 2015 - Jul 10, 2015
                     .progress.progress-xs
-                      .progress-bar.bg-danger(role='progressbar', style='width: 98%', aria-valuenow='98', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 98%', aria-valuenow='98', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
                     svg.c-icon.c-icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-paypal")
@@ -482,7 +476,7 @@ block view
                       .float-right
                         small.text-muted Jun 11, 2015 - Jul 10, 2015
                     .progress.progress-xs
-                      .progress-bar.bg-info(role='progressbar', style='width: 22%', aria-valuenow='22', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 22%', aria-valuenow='22', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
                     svg.c-icon.c-icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-apple-pay")
@@ -509,7 +503,7 @@ block view
                       .float-right
                         small.text-muted Jun 11, 2015 - Jul 10, 2015
                     .progress.progress-xs
-                      .progress-bar.bg-success(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
                     svg.c-icon.c-icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-amex")

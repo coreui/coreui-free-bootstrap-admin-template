@@ -175,14 +175,14 @@
       </ul>
       <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>
-    <div class="c-wrapper">
+    <div class="c-wrapper c-fixed-components">
       <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
         <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
           <svg class="c-icon c-icon-lg">
             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
           </svg>
         </button><a class="c-header-brand d-lg-none" href="#">
-          <svg class="c-sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
+          <svg width="118" height="46" alt="CoreUI Logo">
             <use xlink:href="assets/brand/coreui.svg#full"></use>
           </svg></a>
         <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
@@ -264,7 +264,7 @@
             <div class="fade-in">
               <div class="row">
                 <div class="col-sm-6 col-lg-3">
-                  <div class="card text-white bg-primary">
+                  <div class="card text-white bg-gradient-primary">
                     <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
                       <div>
                         <div class="text-value-lg">9.823</div>
@@ -286,7 +286,7 @@
                 </div>
                 <!-- /.col-->
                 <div class="col-sm-6 col-lg-3">
-                  <div class="card text-white bg-info">
+                  <div class="card text-white bg-gradient-info">
                     <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
                       <div>
                         <div class="text-value-lg">9.823</div>
@@ -308,7 +308,7 @@
                 </div>
                 <!-- /.col-->
                 <div class="col-sm-6 col-lg-3">
-                  <div class="card text-white bg-warning">
+                  <div class="card text-white bg-gradient-warning">
                     <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
                       <div>
                         <div class="text-value-lg">9.823</div>
@@ -330,7 +330,7 @@
                 </div>
                 <!-- /.col-->
                 <div class="col-sm-6 col-lg-3">
-                  <div class="card text-white bg-danger">
+                  <div class="card text-white bg-gradient-danger">
                     <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
                       <div>
                         <div class="text-value-lg">9.823</div>
@@ -388,25 +388,25 @@
                     <div class="col-sm-12 col-md mb-sm-2 mb-0">
                       <div class="text-muted">Visits</div><strong>29.703 Users (40%)</strong>
                       <div class="progress progress-xs mt-2">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
                     <div class="col-sm-12 col-md mb-sm-2 mb-0">
                       <div class="text-muted">Unique</div><strong>24.093 Users (20%)</strong>
                       <div class="progress progress-xs mt-2">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
                     <div class="col-sm-12 col-md mb-sm-2 mb-0">
                       <div class="text-muted">Pageviews</div><strong>78.706 Views (60%)</strong>
                       <div class="progress progress-xs mt-2">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
                     <div class="col-sm-12 col-md mb-sm-2 mb-0">
                       <div class="text-muted">New Users</div><strong>22.123 Users (80%)</strong>
                       <div class="progress progress-xs mt-2">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
                     <div class="col-sm-12 col-md mb-sm-2 mb-0">
@@ -426,9 +426,6 @@
                       <svg class="c-icon c-icon-3xl text-white my-4">
                         <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
                       </svg>
-                      <div class="c-chart-wrapper">
-                        <canvas id="social-box-chart-1" height="90"></canvas>
-                      </div>
                     </div>
                     <div class="card-body row text-center">
                       <div class="col">
@@ -450,9 +447,6 @@
                       <svg class="c-icon c-icon-3xl text-white my-4">
                         <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
                       </svg>
-                      <div class="c-chart-wrapper">
-                        <canvas id="social-box-chart-2" height="90"></canvas>
-                      </div>
                     </div>
                     <div class="card-body row text-center">
                       <div class="col">
@@ -474,9 +468,6 @@
                       <svg class="c-icon c-icon-3xl text-white my-4">
                         <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
                       </svg>
-                      <div class="c-chart-wrapper">
-                        <canvas id="social-box-chart-3" height="90"></canvas>
-                      </div>
                     </div>
                     <div class="card-body row text-center">
                       <div class="col">
@@ -521,10 +512,10 @@
                             <div class="progress-group-prepend"><span class="progress-group-text">Monday</span></div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 34%" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 34%" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
@@ -532,10 +523,10 @@
                             <div class="progress-group-prepend"><span class="progress-group-text">Tuesday</span></div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
@@ -543,10 +534,10 @@
                             <div class="progress-group-prepend"><span class="progress-group-text">Wednesday</span></div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
@@ -554,10 +545,10 @@
                             <div class="progress-group-prepend"><span class="progress-group-text">Thursday</span></div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 91%" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 91%" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
@@ -565,10 +556,10 @@
                             <div class="progress-group-prepend"><span class="progress-group-text">Friday</span></div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
@@ -576,10 +567,10 @@
                             <div class="progress-group-prepend"><span class="progress-group-text">Saturday</span></div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 53%" aria-valuenow="53" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 53%" aria-valuenow="53" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
@@ -587,10 +578,10 @@
                             <div class="progress-group-prepend"><span class="progress-group-text">Sunday</span></div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 9%" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 9%" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 69%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 69%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
@@ -623,7 +614,7 @@
                             </div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
@@ -637,14 +628,14 @@
                             </div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
                           <div class="progress-group">
                             <div class="progress-group-header align-items-end">
                               <svg class="c-icon progress-group-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-globe-alt"></use>
+                                <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-google"></use>
                               </svg>
                               <div>Organic Search</div>
                               <div class="mfs-auto font-weight-bold mfe-2">191.235</div>
@@ -652,14 +643,14 @@
                             </div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
                           <div class="progress-group">
                             <div class="progress-group-header align-items-end">
                               <svg class="c-icon progress-group-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-facebook"></use>
+                                <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
                               </svg>
                               <div>Facebook</div>
                               <div class="mfs-auto font-weight-bold mfe-2">51.223</div>
@@ -667,14 +658,14 @@
                             </div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
                           <div class="progress-group">
                             <div class="progress-group-header align-items-end">
                               <svg class="c-icon progress-group-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-twitter"></use>
+                                <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
                               </svg>
                               <div>Twitter</div>
                               <div class="mfs-auto font-weight-bold mfe-2">37.564</div>
@@ -682,14 +673,14 @@
                             </div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
                           <div class="progress-group">
                             <div class="progress-group-header align-items-end">
                               <svg class="c-icon progress-group-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-linkedin"></use>
+                                <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
                               </svg>
                               <div>LinkedIn</div>
                               <div class="mfs-auto font-weight-bold mfe-2">27.319</div>
@@ -697,7 +688,7 @@
                             </div>
                             <div class="progress-group-bars">
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                           </div>
@@ -740,7 +731,7 @@
                                 <div class="float-right"><small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                             <td class="text-center">
@@ -771,7 +762,7 @@
                                 <div class="float-right"><small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                             <td class="text-center">
@@ -802,7 +793,7 @@
                                 <div class="float-right"><small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 74%" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 74%" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                             <td class="text-center">
@@ -833,7 +824,7 @@
                                 <div class="float-right"><small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                             <td class="text-center">
@@ -864,7 +855,7 @@
                                 <div class="float-right"><small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                             <td class="text-center">
@@ -895,7 +886,7 @@
                                 <div class="float-right"><small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small></div>
                               </div>
                               <div class="progress progress-xs">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                             <td class="text-center">
@@ -918,11 +909,11 @@
             </div>
           </div>
         </main>
+        <footer class="c-footer">
+          <div><a href="https://coreui.io">CoreUI</a> &copy; 2020 creativeLabs.</div>
+          <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+        </footer>
       </div>
-      <footer class="c-footer">
-        <div><a href="https://coreui.io">CoreUI</a> &copy; 2020 creativeLabs.</div>
-        <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
-      </footer>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>

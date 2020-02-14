@@ -3,7 +3,7 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Boostrap Admin Template (v3.0.0-rc.0): main.js
+ * CoreUI Boostrap Admin Template (v3.0.0-rc.1): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
@@ -276,81 +276,4 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
       }
     }
   }
-})
-
-const brandBoxChartLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July']
-
-const brandBoxChartOptions = {
-  responsive: true,
-  maintainAspectRatio: false,
-  legend: {
-    display: false
-  },
-  scales: {
-    xAxes: [{
-      display:false
-    }],
-    yAxes: [{
-      display:false
-    }]
-  },
-  elements: {
-    point: {
-      radius: 0,
-      hitRadius: 10,
-      hoverRadius: 4,
-      hoverBorderWidth: 3
-    }
-  }
-}
-
-// eslint-disable-next-line no-unused-vars
-const brandBoxChart1 = new Chart(document.getElementById('social-box-chart-1'), {
-  type: 'line',
-  data: {
-    labels: brandBoxChartLabels,
-    datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgba(255,255,255,.1)',
-      borderColor: 'rgba(255,255,255,.55)',
-      pointHoverBackgroundColor: '#fff',
-      borderWidth: 2,
-      data: [65, 59, 84, 84, 51, 55, 40]
-    }]
-  },
-  options: brandBoxChartOptions
-})
-
-// eslint-disable-next-line no-unused-vars
-const brandBoxChart2 = new Chart(document.getElementById('social-box-chart-2'), {
-  type: 'line',
-  data: {
-    labels: brandBoxChartLabels,
-    datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgba(255,255,255,.1)',
-      borderColor: 'rgba(255,255,255,.55)',
-      pointHoverBackgroundColor: '#fff',
-      borderWidth: 2,
-      data: [1, 13, 9, 17, 34, 41, 38]
-    }]
-  },
-  options: brandBoxChartOptions
-})
-
-// eslint-disable-next-line no-unused-vars
-const brandBoxChart3 = new Chart(document.getElementById('social-box-chart-3'), {
-  type: 'line',
-  data: {
-    labels: brandBoxChartLabels,
-    datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgba(255,255,255,.1)',
-      borderColor: 'rgba(255,255,255,.55)',
-      pointHoverBackgroundColor: '#fff',
-      borderWidth: 2,
-      data: [78, 81, 80, 45, 34, 12, 40]
-    }]
-  },
-  options: brandBoxChartOptions
 })
