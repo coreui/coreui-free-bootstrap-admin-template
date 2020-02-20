@@ -1,0 +1,624 @@
+extends /_layout/default.pug
+
+block styles
+  link(href='node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css', rel='stylesheet')
+
+block scripts
+  script(src='node_modules/@coreui/chartjs/dist/js/coreui-chartjs.bundle.js')
+  script(src='node_modules/@coreui/utils/dist/coreui-utils.js')
+  script(src='js/widgets.js')
+
+block view
+  .fade-in
+    .row
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-primary
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
+              button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                svg.c-icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+              .dropdown-menu.dropdown-menu-right
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+          .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
+            canvas#card-chart1.chart(height='70')
+      // /.col
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-info
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
+              button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                svg.c-icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+              .dropdown-menu.dropdown-menu-right
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+          .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
+            canvas#card-chart2.chart(height='70')
+      // /.col
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-warning
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
+              button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                svg.c-icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+              .dropdown-menu.dropdown-menu-right
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+          .c-chart-wrapper.mt-3(style='height:70px;')
+            canvas#card-chart3.chart(height='70')
+      // /.col
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-danger
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
+              button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                svg.c-icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+              .dropdown-menu.dropdown-menu-right
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+          .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
+            canvas#card-chart4.chart(height='70')
+      // /.col
+    // /.row
+    .row
+      .col-sm-6.col-lg-3
+        .card
+          .card-body
+            .text-value-lg 89.9%
+            div Widget title
+            .progress.progress-xs.my-2
+              .progress-bar.bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.text-muted Widget helper text
+      // /.col
+      .col-sm-6.col-lg-3
+        .card
+          .card-body
+            .text-value-lg 12.124
+            div Widget title
+            .progress.progress-xs.my-2
+              .progress-bar.bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.text-muted Widget helper text
+      // /.col
+      .col-sm-6.col-lg-3
+        .card
+          .card-body
+            .text-value-lg $98.111,00
+            div Widget title
+            .progress.progress-xs.my-2
+              .progress-bar.bg-warning(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.text-muted Widget helper text
+      // /.col
+      .col-sm-6.col-lg-3
+        .card
+          .card-body
+            .text-value-lg 2 TB
+            div Widget title
+            .progress.progress-xs.my-2
+              .progress-bar.bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.text-muted Widget helper text
+      // /.col
+    // /.row
+    .row
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-primary
+          .card-body
+            .text-value-lg 89.9%
+            div Widget title
+            .progress.progress-white.progress-xs.my-2
+              .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.text-muted Widget helper text
+      // /.col
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-warning
+          .card-body
+            .text-value-lg 12.124
+            div Widget title
+            .progress.progress-white.progress-xs.my-2
+              .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.text-muted Widget helper text
+      // /.col
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-danger
+          .card-body
+            .text-value-lg $98.111,00
+            div Widget title
+            .progress.progress-white.progress-xs.my-2
+              .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.text-muted Widget helper text
+      // /.col
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-info
+          .card-body
+            .text-value-lg 2 TB
+            div Widget title
+            .progress.progress-white.progress-xs.my-2
+              .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            small.text-muted Widget helper text
+      // /.col
+    // /.row
+    .row
+      .col-md-2.col-sm-4
+        .card
+          .card-body.text-center
+            .text-muted.small.text-uppercase.font-weight-bold Title
+            .text-value-xl.py-3 1,123
+            .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-1.chart.chart-bar(height='40', width='80')
+      // /.col
+      .col-md-2.col-sm-4
+        .card
+          .card-body.text-center
+            .text-muted.small.text-uppercase.font-weight-bold Title
+            .text-value-xl.py-3 1,123
+            .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-2.chart.chart-bar(height='40', width='80')
+      // /.col
+      .col-md-2.col-sm-4
+        .card
+          .card-body.text-center
+            .text-muted.small.text-uppercase.font-weight-bold Title
+            .text-value-xl.py-3 1,123
+            .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-3.chart.chart-bar(height='40', width='80')
+      // /.col
+      .col-md-2.col-sm-4
+        .card
+          .card-body.text-center
+            .text-muted.small.text-uppercase.font-weight-bold Title
+            .text-value-xl.py-3 1,123
+            .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-4.chart.chart-line(height='40', width='100')
+      // /.col
+      .col-md-2.col-sm-4
+        .card
+          .card-body.text-center
+            .text-muted.small.text-uppercase.font-weight-bold Title
+            .text-value-xl.py-3 1,123
+            .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-5.chart.chart-line(height='40', width='100')
+      // /.col
+      .col-md-2.col-sm-4
+        .card
+          .card-body.text-center
+            .text-muted.small.text-uppercase.font-weight-bold Title
+            .text-value-xl.py-3 1,123
+            .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
+              canvas#sparkline-chart-6.chart.chart-line(height='40', width='100')
+      // /.col
+    // /.row
+    .row
+      .col-6.col-lg-3
+        .card
+          .card-body.p-3.d-flex.align-items-center
+            div.bg-primary.p-3.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+            div
+              .text-value.text-primary $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+      .col-6.col-lg-3
+        .card
+          .card-body.p-3.d-flex.align-items-center
+            div.bg-info.p-3.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
+            div
+              .text-value.text-info $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+      .col-6.col-lg-3
+        .card
+          .card-body.p-3.d-flex.align-items-center
+            div.bg-warning.p-3.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
+            div
+              .text-value.text-warning $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+      .col-6.col-lg-3
+        .card
+          .card-body.p-3.d-flex.align-items-center
+            div.bg-danger.p-3.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
+            div
+              .text-value.text-danger $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+      .col-6.col-lg-3
+        .card
+          .card-body.p-3.d-flex.align-items-center
+            div.bg-primary.p-3.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+            div
+              .text-value.text-primary $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+          .card-footer.px-3.py-2
+            a.btn-block.text-muted.d-flex.justify-content-between.align-items-center(href='#')
+              span.small.font-weight-bold View More
+              svg.c-icon
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
+      // /.col
+      .col-6.col-lg-3
+        .card
+          .card-body.p-3.d-flex.align-items-center
+            div.bg-info.p-3.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
+            div
+              .text-value.text-info $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+          .card-footer.px-3.py-2
+            a.btn-block.text-muted.d-flex.justify-content-between.align-items-center(href='#')
+              span.small.font-weight-bold View More
+              svg.c-icon
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
+      // /.col
+      .col-6.col-lg-3
+        .card
+          .card-body.p-3.d-flex.align-items-center
+            div.bg-warning.p-3.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
+            div
+              .text-value.text-warning $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+          .card-footer.px-3.py-2
+            a.btn-block.text-muted.d-flex.justify-content-between.align-items-center(href='#')
+              span.small.font-weight-bold View More
+              svg.c-icon
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
+      // /.col
+      .col-6.col-lg-3
+        .card
+          .card-body.p-3.d-flex.align-items-center
+            div.bg-danger.p-3.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
+            div
+              .text-value.text-danger $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+          .card-footer.px-3.py-2
+            a.btn-block.text-muted.d-flex.justify-content-between.align-items-center(href='#')
+              span.small.font-weight-bold View More
+              svg.c-icon
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
+      // /.col
+    // /.row
+    .row
+      .col-6.col-lg-3
+        .card.overflow-hidden
+          .card-body.p-0.d-flex.align-items-center
+            div.bg-primary.p-4.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+            div
+              .text-value.text-primary $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+      .col-6.col-lg-3
+        .card.overflow-hidden
+          .card-body.p-0.d-flex.align-items-center
+            div.bg-info.p-4.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
+            div
+              .text-value.text-info $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+      .col-6.col-lg-3
+        .card.overflow-hidden
+          .card-body.p-0.d-flex.align-items-center
+            div.bg-warning.p-4.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
+            div
+              .text-value.text-warning $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+      .col-6.col-lg-3
+        .card.overflow-hidden
+          .card-body.p-0.d-flex.align-items-center
+            div.bg-danger.p-4.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
+            div
+              .text-value.text-danger $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+      .col-6.col-lg-3
+        .card.overflow-hidden
+          .card-body.p-0.d-flex.align-items-center
+            div.bg-primary.py-4.px-5.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+            div
+              .text-value.text-primary $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+      .col-6.col-lg-3
+        .card.overflow-hidden
+          .card-body.p-0.d-flex.align-items-center
+            div.bg-info.py-4.px-5.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
+            div
+              .text-value.text-info $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+      .col-6.col-lg-3
+        .card.overflow-hidden
+          .card-body.p-0.d-flex.align-items-center
+            div.bg-warning.py-4.px-5.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
+            div
+              .text-value.text-warning $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+      .col-6.col-lg-3
+        .card.overflow-hidden
+          .card-body.p-0.d-flex.align-items-center
+            div.bg-danger.py-4.px-5.mfe-3
+              svg.c-icon.c-icon-xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
+            div
+              .text-value.text-danger $1.999,50
+              .text-muted.text-uppercase.font-weight-bold.small Widget title
+      // /.col
+    // /.row
+    .row
+      .col-sm-6.col-lg-4
+        .card
+          .card-header.bg-facebook.content-center
+            svg.c-icon.c-icon-3xl.text-white.my-4
+              use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
+            .c-chart-wrapper
+              canvas#social-box-chart-1(height='90')
+          .card-body.row.text-center
+            .col
+              .text-value-xl 89k
+              .text-uppercase.text-muted.small friends
+            .c-vr
+            .col
+              .text-value-xl 459
+              .text-uppercase.text-muted.small feeds
+      // /.col
+      .col-sm-6.col-lg-4
+        .card
+          .card-header.bg-twitter.content-center
+            svg.c-icon.c-icon-3xl.text-white.my-4
+              use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
+            .c-chart-wrapper
+              canvas#social-box-chart-2(height='90')
+          .card-body.row.text-center
+            .col
+              .text-value-xl 973k
+              .text-uppercase.text-muted.small followers
+            .c-vr
+            .col
+              .text-value-xl 1.792
+              .text-uppercase.text-muted.small tweets
+      // /.col
+      .col-sm-6.col-lg-4
+        .card
+          .card-header.bg-linkedin.content-center
+            svg.c-icon.c-icon-3xl.text-white.my-4
+              use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
+            .c-chart-wrapper
+              canvas#social-box-chart-3(height='90')
+          .card-body.row.text-center
+            .col
+              .text-value-xl 500+
+              .text-uppercase.text-muted.small contacts
+            .c-vr
+            .col
+              .text-value-xl 292
+              .text-uppercase.text-muted.small feeds
+      // /.col
+    // /.row
+    .card-group.mb-4
+      .card
+        .card-body
+          .text-muted.text-right.mb-4
+            svg.c-icon.c-icon-2xl
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
+          .text-value-lg 87.500
+          small.text-muted.text-uppercase.font-weight-bold Visitors
+          .progress.progress-xs.mt-3.mb-0
+            .progress-bar.bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      .card
+        .card-body
+          .text-muted.text-right.mb-4
+            svg.c-icon.c-icon-2xl
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
+          .text-value-lg 385
+          small.text-muted.text-uppercase.font-weight-bold New Clients
+          .progress.progress-xs.mt-3.mb-0
+            .progress-bar.bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      .card
+        .card-body
+          .text-muted.text-right.mb-4
+            svg.c-icon.c-icon-2xl
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
+          .text-value-lg 1238
+          small.text-muted.text-uppercase.font-weight-bold Products sold
+          .progress.progress-xs.mt-3.mb-0
+            .progress-bar.bg-warning(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      .card
+        .card-body
+          .text-muted.text-right.mb-4
+            svg.c-icon.c-icon-2xl
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
+          .text-value-lg 28%
+          small.text-muted.text-uppercase.font-weight-bold Returning Visitors
+          .progress.progress-xs.mt-3.mb-0
+            .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      .card
+        .card-body
+          .text-muted.text-right.mb-4
+            svg.c-icon.c-icon-2xl
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
+          .text-value-lg 5:34:11
+          small.text-muted.text-uppercase.font-weight-bold Avg. Time
+          .progress.progress-xs.mt-3.mb-0
+            .progress-bar.bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+    .row
+      .col-sm-6.col-md-2
+        .card
+          .card-body
+            .text-muted.text-right.mb-4
+              svg.c-icon.c-icon-2xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
+            .text-value-lg 87.500
+            small.text-muted.text-uppercase.font-weight-bold Visitors
+            .progress.progress-xs.mt-3.mb-0
+              .progress-bar.bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+      .col-sm-6.col-md-2
+        .card
+          .card-body
+            .text-muted.text-right.mb-4
+               svg.c-icon.c-icon-2xl
+                 use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
+            .text-value-lg 385
+            small.text-muted.text-uppercase.font-weight-bold New Clients
+            .progress.progress-xs.mt-3.mb-0
+              .progress-bar.bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+      .col-sm-6.col-md-2
+        .card
+          .card-body
+            .text-muted.text-right.mb-4
+              svg.c-icon.c-icon-2xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
+            .text-value-lg 1238
+            small.text-muted.text-uppercase.font-weight-bold Products sold
+            .progress.progress-xs.mt-3.mb-0
+              .progress-bar.bg-warning(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+      .col-sm-6.col-md-2
+        .card
+          .card-body
+            .text-muted.text-right.mb-4
+              svg.c-icon.c-icon-2xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
+            .text-value-lg 28%
+            small.text-muted.text-uppercase.font-weight-bold Returning Visitors
+            .progress.progress-xs.mt-3.mb-0
+              .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+      .col-sm-6.col-md-2
+        .card
+          .card-body
+            .text-muted.text-right.mb-4
+              svg.c-icon.c-icon-2xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
+            .text-value-lg 5:34:11
+            small.text-muted.text-uppercase.font-weight-bold Avg. Time
+            .progress.progress-xs.mt-3.mb-0
+              .progress-bar.bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+      .col-sm-6.col-md-2
+        .card
+          .card-body
+            .text-muted.text-right.mb-4
+              svg.c-icon.c-icon-2xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech")
+            .text-value-lg 972
+            small.text-muted.text-uppercase.font-weight-bold Comments
+            .progress.progress-xs.mt-3.mb-0
+              .progress-bar.bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+    // /.row
+    .row
+      .col-sm-6.col-md-2
+        .card.text-white.bg-info
+          .card-body
+            .text-muted.text-right.mb-4
+              svg.c-icon.c-icon-2xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
+            .text-value-lg 87.500
+            small.text-muted.text-uppercase.font-weight-bold Visitors
+            .progress.progress-white.progress-xs.mt-3
+              .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+      .col-sm-6.col-md-2
+        .card.text-white.bg-success
+          .card-body
+            .text-muted.text-right.mb-4
+              svg.c-icon.c-icon-2xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
+            .text-value-lg 385
+            small.text-muted.text-uppercase.font-weight-bold New Clients
+            .progress.progress-white.progress-xs.mt-3
+              .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+      .col-sm-6.col-md-2
+        .card.text-white.bg-warning
+          .card-body
+            .text-muted.text-right.mb-4
+              svg.c-icon.c-icon-2xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
+            .text-value-lg 1238
+            small.text-muted.text-uppercase.font-weight-bold Products sold
+            .progress.progress-white.progress-xs.mt-3
+              .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+      .col-sm-6.col-md-2
+        .card.text-white.bg-primary
+          .card-body
+            .text-muted.text-right.mb-4
+              svg.c-icon.c-icon-2xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
+            .text-value-lg 28%
+            small.text-muted.text-uppercase.font-weight-bold Returning Visitors
+            .progress.progress-white.progress-xs.mt-3
+              .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+      .col-sm-6.col-md-2
+        .card.text-white.bg-danger
+          .card-body
+            .text-muted.text-right.mb-4
+              svg.c-icon.c-icon-2xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
+            .text-value-lg 5:34:11
+            small.text-muted.text-uppercase.font-weight-bold Avg. Time
+            .progress.progress-white.progress-xs.mt-3
+              .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+      .col-sm-6.col-md-2
+        .card.text-white.bg-info
+          .card-body
+            .text-muted.text-right.mb-4
+              svg.c-icon.c-icon-2xl
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech")
+            .text-value-lg 972
+            small.text-muted.text-uppercase.font-weight-bold Comments
+            .progress.progress-white.progress-xs.mt-3
+              .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+      // /.col
+    // /.row

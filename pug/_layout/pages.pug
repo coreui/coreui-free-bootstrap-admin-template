@@ -1,0 +1,14 @@
+- var ajax = true
+- var page = true
+doctype html
+include ../_partials/banner.pug
+
+html(lang='en')
+  head
+    base(href=base)
+    include ../_partials/head.pug
+    block styles
+  body.c-app.flex-row.align-items-center
+    block view
+
+    include ../_partials/scripts.pug

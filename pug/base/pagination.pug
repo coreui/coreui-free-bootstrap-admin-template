@@ -1,0 +1,151 @@
+extends /_layout/default.pug
+
+block view
+  .fade-in
+    .card
+      .card-header
+        |  Pagination
+        .card-header-actions
+          a.card-header-action(href='http://coreui.io/docs/components/bootstrap-pagination/', target='_blank')
+            small.text-muted docs
+      .card-body
+        nav(aria-label='Page navigation example')
+          ul.pagination
+            li.page-item
+              a.page-link(href='#') Previous
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item
+              a.page-link(href='#') 2
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#') Next
+    .card
+      .card-header
+        |  Pagination
+        small with icons
+      .card-body
+        nav(aria-label='Page navigation example')
+          ul.pagination
+            li.page-item
+              a.page-link(href='#', aria-label='Previous')
+                span(aria-hidden='true') «
+                span.sr-only Previous
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item
+              a.page-link(href='#') 2
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#', aria-label='Next')
+                span(aria-hidden='true') »
+                span.sr-only Next
+    .card
+      .card-header
+        |  Pagination
+        small disabled and active
+      .card-body
+        nav(aria-label='...')
+          ul.pagination
+            li.page-item.disabled
+              a.page-link(href='#', tabindex='-1') Previous
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item.active
+              a.page-link(href='#')
+                | 2
+                span.sr-only (current)
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#') Next
+        hr
+        nav(aria-label='...')
+          ul.pagination
+            li.page-item.disabled
+              span.page-link Previous
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item.active
+              span.page-link
+                | 2
+                span.sr-only (current)
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#') Next
+    .card
+      .card-header
+        |  Pagination
+        small sizing
+      .card-body
+        nav(aria-label='...')
+          ul.pagination.pagination-lg
+            li.page-item.disabled
+              a.page-link(href='#', tabindex='-1') Previous
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item
+              a.page-link(href='#') 2
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#') Next
+        hr
+        nav(aria-label='...')
+          ul.pagination.pagination-sm
+            li.page-item.disabled
+              a.page-link(href='#', tabindex='-1') Previous
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item
+              a.page-link(href='#') 2
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#') Next
+    .card
+      .card-header
+        |  Pagination
+        small alignment
+      .card-body
+        nav(aria-label='Page navigation example')
+          ul.pagination.justify-content-start
+            li.page-item.disabled
+              a.page-link(href='#', tabindex='-1') Previous
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item
+              a.page-link(href='#') 2
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#') Next
+        hr
+        nav(aria-label='Page navigation example')
+          ul.pagination.justify-content-center
+            li.page-item.disabled
+              a.page-link(href='#', tabindex='-1') Previous
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item
+              a.page-link(href='#') 2
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#') Next
+        hr
+        nav(aria-label='Page navigation example')
+          ul.pagination.justify-content-end
+            li.page-item.disabled
+              a.page-link(href='#', tabindex='-1') Previous
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item
+              a.page-link(href='#') 2
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#') Next

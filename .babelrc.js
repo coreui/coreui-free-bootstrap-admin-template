@@ -1,33 +1,21 @@
 module.exports = {
   presets: [
     [
-      "@babel/preset-env",
+      '@babel/env',
       {
-        "targets": {
-          "esmodules": true,
-          "ie": 10
-        },
-        useBuiltIns: "entry",
-        corejs: {version: 3, proposals: true},
         loose: true,
-        modules: "auto",
-        exclude: ["transform-typeof-symbol"]
+        modules: false,
+        exclude: ['transform-typeof-symbol']
       }
     ]
   ],
   plugins: [
-    process.env.PLUGINS && "transform-es2015-modules-strip",
-    [
-      "@babel/proposal-object-rest-spread", {
-        loose: true,
-        useBuiltIns: true
-      }
-    ],
-    "@babel/plugin-proposal-throw-expressions"
+    process.env.PLUGINS && 'transform-es2015-modules-strip',
+    ['@babel/proposal-object-rest-spread', {loose: true, useBuiltIns: true}]
   ].filter(Boolean),
   env: {
     test: {
-      plugins: ["istanbul"],
+      plugins: [ 'istanbul' ]
     }
   }
 };

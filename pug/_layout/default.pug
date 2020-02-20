@@ -1,0 +1,19 @@
+- var static = true
+doctype html
+include ../_partials/banner.pug
+
+html(lang='en')
+  head
+    base(href=base)
+    include ../_partials/head.pug
+    block styles
+  body.c-app
+    include ../_partials/sidebar.pug
+    .c-wrapper.c-fixed-components
+      include ../_partials/header.pug
+      .c-body
+        main(class='c-main')
+          .container-fluid
+            block view
+        include ../_partials/footer.pug
+    include ../_partials/scripts.pug

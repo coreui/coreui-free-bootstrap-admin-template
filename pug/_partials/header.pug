@@ -1,0 +1,89 @@
+header.c-header.c-header-light.c-header-fixed.c-header-with-subheader
+  button.c-header-toggler.c-class-toggler.d-lg-none.mfe-auto(type="button" data-target="#sidebar" data-class="c-sidebar-show")
+    svg.c-icon.c-icon-lg
+      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu")
+  a.c-header-brand.d-lg-none(href="#")
+    svg(width="118" height="46" alt="CoreUI Logo")
+      use(xlink:href="assets/brand/coreui.svg#full")
+  button.c-header-toggler.c-class-toggler.mfs-3.d-md-down-none(type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true")
+    svg.c-icon.c-icon-lg
+      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu")
+  if !starter
+    ul.c-header-nav.d-md-down-none
+      li.c-header-nav-item.px-3
+        a.c-header-nav-link(href="#") Dashboard
+      li.c-header-nav-item.px-3
+        a.c-header-nav-link(href="#") Users
+      li.c-header-nav-item.px-3
+        a.c-header-nav-link(href="#") Settings
+    ul.c-header-nav.ml-auto.mr-4
+      li.c-header-nav-item.d-md-down-none.mx-2
+        a.c-header-nav-link(href="#")
+          svg.c-icon
+            use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
+      li.c-header-nav-item.d-md-down-none.mx-2
+        a.c-header-nav-link(href="#")
+          svg.c-icon
+            use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich")
+      li.c-header-nav-item.d-md-down-none.mx-2
+        a.c-header-nav-link(href="#")
+          svg.c-icon
+            use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
+      li.c-header-nav-item.dropdown
+        a.c-header-nav-link(data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false")
+          .c-avatar
+            img.c-avatar-img(src="assets/img/avatars/6.jpg" alt="user@email.com")
+        .dropdown-menu.dropdown-menu-right.pt-0
+          .dropdown-header.bg-light.py-2
+            strong Account
+          a.dropdown-item(href="#")
+            svg.c-icon.mr-2
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
+            |  Updates
+            span.badge.badge-info.ml-auto 42
+          a.dropdown-item(href="#")
+            svg.c-icon.mr-2
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
+            |  Messages
+            span.badge.badge-success.ml-auto 42
+          a.dropdown-item(href="#")
+            svg.c-icon.mr-2
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task")
+            |  Tasks
+            span.badge.badge-danger.ml-auto 42
+          a.dropdown-item(href="#")
+            svg.c-icon.mr-2
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square")
+            |  Comments
+            span.badge.badge-warning.ml-auto 42
+          .dropdown-header.bg-light.py-2
+            strong Settings
+          a.dropdown-item(href="#")
+            svg.c-icon.mr-2
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
+            |  Profile
+          a.dropdown-item(href="#")
+            svg.c-icon.mr-2
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+            |  Settings
+          a.dropdown-item(href="#")
+            svg.c-icon.mr-2
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card")
+            |  Payments
+            span.badge.badge-secondary.ml-auto 42
+          a.dropdown-item(href="#")
+            svg.c-icon.mr-2
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file")
+            |  Projects
+            span.badge.badge-primary.ml-auto 42
+          .dropdown-divider
+          a.dropdown-item(href="#")
+            svg.c-icon.mr-2
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked")
+            |  Lock Account
+          a.dropdown-item(href="#")
+            svg.c-icon.mr-2
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout")
+            |  Logout
+  .c-subheader.px-3
+    include ./../_partials/breadcrumb.pug

@@ -1,0 +1,18 @@
+extends /_layout/pages.pug
+
+block view
+  .container
+    .row.justify-content-center
+      .col-md-6
+        .clearfix
+          h1.float-left.display-3.mr-4 500
+          h4.pt-3 Houston, we have a problem!
+          p.text-muted The page you are looking for is temporarily unavailable.
+        .input-prepend.input-group
+          .input-group-prepend
+            span.input-group-text
+              svg.c-icon
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-magnifying-glass")
+          input#prependedInput.form-control(size='16', type='text', placeholder='What are you looking for?')
+          span.input-group-append
+            button.btn.btn-info(type='button') Search

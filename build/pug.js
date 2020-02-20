@@ -1,17 +1,14 @@
 #!/usr/bin/env node
-
 'use strict'
 
-const args = process.argv.slice(2)
-
-const fs         = require('fs')
-const path       = require('path')
-const mkdirp     = require('mkdirp')
-const pug        = require('pug')
-const src        = './pug/'
-const dest       = './src/'
-const pkg        = require(path.resolve(__dirname, '../package.json'))
-const beautify   = require('js-beautify').html
+const fs = require('fs')
+const glob = require('glob')
+const path = require('path')
+const mkdirp = require('mkdirp')
+const pug = require('pug')
+const svgInjector = require('@coreui/svg-injector')
+const vendorsInjector = require('@coreui/vendors-injector')
+const beautify = require('js-beautify').html
 const jsbOptions = {
   indent_size: 2,
   indent_inner_html: true,
@@ -19,102 +16,95 @@ const jsbOptions = {
   content_unformatted: ['textarea'],
   extra_liners: ['']
 }
-const version    = args[0];
+const argv = require('minimist')(process.argv.slice(2), {
+  boolean: ['injectVendors', 'injectSvg']
+})
+console.dir(argv)
+const src = argv.src
+const dest = argv.dest
+const injectVendors = argv.injectVendors ? argv.injectVendors : false
+const injectSvg = argv.injectSvg ? argv.injectSvg : false
+const svgSelectors = 'img.c-icon, img.c-btn-icon, img.c-nav-icon'
 
-const basename   = path.basename
-const dirname    = path.dirname
-const resolve    = path.resolve
-const normalize  = path.normalize
-const join       = path.join
-const relative   = path.relative
-const extension  = path.extname
+const { basename, dirname, resolve } = path
+const extension = path.extname
 
-const walkSync = (dir, filelist = []) => {
-  fs.readdirSync(dir).forEach(file => {
-    filelist = fs.statSync(path.join(dir, file)).isDirectory()
-      ? walkSync(path.join(dir, file), filelist)
-      : filelist.concat(path.join(dir, file))
-  })
-  return filelist
+// Get all pug files
+const getAllFiles = src => {
+  // const cwd = 'pug/'
+  const pattern = `${src}/**/*.pug`
+  const options = {
+    ignore: `${src}/_*/**`
+  }
+  return new glob.sync(pattern, options)
 }
 
-const isPug = (filename) => {
-  return extension(filename) === '.pug' ? true : false
-}
+const isPug = filename => extension(filename) === '.pug'
 
 const compile = (filename, basedir) => {
-  const levels = filename.replace(`pug${path.sep}views${path.sep}`, '').replace(`pug${path.sep}pages${path.sep}`, '').split(`${path.sep}`).length
-  const base = (levels) => {
+  const levels = basedir.split(`${path.sep}`).filter(el => el !== '' ).length
+  const base = levels => {
     let path = './'
-    while (levels > 1) {
-      levels = levels - 1;
-      path = path + '../'
+    while (levels > 0) {
+      levels -= 1
+      path += '../'
     }
+
     return path
   }
 
   const fn = pug.compileFile(filename, {
-    basedir: basedir,
-    pretty: true,
+    basedir: './pug/',
+    pretty: true
   })
   const html = fn({
     base: base(levels)
-  });
+  })
   return html
 }
 
-// Build html files
-const compileHtml = () => {
-  // Build index
-  if (version === 'ajax') {
-    const html = compile('./pug/layout/index.pug', './pug/layout/')
-    fs.writeFile(resolve(dest, 'index.html'), beautify(html, jsbOptions), function(err) {
-      if(err) {
-        return console.log(err);
+const checkPath = (src, dest, injectVendors, injectSvg) => {
+  // Check if path is file or directory
+  if (fs.statSync(src).isDirectory()) {
+    const files = getAllFiles(src)
+    files.forEach(file => {
+      if (isPug(file)) {
+        compilePugToHtml(resolve(file), dest, injectVendors, injectSvg)
       }
-      console.log('index.html file was saved!');
+      // TODO: handle errors
     })
+  } else if (isPug(src)) {
+    compilePugToHtml(resolve(src), dest, injectVendors, injectSvg)
+  }
+  // TODO: handle errors
+}
+
+// Build html files
+const compilePugToHtml = (src, dest, injectVendors, injectSvg) => {
+  const dir = dirname(src).replace('pug', '')
+  const file = basename(src).replace('.pug', '.html')
+  const relative = path.relative(resolve(__dirname, '..'), dir)
+  let html = compile(src, `${relative}`)
+
+  // console.log(relative)
+  // console.log('----------------')
+  mkdirp.sync(resolve(__dirname, '..', dest, relative))
+
+  if (injectVendors === true) {
+    html = vendorsInjector(html)
   }
 
-  // Build views
-  const views = walkSync('./pug/views/')
-  views.forEach((view) => {
-    if (isPug(view)) {
-      const html = compile(view, './pug/layout/')
-      let file
-      if (version === 'ajax') {
-        file = view.replace(`pug${path.sep}`, '').replace('.pug', '.html')
-      } else {
-        file = view.replace(`pug${path.sep}views${path.sep}`, '').replace('.pug', '.html')
-      }
-      // Create tree
-      mkdirp.sync(resolve(dest, dirname(file)))
-      // Create HTML file
-      fs.writeFile(resolve(dest, file), beautify(html, jsbOptions), function(err) {
-        if(err) {
-          return console.log(err)
-        }
-        console.log(file + ' file was saved!')
-      })
+  if (injectSvg === true) {
+    html = svgInjector(html, svgSelectors, 'src/')
+  }
+
+  fs.writeFile(resolve(__dirname, '..', dest, relative, file), beautify(html, jsbOptions), err => {
+    if (err) {
+      throw err
     }
-  })
-  // Build pages
-  const pages = walkSync('./pug/pages')
-  pages.forEach((page) => {
-    if (isPug(page)) {
-      const html = compile(page, './pug/layout/')
-      const file = page.replace(`pug${path.sep}pages${path.sep}`, '').replace('.pug', '.html')
-      // Create tree
-      mkdirp.sync(resolve(dest, dirname(file)))
-      // Create HTML file
-      fs.writeFile(resolve(dest, file), beautify(html, jsbOptions), function(err) {
-        if(err) {
-          return console.log(err)
-        }
-        console.log(file + ' file was saved!')
-      })
-    }
+
+    console.log(`${resolve(__dirname, '..', dest, relative, file)} file was saved!`)
   })
 }
 
-compileHtml()
+checkPath(src, dest, injectVendors, injectSvg)

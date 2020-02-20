@@ -1,0 +1,34 @@
+extends /_layout/default.pug
+
+block view
+  .fade-in
+    .row
+      .col-lg-12
+        .card
+          .card-header
+            |  Bootstrap Breadcrumb
+            .card-header-actions
+              a.card-header-action(href='http://coreui.io/docs/components/bootstrap-breadcrumb/', target='_blank')
+                small.text-muted docs
+          .card-body
+            nav(aria-label='breadcrumb', role='navigation')
+              ol.breadcrumb
+                li.breadcrumb-item.active(aria-current='page') Home
+            nav(aria-label='breadcrumb', role='navigation')
+              ol.breadcrumb
+                li.breadcrumb-item
+                  a(href='#') Home
+                li.breadcrumb-item.active(aria-current='page') Library
+            nav(aria-label='breadcrumb', role='navigation')
+              ol.breadcrumb
+                li.breadcrumb-item
+                  a(href='#') Home
+                li.breadcrumb-item
+                  a(href='#') Library
+                li.breadcrumb-item.active(aria-current='page') Data
+            nav.breadcrumb
+              a.breadcrumb-item(href='#') Home
+              a.breadcrumb-item(href='#') Library
+              a.breadcrumb-item(href='#') Data
+              span.breadcrumb-item.active Bootstrap
+    // /.row

@@ -1,0 +1,261 @@
+extends /_layout/default.pug
+
+block view
+  .fade-in
+    .row
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            |  Navs
+            .card-header-actions
+              a.card-header-action(href='http://coreui.io/docs/components/bootstrap-navs/', target='_blank')
+                small.text-muted docs
+          .card-body
+            ul.nav
+              li.nav-item
+                a.nav-link.active(href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#') Disabled
+            hr
+            nav.nav
+              a.nav-link.active(href='#') Active
+              a.nav-link(href='#') Link
+              a.nav-link(href='#') Link
+              a.nav-link.disabled(href='#') Disabled
+            hr
+            ul.nav.justify-content-center
+              li.nav-item
+                a.nav-link.active(href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#') Disabled
+            hr
+            ul.nav.justify-content-end
+              li.nav-item
+                a.nav-link.active(href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#') Disabled
+      .col-sm-12.col-xl-3
+        .card
+          .card-header
+            |  Navs
+            small vertical
+          .card-body
+            nav.nav.flex-column
+              a.nav-link.active(href='#') Active
+              a.nav-link(href='#') Link
+              a.nav-link(href='#') Link
+              a.nav-link.disabled(href='#') Disabled
+      .col-sm-12.col-xl-3
+        .card
+          .card-header
+            |  Navs
+            small vertical
+          .card-body
+            ul.nav.flex-column
+              li.nav-item
+                a.nav-link.active(href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#') Disabled
+    .row
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            |  Navs
+            small tabs
+          .card-body
+            ul.nav.nav-tabs
+              li.nav-item
+                a.nav-link.active(href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#') Disabled
+      .col-sm-12.col-xl-6
+        .card
+          .card-header
+            |  Navs
+            small pills
+          .card-body
+            ul.nav.nav-pills
+              li.nav-item
+                a.nav-link.active(href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#') Disabled
+    .row
+      .col
+        .card
+          .card-header
+            |  Navs
+            small fill and justify
+          .card-body
+            ul.nav.nav-pills.nav-fill
+              li.nav-item
+                a.nav-link.active(href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Longer nav link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#') Disabled
+            hr
+            nav.nav.nav-pills.nav-fill
+              a.nav-item.nav-link.active(href='#') Active
+              a.nav-item.nav-link(href='#') Link
+              a.nav-item.nav-link(href='#') Link
+              a.nav-item.nav-link.disabled(href='#') Disabled
+            hr
+            nav.nav.nav-pills.nav-justified
+              a.nav-link.active(href='#') Active
+              a.nav-link(href='#') Longer nav link
+              a.nav-link(href='#') Link
+              a.nav-link.disabled(href='#') Disabled
+            hr
+            nav.nav.nav-pills.nav-justified
+              a.nav-item.nav-link.active(href='#') Active
+              a.nav-item.nav-link(href='#') Link
+              a.nav-item.nav-link(href='#') Link
+              a.nav-item.nav-link.disabled(href='#') Disabled
+    .row
+      .col
+        .card
+          .card-header
+            |  Navs
+            small with flex
+          .card-body
+            nav.nav.nav-pills.flex-column.flex-sm-row
+              a.flex-sm-fill.text-sm-center.nav-link.active(href='#') Active
+              a.flex-sm-fill.text-sm-center.nav-link(href='#') Link
+              a.flex-sm-fill.text-sm-center.nav-link(href='#') Link
+              a.flex-sm-fill.text-sm-center.nav-link.disabled(href='#') Disabled
+    .row
+      .col
+        .card
+          .card-header
+            |  Navs
+            small tabs with dropdowns
+          .card-body
+            ul.nav.nav-tabs
+              li.nav-item
+                a.nav-link.active(href='#') Active
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
+                .dropdown-menu
+                  a.dropdown-item(href='#') Action
+                  a.dropdown-item(href='#') Another action
+                  a.dropdown-item(href='#') Something else here
+                  .dropdown-divider
+                  a.dropdown-item(href='#') Separated link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#') Disabled
+      .col
+        .card
+          .card-header
+            |  Navs
+            small pills with dropdowns
+          .card-body
+            ul.nav.nav-pills
+              li.nav-item
+                a.nav-link.active(href='#') Active
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
+                .dropdown-menu
+                  a.dropdown-item(href='#') Action
+                  a.dropdown-item(href='#') Another action
+                  a.dropdown-item(href='#') Something else here
+                  .dropdown-divider
+                  a.dropdown-item(href='#') Separated link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#') Disabled
+    .row
+      .col
+        .card
+          .card-header
+            |  Navs
+            small with tab JavaScript plugin
+          .card-body
+            ul#myTab1.nav.nav-tabs(role='tablist')
+              li.nav-item
+                a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Home
+              li.nav-item
+                a#profile-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') Profile
+              li.nav-item
+                a#contact-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false') Contact
+            #myTab1Content.tab-content
+              #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+                | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro
+                | synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher
+                | retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip
+                | placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+              #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+                | Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
+                | labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft
+                | beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
+                | vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica
+                | VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson
+                | 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+                | stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+              #contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+                | Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
+                | fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone
+                | skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings
+                | gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel
+                | fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer
+                | blog stumptown. Pitchfork sustainable tofu synth chambray yr.
+            hr
+            .row
+              .col
+                ul#pills-tab.nav.nav-pills.mb-1(role='tablist')
+                  li.nav-item
+                    a#pills-home-tab.nav-link.active(data-toggle='pill', href='#pills-home', role='tab', aria-controls='pills-home', aria-selected='true') Home
+                  li.nav-item
+                    a#pills-profile-tab.nav-link(data-toggle='pill', href='#pills-profile', role='tab', aria-controls='pills-profile', aria-selected='false') Profile
+                  li.nav-item
+                    a#pills-contact-tab.nav-link(data-toggle='pill', href='#pills-contact', role='tab', aria-controls='pills-contact', aria-selected='false') Contact
+                #pills-tabContent.tab-content
+                  #pills-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-home-tab')
+                    | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro
+                    | synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher
+                    | retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip
+                    | placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                  #pills-profile.tab-pane.fade(role='tabpanel', aria-labelledby='pills-profile-tab')
+                    | Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
+                    | labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft
+                    | beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
+                    | vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica
+                    | VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson
+                    | 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+                    | stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                  #pills-contact.tab-pane.fade(role='tabpanel', aria-labelledby='pills-contact-tab')
+                    | Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
+                    | fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone
+                    | skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings
+                    | gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel
+                    | fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer
+                    | blog stumptown. Pitchfork sustainable tofu synth chambray yr.
+            hr

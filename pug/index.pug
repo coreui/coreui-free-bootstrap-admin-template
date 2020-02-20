@@ -1,0 +1,514 @@
+extends /_layout/default.pug
+
+block styles
+  link(href='node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css', rel='stylesheet')
+
+block scripts
+  if !starter
+    // Plugins and scripts required by this view
+    script(src='node_modules/@coreui/chartjs/dist/js/coreui-chartjs.bundle.js')
+    script(src='node_modules/@coreui/utils/dist/coreui-utils.js')
+    script(src='js/main.js')
+
+block view
+  .fade-in
+    .row
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-gradient-primary
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
+              button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                svg.c-icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+              .dropdown-menu.dropdown-menu-right
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+          .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
+            canvas#card-chart1.chart(height='70')
+      // /.col
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-gradient-info
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
+              button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                svg.c-icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+              .dropdown-menu.dropdown-menu-right
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+          .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
+            canvas#card-chart2.chart(height='70')
+      // /.col
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-gradient-warning
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
+              button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                svg.c-icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+              .dropdown-menu.dropdown-menu-right
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+          .c-chart-wrapper.mt-3(style='height:70px;')
+            canvas#card-chart3.chart(height='70')
+      // /.col
+      .col-sm-6.col-lg-3
+        .card.text-white.bg-gradient-danger
+          .card-body.card-body.pb-0.d-flex.justify-content-between.align-items-start
+            div
+              .text-value-lg 9.823
+              div Members online
+            .btn-group
+              button.btn.btn-transparent.dropdown-toggle.p-0(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                svg.c-icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+              .dropdown-menu.dropdown-menu-right
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+          .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
+            canvas#card-chart4.chart(height='70')
+      // /.col
+    // /.row
+    .card
+      .card-body
+        .d-flex.justify-content-between
+          div
+            h4.card-title.mb-0 Traffic
+            .small.text-muted September  2019
+          .btn-toolbar.d-none.d-md-block(role='toolbar' aria-label='Toolbar with buttons')
+            .btn-group.btn-group-toggle.mx-3(data-toggle='buttons')
+              label.btn.btn-outline-secondary
+                input#option1(type='radio', name='options', autocomplete='off')
+                |  Day
+              label.btn.btn-outline-secondary.active
+                input#option2(type='radio', name='options', autocomplete='off', checked='')
+                |  Month
+              label.btn.btn-outline-secondary
+                input#option3(type='radio', name='options', autocomplete='off')
+                |  Year
+            button.btn.btn-primary(type='button')
+              svg.c-icon
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download")
+        .c-chart-wrapper(style='height:300px;margin-top:40px;')
+          canvas#main-chart.chart(height='300')
+      .card-footer
+        .row.text-center
+          .col-sm-12.col-md.mb-sm-2.mb-0
+            .text-muted Visits
+            strong 29.703 Users (40%)
+            .progress.progress-xs.mt-2
+              .progress-bar.bg-gradient-success(role='progressbar', style='width: 40%', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100')
+          .col-sm-12.col-md.mb-sm-2.mb-0
+            .text-muted Unique
+            strong 24.093 Users (20%)
+            .progress.progress-xs.mt-2
+              .progress-bar.bg-gradient-info(role='progressbar', style='width: 20%', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+          .col-sm-12.col-md.mb-sm-2.mb-0
+            .text-muted Pageviews
+            strong 78.706 Views (60%)
+            .progress.progress-xs.mt-2
+              .progress-bar.bg-gradient-warning(role='progressbar', style='width: 60%', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100')
+          .col-sm-12.col-md.mb-sm-2.mb-0
+            .text-muted New Users
+            strong 22.123 Users (80%)
+            .progress.progress-xs.mt-2
+              .progress-bar.bg-gradient-danger(role='progressbar', style='width: 80%', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+          .col-sm-12.col-md.mb-sm-2.mb-0
+            .text-muted Bounce Rate
+            strong 40.15%
+            .progress.progress-xs.mt-2
+              .progress-bar(role='progressbar', style='width: 40%', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100')
+    // /.card
+    .row
+      .col-sm-6.col-lg-4
+        .card
+          .card-header.bg-facebook.content-center
+            svg.c-icon.c-icon-3xl.text-white.my-4
+              use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
+          .card-body.row.text-center
+            .col
+              .text-value-xl 89k
+              .text-uppercase.text-muted.small friends
+            .c-vr
+            .col
+              .text-value-xl 459
+              .text-uppercase.text-muted.small feeds
+      // /.col
+      .col-sm-6.col-lg-4
+        .card
+          .card-header.bg-twitter.content-center
+            svg.c-icon.c-icon-3xl.text-white.my-4
+              use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
+          .card-body.row.text-center
+            .col
+              .text-value-xl 973k
+              .text-uppercase.text-muted.small followers
+            .c-vr
+            .col
+              .text-value-xl 1.792
+              .text-uppercase.text-muted.small tweets
+      // /.col
+      .col-sm-6.col-lg-4
+        .card
+          .card-header.bg-linkedin.content-center
+            svg.c-icon.c-icon-3xl.text-white.my-4
+              use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
+          .card-body.row.text-center
+            .col
+              .text-value-xl 500+
+              .text-uppercase.text-muted.small contacts
+            .c-vr
+            .col
+              .text-value-xl 292
+              .text-uppercase.text-muted.small feeds
+      // /.col
+    // /.row
+    .row
+      .col-md-12
+        .card
+          .card-header
+            | Traffic & Sales
+          .card-body
+            .row
+              .col-sm-6
+                .row
+                  .col-6
+                    .c-callout.c-callout-info
+                      small.text-muted New Clients
+                      div.text-value-lg 9,123
+                  // /.col
+                  .col-6
+                    .c-callout.c-callout-danger
+                      small.text-muted Recuring Clients
+                      div.text-value-lg 22,643
+                  // /.col
+                // /.row
+                hr.mt-0
+                .progress-group.mb-4
+                  .progress-group-prepend
+                    span.progress-group-text
+                      | Monday
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 34%', aria-valuenow='34', aria-valuemin='0', aria-valuemax='100')
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 78%', aria-valuenow='78', aria-valuemin='0', aria-valuemax='100')
+                .progress-group.mb-4
+                  .progress-group-prepend
+                    span.progress-group-text
+                      | Tuesday
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 56%', aria-valuenow='56', aria-valuemin='0', aria-valuemax='100')
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 94%', aria-valuenow='94', aria-valuemin='0', aria-valuemax='100')
+                .progress-group.mb-4
+                  .progress-group-prepend
+                    span.progress-group-text
+                      | Wednesday
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 12%', aria-valuenow='12', aria-valuemin='0', aria-valuemax='100')
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 67%', aria-valuenow='67', aria-valuemin='0', aria-valuemax='100')
+                .progress-group.mb-4
+                  .progress-group-prepend
+                    span.progress-group-text
+                      | Thursday
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 91%', aria-valuenow='91', aria-valuemin='0', aria-valuemax='100')
+                .progress-group.mb-4
+                  .progress-group-prepend
+                    span.progress-group-text
+                      | Friday
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 22%', aria-valuenow='22', aria-valuemin='0', aria-valuemax='100')
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 73%', aria-valuenow='73', aria-valuemin='0', aria-valuemax='100')
+                .progress-group.mb-4
+                  .progress-group-prepend
+                    span.progress-group-text
+                      | Saturday
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 53%', aria-valuenow='53', aria-valuemin='0', aria-valuemax='100')
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 82%', aria-valuenow='82', aria-valuemin='0', aria-valuemax='100')
+                .progress-group.mb-4
+                  .progress-group-prepend
+                    span.progress-group-text
+                      | Sunday
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 9%', aria-valuenow='9', aria-valuemin='0', aria-valuemax='100')
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 69%', aria-valuenow='69', aria-valuemin='0', aria-valuemax='100')
+              // /.col
+              .col-sm-6
+                .row
+                  .col-6
+                    .c-callout.c-callout-warning
+                      small.text-muted Pageviews
+                      div.text-value-lg 78,623
+                  // /.col
+                  .col-6
+                    .c-callout.c-callout-success
+                      small.text-muted Organic
+                      div.text-value-lg 49,123
+                  // /.col
+                // /.row
+                hr.mt-0
+                .progress-group
+                  .progress-group-header
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
+                    div Male
+                    .mfs-auto.font-weight-bold 43%
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
+                .progress-group.mb-5
+                  .progress-group-header
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-female")
+                    div Female
+                    .mfs-auto.font-weight-bold 37%
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
+                .progress-group
+                  .progress-group-header.align-items-end
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-google")
+                    div Organic Search
+                    .mfs-auto.font-weight-bold.mfe-2 191.235
+                    .text-muted.small (56%)
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 56%', aria-valuenow='56', aria-valuemin='0', aria-valuemax='100')
+                .progress-group
+                  .progress-group-header.align-items-end
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
+                    div Facebook
+                    .mfs-auto.font-weight-bold.mfe-2 51.223
+                    .text-muted.small (15%)
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 15%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
+                .progress-group
+                  .progress-group-header.align-items-end
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
+                    div Twitter
+                    .mfs-auto.font-weight-bold.mfe-2 37.564
+                    .text-muted.small (11%)
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 11%', aria-valuenow='11', aria-valuemin='0', aria-valuemax='100')
+                .progress-group
+                  .progress-group-header.align-items-end
+                    svg.c-icon.progress-group-icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
+                    div LinkedIn
+                    .mfs-auto.font-weight-bold.mfe-2 27.319
+                    .text-muted.small (8%)
+                  .progress-group-bars
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 8%', aria-valuenow='8', aria-valuemin='0', aria-valuemax='100')
+              // /.col
+            // /.row
+            br
+            table.table.table-responsive-sm.table-hover.table-outline.mb-0
+              thead.thead-light
+                tr
+                  th.text-center
+                    svg.c-icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
+                  th User
+                  th.text-center Country
+                  th Usage
+                  th.text-center Payment Method
+                  th Activity
+              tbody
+                tr
+                  td.text-center
+                    .c-avatar
+                      img.c-avatar-img(src='assets/img/avatars/1.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-success
+                  td
+                    div Yiorgos Avraamu
+                    .small.text-muted
+                      span New
+                      |  | Registered: Jan 1, 2015
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-us")
+                  td
+                    .clearfix
+                      .float-left
+                        strong 50%
+                      .float-right
+                        small.text-muted Jun 11, 2015 - Jul 10, 2015
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-mastercard")
+                  td
+                    .small.text-muted Last login
+                    strong 10 sec ago
+                tr
+                  td.text-center
+                    .c-avatar
+                      img.c-avatar-img(src='assets/img/avatars/2.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-danger
+                  td
+                    div Avram Tarasios
+                    .small.text-muted
+                      span Recurring
+                      |  | Registered: Jan 1, 2015
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-br")
+                  td
+                    .clearfix
+                      .float-left
+                        strong 10%
+                      .float-right
+                        small.text-muted Jun 11, 2015 - Jul 10, 2015
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 10%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-visa")
+                  td
+                    .small.text-muted Last login
+                    strong 5 minutes ago
+                tr
+                  td.text-center
+                    .c-avatar
+                      img.c-avatar-img(src='assets/img/avatars/3.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-warning
+                  td
+                    div Quintin Ed
+                    .small.text-muted
+                      span New
+                      |  | Registered: Jan 1, 2015
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-in")
+                  td
+                    .clearfix
+                      .float-left
+                        strong 74%
+                      .float-right
+                        small.text-muted Jun 11, 2015 - Jul 10, 2015
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-warning(role='progressbar', style='width: 74%', aria-valuenow='74', aria-valuemin='0', aria-valuemax='100')
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-stripe")
+                  td
+                    .small.text-muted Last login
+                    strong 1 hour ago
+                tr
+                  td.text-center
+                    .c-avatar
+                      img.c-avatar-img(src='assets/img/avatars/4.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-secondary
+                  td
+                    div Enéas Kwadwo
+                    .small.text-muted
+                      span New
+                      |  | Registered: Jan 1, 2015
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-fr")
+                  td
+                    .clearfix
+                      .float-left
+                        strong 98%
+                      .float-right
+                        small.text-muted Jun 11, 2015 - Jul 10, 2015
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-danger(role='progressbar', style='width: 98%', aria-valuenow='98', aria-valuemin='0', aria-valuemax='100')
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-paypal")
+                  td
+                    .small.text-muted Last login
+                    strong Last month
+                tr
+                  td.text-center
+                    .c-avatar
+                      img.c-avatar-img(src='assets/img/avatars/5.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-success
+                  td
+                    div Agapetus Tadeáš
+                    .small.text-muted
+                      span New
+                      |  | Registered: Jan 1, 2015
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-es")
+                  td
+                    .clearfix
+                      .float-left
+                        strong 22%
+                      .float-right
+                        small.text-muted Jun 11, 2015 - Jul 10, 2015
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-info(role='progressbar', style='width: 22%', aria-valuenow='22', aria-valuemin='0', aria-valuemax='100')
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-apple-pay")
+                  td
+                    .small.text-muted Last login
+                    strong Last week
+                tr
+                  td.text-center
+                    .c-avatar
+                      img.c-avatar-img(src='assets/img/avatars/6.jpg', alt='user@email.com')
+                      span.c-avatar-status.bg-danger
+                  td
+                    div Friderik Dávid
+                    .small.text-muted
+                      span New
+                      |  | Registered: Jan 1, 2015
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-pl")
+                  td
+                    .clearfix
+                      .float-left
+                        strong 43%
+                      .float-right
+                        small.text-muted Jun 11, 2015 - Jul 10, 2015
+                    .progress.progress-xs
+                      .progress-bar.bg-gradient-success(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
+                  td.text-center
+                    svg.c-icon.c-icon-xl
+                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-amex")
+                  td
+                    .small.text-muted Last login
+                    strong Yesterday
+      // /.col
+    // /.row

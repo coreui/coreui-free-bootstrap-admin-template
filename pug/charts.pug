@@ -1,0 +1,66 @@
+extends /_layout/default.pug
+
+block styles
+  link(href='node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css', rel='stylesheet')
+
+block scripts
+  script(src='node_modules/@coreui/chartjs/dist/js/coreui-chartjs.bundle.js')
+  script(src='js/charts.js')
+
+block view
+  .fade-in
+    .card-columns.cols-2
+      .card
+        .card-header
+          | Line Chart
+          .card-header-actions
+            a.card-header-action(href='http://www.chartjs.org', target='_blank')
+              small.text-muted docs
+        .card-body
+          .c-chart-wrapper
+            canvas#canvas-1
+      .card
+        .card-header
+          | Bar Chart
+          .card-header-actions
+            a.card-header-action(href='http://www.chartjs.org', target='_blank')
+              small.text-muted docs
+        .card-body
+          .c-chart-wrapper
+            canvas#canvas-2
+      .card
+        .card-header
+          | Doughnut Chart
+          .card-header-actions
+            a.card-header-action(href='http://www.chartjs.org', target='_blank')
+              small.text-muted docs
+        .card-body
+          .c-chart-wrapper
+            canvas#canvas-3
+      .card
+        .card-header
+          | Radar Chart
+          .card-header-actions
+            a.card-header-action(href='http://www.chartjs.org', target='_blank')
+              small.text-muted docs
+        .card-body
+          .c-chart-wrapper
+            canvas#canvas-4
+      .card
+        .card-header
+          | Pie Chart
+          .card-header-actions
+            a.card-header-action(href='http://www.chartjs.org', target='_blank')
+              small.text-muted docs
+        .card-body
+          .c-chart-wrapper
+            canvas#canvas-5
+      .card
+        .card-header
+          | Polar Area Chart
+          .card-header-actions
+            a.card-header-action(href='http://www.chartjs.org', target='_blank')
+              small.text-muted docs
+        .card-body
+          .c-chart-wrapper
+            canvas#canvas-6
