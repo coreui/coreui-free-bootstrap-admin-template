@@ -76,11 +76,7 @@ const compileSass = (options = {}) => {
         console.warn(warning.toString())
       })
       // write the result to file
-      mkdirp(dirname(options.dest), err => {
-        if (err) {
-          throw err
-        }
-
+      mkdirp(dirname(options.dest)).then(() => {
         // create .css file
         fs.writeFile(options.dest, result.css, err => {
           if (err) {
