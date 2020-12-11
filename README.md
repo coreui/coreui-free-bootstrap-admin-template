@@ -134,7 +134,7 @@ The documentation for the CoreUI Free Bootstrap Admin Template is hosted at our 
 
 ## Contributing
 
-Please read through our [contributing guidelines](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+Please read through our [contributing guidelines](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/master/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
 Editor preferences are available in the [editor config](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
