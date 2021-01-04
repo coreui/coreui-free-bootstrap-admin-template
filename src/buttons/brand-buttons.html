@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v3.4.0
+* @version v4.0.0-alpha.0
 * @link https://coreui.io
 * Copyright (c) 2020 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -51,179 +51,175 @@
       gtag('config', 'UA-118965717-5');
     </script>
   </head>
-  <body class="c-app">
-    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
-      <div class="c-sidebar-brand d-lg-down-none">
-        <svg class="c-sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
+  <body class="c-app bg-light">
+    <div class="sidebar sidebar-dark sidebar-fixed sidebar-lg-show" id="sidebar">
+      <div class="sidebar-brand d-lg-down-none">
+        <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
           <use xlink:href="assets/brand/coreui.svg#full"></use>
         </svg>
-        <svg class="c-sidebar-brand-minimized" width="46" height="46" alt="CoreUI Logo">
+        <svg class="sidebar-brand-narrow" width="46" height="46" alt="CoreUI Logo">
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="c-sidebar-nav">
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="index.html">
-            <svg class="c-sidebar-nav-icon">
+      <ul class="sidebar-nav" data-coreui="navigation">
+        <li class="nav-item"><a class="nav-link" href="index.html">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
-            </svg> Dashboard<span class="badge badge-info">NEW</span></a></li>
-        <li class="c-sidebar-nav-title">Theme</li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="colors.html">
-            <svg class="c-sidebar-nav-icon">
+            </svg> Dashboard<span class="badge bg-info ms-auto">NEW</span></a></li>
+        <li class="nav-title">Theme</li>
+        <li class="nav-item"><a class="nav-link" href="colors.html">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-drop"></use>
             </svg> Colors</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="typography.html">
-            <svg class="c-sidebar-nav-icon">
+        <li class="nav-item"><a class="nav-link" href="typography.html">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-pencil"></use>
             </svg> Typography</a></li>
-        <li class="c-sidebar-nav-title">Components</li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-            <svg class="c-sidebar-nav-icon">
+        <li class="nav-title">Components</li>
+        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-puzzle"></use>
             </svg> Base</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/breadcrumb.html"><span class="c-sidebar-nav-icon"></span> Breadcrumb</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/cards.html"><span class="c-sidebar-nav-icon"></span> Cards</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/carousel.html"><span class="c-sidebar-nav-icon"></span> Carousel</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/collapse.html"><span class="c-sidebar-nav-icon"></span> Collapse</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/forms.html"><span class="c-sidebar-nav-icon"></span> Forms</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/jumbotron.html"><span class="c-sidebar-nav-icon"></span> Jumbotron</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/list-group.html"><span class="c-sidebar-nav-icon"></span> List group</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/navs.html"><span class="c-sidebar-nav-icon"></span> Navs</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/pagination.html"><span class="c-sidebar-nav-icon"></span> Pagination</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/popovers.html"><span class="c-sidebar-nav-icon"></span> Popovers</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/progress.html"><span class="c-sidebar-nav-icon"></span> Progress</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/scrollspy.html"><span class="c-sidebar-nav-icon"></span> Scrollspy</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/switches.html"><span class="c-sidebar-nav-icon"></span> Switches</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/tables.html"><span class="c-sidebar-nav-icon"></span> Tables</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/tabs.html"><span class="c-sidebar-nav-icon"></span> Tabs</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/tooltips.html"><span class="c-sidebar-nav-icon"></span> Tooltips</a></li>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="base/accordion.html"><span class="nav-icon"></span> Accordion</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/breadcrumb.html"><span class="nav-icon"></span> Breadcrumb</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"></span> Cards</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/carousel.html"><span class="nav-icon"></span> Carousel</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/collapse.html"><span class="nav-icon"></span> Collapse</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/forms.html"><span class="nav-icon"></span> Forms</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/jumbotron.html"><span class="nav-icon"></span> Jumbotron</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/list-group.html"><span class="nav-icon"></span> List group</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/navs.html"><span class="nav-icon"></span> Navs</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/pagination.html"><span class="nav-icon"></span> Pagination</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/popovers.html"><span class="nav-icon"></span> Popovers</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/progress.html"><span class="nav-icon"></span> Progress</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/scrollspy.html"><span class="nav-icon"></span> Scrollspy</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/switches.html"><span class="nav-icon"></span> Switches</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/tables.html"><span class="nav-icon"></span> Tables</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/tabs.html"><span class="nav-icon"></span> Tabs</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/tooltips.html"><span class="nav-icon"></span> Tooltips</a></li>
           </ul>
         </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-            <svg class="c-sidebar-nav-icon">
+        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cursor"></use>
             </svg> Buttons</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="buttons/buttons.html"><span class="c-sidebar-nav-icon"></span> Buttons</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="buttons/button-group.html"><span class="c-sidebar-nav-icon"></span> Buttons Group</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="buttons/dropdowns.html"><span class="c-sidebar-nav-icon"></span> Dropdowns</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="buttons/brand-buttons.html"><span class="c-sidebar-nav-icon"></span> Brand Buttons</a></li>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"><span class="nav-icon"></span> Buttons</a></li>
+            <li class="nav-item"><a class="nav-link" href="buttons/button-group.html"><span class="nav-icon"></span> Buttons Group</a></li>
+            <li class="nav-item"><a class="nav-link" href="buttons/dropdowns.html"><span class="nav-icon"></span> Dropdowns</a></li>
+            <li class="nav-item"><a class="nav-link" href="buttons/brand-buttons.html"><span class="nav-icon"></span> Brand Buttons</a></li>
           </ul>
         </li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="charts.html">
-            <svg class="c-sidebar-nav-icon">
+        <li class="nav-item"><a class="nav-link" href="charts.html">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie"></use>
             </svg> Charts</a></li>
-        <li class="c-sidebar-nav-dropdown"><a class="c-sidebar-nav-dropdown-toggle" href="#">
-            <svg class="c-sidebar-nav-icon">
+        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Icons</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="icons/coreui-icons-free.html"> CoreUI Icons<span class="badge badge-success">Free</span></a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="icons/coreui-icons-brand.html"> CoreUI Icons - Brand</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="icons/coreui-icons-flag.html"> CoreUI Icons - Flag</a></li>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-free.html"> CoreUI Icons<span class="badge bg-success ms-auto">Free</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-brand.html"> CoreUI Icons - Brand</a></li>
+            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-flag.html"> CoreUI Icons - Flag</a></li>
           </ul>
         </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-            <svg class="c-sidebar-nav-icon">
+        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
             </svg> Notifications</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="notifications/alerts.html"><span class="c-sidebar-nav-icon"></span> Alerts</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="notifications/badge.html"><span class="c-sidebar-nav-icon"></span> Badge</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="notifications/modals.html"><span class="c-sidebar-nav-icon"></span> Modals</a></li>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><span class="nav-icon"></span> Alerts</a></li>
+            <li class="nav-item"><a class="nav-link" href="notifications/badge.html"><span class="nav-icon"></span> Badge</a></li>
+            <li class="nav-item"><a class="nav-link" href="notifications/modals.html"><span class="nav-icon"></span> Modals</a></li>
           </ul>
         </li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="widgets.html">
-            <svg class="c-sidebar-nav-icon">
+        <li class="nav-item"><a class="nav-link" href="widgets.html">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calculator"></use>
-            </svg> Widgets<span class="badge badge-info">NEW</span></a></li>
-        <li class="c-sidebar-nav-divider"></li>
-        <li class="c-sidebar-nav-title">Extras</li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-            <svg class="c-sidebar-nav-icon">
+            </svg> Widgets<span class="badge bg-info ms-auto">NEW</span></a></li>
+        <li class="nav-divider"></li>
+        <li class="nav-title">Extras</li>
+        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Pages</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="login.html" target="_top">
-                <svg class="c-sidebar-nav-icon">
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="login.html" target="_top">
+                <svg class="nav-icon">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
                 </svg> Login</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="register.html" target="_top">
-                <svg class="c-sidebar-nav-icon">
+            <li class="nav-item"><a class="nav-link" href="register.html" target="_top">
+                <svg class="nav-icon">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
                 </svg> Register</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="404.html" target="_top">
-                <svg class="c-sidebar-nav-icon">
+            <li class="nav-item"><a class="nav-link" href="404.html" target="_top">
+                <svg class="nav-icon">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
                 </svg> Error 404</a></li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="500.html" target="_top">
-                <svg class="c-sidebar-nav-icon">
+            <li class="nav-item"><a class="nav-link" href="500.html" target="_top">
+                <svg class="nav-icon">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
                 </svg> Error 500</a></li>
           </ul>
         </li>
-        <li class="c-sidebar-nav-item mt-auto"><a class="c-sidebar-nav-link c-sidebar-nav-link-success" href="https://coreui.io" target="_top">
-            <svg class="c-sidebar-nav-icon">
+        <li class="nav-item mt-auto"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
             </svg> Download CoreUI</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link c-sidebar-nav-link-danger" href="https://coreui.io/pro/" target="_top">
-            <svg class="c-sidebar-nav-icon">
+        <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
             </svg> Try CoreUI<strong>PRO</strong></a></li>
       </ul>
-      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+      <button class="sidebar-toggler" type="button" data-coreui-toggle="narrow"></button>
     </div>
-    <div class="c-wrapper c-fixed-components">
-      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
-        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
-          <svg class="c-icon c-icon-lg">
-            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
-          </svg>
-        </button><a class="c-header-brand d-lg-none" href="#">
+    <div class="c-wrapper" data-coreui-reliant="sidebar">
+      <header class="header header-sticky mb-4"><a class="header-brand d-lg-none" href="#">
           <svg width="118" height="46" alt="CoreUI Logo">
             <use xlink:href="assets/brand/coreui.svg#full"></use>
           </svg></a>
-        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+        <button class="header-toggler order-sm-first" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
           <svg class="c-icon c-icon-lg">
             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
           </svg>
         </button>
-        <ul class="c-header-nav d-md-down-none">
-          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Dashboard</a></li>
-          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Users</a></li>
-          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Settings</a></li>
+        <ul class="header-nav d-md-down-none">
+          <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
         </ul>
-        <ul class="c-header-nav ml-auto mr-4">
-          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+        <ul class="header-nav ms-auto mr-4">
+          <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
               <svg class="c-icon">
                 <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
               </svg></a></li>
-          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+          <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
               <svg class="c-icon">
                 <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
               </svg></a></li>
-          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+          <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
               <svg class="c-icon">
                 <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
               </svg></a></li>
-          <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+          <li class="nav-item dropdown"><a class="nav-link" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="avatar"><img class="avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
             </a>
-            <div class="dropdown-menu dropdown-menu-right pt-0">
+            <div class="dropdown-menu dropdown-menu-end pt-0">
               <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#">
                 <svg class="c-icon mr-2">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
-                </svg> Updates<span class="badge badge-info ml-auto">42</span></a><a class="dropdown-item" href="#">
+                </svg> Updates<span class="badge bg-info ms-auto">42</span></a><a class="dropdown-item" href="#">
                 <svg class="c-icon mr-2">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
-                </svg> Messages<span class="badge badge-success ml-auto">42</span></a><a class="dropdown-item" href="#">
+                </svg> Messages<span class="badge bg-success ms-auto">42</span></a><a class="dropdown-item" href="#">
                 <svg class="c-icon mr-2">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
-                </svg> Tasks<span class="badge badge-danger ml-auto">42</span></a><a class="dropdown-item" href="#">
+                </svg> Tasks<span class="badge bg-danger ms-auto">42</span></a><a class="dropdown-item" href="#">
                 <svg class="c-icon mr-2">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
-                </svg> Comments<span class="badge badge-warning ml-auto">42</span></a>
+                </svg> Comments<span class="badge bg-warning ms-auto">42</span></a>
               <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="#">
                 <svg class="c-icon mr-2">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
@@ -233,10 +229,10 @@
                 </svg> Settings</a><a class="dropdown-item" href="#">
                 <svg class="c-icon mr-2">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card"></use>
-                </svg> Payments<span class="badge badge-secondary ml-auto">42</span></a><a class="dropdown-item" href="#">
+                </svg> Payments<span class="badge bg-secondary ms-auto">42</span></a><a class="dropdown-item" href="#">
                 <svg class="c-icon mr-2">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file"></use>
-                </svg> Projects<span class="badge badge-primary ml-auto">42</span></a>
+                </svg> Projects<span class="badge bg-primary ms-auto">42</span></a>
               <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
                 <svg class="c-icon mr-2">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
@@ -247,585 +243,580 @@
             </div>
           </li>
         </ul>
-        <div class="c-subheader px-3">
-          <!-- Breadcrumb-->
+        <div class="header-divider"></div>
+        <!-- Breadcrumb-->
+        <nav aria-label="breadcrumb">
           <ol class="breadcrumb border-0 m-0">
             <li class="breadcrumb-item">Home</li>
             <li class="breadcrumb-item"><a href="#">Admin</a></li>
             <li class="breadcrumb-item active">Dashboard</li>
-            <!-- Breadcrumb Menu-->
           </ol>
-        </div>
+        </nav>
       </header>
       <div class="c-body">
-        <main class="c-main">
-          <div class="container-fluid">
-            <style type="text/css">
-              .btn {
-                margin-bottom: 4px;
-              }
-            </style>
-            <div class="fade-in">
-              <div class="row">
-                <div class="col-12">
-                  <div class="card">
-                    <div class="card-header"><strong>Brand Buttons</strong></div>
-                    <div class="card-body">
-                      <h6>Size Small<small>Add this class<code>.btn-sm</code></small></h6>
-                      <p>
-                        <button class="btn btn-sm btn-facebook" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
-                          </svg><span>Facebook</span>
-                        </button>
-                        <button class="btn btn-sm btn-twitter" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
-                          </svg><span>Twitter</span>
-                        </button>
-                        <button class="btn btn-sm btn-linkedin" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
-                          </svg><span>LinkedIn</span>
-                        </button>
-                        <button class="btn btn-sm btn-flickr" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
-                          </svg><span>Flickr</span>
-                        </button>
-                        <button class="btn btn-sm btn-tumblr" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
-                          </svg><span>Tumblr</span>
-                        </button>
-                        <button class="btn btn-sm btn-xing" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
-                          </svg><span>Xing</span>
-                        </button>
-                        <button class="btn btn-sm btn-github" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
-                          </svg><span>Github</span>
-                        </button>
-                        <button class="btn btn-sm btn-stack-overflow" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
-                          </svg><span>StackOverflow</span>
-                        </button>
-                        <button class="btn btn-sm btn-youtube" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
-                          </svg><span>YouTube</span>
-                        </button>
-                        <button class="btn btn-sm btn-dribbble" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
-                          </svg><span>Dribbble</span>
-                        </button>
-                        <button class="btn btn-sm btn-instagram" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
-                          </svg><span>Instagram</span>
-                        </button>
-                        <button class="btn btn-sm btn-pinterest" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
-                          </svg><span>Pinterest</span>
-                        </button>
-                        <button class="btn btn-sm btn-vk" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
-                          </svg><span>VK</span>
-                        </button>
-                        <button class="btn btn-sm btn-yahoo" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
-                          </svg><span>Yahoo</span>
-                        </button>
-                        <button class="btn btn-sm btn-behance" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
-                          </svg><span>Behance</span>
-                        </button>
-                        <button class="btn btn-sm btn-reddit" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
-                          </svg><span>Reddit</span>
-                        </button>
-                        <button class="btn btn-sm btn-vimeo" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
-                          </svg><span>Vimeo</span>
-                        </button>
-                      </p>
-                      <h6>Size Normal</h6>
-                      <p>
-                        <button class="btn btn-facebook" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
-                          </svg><span>Facebook</span>
-                        </button>
-                        <button class="btn btn-twitter" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
-                          </svg><span>Twitter</span>
-                        </button>
-                        <button class="btn btn-linkedin" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
-                          </svg><span>LinkedIn</span>
-                        </button>
-                        <button class="btn btn-flickr" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
-                          </svg><span>Flickr</span>
-                        </button>
-                        <button class="btn btn-tumblr" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
-                          </svg><span>Tumblr</span>
-                        </button>
-                        <button class="btn btn-xing" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
-                          </svg><span>Xing</span>
-                        </button>
-                        <button class="btn btn-github" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
-                          </svg><span>Github</span>
-                        </button>
-                        <button class="btn btn-stack-overflow" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
-                          </svg><span>StackOverflow</span>
-                        </button>
-                        <button class="btn btn-youtube" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
-                          </svg><span>YouTube</span>
-                        </button>
-                        <button class="btn btn-dribbble" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
-                          </svg><span>Dribbble</span>
-                        </button>
-                        <button class="btn btn-instagram" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
-                          </svg><span>Instagram</span>
-                        </button>
-                        <button class="btn btn-pinterest" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
-                          </svg><span>Pinterest</span>
-                        </button>
-                        <button class="btn btn-vk" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
-                          </svg><span>VK</span>
-                        </button>
-                        <button class="btn btn-yahoo" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
-                          </svg><span>Yahoo</span>
-                        </button>
-                        <button class="btn btn-behance" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
-                          </svg><span>Behance</span>
-                        </button>
-                        <button class="btn btn-reddit" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
-                          </svg><span>Reddit</span>
-                        </button>
-                        <button class="btn btn-vimeo" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
-                          </svg><span>Vimeo</span>
-                        </button>
-                      </p>
-                      <h6>Size Large<small>Add this class<code>.btn-lg</code></small></h6>
-                      <p>
-                        <button class="btn btn-lg btn-facebook" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
-                          </svg><span>Facebook</span>
-                        </button>
-                        <button class="btn btn-lg btn-twitter" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
-                          </svg><span>Twitter</span>
-                        </button>
-                        <button class="btn btn-lg btn-linkedin" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
-                          </svg><span>LinkedIn</span>
-                        </button>
-                        <button class="btn btn-lg btn-flickr" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
-                          </svg><span>Flickr</span>
-                        </button>
-                        <button class="btn btn-lg btn-tumblr" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
-                          </svg><span>Tumblr</span>
-                        </button>
-                        <button class="btn btn-lg btn-xing" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
-                          </svg><span>Xing</span>
-                        </button>
-                        <button class="btn btn-lg btn-github" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
-                          </svg><span>Github</span>
-                        </button>
-                        <button class="btn btn-lg btn-stack-overflow" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
-                          </svg><span>StackOverflow</span>
-                        </button>
-                        <button class="btn btn-lg btn-youtube" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
-                          </svg><span>YouTube</span>
-                        </button>
-                        <button class="btn btn-lg btn-dribbble" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
-                          </svg><span>Dribbble</span>
-                        </button>
-                        <button class="btn btn-lg btn-instagram" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
-                          </svg><span>Instagram</span>
-                        </button>
-                        <button class="btn btn-lg btn-pinterest" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
-                          </svg><span>Pinterest</span>
-                        </button>
-                        <button class="btn btn-lg btn-vk" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
-                          </svg><span>VK</span>
-                        </button>
-                        <button class="btn btn-lg btn-yahoo" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
-                          </svg><span>Yahoo</span>
-                        </button>
-                        <button class="btn btn-lg btn-behance" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
-                          </svg><span>Behance</span>
-                        </button>
-                        <button class="btn btn-lg btn-reddit" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
-                          </svg><span>Reddit</span>
-                        </button>
-                        <button class="btn btn-lg btn-vimeo" type="button">
-                          <svg class="c-icon mr-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
-                          </svg><span>Vimeo</span>
-                        </button>
-                      </p>
-                    </div>
+        <div class="container">
+          <style type="text/css">
+            .btn {
+              margin-bottom: 4px;
+            }
+          </style>
+          <div class="fade-in">
+            <div class="row">
+              <div class="col-12">
+                <div class="card mb-4">
+                  <div class="card-header"><strong>Brand Buttons</strong></div>
+                  <div class="card-body">
+                    <h6>Size Small<small>Add this class<code>.btn-sm</code></small></h6>
+                    <p>
+                      <button class="btn btn-sm btn-facebook" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
+                        </svg><span>Facebook</span>
+                      </button>
+                      <button class="btn btn-sm btn-twitter" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
+                        </svg><span>Twitter</span>
+                      </button>
+                      <button class="btn btn-sm btn-linkedin" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
+                        </svg><span>LinkedIn</span>
+                      </button>
+                      <button class="btn btn-sm btn-flickr" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
+                        </svg><span>Flickr</span>
+                      </button>
+                      <button class="btn btn-sm btn-tumblr" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
+                        </svg><span>Tumblr</span>
+                      </button>
+                      <button class="btn btn-sm btn-xing" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
+                        </svg><span>Xing</span>
+                      </button>
+                      <button class="btn btn-sm btn-github" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
+                        </svg><span>Github</span>
+                      </button>
+                      <button class="btn btn-sm btn-stack-overflow" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
+                        </svg><span>StackOverflow</span>
+                      </button>
+                      <button class="btn btn-sm btn-youtube" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
+                        </svg><span>YouTube</span>
+                      </button>
+                      <button class="btn btn-sm btn-dribbble" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
+                        </svg><span>Dribbble</span>
+                      </button>
+                      <button class="btn btn-sm btn-instagram" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
+                        </svg><span>Instagram</span>
+                      </button>
+                      <button class="btn btn-sm btn-pinterest" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
+                        </svg><span>Pinterest</span>
+                      </button>
+                      <button class="btn btn-sm btn-vk" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
+                        </svg><span>VK</span>
+                      </button>
+                      <button class="btn btn-sm btn-yahoo" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
+                        </svg><span>Yahoo</span>
+                      </button>
+                      <button class="btn btn-sm btn-behance" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
+                        </svg><span>Behance</span>
+                      </button>
+                      <button class="btn btn-sm btn-reddit" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
+                        </svg><span>Reddit</span>
+                      </button>
+                      <button class="btn btn-sm btn-vimeo" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
+                        </svg><span>Vimeo</span>
+                      </button>
+                    </p>
+                    <h6>Size Normal</h6>
+                    <p>
+                      <button class="btn btn-facebook" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
+                        </svg><span>Facebook</span>
+                      </button>
+                      <button class="btn btn-twitter" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
+                        </svg><span>Twitter</span>
+                      </button>
+                      <button class="btn btn-linkedin" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
+                        </svg><span>LinkedIn</span>
+                      </button>
+                      <button class="btn btn-flickr" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
+                        </svg><span>Flickr</span>
+                      </button>
+                      <button class="btn btn-tumblr" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
+                        </svg><span>Tumblr</span>
+                      </button>
+                      <button class="btn btn-xing" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
+                        </svg><span>Xing</span>
+                      </button>
+                      <button class="btn btn-github" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
+                        </svg><span>Github</span>
+                      </button>
+                      <button class="btn btn-stack-overflow" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
+                        </svg><span>StackOverflow</span>
+                      </button>
+                      <button class="btn btn-youtube" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
+                        </svg><span>YouTube</span>
+                      </button>
+                      <button class="btn btn-dribbble" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
+                        </svg><span>Dribbble</span>
+                      </button>
+                      <button class="btn btn-instagram" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
+                        </svg><span>Instagram</span>
+                      </button>
+                      <button class="btn btn-pinterest" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
+                        </svg><span>Pinterest</span>
+                      </button>
+                      <button class="btn btn-vk" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
+                        </svg><span>VK</span>
+                      </button>
+                      <button class="btn btn-yahoo" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
+                        </svg><span>Yahoo</span>
+                      </button>
+                      <button class="btn btn-behance" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
+                        </svg><span>Behance</span>
+                      </button>
+                      <button class="btn btn-reddit" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
+                        </svg><span>Reddit</span>
+                      </button>
+                      <button class="btn btn-vimeo" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
+                        </svg><span>Vimeo</span>
+                      </button>
+                    </p>
+                    <h6>Size Large<small>Add this class<code>.btn-lg</code></small></h6>
+                    <p>
+                      <button class="btn btn-lg btn-facebook" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
+                        </svg><span>Facebook</span>
+                      </button>
+                      <button class="btn btn-lg btn-twitter" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
+                        </svg><span>Twitter</span>
+                      </button>
+                      <button class="btn btn-lg btn-linkedin" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
+                        </svg><span>LinkedIn</span>
+                      </button>
+                      <button class="btn btn-lg btn-flickr" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
+                        </svg><span>Flickr</span>
+                      </button>
+                      <button class="btn btn-lg btn-tumblr" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
+                        </svg><span>Tumblr</span>
+                      </button>
+                      <button class="btn btn-lg btn-xing" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
+                        </svg><span>Xing</span>
+                      </button>
+                      <button class="btn btn-lg btn-github" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
+                        </svg><span>Github</span>
+                      </button>
+                      <button class="btn btn-lg btn-stack-overflow" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
+                        </svg><span>StackOverflow</span>
+                      </button>
+                      <button class="btn btn-lg btn-youtube" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
+                        </svg><span>YouTube</span>
+                      </button>
+                      <button class="btn btn-lg btn-dribbble" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
+                        </svg><span>Dribbble</span>
+                      </button>
+                      <button class="btn btn-lg btn-instagram" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
+                        </svg><span>Instagram</span>
+                      </button>
+                      <button class="btn btn-lg btn-pinterest" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
+                        </svg><span>Pinterest</span>
+                      </button>
+                      <button class="btn btn-lg btn-vk" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
+                        </svg><span>VK</span>
+                      </button>
+                      <button class="btn btn-lg btn-yahoo" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
+                        </svg><span>Yahoo</span>
+                      </button>
+                      <button class="btn btn-lg btn-behance" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
+                        </svg><span>Behance</span>
+                      </button>
+                      <button class="btn btn-lg btn-reddit" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
+                        </svg><span>Reddit</span>
+                      </button>
+                      <button class="btn btn-lg btn-vimeo" type="button">
+                        <svg class="c-icon mr-2">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
+                        </svg><span>Vimeo</span>
+                      </button>
+                    </p>
                   </div>
                 </div>
-                <!-- /.col-->
-                <div class="col-12">
-                  <div class="card">
-                    <div class="card-header"><strong>Brand Buttons</strong><small>&nbsp;Only icons</small></div>
-                    <div class="card-body">
-                      <h6>Size Small<small>Add this class<code>.btn-sm</code></small></h6>
-                      <p>
-                        <button class="btn btn-sm btn-facebook" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-twitter" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-linkedin" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-flickr" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-tumblr" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-xing" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-github" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-stack-overflow" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-youtube" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-dribbble" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-instagram" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-pinterest" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-vk" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-yahoo" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-behance" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-reddit" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-sm btn-vimeo" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
-                          </svg>
-                        </button>
-                      </p>
-                      <h6>Size Normal</h6>
-                      <p>
-                        <button class="btn btn-facebook" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-twitter" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-linkedin" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-flickr" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-tumblr" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-xing" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-github" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-stack-overflow" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-youtube" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-dribbble" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-instagram" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-pinterest" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-vk" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-yahoo" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-behance" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-reddit" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-vimeo" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
-                          </svg>
-                        </button>
-                      </p>
-                      <h6>Size Large<small>Add this class<code>.btn-lg</code></small></h6>
-                      <p>
-                        <button class="btn btn-lg btn-facebook" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-twitter" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-linkedin" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-flickr" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-tumblr" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-xing" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-github" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-stack-overflow" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-youtube" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-dribbble" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-instagram" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-pinterest" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-vk" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-yahoo" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-behance" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-reddit" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
-                          </svg>
-                        </button>
-                        <button class="btn btn-lg btn-vimeo" type="button">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
-                          </svg>
-                        </button>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.col-->
               </div>
-              <!-- /.row-->
+              <!-- /.col-->
+              <div class="col-12">
+                <div class="card mb-4">
+                  <div class="card-header"><strong>Brand Buttons</strong><small>&nbsp;Only icons</small></div>
+                  <div class="card-body">
+                    <h6>Size Small<small>Add this class<code>.btn-sm</code></small></h6>
+                    <p>
+                      <button class="btn btn-sm btn-facebook" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-twitter" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-linkedin" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-flickr" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-tumblr" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-xing" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-github" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-stack-overflow" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-youtube" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-dribbble" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-instagram" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-pinterest" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-vk" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-yahoo" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-behance" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-reddit" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-sm btn-vimeo" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
+                        </svg>
+                      </button>
+                    </p>
+                    <h6>Size Normal</h6>
+                    <p>
+                      <button class="btn btn-facebook" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-twitter" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-linkedin" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-flickr" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-tumblr" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-xing" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-github" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-stack-overflow" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-youtube" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-dribbble" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-instagram" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-pinterest" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-vk" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-yahoo" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-behance" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-reddit" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-vimeo" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
+                        </svg>
+                      </button>
+                    </p>
+                    <h6>Size Large<small>Add this class<code>.btn-lg</code></small></h6>
+                    <p>
+                      <button class="btn btn-lg btn-facebook" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-twitter" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-linkedin" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-flickr" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-flickr"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-tumblr" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-tumblr"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-xing" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-xing"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-github" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-github"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-stack-overflow" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-stack-overflow"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-youtube" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-youtube"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-dribbble" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-dribbble"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-instagram" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-instagram"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-pinterest" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-pinterest"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-vk" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vk"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-yahoo" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-yahoo"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-behance" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-behance"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-reddit" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-reddit"></use>
+                        </svg>
+                      </button>
+                      <button class="btn btn-lg btn-vimeo" type="button">
+                        <svg class="c-icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-vimeo"></use>
+                        </svg>
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /.col-->
             </div>
+            <!-- /.row-->
           </div>
-        </main>
-        <footer class="c-footer">
-          <div><a href="https://coreui.io">CoreUI</a> &copy; 2020 creativeLabs.</div>
-          <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
-        </footer>
+        </div>
       </div>
+      <footer class="footer">
+        <div><a href="https://coreui.io">CoreUI</a> &copy; 2020 creativeLabs.</div>
+        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+      </footer>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
-    <!--[if IE]><!-->
-    <script src="node_modules/@coreui/icons/js/svgxuse.min.js"></script>
-    <!--<![endif]-->
   </body>
 </html>

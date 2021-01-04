@@ -27,7 +27,7 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
         label: 'My First dataset',
         backgroundColor: 'transparent',
         borderColor: 'rgba(255,255,255,.55)',
-        pointBackgroundColor: coreui.Utils.getStyle('--primary'),
+        pointBackgroundColor: coreui.Utils.getStyle('--cui-primary'),
         data: [65, 59, 84, 84, 51, 55, 40]
       }
     ]
@@ -80,7 +80,7 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
         label: 'My First dataset',
         backgroundColor: 'transparent',
         borderColor: 'rgba(255,255,255,.55)',
-        pointBackgroundColor: coreui.Utils.getStyle('--info'),
+        pointBackgroundColor: coreui.Utils.getStyle('--cui-info'),
         data: [1, 18, 9, 17, 34, 22, 11]
       }
     ]
@@ -203,8 +203,8 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
     datasets: [
       {
         label: 'My First dataset',
-        backgroundColor: coreui.Utils.hexToRgba(coreui.Utils.getStyle('--info'), 10),
-        borderColor: coreui.Utils.getStyle('--info'),
+        backgroundColor: coreui.Utils.hexToRgba(coreui.Utils.getStyle('--cui-info'), 10),
+        borderColor: coreui.Utils.getStyle('--cui-info'),
         pointHoverBackgroundColor: '#fff',
         borderWidth: 2,
         data: [165, 180, 70, 69, 77, 57, 125, 165, 172, 91, 173, 138, 155, 89, 50, 161, 65, 163, 160, 103, 114, 185, 125, 196, 183, 64, 137, 95, 112, 175]
@@ -212,7 +212,7 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
       {
         label: 'My Second dataset',
         backgroundColor: 'transparent',
-        borderColor: coreui.Utils.getStyle('--success'),
+        borderColor: coreui.Utils.getStyle('--cui-success'),
         pointHoverBackgroundColor: '#fff',
         borderWidth: 2,
         data: [92, 97, 80, 100, 86, 97, 83, 98, 87, 98, 93, 83, 87, 98, 96, 84, 91, 97, 88, 86, 94, 86, 95, 91, 98, 91, 92, 80, 83, 82]
@@ -220,7 +220,7 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
       {
         label: 'My Third dataset',
         backgroundColor: 'transparent',
-        borderColor: coreui.Utils.getStyle('--danger'),
+        borderColor: coreui.Utils.getStyle('--cui-danger'),
         pointHoverBackgroundColor: '#fff',
         borderWidth: 1,
         borderDash: [8, 5],

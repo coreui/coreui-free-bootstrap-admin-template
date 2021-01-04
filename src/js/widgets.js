@@ -18,11 +18,11 @@ Chart.defaults.global.tooltips.custom = coreui.ChartJS.customTooltips
 document.body.addEventListener('classtoggle', event => {
   if (event.detail.className === 'c-dark-theme') {
     if (document.body.classList.contains('c-dark-theme')) {
-      cardChart1.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--primary-dark-theme')
-      cardChart2.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--info-dark-theme')
+      cardChart1.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-primary-dark-theme')
+      cardChart2.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-info-dark-theme')
     } else {
-      cardChart1.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--primary')
-      cardChart2.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--info')
+      cardChart1.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-primary')
+      cardChart2.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-info')
     }
 
     cardChart1.update()
@@ -40,7 +40,7 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
         label: 'My First dataset',
         backgroundColor: 'transparent',
         borderColor: 'rgba(255,255,255,.55)',
-        pointBackgroundColor: coreui.Utils.getStyle('--primary'),
+        pointBackgroundColor: coreui.Utils.getStyle('--cui-primary'),
         data: [65, 59, 84, 84, 51, 55, 40]
       }
     ]
@@ -93,7 +93,7 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
         label: 'My First dataset',
         backgroundColor: 'transparent',
         borderColor: 'rgba(255,255,255,.55)',
-        pointBackgroundColor: coreui.Utils.getStyle('--info'),
+        pointBackgroundColor: coreui.Utils.getStyle('--cui-info'),
         data: [1, 18, 9, 17, 34, 22, 11]
       }
     ]
@@ -218,7 +218,7 @@ const sparklineChart1 = new Chart(document.getElementById('sparkline-chart-1'), 
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
     datasets: [
       {
-        backgroundColor: coreui.Utils.getStyle('--primary'),
+        backgroundColor: coreui.Utils.getStyle('--cui-primary'),
         borderColor: 'transparent',
         borderWidth: 1,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
@@ -248,7 +248,7 @@ const sparklineChart2 = new Chart(document.getElementById('sparkline-chart-2'), 
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
     datasets: [
       {
-        backgroundColor: coreui.Utils.getStyle('--warning'),
+        backgroundColor: coreui.Utils.getStyle('--cui-warning'),
         borderColor: 'transparent',
         borderWidth: 1,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
@@ -278,7 +278,7 @@ const sparklineChart3 = new Chart(document.getElementById('sparkline-chart-3'), 
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M'],
     datasets: [
       {
-        backgroundColor: coreui.Utils.getStyle('--success'),
+        backgroundColor: coreui.Utils.getStyle('--cui-success'),
         borderColor: 'transparent',
         borderWidth: 1,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
@@ -309,7 +309,7 @@ const sparklineChart4 = new Chart(document.getElementById('sparkline-chart-4'), 
     datasets: [
       {
         backgroundColor: 'transparent',
-        borderColor: coreui.Utils.getStyle('--info'),
+        borderColor: coreui.Utils.getStyle('--cui-info'),
         borderWidth: 2,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }
@@ -344,7 +344,7 @@ const sparklineChart5 = new Chart(document.getElementById('sparkline-chart-5'), 
     datasets: [
       {
         backgroundColor: 'transparent',
-        borderColor: coreui.Utils.getStyle('--success'),
+        borderColor: coreui.Utils.getStyle('--cui-success'),
         borderWidth: 2,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }
@@ -379,7 +379,7 @@ const sparklineChart6 = new Chart(document.getElementById('sparkline-chart-6'), 
     datasets: [
       {
         backgroundColor: 'transparent',
-        borderColor: coreui.Utils.getStyle('--danger'),
+        borderColor: coreui.Utils.getStyle('--cui-danger'),
         borderWidth: 2,
         data: [random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100), random(40, 100)]
       }

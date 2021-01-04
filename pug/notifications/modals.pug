@@ -4,27 +4,27 @@ block view
   .fadeIn
     .row
       .col-lg-12
-        .card
+        .card.mb-4
           .card-header
             |  Bootstrap Modals
           .card-body
             // Button trigger modal
-            button.btn.btn-secondary.mb-1(type='button', data-toggle='modal', data-target='#myModal')
+            button.btn.btn-secondary.mb-1(type='button', data-coreui-toggle='modal', data-coreui-target='#myModal')
               | Launch demo modal
-            button.btn.btn-secondary.mb-1(type='button', data-toggle='modal', data-target='#largeModal')
+            button.btn.btn-secondary.mb-1(type='button', data-coreui-toggle='modal', data-coreui-target='#largeModal')
               | Launch large modal
-            button.btn.btn-secondary.mb-1(type='button', data-toggle='modal', data-target='#smallModal')
+            button.btn.btn-secondary.mb-1(type='button', data-coreui-toggle='modal', data-coreui-target='#smallModal')
               | Launch small modal
             hr
-            button.btn.btn-primary.mb-1(type='button', data-toggle='modal', data-target='#primaryModal')
+            button.btn.btn-primary.mb-1(type='button', data-coreui-toggle='modal', data-coreui-target='#primaryModal')
               | Primary modal
-            button.btn.btn-success.mb-1(type='button', data-toggle='modal', data-target='#successModal')
+            button.btn.btn-success.mb-1(type='button', data-coreui-toggle='modal', data-coreui-target='#successModal')
               | Success modal
-            button.btn.btn-warning.mb-1(type='button', data-toggle='modal', data-target='#warningModal')
+            button.btn.btn-warning.mb-1(type='button', data-coreui-toggle='modal', data-coreui-target='#warningModal')
               | Warning modal
-            button.btn.btn-danger.mb-1(type='button', data-toggle='modal', data-target='#dangerModal')
+            button.btn.btn-danger.mb-1(type='button', data-coreui-toggle='modal', data-coreui-target='#dangerModal')
               | Danger modal
-            button.btn.btn-info.mb-1(type='button', data-toggle='modal', data-target='#infoModal')
+            button.btn.btn-info.mb-1(type='button', data-coreui-toggle='modal', data-coreui-target='#infoModal')
               | Info modal
       // /.col
     // /.row
@@ -33,12 +33,11 @@ block view
       .modal-content
         .modal-header
           h4.modal-title Modal title
-          button.close(type='button', data-dismiss='modal', aria-label='Close')
-            span(aria-hidden='true') ×
+          button.btn-close(type='button', data-coreui-dismiss='modal', aria-label='Close')
         .modal-body
           p One fine body…
         .modal-footer
-          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-secondary(type='button', data-coreui-dismiss='modal') Close
           button.btn.btn-primary(type='button') Save changes
       // /.modal-content
     // /.modal-dialog
@@ -48,12 +47,11 @@ block view
       .modal-content
         .modal-header
           h4.modal-title Modal title
-          button.close(type='button', data-dismiss='modal', aria-label='Close')
-            span(aria-hidden='true') ×
+          button.btn-close(type='button', data-coreui-dismiss='modal', aria-label='Close')
         .modal-body
           p One fine body…
         .modal-footer
-          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-secondary(type='button', data-coreui-dismiss='modal') Close
           button.btn.btn-primary(type='button') Save changes
       // /.modal-content
     // /.modal-dialog
@@ -63,12 +61,11 @@ block view
       .modal-content
         .modal-header
           h4.modal-title Modal title
-          button.close(type='button', data-dismiss='modal', aria-label='Close')
-            span(aria-hidden='true') ×
+          button.btn-close(type='button', data-coreui-dismiss='modal', aria-label='Close')
         .modal-body
           p One fine body…
         .modal-footer
-          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-secondary(type='button', data-coreui-dismiss='modal') Close
           button.btn.btn-primary(type='button') Save changes
       // /.modal-content
     // /.modal-dialog
@@ -78,12 +75,11 @@ block view
       .modal-content
         .modal-header
           h4.modal-title Modal title
-          button.close(type='button', data-dismiss='modal', aria-label='Close')
-            span(aria-hidden='true') ×
+          button.btn-close(type='button', data-coreui-dismiss='modal', aria-label='Close')
         .modal-body
           p One fine body…
         .modal-footer
-          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-secondary(type='button', data-coreui-dismiss='modal') Close
           button.btn.btn-primary(type='button') Save changes
       // /.modal-content
     // /.modal-dialog
@@ -93,12 +89,11 @@ block view
       .modal-content
         .modal-header
           h4.modal-title Modal title
-          button.close(type='button', data-dismiss='modal', aria-label='Close')
-            span(aria-hidden='true') ×
+          button.btn-close(type='button', data-coreui-dismiss='modal', aria-label='Close')
         .modal-body
           p One fine body…
         .modal-footer
-          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-secondary(type='button', data-coreui-dismiss='modal') Close
           button.btn.btn-success(type='button') Save changes
       // /.modal-content
     // /.modal-dialog
@@ -108,12 +103,11 @@ block view
       .modal-content
         .modal-header
           h4.modal-title Modal title
-          button.close(type='button', data-dismiss='modal', aria-label='Close')
-            span(aria-hidden='true') ×
+          button.btn-close(type='button', data-coreui-dismiss='modal', aria-label='Close')
         .modal-body
           p One fine body…
         .modal-footer
-          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-secondary(type='button', data-coreui-dismiss='modal') Close
           button.btn.btn-warning(type='button') Save changes
       // /.modal-content
     // /.modal-dialog
@@ -123,12 +117,11 @@ block view
       .modal-content
         .modal-header
           h4.modal-title Modal title
-          button.close(type='button', data-dismiss='modal', aria-label='Close')
-            span(aria-hidden='true') ×
+          button.btn-close(type='button', data-coreui-dismiss='modal', aria-label='Close')
         .modal-body
           p One fine body…
         .modal-footer
-          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-secondary(type='button', data-coreui-dismiss='modal') Close
           button.btn.btn-danger(type='button') Save changes
       // /.modal-content
     // /.modal-dialog
@@ -138,12 +131,11 @@ block view
       .modal-content
         .modal-header
           h4.modal-title Modal title
-          button.close(type='button', data-dismiss='modal', aria-label='Close')
-            span(aria-hidden='true') ×
+          button.btn-close(type='button', data-coreui-dismiss='modal', aria-label='Close')
         .modal-body
           p One fine body…
         .modal-footer
-          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-secondary(type='button', data-coreui-dismiss='modal') Close
           button.btn.btn-info(type='button') Save changes
       // /.modal-content
     // /.modal-dialog
