@@ -20,8 +20,8 @@ const argv = require('minimist')(process.argv.slice(2), {
   boolean: ['injectVendors', 'injectSvg']
 })
 console.dir(argv)
-const src = argv.src
-const dest = argv.dest
+const { src } = argv
+const { dest } = argv
 const injectVendors = argv.injectVendors ? argv.injectVendors : false
 const injectSvg = argv.injectSvg ? argv.injectSvg : false
 const svgSelectors = 'img.c-icon, img.c-btn-icon, img.c-nav-icon'
@@ -81,13 +81,10 @@ const checkPath = (src, dest, injectVendors, injectSvg) => {
 
 // Build html files
 const compilePugToHtml = (src, dest, injectVendors, injectSvg) => {
-  const dir = dirname(src).replace('pug', '')
+  const dir = dirname(src)
   const file = basename(src).replace('.pug', '.html')
-  const relative = path.relative(resolve(__dirname, '..'), dir)
+  const relative = path.relative(resolve(__dirname, '..'), dir.replace('src/pug/views', ''))
   let html = compile(src, `${relative}`)
-
-  // console.log(relative)
-  // console.log('----------------')
   mkdirp.sync(resolve(__dirname, '..', dest, relative))
 
   if (injectVendors === true) {

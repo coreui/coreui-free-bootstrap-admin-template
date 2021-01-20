@@ -1,0 +1,37 @@
+extends ../../_layout/default.pug
+
+block view
+  .card.mb-4
+    .card-header
+      |  Collapse
+      .float-end
+        a(href='http://coreui.io/docs/components/collapse/', target='_blank')
+          | docs
+    .card-body
+      p
+        a.btn.btn-primary(data-coreui-toggle='collapse', href='#collapseExample', aria-expanded='false', aria-controls='collapseExample')
+          | Link with href
+        button.btn.btn-primary(type='button', data-coreui-toggle='collapse', data-coreui-target='#collapseExample', aria-expanded='false', aria-controls='collapseExample')
+          | Button with data-target
+      #collapseExample.collapse
+        .card.mb-4.card-body
+          | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  .card.mb-4
+    .card-header
+      |  Collapse
+      span.small.ms-1 multiple targets
+    .card-body
+      p
+        a.btn.btn-primary(data-coreui-toggle='collapse', href='#multiCollapseExample1', aria-expanded='false', aria-controls='multiCollapseExample1') Toggle first element
+        button.btn.btn-primary(type='button', data-coreui-toggle='collapse', data-coreui-target='#multiCollapseExample2', aria-expanded='false', aria-controls='multiCollapseExample1') Toggle second element
+        button.btn.btn-primary(type='button', data-coreui-toggle='collapse', data-coreui-target='.multi-collapse', aria-expanded='false', aria-controls='multiCollapseExample1 multiCollapseExample2') Toggle both elements
+      .row
+        .col-sm-12.col-md-6
+          #multiCollapseExample1.collapse.multi-collapse
+            .card.mb-4.card-body
+              | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        .col-sm-12.col-md-6
+          #multiCollapseExample2.collapse.multi-collapse
+            .card.mb-4.card-body
+              | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+

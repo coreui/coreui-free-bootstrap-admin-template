@@ -1,0 +1,68 @@
+extends ../../_layout/default.pug
+
+block view
+  .row
+    .col-12.col-md-6
+      .card.mb-4
+        .card-header
+          |  Accordion
+        .card-body
+          #accordionExample.accordion
+            .accordion-item
+              h2#headingOne.accordion-header
+                button.accordion-button.collapsed(type='button' data-coreui-toggle='collapse' data-coreui-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                  | Accordion Item #1
+              #collapseOne.accordion-collapse.collapse(aria-labelledby='headingOne' data-coreui-parent='#accordionExample' style='')
+                .accordion-body
+                  strong This is the first item&apos;s accordion body.
+                  |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the
+                  code .accordion-body
+                  | , though the transition does limit overflow.
+            .accordion-item
+              h2#headingTwo.accordion-header
+                button.accordion-button.collapsed(type='button' data-coreui-toggle='collapse' data-coreui-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                  | Accordion Item #2
+              #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-coreui-parent='#accordionExample' style='')
+                .accordion-body
+                  strong This is the second item&apos;s accordion body.
+                  |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the
+                  code .accordion-body
+                  | , though the transition does limit overflow.
+            .accordion-item
+              h2#headingThree.accordion-header
+                button.accordion-button.collapsed(type='button' data-coreui-toggle='collapse' data-coreui-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                  | Accordion Item #3
+              #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-coreui-parent='#accordionExample' style='')
+                .accordion-body
+                  strong This is the third item&apos;s accordion body.
+                  |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the
+                  code .accordion-body
+                  | , though the transition does limit overflow.
+    .col-12.col-md-6
+      .card.mb-4
+        .card-header
+          |  Accordion
+          span.small.ms-1 Flush
+        .card-body
+          #accordionFlushExample.accordion.accordion-flush
+            .accordion-item
+              h2#flush-headingOne.accordion-header
+                button.accordion-button.collapsed(type='button' data-coreui-toggle='collapse' data-coreui-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+                  | Accordion Item #1
+              #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-coreui-parent='#accordionFlushExample')
+                .accordion-body
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+            .accordion-item
+              h2#flush-headingTwo.accordion-header
+                button.accordion-button.collapsed(type='button' data-coreui-toggle='collapse' data-coreui-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+                  | Accordion Item #2
+              #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-coreui-parent='#accordionFlushExample')
+                .accordion-body
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+            .accordion-item
+              h2#flush-headingThree.accordion-header
+                button.accordion-button.collapsed(type='button' data-coreui-toggle='collapse' data-coreui-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+                  | Accordion Item #3
+              #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-coreui-parent='#accordionFlushExample')
+                .accordion-body
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.

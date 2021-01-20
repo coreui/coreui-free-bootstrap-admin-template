@@ -1,0 +1,33 @@
+extends ../../_layout/default.pug
+
+block scripts
+  // Plugins and scripts required by this view
+  script(src='js/popovers.js')
+
+block view
+  .card.mb-4
+    .card-header
+      |  Popovers
+      .float-end
+        a(href='http://coreui.io/docs/components/popover/popovers.html', target='_blank')
+          | docs
+    .card-body
+      button.btn.btn-lg.btn-danger(type='button', data-coreui-toggle='popover', title='Popover title', data-coreui-content="And here's some amazing content. It's very engaging. Right?")
+        | Click to toggle popover
+      hr
+      a.btn.btn-lg.btn-danger(tabindex='0', role='button', data-coreui-toggle='popover', data-trigger='focus', title='Dismissible popover', data-coreui-content="And here's some amazing content. It's very engaging. Right?")
+        | Dismissible
+        | popover
+  .card.mb-4
+    .card-header
+      |  Popovers
+      small directions
+    .card-body
+      button.btn.btn-secondary(type='button', data-coreui-container='body', data-coreui-toggle='popover', data-coreui-placement='top', data-coreui-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+        | Popover on top
+      button.btn.btn-secondary(type='button', data-coreui-container='body', data-coreui-toggle='popover', data-coreui-placement='right', data-coreui-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+        | Popover on right
+      button.btn.btn-secondary(type='button', data-coreui-container='body', data-coreui-toggle='popover', data-coreui-placement='bottom', data-coreui-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+        | Popover on bottom
+      button.btn.btn-secondary(type='button', data-coreui-container='body', data-coreui-toggle='popover', data-coreui-placement='left', data-coreui-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.')
+        | Popover on left
