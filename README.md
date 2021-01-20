@@ -98,33 +98,34 @@ Within the download you'll find the following directories and files, logically g
 ```
 free-bootstrap-admin-template/
 ├── build/
-├── pug/
-│   ├── _layout/
-│   ├── _partial/
-│   ├── base/
-│   ├── buttons/
-│   ├── icons/
-│   ├── notifications/
-│   ├── ...
-│   ├── index.pug
-│   └── ...
 ├── src/
 │   ├── assets/
 │   │   ├── brand/
 │   │   ├── favicon/
 │   │   ├── icons/
 │   │   ├── img/
-│   ├── base/
-│   ├── buttons/
-│   ├── css/
-│   ├── icons/
 │   ├── js/
-│   ├── notifications/
+│   ├── pug/
+│   │   ├── _layout/
+│   │   ├── _partial/
+│   │   ├── base/
+│   │   ├── buttons/
+│   │   ├── icons/
+│   │   ├── notifications/
+│   │   ├── ...
+│   │   ├── index.pug
+│   │   └── ...
 │   ├── scss/
 │   ├── vendors/
-│   ├── ...
-│   ├── index.html
-│   └── ...
+│   └── views/
+│       ├── base/
+│       ├── buttons/
+│       ├── css/
+│       ├── icons/
+│       ├── notifications/
+│       ├── ...
+│       ├── index.html
+│       └── ...
 └── package.json
 ```
 
