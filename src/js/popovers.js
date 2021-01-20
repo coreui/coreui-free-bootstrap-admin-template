@@ -2,7 +2,7 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v3.4.0): popovers.js
+ * CoreUI Free Boostrap Admin Template (v4.0.0-alpha.0): popovers.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
