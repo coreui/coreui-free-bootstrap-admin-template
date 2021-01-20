@@ -3,21 +3,19 @@ extends /_layout/pages.pug
 block view
   .container
     .row.justify-content-center
-      .col-md-8
-        .card-group
-          .card.mb-4.p-4
+      .col-lg-8
+        .card-group.d-block.d-md-flex.row
+          .card.col-md-7.p-4.mb-0
             .card-body
               h1 Login
               p.text-muted Sign In to your account
               .input-group.mb-3
-                .input-group-prepend
-                  span.input-group-text
+                span.input-group-text
                     svg.icon
                       use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
                 input.form-control(type='text', placeholder='Username')
               .input-group.mb-4
-                .input-group-prepend
-                  span.input-group-text
+                span.input-group-text
                     svg.icon
                       use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked")
                 input.form-control(type='password', placeholder='Password')
@@ -26,7 +24,7 @@ block view
                   button.btn.btn-primary.px-4(type='button') Login
                 .col-6.text-end
                   button.btn.btn-link.px-0(type='button') Forgot password?
-          .card.mb-4.text-white.bg-primary.py-5.d-md-down-none(style='width:44%')
+          .card.col-md-5.text-white.bg-primary.py-5
             .card-body.text-center
               div
                 h2 Sign up
