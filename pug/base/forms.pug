@@ -9,20 +9,20 @@ block view
         .card-body
           .row
             .col-sm-12
-              .form-group
-                label(for='name') Name
+              .mb-3
+                label.form-label(for='name') Name
                 input#name.form-control(type='text', placeholder='Enter your name')
           // /.row
           .row
             .col-sm-12
-              .form-group
-                label(for='ccnumber') Credit Card Number
+              .mb-3
+                label.form-label(for='ccnumber') Credit Card Number
                 input#ccnumber.form-control(type='text', placeholder='0000 0000 0000 0000')
           // /.row
           .row
-            .form-group.col-sm-4
-              label(for='ccmonth') Month
-              select#ccmonth.form-control
+            .mb-3.col-sm-4
+              label.form-label(for='ccmonth') Month
+              select#ccmonth.form-select
                 option 1
                 option 2
                 option 3
@@ -35,9 +35,9 @@ block view
                 option 10
                 option 11
                 option 12
-            .form-group.col-sm-4
-              label(for='ccyear') Year
-              select#ccyear.form-control
+            .mb-3.col-sm-4
+              label.form-label(for='ccyear') Year
+              select#ccyear.form-select
                 option 2014
                 option 2015
                 option 2016
@@ -51,8 +51,8 @@ block view
                 option 2024
                 option 2025
             .col-sm-4
-              .form-group
-                label(for='cvv') CVV/CVC
+              .mb-3
+                label.form-label(for='cvv') CVV/CVC
                 input#cvv.form-control(type='text', placeholder='123')
           // /.row
     // /.col
@@ -61,25 +61,25 @@ block view
         .card-header
           | #[strong Company] #[small Form]
         .card-body
-          .form-group
-            label(for='company') Company
+          .mb-3
+            label.form-label(for='company') Company
             input#company.form-control(type='text', placeholder='Enter your company name')
-          .form-group
-            label(for='vat') VAT
+          .mb-3
+            label.form-label(for='vat') VAT
             input#vat.form-control(type='text', placeholder='PL1234567890')
-          .form-group
-            label(for='street') Street
+          .mb-3
+            label.form-label(for='street') Street
             input#street.form-control(type='text', placeholder='Enter street name')
           .row
-            .form-group.col-sm-8
-              label(for='city') City
+            .mb-3.col-sm-8
+              label.form-label(for='city') City
               input#city.form-control(type='text', placeholder='Enter your city')
-            .form-group.col-sm-4
-              label(for='postal-code') Postal Code
+            .mb-3.col-sm-4
+              label.form-label(for='postal-code') Postal Code
               input#postal-code.form-control(type='text', placeholder='Postal Code')
           // /.row
-          .form-group
-            label(for='country') Country
+          .mb-3
+            label.form-label(for='country') Country
             input#country.form-control(type='text', placeholder='Country name')
     // /.col
   // /.row
@@ -90,74 +90,74 @@ block view
           | #[strong Basic Form] Elements
         .card-body
           form.form-horizontal(action='', method='post', enctype='multipart/form-data')
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label Static
               .col-md-9
                 p.form-control-static Username
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label(for='text-input') Text Input
               .col-md-9
                 input#text-input.form-control(type='text', name='text-input', placeholder='Text')
-                span.help-block This is a help text
-            .form-group.row
+                span.form-text This is a help text
+            .row.mb-3
               label.col-md-3.col-form-label(for='email-input') Email Input
               .col-md-9
                 input#email-input.form-control(type='email', name='email-input', placeholder='Enter Email', autocomplete='email')
-                span.help-block Please enter your email
-            .form-group.row
+                span.form-text Please enter your email
+            .row.mb-3
               label.col-md-3.col-form-label(for='password-input') Password
               .col-md-9
                 input#password-input.form-control(type='password', name='password-input', placeholder='Password', autocomplete='new-password')
-                span.help-block Please enter a complex password
-            .form-group.row
+                span.form-text Please enter a complex password
+            .row.mb-3
               label.col-md-3.col-form-label(for='date-input') Date Input
               .col-md-9
                 input#date-input.form-control(type='date', name='date-input', placeholder='date')
-                span.help-block Please enter a valid date
-            .form-group.row
+                span.form-text Please enter a valid date
+            .row.mb-3
               label.col-md-3.col-form-label(for='disabled-input') Disabled Input
               .col-md-9
                 input#disabled-input.form-control(type='text', name='disabled-input', placeholder='Disabled', disabled='')
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label(for='textarea-input') Textarea
               .col-md-9
                 textarea#textarea-input.form-control(name='textarea-input', rows='9', placeholder='Content..')
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label(for='select1') Select
               .col-md-9
-                select#select1.form-control(name='select1')
+                select.form-select#select1(name='select1')
                   option(value='0') Please select
                   option(value='1') Option #1
                   option(value='2') Option #2
                   option(value='3') Option #3
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label(for='select2') Select Large
               .col-md-9
-                select#select2.form-control.form-control-lg(name='select2')
+                select#select2.form-select.form-select-lg(name='select2')
                   option(value='0') Please select
                   option(value='1') Option #1
                   option(value='2') Option #2
                   option(value='3') Option #3
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label(for='select3') Select Small
               .col-md-9
-                select#select3.form-control.form-control-sm(name='select3')
+                select#select3.form-select.form-select-sm(name='select3')
                   option(value='0') Please select
                   option(value='1') Option #1
                   option(value='2') Option #2
                   option(value='3') Option #3
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label(for='disabledSelect') Disabled Select
               .col-md-9
-                select#disabledSelect.form-control(disabled='')
+                select#disabledSelect.form-select(disabled='')
                   option(value='0') Please select
                   option(value='1') Option #1
                   option(value='2') Option #2
                   option(value='3') Option #3
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label(for='multiple-select') Multiple select
               .col-md-9
-                select#multiple-select.form-control(name='multiple-select', size='5', multiple='')
+                select#multiple-select.form-select(name='multiple-select', size='5', multiple='')
                   option(value='1') Option #1
                   option(value='2') Option #2
                   option(value='3') Option #3
@@ -168,9 +168,9 @@ block view
                   option(value='8') Option #8
                   option(value='9') Option #9
                   option(value='10') Option #10
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label Radios
-              .col-md-9.col-form-label
+              .col-md-9.col-form-label.form-label
                 .form-check
                   input#radio1.form-check-input(type='radio', value='radio1', name='radios')
                   label.form-check-label(for='radio1')
@@ -183,21 +183,21 @@ block view
                   input#radio3.form-check-input(type='radio', value='radio2', name='radios')
                   label.form-check-label(for='radio3')
                     | Option 3
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label Inline Radios
-              .col-md-9.col-form-label
-                .form-check.form-check-inline.mr-1
+              .col-md-9.col-form-label.form-label
+                .form-check.form-check-inline.me-1
                   input#inline-radio1.form-check-input(type='radio', value='option1', name='inline-radios')
                   label.form-check-label(for='inline-radio1') One
-                .form-check.form-check-inline.mr-1
+                .form-check.form-check-inline.me-1
                   input#inline-radio2.form-check-input(type='radio', value='option2', name='inline-radios')
                   label.form-check-label(for='inline-radio2') Two
-                .form-check.form-check-inline.mr-1
+                .form-check.form-check-inline.me-1
                   input#inline-radio3.form-check-input(type='radio', value='option3', name='inline-radios')
                   label.form-check-label(for='inline-radio3') Three
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label Checkboxes
-              .col-md-9.col-form-label
+              .col-md-9.col-form-label.form-label
                 .form-check.checkbox
                   input#check1.form-check-input(type='checkbox', value='')
                   label.form-check-label(for='check1')
@@ -210,26 +210,26 @@ block view
                   input#check3.form-check-input(type='checkbox', value='')
                   label.form-check-label(for='check3')
                     | Option 3
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label Inline Checkboxes
-              .col-md-9.col-form-label
-                .form-check.form-check-inline.mr-1
+              .col-md-9.col-form-label.form-label
+                .form-check.form-check-inline.me-1
                   input#inline-checkbox1.form-check-input(type='checkbox', value='check1')
                   label.form-check-label(for='inline-checkbox1') One
-                .form-check.form-check-inline.mr-1
+                .form-check.form-check-inline.me-1
                   input#inline-checkbox2.form-check-input(type='checkbox', value='check2')
                   label.form-check-label(for='inline-checkbox2') Two
-                .form-check.form-check-inline.mr-1
+                .form-check.form-check-inline.me-1
                   input#inline-checkbox3.form-check-input(type='checkbox', value='check3')
                   label.form-check-label(for='inline-checkbox3') Three
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label(for='file-input') File input
               .col-md-9
-                input#file-input(type='file', name='file-input')
-            .form-group.row
+                input#file-input.form-control(type='file', name='file-input')
+            .row.mb-3
               label.col-md-3.col-form-label(for='file-multiple-input') Multiple File input
               .col-md-9
-                input#file-multiple-input(type='file', name='file-multiple-input', multiple='')
+                input#file-multiple-input.form-control(type='file', name='file-multiple-input', multiple='')
         .card-footer
           button.btn.btn-sm.btn-primary(type='submit')
             |  Submit
@@ -240,11 +240,11 @@ block view
           | #[strong Inline] Form
         .card-body
           form.form-inline(action='', method='post')
-            .form-group
-              label.mr-1(for='exampleInputName2') Name
+            .mb-3
+              label.form-label.me-1(for='exampleInputName2') Name
               input#exampleInputName2.form-control(type='text', placeholder='Jane Doe', autocomplete='name')
-            .form-group
-              label.mx-1(for='exampleInputEmail2') Email
+            .mb-3
+              label.form-label.mx-1(for='exampleInputEmail2') Email
               input#exampleInputEmail2.form-control(type='email', placeholder='jane.doe@example.com', autocomplete='email')
         .card-footer
           button.btn.btn-sm.btn-primary(type='submit')
@@ -257,16 +257,16 @@ block view
           | #[strong Horizontal] Form
         .card-body
           form.form-horizontal(action='', method='post')
-            .form-group.row
+            .row.mb-3
               label.col-md-3.col-form-label(for='hf-email') Email
               .col-md-9
                 input#hf-email.form-control(type='email', name='hf-email', placeholder='Enter Email..', autocomplete='email')
-                span.help-block Please enter your email
-            .form-group.row
+                span.form-text Please enter your email
+            .row.mb-3
               label.col-md-3.col-form-label(for='hf-password') Password
               .col-md-9
                 input#hf-password.form-control(type='password', name='hf-password', placeholder='Enter Password..', autocomplete='current-password')
-                span.help-block Please enter your password
+                span.form-text Please enter your password
         .card-footer
           button.btn.btn-sm.btn-primary(type='submit')
             |  Submit
@@ -277,14 +277,14 @@ block view
             | #[strong Normal] Form
         .card-body
           form(action='', method='post')
-            .form-group
-              label(for='nf-email') Email
+            .mb-3
+              label.form-label(for='nf-email') Email
               input#nf-email.form-control(type='email', name='nf-email', placeholder='Enter Email..', autocomplete='email')
-              span.help-block Please enter your email
-            .form-group
-              label(for='nf-password') Password
+              span.form-text Please enter your email
+            .mb-3
+              label.form-label(for='nf-password') Password
               input#nf-password.form-control(type='password', name='nf-password', placeholder='Enter Password..', autocomplete='current-password')
-              span.help-block Please enter your password
+              span.form-text Please enter your password
         .card-footer
           button.btn.btn-sm.btn-primary(type='submit')
             |  Submit
@@ -295,34 +295,34 @@ block view
           | Input #[strong Grid]
         .card-body
           form.form-horizontal(action='', method='post')
-            .form-group.row
+            .row.mb-3
               .col-sm-3
                 input.form-control(type='text', placeholder='.col-sm-3')
-            .form-group.row
+            .row.mb-3
               .col-sm-4
                 input.form-control(type='text', placeholder='.col-sm-4')
-            .form-group.row
+            .row.mb-3
               .col-sm-5
                 input.form-control(type='text', placeholder='.col-sm-5')
-            .form-group.row
+            .row.mb-3
               .col-sm-6
                 input.form-control(type='text', placeholder='.col-sm-6')
-            .form-group.row
+            .row.mb-3
               .col-sm-7
                 input.form-control(type='text', placeholder='.col-sm-7')
-            .form-group.row
+            .row.mb-3
               .col-sm-8
                 input.form-control(type='text', placeholder='.col-sm-8')
-            .form-group.row
+            .row.mb-3
               .col-sm-9
                 input.form-control(type='text', placeholder='.col-sm-9')
-            .form-group.row
+            .row.mb-3
               .col-sm-10
                 input.form-control(type='text', placeholder='.col-sm-10')
-            .form-group.row
+            .row.mb-3
               .col-sm-11
                 input.form-control(type='text', placeholder='.col-sm-11')
-            .form-group.row
+            .row.mb-3
               .col-sm-12
                 input.form-control(type='text', placeholder='.col-sm-12')
         .card-footer
@@ -335,16 +335,16 @@ block view
           | Input #[strong Sizes]
         .card-body
           form.form-horizontal(action='', method='post')
-            .form-group.row
-              label.col-sm-5.col-form-label(for='input-small') Small Input
+            .row.mb-3
+              label.form-label.col-sm-5.col-form-label.form-label(for='input-small') Small Input
               .col-sm-6
                 input#input-small.form-control.form-control-sm(type='text', name='input-small', placeholder='.form-control-sm')
-            .form-group.row
-              label.col-sm-5.col-form-label(for='input-normal') Normal Input
+            .row.mb-3
+              label.form-label.col-sm-5.col-form-label.form-label(for='input-normal') Normal Input
               .col-sm-6
                 input#input-normal.form-control(type='text', name='input-normal', placeholder='Normal')
-            .form-group.row
-              label.col-sm-5.col-form-label(for='input-large') Large Input
+            .row.mb-3
+              label.form-label.col-sm-5.col-form-label.form-label(for='input-large') Large Input
               .col-sm-6
                 input#input-large.form-control.form-control-lg(type='text', name='input-large', placeholder='.form-control-lg')
         .card-footer
@@ -360,11 +360,11 @@ block view
         .card-header
           | #[strong Validation states] Form
         .card-body
-          .form-group
-            label.form-col-form-label(for='inputSuccess1') Input with success
+          .mb-3
+            label.form-label.form-col-form-label.form-label(for='inputSuccess1') Input with success
             input#inputSuccess1.form-control.is-valid(type='text')
-          .form-group
-            label.form-col-form-label(for='inputError1') Input with error
+          .mb-3
+            label.form-label.form-col-form-label.form-label(for='inputError1') Input with error
             input#inputError1.form-control.is-invalid(type='text')
             .invalid-feedback
               | Please provide a valid informations.
@@ -374,11 +374,11 @@ block view
         .card-header
           | #[strong Validation] #[code was-validated]
         .card-body.was-validated
-          .form-group
-            label.form-col-form-label(for='inputSuccess2') Input with success
+          .mb-3
+            label.form-label.form-col-form-label.form-label(for='inputSuccess2') Input with success
             input#inputSuccess2.form-control.is-valid(type='text')
-          .form-group
-            label.form-col-form-label(for='inputError2') Input required
+          .mb-3
+            label.form-label.form-col-form-label.form-label(for='inputError2') Input required
             input#inputError2.form-control.is-invalid(type='text', required='')
             .invalid-feedback
               | Please provide a valid informations.
@@ -391,32 +391,28 @@ block view
           | #[strong Icon/Text] Groups
         .card-body
           form.form-horizontal(action='', method='post')
-            .form-group.row
+            .row.mb-3
               .col-md-12
                 .input-group
-                  .input-group-prepend
-                    span.input-group-text
-                      svg.icon
-                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
+                  span.input-group-text
+                    svg.icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
                   input#input1-group1.form-control(type='text', name='input1-group1', placeholder='Username', autocomplete='username')
-            .form-group.row
+            .row.mb-3
               .col-md-12
                 .input-group
                   input#input2-group1.form-control(type='email', name='input2-group1', placeholder='Email', autocomplete='email')
-                  .input-group-append
-                    span.input-group-text
-                      svg.icon
-                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
-            .form-group.row
+                  span.input-group-text
+                    svg.icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
+            .row.mb-3
               .col-md-12
                 .input-group
-                  .input-group-prepend
-                    span.input-group-text
-                      svg.icon
-                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-euro")
+                  span.input-group-text
+                    svg.icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-euro")
                   input#input3-group1.form-control(type='text', name='input3-group1', placeholder='..')
-                  .input-group-append
-                    span.input-group-text .00
+                  span.input-group-text .00
         .card-footer
           button.btn.btn-sm.btn-success(type='submit')
             |  Submit
@@ -428,33 +424,29 @@ block view
           | #[strong Buttons] Groups
         .card-body
           form.form-horizontal(action='', method='post')
-            .form-group.row
+            .row.mb-3
               .col-md-12
                 .input-group
-                  span.input-group-prepend
-                    button.btn.btn-primary(type='button')
-                      svg.icon
-                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-magnifying-glass")
-                      |  Search
+                  button.btn.btn-primary(type='button')
+                    svg.icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-magnifying-glass")
+                    |  Search
                   input#input1-group2.form-control(type='text', name='input1-group2', placeholder='Username', autocomplete='username')
-            .form-group.row
+            .row.mb-3
               .col-md-12
                 .input-group
                   input#input2-group2.form-control(type='email', name='input2-group2', placeholder='Email', autocomplete='email')
-                  span.input-group-append
-                    button.btn.btn-primary(type='button') Submit
-            .form-group.row
+                  button.btn.btn-primary(type='button') Submit
+            .row.mb-3
               .col-md-12
                 .input-group
-                  span.input-group-prepend
-                    button.btn.btn-primary(type='button')
-                      svg.icon
-                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-facebook")
+                  button.btn.btn-primary(type='button')
+                    svg.icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-facebook")
                   input#input3-group2.form-control(type='text', name='input3-group2', placeholder='Search')
-                  span.input-group-append
-                    button.btn.btn-primary(type='button')
-                      svg.icon
-                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-twitter")
+                  button.btn.btn-primary(type='button')
+                    svg.icon
+                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-twitter")
         .card-footer
           button.btn.btn-sm.btn-success(type='submit')
             |  Submit
@@ -466,57 +458,53 @@ block view
           | #[strong Dropdowns] Groups
         .card-body
           form.form-horizontal(action='', method='post')
-            .form-group.row
+            .row.mb-3
               .col-md-12
                 .input-group
-                  .input-group-prepend
-                    button.btn.btn-primary.dropdown-toggle(type='button', data-coreui-toggle='dropdown')
-                      | Action
-                      span.caret
-                    .dropdown-menu
-                      a.dropdown-item(href='#') Action
-                      a.dropdown-item(href='#') Another action
-                      a.dropdown-item(href='#') Something else here
-                      .dropdown-divider(role='separator')
-                      a.dropdown-item(href='#') Separated link
+                  button.btn.btn-primary.dropdown-toggle(type='button', data-coreui-toggle='dropdown')
+                    | Action
+                    span.caret
+                  .dropdown-menu
+                    a.dropdown-item(href='#') Action
+                    a.dropdown-item(href='#') Another action
+                    a.dropdown-item(href='#') Something else here
+                    .dropdown-divider(role='separator')
+                    a.dropdown-item(href='#') Separated link
                   input#input1-group3.form-control(type='text', name='input1-group3', placeholder='Username', autocomplete='username')
-            .form-group.row
+            .row.mb-3
               .col-md-12
                 .input-group
                   input#input2-group3.form-control(type='email', name='input2-group3', placeholder='Email', autocomplete='email')
-                  .input-group-append
-                    button.btn.btn-primary.dropdown-toggle(type='button', data-coreui-toggle='dropdown')
-                      | Action
-                      span.caret
-                    .dropdown-menu.dropdown-menu-end
-                      a.dropdown-item(href='#') Action
-                      a.dropdown-item(href='#') Another action
-                      a.dropdown-item(href='#') Something else here
-                      .dropdown-divider(role='separator')
-                      a.dropdown-item(href='#') Separated link
+                  button.btn.btn-primary.dropdown-toggle(type='button', data-coreui-toggle='dropdown')
+                    | Action
+                    span.caret
+                  .dropdown-menu.dropdown-menu-end
+                    a.dropdown-item(href='#') Action
+                    a.dropdown-item(href='#') Another action
+                    a.dropdown-item(href='#') Something else here
+                    .dropdown-divider(role='separator')
+                    a.dropdown-item(href='#') Separated link
             .row
               .col-md-12
                 .input-group
-                  .input-group-prepend
-                    button.btn.btn-primary(type='button') Action
-                    button.btn.btn-primary.dropdown-toggle.dropdown-toggle-split(type='button', data-coreui-toggle='dropdown')
-                      span.caret
-                    .dropdown-menu
-                      a.dropdown-item(href='#') Action
-                      a.dropdown-item(href='#') Another action
-                      a.dropdown-item(href='#') Something else here
-                      .dropdown-divider(role='separator')
-                      a.dropdown-item(href='#') Separated link
+                  button.btn.btn-primary(type='button') Action
+                  button.btn.btn-primary.dropdown-toggle.dropdown-toggle-split(type='button', data-coreui-toggle='dropdown')
+                    span.caret
+                  .dropdown-menu
+                    a.dropdown-item(href='#') Action
+                    a.dropdown-item(href='#') Another action
+                    a.dropdown-item(href='#') Something else here
+                    .dropdown-divider(role='separator')
+                    a.dropdown-item(href='#') Separated link
                   input#input3-group3.form-control(type='text', name='input3-group3', placeholder='..')
-                  .input-group-append
-                    button.btn.btn-primary.dropdown-toggle(type='button', data-coreui-toggle='dropdown')
-                      span.caret
-                    .dropdown-menu.dropdown-menu-end
-                      a.dropdown-item(href='#') Action
-                      a.dropdown-item(href='#') Another action
-                      a.dropdown-item(href='#') Something else here
-                      .dropdown-divider(role='separator')
-                      a.dropdown-item(href='#') Separated link
+                  button.btn.btn-primary.dropdown-toggle(type='button', data-coreui-toggle='dropdown')
+                    span.caret
+                  .dropdown-menu.dropdown-menu-end
+                    a.dropdown-item(href='#') Action
+                    a.dropdown-item(href='#') Another action
+                    a.dropdown-item(href='#') Something else here
+                    .dropdown-divider(role='separator')
+                    a.dropdown-item(href='#') Separated link
         .card-footer
           button.btn.btn-sm.btn-success(type='submit')
             |  Submit
@@ -529,27 +517,27 @@ block view
           | Use the grid for big devices! #[small #[code .col-lg-*] #[code  .col-md-*] #[code  .col-sm-*]]
         .card-body
           form.form-horizontal(action='', method='post')
-            .form-group.row
+            .row.mb-3
               .col-md-8
                 input.form-control(type='text', placeholder='.col-md-8')
               .col-md-4
                 input.form-control(type='text', placeholder='.col-md-4')
-            .form-group.row
+            .row.mb-3
               .col-md-7
                 input.form-control(type='text', placeholder='.col-md-7')
               .col-md-5
                 input.form-control(type='text', placeholder='.col-md-5')
-            .form-group.row
+            .row.mb-3
               .col-md-6
                 input.form-control(type='text', placeholder='.col-md-6')
               .col-md-6
                 input.form-control(type='text', placeholder='.col-md-6')
-            .form-group.row
+            .row.mb-3
               .col-md-5
                 input.form-control(type='text', placeholder='.col-md-5')
               .col-md-7
                 input.form-control(type='text', placeholder='.col-md-7')
-            .form-group.row
+            .row.mb-3
               .col-md-4
                 input.form-control(type='text', placeholder='.col-md-4')
               .col-md-8
@@ -566,27 +554,27 @@ block view
           | Input Grid for small devices! #[small #[code .col-*]]
         .card-body
           form.form-horizontal(action='', method='post')
-            .form-group.row
+            .row.mb-3
               .col-4
                 input.form-control(type='text', placeholder='.col-4')
               .col-8
                 input.form-control(type='text', placeholder='.col-8')
-            .form-group.row
+            .row.mb-3
               .col-5
                 input.form-control(type='text', placeholder='.col-5')
               .col-7
                 input.form-control(type='text', placeholder='.col-7')
-            .form-group.row
+            .row.mb-3
               .col-6
                 input.form-control(type='text', placeholder='.col-6')
               .col-6
                 input.form-control(type='text', placeholder='.col-6')
-            .form-group.row
+            .row.mb-3
               .col-7
                 input.form-control(type='text', placeholder='.col-5')
               .col-5
                 input.form-control(type='text', placeholder='.col-5')
-            .form-group.row
+            .row.mb-3
               .col-8
                 input.form-control(type='text', placeholder='.col-8')
               .col-4
@@ -598,147 +586,46 @@ block view
           button.btn.btn-sm.btn-info(type='button') Action
           button.btn.btn-sm.btn-success(type='button') Action
   .row
-    .col-sm-4
-      .card.mb-4
-        .card-header
-          | Example Form
-        .card-body
-          form(action='', method='post')
-            .form-group
-              .input-group
-                .input-group-prepend
-                  span.input-group-text Username
-                input#username3.form-control(type='text', name='username3', autocomplete='username')
-                .input-group-append
-                  span.input-group-text
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
-            .form-group
-              .input-group
-                .input-group-prepend
-                  span.input-group-text Email
-                input#email3.form-control(type='email', name='email3', autocomplete='email')
-                .input-group-append
-                  span.input-group-text
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
-            .form-group
-              .input-group
-                .input-group-prepend
-                  span.input-group-text Password
-                input#password3.form-control(type='password', name='password3', autocomplete='new-password')
-                .input-group-append
-                  span.input-group-text
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked")
-            .form-group.form-actions
-              button.btn.btn-sm.btn-primary(type='submit') Submit
-    .col-sm-4
-      .card.mb-4
-        .card-header
-          | Example Form
-        .card-body
-          form(action='', method='post')
-            .form-group
-              .input-group
-                input#username2.form-control(type='text', name='username2', placeholder='Username', autocomplete='username')
-                .input-group-append
-                  span.input-group-text
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
-            .form-group
-              .input-group
-                input#email2.form-control(type='email', name='email2', placeholder='Email', autocomplete='email')
-                .input-group-append
-                  span.input-group-text
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
-            .form-group
-              .input-group
-                input#password2.form-control(type='password', name='password2', placeholder='Password', autocomplete='new-password')
-                .input-group-append
-                  span.input-group-text
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked")
-            .form-group.form-actions
-              button.btn.btn-sm.btn-secondary(type='submit') Submit
-    .col-sm-4
-      .card.mb-4
-        .card-header
-          | Example Form
-        .card-body
-          form(action='', method='post')
-            .form-group
-              .input-group
-                .input-group-prepend
-                  span.input-group-text
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
-                input#username.form-control(type='text', name='username', placeholder='Username', autocomplete='username')
-            .form-group
-              .input-group
-                .input-group-prepend
-                  span.input-group-text
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
-                input#email.form-control(type='email', name='email', placeholder='Email', autocomplete='email')
-            .form-group
-              .input-group
-                .input-group-prepend
-                  span.input-group-text
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked")
-                input#password.form-control(type='password', name='password', placeholder='Password', autocomplete='new-password')
-            .form-group.form-actions
-              button.btn.btn-sm.btn-success(type='submit') Submit
-  // /.row
-  .row
     .col-lg-12
       .card.mb-4
         .card-header
           | Form Elements
         .card-body
           form.form-horizontal
-            .form-group
-              label.col-form-label(for='prependedInput') Prepended text
-              .controls
-                .input-prepend.input-group
-                  .input-group-prepend
-                    span.input-group-text @
+            .mb-3
+              label.form-label(for='prependedInput') Prepended text
+              .input-prepend.input-group
+                  span.input-group-text @
                   input#prependedInput.form-control(size='16', type='text')
-                p.help-block Here's some help text
-            .form-group
-              label.col-form-label(for='appendedInput') Appended text
-              .controls
-                .input-group
+                span.form-text Here's some help text
+
+            .mb-3
+              label.form-label(for='appendedInput') Appended text
+              .input-group
                   input#appendedInput.form-control(size='16', type='text')
-                  .input-group-append
-                    span.input-group-text .00
-                span.help-block Here's more help text
-            .form-group
-              label.col-form-label(for='appendedPrependedInput') Append and prepend
-              .controls
-                .input-prepend.input-group
-                  .input-group-prepend
-                    span.input-group-text $
+                  span.input-group-text .00
+                span.form-text Here's more help text
+
+            .mb-3
+              label.form-label(for='appendedPrependedInput') Append and prepend
+              .input-prepend.input-group
+                  span.input-group-text $
                   input#appendedPrependedInput.form-control(size='16', type='text')
-                  .input-group-append
-                    span.input-group-text .00
-            .form-group
-              label.col-form-label(for='appendedInputButton') Append with button
-              .controls
-                .input-group
+                  span.input-group-text .00
+
+            .mb-3
+              label.form-label(for='appendedInputButton') Append with button
+              .input-group
                   input#appendedInputButton.form-control(size='16', type='text')
-                  span.input-group-append
-                    button.btn.btn-secondary(type='button') Go!
-            .form-group
-              label.col-form-label(for='appendedInputButtons') Two-button append
-              .controls
-                .input-group
+                  button.btn.btn-secondary(type='button') Go!
+
+            .mb-3
+              label.form-label(for='appendedInputButtons') Two-button append
+              .input-group
                   input#appendedInputButtons.form-control(size='16', type='text')
-                  span.input-group-append
-                    button.btn.btn-secondary(type='button') Search
-                    button.btn.btn-secondary(type='button') Options
+                  button.btn.btn-secondary(type='button') Search
+                  button.btn.btn-secondary(type='button') Options
+
             .form-actions
               button.btn.btn-primary(type='submit') Save changes
               button.btn.btn-secondary(type='button') Cancel
