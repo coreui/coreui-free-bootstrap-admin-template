@@ -1,6 +1,6 @@
 {
   "name": "@coreui/coreui-free-bootstrap-admin-template",
-  "version": "4.0.0-alpha.0",
+  "version": "4.0.0-alpha.1",
   "description": "Free Bootstrap Admin Template",
   "keywords": [
     "admin",
@@ -61,7 +61,7 @@
     "localhost": "browser-sync start --server \"./dist\" --serveStatic \"./\" --files \"./dist/\"",
     "pug": "npm-run-all --parallel pug-*",
     "pug-dist": "node build/pug.js --src src/pug/views/ --dest dist/",
-    "pug-src": "node build/pug.js --src src/pug/views/ --dest src/",
+    "pug-src": "node build/pug.js --src src/pug/views/ --dest src/views/",
     "release-version": "node build/change-version.js",
     "serve": "npm-run-all --sequential build-clean css js copy --parallel localhost watch",
     "serve-dist": "serve dist",

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.0.0-alpha.0
+* @version v4.0.0-alpha.1
 * @link https://coreui.io
-* Copyright (c) 2020 creativeLabs Łukasz Holeczek
+* Copyright (c) 2021 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
 -->
 
@@ -51,8 +51,8 @@
       gtag('config', 'UA-118965717-5');
     </script>
   </head>
-  <body class="c-app bg-light">
-    <div class="sidebar sidebar-dark sidebar-fixed sidebar-lg-show" id="sidebar">
+  <body>
+    <div class="sidebar sidebar-dark sidebar-fixed sidebar-self-hiding-md" id="sidebar">
       <div class="sidebar-brand d-lg-down-none">
         <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
           <use xlink:href="assets/brand/coreui.svg#full"></use>
@@ -65,7 +65,7 @@
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
-            </svg> Dashboard<span class="badge bg-info ms-auto">NEW</span></a></li>
+            </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
         <li class="nav-title">Theme</li>
         <li class="nav-item"><a class="nav-link" href="colors.html">
             <svg class="nav-icon">
@@ -87,14 +87,12 @@
             <li class="nav-item"><a class="nav-link" href="base/carousel.html"><span class="nav-icon"></span> Carousel</a></li>
             <li class="nav-item"><a class="nav-link" href="base/collapse.html"><span class="nav-icon"></span> Collapse</a></li>
             <li class="nav-item"><a class="nav-link" href="base/forms.html"><span class="nav-icon"></span> Forms</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/jumbotron.html"><span class="nav-icon"></span> Jumbotron</a></li>
             <li class="nav-item"><a class="nav-link" href="base/list-group.html"><span class="nav-icon"></span> List group</a></li>
             <li class="nav-item"><a class="nav-link" href="base/navs.html"><span class="nav-icon"></span> Navs</a></li>
             <li class="nav-item"><a class="nav-link" href="base/pagination.html"><span class="nav-icon"></span> Pagination</a></li>
             <li class="nav-item"><a class="nav-link" href="base/popovers.html"><span class="nav-icon"></span> Popovers</a></li>
             <li class="nav-item"><a class="nav-link" href="base/progress.html"><span class="nav-icon"></span> Progress</a></li>
             <li class="nav-item"><a class="nav-link" href="base/scrollspy.html"><span class="nav-icon"></span> Scrollspy</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/switches.html"><span class="nav-icon"></span> Switches</a></li>
             <li class="nav-item"><a class="nav-link" href="base/tables.html"><span class="nav-icon"></span> Tables</a></li>
             <li class="nav-item"><a class="nav-link" href="base/tabs.html"><span class="nav-icon"></span> Tabs</a></li>
             <li class="nav-item"><a class="nav-link" href="base/tooltips.html"><span class="nav-icon"></span> Tooltips</a></li>
@@ -108,7 +106,6 @@
             <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"><span class="nav-icon"></span> Buttons</a></li>
             <li class="nav-item"><a class="nav-link" href="buttons/button-group.html"><span class="nav-icon"></span> Buttons Group</a></li>
             <li class="nav-item"><a class="nav-link" href="buttons/dropdowns.html"><span class="nav-icon"></span> Dropdowns</a></li>
-            <li class="nav-item"><a class="nav-link" href="buttons/brand-buttons.html"><span class="nav-icon"></span> Brand Buttons</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="charts.html">
@@ -120,7 +117,7 @@
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Icons</a>
           <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-free.html"> CoreUI Icons<span class="badge bg-success ms-auto">Free</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-free.html"> CoreUI Icons<span class="badge badge-sm bg-success ms-auto">Free</span></a></li>
             <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-brand.html"> CoreUI Icons - Brand</a></li>
             <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-flag.html"> CoreUI Icons - Flag</a></li>
           </ul>
@@ -138,7 +135,7 @@
         <li class="nav-item"><a class="nav-link" href="widgets.html">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calculator"></use>
-            </svg> Widgets<span class="badge bg-info ms-auto">NEW</span></a></li>
+            </svg> Widgets<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
         <li class="nav-divider"></li>
         <li class="nav-title">Extras</li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
@@ -171,1053 +168,911 @@
         <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
-            </svg> Try CoreUI<strong>PRO</strong></a></li>
+            </svg> Try CoreUI
+            <div class="fw-semibold">PRO</div>
+          </a></li>
       </ul>
-      <button class="sidebar-toggler" type="button" data-coreui-toggle="narrow"></button>
+      <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     </div>
-    <div class="c-wrapper" data-coreui-reliant="sidebar">
-      <header class="header header-sticky mb-4"><a class="header-brand d-lg-none" href="#">
-          <svg width="118" height="46" alt="CoreUI Logo">
-            <use xlink:href="assets/brand/coreui.svg#full"></use>
-          </svg></a>
-        <button class="header-toggler order-sm-first" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
-          <svg class="c-icon c-icon-lg">
-            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
-          </svg>
-        </button>
-        <ul class="header-nav d-md-down-none">
-          <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
-        </ul>
-        <ul class="header-nav ms-auto mr-4">
-          <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
-              <svg class="c-icon">
-                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
-              </svg></a></li>
-          <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
-              <svg class="c-icon">
-                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
-              </svg></a></li>
-          <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
-              <svg class="c-icon">
-                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
-              </svg></a></li>
-          <li class="nav-item dropdown"><a class="nav-link" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              <div class="avatar"><img class="avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
-            </a>
-            <div class="dropdown-menu dropdown-menu-end pt-0">
-              <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#">
-                <svg class="c-icon mr-2">
+    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+      <header class="header header-sticky mb-4">
+        <div class="container-fluid"><a class="header-brand d-lg-none" href="#">
+            <svg width="118" height="46" alt="CoreUI Logo">
+              <use xlink:href="assets/brand/coreui.svg#full"></use>
+            </svg></a>
+          <button class="header-toggler order-sm-first px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+            <svg class="icon icon-lg">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+            </svg>
+          </button>
+          <ul class="header-nav d-md-down-none">
+            <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+          </ul>
+          <ul class="header-nav ms-auto">
+            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+                <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
-                </svg> Updates<span class="badge bg-info ms-auto">42</span></a><a class="dropdown-item" href="#">
-                <svg class="c-icon mr-2">
+                </svg></a></li>
+            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+                <svg class="icon icon-lg">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
+                </svg></a></li>
+            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+                <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
-                </svg> Messages<span class="badge bg-success ms-auto">42</span></a><a class="dropdown-item" href="#">
-                <svg class="c-icon mr-2">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
-                </svg> Tasks<span class="badge bg-danger ms-auto">42</span></a><a class="dropdown-item" href="#">
-                <svg class="c-icon mr-2">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
-                </svg> Comments<span class="badge bg-warning ms-auto">42</span></a>
-              <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="#">
-                <svg class="c-icon mr-2">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
-                </svg> Profile</a><a class="dropdown-item" href="#">
-                <svg class="c-icon mr-2">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
-                </svg> Settings</a><a class="dropdown-item" href="#">
-                <svg class="c-icon mr-2">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card"></use>
-                </svg> Payments<span class="badge bg-secondary ms-auto">42</span></a><a class="dropdown-item" href="#">
-                <svg class="c-icon mr-2">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file"></use>
-                </svg> Projects<span class="badge bg-primary ms-auto">42</span></a>
-              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
-                <svg class="c-icon mr-2">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
-                </svg> Lock Account</a><a class="dropdown-item" href="#">
-                <svg class="c-icon mr-2">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
-                </svg> Logout</a>
-            </div>
-          </li>
-        </ul>
+                </svg></a></li>
+            <li class="nav-item dropdown d-flex align-items-center"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="avatar"><img class="avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end pt-0">
+                <div class="dropdown-header bg-light py-2">
+                  <div class="fw-semibold">Account</div>
+                </div><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+                  </svg> Updates<span class="badge badge-sm bg-info ms-2">42</span></a><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+                  </svg> Messages<span class="badge badge-sm bg-success ms-2">42</span></a><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
+                  </svg> Tasks<span class="badge badge-sm bg-danger ms-2">42</span></a><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
+                  </svg> Comments<span class="badge badge-sm bg-warning ms-2">42</span></a>
+                <div class="dropdown-header bg-light py-2">
+                  <div class="fw-semibold">Settings</div>
+                </div><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+                  </svg> Profile</a><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+                  </svg> Settings</a><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card"></use>
+                  </svg> Payments<span class="badge badge-sm bg-secondary ms-2">42</span></a><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file"></use>
+                  </svg> Projects<span class="badge badge-sm bg-primary ms-2">42</span></a>
+                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
+                  </svg> Lock Account</a><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+                  </svg> Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
         <div class="header-divider"></div>
-        <!-- Breadcrumb-->
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item">Home</li>
-            <li class="breadcrumb-item"><a href="#">Admin</a></li>
-            <li class="breadcrumb-item active">Dashboard</li>
-          </ol>
-        </nav>
+        <div class="container-fluid">
+          <!-- Breadcrumb-->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb border-0 m-0">
+              <li class="breadcrumb-item">Home</li>
+              <li class="breadcrumb-item"><a href="#">Admin</a></li>
+              <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+          </nav>
+        </div>
       </header>
-      <div class="c-body">
-        <div class="container">
-          <div class="fade-in">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="card mb-4">
-                  <div class="card-header"><strong>Credit Card</strong> <small>Form</small></div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="form-group">
-                          <label for="name">Name</label>
-                          <input class="form-control" id="name" type="text" placeholder="Enter your name">
-                        </div>
+      <div class="body flex-grow-1 px-3">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Credit Card</strong> <span class="small ms-1">Form</span></div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label" for="name">Name</label>
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name">
                       </div>
-                    </div>
-                    <!-- /.row-->
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="form-group">
-                          <label for="ccnumber">Credit Card Number</label>
-                          <input class="form-control" id="ccnumber" type="text" placeholder="0000 0000 0000 0000">
-                        </div>
-                      </div>
-                    </div>
-                    <!-- /.row-->
-                    <div class="row">
-                      <div class="form-group col-sm-4">
-                        <label for="ccmonth">Month</label>
-                        <select class="form-control" id="ccmonth">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                          <option>6</option>
-                          <option>7</option>
-                          <option>8</option>
-                          <option>9</option>
-                          <option>10</option>
-                          <option>11</option>
-                          <option>12</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-sm-4">
-                        <label for="ccyear">Year</label>
-                        <select class="form-control" id="ccyear">
-                          <option>2014</option>
-                          <option>2015</option>
-                          <option>2016</option>
-                          <option>2017</option>
-                          <option>2018</option>
-                          <option>2019</option>
-                          <option>2020</option>
-                          <option>2021</option>
-                          <option>2022</option>
-                          <option>2023</option>
-                          <option>2024</option>
-                          <option>2025</option>
-                        </select>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="form-group">
-                          <label for="cvv">CVV/CVC</label>
-                          <input class="form-control" id="cvv" type="text" placeholder="123">
-                        </div>
-                      </div>
-                    </div>
-                    <!-- /.row-->
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6">
-                <div class="card mb-4">
-                  <div class="card-header"><strong>Company</strong> <small>Form</small></div>
-                  <div class="card-body">
-                    <div class="form-group">
-                      <label for="company">Company</label>
-                      <input class="form-control" id="company" type="text" placeholder="Enter your company name">
-                    </div>
-                    <div class="form-group">
-                      <label for="vat">VAT</label>
-                      <input class="form-control" id="vat" type="text" placeholder="PL1234567890">
-                    </div>
-                    <div class="form-group">
-                      <label for="street">Street</label>
-                      <input class="form-control" id="street" type="text" placeholder="Enter street name">
-                    </div>
-                    <div class="row">
-                      <div class="form-group col-sm-8">
-                        <label for="city">City</label>
-                        <input class="form-control" id="city" type="text" placeholder="Enter your city">
-                      </div>
-                      <div class="form-group col-sm-4">
-                        <label for="postal-code">Postal Code</label>
-                        <input class="form-control" id="postal-code" type="text" placeholder="Postal Code">
-                      </div>
-                    </div>
-                    <!-- /.row-->
-                    <div class="form-group">
-                      <label for="country">Country</label>
-                      <input class="form-control" id="country" type="text" placeholder="Country name">
                     </div>
                   </div>
+                  <!-- /.row-->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label" for="ccnumber">Credit Card Number</label>
+                        <input class="form-control" id="ccnumber" type="text" placeholder="0000 0000 0000 0000">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.row-->
+                  <div class="row">
+                    <div class="mb-3 col-sm-4">
+                      <label class="form-label" for="ccmonth">Month</label>
+                      <select class="form-select" id="ccmonth">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-sm-4">
+                      <label class="form-label" for="ccyear">Year</label>
+                      <select class="form-select" id="ccyear">
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2021</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="mb-3">
+                        <label class="form-label" for="cvv">CVV/CVC</label>
+                        <input class="form-control" id="cvv" type="text" placeholder="123">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.row-->
                 </div>
               </div>
-              <!-- /.col-->
             </div>
-            <!-- /.row-->
-            <div class="row">
-              <div class="col-md-6">
-                <div class="card mb-4">
-                  <div class="card-header"><strong>Basic Form</strong> Elements</div>
-                  <div class="card-body">
-                    <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Static</label>
-                        <div class="col-md-9">
-                          <p class="form-control-static">Username</p>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="text-input">Text Input</label>
-                        <div class="col-md-9">
-                          <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text"><span class="help-block">This is a help text</span>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="email-input">Email Input</label>
-                        <div class="col-md-9">
-                          <input class="form-control" id="email-input" type="email" name="email-input" placeholder="Enter Email" autocomplete="email"><span class="help-block">Please enter your email</span>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="password-input">Password</label>
-                        <div class="col-md-9">
-                          <input class="form-control" id="password-input" type="password" name="password-input" placeholder="Password" autocomplete="new-password"><span class="help-block">Please enter a complex password</span>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="date-input">Date Input</label>
-                        <div class="col-md-9">
-                          <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date"><span class="help-block">Please enter a valid date</span>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="disabled-input">Disabled Input</label>
-                        <div class="col-md-9">
-                          <input class="form-control" id="disabled-input" type="text" name="disabled-input" placeholder="Disabled" disabled="">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="textarea-input">Textarea</label>
-                        <div class="col-md-9">
-                          <textarea class="form-control" id="textarea-input" name="textarea-input" rows="9" placeholder="Content.."></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="select1">Select</label>
-                        <div class="col-md-9">
-                          <select class="form-control" id="select1" name="select1">
-                            <option value="0">Please select</option>
-                            <option value="1">Option #1</option>
-                            <option value="2">Option #2</option>
-                            <option value="3">Option #3</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="select2">Select Large</label>
-                        <div class="col-md-9">
-                          <select class="form-control form-control-lg" id="select2" name="select2">
-                            <option value="0">Please select</option>
-                            <option value="1">Option #1</option>
-                            <option value="2">Option #2</option>
-                            <option value="3">Option #3</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="select3">Select Small</label>
-                        <div class="col-md-9">
-                          <select class="form-control form-control-sm" id="select3" name="select3">
-                            <option value="0">Please select</option>
-                            <option value="1">Option #1</option>
-                            <option value="2">Option #2</option>
-                            <option value="3">Option #3</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="disabledSelect">Disabled Select</label>
-                        <div class="col-md-9">
-                          <select class="form-control" id="disabledSelect" disabled="">
-                            <option value="0">Please select</option>
-                            <option value="1">Option #1</option>
-                            <option value="2">Option #2</option>
-                            <option value="3">Option #3</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="multiple-select">Multiple select</label>
-                        <div class="col-md-9">
-                          <select class="form-control" id="multiple-select" name="multiple-select" size="5" multiple="">
-                            <option value="1">Option #1</option>
-                            <option value="2">Option #2</option>
-                            <option value="3">Option #3</option>
-                            <option value="4">Option #4</option>
-                            <option value="5">Option #5</option>
-                            <option value="6">Option #6</option>
-                            <option value="7">Option #7</option>
-                            <option value="8">Option #8</option>
-                            <option value="9">Option #9</option>
-                            <option value="10">Option #10</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Radios</label>
-                        <div class="col-md-9 col-form-label">
-                          <div class="form-check">
-                            <input class="form-check-input" id="radio1" type="radio" value="radio1" name="radios">
-                            <label class="form-check-label" for="radio1">Option 1</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" id="radio2" type="radio" value="radio2" name="radios">
-                            <label class="form-check-label" for="radio2">Option 2</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" id="radio3" type="radio" value="radio2" name="radios">
-                            <label class="form-check-label" for="radio3">Option 3</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Inline Radios</label>
-                        <div class="col-md-9 col-form-label">
-                          <div class="form-check form-check-inline mr-1">
-                            <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
-                            <label class="form-check-label" for="inline-radio1">One</label>
-                          </div>
-                          <div class="form-check form-check-inline mr-1">
-                            <input class="form-check-input" id="inline-radio2" type="radio" value="option2" name="inline-radios">
-                            <label class="form-check-label" for="inline-radio2">Two</label>
-                          </div>
-                          <div class="form-check form-check-inline mr-1">
-                            <input class="form-check-input" id="inline-radio3" type="radio" value="option3" name="inline-radios">
-                            <label class="form-check-label" for="inline-radio3">Three</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Checkboxes</label>
-                        <div class="col-md-9 col-form-label">
-                          <div class="form-check checkbox">
-                            <input class="form-check-input" id="check1" type="checkbox" value="">
-                            <label class="form-check-label" for="check1">Option 1</label>
-                          </div>
-                          <div class="form-check checkbox">
-                            <input class="form-check-input" id="check2" type="checkbox" value="">
-                            <label class="form-check-label" for="check2">Option 2</label>
-                          </div>
-                          <div class="form-check checkbox">
-                            <input class="form-check-input" id="check3" type="checkbox" value="">
-                            <label class="form-check-label" for="check3">Option 3</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Inline Checkboxes</label>
-                        <div class="col-md-9 col-form-label">
-                          <div class="form-check form-check-inline mr-1">
-                            <input class="form-check-input" id="inline-checkbox1" type="checkbox" value="check1">
-                            <label class="form-check-label" for="inline-checkbox1">One</label>
-                          </div>
-                          <div class="form-check form-check-inline mr-1">
-                            <input class="form-check-input" id="inline-checkbox2" type="checkbox" value="check2">
-                            <label class="form-check-label" for="inline-checkbox2">Two</label>
-                          </div>
-                          <div class="form-check form-check-inline mr-1">
-                            <input class="form-check-input" id="inline-checkbox3" type="checkbox" value="check3">
-                            <label class="form-check-label" for="inline-checkbox3">Three</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="file-input">File input</label>
-                        <div class="col-md-9">
-                          <input id="file-input" type="file" name="file-input">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="file-multiple-input">Multiple File input</label>
-                        <div class="col-md-9">
-                          <input id="file-multiple-input" type="file" name="file-multiple-input" multiple="">
-                        </div>
-                      </div>
-                    </form>
+            <!-- /.col-->
+            <div class="col-sm-6">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Company</strong> <span class="small ms-1">Form</span></div>
+                <div class="card-body">
+                  <div class="mb-3">
+                    <label class="form-label" for="company">Company</label>
+                    <input class="form-control" id="company" type="text" placeholder="Enter your company name">
                   </div>
-                  <div class="card-footer">
-                    <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
-                    <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+                  <div class="mb-3">
+                    <label class="form-label" for="vat">VAT</label>
+                    <input class="form-control" id="vat" type="text" placeholder="PL1234567890">
                   </div>
-                </div>
-                <div class="card mb-4">
-                  <div class="card-header"><strong>Inline</strong> Form</div>
-                  <div class="card-body">
-                    <form class="form-inline" action="" method="post">
-                      <div class="form-group">
-                        <label class="mr-1" for="exampleInputName2">Name</label>
-                        <input class="form-control" id="exampleInputName2" type="text" placeholder="Jane Doe" autocomplete="name">
-                      </div>
-                      <div class="form-group">
-                        <label class="mx-1" for="exampleInputEmail2">Email</label>
-                        <input class="form-control" id="exampleInputEmail2" type="email" placeholder="jane.doe@example.com" autocomplete="email">
-                      </div>
-                    </form>
+                  <div class="mb-3">
+                    <label class="form-label" for="street">Street</label>
+                    <input class="form-control" id="street" type="text" placeholder="Enter street name">
                   </div>
-                  <div class="card-footer">
-                    <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
-                    <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card mb-4">
-                  <div class="card-header"><strong>Horizontal</strong> Form</div>
-                  <div class="card-body">
-                    <form class="form-horizontal" action="" method="post">
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="hf-email">Email</label>
-                        <div class="col-md-9">
-                          <input class="form-control" id="hf-email" type="email" name="hf-email" placeholder="Enter Email.." autocomplete="email"><span class="help-block">Please enter your email</span>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="hf-password">Password</label>
-                        <div class="col-md-9">
-                          <input class="form-control" id="hf-password" type="password" name="hf-password" placeholder="Enter Password.." autocomplete="current-password"><span class="help-block">Please enter your password</span>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
-                    <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
-                  </div>
-                </div>
-                <div class="card mb-4">
-                  <div class="card-header"><strong>Normal</strong> Form</div>
-                  <div class="card-body">
-                    <form action="" method="post">
-                      <div class="form-group">
-                        <label for="nf-email">Email</label>
-                        <input class="form-control" id="nf-email" type="email" name="nf-email" placeholder="Enter Email.." autocomplete="email"><span class="help-block">Please enter your email</span>
-                      </div>
-                      <div class="form-group">
-                        <label for="nf-password">Password</label>
-                        <input class="form-control" id="nf-password" type="password" name="nf-password" placeholder="Enter Password.." autocomplete="current-password"><span class="help-block">Please enter your password</span>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
-                    <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
-                  </div>
-                </div>
-                <div class="card mb-4">
-                  <div class="card-header">Input <strong>Grid</strong></div>
-                  <div class="card-body">
-                    <form class="form-horizontal" action="" method="post">
-                      <div class="form-group row">
-                        <div class="col-sm-3">
-                          <input class="form-control" type="text" placeholder=".col-sm-3">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-sm-4">
-                          <input class="form-control" type="text" placeholder=".col-sm-4">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-sm-5">
-                          <input class="form-control" type="text" placeholder=".col-sm-5">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-sm-6">
-                          <input class="form-control" type="text" placeholder=".col-sm-6">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-sm-7">
-                          <input class="form-control" type="text" placeholder=".col-sm-7">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-sm-8">
-                          <input class="form-control" type="text" placeholder=".col-sm-8">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-sm-9">
-                          <input class="form-control" type="text" placeholder=".col-sm-9">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-sm-10">
-                          <input class="form-control" type="text" placeholder=".col-sm-10">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-sm-11">
-                          <input class="form-control" type="text" placeholder=".col-sm-11">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-sm-12">
-                          <input class="form-control" type="text" placeholder=".col-sm-12">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-sm btn-primary" type="submit"> Login</button>
-                    <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
-                  </div>
-                </div>
-                <div class="card mb-4">
-                  <div class="card-header">Input <strong>Sizes</strong></div>
-                  <div class="card-body">
-                    <form class="form-horizontal" action="" method="post">
-                      <div class="form-group row">
-                        <label class="col-sm-5 col-form-label" for="input-small">Small Input</label>
-                        <div class="col-sm-6">
-                          <input class="form-control form-control-sm" id="input-small" type="text" name="input-small" placeholder=".form-control-sm">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-sm-5 col-form-label" for="input-normal">Normal Input</label>
-                        <div class="col-sm-6">
-                          <input class="form-control" id="input-normal" type="text" name="input-normal" placeholder="Normal">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-sm-5 col-form-label" for="input-large">Large Input</label>
-                        <div class="col-sm-6">
-                          <input class="form-control form-control-lg" id="input-large" type="text" name="input-large" placeholder=".form-control-lg">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
-                    <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="card mb-4">
-                  <div class="card-header"><strong>Validation states</strong> Form</div>
-                  <div class="card-body">
-                    <div class="form-group">
-                      <label class="form-col-form-label" for="inputSuccess1">Input with success</label>
-                      <input class="form-control is-valid" id="inputSuccess1" type="text">
+                  <div class="row">
+                    <div class="mb-3 col-sm-8">
+                      <label class="form-label" for="city">City</label>
+                      <input class="form-control" id="city" type="text" placeholder="Enter your city">
                     </div>
-                    <div class="form-group">
-                      <label class="form-col-form-label" for="inputError1">Input with error</label>
-                      <input class="form-control is-invalid" id="inputError1" type="text">
-                      <div class="invalid-feedback">Please provide a valid informations.</div>
+                    <div class="mb-3 col-sm-4">
+                      <label class="form-label" for="postal-code">Postal Code</label>
+                      <input class="form-control" id="postal-code" type="text" placeholder="Postal Code">
                     </div>
                   </div>
-                </div>
-              </div>
-              <!-- /.col-->
-              <div class="col-sm-6">
-                <div class="card mb-4">
-                  <div class="card-header"><strong>Validation</strong> <code>was-validated</code></div>
-                  <div class="card-body was-validated">
-                    <div class="form-group">
-                      <label class="form-col-form-label" for="inputSuccess2">Input with success</label>
-                      <input class="form-control is-valid" id="inputSuccess2" type="text">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-col-form-label" for="inputError2">Input required</label>
-                      <input class="form-control is-invalid" id="inputError2" type="text" required="">
-                      <div class="invalid-feedback">Please provide a valid informations.</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="card mb-4">
-                  <div class="card-header"><strong>Icon/Text</strong> Groups</div>
-                  <div class="card-body">
-                    <form class="form-horizontal" action="" method="post">
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <div class="input-group">
-                            <div class="input-group-prepend"><span class="input-group-text">
-                                <svg class="c-icon">
-                                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
-                                </svg></span></div>
-                            <input class="form-control" id="input1-group1" type="text" name="input1-group1" placeholder="Username" autocomplete="username">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <div class="input-group">
-                            <input class="form-control" id="input2-group1" type="email" name="input2-group1" placeholder="Email" autocomplete="email">
-                            <div class="input-group-append"><span class="input-group-text">
-                                <svg class="c-icon">
-                                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
-                                </svg></span></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <div class="input-group">
-                            <div class="input-group-prepend"><span class="input-group-text">
-                                <svg class="c-icon">
-                                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-euro"></use>
-                                </svg></span></div>
-                            <input class="form-control" id="input3-group1" type="text" name="input3-group1" placeholder="..">
-                            <div class="input-group-append"><span class="input-group-text">.00</span></div>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-sm btn-success" type="submit"> Submit</button>
-                    <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card mb-4">
-                  <div class="card-header"><strong>Buttons</strong> Groups</div>
-                  <div class="card-body">
-                    <form class="form-horizontal" action="" method="post">
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <div class="input-group"><span class="input-group-prepend">
-                              <button class="btn btn-primary" type="button">
-                                <svg class="c-icon">
-                                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-magnifying-glass"></use>
-                                </svg> Search
-                              </button></span>
-                            <input class="form-control" id="input1-group2" type="text" name="input1-group2" placeholder="Username" autocomplete="username">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <div class="input-group">
-                            <input class="form-control" id="input2-group2" type="email" name="input2-group2" placeholder="Email" autocomplete="email"><span class="input-group-append">
-                              <button class="btn btn-primary" type="button">Submit</button></span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <div class="input-group"><span class="input-group-prepend">
-                              <button class="btn btn-primary" type="button">
-                                <svg class="c-icon">
-                                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-facebook"></use>
-                                </svg>
-                              </button></span>
-                            <input class="form-control" id="input3-group2" type="text" name="input3-group2" placeholder="Search"><span class="input-group-append">
-                              <button class="btn btn-primary" type="button">
-                                <svg class="c-icon">
-                                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-twitter"></use>
-                                </svg>
-                              </button></span>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-sm btn-success" type="submit"> Submit</button>
-                    <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card mb-4">
-                  <div class="card-header"><strong>Dropdowns</strong> Groups</div>
-                  <div class="card-body">
-                    <form class="form-horizontal" action="" method="post">
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown">Action<span class="caret"></span></button>
-                              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#">Separated link</a>
-                              </div>
-                            </div>
-                            <input class="form-control" id="input1-group3" type="text" name="input1-group3" placeholder="Username" autocomplete="username">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <div class="input-group">
-                            <input class="form-control" id="input2-group3" type="email" name="input2-group3" placeholder="Email" autocomplete="email">
-                            <div class="input-group-append">
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown">Action<span class="caret"></span></button>
-                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#">Separated link</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <button class="btn btn-primary" type="button">Action</button>
-                              <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown"><span class="caret"></span></button>
-                              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#">Separated link</a>
-                              </div>
-                            </div>
-                            <input class="form-control" id="input3-group3" type="text" name="input3-group3" placeholder="..">
-                            <div class="input-group-append">
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown"><span class="caret"></span></button>
-                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#">Separated link</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-sm btn-success" type="submit"> Submit</button>
-                    <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+                  <!-- /.row-->
+                  <div class="mb-3">
+                    <label class="form-label" for="country">Country</label>
+                    <input class="form-control" id="country" type="text" placeholder="Country name">
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="card mb-4">
-                  <div class="card-header">Use the grid for big devices! <small><code>.col-lg-*</code> <code> .col-md-*</code> <code> .col-sm-*</code></small></div>
-                  <div class="card-body">
-                    <form class="form-horizontal" action="" method="post">
-                      <div class="form-group row">
-                        <div class="col-md-8">
-                          <input class="form-control" type="text" placeholder=".col-md-8">
-                        </div>
-                        <div class="col-md-4">
-                          <input class="form-control" type="text" placeholder=".col-md-4">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-7">
-                          <input class="form-control" type="text" placeholder=".col-md-7">
-                        </div>
-                        <div class="col-md-5">
-                          <input class="form-control" type="text" placeholder=".col-md-5">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-6">
-                          <input class="form-control" type="text" placeholder=".col-md-6">
-                        </div>
-                        <div class="col-md-6">
-                          <input class="form-control" type="text" placeholder=".col-md-6">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-5">
-                          <input class="form-control" type="text" placeholder=".col-md-5">
-                        </div>
-                        <div class="col-md-7">
-                          <input class="form-control" type="text" placeholder=".col-md-7">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-4">
-                          <input class="form-control" type="text" placeholder=".col-md-4">
-                        </div>
-                        <div class="col-md-8">
-                          <input class="form-control" type="text" placeholder=".col-md-8">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-sm btn-primary" type="submit">Action</button>
-                    <button class="btn btn-sm btn-danger" type="button">Action</button>
-                    <button class="btn btn-sm btn-warning" type="button">Action</button>
-                    <button class="btn btn-sm btn-info" type="button">Action</button>
-                    <button class="btn btn-sm btn-success" type="button">Action</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card mb-4">
-                  <div class="card-header">Input Grid for small devices! <small><code>.col-*</code></small></div>
-                  <div class="card-body">
-                    <form class="form-horizontal" action="" method="post">
-                      <div class="form-group row">
-                        <div class="col-4">
-                          <input class="form-control" type="text" placeholder=".col-4">
-                        </div>
-                        <div class="col-8">
-                          <input class="form-control" type="text" placeholder=".col-8">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-5">
-                          <input class="form-control" type="text" placeholder=".col-5">
-                        </div>
-                        <div class="col-7">
-                          <input class="form-control" type="text" placeholder=".col-7">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-6">
-                          <input class="form-control" type="text" placeholder=".col-6">
-                        </div>
-                        <div class="col-6">
-                          <input class="form-control" type="text" placeholder=".col-6">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-7">
-                          <input class="form-control" type="text" placeholder=".col-5">
-                        </div>
-                        <div class="col-5">
-                          <input class="form-control" type="text" placeholder=".col-5">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-8">
-                          <input class="form-control" type="text" placeholder=".col-8">
-                        </div>
-                        <div class="col-4">
-                          <input class="form-control" type="text" placeholder=".col-4">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-sm btn-primary" type="submit">Action</button>
-                    <button class="btn btn-sm btn-danger" type="button">Action</button>
-                    <button class="btn btn-sm btn-warning" type="button">Action</button>
-                    <button class="btn btn-sm btn-info" type="button">Action</button>
-                    <button class="btn btn-sm btn-success" type="button">Action</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="card mb-4">
-                  <div class="card-header">Example Form</div>
-                  <div class="card-body">
-                    <form action="" method="post">
-                      <div class="form-group">
-                        <div class="input-group">
-                          <div class="input-group-prepend"><span class="input-group-text">Username</span></div>
-                          <input class="form-control" id="username3" type="text" name="username3" autocomplete="username">
-                          <div class="input-group-append"><span class="input-group-text">
-                              <svg class="c-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
-                              </svg></span></div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <div class="input-group-prepend"><span class="input-group-text">Email</span></div>
-                          <input class="form-control" id="email3" type="email" name="email3" autocomplete="email">
-                          <div class="input-group-append"><span class="input-group-text">
-                              <svg class="c-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
-                              </svg></span></div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <div class="input-group-prepend"><span class="input-group-text">Password</span></div>
-                          <input class="form-control" id="password3" type="password" name="password3" autocomplete="new-password">
-                          <div class="input-group-append"><span class="input-group-text">
-                              <svg class="c-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
-                              </svg></span></div>
-                        </div>
-                      </div>
-                      <div class="form-group form-actions">
-                        <button class="btn btn-sm btn-primary" type="submit">Submit</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card mb-4">
-                  <div class="card-header">Example Form</div>
-                  <div class="card-body">
-                    <form action="" method="post">
-                      <div class="form-group">
-                        <div class="input-group">
-                          <input class="form-control" id="username2" type="text" name="username2" placeholder="Username" autocomplete="username">
-                          <div class="input-group-append"><span class="input-group-text">
-                              <svg class="c-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
-                              </svg></span></div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <input class="form-control" id="email2" type="email" name="email2" placeholder="Email" autocomplete="email">
-                          <div class="input-group-append"><span class="input-group-text">
-                              <svg class="c-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
-                              </svg></span></div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <input class="form-control" id="password2" type="password" name="password2" placeholder="Password" autocomplete="new-password">
-                          <div class="input-group-append"><span class="input-group-text">
-                              <svg class="c-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
-                              </svg></span></div>
-                        </div>
-                      </div>
-                      <div class="form-group form-actions">
-                        <button class="btn btn-sm btn-secondary" type="submit">Submit</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card mb-4">
-                  <div class="card-header">Example Form</div>
-                  <div class="card-body">
-                    <form action="" method="post">
-                      <div class="form-group">
-                        <div class="input-group">
-                          <div class="input-group-prepend"><span class="input-group-text">
-                              <svg class="c-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
-                              </svg></span></div>
-                          <input class="form-control" id="username" type="text" name="username" placeholder="Username" autocomplete="username">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <div class="input-group-prepend"><span class="input-group-text">
-                              <svg class="c-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
-                              </svg></span></div>
-                          <input class="form-control" id="email" type="email" name="email" placeholder="Email" autocomplete="email">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <div class="input-group-prepend"><span class="input-group-text">
-                              <svg class="c-icon">
-                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
-                              </svg></span></div>
-                          <input class="form-control" id="password" type="password" name="password" placeholder="Password" autocomplete="new-password">
-                        </div>
-                      </div>
-                      <div class="form-group form-actions">
-                        <button class="btn btn-sm btn-success" type="submit">Submit</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /.row-->
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="card mb-4">
-                  <div class="card-header">Form Elements</div>
-                  <div class="card-body">
-                    <form class="form-horizontal">
-                      <div class="form-group">
-                        <label class="col-form-label" for="prependedInput">Prepended text</label>
-                        <div class="controls">
-                          <div class="input-prepend input-group">
-                            <div class="input-group-prepend"><span class="input-group-text">@</span></div>
-                            <input class="form-control" id="prependedInput" size="16" type="text">
-                          </div>
-                          <p class="help-block">Here's some help text</p>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label" for="appendedInput">Appended text</label>
-                        <div class="controls">
-                          <div class="input-group">
-                            <input class="form-control" id="appendedInput" size="16" type="text">
-                            <div class="input-group-append"><span class="input-group-text">.00</span></div>
-                          </div><span class="help-block">Here's more help text</span>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label" for="appendedPrependedInput">Append and prepend</label>
-                        <div class="controls">
-                          <div class="input-prepend input-group">
-                            <div class="input-group-prepend"><span class="input-group-text">$</span></div>
-                            <input class="form-control" id="appendedPrependedInput" size="16" type="text">
-                            <div class="input-group-append"><span class="input-group-text">.00</span></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label" for="appendedInputButton">Append with button</label>
-                        <div class="controls">
-                          <div class="input-group">
-                            <input class="form-control" id="appendedInputButton" size="16" type="text"><span class="input-group-append">
-                              <button class="btn btn-secondary" type="button">Go!</button></span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label" for="appendedInputButtons">Two-button append</label>
-                        <div class="controls">
-                          <div class="input-group">
-                            <input class="form-control" id="appendedInputButtons" size="16" type="text"><span class="input-group-append">
-                              <button class="btn btn-secondary" type="button">Search</button>
-                              <button class="btn btn-secondary" type="button">Options</button></span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-actions">
-                        <button class="btn btn-primary" type="submit">Save changes</button>
-                        <button class="btn btn-secondary" type="button">Cancel</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-->
-            </div>
-            <!-- /.row-->
+            <!-- /.col-->
           </div>
+          <!-- /.row-->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Basic Form</strong> Elements</div>
+                <div class="card-body">
+                  <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label">Static</label>
+                      <div class="col-md-9">
+                        <p class="form-control-static">Username</p>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="text-input">Text Input</label>
+                      <div class="col-md-9">
+                        <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text"><span class="form-text">This is a help text</span>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="email-input">Email Input</label>
+                      <div class="col-md-9">
+                        <input class="form-control" id="email-input" type="email" name="email-input" placeholder="Enter Email" autocomplete="email"><span class="form-text">Please enter your email</span>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="password-input">Password</label>
+                      <div class="col-md-9">
+                        <input class="form-control" id="password-input" type="password" name="password-input" placeholder="Password" autocomplete="new-password"><span class="form-text">Please enter a complex password</span>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="date-input">Date Input</label>
+                      <div class="col-md-9">
+                        <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date"><span class="form-text">Please enter a valid date</span>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="disabled-input">Disabled Input</label>
+                      <div class="col-md-9">
+                        <input class="form-control" id="disabled-input" type="text" name="disabled-input" placeholder="Disabled" disabled="">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="textarea-input">Textarea</label>
+                      <div class="col-md-9">
+                        <textarea class="form-control" id="textarea-input" name="textarea-input" rows="9" placeholder="Content.."></textarea>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="select1">Select</label>
+                      <div class="col-md-9">
+                        <select class="form-select" id="select1" name="select1">
+                          <option value="0">Please select</option>
+                          <option value="1">Option #1</option>
+                          <option value="2">Option #2</option>
+                          <option value="3">Option #3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="select2">Select Large</label>
+                      <div class="col-md-9">
+                        <select class="form-select form-select-lg" id="select2" name="select2">
+                          <option value="0">Please select</option>
+                          <option value="1">Option #1</option>
+                          <option value="2">Option #2</option>
+                          <option value="3">Option #3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="select3">Select Small</label>
+                      <div class="col-md-9">
+                        <select class="form-select form-select-sm" id="select3" name="select3">
+                          <option value="0">Please select</option>
+                          <option value="1">Option #1</option>
+                          <option value="2">Option #2</option>
+                          <option value="3">Option #3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="disabledSelect">Disabled Select</label>
+                      <div class="col-md-9">
+                        <select class="form-select" id="disabledSelect" disabled="">
+                          <option value="0">Please select</option>
+                          <option value="1">Option #1</option>
+                          <option value="2">Option #2</option>
+                          <option value="3">Option #3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="multiple-select">Multiple select</label>
+                      <div class="col-md-9">
+                        <select class="form-select" id="multiple-select" name="multiple-select" size="5" multiple="">
+                          <option value="1">Option #1</option>
+                          <option value="2">Option #2</option>
+                          <option value="3">Option #3</option>
+                          <option value="4">Option #4</option>
+                          <option value="5">Option #5</option>
+                          <option value="6">Option #6</option>
+                          <option value="7">Option #7</option>
+                          <option value="8">Option #8</option>
+                          <option value="9">Option #9</option>
+                          <option value="10">Option #10</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label">Radios</label>
+                      <div class="col-md-9 col-form-label form-label">
+                        <div class="form-check">
+                          <input class="form-check-input" id="radio1" type="radio" value="radio1" name="radios">
+                          <label class="form-check-label" for="radio1">Option 1</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="radio2" type="radio" value="radio2" name="radios">
+                          <label class="form-check-label" for="radio2">Option 2</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="radio3" type="radio" value="radio2" name="radios">
+                          <label class="form-check-label" for="radio3">Option 3</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label">Inline Radios</label>
+                      <div class="col-md-9 col-form-label form-label">
+                        <div class="form-check form-check-inline me-1">
+                          <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
+                          <label class="form-check-label" for="inline-radio1">One</label>
+                        </div>
+                        <div class="form-check form-check-inline me-1">
+                          <input class="form-check-input" id="inline-radio2" type="radio" value="option2" name="inline-radios">
+                          <label class="form-check-label" for="inline-radio2">Two</label>
+                        </div>
+                        <div class="form-check form-check-inline me-1">
+                          <input class="form-check-input" id="inline-radio3" type="radio" value="option3" name="inline-radios">
+                          <label class="form-check-label" for="inline-radio3">Three</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label">Checkboxes</label>
+                      <div class="col-md-9 col-form-label form-label">
+                        <div class="form-check checkbox">
+                          <input class="form-check-input" id="check1" type="checkbox" value="">
+                          <label class="form-check-label" for="check1">Option 1</label>
+                        </div>
+                        <div class="form-check checkbox">
+                          <input class="form-check-input" id="check2" type="checkbox" value="">
+                          <label class="form-check-label" for="check2">Option 2</label>
+                        </div>
+                        <div class="form-check checkbox">
+                          <input class="form-check-input" id="check3" type="checkbox" value="">
+                          <label class="form-check-label" for="check3">Option 3</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label">Inline Checkboxes</label>
+                      <div class="col-md-9 col-form-label form-label">
+                        <div class="form-check form-check-inline me-1">
+                          <input class="form-check-input" id="inline-checkbox1" type="checkbox" value="check1">
+                          <label class="form-check-label" for="inline-checkbox1">One</label>
+                        </div>
+                        <div class="form-check form-check-inline me-1">
+                          <input class="form-check-input" id="inline-checkbox2" type="checkbox" value="check2">
+                          <label class="form-check-label" for="inline-checkbox2">Two</label>
+                        </div>
+                        <div class="form-check form-check-inline me-1">
+                          <input class="form-check-input" id="inline-checkbox3" type="checkbox" value="check3">
+                          <label class="form-check-label" for="inline-checkbox3">Three</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="file-input">File input</label>
+                      <div class="col-md-9">
+                        <input class="form-control" id="file-input" type="file" name="file-input">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="file-multiple-input">Multiple File input</label>
+                      <div class="col-md-9">
+                        <input class="form-control" id="file-multiple-input" type="file" name="file-multiple-input" multiple="">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
+                  <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header"><strong>Inline</strong> Form</div>
+                <div class="card-body">
+                  <form class="form-inline" action="" method="post">
+                    <div class="mb-3">
+                      <label class="form-label me-1" for="exampleInputName2">Name</label>
+                      <input class="form-control" id="exampleInputName2" type="text" placeholder="Jane Doe" autocomplete="name">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label mx-1" for="exampleInputEmail2">Email</label>
+                      <input class="form-control" id="exampleInputEmail2" type="email" placeholder="jane.doe@example.com" autocomplete="email">
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
+                  <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Horizontal</strong> Form</div>
+                <div class="card-body">
+                  <form class="form-horizontal" action="" method="post">
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="hf-email">Email</label>
+                      <div class="col-md-9">
+                        <input class="form-control" id="hf-email" type="email" name="hf-email" placeholder="Enter Email.." autocomplete="email"><span class="form-text">Please enter your email</span>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="col-md-3 col-form-label" for="hf-password">Password</label>
+                      <div class="col-md-9">
+                        <input class="form-control" id="hf-password" type="password" name="hf-password" placeholder="Enter Password.." autocomplete="current-password"><span class="form-text">Please enter your password</span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
+                  <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header"><strong>Normal</strong> Form</div>
+                <div class="card-body">
+                  <form action="" method="post">
+                    <div class="mb-3">
+                      <label class="form-label" for="nf-email">Email</label>
+                      <input class="form-control" id="nf-email" type="email" name="nf-email" placeholder="Enter Email.." autocomplete="email"><span class="form-text">Please enter your email</span>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="nf-password">Password</label>
+                      <input class="form-control" id="nf-password" type="password" name="nf-password" placeholder="Enter Password.." autocomplete="current-password"><span class="form-text">Please enter your password</span>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
+                  <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header">Input <strong>Grid</strong></div>
+                <div class="card-body">
+                  <form class="form-horizontal" action="" method="post">
+                    <div class="row mb-3">
+                      <div class="col-sm-3">
+                        <input class="form-control" type="text" placeholder=".col-sm-3">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder=".col-sm-4">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-5">
+                        <input class="form-control" type="text" placeholder=".col-sm-5">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-6">
+                        <input class="form-control" type="text" placeholder=".col-sm-6">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-7">
+                        <input class="form-control" type="text" placeholder=".col-sm-7">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-8">
+                        <input class="form-control" type="text" placeholder=".col-sm-8">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-9">
+                        <input class="form-control" type="text" placeholder=".col-sm-9">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-10">
+                        <input class="form-control" type="text" placeholder=".col-sm-10">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-11">
+                        <input class="form-control" type="text" placeholder=".col-sm-11">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-12">
+                        <input class="form-control" type="text" placeholder=".col-sm-12">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-primary" type="submit"> Login</button>
+                  <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header">Input <strong>Sizes</strong></div>
+                <div class="card-body">
+                  <form class="form-horizontal" action="" method="post">
+                    <div class="row mb-3">
+                      <label class="form-label col-sm-5 col-form-label form-label" for="input-small">Small Input</label>
+                      <div class="col-sm-6">
+                        <input class="form-control form-control-sm" id="input-small" type="text" name="input-small" placeholder=".form-control-sm">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="form-label col-sm-5 col-form-label form-label" for="input-normal">Normal Input</label>
+                      <div class="col-sm-6">
+                        <input class="form-control" id="input-normal" type="text" name="input-normal" placeholder="Normal">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label class="form-label col-sm-5 col-form-label form-label" for="input-large">Large Input</label>
+                      <div class="col-sm-6">
+                        <input class="form-control form-control-lg" id="input-large" type="text" name="input-large" placeholder=".form-control-lg">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
+                  <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+          </div>
+          <!-- /.row-->
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Validation states</strong> Form</div>
+                <div class="card-body">
+                  <div class="mb-3">
+                    <label class="form-label form-col-form-label form-label" for="inputSuccess1">Input with success</label>
+                    <input class="form-control is-valid" id="inputSuccess1" type="text">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label form-col-form-label form-label" for="inputError1">Input with error</label>
+                    <input class="form-control is-invalid" id="inputError1" type="text">
+                    <div class="invalid-feedback">Please provide a valid informations.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-sm-6">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Validation</strong> <code>was-validated</code></div>
+                <div class="card-body was-validated">
+                  <div class="mb-3">
+                    <label class="form-label form-col-form-label form-label" for="inputSuccess2">Input with success</label>
+                    <input class="form-control is-valid" id="inputSuccess2" type="text">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label form-col-form-label form-label" for="inputError2">Input required</label>
+                    <input class="form-control is-invalid" id="inputError2" type="text" required="">
+                    <div class="invalid-feedback">Please provide a valid informations.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+          </div>
+          <!-- /.row-->
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Icon/Text</strong> Groups</div>
+                <div class="card-body">
+                  <form class="form-horizontal" action="" method="post">
+                    <div class="row mb-3">
+                      <div class="col-md-12">
+                        <div class="input-group"><span class="input-group-text">
+                            <svg class="icon">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+                            </svg></span>
+                          <input class="form-control" id="input1-group1" type="text" name="input1-group1" placeholder="Username" autocomplete="username">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-md-12">
+                        <div class="input-group">
+                          <input class="form-control" id="input2-group1" type="email" name="input2-group1" placeholder="Email" autocomplete="email"><span class="input-group-text">
+                            <svg class="icon">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+                            </svg></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-md-12">
+                        <div class="input-group"><span class="input-group-text">
+                            <svg class="icon">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-euro"></use>
+                            </svg></span>
+                          <input class="form-control" id="input3-group1" type="text" name="input3-group1" placeholder=".."><span class="input-group-text">.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-success" type="submit"> Submit</button>
+                  <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Buttons</strong> Groups</div>
+                <div class="card-body">
+                  <form class="form-horizontal" action="" method="post">
+                    <div class="row mb-3">
+                      <div class="col-md-12">
+                        <div class="input-group">
+                          <button class="btn btn-primary" type="button">
+                            <svg class="icon">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-magnifying-glass"></use>
+                            </svg> Search
+                          </button>
+                          <input class="form-control" id="input1-group2" type="text" name="input1-group2" placeholder="Username" autocomplete="username">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-md-12">
+                        <div class="input-group">
+                          <input class="form-control" id="input2-group2" type="email" name="input2-group2" placeholder="Email" autocomplete="email">
+                          <button class="btn btn-primary" type="button">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-md-12">
+                        <div class="input-group">
+                          <button class="btn btn-primary" type="button">
+                            <svg class="icon">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-facebook"></use>
+                            </svg>
+                          </button>
+                          <input class="form-control" id="input3-group2" type="text" name="input3-group2" placeholder="Search">
+                          <button class="btn btn-primary" type="button">
+                            <svg class="icon">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-twitter"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-success" type="submit"> Submit</button>
+                  <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdowns</strong> Groups</div>
+                <div class="card-body">
+                  <form class="form-horizontal" action="" method="post">
+                    <div class="row mb-3">
+                      <div class="col-md-12">
+                        <div class="input-group">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown">Action<span class="caret"></span></button>
+                          <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#">Separated link</a>
+                          </div>
+                          <input class="form-control" id="input1-group3" type="text" name="input1-group3" placeholder="Username" autocomplete="username">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-md-12">
+                        <div class="input-group">
+                          <input class="form-control" id="input2-group3" type="email" name="input2-group3" placeholder="Email" autocomplete="email">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown">Action<span class="caret"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#">Separated link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="input-group">
+                          <button class="btn btn-primary" type="button">Action</button>
+                          <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown"><span class="caret"></span></button>
+                          <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#">Separated link</a>
+                          </div>
+                          <input class="form-control" id="input3-group3" type="text" name="input3-group3" placeholder="..">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown"><span class="caret"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#">Separated link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-success" type="submit"> Submit</button>
+                  <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-header">Use the grid for big devices! <span class="small ms-1"><code>.col-lg-*</code> <code> .col-md-*</code> <code> .col-sm-*</code></span></div>
+                <div class="card-body">
+                  <form class="form-horizontal" action="" method="post">
+                    <div class="row mb-3">
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" placeholder=".col-md-8">
+                      </div>
+                      <div class="col-md-4">
+                        <input class="form-control" type="text" placeholder=".col-md-4">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-md-7">
+                        <input class="form-control" type="text" placeholder=".col-md-7">
+                      </div>
+                      <div class="col-md-5">
+                        <input class="form-control" type="text" placeholder=".col-md-5">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-md-6">
+                        <input class="form-control" type="text" placeholder=".col-md-6">
+                      </div>
+                      <div class="col-md-6">
+                        <input class="form-control" type="text" placeholder=".col-md-6">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-md-5">
+                        <input class="form-control" type="text" placeholder=".col-md-5">
+                      </div>
+                      <div class="col-md-7">
+                        <input class="form-control" type="text" placeholder=".col-md-7">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-md-4">
+                        <input class="form-control" type="text" placeholder=".col-md-4">
+                      </div>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" placeholder=".col-md-8">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-primary" type="submit">Action</button>
+                  <button class="btn btn-sm btn-danger" type="button">Action</button>
+                  <button class="btn btn-sm btn-warning" type="button">Action</button>
+                  <button class="btn btn-sm btn-info" type="button">Action</button>
+                  <button class="btn btn-sm btn-success" type="button">Action</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-header">Input Grid for small devices! <span class="small ms-1"><code>.col-*</code></span></div>
+                <div class="card-body">
+                  <form class="form-horizontal" action="" method="post">
+                    <div class="row mb-3">
+                      <div class="col-4">
+                        <input class="form-control" type="text" placeholder=".col-4">
+                      </div>
+                      <div class="col-8">
+                        <input class="form-control" type="text" placeholder=".col-8">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-5">
+                        <input class="form-control" type="text" placeholder=".col-5">
+                      </div>
+                      <div class="col-7">
+                        <input class="form-control" type="text" placeholder=".col-7">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-6">
+                        <input class="form-control" type="text" placeholder=".col-6">
+                      </div>
+                      <div class="col-6">
+                        <input class="form-control" type="text" placeholder=".col-6">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-7">
+                        <input class="form-control" type="text" placeholder=".col-5">
+                      </div>
+                      <div class="col-5">
+                        <input class="form-control" type="text" placeholder=".col-5">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-8">
+                        <input class="form-control" type="text" placeholder=".col-8">
+                      </div>
+                      <div class="col-4">
+                        <input class="form-control" type="text" placeholder=".col-4">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-primary" type="submit">Action</button>
+                  <button class="btn btn-sm btn-danger" type="button">Action</button>
+                  <button class="btn btn-sm btn-warning" type="button">Action</button>
+                  <button class="btn btn-sm btn-info" type="button">Action</button>
+                  <button class="btn btn-sm btn-success" type="button">Action</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card mb-4">
+                <div class="card-header">Form Elements</div>
+                <div class="card-body">
+                  <form class="form-horizontal">
+                    <div class="mb-3">
+                      <label class="form-label" for="prependedInput">Prepended text</label>
+                      <div class="input-group"><span class="input-group-text">@</span>
+                        <input class="form-control" id="prependedInput" size="16" type="text">
+                      </div><span class="form-text">Here's some help text</span>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="appendedInput">Appended text</label>
+                      <div class="input-group">
+                        <input class="form-control" id="appendedInput" size="16" type="text"><span class="input-group-text">.00</span>
+                      </div><span class="form-text">Here's more help text</span>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="appendedPrependedInput">Append and prepend</label>
+                      <div class="input-group"><span class="input-group-text">$</span>
+                        <input class="form-control" id="appendedPrependedInput" size="16" type="text"><span class="input-group-text">.00</span>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="appendedInputButton">Append with button</label>
+                      <div class="input-group">
+                        <input class="form-control" id="appendedInputButton" size="16" type="text">
+                        <button class="btn btn-secondary" type="button">Go!</button>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="appendedInputButtons">Two-button append</label>
+                      <div class="input-group">
+                        <input class="form-control" id="appendedInputButtons" size="16" type="text">
+                        <button class="btn btn-secondary" type="button">Search</button>
+                        <button class="btn btn-secondary" type="button">Options</button>
+                      </div>
+                    </div>
+                    <div class="form-actions">
+                      <button class="btn btn-primary" type="submit">Save changes</button>
+                      <button class="btn btn-secondary" type="button">Cancel</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+          </div>
+          <!-- /.row-->
         </div>
       </div>
       <footer class="footer">
-        <div><a href="https://coreui.io">CoreUI</a> &copy; 2020 creativeLabs.</div>
+        <div><a href="https://coreui.io">CoreUI</a> &copy; 2021 creativeLabs.</div>
         <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
       </footer>
     </div>
