@@ -10,12 +10,12 @@
 
 /* eslint-disable no-magic-numbers */
 // Disable the on-canvas tooltip
-Chart.defaults.global.pointHitDetectionRadius = 1
-Chart.defaults.global.tooltips.enabled = false
-Chart.defaults.global.tooltips.mode = 'index'
-Chart.defaults.global.tooltips.position = 'nearest'
-Chart.defaults.global.tooltips.custom = coreui.ChartJS.customTooltips
-Chart.defaults.global.defaultFontColor = '#646470'
+Chart.defaults.pointHitDetectionRadius = 1
+Chart.defaults.plugins.tooltip.enabled = false
+Chart.defaults.plugins.tooltip.mode = 'index'
+Chart.defaults.plugins.tooltip.position = 'nearest'
+Chart.defaults.plugins.tooltip.external = coreui.ChartJS.customTooltips
+Chart.defaults.defaultFontColor = '#646470'
 
 // eslint-disable-next-line no-unused-vars
 const cardChart1 = new Chart(document.getElementById('card-chart1'), {
@@ -33,33 +33,36 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
     ]
   },
   options: {
-    maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
+    maintainAspectRatio: false,
     scales: {
-      xAxes: [{
-        gridLines: {
-          color: 'transparent',
-          zeroLineColor: 'transparent'
+      x: {
+        grid: {
+          display: false,
+          drawBorder: false
         },
         ticks: {
-          fontSize: 2,
-          fontColor: 'transparent'
+          display: false
         }
-      }],
-      yAxes: [{
+      },
+      y: {
         display: false,
+        grid: {
+          display: false
+        },
         ticks: {
-          display: false,
-          min: 35,
-          max: 89
+          display: false
         }
-      }]
+      }
     },
     elements: {
       line: {
-        borderWidth: 1
+        borderWidth: 1,
+        tension: 0.4
       },
       point: {
         radius: 4,
@@ -86,33 +89,34 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
     ]
   },
   options: {
-    maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
+    maintainAspectRatio: false,
     scales: {
-      xAxes: [{
-        gridLines: {
-          color: 'transparent',
-          zeroLineColor: 'transparent'
+      x: {
+        grid: {
+          display: false,
+          drawBorder: false
         },
         ticks: {
-          fontSize: 2,
-          fontColor: 'transparent'
+          display: false
         }
-      }],
-      yAxes: [{
+      },
+      y: {
         display: false,
+        grid: {
+          display: false
+        },
         ticks: {
-          display: false,
-          min: -4,
-          max: 39
+          display: false
         }
-      }]
+      }
     },
     elements: {
       line: {
-        tension: 0.00001,
         borderWidth: 1
       },
       point: {
@@ -134,26 +138,30 @@ const cardChart3 = new Chart(document.getElementById('card-chart3'), {
         label: 'My First dataset',
         backgroundColor: 'rgba(255,255,255,.2)',
         borderColor: 'rgba(255,255,255,.55)',
-        data: [78, 81, 80, 45, 34, 12, 40]
+        data: [78, 81, 80, 45, 34, 12, 40],
+        fill: true
       }
     ]
   },
   options: {
-    maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
+    maintainAspectRatio: false,
     scales: {
-      xAxes: [{
+      x: {
         display: false
-      }],
-      yAxes: [{
+      },
+      y: {
         display: false
-      }]
+      }
     },
     elements: {
       line: {
-        borderWidth: 2
+        borderWidth: 2,
+        tension: 0.4
       },
       point: {
         radius: 0,
@@ -181,16 +189,32 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
   },
   options: {
     maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
     scales: {
-      xAxes: [{
-        display: false
-      }],
-      yAxes: [{
-        display: false
-      }]
+      x: {
+        grid: {
+          display: false,
+          drawTicks: false
+
+        },
+        ticks: {
+          display: false
+        }
+      },
+      y: {
+        grid: {
+          display: false,
+          drawBorder: false,
+          drawTicks: false
+        },
+        ticks: {
+          display: false
+        }
+      }
     }
   }
 })
@@ -207,11 +231,11 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
         borderColor: coreui.Utils.getStyle('--cui-info'),
         pointHoverBackgroundColor: '#fff',
         borderWidth: 2,
-        data: [165, 180, 70, 69, 77, 57, 125, 165, 172, 91, 173, 138, 155, 89, 50, 161, 65, 163, 160, 103, 114, 185, 125, 196, 183, 64, 137, 95, 112, 175]
+        data: [165, 180, 70, 69, 77, 57, 125, 165, 172, 91, 173, 138, 155, 89, 50, 161, 65, 163, 160, 103, 114, 185, 125, 196, 183, 64, 137, 95, 112, 175],
+        fill: true
       },
       {
         label: 'My Second dataset',
-        backgroundColor: 'transparent',
         borderColor: coreui.Utils.getStyle('--cui-success'),
         pointHoverBackgroundColor: '#fff',
         borderWidth: 2,
@@ -219,7 +243,6 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
       },
       {
         label: 'My Third dataset',
-        backgroundColor: 'transparent',
         borderColor: coreui.Utils.getStyle('--cui-danger'),
         pointHoverBackgroundColor: '#fff',
         borderWidth: 1,
@@ -230,25 +253,30 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
   },
   options: {
     maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
     scales: {
-      xAxes: [{
-        gridLines: {
+      x: {
+        grid: {
           drawOnChartArea: false
         }
-      }],
-      yAxes: [{
+      },
+      y: {
         ticks: {
           beginAtZero: true,
           maxTicksLimit: 5,
           stepSize: Math.ceil(250 / 5),
           max: 250
         }
-      }]
+      }
     },
     elements: {
+      line: {
+        tension: 0.4
+      },
       point: {
         radius: 0,
         hitRadius: 10,

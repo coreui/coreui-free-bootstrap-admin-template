@@ -6,7 +6,8 @@ block styles
 block scripts
   if !starter
     // Plugins and scripts required by this view
-    script(src='node_modules/@coreui/chartjs/dist/js/coreui-chartjs.bundle.js')
+    script(src='node_modules/chart.js/dist/chart.min.js')
+    script(src='node_modules/@coreui/chartjs/dist/js/coreui-chartjs.js')
     script(src='node_modules/@coreui/utils/dist/coreui-utils.js')
     script(src='js/main.js')
 
@@ -191,12 +192,12 @@ block view
             .col-sm-6
               .row
                 .col-6
-                  .c-callout.c-callout-info
+                  .border-start.border-start-4.border-start-info.px-3.mb-3
                     small.text-medium-emphasis New Clients
                     div.fs-5.fw-semibold 9,123
                 // /.col
                 .col-6
-                  .c-callout.c-callout-danger
+                  .border-start.border-start-4.border-start-danger.px-3.mb-3
                     small.text-medium-emphasis Recuring Clients
                     div.fs-5.fw-semibold 22,643
                 // /.col
@@ -269,12 +270,12 @@ block view
             .col-sm-6
               .row
                 .col-6
-                  .c-callout.c-callout-warning
+                  .border-start.border-start-4.border-start-warning.px-3.mb-3
                     small.text-medium-emphasis Pageviews
                     div.fs-5.fw-semibold 78,623
                 // /.col
                 .col-6
-                  .c-callout.c-callout-success
+                  .border-start.border-start-4.border-start-success.px-3.mb-3
                     small.text-medium-emphasis Organic
                     div.fs-5.fw-semibold 49,123
                 // /.col

@@ -1,4 +1,4 @@
-/* global Chart, coreui, coreui.Utils.getStyle */
+/* global Chart, coreui */
 
 /**
  * --------------------------------------------------------------------------
@@ -9,26 +9,12 @@
 
 /* eslint-disable no-magic-numbers */
 // Disable the on-canvas tooltip
-Chart.defaults.global.pointHitDetectionRadius = 1
-Chart.defaults.global.tooltips.enabled = false
-Chart.defaults.global.tooltips.mode = 'index'
-Chart.defaults.global.tooltips.position = 'nearest'
-Chart.defaults.global.tooltips.custom = coreui.ChartJS.customTooltips
-
-document.body.addEventListener('classtoggle', event => {
-  if (event.detail.className === 'c-dark-theme') {
-    if (document.body.classList.contains('c-dark-theme')) {
-      cardChart1.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-primary-dark-theme')
-      cardChart2.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-info-dark-theme')
-    } else {
-      cardChart1.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-primary')
-      cardChart2.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-info')
-    }
-
-    cardChart1.update()
-    cardChart2.update()
-  }
-})
+Chart.defaults.pointHitDetectionRadius = 1
+Chart.defaults.plugins.tooltip.enabled = false
+Chart.defaults.plugins.tooltip.mode = 'index'
+Chart.defaults.plugins.tooltip.position = 'nearest'
+Chart.defaults.plugins.tooltip.external = coreui.ChartJS.customTooltips
+Chart.defaults.defaultFontColor = '#646470'
 
 // eslint-disable-next-line no-unused-vars
 const cardChart1 = new Chart(document.getElementById('card-chart1'), {
@@ -46,33 +32,36 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
     ]
   },
   options: {
-    maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
+    maintainAspectRatio: false,
     scales: {
-      xAxes: [{
-        gridLines: {
-          color: 'transparent',
-          zeroLineColor: 'transparent'
+      x: {
+        grid: {
+          display: false,
+          drawBorder: false
         },
         ticks: {
-          fontSize: 2,
-          fontColor: 'transparent'
+          display: false
         }
-      }],
-      yAxes: [{
+      },
+      y: {
         display: false,
+        grid: {
+          display: false
+        },
         ticks: {
-          display: false,
-          min: 35,
-          max: 89
+          display: false
         }
-      }]
+      }
     },
     elements: {
       line: {
-        borderWidth: 1
+        borderWidth: 1,
+        tension: 0.4
       },
       point: {
         radius: 4,
@@ -99,33 +88,34 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
     ]
   },
   options: {
-    maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
+    maintainAspectRatio: false,
     scales: {
-      xAxes: [{
-        gridLines: {
-          color: 'transparent',
-          zeroLineColor: 'transparent'
+      x: {
+        grid: {
+          display: false,
+          drawBorder: false
         },
         ticks: {
-          fontSize: 2,
-          fontColor: 'transparent'
+          display: false
         }
-      }],
-      yAxes: [{
+      },
+      y: {
         display: false,
+        grid: {
+          display: false
+        },
         ticks: {
-          display: false,
-          min: -4,
-          max: 39
+          display: false
         }
-      }]
+      }
     },
     elements: {
       line: {
-        tension: 0.00001,
         borderWidth: 1
       },
       point: {
@@ -147,26 +137,30 @@ const cardChart3 = new Chart(document.getElementById('card-chart3'), {
         label: 'My First dataset',
         backgroundColor: 'rgba(255,255,255,.2)',
         borderColor: 'rgba(255,255,255,.55)',
-        data: [78, 81, 80, 45, 34, 12, 40]
+        data: [78, 81, 80, 45, 34, 12, 40],
+        fill: true
       }
     ]
   },
   options: {
-    maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
+    maintainAspectRatio: false,
     scales: {
-      xAxes: [{
+      x: {
         display: false
-      }],
-      yAxes: [{
+      },
+      y: {
         display: false
-      }]
+      }
     },
     elements: {
       line: {
-        borderWidth: 2
+        borderWidth: 2,
+        tension: 0.4
       },
       point: {
         radius: 0,
@@ -194,16 +188,32 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
   },
   options: {
     maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
     scales: {
-      xAxes: [{
-        display: false
-      }],
-      yAxes: [{
-        display: false
-      }]
+      x: {
+        grid: {
+          display: false,
+          drawTicks: false
+
+        },
+        ticks: {
+          display: false
+        }
+      },
+      y: {
+        grid: {
+          display: false,
+          drawBorder: false,
+          drawTicks: false
+        },
+        ticks: {
+          display: false
+        }
+      }
     }
   }
 })
@@ -227,16 +237,18 @@ const sparklineChart1 = new Chart(document.getElementById('sparkline-chart-1'), 
   },
   options: {
     maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
     scales: {
-      xAxes: [{
+      x: {
         display: false
-      }],
-      yAxes: [{
+      },
+      y: {
         display: false
-      }]
+      }
     }
   }
 })
@@ -257,16 +269,18 @@ const sparklineChart2 = new Chart(document.getElementById('sparkline-chart-2'), 
   },
   options: {
     maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
     scales: {
-      xAxes: [{
+      x: {
         display: false
-      }],
-      yAxes: [{
+      },
+      y: {
         display: false
-      }]
+      }
     }
   }
 })
@@ -287,16 +301,18 @@ const sparklineChart3 = new Chart(document.getElementById('sparkline-chart-3'), 
   },
   options: {
     maintainAspectRatio: false,
-    legend: {
-      display: false
+    plugins: {
+      legend: {
+        display: false
+      }
     },
     scales: {
-      xAxes: [{
+      x: {
         display: false
-      }],
-      yAxes: [{
+      },
+      y: {
         display: false
-      }]
+      }
     }
   }
 })
@@ -317,20 +333,25 @@ const sparklineChart4 = new Chart(document.getElementById('sparkline-chart-4'), 
   },
   options: {
     maintainAspectRatio: false,
-    legend: {
-      display: false
-    },
-    scales: {
-      xAxes: [{
-        display: false
-      }],
-      yAxes: [{
-        display: false
-      }]
-    },
     elements: {
+      line: {
+        tension: 0.4
+      },
       point: {
         radius: 0
+      }
+    },
+    plugins: {
+      legend: {
+        display: false
+      }
+    },
+    scales: {
+      x: {
+        display: false
+      },
+      y: {
+        display: false
       }
     }
   }
@@ -352,20 +373,25 @@ const sparklineChart5 = new Chart(document.getElementById('sparkline-chart-5'), 
   },
   options: {
     maintainAspectRatio: false,
-    legend: {
-      display: false
-    },
-    scales: {
-      xAxes: [{
-        display: false
-      }],
-      yAxes: [{
-        display: false
-      }]
-    },
     elements: {
+      line: {
+        tension: 0.4
+      },
       point: {
         radius: 0
+      }
+    },
+    plugins: {
+      legend: {
+        display: false
+      }
+    },
+    scales: {
+      x: {
+        display: false
+      },
+      y: {
+        display: false
       }
     }
   }
@@ -387,20 +413,25 @@ const sparklineChart6 = new Chart(document.getElementById('sparkline-chart-6'), 
   },
   options: {
     maintainAspectRatio: false,
-    legend: {
-      display: false
-    },
-    scales: {
-      xAxes: [{
-        display: false
-      }],
-      yAxes: [{
-        display: false
-      }]
-    },
     elements: {
+      line: {
+        tension: 0.4
+      },
       point: {
         radius: 0
+      }
+    },
+    plugins: {
+      legend: {
+        display: false
+      }
+    },
+    scales: {
+      x: {
+        display: false
+      },
+      y: {
+        display: false
       }
     }
   }
@@ -408,25 +439,29 @@ const sparklineChart6 = new Chart(document.getElementById('sparkline-chart-6'), 
 
 const brandBoxChartLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July']
 const brandBoxChartOptions = {
-  responsive: true,
-  maintainAspectRatio: false,
-  legend: {
-    display: false
-  },
-  scales: {
-    xAxes: [{
-      display:false
-    }],
-    yAxes: [{
-      display:false
-    }]
-  },
   elements: {
+    line: {
+      tension: 0.4
+    },
     point: {
       radius: 0,
       hitRadius: 10,
       hoverRadius: 4,
       hoverBorderWidth: 3
+    }
+  },
+  maintainAspectRatio: false,
+  plugins: {
+    legend: {
+      display: false
+    }
+  },
+  scales: {
+    x: {
+      display: false
+    },
+    y: {
+      display: false
     }
   }
 }
@@ -441,7 +476,8 @@ const brandBoxChart1 = new Chart(document.getElementById('social-box-chart-1'), 
       borderColor: 'rgba(255,255,255,.55)',
       pointHoverBackgroundColor: '#fff',
       borderWidth: 2,
-      data: [65, 59, 84, 84, 51, 55, 40]
+      data: [65, 59, 84, 84, 51, 55, 40],
+      fill: true
     }]
   },
   options: brandBoxChartOptions
@@ -457,7 +493,8 @@ const brandBoxChart2 = new Chart(document.getElementById('social-box-chart-2'), 
       borderColor: 'rgba(255,255,255,.55)',
       pointHoverBackgroundColor: '#fff',
       borderWidth: 2,
-      data: [1, 13, 9, 17, 34, 41, 38]
+      data: [1, 13, 9, 17, 34, 41, 38],
+      fill: true
     }]
   },
   options: brandBoxChartOptions
@@ -473,7 +510,8 @@ const brandBoxChart3 = new Chart(document.getElementById('social-box-chart-3'), 
       borderColor: 'rgba(255,255,255,.55)',
       pointHoverBackgroundColor: '#fff',
       borderWidth: 2,
-      data: [78, 81, 80, 45, 34, 12, 40]
+      data: [78, 81, 80, 45, 34, 12, 40],
+      fill: true
     }]
   },
   options: brandBoxChartOptions
