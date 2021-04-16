@@ -1,11 +1,11 @@
 header.header.header-sticky.mb-4
   .container-fluid
-    a.header-brand.d-lg-none(href="#")
-      svg(width="118" height="46" alt="CoreUI Logo")
-        use(xlink:href="assets/brand/coreui.svg#full")
-    button.header-toggler.order-sm-first.px-md-0.me-md-3(type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()")
+    button.header-toggler.px-md-0.me-md-3.d-xl-none(type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()")
       svg.icon.icon-lg
         use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu")
+    a.header-brand.d-xl-none(href="#")
+      svg(width="118" height="46" alt="CoreUI Logo")
+        use(xlink:href="assets/brand/coreui.svg#full")
     ul.header-nav.d-md-down-none
       li.nav-item
         a.nav-link(href="#") Dashboard
