@@ -1,62 +1,104 @@
 extends ../../_layout/default.pug
 
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/components/badge/')
+
 block view
+  +callout('Badge', 'https://coreui.io/docs/4.0/components/badge/')
   .row
     .col-lg-6
       .card.mb-4
         .card-header
           |  Bootstrap Badges
-          .float-end
-            a(href='https://coreui.io/docs/4.0/components/badge/', target='_blank')
-              | docs
         .card-body
-          h1
-            | Example heading
-            span.badge.bg-secondary New
-          h2
-            | Example heading
-            span.badge.bg-secondary New
-          h3
-            | Example heading
-            span.badge.bg-secondary New
-          h4
-            | Example heading
-            span.badge.bg-secondary New
-          h5
-            | Example heading
-            span.badge.bg-secondary New
-          h6
-            | Example heading
-            span.badge.bg-secondary New
-        .card-footer
-          button.btn.btn-primary(type='link')
-            | Notifications
-            span.badge.bg-light.bg-pill(style='position: static;') 9
+          p
+            | Bootstrap badge scale to suit the size of the parent element by using relative font sizing and
+            |
+            code em
+            |  units.
+          +example()
+            h1
+              | Example heading
+              span.badge.bg-secondary New
+            h2
+              | Example heading
+              span.badge.bg-secondary New
+            h3
+              | Example heading
+              span.badge.bg-secondary New
+            h4
+              | Example heading
+              span.badge.bg-secondary New
+            h5
+              | Example heading
+              span.badge.bg-secondary New
+            h6
+              | Example heading
+              span.badge.bg-secondary New
+      .card.mb-4
+        .card-header
+          |  Bootstrap Badges
+        .card-body
+          p
+            | Badges can be used as part of links or buttons to provide a counter.
+          +example()
+            button.btn.btn-primary(type='button')
+              | Notifications
+              span.badge.bg-secondary 4
     .col-lg-6
       .card.mb-4
         .card-header
-          |  Bootstrap Badges
-          span.small.ms-1 contextual variations
+          |  Contextual variations
         .card-body
-          span.badge.me-1.bg-primary Primary
-          span.badge.me-1.bg-secondary Secondary
-          span.badge.me-1.bg-success Success
-          span.badge.me-1.bg-danger Danger
-          span.badge.me-1.bg-warning Warning
-          span.badge.me-1.bg-info Info
-          span.badge.me-1.bg-light Light
-          span.badge.me-1.bg-dark Dark
+          p
+            | Add any of the below-mentioned classes to modify the presentation of a badge. Please note that when using Bootstrap’s default
+            |
+            code .bg-light
+            | , you’ll likely need a text color utility like
+            |
+            code .text-dark
+            |  for proper styling. This is because background utilities do not set anything but
+            |
+            code background-color
+            | .
+          +example()
+            span.badge.me-1.bg-primary Primary
+            = '\n'
+            span.badge.me-1.bg-secondary Secondary
+            = '\n'
+            span.badge.me-1.bg-success Success
+            = '\n'
+            span.badge.me-1.bg-danger Danger
+            = '\n'
+            span.badge.me-1.bg-warning Warning
+            = '\n'
+            span.badge.me-1.bg-info Info
+            = '\n'
+            span.badge.me-1.bg-light.text-dark Light
+            = '\n'
+            span.badge.me-1.bg-dark Dark
       .card.mb-4
         .card-header
-          |  Bootstrap Badges
-          span.small.ms-1 pill badges
+          |  Pill badges
         .card-body
-          span.badge.me-1.rounded-pill.bg-primary Primary
-          span.badge.me-1.rounded-pill.bg-secondary Secondary
-          span.badge.me-1.rounded-pill.bg-success Success
-          span.badge.me-1.rounded-pill.bg-danger Danger
-          span.badge.me-1.rounded-pill.bg-warning Warning
-          span.badge.me-1.rounded-pill.bg-info Info
-          span.badge.me-1.rounded-pill.bg-light Light
-          span.badge.me-1.rounded-pill.bg-dark Dark
+          p
+            | Apply the
+            code .badge-pill
+            |  modifier class to make badges rounded.
+          +example()
+            span.badge.me-1.rounded-pill.bg-primary Primary
+            = '\n'
+            span.badge.me-1.rounded-pill.bg-secondary Secondary
+            = '\n'
+            span.badge.me-1.rounded-pill.bg-success Success
+            = '\n'
+            span.badge.me-1.rounded-pill.bg-danger Danger
+            = '\n'
+            span.badge.me-1.rounded-pill.bg-warning Warning
+            = '\n'
+            span.badge.me-1.rounded-pill.bg-info Info
+            = '\n'
+            span.badge.me-1.rounded-pill.bg-light.text-dark Light
+            = '\n'
+            span.badge.me-1.rounded-pill.bg-dark Dark
   // /.row

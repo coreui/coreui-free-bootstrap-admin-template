@@ -1,0 +1,163 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/forms/floating-labels/')
+
+block view
+  +callout('Floating labels', 'https://coreui.io/docs/4.0/forms/floating-labels/')
+  .row(data-masonry='{"percentPosition": true }')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Example
+        .card-body
+          p
+            | Wrap a pair of
+            |
+            code
+              = '<input class="form-control">'
+            |  and
+            |
+            code
+              = '<label>'
+            |  elements in
+            |
+            code .form-floating
+            |  to enable floating labels with Bootstrap’s textual form fields. A
+            |
+            code placeholder
+            |  is required on each
+            |
+            code
+              = '<input>'
+            |  as our method of CSS-only floating labels uses the
+            |
+            code :placeholder-shown
+            |  pseudo-element. Also note that the
+            |
+            code
+              = '<input>'
+            |  must come first so we can utilize a sibling selector (e.g.,
+            |
+            code ~
+            | ).
+          +example()
+            .form-floating.mb-3
+              input.form-control#floatingInput(type='email' placeholder='name@example.com')
+              label(for='floatingInput') Email address
+            .form-floating
+              input.form-control#floatingPassword(type='password' placeholder='Password')
+              label(for='floatingPassword') Password
+          p
+            | When there’s a
+            |
+            code value
+            |  already defined,
+            |
+            code
+              = '<label>'
+            | s will automatically adjust to their floated position.
+          +example()
+            form.form-floating
+              input.form-control#floatingInputValue(type='email' placeholder='name@example.com' value='test@example.com')
+              label(for='floatingInputValue') Input with value
+          p Form validation styles also work as expected.
+          +example()
+            form.form-floating
+              input.form-control.is-invalid#floatingInputInvalid(type='email' placeholder='name@example.com' value='test@example.com')
+              label(for='floatingInputInvalid') Invalid input
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Textareas
+        .card-body
+          p
+            | By default,
+            |
+            code
+              = '<textarea>'
+            | s with
+            |
+            code .form-control
+            |  will be the same height as
+            |
+            code
+              = '<input>'
+            | s.
+          +example()
+            .form-floating
+              textarea.form-control#floatingTextarea(placeholder='Leave a comment here')
+              label(for='floatingTextarea') Comments
+          p
+            | To set a custom height on your
+            |
+            code
+              = '<textarea>'
+            | , do not use the
+            |
+            code rows
+            |  attribute. Instead, set an explicit
+            |
+            code height
+            |  (either inline or via custom CSS).
+          +example()
+            .form-floating
+              textarea.form-control#floatingTextarea2(placeholder='Leave a comment here' style='height: 100px')
+              label(for='floatingTextarea2') Comments
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Selects
+        .card-body
+          p
+            | Other than
+            |
+            code .form-control
+            | , floating labels are only available on
+            |
+            code .form-select
+            | s. They work in the same way, but unlike
+            |
+            code
+              = '<input>'
+            | s, they’ll always show the
+            |
+            code
+              = '<label>'
+            |  in its floated state.
+            strong
+              | Selects with
+              |
+              code size
+              |  and
+              |
+              code multiple
+              |  are not supported.
+          +example()
+            .form-floating
+              select.form-select#floatingSelect(aria-label='Floating label select example')
+                option(selected) Open this select menu
+                option(value='1') One
+                option(value='2') Two
+                option(value='3') Three
+              label(for='floatingSelect') Works with selects
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Layout
+        .card-body
+          p When working with the CoreUI for Bootstrap grid system, be sure to place form elements within column classes.
+          +example()
+            .row.g-2
+              .col-md
+                .form-floating
+                  input.form-control#floatingInputGrid(type='email' placeholder='name@example.com' value='mdo@example.com')
+                  label(for='floatingInputGrid') Email address
+              .col-md
+                .form-floating
+                  select.form-select#floatingSelectGrid(aria-label='Floating label select example')
+                    option(selected) Open this select menu
+                    option(value='1') One
+                    option(value='2') Two
+                    option(value='3') Three
+                  label(for='floatingSelectGrid') Works with selects

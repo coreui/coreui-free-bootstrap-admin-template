@@ -1,33 +1,45 @@
 extends ../../_layout/default.pug
 
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/components/breadcrumb/')
+
 block view
+  +callout('Breadcrumb', 'https://coreui.io/docs/4.0/components/breadcrumb/')
   .row
     .col-lg-12
       .card.mb-4
         .card-header
           |  Bootstrap Breadcrumb
-          .float-end
-            a(href='https://coreui.io/docs/4.0/components/breadcrumb/', target='_blank')
-              | docs
         .card-body
-          nav(aria-label='breadcrumb', role='navigation')
-            ol.breadcrumb
-              li.breadcrumb-item.active(aria-current='page') Home
-          nav(aria-label='breadcrumb', role='navigation')
-            ol.breadcrumb
-              li.breadcrumb-item
-                a(href='#') Home
-              li.breadcrumb-item.active(aria-current='page') Library
-          nav(aria-label='breadcrumb', role='navigation')
-            ol.breadcrumb
-              li.breadcrumb-item
-                a(href='#') Home
-              li.breadcrumb-item
-                a(href='#') Library
-              li.breadcrumb-item.active(aria-current='page') Data
-          nav.breadcrumb
-            a.breadcrumb-item(href='#') Home
-            a.breadcrumb-item(href='#') Library
-            a.breadcrumb-item(href='#') Data
-            span.breadcrumb-item.active Bootstrap
+          p
+            | The breadcrumb navigation provides links back to each previous page the user navigated through and shows the current location in a website or an application. You don’t have to add separators, because they automatically added in CSS through
+            a(href='https://developer.mozilla.org/en-US/docs/Web/CSS/::before')
+              |
+              code ::before
+            |  and
+            a(href='https://developer.mozilla.org/en-US/docs/Web/CSS/content')
+              |
+              code content
+            | .
+          +example()
+            nav(aria-label='breadcrumb', role='navigation')
+              ol.breadcrumb
+                li.breadcrumb-item.active(aria-current='page') Home
+            nav(aria-label='breadcrumb', role='navigation')
+              ol.breadcrumb
+                li.breadcrumb-item
+                  a(href='#') Home
+                li.breadcrumb-item.active(aria-current='page') Library
+            nav(aria-label='breadcrumb', role='navigation')
+              ol.breadcrumb
+                li.breadcrumb-item
+                  a(href='#') Home
+                li.breadcrumb-item
+                  a(href='#') Library
+                li.breadcrumb-item.active(aria-current='page') Data
+            nav.breadcrumb
+              a.breadcrumb-item(href='#') Home
+              a.breadcrumb-item(href='#') Library
+              a.breadcrumb-item(href='#') Data
+              span.breadcrumb-item.active Bootstrap
   // /.row

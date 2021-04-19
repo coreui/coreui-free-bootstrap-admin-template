@@ -1,0 +1,336 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/forms/validation/')
+
+block view
+  +callout('Validation', 'https://coreui.io/docs/4.0/forms/validation/')
+  .row
+    .col-12
+      .card.mb-4
+        .card-header
+          | Custom styles
+        .card-body
+          p
+            | For custom CoreUI for Bootstrap form validation messages, you’ll need to add the
+            |
+            code novalidate
+            |  boolean attribute to your
+            |
+            code
+              = '<form>'
+            | . This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. Try to submit the form below; our JavaScript will intercept the submit button and relay feedback to you. When attempting to submit, you’ll see the
+            |
+            code :invalid
+            |  and
+            |
+            code :valid
+            |  styles applied to your form controls.
+          p
+            | Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for
+            |
+            code
+              = '<select>'
+            | s are only available with
+            |
+            code .form-select
+            | , and not
+            |
+            code .form-control
+            | .
+          +example()
+            form.row.g-3.needs-validation(novalidate)
+              .col-md-4
+                label.form-label(for='validationCustom01') First name
+                input.form-control#validationCustom01(type='text' value='Mark' required)
+                .valid-feedback.
+                  Looks good!
+              .col-md-4
+                label.form-label(for='validationCustom02') Last name
+                input.form-control#validationCustom02(type='text' value='Otto' required)
+                .valid-feedback.
+                  Looks good!
+              .col-md-4
+                label.form-label(for='validationCustomUsername') Username
+                .input-group.has-validation
+                  span.input-group-text#inputGroupPrepend @
+                  input.form-control#validationCustomUsername(type='text' aria-describedby='inputGroupPrepend' required)
+                  .invalid-feedback.
+                    Please choose a username.
+              .col-md-6
+                label.form-label(for='validationCustom03') City
+                input.form-control#validationCustom03(type='text' required)
+                .invalid-feedback.
+                  Please provide a valid city.
+              .col-md-3
+                label.form-label(for='validationCustom04') State
+                select.form-select#validationCustom04(required)
+                  option(selected disabled value) Choose...
+                  option ...
+                .invalid-feedback.
+                  Please select a valid state.
+              .col-md-3
+                label.form-label(for='validationCustom05') Zip
+                input.form-control#validationCustom05(type='text' required)
+                .invalid-feedback.
+                  Please provide a valid zip.
+              .col-12
+                .form-check
+                  input.form-check-input#invalidCheck(type='checkbox' required)
+                  label.form-check-label(for='invalidCheck').
+                    Agree to terms and conditions
+                  .invalid-feedback.
+                    You must agree before submitting.
+              .col-12
+                button.btn.btn-primary(type='submit') Submit form
+            script.
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function () {
+                'use strict'
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms).forEach(function (form) {
+                  form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                      event.preventDefault()
+                      event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                  }, false)
+                })
+              })()
+
+    .col-12
+      .card.mb-4
+        .card-header
+          | Browser defaults
+        .card-body
+          p Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.
+          p While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
+          +example()
+            form.row.g-3
+              .col-md-4
+                label.form-label(for='validationDefault01') First name
+                input.form-control#validationDefault01(type='text' value='Mark' required)
+              .col-md-4
+                label.form-label(for='validationDefault02') Last name
+                input.form-control#validationDefault02(type='text' value='Otto' required)
+              .col-md-4
+                label.form-label(for='validationDefaultUsername') Username
+                .input-group
+                  span.input-group-text#inputGroupPrepend2 @
+                  input.form-control#validationDefaultUsername(type='text' aria-describedby='inputGroupPrepend2' required)
+              .col-md-6
+                label.form-label(for='validationDefault03') City
+                input.form-control#validationDefault03(type='text' required)
+              .col-md-3
+                label.form-label(for='validationDefault04') State
+                select.form-select#validationDefault04(required)
+                  option(selected disabled value) Choose...
+                  option ...
+              .col-md-3
+                label.form-label(for='validationDefault05') Zip
+                input.form-control#validationDefault05(type='text' required)
+              .col-12
+                .form-check
+                  input.form-check-input#invalidCheck2(type='checkbox' required)
+                  label.form-check-label(for='invalidCheck2').
+                    Agree to terms and conditions
+              .col-12
+                button.btn.btn-primary(type='submit') Submit form
+    .col-12
+      .card.mb-4
+        .card-header
+          | Server side
+        .card-body
+          p
+            | We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with
+            |
+            code .is-invalid
+            |  and
+            |
+            code .is-valid
+            | . Note that
+            |
+            code .invalid-feedback
+            |  is also supported with these classes.
+          p
+            | For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using
+            |
+            code aria-describedby
+            |  (noting that this attribute allows more than one
+            |
+            code id
+            |  to be referenced, in case the field already points to additional form text).
+          p
+            | To fix
+            a(href='https://github.com/twbs/bootstrap/issues/25110') issues with border radii
+            | , input groups require an additional
+            |
+            code .has-validation
+            |  class.
+          +example()
+            form.row.g-3
+              .col-md-4
+                label.form-label(for='validationServer01') First name
+                input.form-control.is-valid#validationServer01(type='text' value='Mark' required)
+                .valid-feedback.
+                  Looks good!
+              .col-md-4
+                label.form-label(for='validationServer02') Last name
+                input.form-control.is-valid#validationServer02(type='text' value='Otto' required)
+                .valid-feedback.
+                  Looks good!
+              .col-md-4
+                label.form-label(for='validationServerUsername') Username
+                .input-group.has-validation
+                  span.input-group-text#inputGroupPrepend3 @
+                  input.form-control.is-invalid#validationServerUsername(type='text' aria-describedby='inputGroupPrepend3 validationServerUsernameFeedback' required)
+                  #validationServerUsernameFeedback.invalid-feedback.
+                    Please choose a username.
+              .col-md-6
+                label.form-label(for='validationServer03') City
+                input.form-control.is-invalid#validationServer03(type='text' aria-describedby='validationServer03Feedback' required)
+                #validationServer03Feedback.invalid-feedback.
+                  Please provide a valid city.
+              .col-md-3
+                label.form-label(for='validationServer04') State
+                select.form-select.is-invalid#validationServer04(aria-describedby='validationServer04Feedback' required)
+                  option(selected disabled value) Choose...
+                  option ...
+                #validationServer04Feedback.invalid-feedback.
+                  Please select a valid state.
+              .col-md-3
+                label.form-label(for='validationServer05') Zip
+                input.form-control.is-invalid#validationServer05(type='text' aria-describedby='validationServer05Feedback' required)
+                #validationServer05Feedback.invalid-feedback.
+                  Please provide a valid zip.
+              .col-12
+                .form-check
+                  input.form-check-input.is-invalid#invalidCheck3(type='checkbox' aria-describedby='invalidCheck3Feedback' required)
+                  label.form-check-label(for='invalidCheck3').
+                    Agree to terms and conditions
+                  #invalidCheck3Feedback.invalid-feedback.
+                    You must agree before submitting.
+
+              .col-12
+                button.btn.btn-primary(type='submit') Submit form
+    .col-12
+      .card.mb-4
+        .card-header
+          | Supported elements
+        .card-body
+          p Validation styles are available for the following form controls and components:
+          ul
+            li
+              |
+              code
+                = '<input>'
+              | s and
+              |
+              code
+                = '<textarea>'
+              | s with
+              |
+              code .form-control
+              |  (including up to one
+              |
+              code .form-control
+              |  in input groups)
+            li
+              |
+              code
+                = '<select>'
+              | s with
+              |
+              code .form-select
+            li
+              |
+              code .form-check
+              | s
+          +example()
+            form.was-validated
+              .mb-3
+                label.form-label(for='validationTextarea') Textarea
+                textarea.form-control.is-invalid#validationTextarea(placeholder='Required example textarea' required)
+                .invalid-feedback.
+                  Please enter a message in the textarea.
+              .form-check.mb-3
+                input.form-check-input#validationFormCheck1(type='checkbox' required)
+                label.form-check-label(for='validationFormCheck1') Check this checkbox
+                .invalid-feedback Example invalid feedback text
+              .form-check
+                input.form-check-input#validationFormCheck2(type='radio' name='radio-stacked' required)
+                label.form-check-label(for='validationFormCheck2') Toggle this radio
+              .form-check.mb-3
+                input.form-check-input#validationFormCheck3(type='radio' name='radio-stacked' required)
+                label.form-check-label(for='validationFormCheck3') Or toggle this other radio
+                .invalid-feedback More example invalid feedback text
+              .mb-3
+                select.form-select(required aria-label='select example')
+                  option(value) Open this select menu
+                  option(value='1') One
+                  option(value='2') Two
+                  option(value='3') Three
+                .invalid-feedback Example invalid select feedback
+              .mb-3
+                input.form-control(type='file' aria-label='file example' required)
+                .invalid-feedback Example invalid form file feedback
+              .mb-3
+                button.btn.btn-primary(type='submit' disabled) Submit form
+
+    .col-12
+      .card.mb-4
+        .card-header
+          | Tooltips
+        .card-body
+          p
+            | If your form layout allows it, you can swap the
+            |
+            code .{valid|invalid}-feedback
+            |  classes for
+            |
+            code .{valid|invalid}-tooltip
+            |  classes to display validation feedback in a styled tooltip. Be sure to have a parent with
+            |
+            code position: relative
+            |  on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.
+          +example()
+            form.row.g-3.needs-validation(novalidate)
+              .col-md-4.position-relative
+                label.form-label(for='validationTooltip01') First name
+                input.form-control#validationTooltip01(type='text' value='Mark' required)
+                .valid-tooltip.
+                  Looks good!
+              .col-md-4.position-relative
+                label.form-label(for='validationTooltip02') Last name
+                input.form-control#validationTooltip02(type='text' value='Otto' required)
+                .valid-tooltip.
+                  Looks good!
+              .col-md-4.position-relative
+                label.form-label(for='validationTooltipUsername') Username
+                .input-group.has-validation
+                  span.input-group-text#validationTooltipUsernamePrepend @
+                  input.form-control#validationTooltipUsername(type='text' aria-describedby='validationTooltipUsernamePrepend' required)
+                  .invalid-tooltip.
+                    Please choose a unique and valid username.
+              .col-md-6.position-relative
+                label.form-label(for='validationTooltip03') City
+                input.form-control#validationTooltip03(type='text' required)
+                .invalid-tooltip.
+                  Please provide a valid city.
+              .col-md-3.position-relative
+                label.form-label(for='validationTooltip04') State
+                select.form-select#validationTooltip04(required)
+                  option(selected disabled value) Choose...
+                  option ...
+                .invalid-tooltip.
+                  Please select a valid state.
+              .col-md-3.position-relative
+                label.form-label(for='validationTooltip05') Zip
+                input.form-control#validationTooltip05(type='text' required)
+                .invalid-tooltip.
+                  Please provide a valid zip.
+              .col-12
+                button.btn.btn-primary(type='submit') Submit form

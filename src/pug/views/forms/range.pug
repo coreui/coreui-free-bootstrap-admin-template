@@ -1,0 +1,79 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/forms/range/')
+
+block view
+  +callout('Range', 'https://coreui.io/docs/4.0/forms/range/')
+  .row(data-masonry='{"percentPosition": true }')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Overview
+        .card-body
+          p
+            | Create custom
+            |
+            code
+              = '<input type="range">'
+            |  controls with
+            |
+            code .form-range
+            | . The track (the background) and thumb (the value) are both styled to appear the same across browsers. As only Edge Legacy and Firefox supports “filling” their track from the left or right of the thumb as a means to visually indicate progress, we do not currently support it.
+          +example()
+            label.form-label(for='customRange1') Example range
+            input.form-range#customRange1(type='range')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Disabled
+        .card-body
+          p
+            | Add the
+            code disabled
+            |  boolean attribute on an input to give it a grayed out appearance and remove pointer events.
+          +example()
+            label.form-label(for='disabledRange') Disabled range
+            input.form-range#disabledRange(type='range' disabled)
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Min and max
+        .card-body
+          p
+            | Range inputs have implicit values for
+            |
+            code min
+            |  and
+            |
+            code max
+            | —
+            |
+            code 0
+            |  and
+            |
+            code 100
+            | , respectively. You may specify new values for those using the
+            |
+            code min
+            |  and
+            |
+            code max
+            |  attributes.
+          +example()
+            label.form-label(for='customRange2') Example range
+            input.form-range#customRange2(type='range' min='0' max='5')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Steps
+        .card-body
+          p
+            | By default, range inputs “snap” to integer values. To change this, you can specify a
+            code step
+            |  value. In the example below, we double the number of steps by using
+            code step="0.5"
+            | .
+          +example()
+            label.form-label(for='customRange3') Example range
+            input.form-range#customRange3(type='range' min='0' max='5' step='0.5')

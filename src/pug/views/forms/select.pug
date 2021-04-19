@@ -1,0 +1,84 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/forms/select/')
+
+block view
+  +callout('Select', 'https://coreui.io/docs/4.0/forms/select/')
+  .row(data-masonry='{"percentPosition": true }')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Default
+        .card-body
+          p
+            | Custom
+            code
+             = '<select>'
+            |  menus need only a custom class,
+            code .form-select
+            |  to trigger the custom styles. Custom styles are limited to the
+            code
+             = '<select>'
+            | ’s initial appearance and cannot modify the
+            code
+             = '<option>'
+            | s due to browser limitations.
+          +example()
+            select.form-select(aria-label='Default select example')
+              option(selected) Open this select menu
+              option(value='1') One
+              option(value='2') Two
+              option(value='3') Three
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Sizing
+        .card-body
+          p You may also choose from small and large custom selects to match our similarly sized text inputs.
+          +example()
+            select.form-select.form-select-lg.mb-3(aria-label='.form-select-lg example')
+              option(selected) Open this select menu
+              option(value='1') One
+              option(value='2') Two
+              option(value='3') Three
+            select.form-select.form-select-sm(aria-label='.form-select-sm example')
+              option(selected) Open this select menu
+              option(value='1') One
+              option(value='2') Two
+              option(value='3') Three
+          p
+            | The
+            code multiple
+            |  attribute is also supported:
+          +example()
+            select.form-select(multiple aria-label='multiple select example')
+              option(selected) Open this select menu
+              option(value='1') One
+              option(value='2') Two
+              option(value='3') Three
+          p
+            | As is the
+            code size
+            |  attribute:
+          +example()
+            select.form-select(size='3' aria-label='size 3 select example')
+              option(selected) Open this select menu
+              option(value='1') One
+              option(value='2') Two
+              option(value='3') Three
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Disabled
+        .card-body
+          p
+            | Add the
+            code disabled
+            |  boolean attribute on a select to give it a grayed out appearance and remove pointer events.
+          +example()
+            select.form-select(aria-label='Disabled select example' disabled)
+              option(selected) Open this select menu
+              option(value='1') One
+              option(value='2') Two
+              option(value='3') Three

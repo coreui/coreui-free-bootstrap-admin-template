@@ -1,11 +1,14 @@
 - var static = true
 doctype html
 include ../_partials/banner.pug
+include ../_mixins/callout.pug
+include ../_mixins/example.pug
 
 html(lang='en')
   head
     base(href=base)
     include ../_partials/head.pug
+    block canonical
     block styles
   body
     include ../_partials/sidebar.pug

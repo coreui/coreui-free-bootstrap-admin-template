@@ -1,0 +1,305 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/forms/checks-radios/')
+
+block view
+  +callout('Checks and radios', 'https://coreui.io/docs/4.0/forms/checks-radios/')
+  .row(data-masonry='{"percentPosition": true }')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Approach
+        .card-body
+          p
+            | Browser default checkboxes and radios are replaced with the help of
+            code .form-check
+            | , a series of classes for both input types that improves the layout and behavior of their HTML elements, that provide greater customization and cross browser consistency. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.
+          p
+            | Structurally, our
+            code
+              = '<input>'
+            | s and
+            code
+              = '<label>'
+            | s are sibling elements as opposed to an
+            code
+              = '<input>'
+            |  within a
+            code
+              = '<label>'
+            | . This is slightly more verbose as you must specify
+            code id
+            |  and
+            code for
+            |  attributes to relate the
+            code
+              = '<input>'
+            |  and
+            code
+              = '<label>'
+            | . We use the sibling selector (
+            code ~
+            | ) for all our
+            code
+              = '<input>'
+            |  states, like
+            code :checked
+            |  or
+            code :disabled
+            | . When combined with the
+            code .form-check-label
+            |  class, we can easily style the text for each item based on the
+            code
+              = '<input>'
+            | ’s state.
+          p Our checks use custom Bootstrap icons to indicate checked or indeterminate states.
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Checks
+        .card-body
+          +example()
+            .form-check
+              input.form-check-input#flexCheckDefault(type='checkbox')
+              label.form-check-label(for='flexCheckDefault') Default checkbox
+            .form-check
+              input.form-check-input#flexCheckChecked(type='checkbox' checked)
+              label.form-check-label(for='flexCheckChecked') Checked checkbox
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Indeterminate
+        .card-body
+          p
+            | Checkboxes can utilize the
+            code :indeterminate
+            |  pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).
+          +example()
+            .form-check
+              input.form-check-input#flexCheckIndeterminate(type='checkbox')
+              label.form-check-label(for='flexCheckIndeterminate') Indeterminate checkbox
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Disabled
+        .card-body
+          p
+            | Add the
+            code disabled
+            |  attribute and the associated
+            code
+              = '<label>'
+            | s are automatically styled to match with a lighter color to help indicate the input’s state.
+          +example()
+            .form-check
+              input.form-check-input#flexCheckDisabled(type='checkbox' disabled)
+              label.form-check-label(for='flexCheckDisabled') Disabled checkbox
+            .form-check
+              input.form-check-input#flexCheckCheckedDisabled(type='checkbox' checked disabled)
+              label.form-check-label(for='flexCheckCheckedDisabled') Disabled checked checkbox
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Radios
+        .card-body
+          +example()
+            .form-check
+              input.form-check-input#flexRadioDefault1(type='radio' name='flexRadioDefault')
+              label.form-check-label(for='flexRadioDefault1') Default radio
+            .form-check
+              input.form-check-input#flexRadioDefault2(type='radio' name='flexRadioDefault' checked)
+              label.form-check-label(for='flexRadioDefault2') Default checked radio
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Disabled
+        .card-body
+          p
+            | Add the
+            code disabled
+            |  attribute and the associated
+            code
+              = '<label>'
+            | s are automatically styled to match with a lighter color to help indicate the input’s state.
+          +example()
+            .form-check
+              input.form-check-input#flexRadioDisabled(type='radio' name='flexRadioDisabled' disabled)
+              label.form-check-label(for='flexRadioDisabled') Disabled radio
+            .form-check
+              input.form-check-input#flexRadioCheckedDisabled(type='radio' name='flexRadioDisabled' checked disabled)
+              label.form-check-label(for='flexRadioCheckedDisabled') Disabled checked radio
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Switches
+        .card-body
+          p
+            | A switch has the markup of a custom checkbox but uses the
+            code .form-switch
+            |  class to render a toggle switch. Switches also support the
+            code disabled
+            |  attribute.
+          +example()
+            .form-check.form-switch
+              input.form-check-input#flexSwitchCheckDefault(type='checkbox')
+              label.form-check-label(for='flexSwitchCheckDefault') Default switch checkbox input
+            .form-check.form-switch
+              input.form-check-input#flexSwitchCheckChecked(type='checkbox' checked)
+              label.form-check-label(for='flexSwitchCheckChecked') Checked switch checkbox input
+            .form-check.form-switch
+              input.form-check-input#flexSwitchCheckDisabled(type='checkbox' disabled)
+              label.form-check-label(for='flexSwitchCheckDisabled') Disabled switch checkbox input
+            .form-check.form-switch
+              input.form-check-input#flexSwitchCheckCheckedDisabled(type='checkbox' checked disabled)
+              label.form-check-label(for='flexSwitchCheckCheckedDisabled') Disabled checked switch checkbox input
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Sizes
+        .card-body
+          +example()
+            .form-check.form-switch
+              input.form-check-input#flexSwitchCheckDefault(type='checkbox')
+              label.form-check-label(for='flexSwitchCheckDefault') Default switch checkbox input
+            .form-check.form-switch.form-switch-lg
+              input.form-check-input#flexSwitchCheckDefaultLg(type='checkbox')
+              label.form-check-label(for='flexSwitchCheckDefaultLg') Large switch checkbox input
+            .form-check.form-switch.form-switch-xl
+              input.form-check-input#flexSwitchCheckDefaultXl(type='checkbox')
+              label.form-check-label(for='flexSwitchCheckDefaultXl') Extra large switch checkbox input
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Default (stacked)
+        .card-body
+          p
+            | By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with
+            code .form-check
+            | .
+          +example()
+            .form-check
+              input.form-check-input#defaultCheck1(type='checkbox')
+              label.form-check-label(for='defaultCheck1') Default checkbox
+            .form-check
+              input.form-check-input#defaultCheck2(type='checkbox' disabled)
+              label.form-check-label(for='defaultCheck2') Disabled checkbox
+          +example()
+            .form-check
+              input.form-check-input#exampleRadios1(type='radio' name='exampleRadios' value='option1' checked)
+              label.form-check-label(for='exampleRadios1') Default radio
+            .form-check
+              input.form-check-input#exampleRadios2(type='radio' name='exampleRadios' value='option2')
+              label.form-check-label(for='exampleRadios2') Second default radio
+            .form-check
+              input.form-check-input#exampleRadios3(type='radio' name='exampleRadios' value='option3' disabled)
+              label.form-check-label(for='exampleRadios3') Disabled radio
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Inline
+        .card-body
+          p
+            | Group checkboxes or radios on the same horizontal row by adding
+            code .form-check-inline
+            |  to any
+            code .form-check
+            | .
+          +example()
+            .form-check.form-check-inline
+              input.form-check-input#inlineCheckbox1(type='checkbox' value='option1')
+              label.form-check-label(for='inlineCheckbox1') 1
+            .form-check.form-check-inline
+              input.form-check-input#inlineCheckbox2(type='checkbox' value='option2')
+              label.form-check-label(for='inlineCheckbox2') 2
+            .form-check.form-check-inline
+              input.form-check-input#inlineCheckbox3(type='checkbox' value='option3' disabled)
+              label.form-check-label(for='inlineCheckbox3') 3 (disabled)
+          +example()
+            .form-check.form-check-inline
+              input.form-check-input#inlineRadio1(type='radio' name='inlineRadioOptions' value='option1')
+              label.form-check-label(for='inlineRadio1') 1
+            .form-check.form-check-inline
+              input.form-check-input#inlineRadio2(type='radio' name='inlineRadioOptions' value='option2')
+              label.form-check-label(for='inlineRadio2') 2
+            .form-check.form-check-inline
+              input.form-check-input#inlineRadio3(type='radio' name='inlineRadioOptions' value='option3' disabled)
+              label.form-check-label(for='inlineRadio3') 3 (disabled)
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Without labels
+        .card-body
+          p
+            | Omit the wrapping
+            code .form-check
+            |  for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive technologies (for instance, using
+            code aria-label
+            | ). See the
+            a(href='https://coreui.io/docs/4.0/docs/4.0/forms/overview/#accessibility') forms overview accessibility
+            |  section for details.
+          +example()
+            div
+              input.form-check-input#checkboxNoLabel(type='checkbox' aria-label='...')
+            div
+              input.form-check-input#radioNoLabel1(type='radio' name='radioNoLabel' aria-label='...')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Toggle buttons
+        .card-body
+          p
+            | Create button-like checkboxes and radio buttons by using
+            code .btn
+            |  styles rather than
+            code .form-check-label
+            |  on the
+            code
+              = '<label>'
+            |  elements. These toggle buttons can further be grouped in a
+            a(href='https://coreui.io/docs/4.0/docs/4.0/components/button-group/') button group
+            |  if needed.
+          h3#checkbox-toggle-buttons
+            | Checkbox toggle buttons
+            a.anchorjs-link(aria-label='Anchor' data-anchorjs-icon='#' href='#checkbox-toggle-buttons' style='padding-left: 0.375em;')
+          +example()
+            input.btn-check#btn-check(type='checkbox' autocomplete='off')
+            label.btn.btn-primary(for='btn-check') Single toggle
+          +example()
+            input.btn-check#btn-check-2(type='checkbox' checked autocomplete='off')
+            label.btn.btn-primary(for='btn-check-2') Checked
+          +example()
+            input.btn-check#btn-check-3(type='checkbox' autocomplete='off' disabled)
+            label.btn.btn-primary(for='btn-check-3') Disabled
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Radio toggle buttons
+        .card-body
+          +example()
+            input.btn-check#option1(type='radio' name='options' autocomplete='off' checked)
+            label.btn.btn-secondary(for='option1') Checked
+            input.btn-check#option2(type='radio' name='options' autocomplete='off')
+            label.btn.btn-secondary(for='option2') Radio
+            input.btn-check#option3(type='radio' name='options' autocomplete='off' disabled)
+            label.btn.btn-secondary(for='option3') Disabled
+            input.btn-check#option4(type='radio' name='options' autocomplete='off')
+            label.btn.btn-secondary(for='option4') Radio
+          h3#outlined-styles
+            | Outlined styles
+            a.anchorjs-link(aria-label='Anchor' data-anchorjs-icon='#' href='#outlined-styles' style='padding-left: 0.375em;')
+          p
+            | Different variants of
+            code .btn
+            | , such at the various outlined styles, are supported.
+          +example()
+            input.btn-check#btn-check-outlined(type='checkbox' autocomplete='off')
+            label.btn.btn-outline-primary(for='btn-check-outlined') Single toggle
+            br
+            input.btn-check#btn-check-2-outlined(type='checkbox' checked autocomplete='off')
+            label.btn.btn-outline-secondary(for='btn-check-2-outlined') Checked
+            br
+            input.btn-check#success-outlined(type='radio' name='options-outlined' autocomplete='off' checked)
+            label.btn.btn-outline-success(for='success-outlined') Checked success radio
+            input.btn-check#danger-outlined(type='radio' name='options-outlined' autocomplete='off')
+            label.btn.btn-outline-danger(for='danger-outlined') Danger radio

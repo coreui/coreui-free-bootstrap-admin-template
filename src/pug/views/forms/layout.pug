@@ -1,0 +1,399 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/forms/layout/')
+
+block view
+  +callout('Layout', 'https://coreui.io/docs/4.0/forms/layout/')
+  .row(data-masonry='{"percentPosition": true }')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Forms
+        .card-body
+          p
+            | Every group of form fields should reside in a
+            |
+            code
+              = '<form>'
+            |  element. CoreUI for Bootstrap provides no default styling for the
+            |
+            code
+              = '<form>'
+            |  element, but there are some powerful browser features that are provided by default.
+          ul
+            li
+              | New to browser forms? Consider reviewing
+              a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form') the MDN form docs
+              |  for an overview and complete list of available attributes.
+            li
+              |
+              code
+                = '<button>'
+              | s within a
+              |
+              code
+                = '<form>'
+              |  default to
+              |
+              code type="submit"
+              | , so strive to be specific and always include a
+              |
+              code type
+              | .
+            li
+              | You can disable every form element within a form with the
+              |
+              code disabled
+              |  attribute on the
+              |
+              code
+                = '<form>'
+              | .
+          p
+            | Since CoreUI for Bootstrap applies
+            |
+            code display: block
+            |  and
+            |
+            code width: 100%
+            |  to almost all our form controls, forms will by default stack vertically. Additional classes can be used to vary this layout on a per-form basis.
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Utilities
+        .card-body
+          p
+            a(href='https://coreui.io/docs/4.0/docs/4.0/utilities/spacing/') Margin utilities
+            |  are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to
+            |
+            code margin-bottom
+            |  utilities, and using a single direction throughout the form for consistency.
+          p
+            | Feel free to build your forms however you like, with
+            |
+            code
+              = '<fieldset>'
+            | s,
+            |
+            code
+              = '<div>'
+            | s, or nearly any other element.
+          +example()
+            .mb-3
+              label.form-label(for='formGroupExampleInput') Example label
+              input.form-control#formGroupExampleInput(type='text' placeholder='Example input placeholder')
+            .mb-3
+              label.form-label(for='formGroupExampleInput2') Another label
+              input.form-control#formGroupExampleInput2(type='text' placeholder='Another input placeholder')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Form grid
+        .card-body
+          p
+            | More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options.
+            strong
+              | Requires the
+              |
+              code $enable-grid-classes
+              |  Sass variable to be enabled
+            |  (on by default).
+          +example()
+            .row
+              .col
+                input.form-control(type='text' placeholder='First name' aria-label='First name')
+              .col
+                input.form-control(type='text' placeholder='Last name' aria-label='Last name')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Gutters
+        .card-body
+          p
+            | By adding
+            a(href='https://coreui.io/docs/4.0/docs/4.0/layout/gutters/') gutter modifier classes
+            | , you can have control over the gutter width in as well the inline as block direction.
+            strong
+              | Also requires the
+              |
+              code $enable-grid-classes
+              |  Sass variable to be enabled
+            |  (on by default).
+          +example()
+            .row.g-3
+              .col
+                input.form-control(type='text' placeholder='First name' aria-label='First name')
+              .col
+                input.form-control(type='text' placeholder='Last name' aria-label='Last name')
+          p More complex layouts can also be created with the grid system.
+          +example()
+            form.row.g-3
+              .col-md-6
+                label.form-label(for='inputEmail4') Email
+                input.form-control#inputEmail4(type='email')
+              .col-md-6
+                label.form-label(for='inputPassword4') Password
+                input.form-control#inputPassword4(type='password')
+              .col-12
+                label.form-label(for='inputAddress') Address
+                input.form-control#inputAddress(type='text' placeholder='1234 Main St')
+              .col-12
+                label.form-label(for='inputAddress2') Address 2
+                input.form-control#inputAddress2(type='text' placeholder='Apartment, studio, or floor')
+              .col-md-6
+                label.form-label(for='inputCity') City
+                input.form-control#inputCity(type='text')
+              .col-md-4
+                label.form-label(for='inputState') State
+                select#inputState.form-select
+                  option(selected) Choose...
+                  option ...
+              .col-md-2
+                label.form-label(for='inputZip') Zip
+                input.form-control#inputZip(type='text')
+              .col-12
+                .form-check
+                  input.form-check-input#gridCheck(type='checkbox')
+                  label.form-check-label(for='gridCheck').
+
+                    Check me out
+
+              .col-12
+                button.btn.btn-primary(type='submit') Sign in
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Horizontal form
+        .card-body
+          p
+            | Create horizontal forms with the grid by adding the
+            |
+            code .row
+            |  class to form groups and using the
+            |
+            code .col-*-*
+            |  classes to specify the width of your labels and controls. Be sure to add
+            |
+            code .col-form-label
+            |  to your
+            |
+            code <label>
+            | s as well so they’re vertically centered with their associated form controls.
+          p
+            | At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we’ve removed the
+            |
+            code padding-top
+            |  on our stacked radio inputs label to better align the text baseline.
+          +example()
+            form
+              .row.mb-3
+                label.col-sm-2.col-form-label(for='inputEmail3') Email
+                .col-sm-10
+                  input.form-control#inputEmail3(type='email')
+              .row.mb-3
+                label.col-sm-2.col-form-label(for='inputPassword3') Password
+                .col-sm-10
+                  input.form-control#inputPassword3(type='password')
+              fieldset.row.mb-3
+                legend.col-form-label.col-sm-2.pt-0 Radios
+                .col-sm-10
+                  .form-check
+                    input.form-check-input#gridRadios1(type='radio' name='gridRadios' value='option1' checked)
+                    label.form-check-label(for='gridRadios1').
+
+                      First radio
+
+                  .form-check
+                    input.form-check-input#gridRadios2(type='radio' name='gridRadios' value='option2')
+                    label.form-check-label(for='gridRadios2').
+
+                      Second radio
+
+                  .form-check.disabled
+                    input.form-check-input#gridRadios3(type='radio' name='gridRadios' value='option3' disabled)
+                    label.form-check-label(for='gridRadios3').
+
+                      Third disabled radio
+
+              .row.mb-3
+                .col-sm-10.offset-sm-2
+                  .form-check
+                    input.form-check-input#gridCheck1(type='checkbox')
+                    label.form-check-label(for='gridCheck1').
+
+                      Example checkbox
+
+              button.btn.btn-primary(type='submit') Sign in
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Horizontal form label sizing
+        .card-body
+          p
+            | Be sure to use
+            |
+            code .col-form-label-sm
+            |  or
+            |
+            code .col-form-label-lg
+            |  to your
+            |
+            code <label>
+            | s or
+            |
+            code <legend>
+            | s to correctly follow the size of
+            |
+            code .form-control-lg
+            |  and
+            |
+            code .form-control-sm
+            | .
+          +example()
+            .row.mb-3
+              label.col-sm-2.col-form-label.col-form-label-sm(for='colFormLabelSm') Email
+              .col-sm-10
+                input.form-control.form-control-sm#colFormLabelSm(type='email' placeholder='col-form-label-sm')
+            .row.mb-3
+              label.col-sm-2.col-form-label(for='colFormLabel') Email
+              .col-sm-10
+                input.form-control#colFormLabel(type='email' placeholder='col-form-label')
+            .row
+              label.col-sm-2.col-form-label.col-form-label-lg(for='colFormLabelLg') Email
+              .col-sm-10
+                input.form-control.form-control-lg#colFormLabelLg(type='email' placeholder='col-form-label-lg')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Column sizing
+        .card-body
+          p
+            | As shown in the previous examples, our grid system allows you to place any number of
+            |
+            code .col
+            | s within a
+            |
+            code .row
+            | . They’ll split the available width equally between them. You may also pick a subset of your columns to take up more or less space, while the remaining
+            |
+            code .col
+            | s equally split the rest, with specific column classes like
+            |
+            code .col-sm-7
+            | .
+          +example()
+            .row.g-3
+              .col-sm-7
+                input.form-control(type='text' placeholder='City' aria-label='City')
+              .col-sm
+                input.form-control(type='text' placeholder='State' aria-label='State')
+              .col-sm
+                input.form-control(type='text' placeholder='Zip' aria-label='Zip')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Auto-sizing
+        .card-body
+          p
+            | The example below uses a flexbox utility to vertically center the contents and changes
+            |
+            code .col
+            |  to
+            |
+            code .col-auto
+            |  so that your columns only take up as much space as needed. Put another way, the column sizes itself based on the contents.
+          +example()
+            form.row.gy-2.gx-3.align-items-center
+              .col-auto
+                label.visually-hidden(for='autoSizingInput') Name
+                input.form-control#autoSizingInput(type='text' placeholder='Jane Doe')
+              .col-auto
+                label.visually-hidden(for='autoSizingInputGroup') Username
+                .input-group
+                  .input-group-text @
+                  input.form-control#autoSizingInputGroup(type='text' placeholder='Username')
+              .col-auto
+                label.visually-hidden(for='autoSizingSelect') Preference
+                select.form-select#autoSizingSelect
+                  option(selected) Choose...
+                  option(value='1') One
+                  option(value='2') Two
+                  option(value='3') Three
+              .col-auto
+                .form-check
+                  input.form-check-input#autoSizingCheck(type='checkbox')
+                  label.form-check-label(for='autoSizingCheck').
+
+                    Remember me
+
+              .col-auto
+                button.btn.btn-primary(type='submit') Submit
+          p You can then remix that once again with size-specific column classes.
+          +example()
+            form.row.gx-3.gy-2.align-items-center
+              .col-sm-3
+                label.visually-hidden(for='specificSizeInputName') Name
+                input.form-control#specificSizeInputName(type='text' placeholder='Jane Doe')
+              .col-sm-3
+                label.visually-hidden(for='specificSizeInputGroupUsername') Username
+                .input-group
+                  .input-group-text @
+                  input.form-control#specificSizeInputGroupUsername(type='text' placeholder='Username')
+              .col-sm-3
+                label.visually-hidden(for='specificSizeSelect') Preference
+                select.form-select#specificSizeSelect
+                  option(selected) Choose...
+                  option(value='1') One
+                  option(value='2') Two
+                  option(value='3') Three
+              .col-auto
+                .form-check
+                  input.form-check-input#autoSizingCheck2(type='checkbox')
+                  label.form-check-label(for='autoSizingCheck2').
+
+                    Remember me
+
+              .col-auto
+                button.btn.btn-primary(type='submit') Submit
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Inline forms
+        .card-body
+          p
+            | Use the
+            |
+            code .col-auto
+            |  class to create horizontal layouts. By adding
+            a(href='https://coreui.io/docs/4.0/docs/4.0/layout/gutters/') gutter modifier classes
+            | , we’ll have gutters in horizontal and vertical directions. The
+            |
+            code .align-items-center
+            |  aligns the form elements to the middle, making the
+            |
+            code .form-checkbox
+            |  align properly.
+          +example()
+            form.row.row-cols-lg-auto.g-3.align-items-center
+              .col-12
+                label.visually-hidden(for='inlineFormInputGroupUsername') Username
+                .input-group
+                  .input-group-text @
+                  input.form-control#inlineFormInputGroupUsername(type='text' placeholder='Username')
+              .col-12
+                label.visually-hidden(for='inlineFormSelectPref') Preference
+                select.form-select#inlineFormSelectPref
+                  option(selected) Choose...
+                  option(value='1') One
+                  option(value='2') Two
+                  option(value='3') Three
+              .col-12
+                .form-check
+                  input.form-check-input#inlineFormCheck(type='checkbox')
+                  label.form-check-label(for='inlineFormCheck').
+
+                    Remember me
+
+              .col-12
+                button.btn.btn-primary(type='submit') Submit

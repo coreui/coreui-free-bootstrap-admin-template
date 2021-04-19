@@ -1,0 +1,151 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/forms/form-control/')
+
+block view
+  +callout('Form Control', 'https://coreui.io/docs/4.0/forms/form-control/')
+  .row(data-masonry='{"percentPosition": true }')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Example
+        .card-body
+          +example()
+            .mb-3
+              label.form-label(for='exampleFormControlInput1') Email address
+              input.form-control#exampleFormControlInput1(type='email' placeholder='name@example.com')
+            .mb-3
+              label.form-label(for='exampleFormControlTextarea1') Example textarea
+              textarea.form-control#exampleFormControlTextarea1(rows='3')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Sizing
+        .card-body
+          p
+            | Set heights using classes like
+            code .form-control-lg
+            |  and
+            code .form-control-sm
+            | .
+          +example()
+            input.form-control.form-control-lg(type='text' placeholder='.form-control-lg' aria-label='.form-control-lg example')
+            input.form-control(type='text' placeholder='Default input' aria-label='default input example')
+            input.form-control.form-control-sm(type='text' placeholder='.form-control-sm' aria-label='.form-control-sm example')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Disabled
+        .card-body
+          p
+            | Add the
+            code disabled
+            |  boolean attribute on an input to give it a grayed out appearance and remove pointer events.
+          +example()
+            input.form-control(type='text' placeholder='Disabled input' aria-label='Disabled input example' disabled)
+            input.form-control(type='text' placeholder='Disabled readonly input' aria-label='Disabled input example' disabled readonly)
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Readonly
+        .card-body
+          p
+            | Add the
+            code readonly
+            |  boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
+          +example()
+            input.form-control(type='text' placeholder='Readonly input here...' aria-label='readonly input example' readonly)
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Readonly plain text
+        .card-body
+          p
+            | If you want to have
+            code
+              = '<input readonly>'
+            |  elements in your form styled as plain text, use the
+            code .form-control-plaintext
+            |  class to remove the default form field styling and preserve the correct margin and padding.
+          +example()
+            .mb-3.row
+              label.col-sm-2.col-form-label(for='staticEmail') Email
+              .col-sm-10
+                input.form-control-plaintext#staticEmail(type='text' readonly value='email@example.com')
+            .mb-3.row
+              label.col-sm-2.col-form-label(for='inputPassword') Password
+              .col-sm-10
+                input.form-control#inputPassword(type='password')
+          +example()
+            form.row.g-3
+              .col-auto
+                label.visually-hidden(for='staticEmail2') Email
+                input.form-control-plaintext#staticEmail2(type='text' readonly value='email@example.com')
+              .col-auto
+                label.visually-hidden(for='inputPassword2') Password
+                input.form-control#inputPassword2(type='password' placeholder='Password')
+              .col-auto
+            button.btn.btn-primary.mb-3(type='submit') Confirm identity
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | File input
+        .card-body
+          +example()
+            .mb-3
+              label.form-label(for='formFile') Default file input example
+              input.form-control#formFile(type='file')
+            .mb-3
+              label.form-label(for='formFileMultiple') Multiple files input example
+              input.form-control#formFileMultiple(type='file' multiple)
+            .mb-3
+              label.form-label(for='formFileDisabled') Disabled file input example
+              input.form-control#formFileDisabled(type='file' disabled)
+            .mb-3
+              label.form-label(for='formFileSm') Small file input example
+              input.form-control.form-control-sm#formFileSm(type='file')
+            div
+              label.form-label(for='formFileLg') Large file input example
+              input.form-control.form-control-lg#formFileLg(type='file')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Color
+        .card-body
+          +example()
+            label.form-label(for='exampleColorInput') Color picker
+            input.form-control.form-control-color#exampleColorInput(type='color' value='#563d7c' title='Choose your color')
+    .col-lg-6
+      .card.mb-4
+        .card-header
+          | Datalists
+        .card-body
+          p
+            | Datalists allow you to create a group of
+            code
+             = '<option>'
+            | s that can be accessed (and autocompleted) from within an
+            code
+             = '<input>'
+            | . These are similar to
+            code
+              = '<select>'
+            |  elements, but come with more menu styling limitations and differences. While most browsers and operating systems include some support for
+            code
+              = '<datalist>'
+            |  elements, their styling is inconsistent at best.
+          p
+            | Learn more about
+            a(href='https://caniuse.com/datalist') support for datalist elements
+            | .
+          +example()
+            label.form-label(for='exampleDataList') Datalist example
+            input.form-control#exampleDataList(list='datalistOptions' placeholder='Type to search...')
+            datalist#datalistOptions
+              option(value='San Francisco').
+              option(value='New York').
+              option(value='Seattle').
+              option(value='Los Angeles').
+              option(value='Chicago').
+
