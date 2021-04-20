@@ -83,7 +83,7 @@ const checkPath = (src, dest, injectVendors, injectSvg) => {
 const compilePugToHtml = (src, dest, injectVendors, injectSvg) => {
   const dir = dirname(src)
   const file = basename(src).replace('.pug', '.html')
-  const relative = path.relative(resolve(__dirname, '..'), dir.replace('src/pug/views', ''))
+  const relative = path.relative(resolve(__dirname, '..'), dir.replace(`src${path.sep}pug${path.sep}views`, ''))
   let html = compile(src, `${relative}`)
   mkdirp.sync(resolve(__dirname, '..', dest, relative))
 
@@ -100,7 +100,7 @@ const compilePugToHtml = (src, dest, injectVendors, injectSvg) => {
       throw err
     }
 
-    console.log(`${resolve(__dirname, '..', dest, relative, file)} file was saved!`)
+    console.log(`${resolve(__dirname, '..', dest, relative, file)} file saved!`)
   })
 }
 
