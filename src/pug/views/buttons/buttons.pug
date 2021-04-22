@@ -1,463 +1,438 @@
 extends ../../_layout/default.pug
 
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/components/buttons/')
+
 block view
+  +callout('Button', 'https://coreui.io/docs/4.0/components/buttons/')
+  
   .card.mb-4
     .card-header
-      .fw-semibold Standard Buttons
-    .card-body
-      .row.align-items-center
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Normal
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-primary(type='button') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-secondary(type='button') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-success(type='button') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-warning(type='button') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-danger(type='button') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-info(type='button') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-light(type='button') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-dark(type='button') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-link(type='button') Link
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Active State
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-primary.active(type='button', aria-pressed='true') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-secondary.active(type='button', aria-pressed='true') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-success.active(type='button', aria-pressed='true') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-warning.active(type='button', aria-pressed='true') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-danger.active(type='button', aria-pressed='true') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-info.active(type='button', aria-pressed='true') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-light.active(type='button', aria-pressed='true') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-dark.active(type='button', aria-pressed='true') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-link.active(type='button', aria-pressed='true') Link
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Disabled
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-primary(type='button', disabled='') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-secondary(type='button', disabled='') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-success(type='button', disabled='') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-warning(type='button', disabled='') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-danger(type='button', disabled='') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-info(type='button', disabled='') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-light(type='button', disabled='') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-dark(type='button', disabled='') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-link(type='button', disabled='') Link
-  .card.mb-4
-    .card-header
-      .fw-semibold Outline Buttons
+      strong Buttons
     .card-body
       p
-        | Use
+        | CoreUI includes a bunch of predefined Bootstrap buttons, each serving its own semantic purpose. CoreUI also offers some unique buttons styles.
+      p
+        | Buttons show what action will happen when the user clicks or touches it. Bootstrap buttons are used to initialize operations, both in the background or foreground of an experience.
+      +example()
+        .row.align-items-center
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Normal
+          .col-auto
+            button.btn.btn-primary(type='button') Primary
+            button.btn.btn-secondary(type='button') Secondary
+            button.btn.btn-success(type='button') Success
+            button.btn.btn-danger(type='button') Danger
+            button.btn.btn-warning(type='button') Warning
+            button.btn.btn-info(type='button') Info
+            button.btn.btn-light(type='button') Light
+            button.btn.btn-dark(type='button') Dark
+            button.btn.btn-link(type='button') Link
+        .row.align-items-center.mt-3
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Active State
+          .col-auto
+            button.btn.btn-primary.active(type='button', aria-pressed='true') Primary
+            button.btn.btn-secondary.active(type='button', aria-pressed='true') Secondary
+            button.btn.btn-success.active(type='button', aria-pressed='true') Success
+            button.btn.btn-danger.active(type='button', aria-pressed='true') Danger
+            button.btn.btn-warning.active(type='button', aria-pressed='true') Warning
+            button.btn.btn-info.active(type='button', aria-pressed='true') Info
+            button.btn.btn-light.active(type='button', aria-pressed='true') Light
+            button.btn.btn-dark.active(type='button', aria-pressed='true') Dark
+            button.btn.btn-link.active(type='button', aria-pressed='true') Link
+        .row.align-items-center.mt-3
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Disabled
+          .col-auto
+            button.btn.btn-primary.active(type='button', disabled='') Primary
+            button.btn.btn-secondary.active(type='button', disabled='') Secondary
+            button.btn.btn-success.active(type='button', disabled='') Success
+            button.btn.btn-danger.active(type='button', disabled='') Danger
+            button.btn.btn-warning.active(type='button', disabled='') Warning
+            button.btn.btn-info.active(type='button', disabled='') Info
+            button.btn.btn-light.active(type='button', disabled='') Light
+            button.btn.btn-dark.active(type='button', disabled='') Dark
+            button.btn.btn-link.active(type='button', disabled='') Link
+  .card.mb-4
+    .card-header
+      strong Buttons
+      span.small.ms-1 with icons
+    .card-body
+      p
+        | You can combine button with our 
+        a(href='https://icons.coreui.io/') CoreUI Icons
+        | .
+      +example()
+        .row.align-items-center
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Normal
+          .col-auto
+            button.btn.btn-primary(type='button')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Primary
+            button.btn.btn-secondary(type='button')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Secondary
+            button.btn.btn-success(type='button')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Success
+            button.btn.btn-danger(type='button')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Danger
+            button.btn.btn-warning(type='button')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Warning
+            button.btn.btn-info(type='button')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Info
+            button.btn.btn-light(type='button')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Light
+            button.btn.btn-dark(type='button')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Dark
+            button.btn.btn-link(type='button')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Link
+        .row.align-items-center.mt-3
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Active State
+          .col-auto
+            button.btn.btn-primary.active(type='button', aria-pressed='true')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Primary
+            button.btn.btn-secondary.active(type='button', aria-pressed='true')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Secondary
+            button.btn.btn-success.active(type='button', aria-pressed='true')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Success
+            button.btn.btn-danger.active(type='button', aria-pressed='true')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Danger
+            button.btn.btn-warning.active(type='button', aria-pressed='true')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Warning
+            button.btn.btn-info.active(type='button', aria-pressed='true')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Info
+            button.btn.btn-light.active(type='button', aria-pressed='true')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Light
+            button.btn.btn-dark.active(type='button', aria-pressed='true')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Dark
+            button.btn.btn-link.active(type='button', aria-pressed='true')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Link
+        .row.align-items-center.mt-3
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Disabled
+          .col-auto
+            button.btn.btn-primary.active(type='button', disabled='')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Primary
+            button.btn.btn-secondary.active(type='button', disabled='')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Secondary
+            button.btn.btn-success.active(type='button', disabled='')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Success
+            button.btn.btn-danger.active(type='button', disabled='')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Danger
+            button.btn.btn-warning.active(type='button', disabled='')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Warning
+            button.btn.btn-info.active(type='button', disabled='')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Info
+            button.btn.btn-light.active(type='button', disabled='')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Light
+            button.btn.btn-dark.active(type='button', disabled='')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Dark
+            button.btn.btn-link.active(type='button', disabled='')
+              svg.icon.me-2
+                use(xlink:href='node_modules/@coreui/icons/sprites/free.svg#cil-contrast')
+              | Link  
+  .card.mb-4
+    .card-header
+      strong Button
+      span.small.ms-1 tags
+    .card-body
+      p
+        | The 
+        code .btn
+        |  classes are designed for 
+        code 
+          = '<button>'
+        |  , 
+        code 
+          = '<a>'
+        |  or 
+        code 
+          = '<input>'
+        |  elements (though some browsers may apply a slightly different rendering).
+      p
+        | If you’re using 
+        code .btn
+        |  classes on 
+        code 
+          = '<a>'
+        |  elements that are used to trigger functionality ex. collapsing content, these links should be given a 
+        code role="button"
+        |  to adequately communicate their meaning to assistive technologies such as screen readers.
+      +example()
+        a.btn.btn-primary(href='#' role='button') Link
+        button.btn.btn-primary(type='submit') Button
+        input.btn.btn-primary(type='button' value='Input')
+        input.btn.btn-primary(type='submit' value='Submit')
+        input.btn.btn-primary(type='reset' value='Reset')
+  
+  .card.mb-4
+    .card-header
+      strong Buttons
+      span.small.ms-1 outline
+    .card-body
+      p
+        | If you need a button, but without the strong background colors. Replace the default modifier classes with the 
         code .btn-outline-*
-        |  class for outline buttons.
-      .row.align-items-center
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Normal
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-primary(type='button') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-secondary(type='button') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-success(type='button') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-warning(type='button') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-danger(type='button') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-info(type='button') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-light(type='button') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-dark(type='button') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Active State
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-primary.active(type='button', aria-pressed='true') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-secondary.active(type='button', aria-pressed='true') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-success.active(type='button', aria-pressed='true') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-warning.active(type='button', aria-pressed='true') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-danger.active(type='button', aria-pressed='true') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-info.active(type='button', aria-pressed='true') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-light.active(type='button', aria-pressed='true') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-dark.active(type='button', aria-pressed='true') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Disabled
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-primary(type='button', disabled='') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-secondary(type='button', disabled='') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-success(type='button', disabled='') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-warning(type='button', disabled='') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-danger(type='button', disabled='') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-info(type='button', disabled='') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-light(type='button', disabled='') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-outline-dark(type='button', disabled='') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
+        |  ones to remove all background colors on any element with 
+        code .btn
+        |  class.
+      +example()
+        .row.align-items-center
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Normal
+          .col-auto
+            button.btn.btn-outline-primary(type='button') Primary
+            button.btn.btn-outline-secondary(type='button') Secondary
+            button.btn.btn-outline-success(type='button') Success
+            button.btn.btn-outline-danger(type='button') Danger
+            button.btn.btn-outline-warning(type='button') Warning
+            button.btn.btn-outline-info(type='button') Info
+            button.btn.btn-outline-light(type='button') Light
+            button.btn.btn-outline-dark(type='button') Dark
+        .row.align-items-center.mt-3
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Active State
+          .col-auto
+            button.btn.btn-outline-primary.active(type='button', aria-pressed='true') Primary
+            button.btn.btn-outline-secondary.active(type='button', aria-pressed='true') Secondary
+            button.btn.btn-outline-success.active(type='button', aria-pressed='true') Success
+            button.btn.btn-outline-danger.active(type='button', aria-pressed='true') Danger
+            button.btn.btn-outline-warning.active(type='button', aria-pressed='true') Warning
+            button.btn.btn-outline-info.active(type='button', aria-pressed='true') Info
+            button.btn.btn-outline-light.active(type='button', aria-pressed='true') Light
+            button.btn.btn-outline-dark.active(type='button', aria-pressed='true') Dark
+        .row.align-items-center.mt-3
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Disabled
+          .col-auto
+            button.btn.btn-outline-primary.active(type='button', disabled='') Primary
+            button.btn.btn-outline-secondary.active(type='button', disabled='') Secondary
+            button.btn.btn-outline-success.active(type='button', disabled='') Success
+            button.btn.btn-outline-danger.active(type='button', disabled='') Danger
+            button.btn.btn-outline-warning.active(type='button', disabled='') Warning
+            button.btn.btn-outline-info.active(type='button', disabled='') Info
+            button.btn.btn-outline-light.active(type='button', disabled='') Light
+            button.btn.btn-outline-dark.active(type='button', disabled='') Dark
+
   .card.mb-4
     .card-header
-      .fw-semibold Ghost Buttons
+      strong Buttons
+      span.small.ms-1 ghost
     .card-body
       p
-        | Use
+        | Use 
         code .btn-ghost-*
         |  class for ghost buttons.
-      .row.align-items-center
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Normal
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-primary(type='button') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-secondary(type='button') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-success(type='button') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-warning(type='button') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-danger(type='button') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-info(type='button') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-light(type='button') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-dark(type='button') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Active State
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-primary.active(type='button', aria-pressed='true') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-secondary.active(type='button', aria-pressed='true') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-success.active(type='button', aria-pressed='true') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-warning.active(type='button', aria-pressed='true') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-danger.active(type='button', aria-pressed='true') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-info.active(type='button', aria-pressed='true') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-light.active(type='button', aria-pressed='true') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-dark.active(type='button', aria-pressed='true') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Disabled
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-primary(type='button', disabled='') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-secondary(type='button', disabled='') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-success(type='button', disabled='') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-warning(type='button', disabled='') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-danger(type='button', disabled='') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-info(type='button', disabled='') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-light(type='button', disabled='') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-block.btn-ghost-dark(type='button', disabled='') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
+      +example()
+        .row.align-items-center
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Normal
+          .col-auto
+            button.btn.btn-ghost-primary(type='button') Primary
+            button.btn.btn-ghost-secondary(type='button') Secondary
+            button.btn.btn-ghost-success(type='button') Success
+            button.btn.btn-ghost-danger(type='button') Danger
+            button.btn.btn-ghost-warning(type='button') Warning
+            button.btn.btn-ghost-info(type='button') Info
+            button.btn.btn-ghost-light(type='button') Light
+            button.btn.btn-ghost-dark(type='button') Dark
+        .row.align-items-center.mt-3
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Active State
+          .col-auto
+            button.btn.btn-ghost-primary.active(type='button', aria-pressed='true') Primary
+            button.btn.btn-ghost-secondary.active(type='button', aria-pressed='true') Secondary
+            button.btn.btn-ghost-success.active(type='button', aria-pressed='true') Success
+            button.btn.btn-ghost-danger.active(type='button', aria-pressed='true') Danger
+            button.btn.btn-ghost-warning.active(type='button', aria-pressed='true') Warning
+            button.btn.btn-ghost-info.active(type='button', aria-pressed='true') Info
+            button.btn.btn-ghost-light.active(type='button', aria-pressed='true') Light
+            button.btn.btn-ghost-dark.active(type='button', aria-pressed='true') Dark
+        .row.align-items-center.mt-3
+          .col-12.col-xl-2.mb-3.mb-xl-0
+            | Disabled
+          .col-auto
+            button.btn.btn-ghost-primary.active(type='button', disabled='') Primary
+            button.btn.btn-ghost-secondary.active(type='button', disabled='') Secondary
+            button.btn.btn-ghost-success.active(type='button', disabled='') Success
+            button.btn.btn-ghost-danger.active(type='button', disabled='') Danger
+            button.btn.btn-ghost-warning.active(type='button', disabled='') Warning
+            button.btn.btn-ghost-info.active(type='button', disabled='') Info
+            button.btn.btn-ghost-light.active(type='button', disabled='') Light
+            button.btn.btn-ghost-dark.active(type='button', disabled='') Dark
+ 
   .card.mb-4
     .card-header
-      .fw-semibold Square Buttons
+      strong Button
+      span.small.ms-1 sizes
     .card-body
       p
-        | Use
-        code .btn-square
-        |  class for square buttons.
-      .row.align-items-center
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Normal
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-primary(type='button') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-secondary(type='button') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-success(type='button') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-warning(type='button') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-danger(type='button') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-info(type='button') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-light(type='button') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-dark(type='button') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-link(type='button') Link
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Active State
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-primary.active(type='button', aria-pressed='true') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-secondary.active(type='button', aria-pressed='true') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-success.active(type='button', aria-pressed='true') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-warning.active(type='button', aria-pressed='true') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-danger.active(type='button', aria-pressed='true') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-info.active(type='button', aria-pressed='true') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-light.active(type='button', aria-pressed='true') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-dark.active(type='button', aria-pressed='true') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-link.active(type='button', aria-pressed='true') Link
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Disabled
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-primary(type='button', disabled='') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-secondary(type='button', disabled='') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-success(type='button', disabled='') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-warning(type='button', disabled='') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-danger(type='button', disabled='') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-info(type='button', disabled='') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-light(type='button', disabled='') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-dark(type='button', disabled='') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-square.btn-block.btn-link(type='button', disabled='') Link
-  .card.mb-4
-    .card-header
-      .fw-semibold Pill Buttons
-    .card-body
-      p
-        | Use
-        code .btn-pill
-        |  class for pill buttons.
-      .row.align-items-center
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Normal
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-primary(type='button') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-secondary(type='button') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-success(type='button') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-warning(type='button') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-danger(type='button') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-info(type='button') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-light(type='button') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-dark(type='button') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-link(type='button') Link
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Active State
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-primary.active(type='button', aria-pressed='true') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-secondary.active(type='button', aria-pressed='true') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-success.active(type='button', aria-pressed='true') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-warning.active(type='button', aria-pressed='true') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-danger.active(type='button', aria-pressed='true') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-info.active(type='button', aria-pressed='true') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-light.active(type='button', aria-pressed='true') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-dark.active(type='button', aria-pressed='true') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-link.active(type='button', aria-pressed='true') Link
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Disabled
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-primary(type='button', disabled='') Primary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-secondary(type='button', disabled='') Secondary
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-success(type='button', disabled='') Success
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-warning(type='button', disabled='') Warning
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-danger(type='button', disabled='') Danger
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-info(type='button', disabled='') Info
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-light(type='button', disabled='') Light
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-dark(type='button', disabled='') Dark
-        .col-6.col-sm-4.col-md-2.col-xl.mb-3.mb-xl-0
-          button.btn.btn-pill.btn-block.btn-link(type='button', disabled='') Link
-  .card.mb-4
-    .card-header
-      .fw-semibold Sizes
-    .card-body
-      p
-        | Fancy larger or smaller buttons? Add
+        | Larger or smaller buttons? Add 
         code .btn-lg
-        |  or
+        |  or 
         code .btn-sm
         |  for additional sizes.
-      .row.align-items-center
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Small add
-          code .btn-sm
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-sm.btn-primary(type='button') Standard Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-sm.btn-outline-secondary(type='button') Outline Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-sm.btn-ghost-success(type='button') Ghost Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-sm.btn-square.btn-warning(type='button') Square Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-sm.btn-pill.btn-danger(type='button') Pill Button
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Normal
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-primary(type='button') Standard Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-outline-secondary(type='button') Outline Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-ghost-success(type='button') Ghost Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-square.btn-warning(type='button') Square Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-pill.btn-danger(type='button') Pill Button
-      .row.align-items-center.mt-3
-        .col-12.col-xl.mb-3.mb-xl-0
-          | Large add
-          code .btn-lg
-          | .
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-lg.btn-primary(type='button') Standard Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-lg.btn-outline-secondary(type='button') Outline Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-lg.btn-ghost-success(type='button') Ghost Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-lg.btn-square.btn-warning(type='button') Square Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-lg.btn-pill.btn-danger(type='button') Pill Button
+      +example()
+        button.btn.btn-primary.btn-lg(type='button') Large button
+        button.btn.btn-secondary.btn-lg(type='button') Large button
+      +example()
+        button.btn.btn-primary.btn-sm(type='button') Small button
+        button.btn.btn-secondary.btn-sm(type='button') Small button
   .card.mb-4
     .card-header
-      .fw-semibold With Icons
+      strong Button
+      span.small.ms-1 pill
     .card-body
-      .row.align-items-center.mt-3
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-primary(type='button')
-            svg.icon
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lightbulb")
-            |  Standard Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-outline-secondary(type='button')
-            svg.icon
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lightbulb")
-            |  Outline Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-ghost-success(type='button')
-            svg.icon
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lightbulb")
-            |  Ghost Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-square.btn-warning(type='button')
-            svg.icon
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lightbulb")
-            |  Square Button
-        .col-6.col-sm-4.col-md.mb-3.mb-xl-0.text-center
-          button.btn.btn-pill.btn-danger(type='button')
-            svg.icon
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lightbulb")
-            |  Pill Button
-  .row
-    .col-md-6
-      .card.mb-4
-        .card-header
-          .fw-semibold Block Level Buttons
-        .card-body
-          p
-            | Add this class
-            code .btn-block
-          button.btn.btn-secondary.btn-lg.btn-block(type='button') Block level button
-          button.btn.btn-primary.btn-lg.btn-block(type='button') Block level button
-          button.btn.btn-success.btn-lg.btn-block(type='button') Block level button
-          button.btn.btn-info.btn-lg.btn-block(type='button') Block level button
-          button.btn.btn-warning.btn-lg.btn-block(type='button') Block level button
-          button.btn.btn-danger.btn-lg.btn-block(type='button') Block level button
-          button.btn.btn-link.btn-lg.btn-block(type='button') Block level button
-    // /.col
-    .col-md-6
-      .card.mb-4
-        .card-header
-          .fw-semibold Block Level Buttons
-        .card-body
-          p
-            | Add this class
-            code .btn-block
-          button.btn.btn-outline-secondary.btn-lg.btn-block(type='button') Block level button
-          button.btn.btn-outline-primary.btn-lg.btn-block(type='button') Block level button
-          button.btn.btn-outline-success.btn-lg.btn-block(type='button') Block level button
-          button.btn.btn-outline-info.btn-lg.btn-block(type='button') Block level button
-          button.btn.btn-outline-warning.btn-lg.btn-block(type='button') Block level button
-          button.btn.btn-outline-danger.btn-lg.btn-block(type='button') Block level button
-    // /.col
-  // /.row
+      +example()
+        button.btn.btn-primary.rounded-pill(type='button') Primary
+        button.btn.btn-secondary.rounded-pill(type='button') Secondary
+        button.btn.btn-success.rounded-pill(type='button') Success
+        button.btn.btn-danger.rounded-pill(type='button') Danger
+        button.btn.btn-warning.rounded-pill(type='button') Warning
+        button.btn.btn-info.rounded-pill(type='button') Info
+        button.btn.btn-light.rounded-pill(type='button') Light
+        button.btn.btn-dark.rounded-pill(type='button') Dark
+
+  .card.mb-4
+    .card-header
+      strong Button
+      span.small.ms-1 square
+    .card-body
+      +example()
+        button.btn.btn-primary.rounded-0(type='button') Primary
+        button.btn.btn-secondary.rounded-0(type='button') Secondary
+        button.btn.btn-success.rounded-0(type='button') Success
+        button.btn.btn-danger.rounded-0(type='button') Danger
+        button.btn.btn-warning.rounded-0(type='button') Warning
+        button.btn.btn-info.rounded-0(type='button') Info
+        button.btn.btn-light.rounded-0(type='button') Light
+        button.btn.btn-dark.rounded-0(type='button') Dark
+
+  .card.mb-4
+    .card-header
+      strong Button
+      span.small.ms-1 disabled state
+    .card-body
+      p
+        | Add the 
+        code disabled
+        |  boolean attribute to any 
+        code 
+          = '<button>'
+        |  element to make buttons look inactive. Disabled button has 
+        code pointer-events: none
+        |  applied to, disabling hover and active states from triggering.
+      +example()
+        button.btn.btn-lg.btn-primary(type='button' disabled='') Primary button
+        button.btn.btn-secondary.btn-lg(type='button' disabled='') Button
+      p
+        | Disabled buttons using the 
+        code 
+          = '<a>'
+        |  element act a little different:
+      p
+        code 
+          = '<a>'
+        | s don’t support the 
+        code disabled
+        |  attribute, so you have to add 
+        code .disabled
+        |  class to make buttons look inactive. The disabled bootstrap button must have the 
+        code aria-disabled="true"
+        |  attribute to show the state of the element to assistive technologies.
+      +example()
+        a.btn.btn-primary.btn-lg.disabled(href='#' tabindex='-1' role='button' aria-disabled='true') Primary link
+        a.btn.btn-secondary.btn-lg.disabled(href='#' tabindex='-1' role='button' aria-disabled='true') Link
+  .card.mb-4
+    .card-header
+      strong Button
+      span.small.ms-1 block
+    .card-body
+      p Create buttons that span the full width of a parent—by using utilities.
+      +example()
+        .d-grid.gap-2
+          button.btn.btn-primary(type='button') Button
+          button.btn.btn-primary(type='button') Button
+      p
+        | Here we create a responsive variation, starting with vertically stacked buttons until the 
+        code md
+        |  breakpoint, where 
+        code .d-md-block
+        |  replaces the 
+        code .d-grid
+        |  class, thus nullifying the 
+        code gap-2
+        |  utility. Resize your browser to see them change.
+      +example()
+        .d-grid.gap-2.d-md-block
+          button.btn.btn-primary(type='button') Button
+          button.btn.btn-primary(type='button') Button
+      p
+        | You can adjust the width of your block buttons with grid column width classes. For example, for a half-width “block button”, use 
+        code .col-6
+        | . Center it horizontally with 
+        code .mx-auto
+        | , too.
+      +example()
+        .d-grid.gap-2.col-6.mx-auto
+          button.btn.btn-primary(type='button') Button
+          button.btn.btn-primary(type='button') Button
+      p
+        | Additional utilities can be used to adjust the alignment of buttons when horizontal. Here we’ve taken our previous responsive example and added some flex utilities and a margin utility on the button to right align the buttons when they’re no longer stacked.
+      +example()
+        .d-grid.gap-2.d-md-flex.justify-content-md-end
+          button.btn.btn-primary.me-md-2(type='button') Button
+          button.btn.btn-primary(type='button') Button

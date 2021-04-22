@@ -9,9 +9,10 @@ block view
     .col-12
       .card.mb-4
         .card-header
-          | Custom styles
+          strong Form validation
+          span.small.ms-1 Custom styles
         .card-body
-          p
+          p.text-medium-emphasis.small
             | For custom CoreUI for Bootstrap form validation messages, you’ll need to add the
             |
             code novalidate
@@ -26,7 +27,7 @@ block view
             |
             code :valid
             |  styles applied to your form controls.
-          p
+          p.text-medium-emphasis.small
             | Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for
             |
             code
@@ -104,10 +105,11 @@ block view
     .col-12
       .card.mb-4
         .card-header
-          | Browser defaults
+          strong Form validation
+          span.small.ms-1 Browser defaults
         .card-body
-          p Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.
-          p While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
+          p.text-medium-emphasis.small Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.
+          p.text-medium-emphasis.small While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
           +example()
             form.row.g-3
               .col-md-4
@@ -142,9 +144,10 @@ block view
     .col-12
       .card.mb-4
         .card-header
-          | Server side
+          strong Form validation
+          span.small.ms-1 Server side
         .card-body
-          p
+          p.text-medium-emphasis.small
             | We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with
             |
             code .is-invalid
@@ -155,7 +158,7 @@ block view
             |
             code .invalid-feedback
             |  is also supported with these classes.
-          p
+          p.text-medium-emphasis.small
             | For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using
             |
             code aria-describedby
@@ -163,7 +166,7 @@ block view
             |
             code id
             |  to be referenced, in case the field already points to additional form text).
-          p
+          p.text-medium-emphasis.small
             | To fix
             a(href='https://github.com/twbs/bootstrap/issues/25110') issues with border radii
             | , input groups require an additional
@@ -219,9 +222,10 @@ block view
     .col-12
       .card.mb-4
         .card-header
-          | Supported elements
+          strong Form validation
+          span.small.ms-1 Supported elements
         .card-body
-          p Validation styles are available for the following form controls and components:
+          p.text-medium-emphasis.small Validation styles are available for the following form controls and components:
           ul
             li
               |
@@ -283,9 +287,10 @@ block view
     .col-12
       .card.mb-4
         .card-header
-          | Tooltips
+          strong Form validation
+          span.small.ms-1 Tooltips
         .card-body
-          p
+          p.text-medium-emphasis.small
             | If your form layout allows it, you can swap the
             |
             code .{valid|invalid}-feedback
@@ -297,6 +302,7 @@ block view
             code position: relative
             |  on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.
           +example()
+            // TODO: add javascript
             form.row.g-3.needs-validation(novalidate)
               .col-md-4.position-relative
                 label.form-label(for='validationTooltip01') First name

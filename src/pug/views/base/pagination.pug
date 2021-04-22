@@ -1,150 +1,203 @@
 extends ../../_layout/default.pug
 
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/forms/select/')
+
 block view
-  .card.mb-4
-    .card-header
-      |  Pagination
-      .float-end
-        a(href='https://coreui.io/docs/4.0/components/pagination/', target='_blank')
-          | docs
-    .card-body
-      nav(aria-label='Page navigation example')
-        ul.pagination
-          li.page-item
-            a.page-link(href='#') Previous
-          li.page-item
-            a.page-link(href='#') 1
-          li.page-item
-            a.page-link(href='#') 2
-          li.page-item
-            a.page-link(href='#') 3
-          li.page-item
-            a.page-link(href='#') Next
-  .card.mb-4
-    .card-header
-      |  Pagination
-      span.small.ms-1 with icons
-    .card-body
-      nav(aria-label='Page navigation example')
-        ul.pagination
-          li.page-item
-            a.page-link(href='#', aria-label='Previous')
-              span(aria-hidden='true') «
-              span.visually-hidden Previous
-          li.page-item
-            a.page-link(href='#') 1
-          li.page-item
-            a.page-link(href='#') 2
-          li.page-item
-            a.page-link(href='#') 3
-          li.page-item
-            a.page-link(href='#', aria-label='Next')
-              span(aria-hidden='true') »
-              span.visually-hidden Next
-  .card.mb-4
-    .card-header
-      |  Pagination
-      span.small.ms-1 disabled and active
-    .card-body
-      nav(aria-label='...')
-        ul.pagination
-          li.page-item.disabled
-            a.page-link(href='#', tabindex='-1') Previous
-          li.page-item
-            a.page-link(href='#') 1
-          li.page-item.active
-            a.page-link(href='#')
-              | 2
-              span.visually-hidden (current)
-          li.page-item
-            a.page-link(href='#') 3
-          li.page-item
-            a.page-link(href='#') Next
-      hr
-      nav(aria-label='...')
-        ul.pagination
-          li.page-item.disabled
-            span.page-link Previous
-          li.page-item
-            a.page-link(href='#') 1
-          li.page-item.active
-            span.page-link
-              | 2
-              span.visually-hidden (current)
-          li.page-item
-            a.page-link(href='#') 3
-          li.page-item
-            a.page-link(href='#') Next
-  .card.mb-4
-    .card-header
-      |  Pagination
-      span.small.ms-1 sizing
-    .card-body
-      nav(aria-label='...')
-        ul.pagination.pagination-lg
-          li.page-item.disabled
-            a.page-link(href='#', tabindex='-1') Previous
-          li.page-item
-            a.page-link(href='#') 1
-          li.page-item
-            a.page-link(href='#') 2
-          li.page-item
-            a.page-link(href='#') 3
-          li.page-item
-            a.page-link(href='#') Next
-      hr
-      nav(aria-label='...')
-        ul.pagination.pagination-sm
-          li.page-item.disabled
-            a.page-link(href='#', tabindex='-1') Previous
-          li.page-item
-            a.page-link(href='#') 1
-          li.page-item
-            a.page-link(href='#') 2
-          li.page-item
-            a.page-link(href='#') 3
-          li.page-item
-            a.page-link(href='#') Next
-  .card.mb-4
-    .card-header
-      |  Pagination
-      span.small.ms-1 alignment
-    .card-body
-      nav(aria-label='Page navigation example')
-        ul.pagination.justify-content-start
-          li.page-item.disabled
-            a.page-link(href='#', tabindex='-1') Previous
-          li.page-item
-            a.page-link(href='#') 1
-          li.page-item
-            a.page-link(href='#') 2
-          li.page-item
-            a.page-link(href='#') 3
-          li.page-item
-            a.page-link(href='#') Next
-      hr
-      nav(aria-label='Page navigation example')
-        ul.pagination.justify-content-center
-          li.page-item.disabled
-            a.page-link(href='#', tabindex='-1') Previous
-          li.page-item
-            a.page-link(href='#') 1
-          li.page-item
-            a.page-link(href='#') 2
-          li.page-item
-            a.page-link(href='#') 3
-          li.page-item
-            a.page-link(href='#') Next
-      hr
-      nav(aria-label='Page navigation example')
-        ul.pagination.justify-content-end
-          li.page-item.disabled
-            a.page-link(href='#', tabindex='-1') Previous
-          li.page-item
-            a.page-link(href='#') 1
-          li.page-item
-            a.page-link(href='#') 2
-          li.page-item
-            a.page-link(href='#') 3
-          li.page-item
-            a.page-link(href='#') Next
+  +callout('Select', 'https://coreui.io/docs/4.0/forms/select/')
+  .row
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Pagination
+          span.small.ms-1 Overview
+        .card-body
+          p.text-medium-emphasis.small
+            | We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping 
+            |
+            code 
+              = '<nav>'
+            |  element to identify it as a navigation section to screen readers and other assistive technologies.
+          p.text-medium-emphasis.small
+            | In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive 
+            |
+            code aria-label
+            |  for the 
+            |
+            code 
+              = '<nav>'
+            |  to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be 
+            |
+            code aria-label="Search results pages"
+            | .
+          +example()
+            nav(aria-label='Page navigation example')
+              ul.pagination
+                li.page-item
+                  a.page-link(href='#') Previous
+                li.page-item
+                  a.page-link(href='#') 1
+                li.page-item
+                  a.page-link(href='#') 2
+                li.page-item
+                  a.page-link(href='#') 3
+                li.page-item
+                  a.page-link(href='#') Next
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Pagination
+          span.small.ms-1 Working with icons
+        .card-body
+          p.text-medium-emphasis.small
+            | Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with 
+            |
+            code aria
+            |  attributes.
+          +example()
+            nav(aria-label='Page navigation example')
+              ul.pagination
+                li.page-item
+                  a.page-link(href='#' aria-label='Previous')
+                    span(aria-hidden='true') «
+                li.page-item
+                  a.page-link(href='#') 1
+                li.page-item
+                  a.page-link(href='#') 2
+                li.page-item
+                  a.page-link(href='#') 3
+                li.page-item
+                  a.page-link(href='#' aria-label='Next')
+                    span(aria-hidden='true') »
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Pagination
+          span.small.ms-1 Disabled and active states
+        .card-body
+          p.text-medium-emphasis.small
+            | Pagination links are customizable for different circumstances. Use 
+            |
+            code .disabled
+            |  for links that appear un-clickable and 
+            |
+            code .active
+            |  to indicate the current page.
+          p.text-medium-emphasis.small
+            | While the 
+            |
+            code .disabled
+            |  class uses 
+            |
+            code pointer-events: none
+            |  to 
+            |
+            em try
+            |  to disable the link functionality of 
+            |
+            code 
+              = '<a>'
+            | s, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add 
+            |
+            code tabindex="-1"
+            |  on disabled links and use custom JavaScript to fully disable their functionality.
+          +example()
+            nav(aria-label='...')
+              ul.pagination
+                li.page-item.disabled
+                  a.page-link(href='#' tabindex='-1' aria-disabled='true') Previous
+                li.page-item
+                  a.page-link(href='#') 1
+                li.page-item.active(aria-current='page')
+                  a.page-link(href='#') 2
+                li.page-item
+                  a.page-link(href='#') 3
+                li.page-item
+                  a.page-link(href='#') Next
+          p.text-medium-emphasis.small
+            | You can optionally swap out active or disabled anchors for 
+            |
+            code 
+              = '<span>'
+            | , or omit the anchor in the case of the prev/next arrows, to remove click functionality and prevent keyboard focus while retaining intended styles.
+          +example()
+            nav(aria-label='...')
+              ul.pagination
+                li.page-item.disabled
+                  span.page-link Previous
+                li.page-item
+                  a.page-link(href='#') 1
+                li.page-item.active(aria-current='page')
+                  span.page-link 2
+                li.page-item
+                  a.page-link(href='#') 3
+                li.page-item
+                  a.page-link(href='#') Next
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Pagination
+          span.small.ms-1 Sizing
+        .card-body
+          p.text-medium-emphasis.small
+            | Fancy larger or smaller pagination? Add 
+            |
+            code .pagination-lg
+            |  or 
+            |
+            code .pagination-sm
+            |  for additional sizes.
+          +example()
+            nav(aria-label='...')
+              ul.pagination.pagination-lg
+                li.page-item.active(aria-current='page')
+                  span.page-link 1
+                li.page-item
+                  a.page-link(href='#') 2
+                li.page-item
+                  a.page-link(href='#') 3
+          +example()
+            nav(aria-label='...')
+              ul.pagination.pagination-sm
+                li.page-item.active(aria-current='page')
+                  span.page-link 1
+                li.page-item
+                  a.page-link(href='#') 2
+                li.page-item
+                  a.page-link(href='#') 3
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Pagination
+          span.small.ms-1 Alignment
+        .card-body
+          p.text-medium-emphasis.small
+            | Change the alignment of pagination components with 
+            a(href='/docs/4.0/utilities/flex/') flexbox utilities
+            | .
+          +example()
+            nav(aria-label='Page navigation example')
+              ul.pagination.justify-content-center
+                li.page-item.disabled
+                  a.page-link(href='#' tabindex='-1' aria-disabled='true') Previous
+                li.page-item
+                  a.page-link(href='#') 1
+                li.page-item
+                  a.page-link(href='#') 2
+                li.page-item
+                  a.page-link(href='#') 3
+                li.page-item
+                  a.page-link(href='#') Next
+          +example()
+            nav(aria-label='Page navigation example')
+              ul.pagination.justify-content-end
+                li.page-item.disabled
+                  a.page-link(href='#' tabindex='-1' aria-disabled='true') Previous
+                li.page-item
+                  a.page-link(href='#') 1
+                li.page-item
+                  a.page-link(href='#') 2
+                li.page-item
+                  a.page-link(href='#') 3
+                li.page-item
+                  a.page-link(href='#') Next

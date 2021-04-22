@@ -9,11 +9,10 @@ block view
     .col-12.col-md-6
       .card.mb-4
         .card-header
-          |  Accordion
+          strong Accordion
         .card-body
-          p
+          p.text-medium-emphasis.small
             | Click the accordions below to expand/collapse the accordion content.
-          hr
           +example()
             #accordionExample.accordion
               .accordion-item
@@ -49,16 +48,15 @@ block view
     .col-12.col-md-6
       .card.mb-4
         .card-header
-          |  Accordion
+          strong Accordion
           span.small.ms-1 Flush
         .card-body
-          p
-            | Add
+          p.text-medium-emphasis.small
+            | Add 
             code .accordion-flush
-            |  to remove the default
+            |  to remove the default 
             code background-color
             | , some borders, and some rounded corners to render accordions edge-to-edge with their parent container.
-          hr
           +example()
             #accordionFlushExample.accordion.accordion-flush
               .accordion-item

@@ -1,300 +1,768 @@
 extends ../../_layout/default.pug
 
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/content/tables/')
+
 block view
-  .row
-    .col-lg-6
-      .card.mb-4
-        .card-header
-          i.fa.fa-align-justify
-          |  Simple Table
-        .card-body
-          table.table.table-responsive-sm
+  +callout('Table', 'https://coreui.io/docs/4.0/content/tables/')
+  .car
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Basic example
+    .card-body
+      p
+        | Using the most basic table markup, here’s how 
+        code .table
+        | -based tables look in Bootstrap.
+      +example()
+        table.table
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Variants
+    .card-body
+      p Use contextual classes to color tables, table rows or individual cells.
+      +example()
+        table.table
+          thead
+            tr
+              th(scope='col') Class
+              th(scope='col') Heading
+              th(scope='col') Heading
+          tbody
+            tr
+              th(scope='row') Default
+              td Cell
+              td Cell
+            tr.table-primary
+              th(scope='row') Primary
+              td Cell
+              td Cell
+            tr.table-secondary
+              th(scope='row') Secondary
+              td Cell
+              td Cell
+            tr.table-success
+              th(scope='row') Success
+              td Cell
+              td Cell
+            tr.table-danger
+              th(scope='row') Danger
+              td Cell
+              td Cell
+            tr.table-warning
+              th(scope='row') Warning
+              td Cell
+              td Cell
+            tr.table-info
+              th(scope='row') Info
+              td Cell
+              td Cell
+            tr.table-light
+              th(scope='row') Light
+              td Cell
+              td Cell
+            tr.table-dark
+              th(scope='row') Dark
+              td Cell
+              td Cell
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Striped rows
+    .card-body
+      p
+        | Use 
+        code .table-striped
+        |  to add zebra-striping to any table row within the 
+        code 
+          = '<tbody>'
+        | .
+      +example()
+        table.table.table-striped
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+      p These classes can also be added to table variants:
+      +example()
+        table.table.table-dark.table-striped
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+      +example()
+        table.table.table-success.table-striped
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Hoverable rows
+    .card-body
+      p
+        | Add 
+        code .table-hover
+        |  to enable a hover state on table rows within a 
+        code 
+          = '<tbody>'
+        | .
+      +example()
+        table.table.table-hover
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+      +example()
+        table.table.table-dark.table-hover
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+      p These hoverable rows can also be combined with the striped variant:
+      +example()
+        table.table.table-striped.table-hover
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Active tables
+    .card-body
+      p
+        | Highlight a table row or cell by adding a 
+        code .table-active
+        |  class.
+      +example()
+        table.table
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr.table-active
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td.table-active(colspan='2') Larry the Bird
+              td @twitter
+      +example()
+        table.table.table-dark
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr.table-active
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td.table-active(colspan='2') Larry the Bird
+              td @twitter
+
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Bordered tables
+    .card-body
+      p
+        | Add 
+        code .table-bordered
+        |  for borders on all sides of the table and cells.
+      +example()
+        table.table.table-bordered
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+      p
+        a(href='/docs/4.0/utilities/borders/#border-color') Border color utilities
+        |  can be added to change colors:
+      +example()
+        table.table.table-bordered.border-primary
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Tables without borders
+    .card-body
+      p
+        | Add 
+        code .table-borderless
+        |  for a table without borders.
+      +example()
+        table.table.table-borderless
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+      +example()
+        table.table.table-dark.table-borderless
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+              
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Small tables
+    .card-body
+      p
+        | Add 
+        code .table-sm
+        |  to make any 
+        code .table
+        |  more compact by cutting all cell 
+        code padding
+        |  in half.
+      +example()
+        table.table.table-sm
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+      +example()
+        table.table.table-dark.table-sm
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Vertical alignment
+    .card-body
+      p
+        | Table cells of 
+        code 
+          = '<thead>'
+        |  are always vertical aligned to the bottom. Table cells in 
+        code 
+          = '<tbody>'
+        |  inherit their alignment from 
+        code 
+          = '<table>'
+        |  and are aligned to the the top by default. Use the 
+        a(href='/docs/4.0/utilities/vertical-align/') vertical align
+        |  classes to re-align where needed.
+      +example()
+        .table-responsive
+          table.table.align-middle
             thead
               tr
-                th Username
-                th Date registered
-                th Role
-                th Status
+                th.w-25(scope='col') Heading 1
+                th.w-25(scope='col') Heading 2
+                th.w-25(scope='col') Heading 3
+                th.w-25(scope='col') Heading 4
             tbody
               tr
-                td Samppa Nori
-                td 2012/01/01
-                td Member
                 td
-                  span.badge.bg-success Active
-              tr
-                td Estavan Lykos
-                td 2012/02/01
-                td Staff
+                  | This cell inherits 
+                  code vertical-align: middle;
+                  |  from the table
                 td
-                  span.badge.bg-danger Banned
-              tr
-                td Chetan Mohamed
-                td 2012/02/01
-                td Admin
+                  | This cell inherits 
+                  code vertical-align: middle;
+                  |  from the table
                 td
-                  span.badge.bg-secondary Inactive
-              tr
-                td Derick Maximinus
-                td 2012/03/01
-                td Member
+                  | This cell inherits 
+                  code vertical-align: middle;
+                  |  from the table
                 td
-                  span.badge.bg-warning Pending
-              tr
-                td Friderik Dávid
-                td 2012/01/21
-                td Staff
+                  | This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.
+              tr.align-bottom
                 td
-                  span.badge.bg-success Active
-          ul.pagination
-            li.page-item
-              a.page-link(href='#') Prev
-            li.page-item.active
-              a.page-link(href='#') 1
-            li.page-item
-              a.page-link(href='#') 2
-            li.page-item
-              a.page-link(href='#') 3
-            li.page-item
-              a.page-link(href='#') 4
-            li.page-item
-              a.page-link(href='#') Next
-    // /.col
-    .col-lg-6
-      .card.mb-4
-        .card-header
-          i.fa.fa-align-justify
-          |  Striped Table
-        .card-body
-          table.table.table-responsive-sm.table-striped
-            thead
-              tr
-                th Username
-                th Date registered
-                th Role
-                th Status
-            tbody
-              tr
-                td Yiorgos Avraamu
-                td 2012/01/01
-                td Member
+                  | This cell inherits 
+                  code vertical-align: bottom;
+                  |  from the table row
                 td
-                  span.badge.bg-success Active
-              tr
-                td Avram Tarasios
-                td 2012/02/01
-                td Staff
+                  | This cell inherits 
+                  code vertical-align: bottom;
+                  |  from the table row
                 td
-                  span.badge.bg-danger Banned
-              tr
-                td Quintin Ed
-                td 2012/02/01
-                td Admin
+                  | This cell inherits 
+                  code vertical-align: bottom;
+                  |  from the table row
                 td
-                  span.badge.bg-secondary Inactive
+                  | This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.
               tr
-                td Enéas Kwadwo
-                td 2012/03/01
-                td Member
                 td
-                  span.badge.bg-warning Pending
-              tr
-                td Agapetus Tadeáš
-                td 2012/01/21
-                td Staff
+                  | This cell inherits 
+                  code vertical-align: middle;
+                  |  from the table
                 td
-                  span.badge.bg-success Active
-          ul.pagination
-            li.page-item
-              a.page-link(href='#') Prev
-            li.page-item.active
-              a.page-link(href='#') 1
-            li.page-item
-              a.page-link(href='#') 2
-            li.page-item
-              a.page-link(href='#') 3
-            li.page-item
-              a.page-link(href='#') 4
-            li.page-item
-              a.page-link(href='#') Next
-    // /.col
-  // /.row
-  .row
-    .col-lg-6
-      .card.mb-4
-        .card-header
-          i.fa.fa-align-justify
-          |  Condensed Table
-        .card-body
-          table.table.table-responsive-sm.table-sm
-            thead
-              tr
-                th Username
-                th Date registered
-                th Role
-                th Status
-            tbody
-              tr
-                td Carwyn Fachtna
-                td 2012/01/01
-                td Member
+                  | This cell inherits 
+                  code vertical-align: middle;
+                  |  from the table
+                td.align-top This cell is aligned to the top.
                 td
-                  span.badge.bg-success Active
-              tr
-                td Nehemiah Tatius
-                td 2012/02/01
-                td Staff
-                td
-                  span.badge.bg-danger Banned
-              tr
-                td Ebbe Gemariah
-                td 2012/02/01
-                td Admin
-                td
-                  span.badge.bg-secondary Inactive
-              tr
-                td Eustorgios Amulius
-                td 2012/03/01
-                td Member
-                td
-                  span.badge.bg-warning Pending
-              tr
-                td Leopold Gáspár
-                td 2012/01/21
-                td Staff
-                td
-                  span.badge.bg-success Active
-          ul.pagination
-            li.page-item
-              a.page-link(href='#') Prev
-            li.page-item.active
-              a.page-link(href='#') 1
-            li.page-item
-              a.page-link(href='#') 2
-            li.page-item
-              a.page-link(href='#') 3
-            li.page-item
-              a.page-link(href='#') 4
-            li.page-item
-              a.page-link(href='#') Next
-    // /.col
-    .col-lg-6
-      .card.mb-4
-        .card-header
-          i.fa.fa-align-justify
-          |  Bordered Table
-        .card-body
-          table.table.table-responsive-sm.table-bordered
-            thead
-              tr
-                th Username
-                th Date registered
-                th Role
-                th Status
-            tbody
-              tr
-                td Pompeius René
-                td 2012/01/01
-                td Member
-                td
-                  span.badge.bg-success Active
-              tr
-                td Paĉjo Jadon
-                td 2012/02/01
-                td Staff
-                td
-                  span.badge.bg-danger Banned
-              tr
-                td Micheal Mercurius
-                td 2012/02/01
-                td Admin
-                td
-                  span.badge.bg-secondary Inactive
-              tr
-                td Ganesha Dubhghall
-                td 2012/03/01
-                td Member
-                td
-                  span.badge.bg-warning Pending
-              tr
-                td Hiroto Šimun
-                td 2012/01/21
-                td Staff
-                td
-                  span.badge.bg-success Active
-          ul.pagination
-            li.page-item
-              a.page-link(href='#') Prev
-            li.page-item.active
-              a.page-link(href='#') 1
-            li.page-item
-              a.page-link(href='#') 2
-            li.page-item
-              a.page-link(href='#') 3
-            li.page-item
-              a.page-link(href='#') 4
-            li.page-item
-              a.page-link(href='#') Next
-    // /.col
-  // /.row
-  .row
-    .col-lg-12
-      .card.mb-4
-        .card-header
-          i.fa.fa-align-justify
-          |  Combined All Table
-        .card-body
-          table.table.table-responsive-sm.table-bordered.table-striped.table-sm
-            thead
-              tr
-                th Username
-                th Date registered
-                th Role
-                th Status
-            tbody
-              tr
-                td Vishnu Serghei
-                td 2012/01/01
-                td Member
-                td
-                  span.badge.bg-success Active
-              tr
-                td Zbyněk Phoibos
-                td 2012/02/01
-                td Staff
-                td
-                  span.badge.bg-danger Banned
-              tr
-                td Einar Randall
-                td 2012/02/01
-                td Admin
-                td
-                  span.badge.bg-secondary Inactive
-              tr
-                td Félix Troels
-                td 2012/03/01
-                td Member
-                td
-                  span.badge.bg-warning Pending
-              tr
-                td Aulus Agmundr
-                td 2012/01/21
-                td Staff
-                td
-                  span.badge.bg-success Active
-          nav
-            ul.pagination
-              li.page-item
-                a.page-link(href='#') Prev
-              li.page-item.active
-                a.page-link(href='#') 1
-              li.page-item
-                a.page-link(href='#') 2
-              li.page-item
-                a.page-link(href='#') 3
-              li.page-item
-                a.page-link(href='#') 4
-              li.page-item
-                a.page-link(href='#') Next
-    // /.col
-  // /.row
+                  | This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Nesting
+    .card-body
+      p
+        | Border styles, active styles, and table variants are not inherited by nested tables.
+      +example()
+        table.table.table-striped.table-bordered
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              td(colspan='4')
+                table.table.mb-0
+                  thead
+                    tr
+                      th(scope='col') Header
+                      th(scope='col') Header
+                      th(scope='col') Header
+                  tbody
+                    tr
+                      th(scope='row') A
+                      td First
+                      td Last
+                    tr
+                      th(scope='row') B
+                      td First
+                      td Last
+                    tr
+                      th(scope='row') C
+                      td First
+                      td Last
+            tr
+              th(scope='row') 3
+              td Larry
+              td the Bird
+              td @twitter
+
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Table head
+    .card-body
+      p
+        | Similar to tables and dark tables, use the modifier classes 
+        code .table-light
+        |  or 
+        code .table-dark
+        |  to make 
+        code 
+          = '<thead>'
+        | s appear light or dark gray.
+      +example()
+        table.table
+          thead.table-light
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td Larry
+              td the Bird
+              td @twitter
+      +example()
+        table.table
+          thead.table-dark
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td Larry
+              td the Bird
+              td @twitter
+
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Table foot
+    .card-body
+      +example()
+        table.table
+          thead.table-light
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td Larry
+              td the Bird
+              td @twitter
+          tfoot
+            tr
+              td Footer
+              td Footer
+              td Footer
+              td Footer
+
+  .card.mb-4
+    .card-header
+      strong Tables
+      span.small.ms-1 Captions
+    .card-body
+      p
+        | A 
+        code 
+          = '<caption>'
+        |  functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.
+      +example()
+        table.table
+          caption List of users
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td(colspan='2') Larry the Bird
+              td @twitter
+      p
+        | You can also put the 
+        code 
+          = '<caption>'
+        |  on the top of the table with 
+        code .caption-top
+        | .
+      +example()
+        table.table.caption-top
+          caption List of users
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') First
+              th(scope='col') Last
+              th(scope='col') Handle
+          tbody
+            tr
+              th(scope='row') 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              th(scope='row') 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              th(scope='row') 3
+              td Larry
+              td the Bird
+              td @twitter

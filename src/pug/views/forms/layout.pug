@@ -9,67 +9,16 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Forms
+          strong Forms layout
+          span.small.ms-1 Utilities
         .card-body
-          p
-            | Every group of form fields should reside in a
-            |
-            code
-              = '<form>'
-            |  element. CoreUI for Bootstrap provides no default styling for the
-            |
-            code
-              = '<form>'
-            |  element, but there are some powerful browser features that are provided by default.
-          ul
-            li
-              | New to browser forms? Consider reviewing
-              a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form') the MDN form docs
-              |  for an overview and complete list of available attributes.
-            li
-              |
-              code
-                = '<button>'
-              | s within a
-              |
-              code
-                = '<form>'
-              |  default to
-              |
-              code type="submit"
-              | , so strive to be specific and always include a
-              |
-              code type
-              | .
-            li
-              | You can disable every form element within a form with the
-              |
-              code disabled
-              |  attribute on the
-              |
-              code
-                = '<form>'
-              | .
-          p
-            | Since CoreUI for Bootstrap applies
-            |
-            code display: block
-            |  and
-            |
-            code width: 100%
-            |  to almost all our form controls, forms will by default stack vertically. Additional classes can be used to vary this layout on a per-form basis.
-    .col-lg-6
-      .card.mb-4
-        .card-header
-          | Utilities
-        .card-body
-          p
+          p.text-medium-emphasis.small
             a(href='https://coreui.io/docs/4.0/docs/4.0/utilities/spacing/') Margin utilities
             |  are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to
             |
             code margin-bottom
             |  utilities, and using a single direction throughout the form for consistency.
-          p
+          p.text-medium-emphasis.small
             | Feel free to build your forms however you like, with
             |
             code
@@ -89,9 +38,10 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Form grid
+          strong Forms layout
+          span.small.ms-1 Grid
         .card-body
-          p
+          p.text-medium-emphasis.small
             | More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options.
             strong
               | Requires the
@@ -108,9 +58,10 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Gutters
+          strong Forms layout
+          span.small.ms-1 Gutters
         .card-body
-          p
+          p.text-medium-emphasis.small
             | By adding
             a(href='https://coreui.io/docs/4.0/docs/4.0/layout/gutters/') gutter modifier classes
             | , you can have control over the gutter width in as well the inline as block direction.
@@ -126,7 +77,7 @@ block view
                 input.form-control(type='text' placeholder='First name' aria-label='First name')
               .col
                 input.form-control(type='text' placeholder='Last name' aria-label='Last name')
-          p More complex layouts can also be created with the grid system.
+          p.text-medium-emphasis.small More complex layouts can also be created with the grid system.
           +example()
             form.row.g-3
               .col-md-6
@@ -156,17 +107,16 @@ block view
                 .form-check
                   input.form-check-input#gridCheck(type='checkbox')
                   label.form-check-label(for='gridCheck').
-
                     Check me out
-
               .col-12
                 button.btn.btn-primary(type='submit') Sign in
     .col-lg-6
       .card.mb-4
         .card-header
-          | Horizontal form
+          strong Forms layout
+          span.small.ms-1 Horizontal form
         .card-body
-          p
+          p.text-medium-emphasis.small
             | Create horizontal forms with the grid by adding the
             |
             code .row
@@ -180,7 +130,7 @@ block view
             |
             code <label>
             | s as well so they’re vertically centered with their associated form controls.
-          p
+          p.text-medium-emphasis.small
             | At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we’ve removed the
             |
             code padding-top
@@ -228,9 +178,10 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Horizontal form label sizing
+          strong Forms layout
+          span.small.ms-1 Horizontal form label sizing
         .card-body
-          p
+          p.text-medium-emphasis.small
             | Be sure to use
             |
             code .col-form-label-sm
@@ -266,9 +217,10 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Column sizing
+          strong Forms layout
+          span.small.ms-1 Column sizing
         .card-body
-          p
+          p.text-medium-emphasis.small
             | As shown in the previous examples, our grid system allows you to place any number of
             |
             code .col
@@ -293,9 +245,10 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Auto-sizing
+          strong Forms layout
+          span.small.ms-1 Auto-sizing
         .card-body
-          p
+          p.text-medium-emphasis.small
             | The example below uses a flexbox utility to vertically center the contents and changes
             |
             code .col
@@ -329,7 +282,7 @@ block view
 
               .col-auto
                 button.btn.btn-primary(type='submit') Submit
-          p You can then remix that once again with size-specific column classes.
+          p.text-medium-emphasis.small You can then remix that once again with size-specific column classes.
           +example()
             form.row.gx-3.gy-2.align-items-center
               .col-sm-3
@@ -359,9 +312,10 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Inline forms
+          strong Forms layout
+          span.small.ms-1 Inline forms
         .card-body
-          p
+          p.text-medium-emphasis.small
             | Use the
             |
             code .col-auto

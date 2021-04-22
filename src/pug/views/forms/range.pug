@@ -9,27 +9,26 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Overview
+          strong Range
         .card-body
-          p
-            | Create custom
-            |
+          p.text-medium-emphasis.small
+            | Create custom 
             code
               = '<input type="range">'
-            |  controls with
-            |
+            |  controls with 
             code .form-range
-            | . The track (the background) and thumb (the value) are both styled to appear the same across browsers. As only Edge Legacy and Firefox supports “filling” their track from the left or right of the thumb as a means to visually indicate progress, we do not currently support it.
+            | .
           +example()
             label.form-label(for='customRange1') Example range
             input.form-range#customRange1(type='range')
     .col-lg-6
       .card.mb-4
         .card-header
-          | Disabled
+          strong Range
+          span.small.ms-1 Disabled
         .card-body
-          p
-            | Add the
+          p.text-medium-emphasis.small
+            | Add the 
             code disabled
             |  boolean attribute on an input to give it a grayed out appearance and remove pointer events.
           +example()
@@ -38,26 +37,21 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Min and max
+          strong Range
+          span.small.ms-1 Min and max
         .card-body
-          p
-            | Range inputs have implicit values for
-            |
+          p.text-medium-emphasis.small
+            | Range inputs have implicit values for 
             code min
-            |  and
-            |
+            |  and 
             code max
-            | —
-            |
+            | — 
             code 0
-            |  and
-            |
+            |  and 
             code 100
-            | , respectively. You may specify new values for those using the
-            |
+            | , respectively. You may specify new values for those using the 
             code min
-            |  and
-            |
+            |  and 
             code max
             |  attributes.
           +example()
@@ -66,12 +60,13 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Steps
+          strong Range
+          span.small.ms-1 Steps
         .card-body
-          p
-            | By default, range inputs “snap” to integer values. To change this, you can specify a
+          p.text-medium-emphasis.small
+            | By default, range inputs “snap” to integer values. To change this, you can specify a 
             code step
-            |  value. In the example below, we double the number of steps by using
+            |  value. In the example below, we double the number of steps by using 
             code step="0.5"
             | .
           +example()

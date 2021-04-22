@@ -7,15 +7,14 @@ mixin example
           svg.icon.me-2
             use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play")
           | Preview
-
-        li.nav-item
-          a.nav-link(data-coreui-toggle="tab" href="#code-"+id role="tab")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code")
-            | Code
+      li.nav-item
+        a.nav-link(data-coreui-toggle="tab" href="#code-"+id role="tab")
+          svg.icon.me-2
+            use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code")
+          | Code
     .tab-content
-      .tab-pane.py-3.active(role="tabpanel" id="preview-"+id )
+      .tab-pane.py-3.active.preview(role="tabpanel" id="preview-"+id )
         block
       .tab-pane.py-3(role="tabpanel" id="code-"+id )
-        script.language-html(type='text/plain')
+        script.language-markup(type='text/plain')
           block

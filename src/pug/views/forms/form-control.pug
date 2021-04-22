@@ -5,11 +5,12 @@ block canonical
 
 block view
   +callout('Form Control', 'https://coreui.io/docs/4.0/forms/form-control/')
-  .row(data-masonry='{"percentPosition": true }')
-    .col-lg-6
+  .row.row-cols-2
+    .col
       .card.mb-4
         .card-header
-          | Example
+          strong Form control
+          span.small.ms-1 Basic example
         .card-body
           +example()
             .mb-3
@@ -18,15 +19,16 @@ block view
             .mb-3
               label.form-label(for='exampleFormControlTextarea1') Example textarea
               textarea.form-control#exampleFormControlTextarea1(rows='3')
-    .col-lg-6
+    .col
       .card.mb-4
         .card-header
-          | Sizing
+          strong Form control
+          span.small.ms-1 Sizing
         .card-body
-          p
-            | Set heights using classes like
+          p.text-medium-emphasis.small
+            | Set heights using classes like 
             code .form-control-lg
-            |  and
+            |  and 
             code .form-control-sm
             | .
           +example()
@@ -36,10 +38,11 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Disabled
+          strong Form control
+          span.small.ms-1 Disabled
         .card-body
-          p
-            | Add the
+          p.text-medium-emphasis.small
+            | Add the 
             code disabled
             |  boolean attribute on an input to give it a grayed out appearance and remove pointer events.
           +example()
@@ -48,10 +51,11 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Readonly
+          strong Form control
+          span.small.ms-1 Readonly
         .card-body
-          p
-            | Add the
+          p.text-medium-emphasis.small
+            | Add the 
             code readonly
             |  boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
           +example()
@@ -59,13 +63,14 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Readonly plain text
+          strong Form control
+          span.small.ms-1 Readonly plain text
         .card-body
-          p
-            | If you want to have
+          p.text-medium-emphasis.small
+            | If you want to have 
             code
               = '<input readonly>'
-            |  elements in your form styled as plain text, use the
+            |  elements in your form styled as plain text, use the 
             code .form-control-plaintext
             |  class to remove the default form field styling and preserve the correct margin and padding.
           +example()
@@ -90,7 +95,8 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | File input
+          strong Form control
+          span.small.ms-1 File input
         .card-body
           +example()
             .mb-3
@@ -111,7 +117,8 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Color
+          strong Form control
+          span.small.ms-1 Color
         .card-body
           +example()
             label.form-label(for='exampleColorInput') Color picker
@@ -119,24 +126,25 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Datalists
+          strong Form control
+          span.small.ms-1 Datalists
         .card-body
-          p
-            | Datalists allow you to create a group of
+          p.text-medium-emphasis.small
+            | Datalists allow you to create a group of 
             code
              = '<option>'
-            | s that can be accessed (and autocompleted) from within an
+            | s that can be accessed (and autocompleted) from within an 
             code
              = '<input>'
-            | . These are similar to
+            | . These are similar to 
             code
               = '<select>'
-            |  elements, but come with more menu styling limitations and differences. While most browsers and operating systems include some support for
+            |  elements, but come with more menu styling limitations and differences. While most browsers and operating systems include some support for 
             code
               = '<datalist>'
             |  elements, their styling is inconsistent at best.
-          p
-            | Learn more about
+          p.text-medium-emphasis.small
+            | Learn more about 
             a(href='https://caniuse.com/datalist') support for datalist elements
             | .
           +example()

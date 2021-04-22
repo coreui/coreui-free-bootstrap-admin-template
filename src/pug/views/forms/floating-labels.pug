@@ -4,14 +4,15 @@ block canonical
   link(rel='canonical' href='https://coreui.io/docs/4.0/forms/floating-labels/')
 
 block view
-  +callout('Floating labels', 'https://coreui.io/docs/4.0/forms/floating-labels/')
+  +callout('Floating label', 'https://coreui.io/docs/4.0/forms/floating-labels/')
   .row(data-masonry='{"percentPosition": true }')
     .col-lg-6
       .card.mb-4
         .card-header
-          | Example
+          strong Floating labels
+          span.small.ms-1 Basic example
         .card-body
-          p
+          p.text-medium-emphasis.small
             | Wrap a pair of
             |
             code
@@ -48,7 +49,7 @@ block view
             .form-floating
               input.form-control#floatingPassword(type='password' placeholder='Password')
               label(for='floatingPassword') Password
-          p
+          p.text-medium-emphasis.small
             | When there’s a
             |
             code value
@@ -61,7 +62,7 @@ block view
             form.form-floating
               input.form-control#floatingInputValue(type='email' placeholder='name@example.com' value='test@example.com')
               label(for='floatingInputValue') Input with value
-          p Form validation styles also work as expected.
+          p.text-medium-emphasis.small Form validation styles also work as expected.
           +example()
             form.form-floating
               input.form-control.is-invalid#floatingInputInvalid(type='email' placeholder='name@example.com' value='test@example.com')
@@ -69,9 +70,10 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Textareas
+          strong Floating labels
+          span.small.ms-1 Textareas
         .card-body
-          p
+          p.text-medium-emphasis.small
             | By default,
             |
             code
@@ -88,7 +90,7 @@ block view
             .form-floating
               textarea.form-control#floatingTextarea(placeholder='Leave a comment here')
               label(for='floatingTextarea') Comments
-          p
+          p.text-medium-emphasis.small
             | To set a custom height on your
             |
             code
@@ -107,9 +109,10 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Selects
+          strong Floating labels
+          span.small.ms-1 Selects
         .card-body
-          p
+          p.text-medium-emphasis.small
             | Other than
             |
             code .form-control
@@ -144,9 +147,10 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Layout
+          strong Floating labels
+          span.small.ms-1 Layout
         .card-body
-          p When working with the CoreUI for Bootstrap grid system, be sure to place form elements within column classes.
+          p.text-medium-emphasis.small When working with the CoreUI for Bootstrap grid system, be sure to place form elements within column classes.
           +example()
             .row.g-2
               .col-md

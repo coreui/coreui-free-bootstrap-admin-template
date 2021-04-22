@@ -9,18 +9,19 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Default
+          strong Select
+          span.small.ms-1 Default
         .card-body
-          p
-            | Custom
+          p.text-medium-emphasis.small
+            | Custom 
             code
              = '<select>'
-            |  menus need only a custom class,
+            |  menus need only a custom class, 
             code .form-select
-            |  to trigger the custom styles. Custom styles are limited to the
+            |  to trigger the custom styles. Custom styles are limited to the 
             code
              = '<select>'
-            | ’s initial appearance and cannot modify the
+            | ’s initial appearance and cannot modify the 
             code
              = '<option>'
             | s due to browser limitations.
@@ -33,9 +34,10 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Sizing
+          strong Select
+          span.small.ms-1 Sizing
         .card-body
-          p You may also choose from small and large custom selects to match our similarly sized text inputs.
+          p.text-medium-emphasis.small You may also choose from small and large custom selects to match our similarly sized text inputs.
           +example()
             select.form-select.form-select-lg.mb-3(aria-label='.form-select-lg example')
               option(selected) Open this select menu
@@ -47,8 +49,8 @@ block view
               option(value='1') One
               option(value='2') Two
               option(value='3') Three
-          p
-            | The
+          p.text-medium-emphasis.small
+            | The 
             code multiple
             |  attribute is also supported:
           +example()
@@ -57,8 +59,8 @@ block view
               option(value='1') One
               option(value='2') Two
               option(value='3') Three
-          p
-            | As is the
+          p.text-medium-emphasis.small
+            | As is the 
             code size
             |  attribute:
           +example()
@@ -70,10 +72,11 @@ block view
     .col-lg-6
       .card.mb-4
         .card-header
-          | Disabled
+          strong Select
+          span.small.ms-1 Disabled
         .card-body
-          p
-            | Add the
+          p.text-medium-emphasis.small
+            | Add the 
             code disabled
             |  boolean attribute on a select to give it a grayed out appearance and remove pointer events.
           +example()
