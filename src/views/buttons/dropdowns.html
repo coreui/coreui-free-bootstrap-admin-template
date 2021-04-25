@@ -34,6 +34,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -50,9 +51,10 @@
       // Bootstrap ID
       gtag('config', 'UA-118965717-5');
     </script>
+    <link rel="canonical" href="https://coreui.io/docs/4.0/components/dropdowns/">
   </head>
   <body>
-    <div class="sidebar sidebar-dark sidebar-fixed sidebar-self-hiding-md" id="sidebar">
+    <div class="sidebar sidebar-dark sidebar-fixed sidebar-self-hiding-xl" id="sidebar">
       <div class="sidebar-brand d-lg-down-none">
         <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
           <use xlink:href="assets/brand/coreui.svg#full"></use>
@@ -86,13 +88,13 @@
             <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"></span> Cards</a></li>
             <li class="nav-item"><a class="nav-link" href="base/carousel.html"><span class="nav-icon"></span> Carousel</a></li>
             <li class="nav-item"><a class="nav-link" href="base/collapse.html"><span class="nav-icon"></span> Collapse</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/forms.html"><span class="nav-icon"></span> Forms</a></li>
             <li class="nav-item"><a class="nav-link" href="base/list-group.html"><span class="nav-icon"></span> List group</a></li>
             <li class="nav-item"><a class="nav-link" href="base/navs.html"><span class="nav-icon"></span> Navs</a></li>
             <li class="nav-item"><a class="nav-link" href="base/pagination.html"><span class="nav-icon"></span> Pagination</a></li>
             <li class="nav-item"><a class="nav-link" href="base/popovers.html"><span class="nav-icon"></span> Popovers</a></li>
             <li class="nav-item"><a class="nav-link" href="base/progress.html"><span class="nav-icon"></span> Progress</a></li>
             <li class="nav-item"><a class="nav-link" href="base/scrollspy.html"><span class="nav-icon"></span> Scrollspy</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/spinners.html"><span class="nav-icon"></span> Spinners</a></li>
             <li class="nav-item"><a class="nav-link" href="base/tables.html"><span class="nav-icon"></span> Tables</a></li>
             <li class="nav-item"><a class="nav-link" href="base/tabs.html"><span class="nav-icon"></span> Tabs</a></li>
             <li class="nav-item"><a class="nav-link" href="base/tooltips.html"><span class="nav-icon"></span> Tooltips</a></li>
@@ -114,6 +116,21 @@
             </svg> Charts</a></li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-notes"></use>
+            </svg> Forms</a>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="forms/form-control.html"> Form Control</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/select.html"> Select</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/checks-radios.html"> Checks and radios</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/range.html"> Range</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/input-group.html"> Input group</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/floating-labels.html"> Floating labels</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/layout.html"> Layout</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/validation.html"> Validation</a></li>
+          </ul>
+        </li>
+        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+            <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Icons</a>
           <ul class="nav-group-items">
@@ -130,6 +147,7 @@
             <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><span class="nav-icon"></span> Alerts</a></li>
             <li class="nav-item"><a class="nav-link" href="notifications/badge.html"><span class="nav-icon"></span> Badge</a></li>
             <li class="nav-item"><a class="nav-link" href="notifications/modals.html"><span class="nav-icon"></span> Modals</a></li>
+            <li class="nav-item"><a class="nav-link" href="notifications/toasts.html"><span class="nav-icon"></span> Toasts</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="widgets.html">
@@ -176,15 +194,15 @@
     </div>
     <div class="wrapper d-flex flex-column min-vh-100 bg-light">
       <header class="header header-sticky mb-4">
-        <div class="container-fluid"><a class="header-brand d-lg-none" href="#">
-            <svg width="118" height="46" alt="CoreUI Logo">
-              <use xlink:href="assets/brand/coreui.svg#full"></use>
-            </svg></a>
-          <button class="header-toggler order-sm-first px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+        <div class="container-fluid">
+          <button class="header-toggler px-md-0 me-md-3 d-xxl-none" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
-          </button>
+          </button><a class="header-brand d-xl-none" href="#">
+            <svg width="118" height="46" alt="CoreUI Logo">
+              <use xlink:href="assets/brand/coreui.svg#full"></use>
+            </svg></a>
           <ul class="header-nav d-md-down-none">
             <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
@@ -252,7 +270,7 @@
         <div class="container-fluid">
           <!-- Breadcrumb-->
           <nav aria-label="breadcrumb">
-            <ol class="breadcrumb border-0 m-0">
+            <ol class="breadcrumb my-0 ms-2">
               <li class="breadcrumb-item">Home</li>
               <li class="breadcrumb-item"><a href="#">Admin</a></li>
               <li class="breadcrumb-item active">Dashboard</li>
@@ -262,237 +280,1630 @@
       </header>
       <div class="body flex-grow-1 px-3">
         <div class="container-lg">
+          <div class="callout callout-info bg-white">CoreUI Dropdown has been created as an extension of Bootstrap Dropdown. Dropdown is delivered with some new features, variants, and unique design that matches CoreUI Design System requirements.<br><br>For more information please visit our official
+            <a href="https://coreui.io/docs/4.0/components/dropdowns/" target="_blank">documentation</a>.
+          </div>
           <div class="row">
-            <div class="col">
+            <div class="col-12">
               <div class="card mb-4">
-                <div class="card-header"> Dropdowns
-                  <div class="float-end"><a href="https://coreui.io/docs/4.0/components/dropdowns/" target="_blank">docs</a></div>
-                </div>
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Single button</span></div>
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <div class="btn-group">
-                        <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                  <p class="text-medium-emphasis small">Each single <code>.btn</code> can be changed into a dropdown toggle with small changes. Here’s how you can put them to work with either <code> &lt;button&gt;</code> elements:</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-718" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-718" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-718">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="btn-group"><a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="btn-group">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
-                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <div class="btn-group">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
-                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <div class="btn-group">
-                    <button class="btn btn-success dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
-                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <div class="btn-group">
-                    <button class="btn btn-info dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
-                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <div class="btn-group">
-                    <button class="btn btn-warning dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
-                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <div class="btn-group">
-                    <button class="btn btn-danger dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
-                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <hr>
-                  <div class="btn-group">
-                    <button class="btn btn-primary" type="button">Primary</button>
-                    <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
-                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(71px, 34px, 0px); top: 0px; left: 0px; will-change: transform;"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <div class="btn-group">
-                    <button class="btn btn-secondary" type="button">Secondary</button>
-                    <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
-                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(89px, 34px, 0px); top: 0px; left: 0px; will-change: transform;"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <div class="btn-group">
-                    <button class="btn btn-success" type="button">Success</button>
-                    <button class="btn btn-success dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
-                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <div class="btn-group">
-                    <button class="btn btn-info" type="button">Info</button>
-                    <button class="btn btn-info dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
-                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <div class="btn-group">
-                    <button class="btn btn-warning" type="button">Warning</button>
-                    <button class="btn btn-warning dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
-                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <div class="btn-group">
-                    <button class="btn btn-danger" type="button">Danger</button>
-                    <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
-                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <!-- /btn-group-->
-                  <hr>
-                  <div class="btn-toolbar" role="toolbar">
-                    <div class="btn-group">
-                      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Large button</button>
-                      <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-718">
+                        <script class="language-markup" type="text/plain">
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </script>
                       </div>
                     </div>
-                    <!-- /btn-group-->
-                    <div class="btn-group ms-2">
-                      <button class="btn btn-lg btn-secondary" type="button">Large split button</button>
-                      <button class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
-                      <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                      </div>
-                    </div>
-                    <!-- /btn-group-->
                   </div>
-                  <!-- /btn-toolbar-->
-                  <hr>
-                  <div class="btn-toolbar" role="toolbar">
-                    <div class="btn-group">
-                      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Small button</button>
-                      <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                  <p class="text-medium-emphasis small">And with <code><a></code> elements:</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1012" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1012" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1012">
+                        <div class="dropdown"><a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown link</a>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-1012">
+                        <script class="language-markup" type="text/plain">
+                          <div class="dropdown"><a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown link</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </script>
                       </div>
                     </div>
-                    <!-- /btn-group-->
-                    <div class="btn-group ms-2">
-                      <button class="btn btn-sm btn-secondary" type="button">Small split button</button>
-                      <button class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
-                      <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                      </div>
-                    </div>
-                    <!-- /btn-group-->
                   </div>
-                  <!-- /btn-toolbar-->
-                  <hr>
-                  <div class="bd-example">
-                    <div class="btn-group dropup">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</button>
-                      <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, -2px, 0px); top: 0px; left: 0px; will-change: transform;"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                  <p class="text-medium-emphasis small">The best part is you can do this with any button variant, too:</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-689" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-689" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-689">
+                        <div class="btn-group">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Primary</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Secondary</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-success dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Success</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-info dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Info</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-warning dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Warning</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-danger dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Danger</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
-                    <div class="btn-group dropup">
-                      <button class="btn btn-secondary" type="button">Split dropup</button>
-                      <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
-                      <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(101px, -188px, 0px); top: 0px; left: 0px; will-change: transform;"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-689">
+                        <script class="language-markup" type="text/plain">
+                          <div class="btn-group">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Primary</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Secondary</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-success dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Success</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-info dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Info</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Warning</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-danger dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Danger</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                        </script>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col">
+            <div class="col-12">
               <div class="card mb-4">
-                <div class="card-header"> Menus</div>
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Split button</span></div>
                 <div class="card-body">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;">
-                      <button class="dropdown-item" type="button">Action</button>
-                      <button class="dropdown-item" type="button">Another action</button>
-                      <button class="dropdown-item" type="button">Something else here</button>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="btn-group">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">This dropdown's menu is right-aligned</button>
-                    <div class="dropdown-menu dropdown-menu-end">
-                      <button class="dropdown-item" type="button">Action</button>
-                      <button class="dropdown-item" type="button">Another action</button>
-                      <button class="dropdown-item" type="button">Something else here</button>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" id="dropdownMenu3" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu header</button>
-                    <div class="dropdown-menu">
-                      <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" id="dropdownMenu4" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu divider</button>
-                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" id="dropdownMenu5" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu forms</button>
-                    <div class="dropdown-menu">
-                      <form class="px-4 py-3">
-                        <div class="mb-3">
-                          <label for="exampleDropdownFormEmail1">Email address</label>
-                          <input class="form-control" id="exampleDropdownFormEmail1" type="email" placeholder="email@example.com">
+                  <p class="text-medium-emphasis small">Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of <code>.dropdown-toggle-split</code> for proper spacing around the dropdown caret.</p>
+                  <p class="text-medium-emphasis small">We use this extra class to reduce the horizontal <code>padding</code> on either side of the caret by 25% and remove the <code>margin-left</code> that’s attached for normal button dropdowns. Those additional changes hold the caret centered in the split button and implement a more properly sized hit area next to the main button.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-256" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-256" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-256">
+                        <div class="btn-group">
+                          <button class="btn btn-primary" type="button">Primary</button>
+                          <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
-                        <div class="mb-3">
-                          <label for="exampleDropdownFormPassword1">Password</label>
-                          <input class="form-control" id="exampleDropdownFormPassword1" type="password" placeholder="Password">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary" type="button">Secondary</button>
+                          <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox"> Remember me
-                          </label>
+                        <div class="btn-group">
+                          <button class="btn btn-success" type="button">Success</button>
+                          <button class="btn btn-success dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
-                        <button class="btn btn-primary" type="submit">Sign in</button>
-                      </form>
-                      <div class="dropdown-divider"></div><a class="dropdown-item" href="#">New around here? Sign up</a><a class="dropdown-item" href="#">Forgot password?</a>
+                        <div class="btn-group">
+                          <button class="btn btn-info" type="button">Info</button>
+                          <button class="btn btn-info dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-warning" type="button">Warning</button>
+                          <button class="btn btn-warning dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-danger" type="button">Danger</button>
+                          <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-256">
+                        <script class="language-markup" type="text/plain">
+                          <div class="btn-group">
+                            <button class="btn btn-primary" type="button">Primary</button>
+                            <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-secondary" type="button">Secondary</button>
+                            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-success" type="button">Success</button>
+                            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-info" type="button">Info</button>
+                            <button class="btn btn-info dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-warning" type="button">Warning</button>
+                            <button class="btn btn-warning dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-danger" type="button">Danger</button>
+                            <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                        </script>
+                      </div>
                     </div>
                   </div>
-                  <hr>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" id="dropdownMenu5" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Disabled item</button>
-                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Regular link</a><a class="dropdown-item disabled" href="#">Disabled link</a><a class="dropdown-item" href="#">Another link</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Sizing</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1294" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1294" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1294">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Large button</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-lg btn-secondary" type="button">Large split button</button>
+                          <button class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-1294">
+                        <script class="language-markup" type="text/plain">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Large button</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-lg btn-secondary" type="button">Large split button</button>
+                            <button class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-857" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-857" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-857">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Small button</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-sm btn-secondary" type="button">Small split button</button>
+                          <button class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-857">
+                        <script class="language-markup" type="text/plain">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Small button</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-sm btn-secondary" type="button">Small split button</button>
+                            <button class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Dark dropdowns</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Opt into darker dropdowns to match a dark navbar or custom style by adding <code>.dropdown-menu-dark</code> onto an existing <code>.dropdown-menu</code>. No changes are required to the dropdown items.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-550" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-550" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-550">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton2" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-550">
+                        <script class="language-markup" type="text/plain">
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton2" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                              <li><a class="dropdown-item active" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-medium-emphasis small">And putting it to use in a navbar:</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-426" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-426" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-426">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                          <div class="container-fluid"><a class="navbar-brand" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-coreui-toggle="collapse" data-coreui-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                              <ul class="navbar-nav">
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" href="#" role="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-426">
+                        <script class="language-markup" type="text/plain">
+                          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                            <div class="container-fluid"><a class="navbar-brand" href="#">Navbar</a>
+                              <button class="navbar-toggler" type="button" data-coreui-toggle="collapse" data-coreui-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" href="#" role="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Dropup</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent element.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-398" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-398" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-398">
+                        <div class="btn-group dropup">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropup</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropup">
+                          <button class="btn btn-secondary" type="button">Split dropup</button>
+                          <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-398">
+                        <script class="language-markup" type="text/plain">
+                          <div class="btn-group dropup">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropup</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group dropup">
+                            <button class="btn btn-secondary" type="button">Split dropup</button>
+                            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Dropright</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Trigger dropdown menus at the right of the elements by adding <code>.dropend</code> to the parent element.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-320" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-320" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-320">
+                        <div class="btn-group dropend">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropright</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropend">
+                          <button class="btn btn-secondary" type="button">Split dropend</button>
+                          <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropright</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-320">
+                        <script class="language-markup" type="text/plain">
+                          <div class="btn-group dropend">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropright</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group dropend">
+                            <button class="btn btn-secondary" type="button">Split dropend</button>
+                            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropright</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Dropleft</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Trigger dropdown menus at the left of the elements by adding <code>.dropstart</code> to the parent element.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-267" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-267" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-267">
+                        <div class="btn-group dropstart">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropleft</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <div class="btn-group dropstart" role="group">
+                            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropleft</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <button class="btn btn-secondary" type="button">Split dropstart</button>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-267">
+                        <script class="language-markup" type="text/plain">
+                          <div class="btn-group dropstart">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropleft</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <div class="btn-group dropstart" role="group">
+                              <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropleft</span></button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <button class="btn btn-secondary" type="button">Split dropstart</button>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Menu items</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Historically dropdown menu contents <em>had</em> to be links, but that’s no longer the case with v4. Now you can optionally use <code> &lt;button&gt;</code> elements in your dropdowns instead of just <code><a></code>s.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-512" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-512" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-512">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-512">
+                        <script class="language-markup" type="text/plain">
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <li>
+                                <button class="dropdown-item" type="button">Action</button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="button">Another action</button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="button">Something else here</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-medium-emphasis small">You can also create non-interactive dropdown items with <code>.dropdown-item-text</code>. Feel free to style further with custom CSS or text utilities.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-428" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-428" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-428">
+                        <ul class="dropdown-menu">
+                          <li><span class="dropdown-item-text">Dropdown item text</span></li>
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-428">
+                        <script class="language-markup" type="text/plain">
+                          <ul class="dropdown-menu">
+                            <li><span class="dropdown-item-text">Dropdown item text</span></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Active</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Add <code>.active</code> to items in the dropdown to <strong>style them as active</strong>. To convey the active state to assistive technologies, use the <code>aria-current</code> attribute — using the <code>page</code> value for the current page, or <code>true</code> for the current item in a set.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-944" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-944" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-944">
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Regular link</a></li>
+                          <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a></li>
+                          <li><a class="dropdown-item" href="#">Another link</a></li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-944">
+                        <script class="language-markup" type="text/plain">
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Regular link</a></li>
+                            <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a></li>
+                            <li><a class="dropdown-item" href="#">Another link</a></li>
+                          </ul>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Disabled</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Add <code>.disabled</code> to items in the dropdown to <strong>style them as disabled</strong>.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-192" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-192" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-192">
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Regular link</a></li>
+                          <li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Disabled link</a></li>
+                          <li><a class="dropdown-item" href="#">Another link</a></li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-192">
+                        <script class="language-markup" type="text/plain">
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Regular link</a></li>
+                            <li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Disabled link</a></li>
+                            <li><a class="dropdown-item" href="#">Another link</a></li>
+                          </ul>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Menu alignment</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add <code>.dropdown-menu-end</code> to a <code>.dropdown-menu</code> to right align the dropdown menu.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1249" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1249" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1249">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Right-aligned menu example</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-1249">
+                        <script class="language-markup" type="text/plain">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Right-aligned menu example</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li>
+                                <button class="dropdown-item" type="button">Action</button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="button">Another action</button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="button">Something else here</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Responsive alignment</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">If you want to use responsive alignment, disable dynamic positioning by adding the <code>data-coreui-display="static"</code> attribute and use the responsive variation classes.</p>
+                  <p class="text-medium-emphasis small">To align <strong>right</strong> the dropdown menu with the given breakpoint or larger, add <code>.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-end</code>.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-619" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-619" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-619">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Left-aligned but right aligned when large screen</button>
+                          <ul class="dropdown-menu dropdown-menu-lg-end">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-619">
+                        <script class="language-markup" type="text/plain">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Left-aligned but right aligned when large screen</button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                              <li>
+                                <button class="dropdown-item" type="button">Action</button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="button">Another action</button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="button">Something else here</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-653" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-653" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-653">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Right-aligned but left aligned when large screen</button>
+                          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-653">
+                        <script class="language-markup" type="text/plain">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Right-aligned but left aligned when large screen</button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                              <li>
+                                <button class="dropdown-item" type="button">Action</button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="button">Another action</button>
+                              </li>
+                              <li>
+                                <button class="dropdown-item" type="button">Something else here</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-440" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-440" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-440">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Right-aligned menu</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Left-aligned, right-aligned lg</button>
+                          <ul class="dropdown-menu dropdown-menu-lg-end">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Right-aligned, left-aligned lg</button>
+                          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropstart">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropstart</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropend">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropend</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropup">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropup</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-440">
+                        <script class="language-markup" type="text/plain">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Right-aligned menu</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Left-aligned, right-aligned lg</button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Right-aligned, left-aligned lg</button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group dropstart">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropstart</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group dropend">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropend</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                          </div>
+                          <div class="btn-group dropup">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropup</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card mb-4">
+                  <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Headers</span></div>
+                  <div class="card-body">
+                    <p class="text-medium-emphasis small">Add a header to label sections of actions in any dropdown menu.</p>
+                    <div class="example mt-4">
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-240" role="tab">
+                            <svg class="icon me-2">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                            </svg>Preview</a></li>
+                        <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-240" role="tab">
+                            <svg class="icon me-2">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                            </svg>Code</a></li>
+                      </ul>
+                      <div class="tab-content border border-top-0 rounded-bottom">
+                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-240">
+                          <ul class="dropdown-menu">
+                            <li>
+                              <h6 class="dropdown-header">Dropdown header</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane py-3" role="tabpanel" id="code-240">
+                          <script class="language-markup" type="text/plain">
+                            <ul class="dropdown-menu">
+                              <li>
+                                <h6 class="dropdown-header">Dropdown header</h6>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
+                          </script>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Dividers</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Separate groups of related menu items with a divider.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-187" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-187" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-187">
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-187">
+                        <script class="language-markup" type="text/plain">
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Text</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Place any freeform text within a dropdown menu with text and use <a href="https://coreui.io/docs/4.0/utilities/spacing/">spacing utilities</a>. Note that you’ll likely need additional sizing styles to constrain the menu width.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-531" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-531" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-531">
+                        <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
+                          <p>Some example text that's free-flowing within the dropdown menu.</p>
+                          <p class="mb-0">And this is more example text.</p>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-531">
+                        <script class="language-markup" type="text/plain">
+                          <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
+                            <p>Some example text that's free-flowing within the dropdown menu.</p>
+                            <p class="mb-0">And this is more example text.</p>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Dropdown</strong><span class="small ms-1">Forms</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Put a form within a dropdown menu, or make it into a dropdown menu, and use <a href="https://coreui.io/docs/4.0/utilities/spacing/">margin or padding utilities</a> to give it the negative space you require.</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-996" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-996" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-996">
+                        <div class="dropdown-menu">
+                          <form class="px-4 py-3">
+                            <div class="mb-3">
+                              <label class="form-label" for="exampleDropdownFormEmail1">Email address</label>
+                              <input class="form-control" id="exampleDropdownFormEmail1" type="email" placeholder="email@example.com">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="exampleDropdownFormPassword1">Password</label>
+                              <input class="form-control" id="exampleDropdownFormPassword1" type="password" placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                              <div class="form-check">
+                                <input class="form-check-input" id="dropdownCheck" type="checkbox">
+                                <label class="form-check-label" for="dropdownCheck">Remember me</label>
+                              </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Sign in</button>
+                          </form>
+                          <div class="dropdown-divider"></div><a class="dropdown-item" href="#">New around here? Sign up</a><a class="dropdown-item" href="#">Forgot password?</a>
+                        </div>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-996">
+                        <script class="language-markup" type="text/plain">
+                          <div class="dropdown-menu">
+                            <form class="px-4 py-3">
+                              <div class="mb-3">
+                                <label class="form-label" for="exampleDropdownFormEmail1">Email address</label>
+                                <input class="form-control" id="exampleDropdownFormEmail1" type="email" placeholder="email@example.com">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label" for="exampleDropdownFormPassword1">Password</label>
+                                <input class="form-control" id="exampleDropdownFormPassword1" type="password" placeholder="Password">
+                              </div>
+                              <div class="mb-3">
+                                <div class="form-check">
+                                  <input class="form-check-input" id="dropdownCheck" type="checkbox">
+                                  <label class="form-check-label" for="dropdownCheck">Remember me</label>
+                                </div>
+                              </div>
+                              <button class="btn btn-primary" type="submit">Sign in</button>
+                            </form>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">New around here? Sign up</a><a class="dropdown-item" href="#">Forgot password?</a>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-127" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-127" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-127">
+                        <form class="dropdown-menu p-4">
+                          <div class="mb-3">
+                            <label class="form-label" for="exampleDropdownFormEmail2">Email address</label>
+                            <input class="form-control" id="exampleDropdownFormEmail2" type="email" placeholder="email@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label" for="exampleDropdownFormPassword2">Password</label>
+                            <input class="form-control" id="exampleDropdownFormPassword2" type="password" placeholder="Password">
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" id="dropdownCheck2" type="checkbox">
+                              <label class="form-check-label" for="dropdownCheck2">Remember me</label>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary" type="submit">Sign in</button>
+                        </form>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-127">
+                        <script class="language-markup" type="text/plain">
+                          <form class="dropdown-menu p-4">
+                            <div class="mb-3">
+                              <label class="form-label" for="exampleDropdownFormEmail2">Email address</label>
+                              <input class="form-control" id="exampleDropdownFormEmail2" type="email" placeholder="email@example.com">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="exampleDropdownFormPassword2">Password</label>
+                              <input class="form-control" id="exampleDropdownFormPassword2" type="password" placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                              <div class="form-check">
+                                <input class="form-check-input" id="dropdownCheck2" type="checkbox">
+                                <label class="form-check-label" for="dropdownCheck2">Remember me</label>
+                              </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Sign in</button>
+                          </form>
+                        </script>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -507,5 +1918,10 @@
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </body>
 </html>

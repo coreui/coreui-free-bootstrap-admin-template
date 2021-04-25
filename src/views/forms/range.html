@@ -51,7 +51,7 @@
       // Bootstrap ID
       gtag('config', 'UA-118965717-5');
     </script>
-    <link rel="canonical" href="https://coreui.io/docs/4.0/components/popovers/">
+    <link rel="canonical" href="https://coreui.io/docs/4.0/forms/range/">
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed sidebar-self-hiding-xl" id="sidebar">
@@ -280,32 +280,35 @@
       </header>
       <div class="body flex-grow-1 px-3">
         <div class="container-lg">
-          <div class="callout callout-info bg-white">CoreUI Popover has been created as an extension of Bootstrap Popover. Popover is delivered with some new features, variants, and unique design that matches CoreUI Design System requirements.<br><br>For more information please visit our official
-            <a href="https://coreui.io/docs/4.0/components/popovers/" target="_blank">documentation</a>.
+          <div class="callout callout-info bg-white">CoreUI Range has been created as an extension of Bootstrap Range. Range is delivered with some new features, variants, and unique design that matches CoreUI Design System requirements.<br><br>For more information please visit our official
+            <a href="https://coreui.io/docs/4.0/forms/range/" target="_blank">documentation</a>.
           </div>
-          <div class="row">
-            <div class="col-12">
+          <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
+            <div class="col-lg-6">
               <div class="card mb-4">
-                <div class="card-header"><strong>Popover</strong><span class="small ms-1">Basic example</span></div>
+                <div class="card-header"><strong>Range</strong></div>
                 <div class="card-body">
+                  <p class="text-medium-emphasis small">Create custom <code>&lt;input type=&quot;range&quot;&gt;</code> controls with <code>.form-range</code>.</p>
                   <div class="example mt-4">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-738" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-136" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-738" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-136" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-738">
-                        <button class="btn btn-lg btn-danger" type="button" data-coreui-toggle="popover" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Popover title">Click to toggle popover</button>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-136">
+                        <label class="form-label" for="customRange1">Example range</label>
+                        <input class="form-range" id="customRange1" type="range">
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-738">
+                      <div class="tab-pane py-3" role="tabpanel" id="code-136">
                         <script class="language-markup" type="text/plain">
-                          <button class="btn btn-lg btn-danger" type="button" data-coreui-toggle="popover" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Popover title">Click to toggle popover</button>
+                          <label class="form-label" for="customRange1">Example range</label>
+                          <input class="form-range" id="customRange1" type="range">
                         </script>
                       </div>
                     </div>
@@ -313,35 +316,31 @@
                 </div>
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-lg-6">
               <div class="card mb-4">
-                <div class="card-header"><strong>Popover</strong><span class="small ms-1">Four directions</span></div>
+                <div class="card-header"><strong>Range</strong><span class="small ms-1">Disabled</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Four options are available: top, right, bottom, and left aligned. Directions are mirrored when using Bootstrap in RTL.</p>
+                  <p class="text-medium-emphasis small">Add the <code>disabled</code> boolean attribute on an input to give it a grayed out appearance and remove pointer events.</p>
                   <div class="example mt-4">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-507" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-863" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-507" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-863" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-507">
-                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="top" data-coreui-content="Top popover" data-coreui-original-title="" title="">Popover on top</button>
-                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="right" data-coreui-content="Right popover" data-coreui-original-title="" title="">Popover on right</button>
-                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="bottom" data-coreui-content="Bottom popover" data-coreui-original-title="" title="">Popover on bottom</button>
-                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="left" data-coreui-content="Left popover" data-coreui-original-title="" title="">Popover on left</button>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-863">
+                        <label class="form-label" for="disabledRange">Disabled range</label>
+                        <input class="form-range" id="disabledRange" type="range" disabled>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-507">
+                      <div class="tab-pane py-3" role="tabpanel" id="code-863">
                         <script class="language-markup" type="text/plain">
-                          <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="top" data-coreui-content="Top popover" data-coreui-original-title="" title="">Popover on top</button>
-                          <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="right" data-coreui-content="Right popover" data-coreui-original-title="" title="">Popover on right</button>
-                          <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="bottom" data-coreui-content="Bottom popover" data-coreui-original-title="" title="">Popover on bottom</button>
-                          <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="left" data-coreui-content="Left popover" data-coreui-original-title="" title="">Popover on left</button>
+                          <label class="form-label" for="disabledRange">Disabled range</label>
+                          <input class="form-range" id="disabledRange" type="range" disabled>
                         </script>
                       </div>
                     </div>
@@ -349,70 +348,63 @@
                 </div>
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-lg-6">
               <div class="card mb-4">
-                <div class="card-header"><strong>Popover</strong><span class="small ms-1">Dismiss on next click</span></div>
+                <div class="card-header"><strong>Range</strong><span class="small ms-1">Min and max</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">
-                    Use the
-                    <code>focus</code> trigger to dismiss popovers on the user’s next click of a different element than the toggle element.
-                  </p>
+                  <p class="text-medium-emphasis small">Range inputs have implicit values for <code>min</code> and <code>max</code>— <code>0</code> and <code>100</code>, respectively. You may specify new values for those using the <code>min</code> and <code>max</code> attributes.</p>
                   <div class="example mt-4">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1281" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1100" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1281" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1100" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1281"><a class="btn btn-lg btn-danger" tabindex="0" role="button" data-coreui-toggle="popover" data-coreui-trigger="focus" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Dismissible popover">Dismissible popover</a>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1100">
+                        <label class="form-label" for="customRange2">Example range</label>
+                        <input class="form-range" id="customRange2" type="range" min="0" max="5">
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1281">
-                        <script class="language-markup" type="text/plain"><a class="btn btn-lg btn-danger" tabindex="0" role="button" data-coreui-toggle="popover" data-coreui-trigger="focus" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Dismissible popover">Dismissible popover</a>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-1100">
+                        <script class="language-markup" type="text/plain">
+                          <label class="form-label" for="customRange2">Example range</label>
+                          <input class="form-range" id="customRange2" type="range" min="0" max="5">
                         </script>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12"></div>
               </div>
+            </div>
+            <div class="col-lg-6">
               <div class="card mb-4">
-                <div class="card-header"><strong>Popover</strong><span class="small ms-1">Disabled elements</span></div>
+                <div class="card-header"><strong>Range</strong><span class="small ms-1">Steps</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">
-                    Elements with the
-                    <code>disabled</code> attribute aren’t interactive, meaning users cannot hover or click them to trigger a popover (or tooltip). As a workaround, you’ll want to trigger the popover from a wrapper
-                    <code> &lt;div&gt;</code> or
-                    <code> &lt;span&gt;</code>, ideally made keyboard-focusable using
-                    <code>tabindex="0"</code>.
-                  </p>
-                  <p class="text-medium-emphasis small">
-                    For disabled popover triggers, you may also prefer
-                    <code>data-coreui-trigger="hover focus"</code> so that the popover appears as immediate visual feedback to your users as they may not expect to
-                    <em>click</em> on a disabled element.
-                  </p>
+                  <p class="text-medium-emphasis small">By default, range inputs “snap” to integer values. To change this, you can specify a <code>step</code> value. In the example below, we double the number of steps by using <code>step="0.5"</code>.</p>
                   <div class="example mt-4">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-632" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-952" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-632" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-952" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-632"><span class="d-inline-block" tabindex="0" data-coreui-toggle="popover" data-coreui-trigger="hover focus" data-coreui-content="Disabled popover" data-coreui-original-title="" title="">
-                          <button class="btn btn-primary" type="button" disabled="">Disabled button</button></span>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-952">
+                        <label class="form-label" for="customRange3">Example range</label>
+                        <input class="form-range" id="customRange3" type="range" min="0" max="5" step="0.5">
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-632">
-                        <script class="language-markup" type="text/plain"><span class="d-inline-block" tabindex="0" data-coreui-toggle="popover" data-coreui-trigger="hover focus" data-coreui-content="Disabled popover" data-coreui-original-title="" title="">
-                            <button class="btn btn-primary" type="button" disabled="">Disabled button</button></span>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-952">
+                        <script class="language-markup" type="text/plain">
+                          <label class="form-label" for="customRange3">Example range</label>
+                          <input class="form-range" id="customRange3" type="range" min="0" max="5" step="0.5">
                         </script>
                       </div>
                     </div>
@@ -435,7 +427,5 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-    <!-- Plugins and scripts required by this view-->
-    <script src="js/popovers.js"></script>
   </body>
 </html>

@@ -51,7 +51,7 @@
       // Bootstrap ID
       gtag('config', 'UA-118965717-5');
     </script>
-    <link rel="canonical" href="https://coreui.io/docs/4.0/components/popovers/">
+    <link rel="canonical" href="https://coreui.io/docs/4.0/forms/select/">
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed sidebar-self-hiding-xl" id="sidebar">
@@ -280,32 +280,43 @@
       </header>
       <div class="body flex-grow-1 px-3">
         <div class="container-lg">
-          <div class="callout callout-info bg-white">CoreUI Popover has been created as an extension of Bootstrap Popover. Popover is delivered with some new features, variants, and unique design that matches CoreUI Design System requirements.<br><br>For more information please visit our official
-            <a href="https://coreui.io/docs/4.0/components/popovers/" target="_blank">documentation</a>.
+          <div class="callout callout-info bg-white">CoreUI Select has been created as an extension of Bootstrap Select. Select is delivered with some new features, variants, and unique design that matches CoreUI Design System requirements.<br><br>For more information please visit our official
+            <a href="https://coreui.io/docs/4.0/forms/select/" target="_blank">documentation</a>.
           </div>
-          <div class="row">
-            <div class="col-12">
+          <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
+            <div class="col-lg-6">
               <div class="card mb-4">
-                <div class="card-header"><strong>Popover</strong><span class="small ms-1">Basic example</span></div>
+                <div class="card-header"><strong>Select</strong><span class="small ms-1">Default</span></div>
                 <div class="card-body">
+                  <p class="text-medium-emphasis small">Custom <code>&lt;select&gt;</code> menus need only a custom class, <code>.form-select</code> to trigger the custom styles. Custom styles are limited to the <code>&lt;select&gt;</code>’s initial appearance and cannot modify the <code>&lt;option&gt;</code>s due to browser limitations.</p>
                   <div class="example mt-4">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-738" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-292" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-738" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-292" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-738">
-                        <button class="btn btn-lg btn-danger" type="button" data-coreui-toggle="popover" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Popover title">Click to toggle popover</button>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-292">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-738">
+                      <div class="tab-pane py-3" role="tabpanel" id="code-292">
                         <script class="language-markup" type="text/plain">
-                          <button class="btn btn-lg btn-danger" type="button" data-coreui-toggle="popover" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Popover title">Click to toggle popover</button>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         </script>
                       </div>
                     </div>
@@ -313,35 +324,117 @@
                 </div>
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-lg-6">
               <div class="card mb-4">
-                <div class="card-header"><strong>Popover</strong><span class="small ms-1">Four directions</span></div>
+                <div class="card-header"><strong>Select</strong><span class="small ms-1">Sizing</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Four options are available: top, right, bottom, and left aligned. Directions are mirrored when using Bootstrap in RTL.</p>
+                  <p class="text-medium-emphasis small">You may also choose from small and large custom selects to match our similarly sized text inputs.</p>
                   <div class="example mt-4">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-507" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1158" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-507" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1158" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-507">
-                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="top" data-coreui-content="Top popover" data-coreui-original-title="" title="">Popover on top</button>
-                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="right" data-coreui-content="Right popover" data-coreui-original-title="" title="">Popover on right</button>
-                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="bottom" data-coreui-content="Bottom popover" data-coreui-original-title="" title="">Popover on bottom</button>
-                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="left" data-coreui-content="Left popover" data-coreui-original-title="" title="">Popover on left</button>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1158">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-507">
+                      <div class="tab-pane py-3" role="tabpanel" id="code-1158">
                         <script class="language-markup" type="text/plain">
-                          <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="top" data-coreui-content="Top popover" data-coreui-original-title="" title="">Popover on top</button>
-                          <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="right" data-coreui-content="Right popover" data-coreui-original-title="" title="">Popover on right</button>
-                          <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="bottom" data-coreui-content="Bottom popover" data-coreui-original-title="" title="">Popover on bottom</button>
-                          <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="left" data-coreui-content="Left popover" data-coreui-original-title="" title="">Popover on left</button>
+                          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-medium-emphasis small">The <code>multiple</code> attribute is also supported:</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-454" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-454" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-454">
+                        <select class="form-select" multiple aria-label="multiple select example">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-454">
+                        <script class="language-markup" type="text/plain">
+                          <select class="form-select" multiple aria-label="multiple select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-medium-emphasis small">As is the <code>size</code> attribute:</p>
+                  <div class="example mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1240" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1240" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content border border-top-0 rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1240">
+                        <select class="form-select" size="3" aria-label="size 3 select example">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-1240">
+                        <script class="language-markup" type="text/plain">
+                          <select class="form-select" size="3" aria-label="size 3 select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         </script>
                       </div>
                     </div>
@@ -349,70 +442,39 @@
                 </div>
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-lg-6">
               <div class="card mb-4">
-                <div class="card-header"><strong>Popover</strong><span class="small ms-1">Dismiss on next click</span></div>
+                <div class="card-header"><strong>Select</strong><span class="small ms-1">Disabled</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">
-                    Use the
-                    <code>focus</code> trigger to dismiss popovers on the user’s next click of a different element than the toggle element.
-                  </p>
+                  <p class="text-medium-emphasis small">Add the <code>disabled</code> boolean attribute on a select to give it a grayed out appearance and remove pointer events.</p>
                   <div class="example mt-4">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1281" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-298" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1281" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-298" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1281"><a class="btn btn-lg btn-danger" tabindex="0" role="button" data-coreui-toggle="popover" data-coreui-trigger="focus" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Dismissible popover">Dismissible popover</a>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-298">
+                        <select class="form-select" aria-label="Disabled select example" disabled>
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1281">
-                        <script class="language-markup" type="text/plain"><a class="btn btn-lg btn-danger" tabindex="0" role="button" data-coreui-toggle="popover" data-coreui-trigger="focus" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Dismissible popover">Dismissible popover</a>
-                        </script>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12"></div>
-              </div>
-              <div class="card mb-4">
-                <div class="card-header"><strong>Popover</strong><span class="small ms-1">Disabled elements</span></div>
-                <div class="card-body">
-                  <p class="text-medium-emphasis small">
-                    Elements with the
-                    <code>disabled</code> attribute aren’t interactive, meaning users cannot hover or click them to trigger a popover (or tooltip). As a workaround, you’ll want to trigger the popover from a wrapper
-                    <code> &lt;div&gt;</code> or
-                    <code> &lt;span&gt;</code>, ideally made keyboard-focusable using
-                    <code>tabindex="0"</code>.
-                  </p>
-                  <p class="text-medium-emphasis small">
-                    For disabled popover triggers, you may also prefer
-                    <code>data-coreui-trigger="hover focus"</code> so that the popover appears as immediate visual feedback to your users as they may not expect to
-                    <em>click</em> on a disabled element.
-                  </p>
-                  <div class="example mt-4">
-                    <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-632" role="tab">
-                          <svg class="icon me-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
-                          </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-632" role="tab">
-                          <svg class="icon me-2">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
-                          </svg>Code</a></li>
-                    </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-632"><span class="d-inline-block" tabindex="0" data-coreui-toggle="popover" data-coreui-trigger="hover focus" data-coreui-content="Disabled popover" data-coreui-original-title="" title="">
-                          <button class="btn btn-primary" type="button" disabled="">Disabled button</button></span>
-                      </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-632">
-                        <script class="language-markup" type="text/plain"><span class="d-inline-block" tabindex="0" data-coreui-toggle="popover" data-coreui-trigger="hover focus" data-coreui-content="Disabled popover" data-coreui-original-title="" title="">
-                            <button class="btn btn-primary" type="button" disabled="">Disabled button</button></span>
+                      <div class="tab-pane py-3" role="tabpanel" id="code-298">
+                        <script class="language-markup" type="text/plain">
+                          <select class="form-select" aria-label="Disabled select example" disabled>
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         </script>
                       </div>
                     </div>
@@ -435,7 +497,5 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-    <!-- Plugins and scripts required by this view-->
-    <script src="js/popovers.js"></script>
   </body>
 </html>
