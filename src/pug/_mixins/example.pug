@@ -12,8 +12,8 @@ mixin example
           svg.icon.me-2
             use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code")
           | Code
-    .tab-content
-      .tab-pane.py-3.active.preview(role="tabpanel" id="preview-"+id )
+    .tab-content.border.border-top-0.rounded-bottom
+      .tab-pane.p-3.active.preview(role="tabpanel" id="preview-"+id )
         block
       .tab-pane.py-3(role="tabpanel" id="code-"+id )
         script.language-markup(type='text/plain')

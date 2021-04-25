@@ -1,0 +1,156 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.0/components/toast/')
+
+block scripts
+  // Plugins and scripts required by this view
+  script(src='js/toasts.js')
+
+block view
+  +callout('Toast', 'https://coreui.io/docs/4.0/components/toasts/')
+  .card.mb-4
+    .card-header
+      strong Toast
+      span.small.ms-1 Basic
+    .card-body
+      p.text-medium-emphasis.small
+        | Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single element to contain your “toasted” content and strongly encourage a dismiss button.
+      +example()
+        .bg-light.p-3
+          .toast.fade.show(role='alert' aria-live='assertive' aria-atomic='true')
+            .toast-header
+              svg.docs-placeholder-img.rounded.me-2(width='20' height='20' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveAspectRatio='xMidYMid slice' focusable='false')
+                rect(width='100%' height='100%' fill='#007aff')
+              strong.me-auto Bootstrap
+              small 11 mins ago
+              button.btn-close(type='button' data-coreui-dismiss='toast' aria-label='Close')
+            .toast-body
+              | Hello, world! This is a toast message.
+  .card.mb-4
+    .card-header
+      strong Toast
+      span.small.ms-1 Live example
+    .card-body
+      p.text-medium-emphasis.small
+        | Click the button the below to show as toast (positioning with our utilities in the lower right corner) that has been hidden by default with 
+        code .hide
+        | .
+      +example()
+        .toaster.position-fixed.bottom-0.end-0.p-3(style='z-index: 5')
+          #liveToast.toast.hide(role='alert' aria-live='assertive' aria-atomic='true')
+            .toast-header
+              svg.docs-placeholder-img.rounded.me-2(width='20' height='20' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveAspectRatio='xMidYMid slice' focusable='false')
+                rect(width='100%' height='100%' fill='#007aff')
+              strong.me-auto Bootstrap
+              small 11 mins ago
+              button.btn-close(type='button' data-coreui-dismiss='toast' aria-label='Close')
+            .toast-body
+              | Hello, world! This is a toast message.
+        button#liveToastBtn.btn.btn-primary(type='button') Show live toast
+  .card.mb-4
+    .card-header
+      strong Toast
+      span.small.ms-1 Translucent
+    .card-body
+      p.text-medium-emphasis.small
+        | Toasts are slightly translucent, too, so they blend over whatever they might appear over.
+      +example()
+        .bg-dark.p-3
+          .toast.fade.show(role='alert' aria-live='assertive' aria-atomic='true')
+            .toast-header
+              svg.docs-placeholder-img.rounded.me-2(width='20' height='20' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveAspectRatio='xMidYMid slice' focusable='false')
+                rect(width='100%' height='100%' fill='#007aff')
+              strong.me-auto Bootstrap
+              small.text-muted 11 mins ago
+              button.btn-close(type='button' data-coreui-dismiss='toast' aria-label='Close')
+            .toast-body
+              | Hello, world! This is a toast message.
+  .card.mb-4
+    .card-header
+      strong Toast
+      span.small.ms-1 Stacking
+    .card-body
+      p.text-medium-emphasis.small
+        | You can stack toasts by wrapping them in a toast container, which will vertically add some spacing.
+      +example()
+        .bg-light.p-3
+          .toast-container
+            .toast.fade.show(role='alert' aria-live='assertive' aria-atomic='true')
+              .toast-header
+                svg.docs-placeholder-img.rounded.me-2(width='20' height='20' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveAspectRatio='xMidYMid slice' focusable='false')
+                  rect(width='100%' height='100%' fill='#007aff')
+                strong.me-auto Bootstrap
+                small.text-muted just now
+                button.btn-close(type='button' data-coreui-dismiss='toast' aria-label='Close')
+              .toast-body
+                | See? Just like this.
+            .toast.fade.show(role='alert' aria-live='assertive' aria-atomic='true')
+              .toast-header
+                svg.docs-placeholder-img.rounded.me-2(width='20' height='20' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveAspectRatio='xMidYMid slice' focusable='false')
+                  rect(width='100%' height='100%' fill='#007aff')
+                strong.me-auto Bootstrap
+                small.text-muted 2 seconds ago
+                button.btn-close(type='button' data-coreui-dismiss='toast' aria-label='Close')
+              .toast-body
+                | Heads up, toasts will stack automatically
+  .card.mb-4
+    .card-header
+      strong Toast
+      span.small.ms-1 Custom content
+    .card-body
+      p.text-medium-emphasis.small
+        | Customize your toasts by removing sub-components, tweaking with 
+        a(href='https://coreui.io/docs/4.0/docs/4.0/utilities/api/') utilities
+        | , or adding your own markup. Here we’ve created a simpler toast by removing the default 
+        code .toast-header
+        | , adding a custom hide icon from 
+        a(href='https://icons.coreui.io/') CoreUI Icons
+        | , and using some 
+        a(href='https://coreui.io/docs/4.0/docs/4.0/utilities/flex/') flexbox utilities
+        |  to adjust the layout.
+      +example()
+        .bg-light.p-3
+          .toast.align-items-center.fade.show(role='alert' aria-live='assertive' aria-atomic='true')
+            .d-flex
+              .toast-body
+                | Hello, world! This is a toast message.
+              button.btn-close.me-2.m-auto(type='button' data-coreui-dismiss='toast' aria-label='Close')
+      p.text-medium-emphasis.small Alternatively, you can also add additional controls and components to toasts.
+      +example()
+        .bg-light.p-3
+          .toast.fade.show(role='alert' aria-live='assertive' aria-atomic='true')
+            .toast-body
+              | Hello, world! This is a toast message.
+              .mt-2.pt-2.border-top
+                button.btn.btn-primary.btn-sm(type='button') Take action
+                button.btn.btn-secondary.btn-sm(type='button' data-coreui-dismiss='toast') Close
+  .card.mb-4
+    .card-header
+      strong Toast
+      span.small.ms-1 Color schemes
+    .card-body
+      p.text-medium-emphasis.small
+        | Building on the above example, you can create different toast color schemes with our 
+        a(href='https://coreui.io/docs/4.0/docs/4.0/utilities/colors/') color
+        |  and 
+        a(href='https://coreui.io/docs/4.0/docs/4.0/utilities/background/') background
+        |  utilities. Here we’ve added 
+        code .bg-primary
+        |  and 
+        code .text-white
+        |  to the 
+        code .toast
+        | , and then added 
+        code .btn-close-white
+        |  to our close button. For a crisp edge, we remove the default border with 
+        code .border-0
+        | .
+      +example()
+        .bg-light.p-3
+          .toast.align-items-center.text-white.bg-primary.border-0.fade.show(role='alert' aria-live='assertive' aria-atomic='true')
+            .d-flex
+              .toast-body
+                | Hello, world! This is a toast message.
+              button.btn-close.btn-close-white.me-2.m-auto(type='button' data-coreui-dismiss='toast' aria-label='Close')
+
