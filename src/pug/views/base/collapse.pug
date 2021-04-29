@@ -3,6 +3,9 @@ extends ../../_layout/default.pug
 block canonical
   link(rel='canonical' href='https://coreui.io/docs/4.0/components/collapse/')
 
+block breadcrumb
+  +breadcrumb(['Home', 'Components', 'Base'], 'Collapse')
+
 block view
   +callout('Collapse', 'https://coreui.io/docs/4.0/components/collapse/')
   .card.mb-4

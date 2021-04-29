@@ -3,6 +3,9 @@ extends ../../_layout/default.pug
 block canonical
   link(rel='canonical' href='https://coreui.io/docs/4.0/components/dropdowns/')
 
+block breadcrumb
+  +breadcrumb(['Home', 'Components', 'Buttons'], 'Loading buttons')
+
 block view
   +callout('Dropdown', 'https://coreui.io/docs/4.0/components/dropdowns/')
   .row

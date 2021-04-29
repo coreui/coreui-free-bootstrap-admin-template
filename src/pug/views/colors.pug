@@ -6,6 +6,9 @@ block scripts
     script(src='node_modules/@coreui/utils/dist/coreui-utils.js')
     script(src='js/colors.js')
 
+block breadcrumb
+  +breadcrumb(['Home', 'Theme'], 'Colors')
+
 block view
   .card.mb-4
     .card-header

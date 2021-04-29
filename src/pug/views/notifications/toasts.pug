@@ -7,6 +7,9 @@ block scripts
   // Plugins and scripts required by this view
   script(src='js/toasts.js')
 
+block breadcrumb
+  +breadcrumb(['Home', 'Components', 'Notifications'], 'Toasts')
+
 block view
   +callout('Toast', 'https://coreui.io/docs/4.0/components/toasts/')
   .card.mb-4

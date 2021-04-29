@@ -3,6 +3,9 @@ extends ../../_layout/default.pug
 block canonical
   link(rel='canonical' href='https://coreui.io/docs/4.0/content/tables/')
 
+block breadcrumb
+  +breadcrumb(['Home', 'Components', 'Base'], 'Tables')
+
 block view
   +callout('Table', 'https://coreui.io/docs/4.0/content/tables/')
   .car

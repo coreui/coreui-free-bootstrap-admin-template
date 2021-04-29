@@ -1,0 +1,24 @@
+// Breadcrumb
+//- nav(aria-label="breadcrumb")
+//-   ol.breadcrumb.my-0.ms-2
+//-     li.breadcrumb-item Home
+//-     li.breadcrumb-item
+//-       a(href="#") Admin
+//-     li.breadcrumb-item.active Dashboard
+  
+
+mixin breadcrumb(items, last)
+  nav(aria-label="breadcrumb")
+    ol.breadcrumb.my-0.ms-2
+      each item in items
+        li.breadcrumb-item
+          // if breadcrumb is single
+          if (items.length === 1)
+            span= item
+          else
+            a(href="#")= item
+
+      if last
+        li.breadcrumb-item.active
+          span= last
+      else

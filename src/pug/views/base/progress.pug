@@ -3,6 +3,9 @@ extends ../../_layout/default.pug
 block canonical
   link(rel='canonical' href='https://coreui.io/docs/4.0/components/progress/')
 
+block breadcrumb
+  +breadcrumb(['Home', 'Components', 'Base'], 'Progress')
+
 block view
   +callout('Progress', 'https://coreui.io/docs/4.0/components/progress/')
   .row

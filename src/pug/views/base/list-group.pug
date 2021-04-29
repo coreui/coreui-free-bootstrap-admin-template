@@ -3,6 +3,9 @@ extends ../../_layout/default.pug
 block canonical
   link(rel='canonical' href='https://coreui.io/docs/4.0/components/list-group/')
 
+block breadcrumb
+  +breadcrumb(['Home', 'Components', 'Base'], 'List group')
+
 block view
   +callout('List group', 'https://coreui.io/docs/4.0/components/list-group/')
   .row

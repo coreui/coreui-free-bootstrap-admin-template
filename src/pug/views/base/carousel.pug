@@ -3,6 +3,9 @@ extends ../../_layout/default.pug
 block canonical
   link(rel='canonical' href='https://coreui.io/docs/4.0/components/carousel/')
 
+block breadcrumb
+  +breadcrumb(['Home', 'Components', 'Base'], 'Carousel')
+
 block view
   +callout('Carousel', 'https://coreui.io/docs/4.0/components/carousel/')
   .card.mb-4

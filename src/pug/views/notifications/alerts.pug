@@ -3,6 +3,9 @@ extends ../../_layout/default.pug
 block canonical
   link(rel='canonical' href='https://coreui.io/docs/4.0/components/alerts/')
 
+block breadcrumb
+  +breadcrumb(['Home', 'Components', 'Notifications'], 'Alerts')
+
 block view
   +callout('Alert', 'https://coreui.io/docs/4.0/components/alerts/')
   .row
