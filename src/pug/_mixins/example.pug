@@ -1,4 +1,4 @@
-mixin example
+mixin example(script)
   - var id = Math.floor(Math.random() * (15 - 1300) + 1300)
   .example.mt-4
     ul.nav.nav-tabs(role="tablist")
@@ -12,9 +12,22 @@ mixin example
           svg.icon.me-2
             use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code")
           | Code
-    .tab-content.border.border-top-0.rounded-bottom
+      if script
+        li.nav-item
+          a.nav-link(data-coreui-toggle="tab" href="#js-"+id role="tab")
+            svg.icon.me-2
+              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cog")
+            | JavaScript
+    .tab-content.rounded-bottom
       .tab-pane.p-3.active.preview(role="tabpanel" id="preview-"+id )
         block
       .tab-pane.pt-1(role="tabpanel" id="code-"+id )
         script.language-markup(type='text/plain')
-          block
+          if script
+            block html 
+          else 
+            block
+      if script
+        .tab-pane.pt-1(role="tabpanel" id="js-"+id )
+          script.language-js(type='text/plain')
+            block js
