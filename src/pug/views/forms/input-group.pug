@@ -5,16 +5,15 @@ block canonical
 
 block view
   +callout('Input group', 'https://coreui.io/docs/4.0/forms/input-group/')
-  .row(data-masonry='{"percentPosition": true }')
-    .col-lg-6
+  .row
+    .col-12
       .card.mb-4
         .card-header
           strong Input group
           span.small.ms-1 Basic example
         .card-body
           p.text-medium-emphasis.small
-            | Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place
-            |
+            | Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place 
             code <label>
             | s outside the input group.
           +example()
@@ -39,33 +38,30 @@ block view
             .input-group
               span.input-group-text With textarea
               textarea.form-control(aria-label='With textarea')
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Input group
           span.small.ms-1 Wrapping
         .card-body
           p.text-medium-emphasis.small
-            | Input groups wrap by default via
-            |
+            | Input groups wrap by default via 
             code flex-wrap: wrap
-            |  in order to accommodate custom form field validation within an input group. You may disable this with
-            |
+            |  in order to accommodate custom form field validation within an input group. You may disable this with 
             code .flex-nowrap
             | .
           +example()
             .input-group.flex-nowrap
               span.input-group-text#addon-wrapping @
               input.form-control(type='text' placeholder='Username' aria-label='Username' aria-describedby='addon-wrapping')
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Input group
           span.small.ms-1 Sizing
         .card-body
           p.text-medium-emphasis.small
-            | Add the relative form sizing classes to the
-            |
+            | Add the relative form sizing classes to the 
             code .input-group
             |  itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
           p.text-medium-emphasis.small
@@ -80,18 +76,16 @@ block view
             .input-group.input-group-lg
               span.input-group-text#inputGroup-sizing-lg Large
               input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-lg')
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Input group
           span.small.ms-1 Checkboxes and radios
         .card-body
           p.text-medium-emphasis.small
-            | Place any checkbox or radio option within an input group’s addon instead of text. We recommend adding
-            |
+            | Place any checkbox or radio option within an input group’s addon instead of text. We recommend adding 
             code .mt-0
-            |  to the
-            |
+            |  to the 
             code .form-check-input
             |  when there’s no visible text next to the input.
           +example()
@@ -103,19 +97,17 @@ block view
               .input-group-text
                 input.form-check-input.mt-0(type='radio' aria-label='Radio button for following text input')
               input.form-control(type='text' aria-label='Text input with radio button')
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Input group
           span.small.ms-1 Multiple inputs
         .card-body
           p.text-medium-emphasis.small
-            | While multiple
-            |
+            | While multiple 
             code
               = '<input>'
-            | s are supported visually, validation styles are only available for input groups with a single
-            |
+            | s are supported visually, validation styles are only available for input groups with a single 
             code
               = '<input>'
             | .
@@ -124,7 +116,7 @@ block view
               span.input-group-text First and last name
               input.form-control(type='text' aria-label='First name')
               input.form-control(type='text' aria-label='Last name')
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Input group
@@ -140,7 +132,7 @@ block view
               input.form-control(type='text' aria-label='Dollar amount (with dot and two decimal places)')
               span.input-group-text $
               span.input-group-text 0.00
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Input group
@@ -161,7 +153,7 @@ block view
               input.form-control(type='text' placeholder='Recipient\'s username' aria-label='Recipient\'s username with two button addons')
               button.btn.btn-outline-secondary(type='button') Button
               button.btn.btn-outline-secondary(type='button') Button
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Input group
@@ -222,7 +214,7 @@ block view
                   hr.dropdown-divider
                 li
                   a.dropdown-item(href='#') Separated link
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Input group
@@ -262,7 +254,7 @@ block view
                 li
                   a.dropdown-item(href='#') Separated link
   .row
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Custom forms
@@ -297,7 +289,7 @@ block view
                 option(value='2') Two
                 option(value='3') Three
               button.btn.btn-outline-secondary(type='button') Button
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Custom forms

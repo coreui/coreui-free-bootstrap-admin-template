@@ -13,94 +13,89 @@ block view
           span.small.ms-1 Custom styles
         .card-body
           p.text-medium-emphasis.small
-            | For custom CoreUI for Bootstrap form validation messages, you’ll need to add the
-            |
+            | For custom CoreUI for Bootstrap form validation messages, you’ll need to add the 
             code novalidate
-            |  boolean attribute to your
-            |
+            |  boolean attribute to your 
             code
               = '<form>'
-            | . This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. Try to submit the form below; our JavaScript will intercept the submit button and relay feedback to you. When attempting to submit, you’ll see the
-            |
+            | . This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. Try to submit the form below; our JavaScript will intercept the submit button and relay feedback to you. When attempting to submit, you’ll see the 
             code :invalid
-            |  and
-            |
+            |  and 
             code :valid
             |  styles applied to your form controls.
           p.text-medium-emphasis.small
-            | Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for
-            |
+            | Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for 
             code
               = '<select>'
-            | s are only available with
-            |
+            | s are only available with 
             code .form-select
-            | , and not
-            |
+            | , and not 
             code .form-control
             | .
-          +example()
-            form.row.g-3.needs-validation(novalidate)
-              .col-md-4
-                label.form-label(for='validationCustom01') First name
-                input.form-control#validationCustom01(type='text' value='Mark' required)
-                .valid-feedback.
-                  Looks good!
-              .col-md-4
-                label.form-label(for='validationCustom02') Last name
-                input.form-control#validationCustom02(type='text' value='Otto' required)
-                .valid-feedback.
-                  Looks good!
-              .col-md-4
-                label.form-label(for='validationCustomUsername') Username
-                .input-group.has-validation
-                  span.input-group-text#inputGroupPrepend @
-                  input.form-control#validationCustomUsername(type='text' aria-describedby='inputGroupPrepend' required)
+          +example(true)
+            block html
+              form.row.g-3.needs-validation(novalidate)
+                .col-md-4
+                  label.form-label(for='validationCustom01') First name
+                  input.form-control#validationCustom01(type='text' value='Mark' required)
+                  .valid-feedback.
+                    Looks good!
+                .col-md-4
+                  label.form-label(for='validationCustom02') Last name
+                  input.form-control#validationCustom02(type='text' value='Otto' required)
+                  .valid-feedback.
+                    Looks good!
+                .col-md-4
+                  label.form-label(for='validationCustomUsername') Username
+                  .input-group.has-validation
+                    span.input-group-text#inputGroupPrepend @
+                    input.form-control#validationCustomUsername(type='text' aria-describedby='inputGroupPrepend' required)
+                    .invalid-feedback.
+                      Please choose a username.
+                .col-md-6
+                  label.form-label(for='validationCustom03') City
+                  input.form-control#validationCustom03(type='text' required)
                   .invalid-feedback.
-                    Please choose a username.
-              .col-md-6
-                label.form-label(for='validationCustom03') City
-                input.form-control#validationCustom03(type='text' required)
-                .invalid-feedback.
-                  Please provide a valid city.
-              .col-md-3
-                label.form-label(for='validationCustom04') State
-                select.form-select#validationCustom04(required)
-                  option(selected disabled value) Choose...
-                  option ...
-                .invalid-feedback.
-                  Please select a valid state.
-              .col-md-3
-                label.form-label(for='validationCustom05') Zip
-                input.form-control#validationCustom05(type='text' required)
-                .invalid-feedback.
-                  Please provide a valid zip.
-              .col-12
-                .form-check
-                  input.form-check-input#invalidCheck(type='checkbox' required)
-                  label.form-check-label(for='invalidCheck').
-                    Agree to terms and conditions
+                    Please provide a valid city.
+                .col-md-3
+                  label.form-label(for='validationCustom04') State
+                  select.form-select#validationCustom04(required)
+                    option(selected disabled value) Choose...
+                    option ...
                   .invalid-feedback.
-                    You must agree before submitting.
-              .col-12
-                button.btn.btn-primary(type='submit') Submit form
-            script.
-              // Example starter JavaScript for disabling form submissions if there are invalid fields
-              (function () {
-                'use strict'
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.querySelectorAll('.needs-validation')
-                // Loop over them and prevent submission
-                Array.prototype.slice.call(forms).forEach(function (form) {
-                  form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
-                      event.preventDefault()
-                      event.stopPropagation()
-                    }
-                    form.classList.add('was-validated')
-                  }, false)
-                })
-              })()
+                    Please select a valid state.
+                .col-md-3
+                  label.form-label(for='validationCustom05') Zip
+                  input.form-control#validationCustom05(type='text' required)
+                  .invalid-feedback.
+                    Please provide a valid zip.
+                .col-12
+                  .form-check
+                    input.form-check-input#invalidCheck(type='checkbox' required)
+                    label.form-check-label(for='invalidCheck').
+                      Agree to terms and conditions
+                    .invalid-feedback.
+                      You must agree before submitting.
+                .col-12
+                  button.btn.btn-primary(type='submit') Submit form
+            block js 
+              script.
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                  'use strict'
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.querySelectorAll('.needs-validation')
+                  // Loop over them and prevent submission
+                  Array.prototype.slice.call(forms).forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                      if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                      }
+                      form.classList.add('was-validated')
+                    }, false)
+                  })
+                })()
 
     .col-12
       .card.mb-4
@@ -148,29 +143,23 @@ block view
           span.small.ms-1 Server side
         .card-body
           p.text-medium-emphasis.small
-            | We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with
-            |
+            | We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with 
             code .is-invalid
-            |  and
-            |
+            |  and 
             code .is-valid
-            | . Note that
-            |
+            | . Note that 
             code .invalid-feedback
             |  is also supported with these classes.
           p.text-medium-emphasis.small
-            | For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using
-            |
+            | For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using 
             code aria-describedby
-            |  (noting that this attribute allows more than one
-            |
+            |  (noting that this attribute allows more than one 
             code id
             |  to be referenced, in case the field already points to additional form text).
           p.text-medium-emphasis.small
             | To fix
             a(href='https://github.com/twbs/bootstrap/issues/25110') issues with border radii
-            | , input groups require an additional
-            |
+            | , input groups require an additional 
             code .has-validation
             |  class.
           +example()
@@ -231,23 +220,18 @@ block view
               |
               code
                 = '<input>'
-              | s and
-              |
+              | s and 
               code
                 = '<textarea>'
-              | s with
-              |
+              | s with 
               code .form-control
-              |  (including up to one
-              |
+              |  (including up to one 
               code .form-control
               |  in input groups)
             li
               |
               code
-                = '<select>'
-              | s with
-              |
+                = '<select>' 
               code .form-select
             li
               |
@@ -291,14 +275,11 @@ block view
           span.small.ms-1 Tooltips
         .card-body
           p.text-medium-emphasis.small
-            | If your form layout allows it, you can swap the
-            |
+            | If your form layout allows it, you can swap the 
             code .{valid|invalid}-feedback
-            |  classes for
-            |
+            |  classes for 
             code .{valid|invalid}-tooltip
-            |  classes to display validation feedback in a styled tooltip. Be sure to have a parent with
-            |
+            |  classes to display validation feedback in a styled tooltip. Be sure to have a parent with 
             code position: relative
             |  on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.
           +example()

@@ -5,8 +5,8 @@ block canonical
 
 block view
   +callout('List group', 'https://coreui.io/docs/4.0/components/list-group/')
-  .row(data-masonry='{"percentPosition": true }')
-    .col-sm-12.col-xl-6
+  .row
+    .col-12
       .card.mb-4
         .card-header
           strong List group
@@ -20,18 +20,16 @@ block view
               li.list-group-item Morbi leo risus
               li.list-group-item Porta ac consectetur ac
               li.list-group-item Vestibulum at eros
-    .col-sm-12.col-xl-6
+    .col-12
       .card.mb-4
         .card-header
           strong List group
           span.small.ms-1 active items
         .card-body
           p.text-medium-emphasis.small
-            | Attach
-            |
+            | Attach 
             code .active
-            |  to a
-            |
+            |  to a 
             code .list-group-item
             |  to show the current active selection.
           +example()
@@ -41,21 +39,18 @@ block view
               li.list-group-item Morbi leo risus
               li.list-group-item Porta ac consectetur ac
               li.list-group-item Vestibulum at eros
-    .col-sm-12.col-xl-6
+    .col-12
       .card.mb-4
         .card-header
           strong List group
           span.small.ms-1 disabled items
         .card-body
           p.text-medium-emphasis.small
-            | Attach
-            |
+            | Attach 
             code .disabled
-            |  to a
-            |
+            |  to a 
             code .list-group-item
-            |  to make it appear disabled. Remark that some of the elements with
-            |
+            |  to make it appear disabled. Remark that some of the elements with 
             code .disabled
             |  will also require custom JavaScript to disable their click events (e.g., links).
           +example()
@@ -65,7 +60,7 @@ block view
               li.list-group-item A third item
               li.list-group-item A fourth item
               li.list-group-item And a fifth one
-    .col-sm-12.col-xl-6
+    .col-12
       .card.mb-4
         .card-header
           strong List group
@@ -73,33 +68,27 @@ block view
         .card-body
           .list-group
             p.text-medium-emphasis.small
-              | Use
-              |
+              | Use 
               code
                 = '<a>'
-              | s or
-              |
+              | s or 
               code
                 = '<button>'
               | s to create
               em actionable
-              |  list group items with hover, disabled, and active states by adding
-              |
+              |  list group items with hover, disabled, and active states by adding 
               code .list-group-item-action
-              | . We separate these pseudo-classes to ensure list groups made of non-interactive elements (like
-              |
+              | . We separate these pseudo-classes to ensure list groups made of non-interactive elements (like 
               code
                 = '<li>'
-              | s or
-              |
+              | s or 
               code
                 = '<div>'
               | s) don’t provide a click or tap affordance.
             p.text-medium-emphasis.small
               | Be sure to
               strong
-                |  not use the standard
-                |
+                |  not use the standard 
                 code .btn
                 |  classes here
               | .
@@ -110,7 +99,7 @@ block view
                 a.list-group-item.list-group-item-action(href='#') A third link item
                 a.list-group-item.list-group-item-action(href='#') A fourth link item
                 a.list-group-item.list-group-item-action.disabled(href='#' tabindex='-1' aria-disabled='true') A disabled link item
-    .col-sm-12.col-xl-6
+    .col-12
       .card.mb-4
         .card-header
           strong List group
@@ -118,18 +107,14 @@ block view
         .card-body
           .list-group
             p.text-medium-emphasis.small
-              | With
-              |
+              | With 
               code
                 = '<button>'
-              | s, you can also make use of the
-              |
+              | s, you can also make use of the 
               code disabled
-              |  attribute instead of the
-              |
+              |  attribute instead of the 
               code .disabled
-              |  class. Sadly,
-              |
+              |  class. Sadly, 
               code
                 = '<a>'
               | s don’t support the disabled attribute.
@@ -141,15 +126,14 @@ block view
                 button.list-group-item.list-group-item-action(type='button') A third button item
                 button.list-group-item.list-group-item-action(type='button') A fourth button item
                 button.list-group-item.list-group-item-action(type='button' disabled) A disabled button item
-    .col-sm-12.col-xl-6
+    .col-12
       .card.mb-4
         .card-header
           strong List group
           span.small.ms-1 flush
         .card-body
           p.text-medium-emphasis.small
-            | Add
-            |
+            | Add 
             code .list-group-flush
             |  to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).
           +example()
@@ -159,28 +143,24 @@ block view
               li.list-group-item A third item
               li.list-group-item A fourth item
               li.list-group-item And a fifth one
-    .col-sm-12.col-xl-6
+    .col-12
       .card.mb-4
         .card-header
           strong List group
           span.small.ms-1 horizontal
         .card-body
           p.text-medium-emphasis.small
-            | Add
-            |
+            | Add 
             code .list-group-horizontal
-            |  to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant
-            |
+            |  to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant 
             code .list-group-horizontal-{sm|md|lg|xl|xxl}
-            |  to make a list group horizontal starting at that breakpoint’s
-            |
+            |  to make a list group horizontal starting at that breakpoint’s 
             code min-width
             | . Currently
             strong  horizontal list groups cannot be combined with flush list groups.
           p.text-medium-emphasis.small
             strong ProTip:
-            |  Want equal-width list group items when horizontal? Add
-            |
+            |  Want equal-width list group items when horizontal? Add 
             code .flex-fill
             |  to each list group item.
           .list-group
@@ -209,7 +189,7 @@ block view
                 li.list-group-item An item
                 li.list-group-item A second item
                 li.list-group-item A third item
-    .col-sm-12.col-xl-6
+    .col-12
       .card.mb-4
         .card-header
           strong List group
@@ -227,21 +207,18 @@ block view
               li.list-group-item.list-group-item-info This is a info list group item
               li.list-group-item.list-group-item-light This is a light list group item
               li.list-group-item.list-group-item-dark This is a dark list group item
-    .col-sm-12.col-xl-6
+    .col-12
       .card.mb-4
         .card-header
           strong List group
           span.small.ms-1
-            | contextual with
-            |
+            | contextual with 
             code .action
         .card-body
           p.text-medium-emphasis.small
-            | Contextual classes also work with
-            |
+            | Contextual classes also work with 
             code .list-group-item-action
-            | . Note the addition of the hover styles here not present in the previous example. Also supported is the
-            |
+            | . Note the addition of the hover styles here not present in the previous example. Also supported is the 
             code .active
             |  state; apply it to indicate an active selection on a contextual list group item.
           +example()
@@ -271,7 +248,7 @@ block view
               a.list-group-item.list-group-item-action.list-group-item-dark(href='#')
                 | This is a dark list group
                 | item
-    .col-sm-12.col-xl-6
+    .col-12
       .card.mb-4
         .card-header
           strong List group
@@ -292,7 +269,7 @@ block view
               li.list-group-item.d-flex.justify-content-between.align-items-center
                 | A third list item
                 span.badge.bg-primary.rounded-pill 1
-    .col-sm-12.col-xl-6
+    .col-12
       .card.mb-4
         .card-header
           stron List group
@@ -333,8 +310,7 @@ block view
           span.small.ms-1 tab Javascript plugin
         .card-body
           p.text-medium-emphasis.small
-            | Use the tab JavaScript plugin—include it individually or through the compiled
-            |
+            | Use the tab JavaScript plugin—include it individually or through the compiled 
             code coreui.js
             |  file—to extend our list group to create tabbable panes of local content.
           +example()

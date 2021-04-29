@@ -44,7 +44,6 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Use the 
-            |
             code focus
             |  trigger to dismiss popovers on the user’s next click of a different element than the toggle element.
           +example()
@@ -57,26 +56,20 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Elements with the 
-            |
             code disabled
             |  attribute aren’t interactive, meaning users cannot hover or click them to trigger a popover (or tooltip). As a workaround, you’ll want to trigger the popover from a wrapper 
-            |
             code 
               = '<div>'
             |  or 
-            |
             code 
               = '<span>'
             | , ideally made keyboard-focusable using 
-            |
             code tabindex="0"
             | .
           p.text-medium-emphasis.small
             | For disabled popover triggers, you may also prefer 
-            |
             code data-coreui-trigger="hover focus"
             |  so that the popover appears as immediate visual feedback to your users as they may not expect to 
-            |
             em click
             |  on a disabled element.
           +example()

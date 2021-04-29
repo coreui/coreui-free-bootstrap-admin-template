@@ -5,41 +5,33 @@ block canonical
 
 block view
   +callout('Floating label', 'https://coreui.io/docs/4.0/forms/floating-labels/')
-  .row(data-masonry='{"percentPosition": true }')
-    .col-lg-6
+  .row
+    .col-12
       .card.mb-4
         .card-header
           strong Floating labels
           span.small.ms-1 Basic example
         .card-body
           p.text-medium-emphasis.small
-            | Wrap a pair of
-            |
+            | Wrap a pair of 
             code
               = '<input class="form-control">'
-            |  and
-            |
+            |  and 
             code
               = '<label>'
-            |  elements in
-            |
+            |  elements in 
             code .form-floating
-            |  to enable floating labels with Bootstrap’s textual form fields. A
-            |
+            |  to enable floating labels with Bootstrap’s textual form fields. A 
             code placeholder
-            |  is required on each
-            |
+            |  is required on each 
             code
               = '<input>'
-            |  as our method of CSS-only floating labels uses the
-            |
+            |  as our method of CSS-only floating labels uses the 
             code :placeholder-shown
-            |  pseudo-element. Also note that the
-            |
+            |  pseudo-element. Also note that the 
             code
               = '<input>'
-            |  must come first so we can utilize a sibling selector (e.g.,
-            |
+            |  must come first so we can utilize a sibling selector (e.g., 
             code ~
             | ).
           +example()
@@ -50,11 +42,9 @@ block view
               input.form-control#floatingPassword(type='password' placeholder='Password')
               label(for='floatingPassword') Password
           p.text-medium-emphasis.small
-            | When there’s a
-            |
+            | When there’s a 
             code value
-            |  already defined,
-            |
+            |  already defined, 
             code
               = '<label>'
             | s will automatically adjust to their floated position.
@@ -67,22 +57,19 @@ block view
             form.form-floating
               input.form-control.is-invalid#floatingInputInvalid(type='email' placeholder='name@example.com' value='test@example.com')
               label(for='floatingInputInvalid') Invalid input
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Floating labels
           span.small.ms-1 Textareas
         .card-body
           p.text-medium-emphasis.small
-            | By default,
-            |
+            | By default, 
             code
               = '<textarea>'
-            | s with
-            |
+            | s with 
             code .form-control
-            |  will be the same height as
-            |
+            |  will be the same height as 
             code
               = '<input>'
             | s.
@@ -91,49 +78,40 @@ block view
               textarea.form-control#floatingTextarea(placeholder='Leave a comment here')
               label(for='floatingTextarea') Comments
           p.text-medium-emphasis.small
-            | To set a custom height on your
-            |
+            | To set a custom height on your 
             code
               = '<textarea>'
-            | , do not use the
-            |
+            | , do not use the 
             code rows
-            |  attribute. Instead, set an explicit
-            |
+            |  attribute. Instead, set an explicit 
             code height
             |  (either inline or via custom CSS).
           +example()
             .form-floating
               textarea.form-control#floatingTextarea2(placeholder='Leave a comment here' style='height: 100px')
               label(for='floatingTextarea2') Comments
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Floating labels
           span.small.ms-1 Selects
         .card-body
           p.text-medium-emphasis.small
-            | Other than
-            |
+            | Other than 
             code .form-control
-            | , floating labels are only available on
-            |
+            | , floating labels are only available on 
             code .form-select
-            | s. They work in the same way, but unlike
-            |
+            | s. They work in the same way, but unlike 
             code
               = '<input>'
-            | s, they’ll always show the
-            |
+            | s, they’ll always show the 
             code
               = '<label>'
             |  in its floated state.
             strong
-              | Selects with
-              |
+              | Selects with 
               code size
-              |  and
-              |
+              |  and 
               code multiple
               |  are not supported.
           +example()
@@ -144,7 +122,7 @@ block view
                 option(value='2') Two
                 option(value='3') Three
               label(for='floatingSelect') Works with selects
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Floating labels

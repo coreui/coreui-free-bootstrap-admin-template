@@ -5,8 +5,8 @@ block canonical
 
 block view
   +callout('Layout', 'https://coreui.io/docs/4.0/forms/layout/')
-  .row(data-masonry='{"percentPosition": true }')
-    .col-lg-6
+  .row
+    .col-12
       .card.mb-4
         .card-header
           strong Forms layout
@@ -14,17 +14,14 @@ block view
         .card-body
           p.text-medium-emphasis.small
             a(href='https://coreui.io/docs/4.0/utilities/spacing/') Margin utilities
-            |  are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to
-            |
+            |  are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to 
             code margin-bottom
             |  utilities, and using a single direction throughout the form for consistency.
           p.text-medium-emphasis.small
-            | Feel free to build your forms however you like, with
-            |
+            | Feel free to build your forms however you like, with 
             code
               = '<fieldset>'
-            | s,
-            |
+            | s, 
             code
               = '<div>'
             | s, or nearly any other element.
@@ -35,7 +32,7 @@ block view
             .mb-3
               label.form-label(for='formGroupExampleInput2') Another label
               input.form-control#formGroupExampleInput2(type='text' placeholder='Another input placeholder')
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Forms layout
@@ -44,8 +41,7 @@ block view
           p.text-medium-emphasis.small
             | More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options.
             strong
-              | Requires the
-              |
+              | Requires the 
               code $enable-grid-classes
               |  Sass variable to be enabled
             |  (on by default).
@@ -55,7 +51,7 @@ block view
                 input.form-control(type='text' placeholder='First name' aria-label='First name')
               .col
                 input.form-control(type='text' placeholder='Last name' aria-label='Last name')
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Forms layout
@@ -66,8 +62,7 @@ block view
             a(href='https://coreui.io/docs/4.0/layout/gutters/') gutter modifier classes
             | , you can have control over the gutter width in as well the inline as block direction.
             strong
-              | Also requires the
-              |
+              | Also requires the 
               code $enable-grid-classes
               |  Sass variable to be enabled
             |  (on by default).
@@ -110,29 +105,24 @@ block view
                     Check me out
               .col-12
                 button.btn.btn-primary(type='submit') Sign in
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Forms layout
           span.small.ms-1 Horizontal form
         .card-body
           p.text-medium-emphasis.small
-            | Create horizontal forms with the grid by adding the
-            |
+            | Create horizontal forms with the grid by adding the 
             code .row
-            |  class to form groups and using the
-            |
+            |  class to form groups and using the 
             code .col-*-*
-            |  classes to specify the width of your labels and controls. Be sure to add
-            |
+            |  classes to specify the width of your labels and controls. Be sure to add 
             code .col-form-label
-            |  to your
-            |
+            |  to your 
             code <label>
             | s as well so they’re vertically centered with their associated form controls.
           p.text-medium-emphasis.small
-            | At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we’ve removed the
-            |
+            | At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we’ve removed the 
             code padding-top
             |  on our stacked radio inputs label to better align the text baseline.
           +example()
@@ -151,54 +141,40 @@ block view
                   .form-check
                     input.form-check-input#gridRadios1(type='radio' name='gridRadios' value='option1' checked)
                     label.form-check-label(for='gridRadios1').
-
                       First radio
-
                   .form-check
                     input.form-check-input#gridRadios2(type='radio' name='gridRadios' value='option2')
                     label.form-check-label(for='gridRadios2').
-
                       Second radio
-
                   .form-check.disabled
                     input.form-check-input#gridRadios3(type='radio' name='gridRadios' value='option3' disabled)
                     label.form-check-label(for='gridRadios3').
-
                       Third disabled radio
-
               .row.mb-3
                 .col-sm-10.offset-sm-2
                   .form-check
                     input.form-check-input#gridCheck1(type='checkbox')
                     label.form-check-label(for='gridCheck1').
-
                       Example checkbox
-
               button.btn.btn-primary(type='submit') Sign in
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Forms layout
           span.small.ms-1 Horizontal form label sizing
         .card-body
           p.text-medium-emphasis.small
-            | Be sure to use
-            |
+            | Be sure to use 
             code .col-form-label-sm
-            |  or
-            |
+            |  or 
             code .col-form-label-lg
-            |  to your
-            |
+            |  to your 
             code <label>
-            | s or
-            |
+            | s or 
             code <legend>
-            | s to correctly follow the size of
-            |
+            | s to correctly follow the size of 
             code .form-control-lg
-            |  and
-            |
+            |  and 
             code .form-control-sm
             | .
           +example()
@@ -214,24 +190,20 @@ block view
               label.col-sm-2.col-form-label.col-form-label-lg(for='colFormLabelLg') Email
               .col-sm-10
                 input.form-control.form-control-lg#colFormLabelLg(type='email' placeholder='col-form-label-lg')
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Forms layout
           span.small.ms-1 Column sizing
         .card-body
           p.text-medium-emphasis.small
-            | As shown in the previous examples, our grid system allows you to place any number of
-            |
+            | As shown in the previous examples, our grid system allows you to place any number of 
             code .col
-            | s within a
-            |
+            | s within a 
             code .row
-            | . They’ll split the available width equally between them. You may also pick a subset of your columns to take up more or less space, while the remaining
-            |
+            | . They’ll split the available width equally between them. You may also pick a subset of your columns to take up more or less space, while the remaining 
             code .col
-            | s equally split the rest, with specific column classes like
-            |
+            | s equally split the rest, with specific column classes like 
             code .col-sm-7
             | .
           +example()
@@ -242,18 +214,16 @@ block view
                 input.form-control(type='text' placeholder='State' aria-label='State')
               .col-sm
                 input.form-control(type='text' placeholder='Zip' aria-label='Zip')
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Forms layout
           span.small.ms-1 Auto-sizing
         .card-body
           p.text-medium-emphasis.small
-            | The example below uses a flexbox utility to vertically center the contents and changes
-            |
+            | The example below uses a flexbox utility to vertically center the contents and changes 
             code .col
-            |  to
-            |
+            |  to 
             code .col-auto
             |  so that your columns only take up as much space as needed. Put another way, the column sizes itself based on the contents.
           +example()
@@ -277,9 +247,7 @@ block view
                 .form-check
                   input.form-check-input#autoSizingCheck(type='checkbox')
                   label.form-check-label(for='autoSizingCheck').
-
                     Remember me
-
               .col-auto
                 button.btn.btn-primary(type='submit') Submit
           p.text-medium-emphasis.small You can then remix that once again with size-specific column classes.
@@ -304,28 +272,23 @@ block view
                 .form-check
                   input.form-check-input#autoSizingCheck2(type='checkbox')
                   label.form-check-label(for='autoSizingCheck2').
-
                     Remember me
-
               .col-auto
                 button.btn.btn-primary(type='submit') Submit
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Forms layout
           span.small.ms-1 Inline forms
         .card-body
           p.text-medium-emphasis.small
-            | Use the
-            |
+            | Use the 
             code .col-auto
             |  class to create horizontal layouts. By adding
             a(href='https://coreui.io/docs/4.0/layout/gutters/') gutter modifier classes
-            | , we’ll have gutters in horizontal and vertical directions. The
-            |
+            | , we’ll have gutters in horizontal and vertical directions. The 
             code .align-items-center
-            |  aligns the form elements to the middle, making the
-            |
+            |  aligns the form elements to the middle, making the 
             code .form-checkbox
             |  align properly.
           +example()
@@ -346,8 +309,6 @@ block view
                 .form-check
                   input.form-check-input#inlineFormCheck(type='checkbox')
                   label.form-check-label(for='inlineFormCheck').
-
                     Remember me
-
               .col-12
                 button.btn.btn-primary(type='submit') Submit

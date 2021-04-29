@@ -5,8 +5,8 @@ block canonical
 
 block view
   +callout('Checks and radios', 'https://coreui.io/docs/4.0/forms/checks-radios/')
-  .row(data-masonry='{"percentPosition": true }')
-    .col-lg-6
+  .row
+    .col-12
       .card.mb-4
         .card-header
           strong Checkbox
@@ -18,7 +18,7 @@ block view
             .form-check
               input.form-check-input#flexCheckChecked(type='checkbox' checked)
               label.form-check-label(for='flexCheckChecked') Checked checkbox
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Indeterminate
@@ -27,17 +27,19 @@ block view
             | Checkboxes can utilize the 
             code :indeterminate
             |  pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).
-          +example()
-            .form-check.form-example-indeterminate
-              input.form-check-input#flexCheckIndeterminate(type='checkbox')
-              label.form-check-label(for='flexCheckIndeterminate') Indeterminate checkbox
-            script.
-              // Indeterminate checkbox example
-              document.querySelectorAll('.form-example-indeterminate [type="checkbox"]').forEach(function (checkbox) {
-              checkbox.indeterminate = true
-              })
-
-    .col-lg-6
+          +example(true)
+            block html
+              .form-check.form-example-indeterminate
+                input.form-check-input#flexCheckIndeterminate(type='checkbox')
+                label.form-check-label(for='flexCheckIndeterminate') Indeterminate checkbox
+              
+            block js
+              script(type='text/javascript').
+                // Indeterminate checkbox example
+                document.querySelectorAll('.form-example-indeterminate [type="checkbox"]').forEach(function (checkbox) {
+                  checkbox.indeterminate = true
+                })
+    .col-12
       .card.mb-4
         .card-header
           strong Checkbox
@@ -57,8 +59,8 @@ block view
             .form-check
               input.form-check-input#flexCheckCheckedDisabled(type='checkbox' checked disabled)
               label.form-check-label(for='flexCheckCheckedDisabled') Disabled checked checkbox
-  .row(data-masonry='{"percentPosition": true }')
-    .col-lg-6
+  .row
+    .col-12
       .card.mb-4
         .card-header
           strong Radios
@@ -70,7 +72,7 @@ block view
             .form-check
               input.form-check-input#flexRadioDefault2(type='radio' name='flexRadioDefault' checked)
               label.form-check-label(for='flexRadioDefault2') Default checked radio
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Radios
@@ -90,8 +92,8 @@ block view
             .form-check
               input.form-check-input#flexRadioCheckedDisabled(type='radio' name='flexRadioDisabled' checked disabled)
               label.form-check-label(for='flexRadioCheckedDisabled') Disabled checked radio
-  .row(data-masonry='{"percentPosition": true }')
-    .col-lg-6
+  .row
+    .col-12
       .card.mb-4
         .card-header
           strong Switches
@@ -115,7 +117,7 @@ block view
             .form-check.form-switch
               input.form-check-input#flexSwitchCheckCheckedDisabled(type='checkbox' checked disabled)
               label.form-check-label(for='flexSwitchCheckCheckedDisabled') Disabled checked switch checkbox input
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Switches
@@ -131,8 +133,8 @@ block view
             .form-check.form-switch.form-switch-xl
               input.form-check-input#flexSwitchCheckDefaultXl(type='checkbox')
               label.form-check-label(for='flexSwitchCheckDefaultXl') Extra large switch checkbox input
-  .row(data-masonry='{"percentPosition": true }')
-    .col-lg-6
+  .row
+    .col-12
       .card.mb-4
         .card-header
           strong Checks and Radios
@@ -159,7 +161,7 @@ block view
             .form-check
               input.form-check-input#exampleRadios3(type='radio' name='exampleRadios' value='option3' disabled)
               label.form-check-label(for='exampleRadios3') Disabled radio
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Checks and Radios
@@ -191,7 +193,7 @@ block view
             .form-check.form-check-inline
               input.form-check-input#inlineRadio3(type='radio' name='inlineRadioOptions' value='option3' disabled)
               label.form-check-label(for='inlineRadio3') 3 (disabled)
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Checks and Radios
@@ -210,8 +212,8 @@ block view
               input.form-check-input#checkboxNoLabel(type='checkbox' aria-label='...')
             div
               input.form-check-input#radioNoLabel1(type='radio' name='radioNoLabel' aria-label='...')
-  .row(data-masonry='{"percentPosition": true }')
-    .col-lg-6
+  .row
+    .col-12
       .card.mb-4
         .card-header
           strong Toggle buttons
@@ -239,7 +241,7 @@ block view
           +example()
             input.btn-check#btn-check-3(type='checkbox' autocomplete='off' disabled)
             label.btn.btn-primary(for='btn-check-3') Disabled
-    .col-lg-6
+    .col-12
       .card.mb-4
         .card-header
           strong Toggle buttons
