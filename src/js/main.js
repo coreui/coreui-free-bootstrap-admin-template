@@ -43,19 +43,21 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
       x: {
         grid: {
           display: false,
-          drawBorder: false
+          drawBorder: false,
         },
         ticks: {
           display: false
         }
       },
       y: {
+        min: 30,
+        max: 89,
         display: false,
         grid: {
           display: false
         },
         ticks: {
-          display: false
+          display: false,
         }
       }
     },
@@ -106,6 +108,8 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
         }
       },
       y: {
+        min: -9,
+        max: 39,
         display: false,
         grid: {
           display: false
