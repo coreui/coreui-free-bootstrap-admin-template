@@ -198,26 +198,41 @@
         |  Pages
       ul.nav-group-items
         li.nav-item
-          a.nav-link(href=ajax ? 'login.html' : 'login.html' target="_top")
+          a.nav-link(href='login.html' target="_top")
             svg.nav-icon
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout")
             |  Login
         li.nav-item
-          a.nav-link(href=ajax ? 'register.html' : 'register.html' target="_top")
+          a.nav-link(href='register.html' target="_top")
             svg.nav-icon
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout")
             |  Register
         li.nav-item
-          a.nav-link(href=ajax ? '404.html' : '404.html' target="_top")
+          a.nav-link(href='404.html' target="_top")
             svg.nav-icon
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug")
             |  Error 404
         li.nav-item
-          a.nav-link(href=ajax ? '500.html' : '500.html' target="_top")
+          a.nav-link(href='500.html' target="_top")
             svg.nav-icon
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug")
             |  Error 500
-    li.nav-item.mt-auto
+    //- li.nav-group.mt-auto
+    //-   a.nav-link.nav-group-toggle(href='#')
+    //-     svg.nav-icon
+    //-       use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-description")
+    //-     |  Docs
+    //-   ul.nav-group-items
+    //-     li.nav-item
+    //-       a.nav-link(href='docs/installation.html')
+    //-         |  Getting Started
+    //-     li.nav-item
+    //-       a.nav-link(href='docs/usage.html')
+    //-         |  Usage
+    //-     li.nav-item
+    //-       a.nav-link(href='docs/contents.html')
+    //-         |  Contents
+    li.nav-item
       a.nav-link.nav-link-success(href="https://coreui.io" target="_top")
         svg.nav-icon
           use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download")
