@@ -7,6 +7,7 @@
 * Licensed under MIT (https://coreui.io/license)
 -->
 
+<!-- Breadcrumb-->
 <html lang="en">
   <head>
     <base href="./../">
@@ -179,7 +180,7 @@
                 </svg> Error 500</a></li>
           </ul>
         </li>
-        <li class="nav-item mt-auto"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+        <li class="nav-item"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
             </svg> Download CoreUI</a></li>
@@ -221,8 +222,10 @@
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                 </svg></a></li>
+          </ul>
+          <ul class="header-nav ms-3">
             <li class="nav-item dropdown d-flex align-items-center"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar"><img class="avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
               </a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
                 <div class="dropdown-header bg-light py-2">
@@ -268,12 +271,18 @@
         </div>
         <div class="header-divider"></div>
         <div class="container-fluid">
-          <!-- Breadcrumb-->
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-0 ms-2">
-              <li class="breadcrumb-item">Home</li>
-              <li class="breadcrumb-item"><a href="#">Admin</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Components</a>
+              </li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Base</a>
+              </li>
+              <li class="breadcrumb-item active"><span>List group</span></li>
             </ol>
           </nav>
         </div>
@@ -283,25 +292,25 @@
           <div class="callout callout-info bg-white">CoreUI List group has been created as an extension of Bootstrap List group. List group is delivered with some new features, variants, and unique design that matches CoreUI Design System requirements.<br><br>For more information please visit our official
             <a href="https://coreui.io/docs/4.0/components/list-group/" target="_blank">documentation</a>.
           </div>
-          <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
-            <div class="col-sm-12 col-xl-6">
+          <div class="row">
+            <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">Basic example</span></div>
                 <div class="card-body">
                   <p class="text-medium-emphasis small">The default list group is an unordered list with items and the proper CSS classes. Build upon it with the options that follow, or with your CSS as required.</p>
-                  <div class="example mt-4">
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1176" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-264" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1176" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-264" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1176">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-264">
                         <ul class="list-group">
                           <li class="list-group-item">Cras justo odio</li>
                           <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -310,7 +319,7 @@
                           <li class="list-group-item">Vestibulum at eros</li>
                         </ul>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1176">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-264">
                         <script class="language-markup" type="text/plain">
                           <ul class="list-group">
                             <li class="list-group-item">Cras justo odio</li>
@@ -326,28 +335,24 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-xl-6">
+            <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">active items</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">
-                    Attach
-                    <code>.active</code> to a
-                    <code>.list-group-item</code> to show the current active selection.
-                  </p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">Attach <code>.active</code> to a <code>.list-group-item</code> to show the current active selection.</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-358" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1104" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-358" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1104" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-358">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1104">
                         <ul class="list-group">
                           <li class="list-group-item active">Cras justo odio</li>
                           <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -356,7 +361,7 @@
                           <li class="list-group-item">Vestibulum at eros</li>
                         </ul>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-358">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1104">
                         <script class="language-markup" type="text/plain">
                           <ul class="list-group">
                             <li class="list-group-item active">Cras justo odio</li>
@@ -372,29 +377,24 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-xl-6">
+            <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">disabled items</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">
-                    Attach
-                    <code>.disabled</code> to a
-                    <code>.list-group-item</code> to make it appear disabled. Remark that some of the elements with
-                    <code>.disabled</code> will also require custom JavaScript to disable their click events (e.g., links).
-                  </p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">Attach <code>.disabled</code> to a <code>.list-group-item</code> to make it appear disabled. Remark that some of the elements with <code>.disabled</code> will also require custom JavaScript to disable their click events (e.g., links).</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-829" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-515" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-829" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-515" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-829">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-515">
                         <ul class="list-group">
                           <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
                           <li class="list-group-item">A second item</li>
@@ -403,7 +403,7 @@
                           <li class="list-group-item">And a fifth one</li>
                         </ul>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-829">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-515">
                         <script class="language-markup" type="text/plain">
                           <ul class="list-group">
                             <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
@@ -419,38 +419,29 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-xl-6">
+            <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">disabled links</span></div>
                 <div class="card-body">
                   <div class="list-group">
-                    <p class="text-medium-emphasis small">
-                      Use
-                      <code>&lt;a&gt;</code>s or
-                      <code>&lt;button&gt;</code>s to create<em>actionable</em> list group items with hover, disabled, and active states by adding
-                      <code>.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like
-                      <code>&lt;li&gt;</code>s or
-                      <code>&lt;div&gt;</code>s) don’t provide a click or tap affordance.
-                    </p>
-                    <p class="text-medium-emphasis small">Be sure to<strong>
-                        not use the standard
-                        <code>.btn</code> classes here</strong>.</p>
-                    <div class="example mt-4">
+                    <p class="text-medium-emphasis small">Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create<em>actionable</em> list group items with hover, disabled, and active states by adding <code>.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code>&lt;li&gt;</code>s or <code>&lt;div&gt;</code>s) don’t provide a click or tap affordance.</p>
+                    <p class="text-medium-emphasis small">Be sure to<strong> not use the standard <code>.btn</code> classes here</strong>.</p>
+                    <div class="example">
                       <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-581" role="tab">
+                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1041" role="tab">
                             <svg class="icon me-2">
                               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                             </svg>Preview</a></li>
-                        <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-581" role="tab">
+                        <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1041" role="tab">
                             <svg class="icon me-2">
                               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                             </svg>Code</a></li>
                       </ul>
-                      <div class="tab-content border border-top-0 rounded-bottom">
-                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-581">
+                      <div class="tab-content rounded-bottom">
+                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1041">
                           <div class="list-group"><a class="list-group-item list-group-item-action active" href="#" aria-current="true">The current link item</a><a class="list-group-item list-group-item-action" href="#">A second link item</a><a class="list-group-item list-group-item-action" href="#">A third link item</a><a class="list-group-item list-group-item-action" href="#">A fourth link item</a><a class="list-group-item list-group-item-action disabled" href="#" tabindex="-1" aria-disabled="true">A disabled link item</a></div>
                         </div>
-                        <div class="tab-pane py-3" role="tabpanel" id="code-581">
+                        <div class="tab-pane pt-1" role="tabpanel" id="code-1041">
                           <script class="language-markup" type="text/plain">
                             <div class="list-group"><a class="list-group-item list-group-item-action active" href="#" aria-current="true">The current link item</a><a class="list-group-item list-group-item-action" href="#">A second link item</a><a class="list-group-item list-group-item-action" href="#">A third link item</a><a class="list-group-item list-group-item-action" href="#">A fourth link item</a><a class="list-group-item list-group-item-action disabled" href="#" tabindex="-1" aria-disabled="true">A disabled link item</a></div>
                           </script>
@@ -461,31 +452,25 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-xl-6">
+            <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">disabled buttons</span></div>
                 <div class="card-body">
                   <div class="list-group">
-                    <p class="text-medium-emphasis small">
-                      With
-                      <code>&lt;button&gt;</code>s, you can also make use of the
-                      <code>disabled</code> attribute instead of the
-                      <code>.disabled</code> class. Sadly,
-                      <code>&lt;a&gt;</code>s don’t support the disabled attribute.
-                    </p>
-                    <div class="example mt-4">
+                    <p class="text-medium-emphasis small">With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don’t support the disabled attribute.</p>
+                    <div class="example">
                       <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-353" role="tab">
+                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-288" role="tab">
                             <svg class="icon me-2">
                               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                             </svg>Preview</a></li>
-                        <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-353" role="tab">
+                        <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-288" role="tab">
                             <svg class="icon me-2">
                               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                             </svg>Code</a></li>
                       </ul>
-                      <div class="tab-content border border-top-0 rounded-bottom">
-                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-353">
+                      <div class="tab-content rounded-bottom">
+                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-288">
                           <div class="list-group">
                             <button class="list-group-item list-group-item-action active" type="button" aria-current="true">The current button</button>
                             <button class="list-group-item list-group-item-action" type="button">A second item</button>
@@ -494,7 +479,7 @@
                             <button class="list-group-item list-group-item-action" type="button" disabled>A disabled button item</button>
                           </div>
                         </div>
-                        <div class="tab-pane py-3" role="tabpanel" id="code-353">
+                        <div class="tab-pane pt-1" role="tabpanel" id="code-288">
                           <script class="language-markup" type="text/plain">
                             <div class="list-group">
                               <button class="list-group-item list-group-item-action active" type="button" aria-current="true">The current button</button>
@@ -511,27 +496,24 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-xl-6">
+            <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">flush</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">
-                    Add
-                    <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).
-                  </p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-808" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-275" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-808" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-275" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-808">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-275">
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item">An item</li>
                           <li class="list-group-item">A second item</li>
@@ -540,7 +522,7 @@
                           <li class="list-group-item">And a fifth one</li>
                         </ul>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-808">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-275">
                         <script class="language-markup" type="text/plain">
                           <ul class="list-group list-group-flush">
                             <li class="list-group-item">An item</li>
@@ -556,33 +538,26 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-xl-6">
+            <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">horizontal</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">
-                    Add
-                    <code>.list-group-horizontal</code> to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant
-                    <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to make a list group horizontal starting at that breakpoint’s
-                    <code>min-width</code>. Currently<strong> horizontal list groups cannot be combined with flush list groups.</strong>
-                  </p>
-                  <p class="text-medium-emphasis small"><strong>ProTip:</strong> Want equal-width list group items when horizontal? Add
-                    <code>.flex-fill</code> to each list group item.
-                  </p>
+                  <p class="text-medium-emphasis small">Add <code>.list-group-horizontal</code> to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to make a list group horizontal starting at that breakpoint’s <code>min-width</code>. Currently<strong> horizontal list groups cannot be combined with flush list groups.</strong></p>
+                  <p class="text-medium-emphasis small"><strong>ProTip:</strong> Want equal-width list group items when horizontal? Add <code>.flex-fill</code> to each list group item.</p>
                   <div class="list-group">
-                    <div class="example mt-4">
+                    <div class="example">
                       <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-477" role="tab">
+                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-899" role="tab">
                             <svg class="icon me-2">
                               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                             </svg>Preview</a></li>
-                        <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-477" role="tab">
+                        <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-899" role="tab">
                             <svg class="icon me-2">
                               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                             </svg>Code</a></li>
                       </ul>
-                      <div class="tab-content border border-top-0 rounded-bottom">
-                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-477">
+                      <div class="tab-content rounded-bottom">
+                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-899">
                           <ul class="list-group list-group-horizontal mb-1">
                             <li class="list-group-item">An item</li>
                             <li class="list-group-item">A second item</li>
@@ -614,7 +589,7 @@
                             <li class="list-group-item">A third item</li>
                           </ul>
                         </div>
-                        <div class="tab-pane py-3" role="tabpanel" id="code-477">
+                        <div class="tab-pane pt-1" role="tabpanel" id="code-899">
                           <script class="language-markup" type="text/plain">
                             <ul class="list-group list-group-horizontal mb-1">
                               <li class="list-group-item">An item</li>
@@ -654,24 +629,24 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-xl-6">
+            <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">contextual classes</span></div>
                 <div class="card-body">
                   <p class="text-medium-emphasis small">Use contextual classes to style list items with a stateful background and color.</p>
-                  <div class="example mt-4">
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-942" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-976" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-942" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-976" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-942">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-976">
                         <ul class="list-group">
                           <li class="list-group-item">Dapibus ac facilisis in</li>
                           <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
@@ -684,7 +659,7 @@
                           <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
                         </ul>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-942">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-976">
                         <script class="language-markup" type="text/plain">
                           <ul class="list-group">
                             <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -704,30 +679,24 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-xl-6">
+            <div class="col-12">
               <div class="card mb-4">
-                <div class="card-header"><strong>List group</strong><span class="small ms-1">
-                    contextual with
-                    <code>.action</code></span></div>
+                <div class="card-header"><strong>List group</strong><span class="small ms-1">contextual with <code>.action</code></span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">
-                    Contextual classes also work with
-                    <code>.list-group-item-action</code>. Note the addition of the hover styles here not present in the previous example. Also supported is the
-                    <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.
-                  </p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">Contextual classes also work with <code>.list-group-item-action</code>. Note the addition of the hover styles here not present in the previous example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-370" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1097" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-370" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1097" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-370">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1097">
                         <div class="list-group"><a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a><a class="list-group-item list-group-item-action list-group-item-primary" href="#">
                             This is a primary list
                             group item</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="#">
@@ -746,7 +715,7 @@
                             This is a dark list group
                             item</a></div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-370">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1097">
                         <script class="language-markup" type="text/plain">
                           <div class="list-group"><a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a><a class="list-group-item list-group-item-action list-group-item-primary" href="#">
                               This is a primary list
@@ -772,31 +741,31 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-xl-6">
+            <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">with badges</span></div>
                 <div class="card-body">
                   <p class="text-medium-emphasis small">Add badges to any list group item to show unread counts, activity, and more with the help of some<a href="https://coreui.io/docs/4.0/utilities/flex/">utilities</a>.</p>
-                  <div class="example mt-4">
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1052" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1130" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1052" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1130" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1052">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1130">
                         <ul class="list-group">
                           <li class="list-group-item d-flex justify-content-between align-items-center">A list item<span class="badge bg-primary rounded-pill">14</span></li>
                           <li class="list-group-item d-flex justify-content-between align-items-center">A second list item<span class="badge bg-primary rounded-pill">2</span></li>
                           <li class="list-group-item d-flex justify-content-between align-items-center">A third list item<span class="badge bg-primary rounded-pill">1</span></li>
                         </ul>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1052">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1130">
                         <script class="language-markup" type="text/plain">
                           <ul class="list-group">
                             <li class="list-group-item d-flex justify-content-between align-items-center">A list item<span class="badge bg-primary rounded-pill">14</span></li>
@@ -810,26 +779,26 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-xl-6">
+            <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header">
                   <stron>List group</stron><span class="small ms-1">custom content</span>
                 </div>
                 <div class="card-body">
                   <p class="text-medium-emphasis small">Add nearly any HTML within, even for linked list groups like the one below, with the help of<a href="https://coreui.io/docs/4.0/utilities/flex/">flexbox utilities</a>.</p>
-                  <div class="example mt-4">
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1008" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-271" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1008" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-271" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1008">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-271">
                         <div class="list-group"><a class="list-group-item list-group-item-action flex-column align-items-start active" href="#">
                             <div class="d-flex w-100 justify-content-between">
                               <h5 class="mb-1">List group item heading</h5><small>3 days ago</small>
@@ -847,7 +816,7 @@
                             <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-medium-emphasis">Donec id elit non mi porta.</small>
                           </a></div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1008">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-271">
                         <script class="language-markup" type="text/plain">
                           <div class="list-group"><a class="list-group-item list-group-item-action flex-column align-items-start active" href="#">
                               <div class="d-flex w-100 justify-content-between">
@@ -875,23 +844,20 @@
               <div class="card mb-4">
                 <div class="card-header"><strong> List group</strong><span class="small ms-1">tab Javascript plugin</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">
-                    Use the tab JavaScript plugin—include it individually or through the compiled
-                    <code>coreui.js</code> file—to extend our list group to create tabbable panes of local content.
-                  </p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">Use the tab JavaScript plugin—include it individually or through the compiled <code>coreui.js</code> file—to extend our list group to create tabbable panes of local content.</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-545" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1140" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-545" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1140" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-545">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1140">
                         <div class="row">
                           <div class="col-4">
                             <div class="list-group" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action" id="list-home-list" data-coreui-toggle="tab" href="#list-home" role="tab" aria-controls="list-home" aria-selected="false">Home</a><a class="list-group-item list-group-item-action active" id="list-profile-list" data-coreui-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile" aria-selected="true">Profile</a><a class="list-group-item list-group-item-action" id="list-messages-list" data-coreui-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a><a class="list-group-item list-group-item-action" id="list-settings-list" data-coreui-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a></div>
@@ -914,7 +880,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-545">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1140">
                         <script class="language-markup" type="text/plain">
                           <div class="row">
                             <div class="col-4">
@@ -958,6 +924,5 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </body>
 </html>

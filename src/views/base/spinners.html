@@ -7,6 +7,7 @@
 * Licensed under MIT (https://coreui.io/license)
 -->
 
+<!-- Breadcrumb-->
 <html lang="en">
   <head>
     <base href="./../">
@@ -179,7 +180,7 @@
                 </svg> Error 500</a></li>
           </ul>
         </li>
-        <li class="nav-item mt-auto"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+        <li class="nav-item"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
             </svg> Download CoreUI</a></li>
@@ -221,8 +222,10 @@
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                 </svg></a></li>
+          </ul>
+          <ul class="header-nav ms-3">
             <li class="nav-item dropdown d-flex align-items-center"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar"><img class="avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
               </a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
                 <div class="dropdown-header bg-light py-2">
@@ -268,12 +271,18 @@
         </div>
         <div class="header-divider"></div>
         <div class="container-fluid">
-          <!-- Breadcrumb-->
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-0 ms-2">
-              <li class="breadcrumb-item">Home</li>
-              <li class="breadcrumb-item"><a href="#">Admin</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Components</a>
+              </li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Base</a>
+              </li>
+              <li class="breadcrumb-item active"><span>Spinners</span></li>
             </ol>
           </nav>
         </div>
@@ -288,23 +297,23 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Spinner</strong><span class="small ms-1">Border</span></div>
                 <div class="card-body">
-                  <p>Use the border spinners for a lightweight loading indicator.</p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">Use the border spinners for a lightweight loading indicator.</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1155" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1253" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1155" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1253" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1155">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1253">
                         <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1155">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1253">
                         <script class="language-markup" type="text/plain">
                           <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
                         </script>
@@ -318,20 +327,20 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Spinner</strong><span class="small ms-1">Colors</span></div>
                 <div class="card-body">
-                  <p>The border spinner uses <code>currentColor</code> for its <code>border-color</code>, meaning you can customize the color with <a href="https://coreui.io/docs/4.0/utilities/colors/">text color utilities</a>. You can use any of our text color utilities on the standard spinner.</p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">The border spinner uses <code>currentColor</code> for its <code>border-color</code>, meaning you can customize the color with <a href="https://coreui.io/docs/4.0/utilities/colors/">text color utilities</a>. You can use any of our text color utilities on the standard spinner.</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-892" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-264" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-892" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-264" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-892">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-264">
                         <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
                         <div class="spinner-border text-secondary" role="status"><span class="visually-hidden">Loading...</span></div>
                         <div class="spinner-border text-success" role="status"><span class="visually-hidden">Loading...</span></div>
@@ -341,7 +350,7 @@
                         <div class="spinner-border text-light" role="status"><span class="visually-hidden">Loading...</span></div>
                         <div class="spinner-border text-dark" role="status"><span class="visually-hidden">Loading...</span></div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-892">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-264">
                         <script class="language-markup" type="text/plain">
                           <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
                           <div class="spinner-border text-secondary" role="status"><span class="visually-hidden">Loading...</span></div>
@@ -362,43 +371,43 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Spinner</strong><span class="small ms-1">Growing</span></div>
                 <div class="card-body">
-                  <p>If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!</p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1254" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-602" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1254" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-602" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1254">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-602">
                         <div class="spinner-grow" role="status"><span class="visually-hidden">Loading...</span></div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1254">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-602">
                         <script class="language-markup" type="text/plain">
                           <div class="spinner-grow" role="status"><span class="visually-hidden">Loading...</span></div>
                         </script>
                       </div>
                     </div>
                   </div>
-                  <p>Once again, this spinner is built with <code>currentColor</code>, so you can easily change its appearance with <a href="https://coreui.io/docs/4.0/utilities/colors/">text color utilities</a>. Here it is in blue, along with the supported variants.</p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">Once again, this spinner is built with <code>currentColor</code>, so you can easily change its appearance with <a href="https://coreui.io/docs/4.0/utilities/colors/">text color utilities</a>. Here it is in blue, along with the supported variants.</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1225" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1136" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1225" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1136" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1225">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1136">
                         <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
                         <div class="spinner-grow text-secondary" role="status"><span class="visually-hidden">Loading...</span></div>
                         <div class="spinner-grow text-success" role="status"><span class="visually-hidden">Loading...</span></div>
@@ -408,7 +417,7 @@
                         <div class="spinner-grow text-light" role="status"><span class="visually-hidden">Loading...</span></div>
                         <div class="spinner-grow text-dark" role="status"><span class="visually-hidden">Loading...</span></div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1225">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1136">
                         <script class="language-markup" type="text/plain">
                           <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
                           <div class="spinner-grow text-secondary" role="status"><span class="visually-hidden">Loading...</span></div>
@@ -429,7 +438,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Spinner</strong><span class="small ms-1">Alignment</span></div>
                 <div class="card-body">
-                  <p>Spinners in Bootstrap are built with <code>rem</code>s, <code>currentColor</code>, and <code>display: inline-flex</code>. This means they can easily be resized, recolored, and quickly aligned.</p>
+                  <p class="text-medium-emphasis small">Spinners in Bootstrap are built with <code>rem</code>s, <code>currentColor</code>, and <code>display: inline-flex</code>. This means they can easily be resized, recolored, and quickly aligned.</p>
                 </div>
               </div>
             </div>
@@ -437,23 +446,23 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Spinner</strong><span class="small ms-1">Margin</span></div>
                 <div class="card-body">
-                  <p>Use <a href="https://coreui.io/docs/4.0/utilities/spacing/">margin utilities</a> like <code>.m-5</code> for easy spacing.</p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">Use <a href="https://coreui.io/docs/4.0/utilities/spacing/">margin utilities</a> like <code>.m-5</code> for easy spacing.</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-580" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-427" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-580" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-427" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-580">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-427">
                         <div class="spinner-border m-5" role="status"><span class="visually-hidden">Loading...</span></div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-580">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-427">
                         <script class="language-markup" type="text/plain">
                           <div class="spinner-border m-5" role="status"><span class="visually-hidden">Loading...</span></div>
                         </script>
@@ -467,26 +476,26 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Spinner</strong><span class="small ms-1">Placement</span></div>
                 <div class="card-body">
-                  <p>Use <a href="https://coreui.io/docs/4.0/utilities/flex/">flexbox utilities</a>, <a href="https://coreui.io/docs/4.0/utilities/float/">float utilities</a>, or <a href="https://coreui.io/docs/4.0/content/typography/">text alignment</a> utilities to place spinners exactly where you need them in any situation.</p>
+                  <p class="text-medium-emphasis small">Use <a href="https://coreui.io/docs/4.0/utilities/flex/">flexbox utilities</a>, <a href="https://coreui.io/docs/4.0/utilities/float/">float utilities</a>, or <a href="https://coreui.io/docs/4.0/content/typography/">text alignment</a> utilities to place spinners exactly where you need them in any situation.</p>
                   <h4 id="flex">Flex<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#flex" style="padding-left: 0.375em;"></a></h4>
-                  <div class="example mt-4">
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1220" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-660" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1220" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-660" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1220">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-660">
                         <div class="d-flex justify-content-center">
                           <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
                         </div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1220">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-660">
                         <script class="language-markup" type="text/plain">
                           <div class="d-flex justify-content-center">
                             <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
@@ -495,24 +504,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="example mt-4">
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1111" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-564" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1111" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-564" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1111">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-564">
                         <div class="d-flex align-items-center"><strong>Loading...</strong>
                           <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
                         </div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1111">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-564">
                         <script class="language-markup" type="text/plain">
                           <div class="d-flex align-items-center"><strong>Loading...</strong>
                             <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
@@ -522,24 +531,24 @@
                     </div>
                   </div>
                   <h4 id="floats">Floats<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#floats" style="padding-left: 0.375em;"></a></h4>
-                  <div class="example mt-4">
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-878" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-49" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-878" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-49" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-878">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-49">
                         <div class="clearfix">
                           <div class="spinner-border float-end" role="status"><span class="visually-hidden">Loading...</span></div>
                         </div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-878">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-49">
                         <script class="language-markup" type="text/plain">
                           <div class="clearfix">
                             <div class="spinner-border float-end" role="status"><span class="visually-hidden">Loading...</span></div>
@@ -549,24 +558,24 @@
                     </div>
                   </div>
                   <h4 id="text-align">Text align<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#text-align" style="padding-left: 0.375em;"></a></h4>
-                  <div class="example mt-4">
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1112" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-808" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1112" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-808" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1112">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-808">
                         <div class="text-center">
                           <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
                         </div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1112">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-808">
                         <script class="language-markup" type="text/plain">
                           <div class="text-center">
                             <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
@@ -582,24 +591,24 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Spinner</strong><span class="small ms-1">Size</span></div>
                 <div class="card-body">
-                  <p>Add <code>.spinner-border-sm</code> and <code>.spinner-grow-sm</code> to make a smaller spinner that can quickly be used within other components.</p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">Add <code>.spinner-border-sm</code> and <code>.spinner-grow-sm</code> to make a smaller spinner that can quickly be used within other components.</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1286" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-626" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1286" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-626" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1286">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-626">
                         <div class="spinner-border spinner-border-sm" role="status"><span class="visually-hidden">Loading...</span></div>
                         <div class="spinner-grow spinner-grow-sm" role="status"><span class="visually-hidden">Loading...</span></div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1286">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-626">
                         <script class="language-markup" type="text/plain">
                           <div class="spinner-border spinner-border-sm" role="status"><span class="visually-hidden">Loading...</span></div>
                           <div class="spinner-grow spinner-grow-sm" role="status"><span class="visually-hidden">Loading...</span></div>
@@ -607,24 +616,24 @@
                       </div>
                     </div>
                   </div>
-                  <p>Or, use custom CSS or inline styles to change the dimensions as needed.</p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">Or, use custom CSS or inline styles to change the dimensions as needed.</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-583" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-299" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-583" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-299" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-583">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-299">
                         <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status"><span class="visually-hidden">Loading...</span></div>
                         <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status"><span class="visually-hidden">Loading...</span></div>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-583">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-299">
                         <script class="language-markup" type="text/plain">
                           <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status"><span class="visually-hidden">Loading...</span></div>
                           <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status"><span class="visually-hidden">Loading...</span></div>
@@ -639,24 +648,24 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Spinner</strong><span class="small ms-1">Buttons</span></div>
                 <div class="card-body">
-                  <p>Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.</p>
-                  <div class="example mt-4">
+                  <p class="text-medium-emphasis small">Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-123" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-46" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-123" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-46" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-123">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-46">
                         <button class="btn btn-primary" type="button" disabled=""><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class="visually-hidden">Loading...</span></button>
                         <button class="btn btn-primary" type="button" disabled=""><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Loading...</button>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-123">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-46">
                         <script class="language-markup" type="text/plain">
                           <button class="btn btn-primary" type="button" disabled=""><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class="visually-hidden">Loading...</span></button>
                           <button class="btn btn-primary" type="button" disabled=""><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Loading...</button>
@@ -664,23 +673,23 @@
                       </div>
                     </div>
                   </div>
-                  <div class="example mt-4">
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-588" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-518" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-588" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-518" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-588">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-518">
                         <button class="btn btn-primary" type="button" disabled=""><span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span><span class="visually-hidden">Loading...</span></button>
                         <button class="btn btn-primary" type="button" disabled=""><span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>Loading...</button>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-588">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-518">
                         <script class="language-markup" type="text/plain">
                           <button class="btn btn-primary" type="button" disabled=""><span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span><span class="visually-hidden">Loading...</span></button>
                           <button class="btn btn-primary" type="button" disabled=""><span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>Loading...</button>
@@ -705,6 +714,5 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </body>
 </html>

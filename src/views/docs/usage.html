@@ -274,137 +274,67 @@
       </header>
       <div class="body flex-grow-1 px-3">
         <div class="container-lg">
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="nav-tabs-boxed">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#home" role="tab" aria-controls="home">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#messages" role="tab" aria-controls="messages">Messages</a></li>
-                </ul>
-                <div class="tab-content">
-                  <div class="tab-pane active" id="home" role="tabpanel">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                  <div class="tab-pane" id="profile" role="tabpanel">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                  <div class="tab-pane" id="messages" role="tabpanel">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                </div>
-              </div>
+          <div class="card">
+            <div class="card-body">
+              <h1>Usage</h1>
+              <h2 id="tooling-setup">Tooling setup<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#tooling-setup" style="padding-left: 0.375em;"></a></h2>
+              <p>CoreUI Admin Template uses <a href="https://docs.npmjs.com/misc/scripts/">npm scripts</a> for its build system. Our <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/v4.0.0-beta.0/package.json">package.json</a> includes convenient methods for working with the framework, including compiling code, running tests, and more.</p>
+              <p>To use our build system and run template locally, you’ll need a copy of CoreUI’s source files and Node. Follow these steps and you should be ready to rock:</p>
+              <ol>
+                <li><a href="https://nodejs.org/en/download/">Download and install Node.js</a>, which we use to manage our dependencies.</li>
+                <li>Either <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/archive/v4.0.0-beta.0.zip">download CoreUI’s sources</a> or fork <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template">CoreUI’s repository</a>.</li>
+                <li>Navigate to the root <code>/coreui-free-bootstrap-admin-template</code> directory and run <code>npm install</code> to install our local dependencies listed in <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/v4.0.0-beta.0/package.json">package.json</a>.</li>
+              </ol>
+              <p>When completed, you’ll be able to run the various commands provided from the command line.</p>
+              <h2 id="using-npm-scripts">Using npm scripts<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#using-npm-scripts" style="padding-left: 0.375em;"></a></h2>
+              <p>Our <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/v4.0.0-beta.0/package.json">package.json</a> includes numerous tasks for developing the project. Run <code>npm run</code> to see all the npm scripts in your terminal. <strong>Primary tasks include:</strong></p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Task</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>npm start</code></td>
+                    <td>Compiles CSS and JavaScript, builds the documentation, and starts a local server.</td>
+                  </tr>
+                  <tr>
+                    <td><code>npm run dist</code></td>
+                    <td>Creates the <code>dist/</code> directory with compiled files. Requires <a href="https://sass-lang.com/">Sass</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, and <a href="https://github.com/terser/terser">terser</a>.</td>
+                  </tr>
+                  <tr>
+                    <td><code>npm test</code></td>
+                    <td>Runs tests locally after running <code>npm run dist</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>npm run docs-serve</code></td>
+                    <td>Builds and runs the documentation locally.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="docs-callout docs-callout-info"><strong>Get started with Bootstrap via npm with our starter project!</strong> Head to the <a href="https://github.com/twbs/bootstrap-npm-starter">twbs/bootstrap-npm-starter</a> template repository to see how to build and customize Bootstrap in your own npm project. Includes Sass compiler, Autoprefixer, Stylelint, PurgeCSS, and Bootstrap Icons.</div>
+              <h2 id="sass">Sass<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#sass" style="padding-left: 0.375em;"></a></h2>
+              <p>Bootstrap uses <a href="https://sass-lang.com/dart-sass">Dart Sass</a> for compiling our Sass source files into CSS files (included in our build process), and we recommend you do the same if you’re compiling Sass using your own asset pipeline. We previously used Node Sass for Bootstrap v4, but LibSass and packages built on top of it, including Node Sass, are now <a href="https://sass-lang.com/blog/libsass-is-deprecated">deprecated</a>.</p>
+              <p>Dart Sass uses a rounding precision of 10 and for efficiency reasons does not allow adjustment of this value. We don’t lower this precision during further processing of our generated CSS, such as during minification, but if you chose to do so we recommend maintaining a precision of at least 6 to prevent issues with browser rounding.</p>
+              <h2 id="autoprefixer">Autoprefixer<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#autoprefixer" style="padding-left: 0.375em;"></a></h2>
+              <p>CoreUI for Bootstrap uses <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> (included in our build process) to automatically add vendor prefixes to some CSS properties at build time. Doing so saves us time and code by allowing us to write key parts of our CSS a single time while eliminating the need for vendor mixins like those found in v3.</p>
+              <p>We maintain the list of browsers supported through Autoprefixer in a separate file within our GitHub repository. See <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/v4.0.0-beta.0/.browserslistrc">.browserslistrc</a> for details.</p>
+              <h2 id="rtlcss">RTLCSS<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#rtlcss" style="padding-left: 0.375em;"></a></h2>
+              <p>CoreUI for Bootstrap uses <a href="https://rtlcss.com/">RTLCSS</a> to process compiled CSS and convert them to RTL – basically replacing horizontal direction aware properties (eg. <code>padding-left</code>) with their opposite. It allows us only write our CSS a single time and make minor tweaks using RTLCSS <a href="https://rtlcss.com/learn/usage-guide/control-directives/">control</a> and <a href="https://rtlcss.com/learn/usage-guide/value-directives/">value</a> directives.</p>
+              <h2 id="local-documentation">Local documentation<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#local-documentation" style="padding-left: 0.375em;"></a></h2>
+              <p>Running our documentation locally requires the use of Hugo, which gets installed via the <a href="https://www.npmjs.com/package/hugo-bin">hugo-bin</a> npm package. Hugo is a blazingly fast and quite extensible static site generator that provides us: basic includes, Markdown-based files, templates, and more. Here’s how to get it started:</p>
+              <ol>
+                <li>Run through the <a href="#tooling-setup">tooling setup</a> above to install all dependencies.</li>
+                <li>From the root <code>/coreui</code> directory, run <code>npm run docs-serve</code> in the command line.</li>
+                <li>Open <code>http://localhost:9001/</code> in your browser, and voilà.</li>
+              </ol>
+              <p>Learn more about using Hugo by reading its <a href="https://gohugo.io/documentation/">documentation</a>.</p>
+              <h2 id="troubleshooting">Troubleshooting<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#troubleshooting" style="padding-left: 0.375em;"></a></h2>
+              <p>Should you encounter problems with installing dependencies, uninstall all previous dependency versions (global and local). Then, rerun <code>npm install</code>.</p>
             </div>
-            <!-- /.col-->
-            <div class="col-md-6 mb-4">
-              <div class="nav-tabs-boxed nav-tabs-boxed-top-right">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#home" role="tab" aria-controls="home">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#messages" role="tab" aria-controls="messages">Messages</a></li>
-                </ul>
-                <div class="tab-content">
-                  <div class="tab-pane active" id="home" role="tabpanel">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                  <div class="tab-pane" id="profile" role="tabpanel">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                  <div class="tab-pane" id="messages" role="tabpanel">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                </div>
-              </div>
-            </div>
-            <!-- /.col-->
           </div>
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="nav-tabs-boxed nav-tabs-boxed-left">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#home" role="tab" aria-controls="home">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#messages" role="tab" aria-controls="messages">Messages</a></li>
-                </ul>
-                <div class="tab-content">
-                  <div class="tab-pane active" id="home" role="tabpanel">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                  <div class="tab-pane" id="profile" role="tabpanel">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                  <div class="tab-pane" id="messages" role="tabpanel">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                </div>
-              </div>
-            </div>
-            <!-- /.col-->
-            <div class="col-md-6 mb-4">
-              <div class="nav-tabs-boxed nav-tabs-boxed-right">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#home" role="tab" aria-controls="home">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#messages" role="tab" aria-controls="messages">Messages</a></li>
-                </ul>
-                <div class="tab-content">
-                  <div class="tab-pane active" id="home" role="tabpanel">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                  <div class="tab-pane" id="profile" role="tabpanel">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                  <div class="tab-pane" id="messages" role="tabpanel">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                </div>
-              </div>
-            </div>
-            <!-- /.col-->
-            <div class="col-md-6 mb-4">
-              <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#home2" role="tab" aria-controls="home">
-                    <svg class="icon">
-                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calculator"></use>
-                    </svg></a></li>
-                <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#profile2" role="tab" aria-controls="profile">
-                    <svg class="icon">
-                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket"></use>
-                    </svg></a></li>
-                <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#messages2" role="tab" aria-controls="messages">
-                    <svg class="icon">
-                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie"></use>
-                    </svg></a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="home2" role="tabpanel">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div class="tab-pane" id="profile2" role="tabpanel">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div class="tab-pane" id="messages2" role="tabpanel">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-              </div>
-            </div>
-            <!-- /.col-->
-            <div class="col-md-6 mb-4">
-              <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#home3" role="tab" aria-controls="home">
-                    <svg class="icon">
-                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calculator"></use>
-                    </svg> Calculator</a></li>
-                <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#profile3" role="tab" aria-controls="profile">
-                    <svg class="icon">
-                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket"></use>
-                    </svg> Shoping cart</a></li>
-                <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#messages3" role="tab" aria-controls="messages">
-                    <svg class="icon">
-                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie"></use>
-                    </svg> Charts</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="home3" role="tabpanel">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div class="tab-pane" id="profile3" role="tabpanel">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div class="tab-pane" id="messages3" role="tabpanel">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-              </div>
-            </div>
-            <!-- /.col-->
-            <div class="col-md-6 mb-4">
-              <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#home4" role="tab" aria-controls="home">
-                    <svg class="icon">
-                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calculator"></use>
-                    </svg> Calculator<span class="badge bg-success">New</span></a></li>
-                <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#profile4" role="tab" aria-controls="profile">
-                    <svg class="icon">
-                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket"></use>
-                    </svg> Shoping cart<span class="badge bg-pill bg-danger">29</span></a></li>
-                <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#messages4" role="tab" aria-controls="messages">
-                    <svg class="icon">
-                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie"></use>
-                    </svg> Charts</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="home4" role="tabpanel">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div class="tab-pane" id="profile4" role="tabpanel">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div class="tab-pane" id="messages4" role="tabpanel">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-              </div>
-            </div>
-            <!-- /.col-->
-          </div>
-          <!-- /.row-->
         </div>
       </div>
       <footer class="footer">

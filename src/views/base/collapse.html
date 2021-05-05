@@ -7,6 +7,7 @@
 * Licensed under MIT (https://coreui.io/license)
 -->
 
+<!-- Breadcrumb-->
 <html lang="en">
   <head>
     <base href="./../">
@@ -179,7 +180,7 @@
                 </svg> Error 500</a></li>
           </ul>
         </li>
-        <li class="nav-item mt-auto"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+        <li class="nav-item"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
             </svg> Download CoreUI</a></li>
@@ -221,8 +222,10 @@
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                 </svg></a></li>
+          </ul>
+          <ul class="header-nav ms-3">
             <li class="nav-item dropdown d-flex align-items-center"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar"><img class="avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
               </a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
                 <div class="dropdown-header bg-light py-2">
@@ -268,12 +271,18 @@
         </div>
         <div class="header-divider"></div>
         <div class="container-fluid">
-          <!-- Breadcrumb-->
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-0 ms-2">
-              <li class="breadcrumb-item">Home</li>
-              <li class="breadcrumb-item"><a href="#">Admin</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Components</a>
+              </li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Base</a>
+              </li>
+              <li class="breadcrumb-item active"><span>Collapse</span></li>
             </ol>
           </nav>
         </div>
@@ -286,25 +295,20 @@
           <div class="card mb-4">
             <div class="card-header"><strong>Collapse</strong></div>
             <div class="card-body">
-              <p class="text-medium-emphasis small">
-                You can use a link with the
-                <code>href</code> attribute, or a button with the
-                <code>data-coreui-target</code> attribute. In both samples, the
-                <code>data-coreui-toggle="collapse""</code> is required.
-              </p>
-              <div class="example mt-4">
+              <p class="text-medium-emphasis small">You can use a link with the <code>href</code> attribute, or a button with the <code>data-coreui-target</code> attribute. In both samples, the <code>data-coreui-toggle="collapse""</code> is required.</p>
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-97" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-687" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-97" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-687" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-97">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-687">
                     <p><a class="btn btn-primary" data-coreui-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Link with href</a>
                       <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target</button>
                     </p>
@@ -312,7 +316,7 @@
                       <div class="card mb-4 card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
                     </div>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-97">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-687">
                     <script class="language-markup" type="text/plain">
                       <p><a class="btn btn-primary" data-coreui-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Link with href</a>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target</button>
@@ -329,30 +333,20 @@
           <div class="card mb-4">
             <div class="card-header"><strong>Collapse</strong><span class="small ms-1">multiple targets</span></div>
             <div class="card-body">
-              <p class="text-medium-emphasis small">
-                A
-                <code>&lt;button&gt;</code> or
-                <code>&lt;a&gt;</code> can show and hide multiple elements by referencing them with a selector in its
-                <code>href</code> or
-                <code>data-coreui-target</code> attribute. Multiple
-                <code>&lt;button&gt;</code> or
-                <code>&lt;a&gt;</code> can show and hide an element if they each reference it with their
-                <code>href</code> or
-                <code>data-coreui-target</code> attribute
-              </p>
-              <div class="example mt-4">
+              <p class="text-medium-emphasis small">A <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> can show and hide multiple elements by referencing them with a selector in its <code>href</code> or <code>data-coreui-target</code> attribute. Multiple <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> can show and hide an element if they each reference it with their <code>href</code> or <code>data-coreui-target</code> attribute</p>
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-871" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-610" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-871" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-610" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-871">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-610">
                     <p><a class="btn btn-primary" data-coreui-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
                       <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle second element</button>
                       <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
@@ -370,7 +364,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-871">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-610">
                     <script class="language-markup" type="text/plain">
                       <p><a class="btn btn-primary" data-coreui-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle second element</button>
@@ -407,6 +401,5 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </body>
 </html>

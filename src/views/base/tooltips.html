@@ -7,6 +7,7 @@
 * Licensed under MIT (https://coreui.io/license)
 -->
 
+<!-- Breadcrumb-->
 <html lang="en">
   <head>
     <base href="./../">
@@ -179,7 +180,7 @@
                 </svg> Error 500</a></li>
           </ul>
         </li>
-        <li class="nav-item mt-auto"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+        <li class="nav-item"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
             </svg> Download CoreUI</a></li>
@@ -221,8 +222,10 @@
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                 </svg></a></li>
+          </ul>
+          <ul class="header-nav ms-3">
             <li class="nav-item dropdown d-flex align-items-center"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar"><img class="avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
               </a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
                 <div class="dropdown-header bg-light py-2">
@@ -268,12 +271,18 @@
         </div>
         <div class="header-divider"></div>
         <div class="container-fluid">
-          <!-- Breadcrumb-->
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-0 ms-2">
-              <li class="breadcrumb-item">Home</li>
-              <li class="breadcrumb-item"><a href="#">Admin</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Components</a>
+              </li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Base</a>
+              </li>
+              <li class="breadcrumb-item active"><span>Tooltips</span></li>
             </ol>
           </nav>
         </div>
@@ -289,62 +298,50 @@
                 <div class="card-header"><strong>Tooltips</strong></div>
                 <div class="card-body">
                   <p>Hover over the links below to see tooltips:</p>
-                  <div class="example mt-4">
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1128" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-538" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1128" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-538" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1128">
-                        <p>
-                          Placeholder text to demonstrate some
-                          <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of
-                          <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how
-                          <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on
-                          <a href="#" data-coreui-toggle="tooltip" title="The last tip!">your own</a> site or project.
-                        </p>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-538">
+                        <p>Placeholder text to demonstrate some <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-coreui-toggle="tooltip" title="The last tip!">your own</a> site or project.</p>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1128">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-538">
                         <script class="language-markup" type="text/plain">
-                          <p>
-                            Placeholder text to demonstrate some
-                            <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of
-                            <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how
-                            <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on
-                            <a href="#" data-coreui-toggle="tooltip" title="The last tip!">your own</a> site or project.
-                          </p>
+                          <p>Placeholder text to demonstrate some <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-coreui-toggle="tooltip" data-coreui-original-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-coreui-toggle="tooltip" title="The last tip!">your own</a> site or project.</p>
                         </script>
                       </div>
                     </div>
                   </div>
                   <hr>
                   <p>Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left. Directions are mirrored when using Bootstrap in RTL.</p>
-                  <div class="example mt-4">
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-813" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-738" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-813" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-738" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-813">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-738">
                         <button class="btn btn-secondary" type="button" data-coreui-toggle="tooltip" data-coreui-placement="top" data-coreui-original-title="Tooltip on top">Tooltip on top</button>
                         <button class="btn btn-secondary" type="button" data-coreui-toggle="tooltip" data-coreui-placement="right" data-coreui-original-title="Tooltip on right">Tooltip on right</button>
                         <button class="btn btn-secondary" type="button" data-coreui-toggle="tooltip" data-coreui-placement="bottom" data-coreui-original-title="Tooltip on bottom">Tooltip on bottom</button>
                         <button class="btn btn-secondary" type="button" data-coreui-toggle="tooltip" data-coreui-placement="left" data-coreui-original-title="Tooltip on left">Tooltip on left</button>
                         <button class="btn btn-secondary" type="button" data-coreui-toggle="tooltip" data-coreui-html="true" data-coreui-original-title="&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;">Tooltip with HTML</button>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-813">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-738">
                         <script class="language-markup" type="text/plain">
                           <button class="btn btn-secondary" type="button" data-coreui-toggle="tooltip" data-coreui-placement="top" data-coreui-original-title="Tooltip on top">Tooltip on top</button>
                           <button class="btn btn-secondary" type="button" data-coreui-toggle="tooltip" data-coreui-placement="right" data-coreui-original-title="Tooltip on right">Tooltip on right</button>
@@ -362,29 +359,23 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Tooltips</strong><span class="small ms-1"> Disabled elements</span></div>
                 <div class="card-body">
-                  <p>
-                    Elements with the
-                    <code>disabled</code> attribute aren’t interactive, meaning users cannot focus, hover, or click them to trigger a tooltip (or popover). As a workaround, you’ll want to trigger the tooltip from a wrapper
-                    <code> &lt;div&gt;</code> or
-                    <code>&lt;span&gt;</code>, ideally made keyboard-focusable using
-                    <code>tabindex="0"</code>.
-                  </p>
-                  <div class="example mt-4">
+                  <p>Elements with the <code>disabled</code> attribute aren’t interactive, meaning users cannot focus, hover, or click them to trigger a tooltip (or popover). As a workaround, you’ll want to trigger the tooltip from a wrapper <code> &lt;div&gt;</code> or <code>&lt;span&gt;</code>, ideally made keyboard-focusable using <code>tabindex="0"</code>.</p>
+                  <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1290" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-813" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1290" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-813" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
-                    <div class="tab-content border border-top-0 rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1290"><span class="d-inline-block" tabindex="0" data-coreui-toggle="tooltip" data-coreui-original-title="Disabled tooltip">
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-813"><span class="d-inline-block" tabindex="0" data-coreui-toggle="tooltip" data-coreui-original-title="Disabled tooltip">
                           <button class="btn btn-primary" type="button" disabled>Disabled button</button></span>
                       </div>
-                      <div class="tab-pane py-3" role="tabpanel" id="code-1290">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-813">
                         <script class="language-markup" type="text/plain"><span class="d-inline-block" tabindex="0" data-coreui-toggle="tooltip" data-coreui-original-title="Disabled tooltip">
                             <button class="btn btn-primary" type="button" disabled>Disabled button</button></span>
                         </script>
@@ -408,7 +399,6 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <!-- Plugins and scripts required by this view-->
     <script src="js/tooltips.js"></script>
   </body>

@@ -7,6 +7,7 @@
 * Licensed under MIT (https://coreui.io/license)
 -->
 
+<!-- Breadcrumb-->
 <html lang="en">
   <head>
     <base href="./../">
@@ -179,7 +180,7 @@
                 </svg> Error 500</a></li>
           </ul>
         </li>
-        <li class="nav-item mt-auto"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+        <li class="nav-item"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
             </svg> Download CoreUI</a></li>
@@ -221,8 +222,10 @@
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                 </svg></a></li>
+          </ul>
+          <ul class="header-nav ms-3">
             <li class="nav-item dropdown d-flex align-items-center"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar"><img class="avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
               </a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
                 <div class="dropdown-header bg-light py-2">
@@ -268,12 +271,18 @@
         </div>
         <div class="header-divider"></div>
         <div class="container-fluid">
-          <!-- Breadcrumb-->
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-0 ms-2">
-              <li class="breadcrumb-item">Home</li>
-              <li class="breadcrumb-item"><a href="#">Admin</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Components</a>
+              </li>
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><a href="#">Buttons</a>
+              </li>
+              <li class="breadcrumb-item active"><span>Buttons</span></li>
             </ol>
           </nav>
         </div>
@@ -288,19 +297,19 @@
             <div class="card-body">
               <p class="text-medium-emphasis small">CoreUI includes a bunch of predefined Bootstrap buttons, each serving its own semantic purpose. CoreUI also offers some unique buttons styles.</p>
               <p class="text-medium-emphasis small">Buttons show what action will happen when the user clicks or touches it. Bootstrap buttons are used to initialize operations, both in the background or foreground of an experience.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-982" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-798" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-982" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-798" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-982">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-798">
                     <div class="row align-items-center">
                       <div class="col-12 col-xl-2 mb-3 mb-xl-0">Normal</div>
                       <div class="col-auto">
@@ -344,7 +353,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-982">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-798">
                     <script class="language-markup" type="text/plain">
                       <div class="row align-items-center">
                         <div class="col-12 col-xl-2 mb-3 mb-xl-0">Normal</div>
@@ -398,19 +407,19 @@
             <div class="card-header"><strong>Buttons</strong><span class="small ms-1">with icons</span></div>
             <div class="card-body">
               <p class="text-medium-emphasis small">You can combine button with our <a href="https://icons.coreui.io/">CoreUI Icons</a>.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-190" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-999" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-190" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-999" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-190">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-999">
                     <div class="row align-items-center">
                       <div class="col-12 col-xl-2 mb-3 mb-xl-0">Normal</div>
                       <div class="col-auto">
@@ -562,7 +571,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-190">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-999">
                     <script class="language-markup" type="text/plain">
                       <div class="row align-items-center">
                         <div class="col-12 col-xl-2 mb-3 mb-xl-0">Normal</div>
@@ -725,25 +734,25 @@
             <div class="card-body">
               <p class="text-medium-emphasis small">The <code>.btn</code> classes are designed for <code> &lt;button&gt;</code> , <code> &lt;a&gt;</code> or <code> &lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
               <p class="text-medium-emphasis small">If you’re using <code>.btn</code> classes on <code> &lt;a&gt;</code> elements that are used to trigger functionality ex. collapsing content, these links should be given a <code>role="button"</code> to adequately communicate their meaning to assistive technologies such as screen readers.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1201" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-19" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1201" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-19" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1201"><a class="btn btn-primary" href="#" role="button">Link</a>
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-19"><a class="btn btn-primary" href="#" role="button">Link</a>
                     <button class="btn btn-primary" type="submit">Button</button>
                     <input class="btn btn-primary" type="button" value="Input">
                     <input class="btn btn-primary" type="submit" value="Submit">
                     <input class="btn btn-primary" type="reset" value="Reset">
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-1201">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-19">
                     <script class="language-markup" type="text/plain"><a class="btn btn-primary" href="#" role="button">Link</a>
                       <button class="btn btn-primary" type="submit">Button</button>
                       <input class="btn btn-primary" type="button" value="Input">
@@ -759,19 +768,19 @@
             <div class="card-header"><strong>Buttons</strong><span class="small ms-1">outline</span></div>
             <div class="card-body">
               <p class="text-medium-emphasis small">If you need a button, but without the strong background colors. Replace the default modifier classes with the <code>.btn-outline-*</code> ones to remove all background colors on any element with <code>.btn</code> class.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1086" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-94" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1086" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-94" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1086">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-94">
                     <div class="row align-items-center">
                       <div class="col-12 col-xl-2 mb-3 mb-xl-0">Normal</div>
                       <div class="col-auto">
@@ -812,7 +821,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-1086">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-94">
                     <script class="language-markup" type="text/plain">
                       <div class="row align-items-center">
                         <div class="col-12 col-xl-2 mb-3 mb-xl-0">Normal</div>
@@ -863,19 +872,19 @@
             <div class="card-header"><strong>Buttons</strong><span class="small ms-1">ghost</span></div>
             <div class="card-body">
               <p class="text-medium-emphasis small">Use <code>.btn-ghost-*</code> class for ghost buttons.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-525" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-609" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-525" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-609" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-525">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-609">
                     <div class="row align-items-center">
                       <div class="col-12 col-xl-2 mb-3 mb-xl-0">Normal</div>
                       <div class="col-auto">
@@ -916,7 +925,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-525">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-609">
                     <script class="language-markup" type="text/plain">
                       <div class="row align-items-center">
                         <div class="col-12 col-xl-2 mb-3 mb-xl-0">Normal</div>
@@ -967,23 +976,23 @@
             <div class="card-header"><strong>Button</strong><span class="small ms-1">sizes</span></div>
             <div class="card-body">
               <p class="text-medium-emphasis small">Larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-347" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1293" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-347" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1293" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-347">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1293">
                     <button class="btn btn-primary btn-lg" type="button">Large button</button>
                     <button class="btn btn-secondary btn-lg" type="button">Large button</button>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-347">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-1293">
                     <script class="language-markup" type="text/plain">
                       <button class="btn btn-primary btn-lg" type="button">Large button</button>
                       <button class="btn btn-secondary btn-lg" type="button">Large button</button>
@@ -991,23 +1000,23 @@
                   </div>
                 </div>
               </div>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1064" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-896" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1064" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-896" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1064">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-896">
                     <button class="btn btn-primary btn-sm" type="button">Small button</button>
                     <button class="btn btn-secondary btn-sm" type="button">Small button</button>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-1064">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-896">
                     <script class="language-markup" type="text/plain">
                       <button class="btn btn-primary btn-sm" type="button">Small button</button>
                       <button class="btn btn-secondary btn-sm" type="button">Small button</button>
@@ -1020,19 +1029,19 @@
           <div class="card mb-4">
             <div class="card-header"><strong>Button</strong><span class="small ms-1">pill</span></div>
             <div class="card-body">
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-961" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-365" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-961" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-365" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-961">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-365">
                     <button class="btn btn-primary rounded-pill" type="button">Primary</button>
                     <button class="btn btn-secondary rounded-pill" type="button">Secondary</button>
                     <button class="btn btn-success rounded-pill" type="button">Success</button>
@@ -1042,7 +1051,7 @@
                     <button class="btn btn-light rounded-pill" type="button">Light</button>
                     <button class="btn btn-dark rounded-pill" type="button">Dark</button>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-961">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-365">
                     <script class="language-markup" type="text/plain">
                       <button class="btn btn-primary rounded-pill" type="button">Primary</button>
                       <button class="btn btn-secondary rounded-pill" type="button">Secondary</button>
@@ -1061,19 +1070,19 @@
           <div class="card mb-4">
             <div class="card-header"><strong>Button</strong><span class="small ms-1">square</span></div>
             <div class="card-body">
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-349" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1079" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-349" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1079" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-349">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1079">
                     <button class="btn btn-primary rounded-0" type="button">Primary</button>
                     <button class="btn btn-secondary rounded-0" type="button">Secondary</button>
                     <button class="btn btn-success rounded-0" type="button">Success</button>
@@ -1083,7 +1092,7 @@
                     <button class="btn btn-light rounded-0" type="button">Light</button>
                     <button class="btn btn-dark rounded-0" type="button">Dark</button>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-349">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-1079">
                     <script class="language-markup" type="text/plain">
                       <button class="btn btn-primary rounded-0" type="button">Primary</button>
                       <button class="btn btn-secondary rounded-0" type="button">Secondary</button>
@@ -1103,23 +1112,23 @@
             <div class="card-header"><strong>Button</strong><span class="small ms-1">disabled state</span></div>
             <div class="card-body">
               <p class="text-medium-emphasis small">Add the <code>disabled</code> boolean attribute to any <code> &lt;button&gt;</code> element to make buttons look inactive. Disabled button has <code>pointer-events: none</code> applied to, disabling hover and active states from triggering.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-402" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-546" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-402" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-546" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-402">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-546">
                     <button class="btn btn-lg btn-primary" type="button" disabled="">Primary button</button>
                     <button class="btn btn-secondary btn-lg" type="button" disabled="">Button</button>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-402">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-546">
                     <script class="language-markup" type="text/plain">
                       <button class="btn btn-lg btn-primary" type="button" disabled="">Primary button</button>
                       <button class="btn btn-secondary btn-lg" type="button" disabled="">Button</button>
@@ -1129,21 +1138,21 @@
               </div>
               <p class="text-medium-emphasis small">Disabled buttons using the <code> &lt;a&gt;</code> element act a little different:</p>
               <p class="text-medium-emphasis small"><code> &lt;a&gt;</code>s don’t support the <code>disabled</code> attribute, so you have to add <code>.disabled</code> class to make buttons look inactive. The disabled bootstrap button must have the <code>aria-disabled="true"</code> attribute to show the state of the element to assistive technologies.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-333" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-323" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-333" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-323" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-333"><a class="btn btn-primary btn-lg disabled" href="#" tabindex="-1" role="button" aria-disabled="true">Primary link</a><a class="btn btn-secondary btn-lg disabled" href="#" tabindex="-1" role="button" aria-disabled="true">Link</a>
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-323"><a class="btn btn-primary btn-lg disabled" href="#" tabindex="-1" role="button" aria-disabled="true">Primary link</a><a class="btn btn-secondary btn-lg disabled" href="#" tabindex="-1" role="button" aria-disabled="true">Link</a>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-333">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-323">
                     <script class="language-markup" type="text/plain"><a class="btn btn-primary btn-lg disabled" href="#" tabindex="-1" role="button" aria-disabled="true">Primary link</a><a class="btn btn-secondary btn-lg disabled" href="#" tabindex="-1" role="button" aria-disabled="true">Link</a>
                     </script>
                   </div>
@@ -1155,25 +1164,25 @@
             <div class="card-header"><strong>Button</strong><span class="small ms-1">block</span></div>
             <div class="card-body">
               <p class="text-medium-emphasis small">Create buttons that span the full width of a parent—by using utilities.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-914" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-511" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-914" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-511" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-914">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-511">
                     <div class="d-grid gap-2">
                       <button class="btn btn-primary" type="button">Button</button>
                       <button class="btn btn-primary" type="button">Button</button>
                     </div>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-914">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-511">
                     <script class="language-markup" type="text/plain">
                       <div class="d-grid gap-2">
                         <button class="btn btn-primary" type="button">Button</button>
@@ -1184,25 +1193,25 @@
                 </div>
               </div>
               <p class="text-medium-emphasis small">Here we create a responsive variation, starting with vertically stacked buttons until the <code>md</code> breakpoint, where <code>.d-md-block</code> replaces the <code>.d-grid</code> class, thus nullifying the <code>gap-2</code> utility. Resize your browser to see them change.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-788" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-578" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-788" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-578" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-788">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-578">
                     <div class="d-grid gap-2 d-md-block">
                       <button class="btn btn-primary" type="button">Button</button>
                       <button class="btn btn-primary" type="button">Button</button>
                     </div>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-788">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-578">
                     <script class="language-markup" type="text/plain">
                       <div class="d-grid gap-2 d-md-block">
                         <button class="btn btn-primary" type="button">Button</button>
@@ -1213,25 +1222,25 @@
                 </div>
               </div>
               <p class="text-medium-emphasis small">You can adjust the width of your block buttons with grid column width classes. For example, for a half-width “block button”, use <code>.col-6</code>. Center it horizontally with <code>.mx-auto</code>, too.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-985" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-522" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-985" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-522" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-985">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-522">
                     <div class="d-grid gap-2 col-6 mx-auto">
                       <button class="btn btn-primary" type="button">Button</button>
                       <button class="btn btn-primary" type="button">Button</button>
                     </div>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-985">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-522">
                     <script class="language-markup" type="text/plain">
                       <div class="d-grid gap-2 col-6 mx-auto">
                         <button class="btn btn-primary" type="button">Button</button>
@@ -1242,25 +1251,25 @@
                 </div>
               </div>
               <p class="text-medium-emphasis small">Additional utilities can be used to adjust the alignment of buttons when horizontal. Here we’ve taken our previous responsive example and added some flex utilities and a margin utility on the button to right align the buttons when they’re no longer stacked.</p>
-              <div class="example mt-4">
+              <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-411" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-773" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-411" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-773" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
-                <div class="tab-content border border-top-0 rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-411">
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-773">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                       <button class="btn btn-primary me-md-2" type="button">Button</button>
                       <button class="btn btn-primary" type="button">Button</button>
                     </div>
                   </div>
-                  <div class="tab-pane py-3" role="tabpanel" id="code-411">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-773">
                     <script class="language-markup" type="text/plain">
                       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button class="btn btn-primary me-md-2" type="button">Button</button>
@@ -1285,6 +1294,5 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </body>
 </html>
