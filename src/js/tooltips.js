@@ -2,7 +2,7 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v4.0.0-beta.0): tooltips.js
+ * CoreUI Free Boostrap Admin Template (v4.0.0-beta.1): tooltips.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
