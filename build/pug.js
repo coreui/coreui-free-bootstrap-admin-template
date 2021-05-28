@@ -1,34 +1,28 @@
 #!/usr/bin/env node
 'use strict'
 
-const fs = require('fs')
-const glob = require('glob')
+const fs = require('fs').promises
+// const glob = require('glob')
 const path = require('path')
 const mkdirp = require('mkdirp')
 const pug = require('pug')
-const { basename, dirname, resolve, extname, sep } = path
+const { basename, dirname, resolve, sep } = path
 
-const argv = require('minimist')(process.argv.slice(2), {
-  // boolean: ['enablePrettier', 'injectVendors', 'injectSvg']
-})
-console.dir(argv)
-const { src } = argv
-const { dest } = argv
+const globby = require('globby')
 
-// Get all pug files
-const getAllFiles = src => {
-  // const cwd = 'pug/'
-  const pattern = `${src}/**/*.pug`
-  const options = {
-    ignore: `${src}/_*/**`
-  }
-  return new glob.sync(pattern, options)
+// These are the filetypes we only care about replacing the version
+const GLOB = [
+  '**/*.pug'
+]
+
+const SRC = 'src/pug/views/'
+
+const GLOBBY_OPTIONS = {
+  cwd: path.join(__dirname, '..', SRC)
 }
 
-const isPug = filename => extname(filename) === '.pug'
-
 const compile = (filename, basedir) => {
-  const levels = basedir.split(`${sep}`).filter(el => el !== '' ).length
+  const levels = basedir.split(`${sep}`).filter(el => el !== '').length
   const base = levels => {
     let path = './'
     while (levels > 0) {
@@ -49,38 +43,43 @@ const compile = (filename, basedir) => {
   return html
 }
 
-const checkPath = (src, dest) => {
-  // Check if path is file or directory
-  if (fs.statSync(src).isDirectory()) {
-    const files = getAllFiles(src)
-    files.forEach(file => {
-      if (isPug(file)) {
-        compilePugToHtml(resolve(file), dest)
-      }
-      // TODO: handle errors
-    })
-  } else if (isPug(src)) {
-    compilePugToHtml(resolve(src), dest)
-  }
-  // TODO: handle errors
-}
-
 // Build html files
-const compilePugToHtml = (src, dest) => {
-  const dir = dirname(src)
-  const file = basename(src).replace('.pug', '.html')
-  const relative = path.relative(resolve(__dirname, '..'), dir.replace(`src${sep}pug${sep}views`, ''))
-  const html = compile(src, `${relative}`)
-  mkdirp.sync(resolve(__dirname, '..', dest, relative))
+const compilePugToHtml = (file, dest) => {
+  const dir = dirname(file)
+  const filename = basename(file).replace('.pug', '.html')
+  const relative = path.relative(path.join(__dirname, '..'), dir.replace(SRC, ''))
+  const html = compile(path.join(__dirname, '..', SRC, file), `${relative}`)
 
+  mkdirp(path.join(__dirname, '..', dest, relative)).then(() => {
+    fs.writeFile(resolve(__dirname, '..', dest, relative, filename), html, err => {
+      if (err) {
+        throw err
+      }
 
-  fs.writeFile(resolve(__dirname, '..', dest, relative, file), html, err => {
-    if (err) {
-      throw err
-    }
-
-    console.log(`${resolve(__dirname, '..', dest, relative, file)} file saved!`)
+      console.log(`${resolve(__dirname, '..', dest, relative, filename)} file saved!`)
+    })
   })
 }
 
-checkPath(src, dest)
+const args = require('minimist')(process.argv.slice(2))
+
+async function main(args) {
+  const { dest } = args
+
+  if (!dest) {
+    console.error('USAGE: change-version old_version new_version [--verbose] [--dry[-run]]')
+    console.error('Got arguments:', args)
+    process.exit(1)
+  }
+
+  try {
+    const files = await globby(GLOB, GLOBBY_OPTIONS)
+
+    await Promise.all(files.map(file => compilePugToHtml(file, dest)))
+  } catch (error) {
+    console.error(error)
+    process.exit(1)
+  }
+}
+
+main(args)
