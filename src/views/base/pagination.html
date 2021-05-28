@@ -36,6 +36,7 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -61,7 +62,7 @@
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation">
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
@@ -296,19 +297,28 @@
                   <p class="text-medium-emphasis small">In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive <code>aria-label</code> for the <code> &lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code>aria-label="Search results pages"</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-292" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-904" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-292" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-904" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-292">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-904">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                          </ul>
+                        </nav>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-292">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-904">
                         <script class="language-markup" type="text/plain">
                           <nav aria-label="Page navigation example">
                             <ul class="pagination">
@@ -333,19 +343,28 @@
                   <p class="text-medium-emphasis small">Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with <code>aria</code> attributes.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-738" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-901" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-738" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-901" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-738">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-901">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                          </ul>
+                        </nav>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-738">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-901">
                         <script class="language-markup" type="text/plain">
                           <nav aria-label="Page navigation example">
                             <ul class="pagination">
@@ -371,19 +390,28 @@
                   <p class="text-medium-emphasis small">While the <code>.disabled</code> class uses <code>pointer-events: none</code> to <em>try</em> to disable the link functionality of <code> &lt;a&gt;</code>s, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add <code>tabindex="-1"</code> on disabled links and use custom JavaScript to fully disable their functionality.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1083" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-485" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1083" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-485" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1083">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-485">
+                        <nav aria-label="...">
+                          <ul class="pagination">
+                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                          </ul>
+                        </nav>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1083">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-485">
                         <script class="language-markup" type="text/plain">
                           <nav aria-label="...">
                             <ul class="pagination">
@@ -401,19 +429,28 @@
                   <p class="text-medium-emphasis small">You can optionally swap out active or disabled anchors for <code> &lt;span&gt;</code>, or omit the anchor in the case of the prev/next arrows, to remove click functionality and prevent keyboard focus while retaining intended styles.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-704" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1294" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-704" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1294" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-704">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1294">
+                        <nav aria-label="...">
+                          <ul class="pagination">
+                            <li class="page-item disabled"><span class="page-link">Previous</span></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page"><span class="page-link">2</span></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                          </ul>
+                        </nav>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-704">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1294">
                         <script class="language-markup" type="text/plain">
                           <nav aria-label="...">
                             <ul class="pagination">
@@ -438,19 +475,26 @@
                   <p class="text-medium-emphasis small">Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-235" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1053" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-235" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1053" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-235">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1053">
+                        <nav aria-label="...">
+                          <ul class="pagination pagination-lg">
+                            <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          </ul>
+                        </nav>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-235">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1053">
                         <script class="language-markup" type="text/plain">
                           <nav aria-label="...">
                             <ul class="pagination pagination-lg">
@@ -465,19 +509,26 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1246" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1062" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1246" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1062" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1246">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1062">
+                        <nav aria-label="...">
+                          <ul class="pagination pagination-sm">
+                            <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          </ul>
+                        </nav>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1246">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1062">
                         <script class="language-markup" type="text/plain">
                           <nav aria-label="...">
                             <ul class="pagination pagination-sm">
@@ -500,19 +551,28 @@
                   <p class="text-medium-emphasis small">Change the alignment of pagination components with <a href="https://coreui.io/docs/4.0/utilities/flex/">flexbox utilities</a>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1214" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1027" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1214" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1027" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1214">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1027">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                          </ul>
+                        </nav>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1214">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1027">
                         <script class="language-markup" type="text/plain">
                           <nav aria-label="Page navigation example">
                             <ul class="pagination justify-content-center">
@@ -529,19 +589,28 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-642" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1299" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-642" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1299" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-642">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1299">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination justify-content-end">
+                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                          </ul>
+                        </nav>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-642">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1299">
                         <script class="language-markup" type="text/plain">
                           <nav aria-label="Page navigation example">
                             <ul class="pagination justify-content-end">
@@ -569,6 +638,7 @@
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>

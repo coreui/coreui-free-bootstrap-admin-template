@@ -36,6 +36,7 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -61,7 +62,7 @@
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation">
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
@@ -294,19 +295,20 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-923" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-215" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-923" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-215" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-923">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-215">
+                        <button class="btn btn-lg btn-danger" type="button" data-coreui-toggle="popover" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Popover title">Click to toggle popover</button>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-923">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-215">
                         <script class="language-markup" type="text/plain">
                           <button class="btn btn-lg btn-danger" type="button" data-coreui-toggle="popover" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Popover title">Click to toggle popover</button>
                         </script>
@@ -323,19 +325,23 @@
                   <p class="text-medium-emphasis small">Four options are available: top, right, bottom, and left aligned. Directions are mirrored when using Bootstrap in RTL.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1294" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-897" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1294" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-897" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1294">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-897">
+                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="top" data-coreui-content="Top popover" data-coreui-original-title="" title="">Popover on top</button>
+                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="right" data-coreui-content="Right popover" data-coreui-original-title="" title="">Popover on right</button>
+                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="bottom" data-coreui-content="Bottom popover" data-coreui-original-title="" title="">Popover on bottom</button>
+                        <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="left" data-coreui-content="Left popover" data-coreui-original-title="" title="">Popover on left</button>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1294">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-897">
                         <script class="language-markup" type="text/plain">
                           <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="top" data-coreui-content="Top popover" data-coreui-original-title="" title="">Popover on top</button>
                           <button class="btn btn-secondary" type="button" data-coreui-container="body" data-coreui-toggle="popover" data-coreui-placement="right" data-coreui-content="Right popover" data-coreui-original-title="" title="">Popover on right</button>
@@ -355,19 +361,19 @@
                   <p class="text-medium-emphasis small">Use the <code>focus</code> trigger to dismiss popovers on the user’s next click of a different element than the toggle element.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-487" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-516" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-487" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-516" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-487">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-516"><a class="btn btn-lg btn-danger" tabindex="0" role="button" data-coreui-toggle="popover" data-coreui-trigger="focus" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Dismissible popover">Dismissible popover</a>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-487">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-516">
                         <script class="language-markup" type="text/plain"><a class="btn btn-lg btn-danger" tabindex="0" role="button" data-coreui-toggle="popover" data-coreui-trigger="focus" title="" data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title="Dismissible popover">Dismissible popover</a>
                         </script>
                       </div>
@@ -383,19 +389,20 @@
                   <p class="text-medium-emphasis small">For disabled popover triggers, you may also prefer <code>data-coreui-trigger="hover focus"</code> so that the popover appears as immediate visual feedback to your users as they may not expect to <em>click</em> on a disabled element.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1014" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1160" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1014" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1160" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1014">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1160"><span class="d-inline-block" tabindex="0" data-coreui-toggle="popover" data-coreui-trigger="hover focus" data-coreui-content="Disabled popover" data-coreui-original-title="" title="">
+                          <button class="btn btn-primary" type="button" disabled="">Disabled button</button></span>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1014">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1160">
                         <script class="language-markup" type="text/plain"><span class="d-inline-block" tabindex="0" data-coreui-toggle="popover" data-coreui-trigger="hover focus" data-coreui-content="Disabled popover" data-coreui-original-title="" title="">
                             <button class="btn btn-primary" type="button" disabled="">Disabled button</button></span>
                         </script>
@@ -415,6 +422,7 @@
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>

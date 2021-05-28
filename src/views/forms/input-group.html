@@ -36,6 +36,7 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -61,7 +62,7 @@
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation">
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
@@ -295,19 +296,39 @@
                   <p class="text-medium-emphasis small">Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code>&lt;label&gt;</code>s outside the input group.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-140" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-361" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-140" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-361" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-140">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-361">
+                        <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">@</span>
+                          <input class="form-control" type="text" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                          <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"><span class="input-group-text" id="basic-addon2">@example.com</span>
+                        </div>
+                        <label class="form-label" for="basic-url">Your vanity URL</label>
+                        <div class="input-group mb-3"><span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                          <input class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3">
+                        </div>
+                        <div class="input-group mb-3"><span class="input-group-text">$</span>
+                          <input class="form-control" type="text" aria-label="Amount (to the nearest dollar)"><span class="input-group-text">.00</span>
+                        </div>
+                        <div class="input-group mb-3">
+                          <input class="form-control" type="text" placeholder="Username" aria-label="Username"><span class="input-group-text">@</span>
+                          <input class="form-control" type="text" placeholder="Server" aria-label="Server">
+                        </div>
+                        <div class="input-group"><span class="input-group-text">With textarea</span>
+                          <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-140">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-361">
                         <script class="language-markup" type="text/plain">
                           <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">@</span>
                             <input class="form-control" type="text" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
@@ -343,19 +364,22 @@
                   <p class="text-medium-emphasis small">Input groups wrap by default via <code>flex-wrap: wrap</code> in order to accommodate custom form field validation within an input group. You may disable this with <code>.flex-nowrap</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-452" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-78" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-452" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-78" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-452">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-78">
+                        <div class="input-group flex-nowrap"><span class="input-group-text" id="addon-wrapping">@</span>
+                          <input class="form-control" type="text" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-452">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-78">
                         <script class="language-markup" type="text/plain">
                           <div class="input-group flex-nowrap"><span class="input-group-text" id="addon-wrapping">@</span>
                             <input class="form-control" type="text" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
@@ -375,19 +399,28 @@
                   <p class="text-medium-emphasis small"><strong>Sizing on the individual input group elements isn’t supported.</strong></p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-671" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-128" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-671" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-128" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-671">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-128">
+                        <div class="input-group input-group-sm mb-3"><span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                          <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        <div class="input-group mb-3"><span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                          <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group input-group-lg"><span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                          <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-671">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-128">
                         <script class="language-markup" type="text/plain">
                           <div class="input-group input-group-sm mb-3"><span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
                             <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
@@ -412,19 +445,31 @@
                   <p class="text-medium-emphasis small">Place any checkbox or radio option within an input group’s addon instead of text. We recommend adding <code>.mt-0</code> to the <code>.form-check-input</code> when there’s no visible text next to the input.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-279" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1199" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-279" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1199" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-279">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1199">
+                        <div class="input-group mb-3">
+                          <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" aria-label="Checkbox for following text input">
+                          </div>
+                          <input class="form-control" type="text" aria-label="Text input with checkbox">
+                        </div>
+                        <div class="input-group">
+                          <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="radio" aria-label="Radio button for following text input">
+                          </div>
+                          <input class="form-control" type="text" aria-label="Text input with radio button">
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-279">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1199">
                         <script class="language-markup" type="text/plain">
                           <div class="input-group mb-3">
                             <div class="input-group-text">
@@ -452,19 +497,23 @@
                   <p class="text-medium-emphasis small">While multiple <code>&lt;input&gt;</code>s are supported visually, validation styles are only available for input groups with a single <code>&lt;input&gt;</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-86" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-992" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-86" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-992" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-86">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-992">
+                        <div class="input-group"><span class="input-group-text">First and last name</span>
+                          <input class="form-control" type="text" aria-label="First name">
+                          <input class="form-control" type="text" aria-label="Last name">
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-86">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-992">
                         <script class="language-markup" type="text/plain">
                           <div class="input-group"><span class="input-group-text">First and last name</span>
                             <input class="form-control" type="text" aria-label="First name">
@@ -484,19 +533,25 @@
                   <p class="text-medium-emphasis small">Multiple add-ons are supported and can be mixed with checkbox and radio input versions.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-997" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-976" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-997" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-976" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-997">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-976">
+                        <div class="input-group mb-3"><span class="input-group-text">$</span><span class="input-group-text">0.00</span>
+                          <input class="form-control" type="text" aria-label="Dollar amount (with dot and two decimal places)">
+                        </div>
+                        <div class="input-group">
+                          <input class="form-control" type="text" aria-label="Dollar amount (with dot and two decimal places)"><span class="input-group-text">$</span><span class="input-group-text">0.00</span>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-997">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-976">
                         <script class="language-markup" type="text/plain">
                           <div class="input-group mb-3"><span class="input-group-text">$</span><span class="input-group-text">0.00</span>
                             <input class="form-control" type="text" aria-label="Dollar amount (with dot and two decimal places)">
@@ -517,19 +572,37 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-128" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1181" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-128" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1181" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-128">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1181">
+                        <div class="input-group mb-3">
+                          <button class="btn btn-outline-secondary" id="button-addon1" type="button">Button</button>
+                          <input class="form-control" type="text" placeholder aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                          <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                          <button class="btn btn-outline-secondary" id="button-addon2" type="button">Button</button>
+                        </div>
+                        <div class="input-group mb-3">
+                          <button class="btn btn-outline-secondary" type="button">Button</button>
+                          <button class="btn btn-outline-secondary" type="button">Button</button>
+                          <input class="form-control" type="text" placeholder aria-label="Example text with two button addons">
+                        </div>
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+                          <button class="btn btn-outline-secondary" type="button">Button</button>
+                          <button class="btn btn-outline-secondary" type="button">Button</button>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-128">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1181">
                         <script class="language-markup" type="text/plain">
                           <div class="input-group mb-3">
                             <button class="btn btn-outline-secondary" id="button-addon1" type="button">Button</button>
@@ -562,19 +635,68 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-595" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-367" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-595" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-367" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-595">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-367">
+                        <div class="input-group mb-3">
+                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                          <input class="form-control" type="text" aria-label="Text input with dropdown button">
+                        </div>
+                        <div class="input-group mb-3">
+                          <input class="form-control" type="text" aria-label="Text input with dropdown button">
+                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="input-group">
+                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action before</a></li>
+                            <li><a class="dropdown-item" href="#">Another action before</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                          <input class="form-control" type="text" aria-label="Text input with 2 dropdown buttons">
+                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-595">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-367">
                         <script class="language-markup" type="text/plain">
                           <div class="input-group mb-3">
                             <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
@@ -638,19 +760,47 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1292" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1081" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1292" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1081" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1292">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1081">
+                        <div class="input-group mb-3">
+                          <button class="btn btn-outline-secondary" type="button">Action</button>
+                          <button class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                          <input class="form-control" type="text" aria-label="Text input with segmented dropdown button">
+                        </div>
+                        <div class="input-group">
+                          <input class="form-control" type="text" aria-label="Text input with segmented dropdown button">
+                          <button class="btn btn-outline-secondary" type="button">Action</button>
+                          <button class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1292">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1081">
                         <script class="language-markup" type="text/plain">
                           <div class="input-group mb-3">
                             <button class="btn btn-outline-secondary" type="button">Action</button>
@@ -695,19 +845,55 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-694" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-938" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-694" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-938" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-694">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-938">
+                        <div class="input-group mb-3">
+                          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                          <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="input-group mb-3">
+                          <select class="form-select" id="inputGroupSelect02">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                        </div>
+                        <div class="input-group mb-3">
+                          <button class="btn btn-outline-secondary" type="button">Button</button>
+                          <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="input-group">
+                          <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <button class="btn btn-outline-secondary" type="button">Button</button>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-694">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-938">
                         <script class="language-markup" type="text/plain">
                           <div class="input-group mb-3">
                             <label class="input-group-text" for="inputGroupSelect01">Options</label>
@@ -758,19 +944,35 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-630" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-474" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-630" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-474" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-630">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-474">
+                        <div class="input-group mb-3">
+                          <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                          <input class="form-control" id="inputGroupFile01" type="file">
+                        </div>
+                        <div class="input-group mb-3">
+                          <input class="form-control" id="inputGroupFile02" type="file">
+                          <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                        </div>
+                        <div class="input-group mb-3">
+                          <button class="btn btn-outline-secondary" id="inputGroupFileAddon03" type="button">Button</button>
+                          <input class="form-control" id="inputGroupFile03" type="file" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                        </div>
+                        <div class="input-group">
+                          <input class="form-control" id="inputGroupFile04" type="file" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                          <button class="btn btn-outline-secondary" id="inputGroupFileAddon04" type="button">Button</button>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-630">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-474">
                         <script class="language-markup" type="text/plain">
                           <div class="input-group mb-3">
                             <label class="input-group-text" for="inputGroupFile01">Upload</label>
@@ -805,6 +1007,7 @@
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>

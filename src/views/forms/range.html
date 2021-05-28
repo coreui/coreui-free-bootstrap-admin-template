@@ -36,6 +36,7 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -61,7 +62,7 @@
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation">
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
@@ -295,19 +296,21 @@
                   <p class="text-medium-emphasis small">Create custom <code>&lt;input type=&quot;range&quot;&gt;</code> controls with <code>.form-range</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-525" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-134" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-525" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-134" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-525">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-134">
+                        <label class="form-label" for="customRange1">Example range</label>
+                        <input class="form-range" id="customRange1" type="range">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-525">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-134">
                         <script class="language-markup" type="text/plain">
                           <label class="form-label" for="customRange1">Example range</label>
                           <input class="form-range" id="customRange1" type="range">
@@ -325,19 +328,21 @@
                   <p class="text-medium-emphasis small">Add the <code>disabled</code> boolean attribute on an input to give it a grayed out appearance and remove pointer events.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-682" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-393" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-682" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-393" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-682">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-393">
+                        <label class="form-label" for="disabledRange">Disabled range</label>
+                        <input class="form-range" id="disabledRange" type="range" disabled>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-682">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-393">
                         <script class="language-markup" type="text/plain">
                           <label class="form-label" for="disabledRange">Disabled range</label>
                           <input class="form-range" id="disabledRange" type="range" disabled>
@@ -355,19 +360,21 @@
                   <p class="text-medium-emphasis small">Range inputs have implicit values for <code>min</code> and <code>max</code>— <code>0</code> and <code>100</code>, respectively. You may specify new values for those using the <code>min</code> and <code>max</code> attributes.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-219" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-606" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-219" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-606" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-219">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-606">
+                        <label class="form-label" for="customRange2">Example range</label>
+                        <input class="form-range" id="customRange2" type="range" min="0" max="5">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-219">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-606">
                         <script class="language-markup" type="text/plain">
                           <label class="form-label" for="customRange2">Example range</label>
                           <input class="form-range" id="customRange2" type="range" min="0" max="5">
@@ -385,19 +392,21 @@
                   <p class="text-medium-emphasis small">By default, range inputs “snap” to integer values. To change this, you can specify a <code>step</code> value. In the example below, we double the number of steps by using <code>step="0.5"</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-197" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-466" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-197" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-466" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-197">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-466">
+                        <label class="form-label" for="customRange3">Example range</label>
+                        <input class="form-range" id="customRange3" type="range" min="0" max="5" step="0.5">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-197">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-466">
                         <script class="language-markup" type="text/plain">
                           <label class="form-label" for="customRange3">Example range</label>
                           <input class="form-range" id="customRange3" type="range" min="0" max="5" step="0.5">
@@ -418,6 +427,7 @@
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>

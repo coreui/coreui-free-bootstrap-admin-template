@@ -36,6 +36,7 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -61,7 +62,7 @@
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation">
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
@@ -294,23 +295,27 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-504" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-887" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-504" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-887" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-504">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-887">
+                        <div class="form-check">
+                          <input class="form-check-input" id="flexCheckDefault" type="checkbox">
+                          <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="flexCheckChecked" type="checkbox" checked>
+                          <label class="form-check-label" for="flexCheckChecked">Checked checkbox</label>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-504">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-887">
                         <script class="language-markup" type="text/plain">
                           <div class="form-check">
                             <input class="form-check-input" id="flexCheckDefault" type="checkbox">
@@ -334,27 +339,27 @@
                   <p class="text-medium-emphasis small">Checkboxes can utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-974" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-182" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-974" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-182" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#js-974" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#js-182" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cog"></use>
                           </svg>JavaScript</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-974">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-182">
                         <div class="form-check form-example-indeterminate">
                           <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
                           <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-974">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-182">
                         <script class="language-markup" type="text/plain">
                           <div class="form-check form-example-indeterminate">
                             <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
@@ -362,7 +367,7 @@
                           </div>
                         </script>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="js-974">
+                      <div class="tab-pane pt-1" role="tabpanel" id="js-182">
                         <script class="language-js" type="text/plain">
                           document.querySelectorAll('.form-example-indeterminate [type="checkbox"]').forEach(function (checkbox) {
                             checkbox.indeterminate = true
@@ -381,23 +386,27 @@
                   <p class="text-medium-emphasis small">Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1236" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-321" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1236" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-321" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1236">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-321">
+                        <div class="form-check">
+                          <input class="form-check-input" id="flexCheckDisabled" type="checkbox" disabled>
+                          <label class="form-check-label" for="flexCheckDisabled">Disabled checkbox</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="flexCheckCheckedDisabled" type="checkbox" checked disabled>
+                          <label class="form-check-label" for="flexCheckCheckedDisabled">Disabled checked checkbox</label>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1236">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-321">
                         <script class="language-markup" type="text/plain">
                           <div class="form-check">
                             <input class="form-check-input" id="flexCheckDisabled" type="checkbox" disabled>
@@ -422,23 +431,27 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-95" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-343" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-95" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-343" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-95">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-343">
+                        <div class="form-check">
+                          <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                          <label class="form-check-label" for="flexRadioDefault1">Default radio</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">Default checked radio</label>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-95">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-343">
                         <script class="language-markup" type="text/plain">
                           <div class="form-check">
                             <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
@@ -462,23 +475,27 @@
                   <p class="text-medium-emphasis small">Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1255" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-895" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1255" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-895" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1255">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-895">
+                        <div class="form-check">
+                          <input class="form-check-input" id="flexRadioDisabled" type="radio" name="flexRadioDisabled" disabled>
+                          <label class="form-check-label" for="flexRadioDisabled">Disabled radio</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="flexRadioCheckedDisabled" type="radio" name="flexRadioDisabled" checked disabled>
+                          <label class="form-check-label" for="flexRadioCheckedDisabled">Disabled checked radio</label>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1255">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-895">
                         <script class="language-markup" type="text/plain">
                           <div class="form-check">
                             <input class="form-check-input" id="flexRadioDisabled" type="radio" name="flexRadioDisabled" disabled>
@@ -504,23 +521,35 @@
                   <p class="text-medium-emphasis small">A switch has the markup of a custom checkbox but uses the <code>.form-switch</code> class to render a toggle switch. Switches also support the <code>disabled</code> attribute.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-460" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-787" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-460" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-787" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-460">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-787">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox">
+                          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckDisabled" type="checkbox" disabled>
+                          <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckCheckedDisabled" type="checkbox" checked disabled>
+                          <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-460">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-787">
                         <script class="language-markup" type="text/plain">
                           <div class="form-check form-switch">
                             <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox">
@@ -551,23 +580,31 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-989" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-677" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-989" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-677" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-989">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-677">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox">
+                          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch form-switch-lg">
+                          <input class="form-check-input" id="flexSwitchCheckDefaultLg" type="checkbox">
+                          <label class="form-check-label" for="flexSwitchCheckDefaultLg">Large switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch form-switch-xl">
+                          <input class="form-check-input" id="flexSwitchCheckDefaultXl" type="checkbox">
+                          <label class="form-check-label" for="flexSwitchCheckDefaultXl">Extra large switch checkbox input</label>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-989">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-677">
                         <script class="language-markup" type="text/plain">
                           <div class="form-check form-switch">
                             <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox">
@@ -597,23 +634,27 @@
                   <p class="text-medium-emphasis small">By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with <code>.form-check</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1107" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1043" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1107" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1043" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1107">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1043">
+                        <div class="form-check">
+                          <input class="form-check-input" id="defaultCheck1" type="checkbox">
+                          <label class="form-check-label" for="defaultCheck1">Default checkbox</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="defaultCheck2" type="checkbox" disabled>
+                          <label class="form-check-label" for="defaultCheck2">Disabled checkbox</label>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1107">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1043">
                         <script class="language-markup" type="text/plain">
                           <div class="form-check">
                             <input class="form-check-input" id="defaultCheck1" type="checkbox">
@@ -629,23 +670,31 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-844" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-730" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-844" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-730" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-844">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-730">
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleRadios1" type="radio" name="exampleRadios" value="option1" checked>
+                          <label class="form-check-label" for="exampleRadios1">Default radio</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleRadios2" type="radio" name="exampleRadios" value="option2">
+                          <label class="form-check-label" for="exampleRadios2">Second default radio</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleRadios3" type="radio" name="exampleRadios" value="option3" disabled>
+                          <label class="form-check-label" for="exampleRadios3">Disabled radio</label>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-844">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-730">
                         <script class="language-markup" type="text/plain">
                           <div class="form-check">
                             <input class="form-check-input" id="exampleRadios1" type="radio" name="exampleRadios" value="option1" checked>
@@ -673,23 +722,31 @@
                   <p class="text-medium-emphasis small">Group checkboxes or radios on the same horizontal row by adding <code>.form-check-inline</code> to any <code>.form-check</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-438" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1125" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-438" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1125" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-438">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1125">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" id="inlineCheckbox2" type="checkbox" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" id="inlineCheckbox3" type="checkbox" value="option3" disabled>
+                          <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-438">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1125">
                         <script class="language-markup" type="text/plain">
                           <div class="form-check form-check-inline">
                             <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
@@ -709,23 +766,31 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-727" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-755" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-727" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-755" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-727">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-755">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" id="inlineRadio1" type="radio" name="inlineRadioOptions" value="option1">
+                          <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" id="inlineRadio2" type="radio" name="inlineRadioOptions" value="option2">
+                          <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" id="inlineRadio3" type="radio" name="inlineRadioOptions" value="option3" disabled>
+                          <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-727">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-755">
                         <script class="language-markup" type="text/plain">
                           <div class="form-check form-check-inline">
                             <input class="form-check-input" id="inlineRadio1" type="radio" name="inlineRadioOptions" value="option1">
@@ -753,23 +818,25 @@
                   <p class="text-medium-emphasis small">Omit the wrapping <code>.form-check</code> for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive technologies (for instance, using <code>aria-label</code>). See the <a href="https://coreui.io/docs/4.0/forms/overview/#accessibility">forms overview accessibility</a> section for details.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-870" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-972" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-870" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-972" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-870">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-972">
+                        <div>
+                          <input class="form-check-input" id="checkboxNoLabel" type="checkbox" aria-label="...">
+                        </div>
+                        <div>
+                          <input class="form-check-input" id="radioNoLabel1" type="radio" name="radioNoLabel" aria-label="...">
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-870">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-972">
                         <script class="language-markup" type="text/plain">
                           <div>
                             <input class="form-check-input" id="checkboxNoLabel" type="checkbox" aria-label="...">
@@ -794,23 +861,21 @@
                   <h3 id="checkbox-toggle-buttons">Checkbox toggle buttons<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#checkbox-toggle-buttons" style="padding-left: 0.375em;"></a></h3>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-205" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-649" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-205" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-649" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-205">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-649">
+                        <input class="btn-check" id="btn-check" type="checkbox" autocomplete="off">
+                        <label class="btn btn-primary" for="btn-check">Single toggle</label>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-205">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-649">
                         <script class="language-markup" type="text/plain">
                           <input class="btn-check" id="btn-check" type="checkbox" autocomplete="off">
                           <label class="btn btn-primary" for="btn-check">Single toggle</label>
@@ -820,23 +885,21 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1111" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-293" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1111" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-293" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1111">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-293">
+                        <input class="btn-check" id="btn-check-2" type="checkbox" checked autocomplete="off">
+                        <label class="btn btn-primary" for="btn-check-2">Checked</label>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1111">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-293">
                         <script class="language-markup" type="text/plain">
                           <input class="btn-check" id="btn-check-2" type="checkbox" checked autocomplete="off">
                           <label class="btn btn-primary" for="btn-check-2">Checked</label>
@@ -846,23 +909,21 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-580" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-560" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-580" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-560" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-580">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-560">
+                        <input class="btn-check" id="btn-check-3" type="checkbox" autocomplete="off" disabled>
+                        <label class="btn btn-primary" for="btn-check-3">Disabled</label>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-580">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-560">
                         <script class="language-markup" type="text/plain">
                           <input class="btn-check" id="btn-check-3" type="checkbox" autocomplete="off" disabled>
                           <label class="btn btn-primary" for="btn-check-3">Disabled</label>
@@ -879,23 +940,27 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1084" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-86" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1084" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-86" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1084">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-86">
+                        <input class="btn-check" id="option1" type="radio" name="options" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option1">Checked</label>
+                        <input class="btn-check" id="option2" type="radio" name="options" autocomplete="off">
+                        <label class="btn btn-secondary" for="option2">Radio</label>
+                        <input class="btn-check" id="option3" type="radio" name="options" autocomplete="off" disabled>
+                        <label class="btn btn-secondary" for="option3">Disabled</label>
+                        <input class="btn-check" id="option4" type="radio" name="options" autocomplete="off">
+                        <label class="btn btn-secondary" for="option4">Radio</label>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1084">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-86">
                         <script class="language-markup" type="text/plain">
                           <input class="btn-check" id="option1" type="radio" name="options" autocomplete="off" checked>
                           <label class="btn btn-secondary" for="option1">Checked</label>
@@ -913,23 +978,27 @@
                   <p class="text-medium-emphasis small">Different variants of <code>.btn</code>, such at the various outlined styles, are supported.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1035" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-360" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1035" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-360" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1035">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-360">
+                        <input class="btn-check" id="btn-check-outlined" type="checkbox" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label><br>
+                        <input class="btn-check" id="btn-check-2-outlined" type="checkbox" checked autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Checked</label><br>
+                        <input class="btn-check" id="success-outlined" type="radio" name="options-outlined" autocomplete="off" checked>
+                        <label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
+                        <input class="btn-check" id="danger-outlined" type="radio" name="options-outlined" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1035">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-360">
                         <script class="language-markup" type="text/plain">
                           <input class="btn-check" id="btn-check-outlined" type="checkbox" autocomplete="off">
                           <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label><br>
@@ -956,6 +1025,7 @@
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>

@@ -36,6 +36,7 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -61,7 +62,7 @@
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation">
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
@@ -293,19 +294,44 @@
               <p class="text-medium-emphasis small">Here’s a carousel with slides. Note the appearance of the <code>.d-block</code> also, <code>.w-100</code> on carousel images to override browser default image alignment.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1193" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-674" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1193" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-674" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1193">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-674">
+                    <div class="carousel slide" id="carouselExampleSlidesOnly" data-coreui-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777"></rect>
+                            <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
+                          </svg>
+                        </div>
+                        <div class="carousel-item">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#666"></rect>
+                            <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
+                          </svg>
+                        </div>
+                        <div class="carousel-item active">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#555"></rect>
+                            <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-1193">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-674">
                     <script class="language-markup" type="text/plain">
                       <div class="carousel slide" id="carouselExampleSlidesOnly" data-coreui-ride="carousel">
                         <div class="carousel-inner">
@@ -344,19 +370,46 @@
               <p class="text-medium-emphasis small">Adding in the previous and next controls. We recommend using <code> &lt;button&gt;</code> elements, but you can also use <code> &lt;a&gt;</code> elements with <code>role="button"</code>.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-489" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-678" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-489" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-678" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-489">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-678">
+                    <div class="carousel slide" id="carouselExampleControls" data-coreui-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777"></rect>
+                            <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
+                          </svg>
+                        </div>
+                        <div class="carousel-item">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#666"></rect>
+                            <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
+                          </svg>
+                        </div>
+                        <div class="carousel-item active">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#555"></rect>
+                            <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
+                          </svg>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-coreui-target="#carouselExampleControls" data-coreui-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                      <button class="carousel-control-next" type="button" data-coreui-target="#carouselExampleControls" data-coreui-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                    </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-489">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-678">
                     <script class="language-markup" type="text/plain">
                       <div class="carousel slide" id="carouselExampleControls" data-coreui-ride="carousel">
                         <div class="carousel-inner">
@@ -397,19 +450,51 @@
               <p class="text-medium-emphasis small">You can attach the indicators to the carousel, lengthwise the controls, too.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-942" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-493" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-942" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-493" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-942">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-493">
+                    <div class="carousel slide" id="carouselExampleIndicators" data-coreui-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-coreui-target="#carouselExampleIndicators" data-coreui-slide-to="0" aria-label="Slide 1"></button>
+                        <button type="button" data-coreui-target="#carouselExampleIndicators" data-coreui-slide-to="1" aria-label="Slide 2"></button>
+                        <button class="active" type="button" data-coreui-target="#carouselExampleIndicators" data-coreui-slide-to="2" aria-label="Slide 3" aria-current="true"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777"></rect>
+                            <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
+                          </svg>
+                        </div>
+                        <div class="carousel-item">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#666"></rect>
+                            <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
+                          </svg>
+                        </div>
+                        <div class="carousel-item active">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#555"></rect>
+                            <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
+                          </svg>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-coreui-target="#carouselExampleIndicators" data-coreui-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                      <button class="carousel-control-next" type="button" data-coreui-target="#carouselExampleIndicators" data-coreui-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                    </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-942">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-493">
                     <script class="language-markup" type="text/plain">
                       <div class="carousel slide" id="carouselExampleIndicators" data-coreui-ride="carousel">
                         <div class="carousel-indicators">
@@ -455,19 +540,63 @@
               <p class="text-medium-emphasis small">You can add captions to slides with the <code>.carousel-caption</code> element within any <code>.carousel-item</code>. They can be immediately hidden on smaller viewports, as shown below, with optional <a href="https://coreui.io/docs/4.0/utilities/display/">display utilities</a>. We hide them with <code>.d-none</code> and draw them back on medium-sized devices with <code>.d-md-block</code>.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-341" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1101" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-341" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1101" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-341">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1101">
+                    <div class="carousel slide" id="carouselExampleCaptions" data-coreui-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-coreui-target="#carouselExampleCaptions" data-coreui-slide-to="0" aria-label="Slide 1"></button>
+                        <button type="button" data-coreui-target="#carouselExampleCaptions" data-coreui-slide-to="1" aria-label="Slide 2"></button>
+                        <button class="active" type="button" data-coreui-target="#carouselExampleCaptions" data-coreui-slide-to="2" aria-label="Slide 3" aria-current="true"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777"></rect>
+                            <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
+                          </svg>
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#666"></rect>
+                            <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
+                          </svg>
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item active">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#555"></rect>
+                            <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
+                          </svg>
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-coreui-target="#carouselExampleCaptions" data-coreui-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                      <button class="carousel-control-next" type="button" data-coreui-target="#carouselExampleCaptions" data-coreui-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                    </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-341">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-1101">
                     <script class="language-markup" type="text/plain">
                       <div class="carousel slide" id="carouselExampleCaptions" data-coreui-ride="carousel">
                         <div class="carousel-indicators">
@@ -525,19 +654,46 @@
               <p class="text-medium-emphasis small">Add <code>.carousel-fade</code> to your carousel to animate slides with a fade transition instead of a slide.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-834" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-204" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-834" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-204" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-834">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-204">
+                    <div class="carousel slide carousel-fade" id="carouselExampleFade" data-coreui-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777"></rect>
+                            <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
+                          </svg>
+                        </div>
+                        <div class="carousel-item">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#666"></rect>
+                            <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
+                          </svg>
+                        </div>
+                        <div class="carousel-item active">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#555"></rect>
+                            <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
+                          </svg>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-coreui-target="#carouselExampleFade" data-coreui-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                      <button class="carousel-control-next" type="button" data-coreui-target="#carouselExampleFade" data-coreui-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                    </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-834">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-204">
                     <script class="language-markup" type="text/plain">
                       <div class="carousel slide carousel-fade" id="carouselExampleFade" data-coreui-ride="carousel">
                         <div class="carousel-inner">
@@ -578,19 +734,63 @@
               <p class="text-medium-emphasis small">Add <code>.carousel-dark</code> to the <code>.carousel</code> for darker controls, indicators, and captions. Controls have been inverted from their default white fill with the <code>filter</code> CSS property. Captions and controls have additional Sass variables that customize the <code>color</code> and <code>background-color</code>.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1100" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-824" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1100" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-824" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1100">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-824">
+                    <div class="carousel carousel-dark slide" id="carouselExampleDark" data-coreui-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-coreui-target="#carouselExampleDark" data-coreui-slide-to="0" aria-label="Slide 1"></button>
+                        <button type="button" data-coreui-target="#carouselExampleDark" data-coreui-slide-to="1" aria-label="Slide 2"></button>
+                        <button class="active" type="button" data-coreui-target="#carouselExampleDark" data-coreui-slide-to="2" aria-label="Slide 3" aria-current="true"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item" data-coreui-interval="10000">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#f5f5f5"></rect>
+                            <text x="50%" y="50%" fill="#aaa" dy=".3em">First slide</text>
+                          </svg>
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-coreui-interval="2000">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"></rect>
+                            <text x="50%" y="50%" fill="#bbb" dy=".3em">Second slide</text>
+                          </svg>
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item active">
+                          <svg class="docs-placeholder-img docs-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#e5e5e5"></rect>
+                            <text x="50%" y="50%" fill="#999" dy=".3em">Third slide</text>
+                          </svg>
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-coreui-target="#carouselExampleDark" data-coreui-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                      <button class="carousel-control-next" type="button" data-coreui-target="#carouselExampleDark" data-coreui-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                    </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-1100">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-824">
                     <script class="language-markup" type="text/plain">
                       <div class="carousel carousel-dark slide" id="carouselExampleDark" data-coreui-ride="carousel">
                         <div class="carousel-indicators">
@@ -651,6 +851,7 @@
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>

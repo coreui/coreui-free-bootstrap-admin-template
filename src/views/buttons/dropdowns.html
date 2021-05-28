@@ -36,6 +36,7 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -61,7 +62,7 @@
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation">
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
@@ -295,19 +296,27 @@
                   <p class="text-medium-emphasis small">Each single <code>.btn</code> can be changed into a dropdown toggle with small changes. Here’s how you can put them to work with either <code> &lt;button&gt;</code> elements:</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-986" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-539" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-986" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-539" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-986">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-539">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-986">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-539">
                         <script class="language-markup" type="text/plain">
                           <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown button</button>
@@ -324,19 +333,26 @@
                   <p class="text-medium-emphasis small">And with <code> &lt;a&gt;</code> elements:</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-590" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-883" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-590" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-883" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-590">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-883">
+                        <div class="dropdown"><a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown link</a>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-590">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-883">
                         <script class="language-markup" type="text/plain">
                           <div class="dropdown"><a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown link</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -352,19 +368,91 @@
                   <p class="text-medium-emphasis small">The best part is you can do this with any button variant, too:</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-450" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-785" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-450" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-785" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-450">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-785">
+                        <div class="btn-group">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Primary</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Secondary</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-success dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Success</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-info dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Info</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-warning dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Warning</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-danger dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Danger</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-450">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-785">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group">
                             <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Primary</button>
@@ -453,19 +541,97 @@
                   <p class="text-medium-emphasis small">We use this extra class to reduce the horizontal <code>padding</code> on either side of the caret by 25% and remove the <code>margin-left</code> that’s attached for normal button dropdowns. Those additional changes hold the caret centered in the split button and implement a more properly sized hit area next to the main button.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-898" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1166" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-898" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1166" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-898">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1166">
+                        <div class="btn-group">
+                          <button class="btn btn-primary" type="button">Primary</button>
+                          <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary" type="button">Secondary</button>
+                          <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-success" type="button">Success</button>
+                          <button class="btn btn-success dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-info" type="button">Info</button>
+                          <button class="btn btn-info dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-warning" type="button">Warning</button>
+                          <button class="btn btn-warning dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-danger" type="button">Danger</button>
+                          <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-898">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1166">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group">
                             <button class="btn btn-primary" type="button">Primary</button>
@@ -559,19 +725,44 @@
                   <p class="text-medium-emphasis small">Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-196" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-534" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-196" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-534" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-196">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-534">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Large button</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-lg btn-secondary" type="button">Large split button</button>
+                          <button class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-196">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-534">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group">
                             <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Large button</button>
@@ -604,19 +795,44 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-772" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-608" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-772" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-608" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-772">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-608">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Small button</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-sm btn-secondary" type="button">Small split button</button>
+                          <button class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-772">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-608">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group">
                             <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Small button</button>
@@ -657,19 +873,31 @@
                   <p class="text-medium-emphasis small">Opt into darker dropdowns to match a dark navbar or custom style by adding <code>.dropdown-menu-dark</code> onto an existing <code>.dropdown-menu</code>. No changes are required to the dropdown items.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-612" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-419" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-612" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-419" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-612">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-419">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton2" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-612">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-419">
                         <script class="language-markup" type="text/plain">
                           <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton2" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown button</button>
@@ -690,19 +918,35 @@
                   <p class="text-medium-emphasis small">And putting it to use in a navbar:</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-560" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-933" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-560" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-933" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-560">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-933">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                          <div class="container-fluid"><a class="navbar-brand" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-coreui-toggle="collapse" data-coreui-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                              <ul class="navbar-nav">
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" href="#" role="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </nav>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-560">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-933">
                         <script class="language-markup" type="text/plain">
                           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                             <div class="container-fluid"><a class="navbar-brand" href="#">Navbar</a>
@@ -734,19 +978,44 @@
                   <p class="text-medium-emphasis small">Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent element.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1291" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-365" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1291" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-365" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1291">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-365">
+                        <div class="btn-group dropup">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropup</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropup">
+                          <button class="btn btn-secondary" type="button">Split dropup</button>
+                          <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1291">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-365">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group dropup">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropup</button>
@@ -787,19 +1056,44 @@
                   <p class="text-medium-emphasis small">Trigger dropdown menus at the right of the elements by adding <code>.dropend</code> to the parent element.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-872" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-902" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-872" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-902" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-872">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-902">
+                        <div class="btn-group dropend">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropright</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropend">
+                          <button class="btn btn-secondary" type="button">Split dropend</button>
+                          <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropright</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-872">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-902">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group dropend">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropright</button>
@@ -840,19 +1134,46 @@
                   <p class="text-medium-emphasis small">Trigger dropdown menus at the left of the elements by adding <code>.dropstart</code> to the parent element.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-235" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-41" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-235" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-41" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-235">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-41">
+                        <div class="btn-group dropstart">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropleft</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <div class="btn-group dropstart" role="group">
+                            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropleft</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <button class="btn btn-secondary" type="button">Split dropstart</button>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-235">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-41">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group dropstart">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropleft</button>
@@ -895,19 +1216,33 @@
                   <p class="text-medium-emphasis small">Historically dropdown menu contents <em>had</em> to be links, but that’s no longer the case with v4. Now you can optionally use <code> &lt;button&gt;</code> elements in your dropdowns instead of just <code> &lt;a&gt;</code>s.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1156" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-346" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1156" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-346" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1156">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-346">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1156">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-346">
                         <script class="language-markup" type="text/plain">
                           <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
@@ -930,19 +1265,25 @@
                   <p class="text-medium-emphasis small">You can also create non-interactive dropdown items with <code>.dropdown-item-text</code>. Feel free to style further with custom CSS or text utilities.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-932" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1141" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-932" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1141" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-932">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1141">
+                        <ul class="dropdown-menu">
+                          <li><span class="dropdown-item-text">Dropdown item text</span></li>
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-932">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1141">
                         <script class="language-markup" type="text/plain">
                           <ul class="dropdown-menu">
                             <li><span class="dropdown-item-text">Dropdown item text</span></li>
@@ -964,19 +1305,24 @@
                   <p class="text-medium-emphasis small">Add <code>.active</code> to items in the dropdown to <strong>style them as active</strong>. To convey the active state to assistive technologies, use the <code>aria-current</code> attribute — using the <code>page</code> value for the current page, or <code>true</code> for the current item in a set.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1024" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-455" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1024" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-455" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1024">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-455">
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Regular link</a></li>
+                          <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a></li>
+                          <li><a class="dropdown-item" href="#">Another link</a></li>
+                        </ul>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1024">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-455">
                         <script class="language-markup" type="text/plain">
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Regular link</a></li>
@@ -997,19 +1343,24 @@
                   <p class="text-medium-emphasis small">Add <code>.disabled</code> to items in the dropdown to <strong>style them as disabled</strong>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-107" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-960" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-107" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-960" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-107">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-960">
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Regular link</a></li>
+                          <li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Disabled link</a></li>
+                          <li><a class="dropdown-item" href="#">Another link</a></li>
+                        </ul>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-107">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-960">
                         <script class="language-markup" type="text/plain">
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Regular link</a></li>
@@ -1030,19 +1381,33 @@
                   <p class="text-medium-emphasis small">By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add <code>.dropdown-menu-end</code> to a <code>.dropdown-menu</code> to right align the dropdown menu.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1234" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-64" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1234" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-64" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1234">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-64">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Right-aligned menu example</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1234">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-64">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Right-aligned menu example</button>
@@ -1073,19 +1438,33 @@
                   <p class="text-medium-emphasis small">To align <strong>right</strong> the dropdown menu with the given breakpoint or larger, add <code>.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-end</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-695" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-154" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-695" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-154" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-695">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-154">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Left-aligned but right aligned when large screen</button>
+                          <ul class="dropdown-menu dropdown-menu-lg-end">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-695">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-154">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Left-aligned but right aligned when large screen</button>
@@ -1107,19 +1486,33 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-722" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-60" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-722" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-60" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-722">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-60">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Right-aligned but left aligned when large screen</button>
+                          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-722">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-60">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Right-aligned but left aligned when large screen</button>
@@ -1141,19 +1534,75 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-450" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-117" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-450" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-117" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-450">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-117">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Right-aligned menu</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Left-aligned, right-aligned lg</button>
+                          <ul class="dropdown-menu dropdown-menu-lg-end">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Right-aligned, left-aligned lg</button>
+                          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropstart">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropstart</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropend">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropend</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropup">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropup</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-450">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-117">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group">
                             <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
@@ -1224,19 +1673,26 @@
                     <p class="text-medium-emphasis small">Add a header to label sections of actions in any dropdown menu.</p>
                     <div class="example">
                       <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1052" role="tab">
+                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-121" role="tab">
                             <svg class="icon me-2">
                               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                             </svg>Preview</a></li>
-                        <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1052" role="tab">
+                        <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-121" role="tab">
                             <svg class="icon me-2">
                               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                             </svg>Code</a></li>
                       </ul>
                       <div class="tab-content rounded-bottom">
-                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1052">
+                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-121">
+                          <ul class="dropdown-menu">
+                            <li>
+                              <h6 class="dropdown-header">Dropdown header</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                          </ul>
                         </div>
-                        <div class="tab-pane pt-1" role="tabpanel" id="code-1052">
+                        <div class="tab-pane pt-1" role="tabpanel" id="code-121">
                           <script class="language-markup" type="text/plain">
                             <ul class="dropdown-menu">
                               <li>
@@ -1260,19 +1716,28 @@
                   <p class="text-medium-emphasis small">Separate groups of related menu items with a divider.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-625" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1276" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-625" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1276" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-625">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1276">
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-625">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1276">
                         <script class="language-markup" type="text/plain">
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -1297,21 +1762,25 @@
                   <p class="text-medium-emphasis small">Place any freeform text within a dropdown menu with text and use <a href="https://coreui.io/docs/4.0/utilities/spacing/">spacing utilities</a>. Note that you’ll likely need additional sizing styles to constrain the menu width.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-617" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-158" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-617" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-158" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-617">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-158">
+                        <div class="dropdown-menu p-4 text-medium-emphasis" style="max-width: 200px;">
+                          <p>Some example text that's free-flowing within the dropdown menu.</p>
+                          <p class="mb-0">And this is more example text.</p>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-617">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-158">
                         <script class="language-markup" type="text/plain">
-                          <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
+                          <div class="dropdown-menu p-4 text-medium-emphasis" style="max-width: 200px;">
                             <p>Some example text that's free-flowing within the dropdown menu.</p>
                             <p class="mb-0">And this is more example text.</p>
                           </div>
@@ -1329,19 +1798,39 @@
                   <p class="text-medium-emphasis small">Put a form within a dropdown menu, or make it into a dropdown menu, and use <a href="https://coreui.io/docs/4.0/utilities/spacing/">margin or padding utilities</a> to give it the negative space you require.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-945" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1120" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-945" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1120" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-945">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1120">
+                        <div class="dropdown-menu">
+                          <form class="px-4 py-3">
+                            <div class="mb-3">
+                              <label class="form-label" for="exampleDropdownFormEmail1">Email address</label>
+                              <input class="form-control" id="exampleDropdownFormEmail1" type="email" placeholder="email@example.com">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="exampleDropdownFormPassword1">Password</label>
+                              <input class="form-control" id="exampleDropdownFormPassword1" type="password" placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                              <div class="form-check">
+                                <input class="form-check-input" id="dropdownCheck" type="checkbox">
+                                <label class="form-check-label" for="dropdownCheck">Remember me</label>
+                              </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Sign in</button>
+                          </form>
+                          <div class="dropdown-divider"></div><a class="dropdown-item" href="#">New around here? Sign up</a><a class="dropdown-item" href="#">Forgot password?</a>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-945">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1120">
                         <script class="language-markup" type="text/plain">
                           <div class="dropdown-menu">
                             <form class="px-4 py-3">
@@ -1369,19 +1858,36 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1043" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-751" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1043" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-751" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1043">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-751">
+                        <form class="dropdown-menu p-4">
+                          <div class="mb-3">
+                            <label class="form-label" for="exampleDropdownFormEmail2">Email address</label>
+                            <input class="form-control" id="exampleDropdownFormEmail2" type="email" placeholder="email@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label" for="exampleDropdownFormPassword2">Password</label>
+                            <input class="form-control" id="exampleDropdownFormPassword2" type="password" placeholder="Password">
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" id="dropdownCheck2" type="checkbox">
+                              <label class="form-check-label" for="dropdownCheck2">Remember me</label>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary" type="submit">Sign in</button>
+                        </form>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1043">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-751">
                         <script class="language-markup" type="text/plain">
                           <form class="dropdown-menu p-4">
                             <div class="mb-3">
@@ -1417,6 +1923,7 @@
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>

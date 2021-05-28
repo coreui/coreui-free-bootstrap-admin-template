@@ -36,6 +36,7 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -61,7 +62,7 @@
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation">
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
@@ -288,19 +289,110 @@
             <div class="card-body">
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-209" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-665" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-209" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-665" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-209">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-665">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-primary">
+                          <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                            <div>
+                              <div class="fs-4 fw-semibold">9.823</div>
+                              <div>Members online</div>
+                            </div>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg class="icon">
+                                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options"></use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                            </div>
+                          </div>
+                          <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                            <canvas class="chart" id="card-chart1" height="70"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-info">
+                          <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                            <div>
+                              <div class="fs-4 fw-semibold">9.823</div>
+                              <div>Members online</div>
+                            </div>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg class="icon">
+                                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options"></use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                            </div>
+                          </div>
+                          <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                            <canvas class="chart" id="card-chart2" height="70"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-warning">
+                          <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                            <div>
+                              <div class="fs-4 fw-semibold">9.823</div>
+                              <div>Members online</div>
+                            </div>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg class="icon">
+                                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options"></use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                            </div>
+                          </div>
+                          <div class="c-chart-wrapper mt-3" style="height:70px;">
+                            <canvas class="chart" id="card-chart3" height="70"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-danger">
+                          <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                            <div>
+                              <div class="fs-4 fw-semibold">9.823</div>
+                              <div>Members online</div>
+                            </div>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg class="icon">
+                                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options"></use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                            </div>
+                          </div>
+                          <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                            <canvas class="chart" id="card-chart4" height="70"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
+                    <!-- /.row-->
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-209">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-665">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-sm-6 col-lg-3">
@@ -399,19 +491,70 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-850" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1069" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-850" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1069" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-850">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1069"> 
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="fs-4 fw-semibold">89.9%</div>
+                            <div>Widget title</div>
+                            <div class="progress progress-thin my-2">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><small class="text-medium-emphasis">Widget helper text</small>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="fs-4 fw-semibold">12.124</div>
+                            <div>Widget title</div>
+                            <div class="progress progress-thin my-2">
+                              <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><small class="text-medium-emphasis">Widget helper text</small>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="fs-4 fw-semibold">$98.111,00</div>
+                            <div>Widget title</div>
+                            <div class="progress progress-thin my-2">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><small class="text-medium-emphasis">Widget helper text</small>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="fs-4 fw-semibold">2 TB</div>
+                            <div>Widget title</div>
+                            <div class="progress progress-thin my-2">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><small class="text-medium-emphasis">Widget helper text</small>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
+                    <!-- /.row-->
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-850">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-1069">
                     <script class="language-markup" type="text/plain"> 
                       <div class="row">
                         <div class="col-sm-6 col-lg-3">
@@ -470,19 +613,70 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-54" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-263" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-54" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-263" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-54">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-263">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-primary">
+                          <div class="card-body">
+                            <div class="fs-4 fw-semibold">89.9%</div>
+                            <div>Widget title</div>
+                            <div class="progress progress-white progress-thin my-2">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><small class="text-medium-emphasis-inverse">Widget helper text</small>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-warning">
+                          <div class="card-body">
+                            <div class="fs-4 fw-semibold">12.124</div>
+                            <div>Widget title</div>
+                            <div class="progress progress-white progress-thin my-2">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><small class="text-medium-emphasis-inverse">Widget helper text</small>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-danger">
+                          <div class="card-body">
+                            <div class="fs-4 fw-semibold">$98.111,00</div>
+                            <div>Widget title</div>
+                            <div class="progress progress-white progress-thin my-2">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><small class="text-medium-emphasis-inverse">Widget helper text</small>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-info">
+                          <div class="card-body">
+                            <div class="fs-4 fw-semibold">2 TB</div>
+                            <div>Widget title</div>
+                            <div class="progress progress-white progress-thin my-2">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><small class="text-medium-emphasis-inverse">Widget helper text</small>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
+                    <!-- /.row-->
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-54">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-263">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-sm-6 col-lg-3">
@@ -541,19 +735,94 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-992" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-511" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-992" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-511" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-992">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-511">
+                    <div class="row">
+                      <div class="col-md-2 col-sm-4">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <div class="text-medium-emphasis small text-uppercase fw-semibold">Title</div>
+                            <div class="fs-6 fw-semibold py-3">1,123</div>
+                            <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                              <canvas class="chart chart-bar" id="sparkline-chart-1" height="40" width="80"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-md-2 col-sm-4">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <div class="text-medium-emphasis small text-uppercase fw-semibold">Title</div>
+                            <div class="fs-6 fw-semibold py-3">1,123</div>
+                            <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                              <canvas class="chart chart-bar" id="sparkline-chart-2" height="40" width="80"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-md-2 col-sm-4">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <div class="text-medium-emphasis small text-uppercase fw-semibold">Title</div>
+                            <div class="fs-6 fw-semibold py-3">1,123</div>
+                            <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                              <canvas class="chart chart-bar" id="sparkline-chart-3" height="40" width="80"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-md-2 col-sm-4">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <div class="text-medium-emphasis small text-uppercase fw-semibold">Title</div>
+                            <div class="fs-6 fw-semibold py-3">1,123</div>
+                            <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                              <canvas class="chart chart-line" id="sparkline-chart-4" height="40" width="100"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-md-2 col-sm-4">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <div class="text-medium-emphasis small text-uppercase fw-semibold">Title</div>
+                            <div class="fs-6 fw-semibold py-3">1,123</div>
+                            <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                              <canvas class="chart chart-line" id="sparkline-chart-5" height="40" width="100"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-md-2 col-sm-4">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <div class="text-medium-emphasis small text-uppercase fw-semibold">Title</div>
+                            <div class="fs-6 fw-semibold py-3">1,123</div>
+                            <div class="c-chart-wrapper mx-auto" style="height:40px;width:80px">
+                              <canvas class="chart chart-line" id="sparkline-chart-6" height="40" width="100"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
+                    <!-- /.row-->
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-992">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-511">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-md-2 col-sm-4">
@@ -636,19 +905,85 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-566" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1018" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-566" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1018" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-566">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1018">
+                    <div class="row">
+                      <div class="col-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body p-3 d-flex align-items-center">
+                            <div class="bg-primary text-white p-3 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-primary">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body p-3 d-flex align-items-center">
+                            <div class="bg-info text-white p-3 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-info">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body p-3 d-flex align-items-center">
+                            <div class="bg-warning text-white p-3 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-warning">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body p-3 d-flex align-items-center">
+                            <div class="bg-danger text-white p-3 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-danger">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-566">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-1018">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-6 col-lg-3">
@@ -722,19 +1057,102 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-484" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-392" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-484" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-392" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-484">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-392">
+                    <div class="row">
+                      <div class="col-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body p-3 d-flex align-items-center">
+                            <div class="bg-primary text-white p-3 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-primary">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                          <div class="card-footer px-3 py-2"><a class="btn-block text-medium-emphasis d-flex justify-content-between align-items-center" href="#"><span class="small fw-semibold">View More</span>
+                              <svg class="icon">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right"></use>
+                              </svg></a></div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body p-3 d-flex align-items-center">
+                            <div class="bg-info text-white p-3 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-info">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                          <div class="card-footer px-3 py-2"><a class="btn-block text-medium-emphasis d-flex justify-content-between align-items-center" href="#"><span class="small fw-semibold">View More</span>
+                              <svg class="icon">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right"></use>
+                              </svg></a></div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body p-3 d-flex align-items-center">
+                            <div class="bg-warning text-white p-3 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-warning">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                          <div class="card-footer px-3 py-2"><a class="btn-block text-medium-emphasis d-flex justify-content-between align-items-center" href="#"><span class="small fw-semibold">View More</span>
+                              <svg class="icon">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right"></use>
+                              </svg></a></div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card">
+                          <div class="card-body p-3 d-flex align-items-center">
+                            <div class="bg-danger text-white p-3 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-danger">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                          <div class="card-footer px-3 py-2"><a class="btn-block text-medium-emphasis d-flex justify-content-between align-items-center" href="#"><span class="small fw-semibold">View More</span>
+                              <svg class="icon">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right"></use>
+                              </svg></a></div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
+                    <!-- /.row-->
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-484">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-392">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-6 col-lg-3">
@@ -825,19 +1243,85 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-597" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-749" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-597" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-749" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-597">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-749">
+                    <div class="row">
+                      <div class="col-6 col-lg-3">
+                        <div class="card overflow-hidden">
+                          <div class="card-body p-0 d-flex align-items-center">
+                            <div class="bg-primary text-white p-4 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-primary">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card overflow-hidden">
+                          <div class="card-body p-0 d-flex align-items-center">
+                            <div class="bg-info text-white p-4 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-info">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card overflow-hidden">
+                          <div class="card-body p-0 d-flex align-items-center">
+                            <div class="bg-warning text-white p-4 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-warning">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card overflow-hidden">
+                          <div class="card-body p-0 d-flex align-items-center">
+                            <div class="bg-danger text-white p-4 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-danger">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-597">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-749">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-6 col-lg-3">
@@ -911,19 +1395,86 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-297" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-461" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-297" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-461" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-297">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-461">
+                    <div class="row">  
+                      <div class="col-6 col-lg-3">
+                        <div class="card overflow-hidden">
+                          <div class="card-body p-0 d-flex align-items-center">
+                            <div class="bg-primary text-white py-4 px-5 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-primary">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card overflow-hidden">
+                          <div class="card-body p-0 d-flex align-items-center">
+                            <div class="bg-info text-white py-4 px-5 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-info">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card overflow-hidden">
+                          <div class="card-body p-0 d-flex align-items-center">
+                            <div class="bg-warning text-white py-4 px-5 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-warning">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-6 col-lg-3">
+                        <div class="card overflow-hidden">
+                          <div class="card-body p-0 d-flex align-items-center">
+                            <div class="bg-danger text-white py-4 px-5 me-3">
+                              <svg class="icon icon-xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+                              </svg>
+                            </div>
+                            <div>
+                              <div class="fs-6 fw-semibold text-danger">$1.999,50</div>
+                              <div class="text-medium-emphasis text-uppercase fw-semibold small">Widget title</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
+                    <!-- /.row-->
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-297">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-461">
                     <script class="language-markup" type="text/plain">
                       <div class="row">  
                         <div class="col-6 col-lg-3">
@@ -998,19 +1549,94 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-385" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-157" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-385" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-157" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-385">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-157">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="card" style="--cui-card-cap-bg: #3b5998">
+                          <div class="card-header position-relative d-flex justify-content-center align-items-center">
+                            <svg class="icon icon-3xl text-white my-4">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
+                            </svg>
+                            <div class="chart-wrapper position-absolute top-0 start-0 w-100 h-100">
+                              <canvas id="social-box-chart-1" height="90"></canvas>
+                            </div>
+                          </div>
+                          <div class="card-body row text-center">
+                            <div class="col">
+                              <div class="fs-5 fw-semibold">89k</div>
+                              <div class="text-uppercase text-medium-emphasis small">friends</div>
+                            </div>
+                            <div class="vr"></div>
+                            <div class="col">
+                              <div class="fs-5 fw-semibold">459</div>
+                              <div class="text-uppercase text-medium-emphasis small">feeds</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="card" style="--cui-card-cap-bg: #00aced">
+                          <div class="card-header position-relative d-flex justify-content-center align-items-center">
+                            <svg class="icon icon-3xl text-white my-4">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
+                            </svg>
+                            <div class="chart-wrapper position-absolute top-0 start-0 w-100 h-100">
+                              <canvas id="social-box-chart-2" height="90"></canvas>
+                            </div>
+                          </div>
+                          <div class="card-body row text-center">
+                            <div class="col">
+                              <div class="fs-5 fw-semibold">973k</div>
+                              <div class="text-uppercase text-medium-emphasis small">followers</div>
+                            </div>
+                            <div class="vr"></div>
+                            <div class="col">
+                              <div class="fs-5 fw-semibold">1.792</div>
+                              <div class="text-uppercase text-medium-emphasis small">tweets</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="card" style="--cui-card-cap-bg: #4875b4">
+                          <div class="card-header position-relative d-flex justify-content-center align-items-center">
+                            <svg class="icon icon-3xl text-white my-4">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
+                            </svg>
+                            <div class="chart-wrapper position-absolute top-0 start-0 w-100 h-100">
+                              <canvas id="social-box-chart-3" height="90"></canvas>
+                            </div>
+                          </div>
+                          <div class="card-body row text-center">
+                            <div class="col">
+                              <div class="fs-5 fw-semibold">500+</div>
+                              <div class="text-uppercase text-medium-emphasis small">contacts</div>
+                            </div>
+                            <div class="vr"></div>
+                            <div class="col">
+                              <div class="fs-5 fw-semibold">292</div>
+                              <div class="text-uppercase text-medium-emphasis small">feeds</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
+                    <!-- /.row-->
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-385">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-157">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-sm-6 col-lg-4">
@@ -1093,19 +1719,86 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-803" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1057" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-803" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1057" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-803">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1057">
+                    <div class="card-group">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="text-medium-emphasis text-end mb-4">
+                            <svg class="icon icon-2xl">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people"></use>
+                            </svg>
+                          </div>
+                          <div class="fs-4 fw-semibold">87.500</div><small class="text-medium-emphasis text-uppercase fw-semibold">Visitors</small>
+                          <div class="progress progress-thin mt-3 mb-0">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="text-medium-emphasis text-end mb-4">
+                            <svg class="icon icon-2xl">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow"></use>
+                            </svg>
+                          </div>
+                          <div class="fs-4 fw-semibold">385</div><small class="text-medium-emphasis text-uppercase fw-semibold">New Clients</small>
+                          <div class="progress progress-thin mt-3 mb-0">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="text-medium-emphasis text-end mb-4">
+                            <svg class="icon icon-2xl">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket"></use>
+                            </svg>
+                          </div>
+                          <div class="fs-4 fw-semibold">1238</div><small class="text-medium-emphasis text-uppercase fw-semibold">Products sold</small>
+                          <div class="progress progress-thin mt-3 mb-0">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="text-medium-emphasis text-end mb-4">
+                            <svg class="icon icon-2xl">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie"></use>
+                            </svg>
+                          </div>
+                          <div class="fs-4 fw-semibold">28%</div><small class="text-medium-emphasis text-uppercase fw-semibold">Returning Visitors</small>
+                          <div class="progress progress-thin mt-3 mb-0">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="text-medium-emphasis text-end mb-4">
+                            <svg class="icon icon-2xl">
+                              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
+                            </svg>
+                          </div>
+                          <div class="fs-4 fw-semibold">5:34:11</div><small class="text-medium-emphasis text-uppercase fw-semibold">Avg. Time</small>
+                          <div class="progress progress-thin mt-3 mb-0">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-803">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-1057">
                     <script class="language-markup" type="text/plain">
                       <div class="card-group">
                         <div class="card">
@@ -1180,19 +1873,118 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-193" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1242" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-193" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1242" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-193">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1242">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">87.500</div><small class="text-medium-emphasis text-uppercase fw-semibold">Visitors</small>
+                            <div class="progress progress-thin mt-3 mb-0">
+                              <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">385</div><small class="text-medium-emphasis text-uppercase fw-semibold">New Clients</small>
+                            <div class="progress progress-thin mt-3 mb-0">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">1238</div><small class="text-medium-emphasis text-uppercase fw-semibold">Products sold</small>
+                            <div class="progress progress-thin mt-3 mb-0">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">28%</div><small class="text-medium-emphasis text-uppercase fw-semibold">Returning Visitors</small>
+                            <div class="progress progress-thin mt-3 mb-0">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">5:34:11</div><small class="text-medium-emphasis text-uppercase fw-semibold">Avg. Time</small>
+                            <div class="progress progress-thin mt-3 mb-0">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">972</div><small class="text-medium-emphasis text-uppercase fw-semibold">Comments</small>
+                            <div class="progress progress-thin mt-3 mb-0">
+                              <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
+                    <!-- /.row-->
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-193">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-1242">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-sm-6 col-md-2">
@@ -1299,19 +2091,118 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-422" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-553" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-422" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-553" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-422">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-553">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card text-white bg-info">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis-inverse text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">87.500</div><small class="text-medium-emphasis-inverse text-uppercase fw-semibold">Visitors</small>
+                            <div class="progress progress-white progress-thin mt-3">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card text-white bg-success">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis-inverse text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">385</div><small class="text-medium-emphasis-inverse text-uppercase fw-semibold">New Clients</small>
+                            <div class="progress progress-white progress-thin mt-3">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card text-white bg-warning">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis-inverse text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">1238</div><small class="text-medium-emphasis-inverse text-uppercase fw-semibold">Products sold</small>
+                            <div class="progress progress-white progress-thin mt-3">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card text-white bg-primary">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis-inverse text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">28%</div><small class="text-medium-emphasis-inverse text-uppercase fw-semibold">Returning Visitors</small>
+                            <div class="progress progress-white progress-thin mt-3">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card text-white bg-danger">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis-inverse text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">5:34:11</div><small class="text-medium-emphasis-inverse text-uppercase fw-semibold">Avg. Time</small>
+                            <div class="progress progress-white progress-thin mt-3">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                      <div class="col-sm-6 col-md-2">
+                        <div class="card text-white bg-info">
+                          <div class="card-body">
+                            <div class="text-medium-emphasis-inverse text-end mb-4">
+                              <svg class="icon icon-2xl">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech"></use>
+                              </svg>
+                            </div>
+                            <div class="fs-4 fw-semibold">972</div><small class="text-medium-emphasis-inverse text-uppercase fw-semibold">Comments</small>
+                            <div class="progress progress-white progress-thin mt-3">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
+                    <!-- /.row-->
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-422">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-553">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-sm-6 col-md-2">
@@ -1427,6 +2318,7 @@
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>

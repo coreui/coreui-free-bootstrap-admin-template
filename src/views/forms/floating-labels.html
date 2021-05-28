@@ -36,6 +36,7 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -61,7 +62,7 @@
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation">
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
@@ -295,19 +296,27 @@
                   <p class="text-medium-emphasis small">Wrap a pair of <code>&lt;input class=&quot;form-control&quot;&gt;</code> and <code>&lt;label&gt;</code> elements in <code>.form-floating</code> to enable floating labels with Bootstrap’s textual form fields. A <code>placeholder</code> is required on each <code>&lt;input&gt;</code> as our method of CSS-only floating labels uses the <code>:placeholder-shown</code> pseudo-element. Also note that the <code>&lt;input&gt;</code> must come first so we can utilize a sibling selector (e.g., <code>~</code>).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1046" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-269" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1046" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-269" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1046">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-269">
+                        <div class="form-floating mb-3">
+                          <input class="form-control" id="floatingInput" type="email" placeholder="name@example.com">
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                          <input class="form-control" id="floatingPassword" type="password" placeholder="Password">
+                          <label for="floatingPassword">Password</label>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1046">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-269">
                         <script class="language-markup" type="text/plain">
                           <div class="form-floating mb-3">
                             <input class="form-control" id="floatingInput" type="email" placeholder="name@example.com">
@@ -324,19 +333,23 @@
                   <p class="text-medium-emphasis small">When there’s a <code>value</code> already defined, <code>&lt;label&gt;</code>s will automatically adjust to their floated position.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1122" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-805" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1122" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-805" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1122">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-805">
+                        <form class="form-floating">
+                          <input class="form-control" id="floatingInputValue" type="email" placeholder="name@example.com" value="test@example.com">
+                          <label for="floatingInputValue">Input with value</label>
+                        </form>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1122">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-805">
                         <script class="language-markup" type="text/plain">
                           <form class="form-floating">
                             <input class="form-control" id="floatingInputValue" type="email" placeholder="name@example.com" value="test@example.com">
@@ -349,19 +362,23 @@
                   <p class="text-medium-emphasis small">Form validation styles also work as expected.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-945" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1003" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-945" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1003" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-945">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1003">
+                        <form class="form-floating">
+                          <input class="form-control is-invalid" id="floatingInputInvalid" type="email" placeholder="name@example.com" value="test@example.com">
+                          <label for="floatingInputInvalid">Invalid input</label>
+                        </form>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-945">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1003">
                         <script class="language-markup" type="text/plain">
                           <form class="form-floating">
                             <input class="form-control is-invalid" id="floatingInputInvalid" type="email" placeholder="name@example.com" value="test@example.com">
@@ -381,19 +398,23 @@
                   <p class="text-medium-emphasis small">By default, <code>&lt;textarea&gt;</code>s with <code>.form-control</code> will be the same height as <code>&lt;input&gt;</code>s.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-959" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-292" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-959" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-292" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-959">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-292">
+                        <div class="form-floating">
+                          <textarea class="form-control" id="floatingTextarea" placeholder="Leave a comment here"></textarea>
+                          <label for="floatingTextarea">Comments</label>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-959">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-292">
                         <script class="language-markup" type="text/plain">
                           <div class="form-floating">
                             <textarea class="form-control" id="floatingTextarea" placeholder="Leave a comment here"></textarea>
@@ -406,19 +427,23 @@
                   <p class="text-medium-emphasis small">To set a custom height on your <code>&lt;textarea&gt;</code>, do not use the <code>rows</code> attribute. Instead, set an explicit <code>height</code> (either inline or via custom CSS).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-746" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-865" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-746" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-865" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-746">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-865">
+                        <div class="form-floating">
+                          <textarea class="form-control" id="floatingTextarea2" placeholder="Leave a comment here" style="height: 100px"></textarea>
+                          <label for="floatingTextarea2">Comments</label>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-746">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-865">
                         <script class="language-markup" type="text/plain">
                           <div class="form-floating">
                             <textarea class="form-control" id="floatingTextarea2" placeholder="Leave a comment here" style="height: 100px"></textarea>
@@ -438,19 +463,28 @@
                   <p class="text-medium-emphasis small">Other than <code>.form-control</code>, floating labels are only available on <code>.form-select</code>s. They work in the same way, but unlike <code>&lt;input&gt;</code>s, they’ll always show the <code>&lt;label&gt;</code> in its floated state.<strong>Selects with <code>size</code> and <code>multiple</code> are not supported.</strong></p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-721" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-187" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-721" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-187" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-721">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-187">
+                        <div class="form-floating">
+                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <label for="floatingSelect">Works with selects</label>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-721">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-187">
                         <script class="language-markup" type="text/plain">
                           <div class="form-floating">
                             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
@@ -475,19 +509,38 @@
                   <p class="text-medium-emphasis small">When working with the CoreUI for Bootstrap grid system, be sure to place form elements within column classes.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-570" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-654" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-570" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-654" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-570">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-654">
+                        <div class="row g-2">
+                          <div class="col-md">
+                            <div class="form-floating">
+                              <input class="form-control" id="floatingInputGrid" type="email" placeholder="name@example.com" value="mdo@example.com">
+                              <label for="floatingInputGrid">Email address</label>
+                            </div>
+                          </div>
+                          <div class="col-md">
+                            <div class="form-floating">
+                              <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <label for="floatingSelectGrid">Works with selects</label>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-570">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-654">
                         <script class="language-markup" type="text/plain">
                           <div class="row g-2">
                             <div class="col-md">
@@ -525,6 +578,7 @@
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
