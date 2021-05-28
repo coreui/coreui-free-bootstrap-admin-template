@@ -6,21 +6,27 @@ mixin example(script)
         a.nav-link.active(data-coreui-toggle="tab" href="#preview-"+id role="tab")
           svg.icon.me-2
             use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play")
+            |
           | Preview
       li.nav-item
         a.nav-link(data-coreui-toggle="tab" href="#code-"+id role="tab")
           svg.icon.me-2
             use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code")
+            |
           | Code
       if script
         li.nav-item
           a.nav-link(data-coreui-toggle="tab" href="#js-"+id role="tab")
             svg.icon.me-2
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cog")
+              |
             | JavaScript
     .tab-content.rounded-bottom
       .tab-pane.p-3.active.preview(role="tabpanel" id="preview-"+id )
-        block
+        if script
+          block html 
+        else 
+          block
       .tab-pane.pt-1(role="tabpanel" id="code-"+id )
         script.language-markup(type='text/plain')
           if script

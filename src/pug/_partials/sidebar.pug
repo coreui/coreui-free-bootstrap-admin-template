@@ -1,12 +1,13 @@
 .sidebar.sidebar-dark.sidebar-fixed.sidebar-self-hiding-xl#sidebar
-  .sidebar-brand.d-lg-down-none
+  .sidebar-brand.d-none.d-md-flex
     svg.sidebar-brand-full(width="118" height="46" alt="CoreUI Logo")
       use(xlink:href="assets/brand/coreui.svg#full")
+      |
     svg.sidebar-brand-narrow(width="46" height="46" alt="CoreUI Logo")
       use(xlink:href="assets/brand/coreui.svg#signet")
-  ul.sidebar-nav(data-coreui="navigation")
+  ul.sidebar-nav(data-coreui="navigation" data-simplebar)
     li.nav-item
-      a.nav-link(href=ajax ? 'main.html' : 'index.html')
+      a.nav-link(href='index.html')
         svg.nav-icon
           use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
         |  Dashboard

@@ -35,13 +35,10 @@ block view
               .form-check.form-example-indeterminate
                 input.form-check-input#flexCheckIndeterminate(type='checkbox')
                 label.form-check-label(for='flexCheckIndeterminate') Indeterminate checkbox
-              
             block js
-              script(type='text/javascript').
-                // Indeterminate checkbox example
-                document.querySelectorAll('.form-example-indeterminate [type="checkbox"]').forEach(function (checkbox) {
-                  checkbox.indeterminate = true
-                })
+              | document.querySelectorAll('.form-example-indeterminate [type="checkbox"]').forEach(function (checkbox) {
+              |   checkbox.indeterminate = true
+              | })
     .col-12
       .card.mb-4
         .card-header

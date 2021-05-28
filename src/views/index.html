@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.0.0-alpha.2
+* @version v4.0.0-beta.0
 * @link https://coreui.io
 * Copyright (c) 2021 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -42,10 +42,7 @@
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       // Shared ID
       gtag('config', 'UA-118965717-3');
@@ -56,7 +53,7 @@
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed sidebar-self-hiding-xl" id="sidebar">
-      <div class="sidebar-brand d-lg-down-none">
+      <div class="sidebar-brand d-none d-md-flex">
         <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
           <use xlink:href="assets/brand/coreui.svg#full"></use>
         </svg>
@@ -188,8 +185,7 @@
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
             </svg> Try CoreUI
-            <div class="fw-semibold">PRO</div>
-          </a></li>
+            <div class="fw-semibold">PRO</div></a></li>
       </ul>
       <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     </div>
@@ -200,33 +196,32 @@
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
-          </button><a class="header-brand d-xl-none" href="#">
+          </button><a class="header-brand d-md-none" href="#">
             <svg width="118" height="46" alt="CoreUI Logo">
               <use xlink:href="assets/brand/coreui.svg#full"></use>
             </svg></a>
-          <ul class="header-nav d-md-down-none">
+          <ul class="header-nav d-none d-md-flex">
             <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
           </ul>
           <ul class="header-nav ms-auto">
-            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+            <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
                 </svg></a></li>
-            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+            <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
                 </svg></a></li>
-            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+            <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                 </svg></a></li>
           </ul>
           <ul class="header-nav ms-3">
-            <li class="nav-item dropdown d-flex align-items-center"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
-              </a>
+            <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div></a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
                 <div class="dropdown-header bg-light py-2">
                   <div class="fw-semibold">Account</div>
@@ -406,35 +401,35 @@
                 <div class="col-sm-12 col-md mb-sm-2 mb-0">
                   <div class="text-medium-emphasis">Visits</div>
                   <div class="fw-semibold">29.703 Users (40%)</div>
-                  <div class="progress progress-xs mt-2">
+                  <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md mb-sm-2 mb-0">
                   <div class="text-medium-emphasis">Unique</div>
                   <div class="fw-semibold">24.093 Users (20%)</div>
-                  <div class="progress progress-xs mt-2">
+                  <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md mb-sm-2 mb-0">
                   <div class="text-medium-emphasis">Pageviews</div>
                   <div class="fw-semibold">78.706 Views (60%)</div>
-                  <div class="progress progress-xs mt-2">
+                  <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md mb-sm-2 mb-0">
                   <div class="text-medium-emphasis">New Users</div>
                   <div class="fw-semibold">22.123 Users (80%)</div>
-                  <div class="progress progress-xs mt-2">
+                  <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md mb-sm-2 mb-0">
                   <div class="text-medium-emphasis">Bounce Rate</div>
                   <div class="fw-semibold">40.15%</div>
-                  <div class="progress progress-xs mt-2">
+                  <div class="progress progress-thin mt-2">
                     <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
@@ -543,10 +538,10 @@
                       <div class="progress-group mb-4">
                         <div class="progress-group-prepend"><span class="text-medium-emphasis small">Monday</span></div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-info" role="progressbar" style="width: 34%" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -554,10 +549,10 @@
                       <div class="progress-group mb-4">
                         <div class="progress-group-prepend"><span class="text-medium-emphasis small">Tuesday</span></div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-info" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -565,10 +560,10 @@
                       <div class="progress-group mb-4">
                         <div class="progress-group-prepend"><span class="text-medium-emphasis small">Wednesday</span></div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-info" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -576,10 +571,10 @@
                       <div class="progress-group mb-4">
                         <div class="progress-group-prepend"><span class="text-medium-emphasis small">Thursday</span></div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-info" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 91%" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -587,10 +582,10 @@
                       <div class="progress-group mb-4">
                         <div class="progress-group-prepend"><span class="text-medium-emphasis small">Friday</span></div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -598,10 +593,10 @@
                       <div class="progress-group mb-4">
                         <div class="progress-group-prepend"><span class="text-medium-emphasis small">Saturday</span></div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-info" role="progressbar" style="width: 53%" aria-valuenow="53" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -609,10 +604,10 @@
                       <div class="progress-group mb-4">
                         <div class="progress-group-prepend"><span class="text-medium-emphasis small">Sunday</span></div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-info" role="progressbar" style="width: 9%" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 69%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -645,7 +640,7 @@
                           <div class="ms-auto fw-semibold">43%</div>
                         </div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-warning" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -659,7 +654,7 @@
                           <div class="ms-auto fw-semibold">37%</div>
                         </div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-warning" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -674,7 +669,7 @@
                           <div class="text-medium-emphasis small">(56%)</div>
                         </div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -689,7 +684,7 @@
                           <div class="text-medium-emphasis small">(15%)</div>
                         </div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -704,7 +699,7 @@
                           <div class="text-medium-emphasis small">(11%)</div>
                         </div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -719,7 +714,7 @@
                           <div class="text-medium-emphasis small">(8%)</div>
                         </div>
                         <div class="progress-group-bars">
-                          <div class="progress progress-xs">
+                          <div class="progress progress-thin">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
@@ -766,7 +761,7 @@
                               </div>
                               <div class="float-end"><small class="text-medium-emphasis">Jun 11, 2020 - Jul 10, 2020</small></div>
                             </div>
-                            <div class="progress progress-xs">
+                            <div class="progress progress-thin">
                               <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                           </td>
@@ -810,7 +805,7 @@
                               </div>
                               <div class="float-end"><small class="text-medium-emphasis">Jun 11, 2020 - Jul 10, 2020</small></div>
                             </div>
-                            <div class="progress progress-xs">
+                            <div class="progress progress-thin">
                               <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                           </td>
@@ -854,7 +849,7 @@
                               </div>
                               <div class="float-end"><small class="text-medium-emphasis">Jun 11, 2020 - Jul 10, 2020</small></div>
                             </div>
-                            <div class="progress progress-xs">
+                            <div class="progress progress-thin">
                               <div class="progress-bar bg-warning" role="progressbar" style="width: 74%" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                           </td>
@@ -898,7 +893,7 @@
                               </div>
                               <div class="float-end"><small class="text-medium-emphasis">Jun 11, 2020 - Jul 10, 2020</small></div>
                             </div>
-                            <div class="progress progress-xs">
+                            <div class="progress progress-thin">
                               <div class="progress-bar bg-danger" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                           </td>
@@ -942,7 +937,7 @@
                               </div>
                               <div class="float-end"><small class="text-medium-emphasis">Jun 11, 2020 - Jul 10, 2020</small></div>
                             </div>
-                            <div class="progress progress-xs">
+                            <div class="progress progress-thin">
                               <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                           </td>
@@ -986,7 +981,7 @@
                               </div>
                               <div class="float-end"><small class="text-medium-emphasis">Jun 11, 2020 - Jul 10, 2020</small></div>
                             </div>
-                            <div class="progress progress-xs">
+                            <div class="progress progress-thin">
                               <div class="progress-bar bg-success" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                           </td>
@@ -1037,5 +1032,7 @@
     <script src="node_modules/@coreui/chartjs/dist/js/coreui-chartjs.js"></script>
     <script src="node_modules/@coreui/utils/dist/coreui-utils.js"></script>
     <script src="js/main.js"></script>
+    <script> 
+    </script>
   </body>
 </html>

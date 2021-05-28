@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.0.0-alpha.2
+* @version v4.0.0-beta.0
 * @link https://coreui.io
 * Copyright (c) 2021 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -42,10 +42,7 @@
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       // Shared ID
       gtag('config', 'UA-118965717-3');
@@ -56,7 +53,7 @@
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed sidebar-self-hiding-xl" id="sidebar">
-      <div class="sidebar-brand d-lg-down-none">
+      <div class="sidebar-brand d-none d-md-flex">
         <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
           <use xlink:href="assets/brand/coreui.svg#full"></use>
         </svg>
@@ -188,8 +185,7 @@
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
             </svg> Try CoreUI
-            <div class="fw-semibold">PRO</div>
-          </a></li>
+            <div class="fw-semibold">PRO</div></a></li>
       </ul>
       <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     </div>
@@ -200,33 +196,32 @@
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
-          </button><a class="header-brand d-xl-none" href="#">
+          </button><a class="header-brand d-md-none" href="#">
             <svg width="118" height="46" alt="CoreUI Logo">
               <use xlink:href="assets/brand/coreui.svg#full"></use>
             </svg></a>
-          <ul class="header-nav d-md-down-none">
+          <ul class="header-nav d-none d-md-flex">
             <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
           </ul>
           <ul class="header-nav ms-auto">
-            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+            <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
                 </svg></a></li>
-            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+            <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
                 </svg></a></li>
-            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+            <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                 </svg></a></li>
           </ul>
           <ul class="header-nav ms-3">
-            <li class="nav-item dropdown d-flex align-items-center"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
-              </a>
+            <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div></a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
                 <div class="dropdown-header bg-light py-2">
                   <div class="fw-semibold">Account</div>
@@ -300,24 +295,19 @@
                   <p class="text-medium-emphasis small">Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>. Add on optional JavaScript radio and checkbox style behavior with <a href="https://coreui.io/docs/4.0/components/buttons/#button-plugin">our buttons plugin</a>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-556" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-452" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-556" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-452" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-556">
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                          <button class="btn btn-primary" type="button">Left</button>
-                          <button class="btn btn-primary" type="button">Middle</button>
-                          <button class="btn btn-primary" type="button">Right</button>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-452">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-556">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-452">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group" role="group" aria-label="Basic example">
                             <button class="btn btn-primary" type="button">Left</button>
@@ -331,20 +321,19 @@
                   <p class="text-medium-emphasis small">These classes can also be added to groups of links, as an alternative to the <a href="https://coreui.io/docs/4.0/components/navs-tabs/"><code>.nav</code> navigation components</a>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1062" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-258" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1062" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-258" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1062">
-                        <div class="btn-group"><a class="btn btn-primary active" href="#" aria-current="page">Active link</a><a class="btn btn-primary" href="#">Link</a><a class="btn btn-primary" href="#">Link</a></div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-258">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1062">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-258">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group"><a class="btn btn-primary active" href="#" aria-current="page">Active link</a><a class="btn btn-primary" href="#">Link</a><a class="btn btn-primary" href="#">Link</a></div>
                         </script>
@@ -360,24 +349,19 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-587" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-748" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-587" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-748" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-587">
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                          <button class="btn btn-danger" type="button">Left</button>
-                          <button class="btn btn-warning" type="button">Middle</button>
-                          <button class="btn btn-success" type="button">Right</button>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-748">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-587">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-748">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                             <button class="btn btn-danger" type="button">Left</button>
@@ -397,24 +381,19 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1182" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-277" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1182" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-277" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1182">
-                        <div class="btn-group" role="group" aria-label="Basic outlined example">
-                          <button class="btn btn-outline-primary" type="button">Left</button>
-                          <button class="btn btn-outline-primary" type="button">Middle</button>
-                          <button class="btn btn-outline-primary" type="button">Right</button>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-277">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1182">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-277">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group" role="group" aria-label="Basic outlined example">
                             <button class="btn btn-outline-primary" type="button">Left</button>
@@ -435,27 +414,19 @@
                   <p class="text-medium-emphasis small">Combine button-like checkbox and radio <a href="https://coreui.io/docs/4.0/forms/checks-radios/">toggle buttons</a> into a seamless looking button group.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-709" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-218" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-709" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-218" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-709">
-                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                          <input class="btn-check" id="btncheck1" type="checkbox" autocomplete="off">
-                          <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
-                          <input class="btn-check" id="btncheck2" type="checkbox" autocomplete="off">
-                          <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
-                          <input class="btn-check" id="btncheck3" type="checkbox" autocomplete="off">
-                          <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-218">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-709">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-218">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
                             <input class="btn-check" id="btncheck1" type="checkbox" autocomplete="off">
@@ -471,27 +442,19 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-964" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-919" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-964" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-919" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-964">
-                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                          <input class="btn-check" id="btnradio1" type="radio" name="btnradio" autocomplete="off" checked="">
-                          <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
-                          <input class="btn-check" id="btnradio2" type="radio" name="btnradio" autocomplete="off">
-                          <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
-                          <input class="btn-check" id="btnradio3" type="radio" name="btnradio" autocomplete="off">
-                          <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-919">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-964">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-919">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                             <input class="btn-check" id="btnradio1" type="radio" name="btnradio" autocomplete="off" checked="">
@@ -515,35 +478,19 @@
                   <p class="text-medium-emphasis small">Join sets of button groups into button toolbars for more complicated components. Use utility classes as needed to space out groups, buttons, and more.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-700" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-104" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-700" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-104" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-700">
-                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                          <div class="btn-group me-2" role="group" aria-label="First group">
-                            <button class="btn btn-primary" type="button">1</button>
-                            <button class="btn btn-primary" type="button">2</button>
-                            <button class="btn btn-primary" type="button">3</button>
-                            <button class="btn btn-primary" type="button">4</button>
-                          </div>
-                          <div class="btn-group me-2" role="group" aria-label="Second group">
-                            <button class="btn btn-secondary" type="button">5</button>
-                            <button class="btn btn-secondary" type="button">6</button>
-                            <button class="btn btn-secondary" type="button">7</button>
-                          </div>
-                          <div class="btn-group" role="group" aria-label="Third group">
-                            <button class="btn btn-info" type="button">8</button>
-                          </div>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-104">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-700">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-104">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group me-2" role="group" aria-label="First group">
@@ -568,43 +515,19 @@
                   <p class="text-medium-emphasis small">Feel free to combine input groups with button groups in your toolbars. Similar to the example above, you’ll likely need some utilities through to space items correctly.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-426" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-59" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-426" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-59" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-426">
-                        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                          <div class="btn-group me-2" role="group" aria-label="First group">
-                            <button class="btn btn-outline-secondary" type="button">1</button>
-                            <button class="btn btn-outline-secondary" type="button">2</button>
-                            <button class="btn btn-outline-secondary" type="button">3</button>
-                            <button class="btn btn-outline-secondary" type="button">4</button>
-                          </div>
-                          <div class="input-group">
-                            <div class="input-group-text" id="btnGroupAddon">@</div>
-                            <input class="form-control" type="text" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
-                          </div>
-                        </div>
-                        <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
-                          <div class="btn-group" role="group" aria-label="First group">
-                            <button class="btn btn-outline-secondary" type="button">1</button>
-                            <button class="btn btn-outline-secondary" type="button">2</button>
-                            <button class="btn btn-outline-secondary" type="button">3</button>
-                            <button class="btn btn-outline-secondary" type="button">4</button>
-                          </div>
-                          <div class="input-group">
-                            <div class="input-group-text" id="btnGroupAddon2">@</div>
-                            <input class="form-control" type="text" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2">
-                          </div>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-59">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-426">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-59">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group me-2" role="group" aria-label="First group">
@@ -644,34 +567,19 @@
                   <p class="text-medium-emphasis small">Alternatively, of implementing button sizing classes to each button in a group, add <code>.btn-group-*</code> to all <code>.btn-group</code>, including each one when nesting multiple groups.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-128" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1241" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-128" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1241" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-128">
-                        <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-                          <button class="btn btn-outline-dark" type="button">Left</button>
-                          <button class="btn btn-outline-dark" type="button">Middle</button>
-                          <button class="btn btn-outline-dark" type="button">Right</button>
-                        </div><br>
-                        <div class="btn-group" role="group" aria-label="Default button group">
-                          <button class="btn btn-outline-dark" type="button">Left</button>
-                          <button class="btn btn-outline-dark" type="button">Middle</button>
-                          <button class="btn btn-outline-dark" type="button">Right</button>
-                        </div><br>
-                        <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-                          <button class="btn btn-outline-dark" type="button">Left</button>
-                          <button class="btn btn-outline-dark" type="button">Middle</button>
-                          <button class="btn btn-outline-dark" type="button">Right</button>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1241">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-128">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1241">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
                             <button class="btn btn-outline-dark" type="button">Left</button>
@@ -702,30 +610,19 @@
                   <p class="text-medium-emphasis small">Put a <code>.btn-group</code> inside another <code>.btn-group</code> when you need dropdown menus combined with a series of buttons.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-83" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-975" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-83" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-975" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-83">
-                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                          <button class="btn btn-primary" type="button">1</button>
-                          <button class="btn btn-primary" type="button">2</button>
-                          <div class="btn-group" role="group">
-                            <button class="btn btn-primary dropdown-toggle" id="btnGroupDrop1" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                            </ul>
-                          </div>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-975">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-83">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-975">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                             <button class="btn btn-primary" type="button">1</button>
@@ -752,27 +649,19 @@
                   <p class="text-medium-emphasis small">Create a set of buttons that appear vertically stacked rather than horizontally. <strong>Split button dropdowns are not supported here.</strong></p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-409" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1092" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-409" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1092" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-409">
-                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                          <button class="btn btn-dark" type="button">Button</button>
-                          <button class="btn btn-dark" type="button">Button</button>
-                          <button class="btn btn-dark" type="button">Button</button>
-                          <button class="btn btn-dark" type="button">Button</button>
-                          <button class="btn btn-dark" type="button">Button</button>
-                          <button class="btn btn-dark" type="button">Button</button>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1092">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-409">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1092">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
                             <button class="btn btn-dark" type="button">Button</button>
@@ -788,53 +677,19 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-265" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-778" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-265" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-778" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-265">
-                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                          <button class="btn btn-primary" type="button">Button</button>
-                          <button class="btn btn-primary" type="button">Button</button>
-                          <div class="btn-group" role="group">
-                            <button class="btn btn-primary dropdown-toggle" id="btnGroupVerticalDrop1" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
-                              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                            </ul>
-                          </div>
-                          <button class="btn btn-primary" type="button">Button</button>
-                          <button class="btn btn-primary" type="button">Button</button>
-                          <div class="btn-group" role="group">
-                            <button class="btn btn-primary dropdown-toggle" id="btnGroupVerticalDrop2" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
-                              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                            </ul>
-                          </div>
-                          <div class="btn-group" role="group">
-                            <button class="btn btn-primary dropdown-toggle" id="btnGroupVerticalDrop3" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
-                              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                            </ul>
-                          </div>
-                          <div class="btn-group" role="group">
-                            <button class="btn btn-primary dropdown-toggle" id="btnGroupVerticalDrop4" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
-                              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                            </ul>
-                          </div>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-778">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-265">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-778">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
                             <button class="btn btn-primary" type="button">Button</button>
@@ -876,27 +731,19 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1061" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-584" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1061" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-584" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1061">
-                        <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
-                          <input class="btn-check" id="vbtn-radio1" type="radio" name="vbtn-radio" autocomplete="off" checked="">
-                          <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
-                          <input class="btn-check" id="vbtn-radio2" type="radio" name="vbtn-radio" autocomplete="off">
-                          <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
-                          <input class="btn-check" id="vbtn-radio3" type="radio" name="vbtn-radio" autocomplete="off">
-                          <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-584">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1061">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-584">
                         <script class="language-markup" type="text/plain">
                           <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
                             <input class="btn-check" id="vbtn-radio1" type="radio" name="vbtn-radio" autocomplete="off" checked="">
@@ -927,5 +774,7 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
+    <script> 
+    </script>
   </body>
 </html>

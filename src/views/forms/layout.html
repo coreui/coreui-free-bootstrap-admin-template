@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.0.0-alpha.2
+* @version v4.0.0-beta.0
 * @link https://coreui.io
 * Copyright (c) 2021 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -42,10 +42,7 @@
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       // Shared ID
       gtag('config', 'UA-118965717-3');
@@ -56,7 +53,7 @@
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed sidebar-self-hiding-xl" id="sidebar">
-      <div class="sidebar-brand d-lg-down-none">
+      <div class="sidebar-brand d-none d-md-flex">
         <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
           <use xlink:href="assets/brand/coreui.svg#full"></use>
         </svg>
@@ -188,8 +185,7 @@
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
             </svg> Try CoreUI
-            <div class="fw-semibold">PRO</div>
-          </a></li>
+            <div class="fw-semibold">PRO</div></a></li>
       </ul>
       <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     </div>
@@ -200,33 +196,32 @@
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
-          </button><a class="header-brand d-xl-none" href="#">
+          </button><a class="header-brand d-md-none" href="#">
             <svg width="118" height="46" alt="CoreUI Logo">
               <use xlink:href="assets/brand/coreui.svg#full"></use>
             </svg></a>
-          <ul class="header-nav d-md-down-none">
+          <ul class="header-nav d-none d-md-flex">
             <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
           </ul>
           <ul class="header-nav ms-auto">
-            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+            <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
                 </svg></a></li>
-            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+            <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
                 </svg></a></li>
-            <li class="nav-item d-md-down-none"><a class="nav-link" href="#">
+            <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                 </svg></a></li>
           </ul>
           <ul class="header-nav ms-3">
-            <li class="nav-item dropdown d-flex align-items-center"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
-              </a>
+            <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div></a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
                 <div class="dropdown-header bg-light py-2">
                   <div class="fw-semibold">Account</div>
@@ -301,27 +296,19 @@
                   <p class="text-medium-emphasis small">Feel free to build your forms however you like, with <code>&lt;fieldset&gt;</code>s, <code>&lt;div&gt;</code>s, or nearly any other element.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-866" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-659" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-866" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-659" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-866">
-                        <div class="mb-3">
-                          <label class="form-label" for="formGroupExampleInput">Example label</label>
-                          <input class="form-control" id="formGroupExampleInput" type="text" placeholder="Example input placeholder">
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label" for="formGroupExampleInput2">Another label</label>
-                          <input class="form-control" id="formGroupExampleInput2" type="text" placeholder="Another input placeholder">
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-659">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-866">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-659">
                         <script class="language-markup" type="text/plain">
                           <div class="mb-3">
                             <label class="form-label" for="formGroupExampleInput">Example label</label>
@@ -345,27 +332,19 @@
                   <p class="text-medium-emphasis small">More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options.<strong>Requires the <code>$enable-grid-classes</code> Sass variable to be enabled</strong> (on by default).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-576" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1012" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-576" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1012" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-576">
-                        <div class="row">
-                          <div class="col">
-                            <input class="form-control" type="text" placeholder="First name" aria-label="First name">
-                          </div>
-                          <div class="col">
-                            <input class="form-control" type="text" placeholder="Last name" aria-label="Last name">
-                          </div>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1012">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-576">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1012">
                         <script class="language-markup" type="text/plain">
                           <div class="row">
                             <div class="col">
@@ -389,27 +368,19 @@
                   <p class="text-medium-emphasis small">By adding<a href="https://coreui.io/docs/4.0/layout/gutters/">gutter modifier classes</a>, you can have control over the gutter width in as well the inline as block direction.<strong>Also requires the <code>$enable-grid-classes</code> Sass variable to be enabled</strong> (on by default).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-626" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1121" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-626" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1121" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-626">
-                        <div class="row g-3">
-                          <div class="col">
-                            <input class="form-control" type="text" placeholder="First name" aria-label="First name">
-                          </div>
-                          <div class="col">
-                            <input class="form-control" type="text" placeholder="Last name" aria-label="Last name">
-                          </div>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1121">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-626">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1121">
                         <script class="language-markup" type="text/plain">
                           <div class="row g-3">
                             <div class="col">
@@ -426,61 +397,19 @@
                   <p class="text-medium-emphasis small">More complex layouts can also be created with the grid system.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-191" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1217" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-191" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1217" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-191">
-                        <form class="row g-3">
-                          <div class="col-md-6">
-                            <label class="form-label" for="inputEmail4">Email</label>
-                            <input class="form-control" id="inputEmail4" type="email">
-                          </div>
-                          <div class="col-md-6">
-                            <label class="form-label" for="inputPassword4">Password</label>
-                            <input class="form-control" id="inputPassword4" type="password">
-                          </div>
-                          <div class="col-12">
-                            <label class="form-label" for="inputAddress">Address</label>
-                            <input class="form-control" id="inputAddress" type="text" placeholder="1234 Main St">
-                          </div>
-                          <div class="col-12">
-                            <label class="form-label" for="inputAddress2">Address 2</label>
-                            <input class="form-control" id="inputAddress2" type="text" placeholder="Apartment, studio, or floor">
-                          </div>
-                          <div class="col-md-6">
-                            <label class="form-label" for="inputCity">City</label>
-                            <input class="form-control" id="inputCity" type="text">
-                          </div>
-                          <div class="col-md-4">
-                            <label class="form-label" for="inputState">State</label>
-                            <select class="form-select" id="inputState">
-                              <option selected>Choose...</option>
-                              <option>...</option>
-                            </select>
-                          </div>
-                          <div class="col-md-2">
-                            <label class="form-label" for="inputZip">Zip</label>
-                            <input class="form-control" id="inputZip" type="text">
-                          </div>
-                          <div class="col-12">
-                            <div class="form-check">
-                              <input class="form-check-input" id="gridCheck" type="checkbox">
-                              <label class="form-check-label" for="gridCheck">Check me out</label>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <button class="btn btn-primary" type="submit">Sign in</button>
-                          </div>
-                        </form>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1217">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-191">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1217">
                         <script class="language-markup" type="text/plain">
                           <form class="row g-3">
                             <div class="col-md-6">
@@ -535,63 +464,23 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Forms layout</strong><span class="small ms-1">Horizontal form</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Create horizontal forms with the grid by adding the <code>.row</code> class to form groups and using the <code>.col-*-*</code> classes to specify the width of your labels and controls. Be sure to add <code>.col-form-label</code> to your <code><label></code>s as well so they’re vertically centered with their associated form controls.</p>
+                  <p class="text-medium-emphasis small">Create horizontal forms with the grid by adding the <code>.row</code> class to form groups and using the <code>.col-*-*</code> classes to specify the width of your labels and controls. Be sure to add <code>.col-form-label</code> to your <code> &lt;label&gt;</code>s as well so they’re vertically centered with their associated form controls.</p>
                   <p class="text-medium-emphasis small">At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we’ve removed the <code>padding-top</code> on our stacked radio inputs label to better align the text baseline.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-601" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-127" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-601" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-127" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-601">
-                        <form>
-                          <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="inputEmail3">Email</label>
-                            <div class="col-sm-10">
-                              <input class="form-control" id="inputEmail3" type="email">
-                            </div>
-                          </div>
-                          <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="inputPassword3">Password</label>
-                            <div class="col-sm-10">
-                              <input class="form-control" id="inputPassword3" type="password">
-                            </div>
-                          </div>
-                          <fieldset class="row mb-3">
-                            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                            <div class="col-sm-10">
-                              <div class="form-check">
-                                <input class="form-check-input" id="gridRadios1" type="radio" name="gridRadios" value="option1" checked>
-                                <label class="form-check-label" for="gridRadios1">First radio</label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" id="gridRadios2" type="radio" name="gridRadios" value="option2">
-                                <label class="form-check-label" for="gridRadios2">Second radio</label>
-                              </div>
-                              <div class="form-check disabled">
-                                <input class="form-check-input" id="gridRadios3" type="radio" name="gridRadios" value="option3" disabled>
-                                <label class="form-check-label" for="gridRadios3">Third disabled radio</label>
-                              </div>
-                            </div>
-                          </fieldset>
-                          <div class="row mb-3">
-                            <div class="col-sm-10 offset-sm-2">
-                              <div class="form-check">
-                                <input class="form-check-input" id="gridCheck1" type="checkbox">
-                                <label class="form-check-label" for="gridCheck1">Example checkbox</label>
-                              </div>
-                            </div>
-                          </div>
-                          <button class="btn btn-primary" type="submit">Sign in</button>
-                        </form>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-127">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-601">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-127">
                         <script class="language-markup" type="text/plain">
                           <form>
                             <div class="row mb-3">
@@ -644,42 +533,22 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Forms layout</strong><span class="small ms-1">Horizontal form label sizing</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Be sure to use <code>.col-form-label-sm</code> or <code>.col-form-label-lg</code> to your <code><label></code>s or <code>
-                      <legend>
-                    </code>s to correctly follow the size of <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
+                  <p class="text-medium-emphasis small">Be sure to use <code>.col-form-label-sm</code> or <code>.col-form-label-lg</code> to your <code>&lt;label&gt;</code>s or <code> &lt;legend&gt;</code>s to correctly follow the size of <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1175" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-422" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1175" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-422" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1175">
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label col-form-label-sm" for="colFormLabelSm">Email</label>
-                          <div class="col-sm-10">
-                            <input class="form-control form-control-sm" id="colFormLabelSm" type="email" placeholder="col-form-label-sm">
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="colFormLabel">Email</label>
-                          <div class="col-sm-10">
-                            <input class="form-control" id="colFormLabel" type="email" placeholder="col-form-label">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <label class="col-sm-2 col-form-label col-form-label-lg" for="colFormLabelLg">Email</label>
-                          <div class="col-sm-10">
-                            <input class="form-control form-control-lg" id="colFormLabelLg" type="email" placeholder="col-form-label-lg">
-                          </div>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-422">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1175">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-422">
                         <script class="language-markup" type="text/plain">
                           <div class="row mb-3">
                             <label class="col-sm-2 col-form-label col-form-label-sm" for="colFormLabelSm">Email</label>
@@ -713,30 +582,19 @@
                   <p class="text-medium-emphasis small">As shown in the previous examples, our grid system allows you to place any number of <code>.col</code>s within a <code>.row</code>. They’ll split the available width equally between them. You may also pick a subset of your columns to take up more or less space, while the remaining <code>.col</code>s equally split the rest, with specific column classes like <code>.col-sm-7</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-332" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-133" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-332" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-133" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-332">
-                        <div class="row g-3">
-                          <div class="col-sm-7">
-                            <input class="form-control" type="text" placeholder="City" aria-label="City">
-                          </div>
-                          <div class="col-sm">
-                            <input class="form-control" type="text" placeholder="State" aria-label="State">
-                          </div>
-                          <div class="col-sm">
-                            <input class="form-control" type="text" placeholder="Zip" aria-label="Zip">
-                          </div>
-                        </div>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-133">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-332">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-133">
                         <script class="language-markup" type="text/plain">
                           <div class="row g-3">
                             <div class="col-sm-7">
@@ -763,50 +621,19 @@
                   <p class="text-medium-emphasis small">The example below uses a flexbox utility to vertically center the contents and changes <code>.col</code> to <code>.col-auto</code> so that your columns only take up as much space as needed. Put another way, the column sizes itself based on the contents.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1135" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-38" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1135" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-38" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1135">
-                        <form class="row gy-2 gx-3 align-items-center">
-                          <div class="col-auto">
-                            <label class="visually-hidden" for="autoSizingInput">Name</label>
-                            <input class="form-control" id="autoSizingInput" type="text" placeholder="Jane Doe">
-                          </div>
-                          <div class="col-auto">
-                            <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
-                            <div class="input-group">
-                              <div class="input-group-text">@</div>
-                              <input class="form-control" id="autoSizingInputGroup" type="text" placeholder="Username">
-                            </div>
-                          </div>
-                          <div class="col-auto">
-                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                            <select class="form-select" id="autoSizingSelect">
-                              <option selected>Choose...</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </div>
-                          <div class="col-auto">
-                            <div class="form-check">
-                              <input class="form-check-input" id="autoSizingCheck" type="checkbox">
-                              <label class="form-check-label" for="autoSizingCheck">Remember me</label>
-                            </div>
-                          </div>
-                          <div class="col-auto">
-                            <button class="btn btn-primary" type="submit">Submit</button>
-                          </div>
-                        </form>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-38">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1135">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-38">
                         <script class="language-markup" type="text/plain">
                           <form class="row gy-2 gx-3 align-items-center">
                             <div class="col-auto">
@@ -846,50 +673,19 @@
                   <p class="text-medium-emphasis small">You can then remix that once again with size-specific column classes.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-92" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-48" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-92" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-48" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-92">
-                        <form class="row gx-3 gy-2 align-items-center">
-                          <div class="col-sm-3">
-                            <label class="visually-hidden" for="specificSizeInputName">Name</label>
-                            <input class="form-control" id="specificSizeInputName" type="text" placeholder="Jane Doe">
-                          </div>
-                          <div class="col-sm-3">
-                            <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
-                            <div class="input-group">
-                              <div class="input-group-text">@</div>
-                              <input class="form-control" id="specificSizeInputGroupUsername" type="text" placeholder="Username">
-                            </div>
-                          </div>
-                          <div class="col-sm-3">
-                            <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                            <select class="form-select" id="specificSizeSelect">
-                              <option selected>Choose...</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </div>
-                          <div class="col-auto">
-                            <div class="form-check">
-                              <input class="form-check-input" id="autoSizingCheck2" type="checkbox">
-                              <label class="form-check-label" for="autoSizingCheck2">Remember me</label>
-                            </div>
-                          </div>
-                          <div class="col-auto">
-                            <button class="btn btn-primary" type="submit">Submit</button>
-                          </div>
-                        </form>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-48">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-92">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-48">
                         <script class="language-markup" type="text/plain">
                           <form class="row gx-3 gy-2 align-items-center">
                             <div class="col-sm-3">
@@ -936,46 +732,19 @@
                   <p class="text-medium-emphasis small">Use the <code>.col-auto</code> class to create horizontal layouts. By adding<a href="https://coreui.io/docs/4.0/layout/gutters/">gutter modifier classes</a>, we’ll have gutters in horizontal and vertical directions. The <code>.align-items-center</code> aligns the form elements to the middle, making the <code>.form-checkbox</code> align properly.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1122" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-749" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1122" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-749" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1122">
-                        <form class="row row-cols-lg-auto g-3 align-items-center">
-                          <div class="col-12">
-                            <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-                            <div class="input-group">
-                              <div class="input-group-text">@</div>
-                              <input class="form-control" id="inlineFormInputGroupUsername" type="text" placeholder="Username">
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                            <select class="form-select" id="inlineFormSelectPref">
-                              <option selected>Choose...</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </div>
-                          <div class="col-12">
-                            <div class="form-check">
-                              <input class="form-check-input" id="inlineFormCheck" type="checkbox">
-                              <label class="form-check-label" for="inlineFormCheck">Remember me</label>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <button class="btn btn-primary" type="submit">Submit</button>
-                          </div>
-                        </form>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-749">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1122">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-749">
                         <script class="language-markup" type="text/plain">
                           <form class="row row-cols-lg-auto g-3 align-items-center">
                             <div class="col-12">
@@ -1025,5 +794,7 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
+    <script> 
+    </script>
   </body>
 </html>

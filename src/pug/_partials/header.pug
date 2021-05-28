@@ -3,10 +3,12 @@ header.header.header-sticky.mb-4
     button.header-toggler.px-md-0.me-md-3.d-xxl-none(type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()")
       svg.icon.icon-lg
         use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu")
-    a.header-brand.d-xl-none(href="#")
+        |
+    a.header-brand.d-md-none(href="#")
       svg(width="118" height="46" alt="CoreUI Logo")
         use(xlink:href="assets/brand/coreui.svg#full")
-    ul.header-nav.d-md-down-none
+        |
+    ul.header-nav.d-none.d-md-flex
       li.nav-item
         a.nav-link(href="#") Dashboard
       li.nav-item
@@ -14,20 +16,23 @@ header.header.header-sticky.mb-4
       li.nav-item
         a.nav-link(href="#") Settings
     ul.header-nav.ms-auto
-      li.nav-item.d-md-down-none
+      li.nav-item
         a.nav-link(href="#")
           svg.icon.icon-lg
             use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
-      li.nav-item.d-md-down-none
+            |
+      li.nav-item
         a.nav-link(href="#")
           svg.icon.icon-lg
             use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich")
-      li.nav-item.d-md-down-none
+            |
+      li.nav-item
         a.nav-link(href="#")
           svg.icon.icon-lg
             use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
+            |
     ul.header-nav.ms-3
-      li.nav-item.dropdown.d-flex.align-items-center
+      li.nav-item.dropdown
         a.nav-link.py-0(data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false")
           .avatar.avatar-md
             img.avatar-img(src="assets/img/avatars/8.jpg" alt="user@email.com")
@@ -37,21 +42,25 @@ header.header.header-sticky.mb-4
           a.dropdown-item(href="#")
             svg.icon.me-2
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
+              |
             |  Updates
             span.badge.badge-sm.bg-info.ms-2 42
           a.dropdown-item(href="#")
             svg.icon.me-2
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
+              |
             |  Messages
             span.badge.badge-sm.bg-success.ms-2 42
           a.dropdown-item(href="#")
             svg.icon.me-2
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task")
+              |
             |  Tasks
             span.badge.badge-sm.bg-danger.ms-2 42
           a.dropdown-item(href="#")
             svg.icon.me-2
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square")
+              |
             |  Comments
             span.badge.badge-sm.bg-warning.ms-2 42
           .dropdown-header.bg-light.py-2
@@ -59,29 +68,35 @@ header.header.header-sticky.mb-4
           a.dropdown-item(href="#")
             svg.icon.me-2
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
+              |
             |  Profile
           a.dropdown-item(href="#")
             svg.icon.me-2
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
+              |
             |  Settings
           a.dropdown-item(href="#")
             svg.icon.me-2
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card")
+              |
             |  Payments
             span.badge.badge-sm.bg-secondary.ms-2 42
           a.dropdown-item(href="#")
             svg.icon.me-2
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file")
+              |
             |  Projects
             span.badge.badge-sm.bg-primary.ms-2 42
           .dropdown-divider
           a.dropdown-item(href="#")
             svg.icon.me-2
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked")
+              |
             |  Lock Account
           a.dropdown-item(href="#")
             svg.icon.me-2
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout")
+              |
             |  Logout
   .header-divider
   .container-fluid

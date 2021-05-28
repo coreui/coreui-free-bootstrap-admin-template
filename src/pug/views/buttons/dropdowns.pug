@@ -35,7 +35,8 @@ block view
                   a.dropdown-item(href='#') Something else here
           p.text-medium-emphasis.small
             | And with 
-            code <a>
+            code 
+              = '<a>'
             |  elements:
           +example()
             .dropdown
@@ -486,7 +487,8 @@ block view
             code 
               = '<button>'
             |  elements in your dropdowns instead of just 
-            code <a>
+            code 
+              = '<a>'
             | s.
           +example()
             .dropdown
@@ -736,7 +738,7 @@ block view
             a(href='https://coreui.io/docs/4.0/utilities/spacing/') spacing utilities
             | . Note that you’ll likely need additional sizing styles to constrain the menu width.
           +example()
-            .dropdown-menu.p-4.text-muted(style='max-width: 200px;')
+            .dropdown-menu.p-4.text-medium-emphasis(style='max-width: 200px;')
               p
                 | Some example text that's free-flowing within the dropdown menu.
               p.mb-0
