@@ -1,5 +1,4 @@
-/* eslint-disable object-shorthand */
-/* global Chart, coreui, coreui.Utils.getStyle, coreui.Utils.hexToRgba */
+/* global Chart, coreui */
 
 /**
  * --------------------------------------------------------------------------
@@ -8,7 +7,6 @@
  * --------------------------------------------------------------------------
  */
 
-/* eslint-disable no-magic-numbers */
 // Disable the on-canvas tooltip
 Chart.defaults.pointHitDetectionRadius = 1
 Chart.defaults.plugins.tooltip.enabled = false
@@ -43,7 +41,7 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
       x: {
         grid: {
           display: false,
-          drawBorder: false,
+          drawBorder: false
         },
         ticks: {
           display: false
@@ -57,7 +55,7 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
           display: false
         },
         ticks: {
-          display: false,
+          display: false
         }
       }
     },

@@ -7,7 +7,6 @@
  * --------------------------------------------------------------------------
  */
 
-/* eslint-disable no-magic-numbers */
 // Disable the on-canvas tooltip
 Chart.defaults.pointHitDetectionRadius = 1
 Chart.defaults.plugins.tooltip.enabled = false
@@ -42,7 +41,7 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
       x: {
         grid: {
           display: false,
-          drawBorder: false,
+          drawBorder: false
         },
         ticks: {
           display: false
@@ -56,7 +55,7 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
           display: false
         },
         ticks: {
-          display: false,
+          display: false
         }
       }
     },
@@ -223,6 +222,7 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
 })
 
 // Random Numbers
+// eslint-disable-next-line no-mixed-operators
 const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 
 // eslint-disable-next-line no-unused-vars

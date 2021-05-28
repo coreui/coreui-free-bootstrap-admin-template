@@ -1,4 +1,3 @@
-/* eslint-disable object-curly-newline */
 /* global Chart */
 
 /**
@@ -8,7 +7,6 @@
  * --------------------------------------------------------------------------
  */
 
-/* eslint-disable no-magic-numbers */
 // random Numbers
 const random = () => Math.round(Math.random() * 100)
 
@@ -16,23 +14,23 @@ const random = () => Math.round(Math.random() * 100)
 const lineChart = new Chart(document.getElementById('canvas-1'), {
   type: 'line',
   data: {
-    labels : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    datasets : [
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [
       {
         label: 'My First dataset',
-        backgroundColor : 'rgba(220, 220, 220, 0.2)',
-        borderColor : 'rgba(220, 220, 220, 1)',
-        pointBackgroundColor : 'rgba(220, 220, 220, 1)',
-        pointBorderColor : '#fff',
-        data : [random(), random(), random(), random(), random(), random(), random()]
+        backgroundColor: 'rgba(220, 220, 220, 0.2)',
+        borderColor: 'rgba(220, 220, 220, 1)',
+        pointBackgroundColor: 'rgba(220, 220, 220, 1)',
+        pointBorderColor: '#fff',
+        data: [random(), random(), random(), random(), random(), random(), random()]
       },
       {
         label: 'My Second dataset',
-        backgroundColor : 'rgba(151, 187, 205, 0.2)',
-        borderColor : 'rgba(151, 187, 205, 1)',
-        pointBackgroundColor : 'rgba(151, 187, 205, 1)',
-        pointBorderColor : '#fff',
-        data : [random(), random(), random(), random(), random(), random(), random()]
+        backgroundColor: 'rgba(151, 187, 205, 0.2)',
+        borderColor: 'rgba(151, 187, 205, 1)',
+        pointBackgroundColor: 'rgba(151, 187, 205, 1)',
+        pointBorderColor: '#fff',
+        data: [random(), random(), random(), random(), random(), random(), random()]
       }
     ]
   },
@@ -45,21 +43,21 @@ const lineChart = new Chart(document.getElementById('canvas-1'), {
 const barChart = new Chart(document.getElementById('canvas-2'), {
   type: 'bar',
   data: {
-    labels : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    datasets : [
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [
       {
-        backgroundColor : 'rgba(220, 220, 220, 0.5)',
-        borderColor : 'rgba(220, 220, 220, 0.8)',
+        backgroundColor: 'rgba(220, 220, 220, 0.5)',
+        borderColor: 'rgba(220, 220, 220, 0.8)',
         highlightFill: 'rgba(220, 220, 220, 0.75)',
         highlightStroke: 'rgba(220, 220, 220, 1)',
-        data : [random(), random(), random(), random(), random(), random(), random()]
+        data: [random(), random(), random(), random(), random(), random(), random()]
       },
       {
-        backgroundColor : 'rgba(151, 187, 205, 0.5)',
-        borderColor : 'rgba(151, 187, 205, 0.8)',
-        highlightFill : 'rgba(151, 187, 205, 0.75)',
-        highlightStroke : 'rgba(151, 187, 205, 1)',
-        data : [random(), random(), random(), random(), random(), random(), random()]
+        backgroundColor: 'rgba(151, 187, 205, 0.5)',
+        borderColor: 'rgba(151, 187, 205, 0.8)',
+        highlightFill: 'rgba(151, 187, 205, 0.75)',
+        highlightStroke: 'rgba(151, 187, 205, 1)',
+        data: [random(), random(), random(), random(), random(), random(), random()]
       }
     ]
   },
