@@ -52,7 +52,6 @@
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules/ src/scss/:dist/css/",
     "css-lint": "npm-run-all --continue-on-error --parallel css-lint-*",
     "css-lint-stylelint": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache --rd",
-    "css-lint-vars": "fusv src/scss/",
     "css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*rtl*.css\"",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "dist-linkinator": "linkinator dist --recurse --verbosity error",
