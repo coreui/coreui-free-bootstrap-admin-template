@@ -6,28 +6,14 @@ const glob = require('glob')
 const path = require('path')
 const mkdirp = require('mkdirp')
 const pug = require('pug')
-const svgInjector = require('@coreui/svg-injector')
-const vendorsInjector = require('@coreui/vendors-injector')
-const beautify = require('js-beautify').html
-const jsbOptions = {
-  indent_size: 2,
-  indent_inner_html: true,
-  unformatted: [''],
-  content_unformatted: ['textarea'],
-  extra_liners: ['']
-}
+const { basename, dirname, resolve, extname, sep } = path
+
 const argv = require('minimist')(process.argv.slice(2), {
-  boolean: ['injectVendors', 'injectSvg']
+  // boolean: ['enablePrettier', 'injectVendors', 'injectSvg']
 })
 console.dir(argv)
 const { src } = argv
 const { dest } = argv
-const injectVendors = argv.injectVendors ? argv.injectVendors : false
-const injectSvg = argv.injectSvg ? argv.injectSvg : false
-const svgSelectors = 'img.c-icon, img.c-btn-icon, img.c-nav-icon'
-
-const { basename, dirname, resolve } = path
-const extension = path.extname
 
 // Get all pug files
 const getAllFiles = src => {
@@ -39,10 +25,10 @@ const getAllFiles = src => {
   return new glob.sync(pattern, options)
 }
 
-const isPug = filename => extension(filename) === '.pug'
+const isPug = filename => extname(filename) === '.pug'
 
 const compile = (filename, basedir) => {
-  const levels = basedir.split(`${path.sep}`).filter(el => el !== '' ).length
+  const levels = basedir.split(`${sep}`).filter(el => el !== '' ).length
   const base = levels => {
     let path = './'
     while (levels > 0) {
@@ -63,39 +49,32 @@ const compile = (filename, basedir) => {
   return html
 }
 
-const checkPath = (src, dest, injectVendors, injectSvg) => {
+const checkPath = (src, dest) => {
   // Check if path is file or directory
   if (fs.statSync(src).isDirectory()) {
     const files = getAllFiles(src)
     files.forEach(file => {
       if (isPug(file)) {
-        compilePugToHtml(resolve(file), dest, injectVendors, injectSvg)
+        compilePugToHtml(resolve(file), dest)
       }
       // TODO: handle errors
     })
   } else if (isPug(src)) {
-    compilePugToHtml(resolve(src), dest, injectVendors, injectSvg)
+    compilePugToHtml(resolve(src), dest)
   }
   // TODO: handle errors
 }
 
 // Build html files
-const compilePugToHtml = (src, dest, injectVendors, injectSvg) => {
+const compilePugToHtml = (src, dest) => {
   const dir = dirname(src)
   const file = basename(src).replace('.pug', '.html')
-  const relative = path.relative(resolve(__dirname, '..'), dir.replace(`src${path.sep}pug${path.sep}views`, ''))
-  let html = compile(src, `${relative}`)
+  const relative = path.relative(resolve(__dirname, '..'), dir.replace(`src${sep}pug${sep}views`, ''))
+  const html = compile(src, `${relative}`)
   mkdirp.sync(resolve(__dirname, '..', dest, relative))
 
-  if (injectVendors === true) {
-    html = vendorsInjector(html)
-  }
 
-  if (injectSvg === true) {
-    html = svgInjector(html, svgSelectors, 'src/')
-  }
-
-  fs.writeFile(resolve(__dirname, '..', dest, relative, file), beautify(html, jsbOptions), err => {
+  fs.writeFile(resolve(__dirname, '..', dest, relative, file), html, err => {
     if (err) {
       throw err
     }
@@ -104,4 +83,4 @@ const compilePugToHtml = (src, dest, injectVendors, injectSvg) => {
   })
 }
 
-checkPath(src, dest, injectVendors, injectSvg)
+checkPath(src, dest)
