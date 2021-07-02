@@ -37,6 +37,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -178,10 +179,10 @@
                 </svg> Error 500</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+        <li class="nav-item mt-auto"><a class="nav-link" href="docs.html">
             <svg class="nav-icon">
-              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
-            </svg> Download CoreUI</a></li>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-description"></use>
+            </svg> Docs</a></li>
         <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
@@ -193,7 +194,7 @@
     <div class="wrapper d-flex flex-column min-vh-100 bg-light">
       <header class="header header-sticky mb-4">
         <div class="container-fluid">
-          <button class="header-toggler px-md-0 me-md-3 d-xxl-none" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+          <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
@@ -295,17 +296,17 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-316" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-826" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-316" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-826" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-316">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-826">
                         <div class="mb-3">
                           <label class="form-label" for="exampleFormControlInput1">Email address</label>
                           <input class="form-control" id="exampleFormControlInput1" type="email" placeholder="name@example.com">
@@ -315,7 +316,7 @@
                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-316">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-826">
                         <script class="language-markup" type="text/plain">
                           <div class="mb-3">
                             <label class="form-label" for="exampleFormControlInput1">Email address</label>
@@ -339,22 +340,22 @@
                   <p class="text-medium-emphasis small">Set heights using classes like <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-934" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1287" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-934" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1287" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-934">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1287">
                         <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
                         <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
                         <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-934">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1287">
                         <script class="language-markup" type="text/plain">
                           <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
                           <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
@@ -373,21 +374,21 @@
                   <p class="text-medium-emphasis small">Add the <code>disabled</code> boolean attribute on an input to give it a grayed out appearance and remove pointer events.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-496" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1217" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-496" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1217" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-496">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1217">
                         <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
                         <input class="form-control" type="text" placeholder="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-496">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1217">
                         <script class="language-markup" type="text/plain">
                           <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
                           <input class="form-control" type="text" placeholder="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
@@ -405,20 +406,20 @@
                   <p class="text-medium-emphasis small">Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1153" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-571" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1153" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-571" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1153">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-571">
                         <input class="form-control" type="text" placeholder="Readonly input here..." aria-label="readonly input example" readonly>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1153">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-571">
                         <script class="language-markup" type="text/plain">
                           <input class="form-control" type="text" placeholder="Readonly input here..." aria-label="readonly input example" readonly>
                         </script>
@@ -435,17 +436,17 @@
                   <p class="text-medium-emphasis small">If you want to have <code>&lt;input readonly&gt;</code> elements in your form styled as plain text, use the <code>.form-control-plaintext</code> class to remove the default form field styling and preserve the correct margin and padding.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1202" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-462" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1202" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-462" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1202">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-462">
                         <div class="mb-3 row">
                           <label class="col-sm-2 col-form-label" for="staticEmail">Email</label>
                           <div class="col-sm-10">
@@ -459,7 +460,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1202">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-462">
                         <script class="language-markup" type="text/plain">
                           <div class="mb-3 row">
                             <label class="col-sm-2 col-form-label" for="staticEmail">Email</label>
@@ -479,17 +480,17 @@
                   </div>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-211" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1255" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-211" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1255" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-211">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1255">
                         <form class="row g-3">
                           <div class="col-auto">
                             <label class="visually-hidden" for="staticEmail2">Email</label>
@@ -503,7 +504,7 @@
                         </form>
                         <button class="btn btn-primary mb-3" type="submit">Confirm identity</button>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-211">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1255">
                         <script class="language-markup" type="text/plain">
                           <form class="row g-3">
                             <div class="col-auto">
@@ -530,17 +531,17 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-191" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1239" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-191" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1239" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-191">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1239">
                         <div class="mb-3">
                           <label class="form-label" for="formFile">Default file input example</label>
                           <input class="form-control" id="formFile" type="file">
@@ -562,7 +563,7 @@
                           <input class="form-control form-control-lg" id="formFileLg" type="file">
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-191">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1239">
                         <script class="language-markup" type="text/plain">
                           <div class="mb-3">
                             <label class="form-label" for="formFile">Default file input example</label>
@@ -597,21 +598,21 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-589" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1127" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-589" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1127" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-589">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1127">
                         <label class="form-label" for="exampleColorInput">Color picker</label>
                         <input class="form-control form-control-color" id="exampleColorInput" type="color" value="#563d7c" title="Choose your color">
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-589">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1127">
                         <script class="language-markup" type="text/plain">
                           <label class="form-label" for="exampleColorInput">Color picker</label>
                           <input class="form-control form-control-color" id="exampleColorInput" type="color" value="#563d7c" title="Choose your color">
@@ -630,17 +631,17 @@
                   <p class="text-medium-emphasis small">Learn more about <a href="https://caniuse.com/datalist">support for datalist elements</a>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-320" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-64" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-320" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-64" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-320">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-64">
                         <label class="form-label" for="exampleDataList">Datalist example</label>
                         <input class="form-control" id="exampleDataList" list="datalistOptions" placeholder="Type to search...">
                         <datalist id="datalistOptions">
@@ -651,7 +652,7 @@
                           <option value="Chicago"></option>
                         </datalist>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-320">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-64">
                         <script class="language-markup" type="text/plain">
                           <label class="form-label" for="exampleDataList">Datalist example</label>
                           <input class="form-control" id="exampleDataList" list="datalistOptions" placeholder="Type to search...">

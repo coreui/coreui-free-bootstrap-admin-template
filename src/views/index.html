@@ -37,6 +37,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -178,10 +179,10 @@
                 </svg> Error 500</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+        <li class="nav-item mt-auto"><a class="nav-link" href="docs.html">
             <svg class="nav-icon">
-              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
-            </svg> Download CoreUI</a></li>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-description"></use>
+            </svg> Docs</a></li>
         <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
@@ -193,7 +194,7 @@
     <div class="wrapper d-flex flex-column min-vh-100 bg-light">
       <header class="header header-sticky mb-4">
         <div class="container-fluid">
-          <button class="header-toggler px-md-0 me-md-3 d-xxl-none" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+          <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
@@ -284,8 +285,11 @@
               <div class="card mb-4 text-white bg-primary">
                 <div class="card-body pb-0 d-flex justify-content-between align-items-start">
                   <div>
-                    <div class="fs-4 fw-semibold">9.823</div>
-                    <div>Members online</div>
+                    <div class="fs-4 fw-semibold">26K <span class="fs-6 fw-normal">(-12.4%
+                        <svg class="icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom"></use>
+                        </svg>)</span></div>
+                    <div>Users</div>
                   </div>
                   <div class="dropdown">
                     <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -306,8 +310,11 @@
               <div class="card mb-4 text-white bg-info">
                 <div class="card-body pb-0 d-flex justify-content-between align-items-start">
                   <div>
-                    <div class="fs-4 fw-semibold">9.823</div>
-                    <div>Members online</div>
+                    <div class="fs-4 fw-semibold">$6.200 <span class="fs-6 fw-normal">(40.9%
+                        <svg class="icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top"></use>
+                        </svg>)</span></div>
+                    <div>Income</div>
                   </div>
                   <div class="dropdown">
                     <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -328,8 +335,11 @@
               <div class="card mb-4 text-white bg-warning">
                 <div class="card-body pb-0 d-flex justify-content-between align-items-start">
                   <div>
-                    <div class="fs-4 fw-semibold">9.823</div>
-                    <div>Members online</div>
+                    <div class="fs-4 fw-semibold">2.49% <span class="fs-6 fw-normal">(84.7%
+                        <svg class="icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top"></use>
+                        </svg>)</span></div>
+                    <div>Conversion Rate</div>
                   </div>
                   <div class="dropdown">
                     <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -350,8 +360,11 @@
               <div class="card mb-4 text-white bg-danger">
                 <div class="card-body pb-0 d-flex justify-content-between align-items-start">
                   <div>
-                    <div class="fs-4 fw-semibold">9.823</div>
-                    <div>Members online</div>
+                    <div class="fs-4 fw-semibold">44K <span class="fs-6 fw-normal">(-23.6%
+                        <svg class="icon">
+                          <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom"></use>
+                        </svg>)</span></div>
+                    <div>Sessions</div>
                   </div>
                   <div class="dropdown">
                     <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -375,7 +388,7 @@
               <div class="d-flex justify-content-between">
                 <div>
                   <h4 class="card-title mb-0">Traffic</h4>
-                  <div class="small text-medium-emphasis">January 2021</div>
+                  <div class="small text-medium-emphasis">January - July 2021</div>
                 </div>
                 <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with buttons">
                   <div class="btn-group btn-group-toggle mx-3" data-coreui-toggle="buttons">
@@ -398,36 +411,36 @@
               </div>
             </div>
             <div class="card-footer">
-              <div class="row text-center">
-                <div class="col-sm-12 col-md mb-sm-2 mb-0">
+              <div class="row row-cols-1 row-cols-md-5 text-center">
+                <div class="col mb-sm-2 mb-0">
                   <div class="text-medium-emphasis">Visits</div>
                   <div class="fw-semibold">29.703 Users (40%)</div>
                   <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md mb-sm-2 mb-0">
+                <div class="col mb-sm-2 mb-0">
                   <div class="text-medium-emphasis">Unique</div>
                   <div class="fw-semibold">24.093 Users (20%)</div>
                   <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md mb-sm-2 mb-0">
+                <div class="col mb-sm-2 mb-0">
                   <div class="text-medium-emphasis">Pageviews</div>
                   <div class="fw-semibold">78.706 Views (60%)</div>
                   <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md mb-sm-2 mb-0">
+                <div class="col mb-sm-2 mb-0">
                   <div class="text-medium-emphasis">New Users</div>
                   <div class="fw-semibold">22.123 Users (80%)</div>
                   <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md mb-sm-2 mb-0">
+                <div class="col mb-sm-2 mb-0">
                   <div class="text-medium-emphasis">Bounce Rate</div>
                   <div class="fw-semibold">40.15%</div>
                   <div class="progress progress-thin mt-2">
@@ -442,7 +455,7 @@
             <div class="col-sm-6 col-lg-4">
               <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
                 <div class="card-header position-relative d-flex justify-content-center align-items-center">
-                  <svg class="icon icon-3xl text-white my-4">
+                  <svg class="icon text-white my-4" style="height: 3rem; width: 3rem;">
                     <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
                   </svg>
                   <div class="chart-wrapper position-absolute top-0 start-0 w-100 h-100">
@@ -466,7 +479,7 @@
             <div class="col-sm-6 col-lg-4">
               <div class="card mb-4" style="--cui-card-cap-bg: #00aced">
                 <div class="card-header position-relative d-flex justify-content-center align-items-center">
-                  <svg class="icon icon-3xl text-white my-4">
+                  <svg class="icon text-white my-4" style="height: 3rem; width: 3rem;">
                     <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
                   </svg>
                   <div class="chart-wrapper position-absolute top-0 start-0 w-100 h-100">
@@ -490,7 +503,7 @@
             <div class="col-sm-6 col-lg-4">
               <div class="card mb-4" style="--cui-card-cap-bg: #4875b4">
                 <div class="card-header position-relative d-flex justify-content-center align-items-center">
-                  <svg class="icon icon-3xl text-white my-4">
+                  <svg class="icon text-white my-4" style="height: 3rem; width: 3rem;">
                     <use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
                   </svg>
                   <div class="chart-wrapper position-absolute top-0 start-0 w-100 h-100">

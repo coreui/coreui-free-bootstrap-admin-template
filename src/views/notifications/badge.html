@@ -37,6 +37,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -178,10 +179,10 @@
                 </svg> Error 500</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+        <li class="nav-item mt-auto"><a class="nav-link" href="docs.html">
             <svg class="nav-icon">
-              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
-            </svg> Download CoreUI</a></li>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-description"></use>
+            </svg> Docs</a></li>
         <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
@@ -193,7 +194,7 @@
     <div class="wrapper d-flex flex-column min-vh-100 bg-light">
       <header class="header header-sticky mb-4">
         <div class="container-fluid">
-          <button class="header-toggler px-md-0 me-md-3 d-xxl-none" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+          <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
@@ -296,17 +297,17 @@
                   <p class="text-medium-emphasis small">Bootstrap badge scale to suit the size of the parent element by using relative font sizing and <code>em</code> units.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-411" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-689" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-411" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-689" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-411">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-689">
                         <h1>Example heading<span class="badge bg-secondary">New</span></h1>
                         <h2>Example heading<span class="badge bg-secondary">New</span></h2>
                         <h3>Example heading<span class="badge bg-secondary">New</span></h3>
@@ -314,7 +315,7 @@
                         <h5>Example heading<span class="badge bg-secondary">New</span></h5>
                         <h6>Example heading<span class="badge bg-secondary">New</span></h6>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-411">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-689">
                         <script class="language-markup" type="text/plain">
                           <h1>Example heading<span class="badge bg-secondary">New</span></h1>
                           <h2>Example heading<span class="badge bg-secondary">New</span></h2>
@@ -329,20 +330,20 @@
                   <p class="text-medium-emphasis small">Badges can be used as part of links or buttons to provide a counter.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-99" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-143" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-99" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-143" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-99">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-143">
                         <button class="btn btn-primary" type="button">Notifications<span class="badge bg-secondary">4</span></button>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-99">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-143">
                         <script class="language-markup" type="text/plain">
                           <button class="btn btn-primary" type="button">Notifications<span class="badge bg-secondary">4</span></button>
                         </script>
@@ -359,17 +360,17 @@
                   <p class="text-medium-emphasis small">Add any of the below-mentioned classes to modify the presentation of a badge. Please note that when using Bootstrap’s default <code>.bg-light</code>, you’ll likely need a text color utility like <code>.text-dark</code> for proper styling. This is because background utilities do not set anything but <code>background-color</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-147" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-315" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-147" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-315" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-147"><span class="badge me-1 bg-primary">Primary</span>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-315"><span class="badge me-1 bg-primary">Primary</span>
 <span class="badge me-1 bg-secondary">Secondary</span>
 <span class="badge me-1 bg-success">Success</span>
 <span class="badge me-1 bg-danger">Danger</span>
@@ -378,7 +379,7 @@
 <span class="badge me-1 bg-light text-dark">Light</span>
 <span class="badge me-1 bg-dark">Dark</span>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-147">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-315">
                         <script class="language-markup" type="text/plain"><span class="badge me-1 bg-primary">Primary</span>
 <span class="badge me-1 bg-secondary">Secondary</span>
 <span class="badge me-1 bg-success">Success</span>
@@ -399,17 +400,17 @@
                   <p class="text-medium-emphasis small">Apply the <code>.rounded-pill</code> modifier class to make badges rounded.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1296" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1094" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1296" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1094" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1296"><span class="badge me-1 rounded-pill bg-primary">Primary</span>
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1094"><span class="badge me-1 rounded-pill bg-primary">Primary</span>
 <span class="badge me-1 rounded-pill bg-secondary">Secondary</span>
 <span class="badge me-1 rounded-pill bg-success">Success</span>
 <span class="badge me-1 rounded-pill bg-danger">Danger</span>
@@ -418,7 +419,7 @@
 <span class="badge me-1 rounded-pill bg-light text-dark">Light</span>
 <span class="badge me-1 rounded-pill bg-dark">Dark</span>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1296">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1094">
                         <script class="language-markup" type="text/plain"><span class="badge me-1 rounded-pill bg-primary">Primary</span>
 <span class="badge me-1 rounded-pill bg-secondary">Secondary</span>
 <span class="badge me-1 rounded-pill bg-success">Success</span>

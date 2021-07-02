@@ -37,6 +37,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -178,10 +179,10 @@
                 </svg> Error 500</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+        <li class="nav-item mt-auto"><a class="nav-link" href="docs.html">
             <svg class="nav-icon">
-              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
-            </svg> Download CoreUI</a></li>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-description"></use>
+            </svg> Docs</a></li>
         <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
@@ -193,7 +194,7 @@
     <div class="wrapper d-flex flex-column min-vh-100 bg-light">
       <header class="header header-sticky mb-4">
         <div class="container-fluid">
-          <button class="header-toggler px-md-0 me-md-3 d-xxl-none" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+          <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
@@ -294,17 +295,17 @@
               <p class="text-medium-emphasis small">Scroll the area below the navbar and watch the active class change. The dropdown items will be highlighted as well.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-266" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-772" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-266" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-772" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-266">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-772">
                     <nav class="navbar navbar-light bg-light px-3" id="navbar-example2"><a class="navbar-brand" href="#">Navbar</a>
                       <ul class="nav nav-pills">
                         <li class="nav-item"><a class="nav-link active" href="#fat">@fat</a></li>
@@ -335,7 +336,7 @@
                       <p>And some more placeholder content, for good measure.</p>
                     </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-266">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-772">
                     <script class="language-markup" type="text/plain">
                       <nav class="navbar navbar-light bg-light px-3" id="navbar-example2"><a class="navbar-brand" href="#">Navbar</a>
                         <ul class="nav nav-pills">
@@ -378,17 +379,17 @@
               <p class="text-medium-emphasis small">Scrollspy also works with nested <code>.nav</code>s. If a nested <code>.nav</code> is <code>.active</code>, its parents will also be <code>.active</code>. Scroll the area next to the navbar and watch the active class change.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1209" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1023" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1209" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1023" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1209">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1023">
                     <div class="row">
                       <div class="col-4">
                         <nav class="navbar navbar-light bg-light flex-column" id="navbar-example3"><a class="navbar-brand" href="#">Navbar</a>
@@ -418,7 +419,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-1209">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-1023">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-4">
@@ -460,17 +461,17 @@
               <p class="text-medium-emphasis small">Scrollspy also works with <code>.list-group</code>s. Scroll the area next to the list group and watch the active class change.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1206" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-374" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1206" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-374" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1206">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-374">
                     <div class="row">
                       <div class="col-4">
                         <div class="list-group" id="list-example"><a class="list-group-item list-group-item-action active" href="#list-item-1">Item 1</a><a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a><a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a><a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a></div>
@@ -489,7 +490,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-1206">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-374">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-4">

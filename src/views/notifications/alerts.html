@@ -37,6 +37,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
@@ -178,10 +179,10 @@
                 </svg> Error 500</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+        <li class="nav-item mt-auto"><a class="nav-link" href="docs.html">
             <svg class="nav-icon">
-              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
-            </svg> Download CoreUI</a></li>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-description"></use>
+            </svg> Docs</a></li>
         <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
@@ -193,7 +194,7 @@
     <div class="wrapper d-flex flex-column min-vh-100 bg-light">
       <header class="header header-sticky mb-4">
         <div class="container-fluid">
-          <button class="header-toggler px-md-0 me-md-3 d-xxl-none" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+          <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
@@ -296,17 +297,17 @@
                   <p class="text-medium-emphasis small">Bootstrap alert is prepared for any length of text, as well as an optional close button. For a styling, use one of the <strong>required</strong> contextual classes (e.g.,<code>.alert-success</code>).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1080" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-801" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1080" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-801" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1080">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-801">
                         <div class="alert alert-primary" role="alert">This is a primary alert—check it out!</div>
                         <div class="alert alert-secondary" role="alert">This is a secondary alert—check it out!</div>
                         <div class="alert alert-success" role="alert">This is a success alert—check it out!</div>
@@ -316,7 +317,7 @@
                         <div class="alert alert-light" role="alert">This is a light alert—check it out!</div>
                         <div class="alert alert-dark" role="alert">This is a dark alert—check it out!</div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1080">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-801">
                         <script class="language-markup" type="text/plain">
                           <div class="alert alert-primary" role="alert">This is a primary alert—check it out!</div>
                           <div class="alert alert-secondary" role="alert">This is a secondary alert—check it out!</div>
@@ -340,17 +341,17 @@
                   <p class="text-medium-emphasis small">Use the <code>.alert-link</code> utility class to immediately give matching colored links inside any alert.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-158" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-670" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-158" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-670" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-158">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-670">
                         <div class="alert alert-primary" role="alert">This is a primary alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.</div>
                         <div class="alert alert-secondary" role="alert">This is a secondary alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.</div>
                         <div class="alert alert-success" role="alert">This is a success alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.</div>
@@ -360,7 +361,7 @@
                         <div class="alert alert-light" role="alert">This is a light alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.</div>
                         <div class="alert alert-dark" role="alert">This is a dark alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.</div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-158">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-670">
                         <script class="language-markup" type="text/plain">
                           <div class="alert alert-primary" role="alert">This is a primary alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.</div>
                           <div class="alert alert-secondary" role="alert">This is a secondary alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.</div>
@@ -388,17 +389,17 @@
                   <p class="text-medium-emphasis small">Alert can also incorporate supplementary HTML elements like heading, paragraph, and divider.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-27" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-154" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-27" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-154" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-27">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-154">
                         <div class="alert alert-success" role="alert">
                           <h4 class="alert-heading">Well done!</h4>
                           <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
@@ -406,7 +407,7 @@
                           <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-27">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-154">
                         <script class="language-markup" type="text/plain">
                           <div class="alert alert-success" role="alert">
                             <h4 class="alert-heading">Well done!</h4>
@@ -429,23 +430,23 @@
                   <p class="text-medium-emphasis small">Using the JavaScript plugin, it’s possible to remove any alert.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-930" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-649" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-930" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-649" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-930">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-649">
                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
                           <div class="fw-semibold">Holy guacamole!</div> You should check in on some of those fields below.
                           <button class="btn-close" type="button" data-coreui-dismiss="alert" aria-label="Close"></button>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-930">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-649">
                         <script class="language-markup" type="text/plain">
                           <div class="alert alert-warning alert-dismissible fade show" role="alert">
                             <div class="fw-semibold">Holy guacamole!</div> You should check in on some of those fields below.
