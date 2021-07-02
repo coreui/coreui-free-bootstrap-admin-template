@@ -27,7 +27,6 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 * [Versioning](#versioning)
 * [Creators](#creators)
 * [Community](#community)
-* [Community Projects](#community-projects)
 * [License](#license)
 * [Support CoreUI Development](#support-coreui-development)
 
@@ -53,9 +52,9 @@ CoreUI is built on top of Bootstrap 4 and supports popular frameworks.
 
 ## CoreUI PRO Bootstrap Admin Templates
 
-| Default Theme | Legacy Theme | Dark Layout |
+| Default Theme | Light Theme | Dark Theme |
 | --- | --- | --- |
-| [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_1_default.png)](https://coreui.io/pro/) | [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_1_legacy.png)](https://coreui.io/pro/)| [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_1_dark.png)](https://coreui.io/pro/)
+| [![CoreUI Pro Bootstrap Admin Template](https://coreui.io//images/mockups/laptop_4_bootstrap_default.png)](https://coreui.io/pro/) | [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/laptop_4_bootstrap_light.png)](https://coreui.io/pro/)| [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/laptop_4_bootstrap_dark.png)](https://coreui.io/pro/)
 
 ## CoreUI Icons (522 Free icons) - Premium designed free icon set with marks in SVG, Webfont and raster formats.
 
@@ -85,7 +84,7 @@ $ npm install
 
 ``` bash
 # serve with hot reload at localhost:3000.
-$ npm run serve
+$ npm start
 
 # build for production with minification
 $ npm run build
@@ -161,13 +160,7 @@ See [the Releases section of our project](https://github.com/coreui/coreui-free-
 Get updates on CoreUI's development and chat with the project maintainers and community members.
 
 - Follow [@core_ui on Twitter](https://twitter.com/core_ui).
-- Read and subscribe to [CoreUI Blog](https://coreui.io/blog/).
-
-### Community Projects
-
-Some of projects created by community but not maintained by CoreUI team.
-
-* [NuxtJS + Vue CoreUI](https://github.com/muhibbudins/nuxt-coreui)
+- Read and subscribe to [CoreUI Blog](https://blog.coreui.io/).
 
 ## Copyright and license
 
