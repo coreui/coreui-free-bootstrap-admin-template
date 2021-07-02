@@ -20,8 +20,12 @@ block view
       .card.mb-4.text-white.bg-primary
         .card-body.pb-0.d-flex.justify-content-between.align-items-start
           div
-            .fs-4.fw-semibold 9.823
-            div Members online
+            .fs-4.fw-semibold 26K 
+              span.fs-6.fw-normal (
+                svg.icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom")
+                | 12.4%)
+            div Users
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
               svg.icon
@@ -38,8 +42,12 @@ block view
       .card.mb-4.text-white.bg-info
         .card-body.pb-0.d-flex.justify-content-between.align-items-start
           div
-            .fs-4.fw-semibold 9.823
-            div Members online
+            .fs-4.fw-semibold $6.200 
+              span.fs-6.fw-normal (
+                svg.icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top")
+                | 40.9%)
+            div Income
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
               svg.icon
@@ -55,8 +63,12 @@ block view
       .card.mb-4.text-white.bg-warning
         .card-body.pb-0.d-flex.justify-content-between.align-items-start
           div
-            .fs-4.fw-semibold 9.823
-            div Members online
+            .fs-4.fw-semibold 2.49% 
+              span.fs-6.fw-normal (
+                svg.icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top")
+                | 84.7%)
+            div Conversion Rate
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
               svg.icon
@@ -72,8 +84,12 @@ block view
       .card.mb-4.text-white.bg-danger
         .card-body.pb-0.d-flex.justify-content-between.align-items-start
           div
-            .fs-4.fw-semibold 9.823
-            div Members online
+            .fs-4.fw-semibold 44K 
+              span.fs-6.fw-normal (
+                svg.icon
+                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom")
+                | 23.6%)
+            div Sessions
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
               svg.icon
@@ -91,7 +107,7 @@ block view
       .d-flex.justify-content-between
         div
           h4.card-title.mb-0 Traffic
-          .small.text-medium-emphasis January 2021
+          .small.text-medium-emphasis January - July 2021
         .btn-toolbar.d-none.d-md-block(role='toolbar' aria-label='Toolbar with buttons')
           .btn-group.btn-group-toggle.mx-3(data-coreui-toggle='buttons')
             input.btn-check#option1(type='radio', name='options', autocomplete='off')
@@ -140,7 +156,7 @@ block view
     .col-sm-6.col-lg-4
       .card.mb-4(style='--cui-card-cap-bg: #3b5998')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
-          svg.icon.icon-3xl.text-white.my-4
+          svg.icon.text-white.my-4(style='height: 3rem; width: 3rem;')
             use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
           .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
             canvas#social-box-chart-1(height='90')
@@ -156,7 +172,7 @@ block view
     .col-sm-6.col-lg-4
       .card.mb-4(style='--cui-card-cap-bg: #00aced')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
-          svg.icon.icon-3xl.text-white.my-4
+          svg.icon.text-white.my-4(style='height: 3rem; width: 3rem;')
             use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
           .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
             canvas#social-box-chart-2(height='90')
@@ -172,7 +188,7 @@ block view
     .col-sm-6.col-lg-4
       .card.mb-4(style='--cui-card-cap-bg: #4875b4')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
-          svg.icon.icon-3xl.text-white.my-4
+          svg.icon.text-white.my-4(style='height: 3rem; width: 3rem;')
             use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
           .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
             canvas#social-box-chart-3(height='90')

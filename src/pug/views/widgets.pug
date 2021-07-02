@@ -20,11 +20,15 @@ block view
       +example()
         .row
           .col-sm-6.col-lg-3
-            .card.text-white.bg-primary
+            .card.mb-4.text-white.bg-primary
               .card-body.pb-0.d-flex.justify-content-between.align-items-start
                 div
-                  .fs-4.fw-semibold 9.823
-                  div Members online
+                  .fs-4.fw-semibold 26K 
+                    span.fs-6.fw-normal (
+                      svg.icon
+                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom")
+                      | 12.4%)
+                  div Users
                 .dropdown
                   button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                     svg.icon
@@ -38,16 +42,19 @@ block view
                 canvas#card-chart1.chart(height='70')
           // /.col
           .col-sm-6.col-lg-3
-            .card.text-white.bg-info
+            .card.mb-4.text-white.bg-info
               .card-body.pb-0.d-flex.justify-content-between.align-items-start
                 div
-                  .fs-4.fw-semibold 9.823
-                  div Members online
+                  .fs-4.fw-semibold $6.200 
+                    span.fs-6.fw-normal (
+                      svg.icon
+                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top")
+                      | 40.9%)
+                  div Income
                 .dropdown
                   button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                     svg.icon
                       use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
-                      |
                   .dropdown-menu.dropdown-menu-end
                     a.dropdown-item(href='#') Action
                     a.dropdown-item(href='#') Another action
@@ -56,16 +63,19 @@ block view
                 canvas#card-chart2.chart(height='70')
           // /.col
           .col-sm-6.col-lg-3
-            .card.text-white.bg-warning
+            .card.mb-4.text-white.bg-warning
               .card-body.pb-0.d-flex.justify-content-between.align-items-start
                 div
-                  .fs-4.fw-semibold 9.823
-                  div Members online
+                  .fs-4.fw-semibold 2.49% 
+                    span.fs-6.fw-normal (
+                      svg.icon
+                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top")
+                      | 84.7%)
+                  div Conversion Rate
                 .dropdown
                   button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                     svg.icon
                       use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
-                      |
                   .dropdown-menu.dropdown-menu-end
                     a.dropdown-item(href='#') Action
                     a.dropdown-item(href='#') Another action
@@ -74,16 +84,19 @@ block view
                 canvas#card-chart3.chart(height='70')
           // /.col
           .col-sm-6.col-lg-3
-            .card.text-white.bg-danger
+            .card.mb-4.text-white.bg-danger
               .card-body.pb-0.d-flex.justify-content-between.align-items-start
                 div
-                  .fs-4.fw-semibold 9.823
-                  div Members online
+                  .fs-4.fw-semibold 44K 
+                    span.fs-6.fw-normal (
+                      svg.icon
+                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom")
+                      | 23.6%)
+                  div Sessions
                 .dropdown
                   button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                     svg.icon
                       use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
-                      |
                   .dropdown-menu.dropdown-menu-end
                     a.dropdown-item(href='#') Action
                     a.dropdown-item(href='#') Another action
@@ -436,7 +449,7 @@ block view
           .col-sm-6.col-lg-4
             .card(style='--cui-card-cap-bg: #3b5998')
               .card-header.position-relative.d-flex.justify-content-center.align-items-center
-                svg.icon.icon-3xl.text-white.my-4
+                svg.icon.text-white.my-4(style='height: 3rem; width: 3rem;')
                   use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
                   |
                 .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
@@ -453,7 +466,7 @@ block view
           .col-sm-6.col-lg-4
             .card(style='--cui-card-cap-bg: #00aced')
               .card-header.position-relative.d-flex.justify-content-center.align-items-center
-                svg.icon.icon-3xl.text-white.my-4
+                svg.icon.text-white.my-4(style='height: 3rem; width: 3rem;')
                   use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
                   |
                 .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
@@ -470,7 +483,7 @@ block view
           .col-sm-6.col-lg-4
             .card(style='--cui-card-cap-bg: #4875b4')
               .card-header.position-relative.d-flex.justify-content-center.align-items-center
-                svg.icon.icon-3xl.text-white.my-4
+                svg.icon.text-white.my-4(style='height: 3rem; width: 3rem;')
                   use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
                   |
                 .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
@@ -490,7 +503,7 @@ block view
           .card
             .card-body
               .text-medium-emphasis.text-end.mb-4
-                svg.icon.icon-2xl
+                svg.icon(style='height: 2rem; width: 2rem;')
                   use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
                   |
               .fs-4.fw-semibold 87.500
@@ -500,7 +513,7 @@ block view
           .card
             .card-body
               .text-medium-emphasis.text-end.mb-4
-                svg.icon.icon-2xl
+                svg.icon(style='height: 2rem; width: 2rem;')
                   use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
                   |
               .fs-4.fw-semibold 385
@@ -510,7 +523,7 @@ block view
           .card
             .card-body
               .text-medium-emphasis.text-end.mb-4
-                svg.icon.icon-2xl
+                svg.icon(style='height: 2rem; width: 2rem;')
                   use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
                   |
               .fs-4.fw-semibold 1238
@@ -520,7 +533,7 @@ block view
           .card
             .card-body
               .text-medium-emphasis.text-end.mb-4
-                svg.icon.icon-2xl
+                svg.icon(style='height: 2rem; width: 2rem;')
                   use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
                   |
               .fs-4.fw-semibold 28%
@@ -530,7 +543,7 @@ block view
           .card
             .card-body
               .text-medium-emphasis.text-end.mb-4
-                svg.icon.icon-2xl
+                svg.icon(style='height: 2rem; width: 2rem;')
                   use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
                   |
               .fs-4.fw-semibold 5:34:11
@@ -543,7 +556,7 @@ block view
             .card
               .card-body
                 .text-medium-emphasis.text-end.mb-4
-                  svg.icon.icon-2xl
+                  svg.icon(style='height: 2rem; width: 2rem;')
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
                     |
                 .fs-4.fw-semibold 87.500
@@ -555,7 +568,7 @@ block view
             .card
               .card-body
                 .text-medium-emphasis.text-end.mb-4
-                    svg.icon.icon-2xl
+                    svg.icon(style='height: 2rem; width: 2rem;')
                       use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
                       |
                 .fs-4.fw-semibold 385
@@ -567,7 +580,7 @@ block view
             .card
               .card-body
                 .text-medium-emphasis.text-end.mb-4
-                  svg.icon.icon-2xl
+                  svg.icon(style='height: 2rem; width: 2rem;')
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
                     |
                 .fs-4.fw-semibold 1238
@@ -579,7 +592,7 @@ block view
             .card
               .card-body
                 .text-medium-emphasis.text-end.mb-4
-                  svg.icon.icon-2xl
+                  svg.icon(style='height: 2rem; width: 2rem;')
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
                     |
                 .fs-4.fw-semibold 28%
@@ -591,7 +604,7 @@ block view
             .card
               .card-body
                 .text-medium-emphasis.text-end.mb-4
-                  svg.icon.icon-2xl
+                  svg.icon(style='height: 2rem; width: 2rem;')
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
                     |
                 .fs-4.fw-semibold 5:34:11
@@ -603,7 +616,7 @@ block view
             .card
               .card-body
                 .text-medium-emphasis.text-end.mb-4
-                  svg.icon.icon-2xl
+                  svg.icon(style='height: 2rem; width: 2rem;')
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech")
                     |
                 .fs-4.fw-semibold 972
@@ -618,7 +631,7 @@ block view
             .card.text-white.bg-info
               .card-body
                 .text-medium-emphasis-inverse.text-end.mb-4
-                  svg.icon.icon-2xl
+                  svg.icon(style='height: 2rem; width: 2rem;')
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
                     |
                 .fs-4.fw-semibold 87.500
@@ -630,7 +643,7 @@ block view
             .card.text-white.bg-success
               .card-body
                 .text-medium-emphasis-inverse.text-end.mb-4
-                  svg.icon.icon-2xl
+                  svg.icon(style='height: 2rem; width: 2rem;')
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
                     |
                 .fs-4.fw-semibold 385
@@ -642,7 +655,7 @@ block view
             .card.text-white.bg-warning
               .card-body
                 .text-medium-emphasis-inverse.text-end.mb-4
-                  svg.icon.icon-2xl
+                  svg.icon(style='height: 2rem; width: 2rem;')
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
                     |
                 .fs-4.fw-semibold 1238
@@ -654,7 +667,7 @@ block view
             .card.text-white.bg-primary
               .card-body
                 .text-medium-emphasis-inverse.text-end.mb-4
-                  svg.icon.icon-2xl
+                  svg.icon(style='height: 2rem; width: 2rem;')
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
                     |
                 .fs-4.fw-semibold 28%
@@ -666,7 +679,7 @@ block view
             .card.text-white.bg-danger
               .card-body
                 .text-medium-emphasis-inverse.text-end.mb-4
-                  svg.icon.icon-2xl
+                  svg.icon(style='height: 2rem; width: 2rem;')
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
                     |
                 .fs-4.fw-semibold 5:34:11
@@ -678,7 +691,7 @@ block view
             .card.text-white.bg-info
               .card-body
                 .text-medium-emphasis-inverse.text-end.mb-4
-                  svg.icon.icon-2xl
+                  svg.icon(style='height: 2rem; width: 2rem;')
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech")
                     |
                 .fs-4.fw-semibold 972
