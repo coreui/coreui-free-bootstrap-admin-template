@@ -2,7 +2,6 @@
 'use strict'
 
 const fs = require('fs').promises
-// const glob = require('glob')
 const path = require('path')
 const mkdirp = require('mkdirp')
 const pug = require('pug')
