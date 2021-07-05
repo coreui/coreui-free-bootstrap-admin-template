@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.0.0
+* @version v4.0.1
 * @link https://coreui.io
 * Copyright (c) 2021 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -35,11 +35,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <!-- Vendors styles-->
     <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link href="css/examples.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
@@ -290,16 +293,16 @@ $ cd my-project
 $ npm install</code></pre>
               <h2 class="mt-5">Usage </h2>
               <h3 id="tooling-setup">Tooling setup</h3>
-              <p>CoreUI Admin Template uses <a href="https://docs.npmjs.com/misc/scripts/">npm scripts</a> for its build system. Our <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/v4.0.0/package.json">package.json</a> includes convenient methods for working with the framework, including compiling code, running tests, and more.</p>
+              <p>CoreUI Admin Template uses <a href="https://docs.npmjs.com/misc/scripts/">npm scripts</a> for its build system. Our <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/v4.0.1/package.json">package.json</a> includes convenient methods for working with the framework, including compiling code, running tests, and more.</p>
               <p>To use our build system and run template locally, you’ll need a copy of CoreUI’s source files and Node. Follow these steps and you should be ready to rock:</p>
               <ol>
                 <li><a href="https://nodejs.org/en/download/">Download and install Node.js</a>, which we use to manage our dependencies.</li>
-                <li>Either <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/archive/v4.0.0.zip">download CoreUI’s sources</a> or fork <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template">CoreUI’s repository</a>.</li>
-                <li>Navigate to the root <code>/coreui-free-bootstrap-admin-template</code> directory and run <code>npm install</code> to install our local dependencies listed in <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/v4.0.0/package.json">package.json</a>.</li>
+                <li>Either <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/archive/v4.0.1.zip">download CoreUI’s sources</a> or fork <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template">CoreUI’s repository</a>.</li>
+                <li>Navigate to the root <code>/coreui-free-bootstrap-admin-template</code> directory and run <code>npm install</code> to install our local dependencies listed in <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/v4.0.1/package.json">package.json</a>.</li>
               </ol>
               <p>When completed, you’ll be able to run the various commands provided from the command line.</p>
               <h2 id="using-npm-scripts">Using npm scripts<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#using-npm-scripts" style="padding-left: 0.375em;"></a></h2>
-              <p>Our <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/v4.0.0/package.json">package.json</a> includes numerous tasks for developing the project. Run <code>npm run</code> to see all the npm scripts in your terminal. <strong>Primary tasks include:</strong></p>
+              <p>Our <a href="https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/v4.0.1/package.json">package.json</a> includes numerous tasks for developing the project. Run <code>npm run</code> to see all the npm scripts in your terminal. <strong>Primary tasks include:</strong></p>
               <table class="table">
                 <thead>
                   <tr>
@@ -362,17 +365,18 @@ $ npm install</code></pre>
         </div>
       </div>
       <footer class="footer">
-        <div><a href="https://coreui.io">CoreUI</a> &copy; 2021 creativeLabs.</div>
-        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> &copy; 2021 creativeLabs.</div>
+        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/bootstrap/ui-components/">CoreUI UI Components</a></div>
       </footer>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
+    <!-- We use those scripts to show code examples, you should remove them in your application.-->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
     <script> 
     </script>
   </body>

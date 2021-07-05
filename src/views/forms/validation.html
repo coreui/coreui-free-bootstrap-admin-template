@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.0.0
+* @version v4.0.1
 * @link https://coreui.io
 * Copyright (c) 2021 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -35,11 +35,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <!-- Vendors styles-->
     <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link href="css/examples.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
@@ -298,21 +301,21 @@
                   <p class="text-medium-emphasis small">Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for <code>&lt;select&gt;</code>s are only available with <code>.form-select</code>, and not <code>.form-control</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-786" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-433" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-786" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-433" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#js-786" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#js-433" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cog"></use>
                           </svg>JavaScript</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-786">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-433">
                         <form class="row g-3 needs-validation" novalidate>
                           <div class="col-md-4">
                             <label class="form-label" for="validationCustom01">First name</label>
@@ -361,7 +364,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-786">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-433">
                         <script class="language-markup" type="text/plain">
                           <form class="row g-3 needs-validation" novalidate>
                             <div class="col-md-4">
@@ -412,7 +415,7 @@
                           </form>
                         </script>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="js-786">
+                      <div class="tab-pane pt-1" role="tabpanel" id="js-433">
                         <script class="language-js" type="text/plain">
                            // Example starter JavaScript for disabling form submissions if there are invalid fields
                            (function () {
@@ -445,17 +448,17 @@
                   <p class="text-medium-emphasis small">While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1018" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-815" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1018" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-815" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1018">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-815">
                         <form class="row g-3">
                           <div class="col-md-4">
                             <label class="form-label" for="validationDefault01">First name</label>
@@ -497,7 +500,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1018">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-815">
                         <script class="language-markup" type="text/plain">
                           <form class="row g-3">
                             <div class="col-md-4">
@@ -555,17 +558,17 @@
                   <p class="text-medium-emphasis small">To fix<a href="https://github.com/twbs/bootstrap/issues/25110">issues with border radii</a>, input groups require an additional <code>.has-validation</code> class.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1130" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-696" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1130" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-696" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1130">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-696">
                         <form class="row g-3">
                           <div class="col-md-4">
                             <label class="form-label" for="validationServer01">First name</label>
@@ -617,7 +620,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1130">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-696">
                         <script class="language-markup" type="text/plain">
                           <form class="row g-3">
                             <div class="col-md-4">
@@ -688,17 +691,17 @@
                   </ul>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1225" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1072" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1225" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1072" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1225">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1072">
                         <form class="was-validated">
                           <div class="mb-3">
                             <label class="form-label" for="validationTextarea">Textarea</label>
@@ -737,7 +740,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1225">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1072">
                         <script class="language-markup" type="text/plain">
                           <form class="was-validated">
                             <div class="mb-3">
@@ -790,17 +793,17 @@
                   <p class="text-medium-emphasis small">If your form layout allows it, you can swap the <code>.{valid|invalid}-feedback</code> classes for <code>.{valid|invalid}-tooltip</code> classes to display validation feedback in a styled tooltip. Be sure to have a parent with <code>position: relative</code> on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1235" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-474" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1235" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-474" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1235">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-474">
                         <!-- TODO: add javascript-->
                         <form class="row g-3 needs-validation" novalidate>
                           <div class="col-md-4 position-relative">
@@ -843,7 +846,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1235">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-474">
                         <script class="language-markup" type="text/plain">
                           <!-- TODO: add javascript-->
                           <form class="row g-3 needs-validation" novalidate>
@@ -897,17 +900,18 @@
         </div>
       </div>
       <footer class="footer">
-        <div><a href="https://coreui.io">CoreUI</a> &copy; 2021 creativeLabs.</div>
-        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> &copy; 2021 creativeLabs.</div>
+        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/bootstrap/ui-components/">CoreUI UI Components</a></div>
       </footer>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
+    <!-- We use those scripts to show code examples, you should remove them in your application.-->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
     <script> 
        // Example starter JavaScript for disabling form submissions if there are invalid fields
        (function () {

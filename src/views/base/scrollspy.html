@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.0.0
+* @version v4.0.1
 * @link https://coreui.io
 * Copyright (c) 2021 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -35,11 +35,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <!-- Vendors styles-->
     <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link href="css/examples.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
@@ -295,17 +298,17 @@
               <p class="text-medium-emphasis small">Scroll the area below the navbar and watch the active class change. The dropdown items will be highlighted as well.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1222" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-690" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1222" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-690" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1222">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-690">
                     <nav class="navbar navbar-light bg-light px-3" id="navbar-example2"><a class="navbar-brand" href="#">Navbar</a>
                       <ul class="nav nav-pills">
                         <li class="nav-item"><a class="nav-link active" href="#fat">@fat</a></li>
@@ -336,7 +339,7 @@
                       <p>And some more placeholder content, for good measure.</p>
                     </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-1222">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-690">
                     <script class="language-markup" type="text/plain">
                       <nav class="navbar navbar-light bg-light px-3" id="navbar-example2"><a class="navbar-brand" href="#">Navbar</a>
                         <ul class="nav nav-pills">
@@ -379,17 +382,17 @@
               <p class="text-medium-emphasis small">Scrollspy also works with nested <code>.nav</code>s. If a nested <code>.nav</code> is <code>.active</code>, its parents will also be <code>.active</code>. Scroll the area next to the navbar and watch the active class change.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-602" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1119" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-602" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1119" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-602">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1119">
                     <div class="row">
                       <div class="col-4">
                         <nav class="navbar navbar-light bg-light flex-column" id="navbar-example3"><a class="navbar-brand" href="#">Navbar</a>
@@ -419,7 +422,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-602">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-1119">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-4">
@@ -461,17 +464,17 @@
               <p class="text-medium-emphasis small">Scrollspy also works with <code>.list-group</code>s. Scroll the area next to the list group and watch the active class change.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-516" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-781" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-516" role="tab">
+                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-781" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-516">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-781">
                     <div class="row">
                       <div class="col-4">
                         <div class="list-group" id="list-example"><a class="list-group-item list-group-item-action active" href="#list-item-1">Item 1</a><a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a><a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a><a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a></div>
@@ -490,7 +493,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-516">
+                  <div class="tab-pane pt-1" role="tabpanel" id="code-781">
                     <script class="language-markup" type="text/plain">
                       <div class="row">
                         <div class="col-4">
@@ -518,17 +521,18 @@
         </div>
       </div>
       <footer class="footer">
-        <div><a href="https://coreui.io">CoreUI</a> &copy; 2021 creativeLabs.</div>
-        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> &copy; 2021 creativeLabs.</div>
+        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/bootstrap/ui-components/">CoreUI UI Components</a></div>
       </footer>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
+    <!-- We use those scripts to show code examples, you should remove them in your application.-->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
     <script> 
     </script>
   </body>

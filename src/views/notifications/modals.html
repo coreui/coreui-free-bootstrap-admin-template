@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.0.0
+* @version v4.0.1
 * @link https://coreui.io
 * Copyright (c) 2021 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -35,11 +35,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <!-- Vendors styles-->
     <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link href="css/examples.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
@@ -297,17 +300,17 @@
                   <p class="text-medium-emphasis small">Below is a <em>static</em> modal example (meaning its <code>position</code> and <code>display</code> have been overridden). Included are the modal header, modal body (required for <code>padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1135" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1241" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1135" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1241" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1135">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1241">
                         <div class="docs-example-modal">
                           <div class="modal" tabindex="-1">
                             <div class="modal-dialog">
@@ -328,7 +331,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1135">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1241">
                         <script class="language-markup" type="text/plain">
                           <div class="docs-example-modal">
                             <div class="modal" tabindex="-1">
@@ -363,17 +366,17 @@
                   <p class="text-medium-emphasis small">Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-827" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-552" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-827" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-552" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-827">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-552">
                         <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
                           <div class="modal-dialog">
                             <div class="modal-content">
@@ -393,7 +396,7 @@
                         </div>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalLive">Launch demo modal</button>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-827">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-552">
                         <script class="language-markup" type="text/plain">
                           <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -427,17 +430,17 @@
                   <p class="text-medium-emphasis small">When backdrop is set to static, the modal will not close when clicking outside it. Click the button below to try it.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-887" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-64" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-887" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-64" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-887">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-64">
                         <div class="modal fade" id="staticBackdropLive" data-coreui-backdrop="static" data-coreui-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLiveLabel" aria-hidden="true">
                           <div class="modal-dialog">
                             <div class="modal-content">
@@ -457,7 +460,7 @@
                         </div>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#staticBackdropLive">Launch static backdrop modal</button>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-887">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-64">
                         <script class="language-markup" type="text/plain">
                           <div class="modal fade" id="staticBackdropLive" data-coreui-backdrop="static" data-coreui-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLiveLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -491,17 +494,17 @@
                   <p class="text-medium-emphasis small">When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-951" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1250" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-951" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1250" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-951">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1250">
                         <div class="modal fade" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                           <div class="modal-dialog">
                             <div class="modal-content">
@@ -528,7 +531,7 @@
                         </div>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalLong">Launch demo modal</button>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-951">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-1250">
                         <script class="language-markup" type="text/plain">
                           <div class="modal fade" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                             <div class="modal-dialog">
@@ -562,17 +565,17 @@
                   <p class="text-medium-emphasis small">You can also create a scrollable modal that allows scroll the modal body by adding <code>.modal-dialog-scrollable</code> to <code>.modal-dialog</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-606" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-648" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-606" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-648" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-606">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-648">
                         <div class="modal fade" id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                           <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
@@ -599,7 +602,7 @@
                         </div>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalScrollable">Launch demo modal</button>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-606">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-648">
                         <script class="language-markup" type="text/plain">
                           <div class="modal fade" id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable">
@@ -640,17 +643,17 @@
                   <p class="text-medium-emphasis small">Add <code>.modal-dialog-centered</code> to  <code>.modal-dialog</code> to vertically center the modal.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-546" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-180" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-546" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-180" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-546">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-180">
                         <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                           <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
@@ -691,7 +694,7 @@
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalCenter">Vertically centered modal</button>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalCenteredScrollable">Vertically centered scrollable modal</button>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-546">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-180">
                         <script class="language-markup" type="text/plain">
                           <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
@@ -746,17 +749,17 @@
                   <p class="text-medium-emphasis small"><a href="https://coreui.io/docs/4.0/components/tooltips/">Tooltips</a> and<a href="https://coreui.io/docs/4.0/components/popovers/">popovers</a> can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-478" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-622" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-478" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-622" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-478">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-622">
                         <div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
                           <div class="modal-dialog">
                             <div class="modal-content">
@@ -782,7 +785,7 @@
                         </div>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalPopovers">Launch demo modal</button>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-478">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-622">
                         <script class="language-markup" type="text/plain">
                           <div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -822,17 +825,17 @@
                   <p class="text-medium-emphasis small">Utilize the Bootstrap grid system within a modal by nesting <code>.container-fluid</code> within the <code>.modal-body</code>. Then, use the normal grid system classes as you would anywhere else.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1224" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-576" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1224" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-576" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1224">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-576">
                         <div class="modal fade" id="gridSystemModal" tabindex="-1" aria-labelledby="gridModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
                             <div class="modal-content">
@@ -872,7 +875,7 @@
                         </div>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#gridSystemModal">Launch demo modal</button>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1224">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-576">
                         <script class="language-markup" type="text/plain">
                           <div class="modal fade" id="gridSystemModal" tabindex="-1" aria-labelledby="gridModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -927,17 +930,17 @@
                   <p class="text-medium-emphasis small">Below is a live demo followed by example HTML and JavaScript. For more information, <a href="#events">read the modal events docs</a> for details on <code>relatedTarget</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-586" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-513" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-586" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-513" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-586">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-513">
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModal" data-coreui-whatever="@mdo">Open modal for @mdo</button>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModal" data-coreui-whatever="@fat">Open modal for @fat</button>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModal" data-coreui-whatever="@getbootstrap">Open modal for @getbootstrap</button>
@@ -968,7 +971,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-586">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-513">
                         <script class="language-markup" type="text/plain">
                           <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModal" data-coreui-whatever="@mdo">Open modal for @mdo</button>
                           <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModal" data-coreui-whatever="@fat">Open modal for @fat</button>
@@ -1045,17 +1048,17 @@
                   <p class="text-medium-emphasis small">Our default modal without modifier class constitutes the “medium” size modal.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1255" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-667" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1255" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-667" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1255">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-667">
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalXl">Extra large modal</button>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalLg">Large modal</button>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalSm">Small modal</button>
@@ -1093,7 +1096,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1255">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-667">
                         <script class="language-markup" type="text/plain">
                           <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalXl">Extra large modal</button>
                           <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalLg">Large modal</button>
@@ -1179,17 +1182,17 @@
                   </table>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1214" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-384" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1214" role="tab">
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-384" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1214">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-384">
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalFullscreen">Full screen</button>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalFullscreenSm">Full screen below sm</button>
                         <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalFullscreenMd">Full screen below md</button>
@@ -1290,7 +1293,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1214">
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-384">
                         <script class="language-markup" type="text/plain">
                           <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalFullscreen">Full screen</button>
                           <button class="btn btn-primary" type="button" data-coreui-toggle="modal" data-coreui-target="#exampleModalFullscreenSm">Full screen below sm</button>
@@ -1402,17 +1405,18 @@
         </div>
       </div>
       <footer class="footer">
-        <div><a href="https://coreui.io">CoreUI</a> &copy; 2021 creativeLabs.</div>
-        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> &copy; 2021 creativeLabs.</div>
+        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/bootstrap/ui-components/">CoreUI UI Components</a></div>
       </footer>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
+    <!-- We use those scripts to show code examples, you should remove them in your application.-->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
     <!-- Plugins and scripts required by this view-->
     <script src="js/popovers.js"></script>
     <script src="js/tooltips.js"></script>
