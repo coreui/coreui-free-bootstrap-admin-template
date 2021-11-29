@@ -11,13 +11,13 @@ const globby = require('globby')
 
 // These are the filetypes we only care about replacing the version
 const GLOB = [
-  '**/*.pug'
+  '**/*.pug',
 ]
 
 const SRC = 'src/pug/views/'
 
 const GLOBBY_OPTIONS = {
-  cwd: path.join(__dirname, '..', SRC)
+  cwd: path.join(__dirname, '..', SRC),
 }
 
 const compile = (filename, basedir) => {
@@ -34,10 +34,10 @@ const compile = (filename, basedir) => {
 
   const fn = pug.compileFile(filename, {
     basedir: './pug/',
-    pretty: true
+    pretty: true,
   })
   const html = fn({
-    base: base(levels)
+    base: base(levels),
   })
   return html
 }

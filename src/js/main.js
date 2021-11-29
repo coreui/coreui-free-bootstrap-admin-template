@@ -15,10 +15,9 @@ Chart.defaults.plugins.tooltip.position = 'nearest'
 Chart.defaults.plugins.tooltip.external = coreui.ChartJS.customTooltips
 Chart.defaults.defaultFontColor = '#646470'
 
-const random = (min, max) => {
+const random = (min, max) =>
   // eslint-disable-next-line no-mixed-operators
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
+  Math.floor(Math.random() * (max - min + 1) + min)
 
 // eslint-disable-next-line no-unused-vars
 const cardChart1 = new Chart(document.getElementById('card-chart1'), {
@@ -31,51 +30,51 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
         backgroundColor: 'transparent',
         borderColor: 'rgba(255,255,255,.55)',
         pointBackgroundColor: coreui.Utils.getStyle('--cui-primary'),
-        data: [65, 59, 84, 84, 51, 55, 40]
-      }
-    ]
+        data: [65, 59, 84, 84, 51, 55, 40],
+      },
+    ],
   },
   options: {
     plugins: {
       legend: {
-        display: false
-      }
+        display: false,
+      },
     },
     maintainAspectRatio: false,
     scales: {
       x: {
         grid: {
           display: false,
-          drawBorder: false
+          drawBorder: false,
         },
         ticks: {
-          display: false
-        }
+          display: false,
+        },
       },
       y: {
         min: 30,
         max: 89,
         display: false,
         grid: {
-          display: false
+          display: false,
         },
         ticks: {
-          display: false
-        }
-      }
+          display: false,
+        },
+      },
     },
     elements: {
       line: {
         borderWidth: 1,
-        tension: 0.4
+        tension: 0.4,
       },
       point: {
         radius: 4,
         hitRadius: 10,
-        hoverRadius: 4
-      }
-    }
-  }
+        hoverRadius: 4,
+      },
+    },
+  },
 })
 
 // eslint-disable-next-line no-unused-vars
@@ -89,50 +88,50 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
         backgroundColor: 'transparent',
         borderColor: 'rgba(255,255,255,.55)',
         pointBackgroundColor: coreui.Utils.getStyle('--cui-info'),
-        data: [1, 18, 9, 17, 34, 22, 11]
-      }
-    ]
+        data: [1, 18, 9, 17, 34, 22, 11],
+      },
+    ],
   },
   options: {
     plugins: {
       legend: {
-        display: false
-      }
+        display: false,
+      },
     },
     maintainAspectRatio: false,
     scales: {
       x: {
         grid: {
           display: false,
-          drawBorder: false
+          drawBorder: false,
         },
         ticks: {
-          display: false
-        }
+          display: false,
+        },
       },
       y: {
         min: -9,
         max: 39,
         display: false,
         grid: {
-          display: false
+          display: false,
         },
         ticks: {
-          display: false
-        }
-      }
+          display: false,
+        },
+      },
     },
     elements: {
       line: {
-        borderWidth: 1
+        borderWidth: 1,
       },
       point: {
         radius: 4,
         hitRadius: 10,
-        hoverRadius: 4
-      }
-    }
-  }
+        hoverRadius: 4,
+      },
+    },
+  },
 })
 
 // eslint-disable-next-line no-unused-vars
@@ -146,37 +145,37 @@ const cardChart3 = new Chart(document.getElementById('card-chart3'), {
         backgroundColor: 'rgba(255,255,255,.2)',
         borderColor: 'rgba(255,255,255,.55)',
         data: [78, 81, 80, 45, 34, 12, 40],
-        fill: true
-      }
-    ]
+        fill: true,
+      },
+    ],
   },
   options: {
     plugins: {
       legend: {
-        display: false
-      }
+        display: false,
+      },
     },
     maintainAspectRatio: false,
     scales: {
       x: {
-        display: false
+        display: false,
       },
       y: {
-        display: false
-      }
+        display: false,
+      },
     },
     elements: {
       line: {
         borderWidth: 2,
-        tension: 0.4
+        tension: 0.4,
       },
       point: {
         radius: 0,
         hitRadius: 10,
-        hoverRadius: 4
-      }
-    }
-  }
+        hoverRadius: 4,
+      },
+    },
+  },
 })
 
 // eslint-disable-next-line no-unused-vars
@@ -190,40 +189,40 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
         backgroundColor: 'rgba(255,255,255,.2)',
         borderColor: 'rgba(255,255,255,.55)',
         data: [78, 81, 80, 45, 34, 12, 40, 85, 65, 23, 12, 98, 34, 84, 67, 82],
-        barPercentage: 0.6
-      }
-    ]
+        barPercentage: 0.6,
+      },
+    ],
   },
   options: {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        display: false
-      }
+        display: false,
+      },
     },
     scales: {
       x: {
         grid: {
           display: false,
-          drawTicks: false
+          drawTicks: false,
 
         },
         ticks: {
-          display: false
-        }
+          display: false,
+        },
       },
       y: {
         grid: {
           display: false,
           drawBorder: false,
-          drawTicks: false
+          drawTicks: false,
         },
         ticks: {
-          display: false
-        }
-      }
-    }
-  }
+          display: false,
+        },
+      },
+    },
+  },
 })
 
 // eslint-disable-next-line no-unused-vars
@@ -245,9 +244,9 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
           random(50, 200),
           random(50, 200),
           random(50, 200),
-          random(50, 200)
+          random(50, 200),
         ],
-        fill: true
+        fill: true,
       },
       {
         label: 'My Second dataset',
@@ -261,8 +260,8 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
           random(50, 200),
           random(50, 200),
           random(50, 200),
-          random(50, 200)
-        ]
+          random(50, 200),
+        ],
       },
       {
         label: 'My Third dataset',
@@ -270,42 +269,42 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
         pointHoverBackgroundColor: '#fff',
         borderWidth: 1,
         borderDash: [8, 5],
-        data: [65, 65, 65, 65, 65, 65, 65]
-      }
-    ]
+        data: [65, 65, 65, 65, 65, 65, 65],
+      },
+    ],
   },
   options: {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        display: false
-      }
+        display: false,
+      },
     },
     scales: {
       x: {
         grid: {
-          drawOnChartArea: false
-        }
+          drawOnChartArea: false,
+        },
       },
       y: {
         ticks: {
           beginAtZero: true,
           maxTicksLimit: 5,
           stepSize: Math.ceil(250 / 5),
-          max: 250
-        }
-      }
+          max: 250,
+        },
+      },
     },
     elements: {
       line: {
-        tension: 0.4
+        tension: 0.4,
       },
       point: {
         radius: 0,
         hitRadius: 10,
         hoverRadius: 4,
-        hoverBorderWidth: 3
-      }
-    }
-  }
+        hoverBorderWidth: 3,
+      },
+    },
+  },
 })
