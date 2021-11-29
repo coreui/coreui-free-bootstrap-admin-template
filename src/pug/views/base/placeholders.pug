@@ -1,0 +1,132 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/4.1/components/placeholders/')
+
+block breadcrumb
+  +breadcrumb(['Home', 'Components', 'Base'], 'Placeholders')
+
+block view
+  +callout('Placeholders', 'https://coreui.io/docs/4.1/components/placeholders/')
+  .row
+    .col-lg-12
+      .card.mb-4
+        .card-header
+          strong Placeholders
+        .card-body
+          p.text-medium-emphasis.small
+            | In the example below, we take a typical card component and recreate it with placeholders applied to create a “loading card”. Size and proportions are the same between the two.
+          +example()
+            .d-flex.justify-content-around
+              .card(style='width: 18rem;')
+                svg.docs-placeholder-img.card-img-top(width='100%' height='180' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder' preserveAspectRatio='xMidYMid slice' focusable='false')
+                  title Placeholder
+                  rect(width='100%' height='100%' fill='#20c997')
+                .card-body
+                  h5.card-title Card title
+                  p.card-text
+                    | Some quick example text to build on the card title and make up the bulk of the card's content.
+                  a.btn.btn-primary(href='#') Go somewhere
+              .card(aria-hidden='true', style='width: 18rem;')
+                svg.docs-placeholder-img.card-img-top(width='100%' height='180' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder' preserveAspectRatio='xMidYMid slice' focusable='false')
+                  title Placeholder
+                  rect(width='100%' height='100%' fill='#868e96')
+                .card-body
+                  .h5.card-title.placeholder-glow
+                    span.placeholder.col-6
+                  p.card-text.placeholder-glow
+                    span.placeholder.col-7
+                    span.placeholder.col-4
+                    span.placeholder.col-4
+                    span.placeholder.col-6
+                    span.placeholder.col-8
+                  a.btn.btn-primary.disabled.placeholder.col-6(href='#' tabindex='-1')
+      .card.mb-4
+        .card-header
+          strong Placeholders
+        .card-body
+          p.text-medium-emphasis.small
+            | Create placeholders with the 
+            code .placeholder
+            |  class and a grid column class (e.g., 
+            code .col-6
+            | ) to set the 
+            code width
+            | . They can replace the text inside an element or be added as a modifier class to an existing component.
+          +example()
+            p(aria-hidden='true')
+              span.placeholder.col-6
+            a.btn.btn-primary.disabled.placeholder.col-4(href='#' tabindex='-1' aria-hidden='true')
+      .card.mb-4
+        .card-header
+          strong Placeholders
+          span.small.ms-1 Width
+        .card-body
+          p.text-medium-emphasis.small
+            | You can change the 
+            code width
+            |  through grid column classes, width utilities, or inline styles.
+          +example()
+            span.placeholder.col-6
+            span.placeholder.w-75
+            span.placeholder(style='width: 25%;')
+      .card.mb-4
+        .card-header
+          strong Placeholders
+          span.small.ms-1 Color
+        .card-body
+          p.text-medium-emphasis.small
+            | By default, the 
+            code placeholder
+            |  uses 
+            code currentColor
+            | . This can be overridden with a custom color or utility class.
+          +example()
+            span.placeholder.col-12
+            span.placeholder.col-12.bg-primary
+            span.placeholder.col-12.bg-secondary
+            span.placeholder.col-12.bg-success
+            span.placeholder.col-12.bg-danger
+            span.placeholder.col-12.bg-warning
+            span.placeholder.col-12.bg-info
+            span.placeholder.col-12.bg-light
+            span.placeholder.col-12.bg-dark
+      .card.mb-4
+        .card-header
+          strong Placeholders
+          span.small.ms-1 Color
+        .card-body
+          p.text-medium-emphasis.small
+            | The size of 
+            code .placeholder
+            | s are based on the typographic style of the parent element. Customize them with sizing modifiers: 
+            code .placeholder-lg
+            | , 
+            code .placeholder-sm
+            | , or 
+            code .placeholder-xs
+            | .
+          +example()
+            span.placeholder.col-12.placeholder-lg
+            span.placeholder.col-12
+            span.placeholder.col-12.placeholder-sm
+            span.placeholder.col-12.placeholder-xs
+      .card.mb-4
+        .card-header
+          strong Placeholders
+          span.small.ms-1 Animation
+        .card-body
+          p.text-medium-emphasis.small
+            | Animate placeholders with 
+            code .placeholder-glow
+            |  or 
+            code .placeholder-wave
+            |  to better convey the perception of something being 
+            em actively
+            |  loaded.
+          +example()
+            p.placeholder-glow
+              span.placeholder.col-12
+            p.placeholder-wave
+              span.placeholder.col-12
+  // /.row

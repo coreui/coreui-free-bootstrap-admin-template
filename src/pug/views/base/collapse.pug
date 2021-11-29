@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.0/components/collapse/')
+  link(rel='canonical' href='https://coreui.io/docs/4.1/components/collapse/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Base'], 'Collapse')
 
 block view
-  +callout('Collapse', 'https://coreui.io/docs/4.0/components/collapse/')
+  +callout('Collapse', 'https://coreui.io/docs/4.1/components/collapse/')
   .card.mb-4
     .card-header
       strong Collapse
@@ -29,6 +29,31 @@ block view
         #collapseExample.collapse
           .card.mb-4.card-body
             | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  .card.mb-4
+    .card-header
+      strong Collapse
+      span.small.ms-1 Horizontal
+    .card-body
+      p.text-medium-emphasis.small
+        | The collapse plugin also supports horizontal collapsing. Add the 
+        code .collapse-horizontal
+        |  modifier class to transition the 
+        code width
+        |  instead of 
+        code height
+        |  and set a 
+        code width
+        |  on the immediate child element. Feel free to write your own custom Sass, use inline styles, or use our 
+        a(href='/docs/4.1/utilities/sizing/') width utilities
+        | .
+      +example()
+        p
+          button.btn.btn-primary(type='button' data-coreui-toggle='collapse' data-coreui-target='#collapseWidthExample' aria-expanded='false' aria-controls='collapseWidthExample')
+            | Toggle width collapse
+        div(style='min-height: 120px;')
+          #collapseWidthExample.collapse.collapse-horizontal
+            .card.card-body(style='width: 300px;')
+              | This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
   .card.mb-4
     .card-header
       strong Collapse

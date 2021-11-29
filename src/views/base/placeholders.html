@@ -54,7 +54,7 @@
       // Bootstrap ID
       gtag('config', 'UA-118965717-5');
     </script>
-    <link rel="canonical" href="https://coreui.io/docs/4.1/components/collapse/">
+    <link rel="canonical" href="https://coreui.io/docs/4.1/components/placeholders/">
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
@@ -283,154 +283,227 @@
               <li class="breadcrumb-item">
                 <!-- if breadcrumb is single--><a href="#">Base</a>
               </li>
-              <li class="breadcrumb-item active"><span>Collapse</span></li>
+              <li class="breadcrumb-item active"><span>Placeholders</span></li>
             </ol>
           </nav>
         </div>
       </header>
       <div class="body flex-grow-1 px-3">
         <div class="container-lg">
-          <div class="callout callout-info bg-white">CoreUI Collapse has been created as an extension of Bootstrap Collapse. Collapse is delivered with some new features, variants, and unique design that matches CoreUI Design System requirements.<br><br>For more information please visit our official
-            <a href="https://coreui.io/docs/4.1/components/collapse/" target="_blank">documentation</a>.
+          <div class="callout callout-info bg-white">CoreUI Placeholders has been created as an extension of Bootstrap Placeholders. Placeholders is delivered with some new features, variants, and unique design that matches CoreUI Design System requirements.<br><br>For more information please visit our official
+            <a href="https://coreui.io/docs/4.1/components/placeholders/" target="_blank">documentation</a>.
           </div>
-          <div class="card mb-4">
-            <div class="card-header"><strong>Collapse</strong></div>
-            <div class="card-body">
-              <p class="text-medium-emphasis small">You can use a link with the <code>href</code> attribute, or a button with the <code>data-coreui-target</code> attribute. In both samples, the <code>data-coreui-toggle="collapse""</code> is required.</p>
-              <div class="example">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-938" role="tab">
-                      <svg class="icon me-2">
-                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
-                      </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-938" role="tab">
-                      <svg class="icon me-2">
-                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
-                      </svg>Code</a></li>
-                </ul>
-                <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-938">
-                    <p><a class="btn btn-primary" data-coreui-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Link with href</a>
-                      <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target</button>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                      <div class="card mb-4 card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
-                    </div>
-                  </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-938">
-                    <script class="language-markup" type="text/plain">
-                      <p><a class="btn btn-primary" data-coreui-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Link with href</a>
-                        <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target</button>
-                      </p>
-                      <div class="collapse" id="collapseExample">
-                        <div class="card mb-4 card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
-                      </div>
-                    </script>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-4">
-            <div class="card-header"><strong>Collapse</strong><span class="small ms-1">Horizontal</span></div>
-            <div class="card-body">
-              <p class="text-medium-emphasis small">The collapse plugin also supports horizontal collapsing. Add the <code>.collapse-horizontal</code> modifier class to transition the <code>width</code> instead of <code>height</code> and set a <code>width</code> on the immediate child element. Feel free to write your own custom Sass, use inline styles, or use our <a href="/docs/4.1/utilities/sizing/">width utilities</a>.</p>
-              <div class="example">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-696" role="tab">
-                      <svg class="icon me-2">
-                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
-                      </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-696" role="tab">
-                      <svg class="icon me-2">
-                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
-                      </svg>Code</a></li>
-                </ul>
-                <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-696">
-                    <p>
-                      <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Toggle width collapse</button>
-                    </p>
-                    <div style="min-height: 120px;">
-                      <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                        <div class="card card-body" style="width: 300px;">This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-696">
-                    <script class="language-markup" type="text/plain">
-                      <p>
-                        <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Toggle width collapse</button>
-                      </p>
-                      <div style="min-height: 120px;">
-                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                          <div class="card card-body" style="width: 300px;">This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.</div>
-                        </div>
-                      </div>
-                    </script>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-4">
-            <div class="card-header"><strong>Collapse</strong><span class="small ms-1">multiple targets</span></div>
-            <div class="card-body">
-              <p class="text-medium-emphasis small">A <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> can show and hide multiple elements by referencing them with a selector in its <code>href</code> or <code>data-coreui-target</code> attribute. Multiple <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> can show and hide an element if they each reference it with their <code>href</code> or <code>data-coreui-target</code> attribute</p>
-              <div class="example">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-714" role="tab">
-                      <svg class="icon me-2">
-                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
-                      </svg>Preview</a></li>
-                  <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-714" role="tab">
-                      <svg class="icon me-2">
-                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
-                      </svg>Code</a></li>
-                </ul>
-                <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-714">
-                    <p><a class="btn btn-primary" data-coreui-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-                      <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle second element</button>
-                      <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-                    </p>
-                    <div class="row">
-                      <div class="col-sm-12 col-md-6">
-                        <div class="collapse multi-collapse" id="multiCollapseExample1">
-                          <div class="card mb-4 card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-md-6">
-                        <div class="collapse multi-collapse" id="multiCollapseExample2">
-                          <div class="card mb-4 card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane pt-1" role="tabpanel" id="code-714">
-                    <script class="language-markup" type="text/plain">
-                      <p><a class="btn btn-primary" data-coreui-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-                        <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle second element</button>
-                        <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-                      </p>
-                      <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                          <div class="collapse multi-collapse" id="multiCollapseExample1">
-                            <div class="card mb-4 card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card mb-4">
+                <div class="card-header"><strong>Placeholders</strong></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">In the example below, we take a typical card component and recreate it with placeholders applied to create a “loading card”. Size and proportions are the same between the two.</p>
+                  <div class="example">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-552" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-552" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-552">
+                        <div class="d-flex justify-content-around">
+                          <div class="card" style="width: 18rem;">
+                            <svg class="docs-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                              <title>Placeholder</title>
+                              <rect width="100%" height="100%" fill="#20c997"></rect>
+                            </svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a class="btn btn-primary" href="#">Go somewhere</a>
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                          <div class="collapse multi-collapse" id="multiCollapseExample2">
-                            <div class="card mb-4 card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
+                          <div class="card" aria-hidden="true" style="width: 18rem;">
+                            <svg class="docs-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                              <title>Placeholder</title>
+                              <rect width="100%" height="100%" fill="#868e96"></rect>
+                            </svg>
+                            <div class="card-body">
+                              <div class="h5 card-title placeholder-glow"><span class="placeholder col-6"></span></div>
+                              <p class="card-text placeholder-glow"><span class="placeholder col-7"></span><span class="placeholder col-4"></span><span class="placeholder col-4"></span><span class="placeholder col-6"></span><span class="placeholder col-8"></span></p><a class="btn btn-primary disabled placeholder col-6" href="#" tabindex="-1"></a>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </script>
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-552">
+                        <script class="language-markup" type="text/plain">
+                          <div class="d-flex justify-content-around">
+                            <div class="card" style="width: 18rem;">
+                              <svg class="docs-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#20c997"></rect>
+                              </svg>
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a class="btn btn-primary" href="#">Go somewhere</a>
+                              </div>
+                            </div>
+                            <div class="card" aria-hidden="true" style="width: 18rem;">
+                              <svg class="docs-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#868e96"></rect>
+                              </svg>
+                              <div class="card-body">
+                                <div class="h5 card-title placeholder-glow"><span class="placeholder col-6"></span></div>
+                                <p class="card-text placeholder-glow"><span class="placeholder col-7"></span><span class="placeholder col-4"></span><span class="placeholder col-4"></span><span class="placeholder col-6"></span><span class="placeholder col-8"></span></p><a class="btn btn-primary disabled placeholder col-6" href="#" tabindex="-1"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header"><strong>Placeholders</strong></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Create placeholders with the <code>.placeholder</code> class and a grid column class (e.g., <code>.col-6</code>) to set the <code>width</code>. They can replace the text inside an element or be added as a modifier class to an existing component.</p>
+                  <div class="example">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-43" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-43" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-43">
+                        <p aria-hidden="true"><span class="placeholder col-6"></span></p><a class="btn btn-primary disabled placeholder col-4" href="#" tabindex="-1" aria-hidden="true"></a>
+                      </div>
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-43">
+                        <script class="language-markup" type="text/plain">
+                          <p aria-hidden="true"><span class="placeholder col-6"></span></p><a class="btn btn-primary disabled placeholder col-4" href="#" tabindex="-1" aria-hidden="true"></a>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header"><strong>Placeholders</strong><span class="small ms-1">Width</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">You can change the <code>width</code> through grid column classes, width utilities, or inline styles.</p>
+                  <div class="example">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-87" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-87" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-87"><span class="placeholder col-6"></span><span class="placeholder w-75"></span><span class="placeholder" style="width: 25%;"></span>
+                      </div>
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-87">
+                        <script class="language-markup" type="text/plain"><span class="placeholder col-6"></span><span class="placeholder w-75"></span><span class="placeholder" style="width: 25%;"></span>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header"><strong>Placeholders</strong><span class="small ms-1">Color</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">By default, the <code>placeholder</code> uses <code>currentColor</code>. This can be overridden with a custom color or utility class.</p>
+                  <div class="example">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-478" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-478" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-478"><span class="placeholder col-12"></span><span class="placeholder col-12 bg-primary"></span><span class="placeholder col-12 bg-secondary"></span><span class="placeholder col-12 bg-success"></span><span class="placeholder col-12 bg-danger"></span><span class="placeholder col-12 bg-warning"></span><span class="placeholder col-12 bg-info"></span><span class="placeholder col-12 bg-light"></span><span class="placeholder col-12 bg-dark"></span>
+                      </div>
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-478">
+                        <script class="language-markup" type="text/plain"><span class="placeholder col-12"></span><span class="placeholder col-12 bg-primary"></span><span class="placeholder col-12 bg-secondary"></span><span class="placeholder col-12 bg-success"></span><span class="placeholder col-12 bg-danger"></span><span class="placeholder col-12 bg-warning"></span><span class="placeholder col-12 bg-info"></span><span class="placeholder col-12 bg-light"></span><span class="placeholder col-12 bg-dark"></span>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header"><strong>Placeholders</strong><span class="small ms-1">Color</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">The size of <code>.placeholder</code>s are based on the typographic style of the parent element. Customize them with sizing modifiers: <code>.placeholder-lg</code>, <code>.placeholder-sm</code>, or <code>.placeholder-xs</code>.</p>
+                  <div class="example">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-57" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-57" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-57"><span class="placeholder col-12 placeholder-lg"></span><span class="placeholder col-12"></span><span class="placeholder col-12 placeholder-sm"></span><span class="placeholder col-12 placeholder-xs"></span>
+                      </div>
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-57">
+                        <script class="language-markup" type="text/plain"><span class="placeholder col-12 placeholder-lg"></span><span class="placeholder col-12"></span><span class="placeholder col-12 placeholder-sm"></span><span class="placeholder col-12 placeholder-xs"></span>
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header"><strong>Placeholders</strong><span class="small ms-1">Animation</span></div>
+                <div class="card-body">
+                  <p class="text-medium-emphasis small">Animate placeholders with <code>.placeholder-glow</code> or <code>.placeholder-wave</code> to better convey the perception of something being <em>actively</em> loaded.</p>
+                  <div class="example">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-29" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
+                          </svg>Preview</a></li>
+                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-29" role="tab">
+                          <svg class="icon me-2">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
+                          </svg>Code</a></li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-29">
+                        <p class="placeholder-glow"><span class="placeholder col-12"></span></p>
+                        <p class="placeholder-wave"><span class="placeholder col-12"></span></p>
+                      </div>
+                      <div class="tab-pane pt-1" role="tabpanel" id="code-29">
+                        <script class="language-markup" type="text/plain">
+                          <p class="placeholder-glow"><span class="placeholder col-12"></span></p>
+                          <p class="placeholder-wave"><span class="placeholder col-12"></span></p>
+                        </script>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- /.row-->
         </div>
       </div>
       <footer class="footer">
