@@ -1,17 +1,17 @@
 'use strict'
 
 module.exports = ctx => ({
-  map: ctx.file.dirname.includes('examples')
-    ? false
-    : {
+  map: ctx.file.dirname.includes('examples') ?
+    false :
+    {
       inline: false,
       annotation: true,
-      sourcesContent: true,
+      sourcesContent: true
     },
   plugins: {
     autoprefixer: {
-      cascade: false,
+      cascade: false
     },
-    'postcss-combine-duplicated-selectors': {},
-  },
+    'postcss-combine-duplicated-selectors': {}
+  }
 })

@@ -18,14 +18,14 @@ const DRY_RUN = process.argv.includes('--dry') || process.argv.includes('--dry-r
 
 // These are the filetypes we only care about replacing the version
 const GLOB = [
-  '**/*.{css,html,js,json,md,pug,scss,txt,yml}',
+  '**/*.{css,html,js,json,md,pug,scss,txt,yml}'
 ]
 const GLOBBY_OPTIONS = {
   cwd: path.join(__dirname, '..'),
-  gitignore: true,
+  gitignore: true
 }
 const EXCLUDED_FILES = [
-  'CHANGELOG.md',
+  'CHANGELOG.md'
 ]
 
 // Blame TC39... https://github.com/benjamingr/RegExp.escape/issues/37
@@ -40,7 +40,7 @@ function regExpQuoteReplacement(string) {
 async function replaceRecursively(file, oldVersion, newVersion) {
   const originalString = await fs.readFile(file, 'utf8')
   const newString = originalString.replace(
-    new RegExp(regExpQuote(oldVersion), 'g'), regExpQuoteReplacement(newVersion),
+    new RegExp(regExpQuote(oldVersion), 'g'), regExpQuoteReplacement(newVersion)
   )
 
   // No need to move any further if the strings are identical

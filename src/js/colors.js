@@ -23,5 +23,5 @@ document.querySelectorAll('.theme-color').forEach(element => {
         </tr>
       </table>
     `
-  element.parentNode.appendChild(table)
+  element.parentNode.append(table)
 })
