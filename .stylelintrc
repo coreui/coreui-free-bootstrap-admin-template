@@ -1,6 +1,6 @@
 {
   "extends": [
-    "stylelint-config-twbs-bootstrap/scss"
+    "stylelint-config-twbs-bootstrap"
   ],
   "rules": {
     "declaration-property-value-disallowed-list": {
@@ -26,6 +26,12 @@
         "ignore": "local"
       }
     ],
-    "scss/selector-no-union-class-name": true
+    "scss/selector-no-union-class-name": true,
+    "value-keyword-case": [
+      "lower",
+      {
+          "camelCaseSvgKeywords": true
+      }
+  ]
   }
 }
