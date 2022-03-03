@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/components/pagination/')
+  link(rel='canonical' href='https://coreui.io/docs/components/pagination/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Base'], 'Pagination')
 
 block view
-  +callout('Pagination', 'https://coreui.io/docs/4.1/components/pagination/')
+  +callout('Pagination', 'https://coreui.io/docs/components/pagination/')
   .row
     .col-12
       .card.mb-4
@@ -29,7 +29,7 @@ block view
             |  to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be 
             code aria-label="Search results pages"
             | .
-          +example()
+          +example('https://coreui.io/docs/components/pagination/#overview')
             nav(aria-label='Page navigation example')
               ul.pagination
                 li.page-item
@@ -52,7 +52,7 @@ block view
             | Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with 
             code aria
             |  attributes.
-          +example()
+          +example('https://coreui.io/docs/components/pagination/#working-with-icons')
             nav(aria-label='Page navigation example')
               ul.pagination
                 li.page-item
@@ -92,7 +92,7 @@ block view
             | s, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add 
             code tabindex="-1"
             |  on disabled links and use custom JavaScript to fully disable their functionality.
-          +example()
+          +example('https://coreui.io/docs/components/pagination/#disabled-and-active-states')
             nav(aria-label='...')
               ul.pagination
                 li.page-item.disabled
@@ -110,7 +110,7 @@ block view
             code 
               = '<span>'
             | , or omit the anchor in the case of the prev/next arrows, to remove click functionality and prevent keyboard focus while retaining intended styles.
-          +example()
+          +example('https://coreui.io/docs/components/pagination/#disabled-and-active-states')
             nav(aria-label='...')
               ul.pagination
                 li.page-item.disabled
@@ -135,7 +135,7 @@ block view
             |  or 
             code .pagination-sm
             |  for additional sizes.
-          +example()
+          +example('https://coreui.io/docs/components/pagination/#sizing')
             nav(aria-label='...')
               ul.pagination.pagination-lg
                 li.page-item.active(aria-current='page')
@@ -144,7 +144,7 @@ block view
                   a.page-link(href='#') 2
                 li.page-item
                   a.page-link(href='#') 3
-          +example()
+          +example('https://coreui.io/docs/components/pagination/#sizing')
             nav(aria-label='...')
               ul.pagination.pagination-sm
                 li.page-item.active(aria-current='page')
@@ -161,9 +161,9 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Change the alignment of pagination components with 
-            a(href='https://coreui.io/docs/4.1/utilities/flex/') flexbox utilities
+            a(href='https://coreui.io/docs/utilities/flex/') flexbox utilities
             | .
-          +example()
+          +example('https://coreui.io/docs/components/pagination/#alignment')
             nav(aria-label='Page navigation example')
               ul.pagination.justify-content-center
                 li.page-item.disabled
@@ -176,7 +176,7 @@ block view
                   a.page-link(href='#') 3
                 li.page-item
                   a.page-link(href='#') Next
-          +example()
+          +example('https://coreui.io/docs/components/pagination/#alignment')
             nav(aria-label='Page navigation example')
               ul.pagination.justify-content-end
                 li.page-item.disabled

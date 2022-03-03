@@ -8,10 +8,10 @@ block breadcrumb
   +breadcrumb(['Home', 'Components', 'Base'], 'Popovers')
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/components/popovers/')
+  link(rel='canonical' href='https://coreui.io/docs/components/popovers/')
 
 block view
-  +callout('Popover', 'https://coreui.io/docs/4.1/components/popovers/')
+  +callout('Popover', 'https://coreui.io/docs/components/popovers/')
   .row
     .col-12
       .card.mb-4
@@ -19,7 +19,7 @@ block view
           strong Popover
           span.small.ms-1 Basic example
         .card-body
-          +example()
+          +example('https://coreui.io/docs/components/popovers/#example')
             button.btn.btn-lg.btn-danger(type='button' data-coreui-toggle='popover' title='' data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title='Popover title') Click to toggle popover
         
     .col-12
@@ -30,7 +30,7 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Four options are available: top, right, bottom, and left aligned. Directions are mirrored when using Bootstrap in RTL.
-          +example()
+          +example('https://coreui.io/docs/components/popovers/#four-directions')
             button.btn.btn-secondary(type='button' data-coreui-container='body' data-coreui-toggle='popover' data-coreui-placement='top' data-coreui-content='Top popover' data-coreui-original-title='' title='')
               | Popover on top
             button.btn.btn-secondary(type='button' data-coreui-container='body' data-coreui-toggle='popover' data-coreui-placement='right' data-coreui-content='Right popover' data-coreui-original-title='' title='')
@@ -49,7 +49,7 @@ block view
             | Use the 
             code focus
             |  trigger to dismiss popovers on the user’s next click of a different element than the toggle element.
-          +example()
+          +example('https://coreui.io/docs/components/popovers/#dismiss-on-next-click')
             a.btn.btn-lg.btn-danger(tabindex='0' role='button' data-coreui-toggle='popover' data-coreui-trigger='focus' title='' data-coreui-content="And here's some amazing content. It's very engaging. Right?" data-coreui-original-title='Dismissible popover') Dismissible popover
         .col-12
       .card.mb-4
@@ -75,6 +75,6 @@ block view
             |  so that the popover appears as immediate visual feedback to your users as they may not expect to 
             em click
             |  on a disabled element.
-          +example()
+          +example('https://coreui.io/docs/components/popovers/#disabled-elements')
             span.d-inline-block(tabindex='0' data-coreui-toggle='popover' data-coreui-trigger='hover focus' data-coreui-content='Disabled popover' data-coreui-original-title='' title='')
               button.btn.btn-primary(type='button' disabled='') Disabled button

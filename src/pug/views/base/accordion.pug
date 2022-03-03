@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/components/accordion/')
+  link(rel='canonical' href='https://coreui.io/docs/components/accordion/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Base'], 'Accordion')
 
 block view
-  +callout('Accordion', 'https://coreui.io/docs/4.1/components/accordion/')
+  +callout('Accordion', 'https://coreui.io/docs/components/accordion/')
   .row
     .col-12
       .card.mb-4
@@ -16,7 +16,7 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Click the accordions below to expand/collapse the accordion content.
-          +example()
+          +example('https://coreui.io/docs/components/accordion/#how-it-works')
             #accordionExample.accordion
               .accordion-item
                 h2#headingOne.accordion-header
@@ -60,7 +60,7 @@ block view
             |  to remove the default 
             code background-color
             | , some borders, and some rounded corners to render accordions edge-to-edge with their parent container.
-          +example()
+          +example('https://coreui.io/docs/components/accordion/#flush')
             #accordionFlushExample.accordion.accordion-flush
               .accordion-item
                 h2#flush-headingOne.accordion-header

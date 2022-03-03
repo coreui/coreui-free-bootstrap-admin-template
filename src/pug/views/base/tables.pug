@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/content/tables/')
+  link(rel='canonical' href='https://coreui.io/docs/content/tables/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Base'], 'Tables')
 
 block view
-  +callout('Table', 'https://coreui.io/docs/4.1/content/tables/')
+  +callout('Table', 'https://coreui.io/docs/content/tables/')
   .car
   .card.mb-4
     .card-header
@@ -18,7 +18,7 @@ block view
         | Using the most basic table markup, here’s how 
         code .table
         | -based tables look in Bootstrap.
-      +example()
+      +example('https://coreui.io/docs/content/tables/#overview')
         table.table
           thead
             tr
@@ -48,7 +48,7 @@ block view
       span.small.ms-1 Variants
     .card-body
       p.text-medium-emphasis.small Use contextual classes to color tables, table rows or individual cells.
-      +example()
+      +example('https://coreui.io/docs/content/tables/#variants')
         table.table
           thead
             tr
@@ -104,7 +104,7 @@ block view
         code 
           = '<tbody>'
         | .
-      +example()
+      +example('https://coreui.io/docs/content/tables/#striped-rows')
         table.table.table-striped
           thead
             tr
@@ -128,7 +128,7 @@ block view
               td(colspan='2') Larry the Bird
               td @twitter
       p.text-medium-emphasis.small These classes can also be added to table variants:
-      +example()
+      +example('https://coreui.io/docs/content/tables/#striped-rows')
         table.table.table-dark.table-striped
           thead
             tr
@@ -151,7 +151,7 @@ block view
               th(scope='row') 3
               td(colspan='2') Larry the Bird
               td @twitter
-      +example()
+      +example('https://coreui.io/docs/content/tables/#striped-rows')
         table.table.table-success.table-striped
           thead
             tr
@@ -186,7 +186,7 @@ block view
         code 
           = '<tbody>'
         | .
-      +example()
+      +example('https://coreui.io/docs/content/tables/#hoverable-rows')
         table.table.table-hover
           thead
             tr
@@ -209,7 +209,7 @@ block view
               th(scope='row') 3
               td(colspan='2') Larry the Bird
               td @twitter
-      +example()
+      +example('https://coreui.io/docs/content/tables/#hoverable-rows')
         table.table.table-dark.table-hover
           thead
             tr
@@ -233,7 +233,7 @@ block view
               td(colspan='2') Larry the Bird
               td @twitter
       p.text-medium-emphasis.small These hoverable rows can also be combined with the striped variant:
-      +example()
+      +example('https://coreui.io/docs/content/tables/#hoverable-rows')
         table.table.table-striped.table-hover
           thead
             tr
@@ -265,7 +265,7 @@ block view
         | Highlight a table row or cell by adding a 
         code .table-active
         |  class.
-      +example()
+      +example('https://coreui.io/docs/content/tables/#active-tables')
         table.table
           thead
             tr
@@ -288,7 +288,7 @@ block view
               th(scope='row') 3
               td.table-active(colspan='2') Larry the Bird
               td @twitter
-      +example()
+      +example('https://coreui.io/docs/content/tables/#active-tables')
         table.table.table-dark
           thead
             tr
@@ -311,7 +311,6 @@ block view
               th(scope='row') 3
               td.table-active(colspan='2') Larry the Bird
               td @twitter
-
   .card.mb-4
     .card-header
       strong Tables
@@ -321,7 +320,7 @@ block view
         | Add 
         code .table-bordered
         |  for borders on all sides of the table and cells.
-      +example()
+      +example('https://coreui.io/docs/content/tables/#bordered-tables')
         table.table.table-bordered
           thead
             tr
@@ -345,9 +344,9 @@ block view
               td(colspan='2') Larry the Bird
               td @twitter
       p.text-medium-emphasis.small
-        a(href='https://coreui.io/docs/4.1/utilities/borders/#border-color') Border color utilities
+        a(href='https://coreui.io/docs/utilities/borders/#border-color') Border color utilities
         |  can be added to change colors:
-      +example()
+      +example('https://coreui.io/docs/content/tables/#bordered-tables')
         table.table.table-bordered.border-primary
           thead
             tr
@@ -370,7 +369,6 @@ block view
               th(scope='row') 3
               td(colspan='2') Larry the Bird
               td @twitter
-
   .card.mb-4
     .card-header
       strong Tables
@@ -380,7 +378,7 @@ block view
         | Add 
         code .table-borderless
         |  for a table without borders.
-      +example()
+      +example('https://coreui.io/docs/content/tables/#tables-without-borders')
         table.table.table-borderless
           thead
             tr
@@ -403,7 +401,7 @@ block view
               th(scope='row') 3
               td(colspan='2') Larry the Bird
               td @twitter
-      +example()
+      +example('https://coreui.io/docs/content/tables/#tables-without-borders')
         table.table.table-dark.table-borderless
           thead
             tr
@@ -425,8 +423,7 @@ block view
             tr
               th(scope='row') 3
               td(colspan='2') Larry the Bird
-              td @twitter
-              
+              td @twitter     
   .card.mb-4
     .card-header
       strong Tables
@@ -440,7 +437,7 @@ block view
         |  more compact by cutting all cell 
         code padding
         |  in half.
-      +example()
+      +example('https://coreui.io/docs/content/tables/#small-tables')
         table.table.table-sm
           thead
             tr
@@ -463,7 +460,7 @@ block view
               th(scope='row') 3
               td(colspan='2') Larry the Bird
               td @twitter
-      +example()
+      +example('https://coreui.io/docs/content/tables/#small-tables')
         table.table.table-dark.table-sm
           thead
             tr
@@ -502,9 +499,9 @@ block view
         code 
           = '<table>'
         |  and are aligned to the the top by default. Use the 
-        a(href='https://coreui.io/docs/4.1/utilities/vertical-align/') vertical align
+        a(href='https://coreui.io/docs/utilities/vertical-align/') vertical align
         |  classes to re-align where needed.
-      +example()
+      +example('https://coreui.io/docs/content/tables/#vertical-alignment')
         .table-responsive
           table.table.align-middle
             thead
@@ -563,7 +560,7 @@ block view
     .card-body
       p.text-medium-emphasis.small
         | Border styles, active styles, and table variants are not inherited by nested tables.
-      +example()
+      +example('https://coreui.io/docs/content/tables/#nesting')
         table.table.table-striped.table-bordered
           thead
             tr
@@ -618,7 +615,7 @@ block view
         code 
           = '<thead>'
         | s appear light or dark gray.
-      +example()
+      +example('https://coreui.io/docs/content/tables/#table-head')
         table.table
           thead.table-light
             tr
@@ -642,7 +639,7 @@ block view
               td Larry
               td the Bird
               td @twitter
-      +example()
+      +example('https://coreui.io/docs/content/tables/#table-head')
         table.table
           thead.table-dark
             tr
@@ -672,7 +669,7 @@ block view
       strong Tables
       span.small.ms-1 Table foot
     .card-body
-      +example()
+      +example('https://coreui.io/docs/content/tables/#table-foot')
         table.table
           thead.table-light
             tr
@@ -713,7 +710,7 @@ block view
         code 
           = '<caption>'
         |  functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.
-      +example()
+      +example('https://coreui.io/docs/content/tables/#captions')
         table.table
           caption List of users
           thead
@@ -744,7 +741,7 @@ block view
         |  on the top of the table with 
         code .caption-top
         | .
-      +example()
+      +example('https://coreui.io/docs/content/tables/#captions')
         table.table.caption-top
           caption List of users
           thead

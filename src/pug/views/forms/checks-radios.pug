@@ -1,20 +1,25 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/forms/checks-radios/')
+  link(rel='canonical' href='https://coreui.io/docs/forms/checks-radios/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Forms'], 'Checks and radios')
 
+block js
+  | document.querySelectorAll('.form-example-indeterminate [type="checkbox"]').forEach(function (checkbox) {
+  |   checkbox.indeterminate = true
+  | })
+
 block view
-  +callout('Checks and radios', 'https://coreui.io/docs/4.1/forms/checks-radios/')
+  +callout('Checks and radios', 'https://coreui.io/docs/forms/checks-radios/')
   .row
     .col-12
       .card.mb-4
         .card-header
           strong Checkbox
         .card-body
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#checks')
             .form-check
               input.form-check-input#flexCheckDefault(type='checkbox')
               label.form-check-label(for='flexCheckDefault') Default checkbox
@@ -30,15 +35,10 @@ block view
             | Checkboxes can utilize the 
             code :indeterminate
             |  pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).
-          +example(true)
-            block html
-              .form-check.form-example-indeterminate
-                input.form-check-input#flexCheckIndeterminate(type='checkbox')
-                label.form-check-label(for='flexCheckIndeterminate') Indeterminate checkbox
-            block js
-              | document.querySelectorAll('.form-example-indeterminate [type="checkbox"]').forEach(function (checkbox) {
-              |   checkbox.indeterminate = true
-              | })
+          +example('https://coreui.io/docs/forms/checks-radios/#indeterminate')
+            .form-check.form-example-indeterminate
+              input.form-check-input#flexCheckIndeterminate(type='checkbox')
+              label.form-check-label(for='flexCheckIndeterminate') Indeterminate checkbox
     .col-12
       .card.mb-4
         .card-header
@@ -52,7 +52,7 @@ block view
             code
               = '<label>'
             | s are automatically styled to match with a lighter color to help indicate the input’s state.
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#disabled')
             .form-check
               input.form-check-input#flexCheckDisabled(type='checkbox' disabled)
               label.form-check-label(for='flexCheckDisabled') Disabled checkbox
@@ -65,7 +65,7 @@ block view
         .card-header
           strong Radios
         .card-body
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#radios')
             .form-check
               input.form-check-input#flexRadioDefault1(type='radio' name='flexRadioDefault')
               label.form-check-label(for='flexRadioDefault1') Default radio
@@ -85,7 +85,7 @@ block view
             code
               = '<label>'
             | s are automatically styled to match with a lighter color to help indicate the input’s state.
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#disabled-1')
             .form-check
               input.form-check-input#flexRadioDisabled(type='radio' name='flexRadioDisabled' disabled)
               label.form-check-label(for='flexRadioDisabled') Disabled radio
@@ -104,7 +104,7 @@ block view
             |  class to render a toggle switch. Switches also support the 
             code disabled
             |  attribute.
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#switches')
             .form-check.form-switch
               input.form-check-input#flexSwitchCheckDefault(type='checkbox')
               label.form-check-label(for='flexSwitchCheckDefault') Default switch checkbox input
@@ -123,7 +123,7 @@ block view
           strong Switches
           span.small.ms-1 Sizes
         .card-body
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#sizes')
             .form-check.form-switch
               input.form-check-input#flexSwitchCheckDefault(type='checkbox')
               label.form-check-label(for='flexSwitchCheckDefault') Default switch checkbox input
@@ -144,14 +144,14 @@ block view
             | By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with 
             code .form-check
             | .
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#default-stacked')
             .form-check
               input.form-check-input#defaultCheck1(type='checkbox')
               label.form-check-label(for='defaultCheck1') Default checkbox
             .form-check
               input.form-check-input#defaultCheck2(type='checkbox' disabled)
               label.form-check-label(for='defaultCheck2') Disabled checkbox
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#default-stacked')
             .form-check
               input.form-check-input#exampleRadios1(type='radio' name='exampleRadios' value='option1' checked)
               label.form-check-label(for='exampleRadios1') Default radio
@@ -173,7 +173,7 @@ block view
             |  to any 
             code .form-check
             | .
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#inline')
             .form-check.form-check-inline
               input.form-check-input#inlineCheckbox1(type='checkbox' value='option1')
               label.form-check-label(for='inlineCheckbox1') 1
@@ -183,7 +183,7 @@ block view
             .form-check.form-check-inline
               input.form-check-input#inlineCheckbox3(type='checkbox' value='option3' disabled)
               label.form-check-label(for='inlineCheckbox3') 3 (disabled)
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#inline')
             .form-check.form-check-inline
               input.form-check-input#inlineRadio1(type='radio' name='inlineRadioOptions' value='option1')
               label.form-check-label(for='inlineRadio1') 1
@@ -205,9 +205,9 @@ block view
             |  for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive technologies (for instance, using 
             code aria-label
             | ). See the 
-            a(href='https://coreui.io/docs/4.1/forms/overview/#accessibility') forms overview accessibility
+            a(href='https://coreui.io/docs/forms/overview/#accessibility') forms overview accessibility
             |  section for details.
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#without-labels')
             div
               input.form-check-input#checkboxNoLabel(type='checkbox' aria-label='...')
             div
@@ -227,18 +227,18 @@ block view
             code
               = '<label>'
             |  elements. These toggle buttons can further be grouped in a 
-            a(href='https://coreui.io/docs/4.1/components/button-group/') button group
+            a(href='https://coreui.io/docs/components/button-group/') button group
             |  if needed.
           h3#checkbox-toggle-buttons
             | Checkbox toggle buttons
             a.anchorjs-link(aria-label='Anchor' data-anchorjs-icon='#' href='#checkbox-toggle-buttons' style='padding-left: 0.375em;')
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#toggle-buttons')
             input.btn-check#btn-check(type='checkbox' autocomplete='off')
             label.btn.btn-primary(for='btn-check') Single toggle
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#toggle-buttons')
             input.btn-check#btn-check-2(type='checkbox' checked autocomplete='off')
             label.btn.btn-primary(for='btn-check-2') Checked
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#toggle-buttons')
             input.btn-check#btn-check-3(type='checkbox' autocomplete='off' disabled)
             label.btn.btn-primary(for='btn-check-3') Disabled
     .col-12
@@ -247,7 +247,7 @@ block view
           strong Toggle buttons
           span.small.ms-1 Radio
         .card-body
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#radio-toggle-buttons')
             input.btn-check#option1(type='radio' name='options' autocomplete='off' checked)
             label.btn.btn-secondary(for='option1') Checked
             input.btn-check#option2(type='radio' name='options' autocomplete='off')
@@ -263,7 +263,7 @@ block view
             | Different variants of 
             code .btn
             | , such at the various outlined styles, are supported.
-          +example()
+          +example('https://coreui.io/docs/forms/checks-radios/#radio-toggle-buttons')
             input.btn-check#btn-check-outlined(type='checkbox' autocomplete='off')
             label.btn.btn-outline-primary(for='btn-check-outlined') Single toggle
             br

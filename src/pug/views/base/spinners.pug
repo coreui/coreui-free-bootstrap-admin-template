@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/components/spinners/')
+  link(rel='canonical' href='https://coreui.io/docs/components/spinners/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Base'], 'Spinners')
 
 block view
-  +callout('Spinner', 'https://coreui.io/docs/4.1/components/spinners/')
+  +callout('Spinner', 'https://coreui.io/docs/components/spinners/')
   .row
     .col-12
       .card.mb-4
@@ -16,7 +16,7 @@ block view
           span.small.ms-1 Border
         .card-body
           p.text-medium-emphasis.small Use the border spinners for a lightweight loading indicator.
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#border-spinner')
             .spinner-border(role='status')
               span.visually-hidden Loading...
     .col-12
@@ -31,9 +31,9 @@ block view
             |  for its 
             code border-color
             | , meaning you can customize the color with 
-            a(href='https://coreui.io/docs/4.1/utilities/colors/') text color utilities
+            a(href='https://coreui.io/docs/utilities/colors/') text color utilities
             | . You can use any of our text color utilities on the standard spinner.
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#colors')
             .spinner-border.text-primary(role='status')
               span.visually-hidden Loading...
             .spinner-border.text-secondary(role='status')
@@ -58,16 +58,16 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#growing-spinner')
             .spinner-grow(role='status')
               span.visually-hidden Loading...
           p.text-medium-emphasis.small
             | Once again, this spinner is built with 
             code currentColor
             | , so you can easily change its appearance with 
-            a(href='https://coreui.io/docs/4.1/utilities/colors/') text color utilities
+            a(href='https://coreui.io/docs/utilities/colors/') text color utilities
             | . Here it is in blue, along with the supported variants.
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#growing-spinner')
             .spinner-grow.text-primary(role='status')
               span.visually-hidden Loading...
             .spinner-grow.text-secondary(role='status')
@@ -106,11 +106,11 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Use 
-            a(href='https://coreui.io/docs/4.1/utilities/spacing/') margin utilities
+            a(href='https://coreui.io/docs/utilities/spacing/') margin utilities
             |  like 
             code .m-5
             |  for easy spacing.
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#alignment')
             .spinner-border.m-5(role='status')
               span.visually-hidden Loading...
     .col-12
@@ -121,34 +121,34 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Use 
-            a(href='https://coreui.io/docs/4.1/utilities/flex/') flexbox utilities
+            a(href='https://coreui.io/docs/utilities/flex/') flexbox utilities
             | , 
-            a(href='https://coreui.io/docs/4.1/utilities/float/') float utilities
+            a(href='https://coreui.io/docs/utilities/float/') float utilities
             | , or 
-            a(href='https://coreui.io/docs/4.1/content/typography/') text alignment
+            a(href='https://coreui.io/docs/content/typography/') text alignment
             |  utilities to place spinners exactly where you need them in any situation.
           h4#flex
             | Flex
             a.anchorjs-link(aria-label='Anchor' data-anchorjs-icon='#' href='#flex' style='padding-left: 0.375em;')
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#flex')
             .d-flex.justify-content-center
               .spinner-border(role='status')
                 span.visually-hidden Loading...
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#flex')
             .d-flex.align-items-center
               strong Loading...
               .spinner-border.ms-auto(role='status' aria-hidden='true')
           h4#floats
             | Floats
             a.anchorjs-link(aria-label='Anchor' data-anchorjs-icon='#' href='#floats' style='padding-left: 0.375em;')
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#floats')
             .clearfix
               .spinner-border.float-end(role='status')
                 span.visually-hidden Loading...
           h4#text-align
             | Text align
             a.anchorjs-link(aria-label='Anchor' data-anchorjs-icon='#' href='#text-align' style='padding-left: 0.375em;')
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#text-align')
             .text-center
               .spinner-border(role='status')
                 span.visually-hidden Loading...
@@ -164,13 +164,13 @@ block view
             |  and 
             code .spinner-grow-sm
             |  to make a smaller spinner that can quickly be used within other components.
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#size')
             .spinner-border.spinner-border-sm(role='status')
               span.visually-hidden Loading...
             .spinner-grow.spinner-grow-sm(role='status')
               span.visually-hidden Loading...
           p.text-medium-emphasis.small Or, use custom CSS or inline styles to change the dimensions as needed.
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#size')
             .spinner-border(style='width: 3rem; height: 3rem;' role='status')
               span.visually-hidden Loading...
             .spinner-grow(style='width: 3rem; height: 3rem;' role='status')
@@ -183,14 +183,14 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#buttons')
             button.btn.btn-primary(type='button' disabled='')
               span.spinner-border.spinner-border-sm(role='status' aria-hidden='true')
               span.visually-hidden Loading...
             button.btn.btn-primary(type='button' disabled='')
               span.spinner-border.spinner-border-sm(role='status' aria-hidden='true')
               | Loading...
-          +example()
+          +example('https://coreui.io/docs/components/spinners/#buttons')
             button.btn.btn-primary(type='button' disabled='')
               span.spinner-grow.spinner-grow-sm(role='status' aria-hidden='true')
               span.visually-hidden Loading...

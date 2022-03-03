@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/forms/layout/')
+  link(rel='canonical' href='https://coreui.io/docs/forms/layout/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Forms'], 'Layout')
 
 block view
-  +callout('Layout', 'https://coreui.io/docs/4.1/forms/layout/')
+  +callout('Layout', 'https://coreui.io/docs/forms/layout/')
   .row
     .col-12
       .card.mb-4
@@ -16,7 +16,7 @@ block view
           span.small.ms-1 Utilities
         .card-body
           p.text-medium-emphasis.small
-            a(href='https://coreui.io/docs/4.1/utilities/spacing/') Margin utilities
+            a(href='https://coreui.io/docs/utilities/spacing/') Margin utilities
             |  are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to 
             code margin-bottom
             |  utilities, and using a single direction throughout the form for consistency.
@@ -28,7 +28,7 @@ block view
             code
               = '<div>'
             | s, or nearly any other element.
-          +example()
+          +example('https://coreui.io/docs/forms/layout/#utilities')
             .mb-3
               label.form-label(for='formGroupExampleInput') Example label
               input.form-control#formGroupExampleInput(type='text' placeholder='Example input placeholder')
@@ -48,7 +48,7 @@ block view
               code $enable-grid-classes
               |  Sass variable to be enabled
             |  (on by default).
-          +example()
+          +example('https://coreui.io/docs/forms/layout/#form-grid')
             .row
               .col
                 input.form-control(type='text' placeholder='First name' aria-label='First name')
@@ -62,21 +62,21 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | By adding
-            a(href='https://coreui.io/docs/4.1/layout/gutters/') gutter modifier classes
+            a(href='https://coreui.io/docs/layout/gutters/') gutter modifier classes
             | , you can have control over the gutter width in as well the inline as block direction.
             strong
               | Also requires the 
               code $enable-grid-classes
               |  Sass variable to be enabled
             |  (on by default).
-          +example()
+          +example('https://coreui.io/docs/forms/layout/#gutters')
             .row.g-3
               .col
                 input.form-control(type='text' placeholder='First name' aria-label='First name')
               .col
                 input.form-control(type='text' placeholder='Last name' aria-label='Last name')
           p.text-medium-emphasis.small More complex layouts can also be created with the grid system.
-          +example()
+          +example('https://coreui.io/docs/forms/layout/#gutters')
             form.row.g-3
               .col-md-6
                 label.form-label(for='inputEmail4') Email
@@ -129,7 +129,7 @@ block view
             | At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we’ve removed the 
             code padding-top
             |  on our stacked radio inputs label to better align the text baseline.
-          +example()
+          +example('https://coreui.io/docs/forms/layout/#horizontal-form')
             form
               .row.mb-3
                 label.col-sm-2.col-form-label(for='inputEmail3') Email
@@ -183,7 +183,7 @@ block view
             |  and 
             code .form-control-sm
             | .
-          +example()
+          +example('https://coreui.io/docs/forms/layout/#horizontal-form-label-sizing')
             .row.mb-3
               label.col-sm-2.col-form-label.col-form-label-sm(for='colFormLabelSm') Email
               .col-sm-10
@@ -212,7 +212,7 @@ block view
             | s equally split the rest, with specific column classes like 
             code .col-sm-7
             | .
-          +example()
+          +example('https://coreui.io/docs/forms/layout/#column-sizing')
             .row.g-3
               .col-sm-7
                 input.form-control(type='text' placeholder='City' aria-label='City')
@@ -232,7 +232,7 @@ block view
             |  to 
             code .col-auto
             |  so that your columns only take up as much space as needed. Put another way, the column sizes itself based on the contents.
-          +example()
+          +example('https://coreui.io/docs/forms/layout/#auto-sizing')
             form.row.gy-2.gx-3.align-items-center
               .col-auto
                 label.visually-hidden(for='autoSizingInput') Name
@@ -257,7 +257,7 @@ block view
               .col-auto
                 button.btn.btn-primary(type='submit') Submit
           p.text-medium-emphasis.small You can then remix that once again with size-specific column classes.
-          +example()
+          +example('https://coreui.io/docs/forms/layout/#auto-sizing')
             form.row.gx-3.gy-2.align-items-center
               .col-sm-3
                 label.visually-hidden(for='specificSizeInputName') Name
@@ -291,13 +291,13 @@ block view
             | Use the 
             code .col-auto
             |  class to create horizontal layouts. By adding
-            a(href='https://coreui.io/docs/4.1/layout/gutters/') gutter modifier classes
+            a(href='https://coreui.io/docs/layout/gutters/') gutter modifier classes
             | , we’ll have gutters in horizontal and vertical directions. The 
             code .align-items-center
             |  aligns the form elements to the middle, making the 
             code .form-checkbox
             |  align properly.
-          +example()
+          +example('https://coreui.io/docs/forms/layout/#inline-forms')
             form.row.row-cols-lg-auto.g-3.align-items-center
               .col-12
                 label.visually-hidden(for='inlineFormInputGroupUsername') Username

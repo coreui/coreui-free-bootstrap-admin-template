@@ -1,0 +1,436 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/docs/components/navs-tabs/')
+
+block breadcrumb
+  +breadcrumb(['Home', 'Components', 'Base'], 'Navs')
+
+block view
+  +callout('Navs', 'https://coreui.io/docs/components/navs-tabs/')
+  .row
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Navs
+          span.small.ms-1 Base nav
+        .card-body
+          p.text-medium-emphasis.small
+            | Navigation available in Bootstrap share general markup and styles, from the base 
+            code .nav
+            |  class to the active and disabled states. Swap modifier classes to switch between each style.
+          p.text-medium-emphasis.small
+            | The base 
+            code .nav
+            |  component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.
+          +example('https://coreui.io/docs/components/navs-tabs/#base-nav')
+            ul.nav
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+          p.text-medium-emphasis.small
+            | Classes are used throughout, so your markup can be super flexible. Use 
+            code 
+              = '<ul>'
+            | s like above, 
+            code 
+              = '<ol>'
+            |  if the order of your items is important, or roll your own with a 
+            code 
+              = '<nav>'
+            |  element. Because the 
+            code .nav
+            |  uses 
+            code display: flex
+            | , the nav links behave the same as nav items would, but without the extra markup.
+          +example('https://coreui.io/docs/components/navs-tabs/#base-nav')
+            nav.nav
+              a.nav-link.active(aria-current='page' href='#') Active
+              a.nav-link(href='#') Link
+              a.nav-link(href='#') Link
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Navs
+          span.small.ms-1 Horizontal alignment
+        .card-body
+          p.text-medium-emphasis.small
+            | Change the horizontal alignment of your nav with 
+            a(href='https://coreui.io/docs/layout/grid/#horizontal-alignment') flexbox utilities
+            | . By default, navs are left-aligned, but you can easily change them to center or right aligned.
+          p.text-medium-emphasis.small
+            | Centered with 
+            code .justify-content-center
+            | :
+          +example('https://coreui.io/docs/components/navs-tabs/#horizontal-alignment')
+            ul.nav.justify-content-center
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+          p.text-medium-emphasis.small
+            | Right-aligned with 
+            code .justify-content-end
+            | :
+          +example('https://coreui.io/docs/components/navs-tabs/#horizontal-alignment')
+            ul.nav.justify-content-end
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Navs
+          span.small.ms-1 Vertical
+        .card-body
+          p.text-medium-emphasis.small
+            | Stack your navigation by changing the flex item direction with the 
+            code .flex-column
+            |  utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., 
+            code .flex-sm-column
+            | ).
+          +example('https://coreui.io/docs/components/navs-tabs/#vertical')
+            ul.nav.flex-column
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+          p.text-medium-emphasis.small
+            | As always, vertical navigation is possible without 
+            code 
+              = '<ul>'
+            | s, too.
+          +example('https://coreui.io/docs/components/navs-tabs/#vertical')
+            nav.nav.flex-column
+              a.nav-link.active(aria-current='page' href='#') Active
+              a.nav-link(href='#') Link
+              a.nav-link(href='#') Link
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Navs
+          span.small.ms-1 Tabs
+        .card-body
+          p.text-medium-emphasis.small
+            | Takes the basic nav from above and adds the 
+            code .nav-tabs
+            |  class to generate a tabbed interface. Use them to create tabbable regions with our 
+            a(href='#javascript-behavior') tab JavaScript plugin
+            | .
+          +example('https://coreui.io/docs/components/navs-tabs/#tabs')
+            ul.nav.nav-tabs
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Navs
+          span.small.ms-1 Pills
+        .card-body
+          p.text-medium-emphasis.small
+            | Take that same HTML, but use 
+            code .nav-pills
+            |  instead:
+          +example('https://coreui.io/docs/components/navs-tabs/#pills')
+            ul.nav.nav-pills
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Navs
+          span.small.ms-1 Fill and justify
+        .card-body
+          p.text-medium-emphasis.small
+            | Force your 
+            code .nav
+            | ’s contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your 
+            code .nav-item
+            | s, use 
+            code .nav-fill
+            | . Notice that all horizontal space is occupied, but not every nav item has the same width.
+          +example('https://coreui.io/docs/components/navs-tabs/#fill-and-justify')
+            ul.nav.nav-pills.nav-fill
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Much longer nav link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+          p.text-medium-emphasis.small
+            | When using a 
+            code 
+              = '<nav>'
+            | -based navigation, you can safely omit 
+            code .nav-item
+            |  as only 
+            code .nav-link
+            |  is required for styling 
+            code 
+              = '<a>'
+            |  elements.
+          +example('https://coreui.io/docs/components/navs-tabs/#fill-and-justify')
+            nav.nav.nav-pills.nav-fill
+              a.nav-link.active(aria-current='page' href='#') Active
+              a.nav-link(href='#') Much longer nav link
+              a.nav-link(href='#') Link
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+          p.text-medium-emphasis.small
+            | For equal-width elements, use 
+            code .nav-justified
+            | . All horizontal space will be occupied by nav links, but unlike the 
+            code .nav-fill
+            |  above, every nav item will be the same width.
+          +example('https://coreui.io/docs/components/navs-tabs/#fill-and-justify')
+            ul.nav.nav-pills.nav-justified
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item
+                a.nav-link(href='#') Much longer nav link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+          p.text-medium-emphasis.small
+            | Similar to the 
+            code .nav-fill
+            |  example using a 
+            code 
+              = '<nav>'
+            | -based navigation.
+          +example('https://coreui.io/docs/components/navs-tabs/#fill-and-justify')
+            nav.nav.nav-pills.nav-justified
+              a.nav-link.active(aria-current='page' href='#') Active
+              a.nav-link(href='#') Much longer nav link
+              a.nav-link(href='#') Link
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Navs
+          span.small.ms-1 Working with flex utilities
+        .card-body
+          p.text-medium-emphasis.small
+            | If you need responsive nav variations, consider using a series of 
+            a(href='https://coreui.io/docs/utilities/flex/') flexbox utilities
+            | . While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.
+          +example('https://coreui.io/docs/components/navs-tabs/#working-with-flex-utilities')
+            nav.nav.nav-pills.flex-column.flex-sm-row
+              a.flex-sm-fill.text-sm-center.nav-link.active(aria-current='page' href='#') Active
+              a.flex-sm-fill.text-sm-center.nav-link(href='#') Longer nav link
+              a.flex-sm-fill.text-sm-center.nav-link(href='#') Link
+              a.flex-sm-fill.text-sm-center.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+ 
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Navs
+          span.small.ms-1 Tabs with dropdowns
+        .card-body
+          +example('https://coreui.io/docs/components/navs-tabs/#tabs-with-dropdowns')
+            ul.nav.nav-tabs
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-coreui-toggle='dropdown' href='#' role='button' aria-expanded='false') Dropdown
+                ul.dropdown-menu
+                  li
+                    a.dropdown-item(href='#') Action
+                  li
+                    a.dropdown-item(href='#') Another action
+                  li
+                    a.dropdown-item(href='#') Something else here
+                  li
+                    hr.dropdown-divider
+                  li
+                    a.dropdown-item(href='#') Separated link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Navs
+          span.small.ms-1 Pills with dropdowns
+        .card-body
+          +example('https://coreui.io/docs/components/navs-tabs/#pills-with-dropdowns')
+            ul.nav.nav-pills
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-coreui-toggle='dropdown' href='#' role='button' aria-expanded='false') Dropdown
+                ul.dropdown-menu(style='')
+                  li
+                    a.dropdown-item(href='#') Action
+                  li
+                    a.dropdown-item(href='#') Another action
+                  li
+                    a.dropdown-item(href='#') Something else here
+                  li
+                    hr.dropdown-divider
+                  li
+                    a.dropdown-item(href='#') Separated link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Navs
+          span.small.ms-1 JavaScript behavior
+        .card-body
+          p.text-medium-emphasis.small
+            | Use the tab JavaScript plugin—include it individually or through the compiled 
+            code coreui.js
+            |  file—to extend our navigational tabs and pills to create tabbable panes of local content, even via dropdown menus.
+          p.text-medium-emphasis.small
+            | Dynamic tabbed interfaces, as described in the 
+            a(href='https://www.w3.org/TR/wai-aria-practices/#tabpanel')
+              abbr(title='Web Accessibility Initiative') WAI
+              abbr(title='Accessible Rich Internet Applications') ARIA
+              |  Authoring Practices
+            | , require 
+            code role="tablist"
+            | , 
+            code role="tab"
+            | , 
+            code role="tabpanel"
+            | , and additional 
+            code aria-
+            |  attributes in order to convey their structure, functionality and current state to users of assistive technologies (such as screen readers). As a best practice, we recommend using 
+            code 
+              = '<button>'
+            |  elements for the tabs, as these are controls that trigger a dynamic change, rather than links that navigate to a new page or location.
+          p.text-medium-emphasis.small
+            | Note that dynamic tabbed interfaces should 
+            em not
+            |  contain dropdown menus, as this causes both usability and accessibility issues. From a usability perspective, the fact that the currently displayed tab’s trigger element is not immediately visible (as it’s inside the closed dropdown menu) can cause confusion. From an accessibility point of view, there is currently no sensible way to map this sort of construct to a standard WAI ARIA pattern, meaning that it cannot be easily made understandable to users of assistive technologies.
+          +example('https://coreui.io/docs/components/navs-tabs/#javascript-behavior')
+            ul#myTab.nav.nav-tabs.mb-3(role='tablist')
+              li.nav-item(role='presentation')
+                button#home-tab.nav-link.active(data-coreui-toggle='tab' data-coreui-target='#home' type='button' role='tab' aria-controls='home' aria-selected='true') Home
+              li.nav-item(role='presentation')
+                button#profile-tab.nav-link(data-coreui-toggle='tab' data-coreui-target='#profile' type='button' role='tab' aria-controls='profile' aria-selected='false') Profile
+              li.nav-item(role='presentation')
+                button#contact-tab.nav-link(data-coreui-toggle='tab' data-coreui-target='#contact' type='button' role='tab' aria-controls='contact' aria-selected='false') Contact
+            #myTabContent.tab-content
+              #home.tab-pane.fade.active.show(role='tabpanel' aria-labelledby='home-tab')
+                p
+                  | Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.
+              #profile.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab')
+                p
+                  | Placeholder content for the tab panel. This one relates to the profile tab. You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! But you'd rather get wasted.
+              #contact.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab')
+                p
+                  | Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.
+          p.text-medium-emphasis.small
+            | To help fit your needs, this works with 
+            code 
+              = '<ul>'
+            | -based markup, as shown above, or with any arbitrary “roll your own” markup. Note that if you’re using 
+            code 
+              = '<nav>'
+            | , you shouldn’t add 
+            code role="tablist"
+            |  directly to it, as this would override the element’s native role as a navigation landmark. Instead, switch to an alternative element (in the example below, a simple 
+            code 
+              = '<div>'
+            | ) and wrap the 
+            code 
+              = '<nav>'
+            |  around it.
+          +example('https://coreui.io/docs/components/navs-tabs/#javascript-behavior')
+            nav
+              #nav-tab.nav.nav-tabs.mb-3(role='tablist')
+                button#nav-home-tab.nav-link.active(data-coreui-toggle='tab' data-coreui-target='#nav-home' type='button' role='tab' aria-controls='nav-home' aria-selected='true') Home
+                button#nav-profile-tab.nav-link(data-coreui-toggle='tab' data-coreui-target='#nav-profile' type='button' role='tab' aria-controls='nav-profile' aria-selected='false') Profile
+                button#nav-contact-tab.nav-link(data-coreui-toggle='tab' data-coreui-target='#nav-contact' type='button' role='tab' aria-controls='nav-contact' aria-selected='false') Contact
+            #nav-tabContent.tab-content
+              #nav-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-home-tab')
+                p
+                  | Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.
+              #nav-profile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-profile-tab')
+                p
+                  | Placeholder content for the tab panel. This one relates to the profile tab. You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! But you'd rather get wasted.
+              #nav-contact.tab-pane.fade(role='tabpanel' aria-labelledby='nav-contact-tab')
+                p
+                  | Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.
+          p.text-medium-emphasis.small The tabs plugin also works with pills.
+          +example('https://coreui.io/docs/components/navs-tabs/#javascript-behavior')
+            ul#pills-tab.nav.nav-pills.mb-3(role='tablist')
+              li.nav-item(role='presentation')
+                button#pills-home-tab.nav-link.active(data-coreui-toggle='pill' data-coreui-target='#pills-home' type='button' role='tab' aria-controls='pills-home' aria-selected='true') Home
+              li.nav-item(role='presentation')
+                button#pills-profile-tab.nav-link(data-coreui-toggle='pill' data-coreui-target='#pills-profile' type='button' role='tab' aria-controls='pills-profile' aria-selected='false') Profile
+              li.nav-item(role='presentation')
+                button#pills-contact-tab.nav-link(data-coreui-toggle='pill' data-coreui-target='#pills-contact' type='button' role='tab' aria-controls='pills-contact' aria-selected='false') Contact
+            #pills-tabContent.tab-content
+              #pills-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab')
+                p
+                  | Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.
+              #pills-profile.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab')
+                p
+                  | Placeholder content for the tab panel. This one relates to the profile tab. You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! But you'd rather get wasted.
+              #pills-contact.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab')
+                p
+                  | Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.
+          p.text-medium-emphasis.small And with vertical pills.
+          +example('https://coreui.io/docs/components/navs-tabs/#javascript-behavior')
+            .d-flex.align-items-start
+              #v-pills-tab.nav.flex-column.nav-pills.me-3(role='tablist' aria-orientation='vertical')
+                button#v-pills-home-tab.nav-link(data-coreui-toggle='pill' data-coreui-target='#v-pills-home' type='button' role='tab' aria-controls='v-pills-home' aria-selected='false') Home
+                button#v-pills-profile-tab.nav-link(data-coreui-toggle='pill' data-coreui-target='#v-pills-profile' type='button' role='tab' aria-controls='v-pills-profile' aria-selected='false') Profile
+                button#v-pills-messages-tab.nav-link(data-coreui-toggle='pill' data-coreui-target='#v-pills-messages' type='button' role='tab' aria-controls='v-pills-messages' aria-selected='false') Messages
+                button#v-pills-settings-tab.nav-link.active(data-coreui-toggle='pill' data-coreui-target='#v-pills-settings' type='button' role='tab' aria-controls='v-pills-settings' aria-selected='true') Settings
+              #v-pills-tabContent.tab-content
+                #v-pills-home.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-home-tab')
+                  p
+                    | Placeholder content for the tab panel. This one relates to the home tab. Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop by? Heavy is the head that wears the crown. Yes, we make angels cry, raining down on earth from up above. Wanna see the show in 3D, a movie. Do you ever feel, feel so paper thin. It’s a yes or no, no maybe.
+                #v-pills-profile.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-profile-tab')
+                  p
+                    | Placeholder content for the tab panel. This one relates to the profile tab. Takes you miles high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.
+                #v-pills-messages.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-messages-tab')
+                  p
+                    | Placeholder content for the tab panel. This one relates to the messages tab. You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! But you'd rather get wasted.
+                #v-pills-settings.tab-pane.fade.active.show(role='tabpanel' aria-labelledby='v-pills-settings-tab')
+                  p
+                    | Placeholder content for the tab panel. This one relates to the settings tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.
+

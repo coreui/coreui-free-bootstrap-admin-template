@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/components/carousel/')
+  link(rel='canonical' href='https://coreui.io/docs/components/carousel/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Base'], 'Carousel')
 
 block view
-  +callout('Carousel', 'https://coreui.io/docs/4.1/components/carousel/')
+  +callout('Carousel', 'https://coreui.io/docs/components/carousel/')
   .card.mb-4
     .card-header
       strong Carousel
@@ -19,7 +19,7 @@ block view
         |  also, 
         code .w-100
         |  on carousel images to override browser default image alignment.
-      +example()
+      +example('https://coreui.io/docs/components/carousel/#slides-only')
         #carouselExampleSlidesOnly.carousel.slide(data-coreui-ride='carousel')
           .carousel-inner
             .carousel-item
@@ -52,7 +52,7 @@ block view
         |  elements with 
         code role="button"
         | .
-      +example()
+      +example('https://coreui.io/docs/components/carousel/#with-controls')
         #carouselExampleControls.carousel.slide(data-coreui-ride='carousel')
           .carousel-inner
             .carousel-item
@@ -82,7 +82,7 @@ block view
       span.small.ms-1 With indicators
     .card-body
       p.text-medium-emphasis.small You can attach the indicators to the carousel, lengthwise the controls, too.
-      +example()
+      +example('https://coreui.io/docs/components/carousel/#with-indicators')
         #carouselExampleIndicators.carousel.slide(data-coreui-ride='carousel')
           .carousel-indicators
             button(type='button' data-coreui-target='#carouselExampleIndicators' data-coreui-slide-to='0' aria-label='Slide 1')
@@ -121,13 +121,13 @@ block view
         |  element within any 
         code .carousel-item
         | . They can be immediately hidden on smaller viewports, as shown below, with optional 
-        a(href='https://coreui.io/docs/4.1/utilities/display/') display utilities
+        a(href='https://coreui.io/docs/utilities/display/') display utilities
         | . We hide them with 
         code .d-none
         |  and draw them back on medium-sized devices with 
         code .d-md-block
         | .
-      +example()
+      +example('https://coreui.io/docs/components/carousel/#with-captions')
         #carouselExampleCaptions.carousel.slide(data-coreui-ride='carousel')
           .carousel-indicators
             button(type='button' data-coreui-target='#carouselExampleCaptions' data-coreui-slide-to='0' aria-label='Slide 1')
@@ -173,7 +173,7 @@ block view
         | Add 
         code .carousel-fade
         |  to your carousel to animate slides with a fade transition instead of a slide.
-      +example()
+      +example('https://coreui.io/docs/components/carousel/#crossfade')
         #carouselExampleFade.carousel.slide.carousel-fade(data-coreui-ride='carousel')
           .carousel-inner
             .carousel-item
@@ -214,7 +214,7 @@ block view
         |  and 
         code background-color
         | .
-      +example()
+      +example('https://coreui.io/docs/components/carousel/#dark-variant')
         #carouselExampleDark.carousel.carousel-dark.slide(data-coreui-ride='carousel')
           .carousel-indicators
             button(type='button' data-coreui-target='#carouselExampleDark' data-coreui-slide-to='0' aria-label='Slide 1')

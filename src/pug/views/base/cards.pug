@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/components/card/')
+  link(rel='canonical' href='https://coreui.io/docs/components/card/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Base'], 'Cards')
 
 block view
-  +callout('Card', 'https://coreui.io/docs/4.1/components/card/')
+  +callout('Card', 'https://coreui.io/docs/components/card/')
   .card.mb-4
     .card-header
       strong Card
@@ -15,13 +15,13 @@ block view
     .card-body
       p.text-medium-emphasis.small
         | Cards are built with as little markup and styles as possible but still manage to deliver a bunch of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. Cards have no top, left, and right margins by default, so use 
-        a(href='https://coreui.io/docs/4.1/utilities/spacing/') spacing utilities
+        a(href='https://coreui.io/docs/utilities/spacing/') spacing utilities
         |  as needed. They have no fixed width to start, so they’ll fill the full width of its parent.
       p.text-medium-emphasis.small
         | Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various 
         a(href='#sizing') sizing options
         | .
-      +example()
+      +example('https://coreui.io/docs/components/card/#example')
         .card(style='width: 18rem;')
           img.card-img-top(src='assets/img/full.jpg' alt='')
           .card-body
@@ -38,7 +38,7 @@ block view
         | The main block of a card is the 
         code .card-body
         | . Use it whenever you need a padded section within a card.
-      +example()
+      +example('https://coreui.io/docs/components/card/#body')
         .card
           .card-body
             | This is some text within a card body.
@@ -72,7 +72,7 @@ block view
         |  items are stored in a 
         code .card-body
         |  item, the card title, and subtitle are arranged rightly.
-      +example()
+      +example('https://coreui.io/docs/components/card/#titles-text-and-links')
         .card(style='width: 18rem;')
           .card-body
             h5.card-title Card title
@@ -93,7 +93,7 @@ block view
         | , text can be added to the card. Text within 
         code .card-text
         |  can additionally be styled with the regular HTML tags.
-      +example()
+      +example('https://coreui.io/docs/components/card/#titles-text-and-links')
         .card(style='width: 18rem;')
           img.card-img-top(src='assets/img/full.jpg' alt='')
           .card-body
@@ -105,7 +105,7 @@ block view
       span.small.ms-1 List groups
     .card-body
       p.text-medium-emphasis.small Create lists of content in a card with a flush list group.
-      +example()
+      +example('https://coreui.io/docs/components/card/#list-groups')
         .row
           .col-lg-4
             .card
@@ -136,7 +136,7 @@ block view
     .card-body
       p.text-medium-emphasis.small
         | Combine and match many content types to build the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.
-      +example()
+      +example('https://coreui.io/docs/components/card/#kitchen-sink')
         .card(style='width: 18rem;')
           img.card-img-top(src='assets/img/full.jpg' alt='')
           .card-body
@@ -156,7 +156,7 @@ block view
       span.small.ms-1 Header and footer
     .card-body
       p.text-medium-emphasis.small Add an optional header and/or footer within a card.
-      +example()
+      +example('https://coreui.io/docs/components/card/#header-and-footer')
         .card.mb-3
           .card-header
             | Featured
@@ -171,14 +171,14 @@ block view
         code 
           = '<h*>'
         |  elements.
-      +example()
+      +example('https://coreui.io/docs/components/card/#header-and-footer')
         .card.mb-3
           h5.card-header Featured
           .card-body
             h5.card-title Special title treatment
             p.card-text With supporting text below as a natural lead-in to additional content.
             a.btn.btn-primary(href='#') Go somewhere
-      +example()
+      +example('https://coreui.io/docs/components/card/#header-and-footer')
         .card.mb-3
           .card-header
             | Quote
@@ -188,7 +188,7 @@ block view
               footer.blockquote-footer
                 | Someone famous in 
                 cite(title='Source Title') Source Title
-      +example()
+      +example('https://coreui.io/docs/components/card/#header-and-footer')
         .card.text-center
           .card-header
             | Featured
@@ -198,14 +198,13 @@ block view
             a.btn.btn-primary(href='#') Go somewhere
           .card-footer.text-medium-emphasis
             | 2 days ago
-
   .card.mb-4
     .card-header
       strong Card
       span.small.ms-1 Sizing - Using grid markup
     .card-body
       p.text-medium-emphasis.small Using the grid, wrap cards in columns and rows as needed.
-      +example()
+      +example('https://coreui.io/docs/components/card/#using-grid-markup')
         .row
           .col-sm-6
             .card
@@ -226,9 +225,9 @@ block view
     .card-body
       p.text-medium-emphasis.small
         | Use some of 
-        a(href='https://coreui.io/docs/4.1/utilities/sizing/') available sizing utilities
+        a(href='https://coreui.io/docs/utilities/sizing/') available sizing utilities
         |  to rapidly set a card’s width.
-      +example()
+      +example('https://coreui.io/docs/components/card/#using-utilities')
         .card.w-75.mb-3
           .card-body
             h5.card-title Card title
@@ -245,7 +244,7 @@ block view
       span.small.ms-1 Sizing - Using custom CSS
     .card-body
       p.text-medium-emphasis.small Use custom CSS in your stylesheets or as inline styles to set a width.
-      +example()
+      +example('https://coreui.io/docs/components/card/#using-custom-css')
         .card(style='width: 18rem;')
           .card-body
             h5.card-title Special title treatment
@@ -258,9 +257,9 @@ block view
     .card-body
       p.text-medium-emphasis.small
         | You can instantly change the text arrangement of any card—in its whole or specific parts—with 
-        a(href='https://coreui.io/docs/4.1/utilities/text/#text-alignment') text align classes
+        a(href='https://coreui.io/docs/utilities/text/#text-alignment') text align classes
         | .
-      +example()
+      +example('https://coreui.io/docs/components/card/#text-alignment')
         .card.mb-3(style='width: 18rem;')
           .card-body
             h5.card-title Special title treatment
@@ -283,9 +282,9 @@ block view
     .card-body
       p.text-medium-emphasis.small
         | Add some navigation to a card’s header (or block) with Bootstrap’s 
-        a(href='https://coreui.io/docs/4.1/components/navs-tabs/') nav components
+        a(href='https://coreui.io/docs/components/navs-tabs/') nav components
         | .
-      +example()
+      +example('https://coreui.io/docs/components/card/#navigation')
         .card.text-center
           .card-header
             ul.nav.nav-tabs.card-header-tabs
@@ -299,7 +298,7 @@ block view
             h5.card-title Special title treatment
             p.card-text With supporting text below as a natural lead-in to additional content.
             a.btn.btn-primary(href='#') Go somewhere
-      +example()
+      +example('https://coreui.io/docs/components/card/#navigation')
         .card.text-center
           .card-header
             ul.nav.nav-pills.card-header-pills
@@ -321,7 +320,7 @@ block view
     .card-body
       p.text-medium-emphasis.small
         | Similar to headers and footers, cards can include top and bottom “image caps”—images at the top or bottom of a card.
-      +example()
+      +example('https://coreui.io/docs/components/card/#image-caps')
         .row
           .col-md-6
             .card.mb-3
@@ -348,7 +347,7 @@ block view
     .card-body
       p.text-medium-emphasis.small
         | Adapt an image into a background and overlay your text. Depending on the image, you may need additional styles or utilities.
-      +example()
+      +example('https://coreui.io/docs/components/card/#image-overlays')
         .card.bg-dark.text-white
           img.card-img(src='assets/img/full.jpg' alt='')
           .card-img-overlay
@@ -369,7 +368,7 @@ block view
         |  classes to make the card horizontal at the 
         code md
         |  breakpoint. Further adjustments may be needed depending on your card content.
-      +example()
+      +example('https://coreui.io/docs/components/card/#horizontal')
         .card
           .row.g-0
             .col-md-4
@@ -389,11 +388,11 @@ block view
       p.text-medium-emphasis.small
         | Cards include various options for customizing their backgrounds, borders, and color.
         | Use 
-        a(href='https://coreui.io/docs/4.1/utilities/colors/') text color
+        a(href='https://coreui.io/docs/utilities/colors/') text color
         |  and 
-        a(href='https://coreui.io/docs/4.1/utilities/background/') background utilities
+        a(href='https://coreui.io/docs/utilities/background/') background utilities
         |  to change the appearance of a card.
-      +example()
+      +example('https://coreui.io/docs/components/card/#background-and-color')
         .row
           .col-xl-4
             .card.text-white.bg-primary.mb-3
@@ -458,7 +457,7 @@ block view
     .card-body
       p.text-medium-emphasis.small
         | Use 
-        a(href='https://coreui.io/docs/4.1/utilities/borders/') border utilities
+        a(href='https://coreui.io/docs/utilities/borders/') border utilities
         |  to change just the 
         code border-color
         |  of a card. Note that you can put 
@@ -466,7 +465,7 @@ block view
         |  classes on the parent 
         code .card
         |  or a subset of the card’s contents as shown below.
-      +example()
+      +example('https://coreui.io/docs/components/card/#border')
         .row
           .col-xl-4
             .card.border-primary.mb-3
@@ -531,7 +530,7 @@ block view
     .card-body
       p.text-medium-emphasis.small
         | Use 
-        a(href='https://coreui.io/docs/4.1/utilities/borders/') border utilities
+        a(href='https://coreui.io/docs/utilities/borders/') border utilities
         |  to change just the 
         code border-top-color
         |  of a card. Note that you can put 
@@ -539,7 +538,7 @@ block view
         |  classes on the parent 
         code .card
         |  or a subset of the card’s contents as shown below.
-      +example()
+      +example('https://coreui.io/docs/components/card/#top-border')
         .row
           .col-xl-4
             .card.border-top-primary.border-top-3.mb-3
@@ -608,7 +607,7 @@ block view
         |  with 
         code .bg-transparent
         | .
-      +example()
+      +example('https://coreui.io/docs/components/card/#mixins-utilities')
         .card.border-success.mb-3(style='max-width: 18rem;')
           .card-header.bg-transparent.border-success Header
           .card-body.text-success
@@ -654,7 +653,7 @@ block view
               p.card-text
                 small.text-medium-emphasis Last updated 3 mins ago
       p.text-medium-emphasis.small When using card groups with footers, their content will automatically line up.
-      +example()
+      +example('https://coreui.io/docs/components/card/#card-groups')
         .card-group
           .card
             img.card-img-top(src='assets/img/full.jpg' alt='')
@@ -686,7 +685,7 @@ block view
     .card-body
       p.text-medium-emphasis.small
         | Use the Bootstrap grid system and its 
-        a(href='https://coreui.io/docs/4.1/layout/grid/#row-columns')
+        a(href='https://coreui.io/docs/layout/grid/#row-columns')
           code .row-cols
           |  classes
         |  to control how many grid columns (wrapped around your cards) you show per row. For example, here’s 
@@ -694,7 +693,7 @@ block view
         |  laying out the cards on one column, and 
         code .row-cols-md-2
         |  splitting four cards to equal width across multiple rows, from the medium breakpoint up.
-      +example()
+      +example('https://coreui.io/docs/components/card/#grid-cards')
         .row.row-cols-1.row-cols-md-2.g-4
           .col
             .card
@@ -728,7 +727,7 @@ block view
         | Change it to 
         code .row-cols-3
         |  and you’ll see the fourth card wrap.
-      +example()
+      +example('https://coreui.io/docs/components/card/#grid-cards')
         .row.row-cols-1.row-cols-md-3.g-4
           .col
             .card
@@ -764,7 +763,7 @@ block view
         |  to the cards. If you want equal heights by default, you can set 
         code $card-height: 100%
         |  in Sass.
-      +example()
+      +example('https://coreui.io/docs/components/card/#grid-cards')
         .row.row-cols-1.row-cols-md-3.g-4
           .col
             .card.h-100
@@ -794,7 +793,7 @@ block view
                 p.card-text
                   | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
       p.text-medium-emphasis.small Just like with card groups, card footers will automatically line up.
-      +example()
+      +example('https://coreui.io/docs/components/card/#grid-cards')
         .row.row-cols-1.row-cols-md-3.g-4
           .col
             .card.h-100

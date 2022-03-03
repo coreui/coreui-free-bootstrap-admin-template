@@ -1,13 +1,31 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/forms/validation/')
+  link(rel='canonical' href='https://coreui.io/docs/forms/validation/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Forms'], 'Validation')
 
+block js 
+  |  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  |  (function () {
+  |    'use strict'
+  |    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  |    var forms = document.querySelectorAll('.needs-validation')
+  |    // Loop over them and prevent submission
+  |    Array.prototype.slice.call(forms).forEach(function (form) {
+  |      form.addEventListener('submit', function (event) {
+  |        if (!form.checkValidity()) {
+  |          event.preventDefault()
+  |          event.stopPropagation()
+  |        }
+  |        form.classList.add('was-validated')
+  |      }, false)
+  |    })
+  |  })()
+
 block view
-  +callout('Validation', 'https://coreui.io/docs/4.1/forms/validation/')
+  +callout('Validation', 'https://coreui.io/docs/forms/validation/')
   .row
     .col-12
       .card.mb-4
@@ -35,70 +53,51 @@ block view
             | , and not 
             code .form-control
             | .
-          +example(true)
-            block html
-              form.row.g-3.needs-validation(novalidate)
-                .col-md-4
-                  label.form-label(for='validationCustom01') First name
-                  input.form-control#validationCustom01(type='text' value='Mark' required)
-                  .valid-feedback.
-                    Looks good!
-                .col-md-4
-                  label.form-label(for='validationCustom02') Last name
-                  input.form-control#validationCustom02(type='text' value='Otto' required)
-                  .valid-feedback.
-                    Looks good!
-                .col-md-4
-                  label.form-label(for='validationCustomUsername') Username
-                  .input-group.has-validation
-                    span.input-group-text#inputGroupPrepend @
-                    input.form-control#validationCustomUsername(type='text' aria-describedby='inputGroupPrepend' required)
-                    .invalid-feedback.
-                      Please choose a username.
-                .col-md-6
-                  label.form-label(for='validationCustom03') City
-                  input.form-control#validationCustom03(type='text' required)
+          +example('https://coreui.io/docs/forms/validation/#custom-styles')
+            form.row.g-3.needs-validation(novalidate)
+              .col-md-4
+                label.form-label(for='validationCustom01') First name
+                input.form-control#validationCustom01(type='text' value='Mark' required)
+                .valid-feedback.
+                  Looks good!
+              .col-md-4
+                label.form-label(for='validationCustom02') Last name
+                input.form-control#validationCustom02(type='text' value='Otto' required)
+                .valid-feedback.
+                  Looks good!
+              .col-md-4
+                label.form-label(for='validationCustomUsername') Username
+                .input-group.has-validation
+                  span.input-group-text#inputGroupPrepend @
+                  input.form-control#validationCustomUsername(type='text' aria-describedby='inputGroupPrepend' required)
                   .invalid-feedback.
-                    Please provide a valid city.
-                .col-md-3
-                  label.form-label(for='validationCustom04') State
-                  select.form-select#validationCustom04(required)
-                    option(selected disabled value) Choose...
-                    option ...
+                    Please choose a username.
+              .col-md-6
+                label.form-label(for='validationCustom03') City
+                input.form-control#validationCustom03(type='text' required)
+                .invalid-feedback.
+                  Please provide a valid city.
+              .col-md-3
+                label.form-label(for='validationCustom04') State
+                select.form-select#validationCustom04(required)
+                  option(selected disabled value) Choose...
+                  option ...
+                .invalid-feedback.
+                  Please select a valid state.
+              .col-md-3
+                label.form-label(for='validationCustom05') Zip
+                input.form-control#validationCustom05(type='text' required)
+                .invalid-feedback.
+                  Please provide a valid zip.
+              .col-12
+                .form-check
+                  input.form-check-input#invalidCheck(type='checkbox' required)
+                  label.form-check-label(for='invalidCheck').
+                    Agree to terms and conditions
                   .invalid-feedback.
-                    Please select a valid state.
-                .col-md-3
-                  label.form-label(for='validationCustom05') Zip
-                  input.form-control#validationCustom05(type='text' required)
-                  .invalid-feedback.
-                    Please provide a valid zip.
-                .col-12
-                  .form-check
-                    input.form-check-input#invalidCheck(type='checkbox' required)
-                    label.form-check-label(for='invalidCheck').
-                      Agree to terms and conditions
-                    .invalid-feedback.
-                      You must agree before submitting.
-                .col-12
-                  button.btn.btn-primary(type='submit') Submit form
-            block js 
-              |  // Example starter JavaScript for disabling form submissions if there are invalid fields
-              |  (function () {
-              |    'use strict'
-              |    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-              |    var forms = document.querySelectorAll('.needs-validation')
-              |    // Loop over them and prevent submission
-              |    Array.prototype.slice.call(forms).forEach(function (form) {
-              |      form.addEventListener('submit', function (event) {
-              |        if (!form.checkValidity()) {
-              |          event.preventDefault()
-              |          event.stopPropagation()
-              |        }
-              |        form.classList.add('was-validated')
-              |      }, false)
-              |    })
-              |  })()
-
+                    You must agree before submitting.
+              .col-12
+                button.btn.btn-primary(type='submit') Submit form
     .col-12
       .card.mb-4
         .card-header
@@ -107,7 +106,7 @@ block view
         .card-body
           p.text-medium-emphasis.small Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.
           p.text-medium-emphasis.small While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
-          +example()
+          +example('https://coreui.io/docs/forms/validation/#browser-defaults')
             form.row.g-3
               .col-md-4
                 label.form-label(for='validationDefault01') First name
@@ -164,7 +163,7 @@ block view
             | , input groups require an additional 
             code .has-validation
             |  class.
-          +example()
+          +example('https://coreui.io/docs/forms/validation/#server-side')
             form.row.g-3
               .col-md-4
                 label.form-label(for='validationServer01') First name
@@ -239,7 +238,7 @@ block view
               |
               code .form-check
               | s
-          +example()
+          +example('https://coreui.io/docs/forms/validation/#supported-elements')
             form.was-validated
               .mb-3
                 label.form-label(for='validationTextarea') Textarea
@@ -284,8 +283,7 @@ block view
             |  classes to display validation feedback in a styled tooltip. Be sure to have a parent with 
             code position: relative
             |  on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.
-          +example()
-            // TODO: add javascript
+          +example('https://coreui.io/docs/forms/validation/#tooltips')
             form.row.g-3.needs-validation(novalidate)
               .col-md-4.position-relative
                 label.form-label(for='validationTooltip01') First name

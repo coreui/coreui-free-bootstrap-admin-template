@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/forms/input-group/')
+  link(rel='canonical' href='https://coreui.io/docs/forms/input-group/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Forms'], 'Input group')
 
 block view
-  +callout('Input group', 'https://coreui.io/docs/4.1/forms/input-group/')
+  +callout('Input group', 'https://coreui.io/docs/forms/input-group/')
   .row
     .col-12
       .card.mb-4
@@ -20,7 +20,7 @@ block view
             code
               = '<label>'
             | s outside the input group.
-          +example()
+          +example('https://coreui.io/docs/forms/input-group/#basic-example')
             .input-group.mb-3
               span.input-group-text#basic-addon1 @
               input.form-control(type='text' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1')
@@ -54,7 +54,7 @@ block view
             |  in order to accommodate custom form field validation within an input group. You may disable this with 
             code .flex-nowrap
             | .
-          +example()
+          +example('https://coreui.io/docs/forms/input-group/#wrapping')
             .input-group.flex-nowrap
               span.input-group-text#addon-wrapping @
               input.form-control(type='text' placeholder='Username' aria-label='Username' aria-describedby='addon-wrapping')
@@ -70,7 +70,7 @@ block view
             |  itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
           p.text-medium-emphasis.small
             strong Sizing on the individual input group elements isn’t supported.
-          +example()
+          +example('https://coreui.io/docs/forms/input-group/#sizing')
             .input-group.input-group-sm.mb-3
               span.input-group-text#inputGroup-sizing-sm Small
               input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-sm')
@@ -92,7 +92,7 @@ block view
             |  to the 
             code .form-check-input
             |  when there’s no visible text next to the input.
-          +example()
+          +example('https://coreui.io/docs/forms/input-group/#checkboxes-and-radios')
             .input-group.mb-3
               .input-group-text
                 input.form-check-input.mt-0(type='checkbox' aria-label='Checkbox for following text input')
@@ -115,7 +115,7 @@ block view
             code
               = '<input>'
             | .
-          +example()
+          +example('https://coreui.io/docs/forms/input-group/#multiple-inputs')
             .input-group
               span.input-group-text First and last name
               input.form-control(type='text' aria-label='First name')
@@ -127,7 +127,7 @@ block view
           span.small.ms-1 Multiple addons
         .card-body
           p.text-medium-emphasis.small Multiple add-ons are supported and can be mixed with checkbox and radio input versions.
-          +example()
+          +example('https://coreui.io/docs/forms/input-group/#multiple-addons')
             .input-group.mb-3
               span.input-group-text $
               span.input-group-text 0.00
@@ -142,7 +142,7 @@ block view
           strong Input group
           span.small.ms-1 Button addons
         .card-body
-          +example()
+          +example('https://coreui.io/docs/forms/input-group/#button-addons')
             .input-group.mb-3
               button.btn.btn-outline-secondary#button-addon1(type='button') Button
               input.form-control(type='text' placeholder aria-label='Example text with button addon' aria-describedby='button-addon1')
@@ -163,7 +163,7 @@ block view
           strong Input group
           span.small.ms-1 Buttons with dropdowns
         .card-body
-          +example()
+          +example('https://coreui.io/docs/forms/input-group/#buttons-with-dropdowns')
             .input-group.mb-3
               button.btn.btn-outline-secondary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false') Dropdown
               ul.dropdown-menu
@@ -224,7 +224,7 @@ block view
           strong Input group
           span.small.ms-1 Segmented buttons
         .card-body
-          +example()
+          +example('https://coreui.io/docs/forms/input-group/#segmented-buttons')
             .input-group.mb-3
               button.btn.btn-outline-secondary(type='button') Action
               button.btn.btn-outline-secondary.dropdown-toggle.dropdown-toggle-split(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
@@ -264,7 +264,7 @@ block view
           strong Custom forms
           span.small.ms-1 Custom select
         .card-body
-          +example()
+          +example('https://coreui.io/docs/forms/input-group/#custom-select')
             .input-group.mb-3
               label.input-group-text(for='inputGroupSelect01') Options
               select.form-select#inputGroupSelect01
@@ -299,7 +299,7 @@ block view
           strong Custom forms
           span.small.ms-1 Custom file input
         .card-body
-          +example()
+          +example('https://coreui.io/docs/forms/input-group/#custom-file-input')
             .input-group.mb-3
               label.input-group-text(for='inputGroupFile01') Upload
               input.form-control#inputGroupFile01(type='file')

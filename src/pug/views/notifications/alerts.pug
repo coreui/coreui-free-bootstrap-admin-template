@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/components/alerts/')
+  link(rel='canonical' href='https://coreui.io/docs/components/alerts/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Notifications'], 'Alerts')
 
 block view
-  +callout('Alert', 'https://coreui.io/docs/4.1/components/alerts/')
+  +callout('Alert', 'https://coreui.io/docs/components/alerts/')
   .row
     .col-lg-6
       .card.mb-4
@@ -20,7 +20,7 @@ block view
             |  contextual classes (e.g.,
             code .alert-success
             | ).
-          +example()
+          +example('http://localhost:9001/docs/components/alerts/#examples')
             .alert.alert-primary(role='alert')
               | This is a primary alert—check it out!
             .alert.alert-secondary(role='alert')
@@ -47,7 +47,7 @@ block view
             | Use the 
             code .alert-link
             |  utility class to immediately give matching colored links inside any alert.
-          +example()
+          +example('http://localhost:9001/docs/components/alerts/#link-color')
             .alert.alert-primary(role='alert')
               | This is a primary alert with 
               a.alert-link(href='#') an example link
@@ -91,7 +91,7 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Alert can also incorporate supplementary HTML elements like heading, paragraph, and divider.
-          +example()
+          +example('http://localhost:9001/docs/components/alerts/#additional-content')
             .alert.alert-success(role='alert')
               h4.alert-heading Well done!
               p
@@ -107,7 +107,7 @@ block view
           span.small.ms-1 Dismissing
         .card-body
           p.text-medium-emphasis.small Using the JavaScript plugin, it’s possible to remove any alert.
-          +example()
+          +example('http://localhost:9001/docs/components/alerts/#dismissing')
             .alert.alert-warning.alert-dismissible.fade.show(role='alert')
               .fw-semibold Holy guacamole!
               |  You should check in on some of those fields below.

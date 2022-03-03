@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/components/dropdowns/')
+  link(rel='canonical' href='https://coreui.io/docs/components/dropdowns/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Buttons'], 'Loading buttons')
 
 block view
-  +callout('Dropdown', 'https://coreui.io/docs/4.1/components/dropdowns/')
+  +callout('Dropdown', 'https://coreui.io/docs/components/dropdowns/')
   .row
     .col-12
       .card.mb-4
@@ -22,7 +22,7 @@ block view
             code 
               = '<button>'
             |  elements:
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#single-button')
             .dropdown
               button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
                 | Dropdown button
@@ -38,7 +38,7 @@ block view
             code 
               = '<a>'
             |  elements:
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#single-button')
             .dropdown
               a#dropdownMenuLink.btn.btn-secondary.dropdown-toggle(href='#' role='button' data-coreui-toggle='dropdown' aria-expanded='false')
                 | Dropdown link
@@ -50,7 +50,7 @@ block view
                 li
                   a.dropdown-item(href='#') Something else here
           p.text-medium-emphasis.small The best part is you can do this with any button variant, too:
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#single-button')
             .btn-group
               button.btn.btn-primary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false') Primary
               ul.dropdown-menu
@@ -145,7 +145,7 @@ block view
             |  on either side of the caret by 25% and remove the 
             code margin-left
             |  that’s attached for normal button dropdowns. Those additional changes hold the caret centered in the split button and implement a more properly sized hit area next to the main button.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#split-button')
             .btn-group
               button.btn.btn-primary(type='button') Primary
               button.btn.btn-primary.dropdown-toggle.dropdown-toggle-split(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
@@ -244,7 +244,7 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#sizing')
             .btn-group
               button.btn.btn-secondary.btn-lg.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
                 | Large button
@@ -274,7 +274,7 @@ block view
                   hr.dropdown-divider
                 li
                   a.dropdown-item(href='#') Separated link
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#sizing')
             .btn-group
               button.btn.btn-secondary.btn-sm.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
                 | Small button
@@ -316,7 +316,7 @@ block view
             |  onto an existing 
             code .dropdown-menu
             | . No changes are required to the dropdown items.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#dark-dropdowns')
             .dropdown
               button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
                 | Dropdown button
@@ -332,7 +332,7 @@ block view
                 li
                   a.dropdown-item(href='#') Separated link
           p.text-medium-emphasis.small And putting it to use in a navbar:
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#dark-dropdowns')
             nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
               .container-fluid
                 a.navbar-brand(href='#') Navbar
@@ -360,7 +360,7 @@ block view
             | Trigger dropdown menus above elements by adding 
             code .dropup
             |  to the parent element.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#dropup')
             .btn-group.dropup
               button.btn.btn-secondary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
                 | Dropup
@@ -401,7 +401,7 @@ block view
             | Trigger dropdown menus at the right of the elements by adding 
             code .dropend
             |  to the parent element.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#dropright')
             .btn-group.dropend
               button.btn.btn-secondary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
                 | Dropright
@@ -442,7 +442,7 @@ block view
             | Trigger dropdown menus at the left of the elements by adding 
             code .dropstart
             |  to the parent element.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#dropleft')
             .btn-group.dropstart
               button.btn.btn-secondary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
                 | Dropleft
@@ -490,7 +490,7 @@ block view
             code 
               = '<a>'
             | s.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#menu-items')
             .dropdown
               button#dropdownMenu2.btn.btn-secondary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
                 | Dropdown
@@ -505,7 +505,7 @@ block view
             | You can also create non-interactive dropdown items with 
             code .dropdown-item-text
             | . Feel free to style further with custom CSS or text utilities.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#menu-items')
             ul.dropdown-menu
               li
                 span.dropdown-item-text Dropdown item text
@@ -533,7 +533,7 @@ block view
             |  value for the current page, or 
             code true
             |  for the current item in a set.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#active')
             ul.dropdown-menu
               li
                 a.dropdown-item(href='#') Regular link
@@ -553,7 +553,7 @@ block view
             |  to items in the dropdown to 
             strong style them as disabled
             | .
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#disabled')
             ul.dropdown-menu
               li
                 a.dropdown-item(href='#') Regular link
@@ -573,7 +573,7 @@ block view
             |  to a 
             code .dropdown-menu
             |  to right align the dropdown menu.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#menu-alignment')
             .btn-group
               button.btn.btn-secondary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
                 | Right-aligned menu example
@@ -600,7 +600,7 @@ block view
             |  the dropdown menu with the given breakpoint or larger, add 
             code .dropdown-menu{-sm|-md|-lg|-xl|-xxl}-end
             | .
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#responsive-alignment')
             .btn-group
               button.btn.btn-secondary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' data-coreui-display='static' aria-expanded='false')
                 | Left-aligned but right aligned when large screen
@@ -611,7 +611,7 @@ block view
                   button.dropdown-item(type='button') Another action
                 li
                   button.dropdown-item(type='button') Something else here
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#responsive-alignment')
             .btn-group
               button.btn.btn-secondary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' data-coreui-display='static' aria-expanded='false')
                 | Right-aligned but left aligned when large screen
@@ -622,7 +622,7 @@ block view
                   button.dropdown-item(type='button') Another action
                 li
                   button.dropdown-item(type='button') Something else here
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#responsive-alignment')
             .btn-group
               button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button' data-coreui-toggle='dropdown' aria-expanded='false')
                 | Dropdown
@@ -700,7 +700,7 @@ block view
             span.small.ms-1 Headers
           .card-body
             p.text-medium-emphasis.small Add a header to label sections of actions in any dropdown menu.
-            +example()
+            +example('https://coreui.io/docs/components/dropdowns/#headers')
               ul.dropdown-menu
                 li
                   h6.dropdown-header Dropdown header
@@ -715,7 +715,7 @@ block view
           span.small.ms-1 Dividers
         .card-body
           p.text-medium-emphasis.small Separate groups of related menu items with a divider.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#dividers')
             ul.dropdown-menu
               li
                 a.dropdown-item(href='#') Action
@@ -735,9 +735,9 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Place any freeform text within a dropdown menu with text and use 
-            a(href='https://coreui.io/docs/4.1/utilities/spacing/') spacing utilities
+            a(href='https://coreui.io/docs/utilities/spacing/') spacing utilities
             | . Note that you’ll likely need additional sizing styles to constrain the menu width.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#text')
             .dropdown-menu.p-4.text-medium-emphasis(style='max-width: 200px;')
               p
                 | Some example text that's free-flowing within the dropdown menu.
@@ -751,9 +751,9 @@ block view
         .card-body
           p.text-medium-emphasis.small
             | Put a form within a dropdown menu, or make it into a dropdown menu, and use 
-            a(href='https://coreui.io/docs/4.1/utilities/spacing/') margin or padding utilities
+            a(href='https://coreui.io/docs/utilities/spacing/') margin or padding utilities
             |  to give it the negative space you require.
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#forms')
             .dropdown-menu
               form.px-4.py-3
                 .mb-3
@@ -771,7 +771,7 @@ block view
               .dropdown-divider
               a.dropdown-item(href='#') New around here? Sign up
               a.dropdown-item(href='#') Forgot password?
-          +example()
+          +example('https://coreui.io/docs/components/dropdowns/#forms')
             form.dropdown-menu.p-4
               .mb-3
                 label.form-label(for='exampleDropdownFormEmail2') Email address

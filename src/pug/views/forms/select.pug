@@ -1,13 +1,13 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/4.1/forms/select/')
+  link(rel='canonical' href='https://coreui.io/docs/forms/select/')
 
 block breadcrumb
   +breadcrumb(['Home', 'Components', 'Forms'], 'Select')
 
 block view
-  +callout('Select', 'https://coreui.io/docs/4.1/forms/select/')
+  +callout('Select', 'https://coreui.io/docs/forms/select/')
   .row
     .col-12
       .card.mb-4
@@ -28,7 +28,7 @@ block view
             code
              = '<option>'
             | s due to browser limitations.
-          +example()
+          +example('https://coreui.io/docs/forms/select/#default')
             select.form-select(aria-label='Default select example')
               option(selected) Open this select menu
               option(value='1') One
@@ -41,7 +41,7 @@ block view
           span.small.ms-1 Sizing
         .card-body
           p.text-medium-emphasis.small You may also choose from small and large custom selects to match our similarly sized text inputs.
-          +example()
+          +example('https://coreui.io/docs/forms/select/#sizing')
             select.form-select.form-select-lg.mb-3(aria-label='.form-select-lg example')
               option(selected) Open this select menu
               option(value='1') One
@@ -56,7 +56,7 @@ block view
             | The 
             code multiple
             |  attribute is also supported:
-          +example()
+          +example('https://coreui.io/docs/forms/select/#sizing')
             select.form-select(multiple aria-label='multiple select example')
               option(selected) Open this select menu
               option(value='1') One
@@ -66,7 +66,7 @@ block view
             | As is the 
             code size
             |  attribute:
-          +example()
+          +example('https://coreui.io/docs/forms/select/#sizing')
             select.form-select(size='3' aria-label='size 3 select example')
               option(selected) Open this select menu
               option(value='1') One
@@ -82,7 +82,7 @@ block view
             | Add the 
             code disabled
             |  boolean attribute on a select to give it a grayed out appearance and remove pointer events.
-          +example()
+          +example('https://coreui.io/docs/forms/select/#disabled')
             select.form-select(aria-label='Disabled select example' disabled)
               option(selected) Open this select menu
               option(value='1') One
