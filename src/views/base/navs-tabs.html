@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.1.0
+* @version v4.1.1
 * @link https://coreui.io
-* Copyright (c) 2021 creativeLabs Łukasz Holeczek
+* Copyright (c) 2022 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
 -->
 
@@ -54,7 +54,7 @@
       // Bootstrap ID
       gtag('config', 'UA-118965717-5');
     </script>
-    <link rel="canonical" href="https://coreui.io/docs/4.1/components/navs-tabs/">
+    <link rel="canonical" href="https://coreui.io/docs/components/navs-tabs/">
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
@@ -92,7 +92,7 @@
             <li class="nav-item"><a class="nav-link" href="base/carousel.html"><span class="nav-icon"></span> Carousel</a></li>
             <li class="nav-item"><a class="nav-link" href="base/collapse.html"><span class="nav-icon"></span> Collapse</a></li>
             <li class="nav-item"><a class="nav-link" href="base/list-group.html"><span class="nav-icon"></span> List group</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/navs.html"><span class="nav-icon"></span> Navs</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/navs.html"><span class="nav-icon"></span> Navs &amp; Tabs</a></li>
             <li class="nav-item"><a class="nav-link" href="base/pagination.html"><span class="nav-icon"></span> Pagination</a></li>
             <li class="nav-item"><a class="nav-link" href="base/placeholders.html"><span class="nav-icon"></span> Placeholders</a></li>
             <li class="nav-item"><a class="nav-link" href="base/popovers.html"><span class="nav-icon"></span> Popovers</a></li>
@@ -100,7 +100,6 @@
             <li class="nav-item"><a class="nav-link" href="base/scrollspy.html"><span class="nav-icon"></span> Scrollspy</a></li>
             <li class="nav-item"><a class="nav-link" href="base/spinners.html"><span class="nav-icon"></span> Spinners</a></li>
             <li class="nav-item"><a class="nav-link" href="base/tables.html"><span class="nav-icon"></span> Tables</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/tabs.html"><span class="nav-icon"></span> Tabs</a></li>
             <li class="nav-item"><a class="nav-link" href="base/tooltips.html"><span class="nav-icon"></span> Tooltips</a></li>
           </ul>
         </li>
@@ -291,7 +290,7 @@
       <div class="body flex-grow-1 px-3">
         <div class="container-lg">
           <div class="callout callout-info bg-white">CoreUI Navs has been created as an extension of Bootstrap Navs. Navs is delivered with some new features, variants, and unique design that matches CoreUI Design System requirements.<br><br>For more information please visit our official
-            <a href="https://coreui.io/docs/4.1/components/navs-tabs/" target="_blank">documentation</a>.
+            <a href="https://coreui.io/docs/components/navs-tabs/" target="_blank">documentation</a>.
           </div>
           <div class="row">
             <div class="col-12">
@@ -302,17 +301,17 @@
                   <p class="text-medium-emphasis small">The base <code>.nav</code> component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-428" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-326" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-428" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#base-nav" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-428">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-326">
                         <ul class="nav">
                           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
@@ -320,38 +319,23 @@
                           <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
                         </ul>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-428">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
-                          </ul>
-                        </script>
-                      </div>
                     </div>
                   </div>
                   <p class="text-medium-emphasis small">Classes are used throughout, so your markup can be super flexible. Use <code> &lt;ul&gt;</code>s like above, <code> &lt;ol&gt;</code> if the order of your items is important, or roll your own with a <code> &lt;nav&gt;</code> element. Because the <code>.nav</code> uses <code>display: flex</code>, the nav links behave the same as nav items would, but without the extra markup.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1134" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-81" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1134" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#base-nav" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1134">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-81">
                         <nav class="nav"><a class="nav-link active" aria-current="page" href="#">Active</a><a class="nav-link" href="#">Link</a><a class="nav-link" href="#">Link</a><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></nav>
-                      </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1134">
-                        <script class="language-markup" type="text/plain">
-                          <nav class="nav"><a class="nav-link active" aria-current="page" href="#">Active</a><a class="nav-link" href="#">Link</a><a class="nav-link" href="#">Link</a><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></nav>
-                        </script>
                       </div>
                     </div>
                   </div>
@@ -362,21 +346,21 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Navs</strong><span class="small ms-1">Horizontal alignment</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Change the horizontal alignment of your nav with <a href="https://coreui.io/docs/4.1/layout/grid/#horizontal-alignment">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or right aligned.</p>
+                  <p class="text-medium-emphasis small">Change the horizontal alignment of your nav with <a href="https://coreui.io/docs/layout/grid/#horizontal-alignment">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or right aligned.</p>
                   <p class="text-medium-emphasis small">Centered with <code>.justify-content-center</code>:</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-225" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1080" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-225" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#horizontal-alignment" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-225">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1080">
                         <ul class="nav justify-content-center">
                           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
@@ -384,48 +368,28 @@
                           <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
                         </ul>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-225">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav justify-content-center">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
-                          </ul>
-                        </script>
-                      </div>
                     </div>
                   </div>
                   <p class="text-medium-emphasis small">Right-aligned with <code>.justify-content-end</code>:</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1025" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-728" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-1025" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#horizontal-alignment" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1025">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-728">
                         <ul class="nav justify-content-end">
                           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                           <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
                         </ul>
-                      </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-1025">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav justify-content-end">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
-                          </ul>
-                        </script>
                       </div>
                     </div>
                   </div>
@@ -439,17 +403,17 @@
                   <p class="text-medium-emphasis small">Stack your navigation by changing the flex item direction with the <code>.flex-column</code> utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., <code>.flex-sm-column</code>).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-340" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-556" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-340" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#vertical" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-340">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-556">
                         <ul class="nav flex-column">
                           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
@@ -457,38 +421,23 @@
                           <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
                         </ul>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-340">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
-                          </ul>
-                        </script>
-                      </div>
                     </div>
                   </div>
                   <p class="text-medium-emphasis small">As always, vertical navigation is possible without <code> &lt;ul&gt;</code>s, too.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-973" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1055" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-973" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#vertical" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-973">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1055">
                         <nav class="nav flex-column"><a class="nav-link active" aria-current="page" href="#">Active</a><a class="nav-link" href="#">Link</a><a class="nav-link" href="#">Link</a><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></nav>
-                      </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-973">
-                        <script class="language-markup" type="text/plain">
-                          <nav class="nav flex-column"><a class="nav-link active" aria-current="page" href="#">Active</a><a class="nav-link" href="#">Link</a><a class="nav-link" href="#">Link</a><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></nav>
-                        </script>
                       </div>
                     </div>
                   </div>
@@ -502,33 +451,23 @@
                   <p class="text-medium-emphasis small">Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use them to create tabbable regions with our <a href="#javascript-behavior">tab JavaScript plugin</a>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-126" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-817" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-126" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#tabs" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-126">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-817">
                         <ul class="nav nav-tabs">
                           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                           <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
                         </ul>
-                      </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-126">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav nav-tabs">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
-                          </ul>
-                        </script>
                       </div>
                     </div>
                   </div>
@@ -542,33 +481,23 @@
                   <p class="text-medium-emphasis small">Take that same HTML, but use <code>.nav-pills</code> instead:</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-984" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-439" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-984" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#pills" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-984">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-439">
                         <ul class="nav nav-pills">
                           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                           <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
                         </ul>
-                      </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-984">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav nav-pills">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
-                          </ul>
-                        </script>
                       </div>
                     </div>
                   </div>
@@ -582,17 +511,17 @@
                   <p class="text-medium-emphasis small">Force your <code>.nav</code>’s contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your <code>.nav-item</code>s, use <code>.nav-fill</code>. Notice that all horizontal space is occupied, but not every nav item has the same width.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-438" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-184" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-438" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#fill-and-justify" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-438">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-184">
                         <ul class="nav nav-pills nav-fill">
                           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Much longer nav link</a></li>
@@ -600,55 +529,40 @@
                           <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
                         </ul>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-438">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav nav-pills nav-fill">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Much longer nav link</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
-                          </ul>
-                        </script>
-                      </div>
                     </div>
                   </div>
                   <p class="text-medium-emphasis small">When using a <code> &lt;nav&gt;</code>-based navigation, you can safely omit <code>.nav-item</code> as only <code>.nav-link</code> is required for styling <code> &lt;a&gt;</code> elements.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-332" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-80" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-332" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#fill-and-justify" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-332">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-80">
                         <nav class="nav nav-pills nav-fill"><a class="nav-link active" aria-current="page" href="#">Active</a><a class="nav-link" href="#">Much longer nav link</a><a class="nav-link" href="#">Link</a><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></nav>
-                      </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-332">
-                        <script class="language-markup" type="text/plain">
-                          <nav class="nav nav-pills nav-fill"><a class="nav-link active" aria-current="page" href="#">Active</a><a class="nav-link" href="#">Much longer nav link</a><a class="nav-link" href="#">Link</a><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></nav>
-                        </script>
                       </div>
                     </div>
                   </div>
                   <p class="text-medium-emphasis small">For equal-width elements, use <code>.nav-justified</code>. All horizontal space will be occupied by nav links, but unlike the <code>.nav-fill</code> above, every nav item will be the same width.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-906" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-298" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-906" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#fill-and-justify" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-906">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-298">
                         <ul class="nav nav-pills nav-justified">
                           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
                           <li class="nav-item"><a class="nav-link" href="#">Much longer nav link</a></li>
@@ -656,38 +570,23 @@
                           <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
                         </ul>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-906">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav nav-pills nav-justified">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Much longer nav link</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
-                          </ul>
-                        </script>
-                      </div>
                     </div>
                   </div>
                   <p class="text-medium-emphasis small">Similar to the <code>.nav-fill</code> example using a <code> &lt;nav&gt;</code>-based navigation.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-77" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-219" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-77" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#fill-and-justify" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-77">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-219">
                         <nav class="nav nav-pills nav-justified"><a class="nav-link active" aria-current="page" href="#">Active</a><a class="nav-link" href="#">Much longer nav link</a><a class="nav-link" href="#">Link</a><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></nav>
-                      </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-77">
-                        <script class="language-markup" type="text/plain">
-                          <nav class="nav nav-pills nav-justified"><a class="nav-link active" aria-current="page" href="#">Active</a><a class="nav-link" href="#">Much longer nav link</a><a class="nav-link" href="#">Link</a><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></nav>
-                        </script>
                       </div>
                     </div>
                   </div>
@@ -698,26 +597,21 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Navs</strong><span class="small ms-1">Working with flex utilities</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">If you need responsive nav variations, consider using a series of <a href="https://coreui.io/docs/4.1/utilities/flex/">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.</p>
+                  <p class="text-medium-emphasis small">If you need responsive nav variations, consider using a series of <a href="https://coreui.io/docs/utilities/flex/">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-750" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1187" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-750" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#working-with-flex-utilities" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-750">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1187">
                         <nav class="nav nav-pills flex-column flex-sm-row"><a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a><a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a><a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a><a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></nav>
-                      </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-750">
-                        <script class="language-markup" type="text/plain">
-                          <nav class="nav nav-pills flex-column flex-sm-row"><a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a><a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a><a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a><a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></nav>
-                        </script>
                       </div>
                     </div>
                   </div>
@@ -730,17 +624,17 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-139" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-687" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-139" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#tabs-with-dropdowns" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-139">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-687">
                         <ul class="nav nav-tabs">
                           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
                           <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-coreui-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
@@ -758,26 +652,6 @@
                           <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
                         </ul>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-139">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav nav-tabs">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
-                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-coreui-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li>
-                                  <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
-                          </ul>
-                        </script>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -789,17 +663,17 @@
                 <div class="card-body">
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-993" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-471" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-993" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#pills-with-dropdowns" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-993">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-471">
                         <ul class="nav nav-pills">
                           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
                           <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-coreui-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
@@ -816,26 +690,6 @@
                           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                           <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
                         </ul>
-                      </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-993">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav nav-pills">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
-                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-coreui-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li>
-                                  <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
-                          </ul>
-                        </script>
                       </div>
                     </div>
                   </div>
@@ -851,17 +705,17 @@
                   <p class="text-medium-emphasis small">Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, as this causes both usability and accessibility issues. From a usability perspective, the fact that the currently displayed tab’s trigger element is not immediately visible (as it’s inside the closed dropdown menu) can cause confusion. From an accessibility point of view, there is currently no sensible way to map this sort of construct to a standard WAI ARIA pattern, meaning that it cannot be easily made understandable to users of assistive technologies.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-161" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-422" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-161" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#javascript-behavior" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-161">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-422">
                         <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
                           <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-coreui-toggle="tab" data-coreui-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
@@ -885,48 +739,22 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-161">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link active" id="home-tab" data-coreui-toggle="tab" data-coreui-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="profile-tab" data-coreui-toggle="tab" data-coreui-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="contact-tab" data-coreui-toggle="tab" data-coreui-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-                            </li>
-                          </ul>
-                          <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
-                              <p>Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.</p>
-                            </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                              <p>Placeholder content for the tab panel. This one relates to the profile tab. You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! But you'd rather get wasted.</p>
-                            </div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                              <p>Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.</p>
-                            </div>
-                          </div>
-                        </script>
-                      </div>
                     </div>
                   </div>
                   <p class="text-medium-emphasis small">To help fit your needs, this works with <code> &lt;ul&gt;</code>-based markup, as shown above, or with any arbitrary “roll your own” markup. Note that if you’re using <code> &lt;nav&gt;</code>, you shouldn’t add <code>role="tablist"</code> directly to it, as this would override the element’s native role as a navigation landmark. Instead, switch to an alternative element (in the example below, a simple <code> &lt;div&gt;</code>) and wrap the <code> &lt;nav&gt;</code> around it.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-86" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1073" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-86" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#javascript-behavior" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-86">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1073">
                         <nav>
                           <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
                             <button class="nav-link active" id="nav-home-tab" data-coreui-toggle="tab" data-coreui-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
@@ -946,44 +774,22 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-86">
-                        <script class="language-markup" type="text/plain">
-                          <nav>
-                            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
-                              <button class="nav-link active" id="nav-home-tab" data-coreui-toggle="tab" data-coreui-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                              <button class="nav-link" id="nav-profile-tab" data-coreui-toggle="tab" data-coreui-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                              <button class="nav-link" id="nav-contact-tab" data-coreui-toggle="tab" data-coreui-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-                            </div>
-                          </nav>
-                          <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                              <p>Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.</p>
-                            </div>
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                              <p>Placeholder content for the tab panel. This one relates to the profile tab. You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! But you'd rather get wasted.</p>
-                            </div>
-                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                              <p>Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.</p>
-                            </div>
-                          </div>
-                        </script>
-                      </div>
                     </div>
                   </div>
                   <p class="text-medium-emphasis small">The tabs plugin also works with pills.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-870" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-988" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-870" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#javascript-behavior" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-870">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-988">
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                           <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-home-tab" data-coreui-toggle="pill" data-coreui-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
@@ -1007,48 +813,22 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-870">
-                        <script class="language-markup" type="text/plain">
-                          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link active" id="pills-home-tab" data-coreui-toggle="pill" data-coreui-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="pills-profile-tab" data-coreui-toggle="pill" data-coreui-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="pills-contact-tab" data-coreui-toggle="pill" data-coreui-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-                            </li>
-                          </ul>
-                          <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                              <p>Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.</p>
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                              <p>Placeholder content for the tab panel. This one relates to the profile tab. You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! But you'd rather get wasted.</p>
-                            </div>
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                              <p>Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.</p>
-                            </div>
-                          </div>
-                        </script>
-                      </div>
                     </div>
                   </div>
                   <p class="text-medium-emphasis small">And with vertical pills.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-136" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-683" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
-                      <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#code-136" role="tab">
+                      <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/components/navs-tabs/#javascript-behavior" target="_blank">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-136">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-683">
                         <div class="d-flex align-items-start">
                           <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <button class="nav-link" id="v-pills-home-tab" data-coreui-toggle="pill" data-coreui-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false">Home</button>
@@ -1072,32 +852,6 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane pt-1" role="tabpanel" id="code-136">
-                        <script class="language-markup" type="text/plain">
-                          <div class="d-flex align-items-start">
-                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                              <button class="nav-link" id="v-pills-home-tab" data-coreui-toggle="pill" data-coreui-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false">Home</button>
-                              <button class="nav-link" id="v-pills-profile-tab" data-coreui-toggle="pill" data-coreui-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-                              <button class="nav-link" id="v-pills-messages-tab" data-coreui-toggle="pill" data-coreui-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-                              <button class="nav-link active" id="v-pills-settings-tab" data-coreui-toggle="pill" data-coreui-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="true">Settings</button>
-                            </div>
-                            <div class="tab-content" id="v-pills-tabContent">
-                              <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                <p>Placeholder content for the tab panel. This one relates to the home tab. Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop by? Heavy is the head that wears the crown. Yes, we make angels cry, raining down on earth from up above. Wanna see the show in 3D, a movie. Do you ever feel, feel so paper thin. It’s a yes or no, no maybe.</p>
-                              </div>
-                              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                <p>Placeholder content for the tab panel. This one relates to the profile tab. Takes you miles high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.</p>
-                              </div>
-                              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                <p>Placeholder content for the tab panel. This one relates to the messages tab. You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! But you'd rather get wasted.</p>
-                              </div>
-                              <div class="tab-pane fade active show" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                <p>Placeholder content for the tab panel. This one relates to the settings tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </script>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -1107,18 +861,13 @@
         </div>
       </div>
       <footer class="footer">
-        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> &copy; 2021 creativeLabs.</div>
-        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/bootstrap/ui-components/">CoreUI UI Components</a></div>
+        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> &copy; 2022 creativeLabs.</div>
+        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
       </footer>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
-    <!-- We use those scripts to show code examples, you should remove them in your application.-->
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
     <script> 
     </script>
   </body>
