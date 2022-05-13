@@ -39,6 +39,16 @@
     "type": "git",
     "url": "git+https://github.com/coreui/coreui-free-bootstrap-admin-template.git"
   },
+  "funding": [
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/coreui"
+    },
+    {
+      "type": "subscription",
+      "url": "https://coreui.io/pro"
+    }
+  ],
   "scripts": {
     "build": "npm run build-from-html",
     "build-vendors": "node build/vendors.js",
@@ -58,6 +68,7 @@
     "js-compile": "cross-env PLUGINS=true babel src/js/ --out-dir dist/js/ --source-maps",
     "js-lint": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives .",
     "localhost": "browser-sync start --server \"./dist\" --serveStatic \"./\" --files \"./dist/\"",
+    "postinstall": "node build/postinstall || exit 0",
     "prettier": "prettier --print-width=160 --write \"dist\"",
     "pug": "npm-run-all --parallel pug-*",
     "pug-dist": "node build/pug.js --dest dist/",
