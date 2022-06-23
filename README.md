@@ -22,8 +22,8 @@ Curious why I decided to create CoreUI? Please read this article: [Jack of all t
 * [Versioning](#versioning)
 * [Creators](#creators)
 * [Community](#community)
-* [License](#license)
 * [Support CoreUI Development](#support-coreui-development)
+* [Copyright and license](#copyright-and-license)
 
 ## Versions
 
