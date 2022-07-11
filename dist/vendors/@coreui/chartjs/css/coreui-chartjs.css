@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*!
+ * CoreUI Plugins - Chart.js for CoreUI 3
+ * @version v3.0.0
+ * @link https://coreui.io
+ * Copyright (c) 2021 creativeLabs Łukasz Holeczek
+ * Licensed under MIT (https://coreui.io/license/plugins/chart.js)
+ */
+.chartjs-tooltip {
+  position: absolute;
+  z-index: 1021;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.15s ease;
+  transform: translate(-50%, 0);
+  border-radius: 0.25rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .chartjs-tooltip {
+    transition: none;
+  }
+}
+
+.chartjs-tooltip-header {
+  margin-bottom: 0.5rem;
+}
+
+.chartjs-tooltip-header-item {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.chartjs-tooltip-body-item {
+  align-items: center;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=coreui-chartjs.css.map */
