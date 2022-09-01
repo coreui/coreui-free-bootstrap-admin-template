@@ -3,7 +3,7 @@
 /* stylelint-disable-line scss/dollar-variable-default */
 /*!
  * CoreUI - HTML, CSS, and JavaScript UI Components Library
- * @version v4.2.0
+ * @version v4.2.2
  * @link https://coreui.io/
  * Copyright (c) 2022 creativeLabs Łukasz Holeczek
  * License MIT  (https://coreui.io/license/)
@@ -3313,6 +3313,12 @@ html:not([dir=rtl]) .form-check-inline .form-check-input ~ .invalid-feedback {
   background-color: var(--cui-btn-disabled-bg);
   border-color: var(--cui-btn-disabled-border-color);
   opacity: var(--cui-btn-disabled-opacity);
+}
+
+.btn-transparent {
+  --cui-btn-active-border-color: transparent;
+  --cui-btn-disabled-border-color: transparent;
+  --cui-btn-hover-border-color: transparent;
 }
 
 .btn-primary {
@@ -6995,7 +7001,7 @@ html:not([dir=rtl]) .modal-header .btn-close {
 }
 @media (max-width: 575.98px) {
   .offcanvas-sm.showing, .offcanvas-sm.show:not(.hiding) {
-    transform: none;
+    transform: none !important;
   }
 }
 @media (max-width: 575.98px) {
@@ -7096,7 +7102,7 @@ html:not([dir=rtl]) .modal-header .btn-close {
 }
 @media (max-width: 767.98px) {
   .offcanvas-md.showing, .offcanvas-md.show:not(.hiding) {
-    transform: none;
+    transform: none !important;
   }
 }
 @media (max-width: 767.98px) {
@@ -7197,7 +7203,7 @@ html:not([dir=rtl]) .modal-header .btn-close {
 }
 @media (max-width: 991.98px) {
   .offcanvas-lg.showing, .offcanvas-lg.show:not(.hiding) {
-    transform: none;
+    transform: none !important;
   }
 }
 @media (max-width: 991.98px) {
@@ -7298,7 +7304,7 @@ html:not([dir=rtl]) .modal-header .btn-close {
 }
 @media (max-width: 1199.98px) {
   .offcanvas-xl.showing, .offcanvas-xl.show:not(.hiding) {
-    transform: none;
+    transform: none !important;
   }
 }
 @media (max-width: 1199.98px) {
@@ -7399,7 +7405,7 @@ html:not([dir=rtl]) .modal-header .btn-close {
 }
 @media (max-width: 1399.98px) {
   .offcanvas-xxl.showing, .offcanvas-xxl.show:not(.hiding) {
-    transform: none;
+    transform: none !important;
   }
 }
 @media (max-width: 1399.98px) {
@@ -7489,7 +7495,7 @@ html:not([dir=rtl]) .offcanvas.offcanvas-end {
   transform: translateY(100%);
 }
 .offcanvas.showing, .offcanvas.show:not(.hiding) {
-  transform: none;
+  transform: none !important;
 }
 .offcanvas.showing, .offcanvas.hiding, .offcanvas.show {
   visibility: visible;
@@ -8545,6 +8551,9 @@ html:not([dir=rtl]) .sidebar-nav .nav-icon:first-child {
 }
 *[dir=rtl] .sidebar-nav .nav-icon:first-child {
   margin-right: calc(var(--cui-sidebar-nav-link-padding-x) * -1);
+}
+.sidebar-nav svg.nav-icon {
+  overflow: hidden;
 }
 .sidebar-nav .nav-group {
   position: relative;
