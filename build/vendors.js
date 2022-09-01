@@ -2,7 +2,9 @@
 
 'use strict'
 
+// eslint-disable-next-line unicorn/prefer-node-protocol
 const fs = require('fs')
+// eslint-disable-next-line unicorn/prefer-node-protocol
 const path = require('path')
 const extension = path.extname
 const injector = require('@coreui/vendors-injector')

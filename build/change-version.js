@@ -9,7 +9,9 @@
 
 'use strict'
 
+// eslint-disable-next-line unicorn/prefer-node-protocol
 const fs = require('fs').promises
+// eslint-disable-next-line unicorn/prefer-node-protocol
 const path = require('path')
 const globby = require('globby')
 
@@ -81,4 +83,5 @@ async function main(args) {
   }
 }
 
+// eslint-disable-next-line unicorn/prefer-top-level-await
 main(process.argv.slice(2))
