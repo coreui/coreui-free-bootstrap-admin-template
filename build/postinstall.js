@@ -15,7 +15,7 @@ const main = () => {
 
   try {
     const Configstore = require('configstore')
-    const pkg = require(__dirname + '/../package.json')
+    const pkg = require(`${__dirname}/../package.json`)
     const now = Date.now()
 
     const week = 1000 * 60 * 60 * 24 * 7

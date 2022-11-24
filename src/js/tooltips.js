@@ -7,7 +7,7 @@
  * --------------------------------------------------------------------------
  */
 
-document.querySelectorAll('[data-coreui-toggle="tooltip"]').forEach(element => {
+for (const element of document.querySelectorAll('[data-coreui-toggle="tooltip"]')) {
   // eslint-disable-next-line no-new
   new coreui.Tooltip(element)
-})
+}
