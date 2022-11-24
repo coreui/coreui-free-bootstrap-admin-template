@@ -2,14 +2,15 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Boostrap Admin Template (v4.2.1): main.js
+ * CoreUI Boostrap Admin Template (v4.2.2): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
+
 // random Numbers
-const random = () => Math.round(Math.random() * 100); // eslint-disable-next-line no-unused-vars
+const random = () => Math.round(Math.random() * 100);
 
-
+// eslint-disable-next-line no-unused-vars
 const lineChart = new Chart(document.getElementById('canvas-1'), {
   type: 'line',
   data: {
@@ -33,8 +34,9 @@ const lineChart = new Chart(document.getElementById('canvas-1'), {
   options: {
     responsive: true
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const barChart = new Chart(document.getElementById('canvas-2'), {
   type: 'bar',
   data: {
@@ -56,8 +58,9 @@ const barChart = new Chart(document.getElementById('canvas-2'), {
   options: {
     responsive: true
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const doughnutChart = new Chart(document.getElementById('canvas-3'), {
   type: 'doughnut',
   data: {
@@ -71,8 +74,9 @@ const doughnutChart = new Chart(document.getElementById('canvas-3'), {
   options: {
     responsive: true
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const radarChart = new Chart(document.getElementById('canvas-4'), {
   type: 'radar',
   data: {
@@ -100,8 +104,9 @@ const radarChart = new Chart(document.getElementById('canvas-4'), {
   options: {
     responsive: true
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const pieChart = new Chart(document.getElementById('canvas-5'), {
   type: 'pie',
   data: {
@@ -115,8 +120,9 @@ const pieChart = new Chart(document.getElementById('canvas-5'), {
   options: {
     responsive: true
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const polarAreaChart = new Chart(document.getElementById('canvas-6'), {
   type: 'polarArea',
   data: {

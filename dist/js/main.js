@@ -2,10 +2,11 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Boostrap Admin Template (v4.2.1): main.js
+ * CoreUI Boostrap Admin Template (v4.2.2): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
+
 // Disable the on-canvas tooltip
 Chart.defaults.pointHitDetectionRadius = 1;
 Chart.defaults.plugins.tooltip.enabled = false;
@@ -13,11 +14,11 @@ Chart.defaults.plugins.tooltip.mode = 'index';
 Chart.defaults.plugins.tooltip.position = 'nearest';
 Chart.defaults.plugins.tooltip.external = coreui.ChartJS.customTooltips;
 Chart.defaults.defaultFontColor = '#646470';
+const random = (min, max) =>
+// eslint-disable-next-line no-mixed-operators
+Math.floor(Math.random() * (max - min + 1) + min);
 
-const random = (min, max) => // eslint-disable-next-line no-mixed-operators
-Math.floor(Math.random() * (max - min + 1) + min); // eslint-disable-next-line no-unused-vars
-
-
+// eslint-disable-next-line no-unused-vars
 const cardChart1 = new Chart(document.getElementById('card-chart1'), {
   type: 'line',
   data: {
@@ -71,8 +72,9 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const cardChart2 = new Chart(document.getElementById('card-chart2'), {
   type: 'line',
   data: {
@@ -125,8 +127,9 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const cardChart3 = new Chart(document.getElementById('card-chart3'), {
   type: 'line',
   data: {
@@ -166,8 +169,9 @@ const cardChart3 = new Chart(document.getElementById('card-chart3'), {
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const cardChart4 = new Chart(document.getElementById('card-chart4'), {
   type: 'bar',
   data: {
@@ -209,8 +213,9 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const mainChart = new Chart(document.getElementById('main-chart'), {
   type: 'line',
   data: {

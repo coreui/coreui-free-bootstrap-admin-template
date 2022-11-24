@@ -9,7 +9,7 @@
 - Update: `autoprefixer` to `^9.1.5`
 - Update: `babel-eslint` to `^9.0.0`
 - Update: `browser-sync` to `^2.24.7`
-- Update: `clean-css-cli` to `^4.2.1`
+- Update: `clean-css-cli` to `^4.2.2`
 - Update: `copyfiles` to `^2.1.0`
 - Update: `cross-env` to `^5.2.0`
 - Update: `eslint` to `^5.5.0`

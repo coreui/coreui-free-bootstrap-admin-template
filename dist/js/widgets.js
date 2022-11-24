@@ -2,18 +2,20 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Boostrap Admin Template (v4.2.1): main.js
+ * CoreUI Boostrap Admin Template (v4.2.2): main.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
+
 // Disable the on-canvas tooltip
 Chart.defaults.pointHitDetectionRadius = 1;
 Chart.defaults.plugins.tooltip.enabled = false;
 Chart.defaults.plugins.tooltip.mode = 'index';
 Chart.defaults.plugins.tooltip.position = 'nearest';
 Chart.defaults.plugins.tooltip.external = coreui.ChartJS.customTooltips;
-Chart.defaults.defaultFontColor = '#646470'; // eslint-disable-next-line no-unused-vars
+Chart.defaults.defaultFontColor = '#646470';
 
+// eslint-disable-next-line no-unused-vars
 const cardChart1 = new Chart(document.getElementById('card-chart1'), {
   type: 'line',
   data: {
@@ -67,8 +69,9 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const cardChart2 = new Chart(document.getElementById('card-chart2'), {
   type: 'line',
   data: {
@@ -121,8 +124,9 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const cardChart3 = new Chart(document.getElementById('card-chart3'), {
   type: 'line',
   data: {
@@ -162,8 +166,9 @@ const cardChart3 = new Chart(document.getElementById('card-chart3'), {
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const cardChart4 = new Chart(document.getElementById('card-chart4'), {
   type: 'bar',
   data: {
@@ -205,12 +210,13 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
       }
     }
   }
-}); // Random Numbers
+});
+
+// Random Numbers
 // eslint-disable-next-line no-mixed-operators
+const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
-const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min); // eslint-disable-next-line no-unused-vars
-
-
+// eslint-disable-next-line no-unused-vars
 const sparklineChart1 = new Chart(document.getElementById('sparkline-chart-1'), {
   type: 'bar',
   data: {
@@ -238,8 +244,9 @@ const sparklineChart1 = new Chart(document.getElementById('sparkline-chart-1'), 
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const sparklineChart2 = new Chart(document.getElementById('sparkline-chart-2'), {
   type: 'bar',
   data: {
@@ -267,8 +274,9 @@ const sparklineChart2 = new Chart(document.getElementById('sparkline-chart-2'), 
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const sparklineChart3 = new Chart(document.getElementById('sparkline-chart-3'), {
   type: 'bar',
   data: {
@@ -296,8 +304,9 @@ const sparklineChart3 = new Chart(document.getElementById('sparkline-chart-3'), 
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const sparklineChart4 = new Chart(document.getElementById('sparkline-chart-4'), {
   type: 'line',
   data: {
@@ -333,8 +342,9 @@ const sparklineChart4 = new Chart(document.getElementById('sparkline-chart-4'), 
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const sparklineChart5 = new Chart(document.getElementById('sparkline-chart-5'), {
   type: 'line',
   data: {
@@ -370,8 +380,9 @@ const sparklineChart5 = new Chart(document.getElementById('sparkline-chart-5'), 
       }
     }
   }
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const sparklineChart6 = new Chart(document.getElementById('sparkline-chart-6'), {
   type: 'line',
   data: {
@@ -435,8 +446,9 @@ const brandBoxChartOptions = {
       display: false
     }
   }
-}; // eslint-disable-next-line no-unused-vars
+};
 
+// eslint-disable-next-line no-unused-vars
 const brandBoxChart1 = new Chart(document.getElementById('social-box-chart-1'), {
   type: 'line',
   data: {
@@ -451,8 +463,9 @@ const brandBoxChart1 = new Chart(document.getElementById('social-box-chart-1'), 
     }]
   },
   options: brandBoxChartOptions
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const brandBoxChart2 = new Chart(document.getElementById('social-box-chart-2'), {
   type: 'line',
   data: {
@@ -467,8 +480,9 @@ const brandBoxChart2 = new Chart(document.getElementById('social-box-chart-2'), 
     }]
   },
   options: brandBoxChartOptions
-}); // eslint-disable-next-line no-unused-vars
+});
 
+// eslint-disable-next-line no-unused-vars
 const brandBoxChart3 = new Chart(document.getElementById('social-box-chart-3'), {
   type: 'line',
   data: {

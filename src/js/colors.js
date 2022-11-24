@@ -2,7 +2,7 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Boostrap Admin Template (v4.2.1): colors.js
+ * CoreUI Boostrap Admin Template (v4.2.2): colors.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
