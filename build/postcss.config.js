@@ -9,6 +9,7 @@ module.exports = ctx => ({
       sourcesContent: true
     },
   plugins: {
+    'postcss-drop-empty-css-vars': {},
     autoprefixer: {
       cascade: false
     },

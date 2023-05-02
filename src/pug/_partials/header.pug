@@ -32,6 +32,30 @@ header.header.header-sticky.mb-4
             use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
             |
     ul.header-nav.ms-3
+      li.nav-item.py-2.py-lg-1
+        .vr.h-100.mx-2.text-body.text-opacity-75
+      li.nav-item.dropdown
+        button.btn.btn-link.nav-link.py-2.px-2.d-flex.align-items-center(type="button" aria-expanded="false" data-coreui-toggle="dropdown")
+          svg.icon.icon-lg.theme-icon-active
+            use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast")
+        ul.dropdown-menu.dropdown-menu-end(aria-labelledby='bd-theme' style='--cui-dropdown-min-width: 8rem;')
+          li
+            button.dropdown-item.d-flex.align-items-center(type='button' data-coreui-theme-value='light')
+              svg.icon.icon-lg.me-3
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-sun")
+              | Light
+          li
+            button.dropdown-item.d-flex.align-items-center(type='button' data-coreui-theme-value='dark')
+              svg.icon.icon-lg.me-3
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
+              | Dark
+          li
+            button.dropdown-item.d-flex.align-items-center.active(type='button' data-coreui-theme-value='auto')
+              svg.icon.icon-lg.me-3
+                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast")
+              | Auto
+      li.nav-item.py-2.py-lg-1
+        .vr.h-100.mx-2.text-body.text-opacity-75
       li.nav-item.dropdown
         a.nav-link.py-0(data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false")
           .avatar.avatar-md
