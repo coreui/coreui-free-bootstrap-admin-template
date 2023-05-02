@@ -25,6 +25,9 @@
     } else {
       document.documentElement.setAttribute('data-coreui-theme', theme)
     }
+
+    const event = new Event('ColorSchemeChange')
+    document.documentElement.dispatchEvent(event)
   }
 
   setTheme(getPreferredTheme())
