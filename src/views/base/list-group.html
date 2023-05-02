@@ -40,9 +40,9 @@
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
-    <!-- We use those styles to show code examples, you should remove them in your application.-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link href="css/examples.css" rel="stylesheet">
+    <script src="js/config.js"></script>
+    <script src="js/color-modes.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
@@ -194,7 +194,7 @@
       </ul>
       <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     </div>
-    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <div class="wrapper d-flex flex-column min-vh-100 bg-body-tertiary">
       <header class="header header-sticky mb-4">
         <div class="container-fluid">
           <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
@@ -225,6 +225,42 @@
                 </svg></a></li>
           </ul>
           <ul class="header-nav ms-3">
+            <li class="nav-item py-2 py-lg-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link py-2 px-2 d-flex align-items-center" type="button" aria-expanded="false" data-coreui-toggle="dropdown">
+                <svg class="icon icon-lg theme-icon-active">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                </svg>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme" style="--cui-dropdown-min-width: 8rem;">
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="light">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-sun"></use>
+                    </svg>Light
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="dark">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                    </svg>Dark
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center active" type="button" data-coreui-theme-value="auto">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                    </svg>Auto
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item py-2 py-lg-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
             <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div></a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
@@ -297,7 +333,7 @@
                   <p class="text-medium-emphasis small">The default list group is an unordered list with items and the proper CSS classes. Build upon it with the options that follow, or with your CSS as required.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-380" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1053" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -307,7 +343,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-380">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1053">
                         <ul class="list-group">
                           <li class="list-group-item">Cras justo odio</li>
                           <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -328,7 +364,7 @@
                   <p class="text-medium-emphasis small">Attach <code>.active</code> to a <code>.list-group-item</code> to show the current active selection.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-614" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1247" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -338,7 +374,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-614">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1247">
                         <ul class="list-group">
                           <li class="list-group-item active">Cras justo odio</li>
                           <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -359,7 +395,7 @@
                   <p class="text-medium-emphasis small">Attach <code>.disabled</code> to a <code>.list-group-item</code> to make it appear disabled. Remark that some of the elements with <code>.disabled</code> will also require custom JavaScript to disable their click events (e.g., links).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-313" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-506" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -369,7 +405,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-313">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-506">
                         <ul class="list-group">
                           <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
                           <li class="list-group-item">A second item</li>
@@ -392,7 +428,7 @@
                     <p class="text-medium-emphasis small">Be sure to<strong> not use the standard <code>.btn</code> classes here</strong>.</p>
                     <div class="example">
                       <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-640" role="tab">
+                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1252" role="tab">
                             <svg class="icon me-2">
                               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                             </svg>Preview</a></li>
@@ -402,7 +438,7 @@
                             </svg>Code</a></li>
                       </ul>
                       <div class="tab-content rounded-bottom">
-                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-640">
+                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1252">
                           <div class="list-group"><a class="list-group-item list-group-item-action active" href="#" aria-current="true">The current link item</a><a class="list-group-item list-group-item-action" href="#">A second link item</a><a class="list-group-item list-group-item-action" href="#">A third link item</a><a class="list-group-item list-group-item-action" href="#">A fourth link item</a><a class="list-group-item list-group-item-action disabled" href="#" tabindex="-1" aria-disabled="true">A disabled link item</a></div>
                         </div>
                       </div>
@@ -419,7 +455,7 @@
                     <p class="text-medium-emphasis small">With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don’t support the disabled attribute.</p>
                     <div class="example">
                       <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-808" role="tab">
+                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-305" role="tab">
                             <svg class="icon me-2">
                               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                             </svg>Preview</a></li>
@@ -429,7 +465,7 @@
                             </svg>Code</a></li>
                       </ul>
                       <div class="tab-content rounded-bottom">
-                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-808">
+                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-305">
                           <div class="list-group">
                             <button class="list-group-item list-group-item-action active" type="button" aria-current="true">The current button</button>
                             <button class="list-group-item list-group-item-action" type="button">A second item</button>
@@ -451,7 +487,7 @@
                   <p class="text-medium-emphasis small">Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-534" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-928" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -461,7 +497,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-534">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-928">
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item">An item</li>
                           <li class="list-group-item">A second item</li>
@@ -484,7 +520,7 @@
                   <div class="list-group">
                     <div class="example">
                       <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-506" role="tab">
+                        <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-453" role="tab">
                             <svg class="icon me-2">
                               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                             </svg>Preview</a></li>
@@ -494,7 +530,7 @@
                             </svg>Code</a></li>
                       </ul>
                       <div class="tab-content rounded-bottom">
-                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-506">
+                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-453">
                           <ul class="list-group list-group-horizontal mb-1">
                             <li class="list-group-item">An item</li>
                             <li class="list-group-item">A second item</li>
@@ -539,7 +575,7 @@
                   <p class="text-medium-emphasis small">Use contextual classes to style list items with a stateful background and color.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-972" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-391" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -549,7 +585,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-972">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-391">
                         <ul class="list-group">
                           <li class="list-group-item">Dapibus ac facilisis in</li>
                           <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
@@ -574,7 +610,7 @@
                   <p class="text-medium-emphasis small">Contextual classes also work with <code>.list-group-item-action</code>. Note the addition of the hover styles here not present in the previous example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1062" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-207" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -584,7 +620,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1062">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-207">
                         <div class="list-group"><a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a><a class="list-group-item list-group-item-action list-group-item-primary" href="#">
                             This is a primary list
                             group item</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="#">
@@ -615,7 +651,7 @@
                   <p class="text-medium-emphasis small">Add badges to any list group item to show unread counts, activity, and more with the help of some<a href="https://coreui.io/docs/utilities/flex/">utilities</a>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-383" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1280" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -625,7 +661,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-383">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1280">
                         <ul class="list-group">
                           <li class="list-group-item d-flex justify-content-between align-items-center">A list item<span class="badge bg-primary rounded-pill">14</span></li>
                           <li class="list-group-item d-flex justify-content-between align-items-center">A second list item<span class="badge bg-primary rounded-pill">2</span></li>
@@ -646,7 +682,7 @@
                   <p class="text-medium-emphasis small">Add nearly any HTML within, even for linked list groups like the one below, with the help of<a href="https://coreui.io/docs/utilities/flex/">flexbox utilities</a>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-113" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-832" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -656,7 +692,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-113">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-832">
                         <div class="list-group"><a class="list-group-item list-group-item-action flex-column align-items-start active" href="#">
                             <div class="d-flex w-100 justify-content-between">
                               <h5 class="mb-1">List group item heading</h5><small>3 days ago</small>
@@ -685,7 +721,7 @@
                   <p class="text-medium-emphasis small">Use the tab JavaScript plugin—include it individually or through the compiled <code>coreui.js</code> file—to extend our list group to create tabbable panes of local content.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-43" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-695" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -695,7 +731,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-43">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-695">
                         <div class="row">
                           <div class="col-4">
                             <div class="list-group" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action" id="list-home-list" data-coreui-toggle="tab" href="#list-home" role="tab" aria-controls="list-home" aria-selected="false">Home</a><a class="list-group-item list-group-item-action active" id="list-profile-list" data-coreui-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile" aria-selected="true">Profile</a><a class="list-group-item list-group-item-action" id="list-messages-list" data-coreui-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a><a class="list-group-item list-group-item-action" id="list-settings-list" data-coreui-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a></div>

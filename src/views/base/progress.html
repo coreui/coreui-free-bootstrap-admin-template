@@ -40,9 +40,9 @@
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
-    <!-- We use those styles to show code examples, you should remove them in your application.-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link href="css/examples.css" rel="stylesheet">
+    <script src="js/config.js"></script>
+    <script src="js/color-modes.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
@@ -194,7 +194,7 @@
       </ul>
       <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     </div>
-    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <div class="wrapper d-flex flex-column min-vh-100 bg-body-tertiary">
       <header class="header header-sticky mb-4">
         <div class="container-fluid">
           <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
@@ -225,6 +225,42 @@
                 </svg></a></li>
           </ul>
           <ul class="header-nav ms-3">
+            <li class="nav-item py-2 py-lg-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link py-2 px-2 d-flex align-items-center" type="button" aria-expanded="false" data-coreui-toggle="dropdown">
+                <svg class="icon icon-lg theme-icon-active">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                </svg>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme" style="--cui-dropdown-min-width: 8rem;">
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="light">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-sun"></use>
+                    </svg>Light
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="dark">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                    </svg>Dark
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center active" type="button" data-coreui-theme-value="auto">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                    </svg>Auto
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item py-2 py-lg-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
             <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div></a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
@@ -297,7 +333,7 @@
                   <p class="text-medium-emphasis small">Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don’t use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code> &lt;progress&gt;</code> element</a>, ensuring you can stack progress bars, animate them, and place text labels over them.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1248" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-654" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -307,7 +343,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1248">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-654">
                         <div class="progress">
                           <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -329,7 +365,7 @@
                   <p class="text-medium-emphasis small">Bootstrap provides a handful of <a href="https://coreui.io/docs/utilities/sizing/">utilities for setting width</a>. Depending on your needs, these may help with quickly configuring progress.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1256" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-802" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -339,7 +375,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1256">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-802">
                         <div class="progress">
                           <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -356,7 +392,7 @@
                   <p class="text-medium-emphasis small">Add labels to your progress bars by placing text within the <code>.progress-bar</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1044" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-561" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -366,7 +402,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1044">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-561">
                         <div class="progress">
                           <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                         </div>
@@ -383,7 +419,7 @@
                   <p class="text-medium-emphasis small">We only set a <code>height</code> value on the <code>.progress</code>, so if you change that value the inner <code>.progress-bar</code> will automatically resize accordingly.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-467" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-505" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -393,7 +429,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-467">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-505">
                         <div class="progress" style="height: 1px;">
                           <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -413,7 +449,7 @@
                   <p class="text-medium-emphasis small">Use background utility classes to change the appearance of individual progress bars.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-968" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-653" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -423,7 +459,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-968">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-653">
                         <div class="progress">
                           <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -449,7 +485,7 @@
                   <p>Include multiple progress bars in a progress component if you need.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-399" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-184" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -459,7 +495,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-399">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-184">
                         <div class="progress">
                           <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                           <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
@@ -478,7 +514,7 @@
                   <p class="text-medium-emphasis small">Add <code>.progress-bar-striped</code> to any <code>.progress-bar</code> to apply a stripe via CSS gradient over the progress bar’s background color.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1077" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-532" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -488,7 +524,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1077">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-532">
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -517,7 +553,7 @@
                   <p class="text-medium-emphasis small">The striped gradient can also be animated. Add <code>.progress-bar-animated</code> to <code>.progress-bar</code> to animate the stripes right to left via CSS3 animations.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-893" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-155" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -527,7 +563,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-893">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-155">
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                         </div>

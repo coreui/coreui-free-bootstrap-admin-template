@@ -40,9 +40,9 @@
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
-    <!-- We use those styles to show code examples, you should remove them in your application.-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link href="css/examples.css" rel="stylesheet">
+    <script src="js/config.js"></script>
+    <script src="js/color-modes.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
@@ -194,7 +194,7 @@
       </ul>
       <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     </div>
-    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <div class="wrapper d-flex flex-column min-vh-100 bg-body-tertiary">
       <header class="header header-sticky mb-4">
         <div class="container-fluid">
           <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
@@ -225,6 +225,42 @@
                 </svg></a></li>
           </ul>
           <ul class="header-nav ms-3">
+            <li class="nav-item py-2 py-lg-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link py-2 px-2 d-flex align-items-center" type="button" aria-expanded="false" data-coreui-toggle="dropdown">
+                <svg class="icon icon-lg theme-icon-active">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                </svg>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme" style="--cui-dropdown-min-width: 8rem;">
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="light">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-sun"></use>
+                    </svg>Light
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="dark">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                    </svg>Dark
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center active" type="button" data-coreui-theme-value="auto">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                    </svg>Auto
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item py-2 py-lg-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
             <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div></a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
@@ -293,13 +329,13 @@
             <div class="card-body">
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-658" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-820" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-658">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-820">
                     <div class="row">
                       <div class="col-sm-6 col-lg-3">
                         <div class="card mb-4 text-white bg-primary">
@@ -406,13 +442,13 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-460" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-744" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-460"> 
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-744"> 
                     <div class="row">
                       <div class="col-sm-6 col-lg-3">
                         <div class="card">
@@ -469,13 +505,13 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1276" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-390" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1276">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-390">
                     <div class="row">
                       <div class="col-sm-6 col-lg-3">
                         <div class="card text-white bg-primary">
@@ -532,13 +568,13 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-383" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-26" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-383">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-26">
                     <div class="row">
                       <div class="col-md-2 col-sm-4">
                         <div class="card">
@@ -619,13 +655,13 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1249" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-276" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1249">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-276">
                     <div class="row">
                       <div class="col-6 col-lg-3">
                         <div class="card">
@@ -697,13 +733,13 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-978" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-743" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-978">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-743">
                     <div class="row">
                       <div class="col-6 col-lg-3">
                         <div class="card">
@@ -792,13 +828,13 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1179" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-259" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1179">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-259">
                     <div class="row">
                       <div class="col-6 col-lg-3">
                         <div class="card overflow-hidden">
@@ -870,13 +906,13 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-106" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-757" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-106">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-757">
                     <div class="row">  
                       <div class="col-6 col-lg-3">
                         <div class="card overflow-hidden">
@@ -949,13 +985,13 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1044" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-816" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1044">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-816">
                     <div class="row">
                       <div class="col-sm-6 col-lg-4">
                         <div class="card" style="--cui-card-cap-bg: #3b5998">
@@ -1036,13 +1072,13 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1157" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-846" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1157">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-846">
                     <div class="card-group">
                       <div class="card">
                         <div class="card-body">
@@ -1115,13 +1151,13 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-62" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1080" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-62">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1080">
                     <div class="row">
                       <div class="col-sm-6 col-md-2">
                         <div class="card">
@@ -1226,13 +1262,13 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1215" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-674" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1215">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-674">
                     <div class="row">
                       <div class="col-sm-6 col-md-2">
                         <div class="card text-white bg-info">
