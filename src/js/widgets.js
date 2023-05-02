@@ -50,7 +50,8 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
           display: false
         },
         grid: {
-          display: false
+          display: false,
+          drawBorder: false
         },
         ticks: {
           display: false
@@ -109,7 +110,8 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
           display: false
         },
         grid: {
-          display: false
+          display: false,
+          drawBorder: false
         },
         ticks: {
           display: false
