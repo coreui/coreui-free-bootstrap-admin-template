@@ -7,7 +7,7 @@
 (() => {
   'use strict'
 
-  const THEME = 'coreui-docs-theme'
+  const THEME = 'coreui-free-bootstrap-admin-template-theme'
 
   const storedTheme = localStorage.getItem(THEME)
 
