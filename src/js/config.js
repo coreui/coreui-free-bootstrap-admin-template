@@ -6,8 +6,6 @@
  */
 
 (() => {
-  'use strict'
-
   const THEME = 'coreui-free-bootstrap-admin-template-theme'
   const urlParams = new URLSearchParams(window.location.href.split('?')[1])
 

@@ -81,5 +81,4 @@ async function main(args) {
   }
 }
 
-// eslint-disable-next-line unicorn/prefer-top-level-await
 main(process.argv.slice(2))

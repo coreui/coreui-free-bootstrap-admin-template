@@ -4,8 +4,9 @@
 
 const fs = require('node:fs')
 const path = require('node:path')
-const extension = path.extname
 const injector = require('@coreui/vendors-injector')
+
+const extension = path.extname
 const dist = 'dist/'
 
 const walkSync = (dir, filelist = []) => {
