@@ -2,8 +2,8 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v4.2.2): popovers.js
- * Licensed under MIT (https://coreui.io/license)
+ * CoreUI Boostrap Admin Template toasts.js
+ * Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 

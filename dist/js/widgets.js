@@ -2,8 +2,8 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Boostrap Admin Template (v4.2.2): main.js
- * Licensed under MIT (https://coreui.io/license)
+ * CoreUI Boostrap Admin Template widgets.js
+ * Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -13,9 +13,13 @@ Chart.defaults.plugins.tooltip.enabled = false;
 Chart.defaults.plugins.tooltip.mode = 'index';
 Chart.defaults.plugins.tooltip.position = 'nearest';
 Chart.defaults.plugins.tooltip.external = coreui.ChartJS.customTooltips;
-Chart.defaults.defaultFontColor = '#646470';
-
-// eslint-disable-next-line no-unused-vars
+Chart.defaults.defaultFontColor = coreui.Utils.getStyle('--cui-body-color');
+document.documentElement.addEventListener('ColorSchemeChange', () => {
+  cardChart1.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-primary');
+  cardChart2.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-info');
+  cardChart1.update();
+  cardChart2.update();
+});
 const cardChart1 = new Chart(document.getElementById('card-chart1'), {
   type: 'line',
   data: {
@@ -37,6 +41,9 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
     maintainAspectRatio: false,
     scales: {
       x: {
+        border: {
+          display: false
+        },
         grid: {
           display: false,
           drawBorder: false
@@ -70,8 +77,6 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
     }
   }
 });
-
-// eslint-disable-next-line no-unused-vars
 const cardChart2 = new Chart(document.getElementById('card-chart2'), {
   type: 'line',
   data: {
@@ -93,6 +98,9 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
     maintainAspectRatio: false,
     scales: {
       x: {
+        border: {
+          display: false
+        },
         grid: {
           display: false,
           drawBorder: false
@@ -199,6 +207,9 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
         }
       },
       y: {
+        border: {
+          display: false
+        },
         grid: {
           display: false,
           drawBorder: false,

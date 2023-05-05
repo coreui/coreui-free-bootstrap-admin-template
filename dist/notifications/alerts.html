@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<!--
+<!DOCTYPE html><!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.2.2
-* @link https://coreui.io
-* Copyright (c) 2022 creativeLabs Łukasz Holeczek
-* Licensed under MIT (https://coreui.io/license)
--->
-<!-- Breadcrumb-->
+* @version v4.3.0-alpha.0
+* @link https://coreui.io/product/free-bootstrap-admin-template/
+* Copyright (c) 2023 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
+--><!-- Breadcrumb-->
 <html lang="en">
   <head>
     <base href="./../">
@@ -39,9 +37,9 @@
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
-    <!-- We use those styles to show code examples, you should remove them in your application.-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link href="css/examples.css" rel="stylesheet">
+    <script src="js/config.js"></script>
+    <script src="js/color-modes.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
@@ -188,16 +186,16 @@
             <svg class="nav-icon">
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-description"></use>
             </svg> Docs</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
+        <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/product/bootstrap-dashboard-template/" target="_top">
             <svg class="nav-icon">
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-layers"></use>
             </svg> Try CoreUI
-            <div class="fw-semibold">PRO</div>
+            <div class="fw-semibold ms-1">PRO</div>
           </a></li>
       </ul>
       <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     </div>
-    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <div class="wrapper d-flex flex-column min-vh-100 bg-body-tertiary">
       <header class="header header-sticky mb-4">
         <div class="container-fluid">
           <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
@@ -228,11 +226,47 @@
                 </svg></a></li>
           </ul>
           <ul class="header-nav ms-3">
+            <li class="nav-item py-2 py-lg-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link py-2 px-2 d-flex align-items-center" type="button" aria-expanded="false" data-coreui-toggle="dropdown">
+                <svg class="icon icon-lg theme-icon-active">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-contrast"></use>
+                </svg>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" style="--cui-dropdown-min-width: 8rem;">
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="light">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-sun"></use>
+                    </svg>Light
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="dark">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-moon"></use>
+                    </svg>Dark
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center active" type="button" data-coreui-theme-value="auto">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-contrast"></use>
+                    </svg>Auto
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item py-2 py-lg-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
             <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
               </a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
-                <div class="dropdown-header bg-light py-2">
+                <div class="dropdown-header bg-body-tertiary rounded-top">
                   <div class="fw-semibold">Account</div>
                 </div><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
@@ -247,7 +281,7 @@
                   <svg class="icon me-2">
                     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-comment-square"></use>
                   </svg> Comments<span class="badge badge-sm bg-warning ms-2">42</span></a>
-                <div class="dropdown-header bg-light py-2">
+                <div class="dropdown-header bg-body-tertiary">
                   <div class="fw-semibold">Settings</div>
                 </div><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
@@ -301,7 +335,7 @@
                   <p class="text-medium-emphasis small">Bootstrap alert is prepared for any length of text, as well as an optional close button. For a styling, use one of the <strong>required</strong> contextual classes (e.g.,<code>.alert-success</code>).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-888" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-228" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -311,7 +345,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-888">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-228">
                         <div class="alert alert-primary" role="alert">This is a primary alert—check it out!</div>
                         <div class="alert alert-secondary" role="alert">This is a secondary alert—check it out!</div>
                         <div class="alert alert-success" role="alert">This is a success alert—check it out!</div>
@@ -333,7 +367,7 @@
                   <p class="text-medium-emphasis small">Use the <code>.alert-link</code> utility class to immediately give matching colored links inside any alert.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-797" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-994" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -343,7 +377,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-797">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-994">
                         <div class="alert alert-primary" role="alert">This is a primary alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.</div>
                         <div class="alert alert-secondary" role="alert">This is a secondary alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.</div>
                         <div class="alert alert-success" role="alert">This is a success alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.</div>
@@ -369,7 +403,7 @@
                   <p class="text-medium-emphasis small">Alert can also incorporate supplementary HTML elements like heading, paragraph, and divider.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-171" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-872" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -379,7 +413,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-171">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-872">
                         <div class="alert alert-success" role="alert">
                           <h4 class="alert-heading">Well done!</h4>
                           <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
@@ -400,7 +434,7 @@
                   <p class="text-medium-emphasis small">Using the JavaScript plugin, it’s possible to remove any alert.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1248" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-764" role="tab">
                           <svg class="icon me-2">
                             <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
@@ -410,7 +444,7 @@
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1248">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-764">
                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
                           <div class="fw-semibold">Holy guacamole!</div> You should check in on some of those fields below.
                           <button class="btn-close" type="button" data-coreui-dismiss="alert" aria-label="Close"></button>
@@ -426,7 +460,7 @@
         </div>
       </div>
       <footer class="footer">
-        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
+        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2023 creativeLabs.</div>
         <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
       </footer>
     </div>

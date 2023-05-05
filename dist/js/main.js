@@ -2,8 +2,8 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Boostrap Admin Template (v4.2.2): main.js
- * Licensed under MIT (https://coreui.io/license)
+ * CoreUI Boostrap Admin Template main.js
+ * Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -13,12 +13,22 @@ Chart.defaults.plugins.tooltip.enabled = false;
 Chart.defaults.plugins.tooltip.mode = 'index';
 Chart.defaults.plugins.tooltip.position = 'nearest';
 Chart.defaults.plugins.tooltip.external = coreui.ChartJS.customTooltips;
-Chart.defaults.defaultFontColor = '#646470';
+Chart.defaults.defaultFontColor = coreui.Utils.getStyle('--cui-body-color');
+document.documentElement.addEventListener('ColorSchemeChange', () => {
+  cardChart1.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-primary');
+  cardChart2.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-info');
+  mainChart.options.scales.x.grid.color = coreui.Utils.getStyle('--cui-border-color-translucent');
+  mainChart.options.scales.x.ticks.color = coreui.Utils.getStyle('--cui-body-color');
+  mainChart.options.scales.y.border.color = coreui.Utils.getStyle('--cui-border-color-translucent');
+  mainChart.options.scales.y.grid.color = coreui.Utils.getStyle('--cui-border-color-translucent');
+  mainChart.options.scales.y.ticks.color = coreui.Utils.getStyle('--cui-body-color');
+  cardChart1.update();
+  cardChart2.update();
+  mainChart.update();
+});
 const random = (min, max) =>
 // eslint-disable-next-line no-mixed-operators
 Math.floor(Math.random() * (max - min + 1) + min);
-
-// eslint-disable-next-line no-unused-vars
 const cardChart1 = new Chart(document.getElementById('card-chart1'), {
   type: 'line',
   data: {
@@ -40,6 +50,9 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
     maintainAspectRatio: false,
     scales: {
       x: {
+        border: {
+          display: false
+        },
         grid: {
           display: false,
           drawBorder: false
@@ -73,8 +86,6 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
     }
   }
 });
-
-// eslint-disable-next-line no-unused-vars
 const cardChart2 = new Chart(document.getElementById('card-chart2'), {
   type: 'line',
   data: {
@@ -96,6 +107,9 @@ const cardChart2 = new Chart(document.getElementById('card-chart2'), {
     maintainAspectRatio: false,
     scales: {
       x: {
+        border: {
+          display: false
+        },
         grid: {
           display: false,
           drawBorder: false
@@ -202,6 +216,9 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
         }
       },
       y: {
+        border: {
+          display: false
+        },
         grid: {
           display: false,
           drawBorder: false,
@@ -214,15 +231,13 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
     }
   }
 });
-
-// eslint-disable-next-line no-unused-vars
 const mainChart = new Chart(document.getElementById('main-chart'), {
   type: 'line',
   data: {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [{
       label: 'My First dataset',
-      backgroundColor: coreui.Utils.hexToRgba(coreui.Utils.getStyle('--cui-info'), 10),
+      backgroundColor: `rgba(${coreui.Utils.getStyle('--cui-info-rgb')}, .1)`,
       borderColor: coreui.Utils.getStyle('--cui-info'),
       pointHoverBackgroundColor: '#fff',
       borderWidth: 2,
@@ -234,18 +249,23 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
       pointHoverBackgroundColor: '#fff',
       borderWidth: 2,
       data: [random(50, 200), random(50, 200), random(50, 200), random(50, 200), random(50, 200), random(50, 200), random(50, 200)]
-    }, {
-      label: 'My Third dataset',
-      borderColor: coreui.Utils.getStyle('--cui-danger'),
-      pointHoverBackgroundColor: '#fff',
-      borderWidth: 1,
-      borderDash: [8, 5],
-      data: [65, 65, 65, 65, 65, 65, 65]
     }]
   },
   options: {
     maintainAspectRatio: false,
     plugins: {
+      annotation: {
+        annotations: {
+          line1: {
+            type: 'line',
+            yMin: 95,
+            yMax: 95,
+            borderColor: coreui.Utils.getStyle('--cui-danger'),
+            borderWidth: 1,
+            borderDash: [8, 5]
+          }
+        }
+      },
       legend: {
         display: false
       }
@@ -253,15 +273,26 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
     scales: {
       x: {
         grid: {
+          color: coreui.Utils.getStyle('--cui-border-color-translucent'),
           drawOnChartArea: false
+        },
+        ticks: {
+          color: coreui.Utils.getStyle('--cui-body-color')
         }
       },
       y: {
+        border: {
+          color: coreui.Utils.getStyle('--cui-border-color-translucent')
+        },
+        grid: {
+          color: coreui.Utils.getStyle('--cui-border-color-translucent')
+        },
         ticks: {
           beginAtZero: true,
+          color: coreui.Utils.getStyle('--cui-body-color'),
+          max: 250,
           maxTicksLimit: 5,
-          stepSize: Math.ceil(250 / 5),
-          max: 250
+          stepSize: Math.ceil(250 / 5)
         }
       }
     },

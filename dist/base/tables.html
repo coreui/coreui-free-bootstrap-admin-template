@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<!--
+<!DOCTYPE html><!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.2.2
-* @link https://coreui.io
-* Copyright (c) 2022 creativeLabs Łukasz Holeczek
-* Licensed under MIT (https://coreui.io/license)
--->
-<!-- Breadcrumb-->
+* @version v4.3.0-alpha.0
+* @link https://coreui.io/product/free-bootstrap-admin-template/
+* Copyright (c) 2023 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
+--><!-- Breadcrumb-->
 <html lang="en">
   <head>
     <base href="./../">
@@ -39,9 +37,9 @@
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
-    <!-- We use those styles to show code examples, you should remove them in your application.-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link href="css/examples.css" rel="stylesheet">
+    <script src="js/config.js"></script>
+    <script src="js/color-modes.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
@@ -188,16 +186,16 @@
             <svg class="nav-icon">
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-description"></use>
             </svg> Docs</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
+        <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/product/bootstrap-dashboard-template/" target="_top">
             <svg class="nav-icon">
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-layers"></use>
             </svg> Try CoreUI
-            <div class="fw-semibold">PRO</div>
+            <div class="fw-semibold ms-1">PRO</div>
           </a></li>
       </ul>
       <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     </div>
-    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <div class="wrapper d-flex flex-column min-vh-100 bg-body-tertiary">
       <header class="header header-sticky mb-4">
         <div class="container-fluid">
           <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
@@ -228,11 +226,47 @@
                 </svg></a></li>
           </ul>
           <ul class="header-nav ms-3">
+            <li class="nav-item py-2 py-lg-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link py-2 px-2 d-flex align-items-center" type="button" aria-expanded="false" data-coreui-toggle="dropdown">
+                <svg class="icon icon-lg theme-icon-active">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-contrast"></use>
+                </svg>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" style="--cui-dropdown-min-width: 8rem;">
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="light">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-sun"></use>
+                    </svg>Light
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="dark">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-moon"></use>
+                    </svg>Dark
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center active" type="button" data-coreui-theme-value="auto">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-contrast"></use>
+                    </svg>Auto
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item py-2 py-lg-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
             <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
               </a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
-                <div class="dropdown-header bg-light py-2">
+                <div class="dropdown-header bg-body-tertiary rounded-top">
                   <div class="fw-semibold">Account</div>
                 </div><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
@@ -247,7 +281,7 @@
                   <svg class="icon me-2">
                     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-comment-square"></use>
                   </svg> Comments<span class="badge badge-sm bg-warning ms-2">42</span></a>
-                <div class="dropdown-header bg-light py-2">
+                <div class="dropdown-header bg-body-tertiary">
                   <div class="fw-semibold">Settings</div>
                 </div><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
@@ -293,14 +327,13 @@
       </header>
       <div class="body flex-grow-1 px-3">
         <div class="container-lg">
-          <div class="car"></div>
           <div class="card mb-4">
             <div class="card-header"><strong>Tables</strong><span class="small ms-1">Basic example</span></div>
             <div class="card-body">
               <p class="text-medium-emphasis small">Using the most basic table markup, here’s how <code>.table</code>-based tables look in Bootstrap.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-557" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-111" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -310,7 +343,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-557">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-111">
                     <table class="table">
                       <thead>
                         <tr>
@@ -351,7 +384,7 @@
               <p class="text-medium-emphasis small">Use contextual classes to color tables, table rows or individual cells.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-607" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1073" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -361,7 +394,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-607">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1073">
                     <table class="table">
                       <thead>
                         <tr>
@@ -429,7 +462,7 @@
               <p class="text-medium-emphasis small">Use <code>.table-striped</code> to add zebra-striping to any table row within the <code> &lt;tbody&gt;</code>.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-81" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-132" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -439,7 +472,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-81">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-132">
                     <table class="table table-striped">
                       <thead>
                         <tr>
@@ -475,7 +508,7 @@
               <p class="text-medium-emphasis small">These classes can also be added to table variants:</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-618" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-488" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -485,7 +518,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-618">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-488">
                     <table class="table table-dark table-striped">
                       <thead>
                         <tr>
@@ -520,7 +553,7 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-573" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1179" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -530,7 +563,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-573">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1179">
                     <table class="table table-success table-striped">
                       <thead>
                         <tr>
@@ -571,7 +604,7 @@
               <p class="text-medium-emphasis small">Add <code>.table-hover</code> to enable a hover state on table rows within a <code> &lt;tbody&gt;</code>.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-359" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-479" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -581,7 +614,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-359">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-479">
                     <table class="table table-hover">
                       <thead>
                         <tr>
@@ -616,7 +649,7 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1240" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-636" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -626,7 +659,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1240">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-636">
                     <table class="table table-dark table-hover">
                       <thead>
                         <tr>
@@ -662,7 +695,7 @@
               <p class="text-medium-emphasis small">These hoverable rows can also be combined with the striped variant:</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-416" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-665" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -672,7 +705,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-416">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-665">
                     <table class="table table-striped table-hover">
                       <thead>
                         <tr>
@@ -713,7 +746,7 @@
               <p class="text-medium-emphasis small">Highlight a table row or cell by adding a <code>.table-active</code> class.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-321" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-192" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -723,7 +756,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-321">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-192">
                     <table class="table">
                       <thead>
                         <tr>
@@ -758,7 +791,7 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-554" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-469" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -768,7 +801,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-554">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-469">
                     <table class="table table-dark">
                       <thead>
                         <tr>
@@ -809,7 +842,7 @@
               <p class="text-medium-emphasis small">Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-91" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-228" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -819,7 +852,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-91">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-228">
                     <table class="table table-bordered">
                       <thead>
                         <tr>
@@ -855,7 +888,7 @@
               <p class="text-medium-emphasis small"><a href="https://coreui.io/docs/utilities/borders/#border-color">Border color utilities</a> can be added to change colors:</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-779" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-270" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -865,7 +898,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-779">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-270">
                     <table class="table table-bordered border-primary">
                       <thead>
                         <tr>
@@ -906,7 +939,7 @@
               <p class="text-medium-emphasis small">Add <code>.table-borderless</code> for a table without borders.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-313" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-850" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -916,7 +949,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-313">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-850">
                     <table class="table table-borderless">
                       <thead>
                         <tr>
@@ -951,7 +984,7 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-196" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-79" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -961,7 +994,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-196">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-79">
                     <table class="table table-dark table-borderless">
                       <thead>
                         <tr>
@@ -1002,7 +1035,7 @@
               <p class="text-medium-emphasis small">Add <code>.table-sm</code> to make any <code>.table</code> more compact by cutting all cell <code>padding</code> in half.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1294" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1261" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -1012,7 +1045,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1294">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1261">
                     <table class="table table-sm">
                       <thead>
                         <tr>
@@ -1047,7 +1080,7 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-668" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-162" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -1057,7 +1090,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-668">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-162">
                     <table class="table table-dark table-sm">
                       <thead>
                         <tr>
@@ -1098,7 +1131,7 @@
               <p class="text-medium-emphasis small">Table cells of <code> &lt;thead&gt;</code> are always vertical aligned to the bottom. Table cells in <code> &lt;tbody&gt;</code> inherit their alignment from <code> &lt;table&gt;</code> and are aligned to the the top by default. Use the <a href="https://coreui.io/docs/utilities/vertical-align/">vertical align</a> classes to re-align where needed.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-440" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1222" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -1108,7 +1141,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-440">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1222">
                     <div class="table-responsive">
                       <table class="table align-middle">
                         <thead>
@@ -1152,7 +1185,7 @@
               <p class="text-medium-emphasis small">Border styles, active styles, and table variants are not inherited by nested tables.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-845" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1273" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -1162,7 +1195,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-845">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1273">
                     <table class="table table-striped table-bordered">
                       <thead>
                         <tr>
@@ -1228,7 +1261,7 @@
               <p class="text-medium-emphasis small">Similar to tables and dark tables, use the modifier classes <code>.table-light</code> or <code>.table-dark</code> to make <code> &lt;thead&gt;</code>s appear light or dark gray.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-24" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1295" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -1238,7 +1271,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-24">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1295">
                     <table class="table">
                       <thead class="table-light">
                         <tr>
@@ -1274,7 +1307,7 @@
               </div>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-494" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-53" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -1284,7 +1317,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-494">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-53">
                     <table class="table">
                       <thead class="table-dark">
                         <tr>
@@ -1325,7 +1358,7 @@
             <div class="card-body">
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-397" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-486" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -1335,7 +1368,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-397">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-486">
                     <table class="table">
                       <thead class="table-light">
                         <tr>
@@ -1385,7 +1418,7 @@
               <p class="text-medium-emphasis small">A <code> &lt;caption&gt;</code> functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-895" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-768" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -1395,7 +1428,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-895">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-768">
                     <table class="table">
                       <caption>List of users</caption>
                       <thead>
@@ -1432,7 +1465,7 @@
               <p class="text-medium-emphasis small">You can also put the <code> &lt;caption&gt;</code> on the top of the table with <code>.caption-top</code>.</p>
               <div class="example">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-532" role="tab">
+                  <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-986" role="tab">
                       <svg class="icon me-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
                       </svg>Preview</a></li>
@@ -1442,7 +1475,7 @@
                       </svg>Code</a></li>
                 </ul>
                 <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-532">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-986">
                     <table class="table caption-top">
                       <caption>List of users</caption>
                       <thead>
@@ -1482,7 +1515,7 @@
         </div>
       </div>
       <footer class="footer">
-        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
+        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2023 creativeLabs.</div>
         <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
       </footer>
     </div>

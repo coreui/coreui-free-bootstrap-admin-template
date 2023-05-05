@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<!--
+<!DOCTYPE html><!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v4.2.2
-* @link https://coreui.io
+* @version v4.3.0-alpha.0
+* @link https://coreui.io/product/free-bootstrap-admin-template/
 * Copyright (c) 2023 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
 -->
-
 <html lang="en">
   <head>
     <base href="./">
@@ -35,7 +33,7 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Vendors styles-->
-    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+    <link rel="stylesheet" href="vendors/simplebar/css/simplebar.css">
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
@@ -46,7 +44,10 @@
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
       // Shared ID
       gtag('config', 'UA-118965717-3');
@@ -66,7 +67,7 @@
             </div>
             <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-magnifying-glass"></use>
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-magnifying-glass"></use>
                 </svg></span>
               <input class="form-control" id="prependedInput" size="16" type="text" placeholder="What are you looking for?">
               <button class="btn btn-info" type="button">Search</button>
@@ -76,9 +77,10 @@
       </div>
     </div>
     <!-- CoreUI and necessary plugins-->
-    <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
-    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
-    <script> 
+    <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
+    <script src="vendors/simplebar/js/simplebar.min.js"></script>
+    <script>
     </script>
+
   </body>
 </html>
