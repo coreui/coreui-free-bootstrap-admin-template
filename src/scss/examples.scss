@@ -95,5 +95,20 @@
       margin-top: .5rem;
       margin-bottom: .5rem;
     }
+
+    .docs-example-modal {
+      .modal {
+        position: static;
+        display: block;
+      }
+    }
+  }
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .example .tab-content {
+      background-color: var(--#{$prefix}secondary-bg) !important;
+    }
   }
 }
