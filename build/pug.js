@@ -3,7 +3,7 @@
 
 const fs = require('node:fs').promises
 const path = require('node:path')
-const mkdirp = require('mkdirp')
+const { mkdirp } = require('mkdirp')
 const pug = require('pug')
 
 const { basename, dirname, resolve, sep } = path
