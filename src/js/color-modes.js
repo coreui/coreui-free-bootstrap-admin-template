@@ -7,9 +7,12 @@
 (() => {
   const THEME = 'coreui-free-bootstrap-admin-template-theme'
 
-  const storedTheme = localStorage.getItem(THEME)
+  const getStoredTheme = () => localStorage.getItem(THEME)
+  const setStoredTheme = theme => localStorage.setItem(THEME, theme)
 
   const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme()
+
     if (storedTheme) {
       return storedTheme
     }
@@ -44,6 +47,7 @@
   }
 
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme()
     if (storedTheme !== 'light' || storedTheme !== 'dark') {
       setTheme(getPreferredTheme())
     }
@@ -55,7 +59,7 @@
     for (const toggle of document.querySelectorAll('[data-coreui-theme-value]')) {
       toggle.addEventListener('click', () => {
         const theme = toggle.getAttribute('data-coreui-theme-value')
-        localStorage.setItem(THEME, theme)
+        setStoredTheme(theme)
         setTheme(theme)
         showActiveTheme(theme)
       })
