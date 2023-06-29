@@ -2,12 +2,11 @@
 
 'use strict'
 
-// eslint-disable-next-line unicorn/prefer-node-protocol
-const fs = require('fs')
-// eslint-disable-next-line unicorn/prefer-node-protocol
-const path = require('path')
-const extension = path.extname
+const fs = require('node:fs')
+const path = require('node:path')
 const injector = require('@coreui/vendors-injector')
+
+const extension = path.extname
 const dist = 'dist/'
 
 const walkSync = (dir, filelist = []) => {
