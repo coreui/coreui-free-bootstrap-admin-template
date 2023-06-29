@@ -1,10 +1,9 @@
 mixin example(url)
-  - var id = Math.floor(Math.random() * (15 - 1300) + 1300)
-  
+
   .example
     ul.nav.nav-tabs(role="tablist")
       li.nav-item
-        a.nav-link.active(data-coreui-toggle="tab" href="#preview-"+id role="tab")
+        a.nav-link.active(data-coreui-toggle="tab" href="#preview-"+count role="tab")
           svg.icon.me-2
             use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play")
             |
@@ -17,5 +16,5 @@ mixin example(url)
               |
             | Code
     .tab-content.rounded-bottom
-      .tab-pane.p-3.active.preview(role="tabpanel" id="preview-"+id )
+      .tab-pane.p-3.active.preview(role="tabpanel" id="preview-"+count++ )
         block
