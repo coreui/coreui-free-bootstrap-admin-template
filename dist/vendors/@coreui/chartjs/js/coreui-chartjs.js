@@ -1,20 +1,21 @@
 /*!
-  * CoreUI Plugins - Chart.js for CoreUI 4  v3.0.0 (https://coreui.io)
-  * Copyright 2021 creativeLabs Łukasz Holeczek
-  * Licensed under MIT (https://coreui.io/license/)
+  * CoreUI Plugins - Chart.js for CoreUI v5 v3.1.2 (https://coreui.io)
+  * Copyright 2023 creativeLabs Łukasz Holeczek
+  * Licensed under MIT (https://github.com/coreui/coreui-chartjs/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, (global.coreui = global.coreui || {}, global.coreui.ChartJS = factory()));
-}(this, (function () { 'use strict';
+})(this, (function () { 'use strict';
 
   /**
    * --------------------------------------------------------------------------
-   * Custom Tooltips for Chart.js (v3.0.0): custom-tooltips.js
+   * Custom Tooltips for Chart.js (v3.1.2): custom-tooltips.js
    * Licensed under MIT (https://coreui.io/plugins/chart.js)
    * --------------------------------------------------------------------------
    */
+
   const ClassName = {
     TOOLTIP: 'chartjs-tooltip',
     TOOLTIP_BODY: 'chartjs-tooltip-body',
@@ -22,10 +23,8 @@
     TOOLTIP_HEADER: 'chartjs-tooltip-header',
     TOOLTIP_HEADER_ITEM: 'chartjs-tooltip-header-item'
   };
-
   const getOrCreateTooltip = chart => {
     let tooltipEl = chart.canvas.parentNode.querySelector('div');
-
     if (!tooltipEl) {
       tooltipEl = document.createElement('div');
       tooltipEl.classList.add(ClassName.TOOLTIP);
@@ -34,24 +33,23 @@
       tooltipEl.appendChild(table);
       chart.canvas.parentNode.appendChild(tooltipEl);
     }
-
     return tooltipEl;
   };
-
   const customTooltips = context => {
     // Tooltip Element
     const {
       chart,
       tooltip
     } = context;
-    const tooltipEl = getOrCreateTooltip(chart); // Hide if no tooltip
+    const tooltipEl = getOrCreateTooltip(chart);
 
+    // Hide if no tooltip
     if (tooltip.opacity === 0) {
       tooltipEl.style.opacity = 0;
       return;
-    } // Set Text
+    }
 
-
+    // Set Text
     if (tooltip.body) {
       const titleLines = tooltip.title || [];
       const bodyLines = tooltip.body.map(b => b.lines);
@@ -90,22 +88,23 @@
         tr.appendChild(td);
         tableBody.appendChild(tr);
       });
-      const tableRoot = tooltipEl.querySelector('table'); // Remove old children
+      const tableRoot = tooltipEl.querySelector('table');
 
+      // Remove old children
       while (tableRoot.firstChild) {
         tableRoot.firstChild.remove();
-      } // Add new children
+      }
 
-
+      // Add new children
       tableRoot.appendChild(tableHead);
       tableRoot.appendChild(tableBody);
     }
-
     const {
       offsetLeft: positionX,
       offsetTop: positionY
-    } = chart.canvas; // Display, position, and set styles for font
+    } = chart.canvas;
 
+    // Display, position, and set styles for font
     tooltipEl.style.opacity = 1;
     tooltipEl.style.left = positionX + tooltip.caretX + 'px';
     tooltipEl.style.top = positionY + tooltip.caretY + 'px';
@@ -115,7 +114,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Custom Tooltips for Chart.js (v3.0.0): index.umd.js
+   * Custom Tooltips for Chart.js (v3.1.2): index.umd.js
    * Licensed under MIT (https://github.com/@coreui/coreui-chartjs/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -125,5 +124,5 @@
 
   return index_umd;
 
-})));
+}));
 //# sourceMappingURL=coreui-chartjs.js.map
