@@ -1,10 +1,13 @@
-<!DOCTYPE html><!--
+<!DOCTYPE html>
+<!--
 * CoreUI - Free Bootstrap Admin Template
 * @version v4.3.0-alpha.0
 * @link https://coreui.io/product/free-bootstrap-admin-template/
 * Copyright (c) 2023 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
---><!-- Breadcrumb-->
+-->
+
+<!-- Breadcrumb-->
 <html lang="en">
   <head>
     <base href="./../">
@@ -33,27 +36,13 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Vendors styles-->
-    <link rel="stylesheet" href="vendors/simplebar/css/simplebar.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/examples.css" rel="stylesheet">
     <script src="js/config.js"></script>
     <script src="js/color-modes.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      // Shared ID
-      gtag('config', 'UA-118965717-3');
-      // Bootstrap ID
-      gtag('config', 'UA-118965717-5');
-    </script>
     <link rel="canonical" href="https://coreui.io/docs/forms/validation/">
   </head>
   <body>
@@ -66,24 +55,24 @@
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
             </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
         <li class="nav-title">Theme</li>
         <li class="nav-item"><a class="nav-link" href="colors.html">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-drop"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-drop"></use>
             </svg> Colors</a></li>
         <li class="nav-item"><a class="nav-link" href="typography.html">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-pencil"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-pencil"></use>
             </svg> Typography</a></li>
         <li class="nav-title">Components</li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-puzzle"></use>
             </svg> Base</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="base/accordion.html"><span class="nav-icon"></span> Accordion</a></li>
@@ -105,7 +94,7 @@
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-cursor"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cursor"></use>
             </svg> Buttons</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"><span class="nav-icon"></span> Buttons</a></li>
@@ -115,11 +104,11 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="charts.html">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-chart-pie"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie"></use>
             </svg> Charts</a></li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-notes"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-notes"></use>
             </svg> Forms</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="forms/form-control.html"> Form Control</a></li>
@@ -134,7 +123,7 @@
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-star"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Icons</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-free.html"> CoreUI Icons<span class="badge badge-sm bg-success ms-auto">Free</span></a></li>
@@ -144,7 +133,7 @@
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
             </svg> Notifications</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><span class="nav-icon"></span> Alerts</a></li>
@@ -155,43 +144,42 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="widgets.html">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calculator"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calculator"></use>
             </svg> Widgets<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
         <li class="nav-divider"></li>
         <li class="nav-title">Extras</li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-star"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Pages</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="login.html" target="_top">
                 <svg class="nav-icon">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
                 </svg> Login</a></li>
             <li class="nav-item"><a class="nav-link" href="register.html" target="_top">
                 <svg class="nav-icon">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
                 </svg> Register</a></li>
             <li class="nav-item"><a class="nav-link" href="404.html" target="_top">
                 <svg class="nav-icon">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bug"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
                 </svg> Error 404</a></li>
             <li class="nav-item"><a class="nav-link" href="500.html" target="_top">
                 <svg class="nav-icon">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bug"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
                 </svg> Error 500</a></li>
           </ul>
         </li>
         <li class="nav-item mt-auto"><a class="nav-link" href="https://coreui.io/docs/templates/installation/" target="_blank">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-description"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-description"></use>
             </svg> Docs</a></li>
         <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/product/bootstrap-dashboard-template/" target="_top">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-layers"></use>
-            </svg> Try CoreUI
-            <div class="fw-semibold ms-1">PRO</div>
-          </a></li>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
+            </svg> Try CoreUI 
+            <div class="fw-semibold ms-1">PRO</div></a></li>
       </ul>
       <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     </div>
@@ -200,7 +188,7 @@
         <div class="container-fluid">
           <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
             <svg class="icon icon-lg">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
           </button><a class="header-brand d-md-none" href="#">
             <svg width="118" height="46" alt="CoreUI Logo">
@@ -214,15 +202,15 @@
           <ul class="header-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
                 </svg></a></li>
             <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-list-rich"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
                 </svg></a></li>
             <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                 </svg></a></li>
           </ul>
           <ul class="header-nav ms-3">
@@ -232,28 +220,28 @@
             <li class="nav-item dropdown">
               <button class="btn btn-link nav-link py-2 px-2 d-flex align-items-center" type="button" aria-expanded="false" data-coreui-toggle="dropdown">
                 <svg class="icon icon-lg theme-icon-active">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-contrast"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
                 </svg>
               </button>
               <ul class="dropdown-menu dropdown-menu-end" style="--cui-dropdown-min-width: 8rem;">
                 <li>
                   <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="light">
                     <svg class="icon icon-lg me-3">
-                      <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-sun"></use>
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-sun"></use>
                     </svg>Light
                   </button>
                 </li>
                 <li>
                   <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="dark">
                     <svg class="icon icon-lg me-3">
-                      <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-moon"></use>
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
                     </svg>Dark
                   </button>
                 </li>
                 <li>
                   <button class="dropdown-item d-flex align-items-center active" type="button" data-coreui-theme-value="auto">
                     <svg class="icon icon-lg me-3">
-                      <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-contrast"></use>
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
                     </svg>Auto
                   </button>
                 </li>
@@ -263,45 +251,44 @@
               <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
             </li>
             <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
-              </a>
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div></a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
                 <div class="dropdown-header bg-body-tertiary rounded-top">
                   <div class="fw-semibold">Account</div>
                 </div><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
                   </svg> Updates<span class="badge badge-sm bg-info ms-2">42</span></a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                   </svg> Messages<span class="badge badge-sm bg-success ms-2">42</span></a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-task"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
                   </svg> Tasks<span class="badge badge-sm bg-danger ms-2">42</span></a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-comment-square"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
                   </svg> Comments<span class="badge badge-sm bg-warning ms-2">42</span></a>
                 <div class="dropdown-header bg-body-tertiary">
                   <div class="fw-semibold">Settings</div>
                 </div><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
                   </svg> Profile</a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
                   </svg> Settings</a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-credit-card"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card"></use>
                   </svg> Payments<span class="badge badge-sm bg-secondary ms-2">42</span></a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-file"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file"></use>
                   </svg> Projects<span class="badge badge-sm bg-primary ms-2">42</span></a>
                 <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
                   </svg> Lock Account</a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
                   </svg> Logout</a>
               </div>
             </li>
@@ -336,56 +323,56 @@
                   <p class="text-medium-emphasis small">Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for <code>&lt;select&gt;</code>s are only available with <code>.form-select</code>, and not <code>.form-control</code>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-290" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1000" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/validation/#custom-styles" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-290">
-                        <form class="row g-3 needs-validation" novalidate="">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1000">
+                        <form class="row g-3 needs-validation" novalidate>
                           <div class="col-md-4">
                             <label class="form-label" for="validationCustom01">First name</label>
-                            <input class="form-control" id="validationCustom01" type="text" value="Mark" required="">
+                            <input class="form-control" id="validationCustom01" type="text" value="Mark" required>
                             <div class="valid-feedback">Looks good!</div>
                           </div>
                           <div class="col-md-4">
                             <label class="form-label" for="validationCustom02">Last name</label>
-                            <input class="form-control" id="validationCustom02" type="text" value="Otto" required="">
+                            <input class="form-control" id="validationCustom02" type="text" value="Otto" required>
                             <div class="valid-feedback">Looks good!</div>
                           </div>
                           <div class="col-md-4">
                             <label class="form-label" for="validationCustomUsername">Username</label>
                             <div class="input-group has-validation"><span class="input-group-text" id="inputGroupPrepend">@</span>
-                              <input class="form-control" id="validationCustomUsername" type="text" aria-describedby="inputGroupPrepend" required="">
+                              <input class="form-control" id="validationCustomUsername" type="text" aria-describedby="inputGroupPrepend" required>
                               <div class="invalid-feedback">Please choose a username.</div>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <label class="form-label" for="validationCustom03">City</label>
-                            <input class="form-control" id="validationCustom03" type="text" required="">
+                            <input class="form-control" id="validationCustom03" type="text" required>
                             <div class="invalid-feedback">Please provide a valid city.</div>
                           </div>
                           <div class="col-md-3">
                             <label class="form-label" for="validationCustom04">State</label>
-                            <select class="form-select" id="validationCustom04" required="">
-                              <option selected="" disabled="" value="">Choose...</option>
+                            <select class="form-select" id="validationCustom04" required>
+                              <option selected disabled value>Choose...</option>
                               <option>...</option>
                             </select>
                             <div class="invalid-feedback">Please select a valid state.</div>
                           </div>
                           <div class="col-md-3">
                             <label class="form-label" for="validationCustom05">Zip</label>
-                            <input class="form-control" id="validationCustom05" type="text" required="">
+                            <input class="form-control" id="validationCustom05" type="text" required>
                             <div class="invalid-feedback">Please provide a valid zip.</div>
                           </div>
                           <div class="col-12">
                             <div class="form-check">
-                              <input class="form-check-input" id="invalidCheck" type="checkbox" required="">
+                              <input class="form-check-input" id="invalidCheck" type="checkbox" required>
                               <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
                               <div class="invalid-feedback">You must agree before submitting.</div>
                             </div>
@@ -408,50 +395,50 @@
                   <p class="text-medium-emphasis small">While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-383" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1001" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/validation/#browser-defaults" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-383">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1001">
                         <form class="row g-3">
                           <div class="col-md-4">
                             <label class="form-label" for="validationDefault01">First name</label>
-                            <input class="form-control" id="validationDefault01" type="text" value="Mark" required="">
+                            <input class="form-control" id="validationDefault01" type="text" value="Mark" required>
                           </div>
                           <div class="col-md-4">
                             <label class="form-label" for="validationDefault02">Last name</label>
-                            <input class="form-control" id="validationDefault02" type="text" value="Otto" required="">
+                            <input class="form-control" id="validationDefault02" type="text" value="Otto" required>
                           </div>
                           <div class="col-md-4">
                             <label class="form-label" for="validationDefaultUsername">Username</label>
                             <div class="input-group"><span class="input-group-text" id="inputGroupPrepend2">@</span>
-                              <input class="form-control" id="validationDefaultUsername" type="text" aria-describedby="inputGroupPrepend2" required="">
+                              <input class="form-control" id="validationDefaultUsername" type="text" aria-describedby="inputGroupPrepend2" required>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <label class="form-label" for="validationDefault03">City</label>
-                            <input class="form-control" id="validationDefault03" type="text" required="">
+                            <input class="form-control" id="validationDefault03" type="text" required>
                           </div>
                           <div class="col-md-3">
                             <label class="form-label" for="validationDefault04">State</label>
-                            <select class="form-select" id="validationDefault04" required="">
-                              <option selected="" disabled="" value="">Choose...</option>
+                            <select class="form-select" id="validationDefault04" required>
+                              <option selected disabled value>Choose...</option>
                               <option>...</option>
                             </select>
                           </div>
                           <div class="col-md-3">
                             <label class="form-label" for="validationDefault05">Zip</label>
-                            <input class="form-control" id="validationDefault05" type="text" required="">
+                            <input class="form-control" id="validationDefault05" type="text" required>
                           </div>
                           <div class="col-12">
                             <div class="form-check">
-                              <input class="form-check-input" id="invalidCheck2" type="checkbox" required="">
+                              <input class="form-check-input" id="invalidCheck2" type="checkbox" required>
                               <label class="form-check-label" for="invalidCheck2">Agree to terms and conditions</label>
                             </div>
                           </div>
@@ -474,60 +461,60 @@
                   <p class="text-medium-emphasis small">To fix<a href="https://github.com/twbs/bootstrap/issues/25110">issues with border radii</a>, input groups require an additional <code>.has-validation</code> class.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-170" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1002" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/validation/#server-side" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-170">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1002">
                         <form class="row g-3">
                           <div class="col-md-4">
                             <label class="form-label" for="validationServer01">First name</label>
-                            <input class="form-control is-valid" id="validationServer01" type="text" value="Mark" required="">
+                            <input class="form-control is-valid" id="validationServer01" type="text" value="Mark" required>
                             <div class="valid-feedback">Looks good!</div>
                           </div>
                           <div class="col-md-4">
                             <label class="form-label" for="validationServer02">Last name</label>
-                            <input class="form-control is-valid" id="validationServer02" type="text" value="Otto" required="">
+                            <input class="form-control is-valid" id="validationServer02" type="text" value="Otto" required>
                             <div class="valid-feedback">Looks good!</div>
                           </div>
                           <div class="col-md-4">
                             <label class="form-label" for="validationServerUsername">Username</label>
                             <div class="input-group has-validation"><span class="input-group-text" id="inputGroupPrepend3">@</span>
-                              <input class="form-control is-invalid" id="validationServerUsername" type="text" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required="">
+                              <input class="form-control is-invalid" id="validationServerUsername" type="text" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
                               <div class="invalid-feedback" id="validationServerUsernameFeedback">Please choose a username.</div>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <label class="form-label" for="validationServer03">City</label>
-                            <input class="form-control is-invalid" id="validationServer03" type="text" aria-describedby="validationServer03Feedback" required="">
+                            <input class="form-control is-invalid" id="validationServer03" type="text" aria-describedby="validationServer03Feedback" required>
                             <div class="invalid-feedback" id="validationServer03Feedback">Please provide a valid city.</div>
                           </div>
                           <div class="col-md-3">
                             <label class="form-label" for="validationServer04">State</label>
-                            <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
-                              <option selected="" disabled="" value="">Choose...</option>
+                            <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                              <option selected disabled value>Choose...</option>
                               <option>...</option>
                             </select>
                             <div class="invalid-feedback" id="validationServer04Feedback">Please select a valid state.</div>
                           </div>
                           <div class="col-md-3">
                             <label class="form-label" for="validationServer05">Zip</label>
-                            <input class="form-control is-invalid" id="validationServer05" type="text" aria-describedby="validationServer05Feedback" required="">
+                            <input class="form-control is-invalid" id="validationServer05" type="text" aria-describedby="validationServer05Feedback" required>
                             <div class="invalid-feedback" id="validationServer05Feedback">Please provide a valid zip.</div>
                           </div>
                           <div class="col-12">
                             <div class="form-check">
-                              <input class="form-check-input is-invalid" id="invalidCheck3" type="checkbox" aria-describedby="invalidCheck3Feedback" required="">
+                              <input class="form-check-input is-invalid" id="invalidCheck3" type="checkbox" aria-describedby="invalidCheck3Feedback" required>
                               <label class="form-check-label" for="invalidCheck3">Agree to terms and conditions</label>
                               <div class="invalid-feedback" id="invalidCheck3Feedback">
                                 You must agree before submitting.
-
+                                
                               </div>
                             </div>
                           </div>
@@ -553,40 +540,40 @@
                   </ul>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-406" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1003" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/validation/#supported-elements" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-406">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1003">
                         <form class="was-validated">
                           <div class="mb-3">
                             <label class="form-label" for="validationTextarea">Textarea</label>
-                            <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required=""></textarea>
+                            <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
                             <div class="invalid-feedback">Please enter a message in the textarea.</div>
                           </div>
                           <div class="form-check mb-3">
-                            <input class="form-check-input" id="validationFormCheck1" type="checkbox" required="">
+                            <input class="form-check-input" id="validationFormCheck1" type="checkbox" required>
                             <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
                             <div class="invalid-feedback">Example invalid feedback text</div>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" id="validationFormCheck2" type="radio" name="radio-stacked" required="">
+                            <input class="form-check-input" id="validationFormCheck2" type="radio" name="radio-stacked" required>
                             <label class="form-check-label" for="validationFormCheck2">Toggle this radio</label>
                           </div>
                           <div class="form-check mb-3">
-                            <input class="form-check-input" id="validationFormCheck3" type="radio" name="radio-stacked" required="">
+                            <input class="form-check-input" id="validationFormCheck3" type="radio" name="radio-stacked" required>
                             <label class="form-check-label" for="validationFormCheck3">Or toggle this other radio</label>
                             <div class="invalid-feedback">More example invalid feedback text</div>
                           </div>
                           <div class="mb-3">
-                            <select class="form-select" required="" aria-label="select example">
-                              <option value="">Open this select menu</option>
+                            <select class="form-select" required aria-label="select example">
+                              <option value>Open this select menu</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
                               <option value="3">Three</option>
@@ -594,11 +581,11 @@
                             <div class="invalid-feedback">Example invalid select feedback</div>
                           </div>
                           <div class="mb-3">
-                            <input class="form-control" type="file" aria-label="file example" required="">
+                            <input class="form-control" type="file" aria-label="file example" required>
                             <div class="invalid-feedback">Example invalid form file feedback</div>
                           </div>
                           <div class="mb-3">
-                            <button class="btn btn-primary" type="submit" disabled="">Submit form</button>
+                            <button class="btn btn-primary" type="submit" disabled>Submit form</button>
                           </div>
                         </form>
                       </div>
@@ -614,51 +601,51 @@
                   <p class="text-medium-emphasis small">If your form layout allows it, you can swap the <code>.{valid|invalid}-feedback</code> classes for <code>.{valid|invalid}-tooltip</code> classes to display validation feedback in a styled tooltip. Be sure to have a parent with <code>position: relative</code> on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-922" role="tab">
+                      <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1004" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/validation/#tooltips" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-922">
-                        <form class="row g-3 needs-validation" novalidate="">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1004">
+                        <form class="row g-3 needs-validation" novalidate>
                           <div class="col-md-4 position-relative">
                             <label class="form-label" for="validationTooltip01">First name</label>
-                            <input class="form-control" id="validationTooltip01" type="text" value="Mark" required="">
+                            <input class="form-control" id="validationTooltip01" type="text" value="Mark" required>
                             <div class="valid-tooltip">Looks good!</div>
                           </div>
                           <div class="col-md-4 position-relative">
                             <label class="form-label" for="validationTooltip02">Last name</label>
-                            <input class="form-control" id="validationTooltip02" type="text" value="Otto" required="">
+                            <input class="form-control" id="validationTooltip02" type="text" value="Otto" required>
                             <div class="valid-tooltip">Looks good!</div>
                           </div>
                           <div class="col-md-4 position-relative">
                             <label class="form-label" for="validationTooltipUsername">Username</label>
                             <div class="input-group has-validation"><span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                              <input class="form-control" id="validationTooltipUsername" type="text" aria-describedby="validationTooltipUsernamePrepend" required="">
+                              <input class="form-control" id="validationTooltipUsername" type="text" aria-describedby="validationTooltipUsernamePrepend" required>
                               <div class="invalid-tooltip">Please choose a unique and valid username.</div>
                             </div>
                           </div>
                           <div class="col-md-6 position-relative">
                             <label class="form-label" for="validationTooltip03">City</label>
-                            <input class="form-control" id="validationTooltip03" type="text" required="">
+                            <input class="form-control" id="validationTooltip03" type="text" required>
                             <div class="invalid-tooltip">Please provide a valid city.</div>
                           </div>
                           <div class="col-md-3 position-relative">
                             <label class="form-label" for="validationTooltip04">State</label>
-                            <select class="form-select" id="validationTooltip04" required="">
-                              <option selected="" disabled="" value="">Choose...</option>
+                            <select class="form-select" id="validationTooltip04" required>
+                              <option selected disabled value>Choose...</option>
                               <option>...</option>
                             </select>
                             <div class="invalid-tooltip">Please select a valid state.</div>
                           </div>
                           <div class="col-md-3 position-relative">
                             <label class="form-label" for="validationTooltip05">Zip</label>
-                            <input class="form-control" id="validationTooltip05" type="text" required="">
+                            <input class="form-control" id="validationTooltip05" type="text" required>
                             <div class="invalid-tooltip">Please provide a valid zip.</div>
                           </div>
                           <div class="col-12">
@@ -675,31 +662,30 @@
         </div>
       </div>
       <footer class="footer">
-        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2023 creativeLabs.</div>
+        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> &copy; 2023 creativeLabs.</div>
         <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
       </footer>
     </div>
     <!-- CoreUI and necessary plugins-->
-    <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
-    <script src="vendors/simplebar/js/simplebar.min.js"></script>
-    <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function() {
-        'use strict'
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll('.needs-validation')
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms).forEach(function(form) {
-          form.addEventListener('submit', function(event) {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-            }
-            form.classList.add('was-validated')
-          }, false)
-        })
-      })()
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+    <script> 
+       // Example starter JavaScript for disabling form submissions if there are invalid fields
+       (function () {
+         'use strict'
+         // Fetch all the forms we want to apply custom Bootstrap validation styles to
+         var forms = document.querySelectorAll('.needs-validation')
+         // Loop over them and prevent submission
+         Array.prototype.slice.call(forms).forEach(function (form) {
+           form.addEventListener('submit', function (event) {
+             if (!form.checkValidity()) {
+               event.preventDefault()
+               event.stopPropagation()
+             }
+             form.classList.add('was-validated')
+           }, false)
+         })
+       })()
     </script>
-
   </body>
 </html>

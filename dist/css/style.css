@@ -2,7 +2,7 @@
 /* stylelint-disable-line scss/dollar-variable-default */
 /* stylelint-disable-line scss/dollar-variable-default */
 /*!
- * CoreUI  v4.3.0-alpha.0 (https://coreui.io)
+ * CoreUI  v4.3.0-beta.0 (https://coreui.io)
  * Copyright (c) 2023 creativeLabs Łukasz Holeczek
  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
  */
@@ -206,8 +206,8 @@
   --cui-link-color-rgb: 132, 121, 233;
   --cui-link-hover-color-rgb: 157, 148, 237;
   --cui-code-color: #e685b5;
-  --cui-border-color: #323a49;
-  --cui-border-color-translucent: rgba(255, 255, 255, 0.1);
+  --cui-border-color: #4a566d;
+  --cui-border-color-translucent: rgba(255, 255, 255, 0.15);
   --cui-form-valid-color: #75b798;
   --cui-form-valid-border-color: #75b798;
   --cui-form-invalid-color: #ea868f;
@@ -2122,7 +2122,7 @@ html:not([dir=rtl]) .offset-11 {
   --cui-table-color-state: initial;
   --cui-table-bg-state: initial;
   --cui-table-color: var(--cui-body-color);
-  --cui-table-bg: transparent;
+  --cui-table-bg: var(--cui-body-bg);
   --cui-table-border-color: var(--cui-border-color);
   --cui-table-accent-bg: transparent;
   --cui-table-striped-color: var(--cui-body-color);
@@ -5147,7 +5147,8 @@ html:not([dir=rtl]) .navbar-nav {
   overflow-y: visible;
 }
 
-.navbar-dark {
+.navbar-dark,
+.navbar[data-coreui-theme=dark] {
   --cui-navbar-color: rgba(255, 255, 255, 0.55);
   --cui-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --cui-navbar-disabled-color: rgba(255, 255, 255, 0.25);
@@ -8042,10 +8043,10 @@ html:not([dir=rtl]) .avatars-stack .avatar-xl {
   --cui-callout-padding-y: 1rem;
   --cui-callout-margin-x: 0;
   --cui-callout-margin-y: 1rem;
-  --cui-callout-border-width: 1px;
-  --cui-callout-border-color: #dbdfe6;
-  --cui-callout-border-left-width: 4px;
-  --cui-callout-border-radius: 0.375rem;
+  --cui-callout-border-width: var(--cui-border-width);
+  --cui-callout-border-color: var(--cui-border-color);
+  --cui-callout-border-left-width: calc(var(--cui-border-width) * 4);
+  --cui-callout-border-radius: var(--cui-border-radius);
   padding: var(--cui-callout-padding-y) var(--cui-callout-padding-x);
   margin: var(--cui-callout-margin-y) var(--cui-callout-margin-x);
   border: var(--cui-callout-border-width) solid var(--cui-callout-border-color);
@@ -15557,6 +15558,14 @@ html:not([dir=rtl]) .wrapper {
 .example .preview .pagination {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+.example .preview .docs-example-modal .modal {
+  position: static;
+  display: block;
+}
+
+[data-coreui-theme=dark] .example .tab-content {
+  background-color: var(--cui-secondary-bg) !important;
 }
 
 /*# sourceMappingURL=style.css.map */
