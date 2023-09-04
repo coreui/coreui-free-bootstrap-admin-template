@@ -2,6 +2,15 @@
 script(src='node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js')
 script(src='node_modules/simplebar/dist/simplebar.min.js')
 
+script.
+  const header = document.querySelector('header.header');
+
+  document.addEventListener('scroll', () => {
+    if (header) {
+      header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
+    }
+  });
+
 block scripts
 
 script 
