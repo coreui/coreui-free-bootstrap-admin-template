@@ -1,10 +1,12 @@
-.sidebar.sidebar-dark.sidebar-fixed#sidebar
-  .sidebar-brand.d-none.d-md-flex
-    svg.sidebar-brand-full(width="118" height="46" alt="CoreUI Logo")
-      use(xlink:href="assets/brand/coreui.svg#full")
-      |
-    svg.sidebar-brand-narrow(width="46" height="46" alt="CoreUI Logo")
-      use(xlink:href="assets/brand/coreui.svg#signet")
+.sidebar.sidebar-fixed.border-end.sidebar-light#sidebar
+  .sidebar-header.border-bottom
+    .sidebar-brand
+      svg.sidebar-brand-full(width="88" height="32" alt="CoreUI Logo")
+        use(xlink:href="assets/brand/coreui.svg#full")
+        |
+      svg.sidebar-brand-narrow(width="32" height="32" alt="CoreUI Logo")
+        use(xlink:href="assets/brand/coreui.svg#signet")
+    button.btn-close.d-md-none(type='button' data-coreui-dismiss='offcanvas' aria-label='Close' onclick='coreui.Sidebar.getInstance(document.querySelector("#sidebar")).toggle()')
   ul.sidebar-nav(data-coreui="navigation" data-simplebar)
     li.nav-item
       a.nav-link(href='index.html')
@@ -31,84 +33,91 @@
         svg.nav-icon
           use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-puzzle")
         |  Base
-      ul.nav-group-items
+      ul.nav-group-items.compact
         li.nav-item
           a.nav-link(href='base/accordion.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Accordion
         li.nav-item
           a.nav-link(href='base/breadcrumb.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Breadcrumb
         li.nav-item
           a.nav-link(href='base/cards.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Cards
         li.nav-item
           a.nav-link(href='base/carousel.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Carousel
         li.nav-item
           a.nav-link(href='base/collapse.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Collapse
         li.nav-item
           a.nav-link(href='base/list-group.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  List group
         li.nav-item
           a.nav-link(href='base/navs-tabs.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Navs &amp; Tabs
         li.nav-item
           a.nav-link(href='base/pagination.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Pagination
         li.nav-item
           a.nav-link(href='base/placeholders.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Placeholders
         li.nav-item
           a.nav-link(href='base/popovers.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Popovers
         li.nav-item
           a.nav-link(href='base/progress.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Progress
-        li.nav-item
-          a.nav-link(href='base/scrollspy.html')
-            span.nav-icon
-            |  Scrollspy
         li.nav-item
           a.nav-link(href='base/spinners.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Spinners
         li.nav-item
             a.nav-link(href='base/tables.html')
               span.nav-icon
+                span.nav-icon-bullet
               |  Tables
         li.nav-item
           a.nav-link(href='base/tooltips.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Tooltips
     li.nav-group
       a.nav-link.nav-group-toggle(href='#')
         svg.nav-icon
           use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cursor")
         |  Buttons
-      ul.nav-group-items
+      ul.nav-group-items.compact
         li.nav-item
           a.nav-link(href='buttons/buttons.html')
-            span.nav-icon
             |  Buttons
         li.nav-item
           a.nav-link(href='buttons/button-group.html')
-            span.nav-icon
             |  Buttons Group
         li.nav-item
           a.nav-link(href='buttons/dropdowns.html')
-            span.nav-icon
             |  Dropdowns
     li.nav-item
       a.nav-link(href='charts.html')
@@ -120,68 +129,94 @@
         svg.nav-icon
           use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-notes")
         |  Forms
-      ul.nav-group-items
+      ul.nav-group-items.compact
         li.nav-item
           a.nav-link(href='forms/form-control.html')
+            span.nav-icon
+                span.nav-icon-bullet
             |  Form Control
         li.nav-item
           a.nav-link(href='forms/select.html')
+            span.nav-icon
+                span.nav-icon-bullet
             |  Select
         li.nav-item
           a.nav-link(href='forms/checks-radios.html')
+            span.nav-icon
+                span.nav-icon-bullet
             |  Checks and radios
         li.nav-item
           a.nav-link(href='forms/range.html')
+            span.nav-icon
+              span.nav-icon-bullet
             |  Range
         li.nav-item
           a.nav-link(href='forms/input-group.html')
+            span.nav-icon
+              span.nav-icon-bullet
             |  Input group
         li.nav-item
           a.nav-link(href='forms/floating-labels.html')
+            span.nav-icon
+              span.nav-icon-bullet
             |  Floating labels
         li.nav-item
           a.nav-link(href='forms/layout.html')
+            span.nav-icon
+              span.nav-icon-bullet
             |  Layout
         li.nav-item
           a.nav-link(href='forms/validation.html')
+            span.nav-icon
+              span.nav-icon-bullet
             |  Validation
     li.nav-group
       a.nav-link.nav-group-toggle(href='#')
         svg.nav-icon
           use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star")
         |  Icons
-      ul.nav-group-items
+      ul.nav-group-items.compact
         li.nav-item
           a.nav-link(href='icons/coreui-icons-free.html')
+            span.nav-icon
+              span.nav-icon-bullet
             |  CoreUI Icons
             span.badge.badge-sm.bg-success.ms-auto Free
         li.nav-item
           a.nav-link(href='icons/coreui-icons-brand.html')
+            span.nav-icon
+              span.nav-icon-bullet
             |  CoreUI Icons - Brand
         li.nav-item
           a.nav-link(href='icons/coreui-icons-flag.html')
+            span.nav-icon
+              span.nav-icon-bullet
             |  CoreUI Icons - Flag
     li.nav-group
       a.nav-link.nav-group-toggle(href='#')
         svg.nav-icon
           use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
         |  Notifications
-      ul.nav-group-items
+      ul.nav-group-items.compact
         li.nav-item
           a.nav-link(href='notifications/alerts.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Alerts
         li.nav-item
           a.nav-link(href='notifications/badge.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Badge
         li.nav-item
           a.nav-link(href='notifications/modals.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Modals
         li.nav-item
           a.nav-link(href='notifications/toasts.html')
             span.nav-icon
+              span.nav-icon-bullet
             |  Toasts
     li.nav-item
       a.nav-link(href='widgets.html')
@@ -197,7 +232,7 @@
         svg.nav-icon
           use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star")
         |  Pages
-      ul.nav-group-items
+      ul.nav-group-items.compact
         li.nav-item
           a.nav-link(href='login.html' target="_top")
             svg.nav-icon
@@ -229,4 +264,5 @@
           use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers")
         |  Try CoreUI 
         .fw-semibold.ms-1 PRO
-  button.sidebar-toggler(type="button" data-coreui-toggle="unfoldable")
+  .sidebar-footer.border-top.d-none.d-md-flex      
+    button.sidebar-toggler(type="button" data-coreui-toggle="unfoldable")

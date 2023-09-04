@@ -1,6 +1,18 @@
+body {
+  background-color: var(--cui-tertiary-bg);
+}
+
 .wrapper {
   width: 100%;
   @include ltr-rtl("padding-left", var(--cui-sidebar-occupy-start, 0));
   will-change: auto;
   @include transition(padding .15s);
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    body {
+      background-color: var(--cui-dark-bg-subtle);
+    }
+  }
 }
