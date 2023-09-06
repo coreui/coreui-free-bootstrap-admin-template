@@ -14,11 +14,11 @@ block view
           strong Navs
           span.small.ms-1 Base nav
         .card-body
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Navigation available in Bootstrap share general markup and styles, from the base 
             code .nav
             |  class to the active and disabled states. Swap modifier classes to switch between each style.
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | The base 
             code .nav
             |  component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.
@@ -32,7 +32,7 @@ block view
                 a.nav-link(href='#') Link
               li.nav-item
                 a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Classes are used throughout, so your markup can be super flexible. Use 
             code 
               = '<ul>'
@@ -59,11 +59,11 @@ block view
           strong Navs
           span.small.ms-1 Horizontal alignment
         .card-body
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Change the horizontal alignment of your nav with 
             a(href='https://coreui.io/docs/layout/grid/#horizontal-alignment') flexbox utilities
             | . By default, navs are left-aligned, but you can easily change them to center or right aligned.
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Centered with 
             code .justify-content-center
             | :
@@ -77,7 +77,7 @@ block view
                 a.nav-link(href='#') Link
               li.nav-item
                 a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Right-aligned with 
             code .justify-content-end
             | :
@@ -97,7 +97,7 @@ block view
           strong Navs
           span.small.ms-1 Vertical
         .card-body
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Stack your navigation by changing the flex item direction with the 
             code .flex-column
             |  utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., 
@@ -113,7 +113,7 @@ block view
                 a.nav-link(href='#') Link
               li.nav-item
                 a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | As always, vertical navigation is possible without 
             code 
               = '<ul>'
@@ -130,7 +130,7 @@ block view
           strong Navs
           span.small.ms-1 Tabs
         .card-body
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Takes the basic nav from above and adds the 
             code .nav-tabs
             |  class to generate a tabbed interface. Use them to create tabbable regions with our 
@@ -152,7 +152,7 @@ block view
           strong Navs
           span.small.ms-1 Pills
         .card-body
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Take that same HTML, but use 
             code .nav-pills
             |  instead:
@@ -172,7 +172,7 @@ block view
           strong Navs
           span.small.ms-1 Fill and justify
         .card-body
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Force your 
             code .nav
             | ’s contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your 
@@ -190,7 +190,7 @@ block view
                 a.nav-link(href='#') Link
               li.nav-item
                 a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | When using a 
             code 
               = '<nav>'
@@ -208,7 +208,7 @@ block view
               a.nav-link(href='#') Much longer nav link
               a.nav-link(href='#') Link
               a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | For equal-width elements, use 
             code .nav-justified
             | . All horizontal space will be occupied by nav links, but unlike the 
@@ -224,7 +224,7 @@ block view
                 a.nav-link(href='#') Link
               li.nav-item
                 a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Similar to the 
             code .nav-fill
             |  example using a 
@@ -243,7 +243,7 @@ block view
           strong Navs
           span.small.ms-1 Working with flex utilities
         .card-body
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | If you need responsive nav variations, consider using a series of 
             a(href='https://coreui.io/docs/utilities/flex/') flexbox utilities
             | . While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.
@@ -316,11 +316,11 @@ block view
           strong Navs
           span.small.ms-1 JavaScript behavior
         .card-body
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Use the tab JavaScript plugin—include it individually or through the compiled 
             code coreui.js
             |  file—to extend our navigational tabs and pills to create tabbable panes of local content, even via dropdown menus.
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Dynamic tabbed interfaces, as described in the 
             a(href='https://www.w3.org/TR/wai-aria-practices/#tabpanel')
               abbr(title='Web Accessibility Initiative') WAI
@@ -338,7 +338,7 @@ block view
             code 
               = '<button>'
             |  elements for the tabs, as these are controls that trigger a dynamic change, rather than links that navigate to a new page or location.
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | Note that dynamic tabbed interfaces should 
             em not
             |  contain dropdown menus, as this causes both usability and accessibility issues. From a usability perspective, the fact that the currently displayed tab’s trigger element is not immediately visible (as it’s inside the closed dropdown menu) can cause confusion. From an accessibility point of view, there is currently no sensible way to map this sort of construct to a standard WAI ARIA pattern, meaning that it cannot be easily made understandable to users of assistive technologies.
@@ -360,7 +360,7 @@ block view
               #contact.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab')
                 p
                   | Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.
-          p.text-medium-emphasis.small
+          p.text-secondary.small
             | To help fit your needs, this works with 
             code 
               = '<ul>'
@@ -392,7 +392,7 @@ block view
               #nav-contact.tab-pane.fade(role='tabpanel' aria-labelledby='nav-contact-tab')
                 p
                   | Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.
-          p.text-medium-emphasis.small The tabs plugin also works with pills.
+          p.text-secondary.small The tabs plugin also works with pills.
           +example('https://coreui.io/docs/components/navs-tabs/#javascript-behavior')
             ul#pills-tab.nav.nav-pills.mb-3(role='tablist')
               li.nav-item(role='presentation')
@@ -411,7 +411,7 @@ block view
               #pills-contact.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab')
                 p
                   | Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.
-          p.text-medium-emphasis.small And with vertical pills.
+          p.text-secondary.small And with vertical pills.
           +example('https://coreui.io/docs/components/navs-tabs/#javascript-behavior')
             .d-flex.align-items-start
               #v-pills-tab.nav.flex-column.nav-pills.me-3(role='tablist' aria-orientation='vertical')
