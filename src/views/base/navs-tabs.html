@@ -7,7 +7,6 @@
 * Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
 -->
 
-<!-- Breadcrumb-->
 <html lang="en">
   <head>
     <base href="./../">
@@ -46,14 +45,17 @@
     <link rel="canonical" href="https://coreui.io/docs/components/navs-tabs/">
   </head>
   <body>
-    <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
-      <div class="sidebar-brand d-none d-md-flex">
-        <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
-          <use xlink:href="assets/brand/coreui.svg#full"></use>
-        </svg>
-        <svg class="sidebar-brand-narrow" width="46" height="46" alt="CoreUI Logo">
-          <use xlink:href="assets/brand/coreui.svg#signet"></use>
-        </svg>
+    <div class="sidebar sidebar-fixed border-end sidebar-dark" id="sidebar">
+      <div class="sidebar-header border-bottom">
+        <div class="sidebar-brand">
+          <svg class="sidebar-brand-full" width="88" height="32" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#full"></use>
+          </svg>
+          <svg class="sidebar-brand-narrow" width="32" height="32" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#signet"></use>
+          </svg>
+        </div>
+        <button class="btn-close d-md-none" type="button" data-coreui-dismiss="offcanvas" aria-label="Close" onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>
       </div>
       <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
@@ -74,32 +76,31 @@
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-puzzle"></use>
             </svg> Base</a>
-          <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="base/accordion.html"><span class="nav-icon"></span> Accordion</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/breadcrumb.html"><span class="nav-icon"></span> Breadcrumb</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"></span> Cards</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/carousel.html"><span class="nav-icon"></span> Carousel</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/collapse.html"><span class="nav-icon"></span> Collapse</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/list-group.html"><span class="nav-icon"></span> List group</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/navs-tabs.html"><span class="nav-icon"></span> Navs &amp; Tabs</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/pagination.html"><span class="nav-icon"></span> Pagination</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/placeholders.html"><span class="nav-icon"></span> Placeholders</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/popovers.html"><span class="nav-icon"></span> Popovers</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/progress.html"><span class="nav-icon"></span> Progress</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/scrollspy.html"><span class="nav-icon"></span> Scrollspy</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/spinners.html"><span class="nav-icon"></span> Spinners</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/tables.html"><span class="nav-icon"></span> Tables</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/tooltips.html"><span class="nav-icon"></span> Tooltips</a></li>
+          <ul class="nav-group-items compact">
+            <li class="nav-item"><a class="nav-link" href="base/accordion.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Accordion</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/breadcrumb.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Breadcrumb</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Cards</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/carousel.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Carousel</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/collapse.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Collapse</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/list-group.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> List group</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/navs-tabs.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Navs &amp; Tabs</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/pagination.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Pagination</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/placeholders.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Placeholders</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/popovers.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Popovers</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/progress.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Progress</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/spinners.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Spinners</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/tables.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Tables</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/tooltips.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Tooltips</a></li>
           </ul>
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cursor"></use>
             </svg> Buttons</a>
-          <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"><span class="nav-icon"></span> Buttons</a></li>
-            <li class="nav-item"><a class="nav-link" href="buttons/button-group.html"><span class="nav-icon"></span> Buttons Group</a></li>
-            <li class="nav-item"><a class="nav-link" href="buttons/dropdowns.html"><span class="nav-icon"></span> Dropdowns</a></li>
+          <ul class="nav-group-items compact">
+            <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"> Buttons</a></li>
+            <li class="nav-item"><a class="nav-link" href="buttons/button-group.html"> Buttons Group</a></li>
+            <li class="nav-item"><a class="nav-link" href="buttons/dropdowns.html"> Dropdowns</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="charts.html">
@@ -110,36 +111,36 @@
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-notes"></use>
             </svg> Forms</a>
-          <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="forms/form-control.html"> Form Control</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/select.html"> Select</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/checks-radios.html"> Checks and radios</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/range.html"> Range</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/input-group.html"> Input group</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/floating-labels.html"> Floating labels</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/layout.html"> Layout</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/validation.html"> Validation</a></li>
+          <ul class="nav-group-items compact">
+            <li class="nav-item"><a class="nav-link" href="forms/form-control.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Form Control</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/select.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Select</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/checks-radios.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Checks and radios</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/range.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Range</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/input-group.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Input group</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/floating-labels.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Floating labels</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/layout.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Layout</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/validation.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Validation</a></li>
           </ul>
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Icons</a>
-          <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-free.html"> CoreUI Icons<span class="badge badge-sm bg-success ms-auto">Free</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-brand.html"> CoreUI Icons - Brand</a></li>
-            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-flag.html"> CoreUI Icons - Flag</a></li>
+          <ul class="nav-group-items compact">
+            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-free.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> CoreUI Icons<span class="badge badge-sm bg-success ms-auto">Free</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-brand.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> CoreUI Icons - Brand</a></li>
+            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-flag.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> CoreUI Icons - Flag</a></li>
           </ul>
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
             </svg> Notifications</a>
-          <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><span class="nav-icon"></span> Alerts</a></li>
-            <li class="nav-item"><a class="nav-link" href="notifications/badge.html"><span class="nav-icon"></span> Badge</a></li>
-            <li class="nav-item"><a class="nav-link" href="notifications/modals.html"><span class="nav-icon"></span> Modals</a></li>
-            <li class="nav-item"><a class="nav-link" href="notifications/toasts.html"><span class="nav-icon"></span> Toasts</a></li>
+          <ul class="nav-group-items compact">
+            <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Alerts</a></li>
+            <li class="nav-item"><a class="nav-link" href="notifications/badge.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Badge</a></li>
+            <li class="nav-item"><a class="nav-link" href="notifications/modals.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Modals</a></li>
+            <li class="nav-item"><a class="nav-link" href="notifications/toasts.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Toasts</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="widgets.html">
@@ -152,7 +153,7 @@
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Pages</a>
-          <ul class="nav-group-items">
+          <ul class="nav-group-items compact">
             <li class="nav-item"><a class="nav-link" href="login.html" target="_top">
                 <svg class="nav-icon">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
@@ -175,17 +176,18 @@
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-description"></use>
             </svg> Docs</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/product/bootstrap-dashboard-template/" target="_top">
-            <svg class="nav-icon">
+        <li class="nav-item"><a class="nav-link text-primary fw-semibold" href="https://coreui.io/product/bootstrap-dashboard-template/" target="_top">
+            <svg class="nav-icon text-primary">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
-            </svg> Try CoreUI 
-            <div class="fw-semibold ms-1">PRO</div></a></li>
+            </svg> Try CoreUI PRO</a></li>
       </ul>
-      <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+      <div class="sidebar-footer border-top d-none d-md-flex">     
+        <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+      </div>
     </div>
-    <div class="wrapper d-flex flex-column min-vh-100 bg-body-tertiary">
+    <div class="wrapper d-flex flex-column min-vh-100">
       <header class="header header-sticky mb-4">
-        <div class="container-fluid">
+        <div class="container-fluid border-bottom">
           <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
@@ -294,7 +296,6 @@
             </li>
           </ul>
         </div>
-        <div class="header-divider"></div>
         <div class="container-fluid">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-0 ms-2">
@@ -319,8 +320,8 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Navs</strong><span class="small ms-1">Base nav</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Navigation available in Bootstrap share general markup and styles, from the base <code>.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</p>
-                  <p class="text-medium-emphasis small">The base <code>.nav</code> component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.</p>
+                  <p class="text-body-secondary small">Navigation available in Bootstrap share general markup and styles, from the base <code>.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</p>
+                  <p class="text-body-secondary small">The base <code>.nav</code> component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1000" role="tab">
@@ -343,7 +344,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="text-medium-emphasis small">Classes are used throughout, so your markup can be super flexible. Use <code> &lt;ul&gt;</code>s like above, <code> &lt;ol&gt;</code> if the order of your items is important, or roll your own with a <code> &lt;nav&gt;</code> element. Because the <code>.nav</code> uses <code>display: flex</code>, the nav links behave the same as nav items would, but without the extra markup.</p>
+                  <p class="text-body-secondary small">Classes are used throughout, so your markup can be super flexible. Use <code> &lt;ul&gt;</code>s like above, <code> &lt;ol&gt;</code> if the order of your items is important, or roll your own with a <code> &lt;nav&gt;</code> element. Because the <code>.nav</code> uses <code>display: flex</code>, the nav links behave the same as nav items would, but without the extra markup.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1001" role="tab">
@@ -368,8 +369,8 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Navs</strong><span class="small ms-1">Horizontal alignment</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Change the horizontal alignment of your nav with <a href="https://coreui.io/docs/layout/grid/#horizontal-alignment">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or right aligned.</p>
-                  <p class="text-medium-emphasis small">Centered with <code>.justify-content-center</code>:</p>
+                  <p class="text-body-secondary small">Change the horizontal alignment of your nav with <a href="https://coreui.io/docs/layout/grid/#horizontal-alignment">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or right aligned.</p>
+                  <p class="text-body-secondary small">Centered with <code>.justify-content-center</code>:</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1002" role="tab">
@@ -392,7 +393,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="text-medium-emphasis small">Right-aligned with <code>.justify-content-end</code>:</p>
+                  <p class="text-body-secondary small">Right-aligned with <code>.justify-content-end</code>:</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1003" role="tab">
@@ -422,7 +423,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Navs</strong><span class="small ms-1">Vertical</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Stack your navigation by changing the flex item direction with the <code>.flex-column</code> utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., <code>.flex-sm-column</code>).</p>
+                  <p class="text-body-secondary small">Stack your navigation by changing the flex item direction with the <code>.flex-column</code> utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., <code>.flex-sm-column</code>).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1004" role="tab">
@@ -445,7 +446,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="text-medium-emphasis small">As always, vertical navigation is possible without <code> &lt;ul&gt;</code>s, too.</p>
+                  <p class="text-body-secondary small">As always, vertical navigation is possible without <code> &lt;ul&gt;</code>s, too.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1005" role="tab">
@@ -470,7 +471,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Navs</strong><span class="small ms-1">Tabs</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use them to create tabbable regions with our <a href="#javascript-behavior">tab JavaScript plugin</a>.</p>
+                  <p class="text-body-secondary small">Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use them to create tabbable regions with our <a href="#javascript-behavior">tab JavaScript plugin</a>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1006" role="tab">
@@ -500,7 +501,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Navs</strong><span class="small ms-1">Pills</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Take that same HTML, but use <code>.nav-pills</code> instead:</p>
+                  <p class="text-body-secondary small">Take that same HTML, but use <code>.nav-pills</code> instead:</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1007" role="tab">
@@ -530,7 +531,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Navs</strong><span class="small ms-1">Fill and justify</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Force your <code>.nav</code>’s contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your <code>.nav-item</code>s, use <code>.nav-fill</code>. Notice that all horizontal space is occupied, but not every nav item has the same width.</p>
+                  <p class="text-body-secondary small">Force your <code>.nav</code>’s contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your <code>.nav-item</code>s, use <code>.nav-fill</code>. Notice that all horizontal space is occupied, but not every nav item has the same width.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1008" role="tab">
@@ -553,7 +554,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="text-medium-emphasis small">When using a <code> &lt;nav&gt;</code>-based navigation, you can safely omit <code>.nav-item</code> as only <code>.nav-link</code> is required for styling <code> &lt;a&gt;</code> elements.</p>
+                  <p class="text-body-secondary small">When using a <code> &lt;nav&gt;</code>-based navigation, you can safely omit <code>.nav-item</code> as only <code>.nav-link</code> is required for styling <code> &lt;a&gt;</code> elements.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1009" role="tab">
@@ -571,7 +572,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="text-medium-emphasis small">For equal-width elements, use <code>.nav-justified</code>. All horizontal space will be occupied by nav links, but unlike the <code>.nav-fill</code> above, every nav item will be the same width.</p>
+                  <p class="text-body-secondary small">For equal-width elements, use <code>.nav-justified</code>. All horizontal space will be occupied by nav links, but unlike the <code>.nav-fill</code> above, every nav item will be the same width.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1010" role="tab">
@@ -594,7 +595,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="text-medium-emphasis small">Similar to the <code>.nav-fill</code> example using a <code> &lt;nav&gt;</code>-based navigation.</p>
+                  <p class="text-body-secondary small">Similar to the <code>.nav-fill</code> example using a <code> &lt;nav&gt;</code>-based navigation.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1011" role="tab">
@@ -619,7 +620,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Navs</strong><span class="small ms-1">Working with flex utilities</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">If you need responsive nav variations, consider using a series of <a href="https://coreui.io/docs/utilities/flex/">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.</p>
+                  <p class="text-body-secondary small">If you need responsive nav variations, consider using a series of <a href="https://coreui.io/docs/utilities/flex/">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1012" role="tab">
@@ -722,9 +723,9 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>Navs</strong><span class="small ms-1">JavaScript behavior</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Use the tab JavaScript plugin—include it individually or through the compiled <code>coreui.js</code> file—to extend our navigational tabs and pills to create tabbable panes of local content, even via dropdown menus.</p>
-                  <p class="text-medium-emphasis small">Dynamic tabbed interfaces, as described in the <a href="https://www.w3.org/TR/wai-aria-practices/#tabpanel"><abbr title="Web Accessibility Initiative">WAI</abbr><abbr title="Accessible Rich Internet Applications">ARIA</abbr> Authoring Practices</a>, require <code>role="tablist"</code>, <code>role="tab"</code>, <code>role="tabpanel"</code>, and additional <code>aria-</code> attributes in order to convey their structure, functionality and current state to users of assistive technologies (such as screen readers). As a best practice, we recommend using <code> &lt;button&gt;</code> elements for the tabs, as these are controls that trigger a dynamic change, rather than links that navigate to a new page or location.</p>
-                  <p class="text-medium-emphasis small">Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, as this causes both usability and accessibility issues. From a usability perspective, the fact that the currently displayed tab’s trigger element is not immediately visible (as it’s inside the closed dropdown menu) can cause confusion. From an accessibility point of view, there is currently no sensible way to map this sort of construct to a standard WAI ARIA pattern, meaning that it cannot be easily made understandable to users of assistive technologies.</p>
+                  <p class="text-body-secondary small">Use the tab JavaScript plugin—include it individually or through the compiled <code>coreui.js</code> file—to extend our navigational tabs and pills to create tabbable panes of local content, even via dropdown menus.</p>
+                  <p class="text-body-secondary small">Dynamic tabbed interfaces, as described in the <a href="https://www.w3.org/TR/wai-aria-practices/#tabpanel"><abbr title="Web Accessibility Initiative">WAI</abbr><abbr title="Accessible Rich Internet Applications">ARIA</abbr> Authoring Practices</a>, require <code>role="tablist"</code>, <code>role="tab"</code>, <code>role="tabpanel"</code>, and additional <code>aria-</code> attributes in order to convey their structure, functionality and current state to users of assistive technologies (such as screen readers). As a best practice, we recommend using <code> &lt;button&gt;</code> elements for the tabs, as these are controls that trigger a dynamic change, rather than links that navigate to a new page or location.</p>
+                  <p class="text-body-secondary small">Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, as this causes both usability and accessibility issues. From a usability perspective, the fact that the currently displayed tab’s trigger element is not immediately visible (as it’s inside the closed dropdown menu) can cause confusion. From an accessibility point of view, there is currently no sensible way to map this sort of construct to a standard WAI ARIA pattern, meaning that it cannot be easily made understandable to users of assistive technologies.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1015" role="tab">
@@ -763,7 +764,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="text-medium-emphasis small">To help fit your needs, this works with <code> &lt;ul&gt;</code>-based markup, as shown above, or with any arbitrary “roll your own” markup. Note that if you’re using <code> &lt;nav&gt;</code>, you shouldn’t add <code>role="tablist"</code> directly to it, as this would override the element’s native role as a navigation landmark. Instead, switch to an alternative element (in the example below, a simple <code> &lt;div&gt;</code>) and wrap the <code> &lt;nav&gt;</code> around it.</p>
+                  <p class="text-body-secondary small">To help fit your needs, this works with <code> &lt;ul&gt;</code>-based markup, as shown above, or with any arbitrary “roll your own” markup. Note that if you’re using <code> &lt;nav&gt;</code>, you shouldn’t add <code>role="tablist"</code> directly to it, as this would override the element’s native role as a navigation landmark. Instead, switch to an alternative element (in the example below, a simple <code> &lt;div&gt;</code>) and wrap the <code> &lt;nav&gt;</code> around it.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1016" role="tab">
@@ -798,7 +799,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="text-medium-emphasis small">The tabs plugin also works with pills.</p>
+                  <p class="text-body-secondary small">The tabs plugin also works with pills.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1017" role="tab">
@@ -837,7 +838,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="text-medium-emphasis small">And with vertical pills.</p>
+                  <p class="text-body-secondary small">And with vertical pills.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1018" role="tab">
@@ -890,6 +891,16 @@
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+    <script>
+      const header = document.querySelector('header.header');
+      
+      document.addEventListener('scroll', () => {
+        if (header) {
+          header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
+        }
+      });
+      
+    </script>
     <script> 
     </script>
   </body>

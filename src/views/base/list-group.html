@@ -7,7 +7,6 @@
 * Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
 -->
 
-<!-- Breadcrumb-->
 <html lang="en">
   <head>
     <base href="./../">
@@ -46,14 +45,17 @@
     <link rel="canonical" href="https://coreui.io/docs/components/list-group/">
   </head>
   <body>
-    <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
-      <div class="sidebar-brand d-none d-md-flex">
-        <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
-          <use xlink:href="assets/brand/coreui.svg#full"></use>
-        </svg>
-        <svg class="sidebar-brand-narrow" width="46" height="46" alt="CoreUI Logo">
-          <use xlink:href="assets/brand/coreui.svg#signet"></use>
-        </svg>
+    <div class="sidebar sidebar-fixed border-end sidebar-dark" id="sidebar">
+      <div class="sidebar-header border-bottom">
+        <div class="sidebar-brand">
+          <svg class="sidebar-brand-full" width="88" height="32" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#full"></use>
+          </svg>
+          <svg class="sidebar-brand-narrow" width="32" height="32" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#signet"></use>
+          </svg>
+        </div>
+        <button class="btn-close d-md-none" type="button" data-coreui-dismiss="offcanvas" aria-label="Close" onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>
       </div>
       <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
@@ -74,32 +76,31 @@
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-puzzle"></use>
             </svg> Base</a>
-          <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="base/accordion.html"><span class="nav-icon"></span> Accordion</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/breadcrumb.html"><span class="nav-icon"></span> Breadcrumb</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"></span> Cards</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/carousel.html"><span class="nav-icon"></span> Carousel</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/collapse.html"><span class="nav-icon"></span> Collapse</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/list-group.html"><span class="nav-icon"></span> List group</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/navs-tabs.html"><span class="nav-icon"></span> Navs &amp; Tabs</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/pagination.html"><span class="nav-icon"></span> Pagination</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/placeholders.html"><span class="nav-icon"></span> Placeholders</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/popovers.html"><span class="nav-icon"></span> Popovers</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/progress.html"><span class="nav-icon"></span> Progress</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/scrollspy.html"><span class="nav-icon"></span> Scrollspy</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/spinners.html"><span class="nav-icon"></span> Spinners</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/tables.html"><span class="nav-icon"></span> Tables</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/tooltips.html"><span class="nav-icon"></span> Tooltips</a></li>
+          <ul class="nav-group-items compact">
+            <li class="nav-item"><a class="nav-link" href="base/accordion.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Accordion</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/breadcrumb.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Breadcrumb</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Cards</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/carousel.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Carousel</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/collapse.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Collapse</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/list-group.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> List group</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/navs-tabs.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Navs &amp; Tabs</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/pagination.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Pagination</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/placeholders.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Placeholders</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/popovers.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Popovers</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/progress.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Progress</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/spinners.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Spinners</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/tables.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Tables</a></li>
+            <li class="nav-item"><a class="nav-link" href="base/tooltips.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Tooltips</a></li>
           </ul>
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cursor"></use>
             </svg> Buttons</a>
-          <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"><span class="nav-icon"></span> Buttons</a></li>
-            <li class="nav-item"><a class="nav-link" href="buttons/button-group.html"><span class="nav-icon"></span> Buttons Group</a></li>
-            <li class="nav-item"><a class="nav-link" href="buttons/dropdowns.html"><span class="nav-icon"></span> Dropdowns</a></li>
+          <ul class="nav-group-items compact">
+            <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"> Buttons</a></li>
+            <li class="nav-item"><a class="nav-link" href="buttons/button-group.html"> Buttons Group</a></li>
+            <li class="nav-item"><a class="nav-link" href="buttons/dropdowns.html"> Dropdowns</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="charts.html">
@@ -110,36 +111,36 @@
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-notes"></use>
             </svg> Forms</a>
-          <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="forms/form-control.html"> Form Control</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/select.html"> Select</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/checks-radios.html"> Checks and radios</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/range.html"> Range</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/input-group.html"> Input group</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/floating-labels.html"> Floating labels</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/layout.html"> Layout</a></li>
-            <li class="nav-item"><a class="nav-link" href="forms/validation.html"> Validation</a></li>
+          <ul class="nav-group-items compact">
+            <li class="nav-item"><a class="nav-link" href="forms/form-control.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Form Control</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/select.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Select</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/checks-radios.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Checks and radios</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/range.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Range</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/input-group.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Input group</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/floating-labels.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Floating labels</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/layout.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Layout</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms/validation.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Validation</a></li>
           </ul>
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Icons</a>
-          <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-free.html"> CoreUI Icons<span class="badge badge-sm bg-success ms-auto">Free</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-brand.html"> CoreUI Icons - Brand</a></li>
-            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-flag.html"> CoreUI Icons - Flag</a></li>
+          <ul class="nav-group-items compact">
+            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-free.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> CoreUI Icons<span class="badge badge-sm bg-success ms-auto">Free</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-brand.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> CoreUI Icons - Brand</a></li>
+            <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-flag.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> CoreUI Icons - Flag</a></li>
           </ul>
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
             </svg> Notifications</a>
-          <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><span class="nav-icon"></span> Alerts</a></li>
-            <li class="nav-item"><a class="nav-link" href="notifications/badge.html"><span class="nav-icon"></span> Badge</a></li>
-            <li class="nav-item"><a class="nav-link" href="notifications/modals.html"><span class="nav-icon"></span> Modals</a></li>
-            <li class="nav-item"><a class="nav-link" href="notifications/toasts.html"><span class="nav-icon"></span> Toasts</a></li>
+          <ul class="nav-group-items compact">
+            <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Alerts</a></li>
+            <li class="nav-item"><a class="nav-link" href="notifications/badge.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Badge</a></li>
+            <li class="nav-item"><a class="nav-link" href="notifications/modals.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Modals</a></li>
+            <li class="nav-item"><a class="nav-link" href="notifications/toasts.html"><span class="nav-icon"><span class="nav-icon-bullet"></span></span> Toasts</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="widgets.html">
@@ -152,7 +153,7 @@
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Pages</a>
-          <ul class="nav-group-items">
+          <ul class="nav-group-items compact">
             <li class="nav-item"><a class="nav-link" href="login.html" target="_top">
                 <svg class="nav-icon">
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
@@ -175,17 +176,18 @@
             <svg class="nav-icon">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-description"></use>
             </svg> Docs</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/product/bootstrap-dashboard-template/" target="_top">
-            <svg class="nav-icon">
+        <li class="nav-item"><a class="nav-link text-primary fw-semibold" href="https://coreui.io/product/bootstrap-dashboard-template/" target="_top">
+            <svg class="nav-icon text-primary">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
-            </svg> Try CoreUI 
-            <div class="fw-semibold ms-1">PRO</div></a></li>
+            </svg> Try CoreUI PRO</a></li>
       </ul>
-      <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+      <div class="sidebar-footer border-top d-none d-md-flex">     
+        <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+      </div>
     </div>
-    <div class="wrapper d-flex flex-column min-vh-100 bg-body-tertiary">
+    <div class="wrapper d-flex flex-column min-vh-100">
       <header class="header header-sticky mb-4">
-        <div class="container-fluid">
+        <div class="container-fluid border-bottom">
           <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
@@ -294,7 +296,6 @@
             </li>
           </ul>
         </div>
-        <div class="header-divider"></div>
         <div class="container-fluid">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-0 ms-2">
@@ -319,7 +320,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">Basic example</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">The default list group is an unordered list with items and the proper CSS classes. Build upon it with the options that follow, or with your CSS as required.</p>
+                  <p class="text-body-secondary small">The default list group is an unordered list with items and the proper CSS classes. Build upon it with the options that follow, or with your CSS as required.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1000" role="tab">
@@ -350,7 +351,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">active items</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Attach <code>.active</code> to a <code>.list-group-item</code> to show the current active selection.</p>
+                  <p class="text-body-secondary small">Attach <code>.active</code> to a <code>.list-group-item</code> to show the current active selection.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1001" role="tab">
@@ -381,7 +382,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">disabled items</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Attach <code>.disabled</code> to a <code>.list-group-item</code> to make it appear disabled. Remark that some of the elements with <code>.disabled</code> will also require custom JavaScript to disable their click events (e.g., links).</p>
+                  <p class="text-body-secondary small">Attach <code>.disabled</code> to a <code>.list-group-item</code> to make it appear disabled. Remark that some of the elements with <code>.disabled</code> will also require custom JavaScript to disable their click events (e.g., links).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1002" role="tab">
@@ -413,8 +414,8 @@
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">disabled links</span></div>
                 <div class="card-body">
                   <div class="list-group">
-                    <p class="text-medium-emphasis small">Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create<em>actionable</em> list group items with hover, disabled, and active states by adding <code>.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code>&lt;li&gt;</code>s or <code>&lt;div&gt;</code>s) don’t provide a click or tap affordance.</p>
-                    <p class="text-medium-emphasis small">Be sure to<strong> not use the standard <code>.btn</code> classes here</strong>.</p>
+                    <p class="text-body-secondary small">Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create<em>actionable</em> list group items with hover, disabled, and active states by adding <code>.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code>&lt;li&gt;</code>s or <code>&lt;div&gt;</code>s) don’t provide a click or tap affordance.</p>
+                    <p class="text-body-secondary small">Be sure to<strong> not use the standard <code>.btn</code> classes here</strong>.</p>
                     <div class="example">
                       <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1003" role="tab">
@@ -441,7 +442,7 @@
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">disabled buttons</span></div>
                 <div class="card-body">
                   <div class="list-group">
-                    <p class="text-medium-emphasis small">With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don’t support the disabled attribute.</p>
+                    <p class="text-body-secondary small">With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don’t support the disabled attribute.</p>
                     <div class="example">
                       <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1004" role="tab">
@@ -473,7 +474,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">flush</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
+                  <p class="text-body-secondary small">Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1005" role="tab">
@@ -504,8 +505,8 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">horizontal</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Add <code>.list-group-horizontal</code> to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to make a list group horizontal starting at that breakpoint’s <code>min-width</code>. Currently<strong> horizontal list groups cannot be combined with flush list groups.</strong></p>
-                  <p class="text-medium-emphasis small"><strong>ProTip:</strong> Want equal-width list group items when horizontal? Add <code>.flex-fill</code> to each list group item.</p>
+                  <p class="text-body-secondary small">Add <code>.list-group-horizontal</code> to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to make a list group horizontal starting at that breakpoint’s <code>min-width</code>. Currently<strong> horizontal list groups cannot be combined with flush list groups.</strong></p>
+                  <p class="text-body-secondary small"><strong>ProTip:</strong> Want equal-width list group items when horizontal? Add <code>.flex-fill</code> to each list group item.</p>
                   <div class="list-group">
                     <div class="example">
                       <ul class="nav nav-tabs" role="tablist">
@@ -561,7 +562,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">contextual classes</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Use contextual classes to style list items with a stateful background and color.</p>
+                  <p class="text-body-secondary small">Use contextual classes to style list items with a stateful background and color.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1007" role="tab">
@@ -596,7 +597,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">contextual with <code>.action</code></span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Contextual classes also work with <code>.list-group-item-action</code>. Note the addition of the hover styles here not present in the previous example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.</p>
+                  <p class="text-body-secondary small">Contextual classes also work with <code>.list-group-item-action</code>. Note the addition of the hover styles here not present in the previous example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1008" role="tab">
@@ -637,7 +638,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong>List group</strong><span class="small ms-1">with badges</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Add badges to any list group item to show unread counts, activity, and more with the help of some<a href="https://coreui.io/docs/utilities/flex/">utilities</a>.</p>
+                  <p class="text-body-secondary small">Add badges to any list group item to show unread counts, activity, and more with the help of some<a href="https://coreui.io/docs/utilities/flex/">utilities</a>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1009" role="tab">
@@ -668,7 +669,7 @@
                   <stron>List group</stron><span class="small ms-1">custom content</span>
                 </div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Add nearly any HTML within, even for linked list groups like the one below, with the help of<a href="https://coreui.io/docs/utilities/flex/">flexbox utilities</a>.</p>
+                  <p class="text-body-secondary small">Add nearly any HTML within, even for linked list groups like the one below, with the help of<a href="https://coreui.io/docs/utilities/flex/">flexbox utilities</a>.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1010" role="tab">
@@ -688,13 +689,13 @@
                             </div>
                             <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Donec id elit non mi porta.</small></a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
                             <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1">List group item heading</h5><small class="text-medium-emphasis">3 days ago</small>
+                              <h5 class="mb-1">List group item heading</h5><small class="text-body-secondary">3 days ago</small>
                             </div>
-                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-medium-emphasis">Donec id elit non mi porta.</small></a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-body-secondary">Donec id elit non mi porta.</small></a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
                             <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1">List group item heading</h5><small class="text-medium-emphasis">3 days ago</small>
+                              <h5 class="mb-1">List group item heading</h5><small class="text-body-secondary">3 days ago</small>
                             </div>
-                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-medium-emphasis">Donec id elit non mi porta.</small></a></div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-body-secondary">Donec id elit non mi porta.</small></a></div>
                       </div>
                     </div>
                   </div>
@@ -707,7 +708,7 @@
               <div class="card mb-4">
                 <div class="card-header"><strong> List group</strong><span class="small ms-1">tab Javascript plugin</span></div>
                 <div class="card-body">
-                  <p class="text-medium-emphasis small">Use the tab JavaScript plugin—include it individually or through the compiled <code>coreui.js</code> file—to extend our list group to create tabbable panes of local content.</p>
+                  <p class="text-body-secondary small">Use the tab JavaScript plugin—include it individually or through the compiled <code>coreui.js</code> file—to extend our list group to create tabbable panes of local content.</p>
                   <div class="example">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1011" role="tab">
@@ -759,6 +760,16 @@
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+    <script>
+      const header = document.querySelector('header.header');
+      
+      document.addEventListener('scroll', () => {
+        if (header) {
+          header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
+        }
+      });
+      
+    </script>
     <script> 
     </script>
   </body>

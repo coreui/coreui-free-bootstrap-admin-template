@@ -52,7 +52,7 @@
               <div class="card col-md-7 p-4 mb-0">
                 <div class="card-body">
                   <h1>Login</h1>
-                  <p class="text-medium-emphasis">Sign In to your account</p>
+                  <p class="text-body-secondary">Sign In to your account</p>
                   <div class="input-group mb-3"><span class="input-group-text">
                       <svg class="icon">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
@@ -92,6 +92,16 @@
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+    <script>
+      const header = document.querySelector('header.header');
+      
+      document.addEventListener('scroll', () => {
+        if (header) {
+          header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
+        }
+      });
+      
+    </script>
     <script> 
     </script>
   </body>
