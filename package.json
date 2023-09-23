@@ -57,7 +57,7 @@
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules/ src/scss/:dist/css/",
     "css-lint": "npm-run-all --continue-on-error --parallel css-lint-*",
     "css-lint-stylelint": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache --rd",
-    "css-minify": "cleancss -O1 --format breakWith=lf --wqith-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*rtl*.css\"",
+    "css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*rtl*.css\"",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "js": "npm-run-all --parallel js-compile* ",
     "js-compile": "cross-env babel src/js/ --out-dir dist/js/ --source-maps",
@@ -78,7 +78,7 @@
     "watch-js": "nodemon --watch src/js --ext js --exec \"npm-run-all js-lint js-compile\"",
     "watch-pug": "nodemon --watch src/pug --ext pug --exec \"npm run pug\"",
     "zip": "npm-run-all --sequential build zip-*",
-    "zip-dist": "zip -qr9 coreui-free-bootstrap-admin-template-v$npm_package_version-dist.zip dist",
+    "zip-dist": "cross-env-shell \"rm -rf coreui-free-bootstrap-admin-template-v$npm_package_version-dist coreui-free-bootstrap-admin-template-v$npm_package_version-dist.zip && cp -r dist/ coreui-free-bootstrap-admin-template-v$npm_package_version-dist && zip -qr9 coreui-free-bootstrap-admin-template-v$npm_package_version-dist.zip coreui-free-bootstrap-admin-template-v$npm_package_version-dist && rm -rf coreui-free-bootstrap-admin-template-v$npm_package_version-dist\"",
     "zip-src": "git archive -o coreui-free-bootstrap-admin-template-v$npm_package_version.zip -9 HEAD"
   },
   "dependencies": {
