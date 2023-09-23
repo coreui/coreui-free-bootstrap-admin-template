@@ -6,21 +6,22 @@ const fs = require('node:fs')
 const path = require('node:path')
 const injector = require('@coreui/vendors-injector')
 
-const extension = path.extname
-const dist = 'dist/'
+const { extname, join } = path
+
+const DIST = 'dist/'
 
 const walkSync = (dir, filelist = []) => {
   for (const file of fs.readdirSync(dir)) {
-    filelist = fs.statSync(path.join(dir, file)).isDirectory() ? walkSync(path.join(dir, file), filelist) : filelist.concat(path.join(dir, file))
+    filelist = fs.statSync(join(dir, file)).isDirectory() ? walkSync(join(dir, file), filelist) : filelist.concat(join(dir, file))
   }
 
   return filelist
 }
 
 const main = () => {
-  const filenames = walkSync(dist)
+  const filenames = walkSync(DIST)
   for (const filename of filenames) {
-    if (extension(filename) === '.html') {
+    if (extname(filename) === '.html') {
       injector.toFile(filename)
     }
   }
