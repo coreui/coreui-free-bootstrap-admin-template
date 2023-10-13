@@ -14,11 +14,11 @@ for (const element of document.querySelectorAll('.theme-color')) {
   table.innerHTML = `
       <table class="w-100">
         <tr>
-          <td class="text-muted">HEX:</td>
+          <td class="text-body-secondary">HEX:</td>
           <td class="font-weight-bold">${coreui.Utils.rgbToHex(color)}</td>
         </tr>
         <tr>
-          <td class="text-muted">RGB:</td>
+          <td class="text-body-secondary">RGB:</td>
           <td class="font-weight-bold">${color}</td>
         </tr>
       </table>
