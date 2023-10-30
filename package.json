@@ -64,7 +64,7 @@
     "js-lint": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives .",
     "localhost": "browser-sync start --server \"./dist\" --serveStatic \"./\" --files \"./dist/\"",
     "postinstall": "node build/postinstall || exit 0",
-    "pug": "node build/pug.mjs --dest=src/views/",
+    "pug": "node build/pug.mjs",
     "release-version": "node build/change-version.mjs",
     "serve": "serve dist",
     "start": "npm-run-all --sequential clean css js sync --parallel localhost watch",
