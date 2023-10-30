@@ -7,11 +7,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-'use strict'
-
-const fs = require('node:fs').promises
-const path = require('node:path')
-const globby = require('globby')
+import fs from 'node:fs/promises'
+import path from 'node:path'
+import globby from 'globby'
 
 const VERBOSE = process.argv.includes('--verbose')
 const DRY_RUN = process.argv.includes('--dry') || process.argv.includes('--dry-run')

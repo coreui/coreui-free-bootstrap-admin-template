@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 
-'use strict'
-
-const fs = require('node:fs')
-const path = require('node:path')
-const injector = require('@coreui/vendors-injector')
-
-const { extname, join } = path
+import fs from 'node:fs'
+import path from 'node:path'
+import injectVendors from '@coreui/vendors-injector'
 
 const DIST = 'dist/'
+
+const { extname, join } = path
 
 const walkSync = (dir, filelist = []) => {
   for (const file of fs.readdirSync(dir)) {
@@ -22,7 +20,7 @@ const main = () => {
   const filenames = walkSync(DIST)
   for (const filename of filenames) {
     if (extname(filename) === '.html') {
-      injector.toFile(filename)
+      injectVendors.toFile(filename)
     }
   }
 }

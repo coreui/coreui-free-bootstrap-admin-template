@@ -1,16 +1,14 @@
 #!/usr/bin/env node
-'use strict'
 
-const fs = require('node:fs').promises
-const path = require('node:path')
-const { mkdirp } = require('mkdirp')
-const pug = require('pug')
+import fs from 'node:fs/promises'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+import globby from 'globby'
+import pug from 'pug'
+import { mkdirp } from 'mkdirp'
 
-const { basename, dirname, resolve, sep } = path
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const globby = require('globby')
-
-// These are the filetypes we only care about replacing the version
 const GLOB = [
   '**/*.pug'
 ]
@@ -20,6 +18,8 @@ const SRC = 'src/pug/views/'
 const GLOBBY_OPTIONS = {
   cwd: path.join(__dirname, '..', SRC)
 }
+
+const { basename, dirname, resolve, sep } = path
 
 const base = levels => {
   let path = './'
@@ -44,7 +44,6 @@ const compile = (filename, basedir) => {
   return html
 }
 
-// Build html files
 const compilePugToHtml = (file, dest) => {
   const dir = dirname(file)
   const filename = basename(file).replace('.pug', '.html')
@@ -62,25 +61,15 @@ const compilePugToHtml = (file, dest) => {
   })
 }
 
-const args = require('minimist')(process.argv.slice(2))
-
-async function main(args) {
-  const { dest } = args
-
-  if (!dest) {
-    console.error('USAGE: change-version old_version new_version [--verbose] [--dry[-run]]')
-    console.error('Got arguments:', args)
-    process.exit(1)
-  }
-
+async function main() {
   try {
     const files = await globby(GLOB, GLOBBY_OPTIONS)
 
-    await Promise.all(files.map(file => compilePugToHtml(file, dest)))
+    await Promise.all(files.map(file => compilePugToHtml(file, 'src/views/')))
   } catch (error) {
     console.error(error)
     process.exit(1)
   }
 }
 
-main(args)
+main()

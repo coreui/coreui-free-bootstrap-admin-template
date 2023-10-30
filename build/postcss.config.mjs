@@ -1,7 +1,5 @@
-'use strict'
-
-module.exports = ctx => ({
-  map: ctx.file.dirname.includes('examples') ?
+export default context => ({
+  map: context.file.dirname.includes('examples') ?
     false :
     {
       inline: false,
