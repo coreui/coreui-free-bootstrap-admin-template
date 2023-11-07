@@ -1,5 +1,4 @@
-mixin example(url)
-
+mixin example(url, classNames)
   .example
     ul.nav.nav-underline-border(role="tablist")
       li.nav-item
@@ -15,6 +14,6 @@ mixin example(url)
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code")
               |
             | Code
-    .tab-content.rounded-bottom
+    .tab-content.rounded-bottom(class=classNames)
       .tab-pane.p-3.active.preview(role="tabpanel" id="preview-"+count++ )
         block
