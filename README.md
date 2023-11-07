@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[![Bootstrap Admin Template](https://coreui.io/images/templates/coreui_pro_default_light_dark.webp)](https://coreui.io/)
+[![Bootstrap Admin Template](https://assets.coreui.io/products/coreui-free-bootstrap-admin-template-light-dark.webp)](https://coreui.io/product/free-bootstrap-admin-template/)
 
 CoreUI Bootstrap Admin Panel Template is not another blend of 3rd parties free components and libraries. It's **the only Open Source Bootstrap Admin Dashboard Template built on the enterprise-grade hand-crafted [UI Components Library](https://github.com/coreui/coreui)** created and backed by professionals.
 **CoreUI Admin Template helps you build reliable web apps faster than before.** CoreUI offers 4 versions: [Angular](https://github.com/coreui/coreui-free-angular-admin-template), [Bootstrap](https://github.com/coreui/coreui-free-bootstrap-admin-template), [React.js](https://github.com/coreui/coreui-free-react-admin-template), and [Vue.js](https://github.com/coreui/coreui-free-vue-admin-template).
