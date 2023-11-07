@@ -4,7 +4,14 @@ block canonical
   link(rel='canonical' href='https://coreui.io/docs/components/dropdowns/')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Buttons'], 'Loading buttons')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Buttons'},
+      'Dropdowns'
+    ]
+  )
 
 block view
   .row

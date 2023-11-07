@@ -8,7 +8,14 @@ block canonical
   link(rel='canonical' href='https://coreui.io/docs/components/popovers/')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Base'], 'Popovers')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Base'},
+      'Popovers'
+    ],
+  )
 
 block view
   .row

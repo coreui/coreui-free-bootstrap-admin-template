@@ -12,7 +12,12 @@ block scripts
     script(src='js/main.js')
 
 block breadcrumb
-  +breadcrumb(['Home'], 'Dashboard')
+    +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Dashboard'}
+    ]
+  )
 
 block view
   .row

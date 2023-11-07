@@ -10,7 +10,13 @@ block scripts
   script(src='js/widgets.js')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components'], 'Widgets')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Widgets'}
+    ]
+  )
 
 block view
   .card.mb-4

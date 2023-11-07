@@ -1,15 +1,12 @@
-mixin breadcrumb(items, last)
+mixin breadcrumb(items)
   nav(aria-label="breadcrumb")
     ol.breadcrumb.my-0
-      each item in items
-        li.breadcrumb-item
-          // if breadcrumb is single
-          if (items.length === 1)
-            span= item
-          else
-            a(href="#")= item
+      each item, index in items
+        - var href = item.href
+        - var label = item.label
 
-      if last
-        li.breadcrumb-item.active
-          span= last
-      else
+        li.breadcrumb-item(class=(index === items.length - 1 ? 'active' : false))
+          if (href)
+            a(href=(href ? href : '#'))= label ? label : item
+          else
+            span= label ? label : item

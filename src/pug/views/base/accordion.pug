@@ -4,7 +4,14 @@ block canonical
   link(rel='canonical' href='https://coreui.io/docs/components/accordion/')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Base'], 'Accordion')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Base'},
+      'Accordion'
+    ],
+  )
 
 block view
   .row

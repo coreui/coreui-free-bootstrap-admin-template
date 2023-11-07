@@ -4,7 +4,14 @@ block styles
   link(href='node_modules/@coreui/icons/css/free.min.css', rel='stylesheet')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Icons'], 'CoreUI Icons - Free')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Icons'},
+      'CoreUI Icons - Free'
+    ]
+  )
 
 block view
   +callout-custom

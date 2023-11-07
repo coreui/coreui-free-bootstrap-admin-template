@@ -4,7 +4,14 @@ block canonical
   link(rel='canonical' href='https://coreui.io/docs/forms/select/')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Forms'], 'Select')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Forms'},
+      'Select'
+    ]
+  )
 
 block view
   .row

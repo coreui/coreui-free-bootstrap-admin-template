@@ -4,7 +4,14 @@ block canonical
   link(rel='canonical' href='https://coreui.io/docs/forms/validation/')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Forms'], 'Validation')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Forms'},
+      { label: 'Validation'}
+    ]
+  )
 
 block js 
   |  // Example starter JavaScript for disabling form submissions if there are invalid fields

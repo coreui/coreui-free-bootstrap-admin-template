@@ -4,11 +4,18 @@ block scripts
   // Plugins and scripts required by this view
   script(src='js/tooltips.js')
 
-block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Base'], 'Tooltips')
-
 block canonical
   link(rel='canonical' href='https://coreui.io/docs/components/tooltips/')
+
+block breadcrumb
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Base'},
+      'Tooltips'
+    ],
+  )
 
 block view
   .row

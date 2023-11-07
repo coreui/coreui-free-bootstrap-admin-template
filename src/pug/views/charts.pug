@@ -9,7 +9,13 @@ block scripts
   script(src='js/charts.js')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components'], 'Charts')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Plugins'},
+      { label: 'Charts'}
+    ]
+  )
 
 block view
   .row.row-cols-2

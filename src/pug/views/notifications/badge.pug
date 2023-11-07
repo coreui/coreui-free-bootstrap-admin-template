@@ -4,7 +4,14 @@ block canonical
   link(rel='canonical' href='https://coreui.io/docs/components/badge/')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Notifications'], 'Badge')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Notifications'},
+      'Badge'
+    ]
+  )
 
 block view
   .row

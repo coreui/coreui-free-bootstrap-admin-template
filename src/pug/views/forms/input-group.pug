@@ -4,7 +4,14 @@ block canonical
   link(rel='canonical' href='https://coreui.io/docs/forms/input-group/')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Forms'], 'Input group')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Forms'},
+      'Input group'
+    ]
+  )
 
 block view
   .row

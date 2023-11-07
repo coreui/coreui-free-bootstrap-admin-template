@@ -7,7 +7,13 @@ block scripts
     script(src='js/colors.js')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Theme'], 'Colors')
+    +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Theme'},
+      { label: 'Colors'},
+    ]
+  )
 
 block view
   .card.mb-4

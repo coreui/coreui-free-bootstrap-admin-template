@@ -4,7 +4,14 @@ block canonical
   link(rel='canonical' href='https://coreui.io/docs/components/buttons/')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Buttons'], 'Buttons')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Buttons'},
+      'Buttons'
+    ]
+  )
 
 block view
   .card.mb-4

@@ -9,7 +9,14 @@ block canonical
   link(rel='canonical' href='https://coreui.io/docs/components/modal/')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Notifications'], 'Modals')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Notifications'},
+      'Modals'
+    ]
+  )
 
 block view
   .row

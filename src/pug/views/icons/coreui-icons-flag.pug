@@ -4,7 +4,14 @@ block styles
   link(href='node_modules/@coreui/icons/css/flag.min.css', rel='stylesheet')
 
 block breadcrumb
-  +breadcrumb(['Home', 'Components', 'Icons'], 'CoreUI Icons - Flags')
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Icons'},
+      'CoreUI Icons - Flags'
+    ]
+  )
 
 block view
   +callout-custom
