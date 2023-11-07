@@ -1,10 +1,10 @@
-header.header.header-sticky.mb-4
-  .container-fluid.border-bottom
-    button.header-toggler.px-md-1.me-md-3(type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()")
+header.header.header-sticky.p-0.mb-4
+  .container-fluid.border-bottom.px-4
+    button.header-toggler(type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()" style="margin-inline-start: -14px;")
       svg.icon.icon-lg
         use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu")
         |
-    ul.header-nav.d-none.d-md-flex
+    ul.header-nav.d-none.d-lg-flex
       li.nav-item
         a.nav-link(href="#") Dashboard
       li.nav-item
@@ -27,8 +27,8 @@ header.header.header-sticky.mb-4
           svg.icon.icon-lg
             use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
             |
-    ul.header-nav.ms-3
-      li.nav-item.py-2.py-lg-1
+    ul.header-nav
+      li.nav-item.py-1
         .vr.h-100.mx-2.text-body.text-opacity-75
       li.nav-item.dropdown
         button.btn.btn-link.nav-link.py-2.px-2.d-flex.align-items-center(type="button" aria-expanded="false" data-coreui-toggle="dropdown")
@@ -50,10 +50,10 @@ header.header.header-sticky.mb-4
               svg.icon.icon-lg.me-3
                 use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast")
               | Auto
-      li.nav-item.py-2.py-lg-1
+      li.nav-item.py-1
         .vr.h-100.mx-2.text-body.text-opacity-75
       li.nav-item.dropdown
-        a.nav-link.py-0(data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false")
+        a.nav-link.py-0.pe-0(data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false")
           .avatar.avatar-md
             img.avatar-img(src="assets/img/avatars/8.jpg" alt="user@email.com")
         .dropdown-menu.dropdown-menu-end.pt-0
@@ -117,6 +117,6 @@ header.header.header-sticky.mb-4
               use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout")
               |
             |  Logout
-  .container-fluid
+  .container-fluid.px-4
     block breadcrumb
 

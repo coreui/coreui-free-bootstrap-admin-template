@@ -5,6 +5,10 @@
   min-height: calc(4rem + 1px); // stylelint-disable-line function-disallowed-list
 }
 
+.header > .container-fluid + .container-fluid {
+  min-height: 3rem;
+}
+
 .sidebar-brand-full {
   margin-left: 3px;
 }
@@ -17,19 +21,6 @@
 .sidebar-narrow-unfoldable:not(:hover) {
   .sidebar-toggler {
     @include ltr-rtl("margin-right", auto);
-  }
-}
-
-.header > .container-fluid + .container-fluid {
-  min-height: 3rem;
-}
-
-.header {
-  padding: 0;
-
-  .container-fluid {
-    padding-right: $spacer;
-    padding-left: $spacer;
   }
 }
 

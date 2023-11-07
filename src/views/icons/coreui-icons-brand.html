@@ -45,7 +45,7 @@
     <link href="node_modules/@coreui/icons/css/brand.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="sidebar sidebar-fixed border-end sidebar-dark" id="sidebar">
+    <div class="sidebar sidebar-dark sidebar-fixed border-end sidebar-dark" id="sidebar">
       <div class="sidebar-header border-bottom">
         <div class="sidebar-brand">
           <svg class="sidebar-brand-full" width="88" height="32" alt="CoreUI Logo">
@@ -186,14 +186,14 @@
       </div>
     </div>
     <div class="wrapper d-flex flex-column min-vh-100">
-      <header class="header header-sticky mb-4">
-        <div class="container-fluid border-bottom">
-          <button class="header-toggler px-md-1 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+      <header class="header header-sticky p-0 mb-4">
+        <div class="container-fluid border-bottom px-4">
+          <button class="header-toggler" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()" style="margin-inline-start: -14px;">
             <svg class="icon icon-lg">
               <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
           </button>
-          <ul class="header-nav d-none d-md-flex">
+          <ul class="header-nav d-none d-lg-flex">
             <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
@@ -212,8 +212,8 @@
                   <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                 </svg></a></li>
           </ul>
-          <ul class="header-nav ms-3">
-            <li class="nav-item py-2 py-lg-1">
+          <ul class="header-nav">
+            <li class="nav-item py-1">
               <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
             </li>
             <li class="nav-item dropdown">
@@ -246,10 +246,10 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item py-2 py-lg-1">
+            <li class="nav-item py-1">
               <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
             </li>
-            <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown"><a class="nav-link py-0 pe-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div></a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
                 <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold rounded-top">Account</div><a class="dropdown-item" href="#">
@@ -291,9 +291,9 @@
             </li>
           </ul>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid px-4">
           <nav aria-label="breadcrumb">
-            <ol class="breadcrumb my-0 ms-2">
+            <ol class="breadcrumb my-0">
               <li class="breadcrumb-item">
                 <!-- if breadcrumb is single--><a href="#">Home</a>
               </li>
@@ -308,8 +308,8 @@
           </nav>
         </div>
       </header>
-      <div class="body flex-grow-1 px-3">
-        <div class="container-lg">
+      <div class="body flex-grow-1">
+        <div class="container-lg px-4">
           <div class="callout callout-info bg-body">CoreUI Admin Template is delivered with CoreUI Icons with more than 1500 icons in multiple formats SVG, JavaScript, and Webfonts. CoreUI Icons are beautifully crafted symbols for common actions and items. You can use them in your digital products for web or mobile apps.<br><br>For more information please visit <a href="https://coreui.io/icons/" target="_blank">CoreUI Icons website</a>.
           </div>
           <div class="card mb-4">
