@@ -20,9 +20,9 @@ block breadcrumb
   )
 
 block view
-  .row
+  .row.g-4.mb-4
     .col-sm-6.col-xl-3
-      .card.mb-4.text-white.bg-primary
+      .card.text-white.bg-primary
         .card-body.pb-0.d-flex.justify-content-between.align-items-start
           div
             .fs-4.fw-semibold 26K 
@@ -44,7 +44,7 @@ block view
           canvas#card-chart1.chart(height='70')
     // /.col
     .col-sm-6.col-xl-3
-      .card.mb-4.text-white.bg-info
+      .card.text-white.bg-info
         .card-body.pb-0.d-flex.justify-content-between.align-items-start
           div
             .fs-4.fw-semibold $6.200 
@@ -65,7 +65,7 @@ block view
           canvas#card-chart2.chart(height='70')
     // /.col
     .col-sm-6.col-xl-3
-      .card.mb-4.text-white.bg-warning
+      .card.text-white.bg-warning
         .card-body.pb-0.d-flex.justify-content-between.align-items-start
           div
             .fs-4.fw-semibold 2.49% 
@@ -86,7 +86,7 @@ block view
           canvas#card-chart3.chart(height='70')
     // /.col
     .col-sm-6.col-xl-3
-      .card.mb-4.text-white.bg-danger
+      .card.text-white.bg-danger
         .card-body.pb-0.d-flex.justify-content-between.align-items-start
           div
             .fs-4.fw-semibold 44K 
@@ -130,36 +130,36 @@ block view
       .c-chart-wrapper(style='height:300px;margin-top:40px;')
         canvas#main-chart.chart(height='300')
     .card-footer
-      .row.row-cols-1.row-cols-sm-2.row-cols-lg-4.row-cols-xl-5.text-center
-        .col.mb-2
+      .row.row-cols-1.row-cols-sm-2.row-cols-lg-4.row-cols-xl-5.g-4.mb-2.text-center
+        .col
           .text-body-secondary Visits
           .fw-semibold.text-truncate 29.703 Users (40%)
           .progress.progress-thin.mt-2
             .progress-bar.bg-success(role='progressbar', style='width: 40%', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100')
-        .col.mb-2
+        .col
           .text-body-secondary Unique
           .fw-semibold.text-truncate 24.093 Users (20%)
           .progress.progress-thin.mt-2
             .progress-bar.bg-info(role='progressbar', style='width: 20%', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
-        .col.mb-2
+        .col
           .text-body-secondary Pageviews
           .fw-semibold.text-truncate 78.706 Views (60%)
           .progress.progress-thin.mt-2
             .progress-bar.bg-warning(role='progressbar', style='width: 60%', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100')
-        .col.mb-2
+        .col
           .text-body-secondary New Users
           .fw-semibold.text-truncate 22.123 Users (80%)
           .progress.progress-thin.mt-2
             .progress-bar.bg-danger(role='progressbar', style='width: 80%', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
-        .col.mb-2.d-none.d-xl-block
+        .col.d-none.d-xl-block
           .text-body-secondary Bounce Rate
           .fw-semibold.text-truncate 40.15%
           .progress.progress-thin.mt-2
             .progress-bar(role='progressbar', style='width: 40%', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100')
-  // /.card.mb-4
-  .row
+  // /.card
+  .row.g-4.mb-4
     .col-sm-6.col-lg-4
-      .card.mb-4(style='--cui-card-cap-bg: #3b5998')
+      .card(style='--cui-card-cap-bg: #3b5998')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
           svg.icon.icon-3xl.text-white.my-4
             use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
@@ -175,7 +175,7 @@ block view
             .text-uppercase.text-body-secondary.small feeds
     // /.col
     .col-sm-6.col-lg-4
-      .card.mb-4(style='--cui-card-cap-bg: #00aced')
+      .card(style='--cui-card-cap-bg: #00aced')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
           svg.icon.icon-3xl.text-white.my-4
             use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
@@ -191,7 +191,7 @@ block view
             .text-uppercase.text-body-secondary.small tweets
     // /.col
     .col-sm-6.col-lg-4
-      .card.mb-4(style='--cui-card-cap-bg: #4875b4')
+      .card(style='--cui-card-cap-bg: #4875b4')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
           svg.icon.icon-3xl.text-white.my-4
             use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
@@ -390,14 +390,14 @@ block view
                     .text-nowrap Yiorgos Avraamu
                     .small.text-body-secondary.text-nowrap
                       span New
-                      |  | Registered: Jan 1, 2020
+                      |  | Registered: Jan 1, 2023
                   td.text-center
                     svg.icon.icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-us")
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 50%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2020 - Jul 10, 2020
+                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
                     .progress.progress-thin
                       .progress-bar.bg-success(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
@@ -424,14 +424,14 @@ block view
                     .text-nowrap Avram Tarasios
                     .small.text-body-secondary.text-nowrap
                       span Recurring
-                      |  | Registered: Jan 1, 2020
+                      |  | Registered: Jan 1, 2023
                   td.text-center
                     svg.icon.icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-br")
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 10%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2020 - Jul 10, 2020
+                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
                     .progress.progress-thin
                       .progress-bar.bg-info(role='progressbar', style='width: 10%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
@@ -458,14 +458,14 @@ block view
                     .text-nowrap Quintin Ed
                     .small.text-body-secondary.text-nowrap
                       span New
-                      |  | Registered: Jan 1, 2020
+                      |  | Registered: Jan 1, 2023
                   td.text-center
                     svg.icon.icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-in")
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 74%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2020 - Jul 10, 2020
+                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
                     .progress.progress-thin
                       .progress-bar.bg-warning(role='progressbar', style='width: 74%', aria-valuenow='74', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
@@ -492,14 +492,14 @@ block view
                     .text-nowrap Enéas Kwadwo
                     .small.text-body-secondary.text-nowrap
                       span New
-                      |  | Registered: Jan 1, 2020
+                      |  | Registered: Jan 1, 2023
                   td.text-center
                     svg.icon.icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-fr")
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 98%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2020 - Jul 10, 2020
+                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
                     .progress.progress-thin
                       .progress-bar.bg-danger(role='progressbar', style='width: 98%', aria-valuenow='98', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
@@ -526,14 +526,14 @@ block view
                     .text-nowrap Agapetus Tadeáš
                     .small.text-body-secondary.text-nowrap
                       span New
-                      |  | Registered: Jan 1, 2020
+                      |  | Registered: Jan 1, 2023
                   td.text-center
                     svg.icon.icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-es")
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 22%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2020 - Jul 10, 2020
+                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
                     .progress.progress-thin
                       .progress-bar.bg-info(role='progressbar', style='width: 22%', aria-valuenow='22', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
@@ -560,14 +560,14 @@ block view
                     .text-nowrap Friderik Dávid
                     .small.text-body-secondary.text-nowrap
                       span New
-                      |  | Registered: Jan 1, 2020
+                      |  | Registered: Jan 1, 2023
                   td.text-center
                     svg.icon.icon-xl
                       use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-pl")
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 43%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2020 - Jul 10, 2020
+                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
                     .progress.progress-thin
                       .progress-bar.bg-success(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
