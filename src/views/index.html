@@ -55,7 +55,7 @@
             <use xlink:href="assets/brand/coreui.svg#signet"></use>
           </svg>
         </div>
-        <button class="btn-close d-md-none" type="button" data-coreui-dismiss="offcanvas" data-coreui-theme="dark" aria-label="Close" onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>
+        <button class="btn-close d-lg-none" type="button" data-coreui-dismiss="offcanvas" data-coreui-theme="dark" aria-label="Close" onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>
       </div>
       <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
@@ -305,7 +305,7 @@
       <div class="body flex-grow-1">
         <div class="container-lg px-4">
           <div class="row">
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-xl-3">
               <div class="card mb-4 text-white bg-primary">
                 <div class="card-body pb-0 d-flex justify-content-between align-items-start">
                   <div>
@@ -330,7 +330,7 @@
               </div>
             </div>
             <!-- /.col-->
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-xl-3">
               <div class="card mb-4 text-white bg-info">
                 <div class="card-body pb-0 d-flex justify-content-between align-items-start">
                   <div>
@@ -355,7 +355,7 @@
               </div>
             </div>
             <!-- /.col-->
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-xl-3">
               <div class="card mb-4 text-white bg-warning">
                 <div class="card-body pb-0 d-flex justify-content-between align-items-start">
                   <div>
@@ -380,7 +380,7 @@
               </div>
             </div>
             <!-- /.col-->
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-xl-3">
               <div class="card mb-4 text-white bg-danger">
                 <div class="card-body pb-0 d-flex justify-content-between align-items-start">
                   <div>
@@ -435,38 +435,38 @@
               </div>
             </div>
             <div class="card-footer">
-              <div class="row row-cols-1 row-cols-md-5 text-center">
-                <div class="col mb-sm-2 mb-0">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 text-center">
+                <div class="col mb-2">
                   <div class="text-body-secondary">Visits</div>
-                  <div class="fw-semibold">29.703 Users (40%)</div>
+                  <div class="fw-semibold text-truncate">29.703 Users (40%)</div>
                   <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-                <div class="col mb-sm-2 mb-0">
+                <div class="col mb-2">
                   <div class="text-body-secondary">Unique</div>
-                  <div class="fw-semibold">24.093 Users (20%)</div>
+                  <div class="fw-semibold text-truncate">24.093 Users (20%)</div>
                   <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-                <div class="col mb-sm-2 mb-0">
+                <div class="col mb-2">
                   <div class="text-body-secondary">Pageviews</div>
-                  <div class="fw-semibold">78.706 Views (60%)</div>
+                  <div class="fw-semibold text-truncate">78.706 Views (60%)</div>
                   <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-                <div class="col mb-sm-2 mb-0">
+                <div class="col mb-2">
                   <div class="text-body-secondary">New Users</div>
-                  <div class="fw-semibold">22.123 Users (80%)</div>
+                  <div class="fw-semibold text-truncate">22.123 Users (80%)</div>
                   <div class="progress progress-thin mt-2">
                     <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-                <div class="col mb-sm-2 mb-0">
+                <div class="col mb-2 d-none d-xl-block">
                   <div class="text-body-secondary">Bounce Rate</div>
-                  <div class="fw-semibold">40.15%</div>
+                  <div class="fw-semibold text-truncate">40.15%</div>
                   <div class="progress progress-thin mt-2">
                     <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
@@ -559,13 +559,15 @@
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-6">
-                          <div class="border-start border-start-4 border-start-info px-3 mb-3"><small class="text-body-secondary">New Clients</small>
+                          <div class="border-start border-start-4 border-start-info px-3 mb-3">
+                            <div class="small text-body-secondary text-truncate">New Clients</div>
                             <div class="fs-5 fw-semibold">9.123</div>
                           </div>
                         </div>
                         <!-- /.col-->
                         <div class="col-6">
-                          <div class="border-start border-start-4 border-start-danger px-3 mb-3"><small class="text-body-secondary">Recuring Clients</small>
+                          <div class="border-start border-start-4 border-start-danger px-3 mb-3">
+                            <div class="small text-body-secondary text-truncate">Recuring Clients</div>
                             <div class="fs-5 fw-semibold">22.643</div>
                           </div>
                         </div>
@@ -655,13 +657,15 @@
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-6">
-                          <div class="border-start border-start-4 border-start-warning px-3 mb-3"><small class="text-body-secondary">Pageviews</small>
+                          <div class="border-start border-start-4 border-start-warning px-3 mb-3">
+                            <div class="small text-body-secondary text-truncate">Pageviews</div>
                             <div class="fs-5 fw-semibold">78.623</div>
                           </div>
                         </div>
                         <!-- /.col-->
                         <div class="col-6">
-                          <div class="border-start border-start-4 border-start-success px-3 mb-3"><small class="text-body-secondary">Organic</small>
+                          <div class="border-start border-start-4 border-start-success px-3 mb-3">
+                            <div class="small text-body-secondary text-truncate">Organic</div>
                             <div class="fs-5 fw-semibold">49.123</div>
                           </div>
                         </div>
@@ -763,7 +767,7 @@
                   <!-- /.row--><br>
                   <div class="table-responsive">
                     <table class="table border mb-0">
-                      <thead class="fw-semibold">
+                      <thead class="fw-semibold text-nowrap">
                         <tr class="align-middle">
                           <th class="bg-body-secondary text-center">
                             <svg class="icon">
@@ -795,7 +799,7 @@
                           <td>
                             <div class="d-flex justify-content-between align-items-baseline">
                               <div class="fw-semibold">50%</div>
-                              <div class="ms-1 text-nowrap small text-body-secondary">Jun 11, 2020 - Jul 10, 2020</div>
+                              <div class="text-nowrap small text-body-secondary ms-3">Jun 11, 2020 - Jul 10, 2020</div>
                             </div>
                             <div class="progress progress-thin">
                               <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -837,7 +841,7 @@
                           <td>
                             <div class="d-flex justify-content-between align-items-baseline">
                               <div class="fw-semibold">10%</div>
-                              <div class="ms-1 text-nowrap small text-body-secondary">Jun 11, 2020 - Jul 10, 2020</div>
+                              <div class="text-nowrap small text-body-secondary ms-3">Jun 11, 2020 - Jul 10, 2020</div>
                             </div>
                             <div class="progress progress-thin">
                               <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
@@ -879,7 +883,7 @@
                           <td>
                             <div class="d-flex justify-content-between align-items-baseline">
                               <div class="fw-semibold">74%</div>
-                              <div class="ms-1 text-nowrap small text-body-secondary">Jun 11, 2020 - Jul 10, 2020</div>
+                              <div class="text-nowrap small text-body-secondary ms-3">Jun 11, 2020 - Jul 10, 2020</div>
                             </div>
                             <div class="progress progress-thin">
                               <div class="progress-bar bg-warning" role="progressbar" style="width: 74%" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
@@ -921,7 +925,7 @@
                           <td>
                             <div class="d-flex justify-content-between align-items-baseline">
                               <div class="fw-semibold">98%</div>
-                              <div class="ms-1 text-nowrap small text-body-secondary">Jun 11, 2020 - Jul 10, 2020</div>
+                              <div class="text-nowrap small text-body-secondary ms-3">Jun 11, 2020 - Jul 10, 2020</div>
                             </div>
                             <div class="progress progress-thin">
                               <div class="progress-bar bg-danger" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
@@ -963,7 +967,7 @@
                           <td>
                             <div class="d-flex justify-content-between align-items-baseline">
                               <div class="fw-semibold">22%</div>
-                              <div class="ms-1 text-nowrap small text-body-secondary">Jun 11, 2020 - Jul 10, 2020</div>
+                              <div class="text-nowrap small text-body-secondary ms-3">Jun 11, 2020 - Jul 10, 2020</div>
                             </div>
                             <div class="progress progress-thin">
                               <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
@@ -1005,7 +1009,7 @@
                           <td>
                             <div class="d-flex justify-content-between align-items-baseline">
                               <div class="fw-semibold">43%</div>
-                              <div class="ms-1 text-nowrap small text-body-secondary">Jun 11, 2020 - Jul 10, 2020</div>
+                              <div class="text-nowrap small text-body-secondary ms-3">Jun 11, 2020 - Jul 10, 2020</div>
                             </div>
                             <div class="progress progress-thin">
                               <div class="progress-bar bg-success" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>

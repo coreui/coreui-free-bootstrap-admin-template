@@ -24,9 +24,9 @@ block view
       string Widgets
     .card-body
       +example()
-        .row
-          .col-sm-6.col-lg-3
-            .card.mb-4.mb-lg-0.text-white.bg-primary
+        .grid
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
+            .card.text-white.bg-primary
               .card-body.pb-0.d-flex.justify-content-between.align-items-start
                 div
                   .fs-4.fw-semibold 26K 
@@ -47,8 +47,8 @@ block view
               .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
                 canvas#card-chart1.chart(height='70')
           // /.col
-          .col-sm-6.col-lg-3
-            .card.mb-4.mb-lg-0.text-white.bg-info
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
+            .card.text-white.bg-info
               .card-body.pb-0.d-flex.justify-content-between.align-items-start
                 div
                   .fs-4.fw-semibold $6.200 
@@ -68,8 +68,8 @@ block view
               .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
                 canvas#card-chart2.chart(height='70')
           // /.col
-          .col-sm-6.col-lg-3
-            .card.mb-4.mb-sm-0.text-white.bg-warning
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
+            .card.text-white.bg-warning
               .card-body.pb-0.d-flex.justify-content-between.align-items-start
                 div
                   .fs-4.fw-semibold 2.49% 
@@ -89,7 +89,7 @@ block view
               .c-chart-wrapper.mt-3(style='height:70px;')
                 canvas#card-chart3.chart(height='70')
           // /.col
-          .col-sm-6.col-lg-3
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card.text-white.bg-danger
               .card-body.pb-0.d-flex.justify-content-between.align-items-start
                 div
@@ -110,9 +110,9 @@ block view
               .c-chart-wrapper.mt-3.mx-3(style='height:70px;')
                 canvas#card-chart4.chart(height='70')
       +example() 
-        .row
-          .col-sm-6.col-lg-3
-            .card.mb-4.mb-lg-0
+        .grid
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
+            .card
               .card-body
                 .fs-4.fw-semibold 89.9%
                 div Widget title
@@ -120,8 +120,8 @@ block view
                   .progress-bar.bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
                 small.text-body-secondary Widget helper text
           // /.col
-          .col-sm-6.col-lg-3
-            .card.mb-4.mb-lg-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
+            .card
               .card-body
                 .fs-4.fw-semibold 12.124
                 div Widget title
@@ -129,8 +129,8 @@ block view
                   .progress-bar.bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
                 small.text-body-secondary Widget helper text
           // /.col
-          .col-sm-6.col-lg-3
-            .card.mb-4.mb-sm-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
+            .card
               .card-body
                 .fs-4.fw-semibold $98.111,00
                 div Widget title
@@ -138,7 +138,7 @@ block view
                   .progress-bar.bg-warning(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
                 small.text-body-secondary Widget helper text
           // /.col
-          .col-sm-6.col-lg-3
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card
               .card-body
                 .fs-4.fw-semibold 2 TB
@@ -147,11 +147,11 @@ block view
                   .progress-bar.bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
                 small.text-body-secondary Widget helper text
           // /.col
-        // /.row
+        // /.grid
       +example()
-        .row
-          .col-sm-6.col-lg-3
-            .card.text-white.bg-primary.mb-4.mb-lg-0
+        .grid
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
+            .card.text-white.bg-primary
               .card-body
                 .fs-4.fw-semibold 89.9%
                 div Widget title
@@ -159,8 +159,8 @@ block view
                   .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
                 small.text-body-secondary-inverse Widget helper text
           // /.col
-          .col-sm-6.col-lg-3
-            .card.text-white.bg-warning.mb-4.mb-lg-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
+            .card.text-white.bg-warning
               .card-body
                 .fs-4.fw-semibold 12.124
                 div Widget title
@@ -168,8 +168,8 @@ block view
                   .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
                 small.text-body-secondary-inverse Widget helper text
           // /.col
-          .col-sm-6.col-lg-3
-            .card.text-white.bg-danger.mb-4.mb-md-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
+            .card.text-white.bg-danger
               .card-body
                 .fs-4.fw-semibold $98.111,00
                 div Widget title
@@ -177,7 +177,7 @@ block view
                   .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
                 small.text-body-secondary-inverse Widget helper text
           // /.col
-          .col-sm-6.col-lg-3
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card.text-white.bg-info
               .card-body
                 .fs-4.fw-semibold 2 TB
@@ -186,10 +186,10 @@ block view
                   .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
                 small.text-body-secondary-inverse Widget helper text
           // /.col
-        // /.row
+        // /.grid
       +example()
-        .row
-          .col-xl-2.col-sm-4.mb-4.mb-xl-0
+        .grid
+          .g-col-6.g-col-sm-4.g-col-xl-2
             .card
               .card-body.text-center
                 .text-body-secondary.small.text-uppercase.fw-semibold Title
@@ -197,7 +197,7 @@ block view
                 .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
                   canvas#sparkline-chart-1.chart.chart-bar(height='40', width='80')
           // /.col
-          .col-xl-2.col-sm-4.mb-4.mb-xl-0
+          .g-col-6.g-col-sm-4.g-col-xl-2
             .card
               .card-body.text-center
                 .text-body-secondary.small.text-uppercase.fw-semibold Title
@@ -205,7 +205,7 @@ block view
                 .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
                   canvas#sparkline-chart-2.chart.chart-bar(height='40', width='80')
           // /.col
-          .col-xl-2.col-sm-4.mb-4.mb-xl-0
+          .g-col-6.g-col-sm-4.g-col-xl-2
             .card
               .card-body.text-center
                 .text-body-secondary.small.text-uppercase.fw-semibold Title
@@ -213,7 +213,7 @@ block view
                 .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
                   canvas#sparkline-chart-3.chart.chart-bar(height='40', width='80')
           // /.col
-          .col-xl-2.col-sm-4.mb-4.mb-sm-0
+          .g-col-6.g-col-sm-4.g-col-xl-2
             .card
               .card-body.text-center
                 .text-body-secondary.small.text-uppercase.fw-semibold Title
@@ -221,7 +221,7 @@ block view
                 .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
                   canvas#sparkline-chart-4.chart.chart-line(height='40', width='100')
           // /.col
-          .col-xl-2.col-sm-4.mb-4.mb-sm-0
+          .g-col-6.g-col-sm-4.g-col-xl-2
             .card
               .card-body.text-center
                 .text-body-secondary.small.text-uppercase.fw-semibold Title
@@ -229,7 +229,7 @@ block view
                 .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
                   canvas#sparkline-chart-5.chart.chart-line(height='40', width='100')
           // /.col
-          .col-xl-2.col-sm-4
+          .g-col-6.g-col-sm-4.g-col-xl-2
             .card
               .card-body.text-center
                 .text-body-secondary.small.text-uppercase.fw-semibold Title
@@ -237,10 +237,10 @@ block view
                 .c-chart-wrapper.mx-auto(style='height:40px;width:80px')
                   canvas#sparkline-chart-6.chart.chart-line(height='40', width='100')
           // /.col
-        // /.row
+        // /.grid
       +example()
-        .row
-          .col-sm-6.col-lg-3.mb-4.mb-lg-0
+        .grid
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-primary.text-white.p-3.me-3
@@ -251,7 +251,7 @@ block view
                   .fs-6.fw-semibold.text-primary $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
-          .col-sm-6.col-lg-3.mb-4.mb-lg-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-info.text-white.p-3.me-3
@@ -262,7 +262,7 @@ block view
                   .fs-6.fw-semibold.text-info $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
-          .col-sm-6.col-lg-3.mb-4.mb-sm-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-warning.text-white.p-3.me-3
@@ -273,7 +273,7 @@ block view
                   .fs-6.fw-semibold.text-warning $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
-          .col-sm-6.col-lg-3
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-danger.text-white.p-3.me-3
@@ -285,8 +285,8 @@ block view
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
       +example()
-        .row
-          .col-sm-6.col-lg-3.mb-4.mb-lg-0
+        .grid
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-primary.text-white.p-3.me-3
@@ -303,7 +303,7 @@ block view
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
                     |
           // /.col
-          .col-sm-6.col-lg-3.mb-4.mb-lg-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-info.text-white.p-3.me-3
@@ -320,7 +320,7 @@ block view
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
                     |
           // /.col
-          .col-sm-6.col-lg-3.mb-4.mb-sm-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-warning.text-white.p-3.me-3
@@ -337,7 +337,7 @@ block view
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
                     |
           // /.col
-          .col-sm-6.col-lg-3
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-danger.text-white.p-3.me-3
@@ -354,10 +354,10 @@ block view
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
                     |
           // /.col
-        // /.row
+        // /.grid
       +example()
-        .row
-          .col-sm-6.col-lg-3.mb-4.mb-lg-0
+        .grid
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-primary.text-white.p-4.me-3
@@ -368,7 +368,7 @@ block view
                   .fs-6.fw-semibold.text-primary $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
-          .col-sm-6.col-lg-3.mb-4.mb-lg-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-info.text-white.p-4.me-3
@@ -379,7 +379,7 @@ block view
                   .fs-6.fw-semibold.text-info $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
-          .col-sm-6.col-lg-3.mb-4.mb-sm-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-warning.text-white.p-4.me-3
@@ -390,7 +390,7 @@ block view
                   .fs-6.fw-semibold.text-warning $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
-          .col-sm-6.col-lg-3
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-danger.text-white.p-4.me-3
@@ -402,8 +402,8 @@ block view
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
       +example()
-        .row   
-          .col-sm-6.col-lg-3.mb-4.mb-lg-0
+        .grid   
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-primary.text-white.py-4.px-5.me-3
@@ -414,7 +414,7 @@ block view
                   .fs-6.fw-semibold.text-primary $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
-          .col-sm-6.col-lg-3.mb-4.mb-lg-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-info.text-white.py-4.px-5.me-3
@@ -425,7 +425,7 @@ block view
                   .fs-6.fw-semibold.text-info $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
-          .col-sm-6.col-lg-3.mb-4.mb-sm-0
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-warning.text-white.py-4.px-5.me-3
@@ -436,7 +436,7 @@ block view
                   .fs-6.fw-semibold.text-warning $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
-          .col-sm-6.col-lg-3
+          .g-col-12.g-col-sm-6.g-col-xl-4.g-col-xxl-3
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-danger.text-white.py-4.px-5.me-3
@@ -447,10 +447,10 @@ block view
                   .fs-6.fw-semibold.text-danger $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
           // /.col
-        // /.row
+        // /.grid
       +example()
-        .row
-          .col-sm-6.col-lg-4.mb-4
+        .grid
+          .g-col-12.g-col-sm-6.g-col-xl-4
             .card(style='--cui-card-cap-bg: #3b5998')
               .card-header.position-relative.d-flex.justify-content-center.align-items-center
                 svg.icon.icon-3xl.text-white.my-4
@@ -467,7 +467,7 @@ block view
                   .fs-5.fw-semibold 459
                   .text-uppercase.text-body-secondary.small feeds
           // /.col
-          .col-sm-6.col-lg-4.mb-4
+          .g-col-12.g-col-sm-6.g-col-xl-4
             .card(style='--cui-card-cap-bg: #00aced')
               .card-header.position-relative.d-flex.justify-content-center.align-items-center
                 svg.icon.icon-3xl.text-white.my-4
@@ -484,7 +484,7 @@ block view
                   .fs-5.fw-semibold 1.792
                   .text-uppercase.text-body-secondary.small tweets
           // /.col
-          .col-sm-6.col-lg-4
+          .g-col-12.g-col-sm-6.g-col-xl-4
             .card(style='--cui-card-cap-bg: #4875b4')
               .card-header.position-relative.d-flex.justify-content-center.align-items-center
                 svg.icon.icon-3xl.text-white.my-4
@@ -501,206 +501,206 @@ block view
                   .fs-5.fw-semibold 292
                   .text-uppercase.text-body-secondary.small feeds
           // /.col
-        // /.row
+        // /.grid
       +example()
         .card-group
           .card
             .card-body
-              .text-body-secondary.text-end.mb-4
+              .text-body-secondary.text-end
                 svg.icon.icon-xxl
                   use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
                   |
               .fs-4.fw-semibold 87.500
-              small.text-body-secondary.text-uppercase.fw-semibold Visitors
+              .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Visitors
               .progress.progress-thin.mt-3.mb-0
                 .progress-bar.bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           .card
             .card-body
-              .text-body-secondary.text-end.mb-4
+              .text-body-secondary.text-end
                 svg.icon.icon-xxl
                   use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
                   |
               .fs-4.fw-semibold 385
-              small.text-body-secondary.text-uppercase.fw-semibold New Clients
+              .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate New Clients
               .progress.progress-thin.mt-3.mb-0
                 .progress-bar.bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           .card
             .card-body
-              .text-body-secondary.text-end.mb-4
+              .text-body-secondary.text-end
                 svg.icon.icon-xxl
                   use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
                   |
               .fs-4.fw-semibold 1238
-              small.text-body-secondary.text-uppercase.fw-semibold Products sold
+              .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Products sold
               .progress.progress-thin.mt-3.mb-0
                 .progress-bar.bg-warning(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           .card
             .card-body
-              .text-body-secondary.text-end.mb-4
+              .text-body-secondary.text-end
                 svg.icon.icon-xxl
                   use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
                   |
               .fs-4.fw-semibold 28%
-              small.text-body-secondary.text-uppercase.fw-semibold Returning Visitors
+              .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Returning Visitors
               .progress.progress-thin.mt-3.mb-0
                 .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           .card
             .card-body
-              .text-body-secondary.text-end.mb-4
+              .text-body-secondary.text-end
                 svg.icon.icon-xxl
                   use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
                   |
               .fs-4.fw-semibold 5:34:11
-              small.text-body-secondary.text-uppercase.fw-semibold Avg. Time
+              .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Avg. Time
               .progress.progress-thin.mt-3.mb-0
                 .progress-bar.bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
       +example()
-        .row
-          .col-sm-6.col-lg-4.col-xl-2.mb-4.mb-lg-0
+        .grid
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card
               .card-body
-                .text-body-secondary.text-end.mb-4
+                .text-body-secondary.text-end
                   svg.icon.icon-xxl
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
                     |
                 .fs-4.fw-semibold 87.500
-                small.text-body-secondary.text-uppercase.fw-semibold Visitors
+                .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Visitors
                 .progress.progress-thin.mt-3.mb-0
                   .progress-bar.bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-          .col-sm-6.col-lg-4.col-xl-2.mb-4.mb-lg-0
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card
               .card-body
-                .text-body-secondary.text-end.mb-4
+                .text-body-secondary.text-end
                     svg.icon.icon-xxl
                       use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
                       |
                 .fs-4.fw-semibold 385
-                small.text-body-secondary.text-uppercase.fw-semibold New Clients
+                .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate New Clients
                 .progress.progress-thin.mt-3.mb-0
                   .progress-bar.bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-          .col-sm-6.col-lg-4.col-xl-2.mb-4.mb-lg-0
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card
               .card-body
-                .text-body-secondary.text-end.mb-4
+                .text-body-secondary.text-end
                   svg.icon.icon-xxl
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
                     |
                 .fs-4.fw-semibold 1238
-                small.text-body-secondary.text-uppercase.fw-semibold Products sold
+                .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Products sold
                 .progress.progress-thin.mt-3.mb-0
                   .progress-bar.bg-warning(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-          .col-sm-6.col-lg-4.col-xl-2.mb-4.mb-sm-0
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card
               .card-body
-                .text-body-secondary.text-end.mb-4
+                .text-body-secondary.text-end
                   svg.icon.icon-xxl
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
                     |
                 .fs-4.fw-semibold 28%
-                small.text-body-secondary.text-uppercase.fw-semibold Returning Visitors
+                .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Returning Visitors
                 .progress.progress-thin.mt-3.mb-0
                   .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-          .col-sm-6.col-lg-4.col-xl-2.mb-4.mb-sm-0
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card
               .card-body
-                .text-body-secondary.text-end.mb-4
+                .text-body-secondary.text-end
                   svg.icon.icon-xxl
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
                     |
                 .fs-4.fw-semibold 5:34:11
-                small.text-body-secondary.text-uppercase.fw-semibold Avg. Time
+                .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Avg. Time
                 .progress.progress-thin.mt-3.mb-0
                   .progress-bar.bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-          .col-sm-6.col-lg-4.col-xl-2
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card
               .card-body
-                .text-body-secondary.text-end.mb-4
+                .text-body-secondary.text-end
                   svg.icon.icon-xxl
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech")
                     |
                 .fs-4.fw-semibold 972
-                small.text-body-secondary.text-uppercase.fw-semibold Comments
+                .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Comments
                 .progress.progress-thin.mt-3.mb-0
                   .progress-bar.bg-info(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-        // /.row
+        // /.grid
       +example()
-        .row
-          .col-sm-6.col-lg-4.col-xl-2.mb-4.mb-lg-0
+        .grid
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card.text-white.bg-info
               .card-body
-                .text-body-secondary-inverse.text-end.mb-4
+                .text-body-secondary-inverse.text-end
                   svg.icon.icon-xxl
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
                     |
                 .fs-4.fw-semibold 87.500
-                small.text-body-secondary-inverse.text-uppercase.fw-semibold Visitors
+                .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate Visitors
                 .progress.progress-white.progress-thin.mt-3
                   .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-          .col-sm-6.col-lg-4.col-xl-2.mb-4.mb-lg-0
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card.text-white.bg-success
               .card-body
-                .text-body-secondary-inverse.text-end.mb-4
+                .text-body-secondary-inverse.text-end
                   svg.icon.icon-xxl
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
                     |
                 .fs-4.fw-semibold 385
-                small.text-body-secondary-inverse.text-uppercase.fw-semibold New Clients
+                .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate New Clients
                 .progress.progress-white.progress-thin.mt-3
                   .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-          .col-sm-6.col-lg-4.col-xl-2.mb-4.mb-lg-0
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card.text-white.bg-warning
               .card-body
-                .text-body-secondary-inverse.text-end.mb-4
+                .text-body-secondary-inverse.text-end
                   svg.icon.icon-xxl
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
                     |
                 .fs-4.fw-semibold 1238
-                small.text-body-secondary-inverse.text-uppercase.fw-semibold Products sold
+                .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate Products sold
                 .progress.progress-white.progress-thin.mt-3
                   .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-          .col-sm-6.col-lg-4.col-xl-2.mb-4.mb-sm-0
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card.text-white.bg-primary
               .card-body
-                .text-body-secondary-inverse.text-end.mb-4
+                .text-body-secondary-inverse.text-end
                   svg.icon.icon-xxl
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
                     |
                 .fs-4.fw-semibold 28%
-                small.text-body-secondary-inverse.text-uppercase.fw-semibold Returning Visitors
+                .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate Returning Visitors
                 .progress.progress-white.progress-thin.mt-3
                   .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-          .col-sm-6.col-lg-4.col-xl-2.mb-4.mb-sm-0
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card.text-white.bg-danger
               .card-body
-                .text-body-secondary-inverse.text-end.mb-4
+                .text-body-secondary-inverse.text-end
                   svg.icon.icon-xxl
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
                     |
                 .fs-4.fw-semibold 5:34:11
-                small.text-body-secondary-inverse.text-uppercase.fw-semibold Avg. Time
+                .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate Avg. Time
                 .progress.progress-white.progress-thin.mt-3
                   .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-          .col-sm-6.col-lg-4.col-xl-2
+          .g-col-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2
             .card.text-white.bg-info
               .card-body
-                .text-body-secondary-inverse.text-end.mb-4
+                .text-body-secondary-inverse.text-end
                   svg.icon.icon-xxl
                     use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech")
                     |
                 .fs-4.fw-semibold 972
-                small.text-body-secondary-inverse.text-uppercase.fw-semibold Comments
+                .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate Comments
                 .progress.progress-white.progress-thin.mt-3
                   .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
           // /.col
-        // /.row
+        // /.grid
