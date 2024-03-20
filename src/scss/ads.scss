@@ -1,0 +1,73 @@
+// stylelint-disable declaration-no-important, selector-max-id
+
+@import "@coreui/coreui/scss/functions";
+@import "@coreui/coreui/scss/variables";
+@import "@coreui/coreui/scss/mixins";
+
+//
+// Carbon ads
+//
+
+#carbonads {
+  position: static;
+  display: block;
+  width: 100%;
+  padding: .75rem;
+  overflow: hidden;
+  @include font-size(.8125rem);
+  line-height: 1.4;
+  text-align: left;
+  background-color: var(--#{$prefix}white);
+  border: var(--#{$prefix}border-width) solid var(--#{$prefix}border-color);
+  @include border-radius(var(--#{$prefix}border-radius));
+
+  a {
+    color: var(--#{$prefix}body-color);
+    text-decoration: none;
+  }
+}
+
+.carbon-img {
+  float: left;
+  margin-right: .75rem;
+}
+
+.carbon-poweredby {
+  display: block;
+  margin-top: .75rem;
+  color: var(--#{$prefix}body-color) !important;
+}
+
+//
+// CoreUI PRO banner
+//
+
+.banner-coreui-pro {
+  display: block;
+  min-height: 126px;
+  padding: .7rem 1rem;
+  color: var(--#{$prefix}body-color);
+  text-decoration: none;
+  background-image: url("../assets/img/background-pro-yellow.jpg");
+  background-position: 50%;
+  background-clip: border-box;
+  background-size: cover;
+  border: var(--#{$prefix}border-width) solid var(--#{$prefix}border-color-translucent);
+  @include border-radius(var(--#{$prefix}border-radius));
+}
+
+.banner-coreui-pro-logo {
+  float: left;
+  margin-right: 1rem;
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    #carbonads {
+      background-color: var(--#{$prefix}tertiary-bg);
+    }
+    .banner-coreui-pro {
+      background-image: url("../assets/img/background-pro.jpg");
+    }
+  }
+}
