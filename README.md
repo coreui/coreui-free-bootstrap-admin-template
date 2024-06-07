@@ -45,6 +45,7 @@ CoreUI is built on top of Bootstrap 5 and supports popular frameworks.
 
 * 💪  [CoreUI PRO Angular Admin Template](https://coreui.io/product/angular-dashboard-template/)
 * 💪  [CoreUI PRO Bootstrap Admin Template](https://coreui.io/product/bootstrap-dashboard-template/)
+* 💪  [CoreUI PRO Next.js Admin Template](https://coreui.io/product/next-js-dashboard-template/)
 * 💪  [CoreUI PRO React Admin Template](https://coreui.io/product/react-dashboard-template/)
 * 💪  [CoreUI PRO Vue Admin Template](https://coreui.io/product/vue-dashboard-template/)
 
@@ -55,9 +56,9 @@ CoreUI is built on top of Bootstrap 5 and supports popular frameworks.
 | --- | --- |
 | [![CoreUI PRO Bootstrap Admin Template](https://coreui.io/images/templates/coreui_pro_default_light_dark.webp)](https://coreui.io/product/bootstrap-dashboard-template/?theme=default) | [![CoreUI PRO Bootstrap Admin Template](https://coreui.io/images/templates/coreui_pro_light_light_dark.webp)](https://coreui.io/product/bootstrap-dashboard-template/?theme=light)|
 
-| Default Theme v3 | Light Theme v3 |
+| Modern Theme | Bright Theme |
 | --- | --- |
-| [![CoreUI PRO Bootstrap Admin Template](https://coreui.io/images/templates/coreui_pro_default_v3_light_dark.webp)](https://coreui.io/product/bootstrap-dashboard-template/?theme=default-v3) | [![CoreUI PRO Bootstrap Admin Template](https://coreui.io/images/templates/coreui_pro_light_v3_light_dark.webp)](https://coreui.io/product/bootstrap-dashboard-template/?theme=light)|
+| [![CoreUI PRO Bootstrap Admin Template](https://coreui.io/images/templates/coreui_pro_default_v3_light_dark.webp)](https://coreui.io/product/bootstrap-dashboard-template/?theme=modern) | [![CoreUI PRO Bootstrap Admin Template](https://coreui.io/images/templates/coreui_pro_light_v3_light_dark.webp)](https://coreui.io/product/bootstrap-dashboard-template/?theme=bright)|
 
 ## CoreUI Icons (522 Free icons) - Premium designed free icon set with marks in SVG, Webfont and raster formats.
 
