@@ -3,7 +3,7 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import globby from 'globby'
+import { globby } from 'globby'
 import pug from 'pug'
 import { mkdirp } from 'mkdirp'
 

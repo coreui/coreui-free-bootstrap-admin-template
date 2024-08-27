@@ -9,7 +9,7 @@
 
 import fs from 'node:fs/promises'
 import path from 'node:path'
-import globby from 'globby'
+import { globby } from 'globby'
 
 const VERBOSE = process.argv.includes('--verbose')
 const DRY_RUN = process.argv.includes('--dry') || process.argv.includes('--dry-run')
