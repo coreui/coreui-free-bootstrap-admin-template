@@ -54,7 +54,7 @@
     "build-vendors": "node build/vendors.mjs",
     "clean": "rimraf dist",
     "css": "npm-run-all --parallel css-compile* --sequential css-prefix css-minify*",
-    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules/ src/scss/:dist/css/",
+    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --quiet-deps --load-path=node_modules/ src/scss/:dist/css/",
     "css-lint": "npm-run-all --continue-on-error --parallel css-lint-*",
     "css-lint-stylelint": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache --rd",
     "css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*rtl*.css\"",
