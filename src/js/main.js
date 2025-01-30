@@ -30,8 +30,7 @@ document.documentElement.addEventListener('ColorSchemeChange', () => {
 })
 
 const random = (min, max) =>
-  // eslint-disable-next-line no-mixed-operators
-  Math.floor(Math.random() * (max - min + 1) + min)
+  Math.floor((Math.random() * (max - min + 1)) + min)
 
 const cardChart1 = new Chart(document.getElementById('card-chart1'), {
   type: 'line',

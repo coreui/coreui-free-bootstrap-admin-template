@@ -237,8 +237,7 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
 })
 
 // Random Numbers
-// eslint-disable-next-line no-mixed-operators
-const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
+const random = (min, max) => Math.floor((Math.random() * (max - min + 1)) + min)
 
 // eslint-disable-next-line no-unused-vars
 const sparklineChart1 = new Chart(document.getElementById('sparkline-chart-1'), {
