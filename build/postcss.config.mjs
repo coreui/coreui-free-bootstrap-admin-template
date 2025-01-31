@@ -1,16 +1,18 @@
-export default context => ({
-  map: context.file.dirname.includes('examples') ?
-    false :
-    {
-      inline: false,
-      annotation: true,
-      sourcesContent: true
-    },
-  plugins: {
-    'postcss-drop-empty-css-vars': {},
-    autoprefixer: {
-      cascade: false
-    },
-    'postcss-combine-duplicated-selectors': {}
+const mapConfig = {
+  inline: false,
+  annotation: true,
+  sourcesContent: true
+}
+
+export default () => {
+  return {
+    map: mapConfig,
+    plugins: {
+      autoprefixer: {
+        cascade: false
+      },
+      'postcss-combine-duplicated-selectors': {},
+      'postcss-drop-empty-css-vars': {},
+    }
   }
-})
+}
