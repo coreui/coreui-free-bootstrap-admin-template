@@ -12,7 +12,7 @@ export default () => {
         cascade: false
       },
       'postcss-combine-duplicated-selectors': {},
-      'postcss-drop-empty-css-vars': {},
+      'postcss-drop-empty-css-vars': {}
     }
   }
 }
