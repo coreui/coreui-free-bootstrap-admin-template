@@ -1,4 +1,4 @@
-/* stylelint-disable declaration-no-important, scss/selector-no-redundant-nesting-selector */
+/* stylelint-disable scss/selector-no-redundant-nesting-selector */
 @use "@coreui/coreui/scss/variables" as * with (
   $enable-deprecation-messages: false
 );
@@ -109,6 +109,6 @@
 
 @include color-mode(dark) {
   .example .tab-content {
-    background-color: var(--#{$prefix}secondary-bg) !important;
+    background-color: var(--#{$prefix}secondary-bg);
   }
 }
