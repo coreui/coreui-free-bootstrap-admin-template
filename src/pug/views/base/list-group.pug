@@ -1,7 +1,7 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/components/list-group/')
+  link(rel='canonical' href='https://coreui.io/bootstrap/docs/components/list-group/')
 
 block breadcrumb
   +breadcrumb(
@@ -14,7 +14,7 @@ block breadcrumb
   )
 
 block view
-  +docs-components('https://coreui.io/docs/components/list-group/')
+  +docs-components('https://coreui.io/bootstrap/docs/components/list-group/')
   .row
     .col-12
       .card.mb-4
@@ -23,7 +23,7 @@ block view
           span.small.ms-1 Basic example
         .card-body
           p.text-body-secondary.small The default list group is an unordered list with items and the proper CSS classes. Build upon it with the options that follow, or with your CSS as required.
-          +example('https://coreui.io/docs/components/list-group/#basic-example')
+          +example('https://coreui.io/bootstrap/docs/components/list-group/#basic-example')
             ul.list-group
               li.list-group-item Cras justo odio
               li.list-group-item Dapibus ac facilisis in
@@ -42,7 +42,7 @@ block view
             |  to a 
             code .list-group-item
             |  to show the current active selection.
-          +example('https://coreui.io/docs/components/list-group/#active-items')
+          +example('https://coreui.io/bootstrap/docs/components/list-group/#active-items')
             ul.list-group
               li.list-group-item.active Cras justo odio
               li.list-group-item Dapibus ac facilisis in
@@ -63,7 +63,7 @@ block view
             |  to make it appear disabled. Remark that some of the elements with 
             code .disabled
             |  will also require custom JavaScript to disable their click events (e.g., links).
-          +example('https://coreui.io/docs/components/list-group/#disabled-items')
+          +example('https://coreui.io/bootstrap/docs/components/list-group/#disabled-items')
             ul.list-group
               li.list-group-item.disabled(aria-disabled='true') A disabled item
               li.list-group-item A second item
@@ -102,7 +102,7 @@ block view
                 code .btn
                 |  classes here
               | .
-            +example('https://coreui.io/docs/components/list-group/#links-and-buttons')
+            +example('https://coreui.io/bootstrap/docs/components/list-group/#links-and-buttons')
               .list-group
                 a.list-group-item.list-group-item-action.active(href='#' aria-current='true') The current link item
                 a.list-group-item.list-group-item-action(href='#') A second link item
@@ -128,7 +128,7 @@ block view
               code
                 = '<a>'
               | s don’t support the disabled attribute.
-            +example('https://coreui.io/docs/components/list-group/#links-and-buttons')
+            +example('https://coreui.io/bootstrap/docs/components/list-group/#links-and-buttons')
               .list-group
                 button.list-group-item.list-group-item-action.active(type='button' aria-current='true').
                   The current button
@@ -146,7 +146,7 @@ block view
             | Add 
             code .list-group-flush
             |  to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).
-          +example('https://coreui.io/docs/components/list-group/#flush')
+          +example('https://coreui.io/bootstrap/docs/components/list-group/#flush')
             ul.list-group.list-group-flush
               li.list-group-item An item
               li.list-group-item A second item
@@ -174,7 +174,7 @@ block view
             code .flex-fill
             |  to each list group item.
           .list-group
-            +example('https://coreui.io/docs/components/list-group/#horizontal')
+            +example('https://coreui.io/bootstrap/docs/components/list-group/#horizontal')
               ul.list-group.list-group-horizontal.mb-1
                 li.list-group-item An item
                 li.list-group-item A second item
@@ -206,7 +206,7 @@ block view
           span.small.ms-1 contextual classes
         .card-body
           p.text-body-secondary.small Use contextual classes to style list items with a stateful background and color.
-          +example('https://coreui.io/docs/components/list-group/#contextual-classes')
+          +example('https://coreui.io/bootstrap/docs/components/list-group/#contextual-classes')
             ul.list-group
               li.list-group-item Dapibus ac facilisis in
               li.list-group-item.list-group-item-primary This is a primary list group item
@@ -231,7 +231,7 @@ block view
             | . Note the addition of the hover styles here not present in the previous example. Also supported is the 
             code .active
             |  state; apply it to indicate an active selection on a contextual list group item.
-          +example('https://coreui.io/docs/components/list-group/#contextual-classes')
+          +example('https://coreui.io/bootstrap/docs/components/list-group/#contextual-classes')
             .list-group
               a.list-group-item.list-group-item-action(href='#') Dapibus ac facilisis in
               a.list-group-item.list-group-item-action.list-group-item-primary(href='#')
@@ -266,9 +266,9 @@ block view
         .card-body
           p.text-body-secondary.small
             | Add badges to any list group item to show unread counts, activity, and more with the help of some
-            a(href='https://coreui.io/docs/utilities/flex/') utilities
+            a(href='https://coreui.io/bootstrap/docs/utilities/flex/') utilities
             | .
-          +example('https://coreui.io/docs/components/list-group/#with-badges')
+          +example('https://coreui.io/bootstrap/docs/components/list-group/#with-badges')
             ul.list-group
               li.list-group-item.d-flex.justify-content-between.align-items-center
                 | A list item
@@ -287,9 +287,9 @@ block view
         .card-body
           p.text-body-secondary.small
             | Add nearly any HTML within, even for linked list groups like the one below, with the help of
-            a(href='https://coreui.io/docs/utilities/flex/') flexbox utilities
+            a(href='https://coreui.io/bootstrap/docs/utilities/flex/') flexbox utilities
             | .
-          +example('https://coreui.io/docs/components/list-group/#custom-content')
+          +example('https://coreui.io/bootstrap/docs/components/list-group/#custom-content')
             .list-group
               a.list-group-item.list-group-item-action.flex-column.align-items-start.active(href='#')
                 .d-flex.w-100.justify-content-between
@@ -323,7 +323,7 @@ block view
             | Use the tab JavaScript plugin—include it individually or through the compiled 
             code coreui.js
             |  file—to extend our list group to create tabbable panes of local content.
-          +example('https://coreui.io/docs/components/list-group/#javascript-behavior')
+          +example('https://coreui.io/bootstrap/docs/components/list-group/#javascript-behavior')
             .row
               .col-4
                 #list-tab.list-group(role='tablist')

@@ -1,7 +1,7 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/components/button-group/')
+  link(rel='canonical' href='https://coreui.io/bootstrap/docs/components/button-group/')
 
 block breadcrumb
   +breadcrumb(
@@ -14,7 +14,7 @@ block breadcrumb
   )
 
 block view
-  +docs-components('https://coreui.io/docs/components/button-group/')
+  +docs-components('https://coreui.io/bootstrap/docs/components/button-group/')
   .row
     .col-12
       .card.mb-4
@@ -28,20 +28,20 @@ block view
             |  in 
             code .btn-group
             | . Add on optional JavaScript radio and checkbox style behavior with 
-            a(href='https://coreui.io/docs/components/buttons/#button-plugin') our buttons plugin
+            a(href='https://coreui.io/bootstrap/docs/components/buttons/#button-plugin') our buttons plugin
             | .
-          +example('https://coreui.io/docs/components/button-group/#basic-example')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#basic-example')
             .btn-group(role='group' aria-label='Basic example')
               button.btn.btn-primary(type='button') Left
               button.btn.btn-primary(type='button') Middle
               button.btn.btn-primary(type='button') Right
           p.text-body-secondary.small
             | These classes can also be added to groups of links, as an alternative to the 
-            a(href='https://coreui.io/docs/components/navs-tabs/')
+            a(href='https://coreui.io/bootstrap/docs/components/navs-tabs/')
               code .nav
               |  navigation components
             | .
-          +example('https://coreui.io/docs/components/button-group/#basic-example')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#basic-example')
             .btn-group
               a.btn.btn-primary.active(href='#' aria-current='page') Active link
               a.btn.btn-primary(href='#') Link
@@ -52,7 +52,7 @@ block view
           strong Button group
           span.small.ms-1 Mixed styles
         .card-body
-          +example('https://coreui.io/docs/components/button-group/#mixed-styles')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#mixed-styles')
             .btn-group(role='group' aria-label='Basic mixed styles example')
               button.btn.btn-danger(type='button') Left
               button.btn.btn-warning(type='button') Middle
@@ -62,7 +62,7 @@ block view
         .card-header
           | Outlined styles
         .card-body
-          +example('https://coreui.io/docs/components/button-group/#outlined-styles')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#outlined-styles')
             .btn-group(role='group' aria-label='Basic outlined example')
               button.btn.btn-outline-primary(type='button') Left
               button.btn.btn-outline-primary(type='button') Middle
@@ -75,9 +75,9 @@ block view
         .card-body
           p.text-body-secondary.small
             | Combine button-like checkbox and radio 
-            a(href='https://coreui.io/docs/forms/checks-radios/') toggle buttons
+            a(href='https://coreui.io/bootstrap/docs/forms/checks-radios/') toggle buttons
             |  into a seamless looking button group.
-          +example('https://coreui.io/docs/components/button-group/#checkbox-and-radio-button-groups')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#checkbox-and-radio-button-groups')
             .btn-group(role='group' aria-label='Basic checkbox toggle button group')
               input#btncheck1.btn-check(type='checkbox' autocomplete='off')
               label.btn.btn-outline-primary(for='btncheck1') Checkbox 1
@@ -85,7 +85,7 @@ block view
               label.btn.btn-outline-primary(for='btncheck2') Checkbox 2
               input#btncheck3.btn-check(type='checkbox' autocomplete='off')
               label.btn.btn-outline-primary(for='btncheck3') Checkbox 3
-          +example('https://coreui.io/docs/components/button-group/#checkbox-and-radio-button-groups')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#checkbox-and-radio-button-groups')
             .btn-group(role='group' aria-label='Basic radio toggle button group')
               input#btnradio1.btn-check(type='radio' name='btnradio' autocomplete='off' checked='')
               label.btn.btn-outline-primary(for='btnradio1') Radio 1
@@ -101,7 +101,7 @@ block view
         .card-body
           p.text-body-secondary.small
             | Join sets of button groups into button toolbars for more complicated components. Use utility classes as needed to space out groups, buttons, and more.
-          +example('https://coreui.io/docs/components/button-group/#button-toolbar')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#button-toolbar')
             .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
               .btn-group.me-2(role='group' aria-label='First group')
                 button.btn.btn-primary(type='button') 1
@@ -116,7 +116,7 @@ block view
                 button.btn.btn-info(type='button') 8
           p.text-body-secondary.small
             | Feel free to combine input groups with button groups in your toolbars. Similar to the example above, you’ll likely need some utilities through to space items correctly.
-          +example('https://coreui.io/docs/components/button-group/#button-toolbar')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#button-toolbar')
             .btn-toolbar.mb-3(role='toolbar' aria-label='Toolbar with button groups')
               .btn-group.me-2(role='group' aria-label='First group')
                 button.btn.btn-outline-secondary(type='button') 1
@@ -147,7 +147,7 @@ block view
             |  to all 
             code .btn-group
             | , including each one when nesting multiple groups.
-          +example('https://coreui.io/docs/components/button-group/#sizing')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#sizing')
             .btn-group.btn-group-lg(role='group' aria-label='Large button group')
               button.btn.btn-outline-dark(type='button') Left
               button.btn.btn-outline-dark(type='button') Middle
@@ -175,7 +175,7 @@ block view
             |  inside another 
             code .btn-group
             |  when you need dropdown menus combined with a series of buttons.
-          +example('https://coreui.io/docs/components/button-group/#nesting')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#nesting')
             .btn-group(role='group' aria-label='Button group with nested dropdown')
               button.btn.btn-primary(type='button') 1
               button.btn.btn-primary(type='button') 2
@@ -196,7 +196,7 @@ block view
           p.text-body-secondary.small
             | Create a set of buttons that appear vertically stacked rather than horizontally. 
             strong Split button dropdowns are not supported here.
-          +example('https://coreui.io/docs/components/button-group/#vertical-variation')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#vertical-variation')
             .btn-group-vertical(role='group' aria-label='Vertical button group')
               button.btn.btn-dark(type='button') Button
               button.btn.btn-dark(type='button') Button
@@ -204,7 +204,7 @@ block view
               button.btn.btn-dark(type='button') Button
               button.btn.btn-dark(type='button') Button
               button.btn.btn-dark(type='button') Button
-          +example('https://coreui.io/docs/components/button-group/#vertical-variation')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#vertical-variation')
             .btn-group-vertical(role='group' aria-label='Vertical button group')
               button.btn.btn-primary(type='button') Button
               button.btn.btn-primary(type='button') Button
@@ -242,7 +242,7 @@ block view
                     a.dropdown-item(href='#') Dropdown link
                   li
                     a.dropdown-item(href='#') Dropdown link
-          +example('https://coreui.io/docs/components/button-group/#vertical-variation')
+          +example('https://coreui.io/bootstrap/docs/components/button-group/#vertical-variation')
             .btn-group-vertical(role='group' aria-label='Vertical radio toggle button group')
               input#vbtn-radio1.btn-check(type='radio' name='vbtn-radio' autocomplete='off' checked='')
               label.btn.btn-outline-danger(for='vbtn-radio1') Radio 1

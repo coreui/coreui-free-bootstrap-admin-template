@@ -1,7 +1,7 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/forms/floating-labels/')
+  link(rel='canonical' href='https://coreui.io/bootstrap/docs/forms/floating-labels/')
 
 block breadcrumb
   +breadcrumb(
@@ -14,7 +14,7 @@ block breadcrumb
   )
 
 block view
-  +docs-components('https://coreui.io/docs/forms/floating-labels/')
+  +docs-components('https://coreui.io/bootstrap/docs/forms/floating-labels/')
   .row
     .col-12
       .card.mb-4
@@ -44,7 +44,7 @@ block view
             |  must come first so we can utilize a sibling selector (e.g., 
             code ~
             | ).
-          +example('https://coreui.io/docs/forms/floating-labels/#example')
+          +example('https://coreui.io/bootstrap/docs/forms/floating-labels/#example')
             .form-floating.mb-3
               input.form-control#floatingInput(type='email' placeholder='name@example.com')
               label(for='floatingInput') Email address
@@ -58,12 +58,12 @@ block view
             code
               = '<label>'
             | s will automatically adjust to their floated position.
-          +example('https://coreui.io/docs/forms/floating-labels/#example')
+          +example('https://coreui.io/bootstrap/docs/forms/floating-labels/#example')
             form.form-floating
               input.form-control#floatingInputValue(type='email' placeholder='name@example.com' value='test@example.com')
               label(for='floatingInputValue') Input with value
           p.text-body-secondary.small Form validation styles also work as expected.
-          +example('https://coreui.io/docs/forms/floating-labels/#example')
+          +example('https://coreui.io/bootstrap/docs/forms/floating-labels/#example')
             form.form-floating
               input.form-control.is-invalid#floatingInputInvalid(type='email' placeholder='name@example.com' value='test@example.com')
               label(for='floatingInputInvalid') Invalid input
@@ -83,7 +83,7 @@ block view
             code
               = '<input>'
             | s.
-          +example('https://coreui.io/docs/forms/floating-labels/#textareas')
+          +example('https://coreui.io/bootstrap/docs/forms/floating-labels/#textareas')
             .form-floating
               textarea.form-control#floatingTextarea(placeholder='Leave a comment here')
               label(for='floatingTextarea') Comments
@@ -96,7 +96,7 @@ block view
             |  attribute. Instead, set an explicit 
             code height
             |  (either inline or via custom CSS).
-          +example('https://coreui.io/docs/forms/floating-labels/#textareas')
+          +example('https://coreui.io/bootstrap/docs/forms/floating-labels/#textareas')
             .form-floating
               textarea.form-control#floatingTextarea2(placeholder='Leave a comment here' style='height: 100px')
               label(for='floatingTextarea2') Comments
@@ -124,7 +124,7 @@ block view
               |  and 
               code multiple
               |  are not supported.
-          +example('https://coreui.io/docs/forms/floating-labels/#selects')
+          +example('https://coreui.io/bootstrap/docs/forms/floating-labels/#selects')
             .form-floating
               select.form-select#floatingSelect(aria-label='Floating label select example')
                 option(selected) Open this select menu
@@ -139,7 +139,7 @@ block view
           span.small.ms-1 Layout
         .card-body
           p.text-body-secondary.small When working with the CoreUI for Bootstrap grid system, be sure to place form elements within column classes.
-          +example('https://coreui.io/docs/forms/floating-labels/#layout')
+          +example('https://coreui.io/bootstrap/docs/forms/floating-labels/#layout')
             .row.g-2
               .col-md
                 .form-floating

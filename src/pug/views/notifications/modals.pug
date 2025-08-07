@@ -6,7 +6,7 @@ block scripts
   script(src='js/tooltips.js')
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/components/modal/')
+  link(rel='canonical' href='https://coreui.io/bootstrap/docs/components/modal/')
 
 block breadcrumb
   +breadcrumb(
@@ -19,7 +19,7 @@ block breadcrumb
   )
 
 block view
-  +docs-components('https://coreui.io/docs/components/modal/')
+  +docs-components('https://coreui.io/bootstrap/docs/components/modal/')
   .row
     .col-12
       .card.mb-4
@@ -36,7 +36,7 @@ block view
             |  have been overridden). Included are the modal header, modal body (required for 
             code padding
             | ), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
-          +example('https://coreui.io/docs/components/modal/#modal-components')
+          +example('https://coreui.io/bootstrap/docs/components/modal/#modal-components')
             .docs-example-modal
               .modal(tabindex='-1')
                 .modal-dialog
@@ -57,7 +57,7 @@ block view
         .card-body
           p.text-body-secondary.small
             | Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.
-          +example('https://coreui.io/docs/components/modal/#live-demo')
+          +example('https://coreui.io/bootstrap/docs/components/modal/#live-demo')
             #exampleModalLive.modal.fade(tabindex='-1' aria-labelledby='exampleModalLiveLabel' aria-hidden='true')
               .modal-dialog
                 .modal-content
@@ -79,7 +79,7 @@ block view
         .card-body
           p.text-body-secondary.small
             | When backdrop is set to static, the modal will not close when clicking outside it. Click the button below to try it.
-          +example('https://coreui.io/docs/components/modal/#static-backdrop')
+          +example('https://coreui.io/bootstrap/docs/components/modal/#static-backdrop')
             #staticBackdropLive.modal.fade(data-coreui-backdrop='static' data-coreui-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLiveLabel' aria-hidden='true')
               .modal-dialog
                 .modal-content
@@ -101,7 +101,7 @@ block view
         .card-body
           p.text-body-secondary.small
             | When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.
-          +example('https://coreui.io/docs/components/modal/#scrolling-long-content')
+          +example('https://coreui.io/bootstrap/docs/components/modal/#scrolling-long-content')
             #exampleModalLong.modal.fade(tabindex='-1' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
               .modal-dialog
                 .modal-content
@@ -136,7 +136,7 @@ block view
             |  to 
             code .modal-dialog
             | .
-          +example('https://coreui.io/docs/components/modal/#scrolling-long-content')
+          +example('https://coreui.io/bootstrap/docs/components/modal/#scrolling-long-content')
             #exampleModalScrollable.modal.fade(tabindex='-1' aria-labelledby='exampleModalScrollableTitle' aria-hidden='true')
               .modal-dialog.modal-dialog-scrollable
                 .modal-content
@@ -177,7 +177,7 @@ block view
             |  to  
             code .modal-dialog
             |  to vertically center the modal.
-          +example('https://coreui.io/docs/components/modal/#vertically-centered')
+          +example('https://coreui.io/bootstrap/docs/components/modal/#vertically-centered')
             #exampleModalCenter.modal.fade(tabindex='-1' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
               .modal-dialog.modal-dialog-centered
                 .modal-content
@@ -217,11 +217,11 @@ block view
           span.small.ms-1 Tooltips and popovers
         .card-body
           p.text-body-secondary.small
-            a(href='https://coreui.io/docs/components/tooltips/') Tooltips
+            a(href='https://coreui.io/bootstrap/docs/components/tooltips/') Tooltips
             |  and
-            a(href='https://coreui.io/docs/components/popovers/') popovers
+            a(href='https://coreui.io/bootstrap/docs/components/popovers/') popovers
             |  can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.
-          +example('https://coreui.io/docs/components/modal/#tooltips-and-popovers')
+          +example('https://coreui.io/bootstrap/docs/components/modal/#tooltips-and-popovers')
             #exampleModalPopovers.modal.fade(tabindex='-1' aria-labelledby='exampleModalPopoversLabel' aria-hidden='true')
               .modal-dialog
                 .modal-content
@@ -258,7 +258,7 @@ block view
             |  within the 
             code .modal-body
             | . Then, use the normal grid system classes as you would anywhere else.
-          +example('https://coreui.io/docs/components/modal/#using-the-grid')
+          +example('https://coreui.io/bootstrap/docs/components/modal/#using-the-grid')
             #gridSystemModal.modal.fade(tabindex='-1' aria-labelledby='gridModalLabel' aria-hidden='true')
               .modal-dialog
                 .modal-content
@@ -309,7 +309,7 @@ block view
             |  for details on 
             code relatedTarget
             | .
-          +example('https://coreui.io/docs/components/modal/#varying-modal-content')
+          +example('https://coreui.io/bootstrap/docs/components/modal/#varying-modal-content')
             button.btn.btn-primary(type='button' data-coreui-toggle='modal' data-coreui-target='#exampleModal' data-coreui-whatever='@mdo') Open modal for @mdo
             button.btn.btn-primary(type='button' data-coreui-toggle='modal' data-coreui-target='#exampleModal' data-coreui-whatever='@fat') Open modal for @fat
             button.btn.btn-primary(type='button' data-coreui-toggle='modal' data-coreui-target='#exampleModal' data-coreui-whatever='@getbootstrap') Open modal for @getbootstrap
@@ -371,7 +371,7 @@ block view
                 td
                   code 1140px
           p.text-body-secondary.small Our default modal without modifier class constitutes the “medium” size modal.
-          +example('https://coreui.io/docs/components/modal/#optional-sizes')
+          +example('https://coreui.io/bootstrap/docs/components/modal/#optional-sizes')
             button.btn.btn-primary(type='button' data-coreui-toggle='modal' data-coreui-target='#exampleModalXl') Extra large modal
             button.btn.btn-primary(type='button' data-coreui-toggle='modal' data-coreui-target='#exampleModalLg') Large modal
             button.btn.btn-primary(type='button' data-coreui-toggle='modal' data-coreui-target='#exampleModalSm') Small modal
@@ -449,7 +449,7 @@ block view
                 td
                   | Below 
                   code 1400px
-          +example('https://coreui.io/docs/components/modal/#fullscreen-modal')
+          +example('https://coreui.io/bootstrap/docs/components/modal/#fullscreen-modal')
             button.btn.btn-primary(type='button' data-coreui-toggle='modal' data-coreui-target='#exampleModalFullscreen') Full screen
             button.btn.btn-primary(type='button' data-coreui-toggle='modal' data-coreui-target='#exampleModalFullscreenSm') Full screen below sm
             button.btn.btn-primary(type='button' data-coreui-toggle='modal' data-coreui-target='#exampleModalFullscreenMd') Full screen below md

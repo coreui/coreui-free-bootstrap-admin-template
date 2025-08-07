@@ -1,7 +1,7 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/forms/validation/')
+  link(rel='canonical' href='https://coreui.io/bootstrap/docs/forms/validation/')
 
 block breadcrumb
   +breadcrumb(
@@ -32,7 +32,7 @@ block js
   |  })()
 
 block view
-  +docs-components('https://coreui.io/docs/forms/validation/')
+  +docs-components('https://coreui.io/bootstrap/docs/forms/validation/')
   .row
     .col-12
       .card.mb-4
@@ -60,7 +60,7 @@ block view
             | , and not 
             code .form-control
             | .
-          +example('https://coreui.io/docs/forms/validation/#custom-styles')
+          +example('https://coreui.io/bootstrap/docs/forms/validation/#custom-styles')
             form.row.g-3.needs-validation(novalidate)
               .col-md-4
                 label.form-label(for='validationCustom01') First name
@@ -113,7 +113,7 @@ block view
         .card-body
           p.text-body-secondary.small Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.
           p.text-body-secondary.small While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
-          +example('https://coreui.io/docs/forms/validation/#browser-defaults')
+          +example('https://coreui.io/bootstrap/docs/forms/validation/#browser-defaults')
             form.row.g-3
               .col-md-4
                 label.form-label(for='validationDefault01') First name
@@ -170,7 +170,7 @@ block view
             | , input groups require an additional 
             code .has-validation
             |  class.
-          +example('https://coreui.io/docs/forms/validation/#server-side')
+          +example('https://coreui.io/bootstrap/docs/forms/validation/#server-side')
             form.row.g-3
               .col-md-4
                 label.form-label(for='validationServer01') First name
@@ -245,7 +245,7 @@ block view
               |
               code .form-check
               | s
-          +example('https://coreui.io/docs/forms/validation/#supported-elements')
+          +example('https://coreui.io/bootstrap/docs/forms/validation/#supported-elements')
             form.was-validated
               .mb-3
                 label.form-label(for='validationTextarea') Textarea
@@ -290,7 +290,7 @@ block view
             |  classes to display validation feedback in a styled tooltip. Be sure to have a parent with 
             code position: relative
             |  on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.
-          +example('https://coreui.io/docs/forms/validation/#tooltips')
+          +example('https://coreui.io/bootstrap/docs/forms/validation/#tooltips')
             form.row.g-3.needs-validation(novalidate)
               .col-md-4.position-relative
                 label.form-label(for='validationTooltip01') First name

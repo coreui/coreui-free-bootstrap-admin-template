@@ -1,7 +1,7 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/components/navs-tabs/')
+  link(rel='canonical' href='https://coreui.io/bootstrap/docs/components/navs-tabs/')
 
 block breadcrumb
   +breadcrumb(
@@ -14,7 +14,7 @@ block breadcrumb
   )
 
 block view
-  +docs-components('https://coreui.io/docs/components/navs-tabs/')
+  +docs-components('https://coreui.io/bootstrap/docs/components/navs-tabs/')
   .row
     .col-12
       .card.mb-4
@@ -30,7 +30,7 @@ block view
             | The base 
             code .nav
             |  component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.
-          +example('https://coreui.io/docs/components/navs-tabs/#base-nav')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#base-nav')
             ul.nav
               li.nav-item
                 a.nav-link.active(aria-current='page' href='#') Active
@@ -55,7 +55,7 @@ block view
             |  uses 
             code display: flex
             | , the nav links behave the same as nav items would, but without the extra markup.
-          +example('https://coreui.io/docs/components/navs-tabs/#base-nav')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#base-nav')
             nav.nav
               a.nav-link.active(aria-current='page' href='#') Active
               a.nav-link(href='#') Link
@@ -69,13 +69,13 @@ block view
         .card-body
           p.text-body-secondary.small
             | Change the horizontal alignment of your nav with 
-            a(href='https://coreui.io/docs/layout/grid/#horizontal-alignment') flexbox utilities
+            a(href='https://coreui.io/bootstrap/docs/layout/grid/#horizontal-alignment') flexbox utilities
             | . By default, navs are left-aligned, but you can easily change them to center or right aligned.
           p.text-body-secondary.small
             | Centered with 
             code .justify-content-center
             | :
-          +example('https://coreui.io/docs/components/navs-tabs/#horizontal-alignment')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#horizontal-alignment')
             ul.nav.justify-content-center
               li.nav-item
                 a.nav-link.active(aria-current='page' href='#') Active
@@ -89,7 +89,7 @@ block view
             | Right-aligned with 
             code .justify-content-end
             | :
-          +example('https://coreui.io/docs/components/navs-tabs/#horizontal-alignment')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#horizontal-alignment')
             ul.nav.justify-content-end
               li.nav-item
                 a.nav-link.active(aria-current='page' href='#') Active
@@ -111,7 +111,7 @@ block view
             |  utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., 
             code .flex-sm-column
             | ).
-          +example('https://coreui.io/docs/components/navs-tabs/#vertical')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#vertical')
             ul.nav.flex-column
               li.nav-item
                 a.nav-link.active(aria-current='page' href='#') Active
@@ -126,7 +126,7 @@ block view
             code 
               = '<ul>'
             | s, too.
-          +example('https://coreui.io/docs/components/navs-tabs/#vertical')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#vertical')
             nav.nav.flex-column
               a.nav-link.active(aria-current='page' href='#') Active
               a.nav-link(href='#') Link
@@ -144,7 +144,7 @@ block view
             |  class to generate a tabbed interface. Use them to create tabbable regions with our 
             a(href='#javascript-behavior') tab JavaScript plugin
             | .
-          +example('https://coreui.io/docs/components/navs-tabs/#tabs')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#tabs')
             ul.nav.nav-tabs
               li.nav-item
                 a.nav-link.active(aria-current='page' href='#') Active
@@ -164,7 +164,7 @@ block view
             | Take that same HTML, but use 
             code .nav-pills
             |  instead:
-          +example('https://coreui.io/docs/components/navs-tabs/#pills')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#pills')
             ul.nav.nav-pills
               li.nav-item
                 a.nav-link.active(aria-current='page' href='#') Active
@@ -188,7 +188,7 @@ block view
             | s, use 
             code .nav-fill
             | . Notice that all horizontal space is occupied, but not every nav item has the same width.
-          +example('https://coreui.io/docs/components/navs-tabs/#fill-and-justify')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#fill-and-justify')
             ul.nav.nav-pills.nav-fill
               li.nav-item
                 a.nav-link.active(aria-current='page' href='#') Active
@@ -210,7 +210,7 @@ block view
             code 
               = '<a>'
             |  elements.
-          +example('https://coreui.io/docs/components/navs-tabs/#fill-and-justify')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#fill-and-justify')
             nav.nav.nav-pills.nav-fill
               a.nav-link.active(aria-current='page' href='#') Active
               a.nav-link(href='#') Much longer nav link
@@ -222,7 +222,7 @@ block view
             | . All horizontal space will be occupied by nav links, but unlike the 
             code .nav-fill
             |  above, every nav item will be the same width.
-          +example('https://coreui.io/docs/components/navs-tabs/#fill-and-justify')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#fill-and-justify')
             ul.nav.nav-pills.nav-justified
               li.nav-item
                 a.nav-link.active(aria-current='page' href='#') Active
@@ -239,7 +239,7 @@ block view
             code 
               = '<nav>'
             | -based navigation.
-          +example('https://coreui.io/docs/components/navs-tabs/#fill-and-justify')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#fill-and-justify')
             nav.nav.nav-pills.nav-justified
               a.nav-link.active(aria-current='page' href='#') Active
               a.nav-link(href='#') Much longer nav link
@@ -253,9 +253,9 @@ block view
         .card-body
           p.text-body-secondary.small
             | If you need responsive nav variations, consider using a series of 
-            a(href='https://coreui.io/docs/utilities/flex/') flexbox utilities
+            a(href='https://coreui.io/bootstrap/docs/utilities/flex/') flexbox utilities
             | . While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.
-          +example('https://coreui.io/docs/components/navs-tabs/#working-with-flex-utilities')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#working-with-flex-utilities')
             nav.nav.nav-pills.flex-column.flex-sm-row
               a.flex-sm-fill.text-sm-center.nav-link.active(aria-current='page' href='#') Active
               a.flex-sm-fill.text-sm-center.nav-link(href='#') Longer nav link
@@ -268,7 +268,7 @@ block view
           strong Navs
           span.small.ms-1 Tabs with dropdowns
         .card-body
-          +example('https://coreui.io/docs/components/navs-tabs/#tabs-with-dropdowns')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#tabs-with-dropdowns')
             ul.nav.nav-tabs
               li.nav-item
                 a.nav-link.active(aria-current='page' href='#') Active
@@ -296,7 +296,7 @@ block view
           strong Navs
           span.small.ms-1 Pills with dropdowns
         .card-body
-          +example('https://coreui.io/docs/components/navs-tabs/#pills-with-dropdowns')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#pills-with-dropdowns')
             ul.nav.nav-pills
               li.nav-item
                 a.nav-link.active(aria-current='page' href='#') Active
@@ -350,7 +350,7 @@ block view
             | Note that dynamic tabbed interfaces should 
             em not
             |  contain dropdown menus, as this causes both usability and accessibility issues. From a usability perspective, the fact that the currently displayed tab’s trigger element is not immediately visible (as it’s inside the closed dropdown menu) can cause confusion. From an accessibility point of view, there is currently no sensible way to map this sort of construct to a standard WAI ARIA pattern, meaning that it cannot be easily made understandable to users of assistive technologies.
-          +example('https://coreui.io/docs/components/navs-tabs/#javascript-behavior')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#javascript-behavior')
             ul#myTab.nav.nav-tabs.mb-3(role='tablist')
               li.nav-item(role='presentation')
                 button#home-tab.nav-link.active(data-coreui-toggle='tab' data-coreui-target='#home' type='button' role='tab' aria-controls='home' aria-selected='true') Home
@@ -384,7 +384,7 @@ block view
             code 
               = '<nav>'
             |  around it.
-          +example('https://coreui.io/docs/components/navs-tabs/#javascript-behavior')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#javascript-behavior')
             nav
               #nav-tab.nav.nav-tabs.mb-3(role='tablist')
                 button#nav-home-tab.nav-link.active(data-coreui-toggle='tab' data-coreui-target='#nav-home' type='button' role='tab' aria-controls='nav-home' aria-selected='true') Home
@@ -401,7 +401,7 @@ block view
                 p
                   | Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.
           p.text-body-secondary.small The tabs plugin also works with pills.
-          +example('https://coreui.io/docs/components/navs-tabs/#javascript-behavior')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#javascript-behavior')
             ul#pills-tab.nav.nav-pills.mb-3(role='tablist')
               li.nav-item(role='presentation')
                 button#pills-home-tab.nav-link.active(data-coreui-toggle='pill' data-coreui-target='#pills-home' type='button' role='tab' aria-controls='pills-home' aria-selected='true') Home
@@ -420,7 +420,7 @@ block view
                 p
                   | Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.
           p.text-body-secondary.small And with vertical pills.
-          +example('https://coreui.io/docs/components/navs-tabs/#javascript-behavior')
+          +example('https://coreui.io/bootstrap/docs/components/navs-tabs/#javascript-behavior')
             .d-flex.align-items-start
               #v-pills-tab.nav.flex-column.nav-pills.me-3(role='tablist' aria-orientation='vertical')
                 button#v-pills-home-tab.nav-link(data-coreui-toggle='pill' data-coreui-target='#v-pills-home' type='button' role='tab' aria-controls='v-pills-home' aria-selected='false') Home

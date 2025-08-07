@@ -1,7 +1,7 @@
 extends ../../_layout/default.pug
 
 block canonical
-  link(rel='canonical' href='https://coreui.io/docs/forms/range/')
+  link(rel='canonical' href='https://coreui.io/bootstrap/docs/forms/range/')
 
 block breadcrumb
   +breadcrumb(
@@ -14,7 +14,7 @@ block breadcrumb
   )
 
 block view
-  +docs-components('https://coreui.io/docs/forms/range/')
+  +docs-components('https://coreui.io/bootstrap/docs/forms/range/')
   .row
     .col-12
       .card.mb-4
@@ -28,7 +28,7 @@ block view
             |  controls with 
             code .form-range
             | .
-          +example('https://coreui.io/docs/forms/range/#overview')
+          +example('https://coreui.io/bootstrap/docs/forms/range/#overview')
             label.form-label(for='customRange1') Example range
             input.form-range#customRange1(type='range')
     .col-12
@@ -41,7 +41,7 @@ block view
             | Add the 
             code disabled
             |  boolean attribute on an input to give it a grayed out appearance and remove pointer events.
-          +example('https://coreui.io/docs/forms/range/#disabled')
+          +example('https://coreui.io/bootstrap/docs/forms/range/#disabled')
             label.form-label(for='disabledRange') Disabled range
             input.form-range#disabledRange(type='range' disabled)
     .col-12
@@ -64,7 +64,7 @@ block view
             |  and 
             code max
             |  attributes.
-          +example('https://coreui.io/docs/forms/range/#min-and-max')
+          +example('https://coreui.io/bootstrap/docs/forms/range/#min-and-max')
             label.form-label(for='customRange2') Example range
             input.form-range#customRange2(type='range' min='0' max='5')
     .col-12
@@ -79,6 +79,6 @@ block view
             |  value. In the example below, we double the number of steps by using 
             code step="0.5"
             | .
-          +example('https://coreui.io/docs/forms/range/#steps')
+          +example('https://coreui.io/bootstrap/docs/forms/range/#steps')
             label.form-label(for='customRange3') Example range
             input.form-range#customRange3(type='range' min='0' max='5' step='0.5')

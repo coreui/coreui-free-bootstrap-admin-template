@@ -134,7 +134,7 @@ free-bootstrap-admin-template/
 
 ## Documentation
 
-The documentation for the CoreUI Free Bootstrap Admin Template is hosted at our website [CoreUI](https://coreui.io/docs/templates/installation/)
+The documentation for the CoreUI Free Bootstrap Admin Template is hosted at our website [CoreUI](https://coreui.io/bootstrap/docs/templates/installation/)
 
 ## Components
 
