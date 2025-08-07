@@ -7,11 +7,12 @@ import globals from 'globals'
 export default [
   eslintPluginImport.flatConfigs.errors,
   eslintPluginImport.flatConfigs.warnings,
-  eslintPluginUnicorn.configs['flat/recommended'],
+  eslintPluginUnicorn.configs.recommended,
   ...xo,
   ...xoBrowser,
   {
     ignores: [
+      '**/*.json',
       '**/*.min.js',
       '**/dist/',
       '.babelrc.js'
