@@ -142,6 +142,7 @@ CoreUI Bootstrap Admin Templates are built on top of CoreUI and CoreUI PRO UI co
 
 - [Bootstrap Accordion](https://coreui.io/bootstrap/docs/components/accordion/)
 - [Bootstrap Alert](https://coreui.io/bootstrap/docs/components/alert/)
+- [Bootstrap Autocomplete](https://coreui.io/bootstrap/docs/forms/autocomplete/) **PRO**
 - [Bootstrap Avatar](https://coreui.io/bootstrap/docs/components/avatar/)
 - [Bootstrap Badge](https://coreui.io/bootstrap/docs/components/badge/)
 - [Bootstrap Breadcrumb](https://coreui.io/bootstrap/docs/components/breadcrumb/)
@@ -171,15 +172,18 @@ CoreUI Bootstrap Admin Templates are built on top of CoreUI and CoreUI PRO UI co
 - [Bootstrap Navbar](https://coreui.io/bootstrap/docs/components/navbar/)
 - [Bootstrap Offcanvas](https://coreui.io/bootstrap/docs/components/offcanvas/)
 - [Bootstrap Pagination](https://coreui.io/bootstrap/docs/components/pagination/)
+- [Bootstrap Password Input](https://coreui.io/bootstrap/docs/forms/password-input/) **PRO**
 - [Bootstrap Placeholder](https://coreui.io/bootstrap/docs/components/placeholder/)
 - [Bootstrap Popover](https://coreui.io/bootstrap/docs/components/popover/)
 - [Bootstrap Progress](https://coreui.io/bootstrap/docs/components/progress/)
 - [Bootstrap Radio](https://coreui.io/bootstrap/docs/forms/radio/)
 - [Bootstrap Range](https://coreui.io/bootstrap/docs/forms/range/)
+- [Bootstrap Range Slider](https://coreui.io/bootstrap/docs/forms/range-slider/) **PRO**
 - [Bootstrap Rating](https://coreui.io/bootstrap/docs/forms/rating/) **PRO**
 - [Bootstrap Select](https://coreui.io/bootstrap/docs/forms/select/)
 - [Bootstrap Sidebar](https://coreui.io/bootstrap/docs/components/sidebar/)
 - [Bootstrap Spinner](https://coreui.io/bootstrap/docs/components/spinner/)
+- [Bootstrap Stepper](https://coreui.io/bootstrap/docs/forms/stepper/) **PRO**
 - [Bootstrap Switch](https://coreui.io/bootstrap/docs/forms/switch/)
 - [Bootstrap Table](https://coreui.io/bootstrap/docs/components/table/)
 - [Bootstrap Textarea](https://coreui.io/bootstrap/docs/forms/textarea/)
