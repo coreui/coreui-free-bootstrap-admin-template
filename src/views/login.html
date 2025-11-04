@@ -68,7 +68,10 @@
                   </div>
                   <div class="row">
                     <div class="col-6">
-                      <button class="btn btn-primary px-4" type="button">Login</button>
+                      <button class="btn btn-primary px-4" type="button" id="loginBtn">
+                        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                        <span class="btn-text">Login</span>
+                      </button>
                     </div>
                     <div class="col-6 text-end">
                       <button class="btn btn-link px-0" type="button">Forgot password?</button>
@@ -101,9 +104,28 @@
           header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
         }
       });
+
+      // Login button loading state example
+      const loginBtn = document.getElementById('loginBtn');
+      if (loginBtn) {
+        loginBtn.addEventListener('click', function() {
+          const spinner = this.querySelector('.spinner-border');
+          const btnText = this.querySelector('.btn-text');
+          
+          // Show loading state
+          spinner.classList.remove('d-none');
+          btnText.textContent = 'Logging in...';
+          this.disabled = true;
+          
+          // Simulate API call (remove this in production)
+          setTimeout(() => {
+            spinner.classList.add('d-none');
+            btnText.textContent = 'Login';
+            this.disabled = false;
+          }, 2000);
+        });
+      }
       
-    </script>
-    <script> 
     </script>
   </body>
 </html>

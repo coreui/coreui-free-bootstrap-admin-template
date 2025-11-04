@@ -78,7 +78,10 @@
                     </svg></span>
                   <input class="form-control" type="password" placeholder="Repeat password">
                 </div>
-                <button class="btn btn-block btn-success" type="button">Create Account</button>
+                <button class="btn btn-block btn-success" type="button" id="registerBtn">
+                  <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                  <span class="btn-text">Create Account</span>
+                </button>
               </div>
             </div>
           </div>
@@ -96,9 +99,28 @@
           header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
         }
       });
+
+      // Register button loading state example
+      const registerBtn = document.getElementById('registerBtn');
+      if (registerBtn) {
+        registerBtn.addEventListener('click', function() {
+          const spinner = this.querySelector('.spinner-border');
+          const btnText = this.querySelector('.btn-text');
+          
+          // Show loading state
+          spinner.classList.remove('d-none');
+          btnText.textContent = 'Creating Account...';
+          this.disabled = true;
+          
+          // Simulate API call (remove this in production)
+          setTimeout(() => {
+            spinner.classList.add('d-none');
+            btnText.textContent = 'Create Account';
+            this.disabled = false;
+          }, 2000);
+        });
+      }
       
-    </script>
-    <script> 
     </script>
   </body>
 </html>
