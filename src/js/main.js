@@ -13,7 +13,6 @@ Chart.defaults.plugins.tooltip.enabled = false
 Chart.defaults.plugins.tooltip.mode = 'index'
 Chart.defaults.plugins.tooltip.position = 'nearest'
 Chart.defaults.plugins.tooltip.external = coreui.ChartJS.customTooltips
-Chart.defaults.defaultFontColor = coreui.Utils.getStyle('--cui-body-color')
 
 document.documentElement.addEventListener('ColorSchemeChange', () => {
   cardChart1.data.datasets[0].pointBackgroundColor = coreui.Utils.getStyle('--cui-primary')
