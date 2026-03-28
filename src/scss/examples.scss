@@ -11,7 +11,7 @@
   }
 
   .tab-content {
-    background-color: var(--#{$prefix}tertiary-bg);
+    background-color: rgba(var(--#{$prefix}tertiary-bg-rgb), .75);
   }
 
   & + p {
@@ -104,11 +104,5 @@
         display: block;
       }
     }
-  }
-}
-
-@include color-mode(dark) {
-  .example .tab-content {
-    background-color: var(--#{$prefix}secondary-bg);
   }
 }

@@ -2,12 +2,33 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Boostrap Admin Template main.js
+ * CoreUI Boostrap Admin Template charts.js
  * Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
-// random Numbers
+/**
+ * Chart.js Demo Examples
+ *
+ * This module provides demonstration examples for various Chart.js chart types
+ * used in the Charts page (views/charts.html). Each chart is initialized with
+ * sample data to showcase different visualization patterns.
+ *
+ * Chart types included:
+ * - Line chart (canvas-1)
+ * - Bar chart (canvas-2)
+ * - Doughnut chart (canvas-3)
+ * - Radar chart (canvas-4)
+ * - Pie chart (canvas-5)
+ * - Polar area chart (canvas-6)
+ *
+ * All charts use randomly generated data for demonstration purposes.
+ */
+
+/**
+ * Generates a random number between 0 and 100
+ * @returns {number} Random integer from 0 to 100
+ */
 const random = () => Math.round(Math.random() * 100)
 
 // eslint-disable-next-line no-unused-vars

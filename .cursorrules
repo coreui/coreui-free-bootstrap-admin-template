@@ -1,0 +1,185 @@
+# CoreUI Free Bootstrap Admin Template - AI Context
+
+## Project Overview
+This is a Bootstrap 5 admin dashboard template built with CoreUI components. It uses Pug templating, Sass for styles, and vanilla JavaScript for interactivity.
+
+## Critical Rules
+
+### Component Library
+- **ALWAYS use CoreUI Bootstrap components**: https://coreui.io/bootstrap/docs/
+- **NEVER use Tailwind CSS** - this project uses Bootstrap 5 and custom Sass
+- Use CoreUI's CSS classes and JavaScript components from `@coreui/coreui` package
+- Reference the official CoreUI docs for component syntax and options
+
+### Technology Stack
+- **HTML Generation**: Pug templates (NOT raw HTML)
+- **Styling**: Sass/SCSS with Bootstrap 5 (NO Tailwind)
+- **JavaScript**: Vanilla JS with ES6 modules (NO frameworks like React/Vue)
+- **Build System**: npm scripts with Babel, PostCSS, and custom build scripts
+
+## Code Conventions
+
+### JavaScript
+- **No semicolons** - enforced by ESLint
+- **2-space indentation**
+- **ES6 modules** with import/export
+- **Strict mode** enabled
+- Use `/* global VariableName */` for external libraries
+- Follow XO ESLint config with Unicorn plugin rules
+
+### File Structure
+```
+src/
+├── js/          # JavaScript modules (keep small and focused)
+├── scss/        # Sass stylesheets (imports Bootstrap and CoreUI)
+├── pug/         # Pug templates (source of truth for HTML)
+│   ├── _layout/     # Base layouts
+│   ├── _partials/   # Reusable components
+│   ├── _mixins/     # Pug mixins
+│   └── views/       # Page templates
+├── assets/      # Images, icons, static files
+└── views/       # Compiled HTML (auto-generated, don't edit)
+```
+
+### Pug Templates
+- Use `extends ../_layout/default.pug` for new pages
+- Override blocks: `block content`, `block scripts`
+- Use mixins from `_mixins/` for common patterns
+- Follow existing naming conventions for consistency
+
+### CSS/Sass
+- Use Bootstrap utilities first before custom CSS
+- Use CSS custom properties (CSS variables) for theming
+- Use Bootstrap/CoreUI class naming conventions (e.g., `.sidebar`, `.header`, `.card-title`)
+- Support dark mode via `[data-coreui-theme="dark"]`
+- **Never use**: `border-radius`, `transition`, `calc()` directly (Stylelint enforced)
+
+### Naming Conventions
+- **Files**: kebab-case (e.g., `color-modes.js`, `_header.pug`)
+- **CSS classes**: Bootstrap/CoreUI conventions (e.g., `.btn-primary`, `.card-header`)
+- **JavaScript variables**: camelCase
+- **Constants**: UPPER_SNAKE_CASE
+
+## Development Workflow
+
+### Adding New Pages
+1. Create Pug template in `src/pug/views/`
+2. Extend base layout: `extends ../_layout/default.pug`
+3. Add page-specific styles in `src/scss/` if needed
+4. Add page-specific JS in `src/js/` if needed
+5. Run `npm start` to compile and preview
+
+### Adding New Components
+1. **First check CoreUI docs**: https://coreui.io/bootstrap/docs/
+2. Use CoreUI component markup in Pug files
+3. Import required CoreUI JS modules if needed
+4. Style using CoreUI/Bootstrap classes, not custom CSS
+5. Create Pug mixin in `src/pug/_mixins/` for reusable patterns
+
+### Build Commands
+- `npm start` - Development with live reload
+- `npm run build` - Production build
+- `npm run watch-css` - Watch Sass changes
+- `npm run watch-js` - Watch JavaScript changes
+- `npm run watch-pug` - Watch Pug changes
+
+## Code Quality
+
+### Linting
+- **JavaScript**: ESLint with XO config (flat config format)
+- **Styles**: Stylelint with Bootstrap config
+- **Formatting**: Prettier for HTML output
+- Run `npm run lint` before committing
+
+### Comments and Documentation
+- **JSDoc required** for all functions with parameters
+- Explain "why", not "what"
+- Document complex template logic in Pug files
+- Add file-level comments explaining module purpose
+
+### Git Commits
+Follow semantic commit format:
+- `feat:` - New feature
+- `fix:` - Bug fix
+- `docs:` - Documentation changes
+- `style:` - Code style changes (formatting)
+- `refactor:` - Code refactoring
+- `test:` - Test additions/changes
+- `chore:` - Build/tooling changes
+
+## Common Patterns
+
+### Chart Integration
+```javascript
+/* global Chart */
+import { getStyle } from '@coreui/utils'
+
+const chart = new Chart(ctx, {
+  type: 'line',
+  data: { /* ... */ },
+  options: { /* ... */ }
+})
+```
+
+### Theme Switching
+```javascript
+import { ColorModeStorageManager } from '@coreui/coreui/js/color-modes'
+
+document.addEventListener('ColorSchemeChange', () => {
+  // React to theme changes
+})
+```
+
+### Pug Mixin Usage
+```pug
+include _mixins/breadcrumb
++breadcrumb(['Home', 'Components', 'Buttons'])
+```
+
+## AI Assistance Guidelines
+
+### When AI Should
+- Use CoreUI Bootstrap components from official docs
+- Generate Pug templates, not raw HTML
+- Follow existing patterns in the codebase
+- Add JSDoc comments to new JavaScript functions
+- Respect ESLint/Stylelint rules
+- Suggest npm scripts for tasks
+
+### When AI Should NOT
+- Use Tailwind CSS classes
+- Use React/Vue/Angular components
+- Edit compiled files in `dist/` or `src/views/`
+- Add unnecessary dependencies
+- Break existing build pipeline
+- Ignore linting errors
+
+## External Dependencies
+
+### Core Libraries
+- `@coreui/coreui` - CoreUI component library
+- `chart.js` - Charts and graphs
+- `simplebar` - Custom scrollbars
+
+### Build Tools
+- `sass` - CSS preprocessor
+- `@babel/core` - JavaScript transpiler
+- `pug` - HTML templating
+- `postcss` - CSS post-processing
+- `browser-sync` - Live reload server
+
+## Browser Support
+Defined in `.browserslistrc`:
+- Last 1 major version of modern browsers
+- Chrome, Firefox, Edge, Safari
+- iOS Safari, Chrome Android
+
+## Resources
+- CoreUI Docs: https://coreui.io/bootstrap/docs/
+- Chart.js Docs: https://www.chartjs.org/
+- Pug Docs: https://pugjs.org/
+
+## Project Maintainer Notes
+- License: MIT
+- Version: 5.4.0
+- Repository: https://github.com/coreui/coreui-free-bootstrap-admin-template

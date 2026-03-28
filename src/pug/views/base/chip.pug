@@ -1,0 +1,120 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/bootstrap/docs/components/chip/')
+
+block breadcrumb
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Notifications'},
+      'Chip'
+    ]
+  )
+
+block view
+  +docs-components('https://coreui.io/bootstrap/docs/components/chip/')
+  .row
+    .col-lg-12
+      .card.mb-4
+        .card-header
+          strong Chip
+          span.small.ms-1 Basic and outline
+        .card-body
+          p.text-body-secondary.small
+            | Chips are compact UI elements for labels, filters, and quick selections. Below are simple examples and outline variants based on the CoreUI component API.
+          +example('https://coreui.io/bootstrap/docs/components/chip/#basic-chips')
+            .d-flex.flex-wrap.gap-2
+              span.chip Basic chip
+              span.chip Frontend
+              span.chip Design system
+              span.chip Documentation
+          p.text-body-secondary.small
+            | Add 
+            code .chip-outline
+            |  to create a lighter, bordered appearance.
+          +example('https://coreui.io/bootstrap/docs/components/chip/#outline-chips')
+            .d-flex.flex-wrap.gap-2
+              span.chip.chip-outline Outline chip
+              span.chip.chip-outline Product
+              span.chip.chip-outline Marketing
+              span.chip.chip-outline Analytics
+      .card.mb-4
+        .card-header
+          strong Chip
+          span.small.ms-1 With icons and avatars
+        .card-body
+          p.text-body-secondary.small
+            | Chips can include icons, user avatars, or avatar components to make tags easier to scan.
+          +example('https://coreui.io/bootstrap/docs/components/chip/#chips-with-icons')
+            .d-flex.flex-wrap.gap-2
+              span.chip
+                span.chip-icon
+                  svg(width='16' height='16' fill='currentColor' viewBox='0 0 16 16' aria-hidden='true')
+                    path(d='M8 1a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm-5 12s0-3 5-3 5 3 5 3v1H3v-1Z')
+                |  Team member
+              span.chip
+                span.chip-icon
+                  svg(width='16' height='16' fill='currentColor' viewBox='0 0 16 16' aria-hidden='true')
+                    path(d='M2 2h12v2H2V2Zm0 5h8v2H2V7Zm0 5h12v2H2v-2Z')
+                |  Backlog item
+          +example('https://coreui.io/bootstrap/docs/components/chip/#chips-with-avatars')
+            .d-flex.flex-wrap.gap-2
+              span.chip
+                img.chip-img(src='assets/img/avatars/1.jpg' width='16' height='16' alt='')
+                |  Olivia Martin
+              span.chip
+                img.chip-img(src='assets/img/avatars/4.jpg' width='16' height='16' alt='')
+                |  Ethan Carter
+              span.chip
+                span.avatar.avatar-sm.bg-primary.text-white A
+                |  Account manager
+              span.chip
+                span.avatar.avatar-sm.bg-success.text-white Q
+                |  QA owner
+    .col-lg-12
+      .card.mb-4
+        .card-header
+          strong Chip
+          span.small.ms-1 Variants and sizes
+        .card-body
+          p.text-body-secondary.small
+            | Variant classes make chips useful for filters and status states, and size modifiers help match denser or more spacious layouts.
+          +example('https://coreui.io/bootstrap/docs/components/chip/#variants')
+            .d-flex.flex-wrap.gap-2.mb-3
+              span.chip.chip-primary.chip-clickable(tabindex='0') Product
+              span.chip.chip-primary.active(tabindex='0') Active product
+              span.chip.chip-success.chip-clickable(tabindex='0') Published
+              span.chip.chip-success.active(tabindex='0') Live
+              span.chip.chip-warning.chip-clickable(tabindex='0') Review
+              span.chip.chip-danger.active(tabindex='0') Blocked
+            .d-flex.flex-wrap.gap-2
+              span.chip.chip-sm Small chip
+              span.chip Default chip
+              span.chip.chip-lg Large chip
+              span.chip.chip-outline.chip-primary.chip-clickable(tabindex='0') Outline primary
+      .card.mb-4
+        .card-header
+          strong Chip
+          span.small.ms-1 Interactive examples
+        .card-body
+          p.text-body-secondary.small
+            | The JavaScript plugin supports selectable and removable chips using 
+            code data-coreui-chip
+            |  attributes.
+          +example('https://coreui.io/bootstrap/docs/components/chip/#data-attributes')
+            .d-flex.flex-wrap.gap-2.mb-3
+              span.chip(data-coreui-chip data-coreui-selectable='true') Selectable
+              span.chip(data-coreui-chip data-coreui-selectable='true' data-coreui-selected='true') Selected
+              span.chip(data-coreui-chip data-coreui-removable='true') Removable
+              span.chip.disabled(data-coreui-chip) Disabled
+            .d-flex.flex-wrap.gap-2
+              span.chip.chip-lg
+                | Team Alpha
+                button.chip-remove(type='button' aria-label='Remove')
+                  svg(width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' aria-hidden='true')
+                    line(x1='4' y1='4' x2='12' y2='12')
+                    line(x1='12' y1='4' x2='4' y2='12')
+              span.chip.chip-outline.chip-info(data-coreui-chip data-coreui-selectable='true') Filter: Priority
+              span.chip.chip-outline.chip-success(data-coreui-chip data-coreui-selectable='true' data-coreui-selected='true') Filter: Ready

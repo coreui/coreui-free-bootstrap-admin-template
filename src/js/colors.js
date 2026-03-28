@@ -7,6 +7,17 @@
  * --------------------------------------------------------------------------
  */
 
+/**
+ * Theme Color Display
+ *
+ * This module enhances the Colors page (views/theme/colors.html) by automatically
+ * generating color information tables for each theme color swatch. It extracts the
+ * computed background color from elements with the .theme-color class and displays
+ * both HEX and RGB values below each color sample.
+ *
+ * This provides developers with easy access to color values for use in custom styles.
+ */
+
 for (const element of document.querySelectorAll('.theme-color')) {
   const color = getComputedStyle(element, null).getPropertyValue('background-color')
   const table = document.createElement('table')

@@ -7,7 +7,20 @@
  * --------------------------------------------------------------------------
  */
 
-// Disable the on-canvas tooltip
+/**
+ * Dashboard Charts
+ *
+ * This module initializes and manages all charts on the main Dashboard page (index.html).
+ * It includes:
+ * - Card charts (small charts in statistic cards)
+ * - Main chart (large chart showing traffic/metrics over time)
+ * - Custom tooltip configuration using CoreUI's ChartJS utilities
+ * - Theme-aware chart updates (responds to dark/light mode changes)
+ *
+ * All charts use Chart.js with CoreUI's custom styling and color variables.
+ */
+
+// Configure Chart.js defaults for custom tooltips
 Chart.defaults.pointHitDetectionRadius = 1
 Chart.defaults.plugins.tooltip.enabled = false
 Chart.defaults.plugins.tooltip.mode = 'index'
@@ -29,6 +42,12 @@ document.documentElement.addEventListener('ColorSchemeChange', () => {
   mainChart.update()
 })
 
+/**
+ * Generates a random integer between min and max (inclusive)
+ * @param {number} min - Minimum value
+ * @param {number} max - Maximum value
+ * @returns {number} Random integer between min and max
+ */
 const random = (min, max) =>
   Math.floor((Math.random() * (max - min + 1)) + min)
 

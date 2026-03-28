@@ -1,4 +1,4 @@
-# CoreUI Free Bootstrap Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?text=CoreUI%20-%20Free%20Bootstrap%204%20Admin%20Template%20&url=https://coreui.io&hashtags=bootstrap,admin,template,dashboard,panel,free,angular,react,vue)
+# CoreUI Free Bootstrap Admin Template — Built for AI-Assisted Development [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?text=CoreUI%20-%20Free%20Bootstrap%204%20Admin%20Template%20&url=https://coreui.io&hashtags=bootstrap,admin,template,dashboard,panel,free,angular,react,vue)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![@coreui coreui](https://img.shields.io/badge/@coreui%20-coreui-lightgrey.svg?style=flat-square)](https://github.com/coreui/coreui)
@@ -24,6 +24,7 @@ Curious why I decided to create CoreUI? Please read this article: [Jack of all t
 * [Installation](#installation)
 * [Usage](#usage)
 * [What's included](#whats-included)
+* [AI-Friendly Development](#ai-friendly-development)
 * [Documentation](#documentation)
 * [Components](#components)
 * [Contributing](#contributing)
@@ -132,6 +133,34 @@ free-bootstrap-admin-template/
 └── package.json
 ```
 
+## AI-Friendly Development
+
+This template is optimized for AI-assisted development, making it easier to work with AI coding assistants like Cursor, Claude Code, and GitHub Copilot.
+
+### What's Included
+
+- **`.cursorrules`** - Comprehensive AI context file with project conventions, patterns, and guidelines
+- **`ARCHITECTURE.md`** - Detailed technical documentation covering the project structure, build pipeline, and component organization
+- **`DEVELOPMENT.md`** - Practical developer guide with examples and best practices
+- **JSDoc Comments** - All JavaScript modules include detailed documentation with @param and @returns annotations
+
+### Benefits
+
+- 🤖 **Smart Code Generation** - AI understands your project uses CoreUI Bootstrap (not Tailwind CSS)
+- 📚 **Better Context Awareness** - AI knows the project structure, conventions, and patterns
+- ✨ **Consistent Code Style** - AI generates code following ESLint/Stylelint rules automatically
+- 🚀 **Faster Development** - Less time explaining, more time building
+- 💡 **Intelligent Suggestions** - AI provides relevant component examples from CoreUI documentation
+
+### Quick Start with AI
+
+Simply open the project in your AI-powered IDE (Cursor, VS Code with Copilot, etc.) and the AI will automatically understand:
+- Project architecture and file organization
+- CoreUI Bootstrap component usage
+- Pug templating patterns
+- Sass/SCSS styling conventions
+- JavaScript module patterns
+
 ## Documentation
 
 The documentation for the CoreUI Free Bootstrap Admin Template is hosted at our website [CoreUI](https://coreui.io/bootstrap/docs/templates/installation/)
@@ -234,4 +263,4 @@ CoreUI is an MIT-licensed open source project and is completely free to use. How
 
 ## Copyright and license
 
-copyright 2025 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE).
+copyright 2026 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE).

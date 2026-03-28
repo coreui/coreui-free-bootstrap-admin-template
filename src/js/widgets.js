@@ -7,7 +7,22 @@
  * --------------------------------------------------------------------------
  */
 
-// Disable the on-canvas tooltip
+/**
+ * Widgets Page Charts
+ *
+ * This module initializes and manages all charts on the Widgets page (views/widgets.html).
+ * It includes multiple chart types:
+ * - Card charts (compact charts for cards)
+ * - Sparkline charts (mini bar and line charts)
+ * - Social box charts (brand-specific charts)
+ *
+ * All charts are configured with:
+ * - Custom CoreUI tooltips
+ * - Theme-aware color updates (dark/light mode support)
+ * - Randomly generated demo data
+ */
+
+// Configure Chart.js defaults for custom tooltips
 Chart.defaults.pointHitDetectionRadius = 1
 Chart.defaults.plugins.tooltip.enabled = false
 Chart.defaults.plugins.tooltip.mode = 'index'

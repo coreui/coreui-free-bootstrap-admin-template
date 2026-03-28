@@ -1,0 +1,117 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/bootstrap/docs/forms/chip-input/')
+
+block breadcrumb
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      { label: 'Forms'},
+      'Chip input'
+    ]
+  )
+
+block view
+  +docs-components('https://coreui.io/bootstrap/docs/forms/chip-input/')
+  .row
+    .col-lg-12
+      .card.mb-4
+        .card-header
+          strong Chip input
+          span.small.ms-1 Basic example
+        .card-body
+          p.text-body-secondary.small
+            | Chip input lets users enter multiple values in one field. The plugin generates the inline input automatically after initialization.
+          +example('https://coreui.io/bootstrap/docs/forms/chip-input/#basic-example')
+            .chip-input(data-coreui-chip-input data-coreui-name='skills' data-coreui-placeholder='Add a skill...')
+              label.chip-input-label(for='skillsInputBasic') Skills:
+              span.chip JavaScript
+              span.chip TypeScript
+              span.chip Accessibility
+      .card.mb-4
+        .card-header
+          strong Chip input
+          span.small.ms-1 Variants
+        .card-body
+          p.text-body-secondary.small
+            | Contextual chip classes work inside chip input as well, which is handy for labels, issue types, or priorities.
+          +example('https://coreui.io/bootstrap/docs/forms/chip-input/#variants')
+            .chip-input(data-coreui-chip-input data-coreui-name='issues' data-coreui-placeholder='Add label...')
+              span.chip.chip-primary Feature
+              span.chip.chip-success Approved
+              span.chip.chip-warning Needs review
+              span.chip.chip-danger Blocking
+      .card.mb-4
+        .card-header
+          strong Chip input
+          span.small.ms-1 Sizes
+        .card-body
+          p.text-body-secondary.small
+            | Use 
+            code .chip-input-sm
+            |  or 
+            code .chip-input-lg
+            |  to align the field with surrounding form controls.
+          +example('https://coreui.io/bootstrap/docs/forms/chip-input/#sizes')
+            .chip-input.chip-input-sm.mb-3(data-coreui-chip-input data-coreui-placeholder='Add small tag...')
+              label.chip-input-label(for='skillsInputSm') Small
+              span.chip HTML
+            .chip-input.mb-3(data-coreui-chip-input data-coreui-placeholder='Add default tag...')
+              label.chip-input-label(for='skillsInputMd') Default
+              span.chip JavaScript
+            .chip-input.chip-input-lg(data-coreui-chip-input data-coreui-placeholder='Add large tag...')
+              label.chip-input-label(for='skillsInputLg') Large
+              span.chip TypeScript
+    .col-lg-12
+      .card.mb-4
+        .card-header
+          strong Chip input
+          span.small.ms-1 Empty state and label
+        .card-body
+          p.text-body-secondary.small
+            | You can start with an empty field or wrap the component with a regular form label for clearer form structure and accessibility.
+          +example('https://coreui.io/bootstrap/docs/forms/chip-input/#empty-state')
+            .chip-input.mb-3(data-coreui-chip-input data-coreui-name='tags' data-coreui-placeholder='Start typing tags...')
+            .mb-0
+              label.form-label(for='techStackInput') Tech stack
+              .chip-input(data-coreui-chip-input data-coreui-name='techStack' data-coreui-placeholder='Add package...')
+                span.chip Vue
+                span.chip Vite
+              .form-text Press Enter or comma to add a value.
+      .card.mb-4
+        .card-header
+          strong Chip input
+          span.small.ms-1 Disabled and readonly
+        .card-body
+          p.text-body-secondary.small
+            | Disabled blocks interaction entirely. Readonly keeps values visible, but prevents adding and removing chips.
+          +example('https://coreui.io/bootstrap/docs/forms/chip-input/#disabled')
+            .chip-input.mb-3(data-coreui-chip-input data-coreui-disabled='true' data-coreui-removable='false' data-coreui-placeholder='Input disabled')
+              span.chip Read only
+              span.chip Locked
+            .chip-input(data-coreui-chip-input data-coreui-readonly='true' data-coreui-placeholder='Read-only values')
+              span.chip JavaScript
+              span.chip TypeScript
+      .card.mb-4
+        .card-header
+          strong Chip input
+          span.small.ms-1 Form-friendly examples
+        .card-body
+          p.text-body-secondary.small
+            | The component integrates well with ordinary Bootstrap forms, including helper text and predefined values.
+          +example('https://coreui.io/bootstrap/docs/forms/chip-input/#with-label')
+            form.row.g-3
+              .col-12
+                label.form-label(for='recipientsInput') Recipients
+                .chip-input(data-coreui-chip-input data-coreui-name='recipients' data-coreui-placeholder='Add email...')
+                  span.chip olivia@coreui.io
+                  span.chip ethan@coreui.io
+                .form-text Add one address at a time and press Enter.
+              .col-12
+                label.form-label(for='categoriesInput') Categories
+                .chip-input(data-coreui-chip-input data-coreui-name='categories' data-coreui-placeholder='Add category...')
+                  span.chip.chip-outline Product
+                  span.chip.chip-outline Design
+                  span.chip.chip-outline Docs
