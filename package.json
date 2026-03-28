@@ -51,6 +51,7 @@
   ],
   "scripts": {
     "build": "npm-run-all clean --parallel css js sync --sequential build-vendors",
+    "build-pug": "npm-run-all clean --parallel css js \"pug -- --dest=dist/\" --sequential build-vendors",
     "build-vendors": "node build/vendors.mjs",
     "clean": "rimraf dist",
     "css": "npm-run-all --parallel css-compile* --sequential css-prefix css-minify*",

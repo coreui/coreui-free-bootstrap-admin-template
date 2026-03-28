@@ -33,13 +33,15 @@ const base = levels => {
 
 const compile = (filename, basedir) => {
   const levels = basedir.split(`${sep}`).filter(el => el !== '').length
+  const isRTL = process.env.BUILD_RTL === 'true'
 
   const fn = pug.compileFile(filename, {
     basedir: './pug/',
     pretty: true
   })
   const html = fn({
-    base: base(levels)
+    base: base(levels),
+    dir: isRTL ? 'rtl' : undefined
   })
   return html
 }
@@ -63,9 +65,14 @@ const compilePugToHtml = (file, dest) => {
 
 async function main() {
   try {
+    // Get destination from command line arguments or use default
+    const args = process.argv.slice(2)
+    const destArg = args.find(arg => arg.startsWith('--dest='))
+    const dest = destArg ? destArg.split('=')[1] : 'src/views/'
+
     const files = await globby(GLOB, GLOBBY_OPTIONS)
 
-    await Promise.all(files.map(file => compilePugToHtml(file, 'src/views/')))
+    await Promise.all(files.map(file => compilePugToHtml(file, dest)))
   } catch (error) {
     console.error(error)
     process.exit(1)
