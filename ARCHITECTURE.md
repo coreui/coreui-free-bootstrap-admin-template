@@ -434,10 +434,17 @@ Template includes inline scripts and styles. For strict CSP:
 ### Adding New Styles
 
 1. Edit `src/scss/style.scss` or create new partial
-2. Import Bootstrap/CoreUI variables to reuse:
+2. Use Sass modules syntax to import CoreUI:
    ```scss
-   @import "~bootstrap/scss/functions";
-   @import "~bootstrap/scss/variables";
+   @use "@coreui/coreui/scss/coreui" as * with (
+     $enable-deprecation-messages: false
+   );
+   ```
+   For CoreUI Pro projects:
+   ```scss
+   @use "@coreui/coreui-pro/scss/coreui" as * with (
+     $enable-deprecation-messages: false
+   );
    ```
 3. Use CSS custom properties for theme compatibility
 4. Run `npm run css` to compile
@@ -488,7 +495,6 @@ This template is frontend-only. To add backend:
 ## Resources
 
 - **CoreUI Bootstrap Docs**: https://coreui.io/bootstrap/docs/
-- **Bootstrap 5 Docs**: https://getbootstrap.com/docs/5.3/
 - **Pug Documentation**: https://pugjs.org/
 - **Chart.js Documentation**: https://www.chartjs.org/
 - **Sass Documentation**: https://sass-lang.com/documentation/
