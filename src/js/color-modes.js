@@ -74,16 +74,29 @@
    * @param {string} theme - Currently active theme
    */
   const showActiveTheme = theme => {
-    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+    const activeThemeIcon = document.querySelector('.theme-icon-active')
     const btnToActive = document.querySelector(`[data-coreui-theme-value="${theme}"]`)
-    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('xlink:href')
+    const svgOfActiveBtn = btnToActive.querySelector('svg')
 
     for (const element of document.querySelectorAll('[data-coreui-theme-value]')) {
       element.classList.remove('active')
     }
 
     btnToActive.classList.add('active')
-    activeThemeIcon.setAttribute('xlink:href', svgOfActiveBtn)
+
+    if (activeThemeIcon && svgOfActiveBtn) {
+      const useElement = svgOfActiveBtn.querySelector('use')
+      if (useElement) {
+        // Legacy: SVG sprite with <use xlink:href="...">
+        const activeUseElement = activeThemeIcon.querySelector('use')
+        if (activeUseElement) {
+          activeUseElement.setAttribute('xlink:href', useElement.getAttribute('xlink:href'))
+        }
+      } else {
+        // Modern: inline SVG
+        activeThemeIcon.innerHTML = svgOfActiveBtn.innerHTML
+      }
+    }
   }
 
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {

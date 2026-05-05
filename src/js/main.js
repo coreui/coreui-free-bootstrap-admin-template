@@ -267,7 +267,7 @@ const cardChart4 = new Chart(document.getElementById('card-chart4'), {
 const mainChart = new Chart(document.getElementById('main-chart'), {
   type: 'line',
   data: {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: ['October', 'November', 'December', 'January', 'February', 'March', 'April'],
     datasets: [
       {
         label: 'My First dataset',

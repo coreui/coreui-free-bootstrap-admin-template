@@ -77,25 +77,34 @@ coreui-free-bootstrap-admin-template/
 ├── src/                          # Source files (edit these)
 │   ├── pug/                      # Pug templates (HTML source)
 │   │   ├── _layout/              # Base layout templates
-│   │   │   └── default.pug       # Main layout with sidebar/header
+│   │   │   ├── default.pug       # Main layout with sidebar/header
+│   │   │   └── pages.pug         # Standalone pages layout (auth, errors)
 │   │   ├── _partials/            # Reusable components
-│   │   │   ├── _header.pug       # Top navigation bar
-│   │   │   ├── _sidebar.pug      # Left sidebar navigation
-│   │   │   ├── _footer.pug       # Page footer
-│   │   │   └── _breadcrumb.pug   # Breadcrumb navigation
+│   │   │   ├── banner.pug        # Top announcement banner
+│   │   │   ├── head.pug          # HTML <head> section
+│   │   │   ├── header.pug        # Top navigation bar
+│   │   │   ├── sidebar.pug       # Left sidebar wrapper
+│   │   │   ├── sidebar-nav.pug   # Sidebar navigation items (data-driven)
+│   │   │   ├── footer.pug        # Page footer
+│   │   │   ├── scripts.pug       # Common script includes
+│   │   │   └── docs-icons.pug    # Icon documentation helpers
 │   │   ├── _mixins/              # Pug helper mixins
 │   │   │   ├── breadcrumb.pug    # Breadcrumb generator
 │   │   │   ├── callout.pug       # Alert/callout boxes
-│   │   │   └── example.pug       # Code example displays
+│   │   │   ├── callout-custom.pug # Custom callout variant
+│   │   │   ├── docs-components.pug # Docs component helpers
+│   │   │   ├── example.pug       # Code example displays
+│   │   │   └── inline-svg.pug    # Inline SVG helper
 │   │   └── views/                # Page templates
-│   │       ├── dashboard.pug     # Main dashboard page
-│   │       ├── base/             # UI base components
-│   │       ├── buttons/          # Button examples
+│   │       ├── index.pug         # Main dashboard page
+│   │       ├── blank.pug         # Blank page template
+│   │       ├── charts.pug        # Charts page
+│   │       ├── widgets.pug       # Widgets page
+│   │       ├── authentication/   # Auth pages (login, register, etc.)
+│   │       ├── components/       # UI components (buttons, modals, etc.)
+│   │       ├── error-pages/      # Error pages (404, 500)
 │   │       ├── forms/            # Form components
-│   │       ├── icons/            # Icon libraries
-│   │       ├── notifications/    # Alerts, toasts, modals
-│   │       ├── pages/            # Auth pages (login, register)
-│   │       └── ...
+│   │       └── icons/            # Icon libraries
 │   │
 │   ├── scss/                     # Sass stylesheets
 │   │   ├── style.scss            # Main stylesheet entry
@@ -106,9 +115,11 @@ coreui-free-bootstrap-admin-template/
 │   │   ├── main.js               # Main entry point
 │   │   ├── charts.js             # Chart.js configurations
 │   │   ├── color-modes.js        # Dark/light theme switcher
+│   │   ├── config.js             # App configuration / shared settings
 │   │   ├── tooltips.js           # Tooltip initialization
 │   │   ├── popovers.js           # Popover initialization
-│   │   └── ...
+│   │   ├── toasts.js             # Toast notification initialization
+│   │   └── widgets.js            # Widgets page charts
 │   │
 │   ├── assets/                   # Static assets
 │   │   ├── brand/                # Logo files
@@ -129,7 +140,7 @@ coreui-free-bootstrap-admin-template/
 │   ├── pug.mjs                   # Pug compilation script
 │   ├── postcss.config.mjs        # PostCSS configuration
 │   ├── vendors.mjs               # Vendor file bundling
-│   └── change-version.mjs        # Version management
+│   └── format-html.mjs           # HTML formatting/prettifying
 │
 ├── node_modules/                 # npm dependencies (ignored)
 │
@@ -245,13 +256,18 @@ Each watch task uses **nodemon** to monitor file changes and trigger appropriate
 ### Pug Template Hierarchy
 
 ```
-default.pug (base layout)
-├─> _header.pug (navigation bar)
-├─> _sidebar.pug (side navigation)
-├─> block content
-│   └─> dashboard.pug (page content)
-├─> block scripts (page-specific JS)
-└─> _footer.pug (page footer)
+default.pug (main layout — dashboard/component pages)
+├─> sidebar.pug (side navigation)
+│   └─> sidebar-nav.pug (data-driven nav items)
+├─> header.pug (top navigation bar)
+├─> block view
+│   └─> index.pug / components/*.pug / etc. (page content)
+└─> footer.pug (page footer)
+    └─> scripts.pug (common script includes)
+
+pages.pug (standalone layout — auth & error pages)
+└─> block content
+    └─> authentication/*.pug / error-pages/*.pug
 ```
 
 **Block System:**

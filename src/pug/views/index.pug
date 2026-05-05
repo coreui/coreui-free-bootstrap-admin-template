@@ -27,15 +27,12 @@ block view
           div
             .fs-4.fw-semibold 26K 
               span.fs-6.fw-normal (-12.4%
-                svg.icon
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom")
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-bottom.svg').icon.me-2
                 | )
             div Users
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              svg.icon
-                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
-                |
+              +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon.me-2
             .dropdown-menu.dropdown-menu-end
               a.dropdown-item(href='#') Action
               a.dropdown-item(href='#') Another action
@@ -49,14 +46,12 @@ block view
           div
             .fs-4.fw-semibold $6.200 
               span.fs-6.fw-normal (40.9%
-                svg.icon
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top")
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-top.svg').icon.me-2
                 | )
             div Income
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              svg.icon
-                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+              +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon.me-2
             .dropdown-menu.dropdown-menu-end
               a.dropdown-item(href='#') Action
               a.dropdown-item(href='#') Another action
@@ -70,14 +65,12 @@ block view
           div
             .fs-4.fw-semibold 2.49% 
               span.fs-6.fw-normal (84.7%
-                svg.icon
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top")
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-top.svg').icon.me-2
                 | )
             div Conversion Rate
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              svg.icon
-                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+              +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon.me-2
             .dropdown-menu.dropdown-menu-end
               a.dropdown-item(href='#') Action
               a.dropdown-item(href='#') Another action
@@ -91,14 +84,12 @@ block view
           div
             .fs-4.fw-semibold 44K 
               span.fs-6.fw-normal (-23.6%
-                svg.icon
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom")
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-bottom.svg').icon.me-2
                 | )
             div Sessions
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              svg.icon
-                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+              +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon.me-2
             .dropdown-menu.dropdown-menu-end
               a.dropdown-item(href='#') Action
               a.dropdown-item(href='#') Another action
@@ -112,7 +103,7 @@ block view
       .d-flex.justify-content-between
         div
           h4.card-title.mb-0 Traffic
-          .small.text-body-secondary January - July 2023
+          .small.text-body-secondary October 2025 - April 2026
         .btn-toolbar.d-none.d-md-block(role='toolbar' aria-label='Toolbar with buttons')
           .btn-group.btn-group-toggle.mx-3(data-coreui-toggle='buttons')
             input.btn-check#option1(type='radio', name='options', autocomplete='off')
@@ -125,8 +116,7 @@ block view
             label.btn.btn-outline-secondary
               |  Year
           button.btn.btn-primary(type='button')
-            svg.icon
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download")
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-cloud-download.svg').icon
       .c-chart-wrapper(style='height:300px;margin-top:40px;')
         canvas#main-chart.chart(height='300')
     .card-footer
@@ -161,10 +151,7 @@ block view
     .col-sm-6.col-lg-4
       .card(style='--cui-card-cap-bg: #3b5998')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
-          svg.icon.icon-3xl.text-white.my-4
-            use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
-          .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
-            canvas#social-box-chart-1(height='90')
+          +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-facebook-f.svg').icon.icon-3xl.text-white.my-4
         .card-body.row.text-center
           .col
             .fs-5.fw-semibold 89k
@@ -175,28 +162,23 @@ block view
             .text-uppercase.text-body-secondary.small feeds
     // /.col
     .col-sm-6.col-lg-4
-      .card(style='--cui-card-cap-bg: #00aced')
+      .card(style='--cui-card-cap-bg: #ff0132')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
-          svg.icon.icon-3xl.text-white.my-4
-            use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
-          .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
-            canvas#social-box-chart-2(height='90')
+          svg.icon.icon-3xl.text-white.my-4(fill-rule='evenodd' clip-rule='evenodd' image-rendering='optimizeQuality' shape-rendering='geometricPrecision' text-rendering='geometricPrecision' viewbox='0 0 512 360.726')
+            path(fill='#fff' d='M456.035 10.769c22.031 5.926 39.377 23.386 45.265 45.56C512 96.516 512 180.363 512 180.363s0 83.846-10.7 124.037c-5.888 22.17-23.234 39.631-45.265 45.559-39.928 10.767-200.034 10.767-200.034 10.767s-160.107 0-200.035-10.767C33.937 344.031 16.587 326.57 10.7 304.4 0 264.209 0 180.363 0 180.363S0 96.516 10.7 56.329c5.887-22.174 23.237-39.634 45.266-45.56C95.894 0 256.001 0 256.001 0s160.106 0 200.034 10.769m-252.398 245.72 133.818-76.122-133.818-76.131z')
         .card-body.row.text-center
           .col
             .fs-5.fw-semibold 973k
-            .text-uppercase.text-body-secondary.small followers
+            .text-uppercase.text-body-secondary.small subscribers
           .vr
           .col
             .fs-5.fw-semibold 1.792
-            .text-uppercase.text-body-secondary.small tweets
+            .text-uppercase.text-body-secondary.small new comments
     // /.col
     .col-sm-6.col-lg-4
       .card(style='--cui-card-cap-bg: #4875b4')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
-          svg.icon.icon-3xl.text-white.my-4
-            use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
-          .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
-            canvas#social-box-chart-3(height='90')
+          +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-linkedin.svg').icon.icon-3xl.text-white.my-4
         .card-body.row.text-center
           .col
             .fs-5.fw-semibold 500+
@@ -308,8 +290,7 @@ block view
               hr.mt-0
               .progress-group
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-user.svg').icon.icon-lg.me-2
                   div Male
                   .ms-auto.fw-semibold 43%
                 .progress-group-bars
@@ -317,8 +298,7 @@ block view
                     .progress-bar.bg-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
               .progress-group.mb-5
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-female")
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-user-female.svg').icon.icon-lg.me-2
                   div Female
                   .ms-auto.fw-semibold 37%
                 .progress-group-bars
@@ -326,8 +306,11 @@ block view
                     .progress-bar.bg-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
               .progress-group
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-google")
+                  svg.icon.icon-lg.me-2(aria-hidden='true' width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M24 12.27C24 11.48 23.9284 10.73 23.8058 9.99998H12.2605V14.51H18.871C18.5747 15.99 17.7062 17.24 16.4189 18.09V21.09H20.3627C22.6717 19 24 15.92 24 12.27Z' fill='#4285F4')
+                    path(d='M12.2606 24C15.571 24 18.3398 22.92 20.3628 21.09L16.419 18.09C15.3156 18.81 13.9158 19.25 12.2606 19.25C9.06269 19.25 6.35515 17.14 5.38453 14.29H1.31812V17.38C3.33089 21.3 7.46882 24 12.2606 24Z' fill='#34A853')
+                    path(d='M5.38442 14.2901C5.12899 13.5701 4.99617 12.8001 4.99617 12.0001C4.99617 11.2001 5.13921 10.4301 5.38442 9.71009V6.62009H1.31801C0.480203 8.24009 0 10.0601 0 12.0001C0 13.9401 0.480203 15.7601 1.31801 17.3801L5.38442 14.2901Z' fill='#FBBC05')
+                    path(d='M12.2606 4.74998C14.0691 4.74998 15.6834 5.35999 16.9605 6.54999L20.4548 3.12999C18.3398 1.18999 15.571 -1.52588e-05 12.2606 -1.52588e-05C7.46882 -1.52588e-05 3.33089 2.69999 1.31812 6.61999L5.38453 9.70999C6.35515 6.85999 9.06269 4.74998 12.2606 4.74998Z' fill='#EA4335')
                   div Organic Search
                   .ms-auto.fw-semibold.me-2 191.235
                   .text-body-secondary.small (56%)
@@ -336,9 +319,9 @@ block view
                     .progress-bar.bg-success(role='progressbar', style='width: 56%', aria-valuenow='56', aria-valuemin='0', aria-valuemax='100')
               .progress-group
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
-                  div Facebook
+                  svg.icon.icon-lg.me-2(fill='currentColor' fill-rule='evenodd' viewbox='0 0 24 24')
+                    path(d='M9.205 8.658v-2.26c0-.19.072-.333.238-.428l4.543-2.616c.619-.357 1.356-.523 2.117-.523 2.854 0 4.662 2.212 4.662 4.566 0 .167 0 .357-.024.547l-4.71-2.759a.797.797 0 0 0-.856 0zm10.609 8.8V12.06c0-.333-.143-.57-.429-.737l-5.97-3.473 1.95-1.118a.433.433 0 0 1 .476 0l4.543 2.617c1.309.76 2.189 2.378 2.189 3.948 0 1.808-1.07 3.473-2.76 4.163zM7.802 12.703l-1.95-1.142c-.167-.095-.239-.238-.239-.428V5.899c0-2.545 1.95-4.472 4.591-4.472 1 0 1.927.333 2.712.928L8.23 5.067c-.285.166-.428.404-.428.737v6.898zM12 15.128l-2.795-1.57v-3.33L12 8.658l2.795 1.57v3.33zm1.796 7.23c-1 0-1.927-.332-2.712-.927l4.686-2.712c.285-.166.428-.404.428-.737v-6.898l1.974 1.142c.167.095.238.238.238.428v5.233c0 2.545-1.974 4.472-4.614 4.472zm-5.637-5.303-4.544-2.617c-1.308-.761-2.188-2.378-2.188-3.948A4.482 4.482 0 0 1 4.21 6.327v5.423c0 .333.143.571.428.738l5.947 3.449-1.95 1.118a.432.432 0 0 1-.476 0m-.262 3.9c-2.688 0-4.662-2.021-4.662-4.519 0-.19.024-.38.047-.57l4.686 2.71c.286.167.571.167.856 0l5.97-3.448v2.26c0 .19-.07.333-.237.428l-4.543 2.616c-.619.357-1.356.523-2.117.523m5.899 2.83a5.947 5.947 0 0 0 5.827-4.756C22.287 18.339 24 15.84 24 13.296c0-1.665-.713-3.282-1.998-4.448.119-.5.19-.999.19-1.498 0-3.401-2.759-5.947-5.946-5.947-.642 0-1.26.095-1.88.31A5.962 5.962 0 0 0 10.205 0a5.947 5.947 0 0 0-5.827 4.757C1.713 5.447 0 7.945 0 10.49c0 1.666.713 3.283 1.998 4.448-.119.5-.19 1-.19 1.499 0 3.401 2.759 5.946 5.946 5.946.642 0 1.26-.095 1.88-.309a5.96 5.96 0 0 0 4.162 1.713z')
+                  div ChatGPT
                   .ms-auto.fw-semibold.me-2 51.223
                   .text-body-secondary.small (15%)
                 .progress-group-bars
@@ -346,8 +329,8 @@ block view
                     .progress-bar.bg-success(role='progressbar', style='width: 15%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
               .progress-group
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
+                  svg(fill='currentColor' fill-rule='evenodd' viewbox='0 0 1200 1227').icon.icon-lg.me-2
+                    path(d='M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284zM569.165 687.828l-47.468-67.894L144.011 79.6944h162.604L611.412 515.685l47.468 67.894 396.2 566.721H892.476L569.165 687.854z')
                   div Twitter
                   .ms-auto.fw-semibold.me-2 37.564
                   .text-body-secondary.small (11%)
@@ -356,8 +339,10 @@ block view
                     .progress-bar.bg-success(role='progressbar', style='width: 11%', aria-valuenow='11', aria-valuemin='0', aria-valuemax='100')
               .progress-group
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
+                  svg.icon.icon-lg.me-2(viewbox='0 0 72 72')
+                    g(fill='none' fill-rule='evenodd')
+                      path(fill='#007ebb' d='M8 72h56c4.418278 0 8-3.581722 8-8V8c0-4.418278-3.581722-8-8-8H8C3.581722 0 0 3.581722 0 8v56c0 4.418278 3.581722 8 8 8')
+                      path(fill='#fff' d='M62 62H51.315625V43.8021149c0-4.9893607-1.8958333-7.7775826-5.8449219-7.7775826-4.2960937 0-6.540625 2.901578-6.540625 7.7775826V62H28.6333333V27.3333333h10.2967448v4.669595s3.0959636-5.7287132 10.452474-5.7287132C56.7356771 26.2742151 62 30.7644705 62 40.051212zM16.349349 22.7940133C12.8420573 22.7940133 10 19.9296567 10 16.3970067 10 12.8643566 12.8420573 10 16.349349 10c3.5072916 0 6.3476562 2.8643566 6.3476562 6.3970067 0 3.53265-2.8403646 6.3970066-6.3476562 6.3970066M11.0325521 62H21.769401V27.3333333H11.0325521z')
                   div LinkedIn
                   .ms-auto.fw-semibold.me-2 27.319
                   .text-body-secondary.small (8%)
@@ -372,8 +357,7 @@ block view
               thead.fw-semibold.text-nowrap
                 tr.align-middle
                   th.bg-body-secondary.text-center
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
+                    +inlineSvg('node_modules/@coreui/icons/svg/free/cil-people.svg').icon.icon-lg.me-2
                   th.bg-body-secondary User
                   th.bg-body-secondary.text-center Country
                   th.bg-body-secondary Usage
@@ -390,27 +374,24 @@ block view
                     .text-nowrap Yiorgos Avraamu
                     .small.text-body-secondary.text-nowrap
                       span New
-                      |  | Registered: Jan 1, 2023
+                      |  | Registered: Mar 15, 2025
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-us")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-us.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 50%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
+                      .text-nowrap.small.text-body-secondary.ms-3 Mar 1, 2026 - Apr 30, 2026
                     .progress.progress-thin
                       .progress-bar.bg-success(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-mastercard")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-mastercard.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap 10 sec ago
                   td
                     .dropdown
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit
@@ -424,27 +405,24 @@ block view
                     .text-nowrap Avram Tarasios
                     .small.text-body-secondary.text-nowrap
                       span Recurring
-                      |  | Registered: Jan 1, 2023
+                      |  | Registered: Aug 22, 2024
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-br")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-br.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 10%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
+                      .text-nowrap.small.text-body-secondary.ms-3 Jan 15, 2026 - Feb 14, 2026
                     .progress.progress-thin
                       .progress-bar.bg-info(role='progressbar', style='width: 10%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-visa")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-visa.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap 5 minutes ago
                   td
                     .dropdown
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit
@@ -458,27 +436,24 @@ block view
                     .text-nowrap Quintin Ed
                     .small.text-body-secondary.text-nowrap
                       span New
-                      |  | Registered: Jan 1, 2023
+                      |  | Registered: Nov 7, 2024
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-in")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-in.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 74%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
+                      .text-nowrap.small.text-body-secondary.ms-3 Feb 10, 2026 - Mar 11, 2026
                     .progress.progress-thin
                       .progress-bar.bg-warning(role='progressbar', style='width: 74%', aria-valuenow='74', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-stripe")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-stripe.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap 1 hour ago
                   td
                     .dropdown
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit
@@ -492,27 +467,24 @@ block view
                     .text-nowrap Enéas Kwadwo
                     .small.text-body-secondary.text-nowrap
                       span New
-                      |  | Registered: Jan 1, 2023
+                      |  | Registered: Jan 30, 2025
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-fr")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-fr.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 98%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
+                      .text-nowrap.small.text-body-secondary.ms-3 Apr 1, 2026 - Apr 30, 2026
                     .progress.progress-thin
                       .progress-bar.bg-danger(role='progressbar', style='width: 98%', aria-valuenow='98', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-paypal")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-paypal.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap Last month
                   td
                     .dropdown
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit
@@ -526,27 +498,24 @@ block view
                     .text-nowrap Agapetus Tadeáš
                     .small.text-body-secondary.text-nowrap
                       span New
-                      |  | Registered: Jan 1, 2023
+                      |  | Registered: Jun 12, 2024
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-es")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-es.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 22%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
+                      .text-nowrap.small.text-body-secondary.ms-3 Mar 20, 2026 - Apr 19, 2026
                     .progress.progress-thin
                       .progress-bar.bg-info(role='progressbar', style='width: 22%', aria-valuenow='22', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-apple-pay")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-apple-pay.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap Last week
                   td
                     .dropdown.dropup
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit
@@ -560,27 +529,24 @@ block view
                     .text-nowrap Friderik Dávid
                     .small.text-body-secondary.text-nowrap
                       span New
-                      |  | Registered: Jan 1, 2023
+                      |  | Registered: Dec 3, 2025
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-pl")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-pl.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 43%
-                      .text-nowrap.small.text-body-secondary.ms-3 Jun 11, 2023 - Jul 10, 2023
+                      .text-nowrap.small.text-body-secondary.ms-3 Apr 5, 2026 - May 4, 2026
                     .progress.progress-thin
                       .progress-bar.bg-success(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-amex")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-amex.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap Yesterday
                   td
                     .dropdown.dropup
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit

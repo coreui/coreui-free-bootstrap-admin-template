@@ -31,15 +31,12 @@ block view
                 div
                   .fs-4.fw-semibold 26K 
                     span.fs-6.fw-normal (-12.4%
-                      svg.icon
-                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom")
+                      +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-bottom.svg').icon
                       | )
                   div Users
                 .dropdown
                   button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
-                      |
+                    +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                   .dropdown-menu.dropdown-menu-end
                     a.dropdown-item(href='#') Action
                     a.dropdown-item(href='#') Another action
@@ -53,14 +50,12 @@ block view
                 div
                   .fs-4.fw-semibold $6.200 
                     span.fs-6.fw-normal (40.9%
-                      svg.icon
-                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top")
+                      +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-top.svg').icon
                       | )
                   div Income
                 .dropdown
                   button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                    +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                   .dropdown-menu.dropdown-menu-end
                     a.dropdown-item(href='#') Action
                     a.dropdown-item(href='#') Another action
@@ -74,14 +69,12 @@ block view
                 div
                   .fs-4.fw-semibold 2.49% 
                     span.fs-6.fw-normal (84.7%
-                      svg.icon
-                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top")
+                      +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-top.svg').icon
                       | )
                   div Conversion Rate
                 .dropdown
                   button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                    +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                   .dropdown-menu.dropdown-menu-end
                     a.dropdown-item(href='#') Action
                     a.dropdown-item(href='#') Another action
@@ -95,14 +88,12 @@ block view
                 div
                   .fs-4.fw-semibold 44K 
                     span.fs-6.fw-normal (-23.6%
-                      svg.icon
-                        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom")
+                      +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-bottom.svg').icon
                       | )
                   div Sessions
                 .dropdown
                   button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                    +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                   .dropdown-menu.dropdown-menu-end
                     a.dropdown-item(href='#') Action
                     a.dropdown-item(href='#') Another action
@@ -244,9 +235,7 @@ block view
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-primary.text-white.p-3.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-settings.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-primary $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -255,9 +244,7 @@ block view
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-info.text-white.p-3.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-laptop.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-info $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -266,9 +253,7 @@ block view
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-warning.text-white.p-3.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-moon.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-warning $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -277,9 +262,7 @@ block view
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-danger.text-white.p-3.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-bell.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-danger $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -290,69 +273,53 @@ block view
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-primary.text-white.p-3.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-settings.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-primary $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
               .card-footer.px-3.py-2
                 a.btn-block.text-body-secondary.d-flex.justify-content-between.align-items-center(href='#')
                   span.small.fw-semibold View More
-                  svg.icon
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-chevron-right.svg').icon
           // /.col
           .col-12.col-sm-6.col-xl-4.col-xxl-3
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-info.text-white.p-3.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-laptop.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-info $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
               .card-footer.px-3.py-2
                 a.btn-block.text-body-secondary.d-flex.justify-content-between.align-items-center(href='#')
                   span.small.fw-semibold View More
-                  svg.icon
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-chevron-right.svg').icon
           // /.col
           .col-12.col-sm-6.col-xl-4.col-xxl-3
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-warning.text-white.p-3.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-moon.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-warning $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
               .card-footer.px-3.py-2
                 a.btn-block.text-body-secondary.d-flex.justify-content-between.align-items-center(href='#')
                   span.small.fw-semibold View More
-                  svg.icon
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-chevron-right.svg').icon
           // /.col
           .col-12.col-sm-6.col-xl-4.col-xxl-3
             .card
               .card-body.p-3.d-flex.align-items-center
                 div.bg-danger.text-white.p-3.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-bell.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-danger $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
               .card-footer.px-3.py-2
                 a.btn-block.text-body-secondary.d-flex.justify-content-between.align-items-center(href='#')
                   span.small.fw-semibold View More
-                  svg.icon
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chevron-right")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-chevron-right.svg').icon
           // /.col
         // /.row.g-4
       +example()
@@ -361,9 +328,7 @@ block view
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-primary.text-white.p-4.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-settings.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-primary $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -372,9 +337,7 @@ block view
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-info.text-white.p-4.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-laptop.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-info $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -383,9 +346,7 @@ block view
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-warning.text-white.p-4.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-moon.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-warning $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -394,9 +355,7 @@ block view
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-danger.text-white.p-4.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-bell.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-danger $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -407,9 +366,7 @@ block view
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-primary.text-white.py-4.px-5.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-settings.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-primary $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -418,9 +375,7 @@ block view
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-info.text-white.py-4.px-5.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-laptop")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-laptop.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-info $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -429,9 +384,7 @@ block view
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-warning.text-white.py-4.px-5.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-moon.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-warning $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -440,9 +393,7 @@ block view
             .card.overflow-hidden
               .card-body.p-0.d-flex.align-items-center
                 div.bg-danger.text-white.py-4.px-5.me-3
-                  svg.icon.icon-xl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-bell.svg').icon.icon-xl
                 div
                   .fs-6.fw-semibold.text-danger $1.999,50
                   .text-body-secondary.text-uppercase.fw-semibold.small Widget title
@@ -453,9 +404,7 @@ block view
           .col-12.col-sm-6.col-xl-4
             .card(style='--cui-card-cap-bg: #3b5998')
               .card-header.position-relative.d-flex.justify-content-center.align-items-center
-                svg.icon.icon-3xl.text-white.my-4
-                  use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
-                  |
+                +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-facebook-f.svg').icon.icon-3xl.text-white.my-4
                 .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
                   canvas#social-box-chart-1(height='90')
               .card-body.row.text-center
@@ -470,9 +419,7 @@ block view
           .col-12.col-sm-6.col-xl-4
             .card(style='--cui-card-cap-bg: #00aced')
               .card-header.position-relative.d-flex.justify-content-center.align-items-center
-                svg.icon.icon-3xl.text-white.my-4
-                  use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
-                  |
+                +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-twitter.svg').icon.icon-3xl.text-white.my-4
                 .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
                   canvas#social-box-chart-2(height='90')
               .card-body.row.text-center
@@ -487,9 +434,7 @@ block view
           .col-12.col-sm-6.col-xl-4
             .card(style='--cui-card-cap-bg: #4875b4')
               .card-header.position-relative.d-flex.justify-content-center.align-items-center
-                svg.icon.icon-3xl.text-white.my-4
-                  use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
-                  |
+                +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-linkedin.svg').icon.icon-3xl.text-white.my-4
                 .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
                   canvas#social-box-chart-3(height='90')
               .card-body.row.text-center
@@ -507,9 +452,7 @@ block view
           .card
             .card-body
               .text-body-secondary.text-end
-                svg.icon.icon-xxl
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
-                  |
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-people.svg').icon.icon-xxl
               .fs-4.fw-semibold 87.500
               .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Visitors
               .progress.progress-thin.mt-3.mb-0
@@ -517,9 +460,7 @@ block view
           .card
             .card-body
               .text-body-secondary.text-end
-                svg.icon.icon-xxl
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
-                  |
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-user-follow.svg').icon.icon-xxl
               .fs-4.fw-semibold 385
               .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate New Clients
               .progress.progress-thin.mt-3.mb-0
@@ -527,9 +468,7 @@ block view
           .card
             .card-body
               .text-body-secondary.text-end
-                svg.icon.icon-xxl
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
-                  |
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-basket.svg').icon.icon-xxl
               .fs-4.fw-semibold 1238
               .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Products sold
               .progress.progress-thin.mt-3.mb-0
@@ -537,9 +476,7 @@ block view
           .card
             .card-body
               .text-body-secondary.text-end
-                svg.icon.icon-xxl
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
-                  |
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-chart-pie.svg').icon.icon-xxl
               .fs-4.fw-semibold 28%
               .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Returning Visitors
               .progress.progress-thin.mt-3.mb-0
@@ -547,9 +484,7 @@ block view
           .card
             .card-body
               .text-body-secondary.text-end
-                svg.icon.icon-xxl
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
-                  |
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-speedometer.svg').icon.icon-xxl
               .fs-4.fw-semibold 5:34:11
               .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Avg. Time
               .progress.progress-thin.mt-3.mb-0
@@ -560,9 +495,7 @@ block view
             .card
               .card-body
                 .text-body-secondary.text-end
-                  svg.icon.icon-xxl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-people.svg').icon.icon-xxl
                 .fs-4.fw-semibold 87.500
                 .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Visitors
                 .progress.progress-thin.mt-3.mb-0
@@ -572,9 +505,7 @@ block view
             .card
               .card-body
                 .text-body-secondary.text-end
-                    svg.icon.icon-xxl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
-                      |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-user-follow.svg').icon.icon-xxl
                 .fs-4.fw-semibold 385
                 .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate New Clients
                 .progress.progress-thin.mt-3.mb-0
@@ -584,9 +515,7 @@ block view
             .card
               .card-body
                 .text-body-secondary.text-end
-                  svg.icon.icon-xxl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-basket.svg').icon.icon-xxl
                 .fs-4.fw-semibold 1238
                 .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Products sold
                 .progress.progress-thin.mt-3.mb-0
@@ -596,9 +525,7 @@ block view
             .card
               .card-body
                 .text-body-secondary.text-end
-                  svg.icon.icon-xxl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-chart-pie.svg').icon.icon-xxl
                 .fs-4.fw-semibold 28%
                 .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Returning Visitors
                 .progress.progress-thin.mt-3.mb-0
@@ -608,9 +535,7 @@ block view
             .card
               .card-body
                 .text-body-secondary.text-end
-                  svg.icon.icon-xxl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-speedometer.svg').icon.icon-xxl
                 .fs-4.fw-semibold 5:34:11
                 .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Avg. Time
                 .progress.progress-thin.mt-3.mb-0
@@ -620,9 +545,7 @@ block view
             .card
               .card-body
                 .text-body-secondary.text-end
-                  svg.icon.icon-xxl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-speech.svg').icon.icon-xxl
                 .fs-4.fw-semibold 972
                 .small.text-body-secondary.text-uppercase.fw-semibold.text-truncate Comments
                 .progress.progress-thin.mt-3.mb-0
@@ -635,9 +558,7 @@ block view
             .card.text-white.bg-info
               .card-body
                 .text-white.text-opacity-75.text-end
-                  svg.icon.icon-xxl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-people.svg').icon.icon-xxl
                 .fs-4.fw-semibold 87.500
                 .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate Visitors
                 .progress.progress-white.progress-thin.mt-3
@@ -647,9 +568,7 @@ block view
             .card.text-white.bg-success
               .card-body
                 .text-white.text-opacity-75.text-end
-                  svg.icon.icon-xxl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-follow")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-user-follow.svg').icon.icon-xxl
                 .fs-4.fw-semibold 385
                 .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate New Clients
                 .progress.progress-white.progress-thin.mt-3
@@ -659,9 +578,7 @@ block view
             .card.text-white.bg-warning
               .card-body
                 .text-white.text-opacity-75.text-end
-                  svg.icon.icon-xxl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-basket.svg').icon.icon-xxl
                 .fs-4.fw-semibold 1238
                 .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate Products sold
                 .progress.progress-white.progress-thin.mt-3
@@ -671,9 +588,7 @@ block view
             .card.text-white.bg-primary
               .card-body
                 .text-white.text-opacity-75.text-end
-                  svg.icon.icon-xxl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-chart-pie.svg').icon.icon-xxl
                 .fs-4.fw-semibold 28%
                 .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate Returning Visitors
                 .progress.progress-white.progress-thin.mt-3
@@ -683,9 +598,7 @@ block view
             .card.text-white.bg-danger
               .card-body
                 .text-white.text-opacity-75.text-end
-                  svg.icon.icon-xxl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-speedometer.svg').icon.icon-xxl
                 .fs-4.fw-semibold 5:34:11
                 .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate Avg. Time
                 .progress.progress-white.progress-thin.mt-3
@@ -695,9 +608,7 @@ block view
             .card.text-white.bg-info
               .card-body
                 .text-white.text-opacity-75.text-end
-                  svg.icon.icon-xxl
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speech")
-                    |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-speech.svg').icon.icon-xxl
                 .fs-4.fw-semibold 972
                 .small.text-white.text-opacity-75.text-uppercase.fw-semibold.text-truncate Comments
                 .progress.progress-white.progress-thin.mt-3

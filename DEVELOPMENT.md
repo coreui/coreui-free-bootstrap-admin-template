@@ -51,15 +51,21 @@ The development server includes live reload - changes to Pug, Sass, or JavaScrip
 ```
 src/
 ├── pug/              # HTML templates (edit these, not HTML files!)
-│   ├── _layout/      # Base page layouts
-│   ├── _partials/    # Reusable components (header, sidebar, footer)
+│   ├── _layout/      # Base page layouts (default.pug, pages.pug)
+│   ├── _partials/    # Reusable components (header, sidebar, footer, etc.)
 │   ├── _mixins/      # Pug helper functions
 │   └── views/        # Individual page templates
+│       ├── authentication/  # Auth pages (login, register, etc.)
+│       ├── components/      # UI components (buttons, modals, etc.)
+│       ├── error-pages/     # Error pages (404, 500)
+│       ├── forms/           # Form components
+│       └── icons/           # Icon libraries
 ├── scss/             # Stylesheets
 │   └── style.scss    # Main stylesheet (imports Bootstrap + CoreUI)
 ├── js/               # JavaScript modules
-│   ├── main.js       # Dashboard charts
+│   ├── main.js       # Main entry point
 │   ├── color-modes.js # Theme switcher
+│   ├── config.js     # App configuration / shared settings
 │   └── *.js          # Other page-specific scripts
 └── assets/           # Images, icons, static files
 ```
@@ -124,7 +130,7 @@ This creates optimized files in the `dist/` directory ready for deployment.
    Navigate to [http://localhost:3000/my-new-page.html](http://localhost:3000/my-new-page.html)
 
 4. **Add to navigation** (optional):
-   Edit `src/pug/_partials/_sidebar.pug` to add a menu link
+   Edit `src/pug/_partials/sidebar-nav.pug` to add a menu link
 
 ### Adding Page-Specific JavaScript
 
@@ -447,14 +453,6 @@ npm update              # Update to latest compatible versions
 npm outdated            # Check for outdated packages
 npm audit fix           # Fix security vulnerabilities
 ```
-
-### Change Template Version
-
-```bash
-npm run change-version 5.4.0
-```
-
-This updates version numbers across all files.
 
 ### Create Distribution Package
 

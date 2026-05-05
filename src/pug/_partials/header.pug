@@ -1,50 +1,35 @@
 header.header.header-sticky.p-0.mb-4
   .container-fluid.border-bottom.px-4
     button.header-toggler(type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()" style="margin-inline-start: -14px;")
-      svg.icon.icon-lg
-        use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu")
-    ul.header-nav.d-none.d-lg-flex
-      li.nav-item
-        a.nav-link(href="#") Dashboard
-      li.nav-item
-        a.nav-link(href="#") Users
-      li.nav-item
-        a.nav-link(href="#") Settings
+      +inlineSvg('node_modules/@coreui/icons/svg/free/cil-menu.svg').icon.icon-lg
     ul.header-nav.ms-auto
       li.nav-item
         a.nav-link(href="#")
-          svg.icon.icon-lg
-            use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
+          +inlineSvg('node_modules/@coreui/icons/svg/free/cil-bell.svg').icon.icon-lg
       li.nav-item
         a.nav-link(href="#")
-          svg.icon.icon-lg
-            use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich")
+          +inlineSvg('node_modules/@coreui/icons/svg/free/cil-list-rich.svg').icon.icon-lg
       li.nav-item
         a.nav-link(href="#")
-          svg.icon.icon-lg
-            use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
+          +inlineSvg('node_modules/@coreui/icons/svg/free/cil-envelope-open.svg').icon.icon-lg
     ul.header-nav
       li.nav-item.py-1
         .vr.h-100.mx-2.text-body.text-opacity-75
       li.nav-item.dropdown
         button.btn.btn-link.nav-link.py-2.px-2.d-flex.align-items-center(type="button" aria-expanded="false" data-coreui-toggle="dropdown")
-          svg.icon.icon-lg.theme-icon-active
-            use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast")
+          +inlineSvg('node_modules/@coreui/icons/svg/free/cil-contrast.svg').icon.icon-lg.theme-icon-active
         ul.dropdown-menu.dropdown-menu-end(style='--cui-dropdown-min-width: 8rem;')
           li
             button.dropdown-item.d-flex.align-items-center(type='button' data-coreui-theme-value='light')
-              svg.icon.icon-lg.me-3
-                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-sun")
+              +inlineSvg('node_modules/@coreui/icons/svg/free/cil-sun.svg').icon.icon-lg.me-3
               | Light
           li
             button.dropdown-item.d-flex.align-items-center(type='button' data-coreui-theme-value='dark')
-              svg.icon.icon-lg.me-3
-                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon")
+              +inlineSvg('node_modules/@coreui/icons/svg/free/cil-moon.svg').icon.icon-lg.me-3
               | Dark
           li
             button.dropdown-item.d-flex.align-items-center.active(type='button' data-coreui-theme-value='auto')
-              svg.icon.icon-lg.me-3
-                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast")
+              +inlineSvg('node_modules/@coreui/icons/svg/free/cil-contrast.svg').icon.icon-lg.me-3
               | Auto
       li.nav-item.py-1
         .vr.h-100.mx-2.text-body.text-opacity-75
@@ -55,63 +40,39 @@ header.header.header-sticky.p-0.mb-4
         .dropdown-menu.dropdown-menu-end.pt-0
           .dropdown-header.bg-body-tertiary.text-body-secondary.fw-semibold.rounded-top.mb-2 Account
           a.dropdown-item(href="#")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell")
-              |
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-bell.svg').icon.me-2
             |  Updates
-            span.badge.badge-sm.bg-info.ms-2 42
+            span.badge.badge-sm.bg-info.ms-2 8
           a.dropdown-item(href="#")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open")
-              |
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-envelope-open.svg').icon.me-2
             |  Messages
             span.badge.badge-sm.bg-success.ms-2 42
           a.dropdown-item(href="#")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task")
-              |
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-task.svg').icon.me-2
             |  Tasks
-            span.badge.badge-sm.bg-danger.ms-2 42
           a.dropdown-item(href="#")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square")
-              |
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-comment-square.svg').icon.me-2
             |  Comments
-            span.badge.badge-sm.bg-warning.ms-2 42
           .dropdown-header.bg-body-tertiary.text-body-secondary.fw-semibold.my-2
             .fw-semibold Settings
           a.dropdown-item(href="#")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
-              |
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-user.svg').icon.me-2
             |  Profile
           a.dropdown-item(href="#")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings")
-              |
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-settings.svg').icon.me-2
             |  Settings
           a.dropdown-item(href="#")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card")
-              |
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-credit-card.svg').icon.me-2
             |  Payments
-            span.badge.badge-sm.bg-secondary.ms-2 42
           a.dropdown-item(href="#")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file")
-              |
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-file.svg').icon.me-2
             |  Projects
-            span.badge.badge-sm.bg-primary.ms-2 42
           .dropdown-divider
           a.dropdown-item(href="#")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked")
-              |
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-lock-locked.svg').icon.me-2
             |  Lock Account
-          a.dropdown-item(href="#")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout")
-              |
+          a.dropdown-item(href="/authentication/login.html")
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-account-logout.svg').icon.me-2
             |  Logout
   .container-fluid.px-4
     block breadcrumb

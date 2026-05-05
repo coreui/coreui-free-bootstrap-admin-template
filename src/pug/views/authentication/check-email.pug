@@ -1,0 +1,18 @@
+extends ../../_layout/pages.pug
+
+block view
+  .container(style='max-width: 28rem')
+    .d-flex.flex-column.gap-4.text-center
+      +inlineSvg(src='assets/brand/coreui-full.svg' height='48' alt='CoreUI Logo Full')
+      .card.p-4
+        .card-body.d-flex.flex-column.gap-4
+          h2.h5.mb-0 Check your email
+          div.text-body-secondary
+            | Please click the link sent to 
+            span.fw-semibold your@email.com
+            | to verify your account. Thank you!
+          div
+            a.btn.btn-primary.w-100(href='./') Back to Home
+      .text-body-secondary
+        | Didn’t receive an email? 
+        a(href='./authentication/login.html') Resend

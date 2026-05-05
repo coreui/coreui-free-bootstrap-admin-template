@@ -1,0 +1,18 @@
+//- Inlines an SVG file. Src can be passed as positional arg or as `src` attribute.
+//-
+//- Usage:
+//-   +inlineSvg('assets/img/logo.svg')(alt='Company logo' width='88' height='32').my-class
+//-   +inlineSvg(src='assets/img/logo.svg' alt='Company logo' width='88').my-class
+
+mixin inlineSvg(src)
+  - var attrs = Object.assign({}, attributes)
+  - var resolvedSrc = src || attrs.src || attrs.srcset || ''
+  - var alt = attrs.alt || ''
+  - delete attrs.src
+  - delete attrs.srcset
+  - delete attrs.alt
+  - var svgContent = readSvg(resolvedSrc, alt, attrs)
+  if svgContent.startsWith('<!--')
+    img(src=resolvedSrc alt=alt)
+  else
+    != svgContent

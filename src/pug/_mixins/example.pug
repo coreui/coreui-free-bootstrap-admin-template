@@ -3,16 +3,12 @@ mixin example(url, classNames)
     ul.nav.nav-underline-border(role="tablist")
       li.nav-item
         a.nav-link.active(data-coreui-toggle="tab" href="#preview-"+count role="tab")
-          svg.icon.me-2
-            use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play")
-            |
+          +inlineSvg('node_modules/@coreui/icons/svg/free/cil-media-play.svg').icon.me-2
           | Preview
       if url
         li.nav-item
           a.nav-link(href=url target="_blank")
-            svg.icon.me-2
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code")
-              |
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-code.svg').icon.me-2
             | Code
     .tab-content.rounded-bottom(class=classNames)
       .tab-pane.p-3.active.preview(role="tabpanel" id="preview-"+count++ )

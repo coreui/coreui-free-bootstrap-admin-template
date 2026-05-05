@@ -14,9 +14,10 @@ block breadcrumb
   )
 
 block js
-  | document.querySelectorAll('.form-example-indeterminate [type="checkbox"]').forEach(function (checkbox) {
-  |   checkbox.indeterminate = true
-  | })
+  script.
+    document.querySelectorAll('.form-example-indeterminate [type="checkbox"]').forEach(function (checkbox) {
+      checkbox.indeterminate = true
+    })
 
 block view
   +docs-components('https://coreui.io/bootstrap/docs/forms/checks-radios/')
