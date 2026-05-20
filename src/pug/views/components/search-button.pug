@@ -1,0 +1,80 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/bootstrap/docs/components/search-button/')
+
+block breadcrumb
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      'Search Button'
+    ]
+  )
+
+block view
+  +docs-components('https://coreui.io/bootstrap/docs/components/search-button/')
+  .row
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Search Button
+          span.small.ms-1 Basic example
+        .card-body
+          p.text-body-secondary.small
+            | Use the search button as the entry point for a controlled search interface.
+          +example('https://coreui.io/bootstrap/docs/components/search-button/#basic-example')
+            button.search-button(type='button' data-coreui-search-button='' data-coreui-shortcut='cmd+/,ctrl+/' data-coreui-toggle='modal' data-coreui-target='#searchButtonBasicExample')
+              svg.search-button-icon(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 512 512' aria-hidden='true')
+                path(fill='currentcolor' d='m479.6 399.716-81.084-81.084-62.368-25.767A175 175 0 0 0 368 192c0-97.047-78.953-176-176-176S16 94.953 16 192s78.953 176 176 176a175.03 175.03 0 0 0 101.619-32.377l25.7 62.2 81.081 81.088a56 56 0 1 0 79.2-79.195M48 192c0-79.4 64.6-144 144-144s144 64.6 144 144-64.6 144-144 144S48 271.4 48 192m408.971 264.284a24.03 24.03 0 0 1-33.942 0l-76.572-76.572-23.894-57.835 57.837 23.894 76.573 76.572a24.03 24.03 0 0 1-.002 33.941')
+              span.search-button-placeholder Search
+            #searchButtonBasicExample.modal.fade(tabindex='-1' aria-labelledby='searchButtonBasicExampleLabel' aria-hidden='true')
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    h5#searchButtonBasicExampleLabel.modal-title Search
+                    button.btn-close(type='button' data-coreui-dismiss='modal' aria-label='Close')
+                  .modal-body
+                    input.form-control(type='search' placeholder='Search...')
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Search Button
+          span.small.ms-1 Custom shortcut
+        .card-body
+          p.text-body-secondary.small
+            | Configure the shortcut to match your command palette or product conventions.
+          +example('https://coreui.io/bootstrap/docs/components/search-button/#custom-shortcut')
+            button.search-button(type='button' data-coreui-search-button='' data-coreui-shortcut='cmd+k,ctrl+k' data-coreui-toggle='modal' data-coreui-target='#searchButtonCustomShortcut')
+              svg.search-button-icon(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 512 512' aria-hidden='true')
+                path(fill='currentcolor' d='m479.6 399.716-81.084-81.084-62.368-25.767A175 175 0 0 0 368 192c0-97.047-78.953-176-176-176S16 94.953 16 192s78.953 176 176 176a175.03 175.03 0 0 0 101.619-32.377l25.7 62.2 81.081 81.088a56 56 0 1 0 79.2-79.195M48 192c0-79.4 64.6-144 144-144s144 64.6 144 144-64.6 144-144 144S48 271.4 48 192m408.971 264.284a24.03 24.03 0 0 1-33.942 0l-76.572-76.572-23.894-57.835 57.837 23.894 76.573 76.572a24.03 24.03 0 0 1-.002 33.941')
+              span.search-button-placeholder Command palette
+            #searchButtonCustomShortcut.modal.fade(tabindex='-1' aria-labelledby='searchButtonCustomShortcutLabel' aria-hidden='true')
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    h5#searchButtonCustomShortcutLabel.modal-title Command palette
+                    button.btn-close(type='button' data-coreui-dismiss='modal' aria-label='Close')
+                  .modal-body
+                    p.mb-0 Triggered 0 times with click or shortcut.
+    .col-12
+      .card.mb-4
+        .card-header
+          strong Search Button
+          span.small.ms-1 Launch an offcanvas
+        .card-body
+          p.text-body-secondary.small
+            | Use the search button to launch an offcanvas panel for quick navigation or command results.
+          +example('https://coreui.io/bootstrap/docs/components/search-button/#launch-an-offcanvas')
+            button.search-button(type='button' data-coreui-search-button='' data-coreui-shortcut='cmd+shift+o,ctrl+shift+o' data-coreui-toggle='offcanvas' data-coreui-target='#searchButtonOffcanvasExample' aria-controls='searchButtonOffcanvasExample')
+              svg.search-button-icon(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 512 512' aria-hidden='true')
+                path(fill='currentcolor' d='m479.6 399.716-81.084-81.084-62.368-25.767A175 175 0 0 0 368 192c0-97.047-78.953-176-176-176S16 94.953 16 192s78.953 176 176 176a175.03 175.03 0 0 0 101.619-32.377l25.7 62.2 81.081 81.088a56 56 0 1 0 79.2-79.195M48 192c0-79.4 64.6-144 144-144s144 64.6 144 144-64.6 144-144 144S48 271.4 48 192m408.971 264.284a24.03 24.03 0 0 1-33.942 0l-76.572-76.572-23.894-57.835 57.837 23.894 76.573 76.572a24.03 24.03 0 0 1-.002 33.941')
+              span.search-button-placeholder Search
+            #searchButtonOffcanvasExample.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='searchButtonOffcanvasExampleLabel')
+              .offcanvas-header
+                h5#searchButtonOffcanvasExampleLabel.offcanvas-title Search panel
+                button.btn-close(type='button' data-coreui-dismiss='offcanvas' aria-label='Close')
+              .offcanvas-body
+                .mb-3
+                  input.form-control(type='search' placeholder='Search...')
+                p.mb-0 Use this space for filters, recent searches, or command shortcuts.

@@ -2,6 +2,7 @@ header.header.header-sticky.p-0.mb-4
   .container-fluid.border-bottom.px-4
     button.header-toggler(type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()" style="margin-inline-start: -14px;")
       +inlineSvg('node_modules/@coreui/icons/svg/free/cil-menu.svg').icon.icon-lg
+    include ../_partials/search-button.pug
     ul.header-nav.ms-auto
       li.nav-item
         a.nav-link(href="#")
