@@ -43,7 +43,7 @@
     <link href="css/examples.css" rel="stylesheet">
     <script src="js/config.js"></script>
     <script src="js/color-modes.js"></script>
-    <link rel="canonical" href="https://coreui.io/bootstrap/docs/components/collapse/">
+    <link rel="canonical" href="https://coreui.io/bootstrap/docs/components/search-button/">
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
@@ -738,8 +738,7 @@
             <ol class="breadcrumb my-0">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><span>Components</span></li>
-              <li class="breadcrumb-item"><span>Base</span></li>
-              <li class="breadcrumb-item active"><span>Collapse</span></li>
+              <li class="breadcrumb-item active"><span>Search Button</span></li>
             </ol>
           </nav>
         </div>
@@ -755,170 +754,167 @@
                 . This component is part of this library, and we present only the basic usage of it here. To explore extended examples, detailed API documentation, and customization options, refer to our docs.
               </div>
               <div class="col-md-auto col-12 mt-3 mt-lg-0 d-flex flex-column">
-                <a class="btn btn-primary text-nowrap text-white" href="https://coreui.io/bootstrap/docs/components/collapse/" target="_blank" rel="noopener noreferrer">Explore Documentation</a>
+                <a class="btn btn-primary text-nowrap text-white" href="https://coreui.io/bootstrap/docs/components/search-button/" target="_blank" rel="noopener noreferrer">Explore Documentation</a>
                 <div class="text-center my-1">or</div>
                 <a class="btn btn-danger text-nowrap text-white" href="https://coreui.io/pricing/?framework=bootstrap&amp;src=free-bootstrap-admin-template-docs-banner" target="_blank" rel="noopener noreferrer">Get CoreUI PRO →</a>
               </div>
             </div>
           </div>
-          <div class="card mb-4">
-            <div class="card-header"><strong>Collapse</strong></div>
-            <div class="card-body">
-              <p class="text-body-secondary small">
-                You can use a link with the
-                <code>href</code>
-                attribute, or a button with the
-                <code>data-coreui-target</code>
-                attribute. In both samples, the
-                <code>data-coreui-toggle="collapse""</code>
-                is required.
-              </p>
-              <div class="example">
-                <ul class="nav nav-underline-border" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1000" role="tab">
-                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                      </svg>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/collapse/#example" target="_blank">
-                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                      </svg>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1000">
-                    <p>
-                      <a class="btn btn-primary" data-coreui-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Link with href</a>
-                      <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target</button>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                      <div class="card mb-4 card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
-                    </div>
-                  </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Search Button</strong>
+                  <span class="small ms-1">Basic example</span>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-4">
-            <div class="card-header">
-              <strong>Collapse</strong>
-              <span class="small ms-1">Horizontal</span>
-            </div>
-            <div class="card-body">
-              <p class="text-body-secondary small">
-                The collapse plugin also supports horizontal collapsing. Add the
-                <code>.collapse-horizontal</code>
-                modifier class to transition the
-                <code>width</code>
-                instead of
-                <code>height</code>
-                and set a
-                <code>width</code>
-                on the immediate child element. Feel free to write your own custom Sass, use inline styles, or use our
-                <a href="/docs/utilities/sizing/">width utilities</a>
-                .
-              </p>
-              <div class="example">
-                <ul class="nav nav-underline-border" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1001" role="tab">
-                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                      </svg>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/collapse/#horizontal" target="_blank">
-                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                      </svg>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1001">
-                    <p>
-                      <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Toggle width collapse</button>
-                    </p>
-                    <div style="min-height: 120px">
-                      <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                        <div class="card card-body" style="width: 300px">This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-4">
-            <div class="card-header">
-              <strong>Collapse</strong>
-              <span class="small ms-1">multiple targets</span>
-            </div>
-            <div class="card-body">
-              <p class="text-body-secondary small">
-                A
-                <code>&lt;button&gt;</code>
-                or
-                <code>&lt;a&gt;</code>
-                can show and hide multiple elements by referencing them with a selector in its
-                <code>href</code>
-                or
-                <code>data-coreui-target</code>
-                attribute. Multiple
-                <code>&lt;button&gt;</code>
-                or
-                <code>&lt;a&gt;</code>
-                can show and hide an element if they each reference it with their
-                <code>href</code>
-                or
-                <code>data-coreui-target</code>
-                attribute
-              </p>
-              <div class="example">
-                <ul class="nav nav-underline-border" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1002" role="tab">
-                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                      </svg>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/collapse/#multiple-targets" target="_blank">
-                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                      </svg>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="tab-content rounded-bottom">
-                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1002">
-                    <p>
-                      <a class="btn btn-primary" data-coreui-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-                      <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle second element</button>
-                      <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-                    </p>
-                    <div class="row">
-                      <div class="col-sm-12 col-md-6">
-                        <div class="collapse multi-collapse" id="multiCollapseExample1">
-                          <div class="card mb-4 card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">Use the search button as the entry point for a controlled search interface.</p>
+                  <div class="example">
+                    <ul class="nav nav-underline-border" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1000" role="tab">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                          </svg>
+                          Preview
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/search-button/#basic-example" target="_blank">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                          </svg>
+                          Code
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1000">
+                        <button class="search-button" type="button" data-coreui-search-button="" data-coreui-shortcut="cmd+/,ctrl+/" data-coreui-toggle="modal" data-coreui-target="#searchButtonBasicExample">
+                          <svg class="search-button-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+                            <path fill="currentcolor" d="m479.6 399.716-81.084-81.084-62.368-25.767A175 175 0 0 0 368 192c0-97.047-78.953-176-176-176S16 94.953 16 192s78.953 176 176 176a175.03 175.03 0 0 0 101.619-32.377l25.7 62.2 81.081 81.088a56 56 0 1 0 79.2-79.195M48 192c0-79.4 64.6-144 144-144s144 64.6 144 144-64.6 144-144 144S48 271.4 48 192m408.971 264.284a24.03 24.03 0 0 1-33.942 0l-76.572-76.572-23.894-57.835 57.837 23.894 76.573 76.572a24.03 24.03 0 0 1-.002 33.941"></path>
+                          </svg>
+                          <span class="search-button-placeholder">Search</span>
+                        </button>
+                        <div class="modal fade" id="searchButtonBasicExample" tabindex="-1" aria-labelledby="searchButtonBasicExampleLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="searchButtonBasicExampleLabel">Search</h5>
+                                <button class="btn-close" type="button" data-coreui-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <input class="form-control" type="search" placeholder="Search...">
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-sm-12 col-md-6">
-                        <div class="collapse multi-collapse" id="multiCollapseExample2">
-                          <div class="card mb-4 card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Search Button</strong>
+                  <span class="small ms-1">Custom shortcut</span>
+                </div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">Configure the shortcut to match your command palette or product conventions.</p>
+                  <div class="example">
+                    <ul class="nav nav-underline-border" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1001" role="tab">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                          </svg>
+                          Preview
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/search-button/#custom-shortcut" target="_blank">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                          </svg>
+                          Code
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1001">
+                        <button class="search-button" type="button" data-coreui-search-button="" data-coreui-shortcut="cmd+k,ctrl+k" data-coreui-toggle="modal" data-coreui-target="#searchButtonCustomShortcut">
+                          <svg class="search-button-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+                            <path fill="currentcolor" d="m479.6 399.716-81.084-81.084-62.368-25.767A175 175 0 0 0 368 192c0-97.047-78.953-176-176-176S16 94.953 16 192s78.953 176 176 176a175.03 175.03 0 0 0 101.619-32.377l25.7 62.2 81.081 81.088a56 56 0 1 0 79.2-79.195M48 192c0-79.4 64.6-144 144-144s144 64.6 144 144-64.6 144-144 144S48 271.4 48 192m408.971 264.284a24.03 24.03 0 0 1-33.942 0l-76.572-76.572-23.894-57.835 57.837 23.894 76.573 76.572a24.03 24.03 0 0 1-.002 33.941"></path>
+                          </svg>
+                          <span class="search-button-placeholder">Command palette</span>
+                        </button>
+                        <div class="modal fade" id="searchButtonCustomShortcut" tabindex="-1" aria-labelledby="searchButtonCustomShortcutLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="searchButtonCustomShortcutLabel">Command palette</h5>
+                                <button class="btn-close" type="button" data-coreui-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p class="mb-0">Triggered 0 times with click or shortcut.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Search Button</strong>
+                  <span class="small ms-1">Launch an offcanvas</span>
+                </div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">Use the search button to launch an offcanvas panel for quick navigation or command results.</p>
+                  <div class="example">
+                    <ul class="nav nav-underline-border" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1002" role="tab">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                          </svg>
+                          Preview
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/search-button/#launch-an-offcanvas" target="_blank">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                          </svg>
+                          Code
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1002">
+                        <button class="search-button" type="button" data-coreui-search-button="" data-coreui-shortcut="cmd+shift+o,ctrl+shift+o" data-coreui-toggle="offcanvas" data-coreui-target="#searchButtonOffcanvasExample" aria-controls="searchButtonOffcanvasExample">
+                          <svg class="search-button-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+                            <path fill="currentcolor" d="m479.6 399.716-81.084-81.084-62.368-25.767A175 175 0 0 0 368 192c0-97.047-78.953-176-176-176S16 94.953 16 192s78.953 176 176 176a175.03 175.03 0 0 0 101.619-32.377l25.7 62.2 81.081 81.088a56 56 0 1 0 79.2-79.195M48 192c0-79.4 64.6-144 144-144s144 64.6 144 144-64.6 144-144 144S48 271.4 48 192m408.971 264.284a24.03 24.03 0 0 1-33.942 0l-76.572-76.572-23.894-57.835 57.837 23.894 76.573 76.572a24.03 24.03 0 0 1-.002 33.941"></path>
+                          </svg>
+                          <span class="search-button-placeholder">Search</span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" id="searchButtonOffcanvasExample" tabindex="-1" aria-labelledby="searchButtonOffcanvasExampleLabel">
+                          <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="searchButtonOffcanvasExampleLabel">Search panel</h5>
+                            <button class="btn-close" type="button" data-coreui-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                            <div class="mb-3">
+                              <input class="form-control" type="search" placeholder="Search...">
+                            </div>
+                            <p class="mb-0">Use this space for filters, recent searches, or command shortcuts.</p>
+                          </div>
                         </div>
                       </div>
                     </div>

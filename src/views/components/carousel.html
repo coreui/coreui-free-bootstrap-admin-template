@@ -228,6 +228,12 @@
               </a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="components/search-button.html">
+                <span class="nav-icon"><span class="nav-icon-bullet"></span></span>
+                Search Button
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="components/spinners.html">
                 <span class="nav-icon"><span class="nav-icon-bullet"></span></span>
                 Spinners
@@ -577,6 +583,13 @@
               <path fill="var(--ci-primary-color, currentcolor)" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z" class="ci-primary" />
             </svg>
           </button>
+          <button class="search-button" type="button" data-coreui-search-button="" data-coreui-shortcut="cmd+/,ctrl+/" data-coreui-toggle="modal" data-coreui-target="#searchButtonModal">
+            <svg class="search-button-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+              <path fill="currentcolor" d="m479.6 399.716-81.084-81.084-62.368-25.767A175 175 0 0 0 368 192c0-97.047-78.953-176-176-176S16 94.953 16 192s78.953 176 176 176a175.03 175.03 0 0 0 101.619-32.377l25.7 62.2 81.081 81.088a56 56 0 1 0 79.2-79.195M48 192c0-79.4 64.6-144 144-144s144 64.6 144 144-64.6 144-144 144S48 271.4 48 192m408.971 264.284a24.03 24.03 0 0 1-33.942 0l-76.572-76.572-23.894-57.835 57.837 23.894 76.573 76.572a24.03 24.03 0 0 1-.002 33.941"></path>
+            </svg>
+            <span class="search-button-placeholder d-none d-sm-block">Search</span>
+            <span class="search-button-keys d-none d-sm-inline-flex"></span>
+          </button>
           <ul class="header-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -709,7 +722,7 @@
                   </svg>
                   Lock Account
                 </a>
-                <a class="dropdown-item" href="/authentication/login.html">
+                <a class="dropdown-item" href="authentication/login.html">
                   <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path fill="var(--ci-primary-color, currentcolor)" d="M77.155 272.034H351.75v-32.001H77.155l75.053-75.053v-.001l-22.628-22.626-113.681 113.68.001.001h-.001L129.58 369.715l22.628-22.627v-.001z" class="ci-primary" />
                     <path fill="var(--ci-primary-color, currentcolor)" d="M160 16v32h304v416H160v32h336V16z" class="ci-primary" />
@@ -1230,6 +1243,51 @@
           <a href="https://coreui.io/bootstrap/docs/">CoreUI UI Components</a>
         </div>
       </footer>
+    </div>
+    <div class="modal fade" id="searchButtonModal" tabindex="-1" aria-labelledby="searchButtonModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <input class="form-control border-0 p-0 rounded-0 shadow-none" type="text" placeholder="Search">
+            <button class="btn-close" type="button" data-coreui-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-body-secondary small mb-2">Recent searches</p>
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action d-flex align-items-center gap-2" href="#">
+                <svg class="text-body-secondary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 512 512" aria-hidden="true">
+                  <path fill="currentcolor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+                </svg>
+                <span>CoreUI components overview</span>
+              </a>
+              <a class="list-group-item list-group-item-action d-flex align-items-center gap-2" href="#">
+                <svg class="text-body-secondary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 512 512" aria-hidden="true">
+                  <path fill="currentcolor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+                </svg>
+                <span>Modal dialog examples</span>
+              </a>
+              <a class="list-group-item list-group-item-action d-flex align-items-center gap-2" href="#">
+                <svg class="text-body-secondary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 512 512" aria-hidden="true">
+                  <path fill="currentcolor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+                </svg>
+                <span>Form validation with Bootstrap</span>
+              </a>
+              <a class="list-group-item list-group-item-action d-flex align-items-center gap-2" href="#">
+                <svg class="text-body-secondary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 512 512" aria-hidden="true">
+                  <path fill="currentcolor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+                </svg>
+                <span>Sidebar navigation customization</span>
+              </a>
+              <a class="list-group-item list-group-item-action d-flex align-items-center gap-2" href="#">
+                <svg class="text-body-secondary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 512 512" aria-hidden="true">
+                  <path fill="currentcolor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+                </svg>
+                <span>CSS variables theming</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
