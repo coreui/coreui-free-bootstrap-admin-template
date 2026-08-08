@@ -1,0 +1,56 @@
+extends ../_layout/default.pug
+
+block styles
+  link(href='node_modules/@coreui/data-grid/dist/css/data-grid.css', rel='stylesheet')
+
+block scripts
+  script(src='node_modules/@coreui/data-grid/dist/js/data-grid.js')
+  script(src='js/data-grid.js')
+
+block breadcrumb
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Data Grid'}
+    ]
+  )
+
+block view
+  .bg-warning.bg-opacity-10.border.border-2.border-warning.rounded.mb-4
+    .row.d-flex.align-items-center.p-3.px-xl-4.flex-xl-nowrap
+      .col-xl-auto.col-12.d-none.d-xl-block.p-0
+        img.img-fluid(src='assets/img/components.webp' width='160px' height='160px' alt='CoreUI Data Grid hexagon')
+      .col-md.col-12.px-lg-4
+        h5.mb-1
+          | CoreUI Data Grid
+          span.badge.bg-warning.text-dark.ms-2 ADD-ON
+        | Your tables choke past a few thousand rows — this one doesn't. <strong>100,000+ rows, buttery-smooth, with sorting, filtering, inline editing and drag-and-drop row reordering built in.</strong> It's the enterprise-grade grid your dashboard has been missing, for Bootstrap, React, Vue and Angular.
+      .col-md-auto.col-12.mt-3.mt-lg-0.d-flex.flex-column
+        a.btn.btn-warning.text-nowrap(href='https://coreui.io/data-grid/docs/features/overview/' target='_blank' rel='noopener noreferrer') Explore Documentation
+        div.text-center.my-1
+          | or
+        a.btn.btn-danger.text-nowrap.text-white(href='https://coreui.io/data-grid/javascript/?src=bootstrap-free-admin-template-data-grid-banner' target='_blank' rel='noopener noreferrer') Get CoreUI Data Grid →
+
+  .card.mb-4
+    .card-header
+      strong Data Grid
+      span.small.ms-1 sorting, filtering, row reordering, inline editing &amp; pagination
+    .card-body
+      p.text-body-secondary
+        | This is the kitchen-sink demo: one grid with every interaction feature turned on at once, so you can see how they compose. It renders 10,000 rows across fourteen columns — four hidden by default — with the #[a(href='https://coreui.io/data-grid/docs/features/toolbar/' target='_blank') toolbar], #[a(href='https://coreui.io/data-grid/docs/features/filtering/' target='_blank') per-column filters], column #[a(href='https://coreui.io/data-grid/docs/columns/sizing/' target='_blank') sizing], #[a(href='https://coreui.io/data-grid/docs/columns/pinning/' target='_blank') pinning], #[a(href='https://coreui.io/data-grid/docs/columns/ordering-visibility/' target='_blank') ordering &amp; visibility], the #[a(href='https://coreui.io/data-grid/docs/columns/menu/' target='_blank') column menu], #[a(href='https://coreui.io/data-grid/docs/features/row-selection/' target='_blank') row selection], multi-column #[a(href='https://coreui.io/data-grid/docs/features/sorting/' target='_blank') sorting] and #[a(href='https://coreui.io/data-grid/docs/features/pagination/' target='_blank') pagination] — plus drag-and-drop #[a(href='https://coreui.io/data-grid/docs/features/row-reordering/' target='_blank') row reordering] and inline #[a(href='https://coreui.io/data-grid/docs/features/editing/' target='_blank') cell editing] on top.
+        br
+        br
+        | Every one of these is a single option, documented on its own page in the #[a(href='https://coreui.io/data-grid/docs/features/overview/' target='_blank') Data Grid docs] — this demo just enables them together.
+      +example('https://coreui.io/data-grid/javascript/')
+        #dataGrid
+
+  .card.mb-4
+    .card-header
+      strong Data Grid
+      span.small.ms-1 virtualization
+    .card-body
+      p.text-body-secondary
+        | Only the visible window of rows exists in the DOM — scroll, sort, filter and select across the full dataset. This live demo runs on 100,000 generated rows, tuned by the #[a(href='https://coreui.io/data-grid/docs/features/virtualization/' target='_blank') rowHeight and overscan options]. For datasets larger than browser memory, hand paging to your backend with #[a(href='https://coreui.io/data-grid/docs/features/server-side-data/' target='_blank') server-side data] — see the #[a(href='https://coreui.io/data-grid/docs/guides/performance/' target='_blank') Performance guide] for tuning advice.
+      +example('https://coreui.io/data-grid/docs/features/virtualization/')
+        #dataGridVirtual
+        p#dataGridVirtualMeta.text-body-secondary.mt-2.mb-0

@@ -9,7 +9,7 @@
 
 <html lang="en">
   <head>
-    <base href="./../">
+    <base href="./">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -43,9 +43,28 @@
     <link href="css/examples.css" rel="stylesheet">
     <script src="js/config.js"></script>
     <script src="js/color-modes.js"></script>
-    <link rel="canonical" href="https://coreui.io/bootstrap/docs/forms/input-group/">
+    <!-- Google Tag Manager-->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KX4JH47");
+    </script>
+    <!-- End Google Tag Manager-->
+    <link href="node_modules/@coreui/data-grid/dist/css/data-grid.css" rel="stylesheet">
   </head>
   <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX4JH47" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript)-->
     <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
       <div class="sidebar-header border-bottom">
         <div class="sidebar-brand me-auto">
@@ -733,653 +752,133 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-0">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><span>Components</span></li>
-              <li class="breadcrumb-item"><span>Forms</span></li>
-              <li class="breadcrumb-item active"><span>Input group</span></li>
+              <li class="breadcrumb-item active"><span>Data Grid</span></li>
             </ol>
           </nav>
         </div>
       </header>
       <div class="body flex-grow-1">
         <div class="container-lg px-4">
-          <div class="bg-primary bg-opacity-10 border border-2 border-primary rounded mb-4">
+          <div class="bg-warning bg-opacity-10 border border-2 border-warning rounded mb-4">
             <div class="row d-flex align-items-center p-3 px-xl-4 flex-xl-nowrap">
-              <div class="col-xl-auto col-12 d-none d-xl-block p-0"><img class="img-fluid" src="assets/img/components.webp" width="160px" height="160px" alt="CoreUI PRO hexagon"></div>
+              <div class="col-xl-auto col-12 d-none d-xl-block p-0"><img class="img-fluid" src="assets/img/components.webp" width="160px" height="160px" alt="CoreUI Data Grid hexagon"></div>
               <div class="col-md col-12 px-lg-4">
-                Our Admin Panel isn’t just a mix of third-party components. It’s
-                <strong>the only open-source Bootstrap dashboard built on a professional, enterprise-grade UI Components Library</strong>
-                . This component is part of this library, and we present only the basic usage of it here. To explore extended examples, detailed API documentation, and customization options, refer to our docs.
+                <h5 class="mb-1">
+                  CoreUI Data Grid
+                  <span class="badge bg-warning text-dark ms-2">ADD-ON</span>
+                </h5>
+                Your tables choke past a few thousand rows — this one doesn't.
+                <strong>100,000+ rows, buttery-smooth, with sorting, filtering, inline editing and drag-and-drop row reordering built in.</strong>
+                It's the enterprise-grade grid your dashboard has been missing, for Bootstrap, React, Vue and Angular.
               </div>
               <div class="col-md-auto col-12 mt-3 mt-lg-0 d-flex flex-column">
-                <a class="btn btn-primary text-nowrap text-white" href="https://coreui.io/bootstrap/docs/forms/input-group/" target="_blank" rel="noopener noreferrer">Explore Documentation</a>
+                <a class="btn btn-warning text-nowrap" href="https://coreui.io/data-grid/docs/features/overview/" target="_blank" rel="noopener noreferrer">Explore Documentation</a>
                 <div class="text-center my-1">or</div>
-                <a class="btn btn-danger text-nowrap text-white" href="https://coreui.io/pricing/?framework=bootstrap&amp;src=free-bootstrap-admin-template-docs-banner" target="_blank" rel="noopener noreferrer">Get CoreUI PRO →</a>
+                <a class="btn btn-danger text-nowrap text-white" href="https://coreui.io/data-grid/javascript/?src=bootstrap-free-admin-template-data-grid-banner" target="_blank" rel="noopener noreferrer">Get CoreUI Data Grid →</a>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Input group</strong>
-                  <span class="small ms-1">Basic example</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place
-                    <code>&lt;label&gt;</code>
-                    s outside the input group.
-                  </p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1000" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/input-group/#basic-example" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1000">
-                        <div class="input-group mb-3">
-                          <span class="input-group-text" id="basic-addon1">@</span>
-                          <input class="form-control" type="text" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                        </div>
-                        <div class="input-group mb-3">
-                          <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                          <span class="input-group-text" id="basic-addon2">@example.com</span>
-                        </div>
-                        <label class="form-label" for="basic-url">Your vanity URL</label>
-                        <div class="input-group mb-3">
-                          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                          <input class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3">
-                        </div>
-                        <div class="input-group mb-3">
-                          <span class="input-group-text">$</span>
-                          <input class="form-control" type="text" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text">.00</span>
-                        </div>
-                        <div class="input-group mb-3">
-                          <input class="form-control" type="text" placeholder="Username" aria-label="Username">
-                          <span class="input-group-text">@</span>
-                          <input class="form-control" type="text" placeholder="Server" aria-label="Server">
-                        </div>
-                        <div class="input-group">
-                          <span class="input-group-text">With textarea</span>
-                          <textarea class="form-control" aria-label="With textarea"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="card mb-4">
+            <div class="card-header">
+              <strong>Data Grid</strong>
+              <span class="small ms-1">sorting, filtering, row reordering, inline editing &amp; pagination</span>
             </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Input group</strong>
-                  <span class="small ms-1">Wrapping</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    Input groups wrap by default via
-                    <code>flex-wrap: wrap</code>
-                    in order to accommodate custom form field validation within an input group. You may disable this with
-                    <code>.flex-nowrap</code>
-                    .
-                  </p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1001" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/input-group/#wrapping" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1001">
-                        <div class="input-group flex-nowrap">
-                          <span class="input-group-text" id="addon-wrapping">@</span>
-                          <input class="form-control" type="text" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Input group</strong>
-                  <span class="small ms-1">Sizing</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    Add the relative form sizing classes to the
-                    <code>.input-group</code>
-                    itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
-                  </p>
-                  <p class="text-body-secondary small"><strong>Sizing on the individual input group elements isn’t supported.</strong></p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1002" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/input-group/#sizing" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1002">
-                        <div class="input-group input-group-sm mb-3">
-                          <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
-                          <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                        <div class="input-group mb-3">
-                          <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
-                          <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                        </div>
-                        <div class="input-group input-group-lg">
-                          <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
-                          <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Input group</strong>
-                  <span class="small ms-1">Checkboxes and radios</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    Place any checkbox or radio option within an input group’s addon instead of text. We recommend adding
-                    <code>.mt-0</code>
-                    to the
-                    <code>.form-check-input</code>
-                    when there’s no visible text next to the input.
-                  </p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1003" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/input-group/#checkboxes-and-radios" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1003">
-                        <div class="input-group mb-3">
-                          <div class="input-group-text">
-                            <input class="form-check-input mt-0" type="checkbox" aria-label="Checkbox for following text input">
-                          </div>
-                          <input class="form-control" type="text" aria-label="Text input with checkbox">
-                        </div>
-                        <div class="input-group">
-                          <div class="input-group-text">
-                            <input class="form-check-input mt-0" type="radio" aria-label="Radio button for following text input">
-                          </div>
-                          <input class="form-control" type="text" aria-label="Text input with radio button">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Input group</strong>
-                  <span class="small ms-1">Multiple inputs</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    While multiple
-                    <code>&lt;input&gt;</code>
-                    s are supported visually, validation styles are only available for input groups with a single
-                    <code>&lt;input&gt;</code>
-                    .
-                  </p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1004" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/input-group/#multiple-inputs" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1004">
-                        <div class="input-group">
-                          <span class="input-group-text">First and last name</span>
-                          <input class="form-control" type="text" aria-label="First name">
-                          <input class="form-control" type="text" aria-label="Last name">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Input group</strong>
-                  <span class="small ms-1">Multiple addons</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">Multiple add-ons are supported and can be mixed with checkbox and radio input versions.</p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1005" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/input-group/#multiple-addons" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1005">
-                        <div class="input-group mb-3">
-                          <span class="input-group-text">$</span>
-                          <span class="input-group-text">0.00</span>
-                          <input class="form-control" type="text" aria-label="Dollar amount (with dot and two decimal places)">
-                        </div>
-                        <div class="input-group">
-                          <input class="form-control" type="text" aria-label="Dollar amount (with dot and two decimal places)">
-                          <span class="input-group-text">$</span>
-                          <span class="input-group-text">0.00</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Input group</strong>
-                  <span class="small ms-1">Button addons</span>
-                </div>
-                <div class="card-body">
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1006" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/input-group/#button-addons" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1006">
-                        <div class="input-group mb-3">
-                          <button class="btn btn-outline-secondary" id="button-addon1" type="button">Button</button>
-                          <input class="form-control" type="text" placeholder aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        </div>
-                        <div class="input-group mb-3">
-                          <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                          <button class="btn btn-outline-secondary" id="button-addon2" type="button">Button</button>
-                        </div>
-                        <div class="input-group mb-3">
-                          <button class="btn btn-outline-secondary" type="button">Button</button>
-                          <button class="btn btn-outline-secondary" type="button">Button</button>
-                          <input class="form-control" type="text" placeholder aria-label="Example text with two button addons">
-                        </div>
-                        <div class="input-group">
-                          <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
-                          <button class="btn btn-outline-secondary" type="button">Button</button>
-                          <button class="btn btn-outline-secondary" type="button">Button</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Input group</strong>
-                  <span class="small ms-1">Buttons with dropdowns</span>
-                </div>
-                <div class="card-body">
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1007" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/input-group/#buttons-with-dropdowns" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1007">
-                        <div class="input-group mb-3">
-                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
-                          <input class="form-control" type="text" aria-label="Text input with dropdown button">
-                        </div>
-                        <div class="input-group mb-3">
-                          <input class="form-control" type="text" aria-label="Text input with dropdown button">
-                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
-                          <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
-                        </div>
-                        <div class="input-group">
-                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action before</a></li>
-                            <li><a class="dropdown-item" href="#">Another action before</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
-                          <input class="form-control" type="text" aria-label="Text input with 2 dropdown buttons">
-                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
-                          <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Input group</strong>
-                  <span class="small ms-1">Segmented buttons</span>
-                </div>
-                <div class="card-body">
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1008" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/input-group/#segmented-buttons" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1008">
-                        <div class="input-group mb-3">
-                          <button class="btn btn-outline-secondary" type="button">Action</button>
-                          <button class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
-                          <input class="form-control" type="text" aria-label="Text input with segmented dropdown button">
-                        </div>
-                        <div class="input-group">
-                          <input class="form-control" type="text" aria-label="Text input with segmented dropdown button">
-                          <button class="btn btn-outline-secondary" type="button">Action</button>
-                          <button class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
-                          <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+            <div class="card-body">
+              <p class="text-body-secondary">
+                This is the kitchen-sink demo: one grid with every interaction feature turned on at once, so you can see how they compose. It renders 10,000 rows across fourteen columns — four hidden by default — with the
+                <a href="https://coreui.io/data-grid/docs/features/toolbar/" target="_blank">toolbar</a>
+                ,
+                <a href="https://coreui.io/data-grid/docs/features/filtering/" target="_blank">per-column filters</a>
+                , column
+                <a href="https://coreui.io/data-grid/docs/columns/sizing/" target="_blank">sizing</a>
+                ,
+                <a href="https://coreui.io/data-grid/docs/columns/pinning/" target="_blank">pinning</a>
+                ,
+                <a href="https://coreui.io/data-grid/docs/columns/ordering-visibility/" target="_blank">ordering &amp; visibility</a>
+                , the
+                <a href="https://coreui.io/data-grid/docs/columns/menu/" target="_blank">column menu</a>
+                ,
+                <a href="https://coreui.io/data-grid/docs/features/row-selection/" target="_blank">row selection</a>
+                , multi-column
+                <a href="https://coreui.io/data-grid/docs/features/sorting/" target="_blank">sorting</a>
+                and
+                <a href="https://coreui.io/data-grid/docs/features/pagination/" target="_blank">pagination</a>
+                — plus drag-and-drop
+                <a href="https://coreui.io/data-grid/docs/features/row-reordering/" target="_blank">row reordering</a>
+                and inline
+                <a href="https://coreui.io/data-grid/docs/features/editing/" target="_blank">cell editing</a>
+                on top.
+                <br>
+                <br>
+                Every one of these is a single option, documented on its own page in the
+                <a href="https://coreui.io/data-grid/docs/features/overview/" target="_blank">Data Grid docs</a>
+                — this demo just enables them together.
+              </p>
+              <div class="example">
+                <ul class="nav nav-underline-border" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1000" role="tab">
+                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                      </svg>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://coreui.io/data-grid/javascript/" target="_blank">
+                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                      </svg>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1000">
+                    <div id="dataGrid"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Custom forms</strong>
-                  <span class="small ms-1">Custom select</span>
-                </div>
-                <div class="card-body">
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1009" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/input-group/#custom-select" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1009">
-                        <div class="input-group mb-3">
-                          <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                          <select class="form-select" id="inputGroupSelect01">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                        <div class="input-group mb-3">
-                          <select class="form-select" id="inputGroupSelect02">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                          <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                        </div>
-                        <div class="input-group mb-3">
-                          <button class="btn btn-outline-secondary" type="button">Button</button>
-                          <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                        <div class="input-group">
-                          <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                          <button class="btn btn-outline-secondary" type="button">Button</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="card mb-4">
+            <div class="card-header">
+              <strong>Data Grid</strong>
+              <span class="small ms-1">virtualization</span>
             </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Custom forms</strong>
-                  <span class="small ms-1">Custom file input</span>
-                </div>
-                <div class="card-body">
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1010" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/input-group/#custom-file-input" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1010">
-                        <div class="input-group mb-3">
-                          <label class="input-group-text" for="inputGroupFile01">Upload</label>
-                          <input class="form-control" id="inputGroupFile01" type="file">
-                        </div>
-                        <div class="input-group mb-3">
-                          <input class="form-control" id="inputGroupFile02" type="file">
-                          <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                        </div>
-                        <div class="input-group mb-3">
-                          <button class="btn btn-outline-secondary" id="inputGroupFileAddon03" type="button">Button</button>
-                          <input class="form-control" id="inputGroupFile03" type="file" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
-                        </div>
-                        <div class="input-group">
-                          <input class="form-control" id="inputGroupFile04" type="file" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                          <button class="btn btn-outline-secondary" id="inputGroupFileAddon04" type="button">Button</button>
-                        </div>
-                      </div>
-                    </div>
+            <div class="card-body">
+              <p class="text-body-secondary">
+                Only the visible window of rows exists in the DOM — scroll, sort, filter and select across the full dataset. This live demo runs on 100,000 generated rows, tuned by the
+                <a href="https://coreui.io/data-grid/docs/features/virtualization/" target="_blank">rowHeight and overscan options</a>
+                . For datasets larger than browser memory, hand paging to your backend with
+                <a href="https://coreui.io/data-grid/docs/features/server-side-data/" target="_blank">server-side data</a>
+                — see the
+                <a href="https://coreui.io/data-grid/docs/guides/performance/" target="_blank">Performance guide</a>
+                for tuning advice.
+              </p>
+              <div class="example">
+                <ul class="nav nav-underline-border" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1001" role="tab">
+                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                      </svg>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://coreui.io/data-grid/docs/features/virtualization/" target="_blank">
+                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                      </svg>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1001">
+                    <div id="dataGridVirtual"></div>
+                    <p class="text-body-secondary mt-2 mb-0" id="dataGridVirtualMeta"></p>
                   </div>
                 </div>
               </div>
@@ -1411,5 +910,7 @@
         }
       });
     </script>
+    <script src="node_modules/@coreui/data-grid/dist/js/data-grid.js"></script>
+    <script src="js/data-grid.js"></script>
   </body>
 </html>
