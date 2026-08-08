@@ -208,7 +208,7 @@ CoreUI Bootstrap Admin Templates are built on top of CoreUI and CoreUI PRO UI co
 - [Bootstrap Range](https://coreui.io/bootstrap/docs/forms/range/)
 - [Bootstrap Range Slider](https://coreui.io/bootstrap/docs/forms/range-slider/) **PRO**
 - [Bootstrap Rating](https://coreui.io/bootstrap/docs/forms/rating/) **PRO**
-- [Bootstrap Search Button](https://coreui.io/bootstrap/docs/components/sidebar/search-button/)
+- [Bootstrap Search Button](https://coreui.io/bootstrap/docs/components/search-button/)
 - [Bootstrap Select](https://coreui.io/bootstrap/docs/forms/select/)
 - [Bootstrap Sidebar](https://coreui.io/bootstrap/docs/components/sidebar/)
 - [Bootstrap Spinner](https://coreui.io/bootstrap/docs/components/spinner/)
