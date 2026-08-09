@@ -9,7 +9,7 @@
 
 <html lang="en">
   <head>
-    <base href="./">
+    <base href="./../">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -43,7 +43,7 @@
     <link href="css/examples.css" rel="stylesheet">
     <script src="js/config.js"></script>
     <script src="js/color-modes.js"></script>
-    <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
+    <link rel="canonical" href="https://coreui.io/bootstrap/docs/components/chip-set/">
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
@@ -743,22 +743,44 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-0">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><span>Plugins</span></li>
-              <li class="breadcrumb-item active"><span>Charts</span></li>
+              <li class="breadcrumb-item"><span>Components</span></li>
+              <li class="breadcrumb-item active"><span>Chip set</span></li>
             </ol>
           </nav>
         </div>
       </header>
       <div class="body flex-grow-1">
         <div class="container-lg px-4">
-          <div class="row row-cols-2">
-            <div class="col">
+          <div class="bg-primary bg-opacity-10 border border-2 border-primary rounded mb-4">
+            <div class="row d-flex align-items-center p-3 px-xl-4 flex-xl-nowrap">
+              <div class="col-xl-auto col-12 d-none d-xl-block p-0"><img class="img-fluid" src="assets/img/components.webp" width="160px" height="160px" alt="CoreUI PRO hexagon"></div>
+              <div class="col-md col-12 px-lg-4">
+                Our Admin Panel isn’t just a mix of third-party components. It’s
+                <strong>the only open-source Bootstrap dashboard built on a professional, enterprise-grade UI Components Library</strong>
+                . This component is part of this library, and we present only the basic usage of it here. To explore extended examples, detailed API documentation, and customization options, refer to our docs.
+              </div>
+              <div class="col-md-auto col-12 mt-3 mt-lg-0 d-flex flex-column">
+                <a class="btn btn-primary text-nowrap text-white" href="https://coreui.io/bootstrap/docs/components/chip-set/" target="_blank" rel="noopener noreferrer">Explore Documentation</a>
+                <div class="text-center my-1">or</div>
+                <a class="btn btn-danger text-nowrap text-white" href="https://coreui.io/pricing/?framework=bootstrap&amp;src=free-bootstrap-admin-template-docs-banner" target="_blank" rel="noopener noreferrer">Get CoreUI PRO →</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
               <div class="card mb-4">
                 <div class="card-header">
-                  <strong>Chart</strong>
-                  <span class="small ms-1">Line</span>
+                  <strong>Chip set</strong>
+                  <span class="small ms-1">Basic</span>
                 </div>
                 <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Group chips into an accessible, keyboard-navigable container with
+                    <code>.chip-set</code>
+                    and
+                    <code>data-coreui-chip-set</code>
+                    . The set manages roving focus, arrow-key navigation, and moving focus to a neighboring chip after one is removed, so you don't need to initialize each chip separately.
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -770,7 +792,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="http://www.chartjs.org/" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip-set/#basic-chip-set" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -780,22 +802,32 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1000">
-                        <div class="c-chart-wrapper">
-                          <canvas id="canvas-1"></canvas>
+                        <div class="chip-set" data-coreui-chip-set>
+                          <span class="chip">Apple</span>
+                          <span class="chip">Banana</span>
+                          <span class="chip">Cherry</span>
+                          <span class="chip">Date</span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
               <div class="card mb-4">
                 <div class="card-header">
-                  <strong>Chart</strong>
-                  <span class="small ms-1">Bar</span>
+                  <strong>Chip set</strong>
+                  <span class="small ms-1">Selectable</span>
                 </div>
                 <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Set
+                    <code>data-coreui-selectable="true"</code>
+                    to make every chip in the set selectable. With the default
+                    <code>selectionMode</code>
+                    of
+                    <code>multiple</code>
+                    , any number of chips can be active at once — useful for filters.
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -807,7 +839,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="http://www.chartjs.org/" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip-set/#selectable-chips" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -817,22 +849,20 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1001">
-                        <div class="c-chart-wrapper">
-                          <canvas id="canvas-2"></canvas>
+                        <div class="chip-set" data-coreui-chip-set data-coreui-selectable="true">
+                          <span class="chip">Design</span>
+                          <span class="chip active">Development</span>
+                          <span class="chip">Marketing</span>
+                          <span class="chip active">Sales</span>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Chart</strong>
-                  <span class="small ms-1">Doughnut</span>
-                </div>
-                <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Use
+                    <code>data-coreui-selection-mode="single"</code>
+                    to allow only one selected chip at a time — selecting a chip deselects its siblings. This is useful for choice chips.
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -844,7 +874,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="http://www.chartjs.org/" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip-set/#single-selection" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -854,8 +884,10 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1002">
-                        <div class="c-chart-wrapper">
-                          <canvas id="canvas-3"></canvas>
+                        <div class="chip-set" data-coreui-chip-set data-coreui-selectable="true" data-coreui-selection-mode="single">
+                          <span class="chip active">Small</span>
+                          <span class="chip">Medium</span>
+                          <span class="chip">Large</span>
                         </div>
                       </div>
                     </div>
@@ -863,13 +895,22 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col-lg-12">
               <div class="card mb-4">
                 <div class="card-header">
-                  <strong>Chart</strong>
-                  <span class="small ms-1">Radar</span>
+                  <strong>Chip set</strong>
+                  <span class="small ms-1">Filter chips</span>
                 </div>
                 <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Add
+                    <code>data-coreui-filter="true"</code>
+                    to turn the chips into filter chips. A check icon is shown on each selected chip and removed when it is deselected.
+                    <code>filter</code>
+                    implies
+                    <code>selectable</code>
+                    , so you don't need to set both.
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -881,7 +922,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="http://www.chartjs.org/" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip-set/#filter-chips" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -891,22 +932,28 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1003">
-                        <div class="c-chart-wrapper">
-                          <canvas id="canvas-4"></canvas>
+                        <div class="chip-set" data-coreui-chip-set data-coreui-filter="true">
+                          <span class="chip">Design</span>
+                          <span class="chip active">Development</span>
+                          <span class="chip">Marketing</span>
+                          <span class="chip active">Sales</span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
               <div class="card mb-4">
                 <div class="card-header">
-                  <strong>Chart</strong>
-                  <span class="small ms-1">Pie</span>
+                  <strong>Chip set</strong>
+                  <span class="small ms-1">Removable chips</span>
                 </div>
                 <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Set
+                    <code>data-coreui-removable="true"</code>
+                    to add a remove button to every chip. When a chip is removed, focus moves to a neighboring chip.
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -918,7 +965,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="http://www.chartjs.org/" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip-set/#removable-chips" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -928,45 +975,10 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1004">
-                        <div class="c-chart-wrapper">
-                          <canvas id="canvas-5"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Chart</strong>
-                  <span class="small ms-1">Polar Area</span>
-                </div>
-                <div class="card-body">
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1005" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="http://www.chartjs.org/" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1005">
-                        <div class="c-chart-wrapper">
-                          <canvas id="canvas-6"></canvas>
+                        <div class="chip-set" data-coreui-chip-set data-coreui-removable="true">
+                          <span class="chip">Filter one</span>
+                          <span class="chip">Filter two</span>
+                          <span class="chip disabled">Filter three</span>
                         </div>
                       </div>
                     </div>
@@ -1046,8 +1058,5 @@
         }
       });
     </script>
-    <script src="node_modules/chart.js/dist/chart.umd.js"></script>
-    <script src="node_modules/@coreui/chartjs/dist/js/coreui-chartjs.js"></script>
-    <script src="js/charts.js"></script>
   </body>
 </html>
