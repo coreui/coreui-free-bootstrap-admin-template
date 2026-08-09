@@ -117,3 +117,37 @@ block view
                     line(x1='12' y1='4' x2='4' y2='12')
               span.chip.chip-outline.chip-info(data-coreui-chip data-coreui-selectable='true') Filter: Priority
               span.chip.chip-outline.chip-success(data-coreui-chip data-coreui-selectable='true' data-coreui-selected='true') Filter: Ready
+      .card.mb-4
+        .card-header
+          strong Chip
+          span.small.ms-1 Chip set
+        .card-body
+          p.text-body-secondary.small
+            | Group chips into an accessible, keyboard-navigable container with 
+            code .chip-set
+            |  and
+            code data-coreui-chip-set
+            | . The set manages roving focus, arrow-key navigation, and selection for you, so you don't need to initialize each chip separately.
+          +example('https://coreui.io/bootstrap/docs/components/chip-set/#basic-chip-set')
+            .chip-set(data-coreui-chip-set)
+              span.chip Apple
+              span.chip Banana
+              span.chip Cherry
+              span.chip Date
+          p.text-body-secondary.small
+            | Add 
+            code data-coreui-filter="true"
+            |  to turn the chips into filter chips, showing a check icon on the selected ones, or 
+            code data-coreui-removable="true"
+            |  to add a remove button to every chip in the set.
+          +example('https://coreui.io/bootstrap/docs/components/chip-set/#filter-chips')
+            .d-flex.flex-column.gap-3
+              .chip-set(data-coreui-chip-set data-coreui-filter='true')
+                span.chip Design
+                span.chip.active Development
+                span.chip Marketing
+                span.chip.active Sales
+              .chip-set(data-coreui-chip-set data-coreui-removable='true')
+                span.chip Filter one
+                span.chip Filter two
+                span.chip.disabled Filter three
