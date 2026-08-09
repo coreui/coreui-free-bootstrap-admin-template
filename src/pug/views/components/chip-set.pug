@@ -1,0 +1,97 @@
+extends ../../_layout/default.pug
+
+block canonical
+  link(rel='canonical' href='https://coreui.io/bootstrap/docs/components/chip-set/')
+
+block breadcrumb
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Components'},
+      'Chip set'
+    ]
+  )
+
+block view
+  +docs-components('https://coreui.io/bootstrap/docs/components/chip-set/')
+  .row
+    .col-lg-12
+      .card.mb-4
+        .card-header
+          strong Chip set
+          span.small.ms-1 Basic
+        .card-body
+          p.text-body-secondary.small
+            | Group chips into an accessible, keyboard-navigable container with
+            code .chip-set
+            |  and
+            code data-coreui-chip-set
+            | . The set manages roving focus, arrow-key navigation, and moving focus to a neighboring chip after one is removed, so you don't need to initialize each chip separately.
+          +example('https://coreui.io/bootstrap/docs/components/chip-set/#basic-chip-set')
+            .chip-set(data-coreui-chip-set)
+              span.chip Apple
+              span.chip Banana
+              span.chip Cherry
+              span.chip Date
+      .card.mb-4
+        .card-header
+          strong Chip set
+          span.small.ms-1 Selectable
+        .card-body
+          p.text-body-secondary.small
+            | Set
+            code data-coreui-selectable="true"
+            |  to make every chip in the set selectable. With the default
+            code selectionMode
+            |  of
+            code multiple
+            | , any number of chips can be active at once — useful for filters.
+          +example('https://coreui.io/bootstrap/docs/components/chip-set/#selectable-chips')
+            .chip-set(data-coreui-chip-set data-coreui-selectable='true')
+              span.chip Design
+              span.chip.active Development
+              span.chip Marketing
+              span.chip.active Sales
+          p.text-body-secondary.small
+            | Use
+            code data-coreui-selection-mode="single"
+            |  to allow only one selected chip at a time — selecting a chip deselects its siblings. This is useful for choice chips.
+          +example('https://coreui.io/bootstrap/docs/components/chip-set/#single-selection')
+            .chip-set(data-coreui-chip-set data-coreui-selectable='true' data-coreui-selection-mode='single')
+              span.chip.active Small
+              span.chip Medium
+              span.chip Large
+    .col-lg-12
+      .card.mb-4
+        .card-header
+          strong Chip set
+          span.small.ms-1 Filter chips
+        .card-body
+          p.text-body-secondary.small
+            | Add
+            code data-coreui-filter="true"
+            |  to turn the chips into filter chips. A check icon is shown on each selected chip and removed when it is deselected.
+            code filter
+            |  implies
+            code selectable
+            | , so you don't need to set both.
+          +example('https://coreui.io/bootstrap/docs/components/chip-set/#filter-chips')
+            .chip-set(data-coreui-chip-set data-coreui-filter='true')
+              span.chip Design
+              span.chip.active Development
+              span.chip Marketing
+              span.chip.active Sales
+      .card.mb-4
+        .card-header
+          strong Chip set
+          span.small.ms-1 Removable chips
+        .card-body
+          p.text-body-secondary.small
+            | Set
+            code data-coreui-removable="true"
+            |  to add a remove button to every chip. When a chip is removed, focus moves to a neighboring chip.
+          +example('https://coreui.io/bootstrap/docs/components/chip-set/#removable-chips')
+            .chip-set(data-coreui-chip-set data-coreui-removable='true')
+              span.chip Filter one
+              span.chip Filter two
+              span.chip.disabled Filter three
