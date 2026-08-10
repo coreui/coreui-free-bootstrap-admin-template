@@ -80,7 +80,7 @@ The `npm start` command runs multiple watchers in parallel:
 
 - **Pug watcher**: Compiles `.pug` files to HTML
 - **Sass watcher**: Compiles `.scss` files to CSS
-- **JS watcher**: Transpiles JavaScript with Babel
+- **JS watcher**: Syncs `src/js` to `dist/js` (no transpilation - see `ARCHITECTURE.md`)
 - **Browser-sync**: Live reload server
 
 ### Individual Watchers
@@ -111,7 +111,7 @@ This creates optimized files in the `dist/` directory ready for deployment.
    //- src/pug/views/my-new-page.pug
    extends ../_layout/default.pug
 
-   block content
+   block view
      .container-lg.px-4
        .row
          .col-12

@@ -27,8 +27,8 @@ CoreUI Free Bootstrap Admin Template is a professional admin dashboard template 
 ┌─────────────────────────────────────────────────────┐
 │                  Build Pipeline                     │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐           │
-│  │   Pug    │  │PostCSS + │  │  Babel   │           │
-│  │Compiler  │  │  Sass    │  │Transpiler│           │
+│  │   Pug    │  │PostCSS + │  │ syncdir  │           │
+│  │Compiler  │  │  Sass    │  │(copy JS) │           │
 │  └────┬─────┘  └────┬─────┘  └────┬─────┘           │
 │       │             │             │                 │
 └───────┼─────────────┼─────────────┼─────────────────┘
@@ -57,8 +57,8 @@ CoreUI Free Bootstrap Admin Template is a professional admin dashboard template 
 
 ### Build Tools
 - **Package Manager**: npm
-- **CSS Processing**: Sass 1.97.0 → PostCSS → Autoprefixer
-- **JS Transpilation**: Babel 7.28.x with preset-env
+- **CSS Processing**: Sass 1.102.x → PostCSS → Autoprefixer
+- **JS**: plain ES2015+, copied as-is via `sync-directory` (no transpilation - the declared browser targets already support the syntax used, see [Browser Support](#browser-support))
 - **Task Runner**: npm scripts with npm-run-all
 - **File Watching**: Nodemon
 - **Live Server**: Browser-sync 3.0.4
@@ -66,7 +66,7 @@ CoreUI Free Bootstrap Admin Template is a professional admin dashboard template 
 ### Code Quality
 - **Linting**: ESLint 9.x (flat config) with XO + Unicorn
 - **Style Linting**: Stylelint 16.x with Bootstrap config
-- **Formatting**: Prettier 3.7.4
+- **Formatting**: Prettier 3.9.x
 - **Editor Config**: .editorconfig for consistency
 
 ## Directory Structure
@@ -131,7 +131,7 @@ coreui-free-bootstrap-admin-template/
 │
 ├── dist/                         # Production build output
 │   ├── css/                      # Minified CSS
-│   ├── js/                       # Transpiled JS
+│   ├── js/                       # Synced JS (copied as-is, no transform)
 │   ├── assets/                   # Copied assets
 │   ├── vendors/                  # Third-party libraries
 │   └── *.html                    # Production HTML files
@@ -151,7 +151,6 @@ coreui-free-bootstrap-admin-template/
     ├── .prettierrc.json          # Prettier formatting
     ├── .stylelintrc              # Stylelint rules
     ├── .browserslistrc           # Target browsers
-    ├── .babelrc.js               # Babel transpiler config
     └── .cursorrules              # AI context (Cursor IDE)
 ```
 
@@ -162,7 +161,7 @@ coreui-free-bootstrap-admin-template/
 1. **Clean**: Remove old compiled files
 2. **Compile Pug**: `src/pug/**/*.pug` → `src/views/*.html`
 3. **Compile Sass**: `src/scss/*.scss` → `dist/css/*.css` (expanded, autoprefixed)
-4. **Transpile JS**: `src/js/*.js` → `dist/js/*.js` (Babel with source maps)
+4. **Sync JS**: `src/js/*.js` → `dist/js/*.js` (copied as-is via `sync-directory`, no transform)
 5. **Copy Assets**: `src/assets/**/*` → `dist/assets/`
 6. **Build Vendors**: Bundle third-party libraries
 7. **Watch Files**: Monitor changes and recompile
@@ -171,8 +170,8 @@ coreui-free-bootstrap-admin-template/
 ### Production Build (`npm run build`)
 
 1. **All development steps**
-2. **Minify CSS**: Compress stylesheets with cssnano
-3. **Minify JS**: Already transpiled by Babel
+2. **Minify CSS**: Compress stylesheets with clean-css-cli
+3. **JS**: No separate minify step - shipped as synced source
 4. **Optimize Assets**: Copy optimized files
 5. **Generate zip**: Create distribution package
 
@@ -260,20 +259,26 @@ default.pug (main layout — dashboard/component pages)
 ├─> sidebar.pug (side navigation)
 │   └─> sidebar-nav.pug (data-driven nav items)
 ├─> header.pug (top navigation bar)
+│   └─> block breadcrumb
+├─> block canonical / block styles
 ├─> block view
 │   └─> index.pug / components/*.pug / etc. (page content)
 └─> footer.pug (page footer)
     └─> scripts.pug (common script includes)
+        └─> block scripts / block js
 
 pages.pug (standalone layout — auth & error pages)
-└─> block content
+├─> block styles
+└─> block view
     └─> authentication/*.pug / error-pages/*.pug
 ```
 
 **Block System:**
-- `block content`: Main page content area
-- `block scripts`: Page-specific JavaScript includes
-- Each view extends the layout and overrides blocks
+- `block view`: Main page content area (both layouts)
+- `block canonical`: `<link rel="canonical">` override (`default.pug` only)
+- `block breadcrumb`: Breadcrumb trail, declared inside `header.pug` (`default.pug` only)
+- `block scripts` / `block js`: Page-specific script includes, declared inside `scripts.pug`
+- Each view extends a layout and overrides only the blocks it needs
 
 ### CSS Architecture
 
@@ -331,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
 | Package | Purpose |
 |---------|---------|
 | `sass` | CSS preprocessing |
-| `@babel/core` | JavaScript transpilation |
+| `sync-directory` | Copy `src/js`, `src/assets`, `src/views` into `dist/` |
 | `pug` | HTML templating |
 | `postcss` | CSS post-processing |
 | `autoprefixer` | Vendor prefix automation |
@@ -349,12 +354,13 @@ last 2 major versions
 not dead
 Chrome >= 60
 Firefox >= 60
-Edge >= 79
-Safari >= 12
+Firefox ESR
 iOS >= 12
+Safari >= 12
+not Explorer <= 11
 ```
 
-Modern browsers with ES6+ support (Babel handles transpilation for older browsers if needed).
+Modern browsers with native ES2015+ support - this is also why `src/js` ships untranspiled (see [Build Tools](#build-tools)).
 
 ## Deployment
 
@@ -392,9 +398,8 @@ EXPOSE 80
 - CSS is render-blocking (loaded in `<head>`)
 
 ### JavaScript Optimization
-- Babel transpiles only necessary polyfills (preset-env)
-- Source maps for debugging (development only)
-- Modules loaded as separate files (no bundler)
+- No transpilation or minification step - files are copied as-is (see [Build Tools](#build-tools))
+- Files loaded as separate scripts (no bundler)
 - Deferred script loading where possible
 
 ### Asset Optimization
@@ -426,15 +431,16 @@ Template includes inline scripts and styles. For strict CSP:
 
 1. Create `src/pug/views/my-page.pug`
 2. Extend layout: `extends ../_layout/default.pug`
-3. Override content block:
+3. Override the `view` block (see [Block System](#pug-template-hierarchy)):
    ```pug
-   block content
+   block view
      .container-lg.px-4
        h1 My Page Title
        p Page content here
    ```
-4. Run `npm start` to compile
-5. Access at `/my-page.html`
+4. Add an entry to `src/pug/_partials/sidebar-nav.pug` so the page is reachable from the sidebar
+5. Run `npm run pug` (or `npm start`) to compile
+6. Access at `/my-page.html`
 
 ### Adding New Components
 
