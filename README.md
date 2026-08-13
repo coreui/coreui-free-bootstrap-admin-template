@@ -22,6 +22,7 @@ Curious why I decided to create CoreUI? Please read this article: [Jack of all t
 * [CoreUI PRO](#coreui-pro)
 * [CoreUI PRO Bootstrap Admin Templates](#coreui-pro-bootstrap-admin-templates)
 * [Data Grid](#data-grid)
+* [Scheduler](#scheduler)
 * [Installation](#installation)
 * [Usage](#usage)
 * [What's included](#whats-included)
@@ -83,6 +84,19 @@ One license also covers React, Vue and Angular. It's a separate add-on, not part
 
 - [JavaScript Data Grid](https://coreui.io/data-grid/javascript/?src=readme-free-bootstrap)
 - [Documentation](https://coreui.io/data-grid/docs/getting-started/introduction/?src=readme-free-bootstrap)
+
+## Scheduler
+
+CoreUI JavaScript Scheduler ships six views — day, week, month, agenda, resources, and timeline — with drag & drop, RFC 5545 recurrence, and DST-safe time handling, using the same markup and stylesheet this template already uses.
+
+```bash
+npm install @coreui/scheduler
+```
+
+One license also covers React, Vue and Angular. It's a separate add-on, not part of CoreUI PRO.
+
+- [JavaScript Scheduler](https://coreui.io/scheduler/javascript/?src=readme-free-bootstrap)
+- [Documentation](https://coreui.io/scheduler/docs/getting-started/introduction/?src=readme-free-bootstrap)
 
 ## Installation
 
