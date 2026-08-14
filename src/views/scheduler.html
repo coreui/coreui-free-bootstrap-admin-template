@@ -9,7 +9,7 @@
 
 <html lang="en">
   <head>
-    <base href="./../">
+    <base href="./">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -57,7 +57,7 @@
       })(window, document, "script", "dataLayer", "GTM-KX4JH47");
     </script>
     <!-- End Google Tag Manager-->
-    <link rel="canonical" href="https://coreui.io/bootstrap/docs/components/chip-set/">
+    <link href="node_modules/@coreui/scheduler/dist/css/scheduler.css" rel="stylesheet">
   </head>
   <body>
     <!-- Google Tag Manager (noscript)-->
@@ -781,245 +781,156 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-0">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><span>Components</span></li>
-              <li class="breadcrumb-item active"><span>Chip set</span></li>
+              <li class="breadcrumb-item active"><span>Scheduler</span></li>
             </ol>
           </nav>
         </div>
       </header>
       <div class="body flex-grow-1">
         <div class="container-lg px-4">
-          <div class="bg-primary bg-opacity-10 border border-2 border-primary rounded mb-4">
+          <div class="bg-warning bg-opacity-10 border border-2 border-warning rounded mb-4">
             <div class="row d-flex align-items-center p-3 px-xl-4 flex-xl-nowrap">
-              <div class="col-xl-auto col-12 d-none d-xl-block p-0"><img class="img-fluid" src="assets/img/components.webp" width="160px" height="160px" alt="CoreUI PRO hexagon"></div>
+              <div class="col-xl-auto col-12 d-none d-xl-block p-0"><img class="img-fluid" src="assets/img/components.webp" width="160px" height="160px" alt="CoreUI Scheduler hexagon"></div>
               <div class="col-md col-12 px-lg-4">
-                Our Admin Panel isn’t just a mix of third-party components. It’s
-                <strong>the only open-source Bootstrap dashboard built on a professional, enterprise-grade UI Components Library</strong>
-                . This component is part of this library, and we present only the basic usage of it here. To explore extended examples, detailed API documentation, and customization options, refer to our docs.
+                <h5 class="mb-1">
+                  CoreUI Scheduler
+                  <span class="badge bg-warning text-dark ms-2">ADD-ON</span>
+                </h5>
+                Calendars that only render are easy — one people actually book in is not.
+                <strong>Day, week, month, agenda, resource and timeline views, with drag-to-reschedule, resize, recurring events and full keyboard support on a headless core.</strong>
+                It's the scheduling UI your app has been missing, for Bootstrap, React, Vue and Angular.
               </div>
               <div class="col-md-auto col-12 mt-3 mt-lg-0 d-flex flex-column">
-                <a class="btn btn-primary text-nowrap text-white" href="https://coreui.io/bootstrap/docs/components/chip-set/" target="_blank" rel="noopener noreferrer">Explore Documentation</a>
+                <a class="btn btn-warning text-nowrap" href="https://coreui.io/scheduler/docs/getting-started/introduction/" target="_blank" rel="noopener noreferrer">Explore Documentation</a>
                 <div class="text-center my-1">or</div>
-                <a class="btn btn-danger text-nowrap text-white" href="https://coreui.io/pricing/?framework=bootstrap&amp;src=free-bootstrap-admin-template-docs-banner" target="_blank" rel="noopener noreferrer">Get CoreUI PRO →</a>
+                <a class="btn btn-danger text-nowrap text-white" href="https://coreui.io/scheduler/javascript/?src=bootstrap-free-admin-template-scheduler-banner" target="_blank" rel="noopener noreferrer">Get CoreUI Scheduler →</a>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Chip set</strong>
-                  <span class="small ms-1">Basic</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    Group chips into an accessible, keyboard-navigable container with
-                    <code>.chip-set</code>
-                    and
-                    <code>data-coreui-chip-set</code>
-                    . The set manages roving focus, arrow-key navigation, and moving focus to a neighboring chip after one is removed, so you don't need to initialize each chip separately.
-                  </p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1000" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip-set/#basic-chip-set" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1000">
-                        <div class="chip-set" data-coreui-chip-set>
-                          <span class="chip">Apple</span>
-                          <span class="chip">Banana</span>
-                          <span class="chip">Cherry</span>
-                          <span class="chip">Date</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Chip set</strong>
-                  <span class="small ms-1">Selectable</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    Set
-                    <code>data-coreui-selectable="true"</code>
-                    to make every chip in the set selectable. With the default
-                    <code>selectionMode</code>
-                    of
-                    <code>multiple</code>
-                    , any number of chips can be active at once — useful for filters.
-                  </p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1001" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip-set/#selectable-chips" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1001">
-                        <div class="chip-set" data-coreui-chip-set data-coreui-selectable="true">
-                          <span class="chip">Design</span>
-                          <span class="chip active">Development</span>
-                          <span class="chip">Marketing</span>
-                          <span class="chip active">Sales</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="text-body-secondary small">
-                    Use
-                    <code>data-coreui-selection-mode="single"</code>
-                    to allow only one selected chip at a time — selecting a chip deselects its siblings. This is useful for choice chips.
-                  </p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1002" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip-set/#single-selection" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1002">
-                        <div class="chip-set" data-coreui-chip-set data-coreui-selectable="true" data-coreui-selection-mode="single">
-                          <span class="chip active">Small</span>
-                          <span class="chip">Medium</span>
-                          <span class="chip">Large</span>
-                        </div>
-                      </div>
-                    </div>
+          <div class="card mb-4">
+            <div class="card-header">
+              <strong>Scheduler</strong>
+              <span class="small ms-1">month, week, day &amp; agenda views</span>
+            </div>
+            <div class="card-body">
+              <p class="text-body-secondary">
+                The everyday calendar: drag an event to another day to reschedule it, drag its edge to resize, drag across empty space to create one, or click it to open the edit dialog. Switch between the
+                <a href="https://coreui.io/scheduler/docs/views/month/" target="_blank">month</a>
+                ,
+                <a href="https://coreui.io/scheduler/docs/views/day-week/" target="_blank">week and day</a>
+                and
+                <a href="https://coreui.io/scheduler/docs/views/agenda/" target="_blank">agenda</a>
+                views from the toolbar — the same events, the same interactions.
+                <br>
+                <br>
+                The daily standup is a single
+                <a href="https://coreui.io/scheduler/docs/features/recurrence/" target="_blank">recurring event</a>
+                (an RRULE, expanded on the fly), working hours come from
+                <a href="https://coreui.io/scheduler/docs/features/business-hours/" target="_blank">businessHours</a>
+                , and every drag has a
+                <a href="https://coreui.io/scheduler/docs/features/keyboard-accessibility/" target="_blank">keyboard equivalent</a>
+                .
+              </p>
+              <div class="example">
+                <ul class="nav nav-underline-border" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1000" role="tab">
+                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                      </svg>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://coreui.io/scheduler/javascript/" target="_blank">
+                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                      </svg>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1000">
+                    <div id="scheduler"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Chip set</strong>
-                  <span class="small ms-1">Filter chips</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    Add
-                    <code>data-coreui-filter="true"</code>
-                    to turn the chips into filter chips. A check icon is shown on each selected chip and removed when it is deselected.
-                    <code>filter</code>
-                    implies
-                    <code>selectable</code>
-                    , so you don't need to set both.
-                  </p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1003" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip-set/#filter-chips" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1003">
-                        <div class="chip-set" data-coreui-chip-set data-coreui-filter="true">
-                          <span class="chip">Design</span>
-                          <span class="chip active">Development</span>
-                          <span class="chip">Marketing</span>
-                          <span class="chip active">Sales</span>
-                        </div>
-                      </div>
-                    </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-header">
+              <strong>Scheduler</strong>
+              <span class="small ms-1">resource view</span>
+            </div>
+            <div class="card-body">
+              <p class="text-body-secondary">
+                One column per room, person or machine, for a single day. Events land in a column by their
+                <code>resourceId</code>
+                , and dragging one into another column reassigns it. Past a dozen resources the columns render through a horizontal virtualizer — see the
+                <a href="https://coreui.io/scheduler/docs/views/resources/" target="_blank">resource view docs</a>
+                .
+              </p>
+              <div class="example">
+                <ul class="nav nav-underline-border" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1001" role="tab">
+                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                      </svg>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://coreui.io/scheduler/docs/views/resources/" target="_blank">
+                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                      </svg>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1001">
+                    <div id="schedulerResources"></div>
                   </div>
                 </div>
               </div>
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Chip set</strong>
-                  <span class="small ms-1">Removable chips</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    Set
-                    <code>data-coreui-removable="true"</code>
-                    to add a remove button to every chip. When a chip is removed, focus moves to a neighboring chip.
-                  </p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1004" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip-set/#removable-chips" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1004">
-                        <div class="chip-set" data-coreui-chip-set data-coreui-removable="true">
-                          <span class="chip">Filter one</span>
-                          <span class="chip">Filter two</span>
-                          <span class="chip disabled">Filter three</span>
-                        </div>
-                      </div>
-                    </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-header">
+              <strong>Scheduler</strong>
+              <span class="small ms-1">timeline view</span>
+            </div>
+            <div class="card-body">
+              <p class="text-body-secondary">
+                The scheduler turned sideways: resources become rows and time runs horizontally across a continuous multi-day axis, so a bar spanning midnight is not split. Overlapping bars stack into sub-lanes and the row grows to fit — see the
+                <a href="https://coreui.io/scheduler/docs/views/timeline/" target="_blank">timeline view docs</a>
+                .
+              </p>
+              <div class="example">
+                <ul class="nav nav-underline-border" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1002" role="tab">
+                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                      </svg>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://coreui.io/scheduler/docs/views/timeline/" target="_blank">
+                      <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                      </svg>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content rounded-bottom">
+                  <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1002">
+                    <div id="schedulerTimeline"></div>
                   </div>
                 </div>
               </div>
@@ -1096,5 +1007,7 @@
         }
       });
     </script>
+    <script src="node_modules/@coreui/scheduler/dist/js/scheduler.js"></script>
+    <script src="js/scheduler.js"></script>
   </body>
 </html>

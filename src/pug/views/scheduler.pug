@@ -1,0 +1,65 @@
+extends ../_layout/default.pug
+
+block styles
+  link(href='node_modules/@coreui/scheduler/dist/css/scheduler.css', rel='stylesheet')
+
+block scripts
+  script(src='node_modules/@coreui/scheduler/dist/js/scheduler.js')
+  script(src='js/scheduler.js')
+
+block breadcrumb
+  +breadcrumb(
+    [
+      { href: '#', label: 'Home'},
+      { label: 'Scheduler'}
+    ]
+  )
+
+block view
+  .bg-warning.bg-opacity-10.border.border-2.border-warning.rounded.mb-4
+    .row.d-flex.align-items-center.p-3.px-xl-4.flex-xl-nowrap
+      .col-xl-auto.col-12.d-none.d-xl-block.p-0
+        img.img-fluid(src='assets/img/components.webp' width='160px' height='160px' alt='CoreUI Scheduler hexagon')
+      .col-md.col-12.px-lg-4
+        h5.mb-1
+          | CoreUI Scheduler
+          span.badge.bg-warning.text-dark.ms-2 ADD-ON
+        | Calendars that only render are easy — one people actually book in is not. <strong>Day, week, month, agenda, resource and timeline views, with drag-to-reschedule, resize, recurring events and full keyboard support on a headless core.</strong> It's the scheduling UI your app has been missing, for Bootstrap, React, Vue and Angular.
+      .col-md-auto.col-12.mt-3.mt-lg-0.d-flex.flex-column
+        a.btn.btn-warning.text-nowrap(href='https://coreui.io/scheduler/docs/getting-started/introduction/' target='_blank' rel='noopener noreferrer') Explore Documentation
+        div.text-center.my-1
+          | or
+        a.btn.btn-danger.text-nowrap.text-white(href='https://coreui.io/scheduler/javascript/?src=bootstrap-free-admin-template-scheduler-banner' target='_blank' rel='noopener noreferrer') Get CoreUI Scheduler →
+
+  .card.mb-4
+    .card-header
+      strong Scheduler
+      span.small.ms-1 month, week, day &amp; agenda views
+    .card-body
+      p.text-body-secondary
+        | The everyday calendar: drag an event to another day to reschedule it, drag its edge to resize, drag across empty space to create one, or click it to open the edit dialog. Switch between the #[a(href='https://coreui.io/scheduler/docs/views/month/' target='_blank') month], #[a(href='https://coreui.io/scheduler/docs/views/day-week/' target='_blank') week and day] and #[a(href='https://coreui.io/scheduler/docs/views/agenda/' target='_blank') agenda] views from the toolbar — the same events, the same interactions.
+        br
+        br
+        | The daily standup is a single #[a(href='https://coreui.io/scheduler/docs/features/recurrence/' target='_blank') recurring event] (an RRULE, expanded on the fly), working hours come from #[a(href='https://coreui.io/scheduler/docs/features/business-hours/' target='_blank') businessHours], and every drag has a #[a(href='https://coreui.io/scheduler/docs/features/keyboard-accessibility/' target='_blank') keyboard equivalent].
+      +example('https://coreui.io/scheduler/javascript/')
+        #scheduler
+
+  .card.mb-4
+    .card-header
+      strong Scheduler
+      span.small.ms-1 resource view
+    .card-body
+      p.text-body-secondary
+        | One column per room, person or machine, for a single day. Events land in a column by their #[code resourceId], and dragging one into another column reassigns it. Past a dozen resources the columns render through a horizontal virtualizer — see the #[a(href='https://coreui.io/scheduler/docs/views/resources/' target='_blank') resource view docs].
+      +example('https://coreui.io/scheduler/docs/views/resources/')
+        #schedulerResources
+
+  .card.mb-4
+    .card-header
+      strong Scheduler
+      span.small.ms-1 timeline view
+    .card-body
+      p.text-body-secondary
+        | The scheduler turned sideways: resources become rows and time runs horizontally across a continuous multi-day axis, so a bar spanning midnight is not split. Overlapping bars stack into sub-lanes and the row grows to fit — see the #[a(href='https://coreui.io/scheduler/docs/views/timeline/' target='_blank') timeline view docs].
+      +example('https://coreui.io/scheduler/docs/views/timeline/')
+        #schedulerTimeline
